@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIFeed.run — Loading...</title>
+  <meta name="description" content="Daily AI news, zero noise." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:          #09081a;
+      --bg2:         #0f0d28;
+      --bg3:         #14113a;
+      --purple:      #7c3aed;
+      --purple2:     #a855f7;
+      --orange:      #f97316;
+      --green:       #22c55e;
+      --white:       #f0eeff;
+      --muted:       #7b78a8;
+      --card-bg:     rgba(255,255,255,0.03);
+      --card-border: rgba(255,255,255,0.07);
+      --radius:      12px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 20% 15%, rgba(255,255,255,0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 75% 10%, rgba(255,255,255,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 85% 45%, rgba(255,255,255,0.4) 0%, transparent 100%),
+        radial-gradient(1px 1px at 10% 80%, rgba(255,255,255,0.3) 0%, transparent 100%);
+      pointer-events: none; z-index: 0;
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      top: -200px; left: 50%;
+      transform: translateX(-50%);
+      width: 900px; height: 600px;
+      background: radial-gradient(ellipse, rgba(124,58,237,0.15) 0%, transparent 70%);
+      pointer-events: none; z-index: 0;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      padding: 0 24px; height: 64px;
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(9,8,26,0.9);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .nav-logo {
+      font-family: 'Syne', sans-serif;
+      font-size: 22px; font-weight: 800;
+      text-decoration: none; letter-spacing: -0.5px;
+    }
+    .nav-logo .ai   { color: var(--purple2); }
+    .nav-logo .feed { color: var(--orange); }
+    .nav-logo .dot  { color: var(--white); }
+
+    .nav-right { display: flex; align-items: center; gap: 16px; }
+
+    .nav-link {
+      color: var(--muted); text-decoration: none;
+      font-size: 14px; transition: color .2s;
+    }
+    .nav-link:hover { color: var(--white); }
+
+    .btn-nav-cta {
+      background: linear-gradient(135deg, var(--orange), var(--purple2));
+      color: #fff; font-family: 'Syne', sans-serif;
+      font-size: 13px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 1px;
+      padding: 8px 20px; border-radius: 50px;
+      text-decoration: none; transition: opacity .2s, transform .2s;
+    }
+    .btn-nav-cta:hover { opacity: .85; transform: scale(1.03); }
+
+    /* ── ARTICLE LAYOUT ── */
+    .article-wrap {
+      position: relative; z-index: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .back-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: var(--muted); text-decoration: none;
+      font-size: 13px; font-weight: 500;
+      margin-bottom: 32px;
+      transition: color .2s;
+    }
+    .back-link:hover { color: var(--white); }
+
+    /* ── ARTICLE HEADER ── */
+    .article-header { margin-bottom: 32px; }
+
+    .article-meta {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .article-category {
+      font-size: 10px; font-weight: 700;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      padding: 4px 10px; border-radius: 4px;
+    }
+
+    .cat-Models   { background: rgba(249,115,22,.15); color: var(--orange);   border: 1px solid rgba(249,115,22,.3); }
+    .cat-Tools    { background: rgba(34,197,94,.15);  color: var(--green);    border: 1px solid rgba(34,197,94,.3); }
+    .cat-Industry { background: rgba(168,85,247,.15); color: var(--purple2);  border: 1px solid rgba(168,85,247,.3); }
+    .cat-Research { background: rgba(56,189,248,.15); color: #38bdf8;         border: 1px solid rgba(56,189,248,.3); }
+    .cat-Products { background: rgba(251,191,36,.15); color: #fbbf24;         border: 1px solid rgba(251,191,36,.3); }
+
+    .article-date { font-size: 12px; color: var(--muted); }
+
+    .article-header h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .article-summary {
+      font-size: 18px;
+      color: var(--muted);
+      line-height: 1.6;
+      font-weight: 400;
+      border-left: 3px solid var(--purple2);
+      padding-left: 20px;
+      margin-bottom: 32px;
+    }
+
+    /* ── HERO IMAGE ── */
+    .article-image {
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto 40px;
+      display: block;
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .article-image img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-body {
+      font-size: 17px;
+      line-height: 1.8;
+      color: rgba(240, 238, 255, 0.85);
+    }
+
+    .article-body p {
+      margin-bottom: 20px;
+    }
+
+    .article-body strong {
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    /* ── TAGS ── */
+    .article-tags {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      margin: 32px 0;
+      padding-top: 24px;
+      border-top: 1px solid var(--card-border);
+    }
+
+    .article-tag {
+      font-size: 12px; color: var(--muted);
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 4px; padding: 4px 10px;
+    }
+
+    /* ── INLINE NEWSLETTER ── */
+    .inline-newsletter {
+      background: linear-gradient(135deg, rgba(124,58,237,0.12) 0%, rgba(249,115,22,0.08) 100%);
+      border: 1px solid rgba(124,58,237,0.3);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin: 40px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .inline-newsletter::before {
+      content: '';
+      position: absolute;
+      top: -50px; left: 50%;
+      transform: translateX(-50%);
+      width: 300px; height: 150px;
+      background: radial-gradient(ellipse, rgba(124,58,237,.2) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .inline-newsletter .eyebrow {
+      font-family: 'Syne', sans-serif;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 2px; text-transform: uppercase;
+      color: var(--orange); margin-bottom: 10px;
+      position: relative;
+    }
+
+    .inline-newsletter h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 22px; font-weight: 800;
+      margin-bottom: 8px; position: relative;
+    }
+
+    .inline-newsletter p {
+      font-size: 14px; color: var(--muted);
+      margin-bottom: 20px; position: relative;
+    }
+
+    .inline-newsletter-form {
+      display: flex; gap: 8px;
+      max-width: 400px; margin: 0 auto;
+      position: relative;
+    }
+
+    .inline-newsletter-form input {
+      flex: 1;
+      background: rgba(255,255,255,.06);
+      border: 1px solid var(--card-border);
+      border-radius: 50px; padding: 10px 18px;
+      color: var(--white); font-family: 'Inter', sans-serif;
+      font-size: 14px; outline: none;
+      transition: border-color .2s;
+    }
+    .inline-newsletter-form input:focus { border-color: rgba(124,58,237,.5); }
+    .inline-newsletter-form input::placeholder { color: var(--muted); }
+
+    .inline-newsletter-form button {
+      background: linear-gradient(135deg, var(--orange), var(--purple2));
+      color: #fff; border: none; border-radius: 50px;
+      padding: 10px 20px;
+      font-family: 'Syne', sans-serif; font-size: 12px;
+      font-weight: 700; text-transform: uppercase;
+      letter-spacing: 1px; cursor: pointer;
+      transition: opacity .2s; white-space: nowrap;
+    }
+    .inline-newsletter-form button:hover { opacity: .85; }
+
+    /* ── SHARE BUTTONS ── */
+    .share-row {
+      display: flex; align-items: center; gap: 12px;
+      margin: 32px 0; flex-wrap: wrap;
+    }
+
+    .share-label {
+      font-size: 12px; color: var(--muted);
+      text-transform: uppercase; letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .share-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 8px 16px; border-radius: 8px;
+      font-size: 12px; font-weight: 600;
+      font-family: 'Syne', sans-serif;
+      text-decoration: none; text-transform: uppercase;
+      letter-spacing: .5px; transition: transform .2s, opacity .2s;
+      border: 1px solid; cursor: pointer;
+    }
+    .share-btn:hover { transform: scale(1.04); opacity: .9; }
+
+    .share-btn.ig {
+      background: rgba(225,48,108,.12);
+      border-color: rgba(225,48,108,.4); color: #f472b6;
+    }
+    .share-btn.li {
+      background: rgba(10,102,194,.12);
+      border-color: rgba(10,102,194,.4); color: #60a5fa;
+    }
+    .share-btn.copy {
+      background: rgba(255,255,255,.06);
+      border-color: rgba(255,255,255,.15); color: var(--muted);
+    }
+
+    /* ── RELATED / MORE STORIES ── */
+    .more-stories { margin: 56px 0 0; }
+
+    .more-stories h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 20px; font-weight: 800;
+      margin-bottom: 20px; color: var(--white);
+    }
+
+    .more-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .more-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius); overflow: hidden;
+      text-decoration: none; color: inherit;
+      display: flex; flex-direction: column;
+      transition: border-color .25s, transform .25s;
+    }
+    .more-card:hover {
+      border-color: rgba(124,58,237,.4);
+      transform: translateY(-2px);
+    }
+
+    .more-card-body { padding: 16px 20px; }
+
+    .more-card-body .cat {
+      font-size: 9px; font-weight: 700;
+      letter-spacing: 1px; text-transform: uppercase;
+      color: var(--purple2); margin-bottom: 8px;
+    }
+
+    .more-card-body h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 15px; font-weight: 700;
+      line-height: 1.3; color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .more-card-body p {
+      font-size: 12px; color: var(--muted); line-height: 1.5;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      position: relative; z-index: 1;
+      border-top: 1px solid var(--card-border);
+      padding: 32px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 16px;
+    }
+
+    .footer-logo {
+      font-family: 'Syne', sans-serif;
+      font-size: 18px; font-weight: 800; text-decoration: none;
+    }
+    .footer-logo .ai   { color: var(--purple2); }
+    .footer-logo .feed { color: var(--orange); }
+    .footer-logo .dot  { color: var(--white); }
+
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a {
+      color: var(--muted); text-decoration: none;
+      font-size: 13px; transition: color .2s;
+    }
+    .footer-links a:hover { color: var(--white); }
+
+    .footer-copy { font-size: 12px; color: var(--muted); }
+
+    /* ── Loading ── */
+    .page-loading {
+      display: flex; align-items: center; justify-content: center;
+      min-height: 50vh; flex-direction: column; gap: 16px;
+    }
+    .page-loading p { color: var(--muted); font-size: 14px; }
+
+    .spinner {
+      width: 32px; height: 32px;
+      border: 2px solid rgba(124,58,237,.2);
+      border-top-color: var(--purple2);
+      border-radius: 50%;
+      animation: spin .8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .article-wrap > * { animation: fadeUp .5s ease both; }
+
+    /* ── Toast ── */
+    .toast {
+      position: fixed; bottom: 24px; left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      background: rgba(34,197,94,.15);
+      border: 1px solid rgba(34,197,94,.4);
+      color: var(--green);
+      font-family: 'Syne', sans-serif;
+      font-size: 14px; font-weight: 700;
+      padding: 12px 24px; border-radius: 50px;
+      z-index: 999; transition: transform .4s cubic-bezier(.34,1.56,.64,1), opacity .4s;
+      opacity: 0; pointer-events: none;
+    }
+    .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+
+    @media (max-width: 600px) {
+      .article-header h1 { letter-spacing: -.5px; }
+      .inline-newsletter-form { flex-direction: column; }
+      .nav-right .nav-link:not(.btn-nav-cta) { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="/" class="nav-logo">
+      <span class="ai">ai</span><span class="feed">feed</span><span class="dot">.run</span>
+    </a>
+    <div class="nav-right">
+      <a href="/#newsletter" class="nav-link">Newsletter</a>
+      <a href="https://instagram.com/aifeed.run" target="_blank" class="nav-link">Instagram</a>
+      <a href="https://www.linkedin.com/company/aifeed-run" target="_blank" class="nav-link">LinkedIn</a>
+      <a href="/#newsletter" class="btn-nav-cta">Get the Feed</a>
+    </div>
+  </nav>
+
+  <div class="article-wrap" id="article-wrap">
+    <div class="page-loading">
+      <div class="spinner"></div>
+      <p>Loading story...</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="/" class="footer-logo">
+      <span class="ai">ai</span><span class="feed">feed</span><span class="dot">.run</span>
+    </a>
+    <div class="footer-links">
+      <a href="https://instagram.com/aifeed.run" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/company/aifeed-run" target="_blank">LinkedIn</a>
+      <a href="/#newsletter">Newsletter</a>
+      <a href="/">← All Stories</a>
+    </div>
+    <span class="footer-copy">© 2025 AIFeed.run</span>
+  </footer>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">🎉 You're subscribed! Welcome to the feed.</div>
+
+  <script>
+    // ─── CONFIG ──────────────────────────────────────────────────────────
+    // SETUP: Replace with your actual Beehiiv subscribe URL
+    const BEEHIIV_URL = 'https://www.beehiiv.com/subscribe/YOUR_PUBLICATION_ID';
+
+    // ─── LOAD POST ───────────────────────────────────────────────────────
+    async function loadPost() {
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get('slug');
+      const wrap = document.getElementById('article-wrap');
+
+      if (!slug) {
+        window.location.href = '/';
+        return;
+      }
+
+      let post = null;
+      let allPosts = [];
+
+      try {
+        // Try to load individual post file first
+        const res = await fetch(`_posts/${slug}.json`);
+        if (res.ok) {
+          post = await res.json();
+        }
+      } catch (e) { /* fall through */ }
+
+      // Load all posts for "more stories"
+      try {
+        const idxRes = await fetch('_posts/posts-index.json');
+        if (idxRes.ok) {
+          allPosts = await idxRes.json();
+          allPosts.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+          // If individual file failed, try finding in index
+          if (!post) {
+            post = allPosts.find(p => p.slug === slug);
+          }
+        }
+      } catch (e) { /* continue */ }
+
+      // Fallback to demo posts
+      if (!post) {
+        const demos = getDemoPosts();
+        post = demos.find(p => p.slug === slug) || demos[0];
+        allPosts = demos;
+      }
+
+      renderPost(post, allPosts);
+    }
+
+    function renderPost(post, allPosts) {
+      // Update page meta
+      document.title = `${post.headline} — AIFeed.run`;
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute('content', post.summary || '');
+
+      // Related posts (exclude current)
+      const related = allPosts.filter(p => p.slug !== post.slug && p.id !== post.id).slice(0, 3);
+
+      const wrap = document.getElementById('article-wrap');
+      wrap.innerHTML = `
+        <a href="/" class="back-link">← All Stories</a>
+
+        <article class="article-header">
+          <div class="article-meta">
+            <span class="article-category cat-${post.category}">${post.category}</span>
+            <span class="article-date">${formatDate(post.publishedAt)}</span>
+          </div>
+          <h1>${post.headline}</h1>
+          <p class="article-summary">${post.summary}</p>
+        </article>
+
+        ${post.imageUrl
+          ? `<div class="article-image">
+               <img src="${post.imageUrl}" alt="${post.headline}" />
+             </div>`
+          : ''}
+
+        <div class="article-body">
+          ${post.body || `<p>${post.summary}</p><p>Follow <strong>@aifeed.run</strong> on Instagram for the full story and daily AI news updates.</p>`}
+        </div>
+
+        ${post.hashtags && post.hashtags.length
+          ? `<div class="article-tags">
+              ${post.hashtags.map(t => `<span class="article-tag">#${t}</span>`).join('')}
+             </div>`
+          : ''}
+
+        <div class="share-row">
+          <span class="share-label">Share</span>
+          <a href="https://instagram.com/aifeed.run" target="_blank" class="share-btn ig">Instagram</a>
+          <a href="https://www.linkedin.com/company/aifeed-run" target="_blank" class="share-btn li">LinkedIn</a>
+          <button class="share-btn copy" onclick="copyLink()">Copy Link</button>
+        </div>
+
+        <div class="inline-newsletter">
+          <p class="eyebrow">📬 Free Newsletter</p>
+          <h3>Get stories like this <span style="color:var(--purple2)">daily</span></h3>
+          <p>The most important AI news, in your inbox every morning. Free forever.</p>
+          <form class="inline-newsletter-form" onsubmit="handleSubscribe(event)">
+            <input type="email" placeholder="your@email.com" required id="inline-email" />
+            <button type="submit">Subscribe →</button>
+          </form>
+        </div>
+
+        ${related.length > 0 ? `
+          <div class="more-stories">
+            <h2>More Stories</h2>
+            <div class="more-grid">
+              ${related.map(p => `
+                <a class="more-card" href="post.html?slug=${p.slug}">
+                  <div class="more-card-body">
+                    <div class="cat">${p.category}</div>
+                    <h3>${p.headline}</h3>
+                    <p>${p.summary}</p>
+                  </div>
+                </a>
+              `).join('')}
+            </div>
+          </div>
+        ` : ''}
+      `;
+    }
+
+    // ─── HELPERS ─────────────────────────────────────────────────────────
+    function formatDate(iso) {
+      if (!iso) return '';
+      return new Date(iso).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    }
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      const email = document.getElementById('inline-email').value;
+      window.open(`${BEEHIIV_URL}?email=${encodeURIComponent(email)}`, '_blank');
+      e.target.reset();
+      showToast();
+    }
+
+    function copyLink() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        const t = document.getElementById('toast');
+        t.textContent = '🔗 Link copied!';
+        t.classList.add('show');
+        setTimeout(() => t.classList.remove('show'), 2500);
+      });
+    }
+
+    function showToast() {
+      const t = document.getElementById('toast');
+      t.textContent = '🎉 You\'re subscribed! Welcome to the feed.';
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 3500);
+    }
+
+    function getDemoPosts() {
+      return [
+        {
+          id: 'demo-1', slug: 'apple-building-ai-glasses-beat-meta',
+          headline: 'Apple Is Building AI Glasses To Beat Meta',
+          summary: 'No screen. Just AI, cameras, and Siri. 4 designs. Premium acetate. Ships 2027.',
+          body: '<p><strong>Apple is reportedly developing AI-powered smart glasses</strong> designed to compete directly with Meta\'s Ray-Ban AI glasses — and the early details are compelling.</p><p>Unlike the Vision Pro, these will have no display at all. Instead, they\'ll rely entirely on AI processing: cameras, Siri integration, and ambient computing. Four frame styles are planned, with premium acetate construction targeting a fashion-forward audience.</p><p>The $499 starting price positions them as a premium-but-accessible device — significantly cheaper than Vision Pro but pricier than Meta\'s Ray-Bans. A 2027 launch window gives Apple time to refine the AI stack that will power them.</p><p>This move signals Apple\'s belief that ambient AI wearables — not VR headsets — will be the mainstream computing interface of the next decade.</p>',
+          category: 'Products', hashtags: ['apple', 'AIglasses', 'meta', 'wearables'],
+          publishedAt: new Date().toISOString(), imageUrl: ''
+        },
+        {
+          id: 'demo-2', slug: 'google-gemma-4-free-ai-lives-on-phone',
+          headline: 'Google Gemma 4: Free AI That Lives On Your Phone',
+          summary: 'Runs locally. Chats never saved. No cloud. Free on iOS and Android right now.',
+          body: '<p><strong>Google has released Gemma 4</strong>, its most capable on-device AI model yet — and it\'s free on both iOS and Android.</p><p>The key differentiator: everything runs locally. Your conversations never leave your device, never hit a server, and are never stored. For privacy-conscious users, this is a significant shift.</p><p>Performance gains are substantial. Gemma 4 is reportedly 4x faster than its predecessor and uses 60% less battery — critical specs for a model running continuously on mobile hardware. Google claims it reaches 140 million Android devices immediately at launch.</p><p>This puts real competitive pressure on Apple Intelligence and signals that on-device AI is no longer a compromise — it\'s becoming the preferred architecture for consumer AI.</p>',
+          category: 'Models', hashtags: ['google', 'gemma', 'mobileAI', 'privacy'],
+          publishedAt: new Date(Date.now() - 86400000).toISOString(), imageUrl: ''
+        },
+        {
+          id: 'demo-3', slug: 'agi-will-hit-10-revolutions-one-decade',
+          headline: 'AGI Will Hit Like 10 Revolutions In One Decade',
+          summary: 'Leading researchers now agree: AGI arrival will compress a century of change into ten years.',
+          body: '<p>The consensus among leading AI researchers is shifting from "if" to "when" — and increasingly, the answer is "soon."</p><p><strong>A growing number of labs now believe AGI will compress decades of civilizational change into a single decade.</strong> Not one industrial revolution, but ten — simultaneously — across medicine, energy, materials science, software, and beyond.</p><p>This framing is gaining traction not as hyperbole but as a calibrated forecast from people with direct access to the most capable systems being built today.</p><p>What changes first: knowledge work. Then physical labor. Then scientific research itself. The sequencing matters less than the speed.</p>',
+          category: 'Research', hashtags: ['AGI', 'futureofAI', 'research'],
+          publishedAt: new Date(Date.now() - 172800000).toISOString(), imageUrl: ''
+        }
+      ];
+    }
+
+    // ─── INIT ────────────────────────────────────────────────────────────
+    loadPost();
+  </script>
+</body>
+</html>
