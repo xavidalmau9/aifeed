@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AIFeed.run — AI News</title>
+    <title>AIFeed.run | Loading...</title>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root { --bg: #09081a; --purple: #a855f7; --orange: #f97316; }
         body { background: var(--bg); color: #f0eeff; font-family: 'Inter', sans-serif; }
         .syne { font-family: 'Syne', sans-serif; }
-        .article-body p { margin-bottom: 1.5rem; line-height: 1.8; color: #7b78a8; font-size: 1.1rem; }
+        .article-body p { margin-bottom: 1.5rem; line-height: 1.8; color: #7b78a8; font-size: 1.15rem; }
         .article-body strong { color: var(--purple); }
     </style>
 </head>
@@ -20,29 +20,31 @@
             <a href="index.html" class="syne text-2xl font-extrabold tracking-tighter">
                 <span style="color:var(--purple)">ai</span><span style="color:var(--orange)">feed</span><span>.run</span>
             </a>
-            <a href="index.html" class="text-xs font-bold uppercase tracking-widest text-slate-500 hover:text-white transition">← Feed</a>
+            <a href="index.html" class="text-xs font-bold uppercase tracking-widest text-slate-500 hover:text-white transition">← Back to Feed</a>
         </div>
     </nav>
 
     <main class="max-w-3xl mx-auto px-6 py-12">
-        <div id="loader" class="text-center py-20 text-slate-600 syne font-bold animate-pulse">SYNCING WITH AIFEED ENGINE...</div>
+        <div id="loader" class="text-center py-20 text-slate-600 syne font-bold animate-pulse">ESTABLISHING FEED ENCRYPTION...</div>
         
         <article id="article" class="hidden">
             <div id="cat" class="inline-block px-3 py-1 rounded bg-purple-500/10 border border-purple-500/30 text-purple-400 text-[10px] font-bold uppercase tracking-widest mb-6"></div>
-            <h1 id="headline" class="syne text-4xl md:text-5xl font-extrabold mb-8 leading-tight tracking-tighter"></h1>
+            <h1 id="headline" class="syne text-4xl md:text-5xl font-extrabold mb-8 leading-tight tracking-tighter text-white"></h1>
             <img id="image" class="w-full aspect-[4/5] md:aspect-video object-cover rounded-2xl mb-12 border border-white/5 shadow-2xl" src="" alt="">
             <div id="content" class="article-body"></div>
             <div class="mt-16 pt-10 border-t border-white/10 text-center">
-                <a id="src" href="#" target="_blank" class="syne inline-block bg-white text-black px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-slate-200 transition">Source Details</a>
+                <a id="src" href="#" target="_blank" class="syne inline-block bg-white text-black px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-slate-200 transition">View Source Details</a>
             </div>
         </article>
     </main>
 
     <script>
         async function load() {
-            const slug = new URLSearchParams(window.location.search).get('slug');
+            const params = new URLSearchParams(window.location.search);
+            const slug = params.get('slug');
             try {
-                const res = await fetch('_posts/posts-index.json');
+                // FORCE FETCH FROM DIRECT RAW SOURCE
+                const res = await fetch('https://raw.githubusercontent.com/xavidalmau9/aifeed/main/_posts/posts-index.json');
                 const posts = await res.json();
                 const post = posts.find(p => p.slug === slug);
                 if (post) {
@@ -54,7 +56,7 @@
                     document.getElementById('content').innerHTML = post.body;
                     document.getElementById('src').href = post.sourceUrl || '#';
                 }
-            } catch (e) { document.getElementById('loader').innerText = "STORY NOT FOUND"; }
+            } catch (e) { document.getElementById('loader').innerText = "FATAL: SYNC FAILED"; }
         }
         load();
     </script>
