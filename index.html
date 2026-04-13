@@ -5,14 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AIFeed.run — AI News That Runs</title>
   <meta name="description" content="Daily AI news, zero noise. The fastest way to stay ahead of artificial intelligence — curated, written, and published by AI." />
-  <meta property="og:title" content="AIFeed.run — AI News That Runs" />
-  <meta property="og:description" content="Daily AI news, zero noise." />
-  <meta property="og:image" content="https://aifeed.run/og-image.png" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
       --bg: #09081a; --bg2: #0f0d28; --bg3: #14113a; --purple: #7c3aed; --purple2: #a855f7;
@@ -20,7 +16,6 @@
       --card-bg: rgba(255,255,255,0.03); --card-border: rgba(255,255,255,0.07); --radius: 12px;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
     body { background: var(--bg); color: var(--white); font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; overflow-x: hidden; }
     body::before {
       content: ''; position: fixed; inset: 0;
@@ -31,70 +26,67 @@
     }
     nav { position: sticky; top: 0; z-index: 100; padding: 0 24px; height: 64px; display: flex; align-items: center; justify-content: space-between; background: rgba(9,8,26,0.9); backdrop-filter: blur(20px); border-bottom: 1px solid var(--card-border); }
     .nav-logo { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800; text-decoration: none; }
-    .nav-logo .ai { color: var(--purple2); } .nav-logo .feed { color: var(--orange); } .nav-logo .dot { color: var(--white); }
-    .nav-right { display: flex; align-items: center; gap: 16px; }
-    .nav-link { color: var(--muted); text-decoration: none; font-size: 14px; transition: color .2s; }
-    .nav-link:hover { color: var(--white); }
-    .btn-nav-cta { background: linear-gradient(135deg, var(--orange), var(--purple2)); color: #fff; font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 8px 20px; border-radius: 50px; text-decoration: none; border: none; cursor: pointer; transition: opacity .2s, transform .2s; }
+    .nav-logo .ai { color: var(--purple2); } .nav-logo .feed { color: var(--orange); }
     main { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 0 24px 80px; }
     .hero { text-align: center; padding: 80px 0 56px; }
     .hero h1 { font-family: 'Syne', sans-serif; font-size: clamp(42px, 7vw, 80px); font-weight: 800; line-height: 1.05; letter-spacing: -2px; }
-    .hero h1 .line1 { color: var(--white); } .hero h1 .line2 { color: var(--purple2); }
-    .hero-sub { font-size: 18px; color: var(--muted); margin: 20px auto 0; max-width: 460px; }
-    .tag-bar { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 56px 0 40px; }
-    .tag { padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 500; letter-spacing: .5px; cursor: pointer; transition: all .2s; text-transform: uppercase; border: 1px solid transparent; }
-    .tag-all { background: rgba(124,58,237,.25); border-color: rgba(124,58,237,.5); color: var(--purple2); }
-    .stats-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 0 0 56px; padding: 32px; background: rgba(124,58,237,0.06); border: 1px solid rgba(124,58,237,0.15); border-radius: var(--radius); }
-    .stat-number { font-family: 'Syne', sans-serif; font-size: 36px; font-weight: 800; line-height: 1; }
     .posts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }
-    .post-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius); overflow: hidden; transition: all .25s; text-decoration: none; color: inherit; display: flex; flex-direction: column; }
-    .post-card:hover { border-color: rgba(124,58,237,.4); transform: translateY(-3px); }
-    .post-card-img { width: 100%; aspect-ratio: 4/5; object-fit: cover; background: var(--bg3); }
+    .post-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius); overflow: hidden; transition: transform .25s; text-decoration: none; color: inherit; display: flex; flex-direction: column; }
+    .post-card-img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
     .post-category { font-size: 10px; font-weight: 700; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; border: 1px solid; }
     .cat-Models { background: rgba(249,115,22,.15); color: var(--orange); border-color: rgba(249,115,22,.3); }
     .cat-Tools { background: rgba(34,197,94,.15); color: var(--green); border-color: rgba(34,197,94,.3); }
     .tools-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
     .tool-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 20px; text-decoration: none; color: inherit; transition: all .2s; }
-    .tool-card:hover { border-color: var(--green); transform: translateY(-2px); }
   </style>
 </head>
 <body>
   <nav>
     <a href="/" class="nav-logo"><span class="ai">ai</span><span class="feed">feed</span><span class="dot">.run</span></a>
-    <div class="nav-right">
-      <a href="https://instagram.com/aifeed.run" target="_blank" class="nav-link">Instagram</a>
-      <a href="#newsletter" class="btn-nav-cta">Get the Feed</a>
-    </div>
+    <div class="nav-right"><a href="#newsletter" class="bg-gradient-to-r from-orange-500 to-purple-600 px-5 py-2 rounded-full text-xs font-bold text-white uppercase no-underline">Get the Feed</a></div>
   </nav>
 
   <main>
     <section class="hero">
-      <h1><span class="line1">AI News</span><br><span class="line2">Delivered by AI</span></h1>
-      <p class="hero-sub text-white">News that Runs. High-speed AI updates, hand-selected to run your day. Automated discovery. Human-refine.</p>
+      <h1><span class="text-white">AI News</span><br><span style="color:var(--purple2)">Delivered by AI</span></h1>
+      <p class="text-slate-400 text-lg mt-6 max-w-2xl mx-auto">News that Runs. High-speed AI updates, hand-selected to run your day. Automated discovery. Human-refine.</p>
     </section>
 
-    <div class="stats-bar">
-      <div class="stat"><div id="stat-posts" class="stat-number purple">—</div><div class="stat-label">Stories</div></div>
-      <div class="stat"><div class="stat-number orange">Daily</div><div class="stat-label">Updates</div></div>
-      <div class="stat"><div class="stat-number green">Zero</div><div class="stat-label">Noise</div></div>
+    <div class="grid grid-cols-3 gap-4 mb-12 text-center py-8 border-y border-white/5 max-w-4xl mx-auto">
+      <div><div id="stat-posts" class="text-3xl font-bold text-purple-500">39+</div><div class="text-[10px] uppercase text-slate-500 tracking-widest">Stories</div></div>
+      <div><div class="text-3xl font-bold text-orange-500">Daily</div><div class="text-[10px] uppercase text-slate-500 tracking-widest">Updates</div></div>
+      <div><div class="text-3xl font-bold text-green-500">Zero</div><div class="text-[10px] uppercase text-slate-500 tracking-widest">Noise</div></div>
     </div>
 
-    <div class="posts-grid" id="posts-grid"></div>
+    <div class="posts-grid" id="posts-grid">
+      </div>
 
-    <section class="tools-section mt-20">
+    <section id="newsletter" class="bg-white/5 border border-purple-500/20 rounded-2xl p-12 text-center my-20">
+      <h2 class="syne text-3xl font-bold mb-4 italic text-white">News that Runs.</h2>
+      <p class="text-slate-400 mb-8 max-w-md mx-auto leading-relaxed">High-speed AI updates, hand-selected to run your day. Automated discovery. Human-refine.</p>
+      <form class="flex flex-col md:flex-row gap-3 max-w-md mx-auto" onsubmit="window.open('https://aifeed.beehiiv.com/subscribe?email=' + encodeURIComponent(this.email.value), '_blank'); return false;">
+        <input name="email" type="email" placeholder="your@email.com" class="flex-1 bg-white/5 border border-white/10 rounded-full px-6 py-3 outline-none text-white" required>
+        <button type="submit" class="bg-white text-black font-bold px-8 py-3 rounded-full hover:bg-slate-200 uppercase text-xs tracking-widest">Subscribe</button>
+      </form>
+    </section>
+
+    <section class="my-20">
       <h2 class="syne text-xs font-bold uppercase tracking-widest text-slate-500 mb-8 italic">🧰 Top AI Tools — Hand-Selected</h2>
       <div class="tools-grid">
         <a href="https://www.perplexity.ai" target="_blank" class="tool-card">
-          <h3 class="syne font-bold mb-2">Perplexity AI</h3>
-          <p class="text-xs text-slate-400">The AI search engine replacing Google.</p>
+          <span class="text-2xl mb-4 block">🔍</span>
+          <h3 class="font-bold text-white mb-2">Perplexity AI</h3>
+          <p class="text-xs text-slate-400">High-speed AI search with real sources.</p>
         </a>
         <a href="https://elevenlabs.io" target="_blank" class="tool-card">
-          <h3 class="syne font-bold mb-2">ElevenLabs</h3>
-          <p class="text-xs text-slate-400">Realistic AI voice cloning and speech.</p>
+          <span class="text-2xl mb-4 block">🎙️</span>
+          <h3 class="font-bold text-white mb-2">ElevenLabs</h3>
+          <p class="text-xs text-slate-400">The gold standard for AI voice.</p>
         </a>
         <a href="https://n8n.io" target="_blank" class="tool-card">
-          <h3 class="syne font-bold mb-2">n8n Automation</h3>
-          <p class="text-xs text-slate-400">Powering your autonomous news workflows.</p>
+          <span class="text-2xl mb-4 block">⚙️</span>
+          <h3 class="font-bold text-white mb-2">n8n Automation</h3>
+          <p class="text-xs text-slate-400">Power your news engine workflows.</p>
         </a>
       </div>
     </section>
@@ -119,7 +111,7 @@
             <img class="post-card-img" src="${post.imageUrl || ''}" alt="${post.headline}">
             <div class="p-6">
               <div class="flex justify-between items-center mb-4 text-[10px] font-bold uppercase tracking-widest">
-                <span class="post-category cat-${post.category || 'Industry'}">${post.category || 'Industry'}</span>
+                <span class="post-category cat-${post.category}">${post.category}</span>
                 <span class="text-slate-500">${new Date(post.publishedAt).toLocaleDateString()}</span>
               </div>
               <h2 class="syne text-xl font-bold mb-3 text-white">${post.headline}</h2>
@@ -128,7 +120,7 @@
           </a>
         `).join('');
       } catch (e) {
-        grid.innerHTML = '<div class="col-span-full py-20 text-center text-slate-500 uppercase text-xs tracking-widest">Enable HTTPS in Settings to Sync Feed</div>';
+        grid.innerHTML = '<div class="col-span-full py-20 text-center text-slate-500 uppercase text-xs tracking-widest">Feed Sync Required: Enable HTTPS in Settings</div>';
       }
     }
     loadFeed();
