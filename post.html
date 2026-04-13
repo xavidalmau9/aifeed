@@ -1,65 +1,226 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AIFeed.run | Loading...</title>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        :root { --bg: #09081a; --purple: #a855f7; --orange: #f97316; }
-        body { background: var(--bg); color: #f0eeff; font-family: 'Inter', sans-serif; }
-        .syne { font-family: 'Syne', sans-serif; }
-        .article-body p { margin-bottom: 1.5rem; line-height: 1.8; color: #7b78a8; font-size: 1.15rem; }
-        .article-body strong { color: var(--purple); }
-    </style>
-</head>
-<body class="min-h-screen">
-    <nav class="p-6 border-b border-white/5 backdrop-blur-xl sticky top-0 bg-[#09081a]/90 z-50">
-        <div class="max-w-4xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="syne text-2xl font-extrabold tracking-tighter">
-                <span style="color:var(--purple)">ai</span><span style="color:var(--orange)">feed</span><span>.run</span>
-            </a>
-            <a href="index.html" class="text-xs font-bold uppercase tracking-widest text-slate-500 hover:text-white transition">← Back to Feed</a>
-        </div>
-    </nav>
-
-    <main class="max-w-3xl mx-auto px-6 py-12">
-        <div id="loader" class="text-center py-20 text-slate-600 syne font-bold animate-pulse">ESTABLISHING SECURE FEED...</div>
-        
-        <article id="article" class="hidden">
-            <div id="cat" class="inline-block px-3 py-1 rounded bg-purple-500/10 border border-purple-500/30 text-purple-400 text-[10px] font-bold uppercase tracking-widest mb-6"></div>
-            <h1 id="headline" class="syne text-4xl md:text-5xl font-extrabold mb-8 leading-tight tracking-tighter text-white"></h1>
-            <img id="image" class="w-full aspect-video object-cover rounded-2xl mb-12 border border-white/5 shadow-2xl" src="" alt="">
-            <div id="content" class="article-body"></div>
-            <div class="mt-16 pt-10 border-t border-white/10 text-center">
-                <a id="src" href="#" target="_blank" class="syne inline-block bg-white text-black px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-slate-200 transition">View Source Details</a>
-            </div>
-        </article>
-    </main>
-
-    <script>
-        async function load() {
-            const slug = new URLSearchParams(window.location.search).get('slug');
-            try {
-                // FIXED: Direct link to your GitHub raw data
-                const res = await fetch('https://raw.githubusercontent.com/xavidalmau9/aifeed/main/_posts/posts-index.json');
-                const posts = await res.json();
-                const post = posts.find(p => p.slug === slug);
-                if (post) {
-                    document.getElementById('loader').style.display = 'none';
-                    document.getElementById('article').classList.remove('hidden');
-                    document.getElementById('headline').textContent = post.headline;
-                    document.getElementById('cat').textContent = post.category;
-                    document.getElementById('image').src = post.imageUrl || 'https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg';
-                    document.getElementById('content').innerHTML = post.body;
-                    document.getElementById('src').href = post.sourceUrl || '#';
-                } else {
-                    document.getElementById('loader').innerText = "STORY NOT FOUND IN FEED";
-                }
-            } catch (e) { document.getElementById('loader').innerText = "SYNC ERROR: PLEASE REFRESH"; }
-        }
-        load();
-    </script>
-</body>
-</html>
+[
+  {
+    "id": "post-001",
+    "slug": "apple-building-ai-glasses-beat-meta",
+    "headline": "Apple Is Building AI Glasses To Beat Meta",
+    "summary": "No screen. Just AI, cameras, and Siri. 4 designs. Premium acetate. Ships 2027.",
+    "body": "<p>Apple is quietly developing a pair of AI-powered smart glasses designed to compete directly with Meta's Ray-Ban lineup. Unlike the Vision Pro, these glasses have <strong>no screen</strong> — they rely entirely on cameras, microphones, and Siri to overlay intelligence onto your world.</p><p>Four frame styles are planned, built from premium acetate. The $499 starting price puts them squarely in consumer territory. Expected ship date: 2027.</p>",
+    "category": "Products",
+    "hashtags": ["Apple", "AIglasses", "Meta", "Siri", "wearables"],
+    "imageUrl": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=800&q=80",
+    "publishedAt": "2026-04-13T10:00:00Z",
+    "stats": [
+      { "value": "4", "label": "Frame Styles" },
+      { "value": "$499", "label": "Starting Price" },
+      { "value": "2027", "label": "Launch Year" }
+    ]
+  },
+  {
+    "id": "post-002",
+    "slug": "google-gemma-4-free-ai-lives-on-your-phone",
+    "headline": "Google Gemma 4: Free AI That Lives On Your Phone",
+    "summary": "Runs locally. Chats never saved. No cloud. Free on iOS and Android right now.",
+    "body": "<p>Google just dropped Gemma 4, a lightweight AI model that runs entirely on-device — no internet required, no data sent to the cloud. Your conversations stay on your phone, always.</p><p>It's <strong>4x faster</strong> than its predecessor, uses 60% less battery, and is compatible with 140 million Android devices. Available free on iOS and Android today.</p>",
+    "category": "Models",
+    "hashtags": ["Google", "Gemma", "ondeviceAI", "privacy", "Android"],
+    "imageUrl": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
+    "publishedAt": "2026-04-12T10:00:00Z",
+    "stats": [
+      { "value": "4x", "label": "Faster" },
+      { "value": "60%", "label": "Less Battery" },
+      { "value": "140M", "label": "Android Devices" }
+    ]
+  },
+  {
+    "id": "post-003",
+    "slug": "agi-will-hit-like-10-revolutions-one-decade",
+    "headline": "AGI Will Hit Like 10 Revolutions In One Decade",
+    "summary": "Leading researchers now agree: AGI arrival will compress a century of change into ten years.",
+    "body": "<p>A new wave of AI researchers are converging on a startling prediction: AGI isn't just coming — when it arrives, it will compress the equivalent of a century of economic and technological change into a single decade.</p><p>Models are now doubling in capability every <strong>5 years</strong>, with current systems valued at over $8 trillion in combined market cap. The pace is only accelerating.</p>",
+    "category": "Research",
+    "hashtags": ["AGI", "futureofAI", "research", "technology"],
+    "imageUrl": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80",
+    "publishedAt": "2026-04-11T10:00:00Z",
+    "stats": [
+      { "value": "10x", "label": "Revolutions" },
+      { "value": "5 Yrs", "label": "Doubling Rate" },
+      { "value": "1 Decade", "label": "Timeline" }
+    ]
+  },
+  {
+    "id": "post-004",
+    "slug": "claude-cowork-now-all-paid-plans",
+    "headline": "Claude Cowork Now Available For All Paid Plans",
+    "summary": "Anthropic expands its desktop automation tool to all Claude Pro and Team subscribers.",
+    "body": "<p>Anthropic has expanded Claude Cowork — its AI-powered desktop automation agent — to all paid Claude subscribers. Previously limited to enterprise, the tool can now automate file management, browser tasks, and workflows for anyone on Pro or Team plans.</p><p>Compatible with <strong>Zoom, Slack, macOS and Windows</strong>. Available immediately on all paid tiers.</p>",
+    "category": "Tools",
+    "hashtags": ["Claude", "Anthropic", "Cowork", "automation"],
+    "imageUrl": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&q=80",
+    "publishedAt": "2026-04-10T10:00:00Z",
+    "stats": [
+      { "value": "All Plans", "label": "Availability" },
+      { "value": "Zoom + Slack", "label": "Integrations" },
+      { "value": "macOS + Win", "label": "Platforms" }
+    ]
+  },
+  {
+    "id": "post-005",
+    "slug": "cia-lets-ai-write-first-spy-report",
+    "headline": "CIA Lets AI Write Its First Spy Report",
+    "summary": "The agency confirmed AI authored an intelligence brief for the first time in its 75-year history.",
+    "body": "<p>The CIA has confirmed that an AI system authored an official intelligence report for the first time in the agency's 75-year history. The brief was reviewed by human analysts before distribution but the drafting was done entirely by machine.</p><p>The agency joins <strong>200+ government bodies</strong> now piloting AI in classified and sensitive workflows, marking a fundamental shift in how intelligence is gathered and written.</p>",
+    "category": "Industry",
+    "hashtags": ["CIA", "AI", "government", "intelligence", "spytech"],
+    "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+    "publishedAt": "2026-04-09T10:00:00Z",
+    "stats": [
+      { "value": "200+", "label": "Gov Bodies w/ AI" },
+      { "value": "First", "label": "In 75 Year History" },
+      { "value": "10 Yrs", "label": "Before Full Rollout" }
+    ]
+  },
+  {
+    "id": "post-006",
+    "slug": "molotov-thrown-sam-altmans-home-4am",
+    "headline": "Molotov Thrown At Sam Altman's Home At 4AM",
+    "summary": "A firebomb attack on the OpenAI CEO's home raises new questions about AI backlash and tech leader safety.",
+    "body": "<p>In a shocking incident, a molotov cocktail was thrown at Sam Altman's San Francisco residence at 4AM. No injuries were reported, but the attack signals an alarming escalation in physical threats against prominent AI figures.</p><p>Security experts note that anti-AI sentiment has intensified as the technology's economic disruption becomes more visible. Altman has received multiple threats over the past <strong>20 years</strong> of tech leadership.</p>",
+    "category": "Industry",
+    "hashtags": ["SamAltman", "OpenAI", "AIsafety", "techsecurity"],
+    "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80",
+    "publishedAt": "2026-04-08T10:00:00Z",
+    "stats": [
+      { "value": "4AM", "label": "Attack Time" },
+      { "value": "20 Yrs", "label": "In Tech Leadership" },
+      { "value": "$895B", "label": "OpenAI Valuation" }
+    ]
+  },
+  {
+    "id": "post-007",
+    "slug": "poke-ai-agent-via-text-no-app-needed",
+    "headline": "Poke: AI Agent Via Text, No App Needed",
+    "summary": "A new AI agent runs entirely through SMS — no app, no login, no friction. Just text it.",
+    "body": "<p>Poke is a new AI agent that works entirely over SMS. No app to download, no account to create — you text it and it acts. Book restaurants, research topics, draft emails, set reminders — all through your regular messages app.</p><p>The startup raised <strong>$350M</strong> and targets the 3.5 billion people globally who have SMS but limited smartphone app access. Free tier available immediately.</p>",
+    "category": "Tools",
+    "hashtags": ["Poke", "AIagent", "SMS", "noapp", "productivity"],
+    "imageUrl": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=800&q=80",
+    "publishedAt": "2026-04-07T10:00:00Z",
+    "stats": [
+      { "value": "$350M", "label": "Funding Raised" },
+      { "value": "$25M", "label": "ARR" },
+      { "value": "Free", "label": "Base Tier" }
+    ]
+  },
+  {
+    "id": "post-008",
+    "slug": "google-maps-now-writes-your-captions",
+    "headline": "Google Maps Now Writes Your Captions",
+    "summary": "Live AI caption generation rolls out to 500M+ Maps users. Built in, free, no extra app needed.",
+    "body": "<p>Google Maps has added AI-powered caption generation directly into the app. Point your camera at any storefront, landmark, or street scene and Maps will write a caption for you — in any language, in any tone.</p><p>The feature rolls out to <strong>500 million+ users</strong> globally over the next 30 days. It's free, built in, and requires no additional app or subscription.</p>",
+    "category": "Products",
+    "hashtags": ["Google", "Maps", "AI", "captions", "productivity"],
+    "imageUrl": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80",
+    "publishedAt": "2026-04-06T10:00:00Z",
+    "stats": [
+      { "value": "500M", "label": "Users Impacted" },
+      { "value": "Live", "label": "Rolling Out Now" },
+      { "value": "Free", "label": "No Extra Cost" }
+    ]
+  },
+  {
+    "id": "post-009",
+    "slug": "nvidia-backs-firmus-5-5b",
+    "headline": "Nvidia Backs Firmus At $5.5B Valuation",
+    "summary": "The GPU giant leads a massive funding round into AI infrastructure startup Firmus.",
+    "body": "<p>Nvidia has led a major funding round into Firmus, an AI infrastructure startup now valued at $5.5 billion. The investment gives Nvidia a strategic stake in next-generation data center cooling and AI compute density technology.</p><p>Firmus operates <strong>46x more efficient</strong> data centers than the industry average and has $1.3B in contracted revenue. The IPO is expected within 18 months.</p>",
+    "category": "Industry",
+    "hashtags": ["Nvidia", "Firmus", "investment", "AIinfrastructure", "IPO"],
+    "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    "publishedAt": "2026-04-05T10:00:00Z",
+    "stats": [
+      { "value": "$5.5B", "label": "Valuation" },
+      { "value": "46x", "label": "More Efficient" },
+      { "value": "$1.3B", "label": "Contracted Revenue" }
+    ]
+  },
+  {
+    "id": "post-010",
+    "slug": "openai-just-rewrote-capitalism",
+    "headline": "OpenAI Just Rewrote Capitalism",
+    "summary": "OpenAI's shift to a for-profit model restructures how the most powerful AI company on Earth operates.",
+    "body": "<p>OpenAI has completed its transition from a capped-profit structure to a full for-profit corporation — a move that fundamentally rewrites how the company is governed, funded, and incentivized.</p><p>The restructuring unlocks <strong>unlimited upside</strong> for investors and allows OpenAI to raise capital at full market rates. Critics warn it removes the last guardrails on the world's most powerful AI lab. IPO speculation is now at an all-time high.</p>",
+    "category": "Industry",
+    "hashtags": ["OpenAI", "capitalism", "forprofit", "AI", "IPO"],
+    "imageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    "publishedAt": "2026-04-04T10:00:00Z",
+    "stats": [
+      { "value": "$180B", "label": "New Valuation" },
+      { "value": "$10B", "label": "Revenue Target" },
+      { "value": "IPO", "label": "On The Horizon" }
+    ]
+  },
+  {
+    "id": "post-011",
+    "slug": "ai-is-making-you-worse",
+    "headline": "AI Is Making You Worse",
+    "summary": "New research shows heavy AI use is degrading critical thinking, memory, and problem-solving in knowledge workers.",
+    "body": "<p>A landmark study tracking 12,000 knowledge workers over 18 months found that those who used AI assistants heavily showed measurable declines in critical thinking, independent problem-solving, and working memory retention.</p><p>The researchers describe a <strong>cognitive offloading</strong> effect: when AI handles thinking tasks, the brain stops practicing them. Notably, participants who used AI with deliberate constraints showed no such decline.</p>",
+    "category": "Research",
+    "hashtags": ["AI", "cognition", "research", "productivity", "mentalhealth"],
+    "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+    "publishedAt": "2026-04-03T10:00:00Z",
+    "stats": [
+      { "value": "13", "label": "Months Studied" },
+      { "value": "40%", "label": "Recall Decline" },
+      { "value": "51%", "label": "Problem-Solve Drop" }
+    ]
+  },
+  {
+    "id": "post-012",
+    "slug": "nyt-fires-writers-over-ai",
+    "headline": "NYT Fires Writers Over AI",
+    "summary": "The New York Times let go of 6 journalists as AI tools take over routine reporting and summarization tasks.",
+    "body": "<p>The New York Times has laid off 6 journalists in its breaking news and wire-report division, citing AI tools that can now perform routine summarization, data reporting, and initial draft creation at scale.</p><p>The cuts follow a pattern across legacy media as AI compresses the cost of commodity journalism. The Times insists it is <strong>reinvesting in long-form</strong> investigative work — but union leaders filed an injunction on January 6th.</p>",
+    "category": "Industry",
+    "hashtags": ["NYT", "journalism", "AIjobs", "media", "future"],
+    "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80",
+    "publishedAt": "2026-04-02T10:00:00Z",
+    "stats": [
+      { "value": "6", "label": "Writers Let Go" },
+      { "value": "Jan 6", "label": "Union Filed" },
+      { "value": "Print", "label": "Still Alive (Barely)" }
+    ]
+  },
+  {
+    "id": "post-013",
+    "slug": "claude-charges-more",
+    "headline": "Claude Charges More",
+    "summary": "Anthropic raises prices on Claude API calls as demand outpaces infrastructure — but adds major new capabilities.",
+    "body": "<p>Anthropic has raised prices on Claude API usage across all tiers, citing infrastructure costs driven by unprecedented demand. The price increase is paired with significant new capabilities including extended context windows and faster response times.</p><p>At <strong>$2B in ARR</strong> and 139K+ active developer accounts, Anthropic says the pricing better reflects the true cost of frontier AI. Claude remains cheaper per token than GPT-4o on most workloads.</p>",
+    "category": "Industry",
+    "hashtags": ["Claude", "Anthropic", "pricing", "API", "AI"],
+    "imageUrl": "https://images.unsplash.com/photo-1633158829875-e5316a358c6f?w=800&q=80",
+    "publishedAt": "2026-04-01T10:00:00Z",
+    "stats": [
+      { "value": "50x", "label": "Demand Growth" },
+      { "value": "139K", "label": "Dev Accounts" },
+      { "value": "$2B", "label": "ARR" }
+    ]
+  },
+  {
+    "id": "post-014",
+    "slug": "anthropic-beats-openai",
+    "headline": "Anthropic Beats OpenAI",
+    "summary": "Claude outperforms GPT-4o on 21 out of 21 benchmark categories in independent testing.",
+    "body": "<p>In the most comprehensive independent AI benchmark to date, Claude scored higher than GPT-4o on all 21 categories tested — including reasoning, coding, creative writing, math, and safety alignment.</p><p>The results were published by a Stanford-affiliated research group and have been independently verified. Anthropic's valuation jumped to <strong>$61.5B</strong> on the news, with OpenAI still ahead on consumer market share.</p>",
+    "category": "Models",
+    "hashtags": ["Anthropic", "Claude", "OpenAI", "benchmarks", "AI"],
+    "imageUrl": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80",
+    "publishedAt": "2026-03-31T10:00:00Z",
+    "stats": [
+      { "value": "21/21", "label": "Benchmarks Won" },
+      { "value": "$61.5B", "label": "Anthropic Valuation" },
+      { "value": "$600M", "label": "Monthly Revenue" }
+    ]
+  }
+]
