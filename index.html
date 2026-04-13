@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AIFeed.run — Your Daily AI Intelligence Feed</title>
-  <meta name="description" content="Your Daily AI Intelligence Feed. News that runs. Powered by AI. 100% autonomous — AI discovery, human refined." />
+  <meta name="description" content="Your Daily AI Intelligence Feed. News that runs. Powered by AI.
+AI Discovery · Human Refined · Always On." />
   <meta property="og:title" content="AIFeed.run — Your Daily AI Intelligence Feed" />
   <meta property="og:description" content="News that runs. Powered by AI." />
   <meta property="og:image" content="https://aifeed.run/og-image.png" />
@@ -613,8 +614,8 @@
 
     .videos-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px;
+      grid-template-columns: 1fr;
+      gap: 24px;
       margin-top: 0;
     }
 
@@ -626,7 +627,8 @@
       transition: border-color .25s, transform .25s, box-shadow .25s;
       text-decoration: none;
       color: inherit;
-      display: block;
+      display: grid;
+      grid-template-columns: 1fr 320px;
     }
 
     .video-card:hover {
@@ -637,7 +639,7 @@
 
     .video-thumb {
       width: 100%;
-      aspect-ratio: 9/16;
+      aspect-ratio: 16/9;
       background: linear-gradient(135deg, var(--bg3) 0%, #1a1545 100%);
       display: flex;
       align-items: center;
@@ -676,7 +678,11 @@
     }
 
     .video-card-body {
-      padding: 16px 20px;
+      padding: 24px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      order: -1;
     }
 
     .video-card-body h3 {
@@ -1145,6 +1151,8 @@
 
     /* ── Responsive ── */
     @media (max-width: 768px) {
+      .video-card { grid-template-columns: 1fr; }
+      .video-card-body { order: 0; }
       .hero h1 { letter-spacing: -1px; }
       .stats-bar { grid-template-columns: 1fr; gap: 24px; }
       .newsletter-form-mid,
@@ -1181,13 +1189,14 @@
     <section class="hero">
       <div class="hero-pill">
         <span class="dot"></span>
-        Live · 100% Autonomous
+        Live · AI Discovery, Human Refined
       </div>
       <h1>
         <span class="line1">Your Daily AI</span><br>
         <span class="line2">Intelligence Feed</span>
       </h1>
-      <p class="hero-sub">News that runs. Powered by AI. 100% autonomous — AI discovery, human refined.</p>
+      <p class="hero-sub">News that runs. Powered by AI.
+AI Discovery · Human Refined · Always On.</p>
 
       <!-- HERO EMAIL CAPTURE -->
       <div class="hero-email-box">
@@ -1389,7 +1398,7 @@
         <a href="/" class="footer-logo">
           <span class="ai">ai</span><span class="feed">feed</span><span class="dot">.run</span>
         </a>
-        <p class="footer-tagline">Your Daily AI Intelligence Feed.<br>News that runs. Powered by AI.</p>
+        <p class="footer-tagline">Your Daily AI Intelligence Feed.<br>AI Discovery · Human Refined · Always On.</p>
         <div class="footer-socials">
           <a href="https://instagram.com/aifeed.run" target="_blank" class="footer-social">
             <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
@@ -1422,46 +1431,70 @@
     let allPosts = [];
     let activeCategory = 'all';
 
+    function toggleVideo(card) {
+      const video = card.querySelector('video');
+      const btn = card.querySelector('.video-play-btn');
+      if (video.paused) { video.play(); btn.style.opacity = '0'; }
+      else { video.pause(); video.currentTime = 0; btn.style.opacity = '1'; }
+    }
+
+    function renderVideos() {
+      const grid = document.getElementById('videos-grid');
+      const brandedVideos = [
+        { title: 'Apple Is Building AI Glasses To Beat Meta', date: 'Apr 13, 2026', videoUrl: 'https://aifeed.run/videos/aifeed_branded_1776084241.mp4' },
+        { title: 'Google Gemma 4: Free AI On Your Phone', date: 'Apr 12, 2026', videoUrl: 'https://aifeed.run/videos/aifeed_branded_1775760152.mp4' },
+        { title: 'Your Daily AI Intelligence Feed', date: 'Apr 11, 2026', videoUrl: 'https://aifeed.run/videos/aifeed_branded_1775759757.mp4' }
+      ];
+      grid.innerHTML = brandedVideos.map((v, i) => `
+        <div class="video-card" style="cursor:pointer;animation-delay:${i * 0.1}s" onclick="toggleVideo(this)">
+          <div class="video-thumb">
+            <video src="${v.videoUrl}" preload="metadata" playsinline muted loop
+              style="width:100%;height:100%;object-fit:cover;display:block"
+              onmouseenter="this.play();this.parentElement.querySelector('.video-play-btn').style.opacity='0'"
+              onmouseleave="this.pause();this.currentTime=0;this.parentElement.querySelector('.video-play-btn').style.opacity='1'">
+            </video>
+            <div class="video-play-btn">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="video-card-body">
+            <h3>${v.title}</h3>
+            <p>${v.date} · Hover to preview · Click to play</p>
+          </div>
+        </div>
+      `).join('');
+    }
+
     async function loadPosts() {
-      // Use multiple fetch strategies to handle GitHub Pages CORS
-      let loaded = false;
+      const urls = [
+        '/_posts/posts-index.json',
+        '_posts/posts-index.json',
+        '/aifeed/_posts/posts-index.json',
+        'https://raw.githubusercontent.com/xavidalmau9/aifeed/main/_posts/posts-index.json'
+      ];
 
-      // Strategy 1: Direct fetch (works if same-origin or CORS enabled)
-      try {
-        const res = await fetch('_posts/posts-index.json?t=' + Date.now());
-        if (res.ok) {
-          allPosts = await res.json();
-          if (Array.isArray(allPosts) && allPosts.length > 0) {
-            loaded = true;
-          }
-        }
-      } catch(e) {}
-
-      // Strategy 2: gviz API via Google Sheets (same workaround as GO Mission Control)
-      if (!loaded) {
+      for (const url of urls) {
         try {
-          const SHEET_ID = '1BCTHLe5ExoFwLMnQuayVWsVI8hBKfD7u54FiHGv_7rs';
-          const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=WebsitePosts`;
-          const res = await fetch(url);
-          const text = await res.text();
-          const json = JSON.parse(text.match(/google\.visualization\.Query\.setResponse\(([\s\S]*)\)/)[1]);
-          const rows = json.table.rows;
-          const cols = json.table.cols.map(c => c.label);
-          allPosts = rows.map(row => {
-            const obj = {};
-            cols.forEach((col, i) => { obj[col] = row.c[i] ? row.c[i].v : ''; });
-            return obj;
-          }).filter(p => p.headline || p.Headline);
-          if (allPosts.length > 0) loaded = true;
-        } catch(e) {}
+          const res = await fetch(url + '?t=' + Date.now());
+          if (res.ok) {
+            const data = await res.json();
+            if (Array.isArray(data) && data.length > 0) {
+              allPosts = data;
+              console.log('Loaded ' + allPosts.length + ' posts from ' + url);
+              break;
+            }
+          }
+        } catch(e) {
+          console.log('Failed: ' + url + ' — ' + e.message);
+        }
       }
 
-      // Strategy 3: Fall back to demo posts
-      if (!loaded) {
+      if (allPosts.length === 0) {
         allPosts = getDemoPosts();
+        console.log('Using demo posts');
       }
 
-      allPosts.sort((a, b) => new Date(b.publishedAt || b.PublishedAt) - new Date(a.publishedAt || a.PublishedAt));
+      allPosts.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
       renderPosts();
       renderVideos();
       document.getElementById('stat-posts').textContent = allPosts.length + '+';
@@ -1532,86 +1565,90 @@
       ];
     }
 
-    // ─── RENDER POSTS (images/articles only) ────────────────────────────
-    function renderPosts() {
-      const grid = document.getElementById('posts-grid');
 
-      // Separate images from videos
-      const imagePosts = allPosts.filter(p => !p.isVideo && p.mediaType !== 'VIDEO');
-      const filtered = activeCategory === 'all'
-        ? imagePosts
-        : imagePosts.filter(p => p.category === activeCategory);
+    // ─── AUTO IMAGE ASSIGNMENT ────────────────────────────────────────────
+    function getImageForHeadline(headline) {
+      const h = (headline || '').toLowerCase();
+      // Each entry: [keywords_array, pexels_url]
+      // Ordered most-specific first
+      const map = [
+        // Space / orbital
+        [['orbital','space','satellite','rocket','nasa','starlink'],
+          'https://images.pexels.com/photos/586063/pexels-photo-586063.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // Apple products
+        [['apple','iphone','ipad','mac','siri','vision pro','glasses'],
+          'https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // Google specific
+        [['google maps','google search','google cloud','gemini','google'],
+          'https://images.pexels.com/photos/218717/pexels-photo-218717.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // Mobile / phone
+        [['phone','mobile','android','ios','app','smartphone'],
+          'https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // Security / privacy / attack
+        [['security','privacy','hack','attack','molotov','threat','danger','stalking','surveillance'],
+          'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // Data centers / infrastructure
+        [['data center','infrastructure','server','cloud','compute','cluster','gpu','chip','semiconductor','nvidia'],
+          'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // Funding / business / finance
+        [['raises','funding','valuation','billion','million','investment','ipo','acquisition','backed','venture'],
+          'https://images.pexels.com/photos/936722/pexels-photo-936722.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // CEO / corporate / leadership
+        [['ceo','shareholder','executive','board','founder','letter'],
+          'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // Coding / developer / software
+        [['code','developer','software','open source','github','programming','engineer'],
+          'https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // AI models / LLM
+        [['gpt','llm','claude','anthropic','mistral','llama','grok','chatgpt','language model'],
+          'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // Research / science / study
+        [['research','study','paper','benchmark','arxiv','scientists','researchers','brain','neuroscience'],
+          'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // AGI / future / revolution
+        [['agi','superintelligence','revolution','future','decade','compress','singularity'],
+          'https://images.pexels.com/photos/8438982/pexels-photo-8438982.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // Robots / agents / autonomous
+        [['robot','agent','autonomous','automation','poke','waypoint','3d world'],
+          'https://images.pexels.com/photos/8438918/pexels-photo-8438918.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // Health / biotech / medical
+        [['biotech','health','medical','bio','drug','hospital','clinical','uterus'],
+          'https://images.pexels.com/photos/3786157/pexels-photo-3786157.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // Maps / navigation / location
+        [['maps','navigation','location','geo','caption','photo upload'],
+          'https://images.pexels.com/photos/1178448/pexels-photo-1178448.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // Microsoft
+        [['microsoft','azure','bing','windows','copilot'],
+          'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // Meta / Facebook / social
+        [['meta','facebook','instagram','zuckerberg','whatsapp','threads'],
+          'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // Media / journalism / news
+        [['new york times','journalist','freelancer','media','news','article','book'],
+          'https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // Banking / finance / enterprise
+        [['bank','banking','finance','enterprise','salesforce','slack','adobe','intuit'],
+          'https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        // Amazon / retail / logistics
+        [['amazon','aws','retail','logistics','warehouse','alexa'],
+          'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800'],
+      ];
 
-      document.getElementById('post-count').textContent =
-        filtered.length + ' stor' + (filtered.length === 1 ? 'y' : 'ies');
-
-      if (filtered.length === 0) {
-        grid.innerHTML = `
-          <div class="empty-state">
-            <h3>No posts in this category yet</h3>
-            <p>Check back soon — new AI news drops daily.</p>
-          </div>`;
-        return;
+      for (const [keywords, url] of map) {
+        if (keywords.some(k => h.includes(k))) return url;
       }
-
-      grid.innerHTML = filtered.map((post, i) => `
-        <a class="post-card" href="post.html?slug=${post.slug}" style="animation-delay:${i * 0.07}s">
-          ${post.imageUrl
-            ? `<img class="post-card-img" src="${post.imageUrl}" alt="${post.headline}" loading="lazy" />`
-            : `<div class="post-card-img-placeholder">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1">
-                  <rect x="3" y="3" width="18" height="18" rx="2"/><path d="m8 13 3 3 5-5"/>
-                </svg>
-              </div>`
-          }
-          <div class="post-card-body">
-            <div class="post-card-meta">
-              <span class="post-category cat-${post.category}">${post.category}</span>
-              <span class="post-date">${formatDate(post.publishedAt)}</span>
-            </div>
-            <h2>${post.headline}</h2>
-            <p class="post-summary">${post.summary}</p>
-            ${post.hashtags && post.hashtags.length
-              ? `<div class="post-tags">${post.hashtags.slice(0,4).map(t => `<span class="post-tag">#${t}</span>`).join('')}</div>`
-              : ''}
-          </div>
-        </a>
-      `).join('');
+      // Final fallback - purple AI aesthetic
+      return 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800';
     }
 
-    // ─── RENDER VIDEOS ───────────────────────────────────────────────────
-    function renderVideos() {
-      const grid = document.getElementById('videos-grid');
-      const videos = allPosts.filter(p => p.isVideo || p.mediaType === 'VIDEO');
 
-      if (videos.length === 0) {
-        grid.innerHTML = `
-          <div class="video-empty">
-            <h3>🎬 Videos Coming Soon</h3>
-            <p>We're building our video library. Follow us on Instagram to watch now.</p>
-          </div>`;
-        return;
-      }
-
-      grid.innerHTML = videos.map((v, i) => `
-        <a class="video-card" href="${v.permalink || 'https://instagram.com/aifeed.run'}" 
-           target="_blank" style="animation-delay:${i * 0.07}s">
-          <div class="video-thumb">
-            ${v.imageUrl
-              ? `<img src="${v.imageUrl}" alt="${v.headline}" loading="lazy" />`
-              : `<div style="width:100%;height:100%;background:linear-gradient(135deg,#14113a,#1a1545)"></div>`
-            }
-            <div class="video-play-btn">
-              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            </div>
-          </div>
-          <div class="video-card-body">
-            <h3>${v.headline}</h3>
-            <p>${formatDate(v.publishedAt)} · Watch on Instagram</p>
-          </div>
-        </a>
-      `).join('');
+    function toggleVideo(card) {
+      const video = card.querySelector('video');
+      const btn = card.querySelector('.video-play-btn');
+      if (video.paused) { video.play(); btn.style.opacity = '0'; }
+      else { video.pause(); video.currentTime = 0; btn.style.opacity = '1'; }
     }
+
 
     function formatDate(iso) {
       if (!iso) return '';
@@ -1632,7 +1669,7 @@
     // SETUP: Replace the URL below with your actual Beehiiv embed/subscribe URL
     // Get it from: Beehiiv → Grow → Forms → Embed → Copy subscribe URL
     // Format: https://embeds.beehiiv.com/YOUR_FORM_ID
-    const BEEHIIV_SUBSCRIBE_URL = 'https://www.beehiiv.com/subscribe/YOUR_PUBLICATION_ID';
+    const BEEHIIV_SUBSCRIBE_URL = 'https://aifeed.beehiiv.com/subscribe';
 
     function handleSubscribe(e, source) {
       e.preventDefault();
