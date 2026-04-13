@@ -1431,6 +1431,40 @@ AI Discovery · Human Refined · Always On.</p>
     let allPosts = [];
     let activeCategory = 'all';
 
+    function renderPosts() {
+      const grid = document.getElementById('posts-grid');
+      const imagePosts = allPosts.filter(p => !p.isVideo && p.mediaType !== 'VIDEO');
+      const filtered = activeCategory === 'all'
+        ? imagePosts
+        : imagePosts.filter(p => p.category === activeCategory);
+
+      document.getElementById('post-count').textContent =
+        filtered.length + ' stor' + (filtered.length === 1 ? 'y' : 'ies');
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div class="empty-state"><h3>No posts in this category yet</h3><p>Check back soon — new AI news drops daily.</p></div>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map((post, i) => `
+        <a class="post-card" href="post.html?slug=${post.slug}" style="animation-delay:${i * 0.07}s">
+          <img class="post-card-img" src="${post.imageUrl || getImageForHeadline(post.headline)}" alt="" loading="lazy"
+            onerror="this.src='https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=800'" />
+          <div class="post-card-body">
+            <div class="post-card-meta">
+              <span class="post-category cat-${post.category}">${post.category}</span>
+              <span class="post-date">${formatDate(post.publishedAt)}</span>
+            </div>
+            <h2>${post.headline}</h2>
+            <p class="post-summary">${post.summary}</p>
+            ${post.hashtags && post.hashtags.length
+              ? `<div class="post-tags">${post.hashtags.slice(0,4).map(t => `<span class="post-tag">#${t}</span>`).join('')}</div>`
+              : ''}
+          </div>
+        </a>
+      `).join('');
+    }
+
     function toggleVideo(card) {
       const video = card.querySelector('video');
       const btn = card.querySelector('.video-play-btn');
@@ -1641,6 +1675,40 @@ AI Discovery · Human Refined · Always On.</p>
       return 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800';
     }
 
+
+    function renderPosts() {
+      const grid = document.getElementById('posts-grid');
+      const imagePosts = allPosts.filter(p => !p.isVideo && p.mediaType !== 'VIDEO');
+      const filtered = activeCategory === 'all'
+        ? imagePosts
+        : imagePosts.filter(p => p.category === activeCategory);
+
+      document.getElementById('post-count').textContent =
+        filtered.length + ' stor' + (filtered.length === 1 ? 'y' : 'ies');
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div class="empty-state"><h3>No posts in this category yet</h3><p>Check back soon — new AI news drops daily.</p></div>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map((post, i) => `
+        <a class="post-card" href="post.html?slug=${post.slug}" style="animation-delay:${i * 0.07}s">
+          <img class="post-card-img" src="${post.imageUrl || getImageForHeadline(post.headline)}" alt="" loading="lazy"
+            onerror="this.src='https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=800'" />
+          <div class="post-card-body">
+            <div class="post-card-meta">
+              <span class="post-category cat-${post.category}">${post.category}</span>
+              <span class="post-date">${formatDate(post.publishedAt)}</span>
+            </div>
+            <h2>${post.headline}</h2>
+            <p class="post-summary">${post.summary}</p>
+            ${post.hashtags && post.hashtags.length
+              ? `<div class="post-tags">${post.hashtags.slice(0,4).map(t => `<span class="post-tag">#${t}</span>`).join('')}</div>`
+              : ''}
+          </div>
+        </a>
+      `).join('');
+    }
 
     function toggleVideo(card) {
       const video = card.querySelector('video');
