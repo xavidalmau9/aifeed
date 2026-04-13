@@ -1531,6 +1531,37 @@ AI Discovery · Human Refined · Always On.</p>
       ];
     }
 
+
+    // ─── AUTO IMAGE ASSIGNMENT ────────────────────────────────────────────
+    function getImageForHeadline(headline) {
+      const h = (headline || '').toLowerCase();
+      const map = [
+        [['apple','glasses','wearable'], 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['gemma','phone','mobile','android','ios'], 'https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['nvidia','gpu','chip','semiconductor'], 'https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['deepmind','agi','revolution','intelligence'], 'https://images.pexels.com/photos/8438982/pexels-photo-8438982.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['orbital','space','satellite','compute cluster'], 'https://images.pexels.com/photos/586063/pexels-photo-586063.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['maps','google maps','caption','photo'], 'https://images.pexels.com/photos/1178448/pexels-photo-1178448.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['security','privacy','attack','surveillance','stalking'], 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['amazon','ceo','shareholder','bezos'], 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['microsoft','azure','openai'], 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['claude','anthropic','cowork'], 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['funding','raises','valuation','billion','investment','ipo'], 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['robot','agent','autonomous','poke'], 'https://images.pexels.com/photos/8438918/pexels-photo-8438918.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['research','study','paper','benchmark','brain'], 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['code','developer','software','open source','github'], 'https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['3d','world','game','virtual','waypoint'], 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['biotech','health','medical','bio'], 'https://images.pexels.com/photos/3786157/pexels-photo-3786157.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['meta','facebook','zuckerberg'], 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800'],
+        [['data center','infrastructure','server','cloud'], 'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=800'],
+      ];
+      for (const [keywords, url] of map) {
+        if (keywords.some(k => h.includes(k))) return url;
+      }
+      // Default AI image
+      return 'https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=800';
+    }
+
     // ─── RENDER POSTS (images/articles only) ────────────────────────────
     function renderPosts() {
       const grid = document.getElementById('posts-grid');
@@ -1556,7 +1587,7 @@ AI Discovery · Human Refined · Always On.</p>
       grid.innerHTML = filtered.map((post, i) => `
         <a class="post-card" href="post.html?slug=${post.slug}" style="animation-delay:${i * 0.07}s">
           ${post.imageUrl
-            ? `<img class="post-card-img" src="${post.imageUrl}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling&&(this.nextElementSibling.style.display='flex')" /><div class="post-card-img-placeholder" style="display:none"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m8 13 3 3 5-5"/></svg></div>`
+            ? `<img class="post-card-img" src="${post.imageUrl || getImageForHeadline(post.headline)}" alt="" loading="lazy" onerror="this.src=getImageForHeadline('${post.headline}')" /><div class="post-card-img-placeholder" style="display:none"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m8 13 3 3 5-5"/></svg></div>`
             : `<div class="post-card-img-placeholder">
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1">
                   <rect x="3" y="3" width="18" height="18" rx="2"/><path d="m8 13 3 3 5-5"/>
