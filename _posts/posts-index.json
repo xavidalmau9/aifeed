@@ -1,24 +1,12 @@
 [
   {
-    "id": "the-largest-orbital-compute-cluster-open-20260413",
-    "slug": "the-largest-orbital-compute-cluster-open",
-    "headline": "The largest orbital compute cluster is open for business",
-    "summary": "The largest orbital compute cluster is open for business",
-    "body": "<p>The largest orbital compute cluster is open for business</p>",
-    "category": "Industry",
-    "imageUrl": "",
-    "sourceUrl": "",
-    "publishedAt": "2026-04-13T07:56:17.253-04:00",
-    "isVideo": false
-  },
-  {
     "id": "apple-reportedly-testing-four-designs-for-20260412",
     "slug": "apple-reportedly-testing-four-designs-for",
     "headline": "Apple reportedly testing four designs for upcoming smart glasses",
     "summary": "Apple reportedly testing four designs for upcoming smart glasses",
     "body": "<p>Apple reportedly testing four designs for upcoming smart glasses</p>",
     "category": "Industry",
-    "imageUrl": "",
+    "imageUrl": "https://www.pexels.com/photo/futuristic-vr-headset-on-display-in-new-york-30172648/",
     "sourceUrl": "",
     "publishedAt": "2026-04-12T17:01:06.749-04:00",
     "isVideo": false
@@ -30,21 +18,9 @@
     "summary": "Google's Gemma 4 puts free agentic AI on your phone and no data ever leaves the device",
     "body": "<p>Google's Gemma 4 puts free agentic AI on your phone and no data ever leaves the device</p>",
     "category": "Industry",
-    "imageUrl": "",
+    "imageUrl": "https://www.pexels.com/photo/close-up-of-code-on-smartphone-screen-33607948/",
     "sourceUrl": "",
     "publishedAt": "2026-04-12T09:06:14.085-04:00",
-    "isVideo": false
-  },
-  {
-    "id": "stalking-victim-sues-openai-claiming-chatgpt-20260412",
-    "slug": "stalking-victim-sues-openai-claiming-chatgpt",
-    "headline": "Stalking victim sues OpenAI claiming ChatGPT fueled her ex-partner's delusions",
-    "summary": "Stalking victim sues OpenAI claiming ChatGPT fueled her ex-partner's delusions",
-    "body": "<p>Stalking victim sues OpenAI claiming ChatGPT fueled her ex-partner's delusions</p>",
-    "category": "Industry",
-    "imageUrl": "",
-    "sourceUrl": "",
-    "publishedAt": "2026-04-12T08:00:46.281-04:00",
     "isVideo": false
   },
   {
@@ -54,9 +30,9 @@
     "summary": "Someone threw a Molotov cocktail at OpenAI CEO Sam Altman's home in the middle of the night",
     "body": "<p>Someone threw a Molotov cocktail at OpenAI CEO Sam Altman's home in the middle of the night</p>",
     "category": "Industry",
-    "imageUrl": "",
+    "imageUrl": "https://www.pexels.com/photo/high-flame-of-bonfire-17708468/",
     "sourceUrl": "",
-    "publishedAt": "2026-04-11T08:27:52.368-04:00",
+    "publishedAt": "2026-04-11T11:24:08.444-04:00",
     "isVideo": false
   },
   {
@@ -90,7 +66,7 @@
     "summary": "Deepmind CEO Hassabis says AGI will hit like ten industrial revolutions compressed into a single decade",
     "body": "<p>Deepmind CEO Hassabis says AGI will hit like ten industrial revolutions compressed into a single decade</p>",
     "category": "Industry",
-    "imageUrl": "",
+    "imageUrl": "https://www.pexels.com/photo/photography-of-factory-929385/",
     "sourceUrl": "",
     "publishedAt": "2026-04-10T17:04:11.494-04:00",
     "isVideo": false
@@ -138,9 +114,9 @@
     "summary": "Google Maps can now write captions for your photos using AI",
     "body": "<p>Google Maps can now write captions for your photos using AI</p>",
     "category": "Industry",
-    "imageUrl": "",
+    "imageUrl": "https://www.pexels.com/photo/stargazing-app-on-smartphone-at-night-31332834/",
     "sourceUrl": "",
-    "publishedAt": "2026-04-08T07:30:23.827-04:00",
+    "publishedAt": "2026-04-08T08:02:56.754-04:00",
     "isVideo": false
   },
   {
@@ -152,7 +128,7 @@
     "category": "Industry",
     "imageUrl": "",
     "sourceUrl": "",
-    "publishedAt": "2026-04-07T17:04:45.223-04:00",
+    "publishedAt": "2026-04-07T17:43:40.955-04:00",
     "isVideo": false
   },
   {
@@ -177,6 +153,30 @@
     "imageUrl": "",
     "sourceUrl": "",
     "publishedAt": "2026-04-06T08:01:27.055-04:00",
+    "isVideo": false
+  },
+  {
+    "id": "the-new-york-times-drops-freelancer-20260405",
+    "slug": "the-new-york-times-drops-freelancer",
+    "headline": "The New York Times drops freelancer whose AI tool copied from an existing book review.",
+    "summary": "The New York Times drops freelancer whose AI tool copied from an existing book review.",
+    "body": "<p>The New York Times drops freelancer whose AI tool copied from an existing book review.</p>",
+    "category": "Industry",
+    "imageUrl": "",
+    "sourceUrl": "",
+    "publishedAt": "2026-04-05T18:00:50.406-04:00",
+    "isVideo": false
+  },
+  {
+    "id": "study-maps-developer-frustration-over-slop-20260405",
+    "slug": "study-maps-developer-frustration-over-slop",
+    "headline": "Study maps developer frustration over  AI slop  as a  tragedy of the commons  in software development",
+    "summary": "Study maps developer frustration over  AI slop  as a  tragedy of the commons  in software development",
+    "body": "<p>Study maps developer frustration over  AI slop  as a  tragedy of the commons  in software development</p>",
+    "category": "Industry",
+    "imageUrl": "",
+    "sourceUrl": "",
+    "publishedAt": "2026-04-05T10:46:58.862-04:00",
     "isVideo": false
   }
 ]
