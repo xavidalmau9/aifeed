@@ -1,0 +1,24 @@
+[
+  {
+    "id": "demo-1",
+    "slug": "apple-building-ai-glasses-beat-meta",
+    "headline": "Apple Is Building AI Glasses To Beat Meta",
+    "summary": "No screen. Just AI, cameras, and Siri. 4 designs. Premium acetate. Ships 2027.",
+    "body": "<p><strong>Apple is reportedly developing AI-powered smart glasses</strong> designed to compete directly with Meta's Ray-Ban AI glasses.</p><p>Unlike the Vision Pro, these will have no display at all. Instead, they'll rely entirely on AI processing: cameras, Siri integration, and ambient computing. Four frame styles are planned with premium acetate construction.</p><p>The $499 starting price positions them as premium-but-accessible — significantly cheaper than Vision Pro. A 2027 launch window gives Apple time to refine the AI stack.</p>",
+    "category": "Products",
+    "hashtags": ["apple", "AIglasses", "meta", "wearables"],
+    "publishedAt": "2025-04-13T10:00:00Z",
+    "imageUrl": ""
+  },
+  {
+    "id": "demo-2",
+    "slug": "google-gemma-4-free-ai-lives-on-phone",
+    "headline": "Google Gemma 4: Free AI That Lives On Your Phone",
+    "summary": "Runs locally. Chats never saved. No cloud. Free on iOS and Android right now.",
+    "body": "<p><strong>Google has released Gemma 4</strong>, its most capable on-device AI model — and it's free on both iOS and Android.</p><p>Everything runs locally. Your conversations never leave your device, never hit a server, never get stored. 4x faster than the previous version, 60% less battery usage. Available on 140 million Android devices at launch.</p>",
+    "category": "Models",
+    "hashtags": ["google", "gemma", "mobileAI", "privacy"],
+    "publishedAt": "2025-04-12T10:00:00Z",
+    "imageUrl": ""
+  }
+]
