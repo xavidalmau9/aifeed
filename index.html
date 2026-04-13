@@ -3,101 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AIFeed.run — AI News That Runs</title>
-  <meta name="description" content="Daily AI news, zero noise. Published by AI." />
+  <title>AIFeed.run — News that Runs.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    :root { --bg: #09081a; --purple: #a855f7; --orange: #f97316; --white: #f0eeff; --muted: #7b78a8; }
-    body { background: var(--bg); color: var(--white); font-family: 'Inter', sans-serif; overflow-x: hidden; }
+    :root { --bg: #09081a; --purple2: #a855f7; --orange: #f97316; --white: #f0eeff; --muted: #7b78a8; --card-border: rgba(255,255,255,0.07); }
+    body { background: var(--bg); color: var(--white); font-family: 'Inter', sans-serif; }
     .syne { font-family: 'Syne', sans-serif; }
-    /* Star Background */
-    body::before {
-      content: ''; position: fixed; inset: 0;
-      background-image: radial-gradient(1px 1px at 20% 15%, rgba(255,255,255,0.4) 0%, transparent 100%), 
-                        radial-gradient(1px 1px at 75% 10%, rgba(255,255,255,0.3) 0%, transparent 100%),
-                        radial-gradient(1px 1px at 40% 60%, rgba(255,255,255,0.3) 0%, transparent 100%);
-      pointer-events: none; z-index: 0;
-    }
-    .post-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); transition: all 0.3s ease; }
-    .post-card:hover { border-color: var(--purple); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(124,58,237,0.15); }
-    .cat-Models { background: rgba(249,115,22,0.1); color: var(--orange); border: 1px solid rgba(249,115,22,0.3); }
-    .cat-Tools { background: rgba(34,197,94,0.1); color: #22c55e; border: 1px solid rgba(34,197,94,0.3); }
-    .cat-Industry { background: rgba(168,85,247,0.1); color: var(--purple); border: 1px solid rgba(168,85,247,0.3); }
+    .post-card { background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); border-radius: 12px; transition: all 0.3s ease; }
+    .post-card:hover { border-color: var(--purple2); transform: translateY(-3px); }
+    .post-card-img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+    .post-category { font-size: 10px; font-weight: 700; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; border: 1px solid; }
+    .cat-Models { background: rgba(249,115,22,0.1); color: var(--orange); border-color: rgba(249,115,22,0.3); }
+    .cat-Tools { background: rgba(34,197,94,0.1); color: #22c55e; border-color: rgba(34,197,94,0.3); }
+    .cat-Industry { background: rgba(168,85,247,0.1); color: var(--purple2); border-color: rgba(168,85,247,0.3); }
+    /* Star Background Effect */
+    body::before { content: ''; position: fixed; inset: 0; background-image: radial-gradient(1px 1px at 20% 15%, rgba(255,255,255,0.4) 0%, transparent 100%), radial-gradient(1px 1px at 75% 10%, rgba(255,255,255,0.3) 0%, transparent 100%); pointer-events: none; }
   </style>
 </head>
-<body class="antialiased">
+<body>
 
   <nav class="sticky top-0 z-50 p-6 bg-[#09081a]/90 backdrop-blur-xl border-b border-white/5">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <a href="index.html" class="syne text-2xl font-extrabold tracking-tighter">
-        <span style="color:var(--purple)">ai</span><span style="color:var(--orange)">feed</span><span>.run</span>
+      <a href="/" class="syne text-2xl font-extrabold tracking-tighter">
+        <span style="color:var(--purple2)">ai</span><span style="color:var(--orange)">feed</span><span>.run</span>
       </a>
-      <div class="hidden md:flex gap-6 text-sm font-bold uppercase tracking-widest text-slate-400">
-        <a href="https://instagram.com/aifeed.run" class="hover:text-white">Instagram</a>
-        <a href="https://aifeed.beehiiv.com/subscribe" class="text-orange-500">Subscribe</a>
+      <div class="nav-right flex gap-4 text-xs font-bold uppercase tracking-widest text-slate-400">
+        <a href="https://instagram.com/aifeed.run" target="_blank">Instagram</a>
+        <a href="#newsletter" class="bg-gradient-to-r from-orange-500 to-purple-600 text-white px-4 py-2 rounded-full">Subscribe</a>
       </div>
     </div>
   </nav>
 
-  <main class="max-w-6xl mx-auto px-6 pb-24">
-    <header class="text-center py-20">
+  <main class="max-w-6xl mx-auto px-6">
+    
+    <section class="text-center py-20">
       <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-bold mb-8">
-        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> LIVE UPDATES BY AI
+        <span class="w-2 h-2 rounded-full bg-green-500"></span> LIVE · UPDATED BY AI
       </div>
-      <h1 class="syne text-5xl md:text-8xl font-extrabold tracking-tighter mb-6 leading-none">
-        AI News <br> <span style="color:var(--purple)">Delivered by AI</span>
+      <h1 class="syne text-5xl md:text-7xl font-extrabold tracking-tighter mb-6">
+        AI News <span style="color:var(--purple2)">Delivered by AI</span>
       </h1>
-      <p class="text-slate-400 text-lg max-w-xl mx-auto">Zero noise. The fastest way to stay ahead of the curve — written and published autonomously.</p>
+      <p class="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
+        News that Runs. High-speed AI updates, hand-selected to run your day. Automated discovery. Human-refine.
+      </p>
     </header>
 
-    <div class="section-header flex justify-between items-center mb-8 border-b border-white/5 pb-4">
-        <span class="syne text-xs font-bold uppercase tracking-[0.2em] text-slate-500">Latest Intelligence</span>
-        <span id="post-count" class="text-xs font-bold text-purple-500"></span>
+    <div class="grid grid-cols-3 gap-4 mb-12 text-center py-8 border-y border-white/5">
+      <div><div class="syne text-3xl font-bold text-purple-500" id="stat-posts">0+</div><div class="text-[10px] uppercase text-slate-500">Stories Published</div></div>
+      <div><div class="syne text-3xl font-bold text-orange-500">Daily</div><div class="text-[10px] uppercase text-slate-500">Updates</div></div>
+      <div><div class="syne text-3xl font-bold text-green-500">Zero</div><div class="text-[10px] uppercase text-slate-500">Noise</div></div>
     </div>
 
-    <div id="posts-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="col-span-full text-center py-20 text-slate-600 syne font-bold animate-pulse uppercase tracking-widest">
-        Syncing with Neural Feed...
+    <div id="posts-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
       </div>
-    </div>
+
+    <section class="mb-20">
+      <h2 class="syne text-xs font-bold uppercase tracking-widest text-slate-500 mb-8 italic">🧰 Top AI Tools — Hand-Selected</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <a href="https://www.perplexity.ai" class="post-card p-6">
+          <div class="text-2xl mb-2">🔍</div>
+          <h3 class="syne font-bold">Perplexity AI</h3>
+          <p class="text-xs text-slate-400">AI Search Engine.</p>
+        </a>
+        <a href="https://elevenlabs.io" class="post-card p-6">
+          <div class="text-2xl mb-2">🎙️</div>
+          <h3 class="syne font-bold">ElevenLabs</h3>
+          <p class="text-xs text-slate-400">Realistic Voice AI.</p>
+        </a>
+        <a href="https://n8n.io" class="post-card p-6">
+          <div class="text-2xl mb-2">⚙️</div>
+          <h3 class="syne font-bold">n8n Automation</h3>
+          <p class="text-xs text-slate-400">Power your workflows.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="mb-20">
+      <h2 class="syne text-xs font-bold uppercase tracking-widest text-slate-500 mb-8">📹 AI In Motion</h2>
+      <div class="bg-white/5 rounded-2xl p-12 text-center border border-dashed border-white/10">
+        <p class="text-slate-500 text-sm">Follow <a href="https://instagram.com/aifeed.run" class="text-orange-500 font-bold">@aifeed.run</a> for daily reels.</p>
+      </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center">
+      <div class="syne text-xl font-bold mb-4"><span style="color:var(--purple2)">ai</span>feed.run</div>
+      <p class="text-xs text-slate-500 mb-2">News that Runs. High-speed AI updates, hand-selected to run your day.</p>
+      <p class="text-[10px] text-slate-600">© 2025 · Solving complicated problems with simple solutions.</p>
+    </footer>
+
   </main>
 
   <script>
-    async function loadPosts() {
+    async function loadFeed() {
       const grid = document.getElementById('posts-grid');
       try {
-        // DIRECT RAW FETCH - Bypasses folder errors
+        // Fetch your real data containing the 39 stories
         const res = await fetch('https://raw.githubusercontent.com/xavidalmau9/aifeed/main/_posts/posts-index.json');
         const posts = await res.json();
         
-        document.getElementById('post-count').textContent = posts.length + ' STORIES LIVE';
+        posts.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+        document.getElementById('stat-posts').textContent = posts.length + '+';
 
         grid.innerHTML = posts.map(post => `
-          <a href="post.html?slug=${post.slug}" class="post-card flex flex-col rounded-2xl overflow-hidden">
-            <img src="${post.imageUrl || 'https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg'}" 
-                 class="w-full aspect-[4/5] object-cover" alt="">
-            <div class="p-6 flex-1 flex flex-col">
+          <a href="post.html?slug=${post.slug}" class="post-card overflow-hidden block">
+            <img src="${post.imageUrl || ''}" class="post-card-img" alt="">
+            <div class="p-6">
               <div class="flex justify-between items-center mb-4">
-                <span class="px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wider cat-${post.category || 'Industry'}">
-                  ${post.category || 'Industry'}
-                </span>
-                <span class="text-[10px] text-slate-500 font-bold uppercase">
-                  ${new Date(post.publishedAt).toLocaleDateString()}
-                </span>
+                <span class="post-category cat-${post.category}">${post.category}</span>
+                <span class="text-[10px] text-slate-500 font-bold">${new Date(post.publishedAt).toLocaleDateString()}</span>
               </div>
-              <h2 class="syne text-xl font-bold mb-3 leading-tight text-white">${post.headline}</h2>
-              <p class="text-sm text-slate-400 line-clamp-2">${post.summary}</p>
+              <h2 class="syne font-bold text-lg mb-2 leading-tight">${post.headline}</h2>
+              <p class="text-xs text-slate-400 line-clamp-2">${post.summary}</p>
             </div>
           </a>
         `).join('');
       } catch (e) {
-        grid.innerHTML = '<div class="col-span-full text-center text-red-500 py-20 font-bold uppercase tracking-widest">Feed Synchronization Error</div>';
+        grid.innerHTML = '<div class="col-span-full py-20 text-center text-slate-500 uppercase text-xs tracking-widest">Feed Synchronization Required</div>';
       }
     }
-    loadPosts();
+    loadFeed();
   </script>
 </body>
 </html>
