@@ -30,7 +30,7 @@
         <span style="color:var(--purple2)">ai</span><span style="color:var(--orange)">feed</span><span>.run</span>
       </a>
       <div class="flex gap-4 items-center">
-        <a href="https://instagram.com/aifeed.run" target="_blank" class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white">IG</a>
+        <a href="https://instagram.com/aifeed.run" target="_blank" class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white">Instagram</a>
         <a href="#newsletter" class="syne bg-gradient-to-r from-orange-500 to-purple-600 text-white px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-wider">Subscribe</a>
       </div>
     </div>
@@ -40,18 +40,18 @@
     
     <section class="text-center py-20">
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-[10px] font-bold mb-8 uppercase tracking-widest">
-        <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span> Live Neural Feed
+        <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span> Live News Engine
       </div>
-      <h1 class="syne text-5xl md:text-8xl font-extrabold tracking-tighter mb-6 leading-none">AI News <br><span style="color:var(--purple2)">Delivered by AI</span></h1>
-      <p class="text-slate-400 text-lg max-w-2xl mx-auto font-medium">
+      <h1 class="syne text-5xl md:text-8xl font-extrabold tracking-tighter mb-6 leading-none text-white">AI News <br><span style="color:var(--purple2)">Delivered by AI</span></h1>
+      <p class="text-slate-400 text-lg max-w-2xl mx-auto font-medium leading-relaxed">
         News that Runs. High-speed AI updates, hand-selected to run your day. Automated discovery. Human-refine.
       </p>
     </section>
 
     <div class="grid grid-cols-3 gap-4 mb-20 text-center py-10 border-y border-white/5">
-      <div><div class="syne text-4xl font-bold text-purple-500" id="stat-posts">39+</div><div class="text-[10px] uppercase font-bold tracking-widest text-slate-500 mt-2">Stories</div></div>
-      <div><div class="syne text-4xl font-bold text-orange-500">Daily</div><div class="text-[10px] uppercase font-bold tracking-widest text-slate-500 mt-2">Updates</div></div>
-      <div><div class="syne text-4xl font-bold text-green-500">Zero</div><div class="text-[10px] uppercase font-bold tracking-widest text-slate-500 mt-2">Noise</div></div>
+      <div><div class="syne text-4xl font-bold text-purple-500" id="stat-posts">39+</div><div class="text-[10px] uppercase font-bold tracking-widest text-slate-500 mt-2 text-white">Stories</div></div>
+      <div><div class="syne text-4xl font-bold text-orange-500">Daily</div><div class="text-[10px] uppercase font-bold tracking-widest text-slate-500 mt-2 text-white">Updates</div></div>
+      <div><div class="syne text-4xl font-bold text-green-500">Zero</div><div class="text-[10px] uppercase font-bold tracking-widest text-slate-500 mt-2 text-white">Noise</div></div>
     </div>
 
     <div id="posts-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
@@ -59,10 +59,10 @@
     </div>
 
     <section id="newsletter" class="bg-gradient-to-br from-purple-900/20 to-orange-900/10 border border-purple-500/20 rounded-2xl p-12 text-center mb-24">
-      <h2 class="syne text-3xl font-bold mb-4 italic">Never miss a breakthrough</h2>
-      <p class="text-slate-400 mb-8 max-w-md mx-auto">The most important AI stories, delivered to your inbox every morning. Free, forever.</p>
+      <h2 class="syne text-3xl font-bold mb-4 italic text-white leading-tight">News that Runs. <br>Never miss a breakthrough.</h2>
+      <p class="text-slate-400 mb-8 max-w-md mx-auto">High-speed AI updates, hand-selected to run your day. Free, forever.</p>
       <form class="flex flex-col md:flex-row gap-3 max-w-md mx-auto" onsubmit="window.open('https://aifeed.beehiiv.com/subscribe?email=' + encodeURIComponent(this.email.value), '_blank')">
-        <input name="email" type="email" placeholder="Enter your email" class="flex-1 bg-white/5 border border-white/10 rounded-full px-6 py-3 outline-none focus:border-purple-500 transition text-sm">
+        <input name="email" type="email" placeholder="Enter your email" class="flex-1 bg-white/5 border border-white/10 rounded-full px-6 py-3 outline-none focus:border-purple-500 transition text-sm text-white">
         <button type="submit" class="syne bg-white text-black font-bold px-8 py-3 rounded-full hover:bg-slate-200 transition uppercase text-xs tracking-widest">Subscribe</button>
       </form>
     </section>
@@ -93,8 +93,12 @@
 
     <footer class="py-20 border-t border-white/5 text-center">
       <div class="syne text-2xl font-bold mb-4 tracking-tighter"><span style="color:var(--purple2)">ai</span>feed.run</div>
-      <p class="text-xs text-slate-500 mb-6 font-medium uppercase tracking-[0.2em]">News that Runs. High-speed AI updates.</p>
-      <p class="text-[9px] text-slate-600 uppercase tracking-[0.3em]">© 2026 · Solving complicated problems with simple solutions.</p>
+      <p class="text-xs text-slate-400 mb-6 font-medium uppercase tracking-[0.2em] max-w-md mx-auto leading-relaxed">
+        News that Runs. High-speed AI updates, hand-selected to run your day.
+      </p>
+      <p class="text-[9px] text-slate-600 uppercase tracking-[0.3em]">
+        © 2026 · Automated discovery. Human-refine.
+      </p>
     </footer>
 
   </main>
@@ -122,7 +126,7 @@
           </a>
         `).join('');
       } catch (e) {
-        grid.innerHTML = '<div class="col-span-full py-20 text-center text-slate-500 uppercase text-xs tracking-widest font-bold">Feed Error: Please Enable HTTPS in GitHub Settings</div>';
+        grid.innerHTML = '<div class="col-span-full py-20 text-center text-slate-500 uppercase text-xs tracking-widest font-bold">Feed Sync Error: Enable HTTPS in GitHub Settings</div>';
       }
     }
     loadFeed();
