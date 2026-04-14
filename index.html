@@ -698,6 +698,37 @@ AI Discovery · Human Refined · Always On." />
       font-size: 12px;
       color: var(--muted);
     }
+    .video-caption {
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.5;
+      margin: 6px 0 10px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .video-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-top: 4px;
+    }
+    .video-date {
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .video-source {
+      font-size: 11px;
+      color: var(--accent);
+      text-decoration: none;
+      white-space: nowrap;
+      font-weight: 600;
+    }
+    .video-source:hover {
+      text-decoration: underline;
+    }
 
     .video-empty {
       grid-column: 1/-1;
@@ -1516,9 +1547,38 @@ AI Discovery · Human Refined · Always On.</p>
     function renderVideos() {
       const grid = document.getElementById('videos-grid');
       const brandedVideos = [
-        { title: 'Apple Is Building AI Glasses To Beat Meta', date: 'Apr 13, 2026', videoUrl: 'https://aifeed.run/videos/aifeed_branded_1776084241.mp4' },
-        { title: 'Google Gemma 4: Free AI On Your Phone', date: 'Apr 12, 2026', videoUrl: 'https://aifeed.run/videos/aifeed_branded_1775760152.mp4' },
-        { title: 'Your Daily AI Intelligence Feed', date: 'Apr 11, 2026', videoUrl: 'https://aifeed.run/videos/aifeed_branded_1775759757.mp4' }
+        {
+          title: 'Nobody Understands Their Own Code Anymore',
+          date: 'Apr 14, 2026',
+          videoUrl: 'https://aifeed.run/videos/aifeed_branded_1776180029.mp4',
+          caption: 'AI-generated "dark code" is running in production at companies you use daily — and no one can explain it. Not the engineer, not the team, not even the CTO.',
+          source: 'AI News & Strategy Daily | Nate B Jones',
+          sourceUrl: 'https://www.youtube.com/watch?v=E1idsrv79tI'
+        },
+        {
+          title: 'Apple Is Building AI Glasses To Beat Meta',
+          date: 'Apr 13, 2026',
+          videoUrl: 'https://aifeed.run/videos/aifeed_branded_1776084241.mp4',
+          caption: 'Apple is reportedly testing four different designs for smart glasses — and AI is at the center of all of them.',
+          source: 'AI Revolution',
+          sourceUrl: 'https://www.youtube.com/watch?v=KJ34SHi9CB4'
+        },
+        {
+          title: 'Google Gemma 4: Free AI On Your Phone',
+          date: 'Apr 12, 2026',
+          videoUrl: 'https://aifeed.run/videos/aifeed_branded_1775760152.mp4',
+          caption: 'AI will reshape 50–55% of US jobs in the next 3 years. But it\'s not mass layoffs — it\'s transformation. Companies need to retrain workers, not replace them.',
+          source: 'CBS News',
+          sourceUrl: 'https://www.youtube.com/watch?v=QGOE3kXZgJ0'
+        },
+        {
+          title: 'Your Daily AI Intelligence Feed',
+          date: 'Apr 11, 2026',
+          videoUrl: 'https://aifeed.run/videos/aifeed_branded_1775759757.mp4',
+          caption: 'Microsoft\'s new MAI Transcribe 1 claims best-in-class speech-to-text with just 3.8% word error rate — crushing OpenAI Whisper across 25 languages.',
+          source: 'AI Revolution',
+          sourceUrl: 'https://www.youtube.com/watch?v=tDW6VoyWWqo'
+        }
       ];
       grid.innerHTML = brandedVideos.map((v, i) => `
         <div class="video-card" style="cursor:pointer;animation-delay:${i * 0.1}s" onclick="openLightbox('${v.videoUrl}')">
@@ -1532,7 +1592,11 @@ AI Discovery · Human Refined · Always On.</p>
           </div>
           <div class="video-card-body">
             <h3>${v.title}</h3>
-            <p>${v.date} · Hover to preview · Click to watch fullscreen</p>
+            <p class="video-caption">${v.caption}</p>
+            <div class="video-meta">
+              <span class="video-date">${v.date}</span>
+              <a class="video-source" href="${v.sourceUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">▶ ${v.source}</a>
+            </div>
           </div>
         </div>
       `).join('');
