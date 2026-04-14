@@ -1149,6 +1149,52 @@ AI Discovery · Human Refined · Always On." />
       opacity: 1;
     }
 
+    /* ── Video Lightbox ── */
+    .video-lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: rgba(0,0,0,0.92);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .video-lightbox.open {
+      display: flex;
+    }
+    .video-lightbox-inner {
+      position: relative;
+      width: 100%;
+      max-width: 960px;
+    }
+    .video-lightbox-inner video {
+      width: 100%;
+      border-radius: var(--radius);
+      display: block;
+    }
+    .video-lightbox-close {
+      position: absolute;
+      top: -44px;
+      right: 0;
+      width: 36px;
+      height: 36px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 18px;
+      line-height: 1;
+      transition: background .2s;
+    }
+    .video-lightbox-close:hover {
+      background: rgba(255,255,255,0.25);
+    }
+
     /* ── Responsive ── */
     @media (max-width: 768px) {
       .video-card { grid-template-columns: 1fr; }
@@ -1423,6 +1469,14 @@ AI Discovery · Human Refined · Always On.</p>
     </div>
   </footer>
 
+  <!-- VIDEO LIGHTBOX -->
+  <div class="video-lightbox" id="video-lightbox" onclick="closeLightbox(event)">
+    <div class="video-lightbox-inner">
+      <button class="video-lightbox-close" onclick="closeLightbox()">&#215;</button>
+      <video id="lightbox-video" controls playsinline></video>
+    </div>
+  </div>
+
   <!-- TOAST -->
   <div class="toast" id="toast">🎉 You're subscribed! Welcome to the feed.</div>
 
@@ -1431,12 +1485,33 @@ AI Discovery · Human Refined · Always On.</p>
     let allPosts = [];
     let activeCategory = 'all';
 
-    function toggleVideo(card) {
-      const video = card.querySelector('video');
-      const btn = card.querySelector('.video-play-btn');
-      if (video.paused) { video.play(); btn.style.opacity = '0'; }
-      else { video.pause(); video.currentTime = 0; btn.style.opacity = '1'; }
+    function openLightbox(url) {
+      const lb = document.getElementById('video-lightbox');
+      const vid = document.getElementById('lightbox-video');
+      vid.src = url;
+      lb.classList.add('open');
+      vid.play();
     }
+
+    function closeLightbox(e) {
+      // If triggered by a click event, only close when clicking the backdrop itself
+      if (e && e.target !== document.getElementById('video-lightbox')) return;
+      const lb = document.getElementById('video-lightbox');
+      const vid = document.getElementById('lightbox-video');
+      lb.classList.remove('open');
+      vid.pause();
+      vid.src = '';
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        const lb = document.getElementById('video-lightbox');
+        const vid = document.getElementById('lightbox-video');
+        lb.classList.remove('open');
+        vid.pause();
+        vid.src = '';
+      }
+    });
 
     function renderVideos() {
       const grid = document.getElementById('videos-grid');
@@ -1446,12 +1521,10 @@ AI Discovery · Human Refined · Always On.</p>
         { title: 'Your Daily AI Intelligence Feed', date: 'Apr 11, 2026', videoUrl: 'https://aifeed.run/videos/aifeed_branded_1775759757.mp4' }
       ];
       grid.innerHTML = brandedVideos.map((v, i) => `
-        <div class="video-card" style="cursor:pointer;animation-delay:${i * 0.1}s" onclick="toggleVideo(this)">
+        <div class="video-card" style="cursor:pointer;animation-delay:${i * 0.1}s" onclick="openLightbox('${v.videoUrl}')">
           <div class="video-thumb">
             <video src="${v.videoUrl}" preload="metadata" playsinline muted loop
-              style="width:100%;height:100%;object-fit:cover;display:block"
-              onmouseenter="this.play();this.parentElement.querySelector('.video-play-btn').style.opacity='0'"
-              onmouseleave="this.pause();this.currentTime=0;this.parentElement.querySelector('.video-play-btn').style.opacity='1'">
+              style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none">
             </video>
             <div class="video-play-btn">
               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -1459,7 +1532,7 @@ AI Discovery · Human Refined · Always On.</p>
           </div>
           <div class="video-card-body">
             <h3>${v.title}</h3>
-            <p>${v.date} · Hover to preview · Click to play</p>
+            <p>${v.date} · Hover to preview · Click to watch fullscreen</p>
           </div>
         </div>
       `).join('');
@@ -1639,14 +1712,6 @@ AI Discovery · Human Refined · Always On.</p>
       }
       // Final fallback - purple AI aesthetic
       return 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800';
-    }
-
-
-    function toggleVideo(card) {
-      const video = card.querySelector('video');
-      const btn = card.querySelector('.video-play-btn');
-      if (video.paused) { video.play(); btn.style.opacity = '0'; }
-      else { video.pause(); video.currentTime = 0; btn.style.opacity = '1'; }
     }
 
 
