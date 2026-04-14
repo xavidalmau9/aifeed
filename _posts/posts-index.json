@@ -1,5 +1,17 @@
 [
   {
+    "id": "openai-has-bought-personal-finance-startup-20260413",
+    "slug": "openai-has-bought-personal-finance-startup",
+    "headline": "OpenAI has bought AI personal finance startup Hiro",
+    "summary": "OpenAI has bought AI personal finance startup Hiro",
+    "body": "<p>OpenAI has bought AI personal finance startup Hiro</p>",
+    "category": "Industry",
+    "imageUrl": "",
+    "sourceUrl": "https://techcrunch.com/2026/04/13/openai-has-bought-ai-personal-finance-startup-hiro/",
+    "publishedAt": "2026-04-13T20:52:35.768-04:00",
+    "isVideo": false
+  },
+  {
     "id": "apple-reportedly-testing-four-designs-for-20260412",
     "slug": "apple-reportedly-testing-four-designs-for",
     "headline": "Apple reportedly testing four designs for upcoming smart glasses",
@@ -165,18 +177,6 @@
     "imageUrl": "https://aifeed.run/images/aifeed_nyt.png",
     "sourceUrl": "",
     "publishedAt": "2026-04-05T18:00:50.406-04:00",
-    "isVideo": false
-  },
-  {
-    "id": "study-maps-developer-frustration-over-slop-20260405",
-    "slug": "study-maps-developer-frustration-over-slop",
-    "headline": "Study maps developer frustration over AI slop as a tragedy of the commons in software development",
-    "summary": "Study maps developer frustration over AI slop as a tragedy of the commons in software development",
-    "body": "<p>Study maps developer frustration over AI slop as a tragedy of the commons in software development</p>",
-    "category": "Industry",
-    "imageUrl": "https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "sourceUrl": "",
-    "publishedAt": "2026-04-05T10:46:58.862-04:00",
     "isVideo": false
   }
 ]
