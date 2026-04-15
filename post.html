@@ -504,12 +504,30 @@
 
   <!-- SUBSCRIBE OVERLAY -->
   <div id="sub-overlay" onclick="closeSubOverlay(event)" style="display:none;position:fixed;inset:0;z-index:10000;background:rgba(5,3,18,0.93);backdrop-filter:blur(20px);align-items:center;justify-content:center;padding:24px;">
-    <div style="background:linear-gradient(160deg,#14113a 0%,#0f0d28 100%);border:1px solid rgba(168,85,247,0.3);border-radius:24px;width:100%;max-width:480px;padding:32px 28px 24px;text-align:center;position:relative;">
+    <div style="background:linear-gradient(160deg,#14113a 0%,#0f0d28 100%);border:1px solid rgba(168,85,247,0.3);border-radius:24px;width:100%;max-width:420px;padding:40px 32px 36px;text-align:center;position:relative;">
       <button id="sub-close-btn" onclick="closeSubOverlay()" style="position:absolute;top:14px;right:14px;background:rgba(255,255,255,0.08);border:none;color:#aaa;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:17px;display:flex;align-items:center;justify-content:center;line-height:1;">✕</button>
-      <div style="font-size:40px;line-height:1;margin-bottom:10px;">📬</div>
-      <h2 style="font-family:'Syne',sans-serif;font-size:20px;font-weight:800;color:#f0eeff;margin-bottom:6px;line-height:1.2;">Join AI Feed — Free Forever</h2>
-      <p style="font-size:13px;color:#7b78a8;margin-bottom:20px;">Daily AI intelligence. Zero spam. Unsubscribe anytime.</p>
-      <iframe id="beehiiv-embed" src="" width="100%" height="440" frameborder="0" style="border-radius:12px;border:none;display:block;filter:invert(1) hue-rotate(180deg);"></iframe>
+      <!-- Form state -->
+      <div id="sub-form-state">
+        <div style="font-size:48px;line-height:1;margin-bottom:18px;">📬</div>
+        <h2 style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:#f0eeff;margin-bottom:8px;line-height:1.2;">Join AI Feed</h2>
+        <p style="font-size:14px;color:#7b78a8;line-height:1.6;margin-bottom:24px;">Daily AI intelligence, zero noise.<br>Free forever. Unsubscribe anytime.</p>
+        <form id="sub-form" onsubmit="submitSubscribe(event)" style="text-align:left;">
+          <input type="email" id="sub-email-field" placeholder="your@email.com" required
+            style="width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(168,85,247,0.35);border-radius:12px;padding:14px 18px;color:#f0eeff;font-size:15px;font-family:'Inter',sans-serif;outline:none;margin-bottom:12px;box-sizing:border-box;" />
+          <button type="submit" id="sub-btn"
+            style="width:100%;background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;border:none;border-radius:12px;padding:15px;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;cursor:pointer;transition:opacity .2s;">
+            Subscribe — It's Free →
+          </button>
+        </form>
+        <p style="font-size:12px;color:#4a4870;margin-top:14px;">No spam. No credit card. Cancel anytime.</p>
+      </div>
+      <!-- Success state -->
+      <div id="sub-success-state" style="display:none;">
+        <div style="font-size:64px;line-height:1;margin-bottom:20px;">🎉</div>
+        <h2 style="font-family:'Syne',sans-serif;font-size:24px;font-weight:800;color:#f0eeff;margin-bottom:10px;">You're in!</h2>
+        <p style="font-size:15px;color:#7b78a8;line-height:1.7;margin-bottom:28px;">Welcome to the feed. First issue hits your inbox tomorrow morning.</p>
+        <button onclick="closeSubOverlay()" style="background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;border:none;border-radius:12px;padding:13px 32px;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;cursor:pointer;">Done</button>
+      </div>
     </div>
   </div>
 
@@ -712,8 +730,6 @@
       return new Date(iso).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
     }
 
-    const BEEHIIV_PUB = 'pub_eb0b9508-1ffd-4fb1-a63c-e762fa86569c';
-
     function handleSubscribe(e) {
       e.preventDefault();
       const email = document.getElementById('inline-email').value;
@@ -722,15 +738,34 @@
     }
 
     function openSubOverlay(email) {
-      const embedSrc = 'https://aifeed.beehiiv.com/subscribe?email=' + encodeURIComponent(email);
-      document.getElementById('beehiiv-embed').src = embedSrc;
+      document.getElementById('sub-email-field').value = email;
+      document.getElementById('sub-form-state').style.display = 'block';
+      document.getElementById('sub-success-state').style.display = 'none';
+      document.getElementById('sub-btn').textContent = 'Subscribe — It\'s Free →';
+      document.getElementById('sub-btn').disabled = false;
       document.getElementById('sub-overlay').style.display = 'flex';
       document.body.style.overflow = 'hidden';
     }
 
+    async function submitSubscribe(e) {
+      e.preventDefault();
+      const email = document.getElementById('sub-email-field').value;
+      const btn = document.getElementById('sub-btn');
+      btn.textContent = 'Subscribing...';
+      btn.disabled = true;
+      try {
+        await fetch('https://formsubmit.co/ajax/theaifeed.run@gmail.com', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({ email: email, name: 'AIFeed Subscriber', _subject: 'New subscriber: ' + email, _captcha: 'false' })
+        });
+      } catch(err) {}
+      document.getElementById('sub-form-state').style.display = 'none';
+      document.getElementById('sub-success-state').style.display = 'block';
+    }
+
     function closeSubOverlay(e) {
       if (e && e.target && e.target.id !== 'sub-overlay' && e.target.id !== 'sub-close-btn') return;
-      document.getElementById('beehiiv-embed').src = '';
       document.getElementById('sub-overlay').style.display = 'none';
       document.body.style.overflow = '';
     }
