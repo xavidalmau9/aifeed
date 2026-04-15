@@ -1,5 +1,29 @@
 [
   {
+    "id": "max-hodaks-science-corp-preparing-place-20260414",
+    "slug": "max-hodaks-science-corp-preparing-place",
+    "headline": "Max Hodak's Science Corp. is preparing to place its first sensor in a human brain",
+    "summary": "Max Hodak's Science Corp. is preparing to place its first sensor in a human brain",
+    "body": "<p>Max Hodak's Science Corp. is preparing to place its first sensor in a human brain</p>",
+    "category": "Industry",
+    "imageUrl": "",
+    "sourceUrl": "https://techcrunch.com/2026/04/14/max-hodaks-science-corp-is-preparing-to-place-its-first-sensor-in-a-human-brain/",
+    "publishedAt": "2026-04-14T17:01:03.140-04:00",
+    "isVideo": false
+  },
+  {
+    "id": "the-industry-running-out-compute-with-20260414",
+    "slug": "the-industry-running-out-compute-with",
+    "headline": "The AI industry is running out of compute, with outages, rationing, and rising GPU prices",
+    "summary": "The AI industry is running out of compute, with outages, rationing, and rising GPU prices",
+    "body": "<p>The AI industry is running out of compute, with outages, rationing, and rising GPU prices</p>",
+    "category": "Industry",
+    "imageUrl": "",
+    "sourceUrl": "https://the-decoder.com/the-ai-industry-is-running-out-of-compute-with-outages-rationing-and-rising-gpu-prices/",
+    "publishedAt": "2026-04-14T08:01:16.085-04:00",
+    "isVideo": false
+  },
+  {
     "id": "openai-has-bought-personal-finance-startup-20260413",
     "slug": "openai-has-bought-personal-finance-startup",
     "headline": "OpenAI has bought AI personal finance startup Hiro",
