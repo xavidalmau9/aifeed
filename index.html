@@ -1684,16 +1684,13 @@ AI Discovery · Human Refined · Always On.</p>
   </div>
 
   <!-- SUBSCRIBE OVERLAY -->
-  <div id="sub-overlay" onclick="closeSubOverlay(event)" style="display:none;position:fixed;inset:0;z-index:10000;background:rgba(5,3,18,0.92);backdrop-filter:blur(20px);align-items:center;justify-content:center;padding:24px;">
-    <div style="background:linear-gradient(160deg,#14113a 0%,#0f0d28 100%);border:1px solid rgba(168,85,247,0.25);border-radius:24px;width:100%;max-width:400px;padding:40px 32px 32px;text-align:center;position:relative;">
+  <div id="sub-overlay" onclick="closeSubOverlay(event)" style="display:none;position:fixed;inset:0;z-index:10000;background:rgba(5,3,18,0.93);backdrop-filter:blur(20px);align-items:center;justify-content:center;padding:24px;">
+    <div style="background:linear-gradient(160deg,#14113a 0%,#0f0d28 100%);border:1px solid rgba(168,85,247,0.3);border-radius:24px;width:100%;max-width:480px;padding:32px 28px 24px;text-align:center;position:relative;">
       <button id="sub-close-btn" onclick="closeSubOverlay()" style="position:absolute;top:14px;right:14px;background:rgba(255,255,255,0.08);border:none;color:#aaa;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:17px;display:flex;align-items:center;justify-content:center;line-height:1;">✕</button>
-      <div style="font-size:52px;line-height:1;margin-bottom:18px;">📬</div>
-      <h2 style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:#f0eeff;margin-bottom:14px;line-height:1.2;">Check your new tab!</h2>
-      <p style="font-size:14px;color:#7b78a8;line-height:1.7;margin-bottom:6px;">We opened the subscription page for</p>
-      <p id="sub-email-display" style="font-size:15px;font-weight:600;color:#f0eeff;margin-bottom:18px;word-break:break-all;"></p>
-      <p style="font-size:14px;color:#7b78a8;line-height:1.7;margin-bottom:28px;">Just click <strong style="color:#f0eeff">Subscribe</strong> in that tab — takes 5 seconds. Free forever.</p>
-      <a id="sub-fallback-link" href="https://aifeed.beehiiv.com/subscribe" target="_blank" rel="noopener" style="display:block;background:linear-gradient(135deg,#f97316,#a855f7);color:#fff;font-family:'Syne',sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:13px 24px;border-radius:50px;text-decoration:none;margin-bottom:16px;">Tab didn't open? Click here →</a>
-      <button onclick="closeSubOverlay()" style="background:none;border:none;color:#7b78a8;font-size:13px;cursor:pointer;padding:4px 12px;">Dismiss</button>
+      <div style="font-size:40px;line-height:1;margin-bottom:10px;">📬</div>
+      <h2 style="font-family:'Syne',sans-serif;font-size:20px;font-weight:800;color:#f0eeff;margin-bottom:6px;line-height:1.2;">Join AI Feed — Free Forever</h2>
+      <p style="font-size:13px;color:#7b78a8;margin-bottom:20px;">Daily AI intelligence. Zero spam. Unsubscribe anytime.</p>
+      <iframe id="beehiiv-embed" src="" width="100%" height="300" frameborder="0" scrolling="no" style="border-radius:12px;border:none;display:block;"></iframe>
     </div>
   </div>
 
@@ -2022,25 +2019,26 @@ AI Discovery · Human Refined · Always On.</p>
     });
 
     // ─── NEWSLETTER SUBSCRIBE ────────────────────────────────────────────
+    const BEEHIIV_PUB = 'pub_eb0b9508-1ffd-4fb1-a63c-e762fa86569c';
+
     function handleSubscribe(e, source) {
       e.preventDefault();
       const inputId = { hero: 'hero-email-input', mid: 'mid-email-input', bottom: 'bottom-email-input' }[source];
       const email = document.getElementById(inputId).value;
-      const url = 'https://aifeed.beehiiv.com/subscribe?email=' + encodeURIComponent(email);
-      window.open(url, '_blank');
       e.target.reset();
-      openSubOverlay(email, url);
+      openSubOverlay(email);
     }
 
-    function openSubOverlay(email, url) {
-      document.getElementById('sub-email-display').textContent = email;
-      document.getElementById('sub-fallback-link').href = url;
+    function openSubOverlay(email) {
+      const embedSrc = 'https://embeds.beehiiv.com/' + BEEHIIV_PUB + '/subscribe?email=' + encodeURIComponent(email);
+      document.getElementById('beehiiv-embed').src = embedSrc;
       document.getElementById('sub-overlay').style.display = 'flex';
       document.body.style.overflow = 'hidden';
     }
 
     function closeSubOverlay(e) {
       if (e && e.target && e.target.id !== 'sub-overlay' && e.target.id !== 'sub-close-btn') return;
+      document.getElementById('beehiiv-embed').src = '';
       document.getElementById('sub-overlay').style.display = 'none';
       document.body.style.overflow = '';
     }
