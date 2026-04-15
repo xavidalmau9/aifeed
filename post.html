@@ -423,6 +423,44 @@
       .inline-newsletter-form { flex-direction: column; }
       .nav-right .nav-link:not(.btn-nav-cta) { display: none; }
     }
+
+    /* ── Post AI Tools Section ── */
+    .post-tools {
+      margin: 48px 0 0;
+      padding-top: 32px;
+      border-top: 1px solid var(--card-border);
+    }
+    .post-tools-hdr {
+      display: flex; align-items: baseline; justify-content: space-between;
+      flex-wrap: wrap; gap: 8px; margin-bottom: 6px;
+    }
+    .post-tools-hdr .pt-title {
+      font-family: 'Syne', sans-serif; font-size: 17px; font-weight: 800; color: var(--white);
+    }
+    .post-tools-hdr .pt-note { font-size: 11px; color: var(--muted); }
+    .post-tools-sub { font-size: 13px; color: var(--muted); margin-bottom: 20px; }
+    .post-tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .ptc {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 10px; padding: 14px;
+      text-decoration: none; color: inherit;
+      display: flex; flex-direction: column;
+      transition: border-color .2s, transform .2s;
+    }
+    .ptc:hover { border-color: rgba(124,58,237,0.4); transform: translateY(-2px); }
+    .ptc-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 7px; }
+    .ptc-icon { font-size: 18px; }
+    .ptc-badge { font-size: 9px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 2px 7px; border-radius: 3px; }
+    .ptc-badge.fr { color: var(--green); background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.25); }
+    .ptc-badge.pd { color: #fbbf24; background: rgba(251,191,36,0.12); border: 1px solid rgba(251,191,36,0.25); }
+    .ptc h3 { font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .ptc p { font-size: 12px; color: var(--muted); line-height: 1.4; flex: 1; }
+    .ptc-try { display: inline-block; margin-top: 8px; font-size: 11px; font-weight: 600; color: var(--purple2); }
   </style>
 </head>
 <body>
@@ -461,13 +499,27 @@
     <span class="footer-copy">© 2025 AIFeed.run</span>
   </footer>
 
+  <!-- SUBSCRIBE OVERLAY -->
+  <div id="sub-overlay" onclick="closeSubOverlay(event)" style="display:none;position:fixed;inset:0;z-index:10000;background:rgba(5,3,18,0.95);backdrop-filter:blur(16px);align-items:center;justify-content:center;padding:20px;">
+    <div style="background:linear-gradient(160deg,#14113a 0%,#0f0d28 100%);border:1px solid rgba(168,85,247,0.22);border-radius:20px;width:100%;max-width:480px;position:relative;overflow:hidden;max-height:90vh;display:flex;flex-direction:column;">
+      <div style="padding:20px 20px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-shrink:0;">
+        <div>
+          <p style="font-family:'Syne',sans-serif;font-size:18px;font-weight:800;color:#f0eeff;margin-bottom:6px;">📬 One more step!</p>
+          <p style="font-size:13px;color:#7b78a8;line-height:1.6;">Your email is pre-filled. Just click <strong style="color:#f0eeff">Subscribe</strong> below to confirm your free daily AI newsletter.</p>
+        </div>
+        <button id="sub-close-btn" onclick="closeSubOverlay()" style="background:rgba(255,255,255,0.08);border:none;color:#aaa;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:18px;flex-shrink:0;display:flex;align-items:center;justify-content:center;line-height:1;margin-top:2px;">✕</button>
+      </div>
+      <iframe id="sub-iframe" src="" style="width:100%;height:560px;border:none;margin-top:12px;flex:1;display:block;" scrolling="yes" loading="lazy"></iframe>
+    </div>
+  </div>
+
   <!-- TOAST -->
   <div class="toast" id="toast">🎉 You're subscribed! Welcome to the feed.</div>
 
   <script>
     // ─── CONFIG ──────────────────────────────────────────────────────────
-    // SETUP: Replace with your actual Beehiiv subscribe URL
-    const BEEHIIV_URL = 'https://www.beehiiv.com/subscribe/YOUR_PUBLICATION_ID';
+    // NOTE: Beehiiv uses Cloudflare Turnstile — direct fetch is blocked server-side.
+    // Subscription opens an overlay modal with beehiiv pre-filled; user clicks once.
 
     // ─── LOAD POST ───────────────────────────────────────────────────────
     async function loadPost() {
@@ -553,6 +605,76 @@
           </form>
         </div>
 
+        <div class="post-tools">
+          <div class="post-tools-hdr">
+            <span class="pt-title">🧰 Top AI Tools</span>
+            <span class="pt-note">Curated picks — some links are affiliate</span>
+          </div>
+          <p class="post-tools-sub">The best AI tools we track every day. Tested and hand-picked by the AIFeed.run team.</p>
+          <div class="post-tools-grid">
+            <a href="https://try.elevenlabs.io/qspw8v1gx7n0" target="_blank" rel="noopener" class="ptc">
+              <div class="ptc-top"><span class="ptc-icon">🎙️</span><span class="ptc-badge fr">Freemium</span></div>
+              <h3>ElevenLabs</h3><p>The most realistic AI voice cloning and text-to-speech platform available today.</p>
+              <span class="ptc-try">Try free →</span>
+            </a>
+            <a href="https://www.headshotpro.com/?via=aifeed" target="_blank" rel="noopener" class="ptc">
+              <div class="ptc-top"><span class="ptc-icon">📸</span><span class="ptc-badge pd">Paid</span></div>
+              <h3>HeadshotPro</h3><p>Get 120 professional AI headshots in minutes. No photographer needed.</p>
+              <span class="ptc-try">Try it →</span>
+            </a>
+            <a href="https://www.beehiiv.com/?via=ai-feed" target="_blank" rel="noopener" class="ptc">
+              <div class="ptc-top"><span class="ptc-icon">📧</span><span class="ptc-badge fr">Freemium</span></div>
+              <h3>Beehiiv</h3><p>The newsletter platform built for growth. Powers the AIFeed newsletter.</p>
+              <span class="ptc-try">Try free →</span>
+            </a>
+            <a href="https://writesonic.com" target="_blank" rel="noopener" class="ptc">
+              <div class="ptc-top"><span class="ptc-icon">✍️</span><span class="ptc-badge fr">Freemium</span></div>
+              <h3>Writesonic</h3><p>AI writing for blogs, ads, and SEO content. Faster than any human.</p>
+              <span class="ptc-try">Try free →</span>
+            </a>
+            <a href="https://surferseo.com" target="_blank" rel="noopener" class="ptc">
+              <div class="ptc-top"><span class="ptc-icon">🏄</span><span class="ptc-badge pd">Paid</span></div>
+              <h3>Surfer SEO</h3><p>AI-powered SEO that analyzes top pages and tells you exactly what to write.</p>
+              <span class="ptc-try">Try it →</span>
+            </a>
+            <a href="https://www.munch.studio" target="_blank" rel="noopener" class="ptc">
+              <div class="ptc-top"><span class="ptc-icon">🎬</span><span class="ptc-badge pd">Paid</span></div>
+              <h3>Munch Studio</h3><p>Repurpose long-form video into viral short clips using AI.</p>
+              <span class="ptc-try">Try it →</span>
+            </a>
+            <a href="https://hubspot.com/artificial-intelligence" target="_blank" rel="noopener" class="ptc">
+              <div class="ptc-top"><span class="ptc-icon">🏢</span><span class="ptc-badge fr">Freemium</span></div>
+              <h3>HubSpot AI</h3><p>CRM, marketing, and sales tools powered by AI. Free tier available.</p>
+              <span class="ptc-try">Try free →</span>
+            </a>
+            <a href="https://accreative.ai" target="_blank" rel="noopener" class="ptc">
+              <div class="ptc-top"><span class="ptc-icon">🖼️</span><span class="ptc-badge pd">Paid</span></div>
+              <h3>AcCreative.ai</h3><p>AI-generated ad creatives that convert. Hundreds of variations instantly.</p>
+              <span class="ptc-try">Try it →</span>
+            </a>
+            <a href="https://www.deeparteffects.com" target="_blank" rel="noopener" class="ptc">
+              <div class="ptc-top"><span class="ptc-icon">🎨</span><span class="ptc-badge fr">Freemium</span></div>
+              <h3>Deep Art Effects</h3><p>Transform photos into stunning artwork. 200+ artistic styles.</p>
+              <span class="ptc-try">Try free →</span>
+            </a>
+            <a href="https://www.perplexity.ai" target="_blank" rel="noopener" class="ptc">
+              <div class="ptc-top"><span class="ptc-icon">🔍</span><span class="ptc-badge fr">Freemium</span></div>
+              <h3>Perplexity AI</h3><p>The AI search engine replacing Google. Real-time answers with sources.</p>
+              <span class="ptc-try">Try free →</span>
+            </a>
+            <a href="https://claude.ai" target="_blank" rel="noopener" class="ptc">
+              <div class="ptc-top"><span class="ptc-icon">🤖</span><span class="ptc-badge fr">Freemium</span></div>
+              <h3>Claude (Anthropic)</h3><p>Exceptional at writing, coding, and nuanced reasoning.</p>
+              <span class="ptc-try">Try free →</span>
+            </a>
+            <a href="https://n8n.io" target="_blank" rel="noopener" class="ptc">
+              <div class="ptc-top"><span class="ptc-icon">⚙️</span><span class="ptc-badge fr">Freemium</span></div>
+              <h3>n8n</h3><p>Open-source workflow automation. Build AI pipelines without limits.</p>
+              <span class="ptc-try">Try free →</span>
+            </a>
+          </div>
+        </div>
+
         ${related.length > 0 ? `
           <div class="more-stories">
             <h2>More Stories</h2>
@@ -581,9 +703,23 @@
     function handleSubscribe(e) {
       e.preventDefault();
       const email = document.getElementById('inline-email').value;
-      window.open(`${BEEHIIV_URL}?email=${encodeURIComponent(email)}`, '_blank');
+      openSubOverlay(email);
       e.target.reset();
-      showToast();
+    }
+
+    function openSubOverlay(email) {
+      const overlay = document.getElementById('sub-overlay');
+      const iframe  = document.getElementById('sub-iframe');
+      iframe.src = 'https://aifeed.beehiiv.com/subscribe?email=' + encodeURIComponent(email);
+      overlay.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeSubOverlay(e) {
+      if (e && e.target && e.target.id !== 'sub-overlay' && e.target.id !== 'sub-close-btn') return;
+      document.getElementById('sub-overlay').style.display = 'none';
+      document.getElementById('sub-iframe').src = '';
+      document.body.style.overflow = '';
     }
 
     function copyLink() {

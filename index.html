@@ -1187,9 +1187,10 @@ AI Discovery · Human Refined · Always On." />
       inset: 0;
       z-index: 1000;
       background: rgba(0,0,0,0.92);
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
-      padding: 20px;
+      padding: 64px 20px 48px;
+      overflow-y: auto;
     }
     .video-lightbox.open {
       display: flex;
@@ -1225,6 +1226,44 @@ AI Discovery · Human Refined · Always On." />
     .video-lightbox-close:hover {
       background: rgba(255,255,255,0.25);
     }
+
+    /* ── Lightbox AI Tools ── */
+    .lightbox-tools {
+      margin-top: 32px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .lightbox-tools-hdr {
+      display: flex; align-items: baseline; justify-content: space-between;
+      flex-wrap: wrap; gap: 8px; margin-bottom: 8px;
+    }
+    .lightbox-tools-hdr span:first-child {
+      font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 800; color: #f0eeff;
+    }
+    .lightbox-tools-hdr span:last-child { font-size: 11px; color: #7b78a8; }
+    .lightbox-tools-sub { font-size: 12px; color: #7b78a8; margin-bottom: 18px; }
+    .lightbox-tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 10px;
+    }
+    .lb-tool {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 10px; padding: 13px;
+      text-decoration: none; color: inherit;
+      display: flex; flex-direction: column;
+      transition: border-color .2s, transform .2s;
+    }
+    .lb-tool:hover { border-color: rgba(168,85,247,0.4); transform: translateY(-2px); }
+    .lb-tool-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 7px; }
+    .lb-tool-icon { font-size: 18px; }
+    .lb-badge { font-size: 9px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 2px 7px; border-radius: 3px; }
+    .lb-badge.fr { color: #22c55e; background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.25); }
+    .lb-badge.pd { color: #fbbf24; background: rgba(251,191,36,0.12); border: 1px solid rgba(251,191,36,0.25); }
+    .lb-tool h3 { font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 700; color: #f0eeff; margin-bottom: 4px; }
+    .lb-tool p { font-size: 11px; color: #7b78a8; line-height: 1.4; flex: 1; }
+    .lb-tool-try { display: inline-block; margin-top: 8px; font-size: 11px; font-weight: 600; color: #a855f7; }
 
     /* ── Responsive ── */
     @media (max-width: 768px) {
@@ -1570,6 +1609,91 @@ AI Discovery · Human Refined · Always On.</p>
     <div class="video-lightbox-inner">
       <button class="video-lightbox-close" onclick="closeLightbox()">&#215;</button>
       <video id="lightbox-video" controls playsinline></video>
+
+      <!-- AI TOOLS (shown below video in lightbox) -->
+      <div class="lightbox-tools">
+        <div class="lightbox-tools-hdr">
+          <span>🧰 Top AI Tools</span>
+          <span>Curated picks — some links are affiliate</span>
+        </div>
+        <p class="lightbox-tools-sub">The best AI tools we track every day. Tested and hand-picked by the AIFeed.run team.</p>
+        <div class="lightbox-tools-grid">
+          <a href="https://try.elevenlabs.io/qspw8v1gx7n0" target="_blank" rel="noopener" class="lb-tool" onclick="event.stopPropagation()">
+            <div class="lb-tool-top"><span class="lb-tool-icon">🎙️</span><span class="lb-badge fr">Freemium</span></div>
+            <h3>ElevenLabs</h3><p>Realistic AI voice cloning and text-to-speech.</p>
+            <span class="lb-tool-try">Try free →</span>
+          </a>
+          <a href="https://www.headshotpro.com/?via=aifeed" target="_blank" rel="noopener" class="lb-tool" onclick="event.stopPropagation()">
+            <div class="lb-tool-top"><span class="lb-tool-icon">📸</span><span class="lb-badge pd">Paid</span></div>
+            <h3>HeadshotPro</h3><p>120 professional AI headshots in minutes.</p>
+            <span class="lb-tool-try">Try it →</span>
+          </a>
+          <a href="https://www.beehiiv.com/?via=ai-feed" target="_blank" rel="noopener" class="lb-tool" onclick="event.stopPropagation()">
+            <div class="lb-tool-top"><span class="lb-tool-icon">📧</span><span class="lb-badge fr">Freemium</span></div>
+            <h3>Beehiiv</h3><p>The newsletter platform built for growth.</p>
+            <span class="lb-tool-try">Try free →</span>
+          </a>
+          <a href="https://writesonic.com" target="_blank" rel="noopener" class="lb-tool" onclick="event.stopPropagation()">
+            <div class="lb-tool-top"><span class="lb-tool-icon">✍️</span><span class="lb-badge fr">Freemium</span></div>
+            <h3>Writesonic</h3><p>AI writing for blogs, ads, and SEO content.</p>
+            <span class="lb-tool-try">Try free →</span>
+          </a>
+          <a href="https://surferseo.com" target="_blank" rel="noopener" class="lb-tool" onclick="event.stopPropagation()">
+            <div class="lb-tool-top"><span class="lb-tool-icon">🏄</span><span class="lb-badge pd">Paid</span></div>
+            <h3>Surfer SEO</h3><p>AI-powered SEO that tells you exactly what to write.</p>
+            <span class="lb-tool-try">Try it →</span>
+          </a>
+          <a href="https://www.munch.studio" target="_blank" rel="noopener" class="lb-tool" onclick="event.stopPropagation()">
+            <div class="lb-tool-top"><span class="lb-tool-icon">🎬</span><span class="lb-badge pd">Paid</span></div>
+            <h3>Munch Studio</h3><p>Repurpose long-form video into viral short clips.</p>
+            <span class="lb-tool-try">Try it →</span>
+          </a>
+          <a href="https://www.perplexity.ai" target="_blank" rel="noopener" class="lb-tool" onclick="event.stopPropagation()">
+            <div class="lb-tool-top"><span class="lb-tool-icon">🔍</span><span class="lb-badge fr">Freemium</span></div>
+            <h3>Perplexity AI</h3><p>The AI search engine replacing Google for millions.</p>
+            <span class="lb-tool-try">Try free →</span>
+          </a>
+          <a href="https://claude.ai" target="_blank" rel="noopener" class="lb-tool" onclick="event.stopPropagation()">
+            <div class="lb-tool-top"><span class="lb-tool-icon">🤖</span><span class="lb-badge fr">Freemium</span></div>
+            <h3>Claude (Anthropic)</h3><p>Exceptional at writing, coding, and reasoning.</p>
+            <span class="lb-tool-try">Try free →</span>
+          </a>
+          <a href="https://hubspot.com/artificial-intelligence" target="_blank" rel="noopener" class="lb-tool" onclick="event.stopPropagation()">
+            <div class="lb-tool-top"><span class="lb-tool-icon">🏢</span><span class="lb-badge fr">Freemium</span></div>
+            <h3>HubSpot AI</h3><p>CRM and marketing tools powered by AI.</p>
+            <span class="lb-tool-try">Try free →</span>
+          </a>
+          <a href="https://accreative.ai" target="_blank" rel="noopener" class="lb-tool" onclick="event.stopPropagation()">
+            <div class="lb-tool-top"><span class="lb-tool-icon">🖼️</span><span class="lb-badge pd">Paid</span></div>
+            <h3>AcCreative.ai</h3><p>Generate hundreds of unique ad variations instantly.</p>
+            <span class="lb-tool-try">Try it →</span>
+          </a>
+          <a href="https://n8n.io" target="_blank" rel="noopener" class="lb-tool" onclick="event.stopPropagation()">
+            <div class="lb-tool-top"><span class="lb-tool-icon">⚙️</span><span class="lb-badge fr">Freemium</span></div>
+            <h3>n8n</h3><p>Open-source workflow automation. Build AI pipelines.</p>
+            <span class="lb-tool-try">Try free →</span>
+          </a>
+          <a href="https://www.deeparteffects.com" target="_blank" rel="noopener" class="lb-tool" onclick="event.stopPropagation()">
+            <div class="lb-tool-top"><span class="lb-tool-icon">🎨</span><span class="lb-badge fr">Freemium</span></div>
+            <h3>Deep Art Effects</h3><p>Transform photos into artwork. 200+ AI styles.</p>
+            <span class="lb-tool-try">Try free →</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUBSCRIBE OVERLAY -->
+  <div id="sub-overlay" onclick="closeSubOverlay(event)" style="display:none;position:fixed;inset:0;z-index:10000;background:rgba(5,3,18,0.95);backdrop-filter:blur(16px);align-items:center;justify-content:center;padding:20px;">
+    <div style="background:linear-gradient(160deg,#14113a 0%,#0f0d28 100%);border:1px solid rgba(168,85,247,0.22);border-radius:20px;width:100%;max-width:480px;position:relative;overflow:hidden;max-height:90vh;display:flex;flex-direction:column;">
+      <div style="padding:20px 20px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-shrink:0;">
+        <div>
+          <p style="font-family:'Syne',sans-serif;font-size:18px;font-weight:800;color:#f0eeff;margin-bottom:6px;">📬 One more step!</p>
+          <p style="font-size:13px;color:#7b78a8;line-height:1.6;">Your email is pre-filled. Just click <strong style="color:#f0eeff">Subscribe</strong> below to confirm your free daily AI newsletter.</p>
+        </div>
+        <button id="sub-close-btn" onclick="closeSubOverlay()" style="background:rgba(255,255,255,0.08);border:none;color:#aaa;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:18px;flex-shrink:0;display:flex;align-items:center;justify-content:center;line-height:1;margin-top:2px;">✕</button>
+      </div>
+      <iframe id="sub-iframe" src="" style="width:100%;height:560px;border:none;margin-top:12px;flex:1;display:block;" scrolling="yes" loading="lazy"></iframe>
     </div>
   </div>
 
@@ -1898,24 +2022,31 @@ AI Discovery · Human Refined · Always On.</p>
     });
 
     // ─── NEWSLETTER SUBSCRIBE ────────────────────────────────────────────
-    // SETUP: Replace the URL below with your actual Beehiiv embed/subscribe URL
-    // Get it from: Beehiiv → Grow → Forms → Embed → Copy subscribe URL
-    // Format: https://embeds.beehiiv.com/YOUR_FORM_ID
+    // NOTE: Beehiiv uses Cloudflare Turnstile bot-protection on their subscribe
+    // page — direct background fetch is blocked. Instead we show the user a clean
+    // overlay with beehiiv's subscribe page pre-filled, so they just click once.
     function handleSubscribe(e, source) {
       e.preventDefault();
       const inputId = { hero: 'hero-email-input', mid: 'mid-email-input', bottom: 'bottom-email-input' }[source];
       const email = document.getElementById(inputId).value;
-
-      // Submit silently to Beehiiv in the background — user stays on site
-      fetch('https://aifeed.beehiiv.com/subscribe', {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: 'email=' + encodeURIComponent(email)
-      }).catch(() => {});
-
+      openSubOverlay(email);
       e.target.reset();
-      showToast();
+    }
+
+    function openSubOverlay(email) {
+      const overlay = document.getElementById('sub-overlay');
+      const iframe  = document.getElementById('sub-iframe');
+      iframe.src = 'https://aifeed.beehiiv.com/subscribe?email=' + encodeURIComponent(email);
+      overlay.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeSubOverlay(e) {
+      // Allow click on backdrop or explicit close button; ignore clicks inside the card
+      if (e && e.target && e.target.id !== 'sub-overlay' && e.target.id !== 'sub-close-btn') return;
+      document.getElementById('sub-overlay').style.display = 'none';
+      document.getElementById('sub-iframe').src = '';
+      document.body.style.overflow = '';
     }
 
     function showToast() {
