@@ -62,12 +62,15 @@ User interacts via Telegram:
 4. User can reply `custom` → bot asks for a photo → user sends photo → custom photo flow runs
 5. HTML graphic sent as `.html` file via Telegram → user opens in browser, screenshots at 100% zoom
 
-### Custom Photo Flow (node: Process & Upload Photo)
+### Custom Photo Flow (node: Process & Upload Photo — b1000027)
 1. Gets Telegram file path via `getFile` API
-2. Downloads photo from Telegram
-3. Tries to upload to `https://github.com/xavidalmau9/aifeed/contents/images/`
-4. **If GitHub upload fails → falls back to Telegram URL directly** (valid ~1hr, enough to screenshot)
-5. Either way, `imageUrl` is always a valid URL — `src=""` should never happen
+2. Constructs `telegramUrl` — **declared OUTSIDE the try block**
+3. **Immediately sets `imageUrl = telegramUrl`** — guaranteed fallback before any download attempt
+4. Downloads photo using `this.helpers.httpRequest()` (not `fetch()`) — for GitHub base64 only
+5. Tries GitHub upload — if successful, upgrades `imageUrl` to permanent GitHub URL
+6. If download OR GitHub fails — Telegram URL already set, graphic still works
+
+**CRITICAL:** `telegramUrl` must be declared outside the try block and `imageUrl` must be set from it immediately in step 3. If this is not done, any download failure will leave `imageUrl = ''` and the graphic will have a blank background. This was the bug that caused blank images — do not revert this structure.
 
 ---
 

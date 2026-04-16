@@ -197,6 +197,24 @@ Claude prompt for headline splitting lives in:
 
 ---
 
+## Custom Photo Flow — Image URL Logic (node b1000027)
+
+**CRITICAL — do not revert this structure or the image will be blank.**
+
+The correct order in `Process & Upload Photo`:
+1. Get Telegram `file_path` via `getFile` API
+2. Construct `telegramUrl` — **declare it OUTSIDE the try block**
+3. **Immediately set `imageUrl = telegramUrl`** — this is the guaranteed fallback
+4. Try to download the image (for GitHub base64 upload only)
+5. Try GitHub upload — if successful, upgrade `imageUrl` to permanent GitHub URL
+6. If download OR GitHub fails — `imageUrl` is already set from step 3, graphic still works
+
+**The bug that caused blank images:** `telegramUrl` was declared inside the try block. If `fetch()` failed on the download, the outer catch fired and `imageUrl` stayed as `''`. Fix: always set `imageUrl = telegramUrl` before attempting the download.
+
+**Also:** Use `this.helpers.httpRequest()` for the download (not `fetch()`) — more reliable in n8n.
+
+---
+
 ## Verified Correct Preview
 
 `/Users/305partners/Downloads/aifeed-preview.html` — standalone test file. Open in browser at 100% zoom to verify before re-importing workflow JSON.
