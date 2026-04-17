@@ -131,6 +131,36 @@ Each display line: **max 4 words, max 20 characters**. At 82px font, more than ~
 - **Never use Syne or Inter** — Poppins only
 - **Never set `object-position:center`** on background image — always `top center`
 - **Never let headline lines exceed 20 characters** — enforce in Claude prompt
+- **Never render with Chrome headless at `--window-size=1080,1350`** — bar is cut. Always use `--window-size=1080,1500` + Pillow crop to 1350
+- **Never move spec positions (headline, cards, bar) to fix Chrome rendering** — fix the viewport, not the layout
+
+---
+
+## Chrome Headless Rendering — CRITICAL FIX
+
+**The bar at `bottom:0` is NEVER rendered when Chrome headless uses `--window-size=1080,1350`.**
+
+Chrome headless clips content at ~y=1270px when window height = canvas height. The bottom bar sits at y=1282–1350 and is therefore invisible in any headless screenshot taken at 1080×1350.
+
+**The fix — always use this when generating graphics programmatically:**
+```bash
+# Step 1: Render at 1500px tall so bottom:0 bar is within viewport
+chromium --headless=new --no-sandbox --screenshot=/tmp/out.png \
+  --window-size=1080,1500 --hide-scrollbars file:///tmp/graphic.html
+
+# Step 2: Crop to exact spec size
+python3 -c "
+from PIL import Image
+img = Image.open('/tmp/out.png')
+img.crop((0, 0, 1080, 1350)).save('/path/to/final.png')
+"
+```
+
+**Why:** The `.c` container is `position:absolute; height:1350px`. With a 1500px viewport, Chrome renders all 1350px including the bar. Then Pillow crops back to spec.
+
+**NEVER move spec positions to work around this.** Do NOT push elements up. Do NOT change `top:670px`, `top:1130px`, or `bottom:0`. The fix is the viewport height — not the layout.
+
+**This only applies to programmatic Chrome rendering.** Opening the HTML in a real browser (the normal n8n workflow) renders the bar correctly — no fix needed.
 
 ---
 

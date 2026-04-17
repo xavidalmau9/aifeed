@@ -218,3 +218,34 @@ The correct order in `Process & Upload Photo`:
 ## Verified Correct Preview
 
 `/Users/305partners/Downloads/aifeed-preview.html` — standalone test file. Open in browser at 100% zoom to verify before re-importing workflow JSON.
+
+---
+
+## Chrome Headless Rendering — CRITICAL
+
+**Problem:** Chrome headless with `--window-size=1080,1350` clips content at ~y=1270px. The bottom bar (`bottom:0` = y=1282–1350) is **never rendered**. This is a Chrome headless limitation, not a CSS bug.
+
+**Wrong fix (DO NOT DO):** Moving headline to `top:580px`, cards to `top:1070px`, bar to `top:1190px` — produces wrong layout, everything looks pushed up.
+
+**Correct fix:** Render at taller viewport, crop with Pillow.
+
+```bash
+# Render at 1500px tall (bar at y=1282 is well within viewport)
+chromium --headless=new --no-sandbox --screenshot=/tmp/out.png \
+  --window-size=1080,1500 --hide-scrollbars file:///tmp/graphic.html
+
+# Crop back to spec: 1080×1350
+python3 -c "
+from PIL import Image
+img = Image.open('/tmp/out.png')          # size: (1080, 1500)
+img.crop((0, 0, 1080, 1350)).save('final.png')   # size: (1080, 1350)
+"
+```
+
+**All spec positions stay unchanged:**
+- Pill: `top:44px`
+- Headline block: `top:670px`
+- Stat cards: `top:1130px`
+- Bottom bar: `bottom:0; height:68px`
+
+The n8n workflow sends HTML to Telegram for manual browser screenshot — this fix only applies to programmatic/automated rendering.
