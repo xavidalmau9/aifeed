@@ -188,7 +188,7 @@ Each display line: **max 4 words, max 20 characters**. At 82px font, more than ~
 | aifeed_google_opens_gemma.png | bg_gemmaopen.jpg | unique (Pexels 1181671) |
 | aifeed_vcs_poured.png | bg_vcs.jpg | unique (Pexels 3184360) |
 | aifeed_stanford_chatbots.png | bg_stanford.jpg | unique (Pexels 4101143) |
-| aifeed_anthropic.png | bg_claudepop.jpg | unique (Pexels 5474305) |
+| aifeed_anthropic.png | bg_claudepop2.jpg | unique (Pexels 7947663, abstract tech/AI) |
 | aifeed_federal_judge.png | bg_judge.jpg | unique (Pexels 5668858) |
 | aifeed_bofa_agents.png | bg_bofa.jpg | unique (Pexels 3184339) |
 | aifeed_listenlabs.png | bg_listenlabs.jpg | unique (Pexels 3184465) |
