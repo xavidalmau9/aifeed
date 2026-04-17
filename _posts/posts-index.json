@@ -438,7 +438,7 @@
     "summary": "Elon Musk's last co-founder reportedly leaves xAI",
     "body": "<p><strong>The last of xAI's original co-founders has reportedly left the company</strong> — a notable departure that raises questions about the direction of Elon Musk's AI venture.</p><p>The co-founder, who helped shape xAI's initial research agenda, is said to have left over strategic disagreements, though neither party has commented publicly. The departure follows a pattern of senior technical talent rotating in and out of Musk's companies.</p><p>xAI's Grok models have shown genuine capability and the company raised $6B in 2024 at a $24B valuation. But building a frontier AI lab requires institutional continuity — something harder to sustain when leadership turnover is this visible.</p>",
     "category": "Industry",
-    "imageUrl": "https://images.pexels.com/photos/2264753/pexels-photo-2264753.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "imageUrl": "https://aifeed.run/images/aifeed_xai_cofounder.png",
     "sourceUrl": "",
     "publishedAt": "2026-03-29T08:13:09.349-04:00",
     "isVideo": false
@@ -450,7 +450,7 @@
     "summary": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
     "body": "<p><strong>Listen Labs raised $69M</strong> after a viral marketing stunt that put the AI startup on the map in a way most pitch decks never could.</p><p>The company deployed a billboard in San Francisco reading: \"We're interviewing 1 billion people. Apply here.\" — a live pitch for their AI-powered customer interview platform, which conducts automated qualitative research at scale, replacing focus groups with AI that can talk to hundreds of thousands of customers simultaneously.</p><p>Listen Labs is betting that qualitative research — historically expensive, slow, and small-sample — is about to get automated. If they're right, every product team on earth becomes a potential customer.</p>",
     "category": "Industry",
-    "imageUrl": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "imageUrl": "https://aifeed.run/images/aifeed_listenlabs.png",
     "sourceUrl": "",
     "publishedAt": "2026-03-29T08:00:54.358-04:00",
     "isVideo": false
@@ -462,7 +462,7 @@
     "summary": "AI agents enter banking roles at Bank of America",
     "body": "<p><strong>AI agents are now working inside Bank of America</strong> — handling tasks across customer service, risk analysis, and back-office operations in one of the largest enterprise AI deployments in financial services.</p><p>Built on a mix of proprietary models and partnerships with vendors including Microsoft, the agents process loan applications, flag compliance risks, answer customer queries, and generate regulatory filings. BofA says the agents handle tasks that previously required 12,000 hours of human work per month across specific divisions.</p><p>Banking is the ultimate stress test for AI agents: high stakes, heavily regulated, zero tolerance for errors, massive scale. Bank of America's move signals that financial services isn't waiting for perfect — it's deploying now and building governance as it goes.</p>",
     "category": "Industry",
-    "imageUrl": "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "imageUrl": "https://aifeed.run/images/aifeed_bofa_agents.png",
     "sourceUrl": "",
     "publishedAt": "2026-03-28T20:20:10.515-04:00",
     "isVideo": false
@@ -498,7 +498,7 @@
     "summary": "Stanford study outlines dangers of asking AI chatbots for personal advice",
     "body": "<p><strong>Stanford researchers have mapped the specific risks of relying on AI chatbots for personal advice</strong> — and the findings are more concrete than previous warnings about AI dependence.</p><p>The study tracked 800 participants over four months across health, financial, and relationship decisions. Key findings: chatbot advice was significantly less calibrated to individual circumstances than human expert advice, chatbots rarely flagged when they lacked enough context to advise confidently, and users who consulted chatbots first were less likely to seek human expertise even for high-stakes decisions.</p><p>The Stanford team isn't saying don't use AI. They're saying know what it's bad at. Personal advice rooted in your specific life is exactly where pattern-matching AI underperforms.</p>",
     "category": "Research",
-    "imageUrl": "https://images.pexels.com/photos/3786157/pexels-photo-3786157.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "imageUrl": "https://aifeed.run/images/aifeed_stanford_chatbots.png",
     "sourceUrl": "",
     "publishedAt": "2026-03-28T18:12:06.551-04:00",
     "isVideo": false
