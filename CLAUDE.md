@@ -141,6 +141,50 @@ Each display line: **max 4 words, max 20 characters**. At 82px font, more than ~
 - **Always verify `/tmp/poppins-300.woff2`, `/tmp/poppins-400.woff2`, `/tmp/poppins-700.woff2` exist before running any graphic script** — if missing, re-download them (URLs in the Poppins Font section above)
 - **Never use Google Fonts CDN `<link>` in Chrome headless** — Chrome headless cannot load external fonts from the CDN, causing Poppins to fall back to a system font and making the pill and all text render incorrectly. Always use local `@font-face` with `file://` URIs.
 - **ALWAYS update `posts-index.json` imageUrl when pushing a new graphic** — after saving a new `.png` to `/Users/305partners/aifeed/images/`, the matching post entry in `_posts/posts-index.json` must have its `imageUrl` updated to `https://aifeed.run/images/[filename].png` before committing. Forgetting this means the website keeps showing the old Gemini-generated graphic even after the new one is on GitHub. This is a required step, not optional.
+- **NEVER reuse a background photo across two graphics** — every single graphic must have a unique background. Before assigning any background file, run: `md5 /tmp/NEWFILE.jpg` and compare against all entries in the Background Registry below. If the md5 matches ANY existing entry, download a different Pexels photo and check again. This happened multiple times (test_bg3.jpg used 3x, bg_leak.jpg used 3x, bg_microsoft.jpg used 3x) and caused visible repeated backgrounds on the website.
+- **MANDATORY: run duplicate check before every new graphic** — `python3 -c "import hashlib,os,glob; hashes={}; [hashes.setdefault(hashlib.md5(open(f,'rb').read()).hexdigest(),[]).append(os.path.basename(f)) for f in glob.glob('/tmp/bg_*.jpg')]; [print('DUP:',v) for v in hashes.values() if len(v)>1]"` — must show zero DUPs before running make_all_graphics.py.
+
+---
+
+## Background Photo Registry — EVERY graphic and its unique background file
+
+**This is the source of truth. Every entry must have a unique md5. Do not reuse any background from this list.**
+
+| Graphic file | Background file | md5 (first 8 chars) |
+|---|---|---|
+| aifeed_codex_anthropic.png | codex_bg.jpg | (from n8n) |
+| aifeed_humans_loop.png | test_bg3.jpg | (from n8n) |
+| aifeed_retail_393.png | retail_bg.jpg | (from n8n) |
+| aifeed_runway_hollywood.png | hollywood_bg.jpg | (from n8n) |
+| aifeed_ai_journalism.png | journalism_bg.jpg | (from n8n) |
+| aifeed_agents_sdk.png | bg_agents2.jpg | abstract_network — unique |
+| aifeed_vandermeer_download.png | bg_vandermeer.jpg | (from n8n) |
+| aifeed_waypoint15.png | bg_waypoint.jpg | (from n8n) |
+| aifeed_sycophantic.png | bg_sycophantic.jpg | unique |
+| aifeed_ai_slop.png | bg_ai_slop.jpg | unique |
+| aifeed_microsoft_3models.png | bg_microsoft.jpg | unique |
+| aifeed_intuits_ai_agents.png | bg_intuit.jpg | unique |
+| aifeed_slack_30ai.png | bg_slack.jpg | unique |
+| aifeed_openclaw_500k.png | bg_openclaw.jpg | unique |
+| aifeed_claudecode_leak.png | bg_claudeleak2.jpg | dark_abstract — unique |
+| aifeed_meta_codereview.png | bg_metacode2.jpg | server_room — unique |
+| aifeed_amazon_ceo.png | bg_amazon_ceo.jpg | unique |
+| aifeed_cowork_graphic.png | bg_cowork.jpg | unique |
+| aifeed_hassabis_graphic_v2.png | bg_hassabis2.jpg | cosmos_stars — unique |
+| aifeed_openai_capitalism_v3.png | bg_openaisafety.jpg | dark_office — unique |
+| aifeed_databricks_850m.png | bg_databricks2.jpg | urban_night — unique |
+| aifeed_rebellions_400m.png | test_bg2.jpg | unique |
+| aifeed_meta_texas_10b.png | test_bg.jpg | unique |
+| aifeed_altman_graphic.png | bg_altman2.jpg | night_city — unique |
+| aifeed_poke_graphic_v4.png | bg_poke.jpg | unique (Pexels 607812) |
+| aifeed_googlemaps_gemini.png | bg_googlemaps.jpg | unique (Pexels 466685) |
+| aifeed_firmus_5b_v2.png | bg_firmus.jpg | unique (Pexels 1181316) |
+| aifeed_sciencecorp_brain.png | (unknown) | — |
+| aifeed_hiro_graphic_v2.png | bg_hiro.jpg | unique |
+| aifeed_apple_glasses_v3.png | bg_apple_glasses.jpg | unique |
+| aifeed_gemma4_graphic.png | bg_gemma4.jpg | unique |
+
+**When adding a new graphic:** download the background file, run md5, confirm it is NOT in this table, add it to the table, then generate.
 
 ---
 
