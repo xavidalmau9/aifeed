@@ -130,9 +130,13 @@ Each display line: **max 4 words, max 20 characters**. At 82px font, more than ~
 - **Never use wrong colors** (#a855f7 for purple, #f97316 for orange, #22c55e for green, #09081a for bg — all wrong)
 - **Never use Syne or Inter** — Poppins only
 - **Never set `object-position:center`** on background image — always `top center`
-- **Never let headline lines exceed 20 characters** — enforce in Claude prompt
+- **Never let headline lines exceed 15 characters** — at 82px Poppins Bold, lines over 15 chars risk wrapping to an extra line, which pushes subtitle into cards. Hard cap: 15 chars per line.
+- **Never use more than 3 headline lines** — 3 lines × 94px = 282px, leaving room for subtitle before cards at top:1130px. 4 lines = 376px, subtitle crowding guaranteed.
+- **Never use font-size:28px for subtitle** — always use 33px/46px line-height to match n8n workflow exactly
+- **Never use a different pill CSS than the canonical spec** — pill must always be: `height:52px; border-radius:26px; padding:0 28px; font-size:28px; background:linear-gradient(to right,#ff8c00,#a050ff)`. No other values.
 - **Never render with Chrome headless at `--window-size=1080,1350`** — bar is cut. Always use `--window-size=1080,1500` + Pillow crop to 1350
 - **Never move spec positions (headline, cards, bar) to fix Chrome rendering** — fix the viewport, not the layout
+- **Always use `/tmp/make_all_graphics.py` as the single canonical script** — never create a second script with different CSS
 
 ---
 
