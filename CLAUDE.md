@@ -140,6 +140,7 @@ Each display line: **max 4 words, max 20 characters**. At 82px font, more than ~
 - **Never use Google Fonts CDN `<link>` in Chrome headless HTML** — fonts will not load. Always use `@font-face` with `file:///tmp/poppins-*.woff2` local files. This was the root cause of the pill rendering wrong for months.
 - **Always verify `/tmp/poppins-300.woff2`, `/tmp/poppins-400.woff2`, `/tmp/poppins-700.woff2` exist before running any graphic script** — if missing, re-download them (URLs in the Poppins Font section above)
 - **Never use Google Fonts CDN `<link>` in Chrome headless** — Chrome headless cannot load external fonts from the CDN, causing Poppins to fall back to a system font and making the pill and all text render incorrectly. Always use local `@font-face` with `file://` URIs.
+- **ALWAYS update `posts-index.json` imageUrl when pushing a new graphic** — after saving a new `.png` to `/Users/305partners/aifeed/images/`, the matching post entry in `_posts/posts-index.json` must have its `imageUrl` updated to `https://aifeed.run/images/[filename].png` before committing. Forgetting this means the website keeps showing the old Gemini-generated graphic even after the new one is on GitHub. This is a required step, not optional.
 
 ---
 
