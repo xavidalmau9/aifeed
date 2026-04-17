@@ -20,10 +20,27 @@ This document is the canonical spec for the HTML graphic template used in the AI
 
 **Poppins only — no other fonts.**
 
+### ⚠️ CHROME HEADLESS: LOCAL FONTS ONLY — NEVER USE CDN
+
+Chrome headless cannot load Google Fonts from the CDN. Using the `<link>` tag below in a headless script causes Poppins to silently fall back to Helvetica/Arial, making the pill and all text render incorrectly. This was the root cause of persistent pill size inconsistency.
+
+**For the n8n workflow (real browser)** — CDN link is fine:
 ```html
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+```
+
+**For any Python/Chrome headless script** — ALWAYS use local @font-face:
+```css
+@font-face{font-family:'Poppins';font-weight:300;font-style:normal;src:url('file:///tmp/poppins-300.woff2') format('woff2')}
+@font-face{font-family:'Poppins';font-weight:400;font-style:normal;src:url('file:///tmp/poppins-400.woff2') format('woff2')}
+@font-face{font-family:'Poppins';font-weight:700;font-style:normal;src:url('file:///tmp/poppins-700.woff2') format('woff2')}
+```
+
+Download fonts once (verify ~7-8KB each):
+```bash
+curl -sL "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk.woff2" -o /tmp/poppins-300.woff2
+curl -sL "https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2"    -o /tmp/poppins-400.woff2
+curl -sL "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2" -o /tmp/poppins-700.woff2
 ```
 
 | Weight | Usage |

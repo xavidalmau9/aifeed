@@ -137,6 +137,39 @@ Each display line: **max 4 words, max 20 characters**. At 82px font, more than ~
 - **Never render with Chrome headless at `--window-size=1080,1350`** — bar is cut. Always use `--window-size=1080,1500` + Pillow crop to 1350
 - **Never move spec positions (headline, cards, bar) to fix Chrome rendering** — fix the viewport, not the layout
 - **Always use `/tmp/make_all_graphics.py` as the single canonical script** — never create a second script with different CSS
+- **Never use Google Fonts CDN `<link>` in Chrome headless HTML** — fonts will not load. Always use `@font-face` with `file:///tmp/poppins-*.woff2` local files. This was the root cause of the pill rendering wrong for months.
+- **Always verify `/tmp/poppins-300.woff2`, `/tmp/poppins-400.woff2`, `/tmp/poppins-700.woff2` exist before running any graphic script** — if missing, re-download them (URLs in the Poppins Font section above)
+- **Never use Google Fonts CDN `<link>` in Chrome headless** — Chrome headless cannot load external fonts from the CDN, causing Poppins to fall back to a system font and making the pill and all text render incorrectly. Always use local `@font-face` with `file://` URIs.
+
+---
+
+## Poppins Font — LOCAL FILES ONLY (CRITICAL)
+
+**Chrome headless cannot load Google Fonts from the CDN.** Without Poppins, the pill renders in a system fallback font (Helvetica/Arial) at different dimensions — this is why the pill looked wrong even when the CSS values were correct.
+
+**Step 1 — Download fonts to /tmp (run once, or verify they exist):**
+```bash
+curl -sL "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk.woff2" -o /tmp/poppins-300.woff2
+curl -sL "https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2"    -o /tmp/poppins-400.woff2
+curl -sL "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2" -o /tmp/poppins-700.woff2
+# Verify: all three should be ~7-8KB
+ls -la /tmp/poppins-*.woff2
+```
+
+**Step 2 — Use this FONT_CSS in every HTML template (replaces the Google Fonts `<link>`):**
+```css
+@font-face{font-family:'Poppins';font-weight:300;font-style:normal;src:url('file:///tmp/poppins-300.woff2') format('woff2')}
+@font-face{font-family:'Poppins';font-weight:400;font-style:normal;src:url('file:///tmp/poppins-400.woff2') format('woff2')}
+@font-face{font-family:'Poppins';font-weight:700;font-style:normal;src:url('file:///tmp/poppins-700.woff2') format('woff2')}
+```
+
+**NEVER use this in Chrome headless:**
+```html
+<!-- ❌ WRONG — CDN font will not load in headless -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+```
+
+The canonical script `/tmp/make_all_graphics.py` already has `FONT_CSS` set correctly. Any new script must do the same.
 
 ---
 
