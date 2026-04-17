@@ -1,5 +1,5 @@
 # AIFeed.run — Claude Project Instructions
-**Last updated: April 2026**
+**Last updated: April 16, 2026**
 
 > This file is read by Claude at the start of every session. Update it whenever significant decisions are made.
 
@@ -160,4 +160,14 @@ Post format in posts-index.json:
   "publishedAt": "ISO date",
   "isVideo": false
 }
+```
+
+---
+
+## Favicon
+
+Inline SVG data URI in `<head>` of both `index.html` and `post.html` — brand dark (`#04020e`) rounded square with a subtle purple border ring and bold purple (`#a050ff`) lowercase **a** at 72px Arial Black. No external file needed.
+
+```html
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%2304020e'/%3E%3Crect width='100' height='100' rx='18' fill='none' stroke='%23a050ff' stroke-width='4' stroke-opacity='0.4'/%3E%3Ctext x='50' y='76' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='72' fill='%23a050ff' text-anchor='middle'%3Ea%3C/text%3E%3C/svg%3E">
 ```
