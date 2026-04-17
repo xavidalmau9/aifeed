@@ -402,7 +402,7 @@
     "summary": "Databricks to Invest $850M in UK AI Operations",
     "body": "<p><strong>Databricks is committing $850M to UK AI operations</strong> — a massive bet on Britain as a hub for enterprise AI infrastructure, and a vote of confidence in the UK's AI talent and regulatory environment.</p><p>The investment covers engineering headcount expansion, new data center capacity, and partnerships with British universities for AI research. Databricks processes data for thousands of enterprises globally, and its UK engineering base has grown significantly over the past two years.</p><p>In the race to become the preferred enterprise AI data platform, geography matters. By planting a major flag in the UK, Databricks is positioning as the default choice for European enterprises that need data within specific jurisdictions.</p>",
     "category": "Industry",
-    "imageUrl": "https://images.pexels.com/photos/936722/pexels-photo-936722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "imageUrl": "https://aifeed.run/images/aifeed_databricks_850m.png",
     "sourceUrl": "",
     "publishedAt": "2026-03-31T13:25:50.930-04:00",
     "isVideo": false
@@ -414,7 +414,7 @@
     "summary": "AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round",
     "body": "<p><strong>South Korean AI chip startup Rebellions raised $400M at a $2.3B valuation</strong> — its largest round yet, signaling that the race to challenge Nvidia's AI hardware dominance is very much global.</p><p>Rebellions builds inference chips — the hardware that runs AI models after training. Their ATOM chip has demonstrated benchmark performance competitive with Nvidia's H100 on certain inference workloads at significantly lower cost per query. The pre-IPO round gives the company a clear path to going public while scaling production.</p><p>AMD, Intel, Google, Amazon, Microsoft, and dozens of startups are all gunning for Nvidia's margins. Rebellions is one of the few outside the US with the traction to make that threat credible.</p>",
     "category": "Industry",
-    "imageUrl": "https://aifeed.run/images/aifeed_rebellions_400m.jpg",
+    "imageUrl": "https://aifeed.run/images/aifeed_rebellions_400m.png",
     "sourceUrl": "",
     "publishedAt": "2026-03-30T18:01:12.897-04:00",
     "isVideo": false
@@ -426,7 +426,7 @@
     "summary": "Meta Ups Texas AI Data Center Investment From $1.5B to $10B",
     "body": "<p><strong>Meta has expanded its Texas AI data center investment from $1.5B to $10B</strong> — a 6x increase that reflects how central this facility has become to the company's AI ambitions.</p><p>The data center in Temple, Texas is part of Meta's broader $60B+ AI infrastructure commitment for 2025. Texas was chosen for its power access, land availability, and regulatory flexibility. The facility houses some of the largest clusters of Nvidia H100s and H200s outside of hyperscale hubs like Virginia and Oregon.</p><p>Meta is training Llama and its next-generation AI systems on this infrastructure. The message: Meta is not a social media company that does AI. Meta is an AI company that runs social media.</p>",
     "category": "Industry",
-    "imageUrl": "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "imageUrl": "https://aifeed.run/images/aifeed_meta_texas_10b.png",
     "sourceUrl": "",
     "publishedAt": "2026-03-30T08:40:37.994-04:00",
     "isVideo": false
