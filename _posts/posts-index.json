@@ -294,7 +294,7 @@
     "summary": "Study maps developer frustration over AI slop as a tragedy of the commons in software development",
     "body": "<p><strong>A new study has formalized what developers have been complaining about</strong>: AI-generated code is creating a \"tragedy of the commons\" in software development, where short-term productivity gains are degrading long-term codebase quality.</p><p>Researchers surveyed 1,200+ engineers and analyzed 400,000 commits. The pattern was consistent: teams using AI coding tools shipped faster initially but accumulated technical debt at nearly twice the rate of teams writing manually. AI-generated code was harder to review, less consistent in style, and more likely to introduce subtle bugs missed at review time.</p><p>The fix isn't less AI. It's better human review, stronger conventions, and understanding that AI generates code — not software.</p>",
     "category": "Research",
-    "imageUrl": "https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "imageUrl": "https://aifeed.run/images/aifeed_ai_slop.png",
     "sourceUrl": "",
     "publishedAt": "2026-04-05T10:46:58.862-04:00",
     "isVideo": false
