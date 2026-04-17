@@ -183,6 +183,16 @@ Each display line: **max 4 words, max 20 characters**. At 82px font, more than ~
 | aifeed_hiro_graphic_v2.png | bg_hiro.jpg | unique |
 | aifeed_apple_glasses_v3.png | bg_apple_glasses.jpg | unique |
 | aifeed_gemma4_graphic.png | bg_gemma4.jpg | unique |
+| aifeed_nyt.png | bg_nyt.jpg | yellow newspaper (Pexels 1907785) |
+| aifeed_trinity.png | bg_arcee.jpg | unique (Pexels 3861458) |
+| aifeed_google_opens_gemma.png | bg_gemmaopen.jpg | unique (Pexels 1181671) |
+| aifeed_vcs_poured.png | bg_vcs.jpg | unique (Pexels 3184360) |
+| aifeed_stanford_chatbots.png | bg_stanford.jpg | unique (Pexels 4101143) |
+| aifeed_anthropic.png | bg_claudepop.jpg | unique (Pexels 5474305) |
+| aifeed_federal_judge.png | bg_judge.jpg | unique (Pexels 5668858) |
+| aifeed_bofa_agents.png | bg_bofa.jpg | unique (Pexels 3184339) |
+| aifeed_listenlabs.png | bg_listenlabs.jpg | unique (Pexels 3184465) |
+| aifeed_xai_cofounder.png | bg_xai.jpg | unique (Pexels 2264753) |
 
 **When adding a new graphic:** download the background file, run md5, confirm it is NOT in this table, add it to the table, then generate.
 
