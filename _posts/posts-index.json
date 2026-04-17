@@ -330,7 +330,7 @@
     "summary": "Microsoft launches 3 new AI models in direct shot at OpenAI and Google",
     "body": "<p><strong>Microsoft launched three new AI models</strong> in a direct challenge to both OpenAI and Google — signaling the company is no longer content to resell someone else's intelligence.</p><p>The three models — MAI-DS-R1, Phi-4-reasoning, and Phi-4-reasoning-plus — target different use cases: deep research reasoning, structured task completion, and fast inference respectively. MAI-DS-R1 is Microsoft's first large-scale reasoning model developed independently of OpenAI.</p><p>The message is unmistakable: Microsoft has spent billions on OpenAI, but it is also hedging. Building its own frontier models gives it leverage, independence, and AI capabilities that don't depend on a single supplier.</p>",
     "category": "Models",
-    "imageUrl": "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "imageUrl": "https://aifeed.run/images/aifeed_microsoft_3models.png",
     "sourceUrl": "",
     "publishedAt": "2026-04-02T08:01:22.102-04:00",
     "isVideo": false
@@ -342,7 +342,7 @@
     "summary": "Intuit's AI agents hit 85% repeat usage. The secret was keeping humans involved",
     "body": "<p><strong>Intuit's AI agents are seeing 85% repeat usage rates</strong> — and the company says the secret isn't making AI more capable. It's keeping humans in the loop.</p><p>Deployed across TurboTax, QuickBooks, and Credit Karma over 18 months, Intuit's agents pause at decision points and ask users to confirm. The result: higher trust, dramatically higher return usage, and faster task completion because users don't have to undo AI mistakes.</p><p>The lesson: the race to full autonomy is overshooting what users actually want. People don't want AI to act blindly for them — they want AI that makes them feel in control. That's the product that wins.</p>",
     "category": "Products",
-    "imageUrl": "https://aifeed.run/images/aifeed_intuits_ai_agents.jpg",
+    "imageUrl": "https://aifeed.run/images/aifeed_intuits_ai_agents.png",
     "sourceUrl": "",
     "publishedAt": "2026-04-01T18:00:58.457-04:00",
     "isVideo": false
@@ -354,7 +354,7 @@
     "summary": "Slack adds 30 AI features to Slackbot, its most ambitious update since the Salesforce acquisition",
     "body": "<p><strong>Slack shipped 30 new AI features in a single update</strong> — its most ambitious release since the Salesforce acquisition, and a clear signal that Salesforce is finally integrating its AI stack into the tool millions of teams live in every day.</p><p>Highlights include AI channel summaries that catch you up on missed conversations, an upgraded Slackbot that searches across your entire workspace, automated workflow suggestions based on repeated manual actions, and writing assistance that matches your team's tone.</p><p>Salesforce paid $27.7B for Slack in 2021. For most of that time, the acquisition looked questionable. These 30 features are the company finally making its case: Slack isn't a messaging tool anymore — it's becoming the AI operating system for teams.</p>",
     "category": "Products",
-    "imageUrl": "https://aifeed.run/images/aifeed_slack_30ai.jpg",
+    "imageUrl": "https://aifeed.run/images/aifeed_slack_30ai.png",
     "sourceUrl": "",
     "publishedAt": "2026-04-01T09:47:10.964-04:00",
     "isVideo": false
