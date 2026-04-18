@@ -1,5 +1,5 @@
 # AIFeed.run — Claude Project Instructions
-**Last updated: April 16, 2026**
+**Last updated: April 17, 2026 (session 2)**
 
 > This file is read by Claude at the start of every session. Update it whenever significant decisions are made.
 
@@ -121,6 +121,37 @@ Each display line: **max 4 words, max 20 characters**. At 82px font, more than ~
 
 ---
 
+## Session 2 Changes (Apr 17, 2026)
+
+### Workflow Fixes (AIFeed Story Selector)
+- **Critical broken connection** — `Get Selected Story` had NO outgoing connection. Fixed chain: `Get Selected Story → Fetch 4 Pexels Options → Prep Story Data`. This was why the workflow went silent after picking a story number — it fetched the story but had nowhere to send it.
+- **webhookId reset** — Changed from hardcoded `"aifeed-selector-v2-webhook"` to a fresh UUID to clear Telegram webhook registration conflict after re-import.
+- **4 photo options** — `Fetch 4 Pexels Options` now fetches `per_page=4`. Instructions show `img1`/`img2`/`img3`/`img4`/`custom`. Previously only 2 options.
+- **"Here Is Your Next Story"** — Story List message no longer says "5PM Story Pick". Now just says "Here Is Your Next Story" since it runs at 8am, 5pm, and on-demand.
+- **Custom photo message simplified** — "Custom photo uploaded!" no longer has "Captions coming" teaser since captions are already sent by that point.
+
+### n8n Import Rule (CRITICAL)
+When re-importing a workflow JSON into n8n, **it creates a NEW workflow** — it does NOT replace the existing one. If the old workflow is still active, you end up with two Telegram triggers on the same bot, causing a webhook conflict. Always:
+1. Open the existing workflow in n8n
+2. Use Settings → Import to update it in place
+OR delete the old one before importing the new one.
+
+### Telegram Trigger "Test Execution" Message
+The message **"n8n can't listen for test executions at the same time as listening for production ones"** is NORMAL and NOT an error. It appears on the Telegram trigger node whenever the workflow is published. You cannot manually test Telegram triggers in the editor — test by sending a real Telegram message. Ignore this message always.
+
+### Graphic Delivery
+- **Always open the PNG immediately** after generating: `open /Users/305partners/aifeed/images/[filename].png`
+- **aifeed-images folder** is symlinked to Desktop (`~/Desktop/aifeed-images → /Users/305partners/aifeed/images`) — all graphics accessible directly from Desktop for Instagram/LinkedIn posting.
+- **Custom photos from user** — always check Desktop first (`ls -lt ~/Desktop/*.jpg` etc) before downloading from Pexels.
+
+### Newsletter Copy
+- Changed all newsletter sections in `index.html` and `post.html` from "daily" to "weekly" — the newsletter is weekly, not daily. Stories/posts remain daily.
+
+### Background Registry
+- Added `aifeed_china_manus.png` → `bg_china_lanterns.jpg` (custom photo from user, red Chinese lanterns with 福 characters)
+
+---
+
 ## What NOT to Do
 
 - **Never push workflow JSON files to GitHub** — they contain API keys
@@ -193,6 +224,8 @@ Each display line: **max 4 words, max 20 characters**. At 82px font, more than ~
 | aifeed_bofa_agents.png | bg_bofa.jpg | unique (Pexels 3184339) |
 | aifeed_listenlabs.png | bg_listenlabs.jpg | unique (Pexels 3184465) |
 | aifeed_xai_cofounder.png | bg_xai.jpg | unique (Pexels 2264753) |
+
+| aifeed_china_manus.png | bg_china1.jpg | unique (Pexels 3771837, red Chinese lanterns) |
 
 **When adding a new graphic:** download the background file, run md5, confirm it is NOT in this table, add it to the table, then generate.
 
