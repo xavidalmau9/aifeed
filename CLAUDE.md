@@ -1,5 +1,5 @@
 # AIFeed.run — Claude Project Instructions
-**Last updated: April 17, 2026 (session 2)**
+**Last updated: April 17, 2026 (session 3)**
 
 > This file is read by Claude at the start of every session. Update it whenever significant decisions are made.
 
@@ -121,6 +121,42 @@ Each display line: **max 4 words, max 20 characters**. At 82px font, more than ~
 
 ---
 
+## Session 3 Changes (Apr 17, 2026)
+
+### Website Image Bug — Root Cause and Fix
+
+**Root cause:** The Story Selector workflow writes the raw Pexels URL to the `ImageURL` column in Google Sheets when marking a story APPROVED. The website publisher reads that column and uses it as `<img src>`. Pexels URLs are temporary/hotlink-blocked and not branded graphics.
+
+**What the website needs:** A permanent URL hosted at `https://aifeed.run/images/` pointing to either the branded PNG graphic or the permanent background image.
+
+**Fix applied (session 3):**
+- Added new node **"Upload Pexels to GitHub"** (id: b1000050) between `Find Pending Row` and `Mark APPROVED` in the Story Selector workflow
+- The new node downloads the chosen Pexels background image and uploads it to GitHub as `bg_pexels_[timestamp].jpg`
+- Sets `imageUrl` to `https://aifeed.run/images/bg_pexels_[timestamp].jpg` (permanent)
+- `Mark APPROVED` then stores this permanent URL in the sheet instead of the raw Pexels URL
+- Fallback: if GitHub upload fails, uses original Pexels URL (workflow continues uninterrupted)
+
+**Updated flow (stock photo):**
+```
+Find Pending Row → Upload Pexels to GitHub → Mark APPROVED → Send Approval Confirmation → Prep Graphic Data → ...
+```
+
+**4 posts manually fixed (Apr 17, 2026):**
+- `beijing-brands-metas-manus-acquisition-conspiratorial-20260417` → `aifeed_china_manus.png`
+- `anthropics-claude-opus-makes-big-leap-20260417` → `aifeed_anthropic.png`
+- `sam-altmans-project-world-looks-scale-20260418` → `aifeed_sam_altman.png` (copied from "aifeed.run instagram posts" folder)
+- `zuckerberg-reportedly-trades-headcount-for-compute-20260418` → `aifeed_zuckerberg.png` (copied from "aifeed.run instagram posts" folder)
+
+**To deploy the workflow fix:**
+1. Open n8n → Story Selector workflow
+2. Settings → Import → select `/Users/305partners/Desktop/AIFeed Story Selector NEW.json`
+3. **Do NOT activate the imported version as a new workflow** — update the existing one in-place to avoid duplicate Telegram webhooks
+4. After import, verify the new "Upload Pexels to GitHub" node appears between "Find Pending Row" and "Mark APPROVED" and is connected correctly
+
+**Manual override (while waiting for workflow fix):** If a new post has a Pexels URL showing, find the matching branded graphic in `~/Desktop/aifeed.run instagram posts/` or `~/Desktop/aifeed-images/`, copy it to `/Users/305partners/aifeed/images/`, update `imageUrl` in `_posts/posts-index.json`, commit and push.
+
+---
+
 ## Session 2 Changes (Apr 17, 2026)
 
 ### Workflow Fixes (AIFeed Story Selector)
@@ -226,6 +262,7 @@ The message **"n8n can't listen for test executions at the same time as listenin
 | aifeed_xai_cofounder.png | bg_xai.jpg | unique (Pexels 2264753) |
 
 | aifeed_china_manus.png | bg_china1.jpg | unique (Pexels 3771837, red Chinese lanterns) |
+| aifeed_anthropic_trillion.png | bg_anthropic_trillion.jpg | unique (Pexels 14820464 by jonathanborba, $100 bills scattered) |
 
 **When adding a new graphic:** download the background file, run md5, confirm it is NOT in this table, add it to the table, then generate.
 
