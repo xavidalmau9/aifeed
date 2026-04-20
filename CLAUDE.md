@@ -1,5 +1,5 @@
 # AIFeed.run — Claude Project Instructions
-**Last updated: April 17, 2026 (session 3)**
+**Last updated: April 20, 2026 (session 4)**
 
 > This file is read by Claude at the start of every session. Update it whenever significant decisions are made.
 
@@ -19,6 +19,48 @@ AIFeed.run is an automated AI news brand. Every day it:
 - **Google Sheet:** `1BCTHLe5ExoFwLMnQuayVWsVI8hBKfD7u54FiHGv_7rs` ("AIFeed Posted Headlines")
 - **Telegram bot token:** `8738655145:AAE1jUkC4n_Gq2jmyAsNQU_cQpJGDJFLuWA`
 - **Telegram chat ID:** `7748417469`
+
+---
+
+## ⚠️ CRITICAL RULES — READ BEFORE EVERY TASK ⚠️
+
+These rules exist because of real mistakes that cost time and money. Do not skip them.
+
+### 1. GRAPHIC GENERATION — MANDATORY CHECKLIST
+**Before generating ANY graphic, in this exact order:**
+1. `Read /Users/305partners/aifeed/GRAPHIC_SPEC.md` — every single time, no exceptions
+2. Use the story's **existing background photo** if it already has one (e.g. if `imageUrl` contains `bg_pexels_*.jpg`, download that and use it — do not search Pexels for a new photo)
+3. Only search Pexels for a new background if no background exists yet
+4. Run md5 duplicate check against Background Registry before using any new photo
+5. Render with `--window-size=1080,1500` + Pillow crop to 1350px
+
+**Spec quick-ref (memorize these — they are non-negotiable):**
+- **Pill**: `AIFEED.RUN • AI NEWS` — always this exact text, never just the category
+- **Headline**: Three separate `<span>` elements — `.hw` (white), `.hp` (purple accent), `.hw` (white) — plus `.hu` purple underline bar underneath
+- **Cards**: 3 cards, each with `position:relative`, emoji `.cv` at `top:10px` centered, label `.cl` at `top:66px` centered, colored border only: `.c1` purple `#a050ff`, `.c2` green `#32d76e`, `.c3` orange `#ff8c00` — NO value+label layout
+- **Source bar**: `Source: NAME · domain.com` format — not just `domain.com`
+- **Gradient overlay**: `rgba(4,2,14,.08) 0%, rgba(4,2,14,.86) 50%, rgba(4,2,14,.86) 100%`
+
+### 2. WEBSITE BODY TEXT — LinkedInCaption ONLY
+- **`Caption` column = Instagram** — short, emojis, ⠀ spacers. NEVER use for website.
+- **`LinkedInCaption` column = website** — always use this field for `body` in posts-index.json
+- When Claude API is unavailable: apply `liToHtml()` to LinkedInCaption — never dump raw text
+- `liToHtml()`: splits on `⠀` (U+2800), skips first segment (headline), skips Source: lines, wraps paragraphs in `<p>`, collects `#hashtags` → purple `<span style="color:#a050ff">` elements
+
+### 3. EDITING n8n WORKFLOW JSON FILES
+**Never use the Edit tool to modify JavaScript code inside a JSON `jsCode` string.**
+The Edit tool does not handle JSON escaping — it will corrupt the file.
+**Correct approach:** Use Python to `json.load()` → modify the `jsCode` string in memory → `json.dump()` back out. Always verify with `json.load()` after writing.
+
+### 4. POSTS-INDEX.JSON CHANGES
+After any edit to `_posts/posts-index.json`:
+1. `git pull --rebase` first (the n8n publisher pushes commits — remote is often ahead)
+2. If unstaged changes: `git stash → pull → git stash pop`
+3. If stash pop conflicts with a file already on remote: move the file temporarily, pull, pop, restore
+4. Commit and push
+
+### 5. GOOGLE ANALYTICS
+Tag ID: `G-38GGN8HYT6`. Installed in `<head>` of both `index.html` and `post.html`. Do not add again.
 
 ---
 
@@ -121,6 +163,36 @@ Each display line: **max 4 words, max 20 characters**. At 82px font, more than ~
 
 ---
 
+## Session 4 Changes (Apr 20, 2026)
+
+### Fixed — 5 posts with Instagram body text
+Posts published Apr 17–19 had Instagram-style short captions as body text instead of proper article HTML. Root cause: the Website Publisher fallback (triggered when Anthropic API was out of credits) dumped `Caption` (Instagram field) directly as the body.
+
+**Posts fixed** (body replaced with proper 5-paragraph article text + tags):
+- `nvidias-oncetight-bond-with-gamers-cracking-20260419`
+- `sam-altmans-project-world-looks-scale-20260418`
+- `zuckerberg-reportedly-trades-headcount-for-compute-20260418`
+- `beijing-brands-metas-manus-acquisition-conspiratorial-20260417`
+- `anthropics-claude-opus-makes-big-leap-20260417`
+
+### Fixed — Nvidia post had raw Pexels background
+`nvidias-oncetight-bond-with-gamers-cracking-20260419` had `imageUrl: bg_pexels_1776621283733.jpg` (raw background, no branding). Created branded graphic `aifeed_nvidia.png` using the original background photo. Added to Background Registry.
+
+### Fixed — Website Publisher workflow (`aifeed website publisher.json`)
+Three bugs fixed in the `Fetch Build Push (APPROVED only)` code node:
+1. **Field name**: Changed `item.json.Caption` → `item.json.LinkedInCaption` (with `Caption` as fallback). The website must ALWAYS use LinkedIn text, never Instagram text.
+2. **Fallback body**: When Claude API fails, was dumping raw caption as `<p>raw text</p>`. Now runs `liToHtml()` which properly formats the caption into paragraphs and purple hashtag spans.
+3. **Claude prompt**: Changed "INSTAGRAM CAPTION (for context)" → "LINKEDIN CAPTION (for context)".
+4. **Added `liToHtml()`** function to the workflow code node. Splits on `⠀` (U+2800 Braille blank spacer used by Instagram/LinkedIn), skips first segment (headline), skips Source: lines and URLs, extracts hashtags to purple spans.
+
+**To deploy:** In n8n → open "aifeed website publisher" → Settings → Import → select `/Users/305partners/Desktop/aifeed website publisher.json` (update in place, do NOT create a new workflow).
+
+### GRAPHIC SPEC RULE (permanent — added to enforcement list)
+**ALWAYS read `GRAPHIC_SPEC.md` before generating any graphic.** The spec defines pill content (`AIFEED.RUN • AI NEWS`), headline `.hw`/`.hp`/`.hu` color structure, card layout (emoji + label, absolute positioned, colored borders), and source format (`Source: NAME · domain.com`). Do NOT improvise from memory.
+
+### Background Registry additions
+| aifeed_nvidia.png | bg_pexels_1776621283733.jpg | unique (Pexels — GeForce GTX close-up, original story background) |
+
 ## Session 3 Changes (Apr 17, 2026)
 
 ### Website Image Bug — Root Cause and Fix
@@ -190,6 +262,14 @@ The message **"n8n can't listen for test executions at the same time as listenin
 
 ## What NOT to Do
 
+- **Never generate a graphic without reading GRAPHIC_SPEC.md first** — every time, no exceptions
+- **Never use `item.json.Caption` for website body text** — always `item.json.LinkedInCaption`
+- **Never dump raw caption text as website body HTML** — always run through `liToHtml()` at minimum
+- **Never use the Edit tool on JavaScript inside a JSON `jsCode` field** — use Python json.load/dump
+- **Never search for a new Pexels background if the story already has one assigned** — use the existing `bg_pexels_*.jpg`
+- **Never put just the category in the pill** — pill text is always `AIFEED.RUN • AI NEWS`
+- **Never use a flat `<div>` with label+value layout for stat cards** — cards use absolute-positioned emoji (top:10px) + label (top:66px) with colored borders only
+- **Never write just `domain.com` in the bottom bar source** — format is `Source: NAME · domain.com`
 - **Never push workflow JSON files to GitHub** — they contain API keys
 - **Never use `right:230px` for the logo** — use `right:54px`
 - **Never use 90px font** for headlines — use 82px
@@ -264,6 +344,7 @@ The message **"n8n can't listen for test executions at the same time as listenin
 | aifeed_china_manus.png | bg_china1.jpg | unique (Pexels 3771837, red Chinese lanterns) |
 | aifeed_anthropic_trillion.png | bg_anthropic_trillion.jpg | unique (Pexels 14820464 by jonathanborba, $100 bills scattered) |
 | aifeed_nsa_mythos.png | bg_nsa_mythos.jpg | unique (Pexels 1089438, Matrix-style green code on black) |
+| aifeed_nvidia.png | bg_pexels_1776621283733.jpg | unique (GeForce GTX close-up, original story-selected background) |
 
 **When adding a new graphic:** download the background file, run md5, confirm it is NOT in this table, add it to the table, then generate.
 
