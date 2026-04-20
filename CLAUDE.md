@@ -263,6 +263,7 @@ The message **"n8n can't listen for test executions at the same time as listenin
 
 | aifeed_china_manus.png | bg_china1.jpg | unique (Pexels 3771837, red Chinese lanterns) |
 | aifeed_anthropic_trillion.png | bg_anthropic_trillion.jpg | unique (Pexels 14820464 by jonathanborba, $100 bills scattered) |
+| aifeed_nsa_mythos.png | bg_nsa_mythos.jpg | unique (Pexels 1089438, Matrix-style green code on black) |
 
 **When adding a new graphic:** download the background file, run md5, confirm it is NOT in this table, add it to the table, then generate.
 
