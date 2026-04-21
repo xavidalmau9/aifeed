@@ -1,5 +1,29 @@
 [
   {
+    "id": "chinese-tech-workers-are-starting-train-20260420",
+    "slug": "chinese-tech-workers-are-starting-train",
+    "headline": "Chinese tech workers are starting to train their AI doubles–and pushing back",
+    "summary": "Chinese tech workers are starting to train their AI doubles–and pushing back",
+    "body": "<p>Chinese tech workers are starting to train their AI doubles–and pushing back  A new dynamic is emerging inside China's tech industry: employees are being asked to train AI systems modeled on their own workflows, expertise, and decision-making patterns—effectively building the tools that could make their roles redundant.  The response has been mixed. Some workers comply out of necessity, while others are quietly resisting through data sabotage, selective input, or outright refusal to participate in the training process.  This marks one of the first visible collisions between AI deployment and labor agency at scale. It raises difficult questions for enterprises worldwide about consent, compensation, and the ethics of using human expertise to build its replacement.  For leaders, the takeaway is clear: AI transformation strategies that ignore the human contributors behind the models risk eroding trust, data quality, and long-term organizational resilience.  How companies navigate this tension—between automation goals and workforce dignity—will shape the next phase of enterprise AI adoption.  Source: technologyreview.com · https://www.technologyreview.com/2026/04/20/1136149/chinese-tech-workers-ai-colleagues/ #AINews #FutureOfWork #AIEthics #EnterpriseAI #Automation #DigitalTransformation #AILabor</p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/bg_pexels_1776719104206.jpg",
+    "sourceUrl": "https://www.technologyreview.com/2026/04/20/1136149/chinese-tech-workers-ai-colleagues/",
+    "publishedAt": "2026-04-20T17:03:42.886-04:00",
+    "isVideo": false
+  },
+  {
+    "id": "the-nsa-using-anthropics-most-powerful-20260420",
+    "slug": "the-nsa-using-anthropics-most-powerful",
+    "headline": "The NSA is using Anthropic's most powerful AI model Mythos",
+    "summary": "The NSA is using Anthropic's most powerful AI model Mythos",
+    "body": "<p>The NSA is using Anthropic's most powerful AI model Mythos  The U.S. National Security Agency has reportedly begun deploying Anthropic's flagship Claude model under the codename  Mythos,  marking a significant milestone in the integration of frontier AI into classified intelligence operations.  This development underscores a broader trend: leading AI labs are increasingly positioning themselves as strategic partners to the U.S. defense and intelligence community. Anthropic, long known for its safety-first positioning, is now entering territory once dominated by legacy defense contractors.  For enterprise leaders, the implications extend beyond national security. When the NSA adopts a frontier model, it validates the operational readiness of these systems for high-stakes, high-sensitivity environments, accelerating broader enterprise trust in agentic AI.  It also raises important governance questions around dual-use AI, data sovereignty, and the evolving boundary between commercial AI providers and state actors. Organizations building on Claude should expect tighter compliance and security frameworks moving forward.  Expect competitive pressure on OpenAI, Google DeepMind, and xAI to deepen their own government partnerships, further consolidating the AI-national security nexus.  Source: the-decoder.com · https://the-decoder.com/the-nsa-is-using-anthropics-most-powerful-ai-model-mythos/ #AINews #Anthropic #NationalSecurity #EnterpriseAI #AIGovernance</p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/custom_1776686646771.jpg",
+    "sourceUrl": "https://the-decoder.com/the-nsa-is-using-anthropics-most-powerful-ai-model-mythos/",
+    "publishedAt": "2026-04-20T08:02:31.608-04:00",
+    "isVideo": false
+  },
+  {
     "id": "anthropics-revenue-surge-reportedly-fuels-talk-of-trillion-dollar-valuation-20260419",
     "slug": "anthropics-revenue-surge-reportedly-fuels-talk-of-trillion-dollar-valuation",
     "headline": "Anthropic's revenue surge reportedly fuels talk of trillion-dollar valuation",
