@@ -1290,6 +1290,90 @@ AI Discovery · Human Refined · Always On." />
       .sponsor-band { flex-direction: column; }
       .footer-bottom { flex-direction: column; align-items: flex-start; }
       .nav-right .nav-link:not(.btn-nav-cta) { display: none; }
+      .tools-banner { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .tools-banner-cta { align-self: flex-end; }
+    }
+
+    /* ── AI TOOLS BANNER ── */
+    .tools-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(135deg, rgba(124,58,237,0.10), rgba(249,115,22,0.07));
+      border: 1px solid rgba(168,85,247,0.28);
+      border-radius: 12px;
+      padding: 14px 22px;
+      margin: 24px 0 32px;
+      text-decoration: none;
+      transition: border-color .2s, background .2s;
+    }
+    .tools-banner:hover {
+      border-color: rgba(168,85,247,0.55);
+      background: linear-gradient(135deg, rgba(124,58,237,0.17), rgba(249,115,22,0.11));
+    }
+    .tools-banner-left { display: flex; align-items: center; gap: 14px; }
+    .tools-banner-icon { font-size: 26px; line-height: 1; }
+    .tools-banner-text strong {
+      display: block;
+      color: var(--white);
+      font-family: 'Syne', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .tools-banner-text span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .tools-banner-cta {
+      color: var(--purple2);
+      font-family: 'Syne', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+      background: rgba(168,85,247,0.12);
+      border: 1px solid rgba(168,85,247,0.3);
+      border-radius: 20px;
+      padding: 6px 16px;
+      transition: background .2s;
+    }
+    .tools-banner:hover .tools-banner-cta { background: rgba(168,85,247,0.22); }
+
+    /* ── PAGINATION ── */
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin: 28px 0 8px;
+    }
+    .page-btn {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--card-border);
+      color: var(--muted);
+      border-radius: 8px;
+      padding: 8px 18px;
+      font-family: 'Syne', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .page-btn:hover:not(:disabled) {
+      background: rgba(168,85,247,0.14);
+      border-color: rgba(168,85,247,0.4);
+      color: var(--white);
+    }
+    .page-btn:disabled { opacity: 0.3; cursor: default; }
+    .page-btn.active {
+      background: rgba(168,85,247,0.18);
+      border-color: var(--purple2);
+      color: var(--purple2);
+    }
+    .page-info {
+      color: var(--muted);
+      font-size: 13px;
+      font-family: 'Syne', sans-serif;
+      padding: 0 6px;
     }
   </style>
 </head>
@@ -1372,8 +1456,20 @@ AI Discovery · Human Refined · Always On.</p>
       </div>
     </div>
 
+    <!-- AI TOOLS BANNER -->
+    <a href="#ai-tools" class="tools-banner">
+      <div class="tools-banner-left">
+        <span class="tools-banner-icon">🧰</span>
+        <div class="tools-banner-text">
+          <strong>Looking for AI tools?</strong>
+          <span>We've curated the best — tested &amp; hand-picked by the AIFeed team</span>
+        </div>
+      </div>
+      <span class="tools-banner-cta">See all tools ↓</span>
+    </a>
+
     <!-- SECTION HEADER -->
-    <div class="section-header">
+    <div class="section-header" id="stories-top">
       <span class="section-title">Latest Stories</span>
       <span class="section-title" id="post-count" style="color:var(--purple2)"></span>
     </div>
@@ -1419,7 +1515,7 @@ AI Discovery · Human Refined · Always On.</p>
     </section>
 
     <!-- AI TOOLS DIRECTORY -->
-    <section class="tools-section">
+    <section class="tools-section" id="ai-tools">
       <div class="section-header" style="margin-bottom: 8px">
         <span class="section-title">🧰 Top AI Tools</span>
         <span class="section-title section-note">Curated picks — some links are affiliate</span>
@@ -1728,6 +1824,10 @@ AI Discovery · Human Refined · Always On.</p>
     // ─── DATA LOADING ────────────────────────────────────────────────────
     let allPosts = [];
     let activeCategory = 'all';
+    let currentPostPage = 1;
+    let currentVideoPage = 1;
+    const POSTS_PER_PAGE = 15;
+    const VIDEOS_PER_PAGE = 4;
 
     function openLightbox(url) {
       const lb = document.getElementById('video-lightbox');
@@ -1817,7 +1917,12 @@ AI Discovery · Human Refined · Always On.</p>
           sourceUrl: 'https://www.youtube.com/watch?v=tDW6VoyWWqo'
         }
       ];
-      grid.innerHTML = brandedVideos.map((v, i) => `
+      const totalVideoPages = Math.max(1, Math.ceil(brandedVideos.length / VIDEOS_PER_PAGE));
+      currentVideoPage = Math.min(currentVideoPage, totalVideoPages);
+      const vStart = (currentVideoPage - 1) * VIDEOS_PER_PAGE;
+      const pageVideos = brandedVideos.slice(vStart, vStart + VIDEOS_PER_PAGE);
+
+      grid.innerHTML = pageVideos.map((v, i) => `
         <div class="video-card" style="cursor:pointer;animation-delay:${i * 0.1}s" onclick="openLightbox('${v.videoUrl}')">
           <div class="video-thumb">
             <video src="${v.videoUrl}" preload="metadata" playsinline muted loop
@@ -1837,6 +1942,30 @@ AI Discovery · Human Refined · Always On.</p>
           </div>
         </div>
       `).join('');
+
+      // Video pagination
+      let vPag = document.getElementById('video-pagination');
+      if (!vPag) {
+        vPag = document.createElement('div');
+        vPag.id = 'video-pagination';
+        grid.insertAdjacentElement('afterend', vPag);
+      }
+      if (totalVideoPages <= 1) { vPag.innerHTML = ''; return; }
+      const vButtons = Array.from({length: totalVideoPages}, (_, i) => {
+        const p = i + 1;
+        return `<button class="page-btn ${p === currentVideoPage ? 'active' : ''}" onclick="goToVideoPage(${p})">${p}</button>`;
+      }).join('');
+      vPag.innerHTML = `<div class="pagination">
+        <button class="page-btn" ${currentVideoPage <= 1 ? 'disabled' : ''} onclick="goToVideoPage(${currentVideoPage - 1})">← Prev</button>
+        ${vButtons}
+        <button class="page-btn" ${currentVideoPage >= totalVideoPages ? 'disabled' : ''} onclick="goToVideoPage(${currentVideoPage + 1})">Next →</button>
+      </div>`;
+    }
+
+    function goToVideoPage(page) {
+      currentVideoPage = page;
+      renderVideos();
+      document.querySelector('.videos-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     async function loadPosts() {
@@ -1948,14 +2077,20 @@ AI Discovery · Human Refined · Always On.</p>
         ? allPosts
         : allPosts.filter(p => p.category === activeCategory);
 
+      const totalPages = Math.max(1, Math.ceil(filtered.length / POSTS_PER_PAGE));
+      currentPostPage = Math.min(currentPostPage, totalPages);
+      const start = (currentPostPage - 1) * POSTS_PER_PAGE;
+      const pagePosts = filtered.slice(start, start + POSTS_PER_PAGE);
+
       if (countEl) countEl.textContent = filtered.length + ' stories';
 
       if (filtered.length === 0) {
         grid.innerHTML = '<div class="video-empty"><h3>No stories found</h3><p>Check back soon.</p></div>';
+        renderPostPagination(0, 1);
         return;
       }
 
-      grid.innerHTML = filtered.map((post, i) => {
+      grid.innerHTML = pagePosts.map((post, i) => {
         const img = post.imageUrl || getImageForHeadline(post.headline);
         const cat = post.category || 'Industry';
         const date = formatDate(post.publishedAt);
@@ -1974,6 +2109,48 @@ AI Discovery · Human Refined · Always On.</p>
             </div>
           </a>`;
       }).join('');
+
+      renderPostPagination(totalPages, currentPostPage);
+    }
+
+    function renderPostPagination(totalPages, currentPage) {
+      let el = document.getElementById('post-pagination');
+      if (!el) {
+        el = document.createElement('div');
+        el.id = 'post-pagination';
+        document.getElementById('posts-grid').insertAdjacentElement('afterend', el);
+      }
+      if (totalPages <= 1) { el.innerHTML = ''; return; }
+
+      // Show max 7 page numbers with ellipsis for large sets
+      function pageNums(total, cur) {
+        if (total <= 7) return Array.from({length: total}, (_, i) => i + 1);
+        const pages = new Set([1, total, cur]);
+        if (cur > 1) pages.add(cur - 1);
+        if (cur < total) pages.add(cur + 1);
+        return [...pages].sort((a, b) => a - b);
+      }
+      const nums = pageNums(totalPages, currentPage);
+      let buttons = '';
+      let prev = 0;
+      for (const n of nums) {
+        if (prev && n - prev > 1) buttons += `<span class="page-info">…</span>`;
+        const active = n === currentPage ? 'active' : '';
+        buttons += `<button class="page-btn ${active}" onclick="goToPostPage(${n})">${n}</button>`;
+        prev = n;
+      }
+
+      el.innerHTML = `<div class="pagination">
+        <button class="page-btn" ${currentPage <= 1 ? 'disabled' : ''} onclick="goToPostPage(${currentPage - 1})">← Prev</button>
+        ${buttons}
+        <button class="page-btn" ${currentPage >= totalPages ? 'disabled' : ''} onclick="goToPostPage(${currentPage + 1})">Next →</button>
+      </div>`;
+    }
+
+    function goToPostPage(page) {
+      currentPostPage = page;
+      renderPosts();
+      document.getElementById('stories-top').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     // ─── AUTO IMAGE ASSIGNMENT ────────────────────────────────────────────
@@ -2064,6 +2241,7 @@ AI Discovery · Human Refined · Always On.</p>
       document.querySelectorAll('.tag').forEach(t => t.classList.remove('active'));
       tag.classList.add('active');
       activeCategory = tag.dataset.cat;
+      currentPostPage = 1; // reset to page 1 on category change
       renderPosts();
     });
 
