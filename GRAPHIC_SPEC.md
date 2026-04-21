@@ -88,9 +88,10 @@ All positions are absolute and must never change.
 .ov {
   position: absolute; inset: 0;
   background: linear-gradient(to bottom,
-    rgba(4,2,14,.08) 0%,
-    rgba(4,2,14,.86) 50%,
-    rgba(4,2,14,.86) 100%);
+    rgba(4,2,14,.04) 0%,
+    rgba(4,2,14,.65) 50%,
+    rgba(4,2,14,.70) 100%);
+  /* Lightened Apr 21 2026 — was .08/.86/.86, too dark */
 }
 ```
 

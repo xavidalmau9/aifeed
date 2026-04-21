@@ -39,7 +39,7 @@ These rules exist because of real mistakes that cost time and money. Do not skip
 - **Headline**: Three separate `<span>` elements — `.hw` (white), `.hp` (purple accent), `.hw` (white) — plus `.hu` purple underline bar underneath
 - **Cards**: 3 cards, each with `position:relative`, emoji `.cv` at `top:10px` centered, label `.cl` at `top:66px` centered, colored border only: `.c1` purple `#a050ff`, `.c2` green `#32d76e`, `.c3` orange `#ff8c00` — NO value+label layout
 - **Source bar**: `Source: NAME · domain.com` format — not just `domain.com`
-- **Gradient overlay**: `rgba(4,2,14,.08) 0%, rgba(4,2,14,.86) 50%, rgba(4,2,14,.86) 100%`
+- **Gradient overlay**: `rgba(4,2,14,.04) 0%, rgba(4,2,14,.65) 50%, rgba(4,2,14,.70) 100%` *(lightened Apr 21 — was .08/.86/.86, too dark)*
 
 ### 2. WEBSITE BODY TEXT — LinkedInCaption ONLY
 - **`Caption` column = Instagram** — short, emojis, ⠀ spacers. NEVER use for website.
@@ -257,6 +257,23 @@ The message **"n8n can't listen for test executions at the same time as listenin
 
 ### Background Registry
 - Added `aifeed_china_manus.png` → `bg_china_lanterns.jpg` (custom photo from user, red Chinese lanterns with 福 characters)
+
+---
+
+## Affiliate Links Registry
+
+These are the REAL affiliate links in the tools grid. When updating any tool card, always use the link from this table — never the tool's homepage directly.
+
+| Tool | Affiliate Link | Commission | Status |
+|------|---------------|-----------|--------|
+| ElevenLabs | `https://try.elevenlabs.io/qspw8v1gx7n0` | — | Active |
+| HeadshotPro | `https://www.headshotpro.com/?via=aifeed` | — | Active |
+| Beehiiv | `https://www.beehiiv.com/?via=ai-feed` | — | Active |
+| AdCreative.ai | `https://free-trial.adcreative.ai/g944t536drtc` | 30% recurring | Active — added Apr 21, 2026 |
+
+**Writesonic, SurferSEO, Munch, HubSpot, Deep Art Effects, Perplexity, Claude.ai, n8n** — no affiliate links yet (using homepage URLs).
+
+**Rule:** Never update a tool's URL to a non-affiliate homepage if an affiliate link exists in this table.
 
 ---
 
