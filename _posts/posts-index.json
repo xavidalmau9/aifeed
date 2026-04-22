@@ -4,48 +4,79 @@
     "slug": "sam-altman-throws-shade-anthropics-cyber",
     "headline": "Sam Altman throws shade at Anthropic's cyber model, Mythos: 'fear-based marketing'",
     "summary": "Sam Altman throws shade at Anthropic's cyber model, Mythos: 'fear-based marketing'",
-    "body": "<p>The competitive dynamics between frontier AI labs just took a sharper turn. Sam Altman publicly criticized Anthropic's newly launched cyber-focused model, Mythos, accusing the company of leveraging <strong>fear-based marketing</strong> to drive attention and adoption.</p><p>The critique cuts to an ongoing tension in the industry: where does legitimate safety communication end, and where does threat-amplification as a go-to-market strategy begin? Anthropic has consistently positioned itself as the safety-forward lab, and Mythos extends that narrative into the enterprise cybersecurity domain.</p><p>For enterprise buyers, the dispute matters. Security procurement decisions increasingly hinge on how vendors frame risk — and models marketed around worst-case threat scenarios can shape budget allocation, compliance posture, and board-level conversations in outsized ways.</p><p>Altman's remarks also reflect OpenAI's own strategic positioning. By pushing back on fear-led narratives, the company is signaling a preference for capability and productivity framing over existential messaging — a meaningful differentiator as both labs court Fortune 500 contracts.</p><p>Expect this debate to escalate. As AI capabilities intersect more deeply with cybersecurity, offensive research, and national security, how labs communicate risk will become as scrutinized as the models themselves.</p>",
+    "body": "<p>The competitive dynamics between frontier AI labs just took a sharper turn. Sam Altman publicly criticized Anthropic's newly launched cyber-focused model, Mythos, accusing the company of leveraging <strong>fear-based marketing</strong> to drive attention and adoption.</p><p>The critique cuts to an ongoing tension in the industry: where does legitimate safety communication end, and where does threat-amplification as a go-to-market strategy begin? Anthropic has consistently positioned itself as the safety-forward lab, and Mythos extends that narrative into the enterprise cybersecurity domain.</p><p>For enterprise buyers, the dispute matters. Security procurement decisions increasingly hinge on how vendors frame risk — and models marketed around worst-case threat scenarios can shape budget allocation, compliance posture, and board-level conversations in outsized ways.</p><p>Altman's remarks also reflect OpenAI's own strategic positioning. By pushing back on fear-led narratives, the company is signaling a preference for capability and productivity framing over existential messaging — a meaningful differentiator as both labs court Fortune 500 contracts.</p><p>Expect this debate to escalate. As AI capabilities intersect more deeply with cybersecurity, offensive research, and national security, how labs communicate risk will become as scrutinized as the models themselves.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AINews</span> <span style=\"color:#a050ff\">#EnterpriseAI</span> <span style=\"color:#a050ff\">#Cybersecurity</span> <span style=\"color:#a050ff\">#OpenAI</span> <span style=\"color:#a050ff\">#Anthropic</span></p>",
     "category": "Industry",
     "imageUrl": "https://aifeed.run/images/aifeed_sam_altman_mythos.png",
     "sourceUrl": "https://techcrunch.com/2026/04/21/sam-altman-throws-shade-at-anthropics-cyber-model-mythos-fear-based-marketing/",
     "publishedAt": "2026-04-21T17:03:13.720-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "EnterpriseAI",
+      "Cybersecurity",
+      "OpenAI",
+      "Anthropic"
+    ]
   },
   {
     "id": "amazon-pours-33b-into-anthropic-which-20260421",
     "slug": "amazon-pours-33b-into-anthropic-which",
     "headline": "Amazon pours $33B into Anthropic, which promises to spend $100B right back on AWS",
     "summary": "Amazon pours $33B into Anthropic, which promises to spend $100B right back on AWS",
-    "body": "<p>The structure of this deal reveals how AI infrastructure economics are reshaping capital flows between hyperscalers and frontier labs.</p><p>Amazon's $33B investment is effectively recycled: Anthropic commits $100B in AWS compute spend, turning the investment into guaranteed cloud revenue while locking in strategic AI alignment.</p><p>This mirrors Microsoft's OpenAI playbook, where capital injections and compute commitments blur the line between investment, partnership, and vendor lock-in. The frontier lab becomes both customer and co-dependent.</p><p>For enterprise leaders, the implication is clear: the AI model landscape is consolidating around cloud provider allegiances. Claude on AWS, GPT on Azure, Gemini on GCP — your cloud choice increasingly dictates your AI roadmap.</p><p>The circular nature of these deals also raises questions about valuation, revenue recognition, and whether reported AI demand reflects genuine third-party adoption or intra-ecosystem commitments.</p><p>Expect regulators to scrutinize these arrangements as AI infrastructure becomes a strategic chokepoint for the next decade.</p>",
+    "body": "<p>The structure of this deal reveals how AI infrastructure economics are reshaping capital flows between hyperscalers and frontier labs.</p><p>Amazon's $33B investment is effectively recycled: Anthropic commits $100B in AWS compute spend, turning the investment into guaranteed cloud revenue while locking in strategic AI alignment.</p><p>This mirrors Microsoft's OpenAI playbook, where capital injections and compute commitments blur the line between investment, partnership, and vendor lock-in. The frontier lab becomes both customer and co-dependent.</p><p>For enterprise leaders, the implication is clear: the AI model landscape is consolidating around cloud provider allegiances. Claude on AWS, GPT on Azure, Gemini on GCP — your cloud choice increasingly dictates your AI roadmap.</p><p>The circular nature of these deals also raises questions about valuation, revenue recognition, and whether reported AI demand reflects genuine third-party adoption or intra-ecosystem commitments.</p><p>Expect regulators to scrutinize these arrangements as AI infrastructure becomes a strategic chokepoint for the next decade.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AINews</span> <span style=\"color:#a050ff\">#Anthropic</span> <span style=\"color:#a050ff\">#Amazon</span> <span style=\"color:#a050ff\">#CloudAI</span> <span style=\"color:#a050ff\">#ArtificialIntelligence</span> <span style=\"color:#a050ff\">#TechInvestment</span></p>",
     "category": "Industry",
     "imageUrl": "https://aifeed.run/images/aifeed_amazon_anthropic_33b.png",
     "sourceUrl": "https://the-decoder.com/amazon-pours-33b-into-anthropic-which-promises-to-spend-100b-right-back-on-aws/",
     "publishedAt": "2026-04-21T08:50:13.430-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "Anthropic",
+      "Amazon",
+      "CloudAI",
+      "ArtificialIntelligence",
+      "TechInvestment"
+    ]
   },
   {
     "id": "chinese-tech-workers-are-starting-train-20260420",
     "slug": "chinese-tech-workers-are-starting-train",
     "headline": "Chinese tech workers are starting to train their AI doubles–and pushing back",
     "summary": "Chinese tech workers are starting to train their AI doubles–and pushing back",
-    "body": "<p>A new dynamic is emerging inside China's tech industry: employees are being asked to train AI systems modeled on their own workflows, expertise, and decision-making patterns—effectively building the tools that could make their roles redundant.</p><p>The response has been mixed. Some workers comply out of necessity, while others are quietly resisting through data sabotage, selective input, or outright refusal to participate in the training process.</p><p>This marks one of the first visible collisions between AI deployment and labor agency at scale. It raises difficult questions for enterprises worldwide about consent, compensation, and the ethics of using human expertise to build its replacement.</p><p>For leaders, the takeaway is clear: AI transformation strategies that ignore the human contributors behind the models risk eroding trust, data quality, and long-term organizational resilience.</p><p>How companies navigate this tension—between automation goals and workforce dignity—will shape the next phase of enterprise AI adoption.</p>",
+    "body": "<p>A new dynamic is emerging inside China's tech industry: employees are being asked to train AI systems modeled on their own workflows, expertise, and decision-making patterns—effectively building the tools that could make their roles redundant.</p><p>The response has been mixed. Some workers comply out of necessity, while others are quietly resisting through data sabotage, selective input, or outright refusal to participate in the training process.</p><p>This marks one of the first visible collisions between AI deployment and labor agency at scale. It raises difficult questions for enterprises worldwide about consent, compensation, and the ethics of using human expertise to build its replacement.</p><p>For leaders, the takeaway is clear: AI transformation strategies that ignore the human contributors behind the models risk eroding trust, data quality, and long-term organizational resilience.</p><p>How companies navigate this tension—between automation goals and workforce dignity—will shape the next phase of enterprise AI adoption.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AINews</span> <span style=\"color:#a050ff\">#China</span> <span style=\"color:#a050ff\">#AITraining</span> <span style=\"color:#a050ff\">#FutureOfWork</span> <span style=\"color:#a050ff\">#ArtificialIntelligence</span> <span style=\"color:#a050ff\">#TechIndustry</span></p>",
     "category": "Industry",
     "imageUrl": "https://aifeed.run/images/aifeed_china_workers_ai.png",
     "sourceUrl": "https://www.technologyreview.com/2026/04/20/1136149/chinese-tech-workers-ai-colleagues/",
     "publishedAt": "2026-04-20T17:03:42.886-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "China",
+      "AITraining",
+      "FutureOfWork",
+      "ArtificialIntelligence",
+      "TechIndustry"
+    ]
   },
   {
     "id": "the-nsa-using-anthropics-most-powerful-20260420",
     "slug": "the-nsa-using-anthropics-most-powerful",
     "headline": "The NSA is using Anthropic's most powerful AI model Mythos",
     "summary": "The NSA is using Anthropic's most powerful AI model Mythos",
-    "body": "<p>The NSA is using Anthropic's most powerful AI model Mythos</p><p>The U.S. National Security Agency has reportedly begun deploying Anthropic's flagship Claude model under the codename</p><p>marking a significant milestone in the integration of frontier AI into classified intelligence operations.</p><p>This development underscores a broader trend: leading AI labs are increasingly positioning themselves as strategic partners to the U.S. defense and intelligence community. Anthropic, long known for its safety-first positioning, is now entering territory once dominated by legacy defense contractors.</p><p>For enterprise leaders, the implications extend beyond national security. When the NSA adopts a frontier model, it validates the operational readiness of these systems for high-stakes, high-sensitivity environments, accelerating broader enterprise trust in agentic AI.</p><p>It also raises important governance questions around dual-use AI, data sovereignty, and the evolving boundary between commercial AI providers and state actors. Organizations building on Claude should expect tighter compliance and security frameworks moving forward.</p><p>Expect competitive pressure on OpenAI, Google DeepMind, and xAI to deepen their own government partnerships, further consolidating the AI-national security nexus.</p>",
+    "body": "<p>The NSA is using Anthropic's most powerful AI model Mythos</p><p>The U.S. National Security Agency has reportedly begun deploying Anthropic's flagship Claude model under the codename</p><p>marking a significant milestone in the integration of frontier AI into classified intelligence operations.</p><p>This development underscores a broader trend: leading AI labs are increasingly positioning themselves as strategic partners to the U.S. defense and intelligence community. Anthropic, long known for its safety-first positioning, is now entering territory once dominated by legacy defense contractors.</p><p>For enterprise leaders, the implications extend beyond national security. When the NSA adopts a frontier model, it validates the operational readiness of these systems for high-stakes, high-sensitivity environments, accelerating broader enterprise trust in agentic AI.</p><p>It also raises important governance questions around dual-use AI, data sovereignty, and the evolving boundary between commercial AI providers and state actors. Organizations building on Claude should expect tighter compliance and security frameworks moving forward.</p><p>Expect competitive pressure on OpenAI, Google DeepMind, and xAI to deepen their own government partnerships, further consolidating the AI-national security nexus.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AINews</span> <span style=\"color:#a050ff\">#Anthropic</span> <span style=\"color:#a050ff\">#NationalSecurity</span> <span style=\"color:#a050ff\">#NSA</span> <span style=\"color:#a050ff\">#AIGovernment</span> <span style=\"color:#a050ff\">#ArtificialIntelligence</span></p>",
     "category": "Industry",
     "imageUrl": "https://aifeed.run/images/aifeed_nsa_mythos.png",
     "sourceUrl": "https://the-decoder.com/the-nsa-is-using-anthropics-most-powerful-ai-model-mythos/",
     "publishedAt": "2026-04-20T08:02:31.608-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "Anthropic",
+      "NationalSecurity",
+      "NSA",
+      "AIGovernment",
+      "ArtificialIntelligence"
+    ]
   },
   {
     "id": "anthropics-revenue-surge-reportedly-fuels-talk-of-trillion-dollar-valuation-20260419",
@@ -57,7 +88,14 @@
     "imageUrl": "https://aifeed.run/images/aifeed_anthropic_trillion.png",
     "sourceUrl": "https://the-decoder.com/anthropics-revenue-surge-reportedly-fuels-talk-of-trillion-dollar-valuation/",
     "publishedAt": "2026-04-19T14:00:00.000-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "Anthropic",
+      "AI",
+      "EnterpriseAI",
+      "GenerativeAI",
+      "AINews"
+    ]
   },
   {
     "id": "nvidias-oncetight-bond-with-gamers-cracking-20260419",
@@ -69,7 +107,16 @@
     "imageUrl": "https://aifeed.run/images/aifeed_nvidia.png",
     "sourceUrl": "https://www.cnbc.com/2026/04/18/nvidia-ai-backlash-gamers-geforce-gpu.html",
     "publishedAt": "2026-04-19T13:54:03.791-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "Nvidia",
+      "AI",
+      "Gaming",
+      "GeForce",
+      "GPU",
+      "AIInfrastructure",
+      "TechNews"
+    ]
   },
   {
     "id": "sam-altmans-project-world-looks-scale-20260418",
@@ -81,7 +128,16 @@
     "imageUrl": "https://aifeed.run/images/aifeed_sam_altman.png",
     "sourceUrl": "https://techcrunch.com/2026/04/17/sam-altmans-project-world-looks-to-scale-its-human-verification-empire-first-stop-tinder/",
     "publishedAt": "2026-04-18T17:14:52.583-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "SamAltman",
+      "WorldID",
+      "Tinder",
+      "AI",
+      "DigitalIdentity",
+      "HumanVerification",
+      "AINews"
+    ]
   },
   {
     "id": "zuckerberg-reportedly-trades-headcount-for-compute-20260418",
@@ -93,7 +149,16 @@
     "imageUrl": "https://aifeed.run/images/aifeed_zuckerberg.png",
     "sourceUrl": "https://the-decoder.com/zuckerberg-reportedly-trades-headcount-for-compute-as-meta-readies-to-cut-10-percent-of-its-workforce-to-fund-ai-infrastructure/",
     "publishedAt": "2026-04-18T08:02:26.839-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "Meta",
+      "Zuckerberg",
+      "AI",
+      "AIInfrastructure",
+      "TechLayoffs",
+      "BigTech",
+      "AINews"
+    ]
   },
   {
     "id": "beijing-brands-metas-manus-acquisition-conspiratorial-20260417",
@@ -105,7 +170,16 @@
     "imageUrl": "https://aifeed.run/images/aifeed_china_manus.png",
     "sourceUrl": "https://the-decoder.com/beijing-brands-metas-manus-acquisition-as-conspiratorial-and-bars-founders-from-leaving-china/",
     "publishedAt": "2026-04-17T20:34:55.402-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "Manus",
+      "Meta",
+      "ChinaTech",
+      "AIRace",
+      "TechPolicy",
+      "GeoPolitics"
+    ]
   },
   {
     "id": "anthropics-claude-opus-makes-big-leap-20260417",
@@ -117,7 +191,16 @@
     "imageUrl": "https://aifeed.run/images/aifeed_anthropic.png",
     "sourceUrl": "https://the-decoder.com/anthropics-claude-opus-4-7-makes-a-big-leap-in-coding-while-deliberately-scaling-back-cyber-capabilities/",
     "publishedAt": "2026-04-17T08:02:37.129-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "Anthropic",
+      "ClaudeOpus",
+      "AICoding",
+      "AISafety",
+      "LLM",
+      "DeveloperTools",
+      "AINews"
+    ]
   },
   {
     "id": "openai-turns-codex-into-alwayson-coding-20260416",
@@ -129,7 +212,16 @@
     "imageUrl": "https://aifeed.run/images/aifeed_codex.png",
     "sourceUrl": "https://the-decoder.com/openai-turns-codex-into-an-always-on-coding-agent-that-watches-your-screen/",
     "publishedAt": "2026-04-16T19:32:54.071-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "OpenAI",
+      "Codex",
+      "AIAgents",
+      "DeveloperProductivity",
+      "EnterpriseAI",
+      "SoftwareEngineering",
+      "AINews"
+    ]
   },
   {
     "id": "openai-takes-aim-anthropic-with-beefedup-20260416",
@@ -141,7 +233,16 @@
     "imageUrl": "https://aifeed.run/images/aifeed_codex_anthropic.png",
     "sourceUrl": "https://techcrunch.com/2026/04/16/openai-takes-aim-at-anthropic-with-beefed-up-codex-that-gives-it-more-power-over-your-desktop/",
     "publishedAt": "2026-04-16T17:02:21.783-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "OpenAI",
+      "Anthropic",
+      "Codex",
+      "AIAgents",
+      "SoftwareDevelopment",
+      "EnterpriseAI",
+      "AINews"
+    ]
   },
   {
     "id": "openai-says-more-women-than-men-20260416",
@@ -153,7 +254,16 @@
     "imageUrl": "https://aifeed.run/images/aifeed-more-women.png",
     "sourceUrl": "https://the-decoder.com/openai-says-more-women-than-men-now-use-chatgpt-flipping-an-80-20-male-split-at-launch/",
     "publishedAt": "2026-04-16T13:56:19.227-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "OpenAI",
+      "ChatGPT",
+      "GenerativeAI",
+      "AIAdoption",
+      "FutureOfWork",
+      "DigitalTransformation",
+      "AINews"
+    ]
   },
   {
     "id": "why-having-humans-the-loop-war-20260416",
@@ -165,7 +275,16 @@
     "imageUrl": "https://aifeed.run/images/aifeed_humans_loop.png",
     "sourceUrl": "https://www.technologyreview.com/2026/04/16/1136029/humans-in-the-loop-ai-war-illusion/",
     "publishedAt": "2026-04-16T13:31:49.907-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "AI",
+      "AIEthics",
+      "MilitaryAI",
+      "AIGovernance",
+      "ResponsibleAI",
+      "AIPolicy",
+      "AIFeed"
+    ]
   },
   {
     "id": "traffic-retailers-rose-393-and-its-20260416",
@@ -177,7 +296,15 @@
     "imageUrl": "https://aifeed.run/images/aifeed_retail_393.png",
     "sourceUrl": "https://techcrunch.com/2026/04/16/ai-traffic-to-us-retailers-rose-393-in-q1-and-its-boosting-their-revenue-too/",
     "publishedAt": "2026-04-16T12:49:36.484-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "RetailTech",
+      "Ecommerce",
+      "AISearch",
+      "DigitalTransformation",
+      "AIFeed"
+    ]
   },
   {
     "id": "runway-ceo-says-could-help-hollywood-20260416",
@@ -189,7 +316,16 @@
     "imageUrl": "https://aifeed.run/images/aifeed_runway_hollywood.png",
     "sourceUrl": "https://techcrunch.com/2026/04/16/runway-ceo-says-ai-could-help-hollywood-make-50-films-instead-of-one-100m-blockbuster/",
     "publishedAt": "2026-04-16T12:22:28.918-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "AI",
+      "Runway",
+      "Hollywood",
+      "GenerativeAI",
+      "FutureOfWork",
+      "MediaAndEntertainment",
+      "AIFeed"
+    ]
   },
   {
     "id": "can-judge-journalism-thielbacked-startup-says-20260416",
@@ -201,7 +337,15 @@
     "imageUrl": "https://aifeed.run/images/aifeed_ai_journalism.png",
     "sourceUrl": "https://techcrunch.com/2026/04/15/can-ai-judge-journalism-a-thiel-backed-startup-says-yes-even-if-it-risks-chilling-whistleblowers/",
     "publishedAt": "2026-04-16T12:15:56.167-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "MediaEthics",
+      "PressFreedom",
+      "AIGovernance",
+      "Journalism",
+      "TrustAndSafety"
+    ]
   },
   {
     "id": "openai-updates-its-agents-sdk-help-20260416",
@@ -213,7 +357,15 @@
     "imageUrl": "https://aifeed.run/images/aifeed_agents_sdk.png",
     "sourceUrl": "https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/",
     "publishedAt": "2026-04-16T11:38:17.009-04:00",
-    "isVideo": false
+    "isVideo": false,
+    "hashtags": [
+      "OpenAI",
+      "AIAgents",
+      "EnterpriseAI",
+      "AIGovernance",
+      "DigitalTransformation",
+      "AINews"
+    ]
   },
   {
     "id": "max-hodaks-science-corp-preparing-place-20260414",
