@@ -1853,6 +1853,7 @@ AI Discovery · Human Refined · Always On.</p>
     // ─── DATA LOADING ────────────────────────────────────────────────────
     let allPosts = [];
     let activeCategory = 'all';
+    let activeHashtag = '';
     let currentPostPage = 1;
     let currentVideoPage = 1;
     const POSTS_PER_PAGE = 15;
@@ -2099,9 +2100,14 @@ AI Discovery · Human Refined · Always On.</p>
     function renderPosts() {
       const grid = document.getElementById('posts-grid');
       const countEl = document.getElementById('post-count');
-      const filtered = activeCategory === 'all'
+      let filtered = activeCategory === 'all'
         ? allPosts
         : allPosts.filter(p => p.category === activeCategory);
+      if (activeHashtag) {
+        filtered = filtered.filter(p => Array.isArray(p.hashtags) && p.hashtags.some(t => t.toLowerCase() === activeHashtag.toLowerCase()));
+      }
+      // Show/hide hashtag filter banner
+      renderHashtagBanner();
 
       const totalPages = Math.max(1, Math.ceil(filtered.length / POSTS_PER_PAGE));
       currentPostPage = Math.min(currentPostPage, totalPages);
@@ -2260,6 +2266,33 @@ AI Discovery · Human Refined · Always On.</p>
       return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     }
 
+    // ─── HASHTAG FILTER BANNER ───────────────────────────────────────────
+    function renderHashtagBanner() {
+      let banner = document.getElementById('hashtag-filter-banner');
+      if (!activeHashtag) {
+        if (banner) banner.remove();
+        return;
+      }
+      if (!banner) {
+        banner = document.createElement('div');
+        banner.id = 'hashtag-filter-banner';
+        banner.style.cssText = 'display:flex;align-items:center;gap:10px;padding:10px 16px;background:rgba(160,80,255,.1);border:1px solid rgba(160,80,255,.3);border-radius:24px;margin-bottom:18px;font-size:14px;color:#d2d2e1;';
+        const tagBar = document.getElementById('tag-bar');
+        tagBar.insertAdjacentElement('afterend', banner);
+      }
+      banner.innerHTML = `
+        <span style="color:#8c8ca0;font-size:12px;text-transform:uppercase;letter-spacing:.06em;">Filtered by</span>
+        <span style="color:#a050ff;font-weight:600;">#${activeHashtag}</span>
+        <button onclick="clearHashtagFilter()" style="margin-left:auto;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:12px;color:#aaa;padding:3px 10px;font-size:12px;cursor:pointer;">✕ Clear</button>`;
+    }
+
+    function clearHashtagFilter() {
+      activeHashtag = '';
+      currentPostPage = 1;
+      history.replaceState(null, '', window.location.pathname);
+      renderPosts();
+    }
+
     // ─── CATEGORY FILTER ─────────────────────────────────────────────────
     document.getElementById('tag-bar').addEventListener('click', e => {
       const tag = e.target.closest('.tag');
@@ -2267,7 +2300,8 @@ AI Discovery · Human Refined · Always On.</p>
       document.querySelectorAll('.tag').forEach(t => t.classList.remove('active'));
       tag.classList.add('active');
       activeCategory = tag.dataset.cat;
-      currentPostPage = 1; // reset to page 1 on category change
+      activeHashtag = ''; // clear hashtag filter when switching category
+      currentPostPage = 1;
       renderPosts();
     });
 
@@ -2320,6 +2354,16 @@ AI Discovery · Human Refined · Always On.</p>
     }
 
     // ─── INIT ────────────────────────────────────────────────────────────
+    // Check for ?tag= URL param (from clicking hashtags on article pages)
+    const _urlTag = new URLSearchParams(window.location.search).get('tag');
+    if (_urlTag) {
+      activeHashtag = _urlTag;
+      // Scroll to stories section after posts load
+      setTimeout(() => {
+        const el = document.getElementById('stories-top');
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 600);
+    }
     loadPosts();
     loadVideos();
   </script>
