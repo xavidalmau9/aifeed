@@ -1235,6 +1235,34 @@ AI Discovery · Human Refined · Always On." />
     .video-lightbox-close:hover {
       background: rgba(255,255,255,0.25);
     }
+    .video-lightbox-meta {
+      margin-top: 18px;
+      margin-bottom: 4px;
+    }
+    .video-lightbox-title {
+      font-family: var(--font);
+      font-size: 22px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 10px 0;
+      line-height: 1.3;
+    }
+    .video-lightbox-caption {
+      font-family: var(--font);
+      font-size: 15px;
+      font-weight: 400;
+      color: #d2d2e1;
+      line-height: 1.6;
+      margin: 0 0 10px 0;
+    }
+    .video-lightbox-source {
+      font-family: var(--font);
+      font-size: 13px;
+      font-weight: 300;
+      color: #8c8ca0;
+      text-decoration: none;
+    }
+    .video-lightbox-source:hover { color: #a050ff; }
 
     /* ── Lightbox AI Tools ── */
     .lightbox-tools {
@@ -1714,6 +1742,7 @@ AI Discovery · Human Refined · Always On.</p>
     <div class="video-lightbox-inner">
       <button class="video-lightbox-close" onclick="closeLightbox()">&#215;</button>
       <video id="lightbox-video" controls playsinline></video>
+      <div class="video-lightbox-meta" id="lightbox-meta"></div>
 
       <!-- AI TOOLS (shown below video in lightbox) -->
       <div class="lightbox-tools">
@@ -1829,12 +1858,25 @@ AI Discovery · Human Refined · Always On.</p>
     const POSTS_PER_PAGE = 15;
     const VIDEOS_PER_PAGE = 4;
 
-    function openLightbox(url) {
+    function openLightbox(url, videoData) {
       const lb = document.getElementById('video-lightbox');
       const vid = document.getElementById('lightbox-video');
+      const meta = document.getElementById('lightbox-meta');
       vid.src = url;
       lb.classList.add('open');
       vid.play();
+      // Render title + LinkedIn caption + source
+      if (meta) {
+        const v = videoData || {};
+        const sourceHtml = v.sourceUrl
+          ? `<a class="video-lightbox-source" href="${v.sourceUrl}" target="_blank" rel="noopener">▶ ${v.source || v.sourceUrl}</a>`
+          : v.source ? `<span class="video-lightbox-source">${v.source}</span>` : '';
+        meta.innerHTML = `
+          ${v.title ? `<p class="video-lightbox-title">${v.title}</p>` : ''}
+          ${v.caption ? `<p class="video-lightbox-caption">${v.caption}</p>` : ''}
+          ${sourceHtml}
+        `;
+      }
     }
 
     function closeLightbox(e) {
@@ -1842,9 +1884,11 @@ AI Discovery · Human Refined · Always On.</p>
       if (e && e.target !== document.getElementById('video-lightbox')) return;
       const lb = document.getElementById('video-lightbox');
       const vid = document.getElementById('lightbox-video');
+      const meta = document.getElementById('lightbox-meta');
       lb.classList.remove('open');
       vid.pause();
       vid.src = '';
+      if (meta) meta.innerHTML = '';
     }
 
     document.addEventListener('keydown', e => {
@@ -1876,8 +1920,10 @@ AI Discovery · Human Refined · Always On.</p>
         const sourceHtml = v.source && v.sourceUrl
           ? `<a class="video-source" href="${v.sourceUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">▶ ${v.source}</a>`
           : v.source ? `<span class="video-source">${v.source}</span>` : '';
+        // Store video data globally so openLightbox can look it up by index
+        const globalIdx = vStart + i;
         return `
-        <div class="video-card" style="cursor:pointer;animation-delay:${i * 0.1}s" onclick="openLightbox('${v.url}')">
+        <div class="video-card" style="cursor:pointer;animation-delay:${i * 0.1}s" onclick="openLightbox('${v.url}', allVideos[${globalIdx}])">
           <div class="video-thumb">
             <video src="${v.url}" preload="metadata" playsinline muted loop
               style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none">
