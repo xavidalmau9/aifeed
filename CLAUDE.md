@@ -1,5 +1,5 @@
 # AIFeed.run — Claude Project Instructions
-**Last updated: April 20, 2026 (session 4)**
+**Last updated: April 22, 2026 (session 5)**
 
 > This file is read by Claude at the start of every session. Update it whenever significant decisions are made.
 
@@ -160,6 +160,65 @@ Each display line: **max 4 words, max 20 characters**. At 82px font, more than ~
 - `Build & Send Graphic` (id: b1000039) — stock photo flow
 - `Build & Send Graphic Photo` (id: b1000042) — custom photo flow
 - Both must always be identical. Any CSS change goes in both.
+
+---
+
+## Session 5 Changes (Apr 22, 2026)
+
+### Videos — Fully Dynamic Pipeline (permanent fix)
+- Created `videos/videos-index.json` — single source of truth for all videos (title, caption, source, sourceUrl, date)
+- `index.html` now loads videos dynamically via `loadVideos()` fetching the index — **no more hardcoded video lists anywhere**
+- Website publisher auto-discovers new `.mp4` files in `videos/` on GitHub at midnight and adds them to `videos-index.json`
+- Publisher reads `caption_linkedin_[timestamp].txt` from Downloads when adding new videos — use the LinkedIn caption as-is, do NOT rewrite or summarize
+- Video lightbox now shows title + LinkedIn caption + source below the player (`#lightbox-meta` div, `openLightbox(url, videoData)`)
+- **Caption files live in `~/Downloads/` as `caption_linkedin_[timestamp].txt`** — always check there when a video has no description
+
+### liToHtml() — Fixed for double-space captions
+The fallback body parser now handles both `U+2800` (Braille blank) AND double-space-after-sentence separators. Also properly strips Source: lines, URLs, and hashtag-only lines without losing mid-sentence emphasis phrases.
+
+**Rule:** When `liToHtml()` runs, it must:
+1. Split only on double-spaces that follow `.!?` (sentence end) — never split on all double-spaces
+2. Collect `#hashtags` to purple spans at the bottom
+3. Never strip the hashtag paragraph — it must always appear
+
+### Publisher — video caption auto-reader
+When publisher discovers a new `.mp4` in `videos/`, it reads `~/Downloads/caption_linkedin_[ts].txt`:
+- Line 1 → title (stripped trailing punctuation)
+- All body lines (minus source, URLs, hashtag-only lines) → caption, joined as-is
+- `Source: X` line → source name
+- YouTube URL → sourceUrl
+
+### posts-index.json — hashtags array
+All posts now have a `hashtags: ["AINews", "Anthropic", ...]` array field extracted from the article body. This enables hashtag-based filtering on the website (future feature).
+
+### Affiliate links registry (permanent)
+| Tool | Affiliate URL | Notes |
+|------|--------------|-------|
+| ElevenLabs | `https://try.elevenlabs.io/qspw8v1gx7n0` | Active |
+| HeadshotPro | `https://www.headshotpro.com/?via=aifeed` | Active |
+| Beehiiv | `https://www.beehiiv.com/?via=ai-feed` | Active |
+| AdCreative.ai | `https://free-trial.adcreative.ai/g944t536drtc` | 30% recurring — added Apr 21 |
+
+**Never overwrite affiliate links with homepage URLs.** Check this table before editing any tool card.
+
+### Pagination
+- Stories: 15 per page (`POSTS_PER_PAGE = 15`)
+- Videos: 4 per page (`VIDEOS_PER_PAGE = 4`)
+- Category filter resets to page 1 on change
+
+### AI Tools banner
+Sticky banner between stats bar and stories section links to `#ai-tools`. Section header has `id="stories-top"`, tools section has `id="ai-tools"`.
+
+### What NOT to do (additions)
+- **Never hardcode video list in index.html** — always use `videos-index.json`
+- **Never add videos to index with empty caption** — always check `~/Downloads/caption_linkedin_[ts].txt` first
+- **Never paraphrase LinkedIn captions** — use the actual text as written (light editing for flow is OK, but keep the substance and tone)
+- **Never strip hashtags when fixing post bodies** — hashtags must appear as purple spans at the bottom of every article
+- **Never use the Edit tool on jsCode inside workflow JSON** — always Python json.load/dump
+
+### Pending — to deploy in n8n (re-import both workflows)
+1. `AIFeed Story Selector NEW.json` — broken connection fix, 3-term photo algorithm, auto-render PNG, 4 new nodes
+2. `aifeed website publisher.json` — liToHtml() fix, video auto-discovery + caption reader, video index sync
 
 ---
 
