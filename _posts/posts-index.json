@@ -1,5 +1,29 @@
 [
   {
+    "id": "sam-altman-throws-shade-anthropics-cyber-20260421",
+    "slug": "sam-altman-throws-shade-anthropics-cyber",
+    "headline": "Sam Altman throws shade at Anthropic's cyber model, Mythos: 'fear-based marketing'",
+    "summary": "Sam Altman throws shade at Anthropic's cyber model, Mythos: 'fear-based marketing'",
+    "body": "<p>Sam Altman throws shade at Anthropic's cyber model, Mythos: 'fear-based marketing'  The competitive dynamics between frontier AI labs just took a sharper turn. Sam Altman publicly criticized Anthropic's newly launched cyber-focused model, Mythos, accusing the company of leveraging  fear-based marketing  to drive attention and adoption.  The critique cuts to an ongoing tension in the industry: where does legitimate safety communication end, and where does threat-amplification as a go-to-market strategy begin? Anthropic has consistently positioned itself as the safety-forward lab, and Mythos extends that narrative into the enterprise cybersecurity domain.  For enterprise buyers, the dispute matters. Security procurement decisions increasingly hinge on how vendors frame risk — and models marketed around worst-case threat scenarios can shape budget allocation, compliance posture, and board-level conversations in outsized ways.  Altman's remarks also reflect OpenAI's own strategic positioning. By pushing back on fear-led narratives, the company is signaling a preference for capability and productivity framing over existential messaging — a meaningful differentiator as both labs court Fortune 500 contracts.  Expect this debate to escalate. As AI capabilities intersect more deeply with cybersecurity, offensive research, and national security, how labs communicate risk will become as scrutinized as the models themselves.  Source: techcrunch.com · https://techcrunch.com/2026/04/21/sam-altman-throws-shade-at-anthropics-cyber-model-mythos-fear-based-marketing/ #AINews #EnterpriseAI #Cybersecurity #OpenAI #Anthropic</p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/bg_pexels_1776805861490.jpg",
+    "sourceUrl": "https://techcrunch.com/2026/04/21/sam-altman-throws-shade-at-anthropics-cyber-model-mythos-fear-based-marketing/",
+    "publishedAt": "2026-04-21T17:03:13.720-04:00",
+    "isVideo": false
+  },
+  {
+    "id": "amazon-pours-33b-into-anthropic-which-20260421",
+    "slug": "amazon-pours-33b-into-anthropic-which",
+    "headline": "Amazon pours $33B into Anthropic, which promises to spend $100B right back on AWS",
+    "summary": "Amazon pours $33B into Anthropic, which promises to spend $100B right back on AWS",
+    "body": "<p>Amazon pours $33B into Anthropic, which promises to spend $100B right back on AWS  The structure of this deal reveals how AI infrastructure economics are reshaping capital flows between hyperscalers and frontier labs.  Amazon's $33B investment is effectively recycled: Anthropic commits $100B in AWS compute spend, turning the investment into guaranteed cloud revenue while locking in strategic AI alignment.  This mirrors Microsoft's OpenAI playbook, where capital injections and compute commitments blur the line between investment, partnership, and vendor lock-in. The frontier lab becomes both customer and co-dependent.  For enterprise leaders, the implication is clear: the AI model landscape is consolidating around cloud provider allegiances. Claude on AWS, GPT on Azure, Gemini on GCP — your cloud choice increasingly dictates your AI roadmap.  The circular nature of these deals also raises questions about valuation, revenue recognition, and whether reported AI demand reflects genuine third-party adoption or intra-ecosystem commitments.  Expect regulators to scrutinize these arrangements as AI infrastructure becomes a strategic chokepoint for the next decade.  Source: the-decoder.com · https://the-decoder.com/amazon-pours-33b-into-anthropic-which-promises-to-spend-100b-right-back-on-aws/ #AINews #CloudComputing #EnterpriseAI #Anthropic #AWS</p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/custom_1776776275872.jpg",
+    "sourceUrl": "https://the-decoder.com/amazon-pours-33b-into-anthropic-which-promises-to-spend-100b-right-back-on-aws/",
+    "publishedAt": "2026-04-21T08:50:13.430-04:00",
+    "isVideo": false
+  },
+  {
     "id": "chinese-tech-workers-are-starting-train-20260420",
     "slug": "chinese-tech-workers-are-starting-train",
     "headline": "Chinese tech workers are starting to train their AI doubles–and pushing back",
