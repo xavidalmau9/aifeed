@@ -1857,75 +1857,29 @@ AI Discovery · Human Refined · Always On.</p>
       }
     });
 
+    // allVideos is loaded dynamically from videos/videos-index.json
+    let allVideos = [];
+
     function renderVideos() {
       const grid = document.getElementById('videos-grid');
-      const brandedVideos = [
-        {
-          title: 'Are We F*cked? 99% Don\'t See AI Coming',
-          date: 'Apr 17, 2026',
-          videoUrl: 'https://aifeed.run/videos/aifeed_branded_1776429019.mp4',
-          caption: '99% of professionals are stuck at Level 1 AI adoption — using it as a smart helper. Dan Martell: the gap between those who truly understand AI\'s trajectory and those who don\'t is widening daily.',
-          source: 'Dan Martell',
-          sourceUrl: 'https://www.youtube.com/watch?v=8yt5yzwJQko'
-        },
-        {
-          title: 'Tesla\'s AI5 Chip Taped Out — And It Destroys Nvidia',
-          date: 'Apr 16, 2026',
-          videoUrl: 'https://aifeed.run/videos/aifeed_branded_1776354795.mp4',
-          caption: 'Tesla\'s AI5 chip: 5x the compute of dual AI4, 3x more power efficient than Nvidia Blackwell, at under 10% of the cost. Designed for Optimus robots and supercomputer clusters — Tesla\'s pivot to AI infrastructure.',
-          source: 'Brighter with Herbert',
-          sourceUrl: 'https://www.youtube.com/watch?v=7oYypAFWieo'
-        },
-        {
-          title: '99% of White Collar Jobs Replaced in 2 Years',
-          date: 'Apr 15, 2026',
-          videoUrl: 'https://aifeed.run/videos/aifeed_branded_1776265860.mp4',
-          caption: 'Peter Diamandis: OpenAI\'s $852B valuation is 70x revenue — unprecedented. With $3B invested daily in AI, virtually every white collar job will be automated within years, not decades.',
-          source: 'Peter H. Diamandis',
-          sourceUrl: 'https://www.youtube.com/@PeterDiamandis'
-        },
-        {
-          title: 'Nobody Understands Their Own Code Anymore',
-          date: 'Apr 14, 2026',
-          videoUrl: 'https://aifeed.run/videos/aifeed_branded_1776180029.mp4',
-          caption: '"Dark code" — AI-generated code running in production that no human fully understands — is now a real regulatory and liability risk. As AI coding accelerates, this challenge will 10x in the coming year.',
-          source: 'AI News & Strategy Daily | Nate B Jones',
-          sourceUrl: 'https://www.youtube.com/watch?v=E1idsrv79tI'
-        },
-        {
-          title: 'Minimax M2.7: The Open-Source AI That Improves Itself',
-          date: 'Apr 13, 2026',
-          videoUrl: 'https://aifeed.run/videos/aifeed_branded_1776084241.mp4',
-          caption: 'Minimax\'s M2.7 scores 56% on real-world engineering tasks, matching GPT-4. Full model weights on Hugging Face — not just API access. A major step toward democratizing enterprise-grade AI.',
-          source: 'AI Revolution',
-          sourceUrl: 'https://www.youtube.com/watch?v=KJ34SHi9CB4'
-        },
-        {
-          title: 'AI Will Reshape 55% of US Jobs in 3 Years',
-          date: 'Apr 12, 2026',
-          videoUrl: 'https://aifeed.run/videos/aifeed_branded_1775760152.mp4',
-          caption: 'Boston Consulting Group: AI will reshape 50–55% of US jobs in the next 3 years. Not mass layoffs — transformation. Workers who understand AI collaboration will have a significant advantage.',
-          source: 'CBS News',
-          sourceUrl: 'https://www.youtube.com/watch?v=QGOE3kXZgJ0'
-        },
-        {
-          title: 'Microsoft Is Replacing OpenAI With Its Own AI',
-          date: 'Apr 11, 2026',
-          videoUrl: 'https://aifeed.run/videos/aifeed_branded_1775759757.mp4',
-          caption: 'Microsoft\'s MAI Transcribe 1: 3.8% word error rate across 25 languages, outperforming OpenAI Whisper and Google Gemini. First major output from Mustafa Suleiman\'s Super Intelligence team.',
-          source: 'AI Revolution',
-          sourceUrl: 'https://www.youtube.com/watch?v=tDW6VoyWWqo'
-        }
-      ];
-      const totalVideoPages = Math.max(1, Math.ceil(brandedVideos.length / VIDEOS_PER_PAGE));
+      if (!allVideos.length) {
+        grid.innerHTML = '<p style="color:#8c8ca0;padding:32px 0;">Loading videos…</p>';
+        return;
+      }
+      const totalVideoPages = Math.max(1, Math.ceil(allVideos.length / VIDEOS_PER_PAGE));
       currentVideoPage = Math.min(currentVideoPage, totalVideoPages);
       const vStart = (currentVideoPage - 1) * VIDEOS_PER_PAGE;
-      const pageVideos = brandedVideos.slice(vStart, vStart + VIDEOS_PER_PAGE);
+      const pageVideos = allVideos.slice(vStart, vStart + VIDEOS_PER_PAGE);
 
-      grid.innerHTML = pageVideos.map((v, i) => `
-        <div class="video-card" style="cursor:pointer;animation-delay:${i * 0.1}s" onclick="openLightbox('${v.videoUrl}')">
+      grid.innerHTML = pageVideos.map((v, i) => {
+        const dateStr = v.date ? new Date(v.date).toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'}) : '';
+        const sourceHtml = v.source && v.sourceUrl
+          ? `<a class="video-source" href="${v.sourceUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">▶ ${v.source}</a>`
+          : v.source ? `<span class="video-source">${v.source}</span>` : '';
+        return `
+        <div class="video-card" style="cursor:pointer;animation-delay:${i * 0.1}s" onclick="openLightbox('${v.url}')">
           <div class="video-thumb">
-            <video src="${v.videoUrl}" preload="metadata" playsinline muted loop
+            <video src="${v.url}" preload="metadata" playsinline muted loop
               style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none">
             </video>
             <div class="video-play-btn">
@@ -1933,15 +1887,15 @@ AI Discovery · Human Refined · Always On.</p>
             </div>
           </div>
           <div class="video-card-body">
-            <h3>${v.title}</h3>
-            <p class="video-caption">${v.caption}</p>
+            <h3>${v.title || 'AIFeed Daily Brief'}</h3>
+            ${v.caption ? `<p class="video-caption">${v.caption}</p>` : ''}
             <div class="video-meta">
-              <span class="video-date">${v.date}</span>
-              <a class="video-source" href="${v.sourceUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">▶ ${v.source}</a>
+              <span class="video-date">${dateStr}</span>
+              ${sourceHtml}
             </div>
           </div>
-        </div>
-      `).join('');
+        </div>`;
+      }).join('');
 
       // Video pagination
       let vPag = document.getElementById('video-pagination');
@@ -1960,6 +1914,33 @@ AI Discovery · Human Refined · Always On.</p>
         ${vButtons}
         <button class="page-btn" ${currentVideoPage >= totalVideoPages ? 'disabled' : ''} onclick="goToVideoPage(${currentVideoPage + 1})">Next →</button>
       </div>`;
+    }
+
+    async function loadVideos() {
+      const urls = [
+        '/videos/videos-index.json',
+        'videos/videos-index.json',
+        '/aifeed/videos/videos-index.json',
+        'https://raw.githubusercontent.com/xavidalmau9/aifeed/main/videos/videos-index.json'
+      ];
+      for (const url of urls) {
+        try {
+          const res = await fetch(url + '?t=' + Date.now());
+          if (res.ok) {
+            const data = await res.json();
+            if (Array.isArray(data) && data.length > 0) {
+              allVideos = data.sort((a, b) => new Date(b.date) - new Date(a.date));
+              console.log('Loaded ' + allVideos.length + ' videos from ' + url);
+              renderVideos();
+              return;
+            }
+          }
+        } catch(e) {
+          console.log('Video index failed: ' + url + ' — ' + e.message);
+        }
+      }
+      console.log('Could not load videos-index.json');
+      renderVideos();
     }
 
     function goToVideoPage(page) {
@@ -1999,7 +1980,6 @@ AI Discovery · Human Refined · Always On.</p>
 
       allPosts.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
       renderPosts();
-      renderVideos();
       document.getElementById('stat-posts').textContent = allPosts.length + '+';
     }
 
@@ -2295,6 +2275,7 @@ AI Discovery · Human Refined · Always On.</p>
 
     // ─── INIT ────────────────────────────────────────────────────────────
     loadPosts();
+    loadVideos();
   </script>
 </body>
 </html>

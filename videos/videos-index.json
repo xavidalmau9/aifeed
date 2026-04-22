@@ -1,0 +1,83 @@
+[
+  {
+    "filename": "aifeed_branded_1776783374.mp4",
+    "url": "https://aifeed.run/videos/aifeed_branded_1776783374.mp4",
+    "title": "AIFeed Daily Brief",
+    "caption": "",
+    "source": "",
+    "sourceUrl": "",
+    "date": "2026-04-21T14:56:14Z"
+  },
+  {
+    "filename": "aifeed_branded_1776704858.mp4",
+    "url": "https://aifeed.run/videos/aifeed_branded_1776704858.mp4",
+    "title": "AIFeed Daily Brief",
+    "caption": "",
+    "source": "",
+    "sourceUrl": "",
+    "date": "2026-04-20T17:07:38Z"
+  },
+  {
+    "filename": "aifeed_branded_1776429019.mp4",
+    "url": "https://aifeed.run/videos/aifeed_branded_1776429019.mp4",
+    "title": "Are We F*cked? 99% Don't See AI Coming",
+    "caption": "99% of professionals are stuck at Level 1 AI adoption — using it as a smart helper. Dan Martell: the gap between those who truly understand AI's trajectory and those who don't is widening daily.",
+    "source": "Dan Martell",
+    "sourceUrl": "https://www.youtube.com/watch?v=8yt5yzwJQko",
+    "date": "2026-04-17T12:30:19Z"
+  },
+  {
+    "filename": "aifeed_branded_1776354795.mp4",
+    "url": "https://aifeed.run/videos/aifeed_branded_1776354795.mp4",
+    "title": "Tesla's AI5 Chip Taped Out — And It Destroys Nvidia",
+    "caption": "Tesla's AI5 chip: 5x the compute of dual AI4, 3x more power efficient than Nvidia Blackwell, at under 10% of the cost. Designed for Optimus robots and supercomputer clusters — Tesla's pivot to AI infrastructure.",
+    "source": "Brighter with Herbert",
+    "sourceUrl": "https://www.youtube.com/watch?v=7oYypAFWieo",
+    "date": "2026-04-16T15:53:15Z"
+  },
+  {
+    "filename": "aifeed_branded_1776265860.mp4",
+    "url": "https://aifeed.run/videos/aifeed_branded_1776265860.mp4",
+    "title": "99% of White Collar Jobs Replaced in 2 Years",
+    "caption": "Peter Diamandis: OpenAI's $852B valuation is 70x revenue — unprecedented. With $3B invested daily in AI, virtually every white collar job will be automated within years, not decades.",
+    "source": "Peter H. Diamandis",
+    "sourceUrl": "https://www.youtube.com/@PeterDiamandis",
+    "date": "2026-04-15T15:11:00Z"
+  },
+  {
+    "filename": "aifeed_branded_1776180029.mp4",
+    "url": "https://aifeed.run/videos/aifeed_branded_1776180029.mp4",
+    "title": "Nobody Understands Their Own Code Anymore",
+    "caption": "\"Dark code\" — AI-generated code running in production that no human fully understands — is now a real regulatory and liability risk. As AI coding accelerates, this challenge will 10x in the coming year.",
+    "source": "AI News & Strategy Daily | Nate B Jones",
+    "sourceUrl": "https://www.youtube.com/watch?v=E1idsrv79tI",
+    "date": "2026-04-14T15:20:29Z"
+  },
+  {
+    "filename": "aifeed_branded_1776084241.mp4",
+    "url": "https://aifeed.run/videos/aifeed_branded_1776084241.mp4",
+    "title": "Minimax M2.7: The Open-Source AI That Improves Itself",
+    "caption": "Minimax's M2.7 scores 56% on real-world engineering tasks, matching GPT-4. Full model weights on Hugging Face — not just API access. A major step toward democratizing enterprise-grade AI.",
+    "source": "AI Revolution",
+    "sourceUrl": "https://www.youtube.com/watch?v=KJ34SHi9CB4",
+    "date": "2026-04-13T12:44:01Z"
+  },
+  {
+    "filename": "aifeed_branded_1775760152.mp4",
+    "url": "https://aifeed.run/videos/aifeed_branded_1775760152.mp4",
+    "title": "AI Will Reshape 55% of US Jobs in 3 Years",
+    "caption": "Boston Consulting Group: AI will reshape 50–55% of US jobs in the next 3 years. Not mass layoffs — transformation. Workers who understand AI collaboration will have a significant advantage.",
+    "source": "CBS News",
+    "sourceUrl": "https://www.youtube.com/watch?v=QGOE3kXZgJ0",
+    "date": "2026-04-09T18:42:32Z"
+  },
+  {
+    "filename": "aifeed_branded_1775759757.mp4",
+    "url": "https://aifeed.run/videos/aifeed_branded_1775759757.mp4",
+    "title": "Microsoft Is Replacing OpenAI With Its Own AI",
+    "caption": "Microsoft's MAI Transcribe 1: 3.8% word error rate across 25 languages, outperforming OpenAI Whisper and Google Gemini. First major output from Mustafa Suleiman's Super Intelligence team.",
+    "source": "AI Revolution",
+    "sourceUrl": "https://www.youtube.com/watch?v=tDW6VoyWWqo",
+    "date": "2026-04-09T18:35:57Z"
+  }
+]
