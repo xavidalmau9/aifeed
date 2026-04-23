@@ -41,7 +41,7 @@ If re-import cannot happen in the session, the message must be:
 
 | Workflow file | Desktop JSON fixed | Deployed to n8n | Notes |
 |---|---|---|---|
-| `AIFeed Story Selector NEW.json` | ✅ Session 8 (Apr 23) | ⚠️ NOT YET — must re-import | HTML upload pipeline added; graphicHtml in return; both Graphic nodes updated |
+| `AIFeed Story Selector NEW.json` | ✅ Session 8 (Apr 23) | ✅ Deployed Apr 23 | HTML upload pipeline live; both Graphic nodes write pngUrl + graphicHtml |
 | `aifeed website publisher.json` | ✅ Session 7 (Apr 23) | ✅ Deployed Apr 23 | All 4 fixes live: hyphen names, images/ scan, hashtags, bg_pexels block |
 
 **To deploy the publisher (do this NOW):**
@@ -218,17 +218,18 @@ Every time a branded graphic is generated in n8n, the HTML is now uploaded to Gi
 - `Desktop/AIFeed Story Selector NEW.json` — MODIFIED (both Graphic nodes updated)
   - `Build & Send Graphic`: HTML upload block already added in this session
   - `Build & Send Graphic Photo`: HTML upload block added, `graphicHtml` variable added, return updated
-- **⚠️ Story Selector NOT YET re-imported into n8n** — must do before next story selection
+- **Story Selector re-imported into n8n ✅ Apr 23**
 
-#### Google Sheet columns needed
-Two new columns need to be added to the Sheet1 header row (after Status):
+#### Google Sheet columns added (Apr 23) ✅
+Sheet1 header row now includes (after Status):
+- `Img3URL` — 3rd Pexels option URL
+- `Img4URL` — 4th Pexels option URL
 - `GraphicHTML` — URL to the source HTML file (e.g. `https://aifeed.run/graphics/aifeed_slug_ts.html`)
-- Also still needed: `Img3URL` and `Img4URL` (from session 2 — img3/img4 fallback bug)
 
 #### GitHub token scope
 The existing PAT (stored locally in the n8n workflow code — do NOT commit it) has `repo` scope but NOT `workflow` scope. This means:
 - **Git push of `.github/workflows/*.yml` files is rejected** — the token cannot write workflow files via git or the Contents API
-- **Workaround:** upload `.github/workflows/render-graphics.yml` manually via github.com → New File, OR create a new PAT at github.com/settings/tokens with `repo` + `workflow` scopes
+- **Workaround applied Apr 23 ✅:** uploaded `.github/workflows/render-graphics.yml` manually via github.com → New File. File is now live.
 - The n8n API calls (uploading HTML to `graphics/`) work fine with the existing token — no scope issue there
 
 #### OpenAI Clinician graphic
@@ -382,8 +383,8 @@ Sticky banner between stats bar and stories section links to `#ai-tools`. Sectio
 - **Never strip hashtags when fixing post bodies** — hashtags must appear as purple spans at the bottom of every article
 - **Never use the Edit tool on jsCode inside workflow JSON** — always Python json.load/dump
 
-### ⚠️ STILL PENDING
-- `AIFeed Story Selector NEW.json` — img3/img4 fix requires `Img3URL` and `Img4URL` column headers to be added to the Google Sheet header row (columns after Status). Until added, selecting img3 or img4 falls back to img1.
+### ✅ RESOLVED (Apr 23, session 8)
+- `Img3URL` and `Img4URL` column headers added to Google Sheet. img3/img4 selection now works correctly.
 
 ---
 
