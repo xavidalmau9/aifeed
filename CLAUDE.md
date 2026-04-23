@@ -42,7 +42,7 @@ If re-import cannot happen in the session, the message must be:
 | Workflow file | Desktop JSON fixed | Deployed to n8n | Notes |
 |---|---|---|---|
 | `AIFeed Story Selector NEW.json` | ✅ Session 2+ | ✅ Yes (Telegram webhook working) | img3/img4 bug: sheet needs Img3URL/Img4URL column headers |
-| `aifeed website publisher.json` | ✅ Session 7 (Apr 23) | ❌ **NOT YET** | Must re-import tonight before publish run |
+| `aifeed website publisher.json` | ✅ Session 7 (Apr 23) | ✅ Deployed Apr 23 | All 4 fixes live: hyphen names, images/ scan, hashtags, bg_pexels block |
 
 **To deploy the publisher (do this NOW):**
 n8n → "aifeed website publisher" → Settings → Import → `/Users/305partners/Desktop/aifeed website publisher.json` → update in place.
@@ -321,9 +321,8 @@ Sticky banner between stats bar and stories section links to `#ai-tools`. Sectio
 - **Never strip hashtags when fixing post bodies** — hashtags must appear as purple spans at the bottom of every article
 - **Never use the Edit tool on jsCode inside workflow JSON** — always Python json.load/dump
 
-### ⚠️ STILL PENDING DEPLOYMENT IN N8N
-- `aifeed website publisher.json` — all session 5, 6, 7 fixes are in the Desktop JSON but the live n8n workflow has NOT been re-imported. Until re-imported, the publisher runs old code.
-- `AIFeed Story Selector NEW.json` — img3/img4 fix requires `Img3URL` and `Img4URL` column headers to be added to the Google Sheet header row (columns after Status).
+### ⚠️ STILL PENDING
+- `AIFeed Story Selector NEW.json` — img3/img4 fix requires `Img3URL` and `Img4URL` column headers to be added to the Google Sheet header row (columns after Status). Until added, selecting img3 or img4 falls back to img1.
 
 ---
 
