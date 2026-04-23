@@ -1,0 +1,79 @@
+name: Render HTML Graphics to PNG
+
+on:
+  push:
+    paths:
+      - 'graphics/*.html'
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Puppeteer
+        run: npm install puppeteer
+
+      - name: Render HTMLs to PNGs
+        run: |
+          node -e "
+          const puppeteer = require('puppeteer');
+          const fs = require('fs');
+          const path = require('path');
+
+          (async () => {
+            const browser = await puppeteer.launch({
+              args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
+            });
+
+            const graphicsDir = './graphics';
+            const imagesDir = './images';
+            const files = fs.readdirSync(graphicsDir).filter(f => f.endsWith('.html'));
+
+            let rendered = 0;
+            for (const file of files) {
+              const pngName = file.replace('.html', '.png');
+              const pngPath = path.join(imagesDir, pngName);
+              if (fs.existsSync(pngPath)) { console.log('Already exists:', pngName); continue; }
+
+              console.log('Rendering:', file);
+              try {
+                const page = await browser.newPage();
+                await page.setViewport({ width: 1080, height: 1500, deviceScaleFactor: 1 });
+
+                const htmlContent = fs.readFileSync(path.join(graphicsDir, file), 'utf8');
+                await page.setContent(htmlContent, { waitUntil: 'networkidle0', timeout: 30000 });
+                await new Promise(r => setTimeout(r, 1500));
+
+                const screenshot = await page.screenshot({
+                  clip: { x: 0, y: 0, width: 1080, height: 1350 },
+                  type: 'png'
+                });
+                fs.writeFileSync(pngPath, screenshot);
+                console.log('Rendered:', pngName);
+                rendered++;
+                await page.close();
+              } catch(e) {
+                console.error('Failed to render', file, ':', e.message);
+              }
+            }
+
+            await browser.close();
+            console.log('Done. Rendered', rendered, 'new PNGs.');
+          })();
+          "
+
+      - name: Commit rendered PNGs
+        run: |
+          git config user.name "AIFeed Bot"
+          git config user.email "bot@aifeed.run"
+          git add images/
+          git diff --staged --quiet && echo "Nothing to commit" || (git commit -m "Auto-render: branded PNGs from graphics/" && git push)
