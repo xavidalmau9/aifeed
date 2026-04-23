@@ -1,5 +1,14 @@
 [
   {
+    "filename": "aifeed_branded_1776874247.mp4",
+    "url": "https://aifeed.run/videos/aifeed_branded_1776874247.mp4",
+    "title": "Anthropic's Mythos AI Breached \u2014 Pentagon Already Flagged It",
+    "caption": "Unauthorized users accessed Anthropic's advanced Mythos AI model via Discord, raising serious questions about who else may have accessed it. The Pentagon had already classified Anthropic as a supply chain risk. This wasn't malicious actors \u2014 just curious hobbyists \u2014 which makes the ease of access even more alarming. For enterprises building on frontier AI, the message is clear: security protocols and access controls need to evolve as fast as the models themselves.",
+    "source": "Bloomberg Television",
+    "sourceUrl": "https://www.youtube.com/watch?v=O1w_1fscw8E",
+    "date": "2026-04-22T12:11:00Z"
+  },
+  {
     "filename": "aifeed_branded_1776783374.mp4",
     "url": "https://aifeed.run/videos/aifeed_branded_1776783374.mp4",
     "title": "Five Guys Control AI Future",
@@ -12,7 +21,7 @@
     "filename": "aifeed_branded_1776704858.mp4",
     "url": "https://aifeed.run/videos/aifeed_branded_1776704858.mp4",
     "title": "McKinsey Replacement AI Demo: Agent Swarms",
-    "caption": "The future of enterprise software development just shifted dramatically with Advocates AI's Agent Swarms technology. This isn't your typical AI assistant — a master agent breaks complex projects into sub-tasks, maps dependencies, and coordinates specialized worker agents to execute in parallel. It built a complete supermarket management system (web + mobile) in a single session, understanding sequencing and delivering enterprise-level output that traditionally requires teams of developers and consultants. SaaS founders and management consulting firms need to pay attention.",
+    "caption": "The future of enterprise software development just shifted dramatically with Advocates AI's Agent Swarms technology. This isn't your typical AI assistant \u2014 a master agent breaks complex projects into sub-tasks, maps dependencies, and coordinates specialized worker agents to execute in parallel. It built a complete supermarket management system (web + mobile) in a single session, understanding sequencing and delivering enterprise-level output that traditionally requires teams of developers and consultants. SaaS founders and management consulting firms need to pay attention.",
     "source": "AI Revolution",
     "sourceUrl": "https://www.youtube.com/watch?v=KdP305UYuNA",
     "date": "2026-04-20T17:07:38Z"
@@ -21,7 +30,7 @@
     "filename": "aifeed_branded_1776429019.mp4",
     "url": "https://aifeed.run/videos/aifeed_branded_1776429019.mp4",
     "title": "Are We F*cked? 99% Don't See AI Coming",
-    "caption": "99% of professionals are stuck at Level 1 AI adoption — using it as a smart helper. Dan Martell: the gap between those who truly understand AI's trajectory and those who don't is widening daily.",
+    "caption": "99% of professionals are stuck at Level 1 AI adoption \u2014 using it as a smart helper. Dan Martell: the gap between those who truly understand AI's trajectory and those who don't is widening daily.",
     "source": "Dan Martell",
     "sourceUrl": "https://www.youtube.com/watch?v=8yt5yzwJQko",
     "date": "2026-04-17T12:30:19Z"
@@ -29,8 +38,8 @@
   {
     "filename": "aifeed_branded_1776354795.mp4",
     "url": "https://aifeed.run/videos/aifeed_branded_1776354795.mp4",
-    "title": "Tesla's AI5 Chip Taped Out — And It Destroys Nvidia",
-    "caption": "Tesla's AI5 chip: 5x the compute of dual AI4, 3x more power efficient than Nvidia Blackwell, at under 10% of the cost. Designed for Optimus robots and supercomputer clusters — Tesla's pivot to AI infrastructure.",
+    "title": "Tesla's AI5 Chip Taped Out \u2014 And It Destroys Nvidia",
+    "caption": "Tesla's AI5 chip: 5x the compute of dual AI4, 3x more power efficient than Nvidia Blackwell, at under 10% of the cost. Designed for Optimus robots and supercomputer clusters \u2014 Tesla's pivot to AI infrastructure.",
     "source": "Brighter with Herbert",
     "sourceUrl": "https://www.youtube.com/watch?v=7oYypAFWieo",
     "date": "2026-04-16T15:53:15Z"
@@ -39,7 +48,7 @@
     "filename": "aifeed_branded_1776265860.mp4",
     "url": "https://aifeed.run/videos/aifeed_branded_1776265860.mp4",
     "title": "99% of White Collar Jobs Replaced in 2 Years",
-    "caption": "Peter Diamandis: OpenAI's $852B valuation is 70x revenue — unprecedented. With $3B invested daily in AI, virtually every white collar job will be automated within years, not decades.",
+    "caption": "Peter Diamandis: OpenAI's $852B valuation is 70x revenue \u2014 unprecedented. With $3B invested daily in AI, virtually every white collar job will be automated within years, not decades.",
     "source": "Peter H. Diamandis",
     "sourceUrl": "https://www.youtube.com/@PeterDiamandis",
     "date": "2026-04-15T15:11:00Z"
@@ -48,7 +57,7 @@
     "filename": "aifeed_branded_1776180029.mp4",
     "url": "https://aifeed.run/videos/aifeed_branded_1776180029.mp4",
     "title": "Nobody Understands Their Own Code Anymore",
-    "caption": "\"Dark code\" — AI-generated code running in production that no human fully understands — is now a real regulatory and liability risk. As AI coding accelerates, this challenge will 10x in the coming year.",
+    "caption": "\"Dark code\" \u2014 AI-generated code running in production that no human fully understands \u2014 is now a real regulatory and liability risk. As AI coding accelerates, this challenge will 10x in the coming year.",
     "source": "AI News & Strategy Daily | Nate B Jones",
     "sourceUrl": "https://www.youtube.com/watch?v=E1idsrv79tI",
     "date": "2026-04-14T15:20:29Z"
@@ -57,7 +66,7 @@
     "filename": "aifeed_branded_1776084241.mp4",
     "url": "https://aifeed.run/videos/aifeed_branded_1776084241.mp4",
     "title": "Minimax M2.7: The Open-Source AI That Improves Itself",
-    "caption": "Minimax's M2.7 scores 56% on real-world engineering tasks, matching GPT-4. Full model weights on Hugging Face — not just API access. A major step toward democratizing enterprise-grade AI.",
+    "caption": "Minimax's M2.7 scores 56% on real-world engineering tasks, matching GPT-4. Full model weights on Hugging Face \u2014 not just API access. A major step toward democratizing enterprise-grade AI.",
     "source": "AI Revolution",
     "sourceUrl": "https://www.youtube.com/watch?v=KJ34SHi9CB4",
     "date": "2026-04-13T12:44:01Z"
@@ -66,7 +75,7 @@
     "filename": "aifeed_branded_1775760152.mp4",
     "url": "https://aifeed.run/videos/aifeed_branded_1775760152.mp4",
     "title": "AI Will Reshape 55% of US Jobs in 3 Years",
-    "caption": "Boston Consulting Group: AI will reshape 50–55% of US jobs in the next 3 years. Not mass layoffs — transformation. Workers who understand AI collaboration will have a significant advantage.",
+    "caption": "Boston Consulting Group: AI will reshape 50\u201355% of US jobs in the next 3 years. Not mass layoffs \u2014 transformation. Workers who understand AI collaboration will have a significant advantage.",
     "source": "CBS News",
     "sourceUrl": "https://www.youtube.com/watch?v=QGOE3kXZgJ0",
     "date": "2026-04-09T18:42:32Z"
