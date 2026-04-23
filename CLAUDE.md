@@ -1,5 +1,5 @@
 # AIFeed.run — Claude Project Instructions
-**Last updated: April 22, 2026 (session 5)**
+**Last updated: April 23, 2026 (session 7)**
 
 > This file is read by Claude at the start of every session. Update it whenever significant decisions are made.
 
@@ -25,6 +25,27 @@ AIFeed.run is an automated AI news brand. Every day it:
 ## ⚠️ CRITICAL RULES — READ BEFORE EVERY TASK ⚠️
 
 These rules exist because of real mistakes that cost time and money. Do not skip them.
+
+### 0. WORKFLOW DEPLOYMENT — THE #1 RECURRING FAILURE
+
+**Fixing a workflow JSON file on Desktop is NOT the same as fixing the live n8n workflow.**
+
+Every session that modifies a workflow JSON file and does NOT immediately re-import it into n8n has effectively fixed nothing. The publisher runs the live n8n version — not the Desktop file. This caused the SpaceX post failure (Apr 23) and multiple prior incidents.
+
+**Rule: Never tell the user a workflow bug is "fixed" unless the updated JSON has been re-imported into n8n in that same session.**
+
+If re-import cannot happen in the session, the message must be:
+> "The JSON file is fixed. You MUST re-import it into n8n before tonight's publish run or the fix will not take effect."
+
+#### n8n Deployment Status — current as of Apr 23, 2026
+
+| Workflow file | Desktop JSON fixed | Deployed to n8n | Notes |
+|---|---|---|---|
+| `AIFeed Story Selector NEW.json` | ✅ Session 2+ | ✅ Yes (Telegram webhook working) | img3/img4 bug: sheet needs Img3URL/Img4URL column headers |
+| `aifeed website publisher.json` | ✅ Session 7 (Apr 23) | ❌ **NOT YET** | Must re-import tonight before publish run |
+
+**To deploy the publisher (do this NOW):**
+n8n → "aifeed website publisher" → Settings → Import → `/Users/305partners/Desktop/aifeed website publisher.json` → update in place.
 
 ### 1. GRAPHIC GENERATION — MANDATORY CHECKLIST
 **Before generating ANY graphic, in this exact order:**
@@ -163,6 +184,90 @@ Each display line: **max 4 words, max 20 characters**. At 82px font, more than ~
 
 ---
 
+## Session 7 Changes (Apr 23, 2026)
+
+### Root Cause Analysis — Recurring Wrong Graphic / Missing Hashtags Bug
+
+Two separate bugs caused the same symptom (wrong graphic on website, missing hashtags):
+
+**Bug 1 — NEW (never previously identified):** `findLocalGraphic()` in the publisher used `startsWith('aifeed_')` (underscore). Files saved from browser screenshots are often named with hyphens (e.g. `aifeed-spacex.png`). The function silently rejected them and fell back to the raw `bg_pexels_*.jpg` background.
+
+**Bug 2 — DEPLOYMENT FAILURE:** Session 5 publisher fixes (hashtag extraction, video pipeline, `findLocalGraphic` itself) were marked "Pending — to deploy in n8n" but were never re-imported. The live publisher ran old code for multiple days.
+
+**Why both bugs went unnoticed:** No error is thrown. The publisher runs, finds nothing locally, falls back to the raw Pexels background URL, and publishes the post with a wrong image silently.
+
+### Fixed (Apr 23, 2026)
+
+#### 1. SpaceX/Cursor post manually corrected
+- `imageUrl` updated: `bg_pexels_1776859429896.jpg` → `aifeed_spacex_cursor.png`
+- `hashtags` array added: `[AINews, SpaceX, Cursor, AICoding, DeveloperTools, EnterpriseAI]`
+- Hashtag spans added to body HTML
+- Committed and pushed: commit `42412d8`
+
+#### 2. Missing video added (Apr 22 — Anthropic Mythos breach)
+- `aifeed_branded_1776874247.mp4` copied from Downloads → `videos/`
+- Added to `videos/videos-index.json` as most recent entry
+- Caption from `caption_linkedin_1776874247.txt`: Bloomberg / Mythos unauthorized access / Pentagon supply chain risk
+
+#### 3. Publisher workflow fixed (4 changes in `aifeed website publisher.json`)
+All 4 changes are in the Desktop JSON. **Must be re-imported into n8n.**
+
+| Fix | What changed | Why |
+|-----|-------------|-----|
+| Accept `aifeed-` prefix | `startsWith('aifeed_')` → `startsWith('aifeed')` | Screenshots saved with hyphens were silently rejected |
+| Scan `aifeed/images/` first | Added `/Users/305partners/aifeed/images` as first `searchDirs` entry | Committed branded PNGs were never checked |
+| Hashtag extraction | Always extract `#tags` from `linkedinCaption`, add to `hashtags[]` and body | Only ran in fallback path before; skipped when Claude API worked |
+| Block raw backgrounds | `bg_pexels_` pattern check before using `row.imageUrl` | Silently publishing raw backgrounds instead of empty/placeholder |
+
+#### 4. OpenAI Clinician graphic created
+- Rendered `aifeed_openai_clinician.png` using Pexels 7088524 (CT scan room)
+- Committed to `images/` folder
+
+### What NOT to Do (critical additions)
+- **Never say a workflow fix is "done" if the JSON was not re-imported into n8n in that session** — updating the Desktop file does nothing until deployed
+- **Never assume `findLocalGraphic` will find a file named `aifeed-*.png`** — always name saved screenshots with underscores (`aifeed_*.png`) OR confirm the function accepts both
+- **Always name screenshot PNGs with underscores** — `aifeed_spacex_cursor.png` not `aifeed-spacex.png` — to match the `aifeed_` pattern used everywhere in the system
+
+### Background Registry additions (session 7)
+| aifeed_spacex_cursor.png | bg from Pexels 12861276 (screenshot from n8n HTML graphic) | unique |
+| aifeed_openai_clinician.png | bg_clinic_ct.jpg (Pexels 7088524, CT scan diagnostic room) | unique |
+
+---
+
+## Session 6 Changes (Apr 22, 2026)
+
+### Affiliate Program Applications — PartnerStack
+
+Applied to 7 affiliate programs via PartnerStack using account **theaifeed.run@gmail.com**. All applications are currently **on hold pending PartnerStack Network approval** — once the Network application is approved, all 7 program applications fire automatically.
+
+**PartnerStack Network status:** Pending approval (application submitted this session)
+
+| Program | Commission | PartnerStack slug | Status |
+|---------|-----------|-------------------|--------|
+| Gamma | 25% | `gamma` | On hold — pending Network |
+| Castmagic | 30% | `castmagic` | On hold — pending Network |
+| Descript | $25/conversion | `descript` | On hold — pending Network |
+| GetResponse | 40–60% | `getresponse` | On hold — pending Network |
+| Prezi | 50% (launch offer until Jul 1, 2026) | `prezi` | On hold — pending Network |
+| Murf AI | 20% | `murfai` | On hold — pending Network |
+| MeetGeek | 30% lifetime recurring | `meetgeek` | On hold — pending Network |
+
+**Channels used in all applications:**
+- Primary: @aifeed.run Instagram (440 followers, 7,700+ monthly views, 1,497 accounts reached)
+- Secondary: https://aifeed.run (~800 monthly visitors)
+- Newsletter: weekly
+
+**What to do when Network is approved:**
+1. Check theaifeed.run@gmail.com for approval email from PartnerStack
+2. All 7 program applications will auto-submit — check each program's status in PartnerStack dashboard
+3. Once accepted to any program, get the affiliate link and add it to the Affiliate Links Registry below
+4. Replace the homepage URLs for those tools in the aifeed.run AI Tools section with affiliate links
+
+**Tools on aifeed.run currently using homepage URLs (replace with affiliate links when approved):**
+Writesonic, Surfer SEO, Munch Studio, Perplexity AI, Claude.ai, HubSpot AI, n8n.io, DeepArt Effects
+
+---
+
 ## Session 5 Changes (Apr 22, 2026)
 
 ### Videos — Fully Dynamic Pipeline (permanent fix)
@@ -195,7 +300,7 @@ All posts now have a `hashtags: ["AINews", "Anthropic", ...]` array field extrac
 | Tool | Affiliate URL | Notes |
 |------|--------------|-------|
 | ElevenLabs | `https://try.elevenlabs.io/qspw8v1gx7n0` | Active |
-| HeadshotPro | `https://www.headshotpro.com/?via=aifeed` | Active |
+| HeadshotPro | `https://headshotpro-1.getrewardful.com/` | Active (Rewardful) |
 | Beehiiv | `https://www.beehiiv.com/?via=ai-feed` | Active |
 | AdCreative.ai | `https://free-trial.adcreative.ai/g944t536drtc` | 30% recurring — added Apr 21 |
 
@@ -216,9 +321,9 @@ Sticky banner between stats bar and stories section links to `#ai-tools`. Sectio
 - **Never strip hashtags when fixing post bodies** — hashtags must appear as purple spans at the bottom of every article
 - **Never use the Edit tool on jsCode inside workflow JSON** — always Python json.load/dump
 
-### Pending — to deploy in n8n (re-import both workflows)
-1. `AIFeed Story Selector NEW.json` — broken connection fix, 3-term photo algorithm, auto-render PNG, 4 new nodes
-2. `aifeed website publisher.json` — liToHtml() fix, video auto-discovery + caption reader, video index sync
+### ⚠️ STILL PENDING DEPLOYMENT IN N8N
+- `aifeed website publisher.json` — all session 5, 6, 7 fixes are in the Desktop JSON but the live n8n workflow has NOT been re-imported. Until re-imported, the publisher runs old code.
+- `AIFeed Story Selector NEW.json` — img3/img4 fix requires `Img3URL` and `Img4URL` column headers to be added to the Google Sheet header row (columns after Status).
 
 ---
 
@@ -326,9 +431,16 @@ These are the REAL affiliate links in the tools grid. When updating any tool car
 | Tool | Affiliate Link | Commission | Status |
 |------|---------------|-----------|--------|
 | ElevenLabs | `https://try.elevenlabs.io/qspw8v1gx7n0` | — | Active |
-| HeadshotPro | `https://www.headshotpro.com/?via=aifeed` | — | Active |
+| HeadshotPro | `https://www.headshotpro.com/?via=aifeed` | — | Active (also: `https://headshotpro-1.getrewardful.com/`) |
 | Beehiiv | `https://www.beehiiv.com/?via=ai-feed` | — | Active |
 | AdCreative.ai | `https://free-trial.adcreative.ai/g944t536drtc` | 30% recurring | Active — added Apr 21, 2026 |
+| Gamma | TBD | 25% | Applied Apr 22 — pending PartnerStack Network approval |
+| Castmagic | TBD | 30% | Applied Apr 22 — pending PartnerStack Network approval |
+| Descript | TBD | $25/conversion | Applied Apr 22 — pending PartnerStack Network approval |
+| GetResponse | TBD | 40–60% | Applied Apr 22 — pending PartnerStack Network approval |
+| Prezi | TBD | 50% (until Jul 1, 2026) | Applied Apr 22 — pending PartnerStack Network approval |
+| Murf AI | TBD | 20% | Applied Apr 22 — pending PartnerStack Network approval |
+| MeetGeek | TBD | 30% lifetime recurring | Applied Apr 22 — pending PartnerStack Network approval |
 
 **Writesonic, SurferSEO, Munch, HubSpot, Deep Art Effects, Perplexity, Claude.ai, n8n** — no affiliate links yet (using homepage URLs).
 
@@ -338,6 +450,8 @@ These are the REAL affiliate links in the tools grid. When updating any tool car
 
 ## What NOT to Do
 
+- **Never say a workflow bug is "fixed" if the JSON was not re-imported into n8n in that same session** — the Desktop JSON file and the live n8n workflow are two different things. Updating one does not update the other.
+- **Never name a screenshot PNG with hyphens** — always use underscores: `aifeed_spacex_cursor.png` not `aifeed-spacex.png`. The publisher's `findLocalGraphic()` uses `startsWith('aifeed')` (fixed Apr 23) but all existing code and conventions use underscores.
 - **Never generate a graphic without reading GRAPHIC_SPEC.md first** — every time, no exceptions
 - **Never use `item.json.Caption` for website body text** — always `item.json.LinkedInCaption`
 - **Never dump raw caption text as website body HTML** — always run through `liToHtml()` at minimum
