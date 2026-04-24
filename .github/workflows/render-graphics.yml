@@ -19,10 +19,19 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Cache Puppeteer
+        uses: actions/cache@v4
+        with:
+          path: |
+            node_modules
+            ~/.cache/puppeteer
+          key: ${{ runner.os }}-puppeteer-v1
+
       - name: Install Puppeteer
         run: npm install puppeteer
 
       - name: Render HTMLs to PNGs
+        id: render
         run: |
           node -e "
           const puppeteer = require('puppeteer');
@@ -38,7 +47,7 @@ jobs:
             const imagesDir = './images';
             const files = fs.readdirSync(graphicsDir).filter(f => f.endsWith('.html'));
 
-            let rendered = 0;
+            const newPNGs = [];
             for (const file of files) {
               const pngName = file.replace('.html', '.png');
               const pngPath = path.join(imagesDir, pngName);
@@ -59,7 +68,7 @@ jobs:
                 });
                 fs.writeFileSync(pngPath, screenshot);
                 console.log('Rendered:', pngName);
-                rendered++;
+                newPNGs.push(pngPath);
                 await page.close();
               } catch(e) {
                 console.error('Failed to render', file, ':', e.message);
@@ -67,7 +76,10 @@ jobs:
             }
 
             await browser.close();
-            console.log('Done. Rendered', rendered, 'new PNGs.');
+
+            // Write list of new PNGs for the Telegram step
+            fs.writeFileSync('/tmp/new_pngs.txt', newPNGs.join('\n'));
+            console.log('Done. Rendered', newPNGs.length, 'new PNGs.');
           })();
           "
 
@@ -77,3 +89,23 @@ jobs:
           git config user.email "bot@aifeed.run"
           git add images/
           git diff --staged --quiet && echo "Nothing to commit" || (git commit -m "Auto-render: branded PNGs from graphics/" && git push)
+
+      - name: Send PNG to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ ! -f /tmp/new_pngs.txt ] || [ ! -s /tmp/new_pngs.txt ]; then
+            echo "No new PNGs to send."
+            exit 0
+          fi
+          while IFS= read -r png_path; do
+            if [ -f "$png_path" ]; then
+              echo "Sending to Telegram: $png_path"
+              curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto" \
+                -F "chat_id=${TELEGRAM_CHAT_ID}" \
+                -F "photo=@${png_path}" \
+                -F "caption=✅ Your branded graphic is ready — save and post directly." \
+                | python3 -c "import json,sys; r=json.load(sys.stdin); print('Sent:', r.get('ok'))"
+            fi
+          done < /tmp/new_pngs.txt
