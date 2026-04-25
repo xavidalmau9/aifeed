@@ -1,5 +1,5 @@
 # AIFeed.run — Claude Project Instructions
-**Last updated: April 23, 2026 (session 8)**
+**Last updated: April 25, 2026 (session 10)**
 
 > This file is read by Claude at the start of every session. Update it whenever significant decisions are made.
 
@@ -15,7 +15,8 @@ AIFeed.run is an automated AI news brand. Every day it:
 
 - **Website:** https://aifeed.run (GitHub Pages, repo: `xavidalmau9/aifeed`)
 - **Repo files:** `index.html`, `post.html`, `_posts/posts-index.json`, `images/`
-- **n8n workflows:** on Desktop at `/Users/305partners/Desktop/AIFeed *.json`
+- **n8n workflows:** on Desktop at `/Users/305partners/Desktop/n8n Workflows/`
+- **n8n is cloud-hosted** — not running locally. Access via browser only. Cannot update via localhost or API without an API key.
 - **Google Sheet:** `1BCTHLe5ExoFwLMnQuayVWsVI8hBKfD7u54FiHGv_7rs` ("AIFeed Posted Headlines")
 - **Telegram bot token:** `8738655145:AAE1jUkC4n_Gq2jmyAsNQU_cQpJGDJFLuWA`
 - **Telegram chat ID:** `7748417469`
@@ -181,6 +182,232 @@ Each display line: **max 4 words, max 20 characters**. At 82px font, more than ~
 - `Build & Send Graphic` (id: b1000039) — stock photo flow
 - `Build & Send Graphic Photo` (id: b1000042) — custom photo flow
 - Both must always be identical. Any CSS change goes in both.
+
+---
+
+## Session 9 Changes (Apr 25, 2026)
+
+### Desktop Folder Map — ALWAYS CHECK THESE BEFORE ACTING
+
+These folders are directly accessible every session. Never ask the user for files that live here.
+
+| Folder | Path | What's in it |
+|--------|------|-------------|
+| `aifeed-graphics` (symlink) | `~/Desktop/aifeed-graphics/` → `/Users/305partners/aifeed/images/` | ALL branded AIFeed graphics (aifeed_*.png). This IS the repo images folder. |
+| `Downloads` | `~/Downloads/` | New video `.mp4` files + caption text files (`caption_linkedin_[ts].txt`, `caption_instagram_[ts].txt`, `caption_x_[ts].txt`). Check here for new content every session. |
+| `n8n Workflows` | `~/Desktop/n8n Workflows/` | The 3 live workflow JSON files: `AIFeed Story List NEW.json`, `AIFeed Story Selector NEW.json`, `aifeed website publisher.json` |
+| `n8n Workflows Archive` | `~/Desktop/n8n Workflows Archive/` | Old/superseded workflow JSONs. Do not import these. |
+
+**Rule: At the start of any session involving publishing or videos, always run:**
+```bash
+ls -lt ~/Downloads/aifeed_branded_*.mp4 ~/Downloads/caption_linkedin_*.txt 2>/dev/null | head -20
+ls -lt /Users/305partners/aifeed/images/aifeed_*.png 2>/dev/null | head -20
+```
+This shows new videos and new branded graphics immediately.
+
+**File naming rules (permanent):**
+- ALL branded graphics MUST be named `aifeed_[descriptive_slug].png` — e.g., `aifeed_claude_code_workflow.png`
+- Never use generic names: `aifeed-graphic(14).html`, `chatgpt_image.png`, `the_ai_headlines.png`, etc.
+- Never use hyphens — always underscores: `aifeed_nvidia_bond_game.png` not `aifeed-nvidia-bond.png`
+- Never use timestamps as the primary identifier — slug first, timestamp only if collision risk
+- The `aifeed-graphics` Desktop folder IS the `images/` repo folder — every branded PNG ever made goes here
+
+---
+
+### GitHub PAT — Current Token and Rotation Rules
+
+**Current valid PAT (as of Apr 25, 2026):**
+`[PAT stored locally only — never commit to repo. Find it in the n8n workflow JSON files: search for github_pat_ in AIFeed Story Selector NEW.json]`
+
+**Where it lives (ALL must be updated together when rotating):**
+- `AIFeed Story Selector NEW.json` — 4 occurrences (`_GH` and `GH_TOKEN` variables in nodes: `Build & Send Graphic`, `Build & Send Graphic Photo`, `Process & Upload Photo`, `Upload Pexels to GitHub`)
+- `aifeed website publisher.json` — 1 occurrence (`GH_TOKEN` in `Fetch Build Push (APPROVED only)`)
+- Story List has NO GitHub API calls — no token needed there
+
+**When the PAT is revoked (symptoms):**
+- HTML never appears in `graphics/` folder on GitHub
+- GitHub Action `Render HTML Graphics to PNG` never fires
+- PNG never arrives in Telegram
+- Website publisher fails to read/write `_posts/posts-index.json`
+- Videos fail to update
+
+**To fix a revoked PAT:**
+1. Generate new fine-grained token at github.com → Settings → Developer settings → Fine-grained tokens
+2. Permissions required: Contents R/W + Workflows R/W on `aifeed` repo only
+3. Run this Python to replace in all workflow files at once:
+```python
+OLD = 'ghp_...'  # old token
+NEW = 'github_pat_...'  # new token
+for path in ['~/Desktop/n8n Workflows/AIFeed Story Selector NEW.json',
+             '~/Desktop/n8n Workflows/aifeed website publisher.json']:
+    raw = open(path).read()
+    open(path,'w').write(raw.replace(OLD, NEW))
+```
+4. Re-import BOTH updated JSONs into n8n cloud immediately
+5. Update this CLAUDE.md with the new token
+
+---
+
+### Publishing to Website — MANDATORY CHECKLIST
+
+**Never publish posts to `_posts/posts-index.json` with stock photo or Telegram URLs.**
+
+Before writing any `imageUrl` into a post entry, in this exact order:
+
+1. **Check `aifeed-graphics` folder first** (`~/Desktop/aifeed-graphics/` = `/Users/305partners/aifeed/images/`). Look for a file whose name matches the story keywords. The branded PNG is almost always already there.
+
+2. **Check if that file is on GitHub:**
+```python
+# Quick check
+import urllib.request, json
+req = urllib.request.Request('https://api.github.com/repos/xavidalmau9/aifeed/contents/images',
+    headers={'Authorization': 'Bearer [PAT]', 'Accept': 'application/vnd.github+json'})
+with urllib.request.urlopen(req) as r:
+    on_gh = {f['name'] for f in json.load(r)}
+print('aifeed_goose.png' in on_gh)  # True = safe to use
+```
+
+3. **If file exists locally but NOT on GitHub** — upload it first, THEN set the imageUrl. Never set a URL pointing to a file that isn't on GitHub yet.
+
+4. **Only fall back to Pexels/AltImageURL if no branded graphic exists at all.** Even then, prefer `AltImageURL` over raw Pexels CDN URLs (Pexels CDN links are not permanent).
+
+5. **Never use Telegram file URLs (`api.telegram.org/file/bot...`) as imageUrl** — these are private and expire.
+
+**Google Sheet is public and readable without auth:**
+```bash
+curl -sL "https://docs.google.com/spreadsheets/d/1BCTHLe5ExoFwLMnQuayVWsVI8hBKfD7u54FiHGv_7rs/export?format=csv&gid=0"
+```
+Always fetch APPROVED rows from the sheet directly when publishing manually.
+
+---
+
+### Video Publishing — MANDATORY CHECKLIST
+
+New videos appear in `~/Downloads/` as `aifeed_branded_[timestamp].mp4`.
+Caption files appear alongside them: `caption_linkedin_[ts].txt`, `caption_instagram_[ts].txt`, `caption_x_[ts].txt`.
+
+**Do not ask the user for video titles or descriptions. Read the caption files.**
+
+**To add new videos to the website:**
+1. Check Downloads for mp4 files newer than the latest entry in `videos/videos-index.json`
+2. Read the LinkedIn caption file for each new video
+3. Extract: title (first line of caption), caption (body paragraphs), source (line starting `Source:`), sourceUrl (YouTube URL)
+4. Upload mp4 to GitHub `videos/` if not already there
+5. Prepend new entries to `videos/videos-index.json` (newest first)
+6. Push `videos-index.json` to GitHub
+
+---
+
+### GitHub Action Fix — `render-graphics.yml` (Apr 25, 2026)
+
+**Problem that was fixed:** The `Commit rendered PNGs` step was failing when the repo had received concurrent pushes (common since n8n, the publisher, and Claude all push frequently). This caused the `Send PNG to Telegram` step to be skipped — user never received the graphic.
+
+**Fix applied:**
+1. **Telegram send moved BEFORE the git commit** — PNG is delivered to user even if the commit fails
+2. **`git pull --rebase origin main` added before `git push`** — handles concurrent pushes without failing
+
+The current correct workflow order is:
+1. Checkout → Setup Node → Cache → Install Puppeteer
+2. Render HTMLs to PNGs
+3. **Send PNG to Telegram** ← happens HERE, before any git operations
+4. Commit rendered PNGs (with rebase)
+
+This fix was pushed directly via GitHub API on Apr 25 (the PAT had `workflow` scope this time).
+
+---
+
+### Manual Publishing Bypass
+
+When n8n is broken, publish directly:
+
+```python
+# Fetch approved rows from sheet
+import csv, io, urllib.request
+url = 'https://docs.google.com/spreadsheets/d/1BCTHLe5ExoFwLMnQuayVWsVI8hBKfD7u54FiHGv_7rs/export?format=csv&gid=0'
+req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+with urllib.request.urlopen(req) as r:
+    rows = list(csv.DictReader(io.StringIO(r.read().decode('utf-8'))))
+approved = [r for r in rows if r.get('Status','').strip().upper() == 'APPROVED']
+```
+
+Then for each approved row:
+- `imageUrl`: match headline keywords to a file in `aifeed-images/`. Use `https://aifeed.run/images/[filename]`
+- `body`: run `liToHtml()` on `LinkedInCaption` column (NOT Caption)
+- `publishedAt`: use the `Date` column value as-is
+- Push to `_posts/posts-index.json` via GitHub API (prepend new posts to front of array)
+
+---
+
+### What NOT to Do (Session 9 additions)
+
+- **Never publish posts with Pexels CDN URLs as imageUrl** — always find the branded graphic first
+- **Never publish posts with `api.telegram.org` URLs as imageUrl** — private, expires, won't load on website
+- **Never set imageUrl to a file that isn't confirmed to be on GitHub** — check before setting
+- **Never ask the user for video titles or captions** — they are in `~/Downloads/caption_linkedin_[ts].txt`
+- **Never modify workflow JSON files on disk and call it "fixed"** — n8n cloud has its own copy. Disk edits are meaningless until re-imported. The Finder "Date Added" does NOT update when file content changes — do not use it to judge if a file is current.
+- **Never update all three workflow JSONs and tell user to re-import without also offering to do it via n8n UI** — if browser tools are available, open n8n and do the import directly
+- **Always check GitHub Actions run history when PNG doesn't arrive** — the Action may have run and failed. Check: `https://github.com/xavidalmau9/aifeed/actions`
+- **Never leave a git merge conflict unresolved** — use `git stash → pull → stash pop` or push directly via GitHub API if local git is in a bad state
+- **Never push large numbers of commits to the repo in rapid succession during a session** — it causes the GitHub Action's `git push` to fail with "rejected: non-fast-forward". If many pushes are needed, batch them into one commit.
+
+---
+
+## Session 10 Changes (Apr 25, 2026)
+
+### Story Selector Workflow — Pexels Step Completely Removed
+
+**Old flow (broken):** User picks story → workflow asks user to pick 1 of 4 Pexels images → user replies img1-4 → workflow builds graphic
+
+**New flow:** User picks story → workflow immediately builds graphic → GitHub Action renders PNG → PNG arrives in Telegram (~90s)
+
+**Changes made to `AIFeed Story Selector NEW.json`:**
+- **Removed nodes from path:** `Get Visual Search Terms`, `Extract Visual Terms`, `Fetch 4 Pexels Options`, `Send Instagram Caption`, `Send LinkedIn Caption`, `Send Image Options`, `Send Instructions`, `Upload Pexels to GitHub`
+- **New direct path:** `Get Selected Story → Prep Story Data → Call Claude API → Parse Claude Response → Log as PENDING_GRAPHIC → Read Sheet for Pending → Find Pending Row → Mark APPROVED → Prep Graphic Data → Get Graphic Data → Build & Send Graphic`
+- **`Prep Story Data` modified** to not require Pexels photos (outputs empty img1-4 URLs)
+- **`Find Pending Row` modified** to not require user image choice — always uses empty imageUrl (dark background only)
+- **`Build & Send Graphic` slug fix** — now uses `row.Headline || row.headline` for descriptive filename
+- **File `aifeed-graphic (N).html` problem FIXED** — descriptive slug-based names (e.g., `aifeed_claude_code_workflow_[ts].html`)
+- **Re-import required in n8n** — disk file updated, user must re-import
+
+### Story List Workflow — 4-Day Date Filter Added
+
+**Problem:** RSS feeds keep stale articles (days-old) at the top. Same stories appeared in menu every day because they never expired from the feed.
+
+**Fix:** Added date filter in `Fetch & Score Stories` — any article with `<pubDate>` older than 4 days is skipped.
+
+**Changes made to `AIFeed Story List NEW.json`:**
+- `pubDate`/`updated`/`published` tag parsed for each RSS item
+- Articles older than 4 days skipped with `continue`
+- **Re-import required in n8n** — disk file updated, user must re-import
+
+### Images Folder Cleanup (permanent)
+
+The `images/` folder (= `~/Desktop/aifeed-graphics/`) was cleaned on Apr 25:
+- **Deleted:** all `bg_pexels_*.jpg`, `bg_anthropic_trillion.jpg`, `bg_nsa_mythos.jpg`, `custom_*.jpg`, `clip3_jobs_died_FINAL2.mp4` — these were raw Pexels backgrounds and temp files, not finished branded graphics
+- **Renamed generic files** to descriptive `aifeed_` names:
+  - `nvidias-bond.png` → `aifeed_nvidia_bond_game.png`
+  - `meta_drops.png` → `aifeed_meta_drops_llama.png`
+  - `the_ai_headlines.png` → `aifeed_ai_headlines_cover.png`
+  - `chatgpt_image.png` → `aifeed_chatgpt_cover.png`
+  - `aifeed-amazon-bets.png` → `aifeed_amazon_bets.png`
+  - `aifeed-claude-opus.png` → `aifeed_claude_opus.png`
+  - `aifeed-more-women.png` → `aifeed_more_women.png`
+  - `aifeed-spacex.png` → `aifeed_spacex.png`
+  - `aifeed-zuckerberg.png` → `aifeed_zuckerberg.png`
+- **Desktop symlink renamed:** `aifeed-images` → `aifeed-graphics`
+- **Rule:** Every graphic ever made goes in this folder with `aifeed_[descriptive_slug].png` naming
+
+### Category Pills Fixed in `index.html`
+
+Added missing CSS for Health (teal) and Infrastructure (indigo) category badges. Pushed to GitHub.
+
+### What NOT to Do (Session 10 additions)
+
+- **Never save graphics to `~/Downloads/`** — they belong in `~/Desktop/aifeed-graphics/` = `images/` folder
+- **Never name graphics with generic names** (`aifeed-graphic (14).html`, `chatgpt_image.png`) — always `aifeed_[slug].png`
+- **Never use Pexels images as background for the branded graphic** — the Chrome headless renderer uses a dark background when no image URL is provided. The branded text/design IS the graphic — no photo needed.
+- **Never use hyphens in graphic filenames** — always underscores
+- **Never show Pexels image options to the user** — that step was removed in session 10
 
 ---
 
