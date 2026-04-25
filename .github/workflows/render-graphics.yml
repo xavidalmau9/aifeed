@@ -76,19 +76,10 @@ jobs:
             }
 
             await browser.close();
-
-            // Write list of new PNGs for the Telegram step
             fs.writeFileSync('/tmp/new_pngs.txt', newPNGs.join('\n'));
             console.log('Done. Rendered', newPNGs.length, 'new PNGs.');
           })();
           "
-
-      - name: Commit rendered PNGs
-        run: |
-          git config user.name "AIFeed Bot"
-          git config user.email "bot@aifeed.run"
-          git add images/
-          git diff --staged --quiet && echo "Nothing to commit" || (git commit -m "Auto-render: branded PNGs from graphics/" && git push)
 
       - name: Send PNG to Telegram
         env:
@@ -109,3 +100,16 @@ jobs:
                 | python3 -c "import json,sys; r=json.load(sys.stdin); print('Sent:', r.get('ok'))"
             fi
           done < /tmp/new_pngs.txt
+
+      - name: Commit rendered PNGs
+        run: |
+          git config user.name "AIFeed Bot"
+          git config user.email "bot@aifeed.run"
+          git add images/
+          if git diff --staged --quiet; then
+            echo "Nothing to commit"
+          else
+            git commit -m "Auto-render: branded PNGs from graphics/"
+            git pull --rebase origin main
+            git push
+          fi
