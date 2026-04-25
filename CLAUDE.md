@@ -1,5 +1,5 @@
 # AIFeed.run — Claude Project Instructions
-**Last updated: April 25, 2026 (session 10)**
+**Last updated: April 25, 2026 (session 11)**
 
 > This file is read by Claude at the start of every session. Update it whenever significant decisions are made.
 
@@ -38,15 +38,13 @@ Every session that modifies a workflow JSON file and does NOT immediately re-imp
 If re-import cannot happen in the session, the message must be:
 > "The JSON file is fixed. You MUST re-import it into n8n before tonight's publish run or the fix will not take effect."
 
-#### n8n Deployment Status — current as of Apr 23, 2026
+#### n8n Deployment Status — current as of Apr 25, 2026 (session 11)
 
 | Workflow file | Desktop JSON fixed | Deployed to n8n | Notes |
 |---|---|---|---|
-| `AIFeed Story Selector NEW.json` | ✅ Session 8 (Apr 23) | ✅ Deployed Apr 23 | HTML upload pipeline live; both Graphic nodes write pngUrl + graphicHtml |
+| `AIFeed Story Selector NEW.json` | ✅ Session 11 (Apr 25) | ⚠️ **NEEDS RE-IMPORT** | Pexels auto-fetch, captions to Telegram, slug fix, alwaysOutputData |
+| `AIFeed Story List NEW.json` | ✅ Session 10 (Apr 25) | ⚠️ **NEEDS RE-IMPORT** | Today-only dedup, 4-day RSS filter, threshold=1, alwaysOutputData |
 | `aifeed website publisher.json` | ✅ Session 7 (Apr 23) | ✅ Deployed Apr 23 | All 4 fixes live: hyphen names, images/ scan, hashtags, bg_pexels block |
-
-**To deploy the publisher (do this NOW):**
-n8n → "aifeed website publisher" → Settings → Import → `/Users/305partners/Desktop/aifeed website publisher.json` → update in place.
 
 ### 1. GRAPHIC GENERATION — MANDATORY CHECKLIST
 **Before generating ANY graphic, in this exact order:**
@@ -117,14 +115,32 @@ Tag ID: `G-38GGN8HYT6`. Installed in `<head>` of both `index.html` and `post.htm
 
 ---
 
-## Story Selector Bot — How It Works
+## Story Selector Bot — How It Works (current as of session 11)
 
 User interacts via Telegram:
-1. Daily: bot sends 5 headlines to choose from
-2. User replies `1`–`5` → bot fetches 2 Pexels photo options + sends them
-3. User replies `img1`, `img2`, or `skip` → generates branded HTML graphic + Instagram/LinkedIn captions
-4. User can reply `custom` → bot asks for a photo → user sends photo → custom photo flow runs
-5. HTML graphic sent as `.html` file via Telegram → user opens in browser, screenshots at 100% zoom
+1. Daily: Story List bot sends up to 10 headlines numbered 1–10 (reply `more` to see 6–10)
+2. User replies `1`–`10` → bot immediately confirms story selection
+3. Bot sends **Instagram caption** to Telegram
+4. Bot sends **LinkedIn caption** to Telegram
+5. Bot auto-fetches a relevant Pexels background image (no user picking required)
+6. Bot builds branded HTML graphic + uploads to GitHub `graphics/`
+7. GitHub Action (Puppeteer) renders PNG → sends PNG to Telegram (~90 seconds later)
+8. User replies `regen` at any time to rebuild the last approved story with a fresh layout + different Pexels photo
+
+**No more image-picking step.** The old img1/img2/img3/img4 flow is gone.
+
+### Nodes in the new direct flow
+`Telegram Message Received → Parse Message → Is Story Number? → Read Staging → Get Selected Story → Prep Story Data → Call Claude API → Parse Claude Response → Build Graphic Direct → Log APPROVED to Sheet`
+
+**`Build Graphic Direct`** (id: `b_direct_001`) — single node that does everything:
+1. Sends ✅ confirmation to Telegram
+2. Sends 📷 Instagram caption to Telegram
+3. Sends 💼 LinkedIn caption to Telegram
+4. Auto-fetches Pexels portrait image based on headline keywords
+5. Calls Claude haiku for graphic layout (line splits, summary, badge values)
+6. Builds full HTML graphic with background image
+7. Uploads to GitHub `graphics/aifeed_[slug].html`
+8. Sends "PNG arriving in ~90s" message + regen hint
 
 ### Custom Photo Flow (node: Process & Upload Photo — b1000027)
 1. Gets Telegram file path via `getFile` API
@@ -352,62 +368,84 @@ Then for each approved row:
 
 ---
 
-## Session 10 Changes (Apr 25, 2026)
+## Session 11 Changes (Apr 25, 2026)
 
-### Story Selector Workflow — Pexels Step Completely Removed
+### Story Selector — Auto Pexels Background (no user picking)
 
-**Old flow (broken):** User picks story → workflow asks user to pick 1 of 4 Pexels images → user replies img1-4 → workflow builds graphic
+**Problem:** After removing the Pexels-picking step, graphics arrived with a plain dark background and no photo.
 
-**New flow:** User picks story → workflow immediately builds graphic → GitHub Action renders PNG → PNG arrives in Telegram (~90s)
+**Fix:** `Build Graphic Direct` and `Regen Graphic` now auto-fetch one Pexels portrait photo based on headline keywords. No user interaction needed.
 
-**Changes made to `AIFeed Story Selector NEW.json`:**
-- **Removed nodes from path:** `Get Visual Search Terms`, `Extract Visual Terms`, `Fetch 4 Pexels Options`, `Send Instagram Caption`, `Send LinkedIn Caption`, `Send Image Options`, `Send Instructions`, `Upload Pexels to GitHub`
-- **New direct path:** `Get Selected Story → Prep Story Data → Call Claude API → Parse Claude Response → Log as PENDING_GRAPHIC → Read Sheet for Pending → Find Pending Row → Mark APPROVED → Prep Graphic Data → Get Graphic Data → Build & Send Graphic`
-- **`Prep Story Data` modified** to not require Pexels photos (outputs empty img1-4 URLs)
-- **`Find Pending Row` modified** to not require user image choice — always uses empty imageUrl (dark background only)
-- **`Build & Send Graphic` slug fix** — now uses `row.Headline || row.headline` for descriptive filename
-- **File `aifeed-graphic (N).html` problem FIXED** — descriptive slug-based names (e.g., `aifeed_claude_code_workflow_[ts].html`)
-- **Re-import required in n8n** — disk file updated, user must re-import
+- Keywords extracted from headline (stop words removed, min 2 chars, up to 3 words)
+- Pexels API called with `orientation=portrait&per_page=3` — first result used
+- `Regen Graphic` picks photo index 1 (different from original) so regen looks fresh
+- `<img class="bg" src="[pexelsUrl]" alt="">` injected into HTML before the overlay
+- Pexels API key: in workflow JSON (search `PEXELS_KEY` in `AIFeed Story Selector NEW.json`)
 
-### Story List Workflow — 4-Day Date Filter Added
+### Story Selector — Instagram + LinkedIn Captions to Telegram
 
-**Problem:** RSS feeds keep stale articles (days-old) at the top. Same stories appeared in menu every day because they never expired from the feed.
+**Problem:** Captions were generated by `Call Claude API → Parse Claude Response` but never forwarded to Telegram in the new direct flow.
 
-**Fix:** Added date filter in `Fetch & Score Stories` — any article with `<pubDate>` older than 4 days is skipped.
+**Fix:** `Build Graphic Direct` now sends both captions immediately after the ✅ confirmation:
+1. `📷 INSTAGRAM:\n\n[caption]`
+2. `💼 LINKEDIN:\n\n[caption]`
+
+### Story Selector — Slug Fix (filenames now fully descriptive)
+
+**Problem:** Slug generator used `filter(w => w.length > 2).slice(0,4)` — stripped numbers ("5" in "5 AI Models") and only used 4 words, producing generic names like `aifeed_models_tried_scam_some_[ts].html`.
+
+**Fix:** Now uses `filter(w => w.length >= 2).slice(0,6).substring(0,50)` — keeps numbers, takes 6 words, caps at 50 chars. Result: `aifeed_5_ai_models_tried_to_scam_me_some_of_them_were_scary.html`.
+
+Same fix applied to `Regen Graphic`.
+
+### GitHub Action — `contents: write` Permission Added
+
+**Problem:** `git push` in the "Commit rendered PNGs" step failed with HTTP 403. PNGs were being rendered and sent to Telegram but not committed back to the repo, so `~/Desktop/aifeed-graphics/` never received them.
+
+**Fix:** Added `permissions: contents: write` to the render job in `.github/workflows/render-graphics.yml`. Pushed to main Apr 25.
+
+### Story List — Today-Only Dedup + 4-Day RSS Filter + Threshold=1
 
 **Changes made to `AIFeed Story List NEW.json`:**
-- `pubDate`/`updated`/`published` tag parsed for each RSS item
-- Articles older than 4 days skipped with `continue`
-- **Re-import required in n8n** — disk file updated, user must re-import
+- **Dedup today-only** — only blocks stories published TODAY (not all 73 all-time). Daily news feed = fresh slate every day. Uses `new Date().toISOString().substring(0,10)`.
+- **4-day RSS filter** — articles older than 4 days skipped via `<pubDate>` parsing. Stops stale stories from reappearing daily.
+- **Threshold = 1** — sends whatever fresh stories are available (up to 10, fewer is fine). Old threshold of 10 caused "Only 7 fresh stories" error and workflow abort.
+- **`alwaysOutputData: true`** on `Read Old Staging`, `Read Sheet1 Headlines` — prevents n8n from halting when sheets are empty.
+- Claude prompt updated: "Pick UP TO 10 of the BEST, most ENGAGING stories (fewer is fine if fewer are available)"
 
-### Images Folder Cleanup (permanent)
+### `alwaysOutputData: true` — Added to All Sheet-Reading Nodes
 
-The `images/` folder (= `~/Desktop/aifeed-graphics/`) was cleaned on Apr 25:
-- **Deleted:** all `bg_pexels_*.jpg`, `bg_anthropic_trillion.jpg`, `bg_nsa_mythos.jpg`, `custom_*.jpg`, `clip3_jobs_died_FINAL2.mp4` — these were raw Pexels backgrounds and temp files, not finished branded graphics
-- **Renamed generic files** to descriptive `aifeed_` names:
-  - `nvidias-bond.png` → `aifeed_nvidia_bond_game.png`
-  - `meta_drops.png` → `aifeed_meta_drops_llama.png`
-  - `the_ai_headlines.png` → `aifeed_ai_headlines_cover.png`
-  - `chatgpt_image.png` → `aifeed_chatgpt_cover.png`
-  - `aifeed-amazon-bets.png` → `aifeed_amazon_bets.png`
-  - `aifeed-claude-opus.png` → `aifeed_claude_opus.png`
-  - `aifeed-more-women.png` → `aifeed_more_women.png`
-  - `aifeed-spacex.png` → `aifeed_spacex.png`
-  - `aifeed-zuckerberg.png` → `aifeed_zuckerberg.png`
-- **Desktop symlink renamed:** `aifeed-images` → `aifeed-graphics`
-- **Rule:** Every graphic ever made goes in this folder with `aifeed_[descriptive_slug].png` naming
+**Problem:** Empty Staging sheet caused n8n to show "No output data returned" and stop execution.
 
-### Category Pills Fixed in `index.html`
+**Fix:** Added `"settings": {"alwaysOutputData": true}` to: `Read Staging`, `Read Sheet for Pending`, `Read Sheet for Photo`, `Read Staging For More`, `Read Old Staging`, `Read Sheet1 Headlines`.
 
-Added missing CSS for Health (teal) and Infrastructure (indigo) category badges. Pushed to GitHub.
+### `regen` Command Added
 
-### What NOT to Do (Session 10 additions)
+User can reply `regen` in Telegram at any time → workflow reads last APPROVED story from Sheet1 → calls Claude for a fresh layout → fetches a different Pexels photo → uploads new HTML → new PNG arrives in ~90s.
 
+### Session 10 Changes (Apr 25, 2026)
+
+**Story Selector Workflow — Pexels picking step removed:**
+- Old flow: user picks story → workflow asks user to pick 1 of 4 Pexels images → user replies img1-4 → workflow builds graphic
+- New flow: user picks story → single `Build Graphic Direct` node handles everything → PNG arrives in Telegram
+- Removed nodes: `Get Visual Search Terms`, `Extract Visual Terms`, `Fetch 4 Pexels Options`, `Send Image Options`, `Send Instructions`, `Upload Pexels to GitHub`
+
+**Images folder cleanup (Apr 25):**
+- Deleted: `bg_pexels_*.jpg`, raw backgrounds, temp files
+- Renamed all hyphened files to `aifeed_[slug].png` convention
+- Desktop symlink renamed: `aifeed-images` → `aifeed-graphics`
+
+**Category pills fixed in `index.html`:** Health (teal) + Infrastructure (indigo) added. Pushed to GitHub.
+
+### What NOT to Do (Session 11 additions)
+
+- **Never show Pexels options to the user** — auto-pick is built into `Build Graphic Direct`. User never sees or picks images.
+- **Never generate a graphic with an empty `bgImg`** — always fetch Pexels first. If Pexels fails, log and continue (dark background is acceptable fallback only on error).
+- **Never use `filter(w => w.length > 2)` for slug generation** — use `>= 2` to keep numbers like "5", "AI", etc.
+- **Never use `slice(0,4)` for slug** — use `slice(0,6)` to get enough words for a descriptive name
 - **Never save graphics to `~/Downloads/`** — they belong in `~/Desktop/aifeed-graphics/` = `images/` folder
-- **Never name graphics with generic names** (`aifeed-graphic (14).html`, `chatgpt_image.png`) — always `aifeed_[slug].png`
-- **Never use Pexels images as background for the branded graphic** — the Chrome headless renderer uses a dark background when no image URL is provided. The branded text/design IS the graphic — no photo needed.
+- **Never name graphics with generic names** — always `aifeed_[full_descriptive_slug].png`
 - **Never use hyphens in graphic filenames** — always underscores
-- **Never show Pexels image options to the user** — that step was removed in session 10
 
 ---
 
