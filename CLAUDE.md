@@ -1,5 +1,5 @@
 # AIFeed.run — Claude Project Instructions
-**Last updated: April 25, 2026 (session 11)**
+**Last updated: April 26, 2026 (session 12)**
 
 > This file is read by Claude at the start of every session. Update it whenever significant decisions are made.
 
@@ -64,6 +64,7 @@ If re-import cannot happen in the session, the message must be:
 ### 2. WEBSITE BODY TEXT — LinkedInCaption ONLY
 - **`Caption` column = Instagram** — short, emojis, ⠀ spacers. NEVER use for website.
 - **`LinkedInCaption` column = website** — always use this field for `body` in posts-index.json
+- This rule is non-negotiable and must never be forgotten. Do not ask about it.
 - When Claude API is unavailable: apply `liToHtml()` to LinkedInCaption — never dump raw text
 - `liToHtml()`: splits on `⠀` (U+2800), skips first segment (headline), skips Source: lines, wraps paragraphs in `<p>`, collects `#hashtags` → purple `<span style="color:#a050ff">` elements
 
@@ -81,6 +82,21 @@ After any edit to `_posts/posts-index.json`:
 
 ### 5. GOOGLE ANALYTICS
 Tag ID: `G-38GGN8HYT6`. Installed in `<head>` of both `index.html` and `post.html`. Do not add again.
+
+### 6. VIDEOS — PERMANENT RULES (do not ask about this again)
+- **Branded videos are always in `~/Downloads/` as `aifeed_branded_*.mp4`**
+- **Videos are a SEPARATE content type from posts** — they are YouTube video summaries, NOT n8n story selections
+- **Video index:** `aifeed/videos/videos-index.json` — always check this for videos not yet added
+- **New video flow:** copy new MP4 from Downloads → `aifeed/videos/` → add entry to `videos-index.json` → commit & push
+- **Website loads both:** `_posts/posts-index.json` (articles) AND `videos/videos-index.json` (videos) — both sections must be populated
+- **Every session:** check Downloads for new `aifeed_branded_*.mp4` files not yet in videos-index.json. If found, add them. Never ask the user to list videos.
+- **`aifeed-graphics` on Desktop** = symlink to `aifeed/images/` — all branded PNGs live here. Always use the photo-background PNG (not dark/timestamp-only version) for `imageUrl` in posts-index.json
+
+### 7. WEBSITE PUBLISHER — IDEMPOTENCY
+- Publisher trigger MUST be `cronExpression: "0 0 * * *"` — one run per day at midnight
+- Code has idempotency guard: checks if posts already published today before processing
+- If publisher sent duplicate Telegram messages: the trigger was `{}` empty — fix it to cron and re-import
+- Publisher marks rows PUBLISHED in Sheet after processing — if rows stay APPROVED, the Status update is failing
 
 ---
 
