@@ -1,78 +1,131 @@
 [
   {
-    "id": "openai-says-its-new-chatgpt-for-clinicians-outperforms-20260423",
-    "slug": "openai-says-its-new-chatgpt-for-clinicians-outperforms",
-    "headline": "OpenAI says its new ChatGPT for Clinicians outperforms doctors on clinical tasks even when they have unlimited time and web access",
-    "summary": "OpenAI says its new ChatGPT for Clinicians outperforms doctors on clinical tasks even when they have unlimited time and web access",
-    "body": "<p>OpenAI has unveiled a specialized version of ChatGPT designed for clinical environments, with benchmark results suggesting it can outperform licensed physicians on a range of clinical tasks.</p><p>What makes the claim notable is the testing condition: doctors were given unlimited time and full web access, effectively removing the usual constraints of real-world practice. The model still came out ahead.</p><p>The product targets use cases like diagnostic reasoning, clinical documentation, triage support, and navigating complex medical literature—areas where latency, cognitive load, and information retrieval typically challenge human clinicians.</p><p>For healthcare organizations, this raises strategic questions about workflow redesign, liability frameworks, and how AI copilots are validated before deployment in patient-facing settings.</p><p>The broader signal is clear: vertical, domain-tuned AI is moving from promising demos to measurable performance gains against expert baselines. Enterprises in regulated industries should be watching closely.</p>",
-    "category": "Health",
-    "imageUrl": "https://aifeed.run/images/aifeed_openai_clinician.png",
-    "sourceUrl": "https://the-decoder.com/openai-says-its-new-chatgpt-for-clinicians-outperforms-doctors-on-clinical-tasks-even-when-they-have-unlimited-time-and-web-access/",
-    "publishedAt": "2026-04-23T08:02:06.973-04:00",
-    "isVideo": false,
-    "hashtags": [
-      "AINews",
-      "HealthcareAI",
-      "OpenAI",
-      "DigitalHealth",
-      "EnterpriseAI"
-    ]
-  },
-  {
-    "id": "openai-releases-gpt55-bringing-company-one-step-closer-20260423",
-    "slug": "openai-releases-gpt55-bringing-company-one-step-closer",
-    "headline": "OpenAI releases GPT-5.5, bringing company one step closer to an AI 'super app'",
-    "summary": "OpenAI releases GPT-5.5, bringing company one step closer to an AI 'super app'",
-    "body": "<p>The incremental model release tells only part of the story. What's more strategically significant is how OpenAI is consolidating capabilities — reasoning, search, commerce, and agentic workflows — into a single integrated surface.</p><p>GPT-5.5 brings measurable improvements in reasoning depth and multimodal handling, but the real shift is architectural. OpenAI is positioning ChatGPT as the default interface layer between users and the broader internet, a move reminiscent of WeChat's dominance in China.</p><p>For enterprises, this raises important questions around vendor concentration, data governance, and workflow dependency. A super app strategy means deeper integration — but also deeper lock-in.</p><p>Competitors like Google, Anthropic, and Meta will be forced to respond, either by matching the breadth or doubling down on specialization. Expect the platform wars of 2026 to look very different from the model wars of 2024.</p><p>Leaders evaluating AI strategy should start asking not just \"which model?\" but \"which ecosystem?\" — because that's the decision that will define the next three years.</p>",
+    "id": "apples-next-ceo-needs-launch-killer-20260425",
+    "slug": "apples-next-ceo-needs-launch-killer",
+    "headline": "Apple's Next CEO Needs to Launch a Killer AI Product",
+    "summary": "Apple's Next CEO Needs to Launch a Killer AI Product",
+    "body": "<p>Apple's current AI position is uncharacteristically reactive. Apple Intelligence has faced delayed features and underwhelming reviews, while Siri continues to lag well behind ChatGPT, Gemini, and Claude in both capability and developer momentum.</p><p>The strategic risk isn't just product perception — it's platform relevance. As AI becomes the primary interface layer for computing, hardware leadership without AI leadership becomes a structurally weaker position.</p><p>Apple's next CEO will need to do what Cook didn't have to: deliver a category-defining AI product. That likely means rethinking Siri from the ground up, deepening foundation model investments, and potentially reshaping partnerships with frontier labs.</p><p>The successor's mandate is clear. Maintaining Apple's premium is no longer enough — the next leader has to redefine what an Apple product means in an AI-first world.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AINews</span></p>",
     "category": "Industry",
-    "imageUrl": "https://aifeed.run/images/aifeed_gpt55_super_app.png",
-    "sourceUrl": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/",
-    "publishedAt": "2026-04-23T17:02:12.658-04:00",
+    "imageUrl": "https://aifeed.run/images/aifeed_apples_next_ceo_needs_to_launch_1777153900105.png",
+    "sourceUrl": "https://www.wired.com/story/apples-next-ceo-needs-to-launch-a-killer-ai-product/",
+    "publishedAt": "2026-04-25T17:51:42.741-04:00",
+    "isVideo": false,
+    "hashtags": [
+      "AINews"
+    ]
+  },
+  {
+    "id": "models-tried-scam-some-them-were-20260425",
+    "slug": "models-tried-scam-some-them-were",
+    "headline": "5 AI Models Tried to Scam Me. Some of Them Were Scary Good",
+    "summary": "5 AI Models Tried to Scam Me. Some of Them Were Scary Good",
+    "body": "<p>While some models maintained safety guardrails and refused malicious requests, others produced highly persuasive social engineering content with minimal prompting. The quality gap between human-written phishing and AI-generated attempts has effectively closed.</p><p>For CISOs and risk leaders, this signals a shift in the threat landscape. Phishing volume is no longer constrained by attacker fluency, time, or language barriers. Personalized, context-aware lures can now be produced at scale and tailored to specific roles, industries, and even individuals.</p><p>Traditional awareness training, which relies on spotting grammatical errors and generic templates, is becoming obsolete. Defense strategies must evolve toward behavioral analytics, stronger identity verification, and AI-assisted detection that can match the sophistication of AI-driven attacks.</p><p>The takeaway: the same generative capabilities driving productivity gains are equally accessible to adversaries. Security posture must be reassessed with that asymmetry in mind.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AINews</span> <span style=\"color:#a050ff\">#Cybersecurity</span> <span style=\"color:#a050ff\">#Phishing</span> <span style=\"color:#a050ff\">#EnterpriseAI</span> <span style=\"color:#a050ff\">#RiskManagement</span></p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/aifeed_models_tried_scam_some_1777127137337.png",
+    "sourceUrl": "https://www.wired.com/story/ai-model-phishing-attack-cybersecurity/",
+    "publishedAt": "2026-04-25T10:25:38.774-04:00",
     "isVideo": false,
     "hashtags": [
       "AINews",
-      "OpenAI",
+      "Cybersecurity",
+      "Phishing",
       "EnterpriseAI",
-      "DigitalStrategy",
-      "ArtificialIntelligence"
+      "RiskManagement"
     ]
   },
   {
-    "id": "google-says-75-percent-of-its-new-code-20260423",
-    "slug": "google-says-75-percent-of-its-new-code",
-    "headline": "Google says 75 percent of its new code is now written by AI",
-    "summary": "Google says 75 percent of its new code is now written by AI",
-    "body": "<p>A striking data point from Google: roughly 75% of new code inside the company is now AI-generated, up sharply from earlier disclosures. Human engineers still review and approve, but the authorship of the first draft has clearly shifted.</p><p>This signals a structural change in how software gets built at scale. Code generation is moving from assisted autocomplete to default production workflow, with humans operating as editors, architects, and quality gatekeepers rather than line-by-line authors.</p><p>The productivity implications are significant. Faster iteration cycles, reduced time on boilerplate, and more engineering capacity redirected toward design, review, and system-level thinking. But it also raises the bar on code review discipline, security scanning, and long-term maintainability.</p><p>For enterprise leaders, Google's benchmark is a useful forcing function. If the company setting the tone for modern engineering is operating at this ratio, questions about internal AI adoption, tooling standards, and developer workflows can no longer be deferred.</p><p>The competitive gap in the next few years won't be who uses AI to write code, but who builds the review, governance, and deployment practices that make AI-generated code safe to scale.</p>",
-    "category": "Tools",
-    "imageUrl": "https://aifeed.run/images/aifeed_google_says.png",
-    "sourceUrl": "https://the-decoder.com/google-says-75-percent-of-its-new-code-is-now-written-by-ai/",
-    "publishedAt": "2026-04-23T21:01:24.436-04:00",
+    "id": "musk-altman-here-and-its-going-20260425",
+    "slug": "musk-altman-here-and-its-going",
+    "headline": "Musk vs. Altman is here, and it's going to get messy",
+    "summary": "Musk vs. Altman is here, and it's going to get messy",
+    "body": "<p>What began as a quiet co-founder dispute over OpenAI's direction has transformed into a public, multi-front conflict spanning lawsuits, social media barbs, and competing product roadmaps between xAI and OpenAI.</p><p>For enterprise leaders, this isn't just gossip. The feud is shaping who controls foundational models, where top AI talent migrates, and how regulators view the concentration of power in frontier AI.</p><p>Expect the rivalry to accelerate competition on capabilities, pricing, and enterprise integrations, but also introduce new platform risk as alliances and partnerships shift in real time.</p><p>Strategic AI buyers should diversify model dependencies and watch this dynamic closely. The outcome will influence the AI stack for years to come.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AINews</span> <span style=\"color:#a050ff\">#EnterpriseAI</span> <span style=\"color:#a050ff\">#OpenAI</span> <span style=\"color:#a050ff\">#xAI</span> <span style=\"color:#a050ff\">#TechLeadership</span></p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/aifeed_musk-altman-here-and_1777124948872.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/917755/musk-altman-openai-xai-gossip",
+    "publishedAt": "2026-04-25T09:45:03.956-04:00",
     "isVideo": false,
     "hashtags": [
       "AINews",
-      "Google",
-      "SoftwareEngineering",
-      "GenerativeAI",
-      "FutureOfWork"
+      "EnterpriseAI",
+      "OpenAI",
+      "xAI",
+      "TechLeadership"
     ]
   },
   {
-    "id": "railway-secures-100-million-to-challenge-aws-with-20260424",
-    "slug": "railway-secures-100-million-to-challenge-aws-with",
-    "headline": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
-    "summary": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
-    "body": "<p>Railway has closed a $100M funding round to scale its developer-first cloud platform, positioning itself as a direct challenger to AWS in the emerging AI-native infrastructure category.</p><p>The thesis is straightforward: legacy hyperscalers were architected for a pre-AI world, burdening teams with configuration complexity, fragmented tooling, and steep operational overhead. Railway is betting that modern AI workloads demand a radically simpler deployment experience.</p><p>The timing is notable. As AI agents and autonomous systems increasingly provision their own compute, infrastructure platforms optimized for speed, abstraction, and developer ergonomics are becoming strategic differentiators rather than commodity layers.</p><p>For enterprise buyers, this signals a broader shift. The cloud market is fragmenting into specialized players targeting specific workloads, challenging the assumption that hyperscaler lock-in is inevitable. Expect more competitive pricing and faster innovation cycles as a result.</p><p>The real test will be whether Railway can scale reliability and enterprise-grade compliance while preserving the simplicity that defines its appeal. That balance has tripped up many challengers before.</p>",
-    "category": "Infrastructure",
-    "imageUrl": "https://aifeed.run/images/aifeed_railway_raises.png",
-    "sourceUrl": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
-    "publishedAt": "2026-04-24T09:47:19.884-04:00",
+    "id": "the-creator-claude-code-just-revealed-20260425",
+    "slug": "the-creator-claude-code-just-revealed",
+    "headline": "The creator of Claude Code just revealed his workflow, and developers are losing their minds",
+    "summary": "The creator of Claude Code just revealed his workflow, and developers are losing their minds",
+    "body": "<p>The creator of Claude Code just revealed his workflow, and developers are losing their minds Boris Cherny, the engineer behind Anthropic's Claude Code, has shared a detailed look at how he personally uses the tool — and the developer community is paying close attention.</p><p>His approach challenges conventional assumptions about AI-assisted coding. Rather than treating Claude as an autocomplete engine, Cherny emphasizes upfront planning, longer autonomous runs, and structured context management as the foundation of high-leverage workflows.</p><p>Key practices include leveraging Claude.md files for persistent project context, using sub-agents for parallel task execution, and resisting the urge to interrupt. The result, according to early adopters, is a meaningful jump in code quality and shipping velocity.</p><p>For engineering leaders, the takeaway is strategic: productivity gains from AI coding tools depend less on the model itself and more on how teams structure their interactions with it. Workflow design is becoming a competitive differentiator.</p><p>As agentic coding tools mature, expect best practices from the people building them to shape enterprise standards across the software industry.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AINews</span> <span style=\"color:#a050ff\">#ClaudeCode</span> <span style=\"color:#a050ff\">#Anthropic</span> <span style=\"color:#a050ff\">#DeveloperProductivity</span> <span style=\"color:#a050ff\">#AgenticAI</span></p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/aifeed__1777123693621.png",
+    "sourceUrl": "https://venturebeat.com/technology/the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are",
+    "publishedAt": "2026-04-25T09:27:00.474-04:00",
     "isVideo": false,
     "hashtags": [
       "AINews",
-      "CloudInfrastructure",
-      "EnterpriseTech",
-      "DevOps",
-      "VentureCapital"
+      "ClaudeCode",
+      "Anthropic",
+      "DeveloperProductivity",
+      "AgenticAI"
+    ]
+  },
+  {
+    "id": "aidesigned-drugs-deepmind-spinoff-are-headed-20260425",
+    "slug": "aidesigned-drugs-deepmind-spinoff-are-headed",
+    "headline": "AI-Designed Drugs by a DeepMind Spinoff Are Headed to Human Trials",
+    "summary": "AI-Designed Drugs by a DeepMind Spinoff Are Headed to Human Trials",
+    "body": "<p>The company builds on AlphaFold's protein structure breakthroughs, applying generative AI to design novel molecules with greater precision and speed than traditional pharmaceutical R&D pipelines allow.</p><p>Drug discovery has historically been one of the slowest, most capital-intensive processes in science, often requiring over a decade and billions of dollars per approved compound. AI-native approaches promise to compress timelines and dramatically reduce failure rates in early-stage development.</p><p>Isomorphic has already secured partnerships with Novartis and Eli Lilly, signaling that major pharmaceutical players see foundation models as critical infrastructure for the next generation of therapeutics.</p><p>The implications extend beyond pharma. If AI-designed molecules clear human trials, it validates a new operating model for life sciences, one where computation becomes the primary engine of biomedical innovation.</p><p>For enterprise leaders, this is a clear signal that AI is moving from productivity tool to platform technology reshaping entire industries at their scientific core.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AINews</span> <span style=\"color:#a050ff\">#DrugDiscovery</span> <span style=\"color:#a050ff\">#DeepMind</span> <span style=\"color:#a050ff\">#HealthcareInnovation</span> <span style=\"color:#a050ff\">#BioTech</span></p>",
+    "category": "Industry",
+    "imageUrl": "https://images.pexels.com/photos/3735711/pexels-photo-3735711.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "sourceUrl": "https://www.wired.com/story/wired-health-2026-how-ai-is-powering-drug-discovery-max-jaderberg/",
+    "publishedAt": "2026-04-25T08:08:22.552-04:00",
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "DrugDiscovery",
+      "DeepMind",
+      "HealthcareInnovation",
+      "BioTech"
+    ]
+  },
+  {
+    "id": "aidesigned-drugs-by-a-deepmind-spinoff-are-headed-20260425",
+    "slug": "aidesigned-drugs-by-a-deepmind-spinoff-are-headed",
+    "headline": "AI-Designed Drugs by a DeepMind Spinoff Are Headed to Human Trials",
+    "summary": "AI-Designed Drugs by a DeepMind Spinoff Are Headed to Human Trials",
+    "body": "<p>Isomorphic Labs, the DeepMind spinoff led by Max Jaderberg, is preparing to move its first AI-designed drug candidates into human clinical trials, a milestone moment for computational drug discovery.</p><p>The company builds on AlphaFold's protein structure breakthroughs, applying generative AI to design novel molecules with greater precision and speed than traditional pharmaceutical R&D pipelines allow.</p><p>Drug discovery has historically been one of the slowest, most capital-intensive processes in science, often requiring over a decade and billions of dollars per approved compound. AI-native approaches promise to compress timelines and dramatically reduce failure rates in early-stage development.</p><p>Isomorphic has already secured partnerships with Novartis and Eli Lilly, signaling that major pharmaceutical players see foundation models as critical infrastructure for the next generation of therapeutics.</p><p>The implications extend beyond pharma. If AI-designed molecules clear human trials, it validates a new operating model for life sciences, one where computation becomes the primary engine of biomedical innovation.</p><p>For enterprise leaders, this is a clear signal that AI is moving from productivity tool to platform technology reshaping entire industries at their scientific core.</p>",
+    "category": "Health",
+    "imageUrl": "https://aifeed.run/images/aifeed_hassabis_graphic_v2.png",
+    "sourceUrl": "https://www.wired.com/story/wired-health-2026-how-ai-is-powering-drug-discovery-max-jaderberg/",
+    "publishedAt": "2026-04-25T08:08:22.552-04:00",
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "DrugDiscovery",
+      "DeepMind",
+      "HealthcareInnovation",
+      "BioTech"
+    ]
+  },
+  {
+    "id": "claude-code-costs-200-month-goose-20260424",
+    "slug": "claude-code-costs-200-month-goose",
+    "headline": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
+    "summary": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
+    "body": "<p>Block has released Goose, an open-source AI coding agent positioned as a direct alternative to premium tools like Anthropic's Claude Code and GitHub Copilot's higher tiers.</p><p>The key differentiator is model flexibility. Goose is model-agnostic, meaning teams can plug in commercial APIs, self-hosted open-weight models, or fully local inference depending on cost, privacy, and performance requirements.</p><p>For enterprises, this shifts the economics of AI-assisted development considerably. Instead of paying per-seat subscriptions that scale linearly with engineering headcount, organizations can route Goose through existing model contracts or run it on internal infrastructure.</p><p>The release also signals a broader trend: as foundation models commoditize, the agent layer is becoming the new battleground. Open-source offerings like Goose threaten to compress margins on closed coding assistants the same way Llama compressed margins on proprietary LLMs.</p><p>The trade-off, of course, is operational overhead. Managed products like Claude Code offer polish, support, and predictable performance. Goose asks engineering teams to take on more configuration in exchange for control and cost savings.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AINews</span> <span style=\"color:#a050ff\">#OpenSource</span> <span style=\"color:#a050ff\">#DeveloperTools</span> <span style=\"color:#a050ff\">#EnterpriseAI</span> <span style=\"color:#a050ff\">#AICoding</span></p>",
+    "category": "Industry",
+    "imageUrl": "https://api.telegram.org/file/bot8738655145:AAE1jUkC4n_Gq2jmyAsNQU_cQpJGDJFLuWA/photos/file_7.jpg",
+    "sourceUrl": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
+    "publishedAt": "2026-04-24T18:33:17.376-04:00",
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "OpenSource",
+      "DeveloperTools",
+      "EnterpriseAI",
+      "AICoding"
     ]
   },
   {
@@ -95,22 +148,155 @@
     ]
   },
   {
-    "id": "aidesigned-drugs-by-a-deepmind-spinoff-are-headed-20260425",
-    "slug": "aidesigned-drugs-by-a-deepmind-spinoff-are-headed",
-    "headline": "AI-Designed Drugs by a DeepMind Spinoff Are Headed to Human Trials",
-    "summary": "AI-Designed Drugs by a DeepMind Spinoff Are Headed to Human Trials",
-    "body": "<p>Isomorphic Labs, the DeepMind spinoff led by Max Jaderberg, is preparing to move its first AI-designed drug candidates into human clinical trials, a milestone moment for computational drug discovery.</p><p>The company builds on AlphaFold's protein structure breakthroughs, applying generative AI to design novel molecules with greater precision and speed than traditional pharmaceutical R&D pipelines allow.</p><p>Drug discovery has historically been one of the slowest, most capital-intensive processes in science, often requiring over a decade and billions of dollars per approved compound. AI-native approaches promise to compress timelines and dramatically reduce failure rates in early-stage development.</p><p>Isomorphic has already secured partnerships with Novartis and Eli Lilly, signaling that major pharmaceutical players see foundation models as critical infrastructure for the next generation of therapeutics.</p><p>The implications extend beyond pharma. If AI-designed molecules clear human trials, it validates a new operating model for life sciences, one where computation becomes the primary engine of biomedical innovation.</p><p>For enterprise leaders, this is a clear signal that AI is moving from productivity tool to platform technology reshaping entire industries at their scientific core.</p>",
-    "category": "Health",
-    "imageUrl": "https://aifeed.run/images/aifeed_hassabis_graphic_v2.png",
-    "sourceUrl": "https://www.wired.com/story/wired-health-2026-how-ai-is-powering-drug-discovery-max-jaderberg/",
-    "publishedAt": "2026-04-25T08:08:22.552-04:00",
+    "id": "railway-secures-100-million-challenge-aws-20260424",
+    "slug": "railway-secures-100-million-challenge-aws",
+    "headline": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+    "summary": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+    "body": "<p>The thesis is straightforward: legacy hyperscalers were architected for a pre-AI world, burdening teams with configuration complexity, fragmented tooling, and steep operational overhead. Railway is betting that modern AI workloads demand a radically simpler deployment experience.</p><p>The timing is notable. As AI agents and autonomous systems increasingly provision their own compute, infrastructure platforms optimized for speed, abstraction, and developer ergonomics are becoming strategic differentiators rather than commodity layers.</p><p>For enterprise buyers, this signals a broader shift. The cloud market is fragmenting into specialized players targeting specific workloads, challenging the assumption that hyperscaler lock-in is inevitable. Expect more competitive pricing and faster innovation cycles as a result.</p><p>The real test will be whether Railway can scale reliability and enterprise-grade compliance while preserving the simplicity that defines its appeal. That balance has tripped up many challengers before.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AINews</span> <span style=\"color:#a050ff\">#CloudInfrastructure</span> <span style=\"color:#a050ff\">#EnterpriseTech</span> <span style=\"color:#a050ff\">#DevOps</span> <span style=\"color:#a050ff\">#VentureCapital</span></p>",
+    "category": "Industry",
+    "imageUrl": "https://api.telegram.org/file/bot8738655145:AAE1jUkC4n_Gq2jmyAsNQU_cQpJGDJFLuWA/photos/file_6.jpg",
+    "sourceUrl": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+    "publishedAt": "2026-04-24T09:47:19.884-04:00",
     "isVideo": false,
     "hashtags": [
       "AINews",
-      "DrugDiscovery",
-      "DeepMind",
-      "HealthcareInnovation",
-      "BioTech"
+      "CloudInfrastructure",
+      "EnterpriseTech",
+      "DevOps",
+      "VentureCapital"
+    ]
+  },
+  {
+    "id": "railway-secures-100-million-to-challenge-aws-with-20260424",
+    "slug": "railway-secures-100-million-to-challenge-aws-with",
+    "headline": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+    "summary": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+    "body": "<p>Railway has closed a $100M funding round to scale its developer-first cloud platform, positioning itself as a direct challenger to AWS in the emerging AI-native infrastructure category.</p><p>The thesis is straightforward: legacy hyperscalers were architected for a pre-AI world, burdening teams with configuration complexity, fragmented tooling, and steep operational overhead. Railway is betting that modern AI workloads demand a radically simpler deployment experience.</p><p>The timing is notable. As AI agents and autonomous systems increasingly provision their own compute, infrastructure platforms optimized for speed, abstraction, and developer ergonomics are becoming strategic differentiators rather than commodity layers.</p><p>For enterprise buyers, this signals a broader shift. The cloud market is fragmenting into specialized players targeting specific workloads, challenging the assumption that hyperscaler lock-in is inevitable. Expect more competitive pricing and faster innovation cycles as a result.</p><p>The real test will be whether Railway can scale reliability and enterprise-grade compliance while preserving the simplicity that defines its appeal. That balance has tripped up many challengers before.</p>",
+    "category": "Infrastructure",
+    "imageUrl": "https://aifeed.run/images/aifeed_railway_raises.png",
+    "sourceUrl": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+    "publishedAt": "2026-04-24T09:47:19.884-04:00",
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "CloudInfrastructure",
+      "EnterpriseTech",
+      "DevOps",
+      "VentureCapital"
+    ]
+  },
+  {
+    "id": "google-says-percent-its-new-code-20260423",
+    "slug": "google-says-percent-its-new-code",
+    "headline": "Google says 75 percent of its new code is now written by AI",
+    "summary": "Google says 75 percent of its new code is now written by AI",
+    "body": "<p>This signals a structural change in how software gets built at scale. Code generation is moving from assisted autocomplete to default production workflow, with humans operating as editors, architects, and quality gatekeepers rather than line-by-line authors.</p><p>The productivity implications are significant. Faster iteration cycles, reduced time on boilerplate, and more engineering capacity redirected toward design, review, and system-level thinking. But it also raises the bar on code review discipline, security scanning, and long-term maintainability.</p><p>For enterprise leaders, Google's benchmark is a useful forcing function. If the company setting the tone for modern engineering is operating at this ratio, questions about internal AI adoption, tooling standards, and developer workflows can no longer be deferred.</p><p>The competitive gap in the next few years won't be who uses AI to write code, but who builds the review, governance, and deployment practices that make AI-generated code safe to scale.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AINews</span> <span style=\"color:#a050ff\">#Google</span> <span style=\"color:#a050ff\">#SoftwareEngineering</span> <span style=\"color:#a050ff\">#GenerativeAI</span> <span style=\"color:#a050ff\">#FutureOfWork</span></p>",
+    "category": "Industry",
+    "imageUrl": "https://images.pexels.com/photos/225250/pexels-photo-225250.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "sourceUrl": "https://the-decoder.com/google-says-75-percent-of-its-new-code-is-now-written-by-ai/",
+    "publishedAt": "2026-04-23T21:01:24.436-04:00",
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "Google",
+      "SoftwareEngineering",
+      "GenerativeAI",
+      "FutureOfWork"
+    ]
+  },
+  {
+    "id": "google-says-75-percent-of-its-new-code-20260423",
+    "slug": "google-says-75-percent-of-its-new-code",
+    "headline": "Google says 75 percent of its new code is now written by AI",
+    "summary": "Google says 75 percent of its new code is now written by AI",
+    "body": "<p>A striking data point from Google: roughly 75% of new code inside the company is now AI-generated, up sharply from earlier disclosures. Human engineers still review and approve, but the authorship of the first draft has clearly shifted.</p><p>This signals a structural change in how software gets built at scale. Code generation is moving from assisted autocomplete to default production workflow, with humans operating as editors, architects, and quality gatekeepers rather than line-by-line authors.</p><p>The productivity implications are significant. Faster iteration cycles, reduced time on boilerplate, and more engineering capacity redirected toward design, review, and system-level thinking. But it also raises the bar on code review discipline, security scanning, and long-term maintainability.</p><p>For enterprise leaders, Google's benchmark is a useful forcing function. If the company setting the tone for modern engineering is operating at this ratio, questions about internal AI adoption, tooling standards, and developer workflows can no longer be deferred.</p><p>The competitive gap in the next few years won't be who uses AI to write code, but who builds the review, governance, and deployment practices that make AI-generated code safe to scale.</p>",
+    "category": "Tools",
+    "imageUrl": "https://aifeed.run/images/aifeed_google_says.png",
+    "sourceUrl": "https://the-decoder.com/google-says-75-percent-of-its-new-code-is-now-written-by-ai/",
+    "publishedAt": "2026-04-23T21:01:24.436-04:00",
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "Google",
+      "SoftwareEngineering",
+      "GenerativeAI",
+      "FutureOfWork"
+    ]
+  },
+  {
+    "id": "openai-releases-gpt55-bringing-company-one-20260423",
+    "slug": "openai-releases-gpt55-bringing-company-one",
+    "headline": "OpenAI releases GPT-5.5, bringing company one step closer to an AI 'super app'",
+    "summary": "OpenAI releases GPT-5.5, bringing company one step closer to an AI 'super app'",
+    "body": "<p>GPT-5.5 brings measurable improvements in reasoning depth and multimodal handling, but the real shift is architectural. OpenAI is positioning ChatGPT as the default interface layer between users and the broader internet, a move reminiscent of WeChat's dominance in China.</p><p>For enterprises, this raises important questions around vendor concentration, data governance, and workflow dependency. A super app strategy means deeper integration — but also deeper lock-in.</p><p>Competitors like Google, Anthropic, and Meta will be forced to respond, either by matching the breadth or doubling down on specialization. Expect the platform wars of 2026 to look very different from the model wars of 2024.</p><p>Leaders evaluating AI strategy should start asking not just which model?</p><p>— because that's the decision that will define the next three years.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AINews</span> <span style=\"color:#a050ff\">#OpenAI</span> <span style=\"color:#a050ff\">#EnterpriseAI</span> <span style=\"color:#a050ff\">#DigitalStrategy</span> <span style=\"color:#a050ff\">#ArtificialIntelligence</span></p>",
+    "category": "Industry",
+    "imageUrl": "https://images.pexels.com/photos/5723875/pexels-photo-5723875.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "sourceUrl": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/",
+    "publishedAt": "2026-04-23T17:02:12.658-04:00",
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "OpenAI",
+      "EnterpriseAI",
+      "DigitalStrategy",
+      "ArtificialIntelligence"
+    ]
+  },
+  {
+    "id": "openai-releases-gpt55-bringing-company-one-step-closer-20260423",
+    "slug": "openai-releases-gpt55-bringing-company-one-step-closer",
+    "headline": "OpenAI releases GPT-5.5, bringing company one step closer to an AI 'super app'",
+    "summary": "OpenAI releases GPT-5.5, bringing company one step closer to an AI 'super app'",
+    "body": "<p>The incremental model release tells only part of the story. What's more strategically significant is how OpenAI is consolidating capabilities — reasoning, search, commerce, and agentic workflows — into a single integrated surface.</p><p>GPT-5.5 brings measurable improvements in reasoning depth and multimodal handling, but the real shift is architectural. OpenAI is positioning ChatGPT as the default interface layer between users and the broader internet, a move reminiscent of WeChat's dominance in China.</p><p>For enterprises, this raises important questions around vendor concentration, data governance, and workflow dependency. A super app strategy means deeper integration — but also deeper lock-in.</p><p>Competitors like Google, Anthropic, and Meta will be forced to respond, either by matching the breadth or doubling down on specialization. Expect the platform wars of 2026 to look very different from the model wars of 2024.</p><p>Leaders evaluating AI strategy should start asking not just \"which model?\" but \"which ecosystem?\" — because that's the decision that will define the next three years.</p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/aifeed_gpt55_super_app.png",
+    "sourceUrl": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/",
+    "publishedAt": "2026-04-23T17:02:12.658-04:00",
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "OpenAI",
+      "EnterpriseAI",
+      "DigitalStrategy",
+      "ArtificialIntelligence"
+    ]
+  },
+  {
+    "id": "openai-says-its-new-chatgpt-for-20260423",
+    "slug": "openai-says-its-new-chatgpt-for",
+    "headline": "OpenAI says its new ChatGPT for Clinicians outperforms doctors on clinical tasks even when they have unlimited time and web access",
+    "summary": "OpenAI says its new ChatGPT for Clinicians outperforms doctors on clinical tasks even when they have unlimited time and web access",
+    "body": "<p>What makes the claim notable is the testing condition: doctors were given unlimited time and full web access, effectively removing the usual constraints of real-world practice. The model still came out ahead.</p><p>The product targets use cases like diagnostic reasoning, clinical documentation, triage support, and navigating complex medical literature—areas where latency, cognitive load, and information retrieval typically challenge human clinicians.</p><p>For healthcare organizations, this raises strategic questions about workflow redesign, liability frameworks, and how AI copilots are validated before deployment in patient-facing settings.</p><p>The broader signal is clear: vertical, domain-tuned AI is moving from promising demos to measurable performance gains against expert baselines. Enterprises in regulated industries should be watching closely.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AINews</span> <span style=\"color:#a050ff\">#HealthcareAI</span> <span style=\"color:#a050ff\">#OpenAI</span> <span style=\"color:#a050ff\">#DigitalHealth</span> <span style=\"color:#a050ff\">#EnterpriseAI</span></p>",
+    "category": "Industry",
+    "imageUrl": "",
+    "sourceUrl": "https://the-decoder.com/openai-says-its-new-chatgpt-for-clinicians-outperforms-doctors-on-clinical-tasks-even-when-they-have-unlimited-time-and-web-access/",
+    "publishedAt": "2026-04-23T08:02:06.973-04:00",
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "HealthcareAI",
+      "OpenAI",
+      "DigitalHealth",
+      "EnterpriseAI"
+    ]
+  },
+  {
+    "id": "openai-says-its-new-chatgpt-for-clinicians-outperforms-20260423",
+    "slug": "openai-says-its-new-chatgpt-for-clinicians-outperforms",
+    "headline": "OpenAI says its new ChatGPT for Clinicians outperforms doctors on clinical tasks even when they have unlimited time and web access",
+    "summary": "OpenAI says its new ChatGPT for Clinicians outperforms doctors on clinical tasks even when they have unlimited time and web access",
+    "body": "<p>OpenAI has unveiled a specialized version of ChatGPT designed for clinical environments, with benchmark results suggesting it can outperform licensed physicians on a range of clinical tasks.</p><p>What makes the claim notable is the testing condition: doctors were given unlimited time and full web access, effectively removing the usual constraints of real-world practice. The model still came out ahead.</p><p>The product targets use cases like diagnostic reasoning, clinical documentation, triage support, and navigating complex medical literature—areas where latency, cognitive load, and information retrieval typically challenge human clinicians.</p><p>For healthcare organizations, this raises strategic questions about workflow redesign, liability frameworks, and how AI copilots are validated before deployment in patient-facing settings.</p><p>The broader signal is clear: vertical, domain-tuned AI is moving from promising demos to measurable performance gains against expert baselines. Enterprises in regulated industries should be watching closely.</p>",
+    "category": "Health",
+    "imageUrl": "https://aifeed.run/images/aifeed_openai_clinician.png",
+    "sourceUrl": "https://the-decoder.com/openai-says-its-new-chatgpt-for-clinicians-outperforms-doctors-on-clinical-tasks-even-when-they-have-unlimited-time-and-web-access/",
+    "publishedAt": "2026-04-23T08:02:06.973-04:00",
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "HealthcareAI",
+      "OpenAI",
+      "DigitalHealth",
+      "EnterpriseAI"
     ]
   },
   {
