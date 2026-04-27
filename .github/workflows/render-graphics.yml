@@ -83,25 +83,6 @@ jobs:
           })();
           "
 
-      - name: Send PNG to Telegram
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: |
-          if [ ! -f /tmp/new_pngs.txt ] || [ ! -s /tmp/new_pngs.txt ]; then
-            echo "No new PNGs to send."
-            exit 0
-          fi
-          while IFS= read -r png_path; do
-            png_name=$(basename "$png_path")
-            echo "Sending to Telegram: $png_name"
-            png_url="https://raw.githubusercontent.com/xavidalmau9/aifeed/main/images/${png_name}"
-            curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto" \
-              -H "Content-Type: application/json" \
-              -d "{\"chat_id\":\"${TELEGRAM_CHAT_ID}\",\"photo\":\"${png_url}\",\"caption\":\"\u2705 Your branded graphic is ready \u2014 save and post directly.\"}" \
-              | python3 -c "import json,sys; r=json.load(sys.stdin); print('Sent:', r.get('ok'), 'msg_id:', r.get('result',{}).get('message_id','?'))"
-          done < /tmp/new_pngs.txt
-
       - name: Commit rendered PNGs
         run: |
           git config user.name "AIFeed Bot"
@@ -114,3 +95,23 @@ jobs:
             git pull --rebase origin main
             git push
           fi
+
+      - name: Send PNG to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ ! -f /tmp/new_pngs.txt ] || [ ! -s /tmp/new_pngs.txt ]; then
+            echo "No new PNGs to send."
+            exit 0
+          fi
+          while IFS= read -r png_path; do
+            png_name=$(basename "$png_path")
+            echo "Sending to Telegram: $png_name"
+            echo "Uploading file directly to Telegram..."
+            curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto" \
+              -F "chat_id=${TELEGRAM_CHAT_ID}" \
+              -F "photo=@${png_path}" \
+              -F "caption=✅ Your branded graphic is ready — save and post directly." \
+              | python3 -c "import json,sys; r=json.load(sys.stdin); print('Sent:', r.get('ok'), 'msg_id:', r.get('result',{}).get('message_id','?'), 'error:', r.get('description','none'))"
+          done < /tmp/new_pngs.txt
