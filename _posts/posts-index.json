@@ -72,25 +72,6 @@
     ]
   },
   {
-    "id": "aidesigned-drugs-by-a-deepmind-spinoff-are-headed-20260425",
-    "slug": "aidesigned-drugs-by-a-deepmind-spinoff-are-headed",
-    "headline": "AI-Designed Drugs by a DeepMind Spinoff Are Headed to Human Trials",
-    "summary": "Isomorphic Labs, the DeepMind spinoff led by Max Jaderberg, is preparing to move its first AI-designed drug candidates into human clinical trials, a milestone moment for computatio",
-    "body": "<p>Isomorphic Labs, the DeepMind spinoff led by Max Jaderberg, is preparing to move its first AI-designed drug candidates into human clinical trials, a milestone moment for computational drug discovery.</p><p>The company builds on AlphaFold's protein structure breakthroughs, applying generative AI to design novel molecules with greater precision and speed than traditional pharmaceutical R&D pipelines allow.</p><p>Drug discovery has historically been one of the slowest, most capital-intensive processes in science, often requiring over a decade and billions of dollars per approved compound. AI-native approaches promise to compress timelines and dramatically reduce failure rates in early-stage development.</p><p>Isomorphic has already secured partnerships with Novartis and Eli Lilly, signaling that major pharmaceutical players see foundation models as critical infrastructure for the next generation of therapeutics.</p><p>The implications extend beyond pharma. If AI-designed molecules clear human trials, it validates a new operating model for life sciences, one where computation becomes the primary engine of biomedical innovation.</p><p>For enterprise leaders, this is a clear signal that AI is moving from productivity tool to platform technology reshaping entire industries at their scientific core.</p>",
-    "category": "Health",
-    "imageUrl": "https://aifeed.run/images/aifeed_hassabis_graphic_v2.png",
-    "sourceUrl": "https://www.wired.com/story/wired-health-2026-how-ai-is-powering-drug-discovery-max-jaderberg/",
-    "publishedAt": "2026-04-25T08:08:22.552-04:00",
-    "isVideo": false,
-    "hashtags": [
-      "AINews",
-      "DrugDiscovery",
-      "DeepMind",
-      "HealthcareInnovation",
-      "BioTech"
-    ]
-  },
-  {
     "id": "claude-code-costs-up-to-200-a-month-20260424",
     "slug": "claude-code-costs-up-to-200-a-month",
     "headline": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
