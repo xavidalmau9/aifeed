@@ -42,15 +42,15 @@ If re-import cannot happen in the session, the message must be:
 
 | Workflow file | Desktop JSON fixed | Deployed to n8n | Notes |
 |---|---|---|---|
-| `AIFeed Story Selector NEW.json` | ✅ Session 11 (Apr 25) | ⚠️ **NEEDS RE-IMPORT** | Pexels auto-fetch, captions to Telegram, slug fix, alwaysOutputData |
+| `AIFeed Story Selector NEW.json` | ✅ Session 13 (Apr 28) | ⚠️ **NEEDS RE-IMPORT** | **Pexels replaced with Unsplash** (key: `dINF0W5ORDZVQlce-BlLgncgVTfTJLlEvAWKBlxaSGQ`); photos embedded as base64 (no black backgrounds); polling node → n8n Wait node (90s) + URL send |
 | `AIFeed Story List NEW.json` | ✅ Session 10 (Apr 25) | ⚠️ **NEEDS RE-IMPORT** | Today-only dedup, 4-day RSS filter, threshold=1, alwaysOutputData |
-| `aifeed website publisher.json` | ✅ Session 13 (Apr 28) | ⚠️ **NEEDS RE-IMPORT** | Fixed `fetchGitHubImages()` — was using `fetch()` instead of `this.helpers.httpRequest()`, causing silent failure and blank imageUrls every night |
+| `aifeed website publisher.json` | ✅ Session 13 (Apr 28) | ⚠️ **NEEDS RE-IMPORT** | Fixed `fetchGitHubImages()` (`fetch()` → `this.helpers.httpRequest()`); replaced date-based idempotency guard with slug-based dedup — no longer blocks midnight run when a story was manually added |
 
 ### 1. GRAPHIC GENERATION — MANDATORY CHECKLIST
 **Before generating ANY graphic, in this exact order:**
 1. `Read /Users/305partners/aifeed/GRAPHIC_SPEC.md` — every single time, no exceptions
-2. Use the story's **existing background photo** if it already has one (e.g. if `imageUrl` contains `bg_pexels_*.jpg`, download that and use it — do not search Pexels for a new photo)
-3. Only search Pexels for a new background if no background exists yet
+2. Use the story's **existing background photo** if it already has one — download and embed as base64
+3. Only search Unsplash for a new background if no background exists yet (never Pexels — removed Apr 28)
 4. Run md5 duplicate check against Background Registry before using any new photo
 5. Render with `--window-size=1080,1500` + Pillow crop to 1350px
 
@@ -138,10 +138,10 @@ User interacts via Telegram:
 2. User replies `1`–`10` → bot immediately confirms story selection
 3. Bot sends **Instagram caption** to Telegram
 4. Bot sends **LinkedIn caption** to Telegram
-5. Bot auto-fetches a relevant Pexels background image (no user picking required)
+5. Bot auto-fetches a relevant Unsplash background image (no user picking required)
 6. Bot builds branded HTML graphic + uploads to GitHub `graphics/`
 7. GitHub Action (Puppeteer) renders PNG → sends PNG to Telegram (~90 seconds later)
-8. User replies `regen` at any time to rebuild the last approved story with a fresh layout + different Pexels photo
+8. User replies `regen` at any time to rebuild the last approved story with a fresh layout + different Unsplash photo
 
 **No more image-picking step.** The old img1/img2/img3/img4 flow is gone.
 
@@ -152,7 +152,7 @@ User interacts via Telegram:
 1. Sends ✅ confirmation to Telegram
 2. Sends 📷 Instagram caption to Telegram
 3. Sends 💼 LinkedIn caption to Telegram
-4. Auto-fetches Pexels portrait image based on headline keywords
+4. Auto-fetches Unsplash portrait image based on headline keywords (Claude generates search query)
 5. Calls Claude haiku for graphic layout (line splits, summary, badge values)
 6. Builds full HTML graphic with background image
 7. Uploads to GitHub `graphics/aifeed_[slug].html`
@@ -369,7 +369,8 @@ Then for each approved row:
 
 ### What NOT to Do (Session 9 additions)
 
-- **Never publish posts with Pexels CDN URLs as imageUrl** — always find the branded graphic first
+- **Never use Pexels** — Pexels was removed Apr 28. All photo fetching uses Unsplash. Never re-add Pexels.
+- **Never publish posts with CDN photo URLs as imageUrl** — always find the branded graphic first
 - **Never publish posts with `api.telegram.org` URLs as imageUrl** — private, expires, won't load on website
 - **Never set imageUrl to a file that isn't confirmed to be on GitHub** — check before setting
 - **Never ask the user for video titles or captions** — they are in `~/Downloads/caption_linkedin_[ts].txt`
@@ -383,17 +384,17 @@ Then for each approved row:
 
 ## Session 11 Changes (Apr 25, 2026)
 
-### Story Selector — Auto Pexels Background (no user picking)
+### Story Selector — Auto Unsplash Background (no user picking, Pexels removed Apr 28)
 
 **Problem:** After removing the Pexels-picking step, graphics arrived with a plain dark background and no photo.
 
-**Fix:** `Build Graphic Direct` and `Regen Graphic` now auto-fetch one Pexels portrait photo based on headline keywords. No user interaction needed.
+**Fix:** `Build Graphic Direct` and `Regen Graphic` now auto-fetch one Unsplash portrait photo based on headline keywords. No user interaction needed. **Pexels was replaced entirely in session 13 (Apr 28) — never use Pexels again.**
 
 - Keywords extracted from headline (stop words removed, min 2 chars, up to 3 words)
-- Pexels API called with `orientation=portrait&per_page=3` — first result used
+- Unsplash API called with `orientation=portrait&per_page=3` — first result used
 - `Regen Graphic` picks photo index 1 (different from original) so regen looks fresh
 - `<img class="bg" src="[pexelsUrl]" alt="">` injected into HTML before the overlay
-- Pexels API key: in workflow JSON (search `PEXELS_KEY` in `AIFeed Story Selector NEW.json`)
+- Unsplash Access Key: `dINF0W5ORDZVQlce-BlLgncgVTfTJLlEvAWKBlxaSGQ` (search `UNSPLASH_KEY` in `AIFeed Story Selector NEW.json`)
 
 ### Story Selector — Instagram + LinkedIn Captions to Telegram
 
@@ -434,11 +435,11 @@ Same fix applied to `Regen Graphic`.
 
 ### `regen` Command Added
 
-User can reply `regen` in Telegram at any time → workflow reads last APPROVED story from Sheet1 → calls Claude for a fresh layout → fetches a different Pexels photo → uploads new HTML → new PNG arrives in ~90s.
+User can reply `regen` in Telegram at any time → workflow reads last APPROVED story from Sheet1 → calls Claude for a fresh layout → fetches a different Unsplash photo → uploads new HTML → new PNG arrives in ~90s.
 
 ### Session 10 Changes (Apr 25, 2026)
 
-**Story Selector Workflow — Pexels picking step removed:**
+**Story Selector Workflow — Pexels picking step removed (old history):**
 - Old flow: user picks story → workflow asks user to pick 1 of 4 Pexels images → user replies img1-4 → workflow builds graphic
 - New flow: user picks story → single `Build Graphic Direct` node handles everything → PNG arrives in Telegram
 - Removed nodes: `Get Visual Search Terms`, `Extract Visual Terms`, `Fetch 4 Pexels Options`, `Send Image Options`, `Send Instructions`, `Upload Pexels to GitHub`
