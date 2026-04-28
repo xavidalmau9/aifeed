@@ -1,5 +1,24 @@
 [
   {
+    "id": "google-pentagon-ai-deal-lawful-use-20260428",
+    "slug": "google-pentagon-ai-deal-lawful-use",
+    "headline": "Google and Pentagon Reportedly Agree on AI Deal for Lawful Use",
+    "summary": "Google and the Pentagon have reportedly reached an AI agreement built around a 'any lawful use' clause, expanding Google Cloud's role in US defense AI infrastructure.",
+    "body": "<p>Google and the Pentagon have reportedly struck an AI agreement, with the deal centered on a key 'any lawful use' clause that gives the Defense Department broad flexibility in how it deploys Google Cloud AI capabilities.</p><p>The agreement marks a significant expansion of Google's footprint in defense AI infrastructure. Earlier friction between Google and the military — most notably the Project Maven controversy in 2018 — appears to have given way to a more pragmatic posture as AI becomes central to national security strategy.</p><p>For Google Cloud, a Pentagon partnership at this scale represents both revenue and strategic positioning at a moment when hyperscalers are competing aggressively for government AI contracts.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AI</span> <span style=\"color:#a050ff\">#Google</span> <span style=\"color:#a050ff\">#Pentagon</span> <span style=\"color:#a050ff\">#DefenseAI</span> <span style=\"color:#a050ff\">#GoogleCloud</span></p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/aifeed_google_and_pentagon_reportedly_agree_on_1777377818400.png",
+    "sourceUrl": "https://www.theverge.com/news/657430/google-pentagon-ai-deal-lawful-use-cloud",
+    "publishedAt": "2026-04-28T08:00:00.000-04:00",
+    "isVideo": false,
+    "hashtags": [
+      "AI",
+      "Google",
+      "Pentagon",
+      "DefenseAI",
+      "GoogleCloud"
+    ]
+  },
+  {
     "id": "ai-designed-car-taking-shape-20260427",
     "slug": "ai-designed-car-taking-shape",
     "headline": "The AI-Designed Car Is Taking Shape",
