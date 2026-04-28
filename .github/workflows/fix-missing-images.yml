@@ -1,0 +1,78 @@
+name: Fix Missing Image URLs
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # every hour
+  workflow_dispatch:        # manual trigger
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Fix missing imageUrls in posts-index.json
+        run: |
+          node -e "
+          const fs = require('fs');
+
+          const posts = JSON.parse(fs.readFileSync('_posts/posts-index.json', 'utf8'));
+          const pngFiles = fs.readdirSync('images').filter(f => f.endsWith('.png') && f.startsWith('aifeed'));
+
+          let fixed = 0;
+
+          for (const post of posts) {
+            if (post.imageUrl && post.imageUrl.includes('aifeed.run/images/')) continue;
+
+            // Build keyword list from headline + slug
+            const headline = (post.headline || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ');
+            const slug = (post.slug || '').toLowerCase().replace(/[^a-z0-9]/g, ' ');
+            const words = [...new Set([...headline.split(/\s+/), ...slug.split(/\s+/)])].filter(w => w.length >= 2);
+
+            let best = null;
+            let bestScore = 0;
+
+            for (const f of pngFiles) {
+              const fname = f.toLowerCase().replace(/^aifeed[_-]/, '').replace(/\.png$/, '').replace(/_\d{10,}$/, '');
+              const fwords = fname.split(/[_\-\s]+/);
+              const hits = words.filter(kw => fwords.some(fw => fw === kw || fw.includes(kw) || kw.includes(fw)));
+              if (hits.length > bestScore) {
+                bestScore = hits.length;
+                best = f;
+              }
+            }
+
+            if (bestScore >= 2 && best) {
+              post.imageUrl = 'https://aifeed.run/images/' + best;
+              console.log('Fixed: ' + post.headline + ' -> ' + best + ' (' + bestScore + ' hits)');
+              fixed++;
+            } else {
+              console.log('No match: ' + post.headline + ' (best score: ' + bestScore + ')');
+            }
+          }
+
+          if (fixed > 0) {
+            fs.writeFileSync('_posts/posts-index.json', JSON.stringify(posts, null, 2));
+            console.log('Fixed ' + fixed + ' posts.');
+          } else {
+            console.log('Nothing to fix.');
+          }
+          "
+
+      - name: Commit fixes
+        run: |
+          git config user.name "AIFeed Bot"
+          git config user.email "bot@aifeed.run"
+          git add _posts/posts-index.json
+          if git diff --staged --quiet; then
+            echo "Nothing to commit"
+          else
+            git commit -m "Auto-fix: fill missing imageUrls in posts-index.json"
+            git pull --rebase origin main
+            git push
+          fi
