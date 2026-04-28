@@ -42,7 +42,7 @@ If re-import cannot happen in the session, the message must be:
 
 | Workflow file | Desktop JSON fixed | Deployed to n8n | Notes |
 |---|---|---|---|
-| `AIFeed Story Selector NEW.json` | ✅ Session 13 (Apr 28) | ⚠️ **NEEDS RE-IMPORT** | **Pexels replaced with Unsplash** (key: `dINF0W5ORDZVQlce-BlLgncgVTfTJLlEvAWKBlxaSGQ`); photos embedded as base64 (no black backgrounds); polling node → n8n Wait node (90s) + URL send |
+| `AIFeed Story Selector NEW.json` | ✅ Session 14 (Apr 28) | ✅ **DEPLOYED** | **Pexels replaced with Unsplash**; base64 embedding; Wait node (90s) + URL send; sheet columns cleaned — removed PexelsKeyword/AltImageURL/Img3URL/Img4URL/GraphicHTML from all write nodes |
 | `AIFeed Story List NEW.json` | ✅ Session 10 (Apr 25) | ⚠️ **NEEDS RE-IMPORT** | Today-only dedup, 4-day RSS filter, threshold=1, alwaysOutputData |
 | `aifeed website publisher.json` | ✅ Session 13 (Apr 28) | ⚠️ **NEEDS RE-IMPORT** | Fixed `fetchGitHubImages()` (`fetch()` → `this.helpers.httpRequest()`); replaced date-based idempotency guard with slug-based dedup — no longer blocks midnight run when a story was manually added |
 
@@ -121,13 +121,15 @@ Tag ID: `G-38GGN8HYT6`. Installed in `<head>` of both `index.html` and `post.htm
 
 ## Google Sheet Structure
 
-**Sheet1** (posted headlines) columns:
-`Date | Headline | SourceURL | Caption | ImageURL | LinkedInCaption | AltImageURL | Status`
+**Sheet1** (posted headlines) columns — cleaned up Apr 28, session 14:
+`Headline | Date | Caption | ImageURL | SourceURL | LinkedInCaption | Status`
+
+Removed columns (Pexels era — gone permanently): `PexelsKeyword`, `AltImageURL`, `Img3URL`, `Img4URL`, `GraphicHTML`
 
 **Staging** tab columns:
 `Rank | Headline | Link | Score | Reason`
 
-**Status values:** `PENDING_GRAPHIC` → `APPROVED`
+**Status values:** `PENDING_GRAPHIC` → `APPROVED` → `PUBLISHED`
 
 ---
 
@@ -436,6 +438,30 @@ Same fix applied to `Regen Graphic`.
 ### `regen` Command Added
 
 User can reply `regen` in Telegram at any time → workflow reads last APPROVED story from Sheet1 → calls Claude for a fresh layout → fetches a different Unsplash photo → uploads new HTML → new PNG arrives in ~90s.
+
+## Session 14 Changes (Apr 28, 2026)
+
+### Google Sheet — Cleaned Up (7 columns only)
+
+**Removed forever:** `PexelsKeyword`, `AltImageURL`, `Img3URL`, `Img4URL`, `GraphicHTML` — all Pexels-era columns, no longer needed.
+
+**New structure:** `Headline | Date | Caption | ImageURL | SourceURL | LinkedInCaption | Status`
+
+- All 35 raw Pexels CDN URLs in ImageURL replaced with correct `https://aifeed.run/images/aifeed_*.png` branded URLs (cross-referenced against posts-index.json)
+- Row 64 (DeepMind drugs story) left blank — hourly fix-missing-images Action will auto-fill
+
+**Story Selector — 4 nodes updated** to match new 7-column structure:
+- `Log as PENDING_GRAPHIC` — removed PexelsKeyword, AltImageURL, Img3URL, Img4URL
+- `Write PNG URL to Sheet (Stock)` — removed GraphicHTML
+- `Write PNG URL to Sheet (Photo)` — removed GraphicHTML
+- `Log APPROVED to Sheet` — removed GraphicHTML
+- **Re-imported into n8n ✅**
+
+### What NOT to Do (Session 14 additions)
+- **Never add Pexels columns back** — PexelsKeyword, AltImageURL, Img3URL, Img4URL, GraphicHTML are gone. The workflow only needs ImageURL (one column for the final branded PNG URL).
+- **Never write to columns that don't exist in the sheet** — if adding new sheet columns, update all relevant Google Sheets nodes in the workflow JSON and re-import.
+
+---
 
 ### Session 10 Changes (Apr 25, 2026)
 
