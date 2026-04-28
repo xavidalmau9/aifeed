@@ -6,7 +6,7 @@
     "summary": "Data center demand drives 66% surge in natural gas power plant costs",
     "body": "<p>Turbine manufacturers are reporting multi-year backlogs, with major OEMs sold out well into the latter part of the decade. Lead times for critical components have stretched dramatically, and skilled labor shortages are amplifying the pressure on project budgets.</p><p>For hyperscalers and enterprises building out AI capacity, this introduces a new strategic variable: power availability and cost are becoming as decisive as GPU access. Energy contracts, behind-the-meter generation, and grid interconnect timelines are now central to data center site selection.</p><p>The downstream implications are significant. Higher generation costs will likely flow through to compute pricing, while utilities and independent power producers face mounting pressure to expand capacity without compromising reliability or decarbonization commitments.</p><p>Expect continued investment in alternative baseload solutions, including nuclear SMRs, geothermal, and long-duration storage, as the industry searches for scalable answers to AI's enormous energy footprint.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AIInfrastructure</span> <span style=\"color:#a050ff\">#DataCenters</span> <span style=\"color:#a050ff\">#EnergyTransition</span> <span style=\"color:#a050ff\">#Hyperscalers</span> <span style=\"color:#a050ff\">#AINews</span></p>",
     "category": "Industry",
-    "imageUrl": "",
+    "imageUrl": "https://aifeed.run/images/aifeed_data_center_demand_drives_66_surge_1777330325088.png",
     "sourceUrl": "https://techcrunch.com/2026/04/27/data-center-demand-drives-66-surge-in-natural-gas-power-plant-costs/",
     "publishedAt": "2026-04-27T18:52:07.817-04:00",
     "isVideo": false,
@@ -16,25 +16,6 @@
       "EnergyTransition",
       "Hyperscalers",
       "AINews"
-    ]
-  },
-  {
-    "id": "the-aidesigned-car-taking-shape-20260427",
-    "slug": "the-aidesigned-car-taking-shape",
-    "headline": "The AI-designed car is taking shape",
-    "summary": "The AI-designed car is taking shape",
-    "body": "<p>The AI-designed car is taking shape Generative AI is moving from marketing decks into the core of automotive R&D. GM and Nissan are now leveraging neural networks and generative tools to accelerate vehicle design cycles that have historically taken years.</p><p>At GM, designers are using AI to rapidly iterate on form, materials, and aesthetics — producing variations at a scale impossible through traditional sketching workflows. Nissan, meanwhile, is partnering with Neural Concept to optimize aerodynamics and engineering performance through deep learning models.</p><p>The strategic implication is significant: AI compresses the gap between creative ideation and engineering validation. What used to require sequential handoffs between studios, simulation teams, and prototyping labs can now happen in parallel, informed by predictive models.</p><p>For automakers facing pressure from EV transitions and Chinese competitors with shorter development cycles, AI-driven design is becoming less of a differentiator and more of a baseline requirement.</p><p>The next generation of vehicles won't just be defined by what they do on the road — but by how algorithmically they were brought into existence.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AINews</span> <span style=\"color:#a050ff\">#GenerativeAI</span> <span style=\"color:#a050ff\">#AutomotiveInnovation</span> <span style=\"color:#a050ff\">#FutureOfMobility</span> <span style=\"color:#a050ff\">#EnterpriseAI</span></p>",
-    "category": "Industry",
-    "imageUrl": "",
-    "sourceUrl": "https://www.theverge.com/transportation/918411/gm-ai-car-design-nissan-neural-concept",
-    "publishedAt": "2026-04-27T08:59:57.495-04:00",
-    "isVideo": false,
-    "hashtags": [
-      "AINews",
-      "GenerativeAI",
-      "AutomotiveInnovation",
-      "FutureOfMobility",
-      "EnterpriseAI"
     ]
   },
   {
