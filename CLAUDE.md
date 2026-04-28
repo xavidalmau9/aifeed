@@ -1,5 +1,5 @@
 # AIFeed.run — Claude Project Instructions
-**Last updated: April 26, 2026 (session 12)**
+**Last updated: April 28, 2026 (session 13)**
 
 > This file is read by Claude at the start of every session. Update it whenever significant decisions are made.
 
@@ -44,7 +44,7 @@ If re-import cannot happen in the session, the message must be:
 |---|---|---|---|
 | `AIFeed Story Selector NEW.json` | ✅ Session 11 (Apr 25) | ⚠️ **NEEDS RE-IMPORT** | Pexels auto-fetch, captions to Telegram, slug fix, alwaysOutputData |
 | `AIFeed Story List NEW.json` | ✅ Session 10 (Apr 25) | ⚠️ **NEEDS RE-IMPORT** | Today-only dedup, 4-day RSS filter, threshold=1, alwaysOutputData |
-| `aifeed website publisher.json` | ✅ Session 7 (Apr 23) | ✅ Deployed Apr 23 | All 4 fixes live: hyphen names, images/ scan, hashtags, bg_pexels block |
+| `aifeed website publisher.json` | ✅ Session 13 (Apr 28) | ⚠️ **NEEDS RE-IMPORT** | Fixed `fetchGitHubImages()` — was using `fetch()` instead of `this.helpers.httpRequest()`, causing silent failure and blank imageUrls every night |
 
 ### 1. GRAPHIC GENERATION — MANDATORY CHECKLIST
 **Before generating ANY graphic, in this exact order:**
@@ -330,21 +330,18 @@ Caption files appear alongside them: `caption_linkedin_[ts].txt`, `caption_insta
 
 ---
 
-### GitHub Action Fix — `render-graphics.yml` (Apr 25, 2026)
+### GitHub Action — Telegram PNG Delivery (Session 13, Apr 28, 2026)
 
-**Problem that was fixed:** The `Commit rendered PNGs` step was failing when the repo had received concurrent pushes (common since n8n, the publisher, and Claude all push frequently). This caused the `Send PNG to Telegram` step to be skipped — user never received the graphic.
+**Current correct flow in `render-graphics.yml`:**
+1. Render HTMLs to PNGs (tracks newly rendered files in `/tmp/new_pngs.txt`)
+2. Commit PNGs to repo + push
+3. **Send PNG to Telegram AFTER commit** — uses `sendPhoto` with raw GitHub URL. Falls back to file upload if URL method fails.
 
-**Fix applied:**
-1. **Telegram send moved BEFORE the git commit** — PNG is delivered to user even if the commit fails
-2. **`git pull --rebase origin main` added before `git push`** — handles concurrent pushes without failing
+**Why Telegram send is AFTER commit (not before):** The raw GitHub URL (`raw.githubusercontent.com/...`) doesn't exist until the file is committed and pushed. Sending before commit sends a URL that returns 404.
 
-The current correct workflow order is:
-1. Checkout → Setup Node → Cache → Install Puppeteer
-2. Render HTMLs to PNGs
-3. **Send PNG to Telegram** ← happens HERE, before any git operations
-4. Commit rendered PNGs (with rebase)
+**Why n8n polling node was removed:** The `Wait for PNG & Send to Telegram` Code node ran a 5-minute `setTimeout` loop. n8n Cloud kills long-running Code nodes — the loop was terminated silently every time. Replaced with a no-op pass-through. Telegram delivery is 100% handled by the GitHub Action.
 
-This fix was pushed directly via GitHub API on Apr 25 (the PAT had `workflow` scope this time).
+**`ANTHROPIC_KEY` typo fixed in `Build Graphic Direct`:** The Pexels keyword query used `ANTHROPIC_KEY` but the constant is `ANT_KEY`. This caused the Claude-generated Pexels search query to fail silently on every story, falling back to inferior keyword extraction. Fixed in `AIFeed Story Selector NEW.json` (needs re-import).
 
 ---
 
@@ -953,6 +950,18 @@ Screenshot with browser devtools at 100% → save as PNG for posting.
 ## Website Publisher
 
 Reads Sheet1 rows where `Status = APPROVED`, calls Claude claude-3-haiku for article body, merges with existing `_posts/posts-index.json`, pushes to GitHub. Runs nightly.
+
+### Root Cause of Blank imageUrls (fixed Session 13)
+
+`fetchGitHubImages()` in the publisher used native `fetch()` to call the GitHub Contents API. In n8n Cloud, native `fetch()` silently fails for authenticated API calls — no error thrown, returns empty array. `findGitHubGraphic()` received 0 files, matched nothing, returned `''`. Every post got a blank imageUrl.
+
+**Fix:** `fetchGitHubImages()` now uses `this.helpers.httpRequest()` — the correct n8n method for all HTTP calls. This is already fixed in `aifeed website publisher.json` on Desktop. **Needs re-import into n8n.**
+
+**Rule: Never use `fetch()` anywhere in n8n Code nodes.** Always use `this.helpers.httpRequest()`.
+
+### Auto-Fix Safety Net (Session 13)
+
+New GitHub Action: `.github/workflows/fix-missing-images.yml` — runs every hour. Scans `_posts/posts-index.json` for posts with missing/blank `imageUrl`, matches PNG filenames from `images/` by keyword score (≥2 hits), fills them in automatically. This is a safety net — it catches publisher failures before morning. No n8n re-import required.
 
 Post format in posts-index.json:
 ```json
