@@ -46,6 +46,7 @@ jobs:
 
             const graphicsDir = './graphics';
             const imagesDir = './images';
+            const newPngs = [];
             const files = fs.readdirSync(graphicsDir).filter(f => f.endsWith('.html'));
 
             for (const file of files) {
@@ -65,6 +66,7 @@ jobs:
                   type: 'png'
                 });
                 fs.writeFileSync(pngPath, screenshot);
+                newPngs.push(pngName);
                 console.log('Rendered:', pngName);
                 await page.close();
               } catch(e) {
@@ -73,7 +75,8 @@ jobs:
             }
 
             await browser.close();
-            console.log('Done.');
+            fs.writeFileSync('/tmp/new_pngs.txt', newPngs.join('\n'));
+            console.log('Done. New PNGs:', newPngs.length);
           })();
           "
 
@@ -89,3 +92,32 @@ jobs:
             git pull --rebase origin main
             git push
           fi
+
+      - name: Send new PNGs to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ ! -f /tmp/new_pngs.txt ] || [ ! -s /tmp/new_pngs.txt ]; then
+            echo "No new PNGs to send"
+            exit 0
+          fi
+          while IFS= read -r pngName; do
+            [ -z "$pngName" ] && continue
+            pngPath="./images/${pngName}"
+            if [ ! -f "$pngPath" ]; then
+              echo "File not found: $pngPath"
+              continue
+            fi
+            echo "Sending to Telegram: $pngName"
+            RESULT=$(curl -s \
+              -F "chat_id=${TELEGRAM_CHAT_ID}" \
+              -F "photo=@${pngPath}" \
+              -F "caption=✅ Your branded graphic is ready — save and post directly." \
+              "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto")
+            if echo "$RESULT" | grep -q '"ok":true'; then
+              echo "Sent successfully: $pngName"
+            else
+              echo "Send failed for $pngName: $RESULT"
+            fi
+          done < /tmp/new_pngs.txt
