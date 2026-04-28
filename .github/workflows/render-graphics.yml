@@ -47,6 +47,7 @@ jobs:
             const graphicsDir = './graphics';
             const imagesDir = './images';
             const files = fs.readdirSync(graphicsDir).filter(f => f.endsWith('.html'));
+            const newFiles = [];
 
             for (const file of files) {
               const pngName = file.replace('.html', '.png');
@@ -66,6 +67,7 @@ jobs:
                 });
                 fs.writeFileSync(pngPath, screenshot);
                 console.log('Rendered:', pngName);
+                newFiles.push(pngName);
                 await page.close();
               } catch(e) {
                 console.error('Failed to render', file, ':', e.message);
@@ -73,7 +75,10 @@ jobs:
             }
 
             await browser.close();
-            console.log('Done.');
+
+            // Write list of newly rendered PNGs for next step
+            fs.writeFileSync('/tmp/new_pngs.txt', newFiles.join('\n'));
+            console.log('Done. New files:', newFiles.length);
           })();
           "
 
@@ -84,8 +89,45 @@ jobs:
           git add images/
           if git diff --staged --quiet; then
             echo "Nothing to commit"
+            echo "" > /tmp/new_pngs.txt
           else
             git commit -m "Auto-render: branded PNGs from graphics/"
             git pull --rebase origin main
             git push
           fi
+
+      - name: Send PNGs to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ ! -s /tmp/new_pngs.txt ]; then
+            echo "No new PNGs to send"
+            exit 0
+          fi
+
+          while IFS= read -r pngName; do
+            [ -z "$pngName" ] && continue
+            RAW_URL="https://raw.githubusercontent.com/xavidalmau9/aifeed/main/images/${pngName}"
+            echo "Sending to Telegram: $pngName"
+
+            # Give GitHub's CDN 5 seconds to propagate after push
+            sleep 5
+
+            RESPONSE=$(curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto" \
+              -d "chat_id=${TELEGRAM_CHAT_ID}" \
+              -d "photo=${RAW_URL}" \
+              --data-urlencode "caption=✅ Your branded graphic is ready — save and post directly.")
+
+            echo "Telegram response: $RESPONSE"
+
+            # Check if it worked
+            OK=$(echo "$RESPONSE" | node -e "let d='';process.stdin.on('data',c=>d+=c).on('end',()=>console.log(JSON.parse(d).ok))")
+            if [ "$OK" != "true" ]; then
+              echo "URL send failed, trying file upload..."
+              curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto" \
+                -F "chat_id=${TELEGRAM_CHAT_ID}" \
+                -F "photo=@images/${pngName}" \
+                -F "caption=✅ Your branded graphic is ready — save and post directly."
+            fi
+          done < /tmp/new_pngs.txt
