@@ -1,5 +1,26 @@
 [
   {
+    "id": "general-motors-adding-gemini-four-million-cars-20260429",
+    "slug": "general-motors-adding-gemini-four-million-cars",
+    "headline": "General Motors is adding Gemini to four million cars",
+    "summary": "GM is deploying Google's Gemini AI into its in-vehicle voice assistant across roughly four million connected vehicles starting this summer.",
+    "body": "<p>GM has announced a major partnership with Google to integrate Gemini AI into its in-vehicle voice assistant, with deployment beginning this summer across roughly four million connected vehicles.</p>\n<p>The upgrade replaces GM's existing assistant with conversational AI capable of handling complex, multi-step requests \u2014 from route planning and reservation lookups to summarizing incoming messages \u2014 through natural dialogue rather than rigid commands.</p>\n<p>For GM, this represents a strategic pivot. After parting ways with Apple CarPlay and Android Auto in its EV lineup, the automaker is doubling down on a proprietary software experience, with Google's AI as the centerpiece.</p>\n<p>For Google, it's a significant distribution win. Embedding Gemini directly into millions of dashboards positions the assistant in a high-value, captive context that smartphones can't easily replicate.</p>\n<p>The broader signal is clear: the vehicle cabin is emerging as a critical front in the AI assistant race, and automakers are increasingly choosing partnership over in-house development to keep pace.</p>\n<p>Expect Ford, Stellantis, and others to announce similar deals in the coming quarters as conversational AI becomes table stakes for connected vehicles.</p>\n<p><span style=\"color:#a050ff\">#AINews</span> <span style=\"color:#a050ff\">#Gemini</span> <span style=\"color:#a050ff\">#GeneralMotors</span> <span style=\"color:#a050ff\">#AutomotiveAI</span> <span style=\"color:#a050ff\">#ConnectedVehicles</span> <span style=\"color:#a050ff\">#GoogleCloud</span> <span style=\"color:#a050ff\">#EnterpriseAI</span></p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/aifeed_general_motors_is_adding_gemini_to_1777465160326.png",
+    "sourceUrl": "https://www.theverge.com/transportation/920285/general-motors-gm-gemini-ai-update",
+    "publishedAt": "2026-04-29T08:19:23.173-04:00",
+    "hashtags": [
+      "AINews",
+      "Gemini",
+      "GeneralMotors",
+      "AutomotiveAI",
+      "ConnectedVehicles",
+      "GoogleCloud",
+      "EnterpriseAI"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "the-race-keep-agents-from-running-20260428",
     "slug": "the-race-keep-agents-from-running",
     "headline": "The Race Is on to Keep AI Agents From Running Wild With Your Credit Cards",
