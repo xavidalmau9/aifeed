@@ -42,7 +42,7 @@ If re-import cannot happen in the session, the message must be:
 
 | Workflow file | Desktop JSON fixed | Deployed to n8n | Notes |
 |---|---|---|---|
-| `AIFeed Story Selector NEW.json` | ✅ Session 15 (Apr 29) | ✅ **DEPLOYED** | **HTML delivery via sendDocument** — replaces all PNG delivery. `Send PNG URL to Telegram` node now fetches HTML from raw.githubusercontent.com and uploads as Telegram sendDocument. User opens in Chrome → screenshots → posts. |
+| `AIFeed Story Selector NEW.json` | ✅ Session 15 (Apr 29 18:09) | ⚠️ **NEEDS RE-IMPORT** | **HTML sent inline inside `Build Graphic Direct`** — sendDocument fires immediately after GitHub upload, same node, same execution, no Wait node. Previous attempt failed because n8n Cloud Wait node resumption is unreliable. |
 | `AIFeed Story List NEW.json` | ✅ Session 10 (Apr 25) | ✅ **DEPLOYED** | Today-only dedup, 4-day RSS filter, threshold=1, alwaysOutputData |
 | `aifeed website publisher.json` | ✅ Session 15 (Apr 29) | ✅ **DEPLOYED** | Stopwords fix (STOP word set + timestamp strip in `findGitHubGraphic`); sheet URL preference (uses ImageURL from sheet if valid `aifeed.run/images/` URL, skips re-matching); slug-based dedup |
 
@@ -472,18 +472,19 @@ User can reply `regen` in Telegram at any time → workflow reads last APPROVED 
 
 After 10+ days of failed PNG delivery attempts (Telegram rejecting URL sends, multipart upload timing issues, GitHub Action race conditions), PNG delivery was permanently abandoned. **The new permanent delivery method is HTML via Telegram sendDocument.**
 
-**How it works now:**
-1. User picks story → bot builds HTML graphic → uploads to `graphics/` on GitHub
-2. Bot fetches the HTML from `raw.githubusercontent.com/xavidalmau9/aifeed/main/graphics/[filename].html`
-3. Bot sends HTML file to Telegram via `sendDocument` (multipart form-data)
-4. User opens HTML file in Chrome at 100% zoom → takes screenshot → saves as PNG → posts
+**How it works now (final fix Apr 29 18:09):**
+1. User picks story → `Build Graphic Direct` builds HTML in memory
+2. HTML uploaded to GitHub
+3. **Immediately** — sendDocument fires in the same node, same execution, no wait
+4. User opens HTML in Chrome at 100% zoom → screenshot → save as PNG → post
 
-**`Send PNG URL to Telegram` node** (in `AIFeed Story Selector NEW.json`) completely replaced:
-- Old: sent `https://aifeed.run/images/${pngName}` via `sendPhoto` URL (rejected by Telegram)
-- New: fetches raw HTML bytes from GitHub → builds multipart body → sends via `sendDocument`
-- Falls back to text link if fetch fails
+**Why this is different from every previous attempt:**
+- PNG URL via sendPhoto → Telegram rejected the URL
+- GitHub Action file upload → race condition, timing issues
+- Wait node + separate sendDocument node → n8n Cloud Wait node resumption unreliable, execution died silently
+- **This approach:** no Wait node, no second node, no resumption needed. The send is the next line of code after the upload.
 
-**GitHub Action render-graphics.yml** — still runs (renders PNGs and commits them), but **no longer sends to Telegram**. The PNGs are still useful for the website's imageUrl. The Telegram step in the Action can be left in place or removed — it no longer matters since the n8n node handles delivery.
+**GitHub Action render-graphics.yml** — still runs (renders PNGs and commits them). PNGs are used for website imageUrl. No longer involved in Telegram delivery.
 
 ### Publisher fixes (both in `aifeed website publisher.json`, needs re-import)
 
