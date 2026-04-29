@@ -1,5 +1,43 @@
 [
   {
+    "id": "the-race-keep-agents-from-running-20260428",
+    "slug": "the-race-keep-agents-from-running",
+    "headline": "The Race Is on to Keep AI Agents From Running Wild With Your Credit Cards",
+    "summary": "The Race Is on to Keep AI Agents From Running Wild With Your Credit Cards",
+    "body": "<p>The Race Is on to Keep AI Agents From Running Wild With Your Credit Cards As AI agents move from chat interfaces to real-world transactions, a new category of risk is emerging: autonomous spending. Companies are racing to build the financial guardrails before consumers and enterprises hand over their payment credentials at scale.</p><p>The core challenge is balancing autonomy with control. Agents need enough latitude to complete multi-step tasks like booking travel, restocking inventory, or negotiating purchases — but enough constraints to prevent runaway spending, fraud exposure, or unintended commitments.</p><p>Solutions in development include agent-specific credit cards, tokenized payment credentials, transaction-level approval flows, and programmable spending limits. Card networks like Visa and Mastercard, alongside startups, are positioning themselves as the trust layer between AI systems and merchants.</p><p>For enterprises, the implications go beyond consumer convenience. Procurement, expense management, and B2B transactions could all be reshaped by agents acting on behalf of teams — but only if auditability, liability, and policy enforcement are solved first.</p><p>The winners in this race won't just be the most capable agents. They'll be the platforms that make AI-driven commerce verifiable, reversible, and safe by default.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AIAgents</span> <span style=\"color:#a050ff\">#AgenticAI</span> <span style=\"color:#a050ff\">#FinTech</span> <span style=\"color:#a050ff\">#AISafety</span> <span style=\"color:#a050ff\">#EnterpriseAI</span></p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/aifeed__1777123693621.png",
+    "sourceUrl": "https://www.wired.com/story/the-race-is-on-to-keep-ai-agents-from-running-wild-with-your-credit-cards/",
+    "publishedAt": "2026-04-28T17:02:34.360-04:00",
+    "isVideo": false,
+    "hashtags": [
+      "AIAgents",
+      "AgenticAI",
+      "FinTech",
+      "AISafety",
+      "EnterpriseAI"
+    ]
+  },
+  {
+    "id": "google-and-pentagon-reportedly-agree-deal-20260428",
+    "slug": "google-and-pentagon-reportedly-agree-deal",
+    "headline": "Google and Pentagon reportedly agree on deal for ‘any lawful’ use of AI",
+    "summary": "Google and Pentagon reportedly agree on deal for ‘any lawful’ use of AI",
+    "body": "<p>This marks a significant evolution from 2018, when employee backlash over Project Maven prompted Google to step away from certain military AI work and publish principles restricting weapons-related applications. The new framing suggests those guardrails have meaningfully loosened.</p><p>The deal reflects a broader industry trend: hyperscalers including Microsoft, Amazon, OpenAI, and Anthropic have all moved closer to defense and intelligence customers as AI becomes core infrastructure for national security.</p><p>For enterprise leaders, the implications are twofold. First, the line between commercial and defense AI is blurring, which will reshape vendor risk, procurement, and compliance conversations. Second, governance frameworks written just two years ago may already be outdated.</p><p>Expect renewed scrutiny from employees, regulators, and civil society — and expect the commercial AI roadmap to increasingly reflect defense-grade requirements.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AINews</span> <span style=\"color:#a050ff\">#DefenseTech</span> <span style=\"color:#a050ff\">#EnterpriseAI</span> <span style=\"color:#a050ff\">#AIGovernance</span> <span style=\"color:#a050ff\">#Google</span></p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/aifeed__1777123693621.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/919494/google-pentagon-classified-ai-deal",
+    "publishedAt": "2026-04-28T08:03:40.769-04:00",
+    "isVideo": false,
+    "hashtags": [
+      "AINews",
+      "DefenseTech",
+      "EnterpriseAI",
+      "AIGovernance",
+      "Google"
+    ]
+  },
+  {
     "id": "google-pentagon-ai-deal-lawful-use-20260428",
     "slug": "google-pentagon-ai-deal-lawful-use",
     "headline": "Google and Pentagon Reportedly Agree on AI Deal for Lawful Use",
@@ -16,6 +54,25 @@
       "Pentagon",
       "DefenseAI",
       "GoogleCloud"
+    ]
+  },
+  {
+    "id": "data-center-demand-drives-surge-natural-20260427",
+    "slug": "data-center-demand-drives-surge-natural",
+    "headline": "Data center demand drives 66% surge in natural gas power plant costs",
+    "summary": "Data center demand drives 66% surge in natural gas power plant costs",
+    "body": "<p>Turbine manufacturers are reporting multi-year backlogs, with major OEMs sold out well into the latter part of the decade. Lead times for critical components have stretched dramatically, and skilled labor shortages are amplifying the pressure on project budgets.</p><p>For hyperscalers and enterprises building out AI capacity, this introduces a new strategic variable: power availability and cost are becoming as decisive as GPU access. Energy contracts, behind-the-meter generation, and grid interconnect timelines are now central to data center site selection.</p><p>The downstream implications are significant. Higher generation costs will likely flow through to compute pricing, while utilities and independent power producers face mounting pressure to expand capacity without compromising reliability or decarbonization commitments.</p><p>Expect continued investment in alternative baseload solutions, including nuclear SMRs, geothermal, and long-duration storage, as the industry searches for scalable answers to AI's enormous energy footprint.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AIInfrastructure</span> <span style=\"color:#a050ff\">#DataCenters</span> <span style=\"color:#a050ff\">#EnergyTransition</span> <span style=\"color:#a050ff\">#Hyperscalers</span> <span style=\"color:#a050ff\">#AINews</span></p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/aifeed_data_center_demand_drives_66_surge_1777330325088.png",
+    "sourceUrl": "https://techcrunch.com/2026/04/27/data-center-demand-drives-66-surge-in-natural-gas-power-plant-costs/",
+    "publishedAt": "2026-04-27T18:52:07.817-04:00",
+    "isVideo": false,
+    "hashtags": [
+      "AIInfrastructure",
+      "DataCenters",
+      "EnergyTransition",
+      "Hyperscalers",
+      "AINews"
     ]
   },
   {
@@ -36,25 +93,6 @@
       "Nissan",
       "GenerativeAI",
       "AutoIndustry"
-    ]
-  },
-  {
-    "id": "data-center-demand-drives-surge-natural-20260427",
-    "slug": "data-center-demand-drives-surge-natural",
-    "headline": "Data center demand drives 66% surge in natural gas power plant costs",
-    "summary": "Data center demand drives 66% surge in natural gas power plant costs",
-    "body": "<p>Turbine manufacturers are reporting multi-year backlogs, with major OEMs sold out well into the latter part of the decade. Lead times for critical components have stretched dramatically, and skilled labor shortages are amplifying the pressure on project budgets.</p><p>For hyperscalers and enterprises building out AI capacity, this introduces a new strategic variable: power availability and cost are becoming as decisive as GPU access. Energy contracts, behind-the-meter generation, and grid interconnect timelines are now central to data center site selection.</p><p>The downstream implications are significant. Higher generation costs will likely flow through to compute pricing, while utilities and independent power producers face mounting pressure to expand capacity without compromising reliability or decarbonization commitments.</p><p>Expect continued investment in alternative baseload solutions, including nuclear SMRs, geothermal, and long-duration storage, as the industry searches for scalable answers to AI's enormous energy footprint.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#AIInfrastructure</span> <span style=\"color:#a050ff\">#DataCenters</span> <span style=\"color:#a050ff\">#EnergyTransition</span> <span style=\"color:#a050ff\">#Hyperscalers</span> <span style=\"color:#a050ff\">#AINews</span></p>",
-    "category": "Industry",
-    "imageUrl": "https://aifeed.run/images/aifeed_data_center_demand_drives_66_surge_1777330325088.png",
-    "sourceUrl": "https://techcrunch.com/2026/04/27/data-center-demand-drives-66-surge-in-natural-gas-power-plant-costs/",
-    "publishedAt": "2026-04-27T18:52:07.817-04:00",
-    "isVideo": false,
-    "hashtags": [
-      "AIInfrastructure",
-      "DataCenters",
-      "EnergyTransition",
-      "Hyperscalers",
-      "AINews"
     ]
   },
   {
