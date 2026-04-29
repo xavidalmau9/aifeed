@@ -42,9 +42,9 @@ If re-import cannot happen in the session, the message must be:
 
 | Workflow file | Desktop JSON fixed | Deployed to n8n | Notes |
 |---|---|---|---|
-| `AIFeed Story Selector NEW.json` | ✅ Session 15 (Apr 29) | ⚠️ **NEEDS RE-IMPORT** | **HTML delivery via sendDocument** — replaces all PNG delivery. `Send PNG URL to Telegram` node now fetches HTML from raw.githubusercontent.com and uploads as Telegram sendDocument. User opens in Chrome → screenshots → posts. |
-| `AIFeed Story List NEW.json` | ✅ Session 10 (Apr 25) | ⚠️ **NEEDS RE-IMPORT** | Today-only dedup, 4-day RSS filter, threshold=1, alwaysOutputData |
-| `aifeed website publisher.json` | ✅ Session 15 (Apr 29) | ⚠️ **NEEDS RE-IMPORT** | Stopwords fix (STOP word set + timestamp strip in `findGitHubGraphic`); sheet URL preference (uses ImageURL from sheet if valid `aifeed.run/images/` URL, skips re-matching); slug-based dedup |
+| `AIFeed Story Selector NEW.json` | ✅ Session 15 (Apr 29) | ✅ **DEPLOYED** | **HTML delivery via sendDocument** — replaces all PNG delivery. `Send PNG URL to Telegram` node now fetches HTML from raw.githubusercontent.com and uploads as Telegram sendDocument. User opens in Chrome → screenshots → posts. |
+| `AIFeed Story List NEW.json` | ✅ Session 10 (Apr 25) | ✅ **DEPLOYED** | Today-only dedup, 4-day RSS filter, threshold=1, alwaysOutputData |
+| `aifeed website publisher.json` | ✅ Session 15 (Apr 29) | ✅ **DEPLOYED** | Stopwords fix (STOP word set + timestamp strip in `findGitHubGraphic`); sheet URL preference (uses ImageURL from sheet if valid `aifeed.run/images/` URL, skips re-matching); slug-based dedup |
 
 ### 1. GRAPHIC GENERATION — MANDATORY CHECKLIST
 **Before generating ANY graphic, in this exact order:**
