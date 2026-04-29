@@ -1,5 +1,5 @@
 # AIFeed.run — Claude Project Instructions
-**Last updated: April 28, 2026 (session 13)**
+**Last updated: April 29, 2026 (session 15)**
 
 > This file is read by Claude at the start of every session. Update it whenever significant decisions are made.
 
@@ -42,9 +42,9 @@ If re-import cannot happen in the session, the message must be:
 
 | Workflow file | Desktop JSON fixed | Deployed to n8n | Notes |
 |---|---|---|---|
-| `AIFeed Story Selector NEW.json` | ✅ Session 14 (Apr 28) | ✅ **DEPLOYED** | **Pexels replaced with Unsplash**; base64 embedding; Wait node (90s) + URL send; sheet columns cleaned — removed PexelsKeyword/AltImageURL/Img3URL/Img4URL/GraphicHTML from all write nodes |
+| `AIFeed Story Selector NEW.json` | ✅ Session 15 (Apr 29) | ⚠️ **NEEDS RE-IMPORT** | **HTML delivery via sendDocument** — replaces all PNG delivery. `Send PNG URL to Telegram` node now fetches HTML from raw.githubusercontent.com and uploads as Telegram sendDocument. User opens in Chrome → screenshots → posts. |
 | `AIFeed Story List NEW.json` | ✅ Session 10 (Apr 25) | ⚠️ **NEEDS RE-IMPORT** | Today-only dedup, 4-day RSS filter, threshold=1, alwaysOutputData |
-| `aifeed website publisher.json` | ✅ Session 13 (Apr 28) | ⚠️ **NEEDS RE-IMPORT** | Fixed `fetchGitHubImages()` (`fetch()` → `this.helpers.httpRequest()`); replaced date-based idempotency guard with slug-based dedup — no longer blocks midnight run when a story was manually added |
+| `aifeed website publisher.json` | ✅ Session 15 (Apr 29) | ⚠️ **NEEDS RE-IMPORT** | Stopwords fix (STOP word set + timestamp strip in `findGitHubGraphic`); sheet URL preference (uses ImageURL from sheet if valid `aifeed.run/images/` URL, skips re-matching); slug-based dedup |
 
 ### 1. GRAPHIC GENERATION — MANDATORY CHECKLIST
 **Before generating ANY graphic, in this exact order:**
@@ -142,8 +142,11 @@ User interacts via Telegram:
 4. Bot sends **LinkedIn caption** to Telegram
 5. Bot auto-fetches a relevant Unsplash background image (no user picking required)
 6. Bot builds branded HTML graphic + uploads to GitHub `graphics/`
-7. GitHub Action (Puppeteer) renders PNG → sends PNG to Telegram (~90 seconds later)
-8. User replies `regen` at any time to rebuild the last approved story with a fresh layout + different Unsplash photo
+7. **Bot sends HTML file via Telegram sendDocument** (fetches from raw.githubusercontent.com → uploads as .html document)
+8. User opens HTML in Chrome at 100% zoom → screenshots → saves as PNG → posts to Instagram/LinkedIn
+9. User replies `regen` at any time to rebuild the last approved story with a fresh layout + different Unsplash photo
+
+**No more PNG delivery.** PNG pipeline (GitHub Action → Telegram sendPhoto) was permanently abandoned Apr 29 due to Telegram rejecting aifeed.run URLs and multipart upload timing issues. HTML delivery is the permanent solution.
 
 **No more image-picking step.** The old img1/img2/img3/img4 flow is gone.
 
@@ -460,6 +463,62 @@ User can reply `regen` in Telegram at any time → workflow reads last APPROVED 
 ### What NOT to Do (Session 14 additions)
 - **Never add Pexels columns back** — PexelsKeyword, AltImageURL, Img3URL, Img4URL, GraphicHTML are gone. The workflow only needs ImageURL (one column for the final branded PNG URL).
 - **Never write to columns that don't exist in the sheet** — if adding new sheet columns, update all relevant Google Sheets nodes in the workflow JSON and re-import.
+
+---
+
+## Session 15 Changes (Apr 29, 2026)
+
+### ⚠️ PERMANENT CHANGE: HTML delivery only — PNG delivery abandoned
+
+After 10+ days of failed PNG delivery attempts (Telegram rejecting URL sends, multipart upload timing issues, GitHub Action race conditions), PNG delivery was permanently abandoned. **The new permanent delivery method is HTML via Telegram sendDocument.**
+
+**How it works now:**
+1. User picks story → bot builds HTML graphic → uploads to `graphics/` on GitHub
+2. Bot fetches the HTML from `raw.githubusercontent.com/xavidalmau9/aifeed/main/graphics/[filename].html`
+3. Bot sends HTML file to Telegram via `sendDocument` (multipart form-data)
+4. User opens HTML file in Chrome at 100% zoom → takes screenshot → saves as PNG → posts
+
+**`Send PNG URL to Telegram` node** (in `AIFeed Story Selector NEW.json`) completely replaced:
+- Old: sent `https://aifeed.run/images/${pngName}` via `sendPhoto` URL (rejected by Telegram)
+- New: fetches raw HTML bytes from GitHub → builds multipart body → sends via `sendDocument`
+- Falls back to text link if fetch fails
+
+**GitHub Action render-graphics.yml** — still runs (renders PNGs and commits them), but **no longer sends to Telegram**. The PNGs are still useful for the website's imageUrl. The Telegram step in the Action can be left in place or removed — it no longer matters since the n8n node handles delivery.
+
+### Publisher fixes (both in `aifeed website publisher.json`, needs re-import)
+
+**1. Stopwords fix in `findGitHubGraphic`:**
+- Added `STOP` word set (the, is, on, to, from, with, and, for, are, was, has, have, this, that, its, etc.)
+- Strips 10+ digit timestamps from filenames before splitting into words
+- Prevents timestamp-named files (e.g. `aifeed_the_race_is_on_to_keep_1777410152718.png`) from scoring higher than semantic files
+
+**2. Sheet URL preference:**
+- If the Google Sheet's `ImageURL` column already contains a valid `aifeed.run/images/aifeed_*` URL, use it directly instead of re-running `findGitHubGraphic`
+- Prevents the publisher from overriding a correct imageUrl set manually or by the Story Selector
+
+### GM/Gemini graphic (Apr 29)
+- Story: "General Motors is adding Gemini to four million cars"
+- Photo: Chevrolet Colorado ZR2 from Unsplash (id: 3LizLTnNNaY), downloaded from `https://unsplash.com/photos/3LizLTnNNaY/download?force=true`
+- HTML created at `/tmp/aifeed_gm_adds_gemini_ai_to_4m_cars.html`
+- Headline: "GM ADDS" / "GEMINI AI" / "TO 4M CARS"
+- Cards: 🚗 4M VEHICLES / 🤝 GM × GOOGLE / ☀️ SUMMER 2026
+- Source: The Verge · theverge.com
+- Sent to Telegram via sendDocument ✅
+- **Website post still needs to be added to posts-index.json**
+
+### File timestamp rule (permanent)
+When editing any workflow JSON file, always report the file's modification timestamp (from `ls -la`) AFTER the edit is complete, so the user can confirm the right version was updated.
+
+### Unsplash download URL — correct format (permanent fix)
+- ❌ Wrong: `https://images.unsplash.com/photo-[id]?crop=entropy&cs=srgb&fm=jpg&fit=crop&w=1080&h=1350&q=85` — returns HTML error (29 bytes)
+- ✅ Correct: `https://unsplash.com/photos/[id]/download?force=true` — returns actual JPEG bytes
+
+### What NOT to Do (Session 15 additions)
+- **Never attempt PNG delivery to Telegram again** — it does not work reliably. HTML sendDocument is the permanent solution.
+- **Never send `aifeed.run/images/` URLs via Telegram sendPhoto** — Telegram rejects them with "wrong type of web page content"
+- **Never use `https://images.unsplash.com/photo-[id]?...` to download Unsplash photos** — always use `https://unsplash.com/photos/[id]/download?force=true`
+- **Always report the file modification timestamp after editing any workflow JSON** — `ls -la` the file after saving, report the time shown
+- **Never re-add the Wait node + URL send approach** — the 90s wait was not enough; GitHub Pages needs 3+ minutes; the entire URL-based Telegram approach is abandoned
 
 ---
 
