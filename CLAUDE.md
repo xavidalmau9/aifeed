@@ -38,13 +38,28 @@ Every session that modifies a workflow JSON file and does NOT immediately re-imp
 If re-import cannot happen in the session, the message must be:
 > "The JSON file is fixed. You MUST re-import it into n8n before tonight's publish run or the fix will not take effect."
 
-#### n8n Deployment Status — current as of Apr 25, 2026 (session 11)
+#### n8n Deployment Status — current as of Apr 30, 2026 (session 16)
 
 | Workflow file | Desktop JSON fixed | Deployed to n8n | Notes |
 |---|---|---|---|
-| `AIFeed Story Selector NEW.json` | ✅ Session 15 (Apr 29 18:09) | ⚠️ **NEEDS RE-IMPORT** | **HTML sent inline inside `Build Graphic Direct`** — sendDocument fires immediately after GitHub upload, same node, same execution, no Wait node. Previous attempt failed because n8n Cloud Wait node resumption is unreliable. |
+| `AIFeed Story Selector NEW.json` | ✅ Session 16 (Apr 30 07:01) | ⚠️ **NEEDS RE-IMPORT** | Simplified: n8n uploads HTML + sends captions only. All graphic work moved to GitHub Action. |
 | `AIFeed Story List NEW.json` | ✅ Session 10 (Apr 25) | ✅ **DEPLOYED** | Today-only dedup, 4-day RSS filter, threshold=1, alwaysOutputData |
-| `aifeed website publisher.json` | ✅ Session 15 (Apr 29) | ✅ **DEPLOYED** | Stopwords fix (STOP word set + timestamp strip in `findGitHubGraphic`); sheet URL preference (uses ImageURL from sheet if valid `aifeed.run/images/` URL, skips re-matching); slug-based dedup |
+| `aifeed website publisher.json` | — | 🚫 **RETIRED** | Replaced by `.github/workflows/publish-stories.yml`. Do NOT re-import. |
+
+#### GitHub Actions — THE NEW SYSTEM (Apr 30, 2026)
+
+n8n is no longer responsible for graphics delivery OR website publishing. GitHub Actions handles both.
+
+| Action | Trigger | What it does |
+|---|---|---|
+| `render-graphics.yml` | Push to `graphics/*.html` | Downloads Unsplash photo → embeds base64 → renders PNG → **sends HTML to Telegram via curl** |
+| `publish-stories.yml` | Daily 5am UTC (midnight EST) + manual | Reads Google Sheet CSV → APPROVED rows → posts-index.json (triple dedup: slug+id+headline key) |
+| `fix-missing-images.yml` | Hourly | Fills blank imageUrls in posts-index.json |
+
+**n8n now only does:**
+- Story List: scrapes headlines, scores, sends Telegram menu
+- Story Selector: user picks story → sends captions → uploads HTML to GitHub
+- That's it. No binary handling. No file sending. No publishing.
 
 ### 1. GRAPHIC GENERATION — MANDATORY CHECKLIST
 **Before generating ANY graphic, in this exact order:**

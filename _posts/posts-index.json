@@ -3,21 +3,14 @@
     "id": "ive-covered-robots-for-years-this-20260429",
     "slug": "ive-covered-robots-for-years-this",
     "headline": "I've Covered Robots for Years. This One Is Different",
-    "summary": "I've Covered Robots for Years. This One Is Different",
-    "body": "<p>The often-overlooked variable is end-effectors. Pincers, grippers, and tactile sensors are advancing rapidly, enabling robots to manipulate the messy physical world with a dexterity that AI brains have long demanded but bodies couldn't deliver.</p><p>This matters for enterprise leaders because the bottleneck in physical AI deployment has rarely been intelligence. It's been the gap between perception, planning, and reliable manipulation. Closing that gap unlocks real use cases in logistics, manufacturing, and service industries.</p><p>If foundation models trained on robotic data scale the way LLMs did, we may witness a ChatGPT moment for robotics \u2014 a sudden, broad capability jump that resets expectations across multiple sectors.</p><p>Organizations should start mapping which workflows depend on fine manipulation today, and which could be transformed when general-purpose robots become viable within the next 24\u201336 months.</p><p class=\"article-tags-inline\"><span style=\"color:#a050ff\">#Robotics</span> <span style=\"color:#a050ff\">#AI</span> <span style=\"color:#a050ff\">#Automation</span> <span style=\"color:#a050ff\">#FutureOfWork</span> <span style=\"color:#a050ff\">#EnterpriseTech</span> <span style=\"color:#a050ff\">#Innovation</span></p>",
+    "summary": "After years of reporting on humanoid robots and industrial automation, the latest generation signals a meaningful inflection point \u2014 not because of smarter models alone, but because hardware is finall",
+    "body": "<p>After years of reporting on humanoid robots and industrial automation, the latest generation signals a meaningful inflection point \u2014 not because of smarter models alone, but because hardware is finally catching up to software.</p>\n<p>The often-overlooked variable is end-effectors. Pincers, grippers, and tactile sensors are advancing rapidly, enabling robots to manipulate the messy physical world with a dexterity that AI brains have long demanded but bodies couldn't deliver.</p>\n<p>This matters for enterprise leaders because the bottleneck in physical AI deployment has rarely been intelligence. It's been the gap between perception, planning, and reliable manipulation. Closing that gap unlocks real use cases in logistics, manufacturing, and service industries.</p>\n<p>If foundation models trained on robotic data scale the way LLMs did, we may witness a \"ChatGPT moment\" for robotics \u2014 a sudden, broad capability jump that resets expectations across multiple sectors.</p>\n<p>Organizations should start mapping which workflows depend on fine manipulation today, and which could be transformed when general-purpose robots become viable within the next 24\u201336 months.</p>",
     "category": "Industry",
     "imageUrl": "https://aifeed.run/images/aifeed_ive_covered_robots_for_years_this_1777496571181.png",
     "sourceUrl": "https://www.wired.com/story/when-robots-have-their-chatgpt-moment-remember-these-pincers/",
     "publishedAt": "2026-04-29T17:02:54.560-04:00",
     "isVideo": false,
-    "hashtags": [
-      "Robotics",
-      "AI",
-      "Automation",
-      "FutureOfWork",
-      "EnterpriseTech",
-      "Innovation"
-    ]
+    "hashtags": []
   },
   {
     "id": "general-motors-adding-gemini-four-million-cars-20260429",
