@@ -1,0 +1,204 @@
+name: Publish Approved Stories
+
+on:
+  schedule:
+    - cron: '0 5 * * *'   # midnight EST (5am UTC)
+  workflow_dispatch:        # manual trigger
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Publish approved stories from Google Sheet
+        run: |
+          node << 'JSEOF'
+          const fs   = require('fs');
+          const https = require('https');
+
+          // ── helpers ──────────────────────────────────────────────────────────
+
+          function get(url) {
+            return new Promise((resolve, reject) => {
+              https.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } }, res => {
+                if (res.statusCode === 301 || res.statusCode === 302)
+                  return get(res.headers.location).then(resolve).catch(reject);
+                let d = ''; res.on('data', c => d += c); res.on('end', () => resolve(d));
+                res.on('error', reject);
+              }).on('error', reject);
+            });
+          }
+
+          function parseCSV(text) {
+            const lines = text.split('\n');
+            // strip blank separator rows (Pexels-era artifact)
+            const valid = lines.filter(l => l.replace(/[,\s"]/g,'') !== '');
+            if (!valid.length) return [];
+            const headers = splitRow(valid[0]);
+            return valid.slice(1).map(l => {
+              const vals = splitRow(l);
+              const obj = {};
+              headers.forEach((h,i) => obj[h.trim()] = (vals[i]||'').trim());
+              return obj;
+            }).filter(r => r.Headline);
+          }
+
+          function splitRow(line) {
+            const out = []; let inQ = false, cur = '';
+            for (let i = 0; i < line.length; i++) {
+              const c = line[i];
+              if (c === '"') { if (inQ && line[i+1] === '"') { cur += '"'; i++; } else inQ = !inQ; }
+              else if (c === ',' && !inQ) { out.push(cur); cur = ''; }
+              else cur += c;
+            }
+            out.push(cur); return out;
+          }
+
+          // Convert LinkedIn caption → HTML paragraphs with purple hashtags
+          function liToHtml(caption) {
+            if (!caption) return '<p>No content available.</p>';
+            const paras = caption.split(/\n\n+/);
+            const parts = []; const hashTags = [];
+            paras.forEach((p, i) => {
+              p = p.trim();
+              if (!p || i === 0) return;                     // skip blank + headline
+              if (/^Source:/i.test(p)) return;               // skip source line
+              if (/^https?:\/\//.test(p)) return;            // skip bare URLs
+              if (/^#\w/.test(p)) {                          // hashtag paragraph
+                const tags = p.match(/#\w+/g) || [];
+                hashTags.push(...tags.map(t => t.slice(1)));
+                parts.push('<p>' + tags.map(t =>
+                  `<span style="color:#a050ff">${t}</span>`).join(' ') + '</p>');
+                return;
+              }
+              parts.push('<p>' + p.replace(/\n/g,' ') + '</p>');
+            });
+            return parts.join('\n') || '<p>' + paras[0] + '</p>';
+          }
+
+          // Slug: lowercase, strip punctuation, keep words ≥2 chars, take 6, join with -
+          function makeSlug(headline) {
+            return headline.toLowerCase()
+              .replace(/[^a-z0-9\s]/g, '')
+              .trim().split(/\s+/)
+              .filter(w => w.length >= 2)
+              .slice(0, 6).join('-');
+          }
+
+          function dateOnly(str) {
+            if (!str) return new Date().toISOString().substring(0,10);
+            const m = str.match(/(\d{4})-(\d{2})-(\d{2})/);
+            if (m) return `${m[1]}-${m[2]}-${m[3]}`;
+            const m2 = str.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+            if (m2) return `${m2[3]}-${m2[1].padStart(2,'0')}-${m2[2].padStart(2,'0')}`;
+            return new Date().toISOString().substring(0,10);
+          }
+
+          function getCategory(headline) {
+            const h = headline.toLowerCase();
+            if (/research|study|paper|scientists|university/.test(h)) return 'Research';
+            if (/launch|release|tool|app|update|version/.test(h)) return 'Tools';
+            if (/model|gpt|claude|gemini|llm|mistral|llama/.test(h)) return 'Models';
+            if (/fund|invest|billion|million|startup|raises/.test(h)) return 'Industry';
+            return 'Industry';
+          }
+
+          // ── main ─────────────────────────────────────────────────────────────
+
+          (async () => {
+            const SHEET = 'https://docs.google.com/spreadsheets/d/1BCTHLe5ExoFwLMnQuayVWsVI8hBKfD7u54FiHGv_7rs/export?format=csv&gid=0';
+
+            console.log('Fetching sheet…');
+            const csv  = await get(SHEET);
+            const rows = parseCSV(csv);
+            const approved = rows.filter(r => r.Status && r.Status.trim().toUpperCase() === 'APPROVED');
+            console.log('Approved rows:', approved.length);
+            if (!approved.length) { console.log('Nothing to publish.'); return; }
+
+            const postsPath = '_posts/posts-index.json';
+            const posts = JSON.parse(fs.readFileSync(postsPath, 'utf8'));
+
+            // Build lookup sets from existing posts
+            const existingSlugs = new Set(posts.map(p => p.slug));
+            const existingIds   = new Set(posts.map(p => p.id));
+
+            // Also build a set of headline keywords for fuzzy dedup
+            function headlineKey(h) {
+              return h.toLowerCase().replace(/[^a-z0-9]/g,'').substring(0,40);
+            }
+            const existingKeys = new Set(posts.map(p => headlineKey(p.headline || '')));
+
+            const newPosts = [];
+
+            for (const row of approved) {
+              const headline = (row.Headline || '').trim();
+              if (!headline) continue;
+
+              const slug  = makeSlug(headline);
+              const date  = dateOnly(row.Date || '');
+              const id    = slug + '-' + date.replace(/-/g,'');
+              const hKey  = headlineKey(headline);
+
+              // Triple dedup: slug, id, headline key
+              if (existingSlugs.has(slug) || existingIds.has(id) || existingKeys.has(hKey)) {
+                console.log('Skip (already published):', headline.substring(0,60));
+                continue;
+              }
+
+              // Use ImageURL from sheet directly — Story Selector already set it
+              const sheetImg = (row.ImageURL || '').trim();
+              const imageUrl = (sheetImg && /aifeed\.run\/images\/aifeed/.test(sheetImg))
+                ? sheetImg : '';
+
+              const liCaption = (row.LinkedInCaption || row.Caption || '').trim();
+              const body = liToHtml(liCaption);
+              const hashtags = (liCaption.match(/#(\w+)/g) || []).map(t => t.slice(1));
+
+              // Summary = second paragraph of LinkedIn caption (first 200 chars)
+              const paras = liCaption.split(/\n\n+/).filter(p => p.trim());
+              const summary = (paras[1] || paras[0] || headline).replace(/\n/g,' ').substring(0,200).trim();
+
+              const post = {
+                id, slug, headline, summary, body,
+                category:    getCategory(headline),
+                imageUrl,
+                sourceUrl:   (row.SourceURL || '').trim(),
+                publishedAt: row.Date || new Date().toISOString(),
+                hashtags,
+                isVideo:     false
+              };
+
+              newPosts.push(post);
+              existingSlugs.add(slug);
+              existingIds.add(id);
+              existingKeys.add(hKey);
+              console.log('Publishing:', headline.substring(0,70));
+            }
+
+            if (!newPosts.length) { console.log('No new posts after dedup.'); return; }
+
+            const updated = [...newPosts, ...posts];
+            fs.writeFileSync(postsPath, JSON.stringify(updated, null, 2));
+            console.log('Done. Added', newPosts.length, 'posts. Total:', updated.length);
+          })().catch(e => { console.error(e); process.exit(1); });
+          JSEOF
+
+      - name: Commit published posts
+        run: |
+          git config user.name "AIFeed Bot"
+          git config user.email "bot@aifeed.run"
+          git add _posts/posts-index.json
+          if git diff --staged --quiet; then
+            echo "Nothing new to publish"
+          else
+            COUNT=$(git diff --staged --stat | grep posts-index | grep -oP '\d+ insertion' | grep -oP '\d+' || echo "?")
+            git commit -m "Auto-publish: new stories from approved sheet rows"
+            git pull --rebase origin main
+            git push
+          fi
