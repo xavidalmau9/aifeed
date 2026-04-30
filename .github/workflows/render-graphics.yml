@@ -1,4 +1,4 @@
-name: Render HTML Graphics to PNG
+name: Render HTML Graphics to PNG and Send to Telegram
 
 on:
   push:
@@ -27,17 +27,24 @@ jobs:
           path: |
             node_modules
             ~/.cache/puppeteer
-          key: ${{ runner.os }}-puppeteer-v1
+          key: ${{ runner.os }}-puppeteer-v2
 
       - name: Install Puppeteer
         run: npm install puppeteer
 
-      - name: Render HTMLs to PNGs
+      - name: Embed photos, render PNGs, send HTML to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           node -e "
           const puppeteer = require('puppeteer');
           const fs = require('fs');
           const path = require('path');
+          const { execSync } = require('child_process');
+
+          const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+          const CHAT_ID   = process.env.TELEGRAM_CHAT_ID;
 
           (async () => {
             const browser = await puppeteer.launch({
@@ -45,30 +52,86 @@ jobs:
             });
 
             const graphicsDir = './graphics';
-            const imagesDir = './images';
+            const imagesDir   = './images';
             const newPngs = [];
+
             const files = fs.readdirSync(graphicsDir).filter(f => f.endsWith('.html'));
 
             for (const file of files) {
               const pngName = file.replace('.html', '.png');
               const pngPath = path.join(imagesDir, pngName);
-              if (fs.existsSync(pngPath)) { console.log('Already exists:', pngName); continue; }
+              if (fs.existsSync(pngPath)) {
+                console.log('Already exists:', pngName);
+                continue;
+              }
 
-              console.log('Rendering:', file);
+              console.log('Processing:', file);
+              let html = fs.readFileSync(path.join(graphicsDir, file), 'utf8');
+
+              // --- EMBED PHOTO AS BASE64 ---
+              // Only needed if HTML has an external Unsplash URL (not already base64)
+              const urlMatch = html.match(/src=\"(https:\/\/images\.unsplash\.com\/photo-([^?\"]+)[^\"]*)\"/);
+              if (urlMatch) {
+                const photoId = urlMatch[2];
+                const downloadUrl = 'https://unsplash.com/photos/' + photoId + '/download?force=true';
+                console.log('Downloading photo:', photoId);
+                try {
+                  execSync('curl -sL \"' + downloadUrl + '\" -o /tmp/photo_embed.jpg', { timeout: 30000 });
+                  const stat = fs.statSync('/tmp/photo_embed.jpg');
+                  if (stat.size > 10000) {
+                    const b64 = fs.readFileSync('/tmp/photo_embed.jpg').toString('base64');
+                    html = html.replace(urlMatch[0], 'src=\"data:image/jpeg;base64,' + b64 + '\"');
+                    console.log('Photo embedded (' + Math.round(stat.size/1024) + 'KB)');
+                  } else {
+                    console.log('Photo download too small (' + stat.size + 'B), using external URL');
+                  }
+                } catch(e) {
+                  console.log('Photo embed failed:', e.message, '- using external URL');
+                }
+              } else if (html.includes('data:image/jpeg;base64,')) {
+                console.log('Photo already embedded as base64');
+              } else {
+                console.log('No photo URL found in HTML');
+              }
+
+              // --- RENDER PNG ---
               try {
                 const page = await browser.newPage();
                 await page.setViewport({ width: 1080, height: 1500, deviceScaleFactor: 1 });
-                const htmlContent = fs.readFileSync(path.join(graphicsDir, file), 'utf8');
-                await page.setContent(htmlContent, { waitUntil: 'networkidle0', timeout: 30000 });
+                await page.setContent(html, { waitUntil: 'networkidle0', timeout: 30000 });
                 await new Promise(r => setTimeout(r, 1500));
                 const screenshot = await page.screenshot({
                   clip: { x: 0, y: 0, width: 1080, height: 1350 },
                   type: 'png'
                 });
                 fs.writeFileSync(pngPath, screenshot);
-                newPngs.push(pngName);
                 console.log('Rendered:', pngName);
                 await page.close();
+
+                // --- SEND HTML TO TELEGRAM ---
+                // Write base64-embedded HTML to temp file for upload
+                const tmpHtml = '/tmp/tg_' + file;
+                fs.writeFileSync(tmpHtml, html);
+                try {
+                  const result = execSync(
+                    'curl -s ' +
+                    '-F \"chat_id=' + CHAT_ID + '\" ' +
+                    '-F \"document=@' + tmpHtml + ';filename=' + file + ';type=text/html\" ' +
+                    '-F \"caption=\u2705 Open in Chrome at 100% zoom \u2192 screenshot \u2192 post\" ' +
+                    '\"https://api.telegram.org/bot' + BOT_TOKEN + '/sendDocument\"',
+                    { encoding: 'utf8', timeout: 30000 }
+                  );
+                  const parsed = JSON.parse(result);
+                  if (parsed.ok) {
+                    console.log('Sent to Telegram:', file);
+                  } else {
+                    console.log('Telegram send failed:', JSON.stringify(parsed));
+                  }
+                } catch(e) {
+                  console.log('Telegram curl error:', e.message);
+                }
+
+                newPngs.push(pngName);
               } catch(e) {
                 console.error('Failed to render', file, ':', e.message);
               }
@@ -92,32 +155,3 @@ jobs:
             git pull --rebase origin main
             git push
           fi
-
-      - name: Send new PNGs to Telegram
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: |
-          if [ ! -f /tmp/new_pngs.txt ] || [ ! -s /tmp/new_pngs.txt ]; then
-            echo "No new PNGs to send"
-            exit 0
-          fi
-          while IFS= read -r pngName; do
-            [ -z "$pngName" ] && continue
-            pngPath="./images/${pngName}"
-            if [ ! -f "$pngPath" ]; then
-              echo "File not found: $pngPath"
-              continue
-            fi
-            echo "Sending to Telegram: $pngName"
-            RESULT=$(curl -s \
-              -F "chat_id=${TELEGRAM_CHAT_ID}" \
-              -F "photo=@${pngPath}" \
-              -F "caption=✅ Your branded graphic is ready — save and post directly." \
-              "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto")
-            if echo "$RESULT" | grep -q '"ok":true'; then
-              echo "Sent successfully: $pngName"
-            else
-              echo "Send failed for $pngName: $RESULT"
-            fi
-          done < /tmp/new_pngs.txt
