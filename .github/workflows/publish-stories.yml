@@ -1,4 +1,4 @@
-name: Publish Approved Stories
+name: Publish New Stories
 
 on:
   schedule:
@@ -16,7 +16,7 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Publish approved stories from Google Sheet
+      - name: Publish new stories from Google Sheet
         run: |
           node << 'JSEOF'
           const fs   = require('fs');
@@ -117,9 +117,15 @@ jobs:
             console.log('Fetching sheet…');
             const csv  = await get(SHEET);
             const rows = parseCSV(csv);
-            const approved = rows.filter(r => r.Status && r.Status.trim().toUpperCase() === 'APPROVED');
-            console.log('Approved rows:', approved.length);
-            if (!approved.length) { console.log('Nothing to publish.'); return; }
+            // Publish any row that has a headline + imageUrl — no status filter needed.
+            // Triple dedup (slug/id/headline key) prevents republishing anything already live.
+            const candidates = rows.filter(r => {
+              const h = (r.Headline || '').trim();
+              const img = (r.ImageURL || '').trim();
+              return h && img && /aifeed\.run\/images\/aifeed/.test(img);
+            });
+            console.log('Candidates with graphic ready:', candidates.length);
+            if (!candidates.length) { console.log('Nothing to publish.'); return; }
 
             const postsPath = '_posts/posts-index.json';
             const posts = JSON.parse(fs.readFileSync(postsPath, 'utf8'));
@@ -136,7 +142,7 @@ jobs:
 
             const newPosts = [];
 
-            for (const row of approved) {
+            for (const row of candidates) {
               const headline = (row.Headline || '').trim();
               if (!headline) continue;
 
@@ -151,10 +157,8 @@ jobs:
                 continue;
               }
 
-              // Use ImageURL from sheet directly — Story Selector already set it
-              const sheetImg = (row.ImageURL || '').trim();
-              const imageUrl = (sheetImg && /aifeed\.run\/images\/aifeed/.test(sheetImg))
-                ? sheetImg : '';
+              // ImageURL already validated in candidates filter above
+              const imageUrl = (row.ImageURL || '').trim();
 
               const liCaption = (row.LinkedInCaption || row.Caption || '').trim();
               const body = liToHtml(liCaption);
