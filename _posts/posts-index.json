@@ -1,5 +1,58 @@
 [
   {
+    "id": "how-elon-musk-squeezed-openai-they-20260430",
+    "slug": "how-elon-musk-squeezed-openai-they",
+    "headline": "How Elon Musk Squeezed OpenAI: They 'Are Gonna Want to Kill Me\u2019",
+    "summary": "Newly surfaced details from the Musk vs. OpenAI legal battle shed light on the early-stage tensions that shaped one of the most influential companies in AI today.",
+    "body": "<p>Newly surfaced details from the Musk vs. OpenAI legal battle shed light on the early-stage tensions that shaped one of the most influential companies in AI today.</p>\n<p>The cross-examination of Sam Altman reveals the depth of Musk's influence \u2014 and frustration \u2014 during OpenAI's formative years, including disputes over funding, governance, and strategic direction.</p>\n<p>For enterprise leaders, the story is more than personality conflict. It underscores how foundational governance decisions in AI organizations can ripple into today's competitive dynamics, partnerships, and regulatory scrutiny.</p>\n<p>It also raises important questions about mission alignment in mission-driven tech: when commercial imperatives collide with founding ideals, who holds the line \u2014 and who walks away?</p>\n<p>As AI consolidates around a handful of dominant players, understanding the human and structural backstory behind these labs becomes essential context for any organization betting on their platforms.</p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/aifeed_how_elon_musk_squeezed_openai_they_1777551261317.png",
+    "sourceUrl": "https://www.wired.com/story/model-behavior-elon-musk-cross-examined-sam-altman/",
+    "publishedAt": "2026-04-30T08:14:23.043-04:00",
+    "hashtags": [
+      "AINews",
+      "OpenAI",
+      "ElonMusk",
+      "ArtificialIntelligence",
+      "AIGovernance"
+    ],
+    "isVideo": false
+  },
+  {
+    "id": "taylor-swift-wants-to-trademark-her-20260430",
+    "slug": "taylor-swift-wants-to-trademark-her",
+    "headline": "Taylor Swift Wants to Trademark Her Likeness. These TikTok Deepfake Ads Show Why",
+    "summary": "Taylor Swift is reportedly exploring trademark protection for her likeness, a strategic legal maneuver driven by the proliferation of AI-generated deepfake advertisements on platforms like TikTok.",
+    "body": "<p>Taylor Swift is reportedly exploring trademark protection for her likeness, a strategic legal maneuver driven by the proliferation of AI-generated deepfake advertisements on platforms like TikTok.</p>\n<p>Recent investigations have uncovered ads featuring synthetic versions of Swift, Rihanna, and other celebrities being used to promote products and scams without consent. The scale and sophistication of these campaigns highlight a critical gap between current intellectual property frameworks and the realities of generative AI.</p>\n<p>Right of publicity laws vary significantly by state, and federal protections remain fragmented. Trademarking a likeness, while legally complex, could provide more consistent and enforceable recourse than existing remedies, particularly for cross-platform takedowns.</p>\n<p>For brands and platforms, this signals a maturing risk landscape. Advertisers must scrutinize creative supply chains, while platforms face mounting pressure to deploy detection tools and enforce identity-based content policies at scale.</p>\n<p>The implications extend well beyond celebrity. If trademark becomes the de facto shield against unauthorized AI replication, expect a wave of legal innovation, and renewed urgency around comprehensive federal legislation on synthetic media.</p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/aifeed_taylor_swift_wants_to_trademark_her_1777583023660.png",
+    "sourceUrl": "https://www.wired.com/story/taylor-swift-rihanna-tiktok-deepfake-ads/",
+    "publishedAt": "2026-04-30T17:03:45.892-04:00",
+    "hashtags": [
+      "AINews",
+      "Deepfakes",
+      "AIGovernance",
+      "IntellectualProperty",
+      "SyntheticMedia"
+    ],
+    "isVideo": false
+  },
+  {
+    "id": "good-luck-getting-mac-mini-for-20260501",
+    "slug": "good-luck-getting-mac-mini-for",
+    "headline": "Good Luck Getting a Mac Mini for the Next \u2018Several Months\u2019",
+    "summary": "Apple's M4 Mac Mini is sold out across most configurations, with shipping estimates stretching into early next year. What started as a routine refresh has turned into one of the most supply-constraine",
+    "body": "<p>Apple's M4 Mac Mini is sold out across most configurations, with shipping estimates stretching into early next year. What started as a routine refresh has turned into one of the most supply-constrained product launches Apple has seen in recent memory.</p>\n<p>The driver isn't traditional consumer demand. Developers and AI practitioners have discovered that the Mac Mini offers an unusually strong price-to-performance ratio for running local large language models, thanks to Apple Silicon's unified memory architecture.</p>\n<p>For enterprises evaluating on-device AI strategies, this is a meaningful signal. The shift toward local inference is no longer theoretical. Teams are actively building infrastructure around consumer-grade Apple hardware as a cost-effective alternative to cloud GPU spend.</p>\n<p>The shortage also highlights a broader supply-side reality. As AI workloads push into edge devices, even mainstream consumer hardware is becoming subject to the same constraints that have defined the data center GPU market.</p>\n<p>Procurement leaders planning AI pilots should factor extended lead times into their 2025 roadmaps.</p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/aifeed_good_luck_getting_mac_mini_for_1777636881649.png",
+    "sourceUrl": "https://www.wired.com/story/apple-sold-out-mac-mini-openclaw/",
+    "publishedAt": "2026-05-01T08:01:23.923-04:00",
+    "hashtags": [
+      "AINews"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "ive-covered-robots-for-years-this-20260429",
     "slug": "ive-covered-robots-for-years-this",
     "headline": "I've Covered Robots for Years. This One Is Different",
