@@ -1,5 +1,5 @@
 # AIFeed.run — Claude Project Instructions
-**Last updated: April 29, 2026 (session 15)**
+**Last updated: May 2, 2026 (session 17)**
 
 > This file is read by Claude at the start of every session. Update it whenever significant decisions are made.
 
@@ -399,6 +399,70 @@ Then for each approved row:
 - **Always check GitHub Actions run history when PNG doesn't arrive** — the Action may have run and failed. Check: `https://github.com/xavidalmau9/aifeed/actions`
 - **Never leave a git merge conflict unresolved** — use `git stash → pull → stash pop` or push directly via GitHub API if local git is in a bad state
 - **Never push large numbers of commits to the repo in rapid succession during a session** — it causes the GitHub Action's `git push` to fail with "rejected: non-fast-forward". If many pushes are needed, batch them into one commit.
+
+---
+
+## Session 17 Changes (May 2, 2026)
+
+### ⚠️ CRITICAL BUG FIXED — `publish-stories.yml` 307 Redirect
+
+**Root cause of all midnight publish failures:** Google Sheets CSV export returns **HTTP 307** (Temporary Redirect). The `get()` helper in the workflow only followed `301` and `302`. The 307 response body is an HTML redirect page — `parseCSV()` received that HTML, found 0 valid rows, logged "Nothing to publish", and exited cleanly (exit 0). The Action always showed "success" even though it published nothing.
+
+**Fix applied to `.github/workflows/publish-stories.yml`:**
+```javascript
+// Before (broken):
+if (res.statusCode === 301 || res.statusCode === 302)
+// After (fixed):
+if ([301, 302, 303, 307, 308].includes(res.statusCode))
+```
+Already pushed to main. Tonight's midnight run will work correctly.
+
+**How to diagnose future midnight failures:** If the Action shows "success" but no "Auto-publish" commit appears, the script got 0 candidates. Check if Google's redirect code changed by running:
+```bash
+node -e "require('https').get('https://docs.google.com/spreadsheets/d/1BCTHLe5ExoFwLMnQuayVWsVI8hBKfD7u54FiHGv_7rs/export?format=csv&gid=0', {headers:{'User-Agent':'Mozilla/5.0'}}, r => console.log(r.statusCode, r.headers.location))"
+```
+
+### Graphic With No Photo — How It Happens
+
+When a story is picked but the n8n `Build Graphic Direct` node fails to fetch the photo (Wikipedia API timeout, Unsplash error, etc.), it may still upload the HTML to GitHub — but without an `<img class="bg">` tag. The GitHub Action then renders a blank-background PNG.
+
+**Manual fix when this happens:**
+1. Find the HTML file sent to Telegram (e.g. `~/Downloads/aifeed_[slug]_[ts].html`)
+2. Check for missing `<img class="bg">` tag
+3. Find a suitable photo (Wikimedia Commons for real-world places/people; Unsplash for abstract)
+4. Crop to 1080×1350 portrait, encode as base64, inject as `<img class="bg" src="data:image/jpeg;base64,...">`
+5. Swap CDN Poppins `<link>` for local `@font-face` (see Chrome Headless section)
+6. Render at `--window-size=1080,1500` then Pillow-crop to 1350px
+7. Push the new PNG to `aifeed/images/` (overwriting the blank one — use `git stash → pull → push` if there's a conflict from GitHub Action)
+8. Sheet ImageURL is already correct — no sheet update needed
+
+**Pentagon example (May 1, 2026):** Photo fetch failed in n8n; HTML uploaded without photo. Manually replaced with `An_aerial_view_of_the_Pentagon,_Washington,_D.C.,_May_15,_2023.jpg` from Wikimedia Commons (different from the Apr 28 Pentagon story which used `bg_pentagon.jpg`).
+
+### Video Metadata Location (confirmed May 2)
+
+LinkedIn captions for videos are **always** in `~/Downloads/caption_linkedin_[timestamp].txt`. Never ask the user — always check Downloads first. The files are never deleted.
+
+**Video index entry structure:**
+```json
+{
+  "filename": "aifeed_branded_[ts].mp4",
+  "url": "https://aifeed.run/videos/aifeed_branded_[ts].mp4",
+  "title": "...",
+  "caption": "...",
+  "source": "Channel Name",
+  "sourceUrl": "https://www.youtube.com/watch?v=...",
+  "date": "ISO date"
+}
+```
+Title = inferred from caption body (first line of caption is usually the headline). Source = from `Source: X` line or YouTube channel name. Caption = body paragraphs 2–3, max 300 chars.
+
+### Current State (May 2, 2026)
+- `posts-index.json`: **74 posts**
+- `videos-index.json`: **18 videos**
+- `publish-stories.yml`: ✅ FIXED (307 redirect) — midnight publish will work
+- Story Selector: ⚠️ NEEDS RE-IMPORT (last edit Apr 30 ~17:30)
+- Story List: ✅ DEPLOYED
+- n8n website publisher: 🚫 RETIRED (disabled)
 
 ---
 
