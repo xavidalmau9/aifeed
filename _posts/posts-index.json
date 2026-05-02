@@ -1,5 +1,31 @@
 [
   {
+    "id": "pentagon-strikes-classified-ai-deals-with-20260501",
+    "slug": "pentagon-strikes-classified-ai-deals-with",
+    "headline": "Pentagon strikes classified AI deals with OpenAI, Google, and Nvidia \u2014 but not Anthropic",
+    "summary": "The Department of Defense has finalized classified AI agreements with three of the biggest names in the industry, signaling a major step in operationalizing frontier models for national security workl",
+    "body": "<p>The Department of Defense has finalized classified AI agreements with three of the biggest names in the industry, signaling a major step in operationalizing frontier models for national security workloads.</p>\n<p>OpenAI, Google, and Nvidia each secured spots \u2014 granting them access to sensitive environments and reinforcing their positions as default infrastructure providers for federal AI initiatives.</p>\n<p>The notable absence is Anthropic. Despite its existing government relationships and its public emphasis on safety and alignment, the company was excluded from this round of classified contracts.</p>\n<p>For enterprise leaders, the signal is clear: federal AI procurement is consolidating around a small group of vendors with proven scale, compute access, and integration depth. Selection criteria appear to be weighted toward capability and ecosystem reach more than positioning.</p>\n<p>Expect this to influence broader enterprise procurement patterns as well, with regulated industries watching closely to see which vendors clear the highest security bars.</p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/aifeed_pentagon_strikes_classified_ai_deals_with_1777669332064.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/922113/pentagon-ai-classified-openai-google-nvidia",
+    "publishedAt": "2026-05-01T12:00:00Z",
+    "hashtags": [],
+    "isVideo": false
+  },
+  {
+    "id": "disneyland-now-uses-face-recognition-on-20260502",
+    "slug": "disneyland-now-uses-face-recognition-on",
+    "headline": "Disneyland Now Uses Face Recognition on Visitors",
+    "summary": "Disneyland has begun deploying facial recognition technology on park visitors, marking another significant expansion of biometric surveillance into mainstream consumer environments.",
+    "body": "<p>Disneyland has begun deploying facial recognition technology on park visitors, marking another significant expansion of biometric surveillance into mainstream consumer environments.</p>\n<p>The move signals how quickly face recognition is shifting from airports and law enforcement contexts into everyday entertainment and retail experiences. For enterprises, it's a preview of how normalized biometric data collection is becoming.</p>\n<p>The privacy implications are substantial. Unlike passwords or credit cards, biometric identifiers cannot be reset if compromised. Questions around data retention, third-party sharing, and consent frameworks remain largely unresolved at the regulatory level.</p>\n<p>Operators justify these systems through fraud prevention, ticket verification, and frictionless entry. The business case is real\u2014but so is the risk of dataset misuse, breach exposure, and regulatory backlash as states like Illinois and Texas tighten biometric privacy laws.</p>\n<p>For executives evaluating biometric deployments, Disneyland's pilot is a useful case study. The technology works. The harder question is whether your governance, transparency, and consent practices can withstand public and legal scrutiny over time.</p>\n<p>How is your organization approaching biometric data governance?</p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/aifeed_disneyland_now_uses_face_recognition_on_1777723291928.png",
+    "sourceUrl": "https://www.wired.com/story/security-news-this-week-disneyland-now-uses-face-recognition-on-visitors/",
+    "publishedAt": "2026-05-02T12:00:00Z",
+    "hashtags": [],
+    "isVideo": false
+  },
+  {
     "id": "how-elon-musk-squeezed-openai-they-20260430",
     "slug": "how-elon-musk-squeezed-openai-they",
     "headline": "How Elon Musk Squeezed OpenAI: They 'Are Gonna Want to Kill Me\u2019",
