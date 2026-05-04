@@ -1,9 +1,10 @@
 name: Publish New Stories
 
 on:
-  schedule:
-    - cron: '0 5 * * *'   # midnight EST (5am UTC)
-  workflow_dispatch:        # manual trigger
+  # Midnight publish disabled — render-graphics.yml now publishes immediately on graphic render
+  # schedule:
+  #   - cron: '0 5 * * *'   # midnight EST (5am UTC)
+  workflow_dispatch:        # manual trigger only (emergency backup)
 
 jobs:
   publish:

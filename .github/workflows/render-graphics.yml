@@ -1,4 +1,4 @@
-name: Render HTML Graphics to PNG and Send to Telegram
+name: Render HTML Graphics to PNG and Publish
 
 on:
   push:
@@ -32,19 +32,122 @@ jobs:
       - name: Install Puppeteer
         run: npm install puppeteer
 
-      - name: Embed photos, render PNGs, send HTML to Telegram
+      - name: Render PNGs + Publish Stories + Send to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          node -e "
+          node << 'JSEOF'
           const puppeteer = require('puppeteer');
-          const fs = require('fs');
+          const fs   = require('fs');
           const path = require('path');
+          const https = require('https');
           const { execSync } = require('child_process');
 
           const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
           const CHAT_ID   = process.env.TELEGRAM_CHAT_ID;
+          const SHEET_URL = 'https://docs.google.com/spreadsheets/d/1BCTHLe5ExoFwLMnQuayVWsVI8hBKfD7u54FiHGv_7rs/export?format=csv&gid=0';
+
+          // ── helpers ──────────────────────────────────────────────────────────
+
+          function fetchUrl(url) {
+            return new Promise((resolve, reject) => {
+              https.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } }, res => {
+                if ([301, 302, 303, 307, 308].includes(res.statusCode))
+                  return fetchUrl(res.headers.location).then(resolve).catch(reject);
+                let d = ''; res.on('data', c => d += c); res.on('end', () => resolve(d));
+                res.on('error', reject);
+              }).on('error', reject);
+            });
+          }
+
+          function splitRow(line) {
+            const out = []; let inQ = false, cur = '';
+            for (let i = 0; i < line.length; i++) {
+              const c = line[i];
+              if (c === '"') { if (inQ && line[i+1] === '"') { cur += '"'; i++; } else inQ = !inQ; }
+              else if (c === ',' && !inQ) { out.push(cur); cur = ''; }
+              else cur += c;
+            }
+            out.push(cur); return out;
+          }
+
+          function parseCSV(text) {
+            const lines = text.split('\n');
+            const valid = lines.filter(l => l.replace(/[,\s"]/g,'') !== '');
+            if (!valid.length) return [];
+            const headers = splitRow(valid[0]);
+            return valid.slice(1).map(l => {
+              const vals = splitRow(l);
+              const obj = {};
+              headers.forEach((h,i) => obj[h.trim()] = (vals[i]||'').trim());
+              return obj;
+            }).filter(r => r.Headline);
+          }
+
+          function liToHtml(caption) {
+            if (!caption) return '<p>No content available.</p>';
+            const paras = caption.split(/\n\n+/);
+            const parts = [];
+            paras.forEach((p, i) => {
+              p = p.trim();
+              if (!p || i === 0) return;
+              if (/^Source:/i.test(p)) return;
+              if (/^https?:\/\//.test(p)) return;
+              if (/^#\w/.test(p)) {
+                const tags = p.match(/#\w+/g) || [];
+                parts.push('<p>' + tags.map(t =>
+                  `<span style="color:#a050ff">${t}</span>`).join(' ') + '</p>');
+                return;
+              }
+              parts.push('<p>' + p.replace(/\n/g,' ') + '</p>');
+            });
+            return parts.join('\n') || '<p>' + paras[0] + '</p>';
+          }
+
+          function makeSlug(headline) {
+            return headline.toLowerCase()
+              .replace(/[^a-z0-9\s]/g, '')
+              .trim().split(/\s+/)
+              .filter(w => w.length >= 2)
+              .slice(0, 6).join('-');
+          }
+
+          function headlineKey(h) {
+            return h.toLowerCase().replace(/[^a-z0-9]/g,'').substring(0,40);
+          }
+
+          function dateOnly(str) {
+            if (!str) return new Date().toISOString().substring(0,10);
+            const m = str.match(/(\d{4})-(\d{2})-(\d{2})/);
+            if (m) return `${m[1]}-${m[2]}-${m[3]}`;
+            const m2 = str.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+            if (m2) return `${m2[3]}-${m2[1].padStart(2,'0')}-${m2[2].padStart(2,'0')}`;
+            return new Date().toISOString().substring(0,10);
+          }
+
+          function getCategory(headline) {
+            const h = headline.toLowerCase();
+            if (/research|study|paper|scientists|university/.test(h)) return 'Research';
+            if (/launch|release|tool|app|update|version/.test(h)) return 'Tools';
+            if (/model|gpt|claude|gemini|llm|mistral|llama/.test(h)) return 'Models';
+            if (/fund|invest|billion|million|startup|raises/.test(h)) return 'Industry';
+            return 'Industry';
+          }
+
+          // Extract keyword list from HTML filename for sheet matching
+          // e.g. "aifeed_pentagon_strikes_classified_ai_1234567890.html"
+          //   → ["pentagon", "strikes", "classified"]  (skip short/common words)
+          function filenameKeywords(filename) {
+            const SKIP = new Set(['ai', 'the', 'and', 'for', 'are', 'but', 'not', 'its', 'was', 'with', 'from', 'that', 'this', 'will', 'have', 'has', 'had', 'been', 'they']);
+            return filename
+              .replace(/^aifeed_/, '')          // strip prefix
+              .replace(/_\d{10,}\.html$/, '')   // strip timestamp + extension
+              .split('_')
+              .filter(w => w.length >= 4 && !SKIP.has(w));
+          }
+
+          // ── main ─────────────────────────────────────────────────────────────
 
           (async () => {
             const browser = await puppeteer.launch({
@@ -53,10 +156,13 @@ jobs:
 
             const graphicsDir = './graphics';
             const imagesDir   = './images';
+            const postsPath   = '_posts/posts-index.json';
+
             const newPngs = [];
 
             const files = fs.readdirSync(graphicsDir).filter(f => f.endsWith('.html'));
 
+            // ── PHASE 1: Render PNGs ─────────────────────────────────────────
             for (const file of files) {
               const pngName = file.replace('.html', '.png');
               const pngPath = path.join(imagesDir, pngName);
@@ -68,19 +174,18 @@ jobs:
               console.log('Processing:', file);
               let html = fs.readFileSync(path.join(graphicsDir, file), 'utf8');
 
-              // --- EMBED PHOTO AS BASE64 ---
-              // Only needed if HTML has an external Unsplash URL (not already base64)
-              const urlMatch = html.match(/src=\"(https:\/\/images\.unsplash\.com\/photo-([^?\"]+)[^\"]*)\"/);
+              // Embed external Unsplash photo as base64 if not already embedded
+              const urlMatch = html.match(/src="(https:\/\/images\.unsplash\.com\/photo-([^?"]+)[^"]*?)"/);
               if (urlMatch) {
                 const photoId = urlMatch[2];
                 const downloadUrl = 'https://unsplash.com/photos/' + photoId + '/download?force=true';
                 console.log('Downloading photo:', photoId);
                 try {
-                  execSync('curl -sL \"' + downloadUrl + '\" -o /tmp/photo_embed.jpg', { timeout: 30000 });
+                  execSync('curl -sL "' + downloadUrl + '" -o /tmp/photo_embed.jpg', { timeout: 30000 });
                   const stat = fs.statSync('/tmp/photo_embed.jpg');
                   if (stat.size > 10000) {
                     const b64 = fs.readFileSync('/tmp/photo_embed.jpg').toString('base64');
-                    html = html.replace(urlMatch[0], 'src=\"data:image/jpeg;base64,' + b64 + '\"');
+                    html = html.replace(urlMatch[0], 'src="data:image/jpeg;base64,' + b64 + '"');
                     console.log('Photo embedded (' + Math.round(stat.size/1024) + 'KB)');
                   } else {
                     console.log('Photo download too small (' + stat.size + 'B), using external URL');
@@ -94,7 +199,7 @@ jobs:
                 console.log('No photo URL found in HTML');
               }
 
-              // --- RENDER PNG ---
+              // Render PNG
               try {
                 const page = await browser.newPage();
                 await page.setViewport({ width: 1080, height: 1500, deviceScaleFactor: 1 });
@@ -108,17 +213,16 @@ jobs:
                 console.log('Rendered:', pngName);
                 await page.close();
 
-                // --- SEND HTML TO TELEGRAM ---
-                // Write base64-embedded HTML to temp file for upload
+                // Send HTML to Telegram
                 const tmpHtml = '/tmp/tg_' + file;
                 fs.writeFileSync(tmpHtml, html);
                 try {
                   const result = execSync(
                     'curl -s ' +
-                    '-F \"chat_id=' + CHAT_ID + '\" ' +
-                    '-F \"document=@' + tmpHtml + ';filename=' + file + ';type=text/html\" ' +
-                    '-F \"caption=\u2705 Open in Chrome at 100% zoom \u2192 screenshot \u2192 post\" ' +
-                    '\"https://api.telegram.org/bot' + BOT_TOKEN + '/sendDocument\"',
+                    '-F "chat_id=' + CHAT_ID + '" ' +
+                    '-F "document=@' + tmpHtml + ';filename=' + file + ';type=text/html" ' +
+                    '-F "caption=✅ Open in Chrome at 100% zoom → screenshot → post" ' +
+                    '"https://api.telegram.org/bot' + BOT_TOKEN + '/sendDocument"',
                     { encoding: 'utf8', timeout: 30000 }
                   );
                   const parsed = JSON.parse(result);
@@ -131,27 +235,121 @@ jobs:
                   console.log('Telegram curl error:', e.message);
                 }
 
-                newPngs.push(pngName);
+                newPngs.push({ pngName, htmlFile: file });
               } catch(e) {
                 console.error('Failed to render', file, ':', e.message);
               }
             }
 
             await browser.close();
-            fs.writeFileSync('/tmp/new_pngs.txt', newPngs.join('\n'));
-            console.log('Done. New PNGs:', newPngs.length);
-          })();
-          "
 
-      - name: Commit rendered PNGs
+            // ── PHASE 2: Publish new stories to posts-index.json ─────────────
+            if (newPngs.length === 0) {
+              console.log('No new PNGs — skipping publish step.');
+              fs.writeFileSync('/tmp/new_pngs.txt', '');
+              return;
+            }
+
+            console.log('\nFetching Google Sheet to match stories...');
+            let sheetRows = [];
+            try {
+              const csv = await fetchUrl(SHEET_URL);
+              sheetRows = parseCSV(csv);
+              console.log('Sheet rows loaded:', sheetRows.length);
+            } catch(e) {
+              console.log('Sheet fetch failed:', e.message, '— skipping publish, PNGs still committed.');
+            }
+
+            const posts = JSON.parse(fs.readFileSync(postsPath, 'utf8'));
+            const existingSlugs = new Set(posts.map(p => p.slug));
+            const existingIds   = new Set(posts.map(p => p.id));
+            const existingKeys  = new Set(posts.map(p => headlineKey(p.headline || '')));
+
+            const newPosts = [];
+
+            for (const { pngName, htmlFile } of newPngs) {
+              const keywords = filenameKeywords(htmlFile);
+              console.log('\nLooking for sheet match for:', htmlFile);
+              console.log('Keywords:', keywords);
+
+              if (!sheetRows.length || keywords.length < 2) {
+                console.log('Skipping publish — no sheet data or too few keywords');
+                continue;
+              }
+
+              // Find best matching sheet row by keyword overlap
+              let bestRow = null, bestScore = 0;
+              for (const row of sheetRows) {
+                if (!row.Headline || !row.LinkedInCaption) continue;
+                const hl = row.Headline.toLowerCase();
+                const score = keywords.filter(k => hl.includes(k)).length;
+                if (score > bestScore) { bestScore = score; bestRow = row; }
+              }
+
+              if (!bestRow || bestScore < 2) {
+                console.log('No sheet match found (best score: ' + bestScore + ') — skipping publish');
+                continue;
+              }
+
+              console.log('Matched (' + bestScore + '/' + keywords.length + '):', bestRow.Headline.substring(0,70));
+
+              const headline = bestRow.Headline.trim();
+              const slug  = makeSlug(headline);
+              const date  = dateOnly(bestRow.Date || '');
+              const id    = slug + '-' + date.replace(/-/g,'');
+              const hKey  = headlineKey(headline);
+
+              if (existingSlugs.has(slug) || existingIds.has(id) || existingKeys.has(hKey)) {
+                console.log('Already published — skipping');
+                continue;
+              }
+
+              const imageUrl    = 'https://aifeed.run/images/' + pngName;
+              const liCaption   = (bestRow.LinkedInCaption || bestRow.Caption || '').trim();
+              const body        = liToHtml(liCaption);
+              const hashtags    = (liCaption.match(/#(\w+)/g) || []).map(t => t.slice(1));
+              const paras       = liCaption.split(/\n\n+/).filter(p => p.trim());
+              const summary     = (paras[1] || paras[0] || headline).replace(/\n/g,' ').substring(0,200).trim();
+
+              const post = {
+                id, slug, headline, summary, body,
+                category:    getCategory(headline),
+                imageUrl,
+                sourceUrl:   (bestRow.SourceURL || '').trim(),
+                publishedAt: bestRow.Date || new Date().toISOString(),
+                hashtags,
+                isVideo:     false
+              };
+
+              newPosts.push(post);
+              existingSlugs.add(slug);
+              existingIds.add(id);
+              existingKeys.add(hKey);
+              console.log('✅ Will publish:', headline.substring(0,70));
+            }
+
+            if (newPosts.length > 0) {
+              const updated = [...newPosts, ...posts];
+              fs.writeFileSync(postsPath, JSON.stringify(updated, null, 2));
+              console.log('\nAdded ' + newPosts.length + ' post(s). Total: ' + updated.length);
+            } else {
+              console.log('\nNo new posts to add.');
+            }
+
+            fs.writeFileSync('/tmp/new_pngs.txt', newPngs.map(n => n.pngName).join('\n'));
+            console.log('Done.');
+          })().catch(e => { console.error(e); process.exit(1); });
+          JSEOF
+
+      - name: Commit rendered PNGs and published stories
         run: |
           git config user.name "AIFeed Bot"
           git config user.email "bot@aifeed.run"
-          git add images/
+          git add images/ _posts/posts-index.json
           if git diff --staged --quiet; then
             echo "Nothing to commit"
           else
-            git commit -m "Auto-render: branded PNGs from graphics/"
+            git commit -m "Auto-render + publish: new story graphics"
             git pull --rebase origin main
             git push
           fi
