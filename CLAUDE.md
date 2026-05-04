@@ -402,6 +402,47 @@ Then for each approved row:
 
 ---
 
+## Session 18 Changes (May 4, 2026)
+
+### Story List — Major Improvements (DEPLOYED ✅)
+
+**File:** `AIFeed Story List NEW.json` — re-imported May 4
+
+#### What changed
+- **19 RSS feeds** (was 6): added MIT Tech Review, AI-News, IEEE Spectrum, ZDNet AI, Engadget, CNET AI, Reuters Tech, CNBC Tech, Fortune, 9to5Google, Axios, Slashdot AI, Hacker News
+- **48-hour age filter** (was 4 days → briefly 36hrs which was too aggressive → settled at 48hrs)
+- **All-time Sheet1 dedup** — blocks ALL previously approved headlines regardless of date (was today-only). Stories you pick never come back.
+- **All 10 stories sent at once** — removed the "reply more for 6-10" step. User gets all 10 in one message, replies 1–10.
+- **Stricter Claude prompt** — requires breaking news, big numbers, or controversy. Rejects press releases and incremental updates.
+- **Staging: kept original clear+write** — cleared each run, fresh 10 stories written. DO NOT change this. Story Selector depends on Staging being clean.
+
+#### What NOT to do (critical — learned the hard way this session)
+- **Never accumulate Staging** — tried making it a permanent dedup log. Broke story selection because Get Selected Story found old rows with matching ranks from previous sessions.
+- **Never use Staging for two purposes at once** — it's for story selection ONLY. Dedup is handled by Sheet1 all-time + old Staging (previous session only).
+- **Never change Staging without re-testing story selection** — the clear+write pattern is correct and must stay.
+
+### Story Selector — Rank Matching Fixed (DEPLOYED ✅)
+
+**File:** `AIFeed Story Selector NEW.json` — re-imported May 4
+
+`Get Selected Story` uses simple `find()` on clean Staging rows. Works correctly because Staging is always cleared before each run — only current session's stories exist when user replies.
+
+### Video Sync — Automated (May 4)
+
+- Script: `/Users/305partners/aifeed/scripts/sync-videos.sh`
+- Cron: runs daily at **2pm** — detects new `aifeed_branded_*.mp4` in Downloads, reads caption file, copies to repo, updates `videos-index.json`, commits and pushes
+- Never needs to be run manually
+
+### Current State (May 4, 2026)
+- `posts-index.json`: **74 posts**
+- `videos-index.json`: **19 videos**
+- Story List: ✅ DEPLOYED (19 feeds, 48hr, all 10 at once)
+- Story Selector: ✅ DEPLOYED (rank matching fixed)
+- `publish-stories.yml`: ✅ FIXED (307 redirect)
+- Video sync cron: ✅ ACTIVE (2pm daily)
+
+---
+
 ## Session 17 Changes (May 2, 2026)
 
 ### ⚠️ CRITICAL BUG FIXED — `publish-stories.yml` 307 Redirect
