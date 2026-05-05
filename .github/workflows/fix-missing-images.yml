@@ -1,9 +1,11 @@
 name: Fix Missing Image URLs
 
 on:
-  schedule:
-    - cron: '0 * * * *'   # every hour
-  workflow_dispatch:        # manual trigger
+  # Disabled — render-graphics.yml now publishes stories with correct imageUrls directly.
+  # This hourly job is no longer needed and caused conflicts with render-graphics pushes.
+  # schedule:
+  #   - cron: '0 * * * *'   # every hour
+  workflow_dispatch:        # manual trigger only
 
 jobs:
   fix:
