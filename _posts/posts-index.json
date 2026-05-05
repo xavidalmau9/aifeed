@@ -1,5 +1,24 @@
 [
   {
+    "id": "trump-administration-considering-safety-revie-20260505",
+    "slug": "trump-administration-considering-safety-review-for",
+    "headline": "Trump administration considering safety review for new AI models",
+    "summary": "The White House is reportedly developing a framework, internally referred to as \"Mythos,\" that would introduce safety evaluations for frontier AI models before public release.",
+    "body": "<p>The White House is reportedly developing a framework, internally referred to as \"Mythos,\" that would introduce safety evaluations for frontier AI models before public release.</p>\n<p>This represents a notable evolution in the administration's posture. After repealing the Biden-era AI executive order earlier this year, the policy direction appeared firmly deregulatory. The emergence of Mythos suggests a more nuanced stance is taking shape.</p>\n<p>Reports indicate the program would be voluntary, focused on the most capable systems, and likely coordinated through existing agencies rather than new regulatory bodies. The emphasis appears to be on national security risks, including misuse for cyberattacks and bioweapons.</p>\n<p>For enterprise leaders, this signals that AI governance remains on the table regardless of political administration. Companies investing in frontier capabilities should anticipate evaluation requirements becoming a baseline expectation, even under voluntary frameworks.</p>\n<p>The broader takeaway: AI safety has bipartisan staying power. The mechanisms may shift, but the underlying scrutiny is here to stay.</p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/aifeed_trump_administration_considering_safety_review_for_1777982635818.png",
+    "sourceUrl": "https://www.axios.com/2026/05/04/trump-white-house-ai-safety-tests-mythos",
+    "publishedAt": "2026-05-05T00:00:00Z",
+    "hashtags": [
+      "AIGovernance",
+      "AISafety",
+      "TechPolicy",
+      "ArtificialIntelligence",
+      "EnterpriseAI"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "anthropic-teams-with-goldman-blackstone-20260504",
     "slug": "anthropic-teams-with-goldman-blackstone-and-others",
     "headline": "Anthropic teams with Goldman, Blackstone and others on $1.5 billion AI venture targeting PE-owned firms",
