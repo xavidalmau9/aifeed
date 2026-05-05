@@ -174,29 +174,41 @@ jobs:
               console.log('Processing:', file);
               let html = fs.readFileSync(path.join(graphicsDir, file), 'utf8');
 
-              // Embed external Unsplash photo as base64 if not already embedded
-              const urlMatch = html.match(/src="(https:\/\/images\.unsplash\.com\/photo-([^?"]+)[^"]*?)"/);
-              if (urlMatch) {
-                const photoId = urlMatch[2];
-                const downloadUrl = 'https://unsplash.com/photos/' + photoId + '/download?force=true';
-                console.log('Downloading photo:', photoId);
-                try {
-                  execSync('curl -sL "' + downloadUrl + '" -o /tmp/photo_embed.jpg', { timeout: 30000 });
-                  const stat = fs.statSync('/tmp/photo_embed.jpg');
-                  if (stat.size > 10000) {
-                    const b64 = fs.readFileSync('/tmp/photo_embed.jpg').toString('base64');
-                    html = html.replace(urlMatch[0], 'src="data:image/jpeg;base64,' + b64 + '"');
-                    console.log('Photo embedded (' + Math.round(stat.size/1024) + 'KB)');
-                  } else {
-                    console.log('Photo download too small (' + stat.size + 'B), using external URL');
-                  }
-                } catch(e) {
-                  console.log('Photo embed failed:', e.message, '- using external URL');
-                }
-              } else if (html.includes('data:image/jpeg;base64,')) {
+              // Embed background photo as base64 — handles Unsplash, Wikipedia, Wikimedia, any external URL
+              // Must be embedded: Puppeteer in GitHub Actions cannot reach external URLs
+              const alreadyEmbedded = html.includes('data:image/jpeg;base64,') || html.includes('data:image/png;base64,');
+              if (alreadyEmbedded) {
                 console.log('Photo already embedded as base64');
               } else {
-                console.log('No photo URL found in HTML');
+                // Find any external http(s) URL in the .bg img src
+                const urlMatch = html.match(/class="bg"[^>]*src="(https?:\/\/[^"]+)"/);
+                if (!urlMatch) {
+                  console.log('No external photo URL found in HTML — graphic will have no background');
+                } else {
+                  let photoUrl = urlMatch[1];
+
+                  // Unsplash: must use download endpoint (images.unsplash.com returns HTML error)
+                  const unsplashId = photoUrl.match(/images\.unsplash\.com\/photo-([a-zA-Z0-9_-]+)/);
+                  if (unsplashId) {
+                    photoUrl = 'https://unsplash.com/photos/' + unsplashId[1] + '/download?force=true';
+                  }
+
+                  console.log('Downloading photo:', photoUrl.substring(0, 80));
+                  try {
+                    execSync('curl -sL --user-agent "Mozilla/5.0" "' + photoUrl + '" -o /tmp/photo_embed.jpg', { timeout: 30000 });
+                    const stat = fs.statSync('/tmp/photo_embed.jpg');
+                    if (stat.size > 10000) {
+                      const b64 = fs.readFileSync('/tmp/photo_embed.jpg').toString('base64');
+                      // Replace the entire src="..." in the .bg img tag
+                      html = html.replace(urlMatch[0], urlMatch[0].replace(urlMatch[1], 'data:image/jpeg;base64,' + b64));
+                      console.log('Photo embedded (' + Math.round(stat.size/1024) + 'KB)');
+                    } else {
+                      console.log('Photo download too small (' + stat.size + 'B) — possible redirect/error, graphic may be blank');
+                    }
+                  } catch(e) {
+                    console.log('Photo embed failed:', e.message);
+                  }
+                }
               }
 
               // Render PNG
