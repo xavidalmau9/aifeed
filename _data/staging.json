@@ -1,0 +1,72 @@
+[
+  {
+    "rank": 1,
+    "headline": "Apple agrees to pay iPhone owners $250 million for not delivering AI Siri",
+    "link": "https://www.theverge.com/tech/924706/apple-iphone-siri-intelligence-class-action-lawsuit-settlement",
+    "score": 95,
+    "reason": "Major financial settlement, concrete controversy, specific big number"
+  },
+  {
+    "rank": 2,
+    "headline": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI",
+    "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+    "score": 92,
+    "reason": "High-profile controversy between major AI figures, significant business/governance implications"
+  },
+  {
+    "rank": 3,
+    "headline": "Book publishers sue Meta over AI's 'word-for-word' copying",
+    "link": "https://www.theverge.com/tech/924230/meta-publishers-lawsuit-ai-copyright",
+    "score": 88,
+    "reason": "Major lawsuit, clear controversy, significant legal precedent for AI training"
+  },
+  {
+    "rank": 4,
+    "headline": "Google DeepMind Workers Vote to Unionize Over Military AI Deals",
+    "link": "https://www.wired.com/story/google-deepmind-workers-vote-to-unionize-over-military-ai-deals/",
+    "score": 85,
+    "reason": "Concrete action (unionization vote), ethical controversy over military AI applications"
+  },
+  {
+    "rank": 5,
+    "headline": "Chrome’s AI features may be hogging 4GB of your computer storage",
+    "link": "https://www.theverge.com/tech/924933/google-chrome-4gb-gemini-nano-ai-features",
+    "score": 82,
+    "reason": "Quantified problem (4GB), technical controversy affecting users"
+  },
+  {
+    "rank": 6,
+    "headline": "Anthropic reportedly agrees to pay Google $200 billion for chips and cloud access",
+    "link": "https://www.engadget.com/2165585/anthropic-reportedly-agrees-to-pay-google-200-billion-for-chips-and-cloud-access/",
+    "score": 80,
+    "reason": "Massive financial figure ($200B), major strategic partnership launch"
+  },
+  {
+    "rank": 7,
+    "headline": "Nvidia, Corning partner on massive optical fiber deal that may be a game changer for AI",
+    "link": "https://www.cnbc.com/2026/05/06/nvidia-corning-optical-factories-nc-texas-ai.html",
+    "score": 78,
+    "reason": "Major partnership launch, infrastructure for AI scaling"
+  },
+  {
+    "rank": 8,
+    "headline": "Samsung crosses $1 trillion valuation as AI frenzy drives historic rally, lifting shares over 15%",
+    "link": "https://www.cnbc.com/2026/05/06/samsung-electronics-ai-chip-rally-kospi-record-1-trillion.html",
+    "score": 76,
+    "reason": "Milestone ($1T), concrete metrics (15% gain), AI-driven market impact"
+  },
+  {
+    "rank": 9,
+    "headline": "Pennsylvania is suing Character.AI over chatbots that pretend to be licensed doctors",
+    "link": "https://www.engadget.com/2165373/pennsylvania-is-suing-characterai-over-chatbots-that-pretend-to-be-licensed-doctors/",
+    "score": 74,
+    "reason": "Regulatory action/lawsuit, serious safety and fraud controversy"
+  },
+  {
+    "rank": 10,
+    "headline": "Microsoft gives up on Xbox Copilot AI",
+    "link": "https://www.theverge.com/games/924551/microsoft-xbox-ceo-copilot-ai-asha-sharma",
+    "score": 72,
+    "reason": "Concrete product cancellation, major company pivot on AI strategy"
+  }
+]
