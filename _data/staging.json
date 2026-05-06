@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Apple will pay $250 million for failing to deliver its AI-powered Siri on time",
-    "link": "https://www.engadget.com/2165602/apple-will-pay-250-million-for-failing-to-deliver-its-ai-powered-siri-on-time/",
-    "score": 92,
-    "reason": "Major settlement with concrete numbers, significant AI failure admission"
+    "headline": "Apple agrees to pay iPhone owners $250 million for not delivering AI Siri",
+    "link": "https://www.theverge.com/tech/924706/apple-iphone-siri-intelligence-class-action-lawsuit-settlement",
+    "score": 94,
+    "reason": "Major financial settlement, concrete numbers, significant consumer impact"
   },
   {
     "rank": 2,
-    "headline": "Nvidia to invest up to $3.2 billion in Corning as part of massive optical fiber deal with 3 new factories focused on AI",
-    "link": "https://www.cnbc.com/2026/05/06/nvidia-corning-optical-factories-nc-texas-ai.html",
-    "score": 90,
-    "reason": "Large capital commitment ($3.2B), new infrastructure, major AI player"
+    "headline": "Anthropic Gets in Bed With SpaceX as the AI Race Turns Weird",
+    "link": "https://www.wired.com/story/anthropic-spacex-compute-deal-colossus/",
+    "score": 91,
+    "reason": "Unexpected partnership, implies major deal, shows consolidation in AI race"
   },
   {
     "rank": 3,
-    "headline": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI",
-    "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
-    "score": 88,
-    "reason": "Major controversy with concrete legal proceedings, industry-shaping implications"
+    "headline": "Anthropic is doubling Claude Code rate limits after deal with SpaceX",
+    "link": "https://www.engadget.com/2166315/anthropic-is-doubling-claude-code-rate-limits-after-deal-with-spacex/",
+    "score": 89,
+    "reason": "Concrete product expansion, partnership confirmation, measurable impact"
   },
   {
     "rank": 4,
-    "headline": "Anthropic, SpaceX announce compute deal that includes space development",
-    "link": "https://www.cnbc.com/2026/05/06/anthropic-spacex-data-center-capacity.html",
-    "score": 85,
-    "reason": "Major partnership launch, unique space-AI integration, validates Anthropic's scale"
+    "headline": "US government increases AI suppliers and rethinks Anthropic's role",
+    "link": "https://www.artificialintelligence-news.com/news/us-government-increases-ai-in-defence-suppliers-roster-and-rethinks-anthropics-role/",
+    "score": 87,
+    "reason": "Major government policy shift, industry consolidation, concrete action"
   },
   {
     "rank": 5,
-    "headline": "Chrome downloads a 4GB AI file without user consent, researcher alleges",
-    "link": "https://www.engadget.com/2166113/chrome-downloads-a-4gb-ai-file-without-user-consent-researcher-alleges/",
-    "score": 82,
-    "reason": "Significant controversy, concrete technical complaint, impacts millions of users"
+    "headline": "Mira Murati tells the court that she couldn’t trust Sam Altman’s words",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/925338/openai-musk-v-altman-mira-murati",
+    "score": 86,
+    "reason": "Major controversy, legal proceeding, leadership credibility crisis"
   },
   {
     "rank": 6,
-    "headline": "Google DeepMind Workers Vote to Unionize Over Military AI Deals",
-    "link": "https://www.wired.com/story/google-deepmind-workers-vote-to-unionize-over-military-ai-deals/",
-    "score": 78,
-    "reason": "Major labor action, controversy over military AI applications"
+    "headline": "Canadian officials claim OpenAI violated federal and provincial privacy laws",
+    "link": "https://www.engadget.com/2166560/canadian-officials-claim-openai-violated-federal-and-provincial-privacy-laws/",
+    "score": 85,
+    "reason": "Regulatory action, major company, concrete legal claim"
   },
   {
     "rank": 7,
-    "headline": "Microsoft gives up on Xbox Copilot AI",
-    "link": "https://www.theverge.com/games/924551/microsoft-xbox-ceo-copilot-ai-asha-sharma",
-    "score": 75,
-    "reason": "Concrete product cancellation, visible AI feature failure"
+    "headline": "Google's AI search summaries will now quote Reddit",
+    "link": "https://www.theverge.com/tech/924993/google-ai-search-mode-overviews-update-reddit-links",
+    "score": 82,
+    "reason": "Major product launch, significant partnership, affects millions of users"
   },
   {
     "rank": 8,
-    "headline": "Claude Code is getting higher usage limits, doubled for most users",
-    "link": "https://9to5google.com/2026/05/06/claude-code-is-getting-higher-usage-limits-doubled-for-most-users/",
-    "score": 72,
-    "reason": "Product launch/expansion with measurable improvement, Anthropic scaling"
+    "headline": "Anthropic CEO says 80-fold growth in first quarter explains &apos;difficulties with compute&apos;",
+    "link": "https://www.cnbc.com/2026/05/06/anthropic-ceo-dario-amodei-says-company-crew-80-fold-in-first-quarter.html",
+    "score": 80,
+    "reason": "Massive growth metric, reveals infrastructure challenges, newsworthy scale"
   },
   {
     "rank": 9,
-    "headline": "ServiceNow just told Wall Street it's going to double again. Here's why $30 billion of revenue isn't crazy",
-    "link": "https://fortune.com/2026/05/06/servicenow-30-billion-revenue-not-crazy-why/",
-    "score": 70,
-    "reason": "Large revenue target ($30B), AI-driven enterprise growth projection"
+    "headline": "Xbox is ditching Microsoft's Copilot AI",
+    "link": "https://www.engadget.com/2165562/xbox-is-ditching-microsofts-copilot-ai/",
+    "score": 78,
+    "reason": "Major company reversal, product discontinuation, strategic shift"
   },
   {
     "rank": 10,
-    "headline": "Pennsylvania is suing Character.AI over chatbots that pretend to be licensed doctors",
-    "link": "https://www.engadget.com/2165373/pennsylvania-is-suing-characterai-over-chatbots-that-pretend-to-be-licensed-doctors/",
-    "score": 68,
-    "reason": "Regulatory action against AI misuse, potential model for enforcement"
+    "headline": "Chrome’s AI features may be hogging 4GB of your computer storage",
+    "link": "https://www.theverge.com/tech/924933/google-chrome-4gb-gemini-nano-ai-features",
+    "score": 76,
+    "reason": "Measurable impact on users, large tech company, performance concern"
   }
 ]
