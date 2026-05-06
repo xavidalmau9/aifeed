@@ -1,5 +1,5 @@
 # AIFeed.run — Claude Project Instructions
-**Last updated: May 2, 2026 (session 17)**
+**Last updated: May 6, 2026 (session 19)**
 
 > This file is read by Claude at the start of every session. Update it whenever significant decisions are made.
 
@@ -27,7 +27,32 @@ AIFeed.run is an automated AI news brand. Every day it:
 
 These rules exist because of real mistakes that cost time and money. Do not skip them.
 
-### 0. WORKFLOW DEPLOYMENT — THE #1 RECURRING FAILURE
+### 0. PUBLISH FLOW — MANUAL APPROVAL ONLY (PERMANENT — never revert this)
+
+**Stories NEVER auto-publish to the website. Ever. This was changed May 6, 2026 after repeated incidents of wrong/duplicate stories going live without review.**
+
+**The flow:**
+1. User picks story (replies 1–10 in Telegram)
+2. n8n sends captions + uploads HTML to GitHub
+3. GitHub Action renders PNG, saves `_data/pending_story.json`, sends HTML to Telegram with message: **"Reply publish to add to website"**
+4. User opens HTML in Chrome, checks graphic looks correct
+5. User replies **publish** in Telegram
+6. Story Selector reads `pending_story.json`, deduplicates, commits to `posts-index.json`
+7. Website updates in ~10 minutes
+
+**Nothing goes live until the user sends "publish". No exceptions.**
+
+Commands:
+- `1`–`10` — pick a story
+- `regen` — rebuild last story with a new photo
+- `publish` — add the pending story to the website
+- `more` — see stories 6–10
+
+**NEVER restore auto-publish from the GitHub Action. The `render-graphics.yml` must never write to `posts-index.json` directly. If someone suggests doing that, reject it.**
+
+---
+
+### 0b. WORKFLOW DEPLOYMENT — THE #1 RECURRING FAILURE
 
 **Fixing a workflow JSON file on Desktop is NOT the same as fixing the live n8n workflow.**
 
@@ -38,28 +63,28 @@ Every session that modifies a workflow JSON file and does NOT immediately re-imp
 If re-import cannot happen in the session, the message must be:
 > "The JSON file is fixed. You MUST re-import it into n8n before tonight's publish run or the fix will not take effect."
 
-#### n8n Deployment Status — current as of Apr 30, 2026 (session 16)
+#### n8n Deployment Status — current as of May 6, 2026 (session 19)
 
 | Workflow file | Desktop JSON fixed | Deployed to n8n | Notes |
 |---|---|---|---|
-| `AIFeed Story Selector NEW.json` | ✅ Session 16 (Apr 30 07:01) | ⚠️ **NEEDS RE-IMPORT** | Simplified: n8n uploads HTML + sends captions only. All graphic work moved to GitHub Action. |
+| `AIFeed Story Selector NEW.json` | ✅ Session 19 (May 6) | ⚠️ **NEEDS RE-IMPORT** | Added "publish" command. Re-import before next story pick. |
 | `AIFeed Story List NEW.json` | ✅ Session 10 (Apr 25) | ✅ **DEPLOYED** | Today-only dedup, 4-day RSS filter, threshold=1, alwaysOutputData |
-| `aifeed website publisher.json` | — | 🚫 **RETIRED** | Replaced by `.github/workflows/publish-stories.yml`. Do NOT re-import. |
+| `aifeed website publisher.json` | — | 🚫 **RETIRED** | Replaced by GitHub Actions. Do NOT re-import ever. |
 
-#### GitHub Actions — THE NEW SYSTEM (Apr 30, 2026)
+#### GitHub Actions — THE NEW SYSTEM (May 6, 2026)
 
 n8n is no longer responsible for graphics delivery OR website publishing. GitHub Actions handles both.
 
 | Action | Trigger | What it does |
 |---|---|---|
-| `render-graphics.yml` | Push to `graphics/*.html` | Downloads Unsplash photo → embeds base64 → renders PNG → **sends HTML to Telegram via curl** |
-| `publish-stories.yml` | Daily 5am UTC (midnight EST) + manual | Reads Google Sheet CSV → APPROVED rows → posts-index.json (triple dedup: slug+id+headline key) |
+| `render-graphics.yml` | Push to `graphics/*.html` | Downloads photo → embeds base64 → renders PNG → saves `_data/pending_story.json` → **sends HTML to Telegram: "Reply publish to add to website"** |
+| `publish-stories.yml` | Daily 5am UTC (midnight EST) + manual | Reads Google Sheet CSV → APPROVED rows → posts-index.json (triple dedup) |
 | `fix-missing-images.yml` | Hourly | Fills blank imageUrls in posts-index.json |
 
 **n8n now only does:**
 - Story List: scrapes headlines, scores, sends Telegram menu
-- Story Selector: user picks story → sends captions → uploads HTML to GitHub
-- That's it. No binary handling. No file sending. No publishing.
+- Story Selector: user picks story → sends captions → uploads HTML to GitHub → handles "publish" command
+- That's it. No binary handling. No file sending. No auto-publishing.
 
 ### 1. GRAPHIC GENERATION — MANDATORY CHECKLIST
 **Before generating ANY graphic, in this exact order:**
@@ -148,22 +173,28 @@ Removed columns (Pexels era — gone permanently): `PexelsKeyword`, `AltImageURL
 
 ---
 
-## Story Selector Bot — How It Works (current as of session 11)
+## Story Selector Bot — How It Works (current as of session 19, May 6 2026)
 
 User interacts via Telegram:
-1. Daily: Story List bot sends up to 10 headlines numbered 1–10 (reply `more` to see 6–10)
-2. User replies `1`–`10` → bot immediately confirms story selection
-3. Bot sends **Instagram caption** to Telegram
-4. Bot sends **LinkedIn caption** to Telegram
-5. Bot auto-fetches a relevant Unsplash background image (no user picking required)
-6. Bot builds branded HTML graphic + uploads to GitHub `graphics/`
-7. **Bot sends HTML file via Telegram sendDocument** (fetches from raw.githubusercontent.com → uploads as .html document)
-8. User opens HTML in Chrome at 100% zoom → screenshots → saves as PNG → posts to Instagram/LinkedIn
-9. User replies `regen` at any time to rebuild the last approved story with a fresh layout + different Unsplash photo
+1. Daily: Story List bot sends up to 10 headlines numbered 1–10
+2. User replies `1`–`10` → bot confirms story, sends Instagram caption, sends LinkedIn caption
+3. Bot auto-fetches Unsplash background (no picking required), builds HTML, uploads to GitHub `graphics/`
+4. GitHub Action renders PNG, saves `_data/pending_story.json`, **sends HTML to Telegram** with message "Reply publish to add to website"
+5. User opens HTML in Chrome at 100% zoom → screenshots → posts to Instagram/LinkedIn
+6. User replies **`publish`** → bot reads pending_story.json, adds to posts-index.json, website updates
+7. User replies `regen` at any time to rebuild with a fresh photo
 
-**No more PNG delivery.** PNG pipeline (GitHub Action → Telegram sendPhoto) was permanently abandoned Apr 29 due to Telegram rejecting aifeed.run URLs and multipart upload timing issues. HTML delivery is the permanent solution.
+**Telegram commands:**
+- `1`–`10` — pick a story
+- `regen` — rebuild last story with a new Unsplash photo
+- `publish` — add the pending graphic to the website
+- `more` — see stories 6–10
 
-**No more image-picking step.** The old img1/img2/img3/img4 flow is gone.
+**No more auto-publish.** Stories never go live without the user sending "publish". This was locked in May 6, 2026 after repeated incidents. Never revert.
+
+**No more PNG delivery via Telegram.** GitHub Action sends the HTML. User screenshots it in Chrome.
+
+**No more image-picking step.** The old img1/img2/img3/img4 flow is gone forever.
 
 ### Nodes in the new direct flow
 `Telegram Message Received → Parse Message → Is Story Number? → Read Staging → Get Selected Story → Prep Story Data → Call Claude API → Parse Claude Response → Build Graphic Direct → Log APPROVED to Sheet`
