@@ -180,6 +180,12 @@ jobs:
               if (alreadyEmbedded) {
                 console.log('Photo already embedded as base64');
               } else {
+                // FALLBACK: if no img.bg tag at all, inject a generic tech photo so Puppeteer has something to render
+                if (!html.includes('class="bg"')) {
+                  const fallbackUrl = 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=1080&h=1350&fit=crop&q=85&fm=jpg';
+                  html = html.replace('<div class="c"><div class="ov">', '<div class="c"><img class="bg" src="' + fallbackUrl + '" alt=""><div class="ov">');
+                  console.log('No img.bg found — injected fallback photo URL');
+                }
                 // Find any external http(s) URL in the .bg img src
                 const urlMatch = html.match(/class="bg"[^>]*src="(https?:\/\/[^"]+)"/);
                 if (!urlMatch) {
