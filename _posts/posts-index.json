@@ -1,5 +1,26 @@
 [
   {
+    "id": "claude-code-is-getting-higher-usage-20260506",
+    "slug": "claude-code-is-getting-higher-usage",
+    "headline": "Claude Code is getting higher usage limits, doubled for most users",
+    "summary": "Anthropics just announced a major capacity upgrade for Claude Code, doubling usage limits across its user base. This isn't just a minor adjustment; it's a strategic move that directly addresses one of",
+    "body": "<p>Anthropics just announced a major capacity upgrade for Claude Code, doubling usage limits across its user base. This isn't just a minor adjustment; it's a strategic move that directly addresses one of the most common friction points developers face with AI coding tools. For teams and individual developers who've been hitting monthly caps, this fundamentally changes the calculus of whether Claude fits into their workflow.</p>\n<p>The timing is critical. As AI-assisted development becomes table stakes in competitive engineering organizations, removing artificial constraints becomes essential. Doubling limits means developers can iterate faster, experiment more freely, and rely more confidently on AI tooling for both routine tasks and complex problems. This scales the value proposition significantly.</p>\n<p>For companies evaluating AI coding assistants, this move signals Anthropic's confidence in their infrastructure and commitment to enterprise adoption. When platform constraints disappear, adoption accelerates—both in breadth (more teams) and depth (teams using it more extensively). This is exactly the move that turns niche tools into industry standards.</p>\n<p>In the broader AI ecosystem, this trend reflects a maturing market. Early limitations were defensive (managing costs, ensuring quality); now leading platforms are competing on generosity. Doubled limits become the new baseline expectation, putting pressure on competitors to match or exceed. This benefits the entire industry through accelerated innovation cycles.</p>\n<p>We're witnessing the transition from AI coding tools as experimental features to legitimate productivity infrastructure. When usage caps stop being a limiting factor, these tools become woven into daily developer workflows and organizational processes.</p>\n<p>The real winner here is developer velocity—and companies that enable it win in the market.</p>\n<p><span style=\"color:#a050ff\">#AITechnology</span> <span style=\"color:#a050ff\">#SoftwareDevelopment</span> <span style=\"color:#a050ff\">#Claude</span> <span style=\"color:#a050ff\">#DeveloperTools</span> <span style=\"color:#a050ff\">#EnterpriseAI</span> <span style=\"color:#a050ff\">#FutureOfWork</span> <span style=\"color:#a050ff\">#TechInnovation</span></p>",
+    "category": "Models",
+    "imageUrl": "https://aifeed.run/images/aifeed_claude_code_is_getting_higher_usage_limi_1778101334335.png",
+    "sourceUrl": "https://9to5google.com/2026/05/06/claude-code-is-getting-higher-usage-limits-doubled-for-most-users/",
+    "publishedAt": "2026-05-06",
+    "hashtags": [
+      "AITechnology",
+      "SoftwareDevelopment",
+      "Claude",
+      "DeveloperTools",
+      "EnterpriseAI",
+      "FutureOfWork",
+      "TechInnovation"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "agents-can-now-create-cloudflare-accounts-20260506",
     "slug": "agents-can-now-create-cloudflare-accounts",
     "headline": "Agents can now create Cloudflare accounts, buy domains, and deploy",
