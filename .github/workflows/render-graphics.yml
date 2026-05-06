@@ -262,16 +262,6 @@ jobs:
               return;
             }
 
-            console.log('\nFetching Google Sheet to match stories...');
-            let sheetRows = [];
-            try {
-              const csv = await fetchUrl(SHEET_URL);
-              sheetRows = parseCSV(csv);
-              console.log('Sheet rows loaded:', sheetRows.length);
-            } catch(e) {
-              console.log('Sheet fetch failed:', e.message, '— skipping publish, PNGs still committed.');
-            }
-
             const posts = JSON.parse(fs.readFileSync(postsPath, 'utf8'));
             const existingSlugs = new Set(posts.map(p => p.slug));
             const existingIds   = new Set(posts.map(p => p.id));
@@ -280,55 +270,47 @@ jobs:
             const newPosts = [];
 
             for (const { pngName, htmlFile } of newPngs) {
-              const keywords = filenameKeywords(htmlFile);
-              console.log('\nLooking for sheet match for:', htmlFile);
-              console.log('Keywords:', keywords);
-
-              if (!sheetRows.length || keywords.length < 2) {
-                console.log('Skipping publish — no sheet data or too few keywords');
+              // Read metadata directly from the HTML comment — no Google Sheet needed
+              const htmlContent = fs.readFileSync(path.join(graphicsDir, htmlFile), 'utf8');
+              const metaMatch = htmlContent.match(/<!--\s*AIFEED_META:([\s\S]*?)\s*-->/);
+              if (!metaMatch) {
+                console.log('No AIFEED_META comment in', htmlFile, '— skipping publish');
                 continue;
               }
 
-              // Find best matching sheet row by keyword overlap
-              let bestRow = null, bestScore = 0;
-              for (const row of sheetRows) {
-                if (!row.Headline || !row.LinkedInCaption) continue;
-                const hl = row.Headline.toLowerCase();
-                const score = keywords.filter(k => hl.includes(k)).length;
-                if (score > bestScore) { bestScore = score; bestRow = row; }
-              }
+              let meta;
+              try { meta = JSON.parse(metaMatch[1]); }
+              catch(e) { console.log('Bad AIFEED_META JSON in', htmlFile, ':', e.message); continue; }
 
-              if (!bestRow || bestScore < 2) {
-                console.log('No sheet match found (best score: ' + bestScore + ') — skipping publish');
-                continue;
-              }
+              const headline = (meta.headline || '').trim();
+              const liCaption = (meta.liCaption || '').trim();
+              const sourceUrl = (meta.sourceUrl || '').trim();
+              const metaDate  = meta.date || '';
 
-              console.log('Matched (' + bestScore + '/' + keywords.length + '):', bestRow.Headline.substring(0,70));
+              if (!headline) { console.log('Empty headline in meta for', htmlFile); continue; }
 
-              const headline = bestRow.Headline.trim();
-              const slug  = makeSlug(headline);
-              const date  = dateOnly(bestRow.Date || '');
-              const id    = slug + '-' + date.replace(/-/g,'');
-              const hKey  = headlineKey(headline);
+              const slug = makeSlug(headline);
+              const date = dateOnly(metaDate);
+              const id   = slug + '-' + date.replace(/-/g,'');
+              const hKey = headlineKey(headline);
 
               if (existingSlugs.has(slug) || existingIds.has(id) || existingKeys.has(hKey)) {
-                console.log('Already published — skipping');
+                console.log('Already published — skipping:', headline.substring(0,60));
                 continue;
               }
 
-              const imageUrl    = 'https://aifeed.run/images/' + pngName;
-              const liCaption   = (bestRow.LinkedInCaption || bestRow.Caption || '').trim();
-              const body        = liToHtml(liCaption);
-              const hashtags    = (liCaption.match(/#(\w+)/g) || []).map(t => t.slice(1));
-              const paras       = liCaption.split(/\n\n+/).filter(p => p.trim());
-              const summary     = (paras[1] || paras[0] || headline).replace(/\n/g,' ').substring(0,200).trim();
+              const imageUrl = 'https://aifeed.run/images/' + pngName;
+              const body     = liToHtml(liCaption);
+              const hashtags = (liCaption.match(/#(\w+)/g) || []).map(t => t.slice(1));
+              const paras    = liCaption.split(/\n\n+/).filter(p => p.trim());
+              const summary  = (paras[1] || paras[0] || headline).replace(/\n/g,' ').substring(0,200).trim();
 
               const post = {
                 id, slug, headline, summary, body,
                 category:    getCategory(headline),
                 imageUrl,
-                sourceUrl:   (bestRow.SourceURL || '').trim(),
-                publishedAt: bestRow.Date || new Date().toISOString(),
+                sourceUrl,
+                publishedAt: metaDate || new Date().toISOString(),
                 hashtags,
                 isVideo:     false
               };
