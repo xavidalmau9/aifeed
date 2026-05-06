@@ -1,4 +1,4 @@
-name: Render HTML Graphics to PNG and Publish
+name: Render HTML Graphics to PNG
 
 on:
   push:
@@ -32,7 +32,7 @@ jobs:
       - name: Install Puppeteer
         run: npm install puppeteer
 
-      - name: Render PNGs + Publish Stories + Send to Telegram
+      - name: Render PNGs + Send to Telegram for Approval
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -41,111 +41,10 @@ jobs:
           const puppeteer = require('puppeteer');
           const fs   = require('fs');
           const path = require('path');
-          const https = require('https');
           const { execSync } = require('child_process');
 
           const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
           const CHAT_ID   = process.env.TELEGRAM_CHAT_ID;
-          const SHEET_URL = 'https://docs.google.com/spreadsheets/d/1BCTHLe5ExoFwLMnQuayVWsVI8hBKfD7u54FiHGv_7rs/export?format=csv&gid=0';
-
-          // ── helpers ──────────────────────────────────────────────────────────
-
-          function fetchUrl(url) {
-            return new Promise((resolve, reject) => {
-              https.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } }, res => {
-                if ([301, 302, 303, 307, 308].includes(res.statusCode))
-                  return fetchUrl(res.headers.location).then(resolve).catch(reject);
-                let d = ''; res.on('data', c => d += c); res.on('end', () => resolve(d));
-                res.on('error', reject);
-              }).on('error', reject);
-            });
-          }
-
-          function splitRow(line) {
-            const out = []; let inQ = false, cur = '';
-            for (let i = 0; i < line.length; i++) {
-              const c = line[i];
-              if (c === '"') { if (inQ && line[i+1] === '"') { cur += '"'; i++; } else inQ = !inQ; }
-              else if (c === ',' && !inQ) { out.push(cur); cur = ''; }
-              else cur += c;
-            }
-            out.push(cur); return out;
-          }
-
-          function parseCSV(text) {
-            const lines = text.split('\n');
-            const valid = lines.filter(l => l.replace(/[,\s"]/g,'') !== '');
-            if (!valid.length) return [];
-            const headers = splitRow(valid[0]);
-            return valid.slice(1).map(l => {
-              const vals = splitRow(l);
-              const obj = {};
-              headers.forEach((h,i) => obj[h.trim()] = (vals[i]||'').trim());
-              return obj;
-            }).filter(r => r.Headline);
-          }
-
-          function liToHtml(caption) {
-            if (!caption) return '<p>No content available.</p>';
-            const paras = caption.split(/\n\n+/);
-            const parts = [];
-            paras.forEach((p, i) => {
-              p = p.trim();
-              if (!p || i === 0) return;
-              if (/^Source:/i.test(p)) return;
-              if (/^https?:\/\//.test(p)) return;
-              if (/^#\w/.test(p)) {
-                const tags = p.match(/#\w+/g) || [];
-                parts.push('<p>' + tags.map(t =>
-                  `<span style="color:#a050ff">${t}</span>`).join(' ') + '</p>');
-                return;
-              }
-              parts.push('<p>' + p.replace(/\n/g,' ') + '</p>');
-            });
-            return parts.join('\n') || '<p>' + paras[0] + '</p>';
-          }
-
-          function makeSlug(headline) {
-            return headline.toLowerCase()
-              .replace(/[^a-z0-9\s]/g, '')
-              .trim().split(/\s+/)
-              .filter(w => w.length >= 2)
-              .slice(0, 6).join('-');
-          }
-
-          function headlineKey(h) {
-            return h.toLowerCase().replace(/[^a-z0-9]/g,'').substring(0,40);
-          }
-
-          function dateOnly(str) {
-            if (!str) return new Date().toISOString().substring(0,10);
-            const m = str.match(/(\d{4})-(\d{2})-(\d{2})/);
-            if (m) return `${m[1]}-${m[2]}-${m[3]}`;
-            const m2 = str.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
-            if (m2) return `${m2[3]}-${m2[1].padStart(2,'0')}-${m2[2].padStart(2,'0')}`;
-            return new Date().toISOString().substring(0,10);
-          }
-
-          function getCategory(headline) {
-            const h = headline.toLowerCase();
-            if (/research|study|paper|scientists|university/.test(h)) return 'Research';
-            if (/launch|release|tool|app|update|version/.test(h)) return 'Tools';
-            if (/model|gpt|claude|gemini|llm|mistral|llama/.test(h)) return 'Models';
-            if (/fund|invest|billion|million|startup|raises/.test(h)) return 'Industry';
-            return 'Industry';
-          }
-
-          // Extract keyword list from HTML filename for sheet matching
-          // e.g. "aifeed_pentagon_strikes_classified_ai_1234567890.html"
-          //   → ["pentagon", "strikes", "classified"]  (skip short/common words)
-          function filenameKeywords(filename) {
-            const SKIP = new Set(['ai', 'the', 'and', 'for', 'are', 'but', 'not', 'its', 'was', 'with', 'from', 'that', 'this', 'will', 'have', 'has', 'had', 'been', 'they']);
-            return filename
-              .replace(/^aifeed_/, '')          // strip prefix
-              .replace(/_\d{10,}\.html$/, '')   // strip timestamp + extension
-              .split('_')
-              .filter(w => w.length >= 4 && !SKIP.has(w));
-          }
 
           // ── main ─────────────────────────────────────────────────────────────
 
@@ -156,13 +55,9 @@ jobs:
 
             const graphicsDir = './graphics';
             const imagesDir   = './images';
-            const postsPath   = '_posts/posts-index.json';
-
-            const newPngs = [];
 
             const files = fs.readdirSync(graphicsDir).filter(f => f.endsWith('.html'));
 
-            // ── PHASE 1: Render PNGs ─────────────────────────────────────────
             for (const file of files) {
               const pngName = file.replace('.html', '.png');
               const pngPath = path.join(imagesDir, pngName);
@@ -174,42 +69,36 @@ jobs:
               console.log('Processing:', file);
               let html = fs.readFileSync(path.join(graphicsDir, file), 'utf8');
 
-              // Embed background photo as base64 — handles Unsplash, Wikipedia, Wikimedia, any external URL
-              // Must be embedded: Puppeteer in GitHub Actions cannot reach external URLs
+              // Embed background photo as base64 — Puppeteer cannot reach external URLs
               const alreadyEmbedded = html.includes('data:image/jpeg;base64,') || html.includes('data:image/png;base64,');
               if (alreadyEmbedded) {
                 console.log('Photo already embedded as base64');
               } else {
-                // FALLBACK: if no img.bg tag at all, inject a generic tech photo so Puppeteer has something to render
+                // FALLBACK: if no img.bg tag at all, inject a generic tech photo
                 if (!html.includes('class="bg"')) {
                   const fallbackUrl = 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=1080&h=1350&fit=crop&q=85&fm=jpg';
                   html = html.replace('<div class="c"><div class="ov">', '<div class="c"><img class="bg" src="' + fallbackUrl + '" alt=""><div class="ov">');
                   console.log('No img.bg found — injected fallback photo URL');
                 }
-                // Find any external http(s) URL in the .bg img src
                 const urlMatch = html.match(/class="bg"[^>]*src="(https?:\/\/[^"]+)"/);
                 if (!urlMatch) {
                   console.log('No external photo URL found in HTML — graphic will have no background');
                 } else {
                   let photoUrl = urlMatch[1];
-
-                  // Unsplash: must use download endpoint (images.unsplash.com returns HTML error)
                   const unsplashId = photoUrl.match(/images\.unsplash\.com\/photo-([a-zA-Z0-9_-]+)/);
                   if (unsplashId) {
                     photoUrl = 'https://unsplash.com/photos/' + unsplashId[1] + '/download?force=true';
                   }
-
                   console.log('Downloading photo:', photoUrl.substring(0, 80));
                   try {
                     execSync('curl -sL --user-agent "Mozilla/5.0" "' + photoUrl + '" -o /tmp/photo_embed.jpg', { timeout: 30000 });
                     const stat = fs.statSync('/tmp/photo_embed.jpg');
                     if (stat.size > 10000) {
                       const b64 = fs.readFileSync('/tmp/photo_embed.jpg').toString('base64');
-                      // Replace the entire src="..." in the .bg img tag
                       html = html.replace(urlMatch[0], urlMatch[0].replace(urlMatch[1], 'data:image/jpeg;base64,' + b64));
                       console.log('Photo embedded (' + Math.round(stat.size/1024) + 'KB)');
                     } else {
-                      console.log('Photo download too small (' + stat.size + 'B) — possible redirect/error, graphic may be blank');
+                      console.log('Photo download too small (' + stat.size + 'B) — graphic may be blank');
                     }
                   } catch(e) {
                     console.log('Photo embed failed:', e.message);
@@ -231,15 +120,40 @@ jobs:
                 console.log('Rendered:', pngName);
                 await page.close();
 
-                // Send HTML to Telegram
+                // Extract AIFEED_META and save as pending story
+                const metaMatch = html.match(/<!--\s*AIFEED_META:([\s\S]*?)\s*-->/);
+                if (metaMatch) {
+                  try {
+                    const meta = JSON.parse(metaMatch[1]);
+                    const pending = {
+                      htmlFile: file,
+                      pngName,
+                      headline: meta.headline || '',
+                      liCaption: meta.liCaption || '',
+                      sourceUrl: meta.sourceUrl || '',
+                      date: meta.date || new Date().toISOString().substring(0,10),
+                      savedAt: new Date().toISOString()
+                    };
+                    fs.mkdirSync('./_data', { recursive: true });
+                    fs.writeFileSync('./_data/pending_story.json', JSON.stringify(pending, null, 2));
+                    console.log('Saved pending story:', meta.headline.substring(0,60));
+                  } catch(e) {
+                    console.log('Could not save pending story:', e.message);
+                  }
+                }
+
+                // Send HTML to Telegram with approval prompt
                 const tmpHtml = '/tmp/tg_' + file;
                 fs.writeFileSync(tmpHtml, html);
                 try {
+                  const headline = metaMatch ? (JSON.parse(metaMatch[1]).headline || '') : file;
+                  const caption = '📸 <b>New graphic ready</b>\n' + headline.substring(0,120) + '\n\nReply <b>publish</b> to add to website.';
                   const result = execSync(
                     'curl -s ' +
                     '-F "chat_id=' + CHAT_ID + '" ' +
                     '-F "document=@' + tmpHtml + ';filename=' + file + ';type=text/html" ' +
-                    '-F "caption=✅ Open in Chrome at 100% zoom → screenshot → post" ' +
+                    '-F "caption=' + caption.replace(/"/g, '\\"') + '" ' +
+                    '-F "parse_mode=HTML" ' +
                     '"https://api.telegram.org/bot' + BOT_TOKEN + '/sendDocument"',
                     { encoding: 'utf8', timeout: 30000 }
                   );
@@ -253,103 +167,25 @@ jobs:
                   console.log('Telegram curl error:', e.message);
                 }
 
-                newPngs.push({ pngName, htmlFile: file });
               } catch(e) {
                 console.error('Failed to render', file, ':', e.message);
               }
             }
 
             await browser.close();
-
-            // ── PHASE 2: Publish new stories to posts-index.json ─────────────
-            if (newPngs.length === 0) {
-              console.log('No new PNGs — skipping publish step.');
-              fs.writeFileSync('/tmp/new_pngs.txt', '');
-              return;
-            }
-
-            const posts = JSON.parse(fs.readFileSync(postsPath, 'utf8'));
-            const existingSlugs = new Set(posts.map(p => p.slug));
-            const existingIds   = new Set(posts.map(p => p.id));
-            const existingKeys  = new Set(posts.map(p => headlineKey(p.headline || '')));
-
-            const newPosts = [];
-
-            for (const { pngName, htmlFile } of newPngs) {
-              // Read metadata directly from the HTML comment — no Google Sheet needed
-              const htmlContent = fs.readFileSync(path.join(graphicsDir, htmlFile), 'utf8');
-              const metaMatch = htmlContent.match(/<!--\s*AIFEED_META:([\s\S]*?)\s*-->/);
-              if (!metaMatch) {
-                console.log('No AIFEED_META comment in', htmlFile, '— skipping publish');
-                continue;
-              }
-
-              let meta;
-              try { meta = JSON.parse(metaMatch[1]); }
-              catch(e) { console.log('Bad AIFEED_META JSON in', htmlFile, ':', e.message); continue; }
-
-              const headline = (meta.headline || '').trim();
-              const liCaption = (meta.liCaption || '').trim();
-              const sourceUrl = (meta.sourceUrl || '').trim();
-              const metaDate  = meta.date || '';
-
-              if (!headline) { console.log('Empty headline in meta for', htmlFile); continue; }
-
-              const slug = makeSlug(headline);
-              const date = dateOnly(metaDate);
-              const id   = slug + '-' + date.replace(/-/g,'');
-              const hKey = headlineKey(headline);
-
-              if (existingSlugs.has(slug) || existingIds.has(id) || existingKeys.has(hKey)) {
-                console.log('Already published — skipping:', headline.substring(0,60));
-                continue;
-              }
-
-              const imageUrl = 'https://aifeed.run/images/' + pngName;
-              const body     = liToHtml(liCaption);
-              const hashtags = (liCaption.match(/#(\w+)/g) || []).map(t => t.slice(1));
-              const paras    = liCaption.split(/\n\n+/).filter(p => p.trim());
-              const summary  = (paras[1] || paras[0] || headline).replace(/\n/g,' ').substring(0,200).trim();
-
-              const post = {
-                id, slug, headline, summary, body,
-                category:    getCategory(headline),
-                imageUrl,
-                sourceUrl,
-                publishedAt: metaDate || new Date().toISOString(),
-                hashtags,
-                isVideo:     false
-              };
-
-              newPosts.push(post);
-              existingSlugs.add(slug);
-              existingIds.add(id);
-              existingKeys.add(hKey);
-              console.log('✅ Will publish:', headline.substring(0,70));
-            }
-
-            if (newPosts.length > 0) {
-              const updated = [...newPosts, ...posts];
-              fs.writeFileSync(postsPath, JSON.stringify(updated, null, 2));
-              console.log('\nAdded ' + newPosts.length + ' post(s). Total: ' + updated.length);
-            } else {
-              console.log('\nNo new posts to add.');
-            }
-
-            fs.writeFileSync('/tmp/new_pngs.txt', newPngs.map(n => n.pngName).join('\n'));
-            console.log('Done.');
+            console.log('Done. Reply "publish" in Telegram to add story to website.');
           })().catch(e => { console.error(e); process.exit(1); });
           JSEOF
 
-      - name: Commit rendered PNGs and published stories
+      - name: Commit rendered PNGs and pending story
         run: |
           git config user.name "AIFeed Bot"
           git config user.email "bot@aifeed.run"
-          git add images/ _posts/posts-index.json
+          git add images/ _data/pending_story.json
           if git diff --staged --quiet; then
             echo "Nothing to commit"
           else
-            git commit -m "Auto-render + publish: new story graphics"
+            git commit -m "Render graphic — awaiting publish approval"
             git pull --rebase origin main
             git push
           fi
