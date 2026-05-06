@@ -1,5 +1,28 @@
 [
   {
+    "id": "anthropic-is-doubling-claude-code-rate-20260506",
+    "slug": "anthropic-is-doubling-claude-code-rate",
+    "headline": "Anthropic is doubling Claude Code rate limits after deal with SpaceX",
+    "summary": "Here's what's happening: Anthropic expanded Claude's capacity for developers, removing friction from the coding workflow. This isn't just a technical upgrade; it's validation. When SpaceX—a company th",
+    "body": "<p>Here's what's happening: Anthropic expanded Claude's capacity for developers, removing friction from the coding workflow. This isn't just a technical upgrade; it's validation. When SpaceX—a company that demands the absolute highest performance standards—commits to Claude as a core tool, the entire market takes notice. The deal reflects growing confidence in Claude's reliability and capability for mission-critical work.</p>\n<p>From a business perspective, this partnership strengthens Anthropic's position in the competitive AI landscape. Doubling rate limits isn't just generous—it's strategic. It enables developers to build at scale without encountering bottlenecks, making Claude the path of least resistance for coding tasks. This kind of infrastructure investment pays dividends through network effects and user stickiness.</p>\n<p>For the broader AI industry, this represents a shift toward enterprise legitimacy. We're moving past the era of \"impressive demos\" into the era of \"production-grade partnerships.\" When aerospace and defense companies bet serious resources on AI coding assistants, it validates the entire category. Other enterprises are watching and making similar decisions.</p>\n<p>Looking ahead, expect more of these strategic partnerships between AI providers and high-stakes industries. Companies that can prove reliability at scale will capture disproportionate value. Anthropic is clearly positioning itself as that partner—someone you can trust with demanding, consequential work.</p>\n<p>The bottom line: when industry leaders double down on AI infrastructure, you're witnessing the technology transitioning from novelty to necessity.</p>\n<p><span style=\"color:#a050ff\">#AI</span> <span style=\"color:#a050ff\">#Anthropic</span> <span style=\"color:#a050ff\">#Claude</span> <span style=\"color:#a050ff\">#SpaceX</span> <span style=\"color:#a050ff\">#EnterpiseAI</span> <span style=\"color:#a050ff\">#AICoding</span> <span style=\"color:#a050ff\">#TechPartnership</span> <span style=\"color:#a050ff\">#Innovation</span> <span style=\"color:#a050ff\">#AIStrategy</span></p>",
+    "category": "Models",
+    "imageUrl": "https://aifeed.run/images/aifeed_anthropic_is_doubling_claude_code_rate_l_1778107063716.png",
+    "sourceUrl": "https://www.engadget.com/2166315/anthropic-is-doubling-claude-code-rate-limits-after-deal-with-spacex/",
+    "publishedAt": "2026-05-06",
+    "hashtags": [
+      "AI",
+      "Anthropic",
+      "Claude",
+      "SpaceX",
+      "EnterpiseAI",
+      "AICoding",
+      "TechPartnership",
+      "Innovation",
+      "AIStrategy"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "claude-code-is-getting-higher-usage-20260506",
     "slug": "claude-code-is-getting-higher-usage",
     "headline": "Claude Code is getting higher usage limits, doubled for most users",
