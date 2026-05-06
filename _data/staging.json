@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Apple Will Pay $250 Million to Settle Lawsuit Over Siri's AI Features",
-    "link": "https://www.wired.com/story/apple-will-pay-dollar250-million-to-settle-lawsuit-over-siris-ai-features/",
+    "headline": "Apple will pay $250 million for failing to deliver its AI-powered Siri on time",
+    "link": "https://www.engadget.com/2165602/apple-will-pay-250-million-for-failing-to-deliver-its-ai-powered-siri-on-time/",
     "score": 92,
-    "reason": "Major settlement with specific large number; concrete legal outcome; Apple company"
+    "reason": "Major settlement with concrete numbers, significant AI failure admission"
   },
   {
     "rank": 2,
-    "headline": "Google's AI search summaries will now quote Reddit",
-    "link": "https://www.theverge.com/tech/924993/google-ai-search-mode-overviews-update-reddit-links",
-    "score": 88,
-    "reason": "Significant partnership launch affecting search; Google company; material product change"
+    "headline": "Nvidia to invest up to $3.2 billion in Corning as part of massive optical fiber deal with 3 new factories focused on AI",
+    "link": "https://www.cnbc.com/2026/05/06/nvidia-corning-optical-factories-nc-texas-ai.html",
+    "score": 90,
+    "reason": "Large capital commitment ($3.2B), new infrastructure, major AI player"
   },
   {
     "rank": 3,
-    "headline": "Nuro approved to test its driverless Uber robotaxis on California roads",
-    "link": "https://www.engadget.com/2165815/nuro-approved-to-test-driverless-uber-robotaxis-on-california-roads/",
-    "score": 85,
-    "reason": "Major regulatory approval for autonomous vehicles; concrete milestone; new capability launch"
+    "headline": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI",
+    "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+    "score": 88,
+    "reason": "Major controversy with concrete legal proceedings, industry-shaping implications"
   },
   {
     "rank": 4,
-    "headline": "OpenAI claims ChatGPT’s new default model hallucinates way less",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/924225/openai-chatgpt-default-model-gpt-5-5-instant",
-    "score": 82,
-    "reason": "OpenAI product launch; measurable improvement claim; competitive advantage announcement"
+    "headline": "Anthropic, SpaceX announce compute deal that includes space development",
+    "link": "https://www.cnbc.com/2026/05/06/anthropic-spacex-data-center-capacity.html",
+    "score": 85,
+    "reason": "Major partnership launch, unique space-AI integration, validates Anthropic's scale"
   },
   {
     "rank": 5,
-    "headline": "US government increases AI suppliers and rethinks Anthropic's role",
-    "link": "https://www.artificialintelligence-news.com/news/us-government-increases-ai-in-defence-suppliers-roster-and-rethinks-anthropics-role/",
-    "score": 78,
-    "reason": "Government policy shift; strategic supplier diversification; Anthropic impact"
+    "headline": "Chrome downloads a 4GB AI file without user consent, researcher alleges",
+    "link": "https://www.engadget.com/2166113/chrome-downloads-a-4gb-ai-file-without-user-consent-researcher-alleges/",
+    "score": 82,
+    "reason": "Significant controversy, concrete technical complaint, impacts millions of users"
   },
   {
     "rank": 6,
-    "headline": "Google tests Remy AI agent for Gemini as focus turns to user control",
-    "link": "https://www.artificialintelligence-news.com/news/google-remy-ai-agent-gemini-user-control/",
-    "score": 76,
-    "reason": "Google new agent launch; user control feature emphasis; product expansion"
+    "headline": "Google DeepMind Workers Vote to Unionize Over Military AI Deals",
+    "link": "https://www.wired.com/story/google-deepmind-workers-vote-to-unionize-over-military-ai-deals/",
+    "score": 78,
+    "reason": "Major labor action, controversy over military AI applications"
   },
   {
     "rank": 7,
-    "headline": "Google Home update delivers huge automation expansion, Nest Cam upgrades for all",
-    "link": "https://9to5google.com/2026/05/05/google-home-update-delivers-huge-automation-expansion-nest-cam-upgrades-for-all/",
-    "score": 74,
-    "reason": "Major feature expansion; Google Home ecosystem upgrade; significant functionality increase"
+    "headline": "Microsoft gives up on Xbox Copilot AI",
+    "link": "https://www.theverge.com/games/924551/microsoft-xbox-ceo-copilot-ai-asha-sharma",
+    "score": 75,
+    "reason": "Concrete product cancellation, visible AI feature failure"
   },
   {
     "rank": 8,
-    "headline": "In the global AI race, a sanctioned Chinese firm says cheaper models can still win",
-    "link": "https://www.cnbc.com/2026/05/06/china-ai-race-cost-efficiency-sensetime-competition.html",
-    "score": 71,
-    "reason": "Geopolitical AI competition; cost-performance claim; strategic market positioning"
+    "headline": "Claude Code is getting higher usage limits, doubled for most users",
+    "link": "https://9to5google.com/2026/05/06/claude-code-is-getting-higher-usage-limits-doubled-for-most-users/",
+    "score": 72,
+    "reason": "Product launch/expansion with measurable improvement, Anthropic scaling"
   },
   {
     "rank": 9,
-    "headline": "Agents can now create Cloudflare accounts, buy domains, and deploy",
-    "link": "https://blog.cloudflare.com/agents-stripe-projects/",
-    "score": 69,
-    "reason": "Cloudflare agent capability launch; autonomous action expansion; infrastructure automation"
+    "headline": "ServiceNow just told Wall Street it's going to double again. Here's why $30 billion of revenue isn't crazy",
+    "link": "https://fortune.com/2026/05/06/servicenow-30-billion-revenue-not-crazy-why/",
+    "score": 70,
+    "reason": "Large revenue target ($30B), AI-driven enterprise growth projection"
   },
   {
     "rank": 10,
-    "headline": "Jamie Dimon blesses the trillion-dollar AI capex boom",
-    "link": "https://www.axios.com/2026/05/05/jamie-dimon-ai-capex-anthropic",
-    "score": 67,
-    "reason": "Major financial figure endorsement; trillion-dollar scale; capital investment validation"
+    "headline": "Pennsylvania is suing Character.AI over chatbots that pretend to be licensed doctors",
+    "link": "https://www.engadget.com/2165373/pennsylvania-is-suing-characterai-over-chatbots-that-pretend-to-be-licensed-doctors/",
+    "score": 68,
+    "reason": "Regulatory action against AI misuse, potential model for enforcement"
   }
 ]
