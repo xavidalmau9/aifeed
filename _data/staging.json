@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Canadian officials claim OpenAI violated federal and provincial privacy laws",
-    "link": "https://www.engadget.com/2166560/canadian-officials-claim-openai-violated-federal-and-provincial-privacy-laws/",
-    "score": 92,
-    "reason": "Major regulatory action against leading AI company; concrete legal violation claim"
+    "headline": "SpaceX has a $55 billion plan to build AI chips in Texas",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/926356/spacex-terafab-plant-cost-ai-chips",
+    "score": 95,
+    "reason": "Major capital commitment, concrete infrastructure play, big number, company-specific launch"
   },
   {
     "rank": 2,
-    "headline": "Apple will pay $250 million for failing to deliver its AI-powered Siri on time",
-    "link": "https://www.engadget.com/2165602/apple-will-pay-250-million-for-failing-to-deliver-its-ai-powered-siri-on-time/",
-    "score": 88,
-    "reason": "Large settlement, specific dollar amount, major company, concrete failure"
+    "headline": "Apple Will Pay $250 Million to Settle Lawsuit Over Siri’s AI Features",
+    "link": "https://www.wired.com/story/apple-will-pay-dollar250-million-to-settle-lawsuit-over-siris-ai-features/",
+    "score": 92,
+    "reason": "Significant financial settlement, legal controversy, concrete resolution, major company"
   },
   {
     "rank": 3,
-    "headline": "Apple agrees to pay iPhone owners $250 million for not delivering AI Siri",
-    "link": "https://www.theverge.com/tech/924706/apple-iphone-siri-intelligence-class-action-lawsuit-settlement",
+    "headline": "Anthropic Gets in Bed With SpaceX as the AI Race Turns Weird",
+    "link": "https://www.wired.com/story/anthropic-spacex-compute-deal-colossus/",
     "score": 88,
-    "reason": "Duplicate of rank 2 with better framing"
+    "reason": "Unexpected partnership, controversy element, competitive dynamics shift"
   },
   {
     "rank": 4,
-    "headline": "Chrome downloads a 4GB AI file without user consent, researcher alleges",
-    "link": "https://www.engadget.com/2166113/chrome-downloads-a-4gb-ai-file-without-user-consent-researcher-alleges/",
+    "headline": "Google unveils screenless Fitbit Air and Google Health app to replace Fitbit",
+    "link": "https://arstechnica.com/gadgets/2026/05/google-unveils-screenless-fitbit-air-and-google-health-app-to-replace-fitbit/",
     "score": 85,
-    "reason": "Major tech company controversy; concrete finding; user privacy impact"
+    "reason": "Major product launch, significant rebranding, health AI focus, concrete announcement"
   },
   {
     "rank": 5,
-    "headline": "Anthropic CEO says 80-fold growth in first quarter explains &apos;difficulties with compute&apos;",
-    "link": "https://www.cnbc.com/2026/05/06/anthropic-ceo-dario-amodei-says-company-crew-80-fold-in-first-quarter.html",
+    "headline": "OpenClaw and Claude can put your AI-generated podcasts in Spotify",
+    "link": "https://www.theverge.com/entertainment/925916/save-to-spotify-ai-podcasts",
     "score": 82,
-    "reason": "Major scaling metric; infrastructure challenges; leading AI company"
+    "reason": "Feature launch, Anthropic + Spotify integration, music industry impact"
   },
   {
     "rank": 6,
-    "headline": "Google's AI search summaries will now quote Reddit",
-    "link": "https://www.theverge.com/tech/924993/google-ai-search-mode-overviews-update-reddit-links",
-    "score": 80,
-    "reason": "Significant product launch; major partnership move affecting search"
+    "headline": "Elon Musk called Anthropic ‘evil’ 3 months ago. Now he’s taking $4 billion to become its data landlord",
+    "link": "https://fortune.com/2026/05/07/spacex-anthropic-deal-elon-musk-ai-landlord-evil/",
+    "score": 90,
+    "reason": "Major controversy, policy reversal, $4B data deal, high-profile contradiction"
   },
   {
     "rank": 7,
-    "headline": "Anthropic is doubling Claude Code rate limits after deal with SpaceX",
-    "link": "https://www.engadget.com/2166315/anthropic-is-doubling-claude-code-rate-limits-after-deal-with-spacex/",
-    "score": 78,
-    "reason": "Major partnership announcement; product expansion; capacity increase"
+    "headline": "US government increases AI suppliers and rethinks Anthropic's role",
+    "link": "https://www.artificialintelligence-news.com/news/us-government-increases-ai-in-defence-suppliers-roster-and-rethinks-anthropics-role/",
+    "score": 84,
+    "reason": "Government policy shift, competitive dynamics, regulatory impact"
   },
   {
     "rank": 8,
-    "headline": "Mira Murati tells the court that she couldn’t trust Sam Altman’s words",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/925338/openai-musk-v-altman-mira-murati",
-    "score": 76,
-    "reason": "Major OpenAI executive testimony; court conflict; credibility question"
+    "headline": "Apple's AirPods with cameras for AI are apparently close to production",
+    "link": "https://www.theverge.com/tech/926376/apple-airpods-cameras-ai-production",
+    "score": 79,
+    "reason": "Hardware launch imminent, controversial camera feature, major tech company"
   },
   {
     "rank": 9,
-    "headline": "In the global AI race, a sanctioned Chinese firm says cheaper models can still win",
-    "link": "https://www.cnbc.com/2026/05/06/china-ai-race-cost-efficiency-sensetime-competition.html",
-    "score": 74,
-    "reason": "Geopolitical AI competition; cost innovation challenge to Western dominance"
+    "headline": "Perplexity opens up its Personal Computer AI assistant to all Mac users",
+    "link": "https://www.engadget.com/2167301/perplexity-opens-up-its-personal-computer-ai-assistant-to-all-mac-users/",
+    "score": 77,
+    "reason": "Feature expansion, major platform launch, search/AI competitor growth"
   },
   {
     "rank": 10,
-    "headline": "'FOMO has proven a stronger incentive than poor stock performance': Goldman Sachs finds insecurity is a key part of the AI boom",
-    "link": "https://fortune.com/2026/05/06/is-ai-a-bubble-goldman-sachs-skeptics-overhyped/",
-    "score": 72,
-    "reason": "Major financial institution analysis; reveals market psychology; big picture finding"
+    "headline": "AI Is Starting to Build Better AI",
+    "link": "https://spectrum.ieee.org/recursive-self-improvement",
+    "score": 76,
+    "reason": "Significant capability milestone, foundational shift in AI development"
   }
 ]
