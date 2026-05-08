@@ -91,7 +91,7 @@ jobs:
                   }
                   console.log('Downloading photo:', photoUrl.substring(0, 80));
                   try {
-                    execSync('curl -sL --user-agent "Mozilla/5.0" "' + photoUrl + '" -o /tmp/photo_embed.jpg', { timeout: 30000 });
+                    execSync('curl -sL --user-agent "Mozilla/5.0 (compatible; AIFeed/1.0; +https://aifeed.run)" "' + photoUrl + '" -o /tmp/photo_embed.jpg', { timeout: 30000 });
                     const stat = fs.statSync('/tmp/photo_embed.jpg');
                     if (stat.size > 10000) {
                       const b64 = fs.readFileSync('/tmp/photo_embed.jpg').toString('base64');
