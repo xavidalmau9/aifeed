@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI",
-    "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
-    "score": 96,
-    "reason": "Major lawsuit with concrete legal proceedings, high-stakes controversy between two AI leaders"
+    "headline": "SpaceX has a $55 billion plan to build AI chips in Texas",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/926356/spacex-terafab-plant-cost-ai-chips",
+    "score": 95,
+    "reason": "Major capital commitment, specific launch/expansion plan, directly impacts AI infrastructure"
   },
   {
     "rank": 2,
-    "headline": "Musk v. Altman Evidence Shows What Microsoft Executives Thought of OpenAI",
-    "link": "https://www.wired.com/story/microsoft-executives-discuss-openai-sam-altman-2018/",
-    "score": 94,
-    "reason": "Court evidence revelation with insider perspective, significant controversy with documented proof"
+    "headline": "Anthropic Gets in Bed With SpaceX as the AI Race Turns Weird",
+    "link": "https://www.wired.com/story/anthropic-spacex-compute-deal-colossus/",
+    "score": 88,
+    "reason": "Significant partnership announcement between major AI and aerospace companies, unexpected collaboration"
   },
   {
     "rank": 3,
-    "headline": "Google announces $99 Fitbit Air for screen-less, all-day tracking",
-    "link": "https://9to5google.com/2026/05/07/fitbit-air-launch/",
-    "score": 91,
-    "reason": "Major Google hardware launch with specific pricing, new product category entry"
+    "headline": "Cloudflare stock sinks 16% after earnings as company cuts 1,100 employees due to AI changes",
+    "link": "https://www.cnbc.com/2026/05/07/cloudflare-net-q1-2026-stock-earnings-layoffs.html",
+    "score": 85,
+    "reason": "Major workforce reduction (1,100 employees) with quantifiable market impact, AI-driven disruption"
   },
   {
     "rank": 4,
-    "headline": "Cloudflare stock sinks 18% after earnings as company cuts 1,100 employees due to AI changes",
-    "link": "https://www.cnbc.com/2026/05/07/cloudflare-net-q1-2026-stock-earnings-layoffs.html",
-    "score": 90,
-    "reason": "Large workforce reduction (1,100 employees), significant stock impact, AI-driven restructuring"
+    "headline": "Apple's AirPods with cameras for AI are apparently close to production",
+    "link": "https://www.theverge.com/tech/926376/apple-airpods-cameras-ai-production",
+    "score": 82,
+    "reason": "Major product launch imminent, significant hardware innovation with AI capabilities"
   },
   {
     "rank": 5,
-    "headline": "Instructure hackers claim they stole data from nearly 9,000 schools",
-    "link": "https://www.engadget.com/2167627/instructure-hack-schools/",
-    "score": 88,
-    "reason": "Major breach affecting thousands of organizations, concrete victim count"
+    "headline": "Mira Murati’s deposition pulled back the curtain on Sam Altman’s ouster",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/926383/mira-murati-sam-altman-musk-trial-ouster",
+    "score": 78,
+    "reason": "Major OpenAI leadership controversy revealed through legal documents, significant corporate drama"
   },
   {
     "rank": 6,
-    "headline": "ChatGPT's 'Trusted Contact' will alert loved ones of safety concerns",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/925874/chatgpt-trusted-contact-emergency-self-harm-notification",
-    "score": 85,
-    "reason": "OpenAI product launch addressing safety/wellbeing, controversial topic of digital guardianship"
+    "headline": "AI Is Starting to Build Better AI",
+    "link": "https://spectrum.ieee.org/recursive-self-improvement",
+    "score": 72,
+    "reason": "Significant development in AI autonomy and capability scaling"
   },
   {
     "rank": 7,
-    "headline": "The Tech Download: Meta, Google enter AI agent race as ‘agentic wars’ heat up",
-    "link": "https://www.cnbc.com/2026/05/08/ai-agent-meta-google-agentic-wars-tech-download.html",
-    "score": 84,
-    "reason": "Major competitive initiative between two tech giants, emerging AI agent market competition"
+    "headline": "TSMC taps wind power as AI chip demand soars, Taiwan feels energy crunch",
+    "link": "https://arstechnica.com/gadgets/2026/05/tsmc-taps-wind-power-as-ai-chip-demand-soars-taiwan-feels-energy-crunch/",
+    "score": 70,
+    "reason": "Concrete impact of AI boom on global infrastructure and energy systems"
   },
   {
     "rank": 8,
-    "headline": "Thousands of Vibe-Coded Apps Expose Corporate and Personal Data on the Open Web",
-    "link": "https://www.wired.com/story/thousands-of-vibe-coded-apps-expose-corporate-and-personal-data-on-the-open-web/",
-    "score": 82,
-    "reason": "Large-scale data exposure affecting thousands of apps, security controversy"
+    "headline": "Google unveils screenless Fitbit Air and Google Health app to replace Fitbit",
+    "link": "https://arstechnica.com/gadgets/2026/05/google-unveils-screenless-fitbit-air-and-google-health-app-to-replace-fitbit/",
+    "score": 68,
+    "reason": "New safety feature launch with significant real-world application"
   },
   {
     "rank": 9,
-    "headline": "Google Chrome takes up 4GB of storage on your computer for AI, if you have space",
-    "link": "https://9to5google.com/2026/05/06/google-chrome-4gb-storage-ai-details/",
-    "score": 79,
-    "reason": "Significant resource usage revelation, controversy around AI implementation practices"
+    "headline": "OpenAI makes its rival to Anthropic's Mythos more widely available to cyber defenders",
+    "link": "https://www.axios.com/2026/05/07/openai-gpt-55-cybersecurity-model",
+    "score": 65,
+    "reason": "OpenAI security tool expansion, competitive response to Anthropic"
   },
   {
     "rank": 10,
-    "headline": "Using AI for Just 10 Minutes Might Make You Lazy and Dumb, Study Shows",
-    "link": "https://www.wired.com/story/using-ai-negative-impact-thinking-problem-solving-study/",
-    "score": 77,
-    "reason": "Research-backed controversy about AI's cognitive effects, substantive empirical claim"
+    "headline": "The New Wild West of AI Kids’ Toys",
+    "link": "https://www.wired.com/story/the-new-wild-west-of-ai-kids-toys/",
+    "score": 62,
+    "reason": "Emerging market controversy around AI safety in children's products"
   }
 ]
