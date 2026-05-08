@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "SpaceX has a $55 billion plan to build AI chips in Texas",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/926356/spacex-terafab-plant-cost-ai-chips",
-    "score": 95,
-    "reason": "Major capital commitment, concrete infrastructure play, big number, company-specific launch"
+    "headline": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI",
+    "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+    "score": 96,
+    "reason": "Major lawsuit with concrete legal proceedings, high-stakes controversy between two AI leaders"
   },
   {
     "rank": 2,
-    "headline": "Apple Will Pay $250 Million to Settle Lawsuit Over Siri’s AI Features",
-    "link": "https://www.wired.com/story/apple-will-pay-dollar250-million-to-settle-lawsuit-over-siris-ai-features/",
-    "score": 92,
-    "reason": "Significant financial settlement, legal controversy, concrete resolution, major company"
+    "headline": "Musk v. Altman Evidence Shows What Microsoft Executives Thought of OpenAI",
+    "link": "https://www.wired.com/story/microsoft-executives-discuss-openai-sam-altman-2018/",
+    "score": 94,
+    "reason": "Court evidence revelation with insider perspective, significant controversy with documented proof"
   },
   {
     "rank": 3,
-    "headline": "Anthropic Gets in Bed With SpaceX as the AI Race Turns Weird",
-    "link": "https://www.wired.com/story/anthropic-spacex-compute-deal-colossus/",
-    "score": 88,
-    "reason": "Unexpected partnership, controversy element, competitive dynamics shift"
+    "headline": "Google announces $99 Fitbit Air for screen-less, all-day tracking",
+    "link": "https://9to5google.com/2026/05/07/fitbit-air-launch/",
+    "score": 91,
+    "reason": "Major Google hardware launch with specific pricing, new product category entry"
   },
   {
     "rank": 4,
-    "headline": "Google unveils screenless Fitbit Air and Google Health app to replace Fitbit",
-    "link": "https://arstechnica.com/gadgets/2026/05/google-unveils-screenless-fitbit-air-and-google-health-app-to-replace-fitbit/",
-    "score": 85,
-    "reason": "Major product launch, significant rebranding, health AI focus, concrete announcement"
+    "headline": "Cloudflare stock sinks 18% after earnings as company cuts 1,100 employees due to AI changes",
+    "link": "https://www.cnbc.com/2026/05/07/cloudflare-net-q1-2026-stock-earnings-layoffs.html",
+    "score": 90,
+    "reason": "Large workforce reduction (1,100 employees), significant stock impact, AI-driven restructuring"
   },
   {
     "rank": 5,
-    "headline": "OpenClaw and Claude can put your AI-generated podcasts in Spotify",
-    "link": "https://www.theverge.com/entertainment/925916/save-to-spotify-ai-podcasts",
-    "score": 82,
-    "reason": "Feature launch, Anthropic + Spotify integration, music industry impact"
+    "headline": "Instructure hackers claim they stole data from nearly 9,000 schools",
+    "link": "https://www.engadget.com/2167627/instructure-hack-schools/",
+    "score": 88,
+    "reason": "Major breach affecting thousands of organizations, concrete victim count"
   },
   {
     "rank": 6,
-    "headline": "Elon Musk called Anthropic ‘evil’ 3 months ago. Now he’s taking $4 billion to become its data landlord",
-    "link": "https://fortune.com/2026/05/07/spacex-anthropic-deal-elon-musk-ai-landlord-evil/",
-    "score": 90,
-    "reason": "Major controversy, policy reversal, $4B data deal, high-profile contradiction"
+    "headline": "ChatGPT's 'Trusted Contact' will alert loved ones of safety concerns",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/925874/chatgpt-trusted-contact-emergency-self-harm-notification",
+    "score": 85,
+    "reason": "OpenAI product launch addressing safety/wellbeing, controversial topic of digital guardianship"
   },
   {
     "rank": 7,
-    "headline": "US government increases AI suppliers and rethinks Anthropic's role",
-    "link": "https://www.artificialintelligence-news.com/news/us-government-increases-ai-in-defence-suppliers-roster-and-rethinks-anthropics-role/",
+    "headline": "The Tech Download: Meta, Google enter AI agent race as ‘agentic wars’ heat up",
+    "link": "https://www.cnbc.com/2026/05/08/ai-agent-meta-google-agentic-wars-tech-download.html",
     "score": 84,
-    "reason": "Government policy shift, competitive dynamics, regulatory impact"
+    "reason": "Major competitive initiative between two tech giants, emerging AI agent market competition"
   },
   {
     "rank": 8,
-    "headline": "Apple's AirPods with cameras for AI are apparently close to production",
-    "link": "https://www.theverge.com/tech/926376/apple-airpods-cameras-ai-production",
-    "score": 79,
-    "reason": "Hardware launch imminent, controversial camera feature, major tech company"
+    "headline": "Thousands of Vibe-Coded Apps Expose Corporate and Personal Data on the Open Web",
+    "link": "https://www.wired.com/story/thousands-of-vibe-coded-apps-expose-corporate-and-personal-data-on-the-open-web/",
+    "score": 82,
+    "reason": "Large-scale data exposure affecting thousands of apps, security controversy"
   },
   {
     "rank": 9,
-    "headline": "Perplexity opens up its Personal Computer AI assistant to all Mac users",
-    "link": "https://www.engadget.com/2167301/perplexity-opens-up-its-personal-computer-ai-assistant-to-all-mac-users/",
-    "score": 77,
-    "reason": "Feature expansion, major platform launch, search/AI competitor growth"
+    "headline": "Google Chrome takes up 4GB of storage on your computer for AI, if you have space",
+    "link": "https://9to5google.com/2026/05/06/google-chrome-4gb-storage-ai-details/",
+    "score": 79,
+    "reason": "Significant resource usage revelation, controversy around AI implementation practices"
   },
   {
     "rank": 10,
-    "headline": "AI Is Starting to Build Better AI",
-    "link": "https://spectrum.ieee.org/recursive-self-improvement",
-    "score": 76,
-    "reason": "Significant capability milestone, foundational shift in AI development"
+    "headline": "Using AI for Just 10 Minutes Might Make You Lazy and Dumb, Study Shows",
+    "link": "https://www.wired.com/story/using-ai-negative-impact-thinking-problem-solving-study/",
+    "score": 77,
+    "reason": "Research-backed controversy about AI's cognitive effects, substantive empirical claim"
   }
 ]
