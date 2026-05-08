@@ -67,7 +67,7 @@ If re-import cannot happen in the session, the message must be:
 
 | Workflow file | Desktop JSON fixed | Deployed to n8n | Notes |
 |---|---|---|---|
-| `AIFeed Story Selector NEW.json` | ✅ Session 19 (May 6) | ⚠️ **NEEDS RE-IMPORT** | Added "publish" command. Re-import before next story pick. |
+| `AIFeed Story Selector NEW.json` | ✅ Session 19 (May 8) | ⚠️ **NEEDS RE-IMPORT** | 3-tier photo system + publish command. Re-import before next story pick. |
 | `AIFeed Story List NEW.json` | ✅ Session 10 (Apr 25) | ✅ **DEPLOYED** | Today-only dedup, 4-day RSS filter, threshold=1, alwaysOutputData |
 | `aifeed website publisher.json` | — | 🚫 **RETIRED** | Replaced by GitHub Actions. Do NOT re-import ever. |
 
