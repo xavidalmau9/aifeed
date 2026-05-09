@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Microsoft was worried OpenAI would run off to Amazon and ‘shit-talk’ Azure",
-    "link": "https://www.theverge.com/report/926771/microsoft-openai-amazon-worries-shit-talk-azure",
+    "headline": "Musk v. Altman Evidence Shows What Microsoft Executives Thought of OpenAI",
+    "link": "https://www.wired.com/story/microsoft-executives-discuss-openai-sam-altman-2018/",
     "score": 92,
-    "reason": "Major controversy involving explicit internal communications between tech giants about competitive threats and business relationships"
+    "reason": "Major controversy with documented evidence from high-stakes legal dispute involving top tech figures and companies"
   },
   {
     "rank": 2,
-    "headline": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI",
-    "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+    "headline": "Mira Murati’s deposition pulled back the curtain on Sam Altman’s ouster",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/926383/mira-murati-sam-altman-musk-trial-ouster",
     "score": 88,
-    "reason": "Significant legal controversy with major figures fighting over control of leading AI company"
+    "reason": "Significant controversy revealing insider details on major leadership change at OpenAI"
   },
   {
     "rank": 3,
-    "headline": "The Tech Download: Meta, Google enter AI agent race as ‘agentic wars’ heat up",
-    "link": "https://www.cnbc.com/2026/05/08/ai-agent-meta-google-agentic-wars-tech-download.html",
+    "headline": "Qualcomm’s CEO is working with ‘pretty much all’ major AI players on top-secret devices—and powering OpenAI's first push into hardware",
+    "link": "https://fortune.com/2026/05/09/qualcomm-smartphone-ai-secret-device-openai-meta-wearables-agents/",
     "score": 85,
-    "reason": "Major product launches from two tech giants entering new AI market category"
+    "reason": "Major hardware launch involving OpenAI and multiple industry players with broad impact"
   },
   {
     "rank": 4,
-    "headline": "Akamai stock soars 20% on earnings, $1.8 billion AI infrastructure deal",
-    "link": "https://www.cnbc.com/2026/05/08/akamai-stock-ai-cloud-infrastructure-deal.html",
+    "headline": "Apple's AirPods with cameras for AI are apparently close to production",
+    "link": "https://www.theverge.com/tech/926376/apple-airpods-cameras-ai-production",
     "score": 82,
-    "reason": "Concrete business deal with large dollar amount showing AI infrastructure market growth"
+    "reason": "Significant product launch from major company integrating AI into consumer hardware"
   },
   {
     "rank": 5,
-    "headline": "Google announces $99 Fitbit Air for screen-less, all-day tracking",
-    "link": "https://9to5google.com/2026/05/07/fitbit-air-launch/",
-    "score": 80,
-    "reason": "Significant product launch with specific pricing and AI integration"
+    "headline": "Sony and Bandai get into bed with generative AI",
+    "link": "https://www.engadget.com/2167841/sony-and-bandai-get-into-bed-with-generative-ai/",
+    "score": 78,
+    "reason": "Major companies launching generative AI initiatives in entertainment/gaming sector"
   },
   {
     "rank": 6,
-    "headline": "Instructure hackers claim they stole data from nearly 9,000 schools",
-    "link": "https://www.engadget.com/2167627/instructure-hack-schools/",
-    "score": 78,
-    "reason": "Major data breach affecting thousands of institutions with concrete impact numbers"
+    "headline": "Google unveils screenless Fitbit Air and Google Health app to replace Fitbit",
+    "link": "https://arstechnica.com/gadgets/2026/05/google-unveils-screenless-fitbit-air-and-google-health-app-to-replace-fitbit/",
+    "score": 75,
+    "reason": "Large product launch rebranding major health platform with AI integration"
   },
   {
     "rank": 7,
-    "headline": "ChatGPT's 'Trusted Contact' will alert loved ones of safety concerns",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/925874/chatgpt-trusted-contact-emergency-self-harm-notification",
-    "score": 75,
-    "reason": "Significant product feature launch addressing safety and wellness in AI systems"
+    "headline": "OpenAI makes its rival to Anthropic's Mythos more widely available to cyber defenders",
+    "link": "https://www.axios.com/2026/05/07/openai-gpt-55-cybersecurity-model",
+    "score": 72,
+    "reason": "Direct competitive launch between OpenAI and Anthropic in cybersecurity AI"
   },
   {
     "rank": 8,
-    "headline": "RingCentral adds Shopify, Calendly, and WhatsApp to AI Receptionist",
-    "link": "https://www.artificialintelligence-news.com/news/ringcentral-ai-adds-shopify-calendly-and-whatsapp-to-ai-receptionist/",
-    "score": 73,
-    "reason": "Product expansion with multiple integrations demonstrating practical AI agent deployment"
+    "headline": "Anthropic&apos;s Mythos set off a cybersecurity &apos;hysteria.&apos; Experts say the threat was already here",
+    "link": "https://www.cnbc.com/2026/05/08/anthropic-mythos-ai-cybersecurity-banks.html",
+    "score": 70,
+    "reason": "Major controversy around AI security tool launch and threat assessment debate"
   },
   {
     "rank": 9,
-    "headline": "There’s a Long-Shot Proposal to Protect California Workers From AI",
-    "link": "https://www.wired.com/story/tom-steyer-proposes-jobs-guarantee-to-protect-california-workers-from-ai/",
-    "score": 70,
-    "reason": "Concrete regulatory proposal targeting AI impact on employment"
+    "headline": "What's behind Washington's AI safety pivot",
+    "link": "https://www.axios.com/2026/05/08/ai-safety-pivot-trump-administration-china",
+    "score": 68,
+    "reason": "Significant regulatory shift in AI policy at federal government level"
   },
   {
     "rank": 10,
-    "headline": "Wall Street sees &apos;changing of the guard in AI&apos; as Intel, AMD shares soar while Nvidia lags",
-    "link": "https://www.cnbc.com/2026/05/08/wall-street-ai-chip-love-moves-from-nvidia-to-intel-amd-and-micron.html",
-    "score": 68,
-    "reason": "Market shift with measurable impact on major semiconductor companies in AI hardware race"
+    "headline": "The New Wild West of AI Kids’ Toys",
+    "link": "https://www.wired.com/story/the-new-wild-west-of-ai-kids-toys/",
+    "score": 65,
+    "reason": "Emerging controversy around AI deployment in children's products with safety implications"
   }
 ]
