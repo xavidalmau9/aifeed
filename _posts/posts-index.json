@@ -1352,5 +1352,29 @@
     "sourceUrl": "",
     "publishedAt": "2026-03-28T10:32:54.175-04:00",
     "isVideo": false
+  },
+  {
+    "id": "akamai-stock-soars-20-on-earnings-18-billion-ai-infrastructure-20260508",
+    "slug": "akamai-stock-soars-20-on-earnings-18-billion-ai-infrastructure",
+    "headline": "Akamai stock soars 20% on earnings, $1.8 billion AI infrastructure deal",
+    "summary": "Akamai's stock surges on strong earnings results and announces major $1.8 billion AI infrastructure investment partnership agreement.",
+    "body": "<p><strong>Akamai's stock surged 20% following a landmark $1.8 billion AI infrastructure deal</strong>\u2014a clear signal that the race to build out AI's backbone is accelerating rapidly and the market is rewarding companies positioned to lead.</p><p>This announcement underscores a critical shift in how enterprises approach AI deployment. Infrastructure providers are becoming as valuable as the AI platforms themselves. As organizations scale AI applications, they need reliable, high-performance networks and edge computing solutions. Akamai's deal validates that content delivery and edge infrastructure are foundational to enterprise AI success.</p><p>The broader AI industry is entering an infrastructure-first era. Early conversations focused on model capability and algorithmic breakthroughs. Now, the conversation is shifting to deployment, scale, and the unglamorous but essential work of moving data efficiently. This $1.8B commitment signals that enterprises are moving past pilots into production.</p>",
+    "category": "Business",
+    "imageUrl": "https://aifeed.run/images/aifeed_akamai_stock_soars_20_on_earnings_1_8_bi_1778274099192.png",
+    "sourceUrl": "https://www.cnbc.com/2026/05/08/akamai-stock-ai-cloud-infrastructure-deal.html",
+    "publishedAt": "2026-05-08T09:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
+    "id": "the-new-wild-west-of-ai-kids-toys-20260509",
+    "slug": "the-new-wild-west-of-ai-kids-toys",
+    "headline": "The New Wild West of AI Kids' Toys",
+    "summary": "Unregulated AI-powered children's toys are rapidly entering markets with minimal safety oversight, raising serious concerns about data privacy, developmental impacts, and ethical standards.",
+    "body": "<p><strong>The AI toy industry is experiencing explosive growth\u2014with virtually no regulatory framework in place.</strong></p><p>We're witnessing a critical inflection point in consumer AI. Companies are rapidly launching AI-powered toys that interact with children, learn from their behavior, and store personal data\u2014all while operating in a regulatory vacuum. This isn't just a product trend; it's reshaping how childhood development intersects with artificial intelligence and data privacy.</p><p>The market dynamics are straightforward: toy manufacturers see AI as the next frontier for engagement and consumer loyalty. Voice-activated companions, personalized learning toys, and emotionally responsive devices create powerful network effects and recurring revenue opportunities. Venture capital is flowing freely into this space because the TAM is enormous\u2014but the liability questions remain unanswered.</p>",
+    "category": "AI Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_the_new_wild_west_of_ai_kids_toys_1778328195618.png",
+    "sourceUrl": "https://www.wired.com/story/the-new-wild-west-of-ai-kids-toys/",
+    "publishedAt": "2026-05-09T09:00:00.000-04:00",
+    "isVideo": false
   }
 ]

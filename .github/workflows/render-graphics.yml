@@ -85,11 +85,13 @@ jobs:
                   console.log('No external photo URL found in HTML — graphic will have no background');
                 } else {
                   let photoUrl = urlMatch[1];
-                  const unsplashId = photoUrl.match(/images\.unsplash\.com\/photo-([a-zA-Z0-9_-]+)/);
-                  if (unsplashId) {
-                    photoUrl = 'https://unsplash.com/photos/' + unsplashId[1] + '/download?force=true';
+                  // Download URL directly — images.unsplash.com CDN URLs work with curl as-is
+                  // Only convert bare unsplash.com photo page URLs (no query params) to download endpoint
+                  const bareUnsplash = photoUrl.match(/^https:\/\/unsplash\.com\/photos\/([a-zA-Z0-9_-]+)$/);
+                  if (bareUnsplash) {
+                    photoUrl = 'https://unsplash.com/photos/' + bareUnsplash[1] + '/download?force=true';
                   }
-                  console.log('Downloading photo:', photoUrl.substring(0, 80));
+                  console.log('Downloading photo:', photoUrl.substring(0, 100));
                   try {
                     execSync('curl -sL --user-agent "Mozilla/5.0 (compatible; AIFeed/1.0; +https://aifeed.run)" "' + photoUrl + '" -o /tmp/photo_embed.jpg', { timeout: 30000 });
                     const stat = fs.statSync('/tmp/photo_embed.jpg');
