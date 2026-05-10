@@ -1,72 +1,44 @@
 [
   {
     "rank": 1,
-    "headline": "Microsoft was worried OpenAI would run off to Amazon and ‘shit-talk’ Azure",
-    "link": "https://www.theverge.com/report/926771/microsoft-openai-amazon-worries-shit-talk-azure",
+    "headline": "Mira Murati’s deposition pulled back the curtain on Sam Altman’s ouster",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/926383/mira-murati-sam-altman-musk-trial-ouster",
     "score": 92,
-    "reason": "Major controversy involving billions in investment decisions and internal strategy concerns between two tech giants"
+    "reason": "Major controversy with concrete evidence (deposition), OpenAI leadership drama, significant news event"
   },
   {
     "rank": 2,
-    "headline": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI",
-    "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
-    "score": 90,
-    "reason": "High-profile legal controversy with massive implications for AI industry leadership and corporate structure"
+    "headline": "AI generated identical résumés for a man and a woman: Hers was more likely to be labeled 'weak,' while his got a 97% approval rating",
+    "link": "https://fortune.com/2026/05/10/identical-resume-ai-men-women-response-trust-ability/",
+    "score": 88,
+    "reason": "Bias controversy with quantifiable data (97% approval rating), demonstrates real-world AI harm, research-backed"
   },
   {
     "rank": 3,
-    "headline": "Musk v. Altman week 2: OpenAI fires back, and Shivon Zilis reveals that Musk tried to poach Sam Altman",
-    "link": "https://www.technologyreview.com/2026/05/08/1137008/musk-v-altman-week-2-openai-fires-back-and-shivon-zilis-reveals-that-musk-tried-to-poach-sam-altman/",
-    "score": 88,
-    "reason": "Ongoing major controversy with new substantive revelations about leadership disputes and poaching attempts"
+    "headline": "Sony and Bandai get into bed with generative AI",
+    "link": "https://www.engadget.com/2167841/sony-and-bandai-get-into-bed-with-generative-ai/",
+    "score": 82,
+    "reason": "Major company partnership launch, entertainment industry adoption, significant corporate commitment"
   },
   {
     "rank": 4,
-    "headline": "The Tech Download: Meta, Google enter AI agent race as ‘agentic wars’ heat up",
-    "link": "https://www.cnbc.com/2026/05/08/ai-agent-meta-google-agentic-wars-tech-download.html",
-    "score": 85,
-    "reason": "Major competitive launches from two industry giants entering new AI category with significant implications"
+    "headline": "Anthropic&apos;s Mythos set off a cybersecurity &apos;hysteria.&apos; Experts say the threat was already here",
+    "link": "https://www.cnbc.com/2026/05/08/anthropic-mythos-ai-cybersecurity-banks.html",
+    "score": 78,
+    "reason": "Security controversy involving Anthropic, expert analysis of actual threat, contrasts hype with reality"
   },
   {
     "rank": 5,
-    "headline": "RingCentral adds Shopify, Calendly, and WhatsApp to AI Receptionist",
-    "link": "https://www.artificialintelligence-news.com/news/ringcentral-ai-adds-shopify-calendly-and-whatsapp-to-ai-receptionist/",
-    "score": 78,
-    "reason": "Concrete product launch expanding AI receptionist capabilities with multiple major integrations"
+    "headline": "Gemini API File Search is now multimodal",
+    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/",
+    "score": 75,
+    "reason": "Google product launch, capability expansion, concrete feature release"
   },
   {
     "rank": 6,
-    "headline": "ChatGPT's 'Trusted Contact' will alert loved ones of safety concerns",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/925874/chatgpt-trusted-contact-emergency-self-harm-notification",
-    "score": 75,
-    "reason": "New OpenAI feature launch addressing safety and user welfare with concrete functionality"
-  },
-  {
-    "rank": 7,
-    "headline": "Wall Street sees &apos;changing of the guard in AI&apos; as Intel, AMD shares soar while Nvidia lags",
-    "link": "https://www.cnbc.com/2026/05/08/wall-street-ai-chip-love-moves-from-nvidia-to-intel-amd-and-micron.html",
-    "score": 73,
-    "reason": "Major market shift with big numbers in competitive AI chip landscape dynamics"
-  },
-  {
-    "rank": 8,
-    "headline": "There’s a Long-Shot Proposal to Protect California Workers From AI",
-    "link": "https://www.wired.com/story/tom-steyer-proposes-jobs-guarantee-to-protect-california-workers-from-ai/",
-    "score": 68,
-    "reason": "Policy/regulation development affecting AI employment impact with broad implications"
-  },
-  {
-    "rank": 9,
-    "headline": "PlayStation sees AI as a ‘powerful tool’ to help make games",
-    "link": "https://www.theverge.com/games/926914/sony-playstation-ai-powerful-tool-games",
-    "score": 62,
-    "reason": "Major company committing to AI integration in significant industry application"
-  },
-  {
-    "rank": 10,
-    "headline": "Hackable Robot Lawn Mower Unlocks a New Nightmare",
-    "link": "https://www.wired.com/story/security-news-this-week-hackable-robot-lawnmower-unlocks-a-new-nightmare/",
-    "score": 58,
-    "reason": "Security vulnerability in AI-powered consumer robotics highlighting real-world risk"
+    "headline": "'The gains will be substantial': The AI shock is looking a lot like the China shock, and a top economist says that’s actually good news",
+    "link": "https://fortune.com/2026/05/10/ai-boom-china-shock-job-displacement-apollo-economist-torsten-slok-david-autor/",
+    "score": 72,
+    "reason": "Economic impact analysis from credible economist, big-picture implications, contrarian perspective"
   }
 ]
