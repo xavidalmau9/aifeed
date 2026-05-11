@@ -1376,5 +1376,41 @@
     "sourceUrl": "https://www.wired.com/story/the-new-wild-west-of-ai-kids-toys/",
     "publishedAt": "2026-05-09T09:00:00.000-04:00",
     "isVideo": false
+  },
+  {
+    "id": "qualcomm-ceo-openai-hardware-ai-devices-20260509",
+    "slug": "qualcomm-ceo-openai-hardware-ai-devices",
+    "headline": "Qualcomm's CEO is working with 'pretty much all' major AI players on top-secret devices\u2014and powering OpenAI's first push into hardware",
+    "summary": "Qualcomm CEO reveals the company is partnering with virtually every major AI player on secret devices and enabling OpenAI's first push into hardware.",
+    "body": "<p><strong>Qualcomm's CEO just revealed the company is partnering with virtually every major AI player on top-secret hardware devices</strong>\u2014and critically, powering OpenAI's first hardware initiative. This isn't just another product announcement. It's a fundamental shift in how the AI industry is organizing around silicon and real-world deployment.</p><p>The significance of this moment cannot be overstated. For years, the AI conversation has centered on software, algorithms, and large language models. But OpenAI's pivot toward hardware, with Qualcomm as the enabling partner, signals that the industry recognizes a critical gap: computational infrastructure purpose-built for AI workloads at scale.</p><p>For investors and business leaders, this development has profound strategic implications. Qualcomm isn't just supplying chips; it's becoming indispensable infrastructure in a hardware-first AI future. Companies betting on custom silicon for AI applications now have a proven partner with industry-wide credibility.</p>",
+    "category": "Hardware",
+    "imageUrl": "https://aifeed.run/images/aifeed_qualcomm_ceo_ai_hardware.png",
+    "sourceUrl": "https://fortune.com/2026/05/09/qualcomm-smartphone-ai-secret-device-openai-meta-wearables-agents/",
+    "publishedAt": "2026-05-09T10:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
+    "id": "bain-100-billion-saas-agentic-ai-automation-20260510",
+    "slug": "bain-100-billion-saas-agentic-ai-automation",
+    "headline": "Bain sees US$100 billion SaaS market in agentic AI automation",
+    "summary": "Bain & Company maps out a $100 billion market opportunity in agentic AI automation \u2014 a fundamental shift in how enterprises will operate over the next decade.",
+    "body": "<p><strong>Bain & Company just mapped out a $100 billion market opportunity that most executives are still sleeping on: agentic AI automation.</strong> This isn't incremental innovation\u2014it represents a fundamental shift in how enterprises will operate over the next decade.</p><p>Agentic AI differs fundamentally from conversational AI. While chatbots respond to user queries, agentic AI systems autonomously plan, execute, and optimize complex workflows. These intelligent agents can work across multiple systems, make contextual decisions, and deliver measurable business outcomes without constant human oversight.</p><p>For investors and business leaders, the implications are profound. The enterprises that successfully implement agentic AI early will capture significant competitive advantages in operational efficiency, cost reduction, and innovation velocity. SaaS platforms that enable agentic AI deployment will become critical infrastructure, similar to how cloud platforms became essential in the 2010s.</p>",
+    "category": "Business",
+    "imageUrl": "https://aifeed.run/images/aifeed_bain_saas_agentic_ai.png",
+    "sourceUrl": "https://www.artificialintelligence-news.com/news/bain-agentic-ai-saas-market/",
+    "publishedAt": "2026-05-10T09:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
+    "id": "mira-murati-deposition-sam-altman-openai-20260509",
+    "slug": "mira-murati-deposition-sam-altman-openai",
+    "headline": "Mira Murati's deposition pulled back the curtain on Sam Altman's ouster",
+    "summary": "Murati's sworn testimony provides the first documented account of what really happened when the OpenAI board ousted Sam Altman.",
+    "body": "<p><strong>Mira Murati's deposition testimony just pulled back the curtain on one of the tech industry's most controversial leadership decisions: Sam Altman's ouster from OpenAI.</strong></p><p>This deposition matters now because it provides the first substantive, documented account of what actually happened behind closed doors. Rather than relying on headlines or public statements, we're getting testimony from one of the key players who was in the room when it happened.</p><p>From a business perspective, OpenAI's internal conflict reveals the fragility of leadership consensus in high-stakes AI companies. When board members and executives don't align on direction\u2014whether it's about safety protocols, commercialization strategy, or governance\u2014the fallout can be dramatic and public.</p>",
+    "category": "Industry",
+    "imageUrl": "https://aifeed.run/images/aifeed_mira_murati_sam_altman.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/926383/mira-murati-sam-altman-musk-trial-ouster",
+    "publishedAt": "2026-05-09T08:00:00.000-04:00",
+    "isVideo": false
   }
 ]
