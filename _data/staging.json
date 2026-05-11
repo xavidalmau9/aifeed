@@ -1,44 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI",
-    "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+    "headline": "Bain sees US$100 billion SaaS market in agentic AI automation",
+    "link": "https://www.artificialintelligence-news.com/news/bain-agentic-ai-saas-market/",
     "score": 92,
-    "reason": "Major controversy with two AI industry titans; ongoing legal drama with significant implications"
+    "reason": "Big number ($100B market projection), major consulting firm validation, hot topic (AI agents)"
   },
   {
     "rank": 2,
-    "headline": "Qualcomm’s CEO is working with ‘pretty much all’ major AI players on top-secret devices—and powering OpenAI's first push into hardware",
-    "link": "https://fortune.com/2026/05/09/qualcomm-smartphone-ai-secret-device-openai-meta-wearables-agents/",
+    "headline": "CUDA Proves Nvidia Is a Software Company",
+    "link": "https://www.wired.com/story/cuda-proves-nvidia-is-a-software-company/",
     "score": 88,
-    "reason": "Major hardware launch signal; big numbers (all major AI players); concrete business development"
+    "reason": "Nvidia strategic shift, significant industry implication, software moat argument"
   },
   {
     "rank": 3,
-    "headline": "NASA is set to begin training with a prototype of Blue Origin's crew moon lander",
-    "link": "https://www.engadget.com/2168702/nasa-is-set-to-begin-training-with-a-prototype-of-blue-origin-crew-moon-lander/",
-    "score": 82,
-    "reason": "Major space/AI infrastructure play; concrete launch milestone; Blue Origin significant player"
+    "headline": "OpenAI to give EU access to new cyber model but Anthropic still holding out on Mythos",
+    "link": "https://www.cnbc.com/2026/05/11/openai-eu-cyber-model-anthropic-mythos-gpt.html",
+    "score": 85,
+    "reason": "Regulatory compliance launch, competitive differentiation, EU market access"
   },
   {
     "rank": 4,
-    "headline": "The global economy is experiencing the largest capex cycle ever, with nearly $5 trillion seen by the end of the decade—and it's not all AI spending",
-    "link": "https://fortune.com/2026/05/10/global-economy-largest-capital-spending-cycle-ever-5-trillion-dollars-energy-transition-ai/",
-    "score": 78,
-    "reason": "Big numbers ($5 trillion); macro AI investment trend; concrete economic data"
+    "headline": "This upstart stablecoin bank just won a rare OCC charter and raised $40 million. Its CEO is only 25",
+    "link": "https://fortune.com/2026/05/11/augustus-stablecoins-occ-charter/",
+    "score": 83,
+    "reason": "Big regulatory achievement (OCC charter), funding milestone, crypto fintech launch"
   },
   {
     "rank": 5,
-    "headline": "Samsung watches can predict if you're about to faint - but there are big caveats",
-    "link": "https://www.zdnet.com/article/samsung-galaxy-watch-faintng-detection-study-caveats/",
-    "score": 72,
-    "reason": "Samsung AI feature launch; health prediction capability; controversy flagged about limitations"
+    "headline": "I Work in Hollywood. Everyone Who Used to Make TV Is Now Secretly Training AI",
+    "link": "https://www.wired.com/story/i-work-in-hollywood-everyone-who-used-to-make-tv-now-training-ai/",
+    "score": 80,
+    "reason": "Concrete industry trend observation, mass AI adoption by creative professionals, labor shift"
   },
   {
     "rank": 6,
-    "headline": "Hackable Robot Lawn Mower Unlocks a New Nightmare",
-    "link": "https://www.wired.com/story/security-news-this-week-hackable-robot-lawnmower-unlocks-a-new-nightmare/",
+    "headline": "Samsung's Bespoke update is big step towards a useful AI for your fridge",
+    "link": "https://www.engadget.com/2167892/samsungs-bespoke-update-is-big-step-towards-a-useful-ai-for-your-fridge/",
+    "score": 76,
+    "reason": "Major product launch update, AI consumer application, Samsung feature expansion"
+  },
+  {
+    "rank": 7,
+    "headline": "Jensen Huang to college grads: \"Run. Don't walk\" toward AI",
+    "link": "https://www.axios.com/2026/05/11/jensen-huang-carnegie-mellon-commencement-ai",
+    "score": 74,
+    "reason": "Nvidia CEO statement, talent market signal, educational trend influence"
+  },
+  {
+    "rank": 8,
+    "headline": "The next test of leadership is how well you manage your AI agents",
+    "link": "https://fortune.com/2026/05/11/managing-ai-agents-cfos-leadership-test/",
+    "score": 70,
+    "reason": "Organizational leadership shift, AI agents adoption in enterprises, boardroom impact"
+  },
+  {
+    "rank": 9,
+    "headline": "Startup Wants to Run AI Inference From Space",
+    "link": "https://spectrum.ieee.org/orbital-inference-data-center",
     "score": 68,
-    "reason": "Security vulnerability in AI robotics; concrete exploit/controversy in consumer hardware"
+    "reason": "Novel infrastructure launch, unique AI deployment method, infrastructure innovation"
+  },
+  {
+    "rank": 10,
+    "headline": "An AI coding agent, used to write code, needs to reduce your maintenance costs",
+    "link": "https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs",
+    "score": 65,
+    "reason": "AI agent practical application, development tool launch, cost reduction focus"
   }
 ]
