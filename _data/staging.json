@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Bain sees US$100 billion SaaS market in agentic AI automation",
-    "link": "https://www.artificialintelligence-news.com/news/bain-agentic-ai-saas-market/",
-    "score": 92,
-    "reason": "Big number ($100B market projection), major consulting firm validation, hot topic (AI agents)"
+    "headline": "Google stopped a zero-day hack that it says was developed with AI",
+    "link": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped",
+    "score": 94,
+    "reason": "Major security incident, concrete evidence of AI-assisted attack, Google launch/announcement"
   },
   {
     "rank": 2,
-    "headline": "CUDA Proves Nvidia Is a Software Company",
-    "link": "https://www.wired.com/story/cuda-proves-nvidia-is-a-software-company/",
-    "score": 88,
-    "reason": "Nvidia strategic shift, significant industry implication, software moat argument"
+    "headline": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI",
+    "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+    "score": 89,
+    "reason": "Major controversy, ongoing trial, high-stakes dispute over AI company control"
   },
   {
     "rank": 3,
-    "headline": "OpenAI to give EU access to new cyber model but Anthropic still holding out on Mythos",
-    "link": "https://www.cnbc.com/2026/05/11/openai-eu-cyber-model-anthropic-mythos-gpt.html",
-    "score": 85,
-    "reason": "Regulatory compliance launch, competitive differentiation, EU market access"
+    "headline": "I tested whether Gemini, ChatGPT, and Claude can analyze videos - this one wins",
+    "link": "https://www.zdnet.com/article/can-gemini-chatgpt-claude-analyze-video-this-one-wins-test/",
+    "score": 78,
+    "reason": "Hands-on comparison of major AI models, concrete winner announcement"
   },
   {
     "rank": 4,
-    "headline": "This upstart stablecoin bank just won a rare OCC charter and raised $40 million. Its CEO is only 25",
-    "link": "https://fortune.com/2026/05/11/augustus-stablecoins-occ-charter/",
-    "score": 83,
-    "reason": "Big regulatory achievement (OCC charter), funding milestone, crypto fintech launch"
+    "headline": "Texas AG sues Netflix, claiming the streaming service collects user data without consent",
+    "link": "https://www.engadget.com/2170169/texas-ag-sues-netflix-claiming-the-streaming-service-collects-user-data-without-consent/",
+    "score": 76,
+    "reason": "Regulatory/legal action, significant controversy, clear stakes"
   },
   {
     "rank": 5,
-    "headline": "I Work in Hollywood. Everyone Who Used to Make TV Is Now Secretly Training AI",
-    "link": "https://www.wired.com/story/i-work-in-hollywood-everyone-who-used-to-make-tv-now-training-ai/",
-    "score": 80,
-    "reason": "Concrete industry trend observation, mass AI adoption by creative professionals, labor shift"
+    "headline": "Gemini 'Omni' video model shows up with some early demos",
+    "link": "https://9to5google.com/2026/05/11/gemini-omni-video-model-shows-up-with-some-early-demos/",
+    "score": 72,
+    "reason": "Google product launch/demo, multimodal AI capability advancement"
   },
   {
     "rank": 6,
-    "headline": "Samsung's Bespoke update is big step towards a useful AI for your fridge",
-    "link": "https://www.engadget.com/2167892/samsungs-bespoke-update-is-big-step-towards-a-useful-ai-for-your-fridge/",
-    "score": 76,
-    "reason": "Major product launch update, AI consumer application, Samsung feature expansion"
+    "headline": "Wall Street thinks memory is AI's golden ticket. Harvard's chip expert warns: 'Curves that just go to the sky with no end…never continue forever'",
+    "link": "https://fortune.com/2026/05/11/ai-memory-chips-semiconductor-stock-boom-price-hikes-dram-shortage-hbm/",
+    "score": 71,
+    "reason": "Debate over AI scaling limits, expert contradiction of industry consensus"
   },
   {
     "rank": 7,
-    "headline": "Jensen Huang to college grads: \"Run. Don't walk\" toward AI",
-    "link": "https://www.axios.com/2026/05/11/jensen-huang-carnegie-mellon-commencement-ai",
-    "score": 74,
-    "reason": "Nvidia CEO statement, talent market signal, educational trend influence"
+    "headline": "Gmail registration now requires scanning a QR code and sending a text message",
+    "link": "https://discuss.privacyguides.net/t/google-account-registration-now-requires-sending-an-sms-via-phone-instead-of-receiving-an-sms/36082",
+    "score": 68,
+    "reason": "Google security policy change, affects millions of users"
   },
   {
     "rank": 8,
-    "headline": "The next test of leadership is how well you manage your AI agents",
-    "link": "https://fortune.com/2026/05/11/managing-ai-agents-cfos-leadership-test/",
-    "score": 70,
-    "reason": "Organizational leadership shift, AI agents adoption in enterprises, boardroom impact"
+    "headline": "AI automates HR compliance, except for the area tech companies need",
+    "link": "https://www.artificialintelligence-news.com/news/ai-automates-hr-compliance-except-for-the-area-tech-companies-need/",
+    "score": 65,
+    "reason": "Enterprise AI application gap, industry-wide limitation identified"
   },
   {
     "rank": 9,
-    "headline": "Startup Wants to Run AI Inference From Space",
-    "link": "https://spectrum.ieee.org/orbital-inference-data-center",
-    "score": 68,
-    "reason": "Novel infrastructure launch, unique AI deployment method, infrastructure innovation"
+    "headline": "Interfaze: A new model architecture built for high accuracy at scale",
+    "link": "https://interfaze.ai/blog/interfaze-a-new-model-architecture-built-for-high-accuracy-at-scale",
+    "score": 62,
+    "reason": "New AI architecture launch, scaling advancement"
   },
   {
     "rank": 10,
-    "headline": "An AI coding agent, used to write code, needs to reduce your maintenance costs",
-    "link": "https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs",
-    "score": 65,
-    "reason": "AI agent practical application, development tool launch, cost reduction focus"
+    "headline": "CUDA-oxide: Nvidia&#x27;s official Rust to CUDA compiler",
+    "link": "https://nvlabs.github.io/cuda-oxide/index.html",
+    "score": 60,
+    "reason": "Nvidia tooling launch, developer ecosystem expansion"
   }
 ]
