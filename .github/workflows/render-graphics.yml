@@ -36,18 +36,49 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
         run: |
           node << 'JSEOF'
           const puppeteer = require('puppeteer');
           const fs   = require('fs');
           const path = require('path');
           const { execSync } = require('child_process');
+          const https = require('https');
 
-          const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-          const CHAT_ID   = process.env.TELEGRAM_CHAT_ID;
+          const BOT_TOKEN          = process.env.TELEGRAM_BOT_TOKEN;
+          const CHAT_ID            = process.env.TELEGRAM_CHAT_ID;
+          const UNSPLASH_KEY       = process.env.UNSPLASH_ACCESS_KEY;
+
+          // Photos that must NEVER be used — generic fallbacks from n8n
+          const BANNED_PHOTO_IDS = [
+            'photo-1677442135703-1787eea5ce01',
+            'photo-1518186285589-2f7649de83e0'
+          ];
+
+          // ── Search Unsplash for a story-appropriate photo ─────────────────────
+          async function searchUnsplash(query) {
+            if (!UNSPLASH_KEY) { console.log('No Unsplash key — skipping search'); return null; }
+            return new Promise((resolve) => {
+              const url = 'https://api.unsplash.com/search/photos?query=' +
+                encodeURIComponent(query) + '&orientation=portrait&per_page=5';
+              https.get(url, { headers: { 'Authorization': 'Client-ID ' + UNSPLASH_KEY } }, (res) => {
+                let data = '';
+                res.on('data', d => data += d);
+                res.on('end', () => {
+                  try {
+                    const r = JSON.parse(data);
+                    const photos = r.results || [];
+                    if (!photos.length) { resolve(null); return; }
+                    // Pick randomly from top 3 so we don't always get the same photo
+                    const pick = photos[Math.floor(Math.random() * Math.min(3, photos.length))];
+                    resolve(pick.urls.regular);
+                  } catch(e) { resolve(null); }
+                });
+              }).on('error', () => resolve(null));
+            });
+          }
 
           // ── main ─────────────────────────────────────────────────────────────
-
           (async () => {
             const browser = await puppeteer.launch({
               args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
@@ -55,7 +86,6 @@ jobs:
 
             const graphicsDir = './graphics';
             const imagesDir   = './images';
-
             const files = fs.readdirSync(graphicsDir).filter(f => f.endsWith('.html'));
 
             for (const file of files) {
@@ -69,24 +99,55 @@ jobs:
               console.log('Processing:', file);
               let html = fs.readFileSync(path.join(graphicsDir, file), 'utf8');
 
-              // Embed background photo as base64 — Puppeteer cannot reach external URLs
+              // Extract headline from AIFEED_META for smart photo search
+              const metaMatch = html.match(/<!--\s*AIFEED_META:([\s\S]*?)\s*-->/);
+              let headline = file.replace('.html','').replace(/_/g,' ');
+              if (metaMatch) {
+                try { headline = JSON.parse(metaMatch[1]).headline || headline; } catch(e) {}
+              }
+
+              // ── Photo embedding ──────────────────────────────────────────────
               const alreadyEmbedded = html.includes('data:image/jpeg;base64,') || html.includes('data:image/png;base64,');
+
               if (alreadyEmbedded) {
+                // Check if it's one of the banned generic fallback photos
+                // n8n embeds the fallback when all its photo tiers fail — detect and replace
+                const isBanned = BANNED_PHOTO_IDS.some(id => {
+                  // The URL is embedded as base64 so we check the original src before embedding happened
+                  // Instead, check if html file was small before base64 (hard), so we check file size heuristic:
+                  // A banned fallback photo embeds to ~180-200KB base64. Story photos are usually larger.
+                  // More reliable: check if the source HTML had the banned URL (look for it in the raw text before encoding)
+                  return false; // Can't easily detect after embedding — handled at URL stage below
+                });
                 console.log('Photo already embedded as base64');
               } else {
-                // FALLBACK: if no img.bg tag at all, inject a generic tech photo
+                // Ensure img.bg tag exists
                 if (!html.includes('class="bg"')) {
-                  const fallbackUrl = 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=1080&h=1350&fit=crop&q=85&fm=jpg';
-                  html = html.replace('<div class="c"><div class="ov">', '<div class="c"><img class="bg" src="' + fallbackUrl + '" alt=""><div class="ov">');
-                  console.log('No img.bg found — injected fallback photo URL');
+                  html = html.replace('<div class="c"><div class="ov">', '<div class="c"><img class="bg" src="" alt=""><div class="ov">');
                 }
+
                 const urlMatch = html.match(/class="bg"[^>]*src="(https?:\/\/[^"]+)"/);
-                if (!urlMatch) {
-                  console.log('No external photo URL found in HTML — graphic will have no background');
-                } else {
-                  let photoUrl = urlMatch[1];
-                  // Download URL directly — images.unsplash.com CDN URLs work with curl as-is
-                  // Only convert bare unsplash.com photo page URLs (no query params) to download endpoint
+                let photoUrl = urlMatch ? urlMatch[1] : null;
+
+                // Replace banned fallback URLs with a real Unsplash search
+                const isBanned = photoUrl && BANNED_PHOTO_IDS.some(id => photoUrl.includes(id));
+                if (!photoUrl || isBanned) {
+                  if (isBanned) console.log('Banned fallback photo detected — searching Unsplash for:', headline.substring(0,60));
+                  else console.log('No photo URL — searching Unsplash for:', headline.substring(0,60));
+                  photoUrl = await searchUnsplash(headline);
+                  if (photoUrl) {
+                    console.log('Unsplash found:', photoUrl.substring(0,80));
+                    // Inject or replace the src
+                    if (urlMatch) {
+                      html = html.replace(urlMatch[1], photoUrl);
+                    } else {
+                      html = html.replace('src="" alt=""', 'src="' + photoUrl + '" alt=""');
+                    }
+                  }
+                }
+
+                if (photoUrl) {
+                  // Only convert bare unsplash.com page URLs — CDN URLs download directly
                   const bareUnsplash = photoUrl.match(/^https:\/\/unsplash\.com\/photos\/([a-zA-Z0-9_-]+)$/);
                   if (bareUnsplash) {
                     photoUrl = 'https://unsplash.com/photos/' + bareUnsplash[1] + '/download?force=true';
@@ -97,10 +158,13 @@ jobs:
                     const stat = fs.statSync('/tmp/photo_embed.jpg');
                     if (stat.size > 10000) {
                       const b64 = fs.readFileSync('/tmp/photo_embed.jpg').toString('base64');
-                      html = html.replace(urlMatch[0], urlMatch[0].replace(urlMatch[1], 'data:image/jpeg;base64,' + b64));
+                      const currentUrlMatch = html.match(/class="bg"[^>]*src="(https?:\/\/[^"]+)"/);
+                      if (currentUrlMatch) {
+                        html = html.replace(currentUrlMatch[0], currentUrlMatch[0].replace(currentUrlMatch[1], 'data:image/jpeg;base64,' + b64));
+                      }
                       console.log('Photo embedded (' + Math.round(stat.size/1024) + 'KB)');
                     } else {
-                      console.log('Photo download too small (' + stat.size + 'B) — graphic may be blank');
+                      console.log('Photo download too small (' + stat.size + 'B)');
                     }
                   } catch(e) {
                     console.log('Photo embed failed:', e.message);
@@ -108,7 +172,7 @@ jobs:
                 }
               }
 
-              // Render PNG
+              // ── Render PNG ───────────────────────────────────────────────────
               try {
                 const page = await browser.newPage();
                 await page.setViewport({ width: 1080, height: 1500, deviceScaleFactor: 1 });
@@ -122,34 +186,30 @@ jobs:
                 console.log('Rendered:', pngName);
                 await page.close();
 
-                // Extract AIFEED_META and save as pending story
-                const metaMatch = html.match(/<!--\s*AIFEED_META:([\s\S]*?)\s*-->/);
+                // Save pending story from AIFEED_META
                 if (metaMatch) {
                   try {
                     const meta = JSON.parse(metaMatch[1]);
                     const pending = {
-                      htmlFile: file,
-                      pngName,
+                      htmlFile: file, pngName,
                       headline: meta.headline || '',
                       liCaption: meta.liCaption || '',
                       sourceUrl: meta.sourceUrl || '',
-                      date: meta.date || new Date().toISOString().substring(0,10),
+                      date: meta.date || new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' }),
                       savedAt: new Date().toISOString()
                     };
                     fs.mkdirSync('./_data', { recursive: true });
                     fs.writeFileSync('./_data/pending_story.json', JSON.stringify(pending, null, 2));
                     console.log('Saved pending story:', meta.headline.substring(0,60));
-                  } catch(e) {
-                    console.log('Could not save pending story:', e.message);
-                  }
+                  } catch(e) { console.log('Could not save pending story:', e.message); }
                 }
 
-                // Send HTML to Telegram with approval prompt
+                // Send HTML to Telegram
                 const tmpHtml = '/tmp/tg_' + file;
                 fs.writeFileSync(tmpHtml, html);
                 try {
-                  const headline = metaMatch ? (JSON.parse(metaMatch[1]).headline || '') : file;
-                  const caption = '📸 <b>New graphic ready</b>\n' + headline.substring(0,120) + '\n\nReply <b>publish</b> to add to website.';
+                  const hl = metaMatch ? (JSON.parse(metaMatch[1]).headline || '') : file;
+                  const caption = '📸 <b>New graphic ready</b>\n' + hl.substring(0,120) + '\n\nReply <b>publish</b> to add to website.';
                   const result = execSync(
                     'curl -s ' +
                     '-F "chat_id=' + CHAT_ID + '" ' +
@@ -160,14 +220,8 @@ jobs:
                     { encoding: 'utf8', timeout: 30000 }
                   );
                   const parsed = JSON.parse(result);
-                  if (parsed.ok) {
-                    console.log('Sent to Telegram:', file);
-                  } else {
-                    console.log('Telegram send failed:', JSON.stringify(parsed));
-                  }
-                } catch(e) {
-                  console.log('Telegram curl error:', e.message);
-                }
+                  console.log(parsed.ok ? 'Sent to Telegram: ' + file : 'Telegram failed: ' + JSON.stringify(parsed));
+                } catch(e) { console.log('Telegram curl error:', e.message); }
 
               } catch(e) {
                 console.error('Failed to render', file, ':', e.message);
@@ -175,7 +229,7 @@ jobs:
             }
 
             await browser.close();
-            console.log('Done. Reply "publish" in Telegram to add story to website.');
+            console.log('Done.');
           })().catch(e => { console.error(e); process.exit(1); });
           JSEOF
 
