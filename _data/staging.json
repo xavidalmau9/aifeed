@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Google stopped a zero-day hack that it says was developed with AI",
-    "link": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped",
+    "headline": "Google announces its first-ever discovery of a zero-day exploit made with AI",
+    "link": "https://www.engadget.com/2170002/google-announces-its-first-ever-discovery-of-a-zero-day-exploit-made-with-ai/",
     "score": 94,
-    "reason": "Major security incident, concrete evidence of AI-assisted attack, Google launch/announcement"
+    "reason": "Major AI controversy/capability milestone: adversarial use of AI for security exploitation, concrete incident"
   },
   {
     "rank": 2,
-    "headline": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI",
-    "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
-    "score": 89,
-    "reason": "Major controversy, ongoing trial, high-stakes dispute over AI company control"
+    "headline": "Daybreak is OpenAI's response to Anthropic's Claude Mythos",
+    "link": "https://www.engadget.com/2170410/daybreak-openai-cybersecurity-initiative/",
+    "score": 92,
+    "reason": "OpenAI product launch competing directly with Anthropic, major AI model release"
   },
   {
     "rank": 3,
-    "headline": "I tested whether Gemini, ChatGPT, and Claude can analyze videos - this one wins",
-    "link": "https://www.zdnet.com/article/can-gemini-chatgpt-claude-analyze-video-this-one-wins-test/",
-    "score": 78,
-    "reason": "Hands-on comparison of major AI models, concrete winner announcement"
+    "headline": "SoftBank has injected $450 million into this British AI chip company",
+    "link": "https://www.cnbc.com/2026/05/12/softbank-graphcore-ai-chip-investment.html",
+    "score": 88,
+    "reason": "Large funding amount ($450M), major investment in AI infrastructure/chips"
   },
   {
     "rank": 4,
-    "headline": "Texas AG sues Netflix, claiming the streaming service collects user data without consent",
-    "link": "https://www.engadget.com/2170169/texas-ag-sues-netflix-claiming-the-streaming-service-collects-user-data-without-consent/",
-    "score": 76,
-    "reason": "Regulatory/legal action, significant controversy, clear stakes"
+    "headline": "Ilya Sutskever Stands by His Role in Sam Altman’s OpenAI Ouster: ‘I Didn’t Want It to Be Destroyed’",
+    "link": "https://www.wired.com/story/ilya-sutskever-testifies-musk-v-altman-trial/",
+    "score": 85,
+    "reason": "Major controversy: internal OpenAI conflict with direct quotes from key player"
   },
   {
     "rank": 5,
-    "headline": "Gemini 'Omni' video model shows up with some early demos",
-    "link": "https://9to5google.com/2026/05/11/gemini-omni-video-model-shows-up-with-some-early-demos/",
-    "score": 72,
-    "reason": "Google product launch/demo, multimodal AI capability advancement"
+    "headline": "Google says it likely thwarted effort by hacker group to use AI for &apos;mass exploitation event&apos;",
+    "link": "https://www.cnbc.com/2026/05/11/google-thwarts-effort-hacker-group-use-ai-mass-exploitation-event.html",
+    "score": 84,
+    "reason": "Concrete security incident: adversarial AI use prevented, major vulnerability"
   },
   {
     "rank": 6,
-    "headline": "Wall Street thinks memory is AI's golden ticket. Harvard's chip expert warns: 'Curves that just go to the sky with no end…never continue forever'",
-    "link": "https://fortune.com/2026/05/11/ai-memory-chips-semiconductor-stock-boom-price-hikes-dram-shortage-hbm/",
-    "score": 71,
-    "reason": "Debate over AI scaling limits, expert contradiction of industry consensus"
+    "headline": "Exclusive: Roadrunner raises $27 million from Kleiner Perkins and Founders Fund",
+    "link": "https://fortune.com/2026/05/12/exclusive-roadrunner-kleiner-founders/",
+    "score": 79,
+    "reason": "Startup funding launch with top-tier VCs, AI company capital raise"
   },
   {
     "rank": 7,
-    "headline": "Gmail registration now requires scanning a QR code and sending a text message",
-    "link": "https://discuss.privacyguides.net/t/google-account-registration-now-requires-sending-an-sms-via-phone-instead-of-receiving-an-sms/36082",
-    "score": 68,
-    "reason": "Google security policy change, affects millions of users"
+    "headline": "CUDA Proves Nvidia Is a Software Company",
+    "link": "https://www.wired.com/story/cuda-proves-nvidia-is-a-software-company/",
+    "score": 78,
+    "reason": "Nvidia strategic positioning/capability analysis, infrastructure for AI"
   },
   {
     "rank": 8,
-    "headline": "AI automates HR compliance, except for the area tech companies need",
-    "link": "https://www.artificialintelligence-news.com/news/ai-automates-hr-compliance-except-for-the-area-tech-companies-need/",
-    "score": 65,
-    "reason": "Enterprise AI application gap, industry-wide limitation identified"
+    "headline": "Exclusive: White Circle raises $11 million to stop AI models from going rogue in the workplace",
+    "link": "https://fortune.com/2026/05/12/exclusive-white-circle-raises-11-million-to-stop-ai-models-from-going-rogue-in-the-workplace/",
+    "score": 76,
+    "reason": "Startup funding launch, addresses AI safety/control concerns in enterprise"
   },
   {
     "rank": 9,
-    "headline": "Interfaze: A new model architecture built for high accuracy at scale",
-    "link": "https://interfaze.ai/blog/interfaze-a-new-model-architecture-built-for-high-accuracy-at-scale",
-    "score": 62,
-    "reason": "New AI architecture launch, scaling advancement"
+    "headline": "Unitree GD01: China&#x27;s $537k rideable transformer robot is now in production",
+    "link": "https://gagadget.com/en/709729-unitree-gd01-chinas-537k-rideable-transformer-robot-is-now-in-production/",
+    "score": 75,
+    "reason": "Major AI robotics launch: production-ready transformer robot with specific price point"
   },
   {
     "rank": 10,
-    "headline": "CUDA-oxide: Nvidia&#x27;s official Rust to CUDA compiler",
-    "link": "https://nvlabs.github.io/cuda-oxide/index.html",
-    "score": 60,
-    "reason": "Nvidia tooling launch, developer ecosystem expansion"
+    "headline": "I compared how Gemini, ChatGPT, and Claude can analyze videos - this model wins",
+    "link": "https://www.zdnet.com/article/can-gemini-chatgpt-claude-analyze-video-this-one-wins-test/",
+    "score": 72,
+    "reason": "Comparative analysis of three major AI models on concrete capability (video analysis)"
   }
 ]
