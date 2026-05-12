@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Google announces its first-ever discovery of a zero-day exploit made with AI",
-    "link": "https://www.engadget.com/2170002/google-announces-its-first-ever-discovery-of-a-zero-day-exploit-made-with-ai/",
-    "score": 94,
-    "reason": "Major AI controversy/capability milestone: adversarial use of AI for security exploitation, concrete incident"
+    "headline": "Hugging Face hosted malicious software masquerading as OpenAI release",
+    "link": "https://www.artificialintelligence-news.com/news/malware-on-hugging-face-malicious-software-masquerading-as-openai-release/",
+    "score": 92,
+    "reason": "Major security breach at major AI platform; concrete incident with real consequences"
   },
   {
     "rank": 2,
-    "headline": "Daybreak is OpenAI's response to Anthropic's Claude Mythos",
-    "link": "https://www.engadget.com/2170410/daybreak-openai-cybersecurity-initiative/",
-    "score": 92,
-    "reason": "OpenAI product launch competing directly with Anthropic, major AI model release"
+    "headline": "Parents say ChatGPT got their son killed with bad advice on party drugs",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/928691/openai-chatgpt-wrongful-death-overdose",
+    "score": 89,
+    "reason": "Significant controversy with serious real-world harm; directly impacts OpenAI"
   },
   {
     "rank": 3,
-    "headline": "SoftBank has injected $450 million into this British AI chip company",
-    "link": "https://www.cnbc.com/2026/05/12/softbank-graphcore-ai-chip-investment.html",
-    "score": 88,
-    "reason": "Large funding amount ($450M), major investment in AI infrastructure/chips"
+    "headline": "Waymo recalls nearly 4,000 robotaxis after a car drove directly into a flooded road",
+    "link": "https://www.engadget.com/2171165/waymo-recalls-nearly-4000-robotaxis-after-a-car-drove-directly-into-a-flooded-road/",
+    "score": 87,
+    "reason": "Large-scale recall with big number (4,000); major autonomy safety incident"
   },
   {
     "rank": 4,
-    "headline": "Ilya Sutskever Stands by His Role in Sam Altman’s OpenAI Ouster: ‘I Didn’t Want It to Be Destroyed’",
-    "link": "https://www.wired.com/story/ilya-sutskever-testifies-musk-v-altman-trial/",
+    "headline": "Meta won’t let you block its AI account on Threads",
+    "link": "https://www.theverge.com/tech/929091/meta-ai-threads-account-block",
     "score": 85,
-    "reason": "Major controversy: internal OpenAI conflict with direct quotes from key player"
+    "reason": "User control controversy; Meta forcing AI integration on platform"
   },
   {
     "rank": 5,
-    "headline": "Google says it likely thwarted effort by hacker group to use AI for &apos;mass exploitation event&apos;",
-    "link": "https://www.cnbc.com/2026/05/11/google-thwarts-effort-hacker-group-use-ai-mass-exploitation-event.html",
+    "headline": "Sam Altman takes the stand in trial against Elon Musk",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/916975/altman-takes-stand-elon-musk-openai-trial",
     "score": 84,
-    "reason": "Concrete security incident: adversarial AI use prevented, major vulnerability"
+    "reason": "Active major litigation between OpenAI and Musk; concrete courtroom event"
   },
   {
     "rank": 6,
-    "headline": "Exclusive: Roadrunner raises $27 million from Kleiner Perkins and Founders Fund",
-    "link": "https://fortune.com/2026/05/12/exclusive-roadrunner-kleiner-founders/",
-    "score": 79,
-    "reason": "Startup funding launch with top-tier VCs, AI company capital raise"
+    "headline": "Everything announced at The Android Show: Gemini Intelligence, Googlebooks, and more",
+    "link": "https://9to5google.com/2026/05/12/the-android-show-2026/",
+    "score": 82,
+    "reason": "Multiple major Google launches at official event; broad AI integration rollout"
   },
   {
     "rank": 7,
-    "headline": "CUDA Proves Nvidia Is a Software Company",
-    "link": "https://www.wired.com/story/cuda-proves-nvidia-is-a-software-company/",
+    "headline": "George Clooney, Tom Hanks, and Meryl Streep back new 'Human Consent Standard' for AI licensing",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/928534/rsl-media-human-consent-standard",
     "score": 78,
-    "reason": "Nvidia strategic positioning/capability analysis, infrastructure for AI"
+    "reason": "High-profile celebrity backing for AI regulation initiative; notable endorsement"
   },
   {
     "rank": 8,
-    "headline": "Exclusive: White Circle raises $11 million to stop AI models from going rogue in the workplace",
-    "link": "https://fortune.com/2026/05/12/exclusive-white-circle-raises-11-million-to-stop-ai-models-from-going-rogue-in-the-workplace/",
+    "headline": "Accounting's big 'wake-up call': AI is forcing companies to rethink entry-level jobs",
+    "link": "https://fortune.com/2026/05/12/ai-entry-level-accounting-jobs-disappearing-bamboohr-survey/",
     "score": 76,
-    "reason": "Startup funding launch, addresses AI safety/control concerns in enterprise"
+    "reason": "Significant labor market disruption from AI; systemic industry impact"
   },
   {
     "rank": 9,
-    "headline": "Unitree GD01: China&#x27;s $537k rideable transformer robot is now in production",
-    "link": "https://gagadget.com/en/709729-unitree-gd01-chinas-537k-rideable-transformer-robot-is-now-in-production/",
-    "score": 75,
-    "reason": "Major AI robotics launch: production-ready transformer robot with specific price point"
+    "headline": "OpenAI just released its answer to Claude Mythos",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/928342/openai-daybreak-security-ai",
+    "score": 74,
+    "reason": "Major OpenAI product launch directly competing with Anthropic"
   },
   {
     "rank": 10,
-    "headline": "I compared how Gemini, ChatGPT, and Claude can analyze videos - this model wins",
-    "link": "https://www.zdnet.com/article/can-gemini-chatgpt-claude-analyze-video-this-one-wins-test/",
-    "score": 72,
-    "reason": "Comparative analysis of three major AI models on concrete capability (video analysis)"
+    "headline": "Jensen Huang to college grads: \"Run. Don't walk\" toward AI",
+    "link": "https://www.axios.com/2026/05/11/jensen-huang-carnegie-mellon-commencement-ai",
+    "score": 71,
+    "reason": "Major industry leader statement about AI job market surge; notable quote from influential CEO"
   }
 ]
