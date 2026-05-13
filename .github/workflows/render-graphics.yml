@@ -47,7 +47,7 @@ jobs:
 
           const BOT_TOKEN          = process.env.TELEGRAM_BOT_TOKEN;
           const CHAT_ID            = process.env.TELEGRAM_CHAT_ID;
-          const UNSPLASH_KEY       = process.env.UNSPLASH_ACCESS_KEY;
+          const UNSPLASH_KEY       = 'dINF0W5ORDZVQlce-BlLgncgVTfTJLlEvAWKBlxaSGQ';
 
           // Base64 fingerprint of the two banned generic fallback photos from n8n.
           // Both have identical bytes at position 2000-2060 in their base64 encoding —
