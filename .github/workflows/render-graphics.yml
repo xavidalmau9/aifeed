@@ -49,18 +49,27 @@ jobs:
           const CHAT_ID            = process.env.TELEGRAM_CHAT_ID;
           const UNSPLASH_KEY       = process.env.UNSPLASH_ACCESS_KEY;
 
-          // Photos that must NEVER be used — generic fallbacks from n8n
-          const BANNED_PHOTO_IDS = [
-            'photo-1677442135703-1787eea5ce01',
-            'photo-1518186285589-2f7649de83e0'
-          ];
+          // Base64 fingerprint of the two banned generic fallback photos from n8n.
+          // Both have identical bytes at position 2000-2060 in their base64 encoding —
+          // different from all real story photos. Used to detect when n8n embedded the fallback.
+          const BANNED_B64_FINGERPRINT = 'BuMG9QcHBxkHKwc9B08HYQd0B4YHmQesB78H0gflB/gICwgfCDIIRghaCG4I';
+
+          // ── Smart Unsplash search: extracts company/topic from headline ────────
+          function buildSearchQuery(headline) {
+            // Pull out proper nouns and key terms — avoid generic words
+            const stopWords = new Set(['the','a','an','is','are','was','were','has','have','had','will','its','with','that','this','for','and','but','not','from','into','been','being','after','about','their','they','who','what','how','why','when','posts','gets','says','could','would','should','which','also','than','more','just','last','year','fiscal','first','new','over','under','amid','amid','sees','puts','makes','marks','mainly','huge','major','biggest','driven','record','gain','loss','deal','move','plan','bet','up','on','at','in','of','to','by','as','an','or','if']);
+            const words = headline.replace(/[^a-zA-Z0-9\s]/g, ' ').split(/\s+/).filter(w => w.length > 2 && !stopWords.has(w.toLowerCase()));
+            // Take up to 5 meaningful words
+            return words.slice(0, 5).join(' ');
+          }
 
           // ── Search Unsplash for a story-appropriate photo ─────────────────────
           async function searchUnsplash(query) {
-            if (!UNSPLASH_KEY) { console.log('No Unsplash key — skipping search'); return null; }
+            if (!UNSPLASH_KEY) { console.log('No Unsplash key'); return null; }
             return new Promise((resolve) => {
+              // Use per_page=10 and pick randomly from top 8 for more variety
               const url = 'https://api.unsplash.com/search/photos?query=' +
-                encodeURIComponent(query) + '&orientation=portrait&per_page=5';
+                encodeURIComponent(query) + '&orientation=portrait&per_page=10';
               https.get(url, { headers: { 'Authorization': 'Client-ID ' + UNSPLASH_KEY } }, (res) => {
                 let data = '';
                 res.on('data', d => data += d);
@@ -69,8 +78,9 @@ jobs:
                     const r = JSON.parse(data);
                     const photos = r.results || [];
                     if (!photos.length) { resolve(null); return; }
-                    // Pick randomly from top 3 so we don't always get the same photo
-                    const pick = photos[Math.floor(Math.random() * Math.min(3, photos.length))];
+                    // Pick randomly from top 8 (or fewer) for variety
+                    const pool = photos.slice(0, Math.min(8, photos.length));
+                    const pick = pool[Math.floor(Math.random() * pool.length)];
                     resolve(pick.urls.regular);
                   } catch(e) { resolve(null); }
                 });
@@ -109,66 +119,73 @@ jobs:
               // ── Photo embedding ──────────────────────────────────────────────
               const alreadyEmbedded = html.includes('data:image/jpeg;base64,') || html.includes('data:image/png;base64,');
 
+              // Detect if n8n embedded the banned fallback photo as base64.
+              // Both banned photos share an identical fingerprint at chars 2000-2060 of their base64.
+              let isBannedB64 = false;
               if (alreadyEmbedded) {
-                // Check if it's one of the banned generic fallback photos
-                // n8n embeds the fallback when all its photo tiers fail — detect and replace
-                const isBanned = BANNED_PHOTO_IDS.some(id => {
-                  // The URL is embedded as base64 so we check the original src before embedding happened
-                  // Instead, check if html file was small before base64 (hard), so we check file size heuristic:
-                  // A banned fallback photo embeds to ~180-200KB base64. Story photos are usually larger.
-                  // More reliable: check if the source HTML had the banned URL (look for it in the raw text before encoding)
-                  return false; // Can't easily detect after embedding — handled at URL stage below
-                });
-                console.log('Photo already embedded as base64');
+                const b64Match = html.match(/data:image\/jpeg;base64,([A-Za-z0-9+/=]{2100,})/);
+                if (b64Match && b64Match[1].substring(2000, 2060) === BANNED_B64_FINGERPRINT) {
+                  isBannedB64 = true;
+                  console.log('Banned fallback photo detected embedded as base64 — replacing with story photo');
+                }
+              }
+
+              if (alreadyEmbedded && !isBannedB64) {
+                console.log('Photo already embedded as base64 — using as-is');
               } else {
+                // Either not base64 OR it's the banned fallback.
+                // ALWAYS search Unsplash using smart keywords extracted from the headline.
+                const smartQuery = buildSearchQuery(headline);
+                console.log('Searching Unsplash for:', smartQuery, '(from headline:', headline.substring(0,50) + ')');
+
                 // Ensure img.bg tag exists
                 if (!html.includes('class="bg"')) {
                   html = html.replace('<div class="c"><div class="ov">', '<div class="c"><img class="bg" src="" alt=""><div class="ov">');
                 }
 
-                const urlMatch = html.match(/class="bg"[^>]*src="(https?:\/\/[^"]+)"/);
-                let photoUrl = urlMatch ? urlMatch[1] : null;
+                let photoUrl = await searchUnsplash(smartQuery);
 
-                // Replace banned fallback URLs with a real Unsplash search
-                const isBanned = photoUrl && BANNED_PHOTO_IDS.some(id => photoUrl.includes(id));
-                if (!photoUrl || isBanned) {
-                  if (isBanned) console.log('Banned fallback photo detected — searching Unsplash for:', headline.substring(0,60));
-                  else console.log('No photo URL — searching Unsplash for:', headline.substring(0,60));
-                  photoUrl = await searchUnsplash(headline);
-                  if (photoUrl) {
-                    console.log('Unsplash found:', photoUrl.substring(0,80));
-                    // Inject or replace the src
-                    if (urlMatch) {
-                      html = html.replace(urlMatch[1], photoUrl);
-                    } else {
-                      html = html.replace('src="" alt=""', 'src="' + photoUrl + '" alt=""');
-                    }
-                  }
+                // If smart query fails, retry with first 3 words of headline
+                if (!photoUrl) {
+                  const fallbackQuery = headline.split(' ').slice(0, 3).join(' ');
+                  console.log('Retrying Unsplash with:', fallbackQuery);
+                  photoUrl = await searchUnsplash(fallbackQuery);
                 }
 
                 if (photoUrl) {
+                  console.log('Unsplash found:', photoUrl.substring(0,80));
                   // Only convert bare unsplash.com page URLs — CDN URLs download directly
                   const bareUnsplash = photoUrl.match(/^https:\/\/unsplash\.com\/photos\/([a-zA-Z0-9_-]+)$/);
                   if (bareUnsplash) {
                     photoUrl = 'https://unsplash.com/photos/' + bareUnsplash[1] + '/download?force=true';
                   }
-                  console.log('Downloading photo:', photoUrl.substring(0, 100));
+                  console.log('Downloading:', photoUrl.substring(0, 100));
                   try {
                     execSync('curl -sL --user-agent "Mozilla/5.0 (compatible; AIFeed/1.0; +https://aifeed.run)" "' + photoUrl + '" -o /tmp/photo_embed.jpg', { timeout: 30000 });
                     const stat = fs.statSync('/tmp/photo_embed.jpg');
                     if (stat.size > 10000) {
-                      const b64 = fs.readFileSync('/tmp/photo_embed.jpg').toString('base64');
-                      const currentUrlMatch = html.match(/class="bg"[^>]*src="(https?:\/\/[^"]+)"/);
-                      if (currentUrlMatch) {
-                        html = html.replace(currentUrlMatch[0], currentUrlMatch[0].replace(currentUrlMatch[1], 'data:image/jpeg;base64,' + b64));
+                      const newB64 = fs.readFileSync('/tmp/photo_embed.jpg').toString('base64');
+                      if (isBannedB64) {
+                        // Replace the entire banned base64 block
+                        html = html.replace(/data:image\/jpeg;base64,[A-Za-z0-9+/=]+/, 'data:image/jpeg;base64,' + newB64);
+                      } else {
+                        // Replace URL src or empty src with base64
+                        const anyMatch = html.match(/class="bg"[^>]*src="([^"]*?)"/);
+                        if (anyMatch) {
+                          html = html.replace(anyMatch[0], anyMatch[0].replace(anyMatch[1], 'data:image/jpeg;base64,' + newB64));
+                        } else {
+                          html = html.replace('src="" alt=""', 'src="data:image/jpeg;base64,' + newB64 + '" alt=""');
+                        }
                       }
                       console.log('Photo embedded (' + Math.round(stat.size/1024) + 'KB)');
                     } else {
-                      console.log('Photo download too small (' + stat.size + 'B)');
+                      console.log('Photo download too small (' + stat.size + 'B) — rendering with dark background');
                     }
                   } catch(e) {
                     console.log('Photo embed failed:', e.message);
                   }
+                } else {
+                  console.log('Unsplash returned nothing — rendering with dark background');
                 }
               }
 
