@@ -1,44 +1,62 @@
 #!/usr/bin/env python3
 """
-AIFeed Video Sync — run this whenever a new branded video appears in ~/Downloads/
-It auto-detects new MP4s, reads their LinkedIn captions, copies to repo,
-updates videos-index.json, and commits + pushes to GitHub.
+AIFeed Video Sync — detects new branded videos in ~/Downloads, copies to repo,
+updates videos-index.json, commits + pushes to GitHub.
 
-Usage:
+Runs automatically via crontab at 2pm daily:
+  0 14 * * * /usr/bin/python3 /Users/305partners/aifeed/scripts/sync-videos.sh >> /tmp/aifeed-video-sync.log 2>&1
+
+Manual run:
   python3 /Users/305partners/aifeed/scripts/sync-videos.sh
-  # or make it executable: chmod +x sync-videos.sh && ./sync-videos.sh
 """
 
-import json, os, re, subprocess, sys
+import json, os, re, shutil, subprocess, sys
+from datetime import datetime
 from pathlib import Path
 
 REPO       = Path('/Users/305partners/aifeed')
 VIDEOS_DIR = REPO / 'videos'
 INDEX_FILE = REPO / 'videos' / 'videos-index.json'
-DOWNLOADS  = Path.home() / 'Downloads'
+# Always use explicit path — cron may have a different HOME
+DOWNLOADS  = Path('/Users/305partners/Downloads')
+
+def git(*args, check=True, ignore_errors=False):
+    result = subprocess.run(['git', '-C', str(REPO)] + list(args),
+                            capture_output=True, text=True)
+    if not ignore_errors and check and result.returncode != 0:
+        print(f'git {" ".join(args)} failed:\n{result.stderr.strip()}')
+        raise SystemExit(1)
+    return result
 
 def read_caption(ts):
     p = DOWNLOADS / f'caption_linkedin_{ts}.txt'
     if not p.exists():
         return None, None, None, None
-    text = p.read_text().strip()
+    text = p.read_text(encoding='utf-8', errors='ignore').strip()
     lines = [l.strip() for l in text.split('\n') if l.strip()]
-    # Source line
+    if not lines:
+        return None, None, None, None
+
+    # Extract source and YouTube URL
     source, source_url = 'Unknown', ''
     for l in lines:
         if l.startswith('Source:'):
             source = l.replace('Source:', '').strip()
         if re.match(r'https?://www\.youtube\.com', l):
             source_url = l.strip()
-    # Title: first non-empty line
-    title = lines[0] if lines else 'AI News'
-    # Caption: body paragraphs (skip bullets, skip Source, skip URLs, skip hashtags)
-    body_lines = []
+
+    # Title = first non-empty line (trimmed to 120 chars)
+    title = lines[0][:120]
+
+    # Caption = body paragraphs only (no bullets, URLs, hashtags, Source lines)
+    body = []
     for l in lines[1:]:
-        if l.startswith('Source:') or re.match(r'https?://', l) or l.startswith('#') or l.startswith('•'):
+        if (l.startswith('Source:') or re.match(r'https?://', l)
+                or l.startswith('#') or l.startswith('•') or l.startswith('📺')):
             continue
-        body_lines.append(l)
-    caption = ' '.join(body_lines)[:350].strip()
+        body.append(l)
+    caption = ' '.join(body)[:350].strip()
+
     return title, caption, source, source_url
 
 def get_ts(filename):
@@ -46,11 +64,27 @@ def get_ts(filename):
     return m.group(1) if m else None
 
 def main():
-    # Load existing index
-    existing = json.loads(INDEX_FILE.read_text())
+    print(f'\n[{datetime.now().strftime("%Y-%m-%d %H:%M:%S")}] AIFeed Video Sync starting…')
+
+    # Always pull latest from remote first (before reading index)
+    # Stash any local changes so pull can succeed cleanly
+    stash = git('stash', check=False, ignore_errors=True)
+    stashed = 'No local changes' not in stash.stdout and stash.returncode == 0
+
+    pull = git('pull', '--rebase', 'origin', 'main', check=False)
+    if pull.returncode != 0:
+        print(f'Warning: git pull failed — {pull.stderr.strip()}\nProceeding anyway.')
+    else:
+        print('Pulled latest from origin/main.')
+
+    if stashed:
+        git('stash', 'pop', check=False, ignore_errors=True)
+
+    # Load current index (post-pull)
+    existing = json.loads(INDEX_FILE.read_text(encoding='utf-8'))
     existing_files = {e['filename'] for e in existing}
 
-    # Find all MP4s in Downloads
+    # Find MP4s in Downloads not yet indexed
     mp4s = sorted(DOWNLOADS.glob('aifeed_branded_*.mp4'), key=lambda p: p.stat().st_mtime)
     new_videos = [p for p in mp4s if p.name not in existing_files]
 
@@ -63,26 +97,24 @@ def main():
     for mp4 in new_videos:
         ts = get_ts(mp4.name)
         if not ts:
-            print(f'  ⚠️  Skipping {mp4.name} — cannot parse timestamp')
+            print(f'  ⚠  Skipping {mp4.name} — cannot parse timestamp')
             continue
 
         title, caption, source, source_url = read_caption(ts)
-        if not caption:
-            print(f'  ⚠️  Skipping {mp4.name} — no caption file found at {DOWNLOADS}/caption_linkedin_{ts}.txt')
+        if not title:
+            print(f'  ⚠  Skipping {mp4.name} — no caption at caption_linkedin_{ts}.txt')
             continue
 
-        # Copy MP4 to repo videos/
+        # Copy to repo
         dest = VIDEOS_DIR / mp4.name
         if not dest.exists():
-            print(f'  Copying {mp4.name} → videos/')
-            import shutil; shutil.copy2(str(mp4), str(dest))
+            print(f'  Copying {mp4.name} ({mp4.stat().st_size // 1024 // 1024}MB) → videos/')
+            shutil.copy2(str(mp4), str(dest))
         else:
             print(f'  {mp4.name} already in videos/ (skipping copy)')
 
-        # Build index entry
-        from datetime import datetime
         mtime = datetime.fromtimestamp(mp4.stat().st_mtime).strftime('%Y-%m-%dT%H:%M:%SZ')
-        entry = {
+        added.append({
             'filename': mp4.name,
             'url': f'https://aifeed.run/videos/{mp4.name}',
             'title': title,
@@ -90,31 +122,35 @@ def main():
             'source': source,
             'sourceUrl': source_url,
             'date': mtime
-        }
-        added.append(entry)
-        print(f'  ✅ {mp4.name} → "{title}" ({source})')
+        })
+        print(f'  ✅ {mp4.name} — "{title[:80]}" ({source})')
 
     if not added:
-        print('Nothing added.')
+        print('Nothing to add (captions missing for all new videos).')
         return
 
-    # Prepend new entries (newest first)
+    # Prepend newest first
     updated = list(reversed(added)) + existing
-    INDEX_FILE.write_text(json.dumps(updated, indent=2))
+    INDEX_FILE.write_text(json.dumps(updated, indent=2), encoding='utf-8')
     print(f'\nUpdated videos-index.json — {len(updated)} total videos')
 
-    # Git: pull, stage, commit, push
-    os.chdir(REPO)
-    subprocess.run(['git', 'pull', '--rebase'], check=False)
-    subprocess.run(['git', 'add', 'videos/'], check=True)
-    names = ', '.join(e['filename'] for e in added)
-    msg = f'Add {len(added)} new video(s): {names}'
-    result = subprocess.run(['git', 'diff', '--staged', '--quiet'])
-    if result.returncode == 0:
-        print('Nothing to commit (already pushed?).')
+    # Stage, commit, push
+    git('add', 'videos/')
+    staged = git('diff', '--staged', '--quiet', check=False)
+    if staged.returncode == 0:
+        print('Nothing staged to commit.')
         return
-    subprocess.run(['git', 'commit', '-m', msg], check=True)
-    subprocess.run(['git', 'push'], check=True)
+
+    names = ', '.join(e['filename'] for e in added)
+    git('commit', '-m', f'Add {len(added)} new video(s): {names}')
+
+    # Push — retry once with pull if rejected
+    push = git('push', check=False)
+    if push.returncode != 0:
+        print('Push rejected — pulling and retrying…')
+        git('pull', '--rebase', 'origin', 'main')
+        git('push')
+
     print(f'\n🚀 Pushed {len(added)} video(s) to GitHub.')
 
 if __name__ == '__main__':
