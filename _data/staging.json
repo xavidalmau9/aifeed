@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "SoftBank posts $46 billion gain at Vision Fund driven mainly by massive OpenAI bet",
-    "link": "https://www.cnbc.com/2026/05/13/softbank-earnings-fy-2025-vision-fund-openai-stake.html",
+    "headline": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI",
+    "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
     "score": 94,
-    "reason": "Concrete financial impact with massive number ($46B), demonstrates AI investment scale"
+    "reason": "Major ongoing controversy with legal implications for leading AI company; active courtroom drama"
   },
   {
     "rank": 2,
-    "headline": "xAI Adds 19 New Gas Turbines Despite Ongoing Lawsuit",
-    "link": "https://www.wired.com/story/xai-adds-19-new-gas-turbines-despite-ongoing-lawsuit/",
-    "score": 89,
-    "reason": "Major infrastructure expansion with legal controversy, quantifiable commitment to AI scaling"
+    "headline": "Hugging Face hosted malicious software masquerading as OpenAI release",
+    "link": "https://www.artificialintelligence-news.com/news/malware-on-hugging-face-malicious-software-masquerading-as-openai-release/",
+    "score": 88,
+    "reason": "Security breach at major AI platform; concrete incident with impact on developer trust"
   },
   {
     "rank": 3,
-    "headline": "Family sues OpenAI, alleging ChatGPT advice led to accidental overdose",
-    "link": "https://www.engadget.com/2171685/openai-lawsuit-wrongful-death-chatgpt-advice-overdose-sam-nelson/",
-    "score": 88,
-    "reason": "Significant liability controversy with real-world harm allegations against major AI company"
+    "headline": "AI chatbots are giving out people’s real phone numbers",
+    "link": "https://www.technologyreview.com/2026/05/13/1137203/ai-chatbots-are-giving-out-peoples-real-phone-numbers/",
+    "score": 85,
+    "reason": "Privacy/security failure across multiple AI systems; demonstrates real-world harm"
   },
   {
     "rank": 4,
-    "headline": "Encrypted texts reveal how Nvidia chips and U.S. tech are being smuggled to China and Russia",
-    "link": "https://fortune.com/2026/05/13/nvidia-chip-smuggling-china-russia-iran-export-controls-supermicro/",
-    "score": 87,
-    "reason": "Major security/regulatory controversy with geopolitical implications for AI chip supply"
+    "headline": "Cisco&apos;s stock pops 15% on surging AI orders, as company says it&apos;s cutting almost 4,000 jobs",
+    "link": "https://www.cnbc.com/2026/05/13/cisco-csco-q3-earnings-report-2026.html",
+    "score": 84,
+    "reason": "Big numbers: 15% stock surge, 4,000 job cuts; AI infrastructure demand signal"
   },
   {
     "rank": 5,
-    "headline": "Sam Altman says Elon Musk’s mind games were damaging OpenAI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/928861/openai-sam-altman-elon-musk-damage",
-    "score": 85,
-    "reason": "High-profile founder controversy with credible allegations affecting major AI company governance"
+    "headline": "Everything announced at The Android Show: Gemini Intelligence, Googlebooks, and more",
+    "link": "https://9to5google.com/2026/05/12/the-android-show-2026/",
+    "score": 82,
+    "reason": "Major Google product launches with multiple features; significant mobile AI integration"
   },
   {
     "rank": 6,
-    "headline": "Data centers are coming for rural America",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/928963/data-center-rural-america-jobs-jay-maine",
-    "score": 82,
-    "reason": "Major infrastructure trend driven by AI demands, significant geographic/economic impact"
+    "headline": "WhatsApp Adds Meta AI Chats That Are Built to Be Fully Private",
+    "link": "https://www.wired.com/story/whatsapp-incognito-chat-meta-ai/",
+    "score": 79,
+    "reason": "Concrete product launch at scale (WhatsApp); privacy-focused feature deployment"
   },
   {
     "rank": 7,
-    "headline": "Google announces Googlebooks with Gemini Intelligence focus, coming this fall",
-    "link": "https://9to5google.com/2026/05/12/googlebooks-announcement/",
-    "score": 79,
-    "reason": "Major product launch from Google combining hardware and AI, direct Apple competition"
+    "headline": "Meta won’t let you block its AI account on Threads",
+    "link": "https://www.theverge.com/tech/929091/meta-ai-threads-account-block",
+    "score": 76,
+    "reason": "Meta policy controversy; raises concerns about user control and forced AI integration"
   },
   {
     "rank": 8,
-    "headline": "DHS wants to build AI smart glasses using the facial recognition tech ICE agents already ‘could be’ using on Americans",
-    "link": "https://fortune.com/2026/05/12/dhs-ice-meta-glasses-ai-facial-recognition/",
-    "score": 78,
-    "reason": "Government AI surveillance controversy with privacy and civil liberties implications"
+    "headline": "Nvidia&apos;s Jensen Huang bets on this British startup to build &apos;next frontier&apos; of AI",
+    "link": "https://www.cnbc.com/2026/05/13/google-deepmind-alumni-startup-partners-nvidia-superintelligence.html",
+    "score": 74,
+    "reason": "Major Nvidia investment signal; indicates strategic direction for AI hardware/infrastructure"
   },
   {
     "rank": 9,
-    "headline": "Alibaba&apos;s core profit plunges 84% even as AI and cloud growth accelerate",
-    "link": "https://www.cnbc.com/2026/05/13/alibaba-earnings-march-quarter-ai-cloud-growth.html",
-    "score": 76,
-    "reason": "Major earnings miss with quantifiable numbers showing business model disruption from AI"
+    "headline": "The Unitree GD01 Is a Giant Mecha Robot You Can Actually Buy",
+    "link": "https://www.wired.com/story/unitree-gd01-mecha-robot/",
+    "score": 71,
+    "reason": "Physical AI product launch; tangible consumer robotics milestone"
   },
   {
     "rank": 10,
-    "headline": "Threads users are pissed they can't block Meta's new AI chatbot",
-    "link": "https://www.engadget.com/2171113/threads-users-are-pissed-they-cant-block-metas-new-ai-chatbot/",
-    "score": 74,
-    "reason": "User backlash against AI feature rollout from major platform, illustrates adoption friction"
+    "headline": "OpenAI endorses the Kids Online Safety Act",
+    "link": "https://www.engadget.com/2172269/openai-endorses-the-kids-online-safety-act/",
+    "score": 68,
+    "reason": "Major AI company policy position on regulation; significant industry stance"
   }
 ]
