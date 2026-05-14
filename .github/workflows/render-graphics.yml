@@ -170,11 +170,13 @@ jobs:
                         html = html.replace(/data:image\/jpeg;base64,[A-Za-z0-9+/=]+/, 'data:image/jpeg;base64,' + newB64);
                       } else {
                         // Replace URL src or empty src with base64
-                        const anyMatch = html.match(/class="bg"[^>]*src="([^"]*?)"/);
+                        const anyMatch = html.match(/class="bg"[^>]*src="([^"]+)"/);
                         if (anyMatch) {
-                          html = html.replace(anyMatch[0], anyMatch[0].replace(anyMatch[1], 'data:image/jpeg;base64,' + newB64));
+                          // Non-empty src (URL) — replace the URL value with base64
+                          html = html.replace(anyMatch[1], 'data:image/jpeg;base64,' + newB64);
                         } else {
-                          html = html.replace('src="" alt=""', 'src="data:image/jpeg;base64,' + newB64 + '" alt=""');
+                          // Empty src="" — inject base64 directly
+                          html = html.replace(/src=""([^>]*)>/, 'src="data:image/jpeg;base64,' + newB64 + '"$1>');
                         }
                       }
                       console.log('Photo embedded (' + Math.round(stat.size/1024) + 'KB)');
