@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Cisco&apos;s stock pops 17% on surging AI orders, as company says it&apos;s cutting almost 4,000 jobs",
-    "link": "https://www.cnbc.com/2026/05/13/cisco-csco-q3-earnings-report-2026.html",
-    "score": 94,
-    "reason": "Major financial impact (17% stock surge), large job cuts (4,000), concrete business metric"
+    "headline": "Cerebras pops 68% in Nasdaq debut, pushing the AI chipmaker&apos;s market cap to $95 billion",
+    "link": "https://www.cnbc.com/2026/05/14/cerebras-cbrs-stock-trade-nasdaq-ipo.html",
+    "score": 98,
+    "reason": "Major IPO launch with massive market validation ($95B valuation), big number, concrete event"
   },
   {
     "rank": 2,
-    "headline": "Cerebras prices IPO above expected range, as Wall Street braces for AI tsunami",
-    "link": "https://www.cnbc.com/2026/05/13/cerebras-prices-ipo-above-expected-range-wall-street-expects-ai-flood.html",
-    "score": 89,
-    "reason": "Major IPO launch with successful pricing, significant capital raise announcement"
+    "headline": "Cisco posts best day since 2011 on strong AI demand, CEO says tech is entering a &apos;networking supercycle&apos;",
+    "link": "https://www.cnbc.com/2026/05/14/cisco-csco-pops-on-ai-demand.html",
+    "score": 94,
+    "reason": "Major company milestone (best day since 2011), big numbers, concrete market event"
   },
   {
     "rank": 3,
-    "headline": "Fervo becomes clean energy's biggest-ever IPO with $10B valuation—powered by the earth’s heat and AI’s hunger",
-    "link": "https://fortune.com/2026/05/14/fervo-clean-energy-biggest-ipo-10b-valuation-powered-earths-heat-ai-hunger/",
-    "score": 88,
-    "reason": "Record-breaking valuation ($10B), clean energy AI convergence launch"
+    "headline": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI",
+    "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+    "score": 92,
+    "reason": "Major controversy/lawsuit with huge industry implications, ongoing major conflict"
   },
   {
     "rank": 4,
-    "headline": "US reportedly allows 10 Chinese companies to buy NVIDIA's coveted H200 AI chips",
-    "link": "https://www.engadget.com/2172686/us-reportedly-allows-10-chinese-companies-to-buy-nvidia-h200-chips/",
-    "score": 85,
-    "reason": "Major policy reversal, geopolitical significance, concrete number (10 companies)"
+    "headline": "Americans do not want AI data centers in their backyards",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/930477/ai-data-centers-gallup-survey-70-percent-opposition",
+    "score": 88,
+    "reason": "Large-scale public sentiment data on AI infrastructure, multiple data points, concrete opposition trend"
   },
   {
     "rank": 5,
-    "headline": "Microsoft's Edge Copilot update uses AI to pull information from across your tabs",
-    "link": "https://www.theverge.com/tech/930188/microsoft-edge-copilot-ai-tabs",
-    "score": 78,
-    "reason": "Product launch with functional innovation, major tech company feature release"
+    "headline": "AI chatbots are giving out people’s real phone numbers",
+    "link": "https://www.technologyreview.com/2026/05/13/1137203/ai-chatbots-are-giving-out-peoples-real-phone-numbers/",
+    "score": 87,
+    "reason": "Privacy/security controversy affecting multiple users, concrete problem with AI systems"
   },
   {
     "rank": 6,
-    "headline": "Mark Zuckerberg announces 'completely private' encrypted Meta AI chat",
-    "link": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats",
-    "score": 77,
-    "reason": "Major privacy-focused product announcement from major tech company, competitive differentiation"
+    "headline": "Meta’s New Reality: Record High Profits. Record Low Morale",
+    "link": "https://www.wired.com/story/meta-layoffs-bad-vibes-mark-zuckerberg-ai/",
+    "score": 85,
+    "reason": "Major company milestone (record profits) with internal controversy, big numbers and conflict"
   },
   {
     "rank": 7,
-    "headline": "Physical AI moves closer to factory floors as companies test humanoid robots",
-    "link": "https://www.artificialintelligence-news.com/news/physical-ai-humanoid-robots-factories/",
-    "score": 76,
-    "reason": "Concrete milestone (factory deployment), emerging AI application category launch"
+    "headline": "An Engineer’s Post Protesting Laptop Surveillance Is Going Viral Inside Meta",
+    "link": "https://www.wired.com/story/meta-employee-protest-mouse-tracking-surveillance-ai-training/",
+    "score": 83,
+    "reason": "Internal controversy at major company gaining traction, concrete protest/resistance event"
   },
   {
     "rank": 8,
-    "headline": "Sam Altman says Elon Musk’s mind games were damaging OpenAI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/928861/openai-sam-altman-elon-musk-damage",
-    "score": 74,
-    "reason": "High-profile controversy with specific allegations, major founder conflict"
+    "headline": "OpenAI’s Codex is now in the ChatGPT mobile app",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/930763/openai-codex-chatgpt-ios-android-app-preview",
+    "score": 82,
+    "reason": "Major product feature launch by leading AI company, tangible capability expansion"
   },
   {
     "rank": 9,
-    "headline": "Android is getting a big AI overhaul in 2026",
-    "link": "https://arstechnica.com/gadgets/2026/05/google-says-android-is-getting-a-big-ai-overhaul-in-2026/",
-    "score": 73,
-    "reason": "Major platform-wide AI integration launch affecting billions of users"
+    "headline": "Netflix wants to use generative AI to make animated shorts",
+    "link": "https://www.engadget.com/2173239/netflix-wants-to-use-generative-ai-to-make-animated-shorts/",
+    "score": 80,
+    "reason": "Major entertainment company launching AI production strategy, concrete use case implementation"
   },
   {
     "rank": 10,
-    "headline": "Data centers are coming for rural America",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/928963/data-center-rural-america-jobs-jay-maine",
-    "score": 71,
-    "reason": "Significant infrastructure shift with concrete geographic expansion, big number implications"
+    "headline": "The earth beneath your feet just minted a $10 billion company to power America's AI boom",
+    "link": "https://fortune.com/2026/05/14/fervo-clean-energy-biggest-ipo-10b-valuation-powered-earths-heat-ai-hunger/",
+    "score": 79,
+    "reason": "New company valuation milestone ($10B), AI infrastructure company launch, big numbers"
   }
 ]
