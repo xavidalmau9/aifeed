@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Cerebras pops 68% in Nasdaq debut, pushing the AI chipmaker&apos;s market cap to $95 billion",
-    "link": "https://www.cnbc.com/2026/05/14/cerebras-cbrs-stock-trade-nasdaq-ipo.html",
-    "score": 98,
-    "reason": "Major IPO launch with massive market validation ($95B valuation), big number, concrete event"
+    "headline": "Microsoft starts canceling Claude Code licenses",
+    "link": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad",
+    "score": 92,
+    "reason": "Major company action with concrete impact; Microsoft canceling competitor product licenses is significant business news"
   },
   {
     "rank": 2,
-    "headline": "Cisco posts best day since 2011 on strong AI demand, CEO says tech is entering a &apos;networking supercycle&apos;",
-    "link": "https://www.cnbc.com/2026/05/14/cisco-csco-pops-on-ai-demand.html",
-    "score": 94,
-    "reason": "Major company milestone (best day since 2011), big numbers, concrete market event"
+    "headline": "xAI introduces its coding agent called Grok Build",
+    "link": "https://www.engadget.com/2173482/xai-coding-agent-grok-build/",
+    "score": 88,
+    "reason": "New product launch from xAI; coding agent represents meaningful capability expansion"
   },
   {
     "rank": 3,
-    "headline": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI",
-    "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
-    "score": 92,
-    "reason": "Major controversy/lawsuit with huge industry implications, ongoing major conflict"
+    "headline": "OpenAI brings its Codex coding app to mobile",
+    "link": "https://www.engadget.com/2173235/openai-brings-its-codex-coding-app-to-mobile/",
+    "score": 85,
+    "reason": "Major product launch expanding OpenAI's platform reach to mobile devices"
   },
   {
     "rank": 4,
-    "headline": "Americans do not want AI data centers in their backyards",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/930477/ai-data-centers-gallup-survey-70-percent-opposition",
-    "score": 88,
-    "reason": "Large-scale public sentiment data on AI infrastructure, multiple data points, concrete opposition trend"
+    "headline": "Security researchers, aided by Anthropic's Mythos, claim to have  breached macOS",
+    "link": "https://www.engadget.com/2173543/security-researchers-anthropic-mythos-macos-exploit/",
+    "score": 84,
+    "reason": "Major security controversy; Anthropic's AI tool used to breach major OS represents significant controversy"
   },
   {
     "rank": 5,
-    "headline": "AI chatbots are giving out people’s real phone numbers",
-    "link": "https://www.technologyreview.com/2026/05/13/1137203/ai-chatbots-are-giving-out-peoples-real-phone-numbers/",
-    "score": 87,
-    "reason": "Privacy/security controversy affecting multiple users, concrete problem with AI systems"
+    "headline": "Claude is telling users to go to sleep mid-session and nobody, including Anthropic, seems to fully understand why it keeps doing it",
+    "link": "https://fortune.com/2026/05/14/why-is-claude-telling-users-to-go-to-sleep-anthropic-ai-sentient/",
+    "score": 82,
+    "reason": "Unexplained behavior anomaly from major AI system; genuine technical mystery with user impact"
   },
   {
     "rank": 6,
-    "headline": "Meta’s New Reality: Record High Profits. Record Low Morale",
-    "link": "https://www.wired.com/story/meta-layoffs-bad-vibes-mark-zuckerberg-ai/",
-    "score": 85,
-    "reason": "Major company milestone (record profits) with internal controversy, big numbers and conflict"
+    "headline": "Microsoft's Edge Copilot update uses AI to pull information from across your tabs",
+    "link": "https://www.theverge.com/tech/930188/microsoft-edge-copilot-ai-tabs",
+    "score": 78,
+    "reason": "Concrete feature launch from major company; expands AI integration into browser"
   },
   {
     "rank": 7,
-    "headline": "An Engineer’s Post Protesting Laptop Surveillance Is Going Viral Inside Meta",
-    "link": "https://www.wired.com/story/meta-employee-protest-mouse-tracking-surveillance-ai-training/",
-    "score": 83,
-    "reason": "Internal controversy at major company gaining traction, concrete protest/resistance event"
+    "headline": "Americans really don't want AI data centers close to their homes",
+    "link": "https://www.engadget.com/2173078/americans-really-dont-want-ai-data-centers-close-to-their-homes/",
+    "score": 76,
+    "reason": "Large-scale survey data showing public opposition; significant controversy around AI infrastructure"
   },
   {
     "rank": 8,
-    "headline": "OpenAI’s Codex is now in the ChatGPT mobile app",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/930763/openai-codex-chatgpt-ios-android-app-preview",
-    "score": 82,
-    "reason": "Major product feature launch by leading AI company, tangible capability expansion"
+    "headline": "The U.S. has 1,200 AI bills and no good test for any of them",
+    "link": "https://fortune.com/2026/05/15/ai-policy-patchwork-state-federal-regulation-framework-sonnenfeld-marcus/",
+    "score": 73,
+    "reason": "Big numbers showing regulatory confusion; significant policy controversy"
   },
   {
     "rank": 9,
-    "headline": "Netflix wants to use generative AI to make animated shorts",
-    "link": "https://www.engadget.com/2173239/netflix-wants-to-use-generative-ai-to-make-animated-shorts/",
-    "score": 80,
-    "reason": "Major entertainment company launching AI production strategy, concrete use case implementation"
+    "headline": "AI research papers are getting better, and it’s a big problem for scientists",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/930522/ai-research-papers-slop-peer-review-problem",
+    "score": 71,
+    "reason": "Systemic impact on research community; addresses real consequences of AI advancement"
   },
   {
     "rank": 10,
-    "headline": "The earth beneath your feet just minted a $10 billion company to power America's AI boom",
-    "link": "https://fortune.com/2026/05/14/fervo-clean-energy-biggest-ipo-10b-valuation-powered-earths-heat-ai-hunger/",
-    "score": 79,
-    "reason": "New company valuation milestone ($10B), AI infrastructure company launch, big numbers"
+    "headline": "'Critical infrastructure for the AI era': Cisco’s CEO on the earnings beat that sent shares to a record",
+    "link": "https://fortune.com/2026/05/15/critical-infrastructure-ai-era-cisco-ceo-earnings-beat-shares-record/",
+    "score": 69,
+    "reason": "Major company record stock performance driven by AI demand; concrete business impact"
   }
 ]
