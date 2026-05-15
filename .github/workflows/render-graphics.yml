@@ -54,13 +54,85 @@ jobs:
           // different from all real story photos. Used to detect when n8n embedded the fallback.
           const BANNED_B64_FINGERPRINT = 'BuMG9QcHBxkHKwc9B08HYQd0B4YHmQesB78H0gflB/gICwgfCDIIRghaCG4I';
 
-          // ── Smart Unsplash search: extracts company/topic from headline ────────
+          // ── Smart Unsplash search: topic-aware visual query builder ─────────
           function buildSearchQuery(headline) {
-            // Pull out proper nouns and key terms — avoid generic words
-            const stopWords = new Set(['the','a','an','is','are','was','were','has','have','had','will','its','with','that','this','for','and','but','not','from','into','been','being','after','about','their','they','who','what','how','why','when','posts','gets','says','could','would','should','which','also','than','more','just','last','year','fiscal','first','new','over','under','amid','amid','sees','puts','makes','marks','mainly','huge','major','biggest','driven','record','gain','loss','deal','move','plan','bet','up','on','at','in','of','to','by','as','an','or','if']);
+            const h = headline.toLowerCase();
+
+            // ── Company / topic → visual scene mapping ────────────────────────
+            // Each entry: [regex to detect topic, visual search query for Unsplash]
+            const TOPIC_MAP = [
+              // AI companies & products
+              [/openai|chatgpt/,              'artificial intelligence technology futuristic'],
+              [/anthropic|claude ai/,         'artificial intelligence research lab technology'],
+              [/google deepmind|gemini/,      'google technology neural network server'],
+              [/meta ai|llama/,               'social media technology AI interface'],
+              [/xai|grok/,                    'dark code terminal programmer screen'],
+              [/nvidia/,                      'computer chip GPU semiconductor technology'],
+              [/microsoft copilot/,           'microsoft office productivity technology'],
+              [/apple intelligence/,          'apple product design minimalist technology'],
+              [/amazon aws|alexa/,            'amazon cloud server data center'],
+              [/tesla|self.driving/,          'tesla electric car autonomous vehicle road'],
+              [/spacex|starship/,             'rocket launch space technology'],
+              [/waymo|autonomous/,            'self driving car street urban traffic'],
+              // Finance & investment
+              [/softbank/,                    'tokyo japan technology investment finance'],
+              [/venture capital|vc fund/,     'business investment finance boardroom meeting'],
+              [/ipo|stock market|nasdaq|nyse/, 'wall street stock market finance trading floor'],
+              [/bank.*account|financial.*access|plaid/, 'bank building finance institution wall street'],
+              [/billion.*fund|fund.*billion/, 'investment finance growth chart money'],
+              [/crypto|bitcoin|ethereum/,     'cryptocurrency bitcoin digital blockchain'],
+              // Energy & climate
+              [/solar|wind farm|renewable/,   'solar panels renewable energy green landscape'],
+              [/nuclear/,                     'nuclear power plant energy reactor'],
+              [/fervo|geothermal/,            'geothermal energy power drill technology landscape'],
+              [/electric vehicle|ev charging/, 'electric vehicle charging station clean energy'],
+              [/climate|carbon emission/,     'climate environment green energy nature'],
+              // Robotics & physical AI
+              [/humanoid|physical ai|figure robot|1x robot/, 'humanoid robot factory automation industrial'],
+              [/robot.*factor|factory.*robot/, 'factory robot automation industrial arm'],
+              [/robot/,                       'robot automation machine technology'],
+              [/drone/,                       'drone aerial technology flying sky'],
+              [/manufacturing|factory floor/,  'factory manufacturing industrial production'],
+              [/warehouse/,                   'warehouse logistics automation shelves workers'],
+              // Health & biotech
+              [/cancer|tumor|oncol/,          'medical research laboratory microscope science'],
+              [/drug.*approv|fda.*approv/,     'pharmaceutical medicine drug research lab'],
+              [/biotech|pharma/,              'biotechnology laboratory research science'],
+              [/hospital|healthcare/,         'hospital healthcare medical professional'],
+              // Social media & apps
+              [/whatsapp/,                    'smartphone messaging app mobile chat'],
+              [/instagram|tiktok/,            'social media phone content creator studio'],
+              [/youtube/,                     'video streaming content creator camera studio'],
+              // Cybersecurity
+              [/hack|breach|cyber.*attack|security.*attack/, 'cybersecurity hacker dark code screen lock'],
+              [/ransomware|malware/,           'cybersecurity threat dark computer screen'],
+              [/privacy|data.*leak/,          'digital privacy data security padlock'],
+              // Policy & regulation
+              [/congress|senate|legislation|ai.*law|law.*ai/, 'us capitol congress government building'],
+              [/antitrust|monopol/,           'government law court justice gavel'],
+              [/tariff|trade.*war/,           'shipping port cargo containers global trade'],
+              // General AI & tech topics
+              [/ai.*agent|agent.*ai/,         'artificial intelligence autonomous robot technology'],
+              [/large language|llm/,          'neural network deep learning abstract technology'],
+              [/semiconductor|chip.*foundry|foundry.*chip/, 'semiconductor chip microprocessor circuit board'],
+              [/data center/,                 'data center server room technology cooling'],
+              [/coding|developer|software engineer/, 'programmer coding laptop dark terminal'],
+              [/startup.*rais|rais.*million/,  'startup tech office modern workspace team'],
+              [/layoff|job.*cut/,             'office business people technology workplace'],
+              [/search engine/,               'internet search computer browser technology'],
+            ];
+
+            for (const [pattern, query] of TOPIC_MAP) {
+              if (pattern.test(h)) {
+                console.log('Topic map matched:', String(pattern), '→', query);
+                return query;
+              }
+            }
+
+            // ── Fallback: strip stop words, keep meaningful terms ─────────────
+            const stopWords = new Set(['the','a','an','is','are','was','were','has','have','had','will','its','with','that','this','for','and','but','not','from','into','been','being','after','about','their','they','who','what','how','why','when','posts','gets','says','could','would','should','which','also','than','more','just','last','year','fiscal','first','new','over','under','amid','sees','puts','makes','marks','mainly','huge','major','biggest','driven','record','gain','loss','deal','move','plan','bet','up','on','at','in','of','to','by','as','or','if','now','wants','access','your']);
             const words = headline.replace(/[^a-zA-Z0-9\s]/g, ' ').split(/\s+/).filter(w => w.length > 2 && !stopWords.has(w.toLowerCase()));
-            // Take up to 5 meaningful words
-            return words.slice(0, 5).join(' ');
+            return words.slice(0, 4).join(' ') + ' technology';
           }
 
           // ── Search Unsplash for a story-appropriate photo ─────────────────────
