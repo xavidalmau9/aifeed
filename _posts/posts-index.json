@@ -1,5 +1,27 @@
 [
   {
+    "id": "openai-chatgpt-bank-access-plaid-20260515",
+    "slug": "openai-chatgpt-bank-access-plaid",
+    "headline": "OpenAI Now Wants ChatGPT to Access Your Bank Accounts",
+    "summary": "OpenAI plans to integrate bank account access through Plaid, letting ChatGPT handle transactions and balance checks directly.",
+    "body": "<p><strong>OpenAI is moving ChatGPT beyond conversations and into your financial accounts\u2014and this shift signals a fundamental transformation in how we'll interact with AI in everyday life.</strong></p>\n<p>This week, OpenAI announced plans to integrate bank account access through Plaid, enabling ChatGPT to handle financial transactions, balance checks, and money transfers directly within the platform. This isn't just a feature update; it's a strategic move that positions AI assistants as primary interfaces for financial management, much like how smartphones centralized computing. The timing matters: as AI adoption accelerates, companies are racing to make these tools indispensable across every aspect of our lives.</p>\n<p>From a business perspective, this expansion opens enormous opportunities. OpenAI gains deeper user engagement, financial services companies unlock new distribution channels, and Plaid becomes even more central to the fintech infrastructure. For investors, this signals where the next wave of AI-driven value creation will happen\u2014not just in productivity, but in financial services themselves. The companies that embed AI into money management will control critical customer touchpoints.</p>\n<p>This development reflects a broader industry trend: AI is shifting from isolated tools to integrated platforms. We're seeing similar moves across multiple sectors as companies battle for ecosystem dominance. The winner won't be the best chatbot\u2014it'll be the one that becomes essential to how people manage their complete financial lives.</p>\n<p>But here's what deserves attention: this acceleration raises legitimate questions about security standards, regulatory frameworks, and user trust. As AI gains access to sensitive financial data, the infrastructure protecting that access becomes as important as the innovation itself. Companies moving fastest must also move most carefully.</p>\n<p>The companies that successfully balance innovation speed with security rigor will define the next decade of fintech.</p>\n<p class=\"article-tags-inline\"><a href=\"index.html?tag=AI\" class=\"article-tag\" style=\"color:#a050ff\">#AI</a> <a href=\"index.html?tag=FinTech\" class=\"article-tag\" style=\"color:#a050ff\">#FinTech</a> <a href=\"index.html?tag=OpenAI\" class=\"article-tag\" style=\"color:#a050ff\">#OpenAI</a> <a href=\"index.html?tag=ChatGPT\" class=\"article-tag\" style=\"color:#a050ff\">#ChatGPT</a> <a href=\"index.html?tag=Banking\" class=\"article-tag\" style=\"color:#a050ff\">#Banking</a> <a href=\"index.html?tag=FutureOfWork\" class=\"article-tag\" style=\"color:#a050ff\">#FutureOfWork</a> <a href=\"index.html?tag=Technology\" class=\"article-tag\" style=\"color:#a050ff\">#Technology</a> <a href=\"index.html?tag=Innovation\" class=\"article-tag\" style=\"color:#a050ff\">#Innovation</a></p>\n<p style=\"color:#8c8ca0;font-size:0.9em\">Source: The Verge \u00b7 <a href=\"https://www.theverge.com/ai-artificial-intelligence/931122/openai-chatgpt-financial-accounts-plaid-connection\" target=\"_blank\" rel=\"noopener\" style=\"color:#a050ff\">https://www.theverge.com/ai-artificial-intelligence/931122/openai-chatgpt-financial-accounts-plaid-connection</a></p>",
+    "category": "Products",
+    "hashtags": [
+      "AI",
+      "FinTech",
+      "OpenAI",
+      "ChatGPT",
+      "Banking",
+      "FutureOfWork",
+      "Technology",
+      "Innovation"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_openai_now_wants_chatgpt_to_access_your_1778879020314.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/931122/openai-chatgpt-financial-accounts-plaid-connection",
+    "publishedAt": "2026-05-15T17:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
     "id": "xai-grok-build-coding-agent-20260515",
     "slug": "xai-grok-build-coding-agent",
     "headline": "xAI Introduces Grok Build, Its AI Coding Agent",
