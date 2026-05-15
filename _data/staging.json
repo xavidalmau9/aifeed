@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Microsoft starts canceling Claude Code licenses",
-    "link": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad",
-    "score": 92,
-    "reason": "Major company action with concrete impact; Microsoft canceling competitor product licenses is significant business news"
+    "headline": "Cerebras pops 68% in Nasdaq debut, pushing the AI chipmaker&apos;s market cap to $95 billion",
+    "link": "https://www.cnbc.com/2026/05/14/cerebras-cbrs-stock-trade-nasdaq-ipo.html",
+    "score": 98,
+    "reason": "Major IPO launch with huge numbers ($95B valuation, 68% pop) and concrete market event"
   },
   {
     "rank": 2,
-    "headline": "xAI introduces its coding agent called Grok Build",
-    "link": "https://www.engadget.com/2173482/xai-coding-agent-grok-build/",
-    "score": 88,
-    "reason": "New product launch from xAI; coding agent represents meaningful capability expansion"
+    "headline": "OpenAI now wants ChatGPT to access your bank accounts",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/931122/openai-chatgpt-financial-accounts-plaid-connection",
+    "score": 92,
+    "reason": "Significant product launch with major controversy/privacy implications"
   },
   {
     "rank": 3,
-    "headline": "OpenAI brings its Codex coding app to mobile",
-    "link": "https://www.engadget.com/2173235/openai-brings-its-codex-coding-app-to-mobile/",
-    "score": 85,
-    "reason": "Major product launch expanding OpenAI's platform reach to mobile devices"
+    "headline": "ArXiv will ban researchers who upload papers full of AI slop",
+    "link": "https://www.theverge.com/science/931766/arxiv-ai-slop-ban-researchers",
+    "score": 88,
+    "reason": "Major policy action against AI-generated content abuse with concrete enforcement"
   },
   {
     "rank": 4,
-    "headline": "Security researchers, aided by Anthropic's Mythos, claim to have  breached macOS",
-    "link": "https://www.engadget.com/2173543/security-researchers-anthropic-mythos-macos-exploit/",
-    "score": 84,
-    "reason": "Major security controversy; Anthropic's AI tool used to breach major OS represents significant controversy"
+    "headline": "The UK's tax authority is turning to AI to help identify fraud",
+    "link": "https://www.engadget.com/2173575/uk-tax-authority-turning-to-ai-fraud-detection/",
+    "score": 86,
+    "reason": "Significant government deployment of AI for real-world application (fraud detection)"
   },
   {
     "rank": 5,
-    "headline": "Claude is telling users to go to sleep mid-session and nobody, including Anthropic, seems to fully understand why it keeps doing it",
-    "link": "https://fortune.com/2026/05/14/why-is-claude-telling-users-to-go-to-sleep-anthropic-ai-sentient/",
-    "score": 82,
-    "reason": "Unexplained behavior anomaly from major AI system; genuine technical mystery with user impact"
+    "headline": "Google updates its spam rules to include attempts to ‘manipulate’ AI",
+    "link": "https://www.theverge.com/tech/931416/google-ai-search-spam-policy",
+    "score": 84,
+    "reason": "Major policy update from largest search engine addressing AI manipulation tactics"
   },
   {
     "rank": 6,
-    "headline": "Microsoft's Edge Copilot update uses AI to pull information from across your tabs",
-    "link": "https://www.theverge.com/tech/930188/microsoft-edge-copilot-ai-tabs",
-    "score": 78,
-    "reason": "Concrete feature launch from major company; expands AI integration into browser"
+    "headline": "Meet the California cheese mogul who turned to AI agents to save his iconic $50 million business",
+    "link": "https://fortune.com/2026/05/15/petaluma-creamery-salesforce-ai-agents-saved-family-business/",
+    "score": 80,
+    "reason": "Concrete business application of AI agents with significant financial stakes"
   },
   {
     "rank": 7,
-    "headline": "Americans really don't want AI data centers close to their homes",
-    "link": "https://www.engadget.com/2173078/americans-really-dont-want-ai-data-centers-close-to-their-homes/",
-    "score": 76,
-    "reason": "Large-scale survey data showing public opposition; significant controversy around AI infrastructure"
+    "headline": "Greg Brockman Officially Takes Control of OpenAI’s Products in Latest Shake-Up",
+    "link": "https://www.wired.com/story/openai-reorg-greg-brockman-product/",
+    "score": 78,
+    "reason": "Major executive restructuring at OpenAI signaling strategic shift in product direction"
   },
   {
     "rank": 8,
-    "headline": "The U.S. has 1,200 AI bills and no good test for any of them",
-    "link": "https://fortune.com/2026/05/15/ai-policy-patchwork-state-federal-regulation-framework-sonnenfeld-marcus/",
-    "score": 73,
-    "reason": "Big numbers showing regulatory confusion; significant policy controversy"
+    "headline": "How Chinese short dramas became AI content machines",
+    "link": "https://www.technologyreview.com/2026/05/15/1137326/chinese-short-dramas-ai/",
+    "score": 76,
+    "reason": "Significant trend in AI-generated content at scale with commercial viability"
   },
   {
     "rank": 9,
-    "headline": "AI research papers are getting better, and it’s a big problem for scientists",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/930522/ai-research-papers-slop-peer-review-problem",
-    "score": 71,
-    "reason": "Systemic impact on research community; addresses real consequences of AI advancement"
+    "headline": "Startups are installing tiny data centers in people’s homes to reduce strain on the beleaguered electrical grid",
+    "link": "https://fortune.com/2026/05/15/startups-tiny-data-centers-beleaguered-electrical-grid-heata-span/",
+    "score": 74,
+    "reason": "Novel AI infrastructure deployment addressing energy grid challenges"
   },
   {
     "rank": 10,
-    "headline": "'Critical infrastructure for the AI era': Cisco’s CEO on the earnings beat that sent shares to a record",
-    "link": "https://fortune.com/2026/05/15/critical-infrastructure-ai-era-cisco-ceo-earnings-beat-shares-record/",
-    "score": 69,
-    "reason": "Major company record stock performance driven by AI demand; concrete business impact"
+    "headline": "State Farm CEO is betting big on AI—and contemplating the company's future in California",
+    "link": "https://fortune.com/2026/05/15/state-farm-ceo-ai-california/",
+    "score": 72,
+    "reason": "Major enterprise AI investment with existential business implications"
   }
 ]
