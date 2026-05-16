@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "YouTube is expanding its AI deepfake detection tool to all adult users",
-    "link": "https://www.theverge.com/news/931884/youtube-likeness-detection-ai-deepfake-expansion-all-adults",
+    "headline": "Microsoft AI chief gives it 18 months—for all white-collar work to be automated by AI",
+    "link": "https://fortune.com/article/why-microsoft-ai-chief-mustafa-suleyman-predicts-ai-automation-18-months/",
     "score": 92,
-    "reason": "Major platform launch to all users, addresses real-world harm (deepfakes), concrete product expansion"
+    "reason": "Major claim with specific timeline from executive; significant business/automation impact; concrete numbers"
   },
   {
     "rank": 2,
-    "headline": "ChatGPT will offer personalized financial advice (if you connect your bank account)",
-    "link": "https://www.engadget.com/2173768/chatgpt-will-offer-personalized-financial-advice-if-you-connect-your-bank-account/",
+    "headline": "Greg Brockman Officially Takes Control of OpenAI’s Products in Latest Shake-Up",
+    "link": "https://www.wired.com/story/openai-reorg-greg-brockman-product/",
     "score": 88,
-    "reason": "Significant feature launch into regulated domain (finance), high-stakes use case, OpenAI expansion"
+    "reason": "OpenAI leadership change; concrete organizational news; no speculation"
   },
   {
     "rank": 3,
-    "headline": "The Download: deepfake porn’s stolen bodies and AI sharing private numbers",
-    "link": "https://www.technologyreview.com/2026/05/14/1137257/the-download-deepfake-porn-bodies-ai-exposing-phone-numbers/",
+    "headline": "YouTube's AI deepfake detection tool is now available to all creators 18 and older",
+    "link": "https://www.engadget.com/2174282/youtube-likeness-detection-ai-deepfakes-expansion/",
     "score": 85,
-    "reason": "Major controversy: AI causing concrete privacy/consent harms, high-impact societal issue"
+    "reason": "Product launch; Google/YouTube feature rollout; concrete availability announcement"
   },
   {
     "rank": 4,
-    "headline": "OpenAI keeps shuffling its executives in bid to win AI agent battle",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/931544/openai-keeps-shuffling-its-executives-in-bid-to-win-ai-agent-battle",
-    "score": 82,
-    "reason": "Organizational instability at leading AI company, competitive pressure indicator, pattern of turnover"
+    "headline": "OpenAI and Government of Malta partner to roll out ChatGPT Plus to all citizens",
+    "link": "https://openai.com/index/malta-chatgpt-plus-partnership/",
+    "score": 84,
+    "reason": "Major partnership announcement; government-scale deployment; concrete launch"
   },
   {
     "rank": 5,
-    "headline": "New crash data highlights the slow progress of Tesla's robotaxis",
-    "link": "https://www.engadget.com/2174144/new-crash-data-highlights-the-slow-progress-of-teslas-robotaxis/",
-    "score": 80,
-    "reason": "Real-world performance data on autonomous vehicles, safety controversy, quantified underperformance"
+    "headline": "ArXiv will ban researchers who upload papers full of AI slop",
+    "link": "https://www.theverge.com/science/931766/arxiv-ai-slop-ban-researchers",
+    "score": 82,
+    "reason": "Significant policy change; addresses AI quality controversy; concrete enforcement action"
   },
   {
     "rank": 6,
-    "headline": "Security researchers, aided by Anthropic's Mythos, claim to have  breached macOS",
-    "link": "https://www.engadget.com/2173543/security-researchers-anthropic-mythos-macos-exploit/",
+    "headline": "AI research papers are getting better, and it’s a big problem for scientists",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/930522/ai-research-papers-slop-peer-review-problem",
     "score": 78,
-    "reason": "Major security vulnerability, Anthropic involvement, concrete breach claim with research backing"
+    "reason": "Controversy angle; institutional impact; paradoxical problem with numbers implied"
   },
   {
     "rank": 7,
-    "headline": "This new Claude skill saves you from bad contracts - and costs less than a lawyer",
-    "link": "https://www.zdnet.com/article/claude-small-business-contract-review-ai-no-lawyer/",
-    "score": 75,
-    "reason": "Anthropic product launch into professional services, disruption indicator, pricing competition"
+    "headline": "Google updates its spam rules to include attempts to ‘manipulate’ AI",
+    "link": "https://www.theverge.com/tech/931416/google-ai-search-spam-policy",
+    "score": 76,
+    "reason": "Google policy launch; concrete rule change; addresses AI manipulation"
   },
   {
     "rank": 8,
-    "headline": "‘Gemini Spark’ is Google’s upcoming AI agent in the Gemini app",
-    "link": "https://9to5google.com/2026/05/14/gemini-spark-insight/",
-    "score": 73,
-    "reason": "Google's major agent product launch, competitive response in agent race, significant feature rollout"
+    "headline": "AI radio hosts demonstrate why AI can’t be trusted alone",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/931479/andon-labs-ai-radio-companies",
+    "score": 74,
+    "reason": "Concrete demonstration of AI failure; controversy/limitation; practical evidence"
   },
   {
     "rank": 9,
-    "headline": "AI robot can change your tires in half the time",
-    "link": "https://www.axios.com/2026/05/14/ai-robot-tire-change",
-    "score": 70,
-    "reason": "Concrete performance metric (50% efficiency gain), real-world robotics application, quantified impact"
+    "headline": "Japan’s robot wolf sells out as record bear attacks drive demand",
+    "link": "https://www.independent.co.uk/asia/japan/japan-robot-wolf-bear-attacks-ohta-seiki-b2975670.html",
+    "score": 71,
+    "reason": "Concrete sales data; real-world AI robotics application; big numbers/sellout"
   },
   {
     "rank": 10,
-    "headline": "Musk lawyers accuse OpenAI of deception in close of mega-trial",
-    "link": "https://www.axios.com/2026/05/14/musk-closing-arguments-openai-altman",
+    "headline": "AI Rings on Fingers Can Interpret Sign Language",
+    "link": "https://spectrum.ieee.org/sign-language-interpreter",
     "score": 68,
-    "reason": "Major legal controversy, deception allegations, high-stakes trial affecting AI industry governance"
+    "reason": "Product capability launch; accessibility application; concrete technology demonstration"
   }
 ]
