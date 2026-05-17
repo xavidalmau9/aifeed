@@ -18,7 +18,8 @@
     "sourceUrl": "https://fortune.com/article/why-microsoft-ai-chief-mustafa-suleyman-predicts-ai-automation-18-months/",
     "sourceName": "Fortune",
     "image": "images/aifeed_microsoft_ai_chief_gives_it_18_months_fo_1778965449654.png",
-    "date": "2026-05-16"
+    "date": "2026-05-16",
+    "publishedAt": "2026-05-16T12:00:00.000Z"
   },
   {
     "id": "gemini-spark-google-ai-agent-20260516",
@@ -39,7 +40,8 @@
     "sourceUrl": "https://9to5google.com/2026/05/14/gemini-spark-insight/",
     "sourceName": "9to5Google",
     "image": "images/aifeed_gemini_spark_is_google_s_upcoming_ai_age_1778936969065.png",
-    "date": "2026-05-16"
+    "date": "2026-05-16",
+    "publishedAt": "2026-05-16T12:00:00.000Z"
   },
   {
     "id": "openai-chatgpt-bank-access-plaid-20260515",
