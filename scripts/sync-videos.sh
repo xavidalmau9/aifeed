@@ -3,8 +3,8 @@
 AIFeed Video Sync — detects new branded videos in ~/Downloads, copies to repo,
 updates videos-index.json, commits + pushes to GitHub.
 
-Runs automatically via crontab at 2pm daily:
-  0 14 * * * /usr/bin/python3 /Users/305partners/aifeed/scripts/sync-videos.sh >> /tmp/aifeed-video-sync.log 2>&1
+Runs automatically via crontab every hour:
+  0 * * * * /usr/bin/python3 /Users/305partners/aifeed/scripts/sync-videos.sh >> /tmp/aifeed-video-sync.log 2>&1
 
 Manual run:
   python3 /Users/305partners/aifeed/scripts/sync-videos.sh
@@ -17,7 +17,6 @@ from pathlib import Path
 REPO       = Path('/Users/305partners/aifeed')
 VIDEOS_DIR = REPO / 'videos'
 INDEX_FILE = REPO / 'videos' / 'videos-index.json'
-# Always use explicit path — cron may have a different HOME
 DOWNLOADS  = Path('/Users/305partners/Downloads')
 
 def git(*args, check=True, ignore_errors=False):
@@ -37,7 +36,6 @@ def read_caption(ts):
     if not lines:
         return None, None, None, None
 
-    # Extract source and YouTube URL
     source, source_url = 'Unknown', ''
     for l in lines:
         if l.startswith('Source:'):
@@ -45,10 +43,8 @@ def read_caption(ts):
         if re.match(r'https?://www\.youtube\.com', l):
             source_url = l.strip()
 
-    # Title = first non-empty line (trimmed to 120 chars)
     title = lines[0][:120]
 
-    # Caption = body paragraphs only (no bullets, URLs, hashtags, Source lines)
     body = []
     for l in lines[1:]:
         if (l.startswith('Source:') or re.match(r'https?://', l)
@@ -66,21 +62,15 @@ def get_ts(filename):
 def main():
     print(f'\n[{datetime.now().strftime("%Y-%m-%d %H:%M:%S")}] AIFeed Video Sync starting…')
 
-    # Always pull latest from remote first (before reading index)
-    # Stash any local changes so pull can succeed cleanly
-    stash = git('stash', check=False, ignore_errors=True)
-    stashed = 'No local changes' not in stash.stdout and stash.returncode == 0
-
-    pull = git('pull', '--rebase', 'origin', 'main', check=False)
-    if pull.returncode != 0:
-        print(f'Warning: git pull failed — {pull.stderr.strip()}\nProceeding anyway.')
+    # Always force index to match remote — no stash, no local contamination
+    fetch = git('fetch', 'origin', 'main', check=False)
+    if fetch.returncode != 0:
+        print(f'Warning: git fetch failed — {fetch.stderr.strip()}\nProceeding with local index.')
     else:
-        print('Pulled latest from origin/main.')
+        git('checkout', 'origin/main', '--', 'videos/videos-index.json', check=False, ignore_errors=True)
+        print('Synced index from origin/main.')
 
-    if stashed:
-        git('stash', 'pop', check=False, ignore_errors=True)
-
-    # Load current index (post-pull)
+    # Read index fresh from remote state
     existing = json.loads(INDEX_FILE.read_text(encoding='utf-8'))
     existing_files = {e['filename'] for e in existing}
 
@@ -105,7 +95,6 @@ def main():
             print(f'  ⚠  Skipping {mp4.name} — no caption at caption_linkedin_{ts}.txt')
             continue
 
-        # Copy to repo
         dest = VIDEOS_DIR / mp4.name
         if not dest.exists():
             print(f'  Copying {mp4.name} ({mp4.stat().st_size // 1024 // 1024}MB) → videos/')
@@ -144,7 +133,6 @@ def main():
     names = ', '.join(e['filename'] for e in added)
     git('commit', '-m', f'Add {len(added)} new video(s): {names}')
 
-    # Push — retry once with pull if rejected
     push = git('push', check=False)
     if push.returncode != 0:
         print('Push rejected — pulling and retrying…')
