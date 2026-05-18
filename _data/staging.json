@@ -1,51 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Voice AI Systems Are Vulnerable to Hidden Audio Attacks",
-    "link": "https://spectrum.ieee.org/voice-ai-audio-attacks",
-    "score": 88,
-    "reason": "Security vulnerability in deployed AI systems affecting major voice assistants. Concrete technical threat, not speculation."
+    "headline": "Jury rules against Elon Musk in $150 billion lawsuit against OpenAI and Sam Altman",
+    "link": "https://fortune.com/2026/05/18/jury-rules-against-elon-musk-in-suit-against-openai/",
+    "score": 92,
+    "reason": "Major litigation outcome with big number ($150B), resolved after 3-week trial, concrete ruling not speculation"
   },
   {
     "rank": 2,
-    "headline": "Amazon launches Alexa for Shopping as Rufus moves behind the scenes",
-    "link": "https://www.artificialintelligence-news.com/news/amazon-alexa-for-shopping-rufus-ai-assistant/",
+    "headline": "Amazon Alexa Plus can now create AI-generated podcasts",
+    "link": "https://www.theverge.com/tech/932375/amazon-alexa-plus-ai-podcasts",
     "score": 85,
-    "reason": "Major product launch from Amazon. Concrete business move with new shopping feature and organizational change."
+    "reason": "Product launch with new capability, major company (Amazon), concrete feature release"
   },
   {
     "rank": 3,
-    "headline": "NextEra Energy to buy Dominion in deal that unites two key players in race to power AI data centers",
-    "link": "https://www.cnbc.com/2026/05/18/nextera-nee-dominion-energy-d-data-center-ai.html",
-    "score": 82,
-    "reason": "Large acquisition directly tied to AI infrastructure. Big numbers deal with concrete business impact."
+    "headline": "NextEra's $67 billion Dominion takeover creates the world's largest utility—just in time to win the AI data-center power surge",
+    "link": "https://fortune.com/2026/05/18/nextera-dominion-67-billion-acquisition-ai-data-centers-largest-utility/",
+    "score": 84,
+    "reason": "Massive deal size ($67B), landmark business event (largest utility), directly tied to AI infrastructure demand"
   },
   {
     "rank": 4,
-    "headline": "High energy prices could derail Europe’s AI race with U.S. and China",
-    "link": "https://www.cnbc.com/2026/05/18/europe-ai-energy-electricity-costs-data-centers-china-us.html",
+    "headline": "Gemini app rolling out ‘Extended’ thinking level, new 3rd-party app integrations",
+    "link": "https://9to5google.com/2026/05/17/gemini-app-thinking-level/",
     "score": 78,
-    "reason": "Significant structural challenge to AI development with geopolitical implications. Concrete market conditions."
+    "reason": "Google product feature launch, new capability (extended thinking), concrete rollout announcement"
   },
   {
     "rank": 5,
-    "headline": "Scoop: 60+ MAGA allies tell Trump to vet AI before release",
-    "link": "https://www.axios.com/2026/05/18/trump-ai-steve-bannon-humans-first-letter",
-    "score": 75,
-    "reason": "Policy controversy with specific number. Direct government intervention demand in AI governance."
+    "headline": "Meta layoffs starting this week stress harsh AI reality inside Zuckerberg’s company",
+    "link": "https://www.cnbc.com/2026/05/18/metas-layoffs-starting-this-week-underscore-zuckerbergs-ai-reality-.html",
+    "score": 76,
+    "reason": "Major company action, concrete timeline, significant business decision related to AI priorities"
   },
   {
     "rank": 6,
-    "headline": "The AI boom is pulling Europe’s hottest startups to the U.S.—whether they planned to move or not",
-    "link": "https://fortune.com/2026/05/18/ai-boom-creandum-lovable-klarna-startups-trump-carl-fritjofsson-europe/",
+    "headline": "LinkedIn doesn't want your AI slop anymore",
+    "link": "https://www.engadget.com/2174163/linkedin-doesnt-want-your-ai-slop-anymore/",
     "score": 72,
-    "reason": "Documented trend with concrete market impact. Shows AI investment migration between regions."
+    "reason": "Major platform policy change, controversy around AI-generated content, concrete enforcement action"
   },
   {
     "rank": 7,
-    "headline": "Revamped Siri will reportedly offer autodeleting chats",
-    "link": "https://www.theverge.com/tech/932207/siri-apple-intelligence-auto-deleting-chats",
+    "headline": "Inside Anduril and Meta’s quest to make smart glasses for warfare",
+    "link": "https://www.technologyreview.com/2026/05/18/1137412/inside-anduril-and-metas-quest-to-make-smart-glasses-for-warfare/",
+    "score": 70,
+    "reason": "Two major companies partnering, controversial application (warfare), concrete product development"
+  },
+  {
+    "rank": 8,
+    "headline": "Anthropic acquires Stainless",
+    "link": "https://www.anthropic.com/news/anthropic-acquires-stainless",
     "score": 68,
-    "reason": "Apple product update with privacy feature. Concrete feature addition to major AI assistant."
+    "reason": "Major acquisition by leading AI company, concrete business transaction"
+  },
+  {
+    "rank": 9,
+    "headline": "Sony tries to explain that its AI Camera Assistant doesn’t suck",
+    "link": "https://www.theverge.com/tech/932133/sony-xperia-1-xiii-ai-camera-assistant",
+    "score": 65,
+    "reason": "Product launch controversy, major company response to criticism, concrete product with issues"
+  },
+  {
+    "rank": 10,
+    "headline": "6.7 million people thought they were ripping apart an AI-generated Monet painting. But it was real",
+    "link": "https://fortune.com/2026/05/18/6-7-million-people-ripped-apart-ai-generated-monet-painting-real/",
+    "score": 64,
+    "reason": "Big number (6.7M people), cultural controversy around AI art detection, concrete case study"
   }
 ]
