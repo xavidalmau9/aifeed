@@ -1,58 +1,51 @@
 [
   {
     "rank": 1,
-    "headline": "YouTube's AI deepfake detection tool is now available to all creators 18 and older",
-    "link": "https://www.engadget.com/2174282/youtube-likeness-detection-ai-deepfakes-expansion/",
-    "score": 92,
-    "reason": "Major platform launch addressing real AI concern; concrete feature availability; significant scope (all creators)"
+    "headline": "Voice AI Systems Are Vulnerable to Hidden Audio Attacks",
+    "link": "https://spectrum.ieee.org/voice-ai-audio-attacks",
+    "score": 88,
+    "reason": "Security vulnerability in deployed AI systems affecting major voice assistants. Concrete technical threat, not speculation."
   },
   {
     "rank": 2,
-    "headline": "Gemini app rolling out ‘Extended’ thinking level, new 3rd-party app integrations",
-    "link": "https://9to5google.com/2026/05/17/gemini-app-thinking-level/",
-    "score": 89,
-    "reason": "Google product launch; new capability tier; ecosystem expansion with integrations"
+    "headline": "Amazon launches Alexa for Shopping as Rufus moves behind the scenes",
+    "link": "https://www.artificialintelligence-news.com/news/amazon-alexa-for-shopping-rufus-ai-assistant/",
+    "score": 85,
+    "reason": "Major product launch from Amazon. Concrete business move with new shopping feature and organizational change."
   },
   {
     "rank": 3,
-    "headline": "OpenAI is offering ChatGPT Plus to citizens of Malta for a year",
-    "link": "https://www.engadget.com/2174473/openai-is-offering-chatgpt-plus-to-citizens-of-malta-for-a-year/",
-    "score": 85,
-    "reason": "OpenAI major initiative; novel government partnership model; significant scale (entire nation)"
+    "headline": "NextEra Energy to buy Dominion in deal that unites two key players in race to power AI data centers",
+    "link": "https://www.cnbc.com/2026/05/18/nextera-nee-dominion-energy-d-data-center-ai.html",
+    "score": 82,
+    "reason": "Large acquisition directly tied to AI infrastructure. Big numbers deal with concrete business impact."
   },
   {
     "rank": 4,
-    "headline": "University of Arizona students boo Eric Schmidt’s AI cheerleading during commencement",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/932203/university-of-arizona-students-boo-eric-schmidt-ai-commencement",
-    "score": 81,
-    "reason": "Concrete controversy; public backlash moment; notable figure (former Google CEO)"
+    "headline": "High energy prices could derail Europe’s AI race with U.S. and China",
+    "link": "https://www.cnbc.com/2026/05/18/europe-ai-energy-electricity-costs-data-centers-china-us.html",
+    "score": 78,
+    "reason": "Significant structural challenge to AI development with geopolitical implications. Concrete market conditions."
   },
   {
     "rank": 5,
-    "headline": "AI Rings on Fingers Can Interpret Sign Language",
-    "link": "https://spectrum.ieee.org/sign-language-interpreter",
-    "score": 78,
-    "reason": "Novel AI application launch; accessibility use case; tangible hardware product"
+    "headline": "Scoop: 60+ MAGA allies tell Trump to vet AI before release",
+    "link": "https://www.axios.com/2026/05/18/trump-ai-steve-bannon-humans-first-letter",
+    "score": 75,
+    "reason": "Policy controversy with specific number. Direct government intervention demand in AI governance."
   },
   {
     "rank": 6,
-    "headline": "AI backlash becomes a real business risk",
-    "link": "https://www.axios.com/2026/05/17/ai-backlash-polling-sentiment",
-    "score": 76,
-    "reason": "Business impact story; resistance trend; broad industry implications"
+    "headline": "The AI boom is pulling Europe’s hottest startups to the U.S.—whether they planned to move or not",
+    "link": "https://fortune.com/2026/05/18/ai-boom-creandum-lovable-klarna-startups-trump-carl-fritjofsson-europe/",
+    "score": 72,
+    "reason": "Documented trend with concrete market impact. Shows AI investment migration between regions."
   },
   {
     "rank": 7,
-    "headline": "The ChatGPT era prompts a boom in A-graded coursework",
-    "link": "https://www.axios.com/2026/05/16/ai-grade-inflation-college-classes",
-    "score": 73,
-    "reason": "Concrete societal impact; measurable trend; education sector disruption"
-  },
-  {
-    "rank": 8,
-    "headline": "Some Asexuals Are Using AI Companions for Intimacy Without the Sex",
-    "link": "https://www.wired.com/story/some-asexual-people-are-using-ai-companions-for-intimacy-without-the-sex/",
-    "score": 70,
-    "reason": "Emerging use case; social trend; illustrates AI companion adoption"
+    "headline": "Revamped Siri will reportedly offer autodeleting chats",
+    "link": "https://www.theverge.com/tech/932207/siri-apple-intelligence-auto-deleting-chats",
+    "score": 68,
+    "reason": "Apple product update with privacy feature. Concrete feature addition to major AI assistant."
   }
 ]
