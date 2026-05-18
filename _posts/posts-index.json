@@ -1,5 +1,27 @@
 [
   {
+    "id": "voice-ai-hidden-audio-attacks-20260518",
+    "slug": "voice-ai-hidden-audio-attacks",
+    "headline": "Voice AI Systems Are Vulnerable to Hidden Audio Attacks",
+    "summary": "Researchers found that Alexa, Siri and enterprise voice AI can be hijacked by inaudible ultrasonic attacks that bypass all traditional security systems.",
+    "body": "<p>Hidden vulnerabilities in voice AI systems can now be exploited through inaudible audio attacks\u2014a critical security blind spot that threatens millions of devices worldwide.</p>\n<p>Researchers have discovered that popular voice AI systems, including those powering Alexa, Siri, and enterprise voice platforms, can be compromised through audio attacks imperceptible to human ears. These \"adversarial audio\" attacks exploit fundamental weaknesses in how artificial neural networks process sound frequencies, creating a security gap that traditional firewalls and authentication systems cannot detect. This finding arrives at a critical moment as organizations rapidly deploy voice AI across customer service, smart home ecosystems, and industrial operations.</p>\n<p>The broader context here is important: voice interfaces have become the preferred interaction method for millions of users and companies have invested heavily in voice-activated systems for competitive advantage. The proliferation of always-listening devices\u2014from smartphones to smart speakers to enterprise communication systems\u2014has created an enormous surface area for potential attacks. If these vulnerabilities aren't addressed, organizations face significant risks to customer data, operational security, and brand trust.</p>\n<p>For enterprises and investors, this represents both a near-term risk and a commercial opportunity. Companies deploying voice AI must immediately audit their security architecture, while security and AI firms have an urgent business case to develop countermeasures. The organizations that solve this vulnerability first will gain competitive advantage and customer confidence.</p>\n<p>This vulnerability highlights a fundamental challenge in AI security: neural networks can fail in ways that are completely invisible to human observers and traditional security metrics. As voice AI becomes infrastructure, the industry must adopt new security paradigms that account for these adversarial attack vectors.</p>\n<p>Looking ahead, expect significant investment in adversarial robustness testing, audio watermarking technologies, and multi-factor verification for voice-activated systems. The next generation of voice AI will need security-first architecture from inception.</p>\n<p>The message is clear: voice AI's future depends on solving these hidden vulnerabilities today.</p>\n<p class=\"article-tags-inline\"><a href=\"index.html?tag=VoiceAI\" class=\"article-tag\" style=\"color:#a050ff\">#VoiceAI</a> <a href=\"index.html?tag=AISecurityrisk\" class=\"article-tag\" style=\"color:#a050ff\">#AISecurityrisk</a> <a href=\"index.html?tag=CyberSecurityrisk\" class=\"article-tag\" style=\"color:#a050ff\">#CyberSecurityrisk</a> <a href=\"index.html?tag=EnterpriseTech\" class=\"article-tag\" style=\"color:#a050ff\">#EnterpriseTech</a> <a href=\"index.html?tag=AIVulnerability\" class=\"article-tag\" style=\"color:#a050ff\">#AIVulnerability</a> <a href=\"index.html?tag=TechInnovation\" class=\"article-tag\" style=\"color:#a050ff\">#TechInnovation</a></p>\n<p style=\"color:#8c8ca0;font-size:0.9em\">Source: IEEE Spectrum \u00b7 <a href=\"https://spectrum.ieee.org/voice-ai-audio-attacks\" target=\"_blank\" rel=\"noopener\" style=\"color:#a050ff\">https://spectrum.ieee.org/voice-ai-audio-attacks</a></p>",
+    "category": "Security",
+    "hashtags": [
+      "VoiceAI",
+      "AISecurityrisk",
+      "CyberSecurityrisk",
+      "EnterpriseTech",
+      "AIVulnerability",
+      "TechInnovation"
+    ],
+    "sourceUrl": "https://spectrum.ieee.org/voice-ai-audio-attacks",
+    "sourceName": "IEEE Spectrum",
+    "image": "images/aifeed_voice_ai_systems_are_vulnerable_to_hidde_1779105906742.png",
+    "date": "2026-05-18",
+    "publishedAt": "2026-05-18T12:00:00.000Z",
+    "imageUrl": "https://aifeed.run/images/aifeed_voice_ai_systems_are_vulnerable_to_hidde_1779105906742.png"
+  },
+  {
     "id": "openai-chatgpt-bank-access-plaid-20260515",
     "slug": "openai-chatgpt-bank-access-plaid",
     "headline": "OpenAI Now Wants ChatGPT to Access Your Bank Accounts",
@@ -156,7 +178,7 @@
     "category": "Industry",
     "imageUrl": "https://aifeed.run/images/aifeed_jensen_huang_to_college_grads_run_don_t__1778619921777.png",
     "sourceUrl": "https://www.axios.com/2026/05/11/jensen-huang-carnegie-mellon-commencement-ai",
-    "publishedAt": "2026-05-12",
+    "publishedAt": "2026-05-12T12:00:00.000Z",
     "hashtags": [
       "AI",
       "ArtificialIntelligence",
@@ -178,7 +200,7 @@
     "category": "Industry",
     "imageUrl": "https://aifeed.run/images/aifeed_spacex_has_a_55_billion_plan_to_build_ai_1778247947411.png",
     "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/926356/spacex-terafab-plant-cost-ai-chips",
-    "publishedAt": "2026-05-08",
+    "publishedAt": "2026-05-08T12:00:00.000Z",
     "hashtags": [
       "AI",
       "Semiconductors",
@@ -199,7 +221,7 @@
     "category": "Industry",
     "imageUrl": "https://aifeed.run/images/aifeed_cloudflare_stock_sinks_18_after_earnings_1778242842615.png",
     "sourceUrl": "https://www.cnbc.com/2026/05/07/cloudflare-net-q1-2026-stock-earnings-layoffs.html",
-    "publishedAt": "2026-05-08",
+    "publishedAt": "2026-05-08T12:00:00.000Z",
     "hashtags": [
       "AI",
       "CloudflareNews",
@@ -221,7 +243,7 @@
     "category": "Industry",
     "imageUrl": "https://aifeed.run/images/aifeed_google_s_ai_search_summaries_will_now_qu_1778159981051.png",
     "sourceUrl": "https://www.theverge.com/tech/924993/google-ai-search-mode-overviews-update-reddit-links",
-    "publishedAt": "2026-05-08",
+    "publishedAt": "2026-05-08T12:00:00.000Z",
     "hashtags": [
       "GoogleAI",
       "AISearchEvolution",
@@ -242,7 +264,7 @@
     "category": "Industry",
     "imageUrl": "https://aifeed.run/images/aifeed_nvidia_to_invest_up_to_3_2_billion_in_co_1778109697406.png",
     "sourceUrl": "https://www.cnbc.com/2026/05/06/nvidia-corning-optical-factories-nc-texas-ai.html",
-    "publishedAt": "2026-05-06",
+    "publishedAt": "2026-05-06T12:00:00.000Z",
     "hashtags": [
       "AI",
       "Nvidia",
@@ -264,7 +286,7 @@
     "category": "Models",
     "imageUrl": "https://aifeed.run/images/aifeed_claude_code_is_getting_higher_usage_limi_1778101334335.png",
     "sourceUrl": "https://9to5google.com/2026/05/06/claude-code-is-getting-higher-usage-limits-doubled-for-most-users/",
-    "publishedAt": "2026-05-06",
+    "publishedAt": "2026-05-06T12:00:00.000Z",
     "hashtags": [
       "AITechnology",
       "SoftwareDevelopment",
@@ -285,7 +307,7 @@
     "category": "Industry",
     "imageUrl": "https://aifeed.run/images/aifeed_agents_can_now_create_cloudflare_account_1778072899839.png",
     "sourceUrl": "https://blog.cloudflare.com/agents-stripe-projects/",
-    "publishedAt": "2026-05-06",
+    "publishedAt": "2026-05-06T12:00:00.000Z",
     "hashtags": [
       "AIAgents",
       "CloudflareNews",
@@ -307,7 +329,7 @@
     "category": "Industry",
     "imageUrl": "https://aifeed.run/images/aifeed_samsung_crosses_1_trillion_valuation_as_1778070925340.png",
     "sourceUrl": "https://www.cnbc.com/2026/05/06/samsung-electronics-ai-chip-rally-kospi-record-1-trillion.html",
-    "publishedAt": "2026-05-06",
+    "publishedAt": "2026-05-06T12:00:00.000Z",
     "hashtags": [
       "Samsung",
       "AI",
