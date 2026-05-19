@@ -168,7 +168,18 @@ jobs:
 
             const graphicsDir = './graphics';
             const imagesDir   = './images';
-            const files = fs.readdirSync(graphicsDir).filter(f => f.endsWith('.html'));
+            // Only render HTML files changed in THIS push — never re-render existing ones
+            let files;
+            try {
+              const changed = execSync('git diff HEAD~1 --name-only -- graphics/ 2>/dev/null || true')
+                .toString().trim().split('\n')
+                .filter(f => f.endsWith('.html'))
+                .map(f => path.basename(f));
+              files = changed.length > 0 ? changed : fs.readdirSync(graphicsDir).filter(f => f.endsWith('.html'));
+              console.log('Files to render:', files);
+            } catch(e) {
+              files = fs.readdirSync(graphicsDir).filter(f => f.endsWith('.html'));
+            }
 
             for (const file of files) {
               const pngName = file.replace('.html', '.png');
