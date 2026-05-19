@@ -3,21 +3,20 @@
 AIFeed Video Sync — detects new branded videos in ~/Downloads, copies to repo,
 updates videos-index.json, commits + pushes to GitHub.
 
-Runs automatically via crontab every hour:
-  0 * * * * /usr/bin/python3 /Users/305partners/aifeed/scripts/sync-videos.sh >> /tmp/aifeed-video-sync.log 2>&1
-
+Runs automatically via launchd (WatchPaths fires on Downloads change + every 5 min).
 Manual run:
   python3 /Users/305partners/aifeed/scripts/sync-videos.sh
 """
 
-import json, os, re, shutil, subprocess, sys
+import json, os, re, shutil, subprocess, sys, time
 from datetime import datetime
 from pathlib import Path
 
-REPO       = Path('/Users/305partners/aifeed')
-VIDEOS_DIR = REPO / 'videos'
-INDEX_FILE = REPO / 'videos' / 'videos-index.json'
-DOWNLOADS  = Path('/Users/305partners/Downloads')
+REPO         = Path('/Users/305partners/aifeed')
+VIDEOS_DIR   = REPO / 'videos'
+INDEX_FILE   = REPO / 'videos' / 'videos-index.json'
+DOWNLOADS    = Path('/Users/305partners/Downloads')
+PENDING_FILE = Path('/tmp/aifeed-video-pending.json')   # videos waiting for their caption
 
 def git(*args, check=True, ignore_errors=False):
     result = subprocess.run(['git', '-C', str(REPO)] + list(args),
@@ -31,6 +30,8 @@ def read_caption(ts):
     p = DOWNLOADS / f'caption_linkedin_{ts}.txt'
     if not p.exists():
         return None, None, None, None
+    # Wait briefly in case file is still being written
+    time.sleep(1)
     text = p.read_text(encoding='utf-8', errors='ignore').strip()
     lines = [l.strip() for l in text.split('\n') if l.strip()]
     if not lines:
@@ -59,6 +60,21 @@ def get_ts(filename):
     m = re.search(r'aifeed_branded_(\d+)', filename)
     return m.group(1) if m else None
 
+def load_pending():
+    """Load the list of video filenames that were detected but had no caption yet."""
+    if PENDING_FILE.exists():
+        try:
+            return set(json.loads(PENDING_FILE.read_text()))
+        except Exception:
+            pass
+    return set()
+
+def save_pending(pending):
+    if pending:
+        PENDING_FILE.write_text(json.dumps(list(pending)))
+    elif PENDING_FILE.exists():
+        PENDING_FILE.unlink()
+
 def main():
     print(f'\n[{datetime.now().strftime("%Y-%m-%d %H:%M:%S")}] AIFeed Video Sync starting…')
 
@@ -78,12 +94,23 @@ def main():
     mp4s = sorted(DOWNLOADS.glob('aifeed_branded_*.mp4'), key=lambda p: p.stat().st_mtime)
     new_videos = [p for p in mp4s if p.name not in existing_files]
 
+    # Also retry any previously pending videos (caption may have arrived since)
+    pending = load_pending()
+    pending_paths = [DOWNLOADS / fn for fn in pending if (DOWNLOADS / fn).exists() and fn not in existing_files]
+    for p in pending_paths:
+        if p not in new_videos:
+            new_videos.append(p)
+            print(f'  ↩  Retrying pending: {p.name}')
+
     if not new_videos:
         print('✅ No new videos — index is up to date.')
+        save_pending(set())  # clear any stale pending
         return
 
     print(f'Found {len(new_videos)} new video(s):')
     added = []
+    still_pending = set()
+
     for mp4 in new_videos:
         ts = get_ts(mp4.name)
         if not ts:
@@ -92,7 +119,8 @@ def main():
 
         title, caption, source, source_url = read_caption(ts)
         if not title:
-            print(f'  ⚠  Skipping {mp4.name} — no caption at caption_linkedin_{ts}.txt')
+            print(f'  ⏳ {mp4.name} — caption_linkedin_{ts}.txt not ready yet, queuing for retry')
+            still_pending.add(mp4.name)
             continue
 
         dest = VIDEOS_DIR / mp4.name
@@ -114,8 +142,13 @@ def main():
         })
         print(f'  ✅ {mp4.name} — "{title[:80]}" ({source})')
 
+    # Save pending state (will be retried on next run)
+    save_pending(still_pending)
+    if still_pending:
+        print(f'  ℹ  {len(still_pending)} video(s) queued — will retry in next run (≤5 min)')
+
     if not added:
-        print('Nothing to add (captions missing for all new videos).')
+        print('Nothing to commit this run.')
         return
 
     # Prepend newest first
