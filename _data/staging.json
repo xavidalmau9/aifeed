@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Jury rules against Elon Musk in $150 billion lawsuit against OpenAI and Sam Altman",
-    "link": "https://fortune.com/2026/05/18/jury-rules-against-elon-musk-in-suit-against-openai/",
-    "score": 92,
-    "reason": "Major litigation outcome with big number ($150B), resolved after 3-week trial, concrete ruling not speculation"
+    "headline": "Blackstone to invest $5 billion in AI infrastructure venture with Google, powered by TPU chips",
+    "link": "https://www.cnbc.com/2026/05/19/blackstone-google-ai-data-center-joint-venture-tpu.html",
+    "score": 94,
+    "reason": "Major funding announcement with specific big number ($5B), concrete partnership, infrastructure focus"
   },
   {
     "rank": 2,
-    "headline": "Amazon Alexa Plus can now create AI-generated podcasts",
-    "link": "https://www.theverge.com/tech/932375/amazon-alexa-plus-ai-podcasts",
-    "score": 85,
-    "reason": "Product launch with new capability, major company (Amazon), concrete feature release"
+    "headline": "Elon Musk Loses Landmark Lawsuit Against OpenAI",
+    "link": "https://www.wired.com/story/musk-v-altman-jury-verdict/",
+    "score": 92,
+    "reason": "Major legal outcome, high-profile controversy, definitive conclusion (not speculation)"
   },
   {
     "rank": 3,
-    "headline": "NextEra's $67 billion Dominion takeover creates the world's largest utility—just in time to win the AI data-center power surge",
-    "link": "https://fortune.com/2026/05/18/nextera-dominion-67-billion-acquisition-ai-data-centers-largest-utility/",
-    "score": 84,
-    "reason": "Massive deal size ($67B), landmark business event (largest utility), directly tied to AI infrastructure demand"
+    "headline": "Meta is reportedly 'reassigning' 7,000 employees to AI-focused roles",
+    "link": "https://www.engadget.com/2176172/meta-reassigns-workers-ai-roles/",
+    "score": 88,
+    "reason": "Significant organizational shift with concrete number, major tech company, strategic pivot"
   },
   {
     "rank": 4,
-    "headline": "Gemini app rolling out ‘Extended’ thinking level, new 3rd-party app integrations",
-    "link": "https://9to5google.com/2026/05/17/gemini-app-thinking-level/",
-    "score": 78,
-    "reason": "Google product feature launch, new capability (extended thinking), concrete rollout announcement"
+    "headline": "Microsoft surprises with its first server Linux distribution: Azure Linux 4.0",
+    "link": "https://www.zdnet.com/article/microsoft-releases-its-first-server-linux-distribution-azure-linux-4-0/",
+    "score": 85,
+    "reason": "Major product launch, unexpected strategic move, concrete deliverable"
   },
   {
     "rank": 5,
-    "headline": "Meta layoffs starting this week stress harsh AI reality inside Zuckerberg’s company",
-    "link": "https://www.cnbc.com/2026/05/18/metas-layoffs-starting-this-week-underscore-zuckerbergs-ai-reality-.html",
-    "score": 76,
-    "reason": "Major company action, concrete timeline, significant business decision related to AI priorities"
+    "headline": "Amazon launches Alexa for Shopping as Rufus moves behind the scenes",
+    "link": "https://www.artificialintelligence-news.com/news/amazon-alexa-for-shopping-rufus-ai-assistant/",
+    "score": 82,
+    "reason": "Product launch with feature repositioning, major company, concrete new offering"
   },
   {
     "rank": 6,
-    "headline": "LinkedIn doesn't want your AI slop anymore",
-    "link": "https://www.engadget.com/2174163/linkedin-doesnt-want-your-ai-slop-anymore/",
-    "score": 72,
-    "reason": "Major platform policy change, controversy around AI-generated content, concrete enforcement action"
+    "headline": "Parag Agrawal's AI startup wants to pay publishers when AI agents use their work",
+    "link": "https://fortune.com/2026/05/19/parag-agrawal-parallel-startup-pay-publishers-when-ai-agents-use-their-work/",
+    "score": 79,
+    "reason": "Novel business model launch addressing AI controversy, publisher compensation issue"
   },
   {
     "rank": 7,
-    "headline": "Inside Anduril and Meta’s quest to make smart glasses for warfare",
-    "link": "https://www.technologyreview.com/2026/05/18/1137412/inside-anduril-and-metas-quest-to-make-smart-glasses-for-warfare/",
-    "score": 70,
-    "reason": "Two major companies partnering, controversial application (warfare), concrete product development"
+    "headline": "DeepSeek and China’s AI boom are increasingly powered by state money",
+    "link": "https://fortune.com/2026/05/19/deepseek-china-ai-venture-capital-nvidia-pitchbook-trends-term-sheet/",
+    "score": 76,
+    "reason": "Geopolitical AI story with concrete funding evidence, competitive implications"
   },
   {
     "rank": 8,
-    "headline": "Anthropic acquires Stainless",
-    "link": "https://www.anthropic.com/news/anthropic-acquires-stainless",
-    "score": 68,
-    "reason": "Major acquisition by leading AI company, concrete business transaction"
+    "headline": "University of Arizona students boo Eric Schmidt’s AI cheerleading during commencement",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/932203/university-of-arizona-students-boo-eric-schmidt-ai-commencement",
+    "score": 74,
+    "reason": "Public controversy moment, reflects anti-AI sentiment backlash, concrete event"
   },
   {
     "rank": 9,
-    "headline": "Sony tries to explain that its AI Camera Assistant doesn’t suck",
-    "link": "https://www.theverge.com/tech/932133/sony-xperia-1-xiii-ai-camera-assistant",
-    "score": 65,
-    "reason": "Product launch controversy, major company response to criticism, concrete product with issues"
+    "headline": "The Nvidia H200 China deal survived the Trump-Xi summit–just not in the way anyone expected",
+    "link": "https://www.artificialintelligence-news.com/news/nvidia-h200-china-deal-stalled-trump-xi-summit-2026/",
+    "score": 71,
+    "reason": "Concrete trade/geopolitical outcome, major hardware player, policy impact"
   },
   {
     "rank": 10,
-    "headline": "6.7 million people thought they were ripping apart an AI-generated Monet painting. But it was real",
-    "link": "https://fortune.com/2026/05/18/6-7-million-people-ripped-apart-ai-generated-monet-painting-real/",
-    "score": 64,
-    "reason": "Big number (6.7M people), cultural controversy around AI art detection, concrete case study"
+    "headline": "The Iran war is exposing weak spots in the AI supply chain",
+    "link": "https://www.cnbc.com/2026/05/19/iran-war-ai-chip-supply-chain-costs.html",
+    "score": 68,
+    "reason": "Supply chain vulnerability evidence, geopolitical impact on AI infrastructure"
   }
 ]
