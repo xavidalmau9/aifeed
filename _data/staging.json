@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Blackstone to invest $5 billion in AI infrastructure venture with Google, powered by TPU chips",
-    "link": "https://www.cnbc.com/2026/05/19/blackstone-google-ai-data-center-joint-venture-tpu.html",
+    "headline": "Google Search Goes Agentic—and Doesn’t Need You Anymore",
+    "link": "https://www.wired.com/story/google-search-goes-agentic-and-doesnt-need-you-anymore/",
     "score": 94,
-    "reason": "Major funding announcement with specific big number ($5B), concrete partnership, infrastructure focus"
+    "reason": "Biggest product change; major functionality shift; concrete launch with agentic capabilities"
   },
   {
     "rank": 2,
-    "headline": "Elon Musk Loses Landmark Lawsuit Against OpenAI",
-    "link": "https://www.wired.com/story/musk-v-altman-jury-verdict/",
-    "score": 92,
-    "reason": "Major legal outcome, high-profile controversy, definitive conclusion (not speculation)"
+    "headline": "Anthropic hires OpenAI co-founder Andrej Karpathy, former Tesla AI leader",
+    "link": "https://www.cnbc.com/2026/05/19/anthropic-hires-openai-cofounder-andrej-karpathy-former-tesla-ai-lead.html",
+    "score": 91,
+    "reason": "Major talent acquisition; significant controversy/competitive shift; proven track record hire"
   },
   {
     "rank": 3,
-    "headline": "Meta is reportedly 'reassigning' 7,000 employees to AI-focused roles",
-    "link": "https://www.engadget.com/2176172/meta-reassigns-workers-ai-roles/",
+    "headline": "Google's Gemini Omni can generate 'anything from any input,' starting with video",
+    "link": "https://www.engadget.com/2176590/googles-gemini-omni-can-generate-anything-from-any-input-starting-with-video/",
     "score": 88,
-    "reason": "Significant organizational shift with concrete number, major tech company, strategic pivot"
+    "reason": "Multimodal capability launch; broad generative scope; competes with OpenAI's capabilities"
   },
   {
     "rank": 4,
-    "headline": "Microsoft surprises with its first server Linux distribution: Azure Linux 4.0",
-    "link": "https://www.zdnet.com/article/microsoft-releases-its-first-server-linux-distribution-azure-linux-4-0/",
-    "score": 85,
-    "reason": "Major product launch, unexpected strategic move, concrete deliverable"
+    "headline": "Pizza Hut franchisee claims $100 million losses from 'cascading operational breakdowns' in AI adoption gone wrong",
+    "link": "https://fortune.com/2026/05/19/pizza-hut-franchisee-lawsuit-ai-adoption-doordash-delivery-drivers/",
+    "score": 86,
+    "reason": "Major controversy; concrete business failure numbers; real-world AI failure case study"
   },
   {
     "rank": 5,
-    "headline": "Amazon launches Alexa for Shopping as Rufus moves behind the scenes",
-    "link": "https://www.artificialintelligence-news.com/news/amazon-alexa-for-shopping-rufus-ai-assistant/",
-    "score": 82,
-    "reason": "Product launch with feature repositioning, major company, concrete new offering"
+    "headline": "Would you let robots spend your money? Google is betting on it",
+    "link": "https://www.theverge.com/news/932927/google-io-agentic-ai-shopping-universal-cart",
+    "score": 84,
+    "reason": "Agent autonomy launch; major behavioral shift; financial agency implication"
   },
   {
     "rank": 6,
-    "headline": "Parag Agrawal's AI startup wants to pay publishers when AI agents use their work",
-    "link": "https://fortune.com/2026/05/19/parag-agrawal-parallel-startup-pay-publishers-when-ai-agents-use-their-work/",
-    "score": 79,
-    "reason": "Novel business model launch addressing AI controversy, publisher compensation issue"
+    "headline": "Google's new Omni AI tool will let you video clone yourself - I'm intrigued (and concerned)",
+    "link": "https://www.zdnet.com/article/google-omni-ai-tool-video-gemini/",
+    "score": 82,
+    "reason": "Deepfake generation capability; controversy signal; concerning implications noted"
   },
   {
     "rank": 7,
-    "headline": "DeepSeek and China’s AI boom are increasingly powered by state money",
-    "link": "https://fortune.com/2026/05/19/deepseek-china-ai-venture-capital-nvidia-pitchbook-trends-term-sheet/",
-    "score": 76,
-    "reason": "Geopolitical AI story with concrete funding evidence, competitive implications"
+    "headline": "Google can now vibe-code you an Android app",
+    "link": "https://www.theverge.com/tech/932364/google-ai-studio-native-android-apps-vibe-code-google-io-2026",
+    "score": 79,
+    "reason": "New development paradigm launch; concrete demo capability; reduces coding barrier"
   },
   {
     "rank": 8,
-    "headline": "University of Arizona students boo Eric Schmidt’s AI cheerleading during commencement",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/932203/university-of-arizona-students-boo-eric-schmidt-ai-commencement",
-    "score": 74,
-    "reason": "Public controversy moment, reflects anti-AI sentiment backlash, concrete event"
+    "headline": "OpenAI's new image watermarks make it easier to spot AI fakes - here's how",
+    "link": "https://www.zdnet.com/article/openai-image-watermarks-help-spot-ai-fakes/",
+    "score": 77,
+    "reason": "OpenAI launch; detection mechanism; addresses deepfake/misinformation concern"
   },
   {
     "rank": 9,
-    "headline": "The Nvidia H200 China deal survived the Trump-Xi summit–just not in the way anyone expected",
-    "link": "https://www.artificialintelligence-news.com/news/nvidia-h200-china-deal-stalled-trump-xi-summit-2026/",
-    "score": 71,
-    "reason": "Concrete trade/geopolitical outcome, major hardware player, policy impact"
+    "headline": "Demis Hassabis Thinks AI Job Cuts Are Dumb",
+    "link": "https://www.wired.com/story/demis-hassabis-ai-layoffs-deepmind-google-io/",
+    "score": 73,
+    "reason": "Leadership controversy; contradicts industry narrative; labor market implication"
   },
   {
     "rank": 10,
-    "headline": "The Iran war is exposing weak spots in the AI supply chain",
-    "link": "https://www.cnbc.com/2026/05/19/iran-war-ai-chip-supply-chain-costs.html",
-    "score": 68,
-    "reason": "Supply chain vulnerability evidence, geopolitical impact on AI infrastructure"
+    "headline": "Here’s why Elon Musk lost his suit against OpenAI",
+    "link": "https://www.technologyreview.com/2026/05/18/1137488/elon-musk-suit-openai-verdict/",
+    "score": 71,
+    "reason": "Legal resolution; Musk v. OpenAI litigation outcome; settled major controversy"
   }
 ]
