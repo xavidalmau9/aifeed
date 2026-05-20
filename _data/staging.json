@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Google Search is getting its biggest changes ever",
-    "link": "https://www.theverge.com/tech/932970/google-search-ai-update-io-2026",
-    "score": 92,
-    "reason": "Major product launch with concrete changes; biggest search overhaul in 25 years with multiple AI features"
+    "headline": "Everything Announced at Google I/O 2026: Gemini, Search, Smart Glasses",
+    "link": "https://www.wired.com/story/everything-google-announced-at-google-io-2026/",
+    "score": 96,
+    "reason": "Major product launch event with multiple announcements across core products"
   },
   {
     "rank": 2,
-    "headline": "Elon Musk Loses Landmark Lawsuit Against OpenAI",
-    "link": "https://www.wired.com/story/musk-v-altman-jury-verdict/",
-    "score": 88,
-    "reason": "High-stakes legal outcome with major implications for AI industry governance; concrete resolution, not speculation"
+    "headline": "OpenAI may go public as soon as September",
+    "link": "https://www.engadget.com/2178018/openai-may-go-public-as-soon-as-september/",
+    "score": 94,
+    "reason": "Major financial milestone - IPO announcement from leading AI company"
   },
   {
     "rank": 3,
-    "headline": "Alibaba reveals more powerful Zhenwu AI chip, new LLM",
-    "link": "https://www.cnbc.com/2026/05/19/alibaba-reveals-more-powerful-zhenwu-ai-chip-new-llm.html",
-    "score": 85,
-    "reason": "Competitive AI chip launch; significant hardware announcement; big numbers in performance and capability"
+    "headline": "Here’s why Elon Musk lost his suit against OpenAI",
+    "link": "https://www.technologyreview.com/2026/05/18/1137488/elon-musk-suit-openai-verdict/",
+    "score": 90,
+    "reason": "High-profile controversy and legal decision affecting major AI figures"
   },
   {
     "rank": 4,
-    "headline": "Singapore inks AI deals with Google, OpenAI as ChatGPT-maker commits $234 million to local ecosystem",
-    "link": "https://www.cnbc.com/2026/05/20/singapore-google-openai-ai-partnerships-lab-investment-chatgpt-ai-agents-atxsummit-mddi.html",
-    "score": 84,
-    "reason": "$234M investment commitment; multiple company partnerships; concrete funding announcement"
+    "headline": "The biggest data center ever is becoming a huge problem in Utah",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/933687/utah-stratos-project-data-center-kevin-oleary",
+    "score": 88,
+    "reason": "Significant infrastructure controversy with environmental/political impact"
   },
   {
     "rank": 5,
-    "headline": "Gemini Omni, the ‘create anything’ model, starts today with lifelike video",
-    "link": "https://9to5google.com/2026/05/19/gemini-omni-create-anything-model-video/",
-    "score": 82,
-    "reason": "Major model launch with multimodal capabilities; Google flagship product release with video generation"
+    "headline": "If Google can’t make AI agents useful, maybe no one can",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/934478/if-google-cant-make-ai-agents-useful-maybe-no-one-can",
+    "score": 87,
+    "reason": "Major capability launch (AI agents) from market leader with high stakes implications"
   },
   {
     "rank": 6,
-    "headline": "Google Makes It Easy to Deepfake Yourself",
-    "link": "https://www.wired.com/story/google-makes-it-easy-to-make-a-deepfake-of-yourself/",
-    "score": 79,
-    "reason": "Controversy-adjacent launch; raises significant safety and misuse concerns; concrete product capability"
+    "headline": "Colossal Biosciences is growing chickens in a 3D-printed artificial eggshell",
+    "link": "https://www.technologyreview.com/2026/05/19/1137471/colossal-biosciences-is-growing-chickens-in-a-3d-printed-container/",
+    "score": 85,
+    "reason": "Novel AI application with significant biological/commercial milestone"
   },
   {
     "rank": 7,
-    "headline": "Literary Prizewinners Are Facing AI Allegations. It Feels Like the New Normal",
-    "link": "https://www.wired.com/story/commonwealth-short-story-prize-ai-allegations/",
-    "score": 77,
-    "reason": "Emerging controversy trend; real-world impact on creative industries; pattern of AI-related disputes"
+    "headline": "AI boom reshuffles global stock market pecking order as South Korea and Taiwan surge",
+    "link": "https://www.cnbc.com/2026/05/20/global-market-reordering-is-accelerating-as-the-ai-rally-gains-pace.html",
+    "score": 83,
+    "reason": "Major economic impact with measurable market data"
   },
   {
     "rank": 8,
-    "headline": "Alibaba is designing AI chips around agents, and that changes what the race is actually about",
-    "link": "https://www.artificialintelligence-news.com/news/alibaba-zhenwu-m890-ai-agent-chip-roadmap/",
-    "score": 75,
-    "reason": "Strategic shift in AI chip design; competitive implications; architectural innovation announcement"
+    "headline": "I wore Google's Android XR glasses again - and my limit-testing should scare Meta and Apple",
+    "link": "https://www.zdnet.com/article/i-wore-google-android-xr-glasses-io-2026-meta-apple/",
+    "score": 81,
+    "reason": "New hardware category launch with competitive implications"
   },
   {
     "rank": 9,
-    "headline": "Nvidia to launch Singapore research hub as city-state boosts AI plans",
-    "link": "https://www.cnbc.com/2026/05/20/nvidia-to-launch-singapore-research-hub-as-city-state-boosts-ai-plans.html",
-    "score": 73,
-    "reason": "Major infrastructure investment; new R&D facility launch; competitive expansion move"
+    "headline": "Google Search’s AI evolution includes more ads",
+    "link": "https://www.theverge.com/tech/934585/google-ai-shopping-ads-search",
+    "score": 79,
+    "reason": "Major product change to core platform with monetization implications and user impact"
   },
   {
     "rank": 10,
-    "headline": "Google's Gemini Spark is an agentic AI assistant",
-    "link": "https://www.engadget.com/2176556/googles-gemini-spark-is-an-agentic-ai-assistant/",
-    "score": 71,
-    "reason": "New product category launch (agentic AI); competitive response to OpenAI's agents; concrete capability announcement"
+    "headline": "Former OpenAI Staffers Warn That xAI’s Poor Safety Record Could Complicate SpaceX’s IPO",
+    "link": "https://www.wired.com/story/ex-openai-staffers-warn-spacex-investors-of-ai-safety-risks/",
+    "score": 78,
+    "reason": "Controversy affecting major company milestone (IPO) with safety implications"
   }
 ]
