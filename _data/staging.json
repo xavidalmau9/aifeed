@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Google Search Goes Agentic—and Doesn’t Need You Anymore",
-    "link": "https://www.wired.com/story/google-search-goes-agentic-and-doesnt-need-you-anymore/",
-    "score": 94,
-    "reason": "Biggest product change; major functionality shift; concrete launch with agentic capabilities"
+    "headline": "Google Search is getting its biggest changes ever",
+    "link": "https://www.theverge.com/tech/932970/google-search-ai-update-io-2026",
+    "score": 92,
+    "reason": "Major product launch with concrete changes; biggest search overhaul in 25 years with multiple AI features"
   },
   {
     "rank": 2,
-    "headline": "Anthropic hires OpenAI co-founder Andrej Karpathy, former Tesla AI leader",
-    "link": "https://www.cnbc.com/2026/05/19/anthropic-hires-openai-cofounder-andrej-karpathy-former-tesla-ai-lead.html",
-    "score": 91,
-    "reason": "Major talent acquisition; significant controversy/competitive shift; proven track record hire"
+    "headline": "Elon Musk Loses Landmark Lawsuit Against OpenAI",
+    "link": "https://www.wired.com/story/musk-v-altman-jury-verdict/",
+    "score": 88,
+    "reason": "High-stakes legal outcome with major implications for AI industry governance; concrete resolution, not speculation"
   },
   {
     "rank": 3,
-    "headline": "Google's Gemini Omni can generate 'anything from any input,' starting with video",
-    "link": "https://www.engadget.com/2176590/googles-gemini-omni-can-generate-anything-from-any-input-starting-with-video/",
-    "score": 88,
-    "reason": "Multimodal capability launch; broad generative scope; competes with OpenAI's capabilities"
+    "headline": "Alibaba reveals more powerful Zhenwu AI chip, new LLM",
+    "link": "https://www.cnbc.com/2026/05/19/alibaba-reveals-more-powerful-zhenwu-ai-chip-new-llm.html",
+    "score": 85,
+    "reason": "Competitive AI chip launch; significant hardware announcement; big numbers in performance and capability"
   },
   {
     "rank": 4,
-    "headline": "Pizza Hut franchisee claims $100 million losses from 'cascading operational breakdowns' in AI adoption gone wrong",
-    "link": "https://fortune.com/2026/05/19/pizza-hut-franchisee-lawsuit-ai-adoption-doordash-delivery-drivers/",
-    "score": 86,
-    "reason": "Major controversy; concrete business failure numbers; real-world AI failure case study"
+    "headline": "Singapore inks AI deals with Google, OpenAI as ChatGPT-maker commits $234 million to local ecosystem",
+    "link": "https://www.cnbc.com/2026/05/20/singapore-google-openai-ai-partnerships-lab-investment-chatgpt-ai-agents-atxsummit-mddi.html",
+    "score": 84,
+    "reason": "$234M investment commitment; multiple company partnerships; concrete funding announcement"
   },
   {
     "rank": 5,
-    "headline": "Would you let robots spend your money? Google is betting on it",
-    "link": "https://www.theverge.com/news/932927/google-io-agentic-ai-shopping-universal-cart",
-    "score": 84,
-    "reason": "Agent autonomy launch; major behavioral shift; financial agency implication"
+    "headline": "Gemini Omni, the ‘create anything’ model, starts today with lifelike video",
+    "link": "https://9to5google.com/2026/05/19/gemini-omni-create-anything-model-video/",
+    "score": 82,
+    "reason": "Major model launch with multimodal capabilities; Google flagship product release with video generation"
   },
   {
     "rank": 6,
-    "headline": "Google's new Omni AI tool will let you video clone yourself - I'm intrigued (and concerned)",
-    "link": "https://www.zdnet.com/article/google-omni-ai-tool-video-gemini/",
-    "score": 82,
-    "reason": "Deepfake generation capability; controversy signal; concerning implications noted"
+    "headline": "Google Makes It Easy to Deepfake Yourself",
+    "link": "https://www.wired.com/story/google-makes-it-easy-to-make-a-deepfake-of-yourself/",
+    "score": 79,
+    "reason": "Controversy-adjacent launch; raises significant safety and misuse concerns; concrete product capability"
   },
   {
     "rank": 7,
-    "headline": "Google can now vibe-code you an Android app",
-    "link": "https://www.theverge.com/tech/932364/google-ai-studio-native-android-apps-vibe-code-google-io-2026",
-    "score": 79,
-    "reason": "New development paradigm launch; concrete demo capability; reduces coding barrier"
+    "headline": "Literary Prizewinners Are Facing AI Allegations. It Feels Like the New Normal",
+    "link": "https://www.wired.com/story/commonwealth-short-story-prize-ai-allegations/",
+    "score": 77,
+    "reason": "Emerging controversy trend; real-world impact on creative industries; pattern of AI-related disputes"
   },
   {
     "rank": 8,
-    "headline": "OpenAI's new image watermarks make it easier to spot AI fakes - here's how",
-    "link": "https://www.zdnet.com/article/openai-image-watermarks-help-spot-ai-fakes/",
-    "score": 77,
-    "reason": "OpenAI launch; detection mechanism; addresses deepfake/misinformation concern"
+    "headline": "Alibaba is designing AI chips around agents, and that changes what the race is actually about",
+    "link": "https://www.artificialintelligence-news.com/news/alibaba-zhenwu-m890-ai-agent-chip-roadmap/",
+    "score": 75,
+    "reason": "Strategic shift in AI chip design; competitive implications; architectural innovation announcement"
   },
   {
     "rank": 9,
-    "headline": "Demis Hassabis Thinks AI Job Cuts Are Dumb",
-    "link": "https://www.wired.com/story/demis-hassabis-ai-layoffs-deepmind-google-io/",
+    "headline": "Nvidia to launch Singapore research hub as city-state boosts AI plans",
+    "link": "https://www.cnbc.com/2026/05/20/nvidia-to-launch-singapore-research-hub-as-city-state-boosts-ai-plans.html",
     "score": 73,
-    "reason": "Leadership controversy; contradicts industry narrative; labor market implication"
+    "reason": "Major infrastructure investment; new R&D facility launch; competitive expansion move"
   },
   {
     "rank": 10,
-    "headline": "Here’s why Elon Musk lost his suit against OpenAI",
-    "link": "https://www.technologyreview.com/2026/05/18/1137488/elon-musk-suit-openai-verdict/",
+    "headline": "Google's Gemini Spark is an agentic AI assistant",
+    "link": "https://www.engadget.com/2176556/googles-gemini-spark-is-an-agentic-ai-assistant/",
     "score": 71,
-    "reason": "Legal resolution; Musk v. OpenAI litigation outcome; settled major controversy"
+    "reason": "New product category launch (agentic AI); competitive response to OpenAI's agents; concrete capability announcement"
   }
 ]
