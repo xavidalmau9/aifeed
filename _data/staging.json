@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Everything Announced at Google I/O 2026: Gemini, Search, Smart Glasses",
-    "link": "https://www.wired.com/story/everything-google-announced-at-google-io-2026/",
-    "score": 96,
-    "reason": "Major product launch event with multiple announcements across core products"
+    "headline": "Anthropic is paying SpaceX $15 billion per year",
+    "link": "https://www.axios.com/2026/05/20/anthropic-spacex-compute",
+    "score": 98,
+    "reason": "Massive financial commitment, concrete deal size, major AI infrastructure investment"
   },
   {
     "rank": 2,
-    "headline": "OpenAI may go public as soon as September",
-    "link": "https://www.engadget.com/2178018/openai-may-go-public-as-soon-as-september/",
-    "score": 94,
-    "reason": "Major financial milestone - IPO announcement from leading AI company"
+    "headline": "SpaceX Is Spending $2.8 Billion to Buy Gas Turbines for Its AI Data Centers",
+    "link": "https://www.wired.com/story/elon-musk-spacex-spending-gas-turbines-grok/",
+    "score": 96,
+    "reason": "Big number, concrete infrastructure investment, shows AI capex scale"
   },
   {
     "rank": 3,
-    "headline": "Here’s why Elon Musk lost his suit against OpenAI",
-    "link": "https://www.technologyreview.com/2026/05/18/1137488/elon-musk-suit-openai-verdict/",
-    "score": 90,
-    "reason": "High-profile controversy and legal decision affecting major AI figures"
+    "headline": "Alibaba is designing AI chips around agents, and that changes what the race is actually about",
+    "link": "https://www.artificialintelligence-news.com/news/alibaba-zhenwu-m890-ai-agent-chip-roadmap/",
+    "score": 94,
+    "reason": "Major strategic shift in chip design, competition angle, significant industry pivot"
   },
   {
     "rank": 4,
-    "headline": "The biggest data center ever is becoming a huge problem in Utah",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/933687/utah-stratos-project-data-center-kevin-oleary",
-    "score": 88,
-    "reason": "Significant infrastructure controversy with environmental/political impact"
+    "headline": "Meta lays off thousands of employees to offset AI investments",
+    "link": "https://www.theverge.com/tech/935163/meta-layoffs-ai-investment-offset-memo",
+    "score": 92,
+    "reason": "Major layoff announcement, quantifiable impact, direct AI trade-off decision"
   },
   {
     "rank": 5,
-    "headline": "If Google can’t make AI agents useful, maybe no one can",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/934478/if-google-cant-make-ai-agents-useful-maybe-no-one-can",
-    "score": 87,
-    "reason": "Major capability launch (AI agents) from market leader with high stakes implications"
+    "headline": "Google shoves more AI into Search, including a dynamic Search box and agentic features",
+    "link": "https://www.engadget.com/2176547/google-shoves-more-ai-into-search-including-a-dynamic-search-box-and-agentic-features/",
+    "score": 90,
+    "reason": "Major product overhaul, concrete feature launches, business model shift"
   },
   {
     "rank": 6,
-    "headline": "Colossal Biosciences is growing chickens in a 3D-printed artificial eggshell",
-    "link": "https://www.technologyreview.com/2026/05/19/1137471/colossal-biosciences-is-growing-chickens-in-a-3d-printed-container/",
-    "score": 85,
-    "reason": "Novel AI application with significant biological/commercial milestone"
+    "headline": "Nvidia says it has ‘largely conceded’ China’s AI chip market to Huawei",
+    "link": "https://www.cnbc.com/2026/05/21/nvidia-jensen-huang-china-ai-chip-market-huawei.html",
+    "score": 88,
+    "reason": "Major market concession, geopolitical competition, significant strategic admission"
   },
   {
     "rank": 7,
-    "headline": "AI boom reshuffles global stock market pecking order as South Korea and Taiwan surge",
-    "link": "https://www.cnbc.com/2026/05/20/global-market-reordering-is-accelerating-as-the-ai-rally-gains-pace.html",
-    "score": 83,
-    "reason": "Major economic impact with measurable market data"
+    "headline": "Anthropic is reportedly about to have its first profitable quarter",
+    "link": "https://www.engadget.com/2178340/anthropic-first-profitable-quarter/",
+    "score": 86,
+    "reason": "Financial milestone, major AI company profitability achievement, business viability"
   },
   {
     "rank": 8,
-    "headline": "I wore Google's Android XR glasses again - and my limit-testing should scare Meta and Apple",
-    "link": "https://www.zdnet.com/article/i-wore-google-android-xr-glasses-io-2026-meta-apple/",
-    "score": 81,
-    "reason": "New hardware category launch with competitive implications"
+    "headline": "AMD to invest $10 billion in Taiwan&apos;s AI industry to advance top-end chips",
+    "link": "https://www.cnbc.com/2026/05/21/amd-taiwan-ai-chips-sector-10-billion.html",
+    "score": 85,
+    "reason": "Major capital commitment, chip manufacturing strategy, concrete investment size"
   },
   {
     "rank": 9,
-    "headline": "Google Search’s AI evolution includes more ads",
-    "link": "https://www.theverge.com/tech/934585/google-ai-shopping-ads-search",
-    "score": 79,
-    "reason": "Major product change to core platform with monetization implications and user impact"
+    "headline": "YouTube overhaul broadens search with 'Ask YouTube,' adds Gemini Omni to recreate someone else's Shorts",
+    "link": "https://9to5google.com/2026/05/19/youtube-search-adds-ask-youtube-gemini-omni-for-shorts-remix/",
+    "score": 84,
+    "reason": "Major platform feature launches, AI integration at scale, user-facing products"
   },
   {
     "rank": 10,
-    "headline": "Former OpenAI Staffers Warn That xAI’s Poor Safety Record Could Complicate SpaceX’s IPO",
-    "link": "https://www.wired.com/story/ex-openai-staffers-warn-spacex-investors-of-ai-safety-risks/",
-    "score": 78,
-    "reason": "Controversy affecting major company milestone (IPO) with safety implications"
+    "headline": "America's new AI map shows something surprising: 'A lot of normal people are adopting AI'",
+    "link": "https://fortune.com/2026/05/21/normal-people-using-ai-microsoft-diffusion-report/",
+    "score": 82,
+    "reason": "Data-driven adoption insight, broader societal trend, tangible measurement of AI penetration"
   }
 ]
