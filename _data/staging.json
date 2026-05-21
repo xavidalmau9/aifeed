@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic is paying SpaceX $15 billion per year",
-    "link": "https://www.axios.com/2026/05/20/anthropic-spacex-compute",
-    "score": 98,
-    "reason": "Massive financial commitment, concrete deal size, major AI infrastructure investment"
+    "headline": "Meta laid off 10% of its workforce as Mark Zuckerberg warns that in the AI race ‘success isn’t a given’",
+    "link": "https://fortune.com/2026/05/21/meta-10-percent-workforce-layoffs-ai-tech-success-is-not-a-given-8-thousand-employees-mark-zuckerberg/",
+    "score": 92,
+    "reason": "Major company action with concrete numbers (10% layoff) and strategic statement about AI competition"
   },
   {
     "rank": 2,
-    "headline": "SpaceX Is Spending $2.8 Billion to Buy Gas Turbines for Its AI Data Centers",
-    "link": "https://www.wired.com/story/elon-musk-spacex-spending-gas-turbines-grok/",
-    "score": 96,
-    "reason": "Big number, concrete infrastructure investment, shows AI capex scale"
+    "headline": "AI spending expected to top $1 trillion in 2 years. That estimate&apos;s way too low if Jensen Huang&apos;s right",
+    "link": "https://www.cnbc.com/2026/05/21/ai-spending-expected-to-top-1-trillion-in-2-years-why-that-estimate-may-be-too-low.html",
+    "score": 88,
+    "reason": "Big numbers ($1 trillion), industry leader commentary, concrete market projection"
   },
   {
     "rank": 3,
-    "headline": "Alibaba is designing AI chips around agents, and that changes what the race is actually about",
-    "link": "https://www.artificialintelligence-news.com/news/alibaba-zhenwu-m890-ai-agent-chip-roadmap/",
-    "score": 94,
-    "reason": "Major strategic shift in chip design, competition angle, significant industry pivot"
+    "headline": "Anthropic, Microsoft in talks for AI chip deal after $5 billion investment",
+    "link": "https://www.cnbc.com/2026/05/21/anthropic-microsoft-maia-200-ai-chip.html",
+    "score": 86,
+    "reason": "Major financial commitment ($5B), strategic partnership between two significant players, chip infrastructure announcement"
   },
   {
     "rank": 4,
-    "headline": "Meta lays off thousands of employees to offset AI investments",
-    "link": "https://www.theverge.com/tech/935163/meta-layoffs-ai-investment-offset-memo",
-    "score": 92,
-    "reason": "Major layoff announcement, quantifiable impact, direct AI trade-off decision"
+    "headline": "Anthropic is paying $15 billion a year for access to Elon Musk’s data centers",
+    "link": "https://www.theverge.com/science/935229/spacex-anthropic-ipo-ai-capacity-deal-colossus",
+    "score": 84,
+    "reason": "Extraordinary number ($15B/year), major infrastructure deal, established major cost structure for AI"
   },
   {
     "rank": 5,
-    "headline": "Google shoves more AI into Search, including a dynamic Search box and agentic features",
-    "link": "https://www.engadget.com/2176547/google-shoves-more-ai-into-search-including-a-dynamic-search-box-and-agentic-features/",
-    "score": 90,
-    "reason": "Major product overhaul, concrete feature launches, business model shift"
+    "headline": "Nvidia's Vera chip is the US$200 billion bet Jensen Huang doesn't want you to overlook",
+    "link": "https://www.artificialintelligence-news.com/news/nvidia-vera-chip-200-billion-market/",
+    "score": 82,
+    "reason": "Massive investment scale ($200B), major hardware launch, industry-defining bet"
   },
   {
     "rank": 6,
-    "headline": "Nvidia says it has ‘largely conceded’ China’s AI chip market to Huawei",
-    "link": "https://www.cnbc.com/2026/05/21/nvidia-jensen-huang-china-ai-chip-market-huawei.html",
-    "score": 88,
-    "reason": "Major market concession, geopolitical competition, significant strategic admission"
+    "headline": "Spotify Studio's AI agent creates a daily podcast just for you",
+    "link": "https://www.theverge.com/entertainment/935390/spotify-studio-ai-app-personal-podcasts",
+    "score": 78,
+    "reason": "Product launch announcement, major consumer-facing AI feature, personalization at scale"
   },
   {
     "rank": 7,
-    "headline": "Anthropic is reportedly about to have its first profitable quarter",
-    "link": "https://www.engadget.com/2178340/anthropic-first-profitable-quarter/",
-    "score": 86,
-    "reason": "Financial milestone, major AI company profitability achievement, business viability"
+    "headline": "All of the updates from Elon Musk and Sam Altman’s battle over OpenAI",
+    "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+    "score": 75,
+    "reason": "Major controversy between industry leaders, ongoing high-profile dispute"
   },
   {
     "rank": 8,
-    "headline": "AMD to invest $10 billion in Taiwan&apos;s AI industry to advance top-end chips",
-    "link": "https://www.cnbc.com/2026/05/21/amd-taiwan-ai-chips-sector-10-billion.html",
-    "score": 85,
-    "reason": "Major capital commitment, chip manufacturing strategy, concrete investment size"
+    "headline": "Anthropic’s Code with Claude showed off coding's future—whether you like it or not",
+    "link": "https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/",
+    "score": 73,
+    "reason": "Product launch with demonstrated capability, controversy element about AI impact on development"
   },
   {
     "rank": 9,
-    "headline": "YouTube overhaul broadens search with 'Ask YouTube,' adds Gemini Omni to recreate someone else's Shorts",
-    "link": "https://9to5google.com/2026/05/19/youtube-search-adds-ask-youtube-gemini-omni-for-shorts-remix/",
-    "score": 84,
-    "reason": "Major platform feature launches, AI integration at scale, user-facing products"
+    "headline": "96% of IT pros use AI now: Their top 7 agentic applications and biggest implementation roadblocks",
+    "link": "https://www.zdnet.com/article/96-of-it-pros-use-ai-now-their-top-7-agentic-applications-and-biggest-implementation-roadblocks/",
+    "score": 71,
+    "reason": "Significant adoption metric (96%), enterprise-level AI penetration data"
   },
   {
     "rank": 10,
-    "headline": "America's new AI map shows something surprising: 'A lot of normal people are adopting AI'",
-    "link": "https://fortune.com/2026/05/21/normal-people-using-ai-microsoft-diffusion-report/",
-    "score": 82,
-    "reason": "Data-driven adoption insight, broader societal trend, tangible measurement of AI penetration"
+    "headline": "Google reinvents search before AI rivals replace it",
+    "link": "https://www.axios.com/2026/05/20/google-ai-search-agents-chatbots",
+    "score": 69,
+    "reason": "Major product strategy shift, defensive move against AI competition, core business transformation"
   }
 ]
