@@ -81,8 +81,13 @@ jobs:
               [/bank.*account|financial.*access|plaid/, 'bank building finance institution wall street'],
               [/billion.*fund|fund.*billion/, 'investment finance growth chart money'],
               [/crypto|bitcoin|ethereum/,     'cryptocurrency bitcoin digital blockchain'],
-              // Energy & climate
-              [/solar|wind farm|renewable/,   'solar panels renewable energy green landscape'],
+              // Energy & climate — specific before generic
+              [/china.*grid|china.*energy|china.*renew|china.*solar|china.*wind/, 'china wind turbines energy farm infrastructure'],
+              [/china.*ai|ai.*china/,         'china technology city skyline innovation'],
+              [/renewable.*grid|smart.*grid|energy.*grid|grid.*map/, 'power grid energy infrastructure electricity technology'],
+              [/wind turbine|offshore wind/,  'wind turbines offshore aerial renewable energy'],
+              [/solar farm|solar panel/,      'solar farm panels aerial renewable energy'],
+              [/solar|wind.*energy|renewable/, 'renewable energy solar wind farm aerial'],
               [/nuclear/,                     'nuclear power plant energy reactor'],
               [/fervo|geothermal/,            'geothermal energy power drill technology landscape'],
               [/electric vehicle|ev charging/, 'electric vehicle charging station clean energy'],
@@ -125,6 +130,9 @@ jobs:
               [/startup.*rais|rais.*million/,  'startup tech office modern workspace team'],
               [/layoff|job.*cut/,             'office business people technology workplace'],
               [/search engine/,               'internet search computer browser technology'],
+              [/map|mapping/,                 'aerial map satellite technology infrastructure'],
+              [/schmidt|google ceo|eric schmidt/, 'google headquarters technology modern office'],
+              [/eric.*ceo|ceo.*tech/,         'technology executive business modern office'],
             ];
 
             for (const [pattern, query] of TOPIC_MAP) {
@@ -155,10 +163,8 @@ jobs:
                     const r = JSON.parse(data);
                     const photos = r.results || [];
                     if (!photos.length) { resolve(null); return; }
-                    // Pick randomly from top 8 (or fewer) for variety
-                    const pool = photos.slice(0, Math.min(8, photos.length));
-                    const pick = pool[Math.floor(Math.random() * pool.length)];
-                    resolve(pick.urls.regular);
+                    // Always use the #1 most relevant result — random picks cause wrong photos
+                    resolve(photos[0].urls.regular);
                   } catch(e) { resolve(null); }
                 });
               }).on('error', () => resolve(null));
