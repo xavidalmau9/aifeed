@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "SpaceX Is Spending $2.8 Billion to Buy Gas Turbines for Its AI Data Centers",
-    "link": "https://www.wired.com/story/elon-musk-spacex-spending-gas-turbines-grok/",
+    "headline": "Google's AI search is so broken it can 'disregard' what you're looking for",
+    "link": "https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard",
     "score": 92,
-    "reason": "Major capital expenditure, concrete number, infrastructure play"
+    "reason": "Major Google product failure with concrete evidence of malfunction"
   },
   {
     "rank": 2,
-    "headline": "China's AI just mapped its entire renewable energy grid. Here’s why the rest of the world should pay attention",
-    "link": "https://www.artificialintelligence-news.com/news/ai-energy-grid-mapping-china/",
-    "score": 88,
-    "reason": "Geopolitical significance, major capability deployment, scale implications"
+    "headline": "All of the updates from Elon Musk and Sam Altman’s battle over OpenAI",
+    "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+    "score": 89,
+    "reason": "High-profile controversy involving two major AI figures and company leadership dispute"
   },
   {
     "rank": 3,
-    "headline": "OpenAI opens Singapore AI lab as IMDA updates AI framework",
-    "link": "https://www.artificialintelligence-news.com/news/openai-singapore-ai-lab-imda-agentic-ai-framework/",
-    "score": 82,
-    "reason": "Major expansion, new office launch, regulatory milestone"
+    "headline": "Nvidia's Vera chip is the US$200 billion bet Jensen Huang doesn't want you to overlook",
+    "link": "https://www.artificialintelligence-news.com/news/nvidia-vera-chip-200-billion-market/",
+    "score": 87,
+    "reason": "Massive $200B investment number with strategic AI hardware implications"
   },
   {
     "rank": 4,
-    "headline": "Lenovo shares jump nearly 20% on record earnings as AI revenue nearly doubles",
-    "link": "https://www.cnbc.com/2026/05/22/lenovo-shares-jump-15percent-on-record-earnings-as-ai-revenue-nearly-doubles.html",
-    "score": 80,
-    "reason": "Quantified business impact, major revenue growth, market reaction"
+    "headline": "Microsoft reports are exposing AI's real cost problem: Using the tech is more expensive than paying human employees",
+    "link": "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
+    "score": 85,
+    "reason": "Fundamental economic challenge to AI viability with concrete cost data"
   },
   {
     "rank": 5,
-    "headline": "Samsung's memory chip employees negotiated $340,000 bonuses this year",
-    "link": "https://www.theverge.com/tech/936002/samsung-memory-chip-employees-deal-strike-bonus",
-    "score": 78,
-    "reason": "Specific bonus amount, industry-wide signal, labor market indicator"
+    "headline": "Spotify Studio's AI agent creates a daily podcast just for you",
+    "link": "https://www.theverge.com/entertainment/935390/spotify-studio-ai-app-personal-podcasts",
+    "score": 81,
+    "reason": "New AI product launch with concrete feature implementation"
   },
   {
     "rank": 6,
-    "headline": "Spotify is launching AI-generated remixes",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/935379/spotify-umg-ai-covers-remix",
-    "score": 75,
-    "reason": "Major consumer product launch, new feature rollout"
+    "headline": "Anthropic’s Code with Claude showed off coding's future—whether you like it or not",
+    "link": "https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/",
+    "score": 79,
+    "reason": "Anthropic product launch demonstrating AI capability advancement in specific domain"
   },
   {
     "rank": 7,
-    "headline": "U.S. pushes its AI in China and Asia after Trump-Xi meeting",
-    "link": "https://www.cnbc.com/2026/05/22/us-china-ai-apec-asia.html",
-    "score": 73,
-    "reason": "Geopolitical strategy shift, US-China competition escalation"
+    "headline": "The big questions looming over OpenAI’s trillion-dollar IPO",
+    "link": "https://fortune.com/2026/05/22/openai-ipo-filing-1-trillion-may-finally-answer-these-big-questions/",
+    "score": 77,
+    "reason": "Massive valuation milestone with trillion-dollar implications for OpenAI"
   },
   {
     "rank": 8,
-    "headline": "Musk and Zuckerberg convinced Trump to scrap AI executive order",
-    "link": "https://www.artificialintelligence-news.com/news/trump-ai-executive-order-scrapped-musk-zuckerberg-china/",
-    "score": 71,
-    "reason": "Major policy reversal, executive influence controversy"
+    "headline": "SpaceX Listed Grok’s ‘Spicy’ Mode as a Risk in Its IPO Filing",
+    "link": "https://www.wired.com/story/spacex-ipo-grok-spicy-mode-risks/",
+    "score": 75,
+    "reason": "Regulatory disclosure of AI safety concerns in major IPO filing"
   },
   {
     "rank": 9,
-    "headline": "SoftBank Group adds over $61 billion to market cap in two days as shares surge on AI led optimism",
-    "link": "https://www.cnbc.com/2026/05/22/softbank-extends-scorching-rally-surging-over-12percent-as-investors-crowd-into-ai-trade.html",
-    "score": 69,
-    "reason": "Massive market capitalization gain, investor sentiment shift"
+    "headline": "Barnes & Noble CEO clarifies the bookseller’s stance on AI-written books after refusing to ban them: 'This is a straightforward rejection of AI books'",
+    "link": "https://fortune.com/2026/05/22/barnes-noble-ceo-stance-ai-generated-books-refusing-to-ban/",
+    "score": 73,
+    "reason": "Major retailer takes explicit stance against AI content, significant industry position"
   },
   {
     "rank": 10,
-    "headline": "‘A pressure cooker ready to explode’: The wild secondaries scramble for Anthropic shares",
-    "link": "https://fortune.com/2026/05/22/anthropic-secondaries-scramble-term-sheet/",
-    "score": 67,
-    "reason": "Valuation frenzy, investor competition, private market dynamics"
+    "headline": "Māori Text-to-Speech Model Spurns Big Tech’s Values",
+    "link": "https://spectrum.ieee.org/indigenous-ai-voice-models-maori",
+    "score": 71,
+    "reason": "Open-source alternative to big tech AI models, highlighting competitive landscape shift"
   }
 ]
