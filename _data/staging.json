@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Spotify is launching AI-generated remixes",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/935379/spotify-umg-ai-covers-remix",
+    "headline": "Google's AI search is so broken it can 'disregard' what you're looking for",
+    "link": "https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard",
     "score": 92,
-    "reason": "Concrete product launch with real feature. Actual deployment, not speculation."
+    "reason": "Major company, concrete functionality failure, demonstrates real product problems"
   },
   {
     "rank": 2,
-    "headline": "Google’s new anything-to-anything AI model is wild",
-    "link": "https://www.theverge.com/tech/936507/gemini-omni-hands-on-deepfake-ai-video",
-    "score": 88,
-    "reason": "Major multimodal model launch from Google. Significant technical capability advancement."
+    "headline": "Ansel Adams' trust says AI-colorized version of his work was exhibited without permission",
+    "link": "https://www.engadget.com/2180105/ansel-adams-trust-says-ai-colorized-version-moonrise-was-exhibited-without-permission/",
+    "score": 85,
+    "reason": "Significant IP controversy, major cultural figure, legal action initiated"
   },
   {
     "rank": 3,
-    "headline": "OpenAI opens Singapore AI lab as IMDA updates AI framework",
-    "link": "https://www.artificialintelligence-news.com/news/openai-singapore-ai-lab-imda-agentic-ai-framework/",
-    "score": 85,
-    "reason": "Concrete expansion with regulatory context. Major geographic expansion by OpenAI."
+    "headline": "Can OpenAI’s ‘Master of Disaster’ Fix AI’s Reputation Crisis?",
+    "link": "https://www.wired.com/story/openai-chris-lehane-global-affairs-pr/",
+    "score": 78,
+    "reason": "OpenAI leadership/strategy story, addresses industry reputation issues"
   },
   {
     "rank": 4,
-    "headline": "SoftBank Group adds over $61 billion to market cap in two days as shares surge on AI led optimism",
-    "link": "https://www.cnbc.com/2026/05/22/softbank-extends-scorching-rally-surging-over-12percent-as-investors-crowd-into-ai-trade.html",
-    "score": 84,
-    "reason": "Big numbers: $61B market cap increase. Quantified financial impact from AI sentiment."
+    "headline": "Marketer that claimed it could tap devices for ad targeting will pay $880K settlement",
+    "link": "https://arstechnica.com/tech-policy/2026/05/marketer-that-claimed-it-could-tap-devices-for-ad-targeting-will-pay-880k-settlement/",
+    "score": 76,
+    "reason": "Concrete regulatory action, specific dollar amount, privacy violation"
   },
   {
     "rank": 5,
-    "headline": "Musk and Zuckerberg convinced Trump to scrap AI executive order",
-    "link": "https://www.artificialintelligence-news.com/news/trump-ai-executive-order-scrapped-musk-zuckerberg-china/",
-    "score": 82,
-    "reason": "Major controversy: tech leaders killed government AI regulation. Significant policy impact."
+    "headline": "Gemini Live redesign now works with more 'Connected Apps' on Android",
+    "link": "https://9to5google.com/2026/05/23/gemini-live-connected-apps/",
+    "score": 72,
+    "reason": "Google product launch/expansion with functional improvements"
   },
   {
     "rank": 6,
-    "headline": "AI wealth must benefit the public, South Korea&apos;s deputy PM says amid Samsung labor tensions",
-    "link": "https://www.cnbc.com/2026/05/23/ai-wealth-must-benefit-the-public-south-koreas-deputy-pm-says.html",
-    "score": 78,
-    "reason": "Controversy: government pushback on AI wealth distribution linked to real labor disputes."
+    "headline": "Job training for robots: How China is getting machines ready to join the workforce",
+    "link": "https://www.cnbc.com/2026/05/21/china-robots-humanoid-job-training.html",
+    "score": 70,
+    "reason": "Large-scale infrastructure/workforce story, geopolitical significance"
   },
   {
     "rank": 7,
-    "headline": "Google I/O showed how the path for AI-driven science is shifting",
-    "link": "https://www.technologyreview.com/2026/05/22/1137813/google-i-o-showed-how-the-path-for-ai-science-is-shifting/",
-    "score": 76,
-    "reason": "Major conference announcement of AI application shift. Concrete demonstration of new direction."
+    "headline": "The literary world isn’t prepared for AI",
+    "link": "https://www.theverge.com/tech/936073/ai-writing-granta-commonwealth-prize",
+    "score": 65,
+    "reason": "Significant industry disruption story, broader cultural impact"
   },
   {
     "rank": 8,
-    "headline": "Microsoft starts canceling Claude Code licenses",
-    "link": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad",
-    "score": 74,
-    "reason": "Concrete action: Microsoft discontinuing Anthropic product. Real business development."
+    "headline": "U.S. pushes its AI in China and Asia after Trump-Xi meeting",
+    "link": "https://www.cnbc.com/2026/05/22/us-china-ai-apec-asia.html",
+    "score": 63,
+    "reason": "Geopolitical AI strategy, concrete policy action"
   },
   {
     "rank": 9,
-    "headline": "Qualcomm&apos;s stock pop shows investors are &apos;waking up&apos; to boom in AI devices",
-    "link": "https://www.cnbc.com/2026/05/22/qualcomms-stock-pop-shows-investors-waking-up-to-boom-in-ai-devices.html",
-    "score": 72,
-    "reason": "Quantified market response to AI device boom. Big numbers on investor sentiment."
+    "headline": "Why Trump's AI executive order was pulled",
+    "link": "https://www.axios.com/2026/05/21/trump-ai-executive-order-postponed-why",
+    "score": 61,
+    "reason": "Policy reversal story, industry influence on regulation"
   },
   {
     "rank": 10,
-    "headline": "The Gulf’s AI Boom Has an Undersea Cable Problem",
-    "link": "https://www.wired.com/story/the-gulfs-ai-boom-has-an-undersea-cable-problem/",
-    "score": 70,
-    "reason": "Concrete infrastructure challenge to AI expansion. Real bottleneck limiting growth."
+    "headline": "Spotify bets on taste as differentiator in the AI era",
+    "link": "https://www.axios.com/2026/05/21/spotify-reserved-tickets-interactive-sharing",
+    "score": 58,
+    "reason": "Major company AI strategy shift, competitive positioning"
   }
 ]
