@@ -317,24 +317,22 @@ jobs:
                   } catch(e) { console.log('Could not save pending story:', e.message); }
                 }
 
-                // Send HTML to Telegram
-                const tmpHtml = '/tmp/tg_' + file;
-                fs.writeFileSync(tmpHtml, html);
+                // Send PNG image directly to Telegram — user sees graphic inline, no Chrome needed
                 try {
                   const hl = metaMatch ? (JSON.parse(metaMatch[1]).headline || '') : file;
-                  const caption = '📸 <b>New graphic ready</b>\n' + hl.substring(0,120) + '\n\nReply <b>publish</b> to add to website.';
+                  const caption = '✅ <b>' + hl.substring(0,120) + '</b>\n\nReply <b>publish</b> to add to website.';
                   const result = execSync(
                     'curl -s ' +
                     '-F "chat_id=' + CHAT_ID + '" ' +
-                    '-F "document=@' + tmpHtml + ';filename=' + file + ';type=text/html" ' +
-                    '-F "caption=' + caption.replace(/"/g, '\\"') + '" ' +
+                    '-F "photo=@' + pngPath + ';type=image/png" ' +
+                    '-F "caption=' + caption.replace(/['"]/g, ' ') + '" ' +
                     '-F "parse_mode=HTML" ' +
-                    '"https://api.telegram.org/bot' + BOT_TOKEN + '/sendDocument"',
+                    '"https://api.telegram.org/bot' + BOT_TOKEN + '/sendPhoto"',
                     { encoding: 'utf8', timeout: 30000 }
                   );
                   const parsed = JSON.parse(result);
-                  console.log(parsed.ok ? 'Sent to Telegram: ' + file : 'Telegram failed: ' + JSON.stringify(parsed));
-                } catch(e) { console.log('Telegram curl error:', e.message); }
+                  console.log(parsed.ok ? 'PNG sent to Telegram: ' + pngName : 'Telegram failed: ' + JSON.stringify(parsed));
+                } catch(e) { console.log('Telegram send error:', e.message); }
 
               } catch(e) {
                 console.error('Failed to render', file, ':', e.message);
