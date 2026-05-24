@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Google's AI search is so broken it can 'disregard' what you're looking for",
-    "link": "https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard",
+    "headline": "AI hallucinations are infiltrating expert work—and entering the permanent body of knowledge",
+    "link": "https://fortune.com/2026/05/24/ai-hallucinations-scientific-research-authors-medical-journal-treatment/",
     "score": 92,
-    "reason": "Major company, concrete functionality failure, demonstrates real product problems"
+    "reason": "Major controversy about AI reliability in professional/scientific domains with real-world consequences"
   },
   {
     "rank": 2,
-    "headline": "Ansel Adams' trust says AI-colorized version of his work was exhibited without permission",
-    "link": "https://www.engadget.com/2180105/ansel-adams-trust-says-ai-colorized-version-moonrise-was-exhibited-without-permission/",
-    "score": 85,
-    "reason": "Significant IP controversy, major cultural figure, legal action initiated"
+    "headline": "Google's AI Overviews break the dictionary when you use words like 'disregard'",
+    "link": "https://9to5google.com/2026/05/22/google-ai-overview-dictionary/",
+    "score": 88,
+    "reason": "Specific failure case of Google's AI product with demonstrated bug; directly impacts millions of users"
   },
   {
     "rank": 3,
-    "headline": "Can OpenAI’s ‘Master of Disaster’ Fix AI’s Reputation Crisis?",
-    "link": "https://www.wired.com/story/openai-chris-lehane-global-affairs-pr/",
-    "score": 78,
-    "reason": "OpenAI leadership/strategy story, addresses industry reputation issues"
+    "headline": "Even If You Hate AI, You Will Use Google AI Search",
+    "link": "https://www.wired.com/story/even-if-you-hate-ai-you-will-use-google-ai-search/",
+    "score": 85,
+    "reason": "Addresses Google's AI integration at scale; substantive take on inevitable adoption"
   },
   {
     "rank": 4,
-    "headline": "Marketer that claimed it could tap devices for ad targeting will pay $880K settlement",
-    "link": "https://arstechnica.com/tech-policy/2026/05/marketer-that-claimed-it-could-tap-devices-for-ad-targeting-will-pay-880k-settlement/",
-    "score": 76,
-    "reason": "Concrete regulatory action, specific dollar amount, privacy violation"
+    "headline": "These Robots Are Making Meals for a Nonprofit in San Francisco’s Tenderloin",
+    "link": "https://www.wired.com/story/these-robots-are-making-meals-for-a-nonprofit-in-san-franciscos-tenderloin/",
+    "score": 82,
+    "reason": "Real-world AI/robotics deployment with measurable social impact; concrete implementation story"
   },
   {
     "rank": 5,
-    "headline": "Gemini Live redesign now works with more 'Connected Apps' on Android",
-    "link": "https://9to5google.com/2026/05/23/gemini-live-connected-apps/",
-    "score": 72,
-    "reason": "Google product launch/expansion with functional improvements"
+    "headline": "Greg Brockman: Inside the 72 Hours That Almost Killed OpenAI",
+    "link": "https://fs.blog/knowledge-project-podcast/greg-brockman/",
+    "score": 80,
+    "reason": "Major industry drama with significant implications for leading AI company; insider narrative"
   },
   {
     "rank": 6,
-    "headline": "Job training for robots: How China is getting machines ready to join the workforce",
-    "link": "https://www.cnbc.com/2026/05/21/china-robots-humanoid-job-training.html",
-    "score": 70,
-    "reason": "Large-scale infrastructure/workforce story, geopolitical significance"
+    "headline": "AI wealth must benefit the public, South Korea&apos;s deputy PM says amid Samsung labor tensions",
+    "link": "https://www.cnbc.com/2026/05/23/ai-wealth-must-benefit-the-public-south-koreas-deputy-pm-says.html",
+    "score": 78,
+    "reason": "Policy/regulation controversy linking AI economics to labor disputes; government response"
   },
   {
     "rank": 7,
-    "headline": "The literary world isn’t prepared for AI",
-    "link": "https://www.theverge.com/tech/936073/ai-writing-granta-commonwealth-prize",
-    "score": 65,
-    "reason": "Significant industry disruption story, broader cultural impact"
+    "headline": "As AI wipes out white-collar jobs, one Alabama high school and Toyota are training students for roles that pay $40 an hour and can't be automated",
+    "link": "https://fortune.com/2026/05/24/huntsville-alabama-tech-school-skilled-trades-ai-automation-toyota/",
+    "score": 75,
+    "reason": "Concrete response to AI job displacement with measurable outcomes and specific wage data"
   },
   {
     "rank": 8,
-    "headline": "U.S. pushes its AI in China and Asia after Trump-Xi meeting",
-    "link": "https://www.cnbc.com/2026/05/22/us-china-ai-apec-asia.html",
-    "score": 63,
-    "reason": "Geopolitical AI strategy, concrete policy action"
+    "headline": "Qualcomm&apos;s stock pop shows investors are &apos;waking up&apos; to boom in AI devices",
+    "link": "https://www.cnbc.com/2026/05/22/qualcomms-stock-pop-shows-investors-waking-up-to-boom-in-ai-devices.html",
+    "score": 73,
+    "reason": "Market reaction with big numbers indicating investor confidence in AI hardware surge"
   },
   {
     "rank": 9,
-    "headline": "Why Trump's AI executive order was pulled",
-    "link": "https://www.axios.com/2026/05/21/trump-ai-executive-order-postponed-why",
-    "score": 61,
-    "reason": "Policy reversal story, industry influence on regulation"
+    "headline": "Gemini app for Mac adding ‘Spark’ agent and voice control this summer",
+    "link": "https://9to5google.com/2026/05/22/gemini-mac-spark-control-summer/",
+    "score": 70,
+    "reason": "Google product launch expanding AI capabilities across platforms; concrete feature announcement"
   },
   {
     "rank": 10,
-    "headline": "Spotify bets on taste as differentiator in the AI era",
-    "link": "https://www.axios.com/2026/05/21/spotify-reserved-tickets-interactive-sharing",
-    "score": 58,
-    "reason": "Major company AI strategy shift, competitive positioning"
+    "headline": "Radar Can Tell the Difference Between Insect Species",
+    "link": "https://spectrum.ieee.org/mmwave-radar-insects-pollinators",
+    "score": 68,
+    "reason": "Novel AI/ML application with practical environmental monitoring use case; technical breakthrough"
   }
 ]
