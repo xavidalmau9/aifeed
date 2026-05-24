@@ -1,72 +1,58 @@
 [
   {
     "rank": 1,
-    "headline": "AI hallucinations are infiltrating expert work—and entering the permanent body of knowledge",
-    "link": "https://fortune.com/2026/05/24/ai-hallucinations-scientific-research-authors-medical-journal-treatment/",
+    "headline": "Google's AI search is so broken it can 'disregard' what you're looking for",
+    "link": "https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard",
     "score": 92,
-    "reason": "Major controversy about AI reliability in professional/scientific domains with real-world consequences"
+    "reason": "Major AI product failure at Google; concrete evidence of malfunction; significant controversy"
   },
   {
     "rank": 2,
-    "headline": "Google's AI Overviews break the dictionary when you use words like 'disregard'",
-    "link": "https://9to5google.com/2026/05/22/google-ai-overview-dictionary/",
-    "score": 88,
-    "reason": "Specific failure case of Google's AI product with demonstrated bug; directly impacts millions of users"
+    "headline": "Ansel Adams' trust says AI-colorized version of his work was exhibited without permission",
+    "link": "https://www.engadget.com/2180105/ansel-adams-trust-says-ai-colorized-version-moonrise-was-exhibited-without-permission/",
+    "score": 85,
+    "reason": "High-profile AI copyright lawsuit; major cultural figure involved; clear legal controversy"
   },
   {
     "rank": 3,
-    "headline": "Even If You Hate AI, You Will Use Google AI Search",
-    "link": "https://www.wired.com/story/even-if-you-hate-ai-you-will-use-google-ai-search/",
-    "score": 85,
-    "reason": "Addresses Google's AI integration at scale; substantive take on inevitable adoption"
+    "headline": "Memory has grown to nearly two-thirds of AI chip component costs",
+    "link": "https://epoch.ai/data-insights/ai-chip-component-cost-shares",
+    "score": 78,
+    "reason": "Significant market/technical shift in AI economics; quantified impact on chip costs"
   },
   {
     "rank": 4,
-    "headline": "These Robots Are Making Meals for a Nonprofit in San Francisco’s Tenderloin",
-    "link": "https://www.wired.com/story/these-robots-are-making-meals-for-a-nonprofit-in-san-franciscos-tenderloin/",
-    "score": 82,
-    "reason": "Real-world AI/robotics deployment with measurable social impact; concrete implementation story"
+    "headline": "DeepSeek to Make Permanent 75% Discount on Flagship AI Model",
+    "link": "https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model",
+    "score": 76,
+    "reason": "Major pricing move by AI competitor; substantial discount (75%); competitive landscape shift"
   },
   {
     "rank": 5,
-    "headline": "Greg Brockman: Inside the 72 Hours That Almost Killed OpenAI",
-    "link": "https://fs.blog/knowledge-project-podcast/greg-brockman/",
-    "score": 80,
-    "reason": "Major industry drama with significant implications for leading AI company; insider narrative"
+    "headline": "First-generation Chromecast users stressed by devices suddenly failing",
+    "link": "https://arstechnica.com/gadgets/2026/05/original-chromecast-lives-devices-back-on-after-mysteriously-breaking-this-week/",
+    "score": 72,
+    "reason": "Mass device failure at Google; affects thousands of users; hardware/service controversy"
   },
   {
     "rank": 6,
-    "headline": "AI wealth must benefit the public, South Korea&apos;s deputy PM says amid Samsung labor tensions",
-    "link": "https://www.cnbc.com/2026/05/23/ai-wealth-must-benefit-the-public-south-koreas-deputy-pm-says.html",
-    "score": 78,
-    "reason": "Policy/regulation controversy linking AI economics to labor disputes; government response"
+    "headline": "Google showcased Gemini's focus on practical AI, but I still have mixed feelings",
+    "link": "https://9to5google.com/2026/05/24/google-io-2026-gemini-practical-ai-opinion/",
+    "score": 65,
+    "reason": "Major Google AI product showcase; substantive critical analysis of capabilities"
   },
   {
     "rank": 7,
-    "headline": "As AI wipes out white-collar jobs, one Alabama high school and Toyota are training students for roles that pay $40 an hour and can't be automated",
-    "link": "https://fortune.com/2026/05/24/huntsville-alabama-tech-school-skilled-trades-ai-automation-toyota/",
-    "score": 75,
-    "reason": "Concrete response to AI job displacement with measurable outcomes and specific wage data"
+    "headline": "Samsung is giving away free 32-inch Odyssey monitors - seriously",
+    "link": "https://www.zdnet.com/article/samsung-m9-odyssey-g7-bogo-deal/",
+    "score": 62,
+    "reason": "Samsung major promotional campaign; quantifiable offer; competitive market move"
   },
   {
     "rank": 8,
-    "headline": "Qualcomm&apos;s stock pop shows investors are &apos;waking up&apos; to boom in AI devices",
-    "link": "https://www.cnbc.com/2026/05/22/qualcomms-stock-pop-shows-investors-waking-up-to-boom-in-ai-devices.html",
-    "score": 73,
-    "reason": "Market reaction with big numbers indicating investor confidence in AI hardware surge"
-  },
-  {
-    "rank": 9,
-    "headline": "Gemini app for Mac adding ‘Spark’ agent and voice control this summer",
-    "link": "https://9to5google.com/2026/05/22/gemini-mac-spark-control-summer/",
-    "score": 70,
-    "reason": "Google product launch expanding AI capabilities across platforms; concrete feature announcement"
-  },
-  {
-    "rank": 10,
-    "headline": "Radar Can Tell the Difference Between Insect Species",
-    "link": "https://spectrum.ieee.org/mmwave-radar-insects-pollinators",
-    "score": 68,
-    "reason": "Novel AI/ML application with practical environmental monitoring use case; technical breakthrough"
+    "headline": "The Middle East war is testing the Gulf&apos;s ambitions to become an AI hub",
+    "link": "https://www.cnbc.com/2026/05/24/middle-east-war-testing-gulfs-ambitions-to-become-ai-hub.html",
+    "score": 58,
+    "reason": "Geopolitical impact on AI development; regional shift in AI leadership landscape"
   }
 ]
