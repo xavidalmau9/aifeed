@@ -1,58 +1,44 @@
 [
   {
     "rank": 1,
-    "headline": "Google's AI search is so broken it can 'disregard' what you're looking for",
-    "link": "https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard",
-    "score": 92,
-    "reason": "Major AI product failure at Google; concrete evidence of malfunction; significant controversy"
+    "headline": "The AI Era Is Creating a Bug Hunting Arms Race",
+    "link": "https://www.wired.com/story/the-ai-era-is-creating-a-bug-hunting-arms-race/",
+    "score": 78,
+    "reason": "Concrete trend with industry-wide implications; addresses real security concern in AI development"
   },
   {
     "rank": 2,
-    "headline": "Ansel Adams' trust says AI-colorized version of his work was exhibited without permission",
-    "link": "https://www.engadget.com/2180105/ansel-adams-trust-says-ai-colorized-version-moonrise-was-exhibited-without-permission/",
-    "score": 85,
-    "reason": "High-profile AI copyright lawsuit; major cultural figure involved; clear legal controversy"
+    "headline": "These Robots Are Making Meals for a Nonprofit in San Francisco’s Tenderloin",
+    "link": "https://www.wired.com/story/these-robots-are-making-meals-for-a-nonprofit-in-san-franciscos-tenderloin/",
+    "score": 72,
+    "reason": "Launched AI application with measurable real-world impact; specific deployment detail"
   },
   {
     "rank": 3,
-    "headline": "Memory has grown to nearly two-thirds of AI chip component costs",
-    "link": "https://epoch.ai/data-insights/ai-chip-component-cost-shares",
-    "score": 78,
-    "reason": "Significant market/technical shift in AI economics; quantified impact on chip costs"
+    "headline": "Huawei plans new smartphone chips this fall as rivalry with Nvidia and Apple heats up",
+    "link": "https://www.cnbc.com/2026/05/25/huawei-chip-logicfolding-semiconductor-nvidia-china.html",
+    "score": 68,
+    "reason": "Major tech competition escalation; specific timeline and multiple stakeholders"
   },
   {
     "rank": 4,
-    "headline": "DeepSeek to Make Permanent 75% Discount on Flagship AI Model",
-    "link": "https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model",
-    "score": 76,
-    "reason": "Major pricing move by AI competitor; substantial discount (75%); competitive landscape shift"
+    "headline": "Constraint Decay: The Fragility of LLM Agents in Back End Code Generation",
+    "link": "https://arxiv.org/abs/2605.06445",
+    "score": 65,
+    "reason": "Technical vulnerability discovery in production AI systems; addresses reliability concern"
   },
   {
     "rank": 5,
-    "headline": "First-generation Chromecast users stressed by devices suddenly failing",
-    "link": "https://arstechnica.com/gadgets/2026/05/original-chromecast-lives-devices-back-on-after-mysteriously-breaking-this-week/",
-    "score": 72,
-    "reason": "Mass device failure at Google; affects thousands of users; hardware/service controversy"
+    "headline": "Gemini Live redesign now works with more 'Connected Apps' on Android",
+    "link": "https://9to5google.com/2026/05/23/gemini-live-connected-apps/",
+    "score": 62,
+    "reason": "Google product expansion; concrete feature launch with platform extension"
   },
   {
     "rank": 6,
-    "headline": "Google showcased Gemini's focus on practical AI, but I still have mixed feelings",
-    "link": "https://9to5google.com/2026/05/24/google-io-2026-gemini-practical-ai-opinion/",
-    "score": 65,
-    "reason": "Major Google AI product showcase; substantive critical analysis of capabilities"
-  },
-  {
-    "rank": 7,
-    "headline": "Samsung is giving away free 32-inch Odyssey monitors - seriously",
-    "link": "https://www.zdnet.com/article/samsung-m9-odyssey-g7-bogo-deal/",
-    "score": 62,
-    "reason": "Samsung major promotional campaign; quantifiable offer; competitive market move"
-  },
-  {
-    "rank": 8,
-    "headline": "The Middle East war is testing the Gulf&apos;s ambitions to become an AI hub",
-    "link": "https://www.cnbc.com/2026/05/24/middle-east-war-testing-gulfs-ambitions-to-become-ai-hub.html",
+    "headline": "AI wealth must benefit the public, South Korea&apos;s deputy PM says amid Samsung labor tensions",
+    "link": "https://www.cnbc.com/2026/05/23/ai-wealth-must-benefit-the-public-south-koreas-deputy-pm-says.html",
     "score": 58,
-    "reason": "Geopolitical impact on AI development; regional shift in AI leadership landscape"
+    "reason": "Government policy stance on AI benefits; ties to labor controversy at major tech company"
   }
 ]
