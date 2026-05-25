@@ -1,44 +1,37 @@
 [
   {
     "rank": 1,
-    "headline": "The AI Era Is Creating a Bug Hunting Arms Race",
-    "link": "https://www.wired.com/story/the-ai-era-is-creating-a-bug-hunting-arms-race/",
-    "score": 78,
-    "reason": "Concrete trend with industry-wide implications; addresses real security concern in AI development"
+    "headline": "Huawei claims it will make cutting-edge semiconductors by 2031",
+    "link": "https://www.engadget.com/2180617/huawei-claims-it-will-make-cutting-edge-semiconductors-by-2031/",
+    "score": 88,
+    "reason": "Major tech milestone claim with specific timeline; geopolitical significance; concrete commitment vs speculation"
   },
   {
     "rank": 2,
-    "headline": "These Robots Are Making Meals for a Nonprofit in San Francisco’s Tenderloin",
-    "link": "https://www.wired.com/story/these-robots-are-making-meals-for-a-nonprofit-in-san-franciscos-tenderloin/",
-    "score": 72,
-    "reason": "Launched AI application with measurable real-world impact; specific deployment detail"
+    "headline": "Star Citizen has raised $1 billion, remains in early access after nine years",
+    "link": "https://www.engadget.com/2180552/star-citizen-has-raised-1-billion-remains-in-early-access-after-nine-years/",
+    "score": 82,
+    "reason": "Big number ($1B funding); notable for extreme timeline; demonstrates crowdfunding scale"
   },
   {
     "rank": 3,
-    "headline": "Huawei plans new smartphone chips this fall as rivalry with Nvidia and Apple heats up",
-    "link": "https://www.cnbc.com/2026/05/25/huawei-chip-logicfolding-semiconductor-nvidia-china.html",
-    "score": 68,
-    "reason": "Major tech competition escalation; specific timeline and multiple stakeholders"
+    "headline": "Pope Leo called AI an 'instrument of domination, exclusion and death.' Anthropic was in the room",
+    "link": "https://fortune.com/2026/05/25/pope-leo-xiv-ai-domination-death-anthropic-olah-encyclical/",
+    "score": 78,
+    "reason": "Major controversy; high-profile criticism of AI company; documented event with witnesses"
   },
   {
     "rank": 4,
-    "headline": "Constraint Decay: The Fragility of LLM Agents in Back End Code Generation",
-    "link": "https://arxiv.org/abs/2605.06445",
-    "score": 65,
-    "reason": "Technical vulnerability discovery in production AI systems; addresses reliability concern"
+    "headline": "Norway&#x27;s 2 petabytes of Huawei flash storage and LLM training",
+    "link": "https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-llm-training/5244910",
+    "score": 72,
+    "reason": "Big infrastructure number (2PB); government AI deployment; geopolitical angle"
   },
   {
     "rank": 5,
-    "headline": "Gemini Live redesign now works with more 'Connected Apps' on Android",
-    "link": "https://9to5google.com/2026/05/23/gemini-live-connected-apps/",
-    "score": 62,
-    "reason": "Google product expansion; concrete feature launch with platform extension"
-  },
-  {
-    "rank": 6,
-    "headline": "AI wealth must benefit the public, South Korea&apos;s deputy PM says amid Samsung labor tensions",
-    "link": "https://www.cnbc.com/2026/05/23/ai-wealth-must-benefit-the-public-south-koreas-deputy-pm-says.html",
-    "score": 58,
-    "reason": "Government policy stance on AI benefits; ties to labor controversy at major tech company"
+    "headline": "Netherlands Seizes 800 Servers, Arrests 2 for Aiding Cyberattacks",
+    "link": "https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/",
+    "score": 68,
+    "reason": "Law enforcement action; concrete numbers (800 servers, 2 arrests); cybersecurity incident"
   }
 ]
