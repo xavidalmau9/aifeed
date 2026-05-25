@@ -171,6 +171,34 @@ jobs:
             });
           }
 
+          // ── Wikipedia portrait lookup for named individuals ───────────────────
+          async function searchWikipedia(personName) {
+            if (!personName) return null;
+            return new Promise((resolve) => {
+              // Normalize: "Pope Leo XIV" → "Pope_Leo_XIV"
+              const slug = personName.trim().replace(/\s+/g, '_');
+              const url = 'https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(slug);
+              https.get(url, { headers: { 'User-Agent': 'AIFeed/1.0 (aifeed.run)' } }, (res) => {
+                let data = '';
+                res.on('data', d => data += d);
+                res.on('end', () => {
+                  try {
+                    const r = JSON.parse(data);
+                    // Use originalimage — thumbnail URLs are BLOCKED by Wikimedia
+                    const imgUrl = r.originalimage && r.originalimage.source;
+                    if (!imgUrl) { resolve(null); return; }
+                    // Only accept portrait-ish images (taller than wide or square)
+                    const w = r.originalimage.width || 1;
+                    const h = r.originalimage.height || 1;
+                    if (w > h * 1.5) { console.log('Wikipedia image too wide, skipping'); resolve(null); return; }
+                    console.log('Wikipedia portrait found for:', personName, '→', imgUrl.substring(0,80));
+                    resolve(imgUrl);
+                  } catch(e) { resolve(null); }
+                });
+              }).on('error', () => resolve(null));
+            });
+          }
+
           // ── main ─────────────────────────────────────────────────────────────
           (async () => {
             const browser = await puppeteer.launch({
@@ -227,19 +255,30 @@ jobs:
               if (alreadyEmbedded && !isBannedB64) {
                 console.log('Photo already embedded as base64 — using as-is');
               } else {
-                // Either not base64 OR it's the banned fallback.
-                // ALWAYS search Unsplash using smart keywords extracted from the headline.
-                const smartQuery = buildSearchQuery(headline);
-                console.log('Searching Unsplash for:', smartQuery, '(from headline:', headline.substring(0,50) + ')');
-
                 // Ensure img.bg tag exists
                 if (!html.includes('class="bg"')) {
                   html = html.replace('<div class="c"><div class="ov">', '<div class="c"><img class="bg" src="" alt=""><div class="ov">');
                 }
 
-                let photoUrl = await searchUnsplash(smartQuery);
+                // ── Tier 1: Wikipedia portrait for named individuals ─────────
+                let photoUrl = null;
+                let personName = '';
+                if (metaMatch) {
+                  try { personName = JSON.parse(metaMatch[1]).personName || ''; } catch(e) {}
+                }
+                if (personName) {
+                  console.log('Named person detected:', personName, '— trying Wikipedia first');
+                  photoUrl = await searchWikipedia(personName);
+                }
 
-                // If smart query fails, retry with first 3 words of headline
+                // ── Tier 2: Unsplash smart search ────────────────────────────
+                if (!photoUrl) {
+                  const smartQuery = buildSearchQuery(headline);
+                  console.log('Searching Unsplash for:', smartQuery, '(from headline:', headline.substring(0,50) + ')');
+                  photoUrl = await searchUnsplash(smartQuery);
+                }
+
+                // ── Tier 3: Unsplash fallback with first 3 headline words ────
                 if (!photoUrl) {
                   const fallbackQuery = headline.split(' ').slice(0, 3).join(' ');
                   console.log('Retrying Unsplash with:', fallbackQuery);
