@@ -1,37 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Huawei claims it will make cutting-edge semiconductors by 2031",
-    "link": "https://www.engadget.com/2180617/huawei-claims-it-will-make-cutting-edge-semiconductors-by-2031/",
-    "score": 88,
-    "reason": "Major tech milestone claim with specific timeline; geopolitical significance; concrete commitment vs speculation"
+    "headline": "AI Agents Plunged the Tech World Into Chaos. Here’s Exactly How That Happened",
+    "link": "https://www.wired.com/story/how-ai-agents-plunged-tech-world-into-chaos/",
+    "score": 92,
+    "reason": "Major controversy/incident with concrete details about agent systems causing real disruption"
   },
   {
     "rank": 2,
-    "headline": "Star Citizen has raised $1 billion, remains in early access after nine years",
-    "link": "https://www.engadget.com/2180552/star-citizen-has-raised-1-billion-remains-in-early-access-after-nine-years/",
-    "score": 82,
-    "reason": "Big number ($1B funding); notable for extreme timeline; demonstrates crowdfunding scale"
+    "headline": "Uber president says AI spending is getting ‘harder to justify’",
+    "link": "https://www.theverge.com/transportation/937116/uber-ai-investment-hard-to-justify",
+    "score": 88,
+    "reason": "Major company (Uber) executive statement on AI ROI challenges; significant industry signal"
   },
   {
     "rank": 3,
-    "headline": "Pope Leo called AI an 'instrument of domination, exclusion and death.' Anthropic was in the room",
-    "link": "https://fortune.com/2026/05/25/pope-leo-xiv-ai-domination-death-anthropic-olah-encyclical/",
-    "score": 78,
-    "reason": "Major controversy; high-profile criticism of AI company; documented event with witnesses"
+    "headline": "Autonomous AI systems test governance in physical environments",
+    "link": "https://www.artificialintelligence-news.com/news/autonomous-ai-systems-governance-physical-environments/",
+    "score": 82,
+    "reason": "Concrete launch/testing of autonomous systems with governance implications"
   },
   {
     "rank": 4,
-    "headline": "Norway&#x27;s 2 petabytes of Huawei flash storage and LLM training",
-    "link": "https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-llm-training/5244910",
-    "score": 72,
-    "reason": "Big infrastructure number (2PB); government AI deployment; geopolitical angle"
+    "headline": "AI wealth must benefit the public, South Korea&apos;s deputy PM says amid Samsung labor tensions",
+    "link": "https://www.cnbc.com/2026/05/23/ai-wealth-must-benefit-the-public-south-koreas-deputy-pm-says.html",
+    "score": 80,
+    "reason": "Government policy response to AI with major company (Samsung) labor controversy angle"
   },
   {
     "rank": 5,
-    "headline": "Netherlands Seizes 800 Servers, Arrests 2 for Aiding Cyberattacks",
-    "link": "https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/",
-    "score": 68,
-    "reason": "Law enforcement action; concrete numbers (800 servers, 2 arrests); cybersecurity incident"
+    "headline": "Huawei plans new smartphone chips this fall as rivalry with Nvidia and Apple heats up",
+    "link": "https://www.cnbc.com/2026/05/25/huawei-chip-logicfolding-semiconductor-nvidia-china.html",
+    "score": 78,
+    "reason": "Major product launch (Huawei chips) with competitive dynamics vs. Nvidia/Apple"
+  },
+  {
+    "rank": 6,
+    "headline": "Exclusive: The next wave of AI drive-thrus is here—and a16z and Arc think it finally works",
+    "link": "https://fortune.com/2026/05/26/ai-drive-thru-a16z-arc-taco-bell-mcdonalds-fast-food/",
+    "score": 75,
+    "reason": "Product launch with major VC backing (a16z); exclusive reporting on working solution"
+  },
+  {
+    "rank": 7,
+    "headline": "Trump hobbled top cyber agency just as AI learned to hack",
+    "link": "https://www.axios.com/2026/05/26/cisa-white-house-cybersecurity-ai",
+    "score": 74,
+    "reason": "Controversy linking government action to AI security implications with concrete timing"
+  },
+  {
+    "rank": 8,
+    "headline": "I’m a Professional Fact-Checker. AI Is Wrong More Often Than You Think",
+    "link": "https://www.wired.com/story/fact-checking-ai/",
+    "score": 71,
+    "reason": "Expert testing revealing concrete data on AI accuracy failures vs. claims"
+  },
+  {
+    "rank": 9,
+    "headline": "The AI Era Is Creating a Bug Hunting Arms Race",
+    "link": "https://www.wired.com/story/the-ai-era-is-creating-a-bug-hunting-arms-race/",
+    "score": 69,
+    "reason": "Market/industry dynamic story showing competitive escalation in AI security"
+  },
+  {
+    "rank": 10,
+    "headline": "I bypassed AWS API Gateway auth with a trailing slash. Got $12K bounty",
+    "link": "https://theguptalog.blogspot.com/2026/04/i-bypassed-aws-api-gateway-auth-with.html",
+    "score": 66,
+    "reason": "Concrete security vulnerability discovery; quantified impact with real bounty"
   }
 ]
