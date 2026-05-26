@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "AI Agents Plunged the Tech World Into Chaos. Here’s Exactly How That Happened",
-    "link": "https://www.wired.com/story/how-ai-agents-plunged-tech-world-into-chaos/",
+    "headline": "Sundar Pichai on AI, the future of search, and what’s happening to the web",
+    "link": "https://www.theverge.com/podcast/936445/sundar-pichai-ai-search-google-zero-youtube-web",
     "score": 92,
-    "reason": "Major controversy/incident with concrete details about agent systems causing real disruption"
+    "reason": "Google CEO on major AI/search strategy - big company, significant topic"
   },
   {
     "rank": 2,
-    "headline": "Uber president says AI spending is getting ‘harder to justify’",
-    "link": "https://www.theverge.com/transportation/937116/uber-ai-investment-hard-to-justify",
+    "headline": "American Airlines picks SpaceX&apos;s Starlink for in-flight Wi-Fi on more than 500 planes",
+    "link": "https://www.cnbc.com/2026/05/26/american-airlines-spacex-starlink.html",
     "score": 88,
-    "reason": "Major company (Uber) executive statement on AI ROI challenges; significant industry signal"
+    "reason": "Major launch: 500+ plane deployment, concrete numbers, major companies"
   },
   {
     "rank": 3,
-    "headline": "Autonomous AI systems test governance in physical environments",
-    "link": "https://www.artificialintelligence-news.com/news/autonomous-ai-systems-governance-physical-environments/",
-    "score": 82,
-    "reason": "Concrete launch/testing of autonomous systems with governance implications"
+    "headline": "After receiving backlash, the CEO of Standard Chartered apologizes for hurt over saying ‘lower value human capital’ will be automated by AI",
+    "link": "https://fortune.com/2026/05/26/standard-chartered-ceo-bill-winters-apologizes-calling-some-workers-lower-value-human-capital-ai-push/",
+    "score": 85,
+    "reason": "Controversy: CEO forced apology, AI + labor dispute, significant reputational incident"
   },
   {
     "rank": 4,
-    "headline": "AI wealth must benefit the public, South Korea&apos;s deputy PM says amid Samsung labor tensions",
-    "link": "https://www.cnbc.com/2026/05/23/ai-wealth-must-benefit-the-public-south-koreas-deputy-pm-says.html",
-    "score": 80,
-    "reason": "Government policy response to AI with major company (Samsung) labor controversy angle"
+    "headline": "Uber drivers in Massachusetts just pulled off the biggest labor win since 1941 — just before the robots arrive",
+    "link": "https://fortune.com/2026/05/26/massachusetts-gig-drivers-union-automation-uber-lyft/",
+    "score": 83,
+    "reason": "Labor/AI controversy: historic labor victory, directly tied to automation fears"
   },
   {
     "rank": 5,
-    "headline": "Huawei plans new smartphone chips this fall as rivalry with Nvidia and Apple heats up",
-    "link": "https://www.cnbc.com/2026/05/25/huawei-chip-logicfolding-semiconductor-nvidia-china.html",
-    "score": 78,
-    "reason": "Major product launch (Huawei chips) with competitive dynamics vs. Nvidia/Apple"
+    "headline": "AI warfare is already here",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/937028/military-ai-warfare-red-lines",
+    "score": 80,
+    "reason": "Concrete/active deployment claim, significant geopolitical topic, non-speculative"
   },
   {
     "rank": 6,
-    "headline": "Exclusive: The next wave of AI drive-thrus is here—and a16z and Arc think it finally works",
-    "link": "https://fortune.com/2026/05/26/ai-drive-thru-a16z-arc-taco-bell-mcdonalds-fast-food/",
-    "score": 75,
-    "reason": "Product launch with major VC backing (a16z); exclusive reporting on working solution"
+    "headline": "Fitbit Air review: Health tracking for the AI generation",
+    "link": "https://www.engadget.com/2180910/fitbit-air-review-google-health-ai-coach-testing/",
+    "score": 78,
+    "reason": "Google product launch (Fitbit Air), concrete review with comparison data"
   },
   {
     "rank": 7,
-    "headline": "Trump hobbled top cyber agency just as AI learned to hack",
-    "link": "https://www.axios.com/2026/05/26/cisa-white-house-cybersecurity-ai",
-    "score": 74,
-    "reason": "Controversy linking government action to AI security implications with concrete timing"
+    "headline": "Launch HN: Minicor (YC P26) – Windows desktop automations at scale",
+    "link": "https://www.minicor.com/",
+    "score": 75,
+    "reason": "Startup launch, Y Combinator, agentic AI application, concrete product"
   },
   {
     "rank": 8,
-    "headline": "I’m a Professional Fact-Checker. AI Is Wrong More Often Than You Think",
-    "link": "https://www.wired.com/story/fact-checking-ai/",
-    "score": 71,
-    "reason": "Expert testing revealing concrete data on AI accuracy failures vs. claims"
+    "headline": "Google clarifies its slightly confusing pair of AI Ultra plans",
+    "link": "https://9to5google.com/2026/05/25/google-one-ai-ultra-clarification/",
+    "score": 72,
+    "reason": "Google AI product clarity/launch, addresses market confusion on pricing tiers"
   },
   {
     "rank": 9,
-    "headline": "The AI Era Is Creating a Bug Hunting Arms Race",
-    "link": "https://www.wired.com/story/the-ai-era-is-creating-a-bug-hunting-arms-race/",
-    "score": 69,
-    "reason": "Market/industry dynamic story showing competitive escalation in AI security"
+    "headline": "Thermal Cameras and AI Help Ships Steer Clear of Gray Whales",
+    "link": "https://spectrum.ieee.org/whales-ai-thermal-camera-tracking",
+    "score": 68,
+    "reason": "Concrete AI deployment, environmental application, measurable real-world impact"
   },
   {
     "rank": 10,
-    "headline": "I bypassed AWS API Gateway auth with a trailing slash. Got $12K bounty",
-    "link": "https://theguptalog.blogspot.com/2026/04/i-bypassed-aws-api-gateway-auth-with.html",
-    "score": 66,
-    "reason": "Concrete security vulnerability discovery; quantified impact with real bounty"
+    "headline": "Why the Vatican Invited Anthropic to the Pope’s AI Encyclical Presentation",
+    "link": "https://www.wired.com/story/anthropic-christopher-olah-pope-ai-encyclical/",
+    "score": 65,
+    "reason": "Anthropic major event, institutional legitimacy moment, non-speculative"
   }
 ]
