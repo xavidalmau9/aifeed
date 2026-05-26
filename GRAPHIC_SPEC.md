@@ -1,7 +1,10 @@
 # AIFeed.run Branded Graphic — Design Spec
-**Last confirmed correct: April 2026**
+**Last confirmed correct: May 26, 2026 — REBRAND v2 (editorial, no stat cards)**
 
 This document is the canonical spec for the HTML graphic template used in the AIFeed Story Selector n8n workflow. Any future changes to the graphic must match this spec exactly. Do not deviate without explicit instruction.
+
+## ⚠️ REBRAND NOTE (May 26, 2026)
+The old design with 3 stat card pills at the bottom has been **permanently removed**. The new design is editorial/magazine style. Never add stat cards back unless explicitly instructed.
 
 ---
 
@@ -88,10 +91,13 @@ All positions are absolute and must never change.
 .ov {
   position: absolute; inset: 0;
   background: linear-gradient(to bottom,
-    rgba(4,2,14,.04) 0%,
-    rgba(4,2,14,.65) 50%,
-    rgba(4,2,14,.70) 100%);
-  /* Lightened Apr 21 2026 — was .08/.86/.86, too dark */
+    rgba(4,2,14,0.05) 0%,
+    rgba(4,2,14,0.15) 25%,
+    rgba(4,2,14,0.55) 50%,
+    rgba(4,2,14,0.88) 70%,
+    rgba(4,2,14,0.97) 85%,
+    rgba(4,2,14,1.0)  100%);
+  /* Cinematic heavy-bottom — updated May 26 rebrand */
 }
 ```
 
@@ -108,72 +114,72 @@ All positions are absolute and must never change.
 ```
 Content: `AIFEED.RUN • AI NEWS`
 
-### Headline Block
+### Content Block (replaces old Headline Block + Stat Cards)
 ```css
-.hb {
+.content {
   position: absolute;
-  top: 670px; left: 54px; right: 54px;
-  max-height: 455px;   /* CRITICAL — prevents overflow into stat cards */
-  overflow: hidden;
+  bottom: 90px; left: 54px; right: 54px;
 }
+
+/* Category label */
+.cat {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 16px; font-weight: 600;
+  color: #a050ff; letter-spacing: 3.5px;
+  text-transform: uppercase; margin-bottom: 22px;
+}
+.cat-line { width: 28px; height: 2px; background: #a050ff; flex-shrink: 0; }
+
+/* Headline — LARGE, uppercase, tight */
 .hl {
-  font-size: 82px; font-weight: 700; line-height: 94px;
-  display: block;
+  font-size: 100px; font-weight: 900;
+  line-height: 0.95; color: #fff;
+  letter-spacing: -3px; margin-bottom: 28px;
+  text-transform: uppercase;
 }
-.hw { color: #ffffff; }   /* white lines */
-.hp { color: #a050ff; }   /* purple accent line */
-.hu {                      /* purple underline bar */
-  display: block;
-  width: 54px; height: 5px;
-  background: #a050ff; border-radius: 3px; margin-top: 8px;
+.hl .accent { color: #a050ff; }   /* purple accent line */
+
+/* Divider */
+.divider {
+  width: 60px; height: 3px;
+  background: linear-gradient(to right, #a050ff, #ff8c00);
+  border-radius: 2px; margin-bottom: 24px;
 }
+
+/* Subtitle */
 .sub {
-  font-size: 33px; font-weight: 400;
-  color: #d2d2e1; line-height: 46px; margin-top: 22px;
+  font-size: 28px; font-weight: 300;
+  color: rgba(255,255,255,0.70);
+  line-height: 1.5; max-width: 860px;
 }
 ```
 
 **Headline line rules (enforced in Claude prompt):**
 - Max **4 words** and **20 characters** per display line
-- `line1`: 2–4 words before the key phrase (can be empty)
-- `accentLine`: 2–4 most impactful words (shown in purple)
-- `line2`: 2–4 remaining words (can be empty if leftover exceeds 20 chars)
+- `line1`: words before key phrase (can be empty) — rendered white
+- `accentLine`: 2–4 most impactful words (shown in purple, REQUIRED)
+- `line2`: remaining words (can be empty) — rendered white
 
-### Stat Cards
-```css
-.cards {
-  position: absolute;
-  top: 1130px; left: 54px;   /* FIXED — never move */
-  display: flex; gap: 27px;
-}
-.card { width: 312px; height: 112px; border-radius: 14px; border: 2px solid; }
-.c1 { border-color: #a050ff; }
-.c2 { border-color: #32d76e; }
-.c3 { border-color: #ff8c00; }
-.cv { font-size: 44px; font-weight: 700; top: 10px; }   /* value */
-.cl { font-size: 24px; font-weight: 400; color: #b4b9c8; top: 66px; }  /* label */
-```
+**Category values (Claude picks one):** Models / Tools / Industry / Research / Products / Business / Hardware / Safety / Health / Infrastructure
+
+**⛔ STAT CARDS PERMANENTLY REMOVED** — Do not add `.cards`, `.card`, `.c1/.c2/.c3`, `.cv`, `.cl` back.
 
 ### Bottom Bar
 ```css
 .bar {
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  height: 68px;
-  background: rgba(0,0,4,.92);
+  height: 70px;
+  background: rgba(0,0,4,0.96);
+  display: flex; align-items: center;
+  justify-content: space-between; padding: 0 54px;
 }
-/* Source — LEFT side */
 .bsrc {
-  position: absolute; left: 54px; top: 20px;
-  font-size: 26px; font-weight: 300; color: #8c8ca0;
-  white-space: nowrap;
-  max-width: 700px; overflow: hidden; text-overflow: ellipsis;
+  font-size: 20px; font-weight: 300; color: #5a5a70;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  max-width: 640px;
 }
-/* Logo — RIGHT side, flush at 54px margin */
-.blogo {
-  position: absolute; right: 54px; top: 19px;
-  font-size: 30px; font-weight: 700;
-}
+.blogo { font-size: 28px; font-weight: 700; white-space: nowrap; }
 .bai { color: #a050ff; }   /* "ai" */
 .bfd { color: #ff8c00; }   /* "feed" */
 .brn { color: #ffffff; }   /* ".run" */
