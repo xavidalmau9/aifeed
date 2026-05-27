@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Taiwan chip stocks climb after Nvidia announces $150 billion spending plans",
-    "link": "https://www.cnbc.com/2026/05/27/nvidia-taiwan-investment-150-billion-spending.html",
+    "headline": "Robinhood will let your AI agent trade stocks and make (or lose) lots of money",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/938095/robinhood-ai-agent-stock-trading",
     "score": 94,
-    "reason": "Big number ($150B), major company announcement, market impact"
+    "reason": "Major launch with significant financial implications; concrete product with real money at stake"
   },
   {
     "rank": 2,
-    "headline": "SK Hynix hits $1 trillion valuation as AI boom lifts South Korean chip stocks",
-    "link": "https://www.cnbc.com/2026/05/27/sk-hynix-shares-ai-chip-rally-1-trillion.html",
-    "score": 92,
-    "reason": "$1 trillion milestone, concrete market achievement, AI impact"
+    "headline": "Google folds Display Ads into AI-first Demand Gen platform",
+    "link": "https://www.artificialintelligence-news.com/news/google-folds-display-ads-ai-first-demand-gen-platform/",
+    "score": 88,
+    "reason": "Major product consolidation by Google; significant business model shift for advertising"
   },
   {
     "rank": 3,
-    "headline": "Uber president says AI spending is getting ‘harder to justify’",
-    "link": "https://www.theverge.com/transportation/937116/uber-ai-investment-hard-to-justify",
-    "score": 88,
-    "reason": "Major company ROI concern, concrete controversy, Uber specificity"
+    "headline": "DuckDuckGo search saw 28% more visits after Google said people love AI mode",
+    "link": "https://www.pcgamer.com/hardware/duckduckgos-ai-free-search-saw-nearly-28-percent-more-visits-in-the-week-following-googles-insistence-that-people-love-ai-mode/",
+    "score": 86,
+    "reason": "Big number (28% increase); demonstrates user backlash to Google's AI approach"
   },
   {
     "rank": 4,
-    "headline": "DuckDuckGo reports a surge in installs after Google put more AI into Search",
-    "link": "https://www.engadget.com/2181849/duckduckgo-installs-surge-after-google-ai-search/",
-    "score": 86,
-    "reason": "Measurable competitive shift, concrete market reaction to Google's AI strategy"
+    "headline": "AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up",
+    "link": "https://www.zdnet.com/article/heres-why-the-government-wants-to-spend-9-billion-on-ai-superchips/",
+    "score": 85,
+    "reason": "Massive government spending figure ($9B); geopolitical competition angle"
   },
   {
     "rank": 5,
-    "headline": "$7.2 billion AI CEO gets thousands of job applications a day but still can't find candidates with a strong work ethic",
-    "link": "https://fortune.com/2026/05/26/ex-google-engineer-7-billion-ai-startup-glean-ceo-thousands-applications-work-ethic-gen-z-jobs/",
-    "score": 84,
-    "reason": "Big number ($7.2B valuation), concrete hiring challenge, major AI company"
+    "headline": "Why the Vatican Invited Anthropic to the Pope’s AI Encyclical Presentation",
+    "link": "https://www.wired.com/story/anthropic-christopher-olah-pope-ai-encyclical/",
+    "score": 82,
+    "reason": "Unusual institutional partnership; major religious institution engagement with AI company"
   },
   {
     "rank": 6,
-    "headline": "Scoop: Trump appoints Bondi to White House AI panel",
-    "link": "https://www.axios.com/2026/05/27/pam-bondi-white-house-ai",
-    "score": 82,
-    "reason": "Institutional launch (White House AI panel), major political appointment"
+    "headline": "YouTube to begin automatically labeling AI videos",
+    "link": "https://arstechnica.com/google/2026/05/youtube-to-begin-automatically-labeling-ai-videos/",
+    "score": 81,
+    "reason": "Major platform policy launch affecting content disclosure at scale"
   },
   {
     "rank": 7,
-    "headline": "Erin Brockovich launches a crowdsourced AI data center map",
-    "link": "https://www.engadget.com/2181883/erin-brockovich-launches-a-crowdsourced-ai-data-center-map/",
+    "headline": "I’m a Professional Fact-Checker. AI Is Wrong More Often Than You Think",
+    "link": "https://www.wired.com/story/fact-checking-ai/",
     "score": 78,
-    "reason": "Notable product launch, public figure AI venture"
+    "reason": "Empirical testing revealing AI reliability issues; contrasts with positive hype"
   },
   {
     "rank": 8,
-    "headline": "OpenAI and Anthropic dig in against each other on AI jobs apocalypse",
-    "link": "https://www.axios.com/2026/05/27/ai-hype-doom-openai-anthropic",
+    "headline": "BP removes board chair, citing \"conduct\" concerns",
+    "link": "https://www.axios.com/2026/05/26/bp-ousts-chairman-manifold-conduct",
     "score": 76,
-    "reason": "Two major competitors, concrete disagreement, jobs impact"
+    "reason": "Executive departure at major corporation; governance controversy"
   },
   {
     "rank": 9,
-    "headline": "Trump hobbled top cyber agency just as AI learned to hack",
-    "link": "https://www.axios.com/2026/05/26/cisa-white-house-cybersecurity-ai",
+    "headline": "Sanofi is building its own AI ecosystem to give the French pharma giant an edge",
+    "link": "https://fortune.com/2026/05/27/sanofi-snowflake-elementumai-data/",
     "score": 74,
-    "reason": "Concrete institutional action, major AI security controversy"
+    "reason": "Major pharmaceutical company strategic AI investment; new ecosystem launch"
   },
   {
     "rank": 10,
-    "headline": "Nvidia Vera CPU Benchmarks: Olympus Cores Delivering Great Performance",
-    "link": "https://www.phoronix.com/review/nvidia-vera-benchmarks",
+    "headline": "AI tried to bury this politician — now people have actually heard of him",
+    "link": "https://www.theverge.com/policy/937650/ai-alex-bores-openai-anthropic-ny12",
     "score": 72,
-    "reason": "Nvidia product launch/benchmarks, major chip competitor entry"
+    "reason": "Concrete example of AI system causing unintended consequences; political controversy"
   }
 ]
