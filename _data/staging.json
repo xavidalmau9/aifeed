@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Sundar Pichai on AI, the future of search, and what’s happening to the web",
-    "link": "https://www.theverge.com/podcast/936445/sundar-pichai-ai-search-google-zero-youtube-web",
-    "score": 92,
-    "reason": "Google CEO on major AI/search strategy - big company, significant topic"
+    "headline": "Taiwan chip stocks climb after Nvidia announces $150 billion spending plans",
+    "link": "https://www.cnbc.com/2026/05/27/nvidia-taiwan-investment-150-billion-spending.html",
+    "score": 94,
+    "reason": "Big number ($150B), major company announcement, market impact"
   },
   {
     "rank": 2,
-    "headline": "American Airlines picks SpaceX&apos;s Starlink for in-flight Wi-Fi on more than 500 planes",
-    "link": "https://www.cnbc.com/2026/05/26/american-airlines-spacex-starlink.html",
-    "score": 88,
-    "reason": "Major launch: 500+ plane deployment, concrete numbers, major companies"
+    "headline": "SK Hynix hits $1 trillion valuation as AI boom lifts South Korean chip stocks",
+    "link": "https://www.cnbc.com/2026/05/27/sk-hynix-shares-ai-chip-rally-1-trillion.html",
+    "score": 92,
+    "reason": "$1 trillion milestone, concrete market achievement, AI impact"
   },
   {
     "rank": 3,
-    "headline": "After receiving backlash, the CEO of Standard Chartered apologizes for hurt over saying ‘lower value human capital’ will be automated by AI",
-    "link": "https://fortune.com/2026/05/26/standard-chartered-ceo-bill-winters-apologizes-calling-some-workers-lower-value-human-capital-ai-push/",
-    "score": 85,
-    "reason": "Controversy: CEO forced apology, AI + labor dispute, significant reputational incident"
+    "headline": "Uber president says AI spending is getting ‘harder to justify’",
+    "link": "https://www.theverge.com/transportation/937116/uber-ai-investment-hard-to-justify",
+    "score": 88,
+    "reason": "Major company ROI concern, concrete controversy, Uber specificity"
   },
   {
     "rank": 4,
-    "headline": "Uber drivers in Massachusetts just pulled off the biggest labor win since 1941 — just before the robots arrive",
-    "link": "https://fortune.com/2026/05/26/massachusetts-gig-drivers-union-automation-uber-lyft/",
-    "score": 83,
-    "reason": "Labor/AI controversy: historic labor victory, directly tied to automation fears"
+    "headline": "DuckDuckGo reports a surge in installs after Google put more AI into Search",
+    "link": "https://www.engadget.com/2181849/duckduckgo-installs-surge-after-google-ai-search/",
+    "score": 86,
+    "reason": "Measurable competitive shift, concrete market reaction to Google's AI strategy"
   },
   {
     "rank": 5,
-    "headline": "AI warfare is already here",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/937028/military-ai-warfare-red-lines",
-    "score": 80,
-    "reason": "Concrete/active deployment claim, significant geopolitical topic, non-speculative"
+    "headline": "$7.2 billion AI CEO gets thousands of job applications a day but still can't find candidates with a strong work ethic",
+    "link": "https://fortune.com/2026/05/26/ex-google-engineer-7-billion-ai-startup-glean-ceo-thousands-applications-work-ethic-gen-z-jobs/",
+    "score": 84,
+    "reason": "Big number ($7.2B valuation), concrete hiring challenge, major AI company"
   },
   {
     "rank": 6,
-    "headline": "Fitbit Air review: Health tracking for the AI generation",
-    "link": "https://www.engadget.com/2180910/fitbit-air-review-google-health-ai-coach-testing/",
-    "score": 78,
-    "reason": "Google product launch (Fitbit Air), concrete review with comparison data"
+    "headline": "Scoop: Trump appoints Bondi to White House AI panel",
+    "link": "https://www.axios.com/2026/05/27/pam-bondi-white-house-ai",
+    "score": 82,
+    "reason": "Institutional launch (White House AI panel), major political appointment"
   },
   {
     "rank": 7,
-    "headline": "Launch HN: Minicor (YC P26) – Windows desktop automations at scale",
-    "link": "https://www.minicor.com/",
-    "score": 75,
-    "reason": "Startup launch, Y Combinator, agentic AI application, concrete product"
+    "headline": "Erin Brockovich launches a crowdsourced AI data center map",
+    "link": "https://www.engadget.com/2181883/erin-brockovich-launches-a-crowdsourced-ai-data-center-map/",
+    "score": 78,
+    "reason": "Notable product launch, public figure AI venture"
   },
   {
     "rank": 8,
-    "headline": "Google clarifies its slightly confusing pair of AI Ultra plans",
-    "link": "https://9to5google.com/2026/05/25/google-one-ai-ultra-clarification/",
-    "score": 72,
-    "reason": "Google AI product clarity/launch, addresses market confusion on pricing tiers"
+    "headline": "OpenAI and Anthropic dig in against each other on AI jobs apocalypse",
+    "link": "https://www.axios.com/2026/05/27/ai-hype-doom-openai-anthropic",
+    "score": 76,
+    "reason": "Two major competitors, concrete disagreement, jobs impact"
   },
   {
     "rank": 9,
-    "headline": "Thermal Cameras and AI Help Ships Steer Clear of Gray Whales",
-    "link": "https://spectrum.ieee.org/whales-ai-thermal-camera-tracking",
-    "score": 68,
-    "reason": "Concrete AI deployment, environmental application, measurable real-world impact"
+    "headline": "Trump hobbled top cyber agency just as AI learned to hack",
+    "link": "https://www.axios.com/2026/05/26/cisa-white-house-cybersecurity-ai",
+    "score": 74,
+    "reason": "Concrete institutional action, major AI security controversy"
   },
   {
     "rank": 10,
-    "headline": "Why the Vatican Invited Anthropic to the Pope’s AI Encyclical Presentation",
-    "link": "https://www.wired.com/story/anthropic-christopher-olah-pope-ai-encyclical/",
-    "score": 65,
-    "reason": "Anthropic major event, institutional legitimacy moment, non-speculative"
+    "headline": "Nvidia Vera CPU Benchmarks: Olympus Cores Delivering Great Performance",
+    "link": "https://www.phoronix.com/review/nvidia-vera-benchmarks",
+    "score": 72,
+    "reason": "Nvidia product launch/benchmarks, major chip competitor entry"
   }
 ]
