@@ -32,7 +32,7 @@ jobs:
       - name: Install Puppeteer
         run: npm install puppeteer
 
-      - name: Render PNGs + Send to Telegram for Approval
+      - name: Render PNG + Auto-Publish to Website
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -50,16 +50,12 @@ jobs:
           const UNSPLASH_KEY       = 'dINF0W5ORDZVQlce-BlLgncgVTfTJLlEvAWKBlxaSGQ';
 
           // Base64 fingerprint of the two banned generic fallback photos from n8n.
-          // Both have identical bytes at position 2000-2060 in their base64 encoding —
-          // different from all real story photos. Used to detect when n8n embedded the fallback.
           const BANNED_B64_FINGERPRINT = 'BuMG9QcHBxkHKwc9B08HYQd0B4YHmQesB78H0gflB/gICwgfCDIIRghaCG4I';
 
           // ── Smart Unsplash search: topic-aware visual query builder ─────────
           function buildSearchQuery(headline) {
             const h = headline.toLowerCase();
 
-            // ── Company / topic → visual scene mapping ────────────────────────
-            // Each entry: [regex to detect topic, visual search query for Unsplash]
             const TOPIC_MAP = [
               // AI companies & products
               [/openai|chatgpt/,              'artificial intelligence technology futuristic'],
@@ -74,6 +70,7 @@ jobs:
               [/tesla|self.driving/,          'tesla electric car autonomous vehicle road'],
               [/spacex|starship/,             'rocket launch space technology'],
               [/waymo|autonomous/,            'self driving car street urban traffic'],
+              [/robinhood/,                   'stock market trading app phone finance'],
               // Finance & investment
               [/softbank/,                    'tokyo japan technology investment finance'],
               [/venture capital|vc fund/,     'business investment finance boardroom meeting'],
@@ -81,7 +78,8 @@ jobs:
               [/bank.*account|financial.*access|plaid/, 'bank building finance institution wall street'],
               [/billion.*fund|fund.*billion/, 'investment finance growth chart money'],
               [/crypto|bitcoin|ethereum/,     'cryptocurrency bitcoin digital blockchain'],
-              // Energy & climate — specific before generic
+              [/ai.*trad|trad.*ai|autonomous.*trad/, 'stock trading phone app finance technology'],
+              // Energy & climate
               [/china.*grid|china.*energy|china.*renew|china.*solar|china.*wind/, 'china wind turbines energy farm infrastructure'],
               [/china.*ai|ai.*china/,         'china technology city skyline innovation'],
               [/renewable.*grid|smart.*grid|energy.*grid|grid.*map/, 'power grid energy infrastructure electricity technology'],
@@ -142,17 +140,14 @@ jobs:
               }
             }
 
-            // ── Fallback: strip stop words, keep meaningful terms ─────────────
             const stopWords = new Set(['the','a','an','is','are','was','were','has','have','had','will','its','with','that','this','for','and','but','not','from','into','been','being','after','about','their','they','who','what','how','why','when','posts','gets','says','could','would','should','which','also','than','more','just','last','year','fiscal','first','new','over','under','amid','sees','puts','makes','marks','mainly','huge','major','biggest','driven','record','gain','loss','deal','move','plan','bet','up','on','at','in','of','to','by','as','or','if','now','wants','access','your']);
             const words = headline.replace(/[^a-zA-Z0-9\s]/g, ' ').split(/\s+/).filter(w => w.length > 2 && !stopWords.has(w.toLowerCase()));
             return words.slice(0, 4).join(' ') + ' technology';
           }
 
-          // ── Search Unsplash for a story-appropriate photo ─────────────────────
           async function searchUnsplash(query) {
             if (!UNSPLASH_KEY) { console.log('No Unsplash key'); return null; }
             return new Promise((resolve) => {
-              // Use per_page=10 and pick randomly from top 8 for more variety
               const url = 'https://api.unsplash.com/search/photos?query=' +
                 encodeURIComponent(query) + '&orientation=portrait&per_page=10';
               https.get(url, { headers: { 'Authorization': 'Client-ID ' + UNSPLASH_KEY } }, (res) => {
@@ -163,7 +158,6 @@ jobs:
                     const r = JSON.parse(data);
                     const photos = r.results || [];
                     if (!photos.length) { resolve(null); return; }
-                    // Always use the #1 most relevant result — random picks cause wrong photos
                     resolve(photos[0].urls.regular);
                   } catch(e) { resolve(null); }
                 });
@@ -171,11 +165,9 @@ jobs:
             });
           }
 
-          // ── Wikipedia portrait lookup for named individuals ───────────────────
           async function searchWikipedia(personName) {
             if (!personName) return null;
             return new Promise((resolve) => {
-              // Normalize: "Pope Leo XIV" → "Pope_Leo_XIV"
               const slug = personName.trim().replace(/\s+/g, '_');
               const url = 'https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(slug);
               https.get(url, { headers: { 'User-Agent': 'AIFeed/1.0 (aifeed.run)' } }, (res) => {
@@ -184,10 +176,8 @@ jobs:
                 res.on('end', () => {
                   try {
                     const r = JSON.parse(data);
-                    // Use originalimage — thumbnail URLs are BLOCKED by Wikimedia
                     const imgUrl = r.originalimage && r.originalimage.source;
                     if (!imgUrl) { resolve(null); return; }
-                    // Only accept portrait-ish images (taller than wide or square)
                     const w = r.originalimage.width || 1;
                     const h = r.originalimage.height || 1;
                     if (w > h * 1.5) { console.log('Wikipedia image too wide, skipping'); resolve(null); return; }
@@ -199,6 +189,80 @@ jobs:
             });
           }
 
+          // ── Auto-publish: build post entry + prepend to posts-index.json ─────
+          function autoPublish(meta, pngName) {
+            try {
+              const postsIndexPath = './_posts/posts-index.json';
+              let posts = [];
+              try { posts = JSON.parse(fs.readFileSync(postsIndexPath, 'utf8')); } catch(e) {}
+
+              const headline = meta.headline || '';
+              const slug = headline.toLowerCase()
+                .replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-').replace(/-+/g,'-').trim().substring(0, 60);
+              const dateStr = meta.date || new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+              const dateSlug = dateStr.replace(/-/g, '');
+              const id = slug + '-' + dateSlug;
+
+              // Don't re-publish if already exists
+              if (posts.find(p => p.id === id)) {
+                console.log('Post already exists, skipping publish:', id);
+                return id;
+              }
+
+              const sourceUrl = meta.sourceUrl || '';
+              const sourceDomain = sourceUrl.replace(/https?:\/\/(www\.)?/, '').split('/')[0] || '';
+              const srcParts = sourceDomain.split('.');
+              const srcLabel = srcParts.length > 1 ? srcParts[srcParts.length - 2] : sourceDomain;
+              const srcCap = srcLabel.charAt(0).toUpperCase() + srcLabel.slice(1);
+
+              const imageUrl = 'https://aifeed.run/images/' + pngName;
+              const hashtags = meta.hashtags || [];
+              const category = meta.category || 'Industry';
+              const subtitle = meta.subtitle || '';
+
+              // Build body from LinkedIn caption
+              const caption = meta.liCaption || '';
+              const captionParagraphs = caption
+                .split(/\n{2,}/)
+                .filter(p => p.trim() && !p.trim().startsWith('#'))
+                .map(p => '<p>' + p.trim().replace(/\n/g, '<br>') + '</p>')
+                .join('');
+
+              const hashtagHtml = hashtags.map(t =>
+                `<a href="index.html?tag=${t}" class="article-tag" style="color:#a050ff">#${t}</a>`
+              ).join(' ');
+
+              const body = captionParagraphs +
+                (sourceUrl ? `<p style="color:#8c8ca0;font-size:0.9em">Source: ${srcCap} · <a href="${sourceUrl}" target="_blank" rel="noopener" style="color:#a050ff">${sourceUrl}</a></p>` : '') +
+                (hashtags.length ? `<p class="article-tags-inline">${hashtagHtml}</p>` : '');
+
+              const summary = subtitle ||
+                (caption.split('\n\n')[0] || caption).substring(0, 200).replace(/<[^>]*>/g, '');
+
+              const newPost = {
+                id,
+                slug,
+                headline,
+                summary,
+                body,
+                category,
+                hashtags,
+                imageUrl,
+                sourceUrl,
+                publishedAt: new Date().toISOString(),
+                isVideo: false
+              };
+
+              posts.unshift(newPost);
+              fs.writeFileSync(postsIndexPath, JSON.stringify(posts, null, 2));
+              console.log('✅ Auto-published:', id);
+              return id;
+            } catch(e) {
+              console.error('Auto-publish failed:', e.message);
+              return null;
+            }
+          }
+
           // ── main ─────────────────────────────────────────────────────────────
           (async () => {
             const browser = await puppeteer.launch({
@@ -207,7 +271,6 @@ jobs:
 
             const graphicsDir = './graphics';
             const imagesDir   = './images';
-            // Only render HTML files changed in THIS push — never re-render existing ones
             let files;
             try {
               const changed = execSync('git diff HEAD~1 --name-only -- graphics/ 2>/dev/null || true')
@@ -231,54 +294,48 @@ jobs:
               console.log('Processing:', file);
               let html = fs.readFileSync(path.join(graphicsDir, file), 'utf8');
 
-              // Extract headline from AIFEED_META for smart photo search
               const metaMatch = html.match(/<!--\s*AIFEED_META:([\s\S]*?)\s*-->/);
+              let meta = {};
               let headline = file.replace('.html','').replace(/_/g,' ');
               if (metaMatch) {
-                try { headline = JSON.parse(metaMatch[1]).headline || headline; } catch(e) {}
+                try {
+                  meta = JSON.parse(metaMatch[1]);
+                  headline = meta.headline || headline;
+                } catch(e) {}
               }
 
               // ── Photo embedding ──────────────────────────────────────────────
               const alreadyEmbedded = html.includes('data:image/jpeg;base64,') || html.includes('data:image/png;base64,');
 
-              // Detect if n8n embedded the banned fallback photo as base64.
-              // Both banned photos share an identical fingerprint at chars 2000-2060 of their base64.
               let isBannedB64 = false;
               if (alreadyEmbedded) {
                 const b64Match = html.match(/data:image\/jpeg;base64,([A-Za-z0-9+/=]{2100,})/);
                 if (b64Match && b64Match[1].substring(2000, 2060) === BANNED_B64_FINGERPRINT) {
                   isBannedB64 = true;
-                  console.log('Banned fallback photo detected embedded as base64 — replacing with story photo');
+                  console.log('Banned fallback photo detected — replacing with story photo');
                 }
               }
 
               if (alreadyEmbedded && !isBannedB64) {
                 console.log('Photo already embedded as base64 — using as-is');
               } else {
-                // Ensure img.bg tag exists
                 if (!html.includes('class="bg"')) {
                   html = html.replace('<div class="c"><div class="ov">', '<div class="c"><img class="bg" src="" alt=""><div class="ov">');
                 }
 
-                // ── Tier 1: Wikipedia portrait for named individuals ─────────
                 let photoUrl = null;
-                let personName = '';
-                if (metaMatch) {
-                  try { personName = JSON.parse(metaMatch[1]).personName || ''; } catch(e) {}
-                }
+                const personName = meta.personName || '';
                 if (personName) {
                   console.log('Named person detected:', personName, '— trying Wikipedia first');
                   photoUrl = await searchWikipedia(personName);
                 }
 
-                // ── Tier 2: Unsplash smart search ────────────────────────────
                 if (!photoUrl) {
                   const smartQuery = buildSearchQuery(headline);
-                  console.log('Searching Unsplash for:', smartQuery, '(from headline:', headline.substring(0,50) + ')');
+                  console.log('Searching Unsplash for:', smartQuery);
                   photoUrl = await searchUnsplash(smartQuery);
                 }
 
-                // ── Tier 3: Unsplash fallback with first 3 headline words ────
                 if (!photoUrl) {
                   const fallbackQuery = headline.split(' ').slice(0, 3).join(' ');
                   console.log('Retrying Unsplash with:', fallbackQuery);
@@ -286,41 +343,34 @@ jobs:
                 }
 
                 if (photoUrl) {
-                  console.log('Unsplash found:', photoUrl.substring(0,80));
-                  // Only convert bare unsplash.com page URLs — CDN URLs download directly
                   const bareUnsplash = photoUrl.match(/^https:\/\/unsplash\.com\/photos\/([a-zA-Z0-9_-]+)$/);
                   if (bareUnsplash) {
                     photoUrl = 'https://unsplash.com/photos/' + bareUnsplash[1] + '/download?force=true';
                   }
-                  console.log('Downloading:', photoUrl.substring(0, 100));
                   try {
                     execSync('curl -sL --user-agent "Mozilla/5.0 (compatible; AIFeed/1.0; +https://aifeed.run)" "' + photoUrl + '" -o /tmp/photo_embed.jpg', { timeout: 30000 });
                     const stat = fs.statSync('/tmp/photo_embed.jpg');
                     if (stat.size > 10000) {
                       const newB64 = fs.readFileSync('/tmp/photo_embed.jpg').toString('base64');
                       if (isBannedB64) {
-                        // Replace the entire banned base64 block
                         html = html.replace(/data:image\/jpeg;base64,[A-Za-z0-9+/=]+/, 'data:image/jpeg;base64,' + newB64);
                       } else {
-                        // Replace URL src or empty src with base64
                         const anyMatch = html.match(/class="bg"[^>]*src="([^"]+)"/);
-                        if (anyMatch) {
-                          // Non-empty src (URL) — replace the URL value with base64
+                        if (anyMatch && anyMatch[1] && !anyMatch[1].startsWith('data:')) {
                           html = html.replace(anyMatch[1], 'data:image/jpeg;base64,' + newB64);
                         } else {
-                          // Empty src="" — inject base64 directly
                           html = html.replace(/src=""([^>]*)>/, 'src="data:image/jpeg;base64,' + newB64 + '"$1>');
                         }
                       }
                       console.log('Photo embedded (' + Math.round(stat.size/1024) + 'KB)');
                     } else {
-                      console.log('Photo download too small (' + stat.size + 'B) — rendering with dark background');
+                      console.log('Photo download too small — using dark background');
                     }
                   } catch(e) {
                     console.log('Photo embed failed:', e.message);
                   }
                 } else {
-                  console.log('Unsplash returned nothing — rendering with dark background');
+                  console.log('No photo found — rendering with dark background');
                 }
               }
 
@@ -329,7 +379,6 @@ jobs:
                 const page = await browser.newPage();
                 await page.setViewport({ width: 1080, height: 1500, deviceScaleFactor: 1 });
                 await page.setContent(html, { waitUntil: 'networkidle0', timeout: 30000 });
-                // Fix black-line-at-top bug: strip any body/html margin puppeteer may add
                 await page.evaluate(() => {
                   document.documentElement.style.cssText = 'margin:0;padding:0';
                   document.body.style.margin = '0';
@@ -346,28 +395,13 @@ jobs:
                 console.log('Rendered:', pngName);
                 await page.close();
 
-                // Save pending story from AIFEED_META
-                if (metaMatch) {
-                  try {
-                    const meta = JSON.parse(metaMatch[1]);
-                    const pending = {
-                      htmlFile: file, pngName,
-                      headline: meta.headline || '',
-                      liCaption: meta.liCaption || '',
-                      sourceUrl: meta.sourceUrl || '',
-                      date: meta.date || new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' }),
-                      savedAt: new Date().toISOString()
-                    };
-                    fs.mkdirSync('./_data', { recursive: true });
-                    fs.writeFileSync('./_data/pending_story.json', JSON.stringify(pending, null, 2));
-                    console.log('Saved pending story:', meta.headline.substring(0,60));
-                  } catch(e) { console.log('Could not save pending story:', e.message); }
-                }
+                // ── Auto-publish to posts-index.json ─────────────────────────
+                const publishedId = autoPublish(meta, pngName);
 
-                // Send PNG image directly to Telegram — user sees graphic inline, no Chrome needed
+                // ── Send published confirmation to Telegram ───────────────────
                 try {
-                  const hl = metaMatch ? (JSON.parse(metaMatch[1]).headline || '') : file;
-                  const caption = '✅ <b>' + hl.substring(0,120) + '</b>\n\nReply <b>publish</b> to add to website.';
+                  const hl = headline.substring(0, 100);
+                  const caption = '🚀 <b>PUBLISHED</b>\n\n<b>' + hl + '</b>\n\nhttps://aifeed.run';
                   const result = execSync(
                     'curl -s ' +
                     '-F "chat_id=' + CHAT_ID + '" ' +
@@ -378,7 +412,7 @@ jobs:
                     { encoding: 'utf8', timeout: 30000 }
                   );
                   const parsed = JSON.parse(result);
-                  console.log(parsed.ok ? 'PNG sent to Telegram: ' + pngName : 'Telegram failed: ' + JSON.stringify(parsed));
+                  console.log(parsed.ok ? '✅ Published PNG sent to Telegram' : 'Telegram error: ' + JSON.stringify(parsed));
                 } catch(e) { console.log('Telegram send error:', e.message); }
 
               } catch(e) {
@@ -391,15 +425,15 @@ jobs:
           })().catch(e => { console.error(e); process.exit(1); });
           JSEOF
 
-      - name: Commit rendered PNGs and pending story
+      - name: Commit rendered PNG and auto-published post
         run: |
           git config user.name "AIFeed Bot"
           git config user.email "bot@aifeed.run"
-          git add images/ _data/pending_story.json
+          git add images/ _posts/posts-index.json
           if git diff --staged --quiet; then
             echo "Nothing to commit"
           else
-            git commit -m "Render graphic — awaiting publish approval"
+            git commit -m "Auto-publish: $(git diff --staged --name-only | grep png | head -1 | sed 's/images\///' | sed 's/\.png//')"
             git pull --rebase origin main
             git push
           fi
