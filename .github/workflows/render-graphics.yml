@@ -329,6 +329,14 @@ jobs:
                 const page = await browser.newPage();
                 await page.setViewport({ width: 1080, height: 1500, deviceScaleFactor: 1 });
                 await page.setContent(html, { waitUntil: 'networkidle0', timeout: 30000 });
+                // Fix black-line-at-top bug: strip any body/html margin puppeteer may add
+                await page.evaluate(() => {
+                  document.documentElement.style.cssText = 'margin:0;padding:0';
+                  document.body.style.margin = '0';
+                  document.body.style.padding = '0';
+                  const first = document.body.firstElementChild;
+                  if (first) { first.style.marginTop = '0'; first.style.paddingTop = '0'; }
+                });
                 await new Promise(r => setTimeout(r, 1500));
                 const screenshot = await page.screenshot({
                   clip: { x: 0, y: 0, width: 1080, height: 1350 },
