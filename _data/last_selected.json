@@ -1,7 +1,7 @@
 {
-  "rank": 5,
-  "headline": "AI warfare is already here",
-  "link": "https://www.theverge.com/ai-artificial-intelligence/937028/military-ai-warfare-red-lines",
-  "score": 80,
-  "reason": "Concrete/active deployment claim, significant geopolitical topic, non-speculative"
+  "rank": 1,
+  "headline": "Taiwan chip stocks climb after Nvidia announces $150 billion spending plans",
+  "link": "https://www.cnbc.com/2026/05/27/nvidia-taiwan-investment-150-billion-spending.html",
+  "score": 94,
+  "reason": "Big number ($150B), major company announcement, market impact"
 }
