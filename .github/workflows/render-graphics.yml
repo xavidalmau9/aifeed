@@ -71,6 +71,16 @@ jobs:
               [/spacex|starship/,             'rocket launch space technology'],
               [/waymo|autonomous/,            'self driving car street urban traffic'],
               [/robinhood/,                   'stock market trading app phone finance'],
+              // Business / corporate / enterprise AI
+              [/corporate america/,           'corporate office business meeting executives technology'],
+              [/enterprise.*ai|ai.*enterprise/, 'corporate office business technology executives'],
+              [/ai.*roi|roi.*ai|ai.*return|return.*invest/, 'business executive boardroom technology investment'],
+              [/ai.*spend|spend.*ai|ai.*budget|ceo.*ai|ai.*ceo/, 'corporate technology business executive office'],
+              [/ai.*job|job.*ai|workforce.*ai|ai.*workforce/, 'office workers technology business team'],
+              [/ai.*productiv|productiv.*ai/,  'office business productivity technology laptop'],
+              [/wall street.*ai|ai.*wall street/, 'wall street finance trading technology building'],
+              [/earnings|quarterly.*result/,  'business finance chart growth results executive'],
+              [/merger|acqui/,                'business handshake deal corporate office'],
               // Finance & investment
               [/softbank/,                    'tokyo japan technology investment finance'],
               [/venture capital|vc fund/,     'business investment finance boardroom meeting'],
