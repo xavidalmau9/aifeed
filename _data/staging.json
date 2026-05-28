@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Robinhood will let your AI agent trade stocks and make (or lose) lots of money",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/938095/robinhood-ai-agent-stock-trading",
-    "score": 94,
-    "reason": "Major launch with significant financial implications; concrete product with real money at stake"
+    "headline": "Illinois Lawmakers Just Passed America’s Strongest AI Safety Bill",
+    "link": "https://www.wired.com/story/illinois-pass-major-ai-safety-law-pritzker/",
+    "score": 92,
+    "reason": "Concrete regulatory action with major numbers impact; first-of-its-kind legislation in US"
   },
   {
     "rank": 2,
-    "headline": "Google folds Display Ads into AI-first Demand Gen platform",
-    "link": "https://www.artificialintelligence-news.com/news/google-folds-display-ads-ai-first-demand-gen-platform/",
+    "headline": "The AI fight brewing inside The New York Times",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/937689/new-york-times-tech-guild-ai-monitoring-performance-union-contract",
     "score": 88,
-    "reason": "Major product consolidation by Google; significant business model shift for advertising"
+    "reason": "Major controversy between established media institution and AI companies; real legal conflict"
   },
   {
     "rank": 3,
-    "headline": "DuckDuckGo search saw 28% more visits after Google said people love AI mode",
-    "link": "https://www.pcgamer.com/hardware/duckduckgos-ai-free-search-saw-nearly-28-percent-more-visits-in-the-week-following-googles-insistence-that-people-love-ai-mode/",
-    "score": 86,
-    "reason": "Big number (28% increase); demonstrates user backlash to Google's AI approach"
+    "headline": "YouTube will let you ask AI to make a custom video feed",
+    "link": "https://www.theverge.com/streaming/938759/youtube-custom-ai-feed-prompt-availability",
+    "score": 85,
+    "reason": "Major launch from Google; significant new AI feature for billions of users"
   },
   {
     "rank": 4,
-    "headline": "AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up",
-    "link": "https://www.zdnet.com/article/heres-why-the-government-wants-to-spend-9-billion-on-ai-superchips/",
-    "score": 85,
-    "reason": "Massive government spending figure ($9B); geopolitical competition angle"
+    "headline": "Huawei's ‘Chip Queen’ Throws Down the Gauntlet",
+    "link": "https://www.wired.com/story/huawei-chip-queen-moores-law-tau/",
+    "score": 83,
+    "reason": "Major geopolitical AI/chip development; competitive escalation with real implications"
   },
   {
     "rank": 5,
-    "headline": "Why the Vatican Invited Anthropic to the Pope’s AI Encyclical Presentation",
-    "link": "https://www.wired.com/story/anthropic-christopher-olah-pope-ai-encyclical/",
-    "score": 82,
-    "reason": "Unusual institutional partnership; major religious institution engagement with AI company"
+    "headline": "NBA plans AI system for automatic out-of-bounds calls",
+    "link": "https://www.artificialintelligence-news.com/news/nba-ai-out-of-bounds-calls/",
+    "score": 79,
+    "reason": "Major sports launch; concrete real-world AI deployment with measurable scope"
   },
   {
     "rank": 6,
-    "headline": "YouTube to begin automatically labeling AI videos",
-    "link": "https://arstechnica.com/google/2026/05/youtube-to-begin-automatically-labeling-ai-videos/",
-    "score": 81,
-    "reason": "Major platform policy launch affecting content disclosure at scale"
+    "headline": "A moonshot to avoid a $39 trillion national debt crisis will rely on AI productivity going even better than bulls are hoping for, says JPMorgan",
+    "link": "https://fortune.com/2026/05/28/f500-digest-ai-national-debt-productivity-moonshot-jpmorgan/",
+    "score": 77,
+    "reason": "Big numbers ($39 trillion); major economic implications; institutional analysis"
   },
   {
     "rank": 7,
-    "headline": "I’m a Professional Fact-Checker. AI Is Wrong More Often Than You Think",
-    "link": "https://www.wired.com/story/fact-checking-ai/",
-    "score": 78,
-    "reason": "Empirical testing revealing AI reliability issues; contrasts with positive hype"
+    "headline": "The CFOs steering Big Tech's trillion-dollar AI bet",
+    "link": "https://fortune.com/2026/05/28/cfo-steering-big-tech-trillion-dollar-ai-bet/",
+    "score": 75,
+    "reason": "Trillion-dollar scale; Big Tech financial commitment documented"
   },
   {
     "rank": 8,
-    "headline": "BP removes board chair, citing \"conduct\" concerns",
-    "link": "https://www.axios.com/2026/05/26/bp-ousts-chairman-manifold-conduct",
-    "score": 76,
-    "reason": "Executive departure at major corporation; governance controversy"
+    "headline": "OpenAI and Anthropic dig in against each other on AI jobs apocalypse",
+    "link": "https://www.axios.com/2026/05/27/ai-hype-doom-openai-anthropic",
+    "score": 74,
+    "reason": "Major controversy between leading AI companies; public disagreement on critical issue"
   },
   {
     "rank": 9,
-    "headline": "Sanofi is building its own AI ecosystem to give the French pharma giant an edge",
-    "link": "https://fortune.com/2026/05/27/sanofi-snowflake-elementumai-data/",
-    "score": 74,
-    "reason": "Major pharmaceutical company strategic AI investment; new ecosystem launch"
+    "headline": "Former Google and Apple Researchers Launch a Startup to Build AI’s Missing Feedback Loop",
+    "link": "https://www.wired.com/story/ex-google-apple-ai-researchers-want-to-make-ai-that-gets-smarter-as-you-use-it/",
+    "score": 71,
+    "reason": "Major talent launch from top companies; addresses fundamental AI technical problem"
   },
   {
     "rank": 10,
-    "headline": "AI tried to bury this politician — now people have actually heard of him",
-    "link": "https://www.theverge.com/policy/937650/ai-alex-bores-openai-anthropic-ny12",
-    "score": 72,
-    "reason": "Concrete example of AI system causing unintended consequences; political controversy"
+    "headline": "Corporate America enters its AI reckoning",
+    "link": "https://www.axios.com/2026/05/28/ai-spending-roi-enterprise-costs",
+    "score": 69,
+    "reason": "Broad business impact; documented shift in corporate AI strategy and spending"
   }
 ]
