@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
-    "link": "https://www.anthropic.com/news/series-h",
-    "score": 98,
-    "reason": "Massive funding round with huge valuation number; direct company launch/milestone"
+    "headline": "Anthropic tops OpenAI as most valuable AI startup, nears $1 trillion valuation in latest round",
+    "link": "https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html",
+    "score": 94,
+    "reason": "Major valuation milestone, concrete funding news, direct company competition"
   },
   {
     "rank": 2,
-    "headline": "CNN sues Perplexity over ‘verbatim’ copycat articles",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/938893/cnn-perplexity-ai-copyright-lawsuit",
-    "score": 94,
-    "reason": "Major lawsuit controversy; high-stakes IP dispute with named company"
+    "headline": "Illinois Lawmakers Just Passed America’s Strongest AI Safety Bill",
+    "link": "https://www.wired.com/story/illinois-pass-major-ai-safety-law-pritzker/",
+    "score": 88,
+    "reason": "Significant regulatory action with real-world impact, concrete legislation passed"
   },
   {
     "rank": 3,
-    "headline": "Robinhood will let your AI agent trade stocks and make (or lose) lots of money",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/938095/robinhood-ai-agent-stock-trading",
-    "score": 92,
-    "reason": "Significant product launch with major financial implications; real use case"
+    "headline": "NBA plans AI system for automatic out-of-bounds calls",
+    "link": "https://www.artificialintelligence-news.com/news/nba-ai-out-of-bounds-calls/",
+    "score": 82,
+    "reason": "Major AI deployment in sports, concrete use case with measurable impact"
   },
   {
     "rank": 4,
-    "headline": "Starbucks quietly retired its AI agent just months after deployment after it hallucinated coffee shop inventories and slowed down baristas",
-    "link": "https://fortune.com/2026/05/28/starbucks-quietly-retired-ai-inventory-agent-barista-complaints-hallucinations/",
-    "score": 90,
-    "reason": "High-profile failure/controversy; major brand abandoning AI initiative"
+    "headline": "Claude Opus 4.8 launches today with agentic improvements, new features",
+    "link": "https://9to5google.com/2026/05/28/claude-opus-4-8-launches-today-with-agentic-improvements-new-features/",
+    "score": 80,
+    "reason": "Major model release from top AI startup with agentic capabilities"
   },
   {
     "rank": 5,
-    "headline": "Anthropic launches Opus 4.8, with honesty as its killer feature",
-    "link": "https://www.zdnet.com/article/anthropics-launches-opus-4-8-where-honesty-is-the-killer-feature/",
-    "score": 88,
-    "reason": "Major model launch with measurable improvement claim; distinct from funding"
+    "headline": "YouTube to begin automatically labeling AI videos",
+    "link": "https://arstechnica.com/google/2026/05/youtube-to-begin-automatically-labeling-ai-videos/",
+    "score": 78,
+    "reason": "Major platform policy change affecting all AI-generated content"
   },
   {
     "rank": 6,
-    "headline": "Here Comes Ojai, Waymo’s New Chinese-Made Robotaxi",
-    "link": "https://www.wired.com/story/here-comes-ojai-waymos-new-chinese-made-robotaxi/",
-    "score": 86,
-    "reason": "New product launch from major autonomous vehicle company; tangible delivery"
+    "headline": "Microsoft 365 Copilot gets a speed boost and cleaner design",
+    "link": "https://www.theverge.com/tech/939273/microsoft-365-copilot-redesign",
+    "score": 75,
+    "reason": "Major product update from leading enterprise AI provider"
   },
   {
     "rank": 7,
-    "headline": "AI sticker shock hits corporate America",
-    "link": "https://www.axios.com/2026/05/28/ai-spending-roi-enterprise-costs",
-    "score": 84,
-    "reason": "Industry-wide cost controversy; broad impact story with economic data"
+    "headline": "This AI startup will clean your home for free to train future robots",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning",
+    "score": 72,
+    "reason": "Novel robotics deployment strategy with real-world training data collection"
   },
   {
     "rank": 8,
-    "headline": "Amazon Thinks the Future of Data Centers Depends on a Technical Problem It Just Solved",
-    "link": "https://www.wired.com/story/amazon-thinks-the-future-of-data-centers-depends-on-a-technical-problem-it-just-solved/",
-    "score": 82,
-    "reason": "Major infrastructure breakthrough; big tech company solving critical problem"
+    "headline": "Google Pay preps for AI agents with Universal Commerce Protocol",
+    "link": "https://www.artificialintelligence-news.com/news/google-pay-ai-agents-universal-commerce-protocol/",
+    "score": 70,
+    "reason": "Major tech company infrastructure play for agentic AI commerce"
   },
   {
     "rank": 9,
-    "headline": "YouTube to automatically label AI-generated videos",
-    "link": "https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/",
-    "score": 80,
-    "reason": "Major platform policy launch affecting millions; significant transparency initiative"
+    "headline": "\"The pitchforks are here\": Billionaires work to contain AI's populist revolt",
+    "link": "https://www.axios.com/2026/05/29/ai-billionaires-tech-taxes-wealth",
+    "score": 68,
+    "reason": "Significant controversy and cultural pushback against AI adoption"
   },
   {
     "rank": 10,
-    "headline": "A $2,000 AI-generated film will make its debut at Tribeca",
-    "link": "https://www.theverge.com/entertainment/939067/ai-film-dreams-of-violets-tribeca",
-    "score": 78,
-    "reason": "Novel use case with tangible budget number; cultural milestone for AI-generated content"
+    "headline": "Former Google and Apple Researchers Launch a Startup to Build AI’s Missing Feedback Loop",
+    "link": "https://www.wired.com/story/ex-google-apple-ai-researchers-want-to-make-ai-that-gets-smarter-as-you-use-it/",
+    "score": 65,
+    "reason": "Notable talent migration and technical innovation addressing core AI limitation"
   }
 ]
