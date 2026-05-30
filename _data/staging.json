@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Claude Opus 4.8 launches today with agentic improvements, new features",
-    "link": "https://9to5google.com/2026/05/28/claude-opus-4-8-launches-today-with-agentic-improvements-new-features/",
+    "headline": "AI grifters are creating fake Black people to sell Shein junk",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/938844/ai-tiktok-shop-blackface-shein-dropshipping",
     "score": 92,
-    "reason": "Major model release from Anthropic with concrete feature additions; verifiable launch event"
+    "reason": "Concrete controversy with real-world harm, demonstrates AI misuse at scale"
   },
   {
     "rank": 2,
-    "headline": "Microsoft 365 Copilot gets a speed boost and cleaner design",
-    "link": "https://www.theverge.com/tech/939273/microsoft-365-copilot-redesign",
+    "headline": "Amazon Is Making an AI-Animated ‘Good Advice Cupcake’ TV Show. Its Original Creator Is Furious",
+    "link": "https://www.wired.com/story/story/amazon-is-making-an-ai-animated-good-advice-cupcake-tv-show-its-original-creator-is-furious/",
     "score": 88,
-    "reason": "Significant product update with measurable improvements; real deployment to enterprise users"
+    "reason": "Major company (Amazon) controversy, IP theft, quantifiable conflict"
   },
   {
     "rank": 3,
-    "headline": "Google Pay preps for AI agents with Universal Commerce Protocol",
-    "link": "https://www.artificialintelligence-news.com/news/google-pay-ai-agents-universal-commerce-protocol/",
-    "score": 85,
-    "reason": "Major infrastructure launch enabling new AI capability; big platform implications"
+    "headline": "Dell stock skyrockets 32% for its best day ever as AI server revenue soars",
+    "link": "https://www.cnbc.com/2026/05/29/dell-stock-earnings-ai-servers.html",
+    "score": 86,
+    "reason": "Big number (32%), major launch impact, measurable business results"
   },
   {
     "rank": 4,
-    "headline": "Claude’s new model is more ‘honest’ when it messes up",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/939094/anthropic-claude-4-8-opus-honesty-effort",
-    "score": 82,
-    "reason": "Behavioral improvement in AI model addressing safety/transparency; supports agentic use"
+    "headline": "Open-source security is a mess - IBM and Red Hat bet $5 billion and 20,000 engineers can fix it",
+    "link": "https://www.zdnet.com/article/open-source-security-is-a-mess-ibm-and-red-hat-bet-5-billion-to-fix-it/",
+    "score": 84,
+    "reason": "Massive investment ($5B), concrete action, industry-wide challenge"
   },
   {
     "rank": 5,
-    "headline": "Perplexity launches Bumblebee: How its new read-only dev scanner differs from Chainguard",
-    "link": "https://www.zdnet.com/article/perplexity-launches-bumblebee-how-its-new-read-only-dev-scanner-differs-from-chainguard/",
+    "headline": "AI is splitting the music world. This 49-year-old guitarist used it to keep playing after Parkinson’s",
+    "link": "https://fortune.com/2026/05/30/parkinsons-ai-music-humming-demos/",
     "score": 78,
-    "reason": "New product launch with concrete technical differentiator; security-focused tool"
+    "reason": "Human-interest with real application, shows AI benefits vs. controversy"
   },
   {
     "rank": 6,
-    "headline": "Nvidia is investing billions into this emerging technology that could change the AI industry",
-    "link": "https://www.cnbc.com/2026/05/29/nvidia-photonics-investment-ai.html",
-    "score": 75,
-    "reason": "Major capital commitment with industry-wide implications; big number investment"
+    "headline": "Snowflake CEO says monster quarter shows why software firms need new pricing models to thrive in AI age",
+    "link": "https://fortune.com/2026/05/30/snowflakes-ceo-ai-consumption-pricing/",
+    "score": 76,
+    "reason": "Major company results, business model shift, measurable performance"
   },
   {
     "rank": 7,
-    "headline": "The AI economy could crash on mounting chip costs — and those token costs won't help",
-    "link": "https://fortune.com/2026/05/30/ai-chip-token-bubble-economy-nvidia-microsoft-hyperscalers-2/",
+    "headline": "OpenRouter raises $113M Series B",
+    "link": "https://openrouter.ai/announcements/series-b",
     "score": 72,
-    "reason": "Significant systemic risk analysis; controversial economics of AI scaling"
+    "reason": "Big funding number ($113M), AI company launch/growth milestone"
   },
   {
     "rank": 8,
-    "headline": "EU seeks to &apos;intensify&apos; talks with U.S. on advanced cyber AI models, official tells CNBC, amid Mythos concerns",
-    "link": "https://www.cnbc.com/2026/05/29/mythos-ai-models-eu-talks-us.html",
+    "headline": "\"The pitchforks are here\": Billionaires work to contain AI's populist revolt",
+    "link": "https://www.axios.com/2026/05/29/ai-billionaires-tech-taxes-wealth",
     "score": 70,
-    "reason": "Government-level policy friction over AI model safety; real regulatory controversy"
+    "reason": "Concrete controversy, political movement, real backlash documented"
   },
   {
     "rank": 9,
-    "headline": "Liquid AI reveals 8B-A1B MoE trained on 38T",
-    "link": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
+    "headline": "Tech companies desperately want to film you doing chores",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/940007/ai-companies-will-pay-for-robot-training-data",
     "score": 68,
-    "reason": "New model architecture with massive training scale; technical innovation announcement"
+    "reason": "Industry-wide privacy controversy, behavioral concern with evidence"
   },
   {
     "rank": 10,
-    "headline": "Google adjusts Gemini’s new usage limits in response to complaints",
-    "link": "https://9to5google.com/2026/05/28/gemini-new-usage-limits/",
+    "headline": "We Asked the ‘Future of Truth’ Author to Explain How He Used AI. It Didn’t Go Well",
+    "link": "https://www.wired.com/story/future-of-truth-ai-interview/",
     "score": 65,
-    "reason": "Product policy reversal due to user backlash; demonstrates market pressure on major AI provider"
+    "reason": "Ironic hypocrisy exposed, author caught misusing AI, accountability moment"
   }
 ]
