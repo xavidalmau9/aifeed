@@ -1,5 +1,25 @@
 [
   {
+    "id": "perplexity-launches-bumblebee-how-its-new-readonly-dev-scann-20260530",
+    "slug": "perplexity-launches-bumblebee-how-its-new-readonly-dev-scann",
+    "headline": "Perplexity launches Bumblebee: How its new read-only dev scanner differs from Chainguard",
+    "summary": "Perplexity has launched Bumblebee, a read-only developer scanner that differs from Chainguard's offering.",
+    "body": "<p>Perplexity launches Bumblebee: How its new read-only dev scanner differs from Chainguard</p><p style=\"color:#8c8ca0;font-size:0.9em\">Source: Zdnet · <a href=\"https://www.zdnet.com/article/perplexity-launches-bumblebee-how-its-new-read-only-dev-scanner-differs-from-chainguard/\" target=\"_blank\" rel=\"noopener\" style=\"color:#a050ff\">https://www.zdnet.com/article/perplexity-launches-bumblebee-how-its-new-read-only-dev-scanner-differs-from-chainguard/</a></p><p class=\"article-tags-inline\"><a href=\"index.html?tag=AI\" class=\"article-tag\" style=\"color:#a050ff\">#AI</a> <a href=\"index.html?tag=DeveloperTools\" class=\"article-tag\" style=\"color:#a050ff\">#DeveloperTools</a> <a href=\"index.html?tag=Security\" class=\"article-tag\" style=\"color:#a050ff\">#Security</a> <a href=\"index.html?tag=CodeScanning\" class=\"article-tag\" style=\"color:#a050ff\">#CodeScanning</a> <a href=\"index.html?tag=SoftwareDevelopment\" class=\"article-tag\" style=\"color:#a050ff\">#SoftwareDevelopment</a> <a href=\"index.html?tag=DevSecOps\" class=\"article-tag\" style=\"color:#a050ff\">#DevSecOps</a></p>",
+    "category": "Products",
+    "hashtags": [
+      "AI",
+      "DeveloperTools",
+      "Security",
+      "CodeScanning",
+      "SoftwareDevelopment",
+      "DevSecOps"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_perplexity_launches_bumblebee_how_its_ne_1780148175290.png",
+    "sourceUrl": "https://www.zdnet.com/article/perplexity-launches-bumblebee-how-its-new-read-only-dev-scanner-differs-from-chainguard/",
+    "publishedAt": "2026-05-30T13:37:20.405Z",
+    "isVideo": false
+  },
+  {
     "id": "this-ai-startup-will-clean-your-home-for-free-to-train-futur-20260529",
     "slug": "this-ai-startup-will-clean-your-home-for-free-to-train-futur",
     "headline": "This AI startup will clean your home for free to train future robots",
