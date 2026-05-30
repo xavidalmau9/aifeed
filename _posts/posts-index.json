@@ -1,22 +1,21 @@
 [
   {
-    "id": "perplexity-launches-bumblebee-how-its-new-readonly-dev-scann-20260530",
-    "slug": "perplexity-launches-bumblebee-how-its-new-readonly-dev-scann",
-    "headline": "Perplexity launches Bumblebee: How its new read-only dev scanner differs from Chainguard",
-    "summary": "Perplexity has launched Bumblebee, a read-only developer scanner that differs from Chainguard's offering.",
-    "body": "<p>Perplexity launches Bumblebee: How its new read-only dev scanner differs from Chainguard</p><p style=\"color:#8c8ca0;font-size:0.9em\">Source: Zdnet · <a href=\"https://www.zdnet.com/article/perplexity-launches-bumblebee-how-its-new-read-only-dev-scanner-differs-from-chainguard/\" target=\"_blank\" rel=\"noopener\" style=\"color:#a050ff\">https://www.zdnet.com/article/perplexity-launches-bumblebee-how-its-new-read-only-dev-scanner-differs-from-chainguard/</a></p><p class=\"article-tags-inline\"><a href=\"index.html?tag=AI\" class=\"article-tag\" style=\"color:#a050ff\">#AI</a> <a href=\"index.html?tag=DeveloperTools\" class=\"article-tag\" style=\"color:#a050ff\">#DeveloperTools</a> <a href=\"index.html?tag=Security\" class=\"article-tag\" style=\"color:#a050ff\">#Security</a> <a href=\"index.html?tag=CodeScanning\" class=\"article-tag\" style=\"color:#a050ff\">#CodeScanning</a> <a href=\"index.html?tag=SoftwareDevelopment\" class=\"article-tag\" style=\"color:#a050ff\">#SoftwareDevelopment</a> <a href=\"index.html?tag=DevSecOps\" class=\"article-tag\" style=\"color:#a050ff\">#DevSecOps</a></p>",
-    "category": "Products",
+    "id": "perplexity-bumblebee-open-source-scanner-20260530",
+    "slug": "perplexity-bumblebee-open-source-scanner",
+    "headline": "Perplexity Open-Sources Bumblebee: A Read-Only Supply Chain Scanner for Developers",
+    "summary": "Perplexity open-sources Bumblebee, a read-only supply chain scanner that protects developer machines from software compromise — zero dependencies, never executes code.",
+    "body": "<p><strong>Perplexity just open-sourced Bumblebee — a read-only supply chain scanner built to protect developer machines from software compromise.</strong></p>\n<p>The tool was born out of necessity. When the Shai-Hulud and Mini Shai-Hulud supply chain worms hit packages from TanStack, SAP, and Zapier, Perplexity needed a fast way to answer one question: which of our developer machines are exposed right now? Bumblebee was their internal answer — now it's yours too.</p>\n<p>What makes it different: it's completely read-only. It never executes install scripts or invokes package managers, which means the scan itself can't trigger an attack. It reads metadata from lockfiles, package manager records, extension manifests, and MCP configuration files, then outputs structured JSON that security teams can cross-reference against exposure catalogs.</p>\n<p>Built in Go with zero non-stdlib dependencies. Covers npm, pnpm, Yarn, Bun, PyPI, Go modules, RubyGems, Composer, editor extensions, and browser extensions. Three scan modes: baseline, project-level, and deep sweep for active incidents.</p>\n<p>Perplexity already uses this internally to protect the systems behind their search product, Comet browser, and Computer agent. Apache 2.0 license. Available now on GitHub.</p>\n<p style=\"color:#8c8ca0;font-size:0.9em\">Source: ZDNet · <a href=\"https://www.zdnet.com/article/perplexity-launches-bumblebee-how-its-new-read-only-dev-scanner-differs-from-chainguard/\" target=\"_blank\" rel=\"noopener\" style=\"color:#a050ff\">zdnet.com</a></p>\n<p class=\"article-tags-inline\"><a href=\"index.html?tag=Perplexity\" class=\"article-tag\" style=\"color:#a050ff\">#Perplexity</a> <a href=\"index.html?tag=CyberSecurity\" class=\"article-tag\" style=\"color:#a050ff\">#CyberSecurity</a> <a href=\"index.html?tag=OpenSource\" class=\"article-tag\" style=\"color:#a050ff\">#OpenSource</a> <a href=\"index.html?tag=DevTools\" class=\"article-tag\" style=\"color:#a050ff\">#DevTools</a> <a href=\"index.html?tag=SupplyChain\" class=\"article-tag\" style=\"color:#a050ff\">#SupplyChain</a></p>",
+    "category": "Security",
     "hashtags": [
-      "AI",
-      "DeveloperTools",
-      "Security",
-      "CodeScanning",
-      "SoftwareDevelopment",
-      "DevSecOps"
+      "Perplexity",
+      "CyberSecurity",
+      "OpenSource",
+      "DevTools",
+      "SupplyChain"
     ],
-    "imageUrl": "https://aifeed.run/images/aifeed_perplexity_launches_bumblebee_how_its_ne_1780148175290.png",
+    "imageUrl": "https://aifeed.run/images/aifeed_perplexity_bumblebee_20260530.png",
     "sourceUrl": "https://www.zdnet.com/article/perplexity-launches-bumblebee-how-its-new-read-only-dev-scanner-differs-from-chainguard/",
-    "publishedAt": "2026-05-30T13:37:20.405Z",
+    "publishedAt": "2026-05-30T09:00:00.000-04:00",
     "isVideo": false
   },
   {

@@ -71,6 +71,8 @@ jobs:
               [/spacex|starship/,             'rocket launch space technology'],
               [/waymo|autonomous/,            'self driving car street urban traffic'],
               [/robinhood/,                   'stock market trading app phone finance'],
+              [/perplexity/,                  'cybersecurity developer terminal dark code technology'],
+              [/bumblebee.*scan|supply.chain.*scan|security.*scan/, 'cybersecurity code terminal dark developer'],
               // Business / corporate / enterprise AI
               [/corporate america/,           'corporate office business meeting executives technology'],
               [/enterprise.*ai|ai.*enterprise/, 'corporate office business technology executives'],
