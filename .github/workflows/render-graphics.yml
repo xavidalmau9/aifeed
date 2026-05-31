@@ -71,6 +71,8 @@ jobs:
               [/spacex|starship/,             'rocket launch space technology'],
               [/waymo|autonomous/,            'self driving car street urban traffic'],
               [/robinhood/,                   'stock market trading app phone finance'],
+              [/energy.*hottest|hottest.*energy|ai.*energy|energy.*ai|power grid.*ai|ai.*power/, 'power grid electricity towers aerial night infrastructure'],
+              [/energy.*business|energy.*invest|energy.*boom|utilities.*ai/, 'power plant energy infrastructure aerial technology'],
               [/perplexity/,                  'cybersecurity developer terminal dark code technology'],
               [/bumblebee.*scan|supply.chain.*scan|security.*scan/, 'cybersecurity code terminal dark developer'],
               // Business / corporate / enterprise AI
