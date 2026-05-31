@@ -1,58 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "SoftBank plans 75 billion euros of AI investments in France, as Europe struggles to catch up with U.S. and China",
-    "link": "https://www.cnbc.com/2026/05/31/softbank-to-build-up-ai-data-centers-in-france-with-major-investment.html",
+    "headline": "AI grifters are creating fake Black people to sell Shein junk",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/938844/ai-tiktok-shop-blackface-shein-dropshipping",
     "score": 92,
-    "reason": "Massive funding announcement ($81B+), concrete investment, major geopolitical AI competition narrative"
+    "reason": "Major controversy involving AI misuse for fraud/deception with real-world harm"
   },
   {
     "rank": 2,
-    "headline": "AI is turning energy into the hottest business in America",
-    "link": "https://www.axios.com/2026/05/31/ai-energy-business-companies-storage-supplies",
+    "headline": "AI will make the 'tech bro' class even richer, Nobel laureate Joe Stiglitz says, just as it can take your job",
+    "link": "https://fortune.com/article/why-does-nobel-laureate-joe-stiglitz-think-tech-bro-class-richer/",
     "score": 88,
-    "reason": "Big trend with economic impact, tangible market shift, data-driven insight"
+    "reason": "Significant economic impact claim from major authority; controversy about AI inequality effects"
   },
   {
     "rank": 3,
-    "headline": "The Vatican’s Man Inside Anthropic",
-    "link": "https://www.wired.com/story/the-vaticans-man-inside-anthropic/",
+    "headline": "CEOs blame AI for layoffs, but an MIT professor says it fits a long-running pattern to find a cover story. 'They've been saying that for 20 years'",
+    "link": "https://fortune.com/2026/05/31/tech-companies-ai-washing-layoffs-wix-block-snap-atlassian-disposable-workers/",
     "score": 85,
-    "reason": "Unique controversy/revelation about Anthropic leadership, ethical/institutional angle"
+    "reason": "Controversy debunking AI layoff narrative with academic credibility; relevant scale of impact"
   },
   {
     "rank": 4,
-    "headline": "EU seeks to &apos;intensify&apos; talks with U.S. on advanced cyber AI models, official tells CNBC, amid Mythos concerns",
-    "link": "https://www.cnbc.com/2026/05/29/mythos-ai-models-eu-talks-us.html",
+    "headline": "This Trump-linked startup plans to put humanoid robots in the military",
+    "link": "https://www.cnbc.com/2026/05/30/humanoid-robots-ukraine-war-foundation-military-ai.html",
     "score": 82,
-    "reason": "Regulatory controversy, security concerns, concrete policy friction between major powers"
+    "reason": "Significant launch announcement with major geopolitical implications and controversy potential"
   },
   {
     "rank": 5,
-    "headline": "Nvidia is investing billions into this emerging technology that could change the AI industry",
-    "link": "https://www.cnbc.com/2026/05/29/nvidia-photonics-investment-ai.html",
+    "headline": "Forget the STEM safety net. Peter Thiel warns AI is a bigger threat to technical roles than to creative thinkers",
+    "link": "https://fortune.com/article/peter-thiel-ai-skills-creative-thinking-technical/",
     "score": 79,
-    "reason": "Large investment amount, major player bet, industry impact claim"
+    "reason": "Contrarian take from major figure on AI impact; challenges conventional wisdom"
   },
   {
     "rank": 6,
-    "headline": "Scoop: First Windows PCs powered by Nvidia chips to debut next week",
-    "link": "https://www.axios.com/2026/05/30/nvidia-microsoft-pcs-ai-surface-dell",
+    "headline": "Tired of AI Overviews? I found 9 Google Search alternatives that showed me links again",
+    "link": "https://www.zdnet.com/article/google-search-alternatives-no-ai/",
     "score": 76,
-    "reason": "Hardware launch announcement, Nvidia expansion, concrete launch timeline"
+    "reason": "Consumer backlash against Google AI feature; reflects market controversy around AI integration"
   },
   {
     "rank": 7,
-    "headline": "Hands-On With Gemini Spark: I Gave It Access to My Life and It Friend-Zoned My Boyfriend",
-    "link": "https://www.wired.com/story/google-gemini-spark-ai-agent-hands-on/",
-    "score": 72,
-    "reason": "Google/Gemini feature launch, novel user experience story"
+    "headline": "I tried Microsoft's Windows 365 Cloud PC on MacOS, Android, and iOS - here's what it's like",
+    "link": "https://www.zdnet.com/article/windows-365-cloud-pc-hands-on/",
+    "score": 71,
+    "reason": "Major Microsoft product launch with broad platform availability"
   },
   {
     "rank": 8,
-    "headline": "Quantum computing looms, and your security is nowhere near ready",
-    "link": "https://www.zdnet.com/article/as-quantum-computing-emerges-some-hard-deadlines-loom/",
-    "score": 70,
-    "reason": "Emerging tech threat, security implications, industry-wide relevance"
+    "headline": "I've used Android Auto with Gemini for 2 months now - it's transformed my drives in 4 ways",
+    "link": "https://www.zdnet.com/article/how-gemini-in-android-auto-is-changing-my-daily-drive/",
+    "score": 68,
+    "reason": "Google Gemini feature launch with practical impact demonstration"
+  },
+  {
+    "rank": 9,
+    "headline": "1-Bit Bonsai Image 4B Image Generation for Local Devices",
+    "link": "https://prismml.com/news/bonsai-image-4b",
+    "score": 64,
+    "reason": "Technical breakthrough in efficient AI model deployment; enables local device usage"
+  },
+  {
+    "rank": 10,
+    "headline": "Classrooms lean into analog learning in the AI era",
+    "link": "https://www.axios.com/2026/05/30/no-screen-school-technology-parents-ai",
+    "score": 61,
+    "reason": "Significant trend story showing institutional pushback against AI; education sector impact"
   }
 ]
