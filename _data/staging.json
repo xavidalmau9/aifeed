@@ -1,72 +1,58 @@
 [
   {
     "rank": 1,
-    "headline": "AI grifters are creating fake Black people to sell Shein junk",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/938844/ai-tiktok-shop-blackface-shein-dropshipping",
+    "headline": "SoftBank plans 75 billion euros of AI investments in France, as Europe struggles to catch up with U.S. and China",
+    "link": "https://www.cnbc.com/2026/05/31/softbank-to-build-up-ai-data-centers-in-france-with-major-investment.html",
     "score": 92,
-    "reason": "Concrete controversy with real-world harm, demonstrates AI misuse at scale"
+    "reason": "Massive funding announcement ($81B+), concrete investment, major geopolitical AI competition narrative"
   },
   {
     "rank": 2,
-    "headline": "Amazon Is Making an AI-Animated ‘Good Advice Cupcake’ TV Show. Its Original Creator Is Furious",
-    "link": "https://www.wired.com/story/story/amazon-is-making-an-ai-animated-good-advice-cupcake-tv-show-its-original-creator-is-furious/",
+    "headline": "AI is turning energy into the hottest business in America",
+    "link": "https://www.axios.com/2026/05/31/ai-energy-business-companies-storage-supplies",
     "score": 88,
-    "reason": "Major company (Amazon) controversy, IP theft, quantifiable conflict"
+    "reason": "Big trend with economic impact, tangible market shift, data-driven insight"
   },
   {
     "rank": 3,
-    "headline": "Dell stock skyrockets 32% for its best day ever as AI server revenue soars",
-    "link": "https://www.cnbc.com/2026/05/29/dell-stock-earnings-ai-servers.html",
-    "score": 86,
-    "reason": "Big number (32%), major launch impact, measurable business results"
+    "headline": "The Vatican’s Man Inside Anthropic",
+    "link": "https://www.wired.com/story/the-vaticans-man-inside-anthropic/",
+    "score": 85,
+    "reason": "Unique controversy/revelation about Anthropic leadership, ethical/institutional angle"
   },
   {
     "rank": 4,
-    "headline": "Open-source security is a mess - IBM and Red Hat bet $5 billion and 20,000 engineers can fix it",
-    "link": "https://www.zdnet.com/article/open-source-security-is-a-mess-ibm-and-red-hat-bet-5-billion-to-fix-it/",
-    "score": 84,
-    "reason": "Massive investment ($5B), concrete action, industry-wide challenge"
+    "headline": "EU seeks to &apos;intensify&apos; talks with U.S. on advanced cyber AI models, official tells CNBC, amid Mythos concerns",
+    "link": "https://www.cnbc.com/2026/05/29/mythos-ai-models-eu-talks-us.html",
+    "score": 82,
+    "reason": "Regulatory controversy, security concerns, concrete policy friction between major powers"
   },
   {
     "rank": 5,
-    "headline": "AI is splitting the music world. This 49-year-old guitarist used it to keep playing after Parkinson’s",
-    "link": "https://fortune.com/2026/05/30/parkinsons-ai-music-humming-demos/",
-    "score": 78,
-    "reason": "Human-interest with real application, shows AI benefits vs. controversy"
+    "headline": "Nvidia is investing billions into this emerging technology that could change the AI industry",
+    "link": "https://www.cnbc.com/2026/05/29/nvidia-photonics-investment-ai.html",
+    "score": 79,
+    "reason": "Large investment amount, major player bet, industry impact claim"
   },
   {
     "rank": 6,
-    "headline": "Snowflake CEO says monster quarter shows why software firms need new pricing models to thrive in AI age",
-    "link": "https://fortune.com/2026/05/30/snowflakes-ceo-ai-consumption-pricing/",
+    "headline": "Scoop: First Windows PCs powered by Nvidia chips to debut next week",
+    "link": "https://www.axios.com/2026/05/30/nvidia-microsoft-pcs-ai-surface-dell",
     "score": 76,
-    "reason": "Major company results, business model shift, measurable performance"
+    "reason": "Hardware launch announcement, Nvidia expansion, concrete launch timeline"
   },
   {
     "rank": 7,
-    "headline": "OpenRouter raises $113M Series B",
-    "link": "https://openrouter.ai/announcements/series-b",
+    "headline": "Hands-On With Gemini Spark: I Gave It Access to My Life and It Friend-Zoned My Boyfriend",
+    "link": "https://www.wired.com/story/google-gemini-spark-ai-agent-hands-on/",
     "score": 72,
-    "reason": "Big funding number ($113M), AI company launch/growth milestone"
+    "reason": "Google/Gemini feature launch, novel user experience story"
   },
   {
     "rank": 8,
-    "headline": "\"The pitchforks are here\": Billionaires work to contain AI's populist revolt",
-    "link": "https://www.axios.com/2026/05/29/ai-billionaires-tech-taxes-wealth",
+    "headline": "Quantum computing looms, and your security is nowhere near ready",
+    "link": "https://www.zdnet.com/article/as-quantum-computing-emerges-some-hard-deadlines-loom/",
     "score": 70,
-    "reason": "Concrete controversy, political movement, real backlash documented"
-  },
-  {
-    "rank": 9,
-    "headline": "Tech companies desperately want to film you doing chores",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/940007/ai-companies-will-pay-for-robot-training-data",
-    "score": 68,
-    "reason": "Industry-wide privacy controversy, behavioral concern with evidence"
-  },
-  {
-    "rank": 10,
-    "headline": "We Asked the ‘Future of Truth’ Author to Explain How He Used AI. It Didn’t Go Well",
-    "link": "https://www.wired.com/story/future-of-truth-ai-interview/",
-    "score": 65,
-    "reason": "Ironic hypocrisy exposed, author caught misusing AI, accountability moment"
+    "reason": "Emerging tech threat, security implications, industry-wide relevance"
   }
 ]
