@@ -1,72 +1,65 @@
 [
   {
     "rank": 1,
-    "headline": "AI grifters are creating fake Black people to sell Shein junk",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/938844/ai-tiktok-shop-blackface-shein-dropshipping",
+    "headline": "China has approved the world’s first invasive brain-computer chip—here’s what’s next",
+    "link": "https://www.technologyreview.com/2026/06/01/1138133/china-world-first-brain-chip/",
     "score": 92,
-    "reason": "Major controversy involving AI misuse for fraud/deception with real-world harm"
+    "reason": "Major regulatory milestone, significant medical breakthrough, geopolitical implications"
   },
   {
     "rank": 2,
-    "headline": "AI will make the 'tech bro' class even richer, Nobel laureate Joe Stiglitz says, just as it can take your job",
-    "link": "https://fortune.com/article/why-does-nobel-laureate-joe-stiglitz-think-tech-bro-class-richer/",
+    "headline": "Nvidia jumps into PCs with new Arm-based chip debuting in laptops from Microsoft, Dell, HP",
+    "link": "https://www.cnbc.com/2026/05/31/nvidias-new-chip-to-power-fresh-line-of-windows-laptops-by-dell-hp.html",
     "score": 88,
-    "reason": "Significant economic impact claim from major authority; controversy about AI inequality effects"
+    "reason": "Major product launch by leading AI company, multiple major OEM partners, market expansion"
   },
   {
     "rank": 3,
-    "headline": "CEOs blame AI for layoffs, but an MIT professor says it fits a long-running pattern to find a cover story. 'They've been saying that for 20 years'",
-    "link": "https://fortune.com/2026/05/31/tech-companies-ai-washing-layoffs-wix-block-snap-atlassian-disposable-workers/",
+    "headline": "NVIDIA's Isaac Gr00t platform gives researchers access to frontier humanoid robotics",
+    "link": "https://www.engadget.com/2184658/nvidia-isaac-gr00t-humanoid-robotic-platform/",
     "score": 85,
-    "reason": "Controversy debunking AI layoff narrative with academic credibility; relevant scale of impact"
+    "reason": "Major robotics platform launch, frontier technology, researcher access announcement"
   },
   {
     "rank": 4,
-    "headline": "This Trump-linked startup plans to put humanoid robots in the military",
-    "link": "https://www.cnbc.com/2026/05/30/humanoid-robots-ukraine-war-foundation-military-ai.html",
+    "headline": "Mecka AI raises $60 million to train robots with human data sourced from body sensors and iPhones",
+    "link": "https://fortune.com/2026/06/01/mecka-ai-series-a-60-million-robotics-data-training/",
     "score": 82,
-    "reason": "Significant launch announcement with major geopolitical implications and controversy potential"
+    "reason": "Significant funding round, novel data sourcing approach for robotics training"
   },
   {
     "rank": 5,
-    "headline": "Forget the STEM safety net. Peter Thiel warns AI is a bigger threat to technical roles than to creative thinkers",
-    "link": "https://fortune.com/article/peter-thiel-ai-skills-creative-thinking-technical/",
+    "headline": "AI revolution is ‘50x bigger’ than the dot-com boom: SoftBank&apos;s Masayoshi Son to CNBC",
+    "link": "https://www.cnbc.com/2026/06/01/softbank-masayoshi-son-ai-revolution-investment.html",
     "score": 79,
-    "reason": "Contrarian take from major figure on AI impact; challenges conventional wisdom"
+    "reason": "Major quantitative claim from industry leader, significant market perspective"
   },
   {
     "rank": 6,
-    "headline": "Tired of AI Overviews? I found 9 Google Search alternatives that showed me links again",
-    "link": "https://www.zdnet.com/article/google-search-alternatives-no-ai/",
-    "score": 76,
-    "reason": "Consumer backlash against Google AI feature; reflects market controversy around AI integration"
+    "headline": "ChatGPT for Google Sheets exfiltrates workbooks",
+    "link": "https://www.promptarmor.com/resources/gpt-for-google-sheets-data-exfiltration",
+    "score": 78,
+    "reason": "Security vulnerability, major AI product (OpenAI/Google), practical impact"
   },
   {
     "rank": 7,
-    "headline": "I tried Microsoft's Windows 365 Cloud PC on MacOS, Android, and iOS - here's what it's like",
-    "link": "https://www.zdnet.com/article/windows-365-cloud-pc-hands-on/",
-    "score": 71,
-    "reason": "Major Microsoft product launch with broad platform availability"
+    "headline": "Nvidia's new world model helps robots navigate the world",
+    "link": "https://www.axios.com/2026/06/01/nvidia-ai-push-cosmos-3-world-model",
+    "score": 75,
+    "reason": "Significant AI capability advancement, robotics application"
   },
   {
     "rank": 8,
-    "headline": "I've used Android Auto with Gemini for 2 months now - it's transformed my drives in 4 ways",
-    "link": "https://www.zdnet.com/article/how-gemini-in-android-auto-is-changing-my-daily-drive/",
-    "score": 68,
-    "reason": "Google Gemini feature launch with practical impact demonstration"
+    "headline": "Quantum computing looms, and your security is nowhere near ready",
+    "link": "https://www.zdnet.com/article/as-quantum-computing-emerges-some-hard-deadlines-loom/",
+    "score": 72,
+    "reason": "Systemic security threat, major technology impact"
   },
   {
     "rank": 9,
-    "headline": "1-Bit Bonsai Image 4B Image Generation for Local Devices",
-    "link": "https://prismml.com/news/bonsai-image-4b",
-    "score": 64,
-    "reason": "Technical breakthrough in efficient AI model deployment; enables local device usage"
-  },
-  {
-    "rank": 10,
-    "headline": "Classrooms lean into analog learning in the AI era",
-    "link": "https://www.axios.com/2026/05/30/no-screen-school-technology-parents-ai",
-    "score": 61,
-    "reason": "Significant trend story showing institutional pushback against AI; education sector impact"
+    "headline": "AI in video game development: How artificial intelligence is reshaping the industry",
+    "link": "https://www.artificialintelligence-news.com/news/ai-in-video-game-development/",
+    "score": 68,
+    "reason": "Major industry application, widespread impact on game development"
   }
 ]
