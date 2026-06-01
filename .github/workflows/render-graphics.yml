@@ -287,16 +287,20 @@ jobs:
 
             const graphicsDir = './graphics';
             const imagesDir   = './images';
+            // ONLY render HTML files changed in THIS push — never scan all files
+            // Scanning all files causes old HTMLs to re-render when their PNG is deleted
             let files;
             try {
               const changed = execSync('git diff HEAD~1 --name-only -- graphics/ 2>/dev/null || true')
                 .toString().trim().split('\n')
                 .filter(f => f.endsWith('.html'))
-                .map(f => path.basename(f));
-              files = changed.length > 0 ? changed : fs.readdirSync(graphicsDir).filter(f => f.endsWith('.html'));
-              console.log('Files to render:', files);
+                .map(f => path.basename(f))
+                .filter(f => f.length > 0);
+              files = changed;
+              console.log('Files to render (changed in this push only):', files);
             } catch(e) {
-              files = fs.readdirSync(graphicsDir).filter(f => f.endsWith('.html'));
+              files = [];
+              console.log('Could not determine changed files — skipping render to be safe');
             }
 
             for (const file of files) {
