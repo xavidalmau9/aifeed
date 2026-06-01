@@ -1,65 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "China has approved the world’s first invasive brain-computer chip—here’s what’s next",
-    "link": "https://www.technologyreview.com/2026/06/01/1138133/china-world-first-brain-chip/",
-    "score": 92,
-    "reason": "Major regulatory milestone, significant medical breakthrough, geopolitical implications"
+    "headline": "Anthropic confidentially files for IPO after raising $65 billion in a funding round at a $965 billion valuation",
+    "link": "https://fortune.com/2026/06/01/anthropic-confidentially-files-ipo-965-billion-valuation/",
+    "score": 98,
+    "reason": "Largest IPO filing with massive valuation and funding numbers; major company milestone"
   },
   {
     "rank": 2,
-    "headline": "Nvidia jumps into PCs with new Arm-based chip debuting in laptops from Microsoft, Dell, HP",
-    "link": "https://www.cnbc.com/2026/05/31/nvidias-new-chip-to-power-fresh-line-of-windows-laptops-by-dell-hp.html",
-    "score": 88,
-    "reason": "Major product launch by leading AI company, multiple major OEM partners, market expansion"
+    "headline": "Meta's own AI was exploited to hijack Instagram accounts",
+    "link": "https://www.theverge.com/tech/941179/meta-instagram-ai-support-chatbot-exploit-hacked",
+    "score": 92,
+    "reason": "Major security breach/controversy; demonstrates real-world AI vulnerability with user impact"
   },
   {
     "rank": 3,
-    "headline": "NVIDIA's Isaac Gr00t platform gives researchers access to frontier humanoid robotics",
-    "link": "https://www.engadget.com/2184658/nvidia-isaac-gr00t-humanoid-robotic-platform/",
-    "score": 85,
-    "reason": "Major robotics platform launch, frontier technology, researcher access announcement"
+    "headline": "Florida sues OpenAI and Sam Altman over alleged 'exploitation of users'",
+    "link": "https://www.engadget.com/2184976/florida-sues-openai-and-sam-altman-over-alleged-exploitation-of-users/",
+    "score": 88,
+    "reason": "Major lawsuit/controversy against leading AI company; regulatory action with significant implications"
   },
   {
     "rank": 4,
-    "headline": "Mecka AI raises $60 million to train robots with human data sourced from body sensors and iPhones",
-    "link": "https://fortune.com/2026/06/01/mecka-ai-series-a-60-million-robotics-data-training/",
-    "score": 82,
-    "reason": "Significant funding round, novel data sourcing approach for robotics training"
+    "headline": "Microsoft to unveil new AI models and Windows improvements at Build",
+    "link": "https://www.theverge.com/report/940861/microsoft-build-ai-models-windows-dev-mode-what-to-expect",
+    "score": 85,
+    "reason": "Major product launch event; Windows AI integration is industry-shifting"
   },
   {
     "rank": 5,
-    "headline": "AI revolution is ‘50x bigger’ than the dot-com boom: SoftBank&apos;s Masayoshi Son to CNBC",
-    "link": "https://www.cnbc.com/2026/06/01/softbank-masayoshi-son-ai-revolution-investment.html",
-    "score": 79,
-    "reason": "Major quantitative claim from industry leader, significant market perspective"
+    "headline": "Nvidia RTX Spark comes to Windows PCs with Arm CPU, RTX GPU, and unified memory",
+    "link": "https://arstechnica.com/gadgets/2026/06/nvidia-gets-into-the-arm-pc-business-with-new-high-end-rtx-spark-processor/",
+    "score": 83,
+    "reason": "Hardware launch; Nvidia's significant expansion into Windows market with new architecture"
   },
   {
     "rank": 6,
-    "headline": "ChatGPT for Google Sheets exfiltrates workbooks",
-    "link": "https://www.promptarmor.com/resources/gpt-for-google-sheets-data-exfiltration",
-    "score": 78,
-    "reason": "Security vulnerability, major AI product (OpenAI/Google), practical impact"
+    "headline": "Fed officials warn AI's economic costs may arrive faster than benefits",
+    "link": "https://www.axios.com/2026/06/01/ai-productivity-inflation",
+    "score": 80,
+    "reason": "High-level policy concern from Federal Reserve; systemic economic risk assessment"
   },
   {
     "rank": 7,
-    "headline": "Nvidia's new world model helps robots navigate the world",
-    "link": "https://www.axios.com/2026/06/01/nvidia-ai-push-cosmos-3-world-model",
-    "score": 75,
-    "reason": "Significant AI capability advancement, robotics application"
+    "headline": "Gemini’s new AI agent is about as good as Google’s demo",
+    "link": "https://www.theverge.com/tech/941138/google-gemini-spark-ai-agent-hands-on",
+    "score": 76,
+    "reason": "Google's AI agent capability assessment; realistic performance vs. marketing claims"
   },
   {
     "rank": 8,
-    "headline": "Quantum computing looms, and your security is nowhere near ready",
-    "link": "https://www.zdnet.com/article/as-quantum-computing-emerges-some-hard-deadlines-loom/",
-    "score": 72,
-    "reason": "Systemic security threat, major technology impact"
+    "headline": "AI grifters are creating fake Black people to sell Shein junk",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/938844/ai-tiktok-shop-blackface-shein-dropshipping",
+    "score": 74,
+    "reason": "Emerging AI misuse pattern; generative AI used for deceptive commerce at scale"
   },
   {
     "rank": 9,
-    "headline": "AI in video game development: How artificial intelligence is reshaping the industry",
-    "link": "https://www.artificialintelligence-news.com/news/ai-in-video-game-development/",
-    "score": 68,
-    "reason": "Major industry application, widespread impact on game development"
+    "headline": "AI is blowing up music. How should the Grammys handle it?",
+    "link": "https://www.theverge.com/podcast/940831/ai-grammys-music-recording-harvey-mason",
+    "score": 72,
+    "reason": "Industry impact; major cultural institution grappling with AI regulation"
+  },
+  {
+    "rank": 10,
+    "headline": "New Server Hopes to Break Through AI’s “Memory Wall”",
+    "link": "https://spectrum.ieee.org/huge-memory-ai-server",
+    "score": 70,
+    "reason": "Technical breakthrough addressing fundamental AI infrastructure limitation"
   }
 ]
