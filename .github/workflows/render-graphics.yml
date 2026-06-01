@@ -111,6 +111,8 @@ jobs:
               [/drone/,                       'drone aerial technology flying sky'],
               [/manufacturing|factory floor/,  'factory manufacturing industrial production'],
               [/warehouse/,                   'warehouse logistics automation shelves workers'],
+              [/brain.computer|brain.chip|neural.implant|bci|neuralink/, 'brain neuroscience neural network purple dark technology'],
+              [/invasive.*chip|chip.*brain|implant.*brain/, 'brain scan neuroscience technology dark'],
               // Health & biotech
               [/cancer|tumor|oncol/,          'medical research laboratory microscope science'],
               [/drug.*approv|fda.*approv/,     'pharmaceutical medicine drug research lab'],
