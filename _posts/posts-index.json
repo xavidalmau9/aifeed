@@ -1,5 +1,24 @@
 [
   {
+    "id": "microsoft-mdash-100-ai-threat-hunting-agents-20260602",
+    "slug": "microsoft-mdash-100-ai-threat-hunting-agents",
+    "headline": "Microsoft's MDASH Exits Preview with 100+ Specialized Threat-Hunting AI Agents",
+    "summary": "Microsoft's agentic security system now orchestrates 100+ AI agents to discover, validate, and prove exploitability across your codebase — it already found 16 critical Windows flaws.",
+    "body": "<p><strong>Microsoft just unleashed 100+ AI agents whose only job is to find every vulnerability in your code before attackers do.</strong></p>\n<p>MDASH — Microsoft's multi-model agentic security system — exited preview at Build 2026. It doesn't just scan code. It discovers threats, validates them, and proves they can be exploited. All autonomously. The system orchestrates more than 100 specialized AI agents using an ensemble of models, dynamically trading speed, recall, and compute cost depending on the task.</p>\n<p>We already know it works. Before the public launch, MDASH found 16 critical vulnerabilities in Windows itself — including four remote code execution flaws in the kernel TCP/IP stack. Microsoft patched them on Patch Tuesday.</p>\n<p>This isn't a tool that flags warnings for humans to review. This is AI acting as your entire red team, running 24/7, at a scale no human team can match. Expect it to become a core part of Microsoft Defender and Azure security offerings within 12 months.</p>\n<p>Cybersecurity just changed.</p>\n<p style=\"color:#8c8ca0;font-size:0.9em\">Source: Microsoft Security · <a href=\"https://www.microsoft.com/en-us/security/blog/2026/06/02/microsoft-build-2026-securing-code-agents-and-models-across-the-development-lifecycle/\" target=\"_blank\" rel=\"noopener\" style=\"color:#a050ff\">microsoft.com</a></p>\n<p class=\"article-tags-inline\"><a href=\"index.html?tag=Microsoft\" class=\"article-tag\" style=\"color:#a050ff\">#Microsoft</a> <a href=\"index.html?tag=CyberSecurity\" class=\"article-tag\" style=\"color:#a050ff\">#CyberSecurity</a> <a href=\"index.html?tag=AIAgents\" class=\"article-tag\" style=\"color:#a050ff\">#AIAgents</a> <a href=\"index.html?tag=MicrosoftBuild\" class=\"article-tag\" style=\"color:#a050ff\">#MicrosoftBuild</a> <a href=\"index.html?tag=SecurityAI\" class=\"article-tag\" style=\"color:#a050ff\">#SecurityAI</a></p>",
+    "category": "Security",
+    "hashtags": [
+      "Microsoft",
+      "CyberSecurity",
+      "AIAgents",
+      "MicrosoftBuild",
+      "SecurityAI"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_microsoft_mdash_100_agents_20260602.png",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/06/02/microsoft-build-2026-securing-code-agents-and-models-across-the-development-lifecycle/",
+    "publishedAt": "2026-06-02T17:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
     "id": "softbank-masayoshi-son-ai-50x-bigger-dot-com-boom-20260602",
     "slug": "softbank-masayoshi-son-ai-50x-bigger",
     "headline": "AI Revolution Is '50x Bigger' Than the Dot-Com Boom: SoftBank's Masayoshi Son",
