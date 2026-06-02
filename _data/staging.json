@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Alphabet plans to raise $80 billion from stock sales to fund AI build-out",
-    "link": "https://www.cnbc.com/2026/06/01/alphabet-to-raise-80-billion-from-stock-sales-to-fund-ai-buildout.html",
-    "score": 96,
-    "reason": "Massive capital commitment ($80B), concrete action, major company infrastructure investment"
+    "headline": "Anthropic Confidentially Files for What Could Be the Largest IPO Ever",
+    "link": "https://www.wired.com/story/anthropic-files-s1-ipo-sec/",
+    "score": 98,
+    "reason": "Major financial milestone - largest AI IPO filing with concrete regulatory action, not speculation"
   },
   {
     "rank": 2,
-    "headline": "Anthropic has officially filed to go public",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/941016/anthropic-has-officially-filed-to-go-public",
-    "score": 94,
-    "reason": "Major IPO filing from leading AI company, landmark moment for AI industry capitalization"
+    "headline": "Trump signs executive order to review AI models before they’re released",
+    "link": "https://www.theverge.com/policy/941775/trump-ai-executive-order",
+    "score": 95,
+    "reason": "High-impact policy controversy - government regulation of AI with concrete action taken"
   },
   {
     "rank": 3,
-    "headline": "Nvidia jumps into PCs with new Arm-based chip debuting in laptops from Microsoft, Dell, HP",
-    "link": "https://www.cnbc.com/2026/05/31/nvidias-new-chip-to-power-fresh-line-of-windows-laptops-by-dell-hp.html",
-    "score": 90,
-    "reason": "Major product launch from dominant AI chip maker, multi-OEM partnerships, market expansion"
+    "headline": "Microsoft’s first advanced reasoning AI is here",
+    "link": "https://www.theverge.com/tech/941664/microsoft-ai-model-reasoning-mai-thinking-1-build-2026",
+    "score": 92,
+    "reason": "Major product launch - Microsoft's new reasoning model represents significant technical milestone and competition with OpenAI"
   },
   {
     "rank": 4,
-    "headline": "The Trump Administration Is at War With Itself Over AI Regulation",
-    "link": "https://www.wired.com/story/the-white-house-is-at-war-with-itself-over-ai-regulation/",
+    "headline": "Microsoft Build 2026: The 7 biggest announcements",
+    "link": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
     "score": 88,
-    "reason": "Major regulatory controversy, significant policy uncertainty, high-stakes conflict"
+    "reason": "Multiple launches at major conference - encompasses multiple AI products and initiatives in single event"
   },
   {
     "rank": 5,
-    "headline": "China has approved the world’s first invasive brain-computer chip—here’s what’s next",
-    "link": "https://www.technologyreview.com/2026/06/01/1138133/china-world-first-brain-chip/",
-    "score": 86,
-    "reason": "Landmark regulatory approval, first-of-kind achievement, geopolitical AI race implications"
+    "headline": "Build 2026: Microsoft's MDASH exits preview with 100+ specialized threat-hunting AI agents",
+    "link": "https://www.zdnet.com/article/build-2026-mdash-security-ai-agents/",
+    "score": 85,
+    "reason": "Specific launch milestone - 100+ agents represents scale and concrete enterprise deployment"
   },
   {
     "rank": 6,
-    "headline": "GitHub Copilot users see token-based price hikes",
-    "link": "https://www.artificialintelligence-news.com/news/github-copilots-billing-changes-users-see-use-based-price-hikes/",
+    "headline": "Gemini Spark is the most impressive and terrifying AI experience I’ve had yet",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/941388/gemini-spark-ai-agent-trip-planning",
     "score": 82,
-    "reason": "Microsoft monetization shift affecting millions of users, concrete pricing action"
+    "reason": "Google's major capability launch - 'terrifying' signals significant advancement, firsthand assessment of impact"
   },
   {
     "rank": 7,
-    "headline": "Florida sues OpenAI and CEO Sam Altman over ChatGPT",
-    "link": "https://www.axios.com/local/tampa-bay/2026/06/01/florida-openai-ceo-sam-altman-chatgpt",
-    "score": 81,
-    "reason": "Major legal action against leading AI company, regulatory enforcement action"
+    "headline": "Microsoft unveils new AI models to lessen reliance on OpenAI and lower costs for developers",
+    "link": "https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html",
+    "score": 80,
+    "reason": "Strategic business shift - concrete cost reduction and reduced vendor lock-in, significant market implication"
   },
   {
     "rank": 8,
-    "headline": "Nvidia picks Unitree for humanoid robot platform as Chinese startup eyes IPO",
-    "link": "https://www.cnbc.com/2026/06/01/nvidia-unitree-humanoid-robotics-system-researchers.html",
+    "headline": "Nvidia&apos;s new PC chips represent CEO Huang&apos;s bid to win at every layer of AI stack",
+    "link": "https://www.cnbc.com/2026/06/02/nvidias-new-pc-chips-are-ceos-bid-to-own-every-part-of-ai-stack.html",
     "score": 78,
-    "reason": "Strategic partnership, robotics expansion, Chinese AI startup growth signal"
+    "reason": "Major hardware launch - Nvidia's strategic expansion into PC market with big numbers implication"
   },
   {
     "rank": 9,
-    "headline": "AI revolution is ‘50x bigger’ than the dot-com boom: SoftBank&apos;s Masayoshi Son to CNBC",
-    "link": "https://www.cnbc.com/2026/06/01/softbank-masayoshi-son-ai-revolution-investment.html",
+    "headline": "Palo Alto Networks pops 12% on earnings beat as AI fuels cybersecurity urgency",
+    "link": "https://www.cnbc.com/2026/06/02/palo-alto-networks-panw-q3-earnings-2026.html",
     "score": 76,
-    "reason": "Major industry figure comparison, substantial scale claim from influential investor"
+    "reason": "Concrete business impact - measurable stock surge driven by AI demand in cybersecurity sector"
   },
   {
     "rank": 10,
-    "headline": "Strava blames zero-code AI apps and scrapers as it tightens API access",
-    "link": "https://www.theverge.com/gadgets/940854/strava-restricts-api-access-ai-apps",
+    "headline": "Okta's President and COO says companies are in denial about the hardest part of the AI revolution: redesigning work itself",
+    "link": "https://fortune.com/2026/06/01/oktas-coo-kelleher-companies-in-denial-about-redesigning-work-ai-agents/",
     "score": 74,
-    "reason": "Platform policy change due to AI, concrete action on data scraping concern"
+    "reason": "Quantified real-world impact - specific 66% time reduction demonstrates measurable AI agent productivity gains"
   }
 ]
