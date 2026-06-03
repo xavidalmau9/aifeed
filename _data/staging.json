@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic Confidentially Files for What Could Be the Largest IPO Ever",
-    "link": "https://www.wired.com/story/anthropic-files-s1-ipo-sec/",
-    "score": 98,
-    "reason": "Major financial milestone - largest AI IPO filing with concrete regulatory action, not speculation"
+    "headline": "Anthropic IPO filing marks AI maturing into enterprise utility",
+    "link": "https://www.artificialintelligence-news.com/news/anthropic-ipo-filing-marks-ai-maturing-enterprise-utility/",
+    "score": 96,
+    "reason": "Major IPO filing - concrete business milestone, not speculation"
   },
   {
     "rank": 2,
-    "headline": "Trump signs executive order to review AI models before they’re released",
-    "link": "https://www.theverge.com/policy/941775/trump-ai-executive-order",
-    "score": 95,
-    "reason": "High-impact policy controversy - government regulation of AI with concrete action taken"
+    "headline": "Alphabet seeks $80 billion to fund AI buildout",
+    "link": "https://www.axios.com/2026/06/01/alphabet-80-billion-ai-buildout",
+    "score": 94,
+    "reason": "Massive capital commitment - big number, concrete investment decision"
   },
   {
     "rank": 3,
-    "headline": "Microsoft’s first advanced reasoning AI is here",
-    "link": "https://www.theverge.com/tech/941664/microsoft-ai-model-reasoning-mai-thinking-1-build-2026",
+    "headline": "Google must let publishers opt out of AI Search features, rules UK",
+    "link": "https://www.theverge.com/tech/942302/google-search-ai-overviews-uk-cma-publisher-opt-out",
     "score": 92,
-    "reason": "Major product launch - Microsoft's new reasoning model represents significant technical milestone and competition with OpenAI"
+    "reason": "Regulatory action with real business impact - not speculation"
   },
   {
     "rank": 4,
-    "headline": "Microsoft Build 2026: The 7 biggest announcements",
-    "link": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
+    "headline": "Florida sues OpenAI and Sam Altman over alleged 'exploitation of users'",
+    "link": "https://www.engadget.com/2184976/florida-sues-openai-and-sam-altman-over-alleged-exploitation-of-users/",
     "score": 88,
-    "reason": "Multiple launches at major conference - encompasses multiple AI products and initiatives in single event"
+    "reason": "Major lawsuit filed - concrete legal controversy, not press release"
   },
   {
     "rank": 5,
-    "headline": "Build 2026: Microsoft's MDASH exits preview with 100+ specialized threat-hunting AI agents",
-    "link": "https://www.zdnet.com/article/build-2026-mdash-security-ai-agents/",
+    "headline": "AI has a water problem. Google thinks it has a fix",
+    "link": "https://www.theverge.com/policy/942296/google-water-commitments-data-centers",
     "score": 85,
-    "reason": "Specific launch milestone - 100+ agents represents scale and concrete enterprise deployment"
+    "reason": "Concrete technical problem and solution launch - real infrastructure issue"
   },
   {
     "rank": 6,
-    "headline": "Gemini Spark is the most impressive and terrifying AI experience I’ve had yet",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/941388/gemini-spark-ai-agent-trip-planning",
-    "score": 82,
-    "reason": "Google's major capability launch - 'terrifying' signals significant advancement, firsthand assessment of impact"
+    "headline": "Microsoft's first reasoning model is one of 7 AIs just released at Build - what we know so far",
+    "link": "https://www.zdnet.com/article/all-the-new-ai-models-microsoft-just-launched-at-build/",
+    "score": 84,
+    "reason": "Multiple product launches at Build conference - tangible releases"
   },
   {
     "rank": 7,
-    "headline": "Microsoft unveils new AI models to lessen reliance on OpenAI and lower costs for developers",
-    "link": "https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html",
-    "score": 80,
-    "reason": "Strategic business shift - concrete cost reduction and reduced vendor lock-in, significant market implication"
+    "headline": "Exclusive: Apoha, a startup building AI models for creating new materials, emerges from stealth with $36 million Series A funding round",
+    "link": "https://fortune.com/2026/06/03/apoha-36-million-series-a-funding-round-exit-stealth-wave-form-ai-liquid-intelligence/",
+    "score": 82,
+    "reason": "Concrete funding with big number - material science application launch"
   },
   {
     "rank": 8,
-    "headline": "Nvidia&apos;s new PC chips represent CEO Huang&apos;s bid to win at every layer of AI stack",
-    "link": "https://www.cnbc.com/2026/06/02/nvidias-new-pc-chips-are-ceos-bid-to-own-every-part-of-ai-stack.html",
-    "score": 78,
-    "reason": "Major hardware launch - Nvidia's strategic expansion into PC market with big numbers implication"
+    "headline": "Trump signs scaled-back AI cybersecurity order",
+    "link": "https://www.engadget.com/2185845/trump-signs-scaled-back-ai-cybersecurity-order/",
+    "score": 81,
+    "reason": "Government action taken - concrete policy, not speculation"
   },
   {
     "rank": 9,
-    "headline": "Palo Alto Networks pops 12% on earnings beat as AI fuels cybersecurity urgency",
-    "link": "https://www.cnbc.com/2026/06/02/palo-alto-networks-panw-q3-earnings-2026.html",
-    "score": 76,
-    "reason": "Concrete business impact - measurable stock surge driven by AI demand in cybersecurity sector"
+    "headline": "Researchers show how AI-powered worms could wreak havoc on the internet",
+    "link": "https://www.engadget.com/2186363/researchers-show-how-ai-powered-worms-could-wreak-havoc-on-the-internet/",
+    "score": 79,
+    "reason": "Technical vulnerability research with security implications - concrete finding"
   },
   {
     "rank": 10,
-    "headline": "Okta's President and COO says companies are in denial about the hardest part of the AI revolution: redesigning work itself",
-    "link": "https://fortune.com/2026/06/01/oktas-coo-kelleher-companies-in-denial-about-redesigning-work-ai-agents/",
-    "score": 74,
-    "reason": "Quantified real-world impact - specific 66% time reduction demonstrates measurable AI agent productivity gains"
+    "headline": "Anthropic expands Mythos to 150 additional organizations in more than 15 countries",
+    "link": "https://www.cnbc.com/2026/06/02/anthropic-mythos-ai-project-glasswing.html",
+    "score": 77,
+    "reason": "Quantified expansion milestone - big number of organizations and geographic reach"
   }
 ]
