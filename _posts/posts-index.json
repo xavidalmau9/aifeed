@@ -1,5 +1,24 @@
 [
   {
+    "id": "ai-water-problem-google-fix-20260603",
+    "slug": "ai-water-problem-google-fix",
+    "headline": "AI Has a Water Problem. Google Thinks It Has a Fix.",
+    "summary": "Every AI query consumes water to cool the data centers running it. Google says it has a fix — but the industry has a long way to go.",
+    "body": "<p><strong>Every time you use AI, it's drinking water you can't see.</strong></p>\n<p>Data centers powering AI models need massive cooling systems to prevent chips from overheating. Most of that cooling relies on evaporative systems that consume millions of gallons of water daily — water pulled from local reservoirs, rivers, and aquifers.</p>\n<p>Google just announced it's pushing new water standards and building its next Texas data center with zero water cooling. But two-thirds of Google's existing data centers still use water-intensive evaporative cooling. The company has committed to returning more water to local watersheds than its data centers consume by 2030.</p>\n<p>The AI boom is an energy boom and a water boom. Communities near data centers are already feeling the strain on local supplies — and the buildout is accelerating. In 2026, institutional investors filed shareholder pressure on Amazon, Microsoft, and Alphabet asking for site-specific water and power consumption disclosures — putting water use on the same footing as carbon emissions.</p>\n<p>The energy transition narrative around AI is well-established. The water transition narrative is three years behind — and catching up fast.</p>\n<p style=\"color:#8c8ca0;font-size:0.9em\">Source: Axios · <a href=\"https://www.axios.com/2026/06/03/google-pushes-water-standards-data-center-backlash\" target=\"_blank\" rel=\"noopener\" style=\"color:#a050ff\">axios.com</a></p>\n<p class=\"article-tags-inline\"><a href=\"index.html?tag=AI\" class=\"article-tag\" style=\"color:#a050ff\">#AI</a> <a href=\"index.html?tag=CleanTech\" class=\"article-tag\" style=\"color:#a050ff\">#CleanTech</a> <a href=\"index.html?tag=Google\" class=\"article-tag\" style=\"color:#a050ff\">#Google</a> <a href=\"index.html?tag=DataCenters\" class=\"article-tag\" style=\"color:#a050ff\">#DataCenters</a> <a href=\"index.html?tag=Sustainability\" class=\"article-tag\" style=\"color:#a050ff\">#Sustainability</a></p>",
+    "category": "Infrastructure",
+    "hashtags": [
+      "AI",
+      "CleanTech",
+      "Google",
+      "DataCenters",
+      "Sustainability"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_ai_water_problem_google_20260603.png",
+    "sourceUrl": "https://www.axios.com/2026/06/03/google-pushes-water-standards-data-center-backlash",
+    "publishedAt": "2026-06-03T10:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
     "id": "microsoft-mdash-100-ai-threat-hunting-agents-20260602",
     "slug": "microsoft-mdash-100-ai-threat-hunting-agents",
     "headline": "Microsoft's MDASH Exits Preview with 100+ Specialized Threat-Hunting AI Agents",
