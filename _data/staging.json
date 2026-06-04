@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Google must let publishers opt out of AI Search features, rules UK",
-    "link": "https://www.theverge.com/tech/942302/google-search-ai-overviews-uk-cma-publisher-opt-out",
-    "score": 94,
-    "reason": "Major regulatory action against big tech; concrete enforcement; affects core product"
+    "headline": "TSMC struggles to keep up with AI demand: 'We can only support so much'",
+    "link": "https://www.theverge.com/tech/943066/tsmc-ai-demand-struggles",
+    "score": 92,
+    "reason": "Major supply chain bottleneck for AI infrastructure; concrete operational constraint"
   },
   {
     "rank": 2,
-    "headline": "Microsoft Build 2026: The 7 biggest announcements",
-    "link": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
-    "score": 92,
-    "reason": "Major product launches; comprehensive update; industry-moving announcements"
+    "headline": "Microsoft and OpenAI broke up — now they’re ready to fight",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/942242/microsoft-build-ai-agents-openai-competition",
+    "score": 88,
+    "reason": "High-stakes partnership dissolution between two major AI players; major controversy"
   },
   {
     "rank": 3,
-    "headline": "Amazon develops a warehouse robot workers can speak to",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/942884/amazon-next-generation-warehouse-robot-proteus",
-    "score": 88,
-    "reason": "Tangible product launch; real-world deployment; significant automation impact"
+    "headline": "SpaceX expects its IPO to raise $74.4 billion",
+    "link": "https://www.engadget.com/2187282/spacex-ipo-target/",
+    "score": 85,
+    "reason": "Massive capital raise; significant market launch (Musk company with AI/automation component)"
   },
   {
     "rank": 4,
-    "headline": "Exclusive: Investors bet $40 million on Honeycomb's no-inspection home insurance AI",
-    "link": "https://fortune.com/2026/06/04/honeycomb-insurance-ai-apartments-40-million/",
-    "score": 85,
-    "reason": "Large funding round; specific numbers; new AI application in insurance"
+    "headline": "Amazon develops a warehouse robot that workers can speak to",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/942884/amazon-next-generation-warehouse-robot-proteus",
+    "score": 82,
+    "reason": "New AI product launch; conversational AI in physical robotics at scale"
   },
   {
     "rank": 5,
-    "headline": "Anthropic's office launched an AI-run vending machine. It evolved into AI-run stores and cafes within a year",
-    "link": "https://fortune.com/2026/06/02/anthropic-office-vending-machine-ai-agents-vendo-andon-lukas-petersson/",
-    "score": 83,
-    "reason": "Anthropic product deployment; concrete scaling story; real-world commercial application"
+    "headline": "AI has a water problem — Google thinks it has a fix",
+    "link": "https://www.theverge.com/policy/942296/google-water-commitments-data-centers",
+    "score": 78,
+    "reason": "Major sustainability issue identified; Google's solution launch"
   },
   {
     "rank": 6,
-    "headline": "This Is How Trump Finally Signed the AI Executive Order",
-    "link": "https://www.wired.com/story/this-is-how-trump-finally-signed-the-ai-executive-order/",
-    "score": 81,
-    "reason": "Major policy action; broad AI implications; government intervention"
+    "headline": "AI leaders call for tougher protections against AI-aided bioweapons",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/942956/ai-biological-weapons-open-letter-congress",
+    "score": 75,
+    "reason": "Significant safety controversy; industry-wide concern about dual-use risks"
   },
   {
     "rank": 7,
-    "headline": "OpenAI and Anthropic Sign Letter to Prevent AI-Developed Biological Weapons",
-    "link": "https://www.wired.com/story/openai-anthropic-letter-ai-biological-weapons/",
-    "score": 79,
-    "reason": "Cross-competitor agreement; safety/security concern; major controversy topic"
+    "headline": "Anthropic warns AI could soon help build its own successors",
+    "link": "https://www.axios.com/2026/06/04/anthropic-warns-ai-build-successors",
+    "score": 72,
+    "reason": "Major technical development warning; recursive self-improvement concerns"
   },
   {
     "rank": 8,
-    "headline": "Amazon engineers in Seattle slam employer for building AI data centers while laying off 30,000 staffers",
-    "link": "https://www.cnbc.com/2026/06/03/amazon-engineers-in-seattle-slam-employer-for-ai-data-amid-layoffs.html",
-    "score": 77,
-    "reason": "Large-scale workforce impact (30K); internal controversy; contradiction narrative"
+    "headline": "What Suno's $5.4 billion valuation says about the future of AI and music—and what remains uncertain",
+    "link": "https://fortune.com/2026/06/04/suno-ai-and-the-future-of-music-5-4-billion-valuation-eye-on-ai/",
+    "score": 68,
+    "reason": "Significant valuation/funding milestone; new AI music model category"
   },
   {
     "rank": 9,
-    "headline": "Google is reportedly buying Android app code from Play Store devs to train AI models",
-    "link": "https://9to5google.com/2026/06/03/google-android-app-code-ai-models/",
-    "score": 75,
-    "reason": "Google antitrust/ethics controversy; developer backlash; unauthorized training data"
+    "headline": "How courts are coping with a flood of AI-generated lawsuits",
+    "link": "https://www.technologyreview.com/2026/06/04/1138391/courts-coping-ai-lawsuits/",
+    "score": 65,
+    "reason": "Quantified systemic issue (flood); novel legal impact of AI"
   },
   {
     "rank": 10,
-    "headline": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
-    "link": "https://www.dailycal.org/news/campus/academics/failing-grades-soar-as-professors-see-greater-ai-usage-dwindling-math-skills-in-uc-berkeley/article_16fad0bf-02cb-4b8c-8d88-888ffd9f8608.html",
-    "score": 73,
-    "reason": "Measurable negative impact; education sector; data-driven harm evidence"
+    "headline": "Wired found code for an unreleased facial recognition feature in Meta's AI app",
+    "link": "https://www.engadget.com/2187824/wired-found-code-for-an-unreleased-facial-recognition-feature-in-meta-s-ai-app/",
+    "score": 62,
+    "reason": "Privacy controversy; undisclosed AI capability discovery"
   }
 ]
