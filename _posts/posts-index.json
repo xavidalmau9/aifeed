@@ -1,5 +1,24 @@
 [
   {
+    "id": "ai-flooding-courts-fake-lawsuits-20260604",
+    "slug": "ai-flooding-courts-fake-lawsuits",
+    "headline": "AI Is Flooding Courts With Fake Lawsuits — and the Legal System Is Cracking",
+    "summary": "AI tools now generate lawsuits in minutes — many with fabricated citations and fictional cases. Courts are overwhelmed and the legal system is cracking.",
+    "body": "<p><strong>The judicial system is facing an unprecedented crisis: courts are being overwhelmed by AI-generated lawsuits, and the infrastructure simply isn't equipped to handle the volume or quality issues.</strong></p>\n<p>Legal AI tools now enable anyone to generate complaints in minutes — but many contain fabricated citations, logical inconsistencies, and entirely fictional case references. This explosion of low-quality filings is clogging court dockets and forcing judges to spend precious time identifying and dismissing frivolous AI-drafted cases.</p>\n<p>The technology enabling this problem is advancing rapidly. Large language models trained on legal documents can now draft coherent-sounding complaints, briefs, and motions that pass a casual review but fail scrutiny from experienced attorneys. The barrier to entry for filing lawsuits has effectively collapsed, democratizing legal action but simultaneously creating a legitimacy crisis for the courts.</p>\n<p>Courts are beginning to implement new procedural rules requiring human attorney certification, stricter verification of cited cases, and potential sanctions for filing AI-generated nonsense. Some jurisdictions are exploring AI detection tools and mandatory human review checkpoints — creating a two-tiered system where only well-resourced litigants can navigate the new requirements.</p>\n<p>The path forward requires collaboration between technologists, legal professionals, and courts to develop standards that harness AI's benefits while protecting institutional integrity. The real challenge isn't stopping AI in law — it's building governance frameworks that move as fast as the technology itself.</p>\n<p style=\"color:#8c8ca0;font-size:0.9em\">Source: MIT Technology Review · <a href=\"https://www.technologyreview.com/2026/06/04/1138391/courts-coping-ai-lawsuits/\" target=\"_blank\" rel=\"noopener\" style=\"color:#a050ff\">technologyreview.com</a></p>\n<p class=\"article-tags-inline\"><a href=\"index.html?tag=LegalTech\" class=\"article-tag\" style=\"color:#a050ff\">#LegalTech</a> <a href=\"index.html?tag=ArtificialIntelligence\" class=\"article-tag\" style=\"color:#a050ff\">#ArtificialIntelligence</a> <a href=\"index.html?tag=JusticeSystem\" class=\"article-tag\" style=\"color:#a050ff\">#JusticeSystem</a> <a href=\"index.html?tag=AIGovernance\" class=\"article-tag\" style=\"color:#a050ff\">#AIGovernance</a> <a href=\"index.html?tag=FutureOfLaw\" class=\"article-tag\" style=\"color:#a050ff\">#FutureOfLaw</a></p>",
+    "category": "Industry",
+    "hashtags": [
+      "LegalTech",
+      "ArtificialIntelligence",
+      "JusticeSystem",
+      "AIGovernance",
+      "FutureOfLaw"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_ai_courts_lawsuits_20260604.png",
+    "sourceUrl": "https://www.technologyreview.com/2026/06/04/1138391/courts-coping-ai-lawsuits/",
+    "publishedAt": "2026-06-04T17:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
     "id": "openai-anthropic-pledge-no-bioweapons-20260604",
     "slug": "openai-anthropic-pledge-no-bioweapons",
     "headline": "OpenAI and Anthropic Sign Landmark Pledge: AI Will Never Build Bioweapons",
