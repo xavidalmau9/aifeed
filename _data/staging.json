@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Amazon's search bar will invent AI-generated products you can't buy",
-    "link": "https://www.theverge.com/tech/942547/amazon-search-bar-ai-images",
-    "score": 92,
-    "reason": "Major company launch with controversial use case; concrete product announcement with negative consumer impact"
+    "headline": "Google must let publishers opt out of AI Search features, rules UK",
+    "link": "https://www.theverge.com/tech/942302/google-search-ai-overviews-uk-cma-publisher-opt-out",
+    "score": 94,
+    "reason": "Major regulatory action against big tech; concrete enforcement; affects core product"
   },
   {
     "rank": 2,
-    "headline": "Microsoft and OpenAI broke up — now they’re ready to fight",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/942242/microsoft-build-ai-agents-openai-competition",
-    "score": 89,
-    "reason": "Major controversy between two largest AI players; significant business/legal implications"
+    "headline": "Microsoft Build 2026: The 7 biggest announcements",
+    "link": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
+    "score": 92,
+    "reason": "Major product launches; comprehensive update; industry-moving announcements"
   },
   {
     "rank": 3,
-    "headline": "Trump signs executive order to review AI models before they’re released",
-    "link": "https://www.theverge.com/policy/941775/trump-ai-executive-order",
-    "score": 87,
-    "reason": "Concrete regulatory action with major policy implications; tangible numbers/requirements"
+    "headline": "Amazon develops a warehouse robot workers can speak to",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/942884/amazon-next-generation-warehouse-robot-proteus",
+    "score": 88,
+    "reason": "Tangible product launch; real-world deployment; significant automation impact"
   },
   {
     "rank": 4,
-    "headline": "AI has a water problem — Google thinks it has a fix",
-    "link": "https://www.theverge.com/policy/942296/google-water-commitments-data-centers",
-    "score": 84,
-    "reason": "Big environmental impact story; Google's concrete solution announcement"
+    "headline": "Exclusive: Investors bet $40 million on Honeycomb's no-inspection home insurance AI",
+    "link": "https://fortune.com/2026/06/04/honeycomb-insurance-ai-apartments-40-million/",
+    "score": 85,
+    "reason": "Large funding round; specific numbers; new AI application in insurance"
   },
   {
     "rank": 5,
-    "headline": "Microsoft’s first advanced reasoning AI is here",
-    "link": "https://www.theverge.com/tech/941664/microsoft-ai-model-reasoning-mai-thinking-1-build-2026",
-    "score": 81,
-    "reason": "Major product launch from top AI company; technical milestone announcement"
+    "headline": "Anthropic's office launched an AI-run vending machine. It evolved into AI-run stores and cafes within a year",
+    "link": "https://fortune.com/2026/06/02/anthropic-office-vending-machine-ai-agents-vendo-andon-lukas-petersson/",
+    "score": 83,
+    "reason": "Anthropic product deployment; concrete scaling story; real-world commercial application"
   },
   {
     "rank": 6,
-    "headline": "xAI Asks Court to Strip Alleged Grok Deepfake Nudes Victims of Anonymity",
-    "link": "https://www.wired.com/story/xai-asks-court-to-strip-alleged-grok-deepfake-nudes-victims-of-anonymity/",
-    "score": 79,
-    "reason": "Major controversy with legal proceedings; real harm documented"
+    "headline": "This Is How Trump Finally Signed the AI Executive Order",
+    "link": "https://www.wired.com/story/this-is-how-trump-finally-signed-the-ai-executive-order/",
+    "score": 81,
+    "reason": "Major policy action; broad AI implications; government intervention"
   },
   {
     "rank": 7,
-    "headline": "A British MP is suing to see if xAI is legally responsible for the images Grok produces",
-    "link": "https://www.engadget.com/2186883/british-mp-is-suing-to-see-if-xai-is-legally-responsible-for-the-images-grok-produces/",
-    "score": 77,
-    "reason": "International legal/regulatory action; precedent-setting liability case"
+    "headline": "OpenAI and Anthropic Sign Letter to Prevent AI-Developed Biological Weapons",
+    "link": "https://www.wired.com/story/openai-anthropic-letter-ai-biological-weapons/",
+    "score": 79,
+    "reason": "Cross-competitor agreement; safety/security concern; major controversy topic"
   },
   {
     "rank": 8,
-    "headline": "Google’s Phone app will tell you if a scammer is impersonating one of your contacts",
-    "link": "https://www.theverge.com/tech/941517/google-phone-scammer-ai-impersonation",
-    "score": 75,
-    "reason": "Concrete consumer safety feature launch; addresses real fraud problem"
+    "headline": "Amazon engineers in Seattle slam employer for building AI data centers while laying off 30,000 staffers",
+    "link": "https://www.cnbc.com/2026/06/03/amazon-engineers-in-seattle-slam-employer-for-ai-data-amid-layoffs.html",
+    "score": 77,
+    "reason": "Large-scale workforce impact (30K); internal controversy; contradiction narrative"
   },
   {
     "rank": 9,
-    "headline": "Uber&#x27;s $1,500&#x2F;month AI limit is a useful signal for AI tool pricing",
-    "link": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/",
-    "score": 72,
-    "reason": "Big number establishing market pricing precedent; concrete business metric"
+    "headline": "Google is reportedly buying Android app code from Play Store devs to train AI models",
+    "link": "https://9to5google.com/2026/06/03/google-android-app-code-ai-models/",
+    "score": 75,
+    "reason": "Google antitrust/ethics controversy; developer backlash; unauthorized training data"
   },
   {
     "rank": 10,
-    "headline": "The Trump Administration Is at War With Itself Over AI Regulation",
-    "link": "https://www.wired.com/story/the-white-house-is-at-war-with-itself-over-ai-regulation/",
-    "score": 70,
-    "reason": "High-level policy controversy; government dysfunction on major AI decisions"
+    "headline": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
+    "link": "https://www.dailycal.org/news/campus/academics/failing-grades-soar-as-professors-see-greater-ai-usage-dwindling-math-skills-in-uc-berkeley/article_16fad0bf-02cb-4b8c-8d88-888ffd9f8608.html",
+    "score": 73,
+    "reason": "Measurable negative impact; education sector; data-driven harm evidence"
   }
 ]
