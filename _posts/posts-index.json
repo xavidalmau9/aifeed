@@ -1,5 +1,24 @@
 [
   {
+    "id": "openai-anthropic-pledge-no-bioweapons-20260604",
+    "slug": "openai-anthropic-pledge-no-bioweapons",
+    "headline": "OpenAI and Anthropic Sign Landmark Pledge: AI Will Never Build Bioweapons",
+    "summary": "OpenAI and Anthropic sign a landmark pledge — committing their AI systems will never be weaponized for biological warfare.",
+    "body": "<p><strong>Two of the world's most influential AI companies just made a commitment that could reshape industry standards.</strong></p>\n<p>OpenAI and Anthropic have signed a letter pledging to implement safeguards preventing their AI systems from being weaponized for biological warfare. This represents a watershed moment in AI governance — not driven by regulatory mandate, but by corporate responsibility and foresight. As AI capabilities accelerate toward AGI-adjacent systems, the question of dual-use risks has moved from theoretical to urgent.</p>\n<p>The tech context here is critical. Both companies have invested heavily in alignment research and safety protocols. By publicly committing to bioweapon prevention, they're establishing a competitive advantage around trustworthiness while simultaneously raising the bar for their peers. It's a calculated move that demonstrates market value in ethical AI development.</p>\n<p>The strategic implications extend beyond these two companies. This letter creates a template for responsible disclosure and preemptive safety measures. It positions OpenAI and Anthropic as thought leaders in AI ethics — a narrative that influences everything from talent recruitment to government relations to venture capital allocation.</p>\n<p>Looking ahead, expect more sectoral safety agreements. As AI systems become integrated into critical infrastructure and biomedical research, the conversation shifts from \"should we prevent misuse?\" to \"how do we scale prevention?\" The real takeaway: proactive safety commitments are becoming table stakes for credibility in advanced AI development.</p>\n<p style=\"color:#8c8ca0;font-size:0.9em\">Source: Wired · <a href=\"https://www.wired.com/story/openai-anthropic-letter-ai-biological-weapons/\" target=\"_blank\" rel=\"noopener\" style=\"color:#a050ff\">wired.com</a></p>\n<p class=\"article-tags-inline\"><a href=\"index.html?tag=AIGovernance\" class=\"article-tag\" style=\"color:#a050ff\">#AIGovernance</a> <a href=\"index.html?tag=ResponsibleAI\" class=\"article-tag\" style=\"color:#a050ff\">#ResponsibleAI</a> <a href=\"index.html?tag=TechEthics\" class=\"article-tag\" style=\"color:#a050ff\">#TechEthics</a> <a href=\"index.html?tag=OpenAI\" class=\"article-tag\" style=\"color:#a050ff\">#OpenAI</a> <a href=\"index.html?tag=AIPolicy\" class=\"article-tag\" style=\"color:#a050ff\">#AIPolicy</a></p>",
+    "category": "Safety",
+    "hashtags": [
+      "AIGovernance",
+      "ResponsibleAI",
+      "TechEthics",
+      "OpenAI",
+      "AIPolicy"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_openai_anthropic_bioweapons_pledge_20260604.png",
+    "sourceUrl": "https://www.wired.com/story/openai-anthropic-letter-ai-biological-weapons/",
+    "publishedAt": "2026-06-04T09:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
     "id": "amazon-ai-search-invents-products-20260603",
     "slug": "amazon-ai-search-invents-products",
     "headline": "Amazon's Search Bar Will Invent AI-Generated Products You Can't Buy",
