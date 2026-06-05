@@ -1,5 +1,24 @@
 [
   {
+    "id": "google-chrome-routes-search-to-ai-20260605",
+    "slug": "google-chrome-routes-search-to-ai",
+    "headline": "Google Chrome Is Testing a Radical Shift: Skip Search, Go Straight to AI",
+    "summary": "Chrome is testing a radical shift — routing queries directly to AI instead of traditional search results. The search era may be ending.",
+    "body": "<p><strong>Google is reportedly testing a major shift in how Chrome handles search queries — routing them directly to AI instead of traditional search results.</strong></p>\n<p>This experimental feature, discovered in Chrome Canary, represents a significant pivot in Google's strategy to remain competitive in an AI-driven market. Companies like OpenAI have captured enormous user attention with ChatGPT and similar conversational AI tools, redirecting traffic away from traditional search engines. Google, which built its empire on the search results page, must adapt quickly or risk losing relevance.</p>\n<p>The strategic implications are profound. This move consolidates Google's control over the entire search-to-answer journey. Rather than users leaving Google's ecosystem to find information elsewhere, they stay within Chrome and get answers powered by Google's AI infrastructure. It's a vertical integration play that locks in user engagement.</p>\n<p>Beyond Google, this reflects a broader industry transformation. We're witnessing the end of the traditional search results paradigm and the rise of AI-first interfaces. Every major tech company is racing to embed AI into their core products — Microsoft with Bing, Apple with Siri, Amazon with Alexa. The competition isn't about better ranking algorithms anymore; it's about who owns the AI interface.</p>\n<p>The clear takeaway: AI integration into core products is no longer optional for tech giants — it's existential.</p>\n<p style=\"color:#8c8ca0;font-size:0.9em\">Source: Engadget · <a href=\"https://www.engadget.com/2188080/chrome-canary-reportedly-sending-search-straight-to-ai/\" target=\"_blank\" rel=\"noopener\" style=\"color:#a050ff\">engadget.com</a></p>\n<p class=\"article-tags-inline\"><a href=\"index.html?tag=GoogleAI\" class=\"article-tag\" style=\"color:#a050ff\">#GoogleAI</a> <a href=\"index.html?tag=SearchTechnology\" class=\"article-tag\" style=\"color:#a050ff\">#SearchTechnology</a> <a href=\"index.html?tag=ArtificialIntelligence\" class=\"article-tag\" style=\"color:#a050ff\">#ArtificialIntelligence</a> <a href=\"index.html?tag=TechStrategy\" class=\"article-tag\" style=\"color:#a050ff\">#TechStrategy</a> <a href=\"index.html?tag=FutureOfSearch\" class=\"article-tag\" style=\"color:#a050ff\">#FutureOfSearch</a></p>",
+    "category": "Tools",
+    "hashtags": [
+      "GoogleAI",
+      "SearchTechnology",
+      "ArtificialIntelligence",
+      "TechStrategy",
+      "FutureOfSearch"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_google_chrome_ai_search_20260605.png",
+    "sourceUrl": "https://www.engadget.com/2188080/chrome-canary-reportedly-sending-search-straight-to-ai/",
+    "publishedAt": "2026-06-05T09:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
     "id": "ai-flooding-courts-fake-lawsuits-20260604",
     "slug": "ai-flooding-courts-fake-lawsuits",
     "headline": "AI Is Flooding Courts With Fake Lawsuits — and the Legal System Is Cracking",
