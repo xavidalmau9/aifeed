@@ -1,5 +1,24 @@
 [
   {
+    "id": "google-spacex-xai-11b-compute-deal-20260606",
+    "slug": "google-spacex-xai-11b-compute-deal",
+    "headline": "Google to Pay SpaceX $11B a Year for xAI Data Center Access",
+    "summary": "Google commits $920M/month to SpaceX's xAI data centers — the clearest signal yet that compute is the new currency of AI power.",
+    "body": "<p><strong>Google will pay SpaceX $920 million per month to access xAI's data centers — a staggering $11+ billion annual commitment that reveals the true scale of the AI infrastructure arms race.</strong></p>\n<p>This landmark deal between Google and SpaceX represents a fundamental shift in how major technology companies approach AI compute resources. Rather than building everything in-house, Google is strategically leveraging SpaceX's infrastructure partnership with xAI to support Gemini operations at scale. The monthly payment structure underscores the massive ongoing costs required to power enterprise-grade AI systems.</p>\n<p>From a competitive standpoint, this move demonstrates Google's willingness to diversify its compute sources beyond traditional data center operators. As AI demand continues to explode, conventional infrastructure simply cannot keep pace. By tapping into SpaceX's resources, Google secures both capacity and flexibility — critical advantages in a market where compute availability directly correlates with model capability.</p>\n<p>The broader AI industry implication is significant: we're witnessing a consolidation of power around those who control compute resources. SpaceX, xAI, and similar infrastructure players are becoming as strategically important as the AI developers themselves.</p>\n<p>The real story here is straightforward: in AI, compute is currency, and companies are spending billions to ensure they don't get left behind.</p>\n<p style=\"color:#8c8ca0;font-size:0.9em\">Source: Engadget · <a href=\"https://www.engadget.com/2188862/google-spacex-xai-data-center-deal-gemini/\" target=\"_blank\" rel=\"noopener\" style=\"color:#a050ff\">engadget.com</a></p>\n<p class=\"article-tags-inline\"><a href=\"index.html?tag=AI\" class=\"article-tag\" style=\"color:#a050ff\">#AI</a> <a href=\"index.html?tag=Infrastructure\" class=\"article-tag\" style=\"color:#a050ff\">#Infrastructure</a> <a href=\"index.html?tag=CloudComputing\" class=\"article-tag\" style=\"color:#a050ff\">#CloudComputing</a> <a href=\"index.html?tag=SpaceX\" class=\"article-tag\" style=\"color:#a050ff\">#SpaceX</a> <a href=\"index.html?tag=TechStrategy\" class=\"article-tag\" style=\"color:#a050ff\">#TechStrategy</a></p>",
+    "category": "Infrastructure",
+    "hashtags": [
+      "AI",
+      "Infrastructure",
+      "CloudComputing",
+      "SpaceX",
+      "TechStrategy"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_google_spacex_xai_11b_20260606.png",
+    "sourceUrl": "https://www.engadget.com/2188862/google-spacex-xai-data-center-deal-gemini/",
+    "publishedAt": "2026-06-06T09:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
     "id": "google-chrome-routes-search-to-ai-20260605",
     "slug": "google-chrome-routes-search-to-ai",
     "headline": "Google Chrome Is Testing a Radical Shift: Skip Search, Go Straight to AI",
