@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Google to pay SpaceX $920 million a month for compute capacity at xAI data centers",
-    "link": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
+    "headline": "Google will pay SpaceX $920 million a month to use xAI's data centers",
+    "link": "https://www.engadget.com/2188862/google-spacex-xai-data-center-deal-gemini/",
     "score": 96,
-    "reason": "Massive deal with concrete numbers ($920M/month), major companies involved, real business commitment"
+    "reason": "Massive contract number ($920M/month), major companies involved, concrete business deal"
   },
   {
     "rank": 2,
-    "headline": "TSMC struggles to keep up with AI demand: 'We can only support so much'",
-    "link": "https://www.theverge.com/tech/943066/tsmc-ai-demand-struggles",
+    "headline": "The Tech Download: Anthropic’s IPO sets up first big test of AI boom valuations",
+    "link": "https://www.cnbc.com/2026/06/05/tech-download-anthropic-ipo-ai-valuations.html",
     "score": 94,
-    "reason": "Critical infrastructure bottleneck, concrete constraint on AI scaling, major supplier admission"
+    "reason": "Major IPO launch, tests AI company valuation thesis, significant market event"
   },
   {
     "rank": 3,
-    "headline": "New York lawmakers pass one-year ban on new data centers",
-    "link": "https://www.theverge.com/policy/944041/new-york-data-center-moratorium",
-    "score": 92,
-    "reason": "Regulatory action with real impact, legislative launch, addresses AI infrastructure concerns"
+    "headline": "Kevin O’Leary agrees to downsize massive Utah data center",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/943234/kevin-oleary-agrees-to-downsize-massive-utah-data-center",
+    "score": 88,
+    "reason": "Concrete action on AI infrastructure scaling, notable personality involved, regulatory/practical constraint"
   },
   {
     "rank": 4,
-    "headline": "The University of Cambridge says it successfully tested a vaccine with an AI-designed antigen",
-    "link": "https://www.engadget.com/2188241/university-of-cambridge-successfully-tests-vaccine-with-ai-designed-antigen/",
-    "score": 90,
-    "reason": "Concrete scientific achievement, successful test result, major milestone in AI application"
+    "headline": "Amazon unveils latest warehouse robot as tech giants continue AI layoffs",
+    "link": "https://www.cnbc.com/2026/06/05/amazon-robot-proteus-warehouse-ai-layoffs.html",
+    "score": 86,
+    "reason": "Product launch + employment controversy, demonstrates AI replacing human jobs at scale"
   },
   {
     "rank": 5,
-    "headline": "OpenAI will let the US government review its AI models before release",
-    "link": "https://www.engadget.com/2188124/openai-will-let-us-government-review-its-models/",
-    "score": 88,
-    "reason": "Major policy shift, government oversight launch, significant governance development"
+    "headline": "AI is designing OpenAI&apos;s next model in a sign of &apos;superintelligence&apos;: SoftBank&apos;s Masayoshi Son to CNBC",
+    "link": "https://www.cnbc.com/2026/06/05/softbank-masayoshi-son-openai-model-super-intelligence.html",
+    "score": 84,
+    "reason": "Significant capability claim, major investor commentary, recursive AI development milestone"
   },
   {
     "rank": 6,
-    "headline": "NVIDIA's RTX Spark chip could give Windows its true Apple Silicon moment",
-    "link": "https://www.engadget.com/2187889/nvidia-rtx-spark-chip-could-give-windows-its-true-apple-silicon-moment/",
-    "score": 86,
-    "reason": "Hardware launch announcement, competitive positioning, major PC market implications"
+    "headline": "AI leaders call for tougher protections against AI-aided bioweapons",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/942956/ai-biological-weapons-open-letter-congress",
+    "score": 82,
+    "reason": "Existential risk controversy, organized industry statement, biosecurity concern"
   },
   {
     "rank": 7,
-    "headline": "Amazon develops a warehouse robot that workers can speak to",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/942884/amazon-next-generation-warehouse-robot-proteus",
-    "score": 84,
-    "reason": "Product launch, tangible automation implementation, real-world AI deployment"
+    "headline": "OpenAI says it will comply with Trump&apos;s order requiring AI model reviews before release",
+    "link": "https://www.cnbc.com/2026/06/05/openai-trump-ai-model-review-order.html",
+    "score": 80,
+    "reason": "Regulatory compliance announcement, political controversy, concrete policy impact"
   },
   {
     "rank": 8,
-    "headline": "OpenAI rolls out a Lockdown Mode for extra protection against prompt injection attacks",
-    "link": "https://www.engadget.com/2188537/openai-rolls-out-a-lockdown-mode-for-extra-protection-against-prompt-injection-attacks/",
-    "score": 82,
-    "reason": "Feature launch addressing security vulnerability, real implementation of safety measure"
+    "headline": "Meta&apos;s stock sinks on report company could raise tens of billions of dollars to fund AI push",
+    "link": "https://www.cnbc.com/2026/06/05/meta-stock-sinks-on-report-company-could-raise-tens-of-billions-for-ai.html",
+    "score": 78,
+    "reason": "Massive funding scale, stock market impact, major capex commitment"
   },
   {
     "rank": 9,
-    "headline": "Anthropic warns AI could soon help build its own successors",
-    "link": "https://www.axios.com/2026/06/04/anthropic-warns-ai-build-successors",
-    "score": 80,
-    "reason": "Significant AI capability prediction, major company warning, autonomous development concern"
+    "headline": "China poaches more AI talent from the U.S. as it eyes the next &apos;super-app&apos;",
+    "link": "https://www.cnbc.com/2026/06/05/china-may-move-toward-us-path-on-ai-as-firms-poach-employees.html",
+    "score": 76,
+    "reason": "Geopolitical competition, brain drain concern, strategic AI race"
   },
   {
     "rank": 10,
-    "headline": "Model routing is a fix for AI overspending. That&apos;s a problem for OpenAI and Anthropic",
-    "link": "https://www.cnbc.com/2026/06/05/model-routing-on-ai-is-a-problem-for-openai-and-anthropic.html",
-    "score": 78,
-    "reason": "Business model controversy, financial viability concerns, competitive pressure revelation"
+    "headline": "S&#x26;P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic",
+    "link": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/",
+    "score": 74,
+    "reason": "Major index rejection, affects AI company legitimacy, financial market controversy"
   }
 ]
