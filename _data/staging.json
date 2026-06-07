@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "New York lawmakers pass one-year ban on new data centers",
-    "link": "https://www.theverge.com/policy/944041/new-york-data-center-moratorium",
-    "score": 92,
-    "reason": "Major regulatory action with concrete numbers and real-world impact; regulatory controversy"
+    "headline": "Google will pay SpaceX $920 million a month to use xAI's data centers",
+    "link": "https://www.engadget.com/2188862/google-spacex-xai-data-center-deal-gemini/",
+    "score": 96,
+    "reason": "Major financial commitment ($11B annually), concrete infrastructure deal, multi-company AI investment"
   },
   {
     "rank": 2,
-    "headline": "Google to pay SpaceX $920 million a month for compute capacity at xAI data centers",
-    "link": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
-    "score": 89,
-    "reason": "Massive deal ($920M/month), cross-company partnership, concrete financial numbers"
+    "headline": "AI is designing OpenAI&apos;s next model in a sign of &apos;superintelligence&apos;: SoftBank&apos;s Masayoshi Son to CNBC",
+    "link": "https://www.cnbc.com/2026/06/05/softbank-masayoshi-son-openai-model-super-intelligence.html",
+    "score": 92,
+    "reason": "Novel AI capability claim, major industry figure statement, significant technical milestone"
   },
   {
     "rank": 3,
-    "headline": "Meta made its own AI-generated clickbait news feed",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/944235/meta-app-ai-clickbait-articles",
-    "score": 87,
-    "reason": "Major company controversy with documented product launch and ethical implications"
+    "headline": "Apple&apos;s WWDC: Tim Cook&apos;s AI legacy at stake in his final developer conference as CEO",
+    "link": "https://www.cnbc.com/2026/06/05/apple-wwdc-tim-cook-ai-siri-ternus.html",
+    "score": 88,
+    "reason": "Major Apple AI announcements expected, leadership transition context, significant platform implications"
   },
   {
     "rank": 4,
-    "headline": "Meta confirms 1000s of Instagram accounts were hacked by abusing its AI chatbot",
-    "link": "https://this.weekinsecurity.com/meta-confirms-thousands-of-instagram-accounts-were-hacked-by-abusing-its-ai-chatbot/",
-    "score": 86,
-    "reason": "Security breach with scale (thousands), confirmed incident, AI safety vulnerability"
+    "headline": "This AI startup says it can tell if a script will make a hit film",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/943531/ai-script-quilty-simon-horsman-daniel-wood",
+    "score": 78,
+    "reason": "Novel AI application, contentious claim in creative industry, startup launch/capability demonstration"
   },
   {
     "rank": 5,
-    "headline": "The Trump administration is reportedly in talks about taking a stake in OpenAI",
-    "link": "https://www.engadget.com/2188942/the-trump-administration-is-reportedly-in-talks-about-taking-a-stake-in-openai/",
-    "score": 84,
-    "reason": "High-stakes government involvement, major company, significant policy implications"
+    "headline": "Amazon unveils latest warehouse robot as tech giants continue AI layoffs",
+    "link": "https://www.cnbc.com/2026/06/05/amazon-robot-proteus-warehouse-ai-layoffs.html",
+    "score": 76,
+    "reason": "Concrete product launch, contradicts industry narrative with layoffs, measurable capability advancement"
   },
   {
     "rank": 6,
-    "headline": "Trump's latest memo puts 'most advanced AI in the world' into the military's hands",
-    "link": "https://www.engadget.com/2188929/trump-latest-memo-puts-most-advanced-ai-in-the-world-into-military-hands/",
-    "score": 83,
-    "reason": "Concrete policy action with military/national security implications"
+    "headline": "I compared ChatGPT and Gemini's AI image generation - and a single prompt tweak made a big difference",
+    "link": "https://www.zdnet.com/article/beginner-ai-image-prompt-tip-chatgpt-gemini/",
+    "score": 72,
+    "reason": "Head-to-head capability comparison, quantifiable performance difference between major AI systems"
   },
   {
     "rank": 7,
-    "headline": "How C3 AI agents will automate predictive maintenance for Shell",
-    "link": "https://www.artificialintelligence-news.com/news/how-c3-ai-agents-will-automate-predictive-maintenance-for-shell/",
-    "score": 78,
-    "reason": "Enterprise AI launch with major industrial client, practical application"
+    "headline": "Meta Ray-Ban glasses may soon identify faces using AI",
+    "link": "https://9to5google.com/2026/06/05/meta-ray-ban-glasses-may-soon-recognize-faces/",
+    "score": 70,
+    "reason": "Privacy-sensitive AI feature, major consumer product implication, controversial capability"
   },
   {
     "rank": 8,
-    "headline": "Nvidia’s AI Hardware Comes to Windows in RTX Spark PCs",
-    "link": "https://spectrum.ieee.org/nvidia-rtx-spark-windows-pc",
-    "score": 77,
-    "reason": "Major hardware launch expanding AI accessibility to Windows platform"
+    "headline": "Abel goes his own way with new Berkshire investments, including billions for AI",
+    "link": "https://www.cnbc.com/2026/06/06/abel-goes-his-own-way-with-new-berkshire-investments-including-billions-for-ai.html",
+    "score": 68,
+    "reason": "Major capital allocation ($billions), significant investor move, Berkshire's AI strategy shift"
   },
   {
     "rank": 9,
-    "headline": "Model routing is a fix for AI overspending. That&apos;s a problem for OpenAI and Anthropic",
-    "link": "https://www.cnbc.com/2026/06/05/model-routing-on-ai-is-a-problem-for-openai-and-anthropic.html",
-    "score": 75,
-    "reason": "Economic trend affecting major AI companies, cost structure revelation"
+    "headline": "Kevin O’Leary agrees to downsize massive Utah data center",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/943234/kevin-oleary-agrees-to-downsize-massive-utah-data-center",
+    "score": 65,
+    "reason": "Infrastructure reversal, scale reduction decision, AI compute capacity impact"
   },
   {
     "rank": 10,
-    "headline": "The mayor of Shelbyville, Indiana, says only people who live in ‘shitty houses’ oppose data center",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/944984/shelbyville-indiana-mayor-shitty-houses-data-center",
-    "score": 73,
-    "reason": "Local controversy with colorful quote, reflects broader data center resistance movement"
+    "headline": "Revenge of the AI bubble",
+    "link": "https://www.axios.com/2026/06/06/ai-bubble-economy-growth",
+    "score": 62,
+    "reason": "Market analysis of AI valuations, industry-wide criticism, sustainability concerns"
   }
 ]
