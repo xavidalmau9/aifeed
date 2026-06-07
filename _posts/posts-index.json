@@ -1,5 +1,24 @@
 [
   {
+    "id": "meta-rayban-facial-recognition-glasses-20260607",
+    "slug": "meta-rayban-facial-recognition-glasses",
+    "headline": "Your Glasses Now Know Your Face: Meta Adds Facial Recognition to Ray-Ban",
+    "summary": "Meta is embedding real-time facial recognition into Ray-Ban smart glasses — blurring the line between wearable tech and AI surveillance.",
+    "body": "<p><strong>Meta is preparing to integrate real-time facial recognition AI into Ray-Ban smart glasses — marking a significant leap in augmented reality wearables.</strong></p>\n<p>The Ray-Ban glasses represent Meta's ambitious push into the spatial computing market. By embedding facial recognition directly into everyday eyewear, the company is attempting to create a seamless interface between digital information and physical reality. This isn't merely a feature update — it's a fundamental shift in how consumers might interact with AI-powered systems throughout their daily lives.</p>\n<p>From a strategic perspective, this positions Meta as a leader in the wearables AI space, potentially competing with other tech giants investing heavily in AR hardware. The ability to instantly identify individuals and surface relevant information creates new use cases for enterprise, retail, and social applications. However, this also raises the stakes for regulatory scrutiny and consumer acceptance.</p>\n<p>The broader AI industry is moving toward embedding intelligence directly into consumer devices — a transition from cloud-based AI services to edge AI capabilities, where processing happens locally on your glasses rather than in distant data centers. This distributed approach enables faster responses and raises new privacy considerations.</p>\n<p>The real question isn't whether this technology will emerge, but how society will choose to govern its use.</p>\n<p style=\"color:#8c8ca0;font-size:0.9em\">Source: 9to5Google · <a href=\"https://9to5google.com/2026/06/05/meta-ray-ban-glasses-may-soon-recognize-faces/\" target=\"_blank\" rel=\"noopener\" style=\"color:#a050ff\">9to5google.com</a></p>\n<p class=\"article-tags-inline\"><a href=\"index.html?tag=ArtificialIntelligence\" class=\"article-tag\" style=\"color:#a050ff\">#ArtificialIntelligence</a> <a href=\"index.html?tag=WearableTechnology\" class=\"article-tag\" style=\"color:#a050ff\">#WearableTechnology</a> <a href=\"index.html?tag=FacialRecognition\" class=\"article-tag\" style=\"color:#a050ff\">#FacialRecognition</a> <a href=\"index.html?tag=AR\" class=\"article-tag\" style=\"color:#a050ff\">#AR</a> <a href=\"index.html?tag=TechInnovation\" class=\"article-tag\" style=\"color:#a050ff\">#TechInnovation</a></p>",
+    "category": "Products",
+    "hashtags": [
+      "ArtificialIntelligence",
+      "WearableTechnology",
+      "FacialRecognition",
+      "AR",
+      "TechInnovation"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_meta_rayban_facial_recognition_20260607.png",
+    "sourceUrl": "https://9to5google.com/2026/06/05/meta-ray-ban-glasses-may-soon-recognize-faces/",
+    "publishedAt": "2026-06-07T14:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
     "id": "google-spacex-xai-11b-compute-deal-20260606",
     "slug": "google-spacex-xai-11b-compute-deal",
     "headline": "Google to Pay SpaceX $11B a Year for xAI Data Center Access",
