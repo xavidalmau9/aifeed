@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Google will pay SpaceX $920 million a month to use xAI's data centers",
-    "link": "https://www.engadget.com/2188862/google-spacex-xai-data-center-deal-gemini/",
+    "headline": "Google to pay SpaceX $920 million a month for compute capacity at xAI data centers",
+    "link": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
     "score": 96,
-    "reason": "Major financial commitment ($11B annually), concrete infrastructure deal, multi-company AI investment"
+    "reason": "Massive deal ($11B+ annually), concrete business outcome, major AI infrastructure investment"
   },
   {
     "rank": 2,
-    "headline": "AI is designing OpenAI&apos;s next model in a sign of &apos;superintelligence&apos;: SoftBank&apos;s Masayoshi Son to CNBC",
-    "link": "https://www.cnbc.com/2026/06/05/softbank-masayoshi-son-openai-model-super-intelligence.html",
+    "headline": "The Trump administration is reportedly in talks about taking a stake in OpenAI",
+    "link": "https://www.engadget.com/2188942/the-trump-administration-is-reportedly-in-talks-about-taking-a-stake-in-openai/",
     "score": 92,
-    "reason": "Novel AI capability claim, major industry figure statement, significant technical milestone"
+    "reason": "Major controversy involving government/AI company relationship, significant political implications"
   },
   {
     "rank": 3,
-    "headline": "Apple&apos;s WWDC: Tim Cook&apos;s AI legacy at stake in his final developer conference as CEO",
-    "link": "https://www.cnbc.com/2026/06/05/apple-wwdc-tim-cook-ai-siri-ternus.html",
-    "score": 88,
-    "reason": "Major Apple AI announcements expected, leadership transition context, significant platform implications"
+    "headline": "Trump's latest memo puts 'most advanced AI in the world' into the military's hands",
+    "link": "https://www.engadget.com/2188929/trump-latest-memo-puts-most-advanced-ai-in-the-world-into-military-hands/",
+    "score": 91,
+    "reason": "Concrete policy action with major implications, military AI deployment"
   },
   {
     "rank": 4,
-    "headline": "This AI startup says it can tell if a script will make a hit film",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/943531/ai-script-quilty-simon-horsman-daniel-wood",
-    "score": 78,
-    "reason": "Novel AI application, contentious claim in creative industry, startup launch/capability demonstration"
+    "headline": "Nvidia’s AI Hardware Comes to Windows in RTX Spark PCs",
+    "link": "https://spectrum.ieee.org/nvidia-rtx-spark-windows-pc",
+    "score": 89,
+    "reason": "Nvidia product launch expanding AI hardware availability to Windows ecosystem"
   },
   {
     "rank": 5,
-    "headline": "Amazon unveils latest warehouse robot as tech giants continue AI layoffs",
-    "link": "https://www.cnbc.com/2026/06/05/amazon-robot-proteus-warehouse-ai-layoffs.html",
-    "score": 76,
-    "reason": "Concrete product launch, contradicts industry narrative with layoffs, measurable capability advancement"
+    "headline": "OpenAI reportedly has a major ChatGPT overhaul in store",
+    "link": "https://www.engadget.com/2189038/openai-reportedly-has-a-major-chatgpt-overhaul-in-store/",
+    "score": 78,
+    "reason": "Major product update from leading AI company, though speculative"
   },
   {
     "rank": 6,
-    "headline": "I compared ChatGPT and Gemini's AI image generation - and a single prompt tweak made a big difference",
-    "link": "https://www.zdnet.com/article/beginner-ai-image-prompt-tip-chatgpt-gemini/",
-    "score": 72,
-    "reason": "Head-to-head capability comparison, quantifiable performance difference between major AI systems"
+    "headline": "OpenAI readies ‘superapp’ pivot ahead of planned IPO, FT reports",
+    "link": "https://fortune.com/2026/06/07/openai-superapp-pivot-chatbot-agentic-ai-ipo-codex-chatgpt/",
+    "score": 87,
+    "reason": "Strategic pivot and IPO announcement from major AI company, concrete business development"
   },
   {
     "rank": 7,
-    "headline": "Meta Ray-Ban glasses may soon identify faces using AI",
-    "link": "https://9to5google.com/2026/06/05/meta-ray-ban-glasses-may-soon-recognize-faces/",
-    "score": 70,
-    "reason": "Privacy-sensitive AI feature, major consumer product implication, controversial capability"
+    "headline": "AstraZeneca CEO says AI is reshaping drug development — and helping boost the odds of success",
+    "link": "https://www.cnbc.com/2026/06/05/astrazeneca-ceo-says-ai-is-reshaping-drug-development-and-helping-boost-the-odds-of-success.html",
+    "score": 81,
+    "reason": "AI application in pharma with tangible outcomes, pharma industry integration"
   },
   {
     "rank": 8,
-    "headline": "Abel goes his own way with new Berkshire investments, including billions for AI",
-    "link": "https://www.cnbc.com/2026/06/06/abel-goes-his-own-way-with-new-berkshire-investments-including-billions-for-ai.html",
-    "score": 68,
-    "reason": "Major capital allocation ($billions), significant investor move, Berkshire's AI strategy shift"
+    "headline": "Crypto-Funded Chinese Peptide Labs Are Booming",
+    "link": "https://www.wired.com/story/security-news-this-week-crypto-funded-chinese-peptide-labs-are-booming/",
+    "score": 85,
+    "reason": "Big numbers, emerging AI biotech trend, international AI development"
   },
   {
     "rank": 9,
-    "headline": "Kevin O’Leary agrees to downsize massive Utah data center",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/943234/kevin-oleary-agrees-to-downsize-massive-utah-data-center",
-    "score": 65,
-    "reason": "Infrastructure reversal, scale reduction decision, AI compute capacity impact"
+    "headline": "Gemini overlay rolls out Dynamic Color, integrates ‘Screen content’ [U]",
+    "link": "https://9to5google.com/2026/06/06/gemini-overlay-dynamic-color/",
+    "score": 82,
+    "reason": "Google product feature launch, concrete Gemini capability expansion"
   },
   {
     "rank": 10,
-    "headline": "Revenge of the AI bubble",
-    "link": "https://www.axios.com/2026/06/06/ai-bubble-economy-growth",
-    "score": 62,
-    "reason": "Market analysis of AI valuations, industry-wide criticism, sustainability concerns"
+    "headline": "Banks lay groundwork for mass workforce cuts as AI takes hold",
+    "link": "https://fortune.com/2026/06/07/banks-mass-workforce-cuts-ai-entry-level-jobs-junior-analysts/",
+    "score": 80,
+    "reason": "Major industry disruption, significant employment impact from AI adoption"
   }
 ]
