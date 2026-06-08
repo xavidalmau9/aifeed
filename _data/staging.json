@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Google to pay SpaceX $920 million a month for compute capacity at xAI data centers",
-    "link": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
-    "score": 96,
-    "reason": "Massive deal ($11B+ annually), concrete business outcome, major AI infrastructure investment"
+    "headline": "DeepSeek V4 Pro beats GPT-5.5 Pro on precision",
+    "link": "https://runtimewire.com/article/deepseek-v4-pro-beats-gpt-5-5-pro-on-precision",
+    "score": 92,
+    "reason": "Major AI model benchmark competition with concrete performance claims; DeepSeek vs OpenAI rivalry"
   },
   {
     "rank": 2,
-    "headline": "The Trump administration is reportedly in talks about taking a stake in OpenAI",
-    "link": "https://www.engadget.com/2188942/the-trump-administration-is-reportedly-in-talks-about-taking-a-stake-in-openai/",
-    "score": 92,
-    "reason": "Major controversy involving government/AI company relationship, significant political implications"
+    "headline": "The mayor of Shelbyville, Indiana, says only people who live in ‘shitty houses’ oppose data center",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/944984/shelbyville-indiana-mayor-shitty-houses-data-center",
+    "score": 88,
+    "reason": "High-profile AI infrastructure controversy with direct quote and political conflict"
   },
   {
     "rank": 3,
-    "headline": "Trump's latest memo puts 'most advanced AI in the world' into the military's hands",
-    "link": "https://www.engadget.com/2188929/trump-latest-memo-puts-most-advanced-ai-in-the-world-into-military-hands/",
-    "score": 91,
-    "reason": "Concrete policy action with major implications, military AI deployment"
+    "headline": "Weis Markets adds Instacart AI-powered shopping carts to stores",
+    "link": "https://www.artificialintelligence-news.com/news/weis-markets-instacart-ai-powered-shopping-caper-carts/",
+    "score": 82,
+    "reason": "Retail AI deployment launch with concrete implementation; major customer addition"
   },
   {
     "rank": 4,
-    "headline": "Nvidia’s AI Hardware Comes to Windows in RTX Spark PCs",
-    "link": "https://spectrum.ieee.org/nvidia-rtx-spark-windows-pc",
-    "score": 89,
-    "reason": "Nvidia product launch expanding AI hardware availability to Windows ecosystem"
+    "headline": "I tried the Surface Laptop Ultra at Computex, and it's clear: Microsoft means business",
+    "link": "https://www.zdnet.com/article/hands-on-with-the-microsoft-surface-ultra/",
+    "score": 78,
+    "reason": "Major Microsoft hardware launch announcement at major tech event"
   },
   {
     "rank": 5,
-    "headline": "OpenAI reportedly has a major ChatGPT overhaul in store",
-    "link": "https://www.engadget.com/2189038/openai-reportedly-has-a-major-chatgpt-overhaul-in-store/",
-    "score": 78,
-    "reason": "Major product update from leading AI company, though speculative"
+    "headline": "Why Lightspeed and Wiz’s Assaf Rappaport bet $37 million on an AI-powered cyberattacker",
+    "link": "https://fortune.com/2026/06/08/lightspeed-wiz-assaf-rappaport-37-million-ai-powered-cyberattacker-a/",
+    "score": 76,
+    "reason": "Significant funding round ($37M) for AI security startup; concrete investment announcement"
   },
   {
     "rank": 6,
-    "headline": "OpenAI readies ‘superapp’ pivot ahead of planned IPO, FT reports",
-    "link": "https://fortune.com/2026/06/07/openai-superapp-pivot-chatbot-agentic-ai-ipo-codex-chatgpt/",
-    "score": 87,
-    "reason": "Strategic pivot and IPO announcement from major AI company, concrete business development"
+    "headline": "Tech leaders are moving beyond AI hype: Here's what's actually working",
+    "link": "https://fortune.com/2026/06/08/tech-leaders-moving-beyond-ai-hype-whats-working-mars-orange-reckitt-saint-gobain/",
+    "score": 74,
+    "reason": "Market shift analysis from hype to practical AI applications; industry-wide trend"
   },
   {
     "rank": 7,
-    "headline": "AstraZeneca CEO says AI is reshaping drug development — and helping boost the odds of success",
-    "link": "https://www.cnbc.com/2026/06/05/astrazeneca-ceo-says-ai-is-reshaping-drug-development-and-helping-boost-the-odds-of-success.html",
-    "score": 81,
-    "reason": "AI application in pharma with tangible outcomes, pharma industry integration"
+    "headline": "Tech stock sell-off accelerates; SoftBank drops 6% as investors sour on AI-linked names",
+    "link": "https://www.cnbc.com/2026/06/08/softbank-samsung-tech-ai-stocks-asia-fall.html",
+    "score": 71,
+    "reason": "Market impact with specific numbers; AI investment portfolio correction"
   },
   {
     "rank": 8,
-    "headline": "Crypto-Funded Chinese Peptide Labs Are Booming",
-    "link": "https://www.wired.com/story/security-news-this-week-crypto-funded-chinese-peptide-labs-are-booming/",
-    "score": 85,
-    "reason": "Big numbers, emerging AI biotech trend, international AI development"
+    "headline": "The business of AI is facing 4 harsh realities",
+    "link": "https://www.axios.com/2026/06/07/ai-business-technology-stocks-broadcom",
+    "score": 68,
+    "reason": "Critical analysis of AI industry challenges; business viability concerns"
   },
   {
     "rank": 9,
-    "headline": "Gemini overlay rolls out Dynamic Color, integrates ‘Screen content’ [U]",
-    "link": "https://9to5google.com/2026/06/06/gemini-overlay-dynamic-color/",
-    "score": 82,
-    "reason": "Google product feature launch, concrete Gemini capability expansion"
+    "headline": "Momfluencers Are Pitching AI as a Better ‘Coparent’ Than Men",
+    "link": "https://www.wired.com/story/momfluencers-are-pitching-ai-as-a-better-coparent-than-men/",
+    "score": 65,
+    "reason": "Social trend controversy; cultural impact of AI adoption"
   },
   {
     "rank": 10,
-    "headline": "Banks lay groundwork for mass workforce cuts as AI takes hold",
-    "link": "https://fortune.com/2026/06/07/banks-mass-workforce-cuts-ai-entry-level-jobs-junior-analysts/",
-    "score": 80,
-    "reason": "Major industry disruption, significant employment impact from AI adoption"
+    "headline": "AI is masking America's \"post-literate\" workforce",
+    "link": "https://www.axios.com/2026/06/08/ai-america-literacy",
+    "score": 62,
+    "reason": "Societal impact analysis; workforce implications of AI adoption"
   }
 ]
