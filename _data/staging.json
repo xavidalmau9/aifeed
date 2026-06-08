@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "DeepSeek V4 Pro beats GPT-5.5 Pro on precision",
-    "link": "https://runtimewire.com/article/deepseek-v4-pro-beats-gpt-5-5-pro-on-precision",
+    "headline": "Meta Deletes Face-Recognition System From Its Smart Glasses App After WIRED Report",
+    "link": "https://www.wired.com/story/meta-removes-face-recognition-code-meta-ai-app-smart-glasses/",
     "score": 92,
-    "reason": "Major AI model benchmark competition with concrete performance claims; DeepSeek vs OpenAI rivalry"
+    "reason": "Major controversy with concrete action; significant privacy policy reversal"
   },
   {
     "rank": 2,
-    "headline": "The mayor of Shelbyville, Indiana, says only people who live in ‘shitty houses’ oppose data center",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/944984/shelbyville-indiana-mayor-shitty-houses-data-center",
-    "score": 88,
-    "reason": "High-profile AI infrastructure controversy with direct quote and political conflict"
+    "headline": "Apple announces Siri AI and its next generation of Apple Intelligence",
+    "link": "https://www.theverge.com/tech/942416/apple-siri-ai-update-wwdc",
+    "score": 90,
+    "reason": "Major product launch from tier-1 company; significant AI capability expansion"
   },
   {
     "rank": 3,
-    "headline": "Weis Markets adds Instacart AI-powered shopping carts to stores",
-    "link": "https://www.artificialintelligence-news.com/news/weis-markets-instacart-ai-powered-shopping-caper-carts/",
-    "score": 82,
-    "reason": "Retail AI deployment launch with concrete implementation; major customer addition"
+    "headline": "The UK Is Betting on a Billion-Dollar AI Supercomputer to Kick Its Addiction to US Tech",
+    "link": "https://www.wired.com/story/uk-supercomputer-investment-ai-homegrown-semiconductor/",
+    "score": 88,
+    "reason": "Big number ($1B), government-level AI infrastructure investment, major geopolitical move"
   },
   {
     "rank": 4,
-    "headline": "I tried the Surface Laptop Ultra at Computex, and it's clear: Microsoft means business",
-    "link": "https://www.zdnet.com/article/hands-on-with-the-microsoft-surface-ultra/",
-    "score": 78,
-    "reason": "Major Microsoft hardware launch announcement at major tech event"
+    "headline": "Aviva deploys AI to stop £230M in sophisticated insurance fraud",
+    "link": "https://www.artificialintelligence-news.com/news/aviva-deploys-ai-stop-230m-sophisticated-insurance-fraud/",
+    "score": 85,
+    "reason": "Concrete, quantified impact; £230M fraud prevention demonstrates real-world value"
   },
   {
     "rank": 5,
-    "headline": "Why Lightspeed and Wiz’s Assaf Rappaport bet $37 million on an AI-powered cyberattacker",
-    "link": "https://fortune.com/2026/06/08/lightspeed-wiz-assaf-rappaport-37-million-ai-powered-cyberattacker-a/",
-    "score": 76,
-    "reason": "Significant funding round ($37M) for AI security startup; concrete investment announcement"
+    "headline": "NotebookLM's Gemini 3.5 upgrade adds a cloud computer and help finding sources",
+    "link": "https://www.theverge.com/tech/944325/google-notebooklm-ai-gemini-update",
+    "score": 82,
+    "reason": "Major feature launch with new capabilities; Google product advancement"
   },
   {
     "rank": 6,
-    "headline": "Tech leaders are moving beyond AI hype: Here's what's actually working",
-    "link": "https://fortune.com/2026/06/08/tech-leaders-moving-beyond-ai-hype-whats-working-mars-orange-reckitt-saint-gobain/",
-    "score": 74,
-    "reason": "Market shift analysis from hype to practical AI applications; industry-wide trend"
+    "headline": "ChatGPT reportedly prepares major redesign focused on agents as 'chat is dead'",
+    "link": "https://9to5google.com/2026/06/08/chatgpt-redesign-report/",
+    "score": 80,
+    "reason": "Major strategic shift from OpenAI; significant product direction change"
   },
   {
     "rank": 7,
-    "headline": "Tech stock sell-off accelerates; SoftBank drops 6% as investors sour on AI-linked names",
-    "link": "https://www.cnbc.com/2026/06/08/softbank-samsung-tech-ai-stocks-asia-fall.html",
-    "score": 71,
-    "reason": "Market impact with specific numbers; AI investment portfolio correction"
+    "headline": "ChatGPT's new memory upgrade is powerful - and could poison every answer it gives you",
+    "link": "https://www.zdnet.com/article/chatgpts-new-memory-upgrade-is-powerful-and-could-poison-every-answer-it-gives-you/",
+    "score": 78,
+    "reason": "Controversy around new feature; raises substantive concerns about AI reliability"
   },
   {
     "rank": 8,
-    "headline": "The business of AI is facing 4 harsh realities",
-    "link": "https://www.axios.com/2026/06/07/ai-business-technology-stocks-broadcom",
-    "score": 68,
-    "reason": "Critical analysis of AI industry challenges; business viability concerns"
+    "headline": "Anthropic says Mythos can turn software patches into exploits in minutes",
+    "link": "https://www.axios.com/2026/06/08/exclusive-anthropics-mythos-can-exploit-new-flaws-in-hours",
+    "score": 76,
+    "reason": "Security vulnerability disclosed; significant AI safety/capability concern"
   },
   {
     "rank": 9,
-    "headline": "Momfluencers Are Pitching AI as a Better ‘Coparent’ Than Men",
-    "link": "https://www.wired.com/story/momfluencers-are-pitching-ai-as-a-better-coparent-than-men/",
-    "score": 65,
-    "reason": "Social trend controversy; cultural impact of AI adoption"
+    "headline": "Siri AI for iPhones and iPads will be delayed indefinitely in the EU",
+    "link": "https://www.engadget.com/2189932/siri-ai-for-iphones-and-ipads-will-be-delayed-indefinitely-in-the-eu/",
+    "score": 74,
+    "reason": "Major product delay; regulatory controversy; affects millions of users"
   },
   {
     "rank": 10,
-    "headline": "AI is masking America's \"post-literate\" workforce",
-    "link": "https://www.axios.com/2026/06/08/ai-america-literacy",
+    "headline": "Corning shares jump 4% after company strikes deal to power Amazon AI data centers in U.S.",
+    "link": "https://www.cnbc.com/2026/06/08/amazon-taps-corning-for-op.html",
+    "score": 72,
+    "reason": "Major infrastructure deal; significant market reaction; Amazon AI expansion"
+  },
+  {
+    "rank": 11,
+    "headline": "Google AI Plus gets price drop to $4.99 and storage bump",
+    "link": "https://9to5google.com/2026/06/08/google-ai-plus-price-drop/",
+    "score": 68,
+    "reason": "Concrete pricing change; market competition signal"
+  },
+  {
+    "rank": 12,
+    "headline": "Google Home update upgrades Gemini weather forecasts, media on Nest Hub, and voice commands as a whole",
+    "link": "https://9to5google.com/2026/06/08/google-home-upgrades-weather-and-media-commands/",
+    "score": 66,
+    "reason": "Multi-feature product update; Gemini integration expansion"
+  },
+  {
+    "rank": 13,
+    "headline": "MiMo-v2.5-Pro-UltraSpeed: 1T model with 1000 tokens per second",
+    "link": "https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
+    "score": 64,
+    "reason": "Big numbers (1T parameters, 1000 tok/s); significant performance milestone"
+  },
+  {
+    "rank": 14,
+    "headline": "Amazon is launching AI-generated custom merch",
+    "link": "https://www.theverge.com/news/945905/amazon-alexa-shopping-ai-generated-custom-merch-design-printing",
     "score": 62,
-    "reason": "Societal impact analysis; workforce implications of AI adoption"
+    "reason": "New product launch; Amazon's AI commercialization"
+  },
+  {
+    "rank": 15,
+    "headline": "iOS 27 gets new AI photo editing tools",
+    "link": "https://www.engadget.com/2189828/ios-27-gets-new-ai-photo-editing-tools/",
+    "score": 60,
+    "reason": "Major feature addition; Apple AI capability expansion for consumers"
+  },
+  {
+    "rank": 16,
+    "headline": "Microsoft’s AI chief says superintelligence is near, but won’t take your job",
+    "link": "https://www.theverge.com/podcast/944138/microsoft-ai-ceo-mustafa-suleyman-superintelligence-agi-openai-automation",
+    "score": 58,
+    "reason": "Major claim from Microsoft leadership; addresses key AI concern"
+  },
+  {
+    "rank": 17,
+    "headline": "The new Siri AI could cost you - here's why",
+    "link": "https://www.zdnet.com/article/the-new-siri-ai-could-cost-you-heres-why/",
+    "score": 56,
+    "reason": "Controversy; pricing/accessibility concerns with major product"
+  },
+  {
+    "rank": 18,
+    "headline": "How ChatGPT's new Lockdown mode protects you from data theft (and what else it does)",
+    "link": "https://www.zdnet.com/article/chatgpt-lockdown-mode-data-theft-prompt-injection/",
+    "score": 54,
+    "reason": "New security feature; OpenAI product enhancement"
+  },
+  {
+    "rank": 19,
+    "headline": "macOS Golden Gate puts Siri AI into Spotlight",
+    "link": "https://www.engadget.com/2189760/macos-golden-gate-puts-siri-ai-into-spotlight/",
+    "score": 52,
+    "reason": "Product integration; Apple OS-level AI enhancement"
+  },
+  {
+    "rank": 20,
+    "headline": "Apple reveals new AI architecture built around Google Gemini models",
+    "link": "https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/",
+    "score": 50,
+    "reason": "Strategic partnership; Apple's AI architecture shift"
   }
 ]
