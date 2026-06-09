@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI Confidentially Files for IPO on the Heels of SpaceX and Anthropic",
-    "link": "https://www.wired.com/story/openai-confidentially-files-for-ipo/",
+    "headline": "OpenAI files SEC paperwork to go public",
+    "link": "https://www.engadget.com/2190079/openai-files-sec-paperwork-to-go-public/",
     "score": 98,
-    "reason": "Major financial event; concrete IPO filing with big numbers implications"
+    "reason": "Major IPO filing by leading AI company; concrete regulatory action, not speculation"
   },
   {
     "rank": 2,
-    "headline": "Apple announces Siri AI and its next generation of Apple Intelligence",
-    "link": "https://www.theverge.com/tech/942416/apple-siri-ai-update-wwdc",
-    "score": 96,
-    "reason": "Major product launch from top company; significant AI feature rollout"
+    "headline": "OpenAI files for IPO, following Anthropic",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/946335/openai-ipo-s-1-confidential",
+    "score": 97,
+    "reason": "Significant capital event in AI industry; follows competitor IPO announcement"
   },
   {
     "rank": 3,
-    "headline": "The UK Is Betting on a Billion-Dollar AI Supercomputer to Kick Its Addiction to US Tech",
-    "link": "https://www.wired.com/story/uk-supercomputer-investment-ai-homegrown-semiconductor/",
-    "score": 94,
-    "reason": "Large infrastructure investment; geopolitical AI development story"
+    "headline": "Perplexity plans IPO in 2028 regardless of what happens to Anthropic or OpenAI, CEO tells CNBC",
+    "link": "https://www.cnbc.com/2026/06/09/perplexity-ipo-2028-as-anthropic-openai-prepare-listings.html",
+    "score": 92,
+    "reason": "Third AI startup IPO announcement; big market signal"
   },
   {
     "rank": 4,
-    "headline": "NotebookLM's Gemini 3.5 upgrade adds a cloud computer and help finding sources",
-    "link": "https://www.theverge.com/tech/944325/google-notebooklm-ai-gemini-update",
-    "score": 91,
-    "reason": "Major feature upgrade; concrete product improvement launch"
+    "headline": "Gemini 3.5 and Antigravity come to Google NotebookLM",
+    "link": "https://arstechnica.com/ai/2026/06/gemini-3-5-and-antigravity-come-to-google-notebooklm/",
+    "score": 85,
+    "reason": "Major Google product launch with new model capabilities; concrete feature release"
   },
   {
     "rank": 5,
-    "headline": "Amazon is launching AI-generated custom merch",
-    "link": "https://www.theverge.com/news/945905/amazon-alexa-shopping-ai-generated-custom-merch-design-printing",
-    "score": 89,
-    "reason": "New AI-powered business feature launch from major company"
+    "headline": "Google cuts the price of its AI Plus plan and doubles the storage",
+    "link": "https://www.engadget.com/2190039/google-cuts-the-price-of-its-ai-plus-plan-and-doubles-the-storage/",
+    "score": 82,
+    "reason": "Significant pricing action and competitive move by major player"
   },
   {
     "rank": 6,
-    "headline": "Aviva deploys AI to stop £230M in sophisticated insurance fraud",
-    "link": "https://www.artificialintelligence-news.com/news/aviva-deploys-ai-stop-230m-sophisticated-insurance-fraud/",
-    "score": 88,
-    "reason": "Quantified impact; major real-world AI application with specific numbers"
+    "headline": "Apple’s New Siri AI Is Ready to Get Personal",
+    "link": "https://www.wired.com/story/apples-new-siri-ai-is-ready-to-get-personal/",
+    "score": 80,
+    "reason": "Major Apple product launch; personal AI capability expansion"
   },
   {
     "rank": 7,
-    "headline": "Meta Deletes Face-Recognition System From Its Smart Glasses App After WIRED Report",
-    "link": "https://www.wired.com/story/meta-removes-face-recognition-code-meta-ai-app-smart-glasses/",
-    "score": 87,
-    "reason": "Significant product pivot; privacy/controversy-driven change"
+    "headline": "The biggest announcements at Apple WWDC 2026 - including Siri, iOS 27 dev beta, and more",
+    "link": "https://www.zdnet.com/article/apple-wwdc-live-blog-06-08-2026/",
+    "score": 78,
+    "reason": "Major Apple AI integration announcements across product line"
   },
   {
     "rank": 8,
-    "headline": "Apple’s AI pitch will live or die by its privacy promise",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/946705/apple-private-cloud-compute-ai-siri-intelligence-wwdc",
-    "score": 85,
-    "reason": "Core strategic AI narrative from major company"
+    "headline": "Microsoft&#x27;s open source tools were hacked to steal passwords of AI developers",
+    "link": "https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/",
+    "score": 87,
+    "reason": "Security breach affecting AI developer infrastructure; major controversy"
   },
   {
     "rank": 9,
-    "headline": "Google Home update upgrades Gemini weather forecasts, media on Nest Hub, and voice commands as a whole",
-    "link": "https://9to5google.com/2026/06/08/google-home-upgrades-weather-and-media-commands/",
+    "headline": "Pentagon expands list of China military-linked firms to include Alibaba, Baidu in fresh blow to diplomatic thaw",
+    "link": "https://www.cnbc.com/2026/06/09/alibaba-baidu-byd-named-on-pentagons-china-military-list-.html",
     "score": 84,
-    "reason": "Major IPO filing; demonstrates AI investment momentum"
+    "reason": "Government action restricting major AI company access; geopolitical impact"
   },
   {
     "rank": 10,
-    "headline": "Siri AI for iPhones and iPads will be delayed indefinitely in the EU",
-    "link": "https://www.engadget.com/2189932/siri-ai-for-iphones-and-ipads-will-be-delayed-indefinitely-in-the-eu/",
-    "score": 83,
-    "reason": "Significant regulatory controversy; major feature delay"
+    "headline": "Scoop: White House, Hill relaunch effort to block state AI laws",
+    "link": "https://www.axios.com/2026/06/08/white-house-hill-relaunch-effort-block-state-ai-laws",
+    "score": 79,
+    "reason": "Regulatory conflict; federal intervention in AI governance"
   },
   {
     "rank": 11,
-    "headline": "Apple reveals new AI architecture built around Google Gemini models",
-    "link": "https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/",
-    "score": 81,
-    "reason": "Strategic partnership; major architectural shift"
+    "headline": "Weis Markets adds Instacart AI-powered shopping carts to stores",
+    "link": "https://www.artificialintelligence-news.com/news/weis-markets-instacart-ai-powered-shopping-caper-carts/",
+    "score": 75,
+    "reason": "Retail AI deployment with measurable implementation"
   },
   {
     "rank": 12,
-    "headline": "The &apos;SaaSpocalypse&apos; is over, says private equity giant Thoma Bravo. Here&apos;s why it sees an AI boom for software",
-    "link": "https://www.cnbc.com/2026/06/09/orlando-bravo-saaspocalypse-over-ai-software.html",
-    "score": 79,
-    "reason": "Market analysis; sector-wide AI investment thesis"
+    "headline": "Amazon employees ask Seattle to put the brakes on new data centers",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/945809/amazon-employees-seattle-data-center-moratorium",
+    "score": 77,
+    "reason": "Internal controversy at major AI infrastructure player"
   },
   {
     "rank": 13,
-    "headline": "Anthropic says Mythos can turn software patches into exploits in minutes",
-    "link": "https://www.axios.com/2026/06/08/exclusive-anthropics-mythos-can-exploit-new-flaws-in-hours",
-    "score": 77,
-    "reason": "Security concern; significant capability vulnerability"
+    "headline": "AI is masking America's \"post-literate\" workforce",
+    "link": "https://www.axios.com/2026/06/08/ai-america-literacy",
+    "score": 73,
+    "reason": "Significant societal impact claim with labor market implications"
   },
   {
     "rank": 14,
-    "headline": "Google AI Plus gets price drop to $4.99 and storage bump",
-    "link": "https://9to5google.com/2026/06/08/google-ai-plus-price-drop/",
-    "score": 75,
-    "reason": "Pricing change; competitive AI service move"
+    "headline": "xAI is looking more like a datacentre REIT than a frontier lab",
+    "link": "https://martinalderson.com/posts/xais-new-rental-business/",
+    "score": 71,
+    "reason": "Critical analysis of major AI startup's business model pivot"
   },
   {
     "rank": 15,
-    "headline": "ChatGPT reportedly prepares major redesign focused on agents as 'chat is dead'",
-    "link": "https://9to5google.com/2026/06/08/chatgpt-redesign-report/",
-    "score": 73,
-    "reason": "Major product direction shift from leading AI company"
+    "headline": "MiMo-v2.5-Pro-UltraSpeed: 1T model with 1000 tokens per second",
+    "link": "https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
+    "score": 70,
+    "reason": "Major performance milestone; 1T parameter model with significant throughput"
   },
   {
     "rank": 16,
-    "headline": "Pentagon adds Alibaba and Baidu to list of firms linked to Chinese military",
-    "link": "https://www.engadget.com/2190294/pentagon-adds-alibaba-baidu-list-of-china-linked-firms/",
-    "score": 71,
-    "reason": "Geopolitical AI/tech restrictions; US-China tension"
+    "headline": "Apple is using AI to fix Safari’s extension problem",
+    "link": "https://www.theverge.com/tech/946345/apple-safari-ai-update-extensions",
+    "score": 68,
+    "reason": "Concrete AI application solving specific product problem"
   },
   {
     "rank": 17,
-    "headline": "AI Can Help Track the World’s Shrinking Glaciers",
-    "link": "https://spectrum.ieee.org/tracking-glacier-melting-ai",
-    "score": 68,
-    "reason": "Climate application; concrete use case"
+    "headline": "As a parent, I'm beyond excited about iOS 27's child safety features - how they're better now",
+    "link": "https://www.zdnet.com/article/apple-ios-27-ipados-macos-wwdc-2026-parental-controls/",
+    "score": 67,
+    "reason": "Specific AI safety feature implementation with measurable improvements"
   },
   {
     "rank": 18,
-    "headline": "Microsoft’s AI chief says superintelligence is near, but won’t take your job",
-    "link": "https://www.theverge.com/podcast/944138/microsoft-ai-ceo-mustafa-suleyman-superintelligence-agi-openai-automation",
+    "headline": "NotebookLM rolling out big Gemini 3.5 & Antigravity upgrade with more outputs",
+    "link": "https://9to5google.com/2026/06/08/notebooklm-gemini-3-5-antigravity/",
     "score": 66,
-    "reason": "Major executive statement on AI trajectory"
+    "reason": "Major Google product update with new capabilities"
   },
   {
     "rank": 19,
-    "headline": "I used ChatGPT to build a free PDF editor because I didn't trust it to change my files - it's glorious",
-    "link": "https://www.zdnet.com/article/using-chatgpt-to-build-free-pdf-editor-python-tool/",
-    "score": 63,
-    "reason": "Real-world AI tool creation story"
+    "headline": "What's driving Trump to pursue a slice of the AI windfall",
+    "link": "https://www.axios.com/2026/06/08/trump-bernie-sanders-ai",
+    "score": 64,
+    "reason": "Major funding round for emerging AI/crypto intersection startup"
   },
   {
     "rank": 20,
-    "headline": "China builds 85% of the world's humanoids robots for cheap at scale, but finding buyers is tricky",
-    "link": "https://fortune.com/2026/06/09/china-builds-85-percent-worlds-humanoids-robots-cheap/",
-    "score": 61,
-    "reason": "Market/manufacturing scale story; geopolitical dimensions"
+    "headline": "Apple's new Siri AI comes with hidden costs that power users should know of",
+    "link": "https://www.zdnet.com/article/the-new-siri-ai-could-cost-you-heres-why/",
+    "score": 62,
+    "reason": "Critical analysis of major AI product launch with practical implications"
   }
 ]
