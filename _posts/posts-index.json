@@ -1,5 +1,24 @@
 [
   {
+    "id": "ai-detect-intimate-partner-violence-before-disclosure-20260609",
+    "slug": "ai-detect-intimate-partner-violence-before-disclosure",
+    "headline": "AI Can Detect Intimate Partner Violence Before Disclosure — But Should It?",
+    "summary": "Algorithms can now flag intimate partner violence years before a victim discloses it — a humanitarian breakthrough racing ahead of the consent, privacy, and ethics safeguards to deploy it responsibly.",
+    "body": "<p><strong>AI detection capabilities have reached a critical inflection point: algorithms can now identify intimate partner violence years before victims disclose it. This breakthrough simultaneously presents enormous humanitarian potential and profound ethical challenges that the industry must grapple with immediately.</strong></p>\n<p>Researchers have discovered that machine learning models can analyze patterns in health data, communication records, and behavioral indicators to flag potential abuse situations with notable accuracy. The technology leverages the same analytical frameworks driving advances in predictive healthcare, but applies them to one of society's most sensitive and personal domains.</p>\n<p>From a strategic perspective, this capability forces healthcare systems, technology companies, and policymakers to confront uncomfortable questions about the responsible deployment of AI. Early intervention could theoretically prevent escalation and save lives, but the infrastructure for doing so safely—with proper consent, privacy protections, and safeguards against misuse—simply doesn't exist yet.</p>\n<p>This development underscores a broader tension in AI development: the industry's remarkable progress in pattern recognition is outpacing our collective wisdom about governance. We're building increasingly powerful predictive tools without the regulatory frameworks or ethical guidelines to ensure they're used appropriately.</p>\n<p>The path forward requires collaboration between technologists, ethicists, survivors' advocates, and policymakers. We need transparent standards for when and how such detection should occur, robust consent mechanisms, and ironclad privacy protections. This isn't about limiting innovation—it's about ensuring innovation serves human dignity.</p>\n<p>The question isn't whether we can build these systems; it's whether we're prepared to deploy them responsibly.</p>\n<p style=\"color:#8c8ca0;font-size:0.9em\">Source: ZDNet · <a href=\"https://www.zdnet.com/article/ai-can-identify-intimate-partner-violence-ipv-before-disclosure/\" target=\"_blank\" rel=\"noopener\" style=\"color:#a050ff\">zdnet.com</a></p>\n<p class=\"article-tags-inline\"><a href=\"index.html?tag=AIEthics\" class=\"article-tag\" style=\"color:#a050ff\">#AIEthics</a> <a href=\"index.html?tag=PrivacyTech\" class=\"article-tag\" style=\"color:#a050ff\">#PrivacyTech</a> <a href=\"index.html?tag=HealthcareAI\" class=\"article-tag\" style=\"color:#a050ff\">#HealthcareAI</a> <a href=\"index.html?tag=ResponsibleAI\" class=\"article-tag\" style=\"color:#a050ff\">#ResponsibleAI</a> <a href=\"index.html?tag=TechGovernance\" class=\"article-tag\" style=\"color:#a050ff\">#TechGovernance</a></p>",
+    "category": "Research",
+    "hashtags": [
+      "AIEthics",
+      "PrivacyTech",
+      "HealthcareAI",
+      "ResponsibleAI",
+      "TechGovernance"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_ai_ipv_detection_20260609.png",
+    "sourceUrl": "https://www.zdnet.com/article/ai-can-identify-intimate-partner-violence-ipv-before-disclosure/",
+    "publishedAt": "2026-06-09T10:45:00.000-04:00",
+    "isVideo": false
+  },
+  {
     "id": "perplexity-will-ipo-in-2028-20260609",
     "slug": "perplexity-will-ipo-in-2028",
     "headline": "Perplexity Will IPO in 2028 — No Hedging, No Conditions",
