@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI files SEC paperwork to go public",
-    "link": "https://www.engadget.com/2190079/openai-files-sec-paperwork-to-go-public/",
-    "score": 98,
-    "reason": "Major IPO filing by leading AI company; concrete regulatory action, not speculation"
+    "headline": "OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut",
+    "link": "https://www.cnbc.com/2026/06/08/openai-confidentially-files-for-ipo-prepping-wall-street-for-ai-debut.html",
+    "score": 96,
+    "reason": "Major financial event with concrete action (IPO filing), huge numbers implied, affects entire AI industry"
   },
   {
     "rank": 2,
-    "headline": "OpenAI files for IPO, following Anthropic",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/946335/openai-ipo-s-1-confidential",
-    "score": 97,
-    "reason": "Significant capital event in AI industry; follows competitor IPO announcement"
+    "headline": "The UK Is Betting on a Billion-Dollar AI Supercomputer to Kick Its Addiction to US Tech",
+    "link": "https://www.wired.com/story/uk-supercomputer-investment-ai-homegrown-semiconductor/",
+    "score": 92,
+    "reason": "Specific large investment ($1B+), government-level commitment, geopolitical significance"
   },
   {
     "rank": 3,
-    "headline": "Perplexity plans IPO in 2028 regardless of what happens to Anthropic or OpenAI, CEO tells CNBC",
-    "link": "https://www.cnbc.com/2026/06/09/perplexity-ipo-2028-as-anthropic-openai-prepare-listings.html",
-    "score": 92,
-    "reason": "Third AI startup IPO announcement; big market signal"
+    "headline": "Microsoft AI head calls out Anthropic for acting like Claude is conscious",
+    "link": "https://www.theverge.com/tech/947197/microsoft-ai-mustafa-suleyman-anthropic-claude-conscious",
+    "score": 88,
+    "reason": "Direct controversy between major AI companies, significant enough to warrant public criticism"
   },
   {
     "rank": 4,
-    "headline": "Gemini 3.5 and Antigravity come to Google NotebookLM",
-    "link": "https://arstechnica.com/ai/2026/06/gemini-3-5-and-antigravity-come-to-google-notebooklm/",
-    "score": 85,
-    "reason": "Major Google product launch with new model capabilities; concrete feature release"
+    "headline": "Anthropic releases Mythos-like AI model to the public two months after private rollout rocked Wall Street",
+    "link": "https://www.cnbc.com/2026/06/09/anthropic-mythos-claude-fable-5.html",
+    "score": 87,
+    "reason": "Major product launch with market impact evidence, Mythos is frontier model release"
   },
   {
     "rank": 5,
-    "headline": "Google cuts the price of its AI Plus plan and doubles the storage",
-    "link": "https://www.engadget.com/2190039/google-cuts-the-price-of-its-ai-plus-plan-and-doubles-the-storage/",
-    "score": 82,
-    "reason": "Significant pricing action and competitive move by major player"
+    "headline": "Meta Deletes Face-Recognition System From Its Smart Glasses App After WIRED Report",
+    "link": "https://www.wired.com/story/meta-removes-face-recognition-code-meta-ai-app-smart-glasses/",
+    "score": 85,
+    "reason": "Major product rollback due to controversy, concrete action taken by major company"
   },
   {
     "rank": 6,
-    "headline": "Apple’s New Siri AI Is Ready to Get Personal",
-    "link": "https://www.wired.com/story/apples-new-siri-ai-is-ready-to-get-personal/",
-    "score": 80,
-    "reason": "Major Apple product launch; personal AI capability expansion"
+    "headline": "Aviva deploys AI to stop £230M in sophisticated insurance fraud",
+    "link": "https://www.artificialintelligence-news.com/news/aviva-deploys-ai-stop-230m-sophisticated-insurance-fraud/",
+    "score": 81,
+    "reason": "Specific large number (£230M impact), concrete enterprise AI deployment"
   },
   {
     "rank": 7,
-    "headline": "The biggest announcements at Apple WWDC 2026 - including Siri, iOS 27 dev beta, and more",
-    "link": "https://www.zdnet.com/article/apple-wwdc-live-blog-06-08-2026/",
-    "score": 78,
-    "reason": "Major Apple AI integration announcements across product line"
+    "headline": "Siri AI first look: How Apple's rebuilt AI-powered assistant behaves across iPhone, iPad and Mac",
+    "link": "https://www.engadget.com/2190638/siri-ai-first-look-how-apples-rebuilt-ai-powered-assistant-behaves-across-iphone-ipad-and-mac/",
+    "score": 80,
+    "reason": "Major product launch across multiple platforms, significant redesign of core service"
   },
   {
     "rank": 8,
-    "headline": "Microsoft&#x27;s open source tools were hacked to steal passwords of AI developers",
-    "link": "https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/",
-    "score": 87,
-    "reason": "Security breach affecting AI developer infrastructure; major controversy"
+    "headline": "US workers are the world's biggest AI skeptics - and it's not just about job loss",
+    "link": "https://www.zdnet.com/article/us-workers-are-worlds-biggest-ai-skeptics/",
+    "score": 77,
+    "reason": "Large-scale research data contrasting sentiment globally, addresses major controversy"
   },
   {
     "rank": 9,
-    "headline": "Pentagon expands list of China military-linked firms to include Alibaba, Baidu in fresh blow to diplomatic thaw",
-    "link": "https://www.cnbc.com/2026/06/09/alibaba-baidu-byd-named-on-pentagons-china-military-list-.html",
-    "score": 84,
-    "reason": "Government action restricting major AI company access; geopolitical impact"
+    "headline": "The AI industry spent years chasing bigger models. Now it's chasing efficiency",
+    "link": "https://fortune.com/2026/06/09/ais-next-challenge-isnt-bigger-models-its-making-them-efficient-enough-to-use/",
+    "score": 76,
+    "reason": "Industry shift with concrete evidence, significant strategic reversal in AI development"
   },
   {
     "rank": 10,
-    "headline": "Scoop: White House, Hill relaunch effort to block state AI laws",
-    "link": "https://www.axios.com/2026/06/08/white-house-hill-relaunch-effort-block-state-ai-laws",
-    "score": 79,
-    "reason": "Regulatory conflict; federal intervention in AI governance"
+    "headline": "ChatGPT reportedly prepares major redesign focused on agents as 'chat is dead'",
+    "link": "https://9to5google.com/2026/06/08/chatgpt-redesign-report/",
+    "score": 75,
+    "reason": "Major product pivot from OpenAI, significant shift in AI interaction paradigm"
   },
   {
     "rank": 11,
-    "headline": "Weis Markets adds Instacart AI-powered shopping carts to stores",
-    "link": "https://www.artificialintelligence-news.com/news/weis-markets-instacart-ai-powered-shopping-caper-carts/",
-    "score": 75,
-    "reason": "Retail AI deployment with measurable implementation"
+    "headline": "‘Getting control where we can’—Europe wants sovereign AI, but most of the chips are from the U.S.",
+    "link": "https://fortune.com/2026/06/09/europe-ai-mistral-defined-data-chips/",
+    "score": 74,
+    "reason": "Geopolitical controversy, large-scale regional initiative, supply chain reality check"
   },
   {
     "rank": 12,
-    "headline": "Amazon employees ask Seattle to put the brakes on new data centers",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/945809/amazon-employees-seattle-data-center-moratorium",
-    "score": 77,
-    "reason": "Internal controversy at major AI infrastructure player"
+    "headline": "AI can identify intimate partner violence years before people disclose it, but is that safe?",
+    "link": "https://www.zdnet.com/article/ai-can-identify-intimate-partner-violence-ipv-before-disclosure/",
+    "score": 72,
+    "reason": "Significant capability with major privacy/ethics controversy, research-backed finding"
   },
   {
     "rank": 13,
-    "headline": "AI is masking America's \"post-literate\" workforce",
-    "link": "https://www.axios.com/2026/06/08/ai-america-literacy",
-    "score": 73,
-    "reason": "Significant societal impact claim with labor market implications"
+    "headline": "Microsoft AI chief walks back comments about AI taking over white-collar work",
+    "link": "https://www.theverge.com/tech/946879/microsoft-mustafa-suleyman-ai-white-collar-jobs",
+    "score": 70,
+    "reason": "Public reversal on major controversial statement, shows market sensitivity"
   },
   {
     "rank": 14,
-    "headline": "xAI is looking more like a datacentre REIT than a frontier lab",
-    "link": "https://martinalderson.com/posts/xais-new-rental-business/",
-    "score": 71,
-    "reason": "Critical analysis of major AI startup's business model pivot"
+    "headline": "AI Can Help Track the World’s Shrinking Glaciers",
+    "link": "https://spectrum.ieee.org/tracking-glacier-melting-ai",
+    "score": 68,
+    "reason": "Major environmental application with large-scale impact data"
   },
   {
     "rank": 15,
-    "headline": "MiMo-v2.5-Pro-UltraSpeed: 1T model with 1000 tokens per second",
-    "link": "https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
-    "score": 70,
-    "reason": "Major performance milestone; 1T parameter model with significant throughput"
+    "headline": "Gemini 3.5 Live Translate rolling out to Google Meet & Translate with new ‘listening mode’",
+    "link": "https://9to5google.com/2026/06/09/gemini-3-5-live-translate-meet/",
+    "score": 66,
+    "reason": "Major product feature rollout across multiple Google services"
   },
   {
     "rank": 16,
-    "headline": "Apple is using AI to fix Safari’s extension problem",
-    "link": "https://www.theverge.com/tech/946345/apple-safari-ai-update-extensions",
-    "score": 68,
-    "reason": "Concrete AI application solving specific product problem"
+    "headline": "The &apos;SaaSpocalypse&apos; is over, says private equity giant Thoma Bravo. Here&apos;s why it sees an AI boom for software",
+    "link": "https://www.cnbc.com/2026/06/09/orlando-bravo-saaspocalypse-over-ai-software.html",
+    "score": 65,
+    "reason": "Major investor thesis shift, broad industry trend prediction from significant player"
   },
   {
     "rank": 17,
-    "headline": "As a parent, I'm beyond excited about iOS 27's child safety features - how they're better now",
-    "link": "https://www.zdnet.com/article/apple-ios-27-ipados-macos-wwdc-2026-parental-controls/",
-    "score": 67,
-    "reason": "Specific AI safety feature implementation with measurable improvements"
+    "headline": "Google makes AI Mode Pro visuals free 'this summer,' details Gemini tools for 2026 World Cup",
+    "link": "https://9to5google.com/2026/06/09/google-ai-mode-pro-visuals-free-during-2026-world-cup/",
+    "score": 63,
+    "reason": "Major feature monetization reversal, large-scale event integration"
   },
   {
     "rank": 18,
-    "headline": "NotebookLM rolling out big Gemini 3.5 & Antigravity upgrade with more outputs",
-    "link": "https://9to5google.com/2026/06/08/notebooklm-gemini-3-5-antigravity/",
-    "score": 66,
-    "reason": "Major Google product update with new capabilities"
+    "headline": "Apple is embracing the fantasy of AI photo editing",
+    "link": "https://www.theverge.com/tech/946850/apple-ai-photo-editing-tools-ios27-wwdc-2026-deepfakes",
+    "score": 62,
+    "reason": "Significant product category launch with critical analysis"
   },
   {
     "rank": 19,
-    "headline": "What's driving Trump to pursue a slice of the AI windfall",
-    "link": "https://www.axios.com/2026/06/08/trump-bernie-sanders-ai",
-    "score": 64,
-    "reason": "Major funding round for emerging AI/crypto intersection startup"
+    "headline": "Anthropic and OpenAI spark new race for frontier AI access",
+    "link": "https://www.axios.com/2026/06/09/anthropic-openai-mythos-ai-model-access",
+    "score": 61,
+    "reason": "Competition between major AI leaders escalating, market consolidation signals"
   },
   {
     "rank": 20,
-    "headline": "Apple's new Siri AI comes with hidden costs that power users should know of",
-    "link": "https://www.zdnet.com/article/the-new-siri-ai-could-cost-you-heres-why/",
-    "score": 62,
-    "reason": "Critical analysis of major AI product launch with practical implications"
+    "headline": "Google teams up with Paris Hilton to showcase Android and AI app building",
+    "link": "https://9to5google.com/2026/06/09/google-teams-up-with-paris-hilton-to-showcase-android-and-ai-app-building/",
+    "score": 58,
+    "reason": "Major partnership announcement for AI democratization at consumer level"
   }
 ]
