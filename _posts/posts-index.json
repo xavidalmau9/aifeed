@@ -1,5 +1,24 @@
 [
   {
+    "id": "humanoid-robotics-14b-funding-20260610",
+    "slug": "humanoid-robotics-14b-funding",
+    "headline": "Humanoid Robotics Raises $1.4B from Nvidia, Amazon",
+    "summary": "Nvidia, Amazon and other tech giants poured $1.4 billion into humanoid robotics — a signal that AI-powered physical automation is moving from theory to reality.",
+    "body": "<p><strong>Humanoid robotics just attracted $1.4 billion in funding from Nvidia, Amazon, and other leading tech companies. This landmark investment signals a critical inflection point: the era of AI-powered physical automation is no longer theoretical—it's becoming reality.</strong></p>\n<p>The funding round represents more than capital injection; it's institutional validation from companies that understand AI infrastructure and enterprise needs. Nvidia's involvement is particularly significant, given their dominance in AI chips, while Amazon's participation highlights real-world logistics and operational applications. These aren't passive investors—they're strategic partners positioning themselves in the robotics ecosystem.</p>\n<p>This development has major implications for the broader tech landscape. We're witnessing a convergence of three mega-trends: advances in large language models and reasoning, improved sensor and actuator technology, and massive capital flowing into hardware. Companies that crack humanoid robotics will unlock unprecedented automation opportunities across industries.</p>\n<p>The ripple effects extend beyond robotics manufacturers. This validates the entire AI hardware stack—from chip makers to software platforms to systems integrators. Other robotics companies will likely see accelerated funding timelines, and enterprises will begin serious planning for robotic workforce integration.</p>\n<p>Looking ahead, the real competition won't be about building robots—it will be about building robots that can learn, adapt, and create genuine business value. The companies with the best AI models, not just the best mechanical engineering, will dominate this space.</p>\n<p>The future of work just got a $1.4 billion bet placed on it.</p>",
+    "category": "Hardware",
+    "hashtags": [
+      "HumanoidRobotics",
+      "AIInnovation",
+      "VentureCapital",
+      "FutureOfWork",
+      "RoboticsRevolution"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_humanoid_robots_14b_20260610.png",
+    "sourceUrl": "https://www.cnbc.com/2026/06/10/neura-robotics-funding-ai-humanoid-robots.html",
+    "publishedAt": "2026-06-10T11:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
     "id": "mcdonalds-google-ai-drive-thru-20260609",
     "slug": "mcdonalds-google-ai-drive-thru",
     "headline": "McDonald's Deploys Google AI for Drive-Thru Ordering",
