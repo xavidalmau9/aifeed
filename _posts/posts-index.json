@@ -1,5 +1,24 @@
 [
   {
+    "id": "underwater-data-center-china-20260611",
+    "slug": "underwater-data-center-china",
+    "headline": "China Opens the World's First Wind-Powered Underwater Data Center",
+    "summary": "China just opened the world's first wind-powered underwater data center — a landmark moment signaling a fundamental shift in how we approach AI infrastructure sustainability.",
+    "body": "<p><strong>China has just opened the world's first wind-powered underwater data center—a landmark moment that signals a fundamental shift in how we're approaching AI infrastructure sustainability. This isn't just an engineering feat; it's a strategic repositioning in the global race to build greener, more efficient computational systems at scale.</strong></p>\n<p>Data centers currently consume roughly 1-2% of global electricity, a figure that's climbing as AI adoption accelerates. Traditional cooling systems and massive power demands make them environmental and financial liabilities. By moving infrastructure underwater and coupling it with renewable wind energy, China is demonstrating how to decouple computational growth from energy consumption—a critical challenge for the entire industry.</p>\n<p>This move carries significant strategic implications. Nations that master sustainable, cost-efficient data infrastructure will have competitive advantages in training and deploying AI at scale. Energy costs represent a substantial portion of operational expenses for AI companies, so innovations like this directly impact profitability and accessibility for smaller players entering the space.</p>\n<p>For the broader AI industry, this is a wake-up call. As large language models and AI systems become more computationally intensive, the infrastructure supporting them must evolve. Underwater data centers offer natural cooling, reduced environmental impact, and potential cost savings—three factors that will increasingly determine which companies and nations lead in AI development.</p>\n<p>Looking ahead, expect more nations to explore similar solutions. The convergence of AI growth, climate pressure, and rising energy costs creates powerful incentives for innovation in data center design. Organizations investing in sustainable infrastructure today will position themselves as leaders in the energy-conscious computing era.</p>\n<p>The future of AI infrastructure won't just be powerful—it'll be green.</p>",
+    "category": "Infrastructure",
+    "hashtags": [
+      "AIInfrastructure",
+      "DataCenter",
+      "SustainableTech",
+      "ClimateInnovation",
+      "FutureOfWork"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_underwater_datacenter_20260611.png",
+    "sourceUrl": "https://www.wired.com/story/china-opens-worlds-first-wind-powered-underwater-data-center/",
+    "publishedAt": "2026-06-11T13:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
     "id": "gemini-ai-world-cup-20260611",
     "slug": "gemini-ai-world-cup",
     "headline": "Google Gemini Quietly Becomes a Game-Changer at the World Cup",

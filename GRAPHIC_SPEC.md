@@ -6,6 +6,34 @@ This document is the canonical spec for the HTML graphic template used in the AI
 ## ⚠️ REBRAND NOTE (May 26, 2026)
 The old design with 3 stat card pills at the bottom has been **permanently removed**. The new design is editorial/magazine style. Never add stat cards back unless explicitly instructed.
 
+## ⛔ MANDATORY ELEMENTS — NEVER DROP (Jun 11, 2026)
+Every graphic MUST include ALL of these. Do not omit any when copying a previous graphic forward as a template — dropping an established element is a regression:
+1. **Top-left brand pill:** `AIFEED.RUN • AI NEWS`
+2. **Category pill** (above the headline, in the story's category color) — see "Category pill" below. **This was being dropped; it is REQUIRED on every graphic.**
+3. **Headline** (.hl) with one purple accent line
+4. **Divider** (.divider)
+5. **Subtitle** (.sub)
+6. **Bottom bar:** `Source: … ` (left) + `aifeed.run` logo (right)
+
+**Rule:** before rendering any graphic, verify all six are present. If a prior consistent element is missing from the template, restore it — never ship without it.
+
+### Category pill (REQUIRED — matches the website category colors)
+```css
+.catpill{display:inline-block;border-radius:999px;padding:9px 20px;font-size:22px;
+  font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px}
+```
+HTML: `<div class="catpill" style="background:<bg>;color:<txt>;border:1px solid <border>">CATEGORY</div>` as the FIRST child of `.content` (above `.hl`). Colors per category (match `index.html`/`post.html` `.cat-*`):
+| Category | text | bg | border |
+|---|---|---|---|
+| Infrastructure | #818cf8 | rgba(99,102,241,.18) | rgba(99,102,241,.55) |
+| Hardware | #22d3ee | rgba(6,182,212,.18) | rgba(6,182,212,.55) |
+| Industry | #c084fc | rgba(168,85,247,.18) | rgba(168,85,247,.55) |
+| Models | #fb923c | rgba(255,140,0,.18) | rgba(255,140,0,.55) |
+| Tools | #4ade80 | rgba(50,215,110,.18) | rgba(50,215,110,.55) |
+| Research | #60a5fa | rgba(56,130,246,.18) | rgba(56,130,246,.55) |
+| Business | #fb7185 | rgba(244,63,94,.18) | rgba(244,63,94,.55) |
+| Safety | #f87171 | rgba(239,68,68,.18) | rgba(239,68,68,.55) |
+
 ---
 
 ## Canvas
