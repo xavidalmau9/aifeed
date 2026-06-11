@@ -1,5 +1,24 @@
 [
   {
+    "id": "gemini-ai-world-cup-20260611",
+    "slug": "gemini-ai-world-cup",
+    "headline": "Google Gemini Quietly Becomes a Game-Changer at the World Cup",
+    "summary": "Google's Gemini is processing World Cup match data in real time — a watershed moment where AI moves from the sidelines into the core infrastructure of global sports.",
+    "body": "<p><strong>Google Gemini has quietly become a game-changer at the World Cup, marking a pivotal moment where artificial intelligence moves from the sidelines into the core infrastructure of global sports.</strong></p>\n<p>This integration represents more than just another AI application—it's a watershed moment for how technology shapes the sports industry. Google's Gemini is now processing vast amounts of match data in real-time, providing broadcasters, analysts, and teams with insights that would have been impossible to generate manually. The system handles everything from instant replay analysis to predictive player performance metrics, fundamentally changing how the world's biggest sporting event operates behind the scenes.</p>\n<p>From a technology standpoint, this deployment showcases the maturation of large language models and computer vision systems. Gemini isn't just recognizing what's happening on the pitch; it's contextualizing it, drawing connections, and delivering actionable intelligence in milliseconds. This represents a significant leap forward in how AI models are being operationalized in time-sensitive, mission-critical environments.</p>\n<p>The strategic implications are profound. By embedding AI into the World Cup infrastructure, Google is establishing itself as the essential technology partner for global sports organizations. This creates a powerful precedent—one that other sports leagues will likely follow, knowing that AI-enhanced analysis is now table stakes for competitive advantage and viewer engagement.</p>\n<p>Beyond sports, this demonstrates how AI is moving into traditionally human-dominated fields not as a replacement, but as an amplifier. The technology enhances expert decision-making rather than replacing it, which is likely the model we'll see across industries as AI matures.</p>\n<p>The real story here is one of normalization: AI doesn't need fanfare to be transformative. When it works seamlessly enough to disappear into the background, that's when you know it's truly arrived.</p>",
+    "category": "Industry",
+    "hashtags": [
+      "AI",
+      "ArtificialIntelligence",
+      "GoogleGemini",
+      "SportsTechnology",
+      "FutureOfWork"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_gemini_world_cup_20260611.png",
+    "sourceUrl": "https://www.wired.com/story/artificial-intelligence-sneaks-into-the-world-cup-thanks-to-google-gemini/",
+    "publishedAt": "2026-06-11T11:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
     "id": "humanoid-robotics-14b-funding-20260610",
     "slug": "humanoid-robotics-14b-funding",
     "headline": "Humanoid Robotics Raises $1.4B from Nvidia, Amazon",
