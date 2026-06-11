@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic Walks Back Policy That Could Have ‘Sabotaged’ AI Researchers Using Claude",
-    "link": "https://www.wired.com/story/anthropic-responds-to-backlash-on-claudes-secret-sabotage-on-ai-research/",
-    "score": 92,
-    "reason": "Major policy reversal by top AI company affecting researcher access; concrete controversy with measurable impact"
+    "headline": "Google will save your Lens photos, Search Live recordings, and Translate audio for AI training",
+    "link": "https://www.theverge.com/tech/947836/google-search-privacy-settings-images-audio",
+    "score": 94,
+    "reason": "Major policy launch affecting billions of users; concrete data practice; controversy-worthy"
   },
   {
     "rank": 2,
-    "headline": "OpenAI says fake accounts from China tried to turn Americans against data centers",
-    "link": "https://www.engadget.com/2191966/openai-china-influence-campaigns-against-data-centers-report/",
-    "score": 88,
-    "reason": "Significant security/geopolitical incident; concrete allegations with specific foreign actor involvement"
+    "headline": "Microsoft patches record 206 Windows bugs in June update - and 3 are zero days",
+    "link": "https://www.zdnet.com/article/microsofts-june-windows-update-fixes-198-bugs-install-patch-asap/",
+    "score": 92,
+    "reason": "Record-breaking number (206); concrete security news; impacts massive user base"
   },
   {
     "rank": 3,
-    "headline": "OpenAI mulls slashing prices as it competes with Anthropic for users: WSJ",
-    "link": "https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html",
-    "score": 85,
-    "reason": "Major pricing strategy shift between top competitors; measurable business impact"
+    "headline": "Humaniod robotics company raises up to $1.4 billion from Nvidia, Amazon and others",
+    "link": "https://www.cnbc.com/2026/06/10/neura-robotics-funding-ai-humanoid-robots.html",
+    "score": 90,
+    "reason": "Large funding amount; major investors; new category launch"
   },
   {
     "rank": 4,
-    "headline": "McDonald’s tests Google-backed AI drive-thru ordering system",
-    "link": "https://www.artificialintelligence-news.com/news/mcdonalds-ai-drive-thru-google-archiq/",
-    "score": 82,
-    "reason": "Large-scale real-world deployment; Fortune 500 company with millions of transactions"
+    "headline": "China-based operatives used ChatGPT to shape AI data centers and tariff debates",
+    "link": "https://www.axios.com/2026/06/10/openai-china-ai-data-center-tariffs-chatgpt",
+    "score": 89,
+    "reason": "Concrete security incident; geopolitical controversy; real-world impact documented"
   },
   {
     "rank": 5,
-    "headline": "Meta agrees to Indian AI data center deal as hyperscaler bolsters its infrastructure",
-    "link": "https://www.cnbc.com/2026/06/10/meta-ai-infrastructure-data-centers-india-hyperscalers-reliance.html",
-    "score": 80,
-    "reason": "Major infrastructure investment; big tech expansion into new market"
+    "headline": "Anthropic walks back covert capability limits on Claude Fable 5 after being accused of ‘secret sabotage’ by AI researchers and developers",
+    "link": "https://fortune.com/2026/06/10/anthropic-accu-claude-fable-5-limits-capabilities-ai-researchers-developers/",
+    "score": 88,
+    "reason": "Major controversy; policy reversal; researcher backlash documented"
   },
   {
     "rank": 6,
-    "headline": "Artificial Intelligence Sneaks Into the World Cup Thanks to Google Gemini",
-    "link": "https://www.wired.com/story/artificial-intelligence-sneaks-into-the-world-cup-thanks-to-google-gemini/",
-    "score": 78,
-    "reason": "Large-scale global event deployment; millions of viewers exposed to AI application"
+    "headline": "Wrongful Arrest Exposes Failures in One of the Oldest Police Face-Recognition Tools in the US",
+    "link": "https://www.wired.com/story/wrongful-arrest-tests-one-of-the-oldest-police-face-recognition-tools-in-the-us/",
+    "score": 87,
+    "reason": "Concrete failure with real consequences; systemic AI problem; documented case"
   },
   {
     "rank": 7,
-    "headline": "Deezer launches an AI music detector for other streaming services",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/948153/deezer-ai-music-detector-spotify-apple",
-    "score": 76,
-    "reason": "Product launch enabling cross-platform AI detection; notable competitive move"
+    "headline": "Amazon's data centers used 2.5 billion gallons of water last year",
+    "link": "https://www.theverge.com/tech/948534/amazon-data-centers-water-use",
+    "score": 85,
+    "reason": "Specific large number; environmental impact; infrastructure scale"
   },
   {
     "rank": 8,
-    "headline": "Timing Trick Cuts Energy Used in LLM Training by Up to 14 Percent",
-    "link": "https://spectrum.ieee.org/llm-training-energy-saving-trick",
-    "score": 74,
-    "reason": "Significant efficiency improvement with concrete percentage; addresses major AI concern"
+    "headline": "China Opens World’s First Wind-Powered Underwater Data Center",
+    "link": "https://www.wired.com/story/china-opens-worlds-first-wind-powered-underwater-data-center/",
+    "score": 84,
+    "reason": "Major infrastructure launch; world-first; geopolitical significance"
   },
   {
     "rank": 9,
-    "headline": "Google DeepMind is worried about what happens when millions of agents start to interact",
-    "link": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/",
-    "score": 72,
-    "reason": "Leading AI safety concern from top research lab; addresses scale and complexity risks"
+    "headline": "Google won’t just admit it’s feeding YouTube creators to its music AI",
+    "link": "https://www.theverge.com/tech/947770/google-lyria-music-ai-lawsuit-youtube",
+    "score": 82,
+    "reason": "Controversy over undisclosed practice; creator backlash; ethical issue"
   },
   {
     "rank": 10,
-    "headline": "Visa ChatGPT integration enables AI agent retail purchasing",
-    "link": "https://www.artificialintelligence-news.com/news/visa-chatgpt-integration-enables-ai-agent-retail-purchasing/",
-    "score": 70,
-    "reason": "Major fintech integration; autonomous purchasing system deployment by Fortune 500"
-  },
-  {
-    "rank": 11,
-    "headline": "Anthropic apologizes for invisible Claude Fable guardrails",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail",
-    "score": 68,
-    "reason": "Public apology for safety mechanism failure; company accountability for AI behavior"
-  },
-  {
-    "rank": 12,
-    "headline": "I tried Siri AI, and so far it actually works",
-    "link": "https://www.theverge.com/tech/947432/siri-ai-apple-intelligence-ios-27-wwdc",
-    "score": 66,
-    "reason": "Apple AI assistant deployment with practical user validation; billions of devices affected"
-  },
-  {
-    "rank": 13,
-    "headline": "Why U.S. AI giants like Anthropic, OpenAI are launching major expansions in London",
-    "link": "https://www.cnbc.com/2026/06/11/anthropic-openai-london-expansions-big-tech.html",
-    "score": 64,
-    "reason": "Strategic geopolitical expansion; multiple top AI companies making simultaneous moves"
-  },
-  {
-    "rank": 14,
-    "headline": "GM thinks EVs can help offset AI’s energy suck with vehicle-to-grid tech",
-    "link": "https://www.theverge.com/transportation/946820/gm-energy-ev-v2g-storage-sodium-ion",
-    "score": 62,
-    "reason": "Novel infrastructure solution; major automaker addressing AI energy consumption"
-  },
-  {
-    "rank": 15,
-    "headline": "Anthropic CEO says government should block dangerous AI",
-    "link": "https://www.axios.com/2026/06/10/anthropic-ceo-government-block-dangerous-ai",
-    "score": 60,
-    "reason": "Industry leader calls for regulation; notable stance from major AI company leadership"
-  },
-  {
-    "rank": 16,
-    "headline": "Google makes AI Mode Pro visuals free 'this summer,' details Gemini tools for 2026 World Cup",
-    "link": "https://9to5google.com/2026/06/09/google-ai-mode-pro-visuals-free-during-2026-world-cup/",
-    "score": 58,
-    "reason": "Product feature expansion with major sporting event tie-in; accessibility change"
-  },
-  {
-    "rank": 17,
-    "headline": "Inside India newsletter: Hollywood is debating AI. India&apos;s filmmakers are embracing it",
-    "link": "https://www.cnbc.com/2026/06/11/how-indian-filmmakers-are-using-generative-ai.html",
-    "score": 56,
-    "reason": "Regional AI adoption contrast; creative industry divergence in approach"
-  },
-  {
-    "rank": 18,
-    "headline": "Anthropic Offers Mythos Upgrade for Cyber Partners and a ‘Safe’ Version for the Rest of You",
-    "link": "https://www.wired.com/story/anthropic-releases-claude-fable-5-mythos-5/",
-    "score": 54,
-    "reason": "New model tier release; differentiated enterprise vs. consumer strategy"
-  },
-  {
-    "rank": 19,
-    "headline": "Siri AI arrives with Google inside, and much of the world is locked out",
-    "link": "https://www.artificialintelligence-news.com/news/siri-ai-google-gemini-rollout/",
-    "score": 52,
-    "reason": "Major Apple feature launch with geographic restrictions; billions of users affected"
-  },
-  {
-    "rank": 20,
-    "headline": "Oracle beats on earnings, but stock drops on plans to raise another $20 billion",
-    "link": "https://www.cnbc.com/2026/06/10/oracle-orcl-q4-earnings-report-2026.html",
-    "score": 50,
-    "reason": "Major capital raise for AI infrastructure; significant financial commitment by enterprise software leader"
+    "headline": "OpenAI to acquire Ona to support its AI coding assistant, Codex",
+    "link": "https://www.cnbc.com/2026/06/11/open-ai-ona-acquisition-codex.html",
+    "score": 81,
+    "reason": "Concrete acquisition; product expansion; strategic move"
   }
 ]
