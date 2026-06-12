@@ -17,6 +17,13 @@ Every graphic MUST include ALL of these. Do not omit any when copying a previous
 
 **Rule:** before rendering any graphic, verify all six are present. If a prior consistent element is missing from the template, restore it — never ship without it.
 
+### 📸 PHOTO COMPOSITION — subject must ride HIGH (Jun 12, 2026)
+The main subject (rocket, robot, person, product, building) must sit in the **upper ~60%** of the canvas — clearly visible, NOT sunk into the dark lower third where the headline/subtitle and bottom gradient live. A subject lost at the bottom is a reject.
+- **Pick photos where the subject is already in the upper/middle of the frame**, with a darker or emptier lower area for text (e.g. a rocket *launching upward* with flames below beats a rocket sitting centered).
+- Keep `object-position: center top` so the top of the photo is anchored.
+- If the subject still sits too low, choose a better-composed photo (preferred) rather than fighting it with crops.
+- Always eyeball the rendered PNG before sharing — if the subject is hard to see against the headline, reshoot the choice.
+
 ### Category pill (REQUIRED — matches the website category colors)
 ```css
 .catpill{display:inline-block;border-radius:999px;padding:9px 20px;font-size:22px;
