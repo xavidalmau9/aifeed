@@ -1,5 +1,24 @@
 [
   {
+    "id": "anthropic-claude-offline-order-20260613",
+    "slug": "us-government-orders-anthropic-claude-offline",
+    "headline": "US Government Orders Anthropic to Take Claude Offline",
+    "summary": "Anthropic has been ordered by the US government to take Claude offline — a watershed moment in AI regulation and government oversight of the sector.",
+    "body": "<p><strong>Anthropic has been ordered by the US government to take Claude Fable 5 offline, marking a watershed moment in AI regulation and government oversight of the sector.</strong></p>\n<p>This development signals that regulatory bodies are moving beyond advisory positions to actively intervening in AI product deployments. The decision underscores growing tensions between rapid AI innovation and government concerns about safety, security, or potential misuse. For AI companies, this represents a new reality where compliance with government directives isn't optional—it's mandatory, regardless of commercial implications.</p>\n<p>The incident positions Anthropic as a test case for how AI developers will navigate heightened regulatory scrutiny. By complying swiftly, the company demonstrates responsibility but also sets a precedent for future government interventions. Other AI labs will be watching closely to understand what criteria trigger government action and how to prepare for similar situations.</p>\n<p>Broader implications are significant for the entire AI industry. If governments can directly mandate model shutdowns, it fundamentally changes how companies plan product roadmaps and market launches. This could accelerate the fragmentation of global AI ecosystems, with different regions imposing different restrictions on model architectures and capabilities.</p>\n<p>Looking ahead, we should expect more government-AI company friction as capabilities advance. The question isn't whether regulation is coming—it's already here. The real challenge is whether companies, governments, and safety advocates can collaboratively establish frameworks that enable responsible innovation while protecting public interests.</p>\n<p>The era of self-regulated AI development is over.</p>",
+    "category": "Safety",
+    "hashtags": [
+      "AIRegulation",
+      "ArtificialIntelligence",
+      "TechPolicy",
+      "Anthropic",
+      "FutureOfAI"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_us_orders_claude_offline_20260613.png",
+    "sourceUrl": "https://www.wired.com/story/anthropic-says-us-government-ordered-it-to-shut-down-mythos-models/",
+    "publishedAt": "2026-06-13T09:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
     "id": "spacex-ipo-75b-20260611",
     "slug": "spacex-ipo-75-billion",
     "headline": "SpaceX Raises $75 Billion in Its IPO",
