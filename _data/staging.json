@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic cuts off Fable 5 and Mythos 5 access following government order",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/949553/anthropic-fable-5-mythos-5-government-national-security",
-    "score": 98,
-    "reason": "Major controversy: Government shutdown of AI models, concrete action with real impact"
+    "headline": "OpenAI’s financials have leaked, showing $21 billion in losses against $13 billion in revenue",
+    "link": "https://fortune.com/2026/06/16/openai-financials-leaked-losses-revenue-profit/",
+    "score": 95,
+    "reason": "Big numbers, actual data leak, major company financials"
   },
   {
     "rank": 2,
-    "headline": "SpaceX IPO raises total of $85.7 billion as underwriters exercise &apos;greenshoe&apos; overallotment option",
-    "link": "https://www.cnbc.com/2026/06/15/spacex-ipo-spcx-greenshoe-overallotment.html",
-    "score": 96,
-    "reason": "Massive financial number, major market launch event"
+    "headline": "SpaceX is officially buying Cursor for $60 billion",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/950571/spacex-is-officially-buying-cursor-for-60-billion",
+    "score": 92,
+    "reason": "Massive acquisition, concrete deal, major companies"
   },
   {
     "rank": 3,
-    "headline": "Nvidia plans to raise at least $20 billion in first debt sale since start of AI boom",
+    "headline": "Nvidia plans to raise at least $20 billion in its first debt sale since start of AI boom",
     "link": "https://www.cnbc.com/2026/06/15/nvidia-plans-to-raise-about-20-billion-first-debt-sale-in-ai-boom.html",
-    "score": 94,
-    "reason": "Big financial number, significant market move in AI era"
+    "score": 88,
+    "reason": "Large capital raise, major milestone, concrete action"
   },
   {
     "rank": 4,
-    "headline": "Investigation by The Atlantic reveals many millions of songs used for AI music training",
-    "link": "https://www.engadget.com/2194804/investigation-by-the-atlantic-reveals-many-millions-of-songs-used-for-ai-music-training/",
-    "score": 92,
-    "reason": "Large-scale investigation with concrete numbers, IP controversy"
+    "headline": "Anthropic Is Still at Odds With the White House Over Claude Fable 5",
+    "link": "https://www.wired.com/story/anthropic-is-still-at-odds-with-the-white-house-over-claude-fable-5/",
+    "score": 87,
+    "reason": "Major controversy, government conflict, repeated escalation"
   },
   {
     "rank": 5,
-    "headline": "Fox’s $22B Roku acquisition aims to expand its reach into smart TVs, advertising",
-    "link": "https://arstechnica.com/gadgets/2026/06/foxs-22b-roku-acquisition-aims-to-expand-its-reach-into-smart-tvs-advertising/",
-    "score": 90,
-    "reason": "Major acquisition dollar amount, concrete business launch"
+    "headline": "Feds freaked over Fable 5 after simple &#x27;fix this code&#x27; prompt, not jailbreak",
+    "link": "https://www.theregister.com/security/2026/06/15/feds-freaked-over-fable-5-after-simple-fix-this-code-prompt-not-jailbreak-says-researcher/5255827",
+    "score": 85,
+    "reason": "Government controversy details, concrete incident, policy impact"
   },
   {
     "rank": 6,
-    "headline": "This man with ALS is \"the first power user\" of a brain implant that lets him speak",
-    "link": "https://www.technologyreview.com/2026/06/15/1138953/man-als-first-power-user-brain-implant-speak-bci/",
-    "score": 88,
-    "reason": "Major medical AI breakthrough, concrete real-world application"
+    "headline": "DOJ Lawyers Argue xAI Is ‘Vital’ for National Security in NAACP Lawsuit",
+    "link": "https://www.wired.com/story/doj-lawyers-argue-xai-vital-national-security-naacp-lawsuit/",
+    "score": 84,
+    "reason": "Litigation, government involvement, national security stakes"
   },
   {
     "rank": 7,
-    "headline": "Anthropic hit with lawsuit over its Claude Max usage limits",
-    "link": "https://www.engadget.com/2194626/anthropic-hit-with-lawsuit-over-its-claude-max-usage-limits/",
-    "score": 86,
-    "reason": "Legal controversy against major AI company, concrete legal action"
+    "headline": "The AI off switch: How Anthropic's export controls sparked a global AI sovereignty scramble",
+    "link": "https://www.artificialintelligence-news.com/news/anthropic-export-controls-ai-sovereignty/",
+    "score": 83,
+    "reason": "Global impact, policy controversy, major structural shift"
   },
   {
     "rank": 8,
-    "headline": "How Amazon and the White House ended Anthropic's Fable",
-    "link": "https://www.axios.com/2026/06/13/anthropic-amazon-white-house",
-    "score": 85,
-    "reason": "Detailed government intervention story with company action"
+    "headline": "Meta CTO Andrew Bosworth Admits the Company’s AI Reorg Was ‘Atrocious’",
+    "link": "https://www.wired.com/story/andrew-bosworth-meta-employees-unrest/",
+    "score": 81,
+    "reason": "Major company admission, internal controversy, strategic shift"
   },
   {
     "rank": 9,
-    "headline": "China may have accessed Mythos",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/949644/china-white-house-anthropic-mythos",
-    "score": 84,
-    "reason": "Security breach with geopolitical implications"
+    "headline": "An explosion of AI deepfakes is redefining American elections",
+    "link": "https://www.axios.com/2026/06/16/ai-deepfake-ads-campaigns-midterms",
+    "score": 80,
+    "reason": "Major social impact, election consequences, scale mentioned"
   },
   {
     "rank": 10,
-    "headline": "Facebook's new AI tools offer more of the same, with photo-editing and question-answering capabilities",
-    "link": "https://www.engadget.com/2194509/facebooks-new-ai-tools-offer-more-of-the-same-with-photo-editing-and-question-answering-capabilities/",
-    "score": 78,
-    "reason": "Major company AI launch with concrete features"
+    "headline": "Meta Tapped a Pentagon Supplier to Prototype Face Recognition for Its Glasses",
+    "link": "https://www.wired.com/story/meta-rank-one-computing-face-recognition-smart-glasses/",
+    "score": 79,
+    "reason": "Major tech launch, government partnership, surveillance angle"
   },
   {
     "rank": 11,
-    "headline": "xAI's lawsuit accusing OpenAI of stealing trade secrets has been thrown out",
-    "link": "https://www.engadget.com/2194592/xai-lawsuit-accusing-openai-of-stealing-trade-secrets-has-been-thrown-out/",
-    "score": 76,
-    "reason": "High-profile legal case with definitive outcome"
+    "headline": "Facebook’s new AI Mode search gets its info from public posts",
+    "link": "https://www.theverge.com/tech/950264/meta-ai-mode-search-facebook",
+    "score": 77,
+    "reason": "Major feature launch, product announcement"
   },
   {
     "rank": 12,
-    "headline": "Top analyst: 71% of SpaceX's $2 trillion value rests on AI. Grok's numbers are ‘almost comical’ by comparison",
-    "link": "https://fortune.com/2026/06/15/spacex-valuation-2-trillion-how-much-ai-grok-elon-musk/",
-    "score": 74,
-    "reason": "Big numbers and controversial analyst take on AI market valuation"
+    "headline": "Qualcomm CEO says AI agents will replace apps — as chip giant works on 40 new AI-powered devices",
+    "link": "https://www.cnbc.com/2026/06/16/qualcomm-ceo-ai-devices-agents.html",
+    "score": 76,
+    "reason": "Big product count, major strategic shift, industry impact"
   },
   {
     "rank": 13,
-    "headline": "Scoop: Anthropic flies staff to D.C. to clean up White House fight",
-    "link": "https://www.axios.com/2026/06/14/anthropic-white-house-mythos-fable",
-    "score": 72,
-    "reason": "Breaking news of government-company conflict response"
+    "headline": "HarmonyOS 7 steps into the AI gap Apple left open in China",
+    "link": "https://www.artificialintelligence-news.com/news/harmonyos-7-china-ai-apple-gap/",
+    "score": 74,
+    "reason": "Major OS launch, market competition, geopolitical angle"
   },
   {
     "rank": 14,
-    "headline": "Windows Subsystem for Linux 3 gives developers a compelling reason to stick with Microsoft - here's why",
-    "link": "https://www.zdnet.com/article/windows-subsystem-for-linux-3-for-developers-sticking-with-microsoft/",
-    "score": 68,
-    "reason": "Major Microsoft development platform launch"
+    "headline": "EU publishes its AI content labelling playbook ahead of the AI Act's August deadline",
+    "link": "https://www.artificialintelligence-news.com/news/ai-content-labelling-eu-code-of-practice/",
+    "score": 72,
+    "reason": "Regulatory milestone, major jurisdiction, concrete deadline"
   },
   {
     "rank": 15,
-    "headline": "Apple Foundation Models",
-    "link": "https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models",
-    "score": 66,
-    "reason": "Apple's AI model launch announcement"
+    "headline": "‘Pretty Crazy’ Token Usage Is Testing Bosses’ Bet on AI",
+    "link": "https://www.wired.com/story/claude-tokens-compute-cost-code-8x8/",
+    "score": 70,
+    "reason": "Cost controversy, business impact, operational challenge"
   },
   {
     "rank": 16,
-    "headline": "OpenAI and Oracle are building one of America's biggest data centers in a state where tree mortality tripled last year",
-    "link": "https://fortune.com/2026/06/15/openai-oracle-data-center-new-mexico-water-drought-tree-mortality/",
-    "score": 64,
-    "reason": "Major infrastructure launch with environmental controversy"
+    "headline": "How the Anthropic saga could threaten American AI dominance",
+    "link": "https://www.axios.com/2026/06/16/anthropic-regulation-trump-china",
+    "score": 68,
+    "reason": "Geopolitical stakes, competitiveness impact"
   },
   {
     "rank": 17,
-    "headline": "Samsung expands its Galaxy Book 6 lineup with a Snapdragon X2 Elite-powered model",
-    "link": "https://www.engadget.com/2194830/samsung-expands-its-galaxy-book-6-lineup-with-a-snapdragon-x2-elite-powered-model/",
-    "score": 58,
-    "reason": "Hardware product launch from major AI player"
+    "headline": "\"They screwed us\": Personality clashes sent Anthropic's models offline",
+    "link": "https://www.axios.com/2026/06/15/anthropic-white-house-fable-mythos",
+    "score": 66,
+    "reason": "Internal controversy, operational impact, service disruption"
   },
   {
     "rank": 18,
-    "headline": "Accenture: Consumers show growing trust in AI shopping agents",
-    "link": "https://www.artificialintelligence-news.com/news/ai-shopping-agents-consumer-trust-accenture-report/",
-    "score": 56,
-    "reason": "Market research on AI adoption trends"
+    "headline": "Microsoft's Brad Smith on AI-era jobs: \"Let's not panic\"",
+    "link": "https://www.axios.com/2026/06/16/microsofts-brad-smith-on-ai-era-jobs-lets-not-panic",
+    "score": 64,
+    "reason": "Major company executive statement on labor impact"
   },
   {
     "rank": 19,
-    "headline": "Can Europe train a frontier AI model on the compute it owns?",
-    "link": "https://github.com/sammysltd/euromesh",
-    "score": 54,
-    "reason": "Geopolitical AI competition story"
+    "headline": "Amazon security research reportedly led to the White House’s Anthropic Fable ban",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/949601/amazon-anthropic-fablemythos-government-ban",
+    "score": 62,
+    "reason": "Government action, major company involvement, policy consequence"
   },
   {
     "rank": 20,
-    "headline": "7 ways AI can help with your Linux system management",
-    "link": "https://www.zdnet.com/article/how-to-use-ai-to-help-with-linux-system-management/",
-    "score": 50,
-    "reason": "AI integration in developer tools"
+    "headline": "Trump’s Anthropic shutdown just made the case for non-American AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/949986/anthropic-fable-mythos-shutdown-sovereign-ai",
+    "score": 60,
+    "reason": "Government action, geopolitical consequences, industry impact"
   }
 ]
