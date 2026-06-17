@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Decision on Anthropic's Fable and Mythos models means the U.S. has a licensing regime for frontier AI—it just doesn't want to admit it",
-    "link": "https://fortune.com/2026/06/16/trump-administration-licensing-regime-for-frontier-ai-models-ad-hoc-and-opaque-eye-on-ai/",
-    "score": 94,
-    "reason": "Major regulatory development with concrete policy impact; Anthropic controversy; establishes AI licensing precedent"
+    "headline": "SpaceX is officially buying Cursor for $60 billion",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/950571/spacex-is-officially-buying-cursor-for-60-billion",
+    "score": 98,
+    "reason": "Massive acquisition price, concrete deal (not rumor), SpaceX + AI startup convergence"
   },
   {
     "rank": 2,
-    "headline": "SpaceX is buying AI coding startup Cursor for $60 billion",
-    "link": "https://www.engadget.com/2195265/spacex-is-buying-ai-coding-startup-cursor-for-60-billion/",
+    "headline": "Trump’s Anthropic shutdown just made the case for non-American AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/949986/anthropic-fable-mythos-shutdown-sovereign-ai",
     "score": 92,
-    "reason": "Huge acquisition price; major tech deal; demonstrates AI market consolidation"
+    "reason": "Major political controversy, direct impact on leading AI company, geopolitical implications"
   },
   {
     "rank": 3,
-    "headline": "SpaceX IPO raises total of $85.7 billion as underwriters exercise &apos;greenshoe&apos; overallotment option",
-    "link": "https://www.cnbc.com/2026/06/15/spacex-ipo-spcx-greenshoe-overallotment.html",
-    "score": 88,
-    "reason": "Record-breaking IPO valuation; significant market event"
+    "headline": "Meta CTO Andrew Bosworth Admits the Company’s AI Reorg Was ‘Atrocious’",
+    "link": "https://www.wired.com/story/andrew-bosworth-meta-employees-unrest/",
+    "score": 87,
+    "reason": "Rare executive admission of failure, Meta's AI strategy in question, leadership credibility issue"
   },
   {
     "rank": 4,
-    "headline": "Inside the fight over Claude Mythos 5",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/950412/anthropic-trump-adminstration-claude-mythos-fable-5-export-controls",
-    "score": 86,
-    "reason": "Controversy over AI model; Anthropic regulatory battle; substantive conflict"
+    "headline": "Facebook’s new AI Mode search gets its info from public posts",
+    "link": "https://www.theverge.com/tech/950264/meta-ai-mode-search-facebook",
+    "score": 85,
+    "reason": "Major product launch, privacy implications, Meta's AI-powered search"
   },
   {
     "rank": 5,
-    "headline": "All the news about Anthropic's new AI fight with the White House",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/950026/anthropic-fable-mythos-ban-ai-shutdown",
+    "headline": "An explosion of AI deepfakes is redefining American elections",
+    "link": "https://www.axios.com/2026/06/16/ai-deepfake-ads-campaigns-midterms",
     "score": 84,
-    "reason": "Government-industry conflict; regulatory pressure; ongoing controversy"
+    "reason": "Election interference controversy, tangible real-world impact, growing scale problem"
   },
   {
     "rank": 6,
-    "headline": "This man with ALS is \"the first power user\" of a brain implant that lets him speak",
-    "link": "https://www.technologyreview.com/2026/06/15/1138953/man-als-first-power-user-brain-implant-speak-bci/",
+    "headline": "DOJ assists Musk&apos;s xAI in NAACP air pollution suit, asks court to toss case",
+    "link": "https://www.cnbc.com/2026/06/16/usdepartment-of-justice-calls-for-dismissal-of-naacp-xai-lawsuit-.html",
     "score": 82,
-    "reason": "Major medical breakthrough; real-world AI application; human impact story"
+    "reason": "Government intervention controversy, national security framing, environmental vs. AI development clash"
   },
   {
     "rank": 7,
-    "headline": "XREAL's Android XR glasses launch 'this fall' with Project Hail Mary & Fallout games, $99 reservations open",
-    "link": "https://9to5google.com/2026/06/16/xreal-aura-android-xr-reservations-games/",
-    "score": 78,
-    "reason": "Product launch with games; XR hardware advancement; concrete availability"
+    "headline": "How the Anthropic saga could threaten American AI dominance",
+    "link": "https://www.axios.com/2026/06/16/anthropic-regulation-trump-china",
+    "score": 81,
+    "reason": "National competitiveness concern, regulatory impact on major AI lab, geopolitical consequences"
   },
   {
     "rank": 8,
-    "headline": "Wear OS 7 arrives to Pixel watches with Gemini AI and live updates",
-    "link": "https://www.engadget.com/2195052/wear-os-7-comes-to-pixel-watches/",
-    "score": 76,
-    "reason": "Google OS launch; AI integration; wearable platform update"
+    "headline": "Trump's AI export strategy runs into Trump's export controls",
+    "link": "https://www.axios.com/2026/06/16/trump-ai-export-strategy-export-control",
+    "score": 79,
+    "reason": "Policy contradiction, concrete regulatory conflict, affects AI company operations"
   },
   {
     "rank": 9,
-    "headline": "Trump's fight with Anthropic is now a fight over cybersecurity",
-    "link": "https://www.axios.com/2026/06/16/anthropic-fable-trump-white-house-cybersecurity",
-    "score": 74,
-    "reason": "Political controversy; Anthropic; regulatory escalation"
+    "headline": "GLM-5.2 is the new leading open weights model on Artificial Analysis",
+    "link": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
+    "score": 77,
+    "reason": "Open-source AI breakthrough, performance achievement, alternative to proprietary models"
   },
   {
     "rank": 10,
-    "headline": "The new oil? Inside the effort to turn AI computing power into a tradeable commodity",
-    "link": "https://www.cnbc.com/2026/06/16/the-new-oil-inside-the-effort-to-turn-ai-computing-power-into-a-tradeable-commodity.html",
-    "score": 72,
-    "reason": "Market infrastructure development; AI commodification; economic shift"
+    "headline": "Google Cloud generative AI automates council planning operations",
+    "link": "https://www.artificialintelligence-news.com/news/google-cloud-generative-ai-automates-council-planning-operations/",
+    "score": 75,
+    "reason": "Google product launch, government AI deployment, job automation at scale"
   },
   {
     "rank": 11,
-    "headline": "Qualcomm’s latest chip hints that more powerful smart glasses could be on the way",
-    "link": "https://www.theverge.com/gadgets/950229/qualcomm-snapdragon-reality-elite-xr-smart-glasses-wearables",
-    "score": 68,
-    "reason": "Hardware advancement; Qualcomm; smart glasses capability increase"
+    "headline": "‘Pretty Crazy’ Token Usage Is Testing Bosses’ Bet on AI",
+    "link": "https://www.wired.com/story/claude-tokens-compute-cost-code-8x8/",
+    "score": 73,
+    "reason": "Cost crisis evidence, corporate AI ROI concerns, concrete business impact"
   },
   {
     "rank": 12,
-    "headline": "Running local models is good now",
-    "link": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/",
-    "score": 66,
-    "reason": "Technical capability milestone; democratization of AI; practical advancement"
+    "headline": "Cohere CEO on G7 leaders' choice: sovereign AI or digital serfdom",
+    "link": "https://fortune.com/2026/06/17/ai-digital-sovereignty-g7-anthropic-cohere-aidan-gomez/",
+    "score": 71,
+    "reason": "G7 summit focus, national AI sovereignty debate, Cohere positioning"
   },
   {
     "rank": 13,
-    "headline": "Around a fifth of Steam Next Fest demos have a generative AI disclosure",
-    "link": "https://www.engadget.com/2195840/around-a-fifth-of-steam-next-fest-demos-have-a-generative-ai-disclosure/",
-    "score": 64,
-    "reason": "AI adoption metric; gaming industry; measurable trend (20% penetration)"
+    "headline": "&apos;A signal of where power sits&apos;: Trump and world leaders joined by OpenAI, Anthropic, Google at G7",
+    "link": "https://www.cnbc.com/2026/06/17/g7-trump-ai-tech-leaders-openai-anthropic-google.html",
+    "score": 70,
+    "reason": "G7 summit AI participation, political power concentration, multi-company involvement"
   },
   {
     "rank": 14,
-    "headline": "China may have accessed Mythos",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/949644/china-white-house-anthropic-mythos",
-    "score": 62,
-    "reason": "Security controversy; geopolitical concern; Anthropic model security"
+    "headline": "A 76-year-old was about to lose his entire $3 million retirement to a scam. TIAA's AI caught it—but a human prevented disaster",
+    "link": "https://fortune.com/2026/06/17/tiaa-saved-retiree-from-scam-using-artifical-intelligence-human-centered-work-ceo-thasunda-brown-duckett/",
+    "score": 68,
+    "reason": "Concrete AI application success, fraud prevention, consumer protection impact"
   },
   {
     "rank": 15,
-    "headline": "Insurers pivot AI strategy toward core risk underwriting",
-    "link": "https://www.artificialintelligence-news.com/news/insurers-pivot-ai-strategy-toward-core-risk-underwriting/",
-    "score": 58,
-    "reason": "Enterprise AI adoption; financial services; strategic pivot"
+    "headline": "Anthropic Is Still at Odds With the White House Over Claude Fable 5",
+    "link": "https://www.wired.com/story/anthropic-is-still-at-odds-with-the-white-house-over-claude-fable-5/",
+    "score": 66,
+    "reason": "Ongoing regulatory conflict, specific model controversy, government-AI company tension"
   },
   {
     "rank": 16,
-    "headline": "GPT‑NL: a sovereign language model for the Netherlands",
-    "link": "https://www.tno.nl/en/digital/artificial-intelligence/gpt-nl/",
-    "score": 56,
-    "reason": "New language model launch; sovereign AI development; geographic expansion"
+    "headline": "China pushes for AI safety as G7 summit wraps up without Beijing",
+    "link": "https://www.cnbc.com/2026/06/17/china-pushes-for-ai-safety-as-g7-summit-wraps-up-without-beijing.html",
+    "score": 64,
+    "reason": "China's AI strategy pivot, G7 exclusion response, international AI governance"
   },
   {
     "rank": 17,
-    "headline": "Accenture: Consumers show growing trust in AI shopping agents",
-    "link": "https://www.artificialintelligence-news.com/news/ai-shopping-agents-consumer-trust-accenture-report/",
-    "score": 54,
-    "reason": "Consumer adoption metric; enterprise report; trust measurement"
+    "headline": "The next humanoid robot might not look human at all",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/951283/genesis-ai-humanoid-robot-eno",
+    "score": 62,
+    "reason": "Design paradigm shift in robotics, major technical insight, industry-wide implications"
   },
   {
     "rank": 18,
-    "headline": "Claude: Elevated errors across many models",
-    "link": "https://status.claude.com/incidents/xmhsglsz3h3w",
-    "score": 50,
-    "reason": "Anthropic technical issue; model performance problem; quality concern"
+    "headline": "OpenAI’s balance sheet remains the most mysterious—and consequential—in business",
+    "link": "https://fortune.com/2026/06/17/openai-balance-sheet-mysterious-business/",
+    "score": 60,
+    "reason": "Financial transparency issue, OpenAI accountability, industry consequence"
   },
   {
     "rank": 19,
-    "headline": "Android 17 is out now, with a fresh Pixel Drop for June - here's what's new",
-    "link": "https://www.zdnet.com/article/android-17-is-out-with-june-pixel-drop-whats-new/",
-    "score": 48,
-    "reason": "Google OS release; platform update; AI features included"
+    "headline": "Microsoft's Brad Smith on AI-era jobs: \"Let's not panic\"",
+    "link": "https://www.axios.com/2026/06/16/microsofts-brad-smith-on-ai-era-jobs-lets-not-panic",
+    "score": 58,
+    "reason": "Major tech executive statement, employment controversy response, Microsoft position"
   },
   {
     "rank": 20,
-    "headline": "Fox’s $22B Roku acquisition aims to expand its reach into smart TVs, advertising",
-    "link": "https://arstechnica.com/gadgets/2026/06/foxs-22b-roku-acquisition-aims-to-expand-its-reach-into-smart-tvs-advertising/",
-    "score": 46,
-    "reason": "Major acquisition; media consolidation; smart TV market"
+    "headline": "Big Tech’s desperate last push at AI regulation",
+    "link": "https://www.theverge.com/policy/949970/ai-regulation-child-safety-kosa-congress",
+    "score": 56,
+    "reason": "Regulatory strategy analysis, multiple companies involved, policy window closing"
   }
 ]
