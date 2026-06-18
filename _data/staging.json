@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Microsoft sells OpenAI models in China. OpenAI and Anthropic won't.",
-    "link": "https://www.artificialintelligence-news.com/news/microsoft-sells-openai-models-china/",
-    "score": 92,
-    "reason": "Major regulatory divergence, big commercial stakes, competitive split"
+    "headline": "The White House Wants Anthropic to Block All Jailbreaks. That May Not Be Possible",
+    "link": "https://www.wired.com/story/the-white-house-wants-anthropic-to-block-all-jailbreaks-that-may-not-be-possible/",
+    "score": 94,
+    "reason": "Major controversy: government overreach in AI safety, technical feasibility debate, Anthropic involvement"
   },
   {
     "rank": 2,
-    "headline": "Google Gemini co-lead Noam Shazeer leaves for OpenAI",
-    "link": "https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html",
-    "score": 88,
-    "reason": "Top talent poaching, OpenAI vs Google competition intensifies"
+    "headline": "Amazon employees say they’re facing termination for backing data center limits",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/952180/amazon-seattle-data-center-moratorium-aecj-disciplinary-action",
+    "score": 92,
+    "reason": "Significant controversy: employee retaliation, corporate vs. worker rights, AI infrastructure expansion"
   },
   {
     "rank": 3,
-    "headline": "Godfather of AI blasts Musk&apos;s xAI as &apos;failure,&apos; says labs are risking a &apos;big bubble explosion&apos;",
-    "link": "https://www.cnbc.com/2026/06/18/yann-lecun-elon-musk-xai-failure-ai-labs-bubble-risk.html",
-    "score": 85,
-    "reason": "Major figure controversy, existential AI warning, funding bubble critique"
+    "headline": "Adobe brings its Firefly AI Assistant inside of Premiere, Photoshop and Illustrator",
+    "link": "https://www.engadget.com/2197079/adobe-brings-its-firefly-ai-assistant-inside-of-premiere-photoshop-and-illustrator/",
+    "score": 88,
+    "reason": "Major product launch: three flagship Adobe products, generative AI integration across suite"
   },
   {
     "rank": 4,
-    "headline": "Waymo recalls over 3,800 robotaxis that might drive onto closed freeways",
-    "link": "https://www.engadget.com/2197051/waymo-recalls-3800-robotaxis-that-might-drive-onto-closed-freeways/",
-    "score": 83,
-    "reason": "Large-scale safety recall, autonomous vehicle vulnerability"
+    "headline": "General Motors Is Cutting Its Development Cycles in Half",
+    "link": "https://spectrum.ieee.org/gm-ai-design",
+    "score": 85,
+    "reason": "Big impact: 50% reduction in development time, major automotive AI implementation"
   },
   {
     "rank": 5,
-    "headline": "Midjourney goes from generating cat images to full-body ultrasound scans",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan",
-    "score": 81,
-    "reason": "Major capability expansion into medical imaging, significant application shift"
+    "headline": "Google DeepMind unveils plan to protect itself from its own rogue AI agents",
+    "link": "https://fortune.com/2026/06/18/google-deepmind-unveils-plan-to-protect-itself-from-its-own-rogue-ai-agents/",
+    "score": 83,
+    "reason": "Significant controversy: AI safety concerns, self-defense from AI systems, major lab involved"
   },
   {
     "rank": 6,
-    "headline": "CEOs of Anthropic and Google DeepMind call for U.S.-led AI coalition in meeting at G7",
-    "link": "https://www.cnbc.com/2026/06/17/anthropic-amodei-google-hassabis-us-ai-coalition-g7.html",
-    "score": 79,
-    "reason": "High-level geopolitical AI governance initiative, regulatory framework"
+    "headline": "Amazon AI exec predicts first &apos;commercially useful&apos; quantum computers in 5-7 years",
+    "link": "https://www.cnbc.com/2026/06/17/amazon-quantum-computing-timeline.html",
+    "score": 80,
+    "reason": "Major timeline: quantum computing commercialization prediction, Amazon quantum ambitions"
   },
   {
     "rank": 7,
-    "headline": "The UK Will Scan Asylum-Seekers’ Faces for Age Checks—Despite Knowing the Tech Is Flawed",
-    "link": "https://www.wired.com/story/facial-age-estimate-uk-asylum-seekers/",
+    "headline": "Gemini's co-lead is leaving Google to join OpenAI",
+    "link": "https://9to5google.com/2026/06/17/geminis-co-lead-is-leaving-google-to-join-openai/",
     "score": 78,
-    "reason": "Major controversy over government AI implementation despite known failures"
+    "reason": "Significant talent movement: Google to OpenAI transition, leadership level departure"
   },
   {
     "rank": 8,
-    "headline": "HSBC expands AI banking partnership with Google Cloud",
-    "link": "https://www.artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership/",
-    "score": 75,
-    "reason": "Product launch, AI integration into consumer hardware"
+    "headline": "A $5.6 billion valuation and rapid global expansion—this AI European scaler even threw in a free Jude Law",
+    "link": "https://fortune.com/2026/06/18/ai-european-scaler-legora-bird-bird-law/",
+    "score": 76,
+    "reason": "Big numbers: $5.6B valuation, European AI company growth"
   },
   {
     "rank": 9,
-    "headline": "ChatGPT now has a hub for scheduled tasks",
-    "link": "https://www.engadget.com/2196844/chatgpt-now-has-a-hub-for-scheduled-tasks/",
-    "score": 72,
-    "reason": "Feature launch expanding ChatGPT automation capabilities"
+    "headline": "Midjourney, the AI image generator, is developing a full-body ultrasonic scanner",
+    "link": "https://www.engadget.com/2196998/midjourney-full-body-ultrasonic-scanner/",
+    "score": 74,
+    "reason": "Novel product expansion: Midjourney moving into hardware, biometric scanning technology"
   },
   {
     "rank": 10,
-    "headline": "How Musicians Can Get Paid for Training AI",
-    "link": "https://spectrum.ieee.org/ai-music-attribution",
-    "score": 70,
-    "reason": "IP compensation model emerging, artist rights framework"
+    "headline": "Who decides when AI is too dangerous?",
+    "link": "https://www.theverge.com/podcast/951542/anthropic-claude-fable-5-mythos-ban-pentagon-ai-regulation-trump",
+    "score": 72,
+    "reason": "Major policy question: governance and regulation debate, White House involvement context"
   },
   {
     "rank": 11,
-    "headline": "‘No poaching’ our people, China&apos;s AI behemoth DeepSeek reportedly tells investors",
-    "link": "https://www.cnbc.com/2026/06/18/no-poaching-our-people-chinas-deepseek-reportedly-tells-investors.html",
-    "score": 68,
-    "reason": "China-US AI competition intensification, talent retention policy"
+    "headline": "Two-thirds of Americans think AI is advancing too quickly",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/951653/pew-research-ai-chatbot-usage-advancing-too-quickly",
+    "score": 70,
+    "reason": "Big number: 66%+ public concern, regulatory pressure indicator"
   },
   {
     "rank": 12,
-    "headline": "My Father Wants to Age in Place. AI Will Be Watching",
-    "link": "https://www.wired.com/story/sensi-ai-seniors-home-care-aging-in-place/",
-    "score": 66,
-    "reason": "Privacy-surveillance tradeoff in elder care AI deployment"
+    "headline": "How to run a company when the AI agents vastly outnumber the humans",
+    "link": "https://fortune.com/2026/06/18/brainstorm-tech-ai-high-stakes-situations-salesforce-draftkings-indeed-xero-prudential-zillow/",
+    "score": 68,
+    "reason": "Emerging workplace trend: AI agent proliferation, organizational challenge"
   },
   {
     "rank": 13,
-    "headline": "The Gemini-Powered Google Home Speaker Is Finally Here",
-    "link": "https://www.wired.com/story/the-gemini-powered-google-home-speaker-is-finally-here/",
-    "score": 65,
-    "reason": "Consumer AI product integration milestone"
+    "headline": "The Korean Telecom Giant at the Center of Anthropic’s Mythos Controversy",
+    "link": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
+    "score": 66,
+    "reason": "Controversy: corporate partnership dispute, Anthropic governance issues"
   },
   {
     "rank": 14,
-    "headline": "Qualcomm’s latest chip hints that more powerful smart glasses could be on the way",
-    "link": "https://www.theverge.com/gadgets/950229/qualcomm-snapdragon-reality-elite-xr-smart-glasses-wearables",
-    "score": 63,
-    "reason": "Hardware advancement enabling mobile AI applications"
+    "headline": "Arizona emerges as test case for AI's energy and water crunch",
+    "link": "https://www.axios.com/2026/06/18/arizona-ai-data-center-water-power",
+    "score": 65,
+    "reason": "Impact reporting: AI infrastructure environmental costs, geographic concentration"
   },
   {
     "rank": 15,
-    "headline": "Anthropic got hit by export rules nobody understands",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/951703/anthropic-shutdown-export-controls",
-    "score": 61,
-    "reason": "Regulatory uncertainty impacting AI company operations"
+    "headline": "Inside the White House's AI power center",
+    "link": "https://www.axios.com/2026/06/18/inside-white-house-ai-power-center",
+    "score": 62,
+    "reason": "Government structure: White House AI policy apparatus, institutional setup"
   },
   {
     "rank": 16,
-    "headline": "Inside India newsletter: Anthropic curbs ignite AI debate in India — efforts &apos;too slow, way too small&apos;",
-    "link": "https://www.cnbc.com/2026/06/18/anthropic-curbs-sovereign-ai-inside-india.html",
-    "score": 59,
-    "reason": "Regional regulatory constraint on major AI lab"
+    "headline": "Some Google Pixel owners can't reply to emails in Gmail as keyboard fails to appear",
+    "link": "https://9to5google.com/2026/06/18/google-pixel-gmail-keyboard-issue/",
+    "score": 58,
+    "reason": "Bug impact: Gemini AI keyboard issues affecting users"
   },
   {
     "rank": 17,
-    "headline": "Anne Hathaway says she was spammed with ChatGPT-written thank you notes after hiring a recent role: 'Nobody on that list gets that job'",
-    "link": "https://fortune.com/2026/06/18/anne-hathaway-chatgpt-thank-you-notes-job-candidates-hiring-meryl-streep-career-advice-job-interview/",
-    "score": 57,
-    "reason": "Celebrity criticism of AI misuse in hiring, real-world friction point"
+    "headline": "Intel gains 10% after Trump says company will partner with Apple on U.S. chip design",
+    "link": "https://www.cnbc.com/2026/06/18/trump-intel-apple-chip-design-deal.html",
+    "score": 56,
+    "reason": "Market impact: stock jump on partnership announcement, semiconductor policy"
   },
   {
     "rank": 18,
-    "headline": "The next humanoid robot might not look human at all",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/951283/genesis-ai-humanoid-robot-eno",
-    "score": 55,
-    "reason": "Paradigm shift in robotics design philosophy"
+    "headline": "LinkedIn research says half of C-suite leaders are flying blind on AI—and its CBO says they can't fix it the way they're trying",
+    "link": "https://fortune.com/2026/06/18/linkedin-mark-lobosco-chief-business-officer-blind-spot-ai-adoption/",
+    "score": 54,
+    "reason": "Big number: 50% executive uncertainty, corporate AI readiness gap"
   },
   {
     "rank": 19,
-    "headline": "Insurers pivot AI strategy toward core risk underwriting",
-    "link": "https://www.artificialintelligence-news.com/news/insurers-pivot-ai-strategy-toward-core-risk-underwriting/",
-    "score": 53,
-    "reason": "Enterprise AI refocus away from hype toward core applications"
+    "headline": "AI’s free-for-all era may be coming to an end—as companies start counting the cost",
+    "link": "https://fortune.com/2026/06/18/ais-free-for-all-phase-may-be-coming-to-an-endas-companies-start-counting-the-cost/",
+    "score": 52,
+    "reason": "Market shift: economics becoming limiting factor in AI deployment"
   },
   {
     "rank": 20,
-    "headline": "AI search grounded in Facebook posts? What could go wrong?",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/951099/meta-ai-mode-search-hands-on",
-    "score": 51,
-    "reason": "Criticism of search quality degradation via social content training"
+    "headline": "Meta’s AI Workers Are Revolting, Peter Thiel’s Secret Society, and SBF’s Plea to Trump",
+    "link": "https://www.wired.com/story/uncanny-valley-podcast-meta-ai-workers-revolting-peter-thiel-secret-society-sbf-plea-to-trump/",
+    "score": 50,
+    "reason": "Multiple controversies: Meta AI labor issues, but mixed relevance"
   }
 ]
