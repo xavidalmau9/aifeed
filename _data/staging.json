@@ -1,128 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic export ban sounds alarms for AI industry",
-    "link": "https://www.axios.com/2026/06/16/ai-anthropic-export-controls",
+    "headline": "Microsoft sells OpenAI models in China. OpenAI and Anthropic won't.",
+    "link": "https://www.artificialintelligence-news.com/news/microsoft-sells-openai-models-china/",
     "score": 92,
-    "reason": "Major regulatory action affecting leading AI company; significant industry impact"
+    "reason": "Major regulatory divergence, big commercial stakes, competitive split"
   },
   {
     "rank": 2,
-    "headline": "Trump's fight with Anthropic is now a fight over cybersecurity",
-    "link": "https://www.axios.com/2026/06/16/anthropic-fable-trump-white-house-cybersecurity",
-    "score": 89,
-    "reason": "High-stakes controversy between government and major AI lab; policy implications"
+    "headline": "Google Gemini co-lead Noam Shazeer leaves for OpenAI",
+    "link": "https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html",
+    "score": 88,
+    "reason": "Top talent poaching, OpenAI vs Google competition intensifies"
   },
   {
     "rank": 3,
-    "headline": "The White House Wants Anthropic to Block All Jailbreaks. That May Not Be Possible",
-    "link": "https://www.wired.com/story/the-white-house-wants-anthropic-to-block-all-jailbreaks-that-may-not-be-possible/",
-    "score": 87,
-    "reason": "Government-AI company conflict with technical/policy stakes; established controversy"
+    "headline": "Godfather of AI blasts Musk&apos;s xAI as &apos;failure,&apos; says labs are risking a &apos;big bubble explosion&apos;",
+    "link": "https://www.cnbc.com/2026/06/18/yann-lecun-elon-musk-xai-failure-ai-labs-bubble-risk.html",
+    "score": 85,
+    "reason": "Major figure controversy, existential AI warning, funding bubble critique"
   },
   {
     "rank": 4,
-    "headline": "Google’s first smart speaker in six years arrives next week",
-    "link": "https://www.theverge.com/tech/951147/google-home-speaker-gemini-launch-date-price-specs-features",
-    "score": 85,
-    "reason": "Major product launch from Google after 6-year gap; consumer-facing AI"
+    "headline": "Waymo recalls over 3,800 robotaxis that might drive onto closed freeways",
+    "link": "https://www.engadget.com/2197051/waymo-recalls-3800-robotaxis-that-might-drive-onto-closed-freeways/",
+    "score": 83,
+    "reason": "Large-scale safety recall, autonomous vehicle vulnerability"
   },
   {
     "rank": 5,
-    "headline": "Google Home Speaker available June 25 for $99, pre-orders today",
-    "link": "https://9to5google.com/2026/06/17/google-home-speaker-launch/",
-    "score": 83,
-    "reason": "Confirmed launch date and pricing for major tech product"
+    "headline": "Midjourney goes from generating cat images to full-body ultrasound scans",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan",
+    "score": 81,
+    "reason": "Major capability expansion into medical imaging, significant application shift"
   },
   {
     "rank": 6,
-    "headline": "Amazon AI exec predicts first &apos;commercially useful&apos; quantum computers in 5-7 years",
-    "link": "https://www.cnbc.com/2026/06/17/amazon-quantum-computing-timeline.html",
-    "score": 81,
-    "reason": "Big claim on quantum computing timeline from major tech executive"
+    "headline": "CEOs of Anthropic and Google DeepMind call for U.S.-led AI coalition in meeting at G7",
+    "link": "https://www.cnbc.com/2026/06/17/anthropic-amodei-google-hassabis-us-ai-coalition-g7.html",
+    "score": 79,
+    "reason": "High-level geopolitical AI governance initiative, regulatory framework"
   },
   {
     "rank": 7,
-    "headline": "Trump and AI CEOs discuss global AI rules",
-    "link": "https://www.axios.com/2026/06/17/trump-ai-ceos-global-ai-rules",
-    "score": 79,
-    "reason": "High-level government-industry meetings on AI governance"
+    "headline": "The UK Will Scan Asylum-Seekers’ Faces for Age Checks—Despite Knowing the Tech Is Flawed",
+    "link": "https://www.wired.com/story/facial-age-estimate-uk-asylum-seekers/",
+    "score": 78,
+    "reason": "Major controversy over government AI implementation despite known failures"
   },
   {
     "rank": 8,
-    "headline": "DOJ Lawyers Argue xAI Is ‘Vital’ for National Security in NAACP Lawsuit",
-    "link": "https://www.wired.com/story/doj-lawyers-argue-xai-vital-national-security-naacp-lawsuit/",
-    "score": 77,
-    "reason": "Government positioning on xAI in official legal proceeding"
+    "headline": "HSBC expands AI banking partnership with Google Cloud",
+    "link": "https://www.artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership/",
+    "score": 75,
+    "reason": "Product launch, AI integration into consumer hardware"
   },
   {
     "rank": 9,
-    "headline": "Epic Games details how it's embracing generative AI in Unreal Engine",
-    "link": "https://www.engadget.com/2196807/epic-games-details-how-its-embracing-gen-ai-in-unreal-engine/",
-    "score": 75,
-    "reason": "Major gaming engine integrating AI; concrete implementation"
+    "headline": "ChatGPT now has a hub for scheduled tasks",
+    "link": "https://www.engadget.com/2196844/chatgpt-now-has-a-hub-for-scheduled-tasks/",
+    "score": 72,
+    "reason": "Feature launch expanding ChatGPT automation capabilities"
   },
   {
     "rank": 10,
-    "headline": "General Motors Is Cutting Its Development Cycles in Half",
-    "link": "https://spectrum.ieee.org/gm-ai-design",
-    "score": 73,
-    "reason": "Measurable business impact from AI implementation"
+    "headline": "How Musicians Can Get Paid for Training AI",
+    "link": "https://spectrum.ieee.org/ai-music-attribution",
+    "score": 70,
+    "reason": "IP compensation model emerging, artist rights framework"
   },
   {
     "rank": 11,
-    "headline": "Can anyone look cool wearing Snap’s $2,000 glasses?",
-    "link": "https://www.theverge.com/report/951481/snap-specs-wearables-smart-glasses-fashion",
-    "score": 71,
-    "reason": "Consumer hardware launch with controversy angle"
+    "headline": "‘No poaching’ our people, China&apos;s AI behemoth DeepSeek reportedly tells investors",
+    "link": "https://www.cnbc.com/2026/06/18/no-poaching-our-people-chinas-deepseek-reportedly-tells-investors.html",
+    "score": 68,
+    "reason": "China-US AI competition intensification, talent retention policy"
   },
   {
     "rank": 12,
-    "headline": "Allbirds continues AI pivot with name change and CEO hire, sending stock soaring",
-    "link": "https://www.cnbc.com/2026/06/17/allbirds-bird-ai-smartbird-ceo.html",
-    "score": 69,
-    "reason": "Concrete business decisions with market impact"
+    "headline": "My Father Wants to Age in Place. AI Will Be Watching",
+    "link": "https://www.wired.com/story/sensi-ai-seniors-home-care-aging-in-place/",
+    "score": 66,
+    "reason": "Privacy-surveillance tradeoff in elder care AI deployment"
   },
   {
     "rank": 13,
-    "headline": "XREAL's Android XR glasses launch 'this fall' with Project Hail Mary & Fallout games, $99 reservations open",
-    "link": "https://9to5google.com/2026/06/16/xreal-aura-android-xr-reservations-games/",
-    "score": 67,
-    "reason": "XR hardware launch with games; specific pricing and availability"
+    "headline": "The Gemini-Powered Google Home Speaker Is Finally Here",
+    "link": "https://www.wired.com/story/the-gemini-powered-google-home-speaker-is-finally-here/",
+    "score": 65,
+    "reason": "Consumer AI product integration milestone"
   },
   {
     "rank": 14,
-    "headline": "Anthropic's design assistant now works better with its coding agent",
-    "link": "https://www.engadget.com/2196329/anthropics-design-assistant-now-works-better-with-its-coding-agent/",
-    "score": 65,
-    "reason": "Product capability improvement from major AI lab"
+    "headline": "Qualcomm’s latest chip hints that more powerful smart glasses could be on the way",
+    "link": "https://www.theverge.com/gadgets/950229/qualcomm-snapdragon-reality-elite-xr-smart-glasses-wearables",
+    "score": 63,
+    "reason": "Hardware advancement enabling mobile AI applications"
   },
   {
     "rank": 15,
-    "headline": "Google Photos rolls out AI-powered 'Edit with Ask Photos' to these new countries",
-    "link": "https://9to5google.com/2026/06/17/google-photos-edit-ask-photos-expansion/",
-    "score": 63,
-    "reason": "Rollout expansion of AI feature"
+    "headline": "Anthropic got hit by export rules nobody understands",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/951703/anthropic-shutdown-export-controls",
+    "score": 61,
+    "reason": "Regulatory uncertainty impacting AI company operations"
   },
   {
     "rank": 16,
-    "headline": "EU publishes its AI content labelling playbook ahead of the AI Act's August deadline",
-    "link": "https://www.artificialintelligence-news.com/news/ai-content-labelling-eu-code-of-practice/",
-    "score": 61,
-    "reason": "Regulatory compliance framework publication"
+    "headline": "Inside India newsletter: Anthropic curbs ignite AI debate in India — efforts &apos;too slow, way too small&apos;",
+    "link": "https://www.cnbc.com/2026/06/18/anthropic-curbs-sovereign-ai-inside-india.html",
+    "score": 59,
+    "reason": "Regional regulatory constraint on major AI lab"
   },
   {
     "rank": 17,
-    "headline": "Two-thirds of Americans think AI is advancing too quickly",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/951653/pew-research-ai-chatbot-usage-advancing-too-quickly",
-    "score": 59,
-    "reason": "Significant public opinion data on AI concerns"
+    "headline": "Anne Hathaway says she was spammed with ChatGPT-written thank you notes after hiring a recent role: 'Nobody on that list gets that job'",
+    "link": "https://fortune.com/2026/06/18/anne-hathaway-chatgpt-thank-you-notes-job-candidates-hiring-meryl-streep-career-advice-job-interview/",
+    "score": 57,
+    "reason": "Celebrity criticism of AI misuse in hiring, real-world friction point"
   },
   {
     "rank": 18,
-    "headline": "‘Dangerous’ AI Models Are Coming No Matter What",
-    "link": "https://www.wired.com/story/dangerous-ai-models-are-coming-no-matter-what/",
-    "score": 57,
-    "reason": "Substantive analysis of AI safety trajectory"
+    "headline": "The next humanoid robot might not look human at all",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/951283/genesis-ai-humanoid-robot-eno",
+    "score": 55,
+    "reason": "Paradigm shift in robotics design philosophy"
+  },
+  {
+    "rank": 19,
+    "headline": "Insurers pivot AI strategy toward core risk underwriting",
+    "link": "https://www.artificialintelligence-news.com/news/insurers-pivot-ai-strategy-toward-core-risk-underwriting/",
+    "score": 53,
+    "reason": "Enterprise AI refocus away from hype toward core applications"
+  },
+  {
+    "rank": 20,
+    "headline": "AI search grounded in Facebook posts? What could go wrong?",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/951099/meta-ai-mode-search-hands-on",
+    "score": 51,
+    "reason": "Criticism of search quality degradation via social content training"
   }
 ]
