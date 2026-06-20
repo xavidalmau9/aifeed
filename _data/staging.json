@@ -1,72 +1,107 @@
 [
   {
     "rank": 1,
-    "headline": "Exclusive: Trump tells \"The Axios Show\" that Anthropic was a national security threat",
-    "link": "https://www.axios.com/2026/06/19/trump-anthropic-national-security-the-axios-show",
+    "headline": "Hyundai buys Boston Dynamics",
+    "link": "https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million/",
     "score": 92,
-    "reason": "Major political controversy involving top AI company; direct presidential statement"
+    "reason": "Major acquisition of leading robotics company, concrete business move with significant capital deployment"
   },
   {
     "rank": 2,
-    "headline": "Gemini's co-lead is leaving Google to join OpenAI",
-    "link": "https://9to5google.com/2026/06/17/geminis-co-lead-is-leaving-google-to-join-openai/",
+    "headline": "Barret Zoph is out at OpenAI again after just five months",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab",
     "score": 88,
-    "reason": "Major executive departure between rival AI companies; signals talent shift"
+    "reason": "High-profile executive departure from major AI company, suggests internal instability"
   },
   {
     "rank": 3,
-    "headline": "John Jumper to join Anthropic",
-    "link": "https://twitter.com/JohnJumperSci/status/2068001285173834106",
-    "score": 86,
-    "reason": "Major scientist hire; DeepMind founder joining competing AI company"
+    "headline": "Photoshop and Premiere now have AI assistants",
+    "link": "https://www.theverge.com/tech/952099/adobe-ai-assistants-photoshop-premiere-illustrator-beta-launch",
+    "score": 85,
+    "reason": "Major product launch from Adobe integrating AI into widely-used creative tools"
   },
   {
     "rank": 4,
-    "headline": "Amazon drops Sam Altman movie after announcing OpenAI partnership",
-    "link": "https://www.the-independent.com/arts-entertainment/films/news/sam-altman-biopic-amazon-openai-deal-b2999321.html",
-    "score": 85,
-    "reason": "Major company action; signals business relationship between Amazon and OpenAI"
+    "headline": "SAP and Google Cloud deploy agentic commerce architecture",
+    "link": "https://www.artificialintelligence-news.com/news/sap-and-google-cloud-deploy-agentic-commerce-architecture/",
+    "score": 82,
+    "reason": "Significant enterprise AI deployment partnership between major tech companies"
   },
   {
     "rank": 5,
-    "headline": "Amazon is investigating three employees who spoke out against building more AI data centers",
-    "link": "https://www.engadget.com/2197988/amazon-investigates-engineers-spoke-out-against-ai-data-center/",
-    "score": 82,
-    "reason": "Corporate controversy; employee retaliation for policy disagreement"
+    "headline": "Amazon employees say they’re facing termination for backing data center limits",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/952180/amazon-seattle-data-center-moratorium-aecj-disciplinary-action",
+    "score": 80,
+    "reason": "Workplace controversy involving major tech company and employee retaliation"
   },
   {
     "rank": 6,
-    "headline": "&#x27;We created a monster&#x27;: companies rein in AI usage as costs strain budgets",
-    "link": "https://www.ft.com/content/1d37cc08-e0aa-45a4-a45d-4ad282529314",
-    "score": 80,
-    "reason": "Major trend; companies scaling back AI due to cost pressures"
+    "headline": "Gemini Live can now access your past chats Memory, Connected Apps info",
+    "link": "https://9to5google.com/2026/06/18/gemini-live-memory/",
+    "score": 78,
+    "reason": "Google product feature expansion with significant capability increase"
   },
   {
     "rank": 7,
-    "headline": "Arizona emerges as test case for AI's energy and water crunch",
-    "link": "https://www.axios.com/2026/06/18/arizona-ai-data-center-water-power",
-    "score": 78,
-    "reason": "Concrete impact; infrastructure crisis from AI data center demands"
+    "headline": "A startup claims it broke through a bottleneck that’s holding back LLMs",
+    "link": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/",
+    "score": 76,
+    "reason": "Claims of major technical breakthrough in AI infrastructure, concrete performance claim"
   },
   {
     "rank": 8,
-    "headline": "The Korean Telecom Giant at the Center of Anthropic’s Mythos Controversy",
-    "link": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
-    "score": 76,
-    "reason": "Controversy surrounding Anthropic's funding and business practices"
+    "headline": "The White House Is Making Up Its Rules for AI in Real Time",
+    "link": "https://www.wired.com/story/anthropic-mythos-export-controls-ai-regulations/",
+    "score": 74,
+    "reason": "Government policy controversy around AI regulation with significant implications"
   },
   {
     "rank": 9,
-    "headline": "Norway imposes broad restrictions on AI for elementary school kids",
-    "link": "https://www.engadget.com/2198117/norway-imposes-broad-restrictions-on-ai-for-elementary-school-kids/",
-    "score": 74,
-    "reason": "Major regulatory action; government ban on AI in schools"
+    "headline": "Norway imposes near ban on AI in elementary school",
+    "link": "https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19/",
+    "score": 72,
+    "reason": "Major regulatory action restricting AI deployment in education sector"
   },
   {
     "rank": 10,
-    "headline": "Qualcomm CEO Cristiano Amon on the new world of AI agents",
-    "link": "https://www.cnbc.com/2026/06/19/tech-download-qualcomm-ai-agents-amon.html",
+    "headline": "Nvidia CEO Jensen Huang says electricians and plumbers will be needed by the hundreds of thousands in the new working world",
+    "link": "https://fortune.com/article/nvidia-billionaire-ceo-jensen-huang-demand-for-gen-z-skilled-trade-workers-electricans-plumbers-carpenters-data-center-growth-six-figure-salaries/",
     "score": 70,
-    "reason": "Executive statement on major AI trend; hardware company perspective"
+    "reason": "Major CEO statement with quantified workforce projections from AI industry leader"
+  },
+  {
+    "rank": 11,
+    "headline": "Who decides when AI is too dangerous?",
+    "link": "https://www.theverge.com/podcast/951542/anthropic-claude-fable-5-mythos-ban-pentagon-ai-regulation-trump",
+    "score": 68,
+    "reason": "Addresses critical policy question about AI safety governance and decision-making authority"
+  },
+  {
+    "rank": 12,
+    "headline": "The film about Sam Altman has been dropped by Amazon MGM",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/952906/sam-altman-film-artificial-openai-amazon-mgm-dropped",
+    "score": 66,
+    "reason": "High-profile project cancellation involving prominent AI figure and major studio"
+  },
+  {
+    "rank": 13,
+    "headline": "Computer vision deployments drive retail productivity gains",
+    "link": "https://www.artificialintelligence-news.com/news/computer-vision-deployments-drive-retail-productivity-gains/",
+    "score": 64,
+    "reason": "Documented AI application with measurable business impact in retail sector"
+  },
+  {
+    "rank": 14,
+    "headline": "LLMs Are Complicated Now",
+    "link": "https://ianbarber.blog/2026/06/19/llms-are-complicated-now/",
+    "score": 62,
+    "reason": "Analysis of increasing complexity in large language models affecting industry"
+  },
+  {
+    "rank": 15,
+    "headline": "Brain-computer interface trials are taking off",
+    "link": "https://www.technologyreview.com/2026/06/19/1139270/brain-computer-interface-trials-are-taking-off/",
+    "score": 60,
+    "reason": "Significant expansion of BCI trials with broad implications for neurotechnology"
   }
 ]
