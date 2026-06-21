@@ -1,51 +1,30 @@
 [
   {
     "rank": 1,
-    "headline": "Sam Altman thinks AI will surpass human intelligence by 2030.  His rival AI billionaires say it’ll be even sooner",
-    "link": "https://fortune.com/article/sam-altman-ai-superintelligence-stargate-chatgpt-human-intelligence-2030/",
+    "headline": "The Atlantic created a searchable database of the music used to train AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data",
     "score": 92,
-    "reason": "Major AI milestone prediction from OpenAI CEO with competitive context; big numbers and controversy"
+    "reason": "Major AI controversy story with concrete data release; addresses training data transparency issue"
   },
   {
     "rank": 2,
-    "headline": "The film about Sam Altman has been dropped by Amazon MGM",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/952906/sam-altman-film-artificial-openai-amazon-mgm-dropped",
-    "score": 88,
-    "reason": "Major studio decision; OpenAI controversy; concrete business action"
+    "headline": "Identity verification on Claude",
+    "link": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+    "score": 78,
+    "reason": "New Claude feature launch; significant for AI safety and access control"
   },
   {
     "rank": 3,
-    "headline": "SAP and Google Cloud deploy agentic commerce architecture",
-    "link": "https://www.artificialintelligence-news.com/news/sap-and-google-cloud-deploy-agentic-commerce-architecture/",
-    "score": 82,
-    "reason": "Enterprise AI launch; two major companies; concrete product deployment"
+    "headline": "Show HN: Pulse – Dashboard for Claude Code, approve tool calls from your phone",
+    "link": "https://github.com/nikitadoudikov/claude-pulse",
+    "score": 71,
+    "reason": "New AI tool launch enabling oversight of Claude function calls; practical safety feature"
   },
   {
     "rank": 4,
-    "headline": "AI buildout gives tech investors new reasons to watch bond market",
-    "link": "https://www.cnbc.com/2026/06/20/ai-buildout-giving-tech-investors-new-reasons-to-watch-bond-market.html",
-    "score": 78,
-    "reason": "Major infrastructure investment trend; big capital implications"
-  },
-  {
-    "rank": 5,
-    "headline": "Siri AI Hands On: A Smart, Helpful Assistant",
-    "link": "https://www.wired.com/story/siri-ai-hands-on-iphone/",
-    "score": 75,
-    "reason": "Apple AI feature launch; major consumer product update"
-  },
-  {
-    "rank": 6,
-    "headline": "New global order: AI CEOs as heads of nation-states",
-    "link": "https://www.axios.com/2026/06/20/ai-tech-moguls-g7",
-    "score": 72,
-    "reason": "Controversial take on AI leader influence; geopolitical implications"
-  },
-  {
-    "rank": 7,
-    "headline": "Building reliable agentic AI systems",
-    "link": "https://martinfowler.com/articles/reliable-llm-bayer.html",
-    "score": 68,
-    "reason": "Critical technical challenge in AI development; industry-wide relevance"
+    "headline": "Claude Guillemot, one of Ubisoft's co-founders, has died in a plane crash",
+    "link": "https://www.engadget.com/2198346/claude-guillemot-one-of-ubisoft-co-founders-has-died-in-a-plane-crash/",
+    "score": 62,
+    "reason": "Major news event; significant industry figure death (not directly AI but major industry impact)"
   }
 ]
