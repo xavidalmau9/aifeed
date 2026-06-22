@@ -1,5 +1,24 @@
 [
   {
+    "id": "spacex-63b-ai-compute-reflection-20260622",
+    "slug": "spacex-63b-ai-compute-reflection",
+    "headline": "SpaceX Commits Up to $6.3 Billion in Computing Power to AI Startup Reflection",
+    "summary": "SpaceX just committed up to $6.3 billion to computing power from open-source AI startup Reflection — signaling a seismic shift in how major tech players approach AI infrastructure.",
+    "body": "<p><strong>SpaceX just committed up to $6.3 billion to computing power from open-source AI startup Reflection—signaling a seismic shift in how major tech players are approaching AI infrastructure and development.</strong></p>\n<p>This partnership represents far more than a standard vendor relationship. SpaceX is placing a significant bet on open-source AI innovation while simultaneously securing critical computing resources. The deal highlights the growing intersection between space technology, cloud infrastructure, and artificial intelligence—three sectors that are increasingly dependent on one another.</p>\n<p>From a strategic standpoint, this move positions SpaceX as a key player in the AI infrastructure space beyond their traditional domain. By partnering with an open-source startup rather than legacy cloud providers, they're signaling confidence in decentralized, transparent AI development. This could give Reflection significant credibility and runway while providing SpaceX with differentiated access to cutting-edge computing capabilities.</p>\n<p>The broader implications for the AI industry are substantial. We're witnessing a fundamental shift away from monolithic, proprietary AI infrastructure toward distributed, open-source alternatives. When companies at SpaceX's scale are willing to commit billions to open-source players, it validates the long-term viability of this model and accelerates adoption across the sector.</p>\n<p>Looking ahead, expect more major tech companies to explore similar partnerships. The race for AI dominance isn't just about algorithms anymore—it's about securing the computational infrastructure that powers breakthrough innovations. Deals like this one telegraph where capital and confidence are flowing in the next phase of AI development.</p>\n<p>The future of AI infrastructure isn't being built in isolation—it's being built through strategic partnerships between hardware titans and innovative software companies.</p>",
+    "category": "Infrastructure",
+    "hashtags": [
+      "SpaceX",
+      "AIInfrastructure",
+      "OpenSourceAI",
+      "TechPartnerships",
+      "FutureOfAI"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_spacex_ai_compute_20260622.png",
+    "sourceUrl": "https://www.cnbc.com/2026/06/22/spacex-ai-colossus-data-center-reflection.html",
+    "publishedAt": "2026-06-22T11:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
     "id": "ai-cmo-power-player-20260619",
     "slug": "ai-cmo-power-player",
     "headline": "AI Is Turning CMOs Into Some of the Most Powerful Executives in Business",
