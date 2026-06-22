@@ -1,30 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "The Atlantic created a searchable database of the music used to train AI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data",
+    "headline": "Barret Zoph is out at OpenAI again after just five months",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab",
     "score": 92,
-    "reason": "Major AI controversy story with concrete data release; addresses training data transparency issue"
+    "reason": "Major executive departure from leading AI company; concrete news with timeline"
   },
   {
     "rank": 2,
-    "headline": "Identity verification on Claude",
-    "link": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
-    "score": 78,
-    "reason": "New Claude feature launch; significant for AI safety and access control"
+    "headline": "OpenAI signs deal to show Getty's images in ChatGPT results",
+    "link": "https://www.engadget.com/2198633/openai-signs-deal-with-getty-to-show-images-in-chatgpt-results/",
+    "score": 88,
+    "reason": "Major content licensing deal; resolves ongoing IP controversy; concrete business action"
   },
   {
     "rank": 3,
-    "headline": "Show HN: Pulse – Dashboard for Claude Code, approve tool calls from your phone",
-    "link": "https://github.com/nikitadoudikov/claude-pulse",
-    "score": 71,
-    "reason": "New AI tool launch enabling oversight of Claude function calls; practical safety feature"
+    "headline": "L’Oréal brings Maybelline virtual try-on to ChatGPT",
+    "link": "https://www.artificialintelligence-news.com/news/loreal-maybelline-virtual-try-on-chatgpt/",
+    "score": 82,
+    "reason": "Enterprise AI adoption; major brand integration; tangible product launch"
   },
   {
     "rank": 4,
-    "headline": "Claude Guillemot, one of Ubisoft's co-founders, has died in a plane crash",
-    "link": "https://www.engadget.com/2198346/claude-guillemot-one-of-ubisoft-co-founders-has-died-in-a-plane-crash/",
+    "headline": "Tencent tests AI assistant in China&apos;s most popular app as it looks to catch up with rivals",
+    "link": "https://www.cnbc.com/2026/06/22/tencent-ai-assistant-wechat-china.html",
+    "score": 80,
+    "reason": "Major tech competitor entering AI race; significant market implications; concrete testing"
+  },
+  {
+    "rank": 5,
+    "headline": "Nvidia says AI's water challenge is largely solved",
+    "link": "https://www.axios.com/2026/06/22/nvidia-data-center-water-solution",
+    "score": 78,
+    "reason": "Addresses major AI infrastructure concern; industry claim from leading player; environmental impact"
+  },
+  {
+    "rank": 6,
+    "headline": "Data centers become the face of AI backlash",
+    "link": "https://www.axios.com/2026/06/22/ai-data-center-backlash-poll",
+    "score": 76,
+    "reason": "Growing controversy; public sentiment shift; infrastructure sustainability debate"
+  },
+  {
+    "rank": 7,
+    "headline": "AI is turning CMOs into some of the most powerful executives in business",
+    "link": "https://fortune.com/article/cmo-chief-marketing-officer-ai-creative-powerful-ceo-data/",
+    "score": 72,
+    "reason": "Enterprise AI impact on organizational structure; business adoption trend with measurable change"
+  },
+  {
+    "rank": 8,
+    "headline": "Some Electricians Think Building Data Centers Is for Sellouts",
+    "link": "https://www.wired.com/story/data-center-buildout-electricians-selling-out/",
+    "score": 68,
+    "reason": "AI infrastructure controversy; labor perspective on data center boom; social backlash"
+  },
+  {
+    "rank": 9,
+    "headline": "World Cup Scams Are Getting Harder to Spot",
+    "link": "https://www.wired.com/story/world-cup-scams-are-getting-harder-to-spot/",
+    "score": 64,
+    "reason": "AI-enabled fraud escalation; real-world impact; measurable sophistication increase"
+  },
+  {
+    "rank": 10,
+    "headline": "South Korean chipmakers are being paid such massive bonuses it's becoming an inflation problem for the central bank",
+    "link": "https://fortune.com/2026/06/22/south-korea-chip-maker-bonus-central-bank-inflation-concern/",
     "score": 62,
-    "reason": "Major news event; significant industry figure death (not directly AI but major industry impact)"
+    "reason": "Quantifiable AI chip demand impact; macroeconomic consequences; big numbers (inflation concern)"
   }
 ]
