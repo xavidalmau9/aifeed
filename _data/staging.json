@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Barret Zoph is out at OpenAI again after just five months",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab",
-    "score": 92,
-    "reason": "Major executive departure from leading AI company; concrete news with timeline"
+    "headline": "SpaceX signs computing power deal with open-source AI startup Reflection worth up to $6.3 billion",
+    "link": "https://www.cnbc.com/2026/06/22/spacex-ai-colossus-data-center-reflection.html",
+    "score": 96,
+    "reason": "Large dollar amount ($6.3B), major company partnership, concrete business deal"
   },
   {
     "rank": 2,
-    "headline": "OpenAI signs deal to show Getty's images in ChatGPT results",
-    "link": "https://www.engadget.com/2198633/openai-signs-deal-with-getty-to-show-images-in-chatgpt-results/",
-    "score": 88,
-    "reason": "Major content licensing deal; resolves ongoing IP controversy; concrete business action"
+    "headline": "Exclusive: The AI company powering public safety operations for the 2026 World Cup just raised $250 million",
+    "link": "https://fortune.com/2026/06/22/exclusive-peregrine-nick-noone-ai-public-safety-palantir-2026-world-cup-just-sequoia-capital/",
+    "score": 92,
+    "reason": "Significant funding round ($250M), major real-world application, exclusive reporting"
   },
   {
     "rank": 3,
-    "headline": "L’Oréal brings Maybelline virtual try-on to ChatGPT",
-    "link": "https://www.artificialintelligence-news.com/news/loreal-maybelline-virtual-try-on-chatgpt/",
-    "score": 82,
-    "reason": "Enterprise AI adoption; major brand integration; tangible product launch"
+    "headline": "Nvidia says its new data center design will fix AI’s water problem",
+    "link": "https://fortune.com/2026/06/22/nvidia-new-data-center-design-ai-water-problem-cooling/",
+    "score": 90,
+    "reason": "Major tech company (Nvidia), infrastructure innovation, addresses critical sustainability issue"
   },
   {
     "rank": 4,
-    "headline": "Tencent tests AI assistant in China&apos;s most popular app as it looks to catch up with rivals",
-    "link": "https://www.cnbc.com/2026/06/22/tencent-ai-assistant-wechat-china.html",
-    "score": 80,
-    "reason": "Major tech competitor entering AI race; significant market implications; concrete testing"
+    "headline": "OpenAI Launches Full-Scale Effort to Patch Open-Source Bugs as It Takes on Anthropic’s Mythos",
+    "link": "https://www.wired.com/story/openai-launches-full-scale-effort-to-patch-open-source-bugs-as-it-takes-on-anthropics-mythos/",
+    "score": 88,
+    "reason": "Major company initiative, competitive dynamics with named rival, concrete action"
   },
   {
     "rank": 5,
-    "headline": "Nvidia says AI's water challenge is largely solved",
-    "link": "https://www.axios.com/2026/06/22/nvidia-data-center-water-solution",
-    "score": 78,
-    "reason": "Addresses major AI infrastructure concern; industry claim from leading player; environmental impact"
+    "headline": "Meta Exposed Data Internally From Its Controversial Employee-Tracking Program",
+    "link": "https://www.wired.com/story/meta-accidentally-let-employees-access-each-others-keystroke-data/",
+    "score": 87,
+    "reason": "Major company controversy, privacy/ethics angle, reported incident not speculation"
   },
   {
     "rank": 6,
-    "headline": "Data centers become the face of AI backlash",
-    "link": "https://www.axios.com/2026/06/22/ai-data-center-backlash-poll",
-    "score": 76,
-    "reason": "Growing controversy; public sentiment shift; infrastructure sustainability debate"
+    "headline": "Alphabet paces for worst day in a year on AI concerns after high-profile exits",
+    "link": "https://www.cnbc.com/2026/06/22/alphabet-goog-stock-ai-departures.html",
+    "score": 85,
+    "reason": "Major company, market impact, high-profile departures, quantified market movement"
   },
   {
     "rank": 7,
-    "headline": "AI is turning CMOs into some of the most powerful executives in business",
-    "link": "https://fortune.com/article/cmo-chief-marketing-officer-ai-creative-powerful-ceo-data/",
-    "score": 72,
-    "reason": "Enterprise AI impact on organizational structure; business adoption trend with measurable change"
+    "headline": "A24 takes on Google money to build AI tools",
+    "link": "https://www.engadget.com/2199010/a24-takes-on-google-money-help-build-ai-tools/",
+    "score": 82,
+    "reason": "Cross-industry partnership (media + AI), funding for AI development, notable company pairing"
   },
   {
     "rank": 8,
-    "headline": "Some Electricians Think Building Data Centers Is for Sellouts",
-    "link": "https://www.wired.com/story/data-center-buildout-electricians-selling-out/",
-    "score": 68,
-    "reason": "AI infrastructure controversy; labor perspective on data center boom; social backlash"
+    "headline": "The Atlantic created a searchable database of the music used to train AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data",
+    "score": 80,
+    "reason": "Transparency initiative on training data, journalism/accountability angle, practical tool launch"
   },
   {
     "rank": 9,
-    "headline": "World Cup Scams Are Getting Harder to Spot",
-    "link": "https://www.wired.com/story/world-cup-scams-are-getting-harder-to-spot/",
-    "score": 64,
-    "reason": "AI-enabled fraud escalation; real-world impact; measurable sophistication increase"
+    "headline": "Google preps Pixel ‘Audio Memory’ that ambiently tracks your ‘important conversations,’ like AI notetaker pins",
+    "link": "https://9to5google.com/2026/06/22/google-pixel-audio-memory/",
+    "score": 78,
+    "reason": "Major product feature launch, privacy implications, concrete AI capability"
   },
   {
     "rank": 10,
-    "headline": "South Korean chipmakers are being paid such massive bonuses it's becoming an inflation problem for the central bank",
-    "link": "https://fortune.com/2026/06/22/south-korea-chip-maker-bonus-central-bank-inflation-concern/",
-    "score": 62,
-    "reason": "Quantifiable AI chip demand impact; macroeconomic consequences; big numbers (inflation concern)"
+    "headline": "Why AI tokens will send your enterprise cloud bill sky-high again",
+    "link": "https://www.zdnet.com/article/why-ai-tokens-will-send-enterprise-cloud-bill-sky-high/",
+    "score": 76,
+    "reason": "Economic impact of AI adoption, reported trend with business implications"
   }
 ]
