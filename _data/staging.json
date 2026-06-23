@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "SpaceX signs computing power deal with open-source AI startup Reflection worth up to $6.3 billion",
-    "link": "https://www.cnbc.com/2026/06/22/spacex-ai-colossus-data-center-reflection.html",
-    "score": 96,
-    "reason": "Large dollar amount ($6.3B), major company partnership, concrete business deal"
+    "headline": "Nvidia says its AI data center design runs hotter to use a lot less water",
+    "link": "https://www.theverge.com/tech/954139/nvidia-data-centers-rubin-liquid-cooling",
+    "score": 92,
+    "reason": "Major technical breakthrough from leading AI chip company with quantifiable environmental impact"
   },
   {
     "rank": 2,
-    "headline": "Exclusive: The AI company powering public safety operations for the 2026 World Cup just raised $250 million",
-    "link": "https://fortune.com/2026/06/22/exclusive-peregrine-nick-noone-ai-public-safety-palantir-2026-world-cup-just-sequoia-capital/",
-    "score": 92,
-    "reason": "Significant funding round ($250M), major real-world application, exclusive reporting"
+    "headline": "The $400 million machine powering the future of chipmaking",
+    "link": "https://www.technologyreview.com/2026/06/23/1138837/asml-400-million-dollar-machine-powering-future-of-chipmaking/",
+    "score": 88,
+    "reason": "Significant capital investment and concrete number; critical infrastructure for AI advancement"
   },
   {
     "rank": 3,
-    "headline": "Nvidia says its new data center design will fix AI’s water problem",
-    "link": "https://fortune.com/2026/06/22/nvidia-new-data-center-design-ai-water-problem-cooling/",
-    "score": 90,
-    "reason": "Major tech company (Nvidia), infrastructure innovation, addresses critical sustainability issue"
+    "headline": "Barret Zoph is out at OpenAI again after just five months",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab",
+    "score": 85,
+    "reason": "High-profile executive departure from leading AI company; controversy around retention"
   },
   {
     "rank": 4,
-    "headline": "OpenAI Launches Full-Scale Effort to Patch Open-Source Bugs as It Takes on Anthropic’s Mythos",
-    "link": "https://www.wired.com/story/openai-launches-full-scale-effort-to-patch-open-source-bugs-as-it-takes-on-anthropics-mythos/",
-    "score": 88,
-    "reason": "Major company initiative, competitive dynamics with named rival, concrete action"
+    "headline": "Oracle laid off 21,000 employees over the past year, citing AI as one of the reasons",
+    "link": "https://www.engadget.com/2199604/oracle-laid-off-21000-employees-in-the-last-year/",
+    "score": 84,
+    "reason": "Major layoff numbers; explicit AI causation; established company impact"
   },
   {
     "rank": 5,
-    "headline": "Meta Exposed Data Internally From Its Controversial Employee-Tracking Program",
-    "link": "https://www.wired.com/story/meta-accidentally-let-employees-access-each-others-keystroke-data/",
-    "score": 87,
-    "reason": "Major company controversy, privacy/ethics angle, reported incident not speculation"
+    "headline": "Top spy agencies say AI cyber threats will impact you within months. Here’s why",
+    "link": "https://www.artificialintelligence-news.com/news/five-eyes-warning-ai-cyber-threats/",
+    "score": 82,
+    "reason": "Concrete timeline; government authority; significant security implications"
   },
   {
     "rank": 6,
-    "headline": "Alphabet paces for worst day in a year on AI concerns after high-profile exits",
-    "link": "https://www.cnbc.com/2026/06/22/alphabet-goog-stock-ai-departures.html",
-    "score": 85,
-    "reason": "Major company, market impact, high-profile departures, quantified market movement"
+    "headline": "Three things to watch amid Anthropic’s latest feud with the government",
+    "link": "https://www.technologyreview.com/2026/06/22/1139424/three-things-to-watch-amid-anthropics-latest-feud-with-the-government/",
+    "score": 80,
+    "reason": "Regulatory conflict; major AI company; ongoing controversy"
   },
   {
     "rank": 7,
-    "headline": "A24 takes on Google money to build AI tools",
-    "link": "https://www.engadget.com/2199010/a24-takes-on-google-money-help-build-ai-tools/",
-    "score": 82,
-    "reason": "Cross-industry partnership (media + AI), funding for AI development, notable company pairing"
+    "headline": "OpenAI signs deal to show Getty's images in ChatGPT results",
+    "link": "https://www.engadget.com/2198633/openai-signs-deal-with-getty-to-show-images-in-chatgpt-results/",
+    "score": 78,
+    "reason": "Major licensing agreement; resolves copyright controversy; concrete partnership"
   },
   {
     "rank": 8,
-    "headline": "The Atlantic created a searchable database of the music used to train AI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data",
-    "score": 80,
-    "reason": "Transparency initiative on training data, journalism/accountability angle, practical tool launch"
+    "headline": "Meta Pauses Employee-Tracking Program Following Internal Data Leak",
+    "link": "https://www.wired.com/story/meta-pauses-employee-tracking-program-following-internal-security-breach/",
+    "score": 76,
+    "reason": "Major tech company; privacy controversy; concrete corporate action"
   },
   {
     "rank": 9,
-    "headline": "Google preps Pixel ‘Audio Memory’ that ambiently tracks your ‘important conversations,’ like AI notetaker pins",
-    "link": "https://9to5google.com/2026/06/22/google-pixel-audio-memory/",
-    "score": 78,
-    "reason": "Major product feature launch, privacy implications, concrete AI capability"
+    "headline": "OpenAI's new Daybreak⁠ initiative will help open-source projects fend off bugs",
+    "link": "https://www.engadget.com/2199569/openai-new-daybreak-initiative-open-source-projects-bugs/",
+    "score": 74,
+    "reason": "New program launch from leading AI company; security-focused initiative"
   },
   {
     "rank": 10,
-    "headline": "Why AI tokens will send your enterprise cloud bill sky-high again",
-    "link": "https://www.zdnet.com/article/why-ai-tokens-will-send-enterprise-cloud-bill-sky-high/",
-    "score": 76,
-    "reason": "Economic impact of AI adoption, reported trend with business implications"
+    "headline": "Alphabet has its worst day in over a year on AI concerns after high-profile exits",
+    "link": "https://www.cnbc.com/2026/06/22/alphabet-goog-stock-ai-departures.html",
+    "score": 72,
+    "reason": "Quantified market impact; talent exodus; major company stock reaction"
+  },
+  {
+    "rank": 11,
+    "headline": "Exclusive: A founder who went from pressure washing to Wharton just raised $40 million to put AI to work for plumbers, electricians, and HVAC crews",
+    "link": "https://fortune.com/2026/06/23/exclusive-this-startup-wants-to-be-the-ai-brain-for-home-services-and-it-just-raised-40-million-from-sequoia-and-a16z/",
+    "score": 70,
+    "reason": "Significant funding round; concrete number; emerging AI application"
+  },
+  {
+    "rank": 12,
+    "headline": "Elephant alert! AI warning systems aim to avoid deadly clashes",
+    "link": "https://www.technologyreview.com/2026/06/23/1138562/elephant-alert-ai-warning-systems-avoid-deadly-clashes-india/",
+    "score": 68,
+    "reason": "Real-world AI application; wildlife conservation; human impact"
+  },
+  {
+    "rank": 13,
+    "headline": "Data centers become the face of AI backlash",
+    "link": "https://www.axios.com/2026/06/22/ai-data-center-backlash-poll",
+    "score": 66,
+    "reason": "Growing societal controversy; infrastructure impact; public resistance"
+  },
+  {
+    "rank": 14,
+    "headline": "L’Oréal brings Maybelline virtual try-on to ChatGPT",
+    "link": "https://www.artificialintelligence-news.com/news/loreal-maybelline-virtual-try-on-chatgpt/",
+    "score": 64,
+    "reason": "Major brand integration; concrete feature launch; consumer-facing AI"
+  },
+  {
+    "rank": 15,
+    "headline": "Singtel sells $773 million Thai energy stake as it ramps up AI and data center investments",
+    "link": "https://www.cnbc.com/2026/06/23/singtel-sells-gulf-development-stake-asset-recycling-ai-investment.html",
+    "score": 62,
+    "reason": "Significant capital reallocation; quantified investment; strategic pivot"
+  },
+  {
+    "rank": 16,
+    "headline": "World Cup Scams Are Getting Harder to Spot",
+    "link": "https://www.wired.com/story/world-cup-scams-are-getting-harder-to-spot/",
+    "score": 60,
+    "reason": "AI-generated fraud escalation; societal impact; real-world consequences"
+  },
+  {
+    "rank": 17,
+    "headline": "AI is cursing renters with the promise of impossible homes",
+    "link": "https://www.theverge.com/report/953888/ai-virtual-staging-real-estate-apartment-listings",
+    "score": 58,
+    "reason": "AI-driven consumer deception; housing market impact; growing controversy"
+  },
+  {
+    "rank": 18,
+    "headline": "Gmail's genius Gemini Flows feature fixes filters - but only for your first 2000 emails a month",
+    "link": "https://www.zdnet.com/article/google-gmail-gemini-flows-filter-fix/",
+    "score": 56,
+    "reason": "New feature launch; quantified limitation; consumer product"
+  },
+  {
+    "rank": 19,
+    "headline": "How to troubleshoot your PC problems with Copilot or ChatGPT - effectively",
+    "link": "https://www.zdnet.com/article/ai-troubleshooting-secrets-my-interview-with-copilot-chatgpt/",
+    "score": 54,
+    "reason": "Practical AI application; mainstream consumer use case"
+  },
+  {
+    "rank": 20,
+    "headline": "Gemini overlay gets expanded ‘plus’ menu to do more without opening app",
+    "link": "https://9to5google.com/2026/06/22/gemini-overlay-expanded/",
+    "score": 52,
+    "reason": "Google product expansion; feature enhancement; user interface evolution"
   }
 ]
