@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Nvidia says its AI data center design runs hotter to use a lot less water",
-    "link": "https://www.theverge.com/tech/954139/nvidia-data-centers-rubin-liquid-cooling",
+    "headline": "Why corporate AI super PACs spent $27 million on a local election",
+    "link": "https://www.theverge.com/policy/954970/ai-super-pacs-alex-bores-new-york-12th-district",
     "score": 92,
-    "reason": "Major technical breakthrough from leading AI chip company with quantifiable environmental impact"
+    "reason": "Large specific number, political controversy, concrete impact"
   },
   {
     "rank": 2,
-    "headline": "The $400 million machine powering the future of chipmaking",
-    "link": "https://www.technologyreview.com/2026/06/23/1138837/asml-400-million-dollar-machine-powering-future-of-chipmaking/",
+    "headline": "The Atlantic created a searchable database of the music used to train AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data",
     "score": 88,
-    "reason": "Significant capital investment and concrete number; critical infrastructure for AI advancement"
+    "reason": "Major launch, addresses training data transparency, significant resource"
   },
   {
     "rank": 3,
-    "headline": "Barret Zoph is out at OpenAI again after just five months",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab",
-    "score": 85,
-    "reason": "High-profile executive departure from leading AI company; controversy around retention"
+    "headline": "Meta Exposed Data Internally From Its Controversial Employee-Tracking Program",
+    "link": "https://www.wired.com/story/meta-accidentally-let-employees-access-each-others-keystroke-data/",
+    "score": 87,
+    "reason": "Controversy, privacy violation, major company"
   },
   {
     "rank": 4,
-    "headline": "Oracle laid off 21,000 employees over the past year, citing AI as one of the reasons",
-    "link": "https://www.engadget.com/2199604/oracle-laid-off-21000-employees-in-the-last-year/",
-    "score": 84,
-    "reason": "Major layoff numbers; explicit AI causation; established company impact"
+    "headline": "OpenAI Launches Full-Scale Effort to Patch Open-Source Bugs as It Takes on Anthropic’s Mythos",
+    "link": "https://www.wired.com/story/openai-launches-full-scale-effort-to-patch-open-source-bugs-as-it-takes-on-anthropics-mythos/",
+    "score": 85,
+    "reason": "Direct competitive launch, security initiative, two major companies"
   },
   {
     "rank": 5,
-    "headline": "Top spy agencies say AI cyber threats will impact you within months. Here’s why",
-    "link": "https://www.artificialintelligence-news.com/news/five-eyes-warning-ai-cyber-threats/",
+    "headline": "Meta launches cheaper smart glasses without Ray-Ban",
+    "link": "https://www.theverge.com/tech/954052/meta-glasses-hands-on-kylie-jenner-smart-glasses-price-battery-privacy",
     "score": 82,
-    "reason": "Concrete timeline; government authority; significant security implications"
+    "reason": "Product launch, price shift, hardware expansion"
   },
   {
     "rank": 6,
-    "headline": "Three things to watch amid Anthropic’s latest feud with the government",
-    "link": "https://www.technologyreview.com/2026/06/22/1139424/three-things-to-watch-amid-anthropics-latest-feud-with-the-government/",
-    "score": 80,
-    "reason": "Regulatory conflict; major AI company; ongoing controversy"
+    "headline": "Oracle sheds 21,000 roles over the past year amid wave of AI layoffs from tech giants",
+    "link": "https://www.cnbc.com/2026/06/23/oracle-ai-job-cuts-layoffs-21000.html",
+    "score": 81,
+    "reason": "Large number, major company, AI-driven layoffs"
   },
   {
     "rank": 7,
-    "headline": "OpenAI signs deal to show Getty's images in ChatGPT results",
-    "link": "https://www.engadget.com/2198633/openai-signs-deal-with-getty-to-show-images-in-chatgpt-results/",
-    "score": 78,
-    "reason": "Major licensing agreement; resolves copyright controversy; concrete partnership"
+    "headline": "SpaceX raises $25 billion in debt sale less than two weeks after IPO",
+    "link": "https://www.cnbc.com/2026/06/23/spacex-debt-bond-market-ipo.html",
+    "score": 79,
+    "reason": "Massive funding number, recent event"
   },
   {
     "rank": 8,
-    "headline": "Meta Pauses Employee-Tracking Program Following Internal Data Leak",
-    "link": "https://www.wired.com/story/meta-pauses-employee-tracking-program-following-internal-security-breach/",
-    "score": 76,
-    "reason": "Major tech company; privacy controversy; concrete corporate action"
+    "headline": "A24 takes on Google money to build AI tools",
+    "link": "https://www.engadget.com/2199010/a24-takes-on-google-money-help-build-ai-tools/",
+    "score": 77,
+    "reason": "Major company partnership, content industry entry"
   },
   {
     "rank": 9,
-    "headline": "OpenAI's new Daybreak⁠ initiative will help open-source projects fend off bugs",
-    "link": "https://www.engadget.com/2199569/openai-new-daybreak-initiative-open-source-projects-bugs/",
-    "score": 74,
-    "reason": "New program launch from leading AI company; security-focused initiative"
+    "headline": "‘This is the least crazy AI is ever going to be’: The lessons Europe’s execs must take from Anthropic’s shutdown",
+    "link": "https://fortune.com/2026/06/23/europe-execs-anthropic-faculty-accenture-upcloud/",
+    "score": 76,
+    "reason": "Governance controversy, regulatory implications"
   },
   {
     "rank": 10,
-    "headline": "Alphabet has its worst day in over a year on AI concerns after high-profile exits",
-    "link": "https://www.cnbc.com/2026/06/22/alphabet-goog-stock-ai-departures.html",
-    "score": 72,
-    "reason": "Quantified market impact; talent exodus; major company stock reaction"
+    "headline": "AI Hiring Tools Yield Racial Bias and Systemic Rejection; 26% Black &#x26; 15% Asian",
+    "link": "https://hai.stanford.edu/news/ai-hiring-tools-can-yield-racial-bias-and-systemic-rejection",
+    "score": 75,
+    "reason": "Specific numbers, systemic bias evidence, employment impact"
   },
   {
     "rank": 11,
-    "headline": "Exclusive: A founder who went from pressure washing to Wharton just raised $40 million to put AI to work for plumbers, electricians, and HVAC crews",
-    "link": "https://fortune.com/2026/06/23/exclusive-this-startup-wants-to-be-the-ai-brain-for-home-services-and-it-just-raised-40-million-from-sequoia-and-a16z/",
-    "score": 70,
-    "reason": "Significant funding round; concrete number; emerging AI application"
+    "headline": "Claude is back online after major outage affects most models",
+    "link": "https://9to5google.com/2026/06/23/claude-back-online-after-major-outage/",
+    "score": 72,
+    "reason": "Service disruption, Anthropic major incident"
   },
   {
     "rank": 12,
-    "headline": "Elephant alert! AI warning systems aim to avoid deadly clashes",
-    "link": "https://www.technologyreview.com/2026/06/23/1138562/elephant-alert-ai-warning-systems-avoid-deadly-clashes-india/",
-    "score": 68,
-    "reason": "Real-world AI application; wildlife conservation; human impact"
+    "headline": "The Fitbit Air takes a smarter approach to the AI health dumpster fire",
+    "link": "https://www.theverge.com/tech/954768/google-fitbit-air-review-fitness-tracker-wearable-ai-health-coach",
+    "score": 70,
+    "reason": "Health AI product launch, market criticism"
   },
   {
     "rank": 13,
-    "headline": "Data centers become the face of AI backlash",
-    "link": "https://www.axios.com/2026/06/22/ai-data-center-backlash-poll",
-    "score": 66,
-    "reason": "Growing societal controversy; infrastructure impact; public resistance"
+    "headline": "Defections from Google DeepMind prompt questions about Alphabet’s efforts to stay at the forefront of AI",
+    "link": "https://fortune.com/2026/06/23/google-deepmind-ai-researcher-departures-raise-doubts-about-ability-to-win-the-ai-race-shazeer-jumper-eye-on-ai/",
+    "score": 68,
+    "reason": "Talent exodus, competitive disadvantage"
   },
   {
     "rank": 14,
-    "headline": "L’Oréal brings Maybelline virtual try-on to ChatGPT",
-    "link": "https://www.artificialintelligence-news.com/news/loreal-maybelline-virtual-try-on-chatgpt/",
-    "score": 64,
-    "reason": "Major brand integration; concrete feature launch; consumer-facing AI"
+    "headline": "Sorry, Slackbot. Claude is taking your job",
+    "link": "https://www.engadget.com/2199619/anthropic-announces-claude-tag-for-slack/",
+    "score": 66,
+    "reason": "Product displacement, Anthropic expansion"
   },
   {
     "rank": 15,
-    "headline": "Singtel sells $773 million Thai energy stake as it ramps up AI and data center investments",
-    "link": "https://www.cnbc.com/2026/06/23/singtel-sells-gulf-development-stake-asset-recycling-ai-investment.html",
-    "score": 62,
-    "reason": "Significant capital reallocation; quantified investment; strategic pivot"
+    "headline": "China's AI advances collide with U.S. safety debate",
+    "link": "https://www.axios.com/2026/06/23/china-us-ai-race-glm-anthropic",
+    "score": 64,
+    "reason": "Geopolitical controversy, safety concerns"
   },
   {
     "rank": 16,
-    "headline": "World Cup Scams Are Getting Harder to Spot",
-    "link": "https://www.wired.com/story/world-cup-scams-are-getting-harder-to-spot/",
-    "score": 60,
-    "reason": "AI-generated fraud escalation; societal impact; real-world consequences"
+    "headline": "Omio scales travel product development using OpenAI models",
+    "link": "https://www.artificialintelligence-news.com/news/omio-scales-travel-product-development-using-openai-models/",
+    "score": 62,
+    "reason": "Enterprise deployment, operational scale"
   },
   {
     "rank": 17,
-    "headline": "AI is cursing renters with the promise of impossible homes",
-    "link": "https://www.theverge.com/report/953888/ai-virtual-staging-real-estate-apartment-listings",
+    "headline": "Something's off with Midjourney’s pivot to body scanners",
+    "link": "https://www.theverge.com/report/954826/midjourney-medical-ai-ultrasound-body-scanner-lacks-evidence",
     "score": 58,
-    "reason": "AI-driven consumer deception; housing market impact; growing controversy"
+    "reason": "Product pivot controversy, Midjourney expansion"
   },
   {
     "rank": 18,
-    "headline": "Gmail's genius Gemini Flows feature fixes filters - but only for your first 2000 emails a month",
-    "link": "https://www.zdnet.com/article/google-gmail-gemini-flows-filter-fix/",
+    "headline": "Anthropic updates their terms to verify age or identity",
+    "link": "https://www.anthropic.com/legal/privacy",
     "score": 56,
-    "reason": "New feature launch; quantified limitation; consumer product"
+    "reason": "Governance update, policy change"
   },
   {
     "rank": 19,
-    "headline": "How to troubleshoot your PC problems with Copilot or ChatGPT - effectively",
-    "link": "https://www.zdnet.com/article/ai-troubleshooting-secrets-my-interview-with-copilot-chatgpt/",
+    "headline": "AI Is Learning to Read the Room",
+    "link": "https://spectrum.ieee.org/emotion-ai-context",
     "score": 54,
-    "reason": "Practical AI application; mainstream consumer use case"
+    "reason": "Capability advancement, social AI"
   },
   {
     "rank": 20,
-    "headline": "Gemini overlay gets expanded ‘plus’ menu to do more without opening app",
-    "link": "https://9to5google.com/2026/06/22/gemini-overlay-expanded/",
+    "headline": "Drowning in AI: Companies are launching hundreds of projects, and that’s a problem",
+    "link": "https://fortune.com/2026/06/22/ai-talk-in-aspen/",
     "score": 52,
-    "reason": "Google product expansion; feature enhancement; user interface evolution"
+    "reason": "Market saturation analysis, sustainability concern"
   }
 ]
