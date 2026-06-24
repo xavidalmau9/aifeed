@@ -1,5 +1,24 @@
 [
   {
+    "id": "oracle-21000-layoffs-ai-20260624",
+    "slug": "oracle-21000-layoffs-ai",
+    "headline": "Oracle Laid Off 21,000 Employees Over the Past Year, Citing AI",
+    "summary": "Oracle has laid off roughly 21,000 employees — about 10% of its workforce — over the past year, with artificial intelligence cited as one of the primary drivers.",
+    "body": "<p><strong>Oracle has laid off approximately 21,000 employees over the past year—roughly 10% of its workforce—with artificial intelligence cited as one of the primary drivers. This represents one of the largest reductions in the tech industry and signals a major shift in how enterprise software companies are restructuring their operations in the age of AI.</strong></p>\n<p>The layoffs come as Oracle accelerates its investment in AI-powered solutions and automation technologies. The company is repositioning itself as an AI-first organization, deploying machine learning and automation across its operations to improve efficiency and reduce manual labor costs. This strategic pivot reflects a broader industry trend where companies are choosing to invest in technology over traditional headcount.</p>\n<p>What makes Oracle's situation particularly significant is the strategic contradiction at play: while cutting deep internally, Oracle is simultaneously selling AI solutions to enterprise clients who face the same pressure to automate their workforces. This dual approach—internal efficiency gains coupled with external AI product expansion—creates both business opportunity and ethical complexity.</p>\n<p>The broader AI industry impact cannot be understated. Oracle's moves validate the premise that AI will fundamentally reshape workforce composition across sectors. Other major tech firms are following similar playbooks, creating a cascading effect where automation compounds as companies compete on efficiency and margins. This isn't limited to tech; manufacturing, finance, and professional services face similar pressures.</p>\n<p>Looking ahead, organizations must grapple with a critical question: How do we balance technological progress with workforce stability? The winners in the next decade will be those who successfully retrain and redeploy talent rather than simply cutting it. Oracle's layoffs represent disruption; the real competitive advantage lies in transformation.</p>\n<p>The takeaway: AI-driven productivity gains are real, but managing the human transition to these new systems will define corporate success in the years ahead.</p>",
+    "category": "Business",
+    "hashtags": [
+      "AI",
+      "TechLayoffs",
+      "ArtificialIntelligence",
+      "Enterprise",
+      "FutureOfWork"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_oracle_21000_layoffs_20260624.png",
+    "sourceUrl": "https://www.engadget.com/2199604/oracle-laid-off-21000-employees-in-the-last-year/",
+    "publishedAt": "2026-06-24T11:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
     "id": "nvidia-rubin-runs-hot-save-water-20260622",
     "slug": "nvidia-rubin-runs-hot-save-water",
     "headline": "Nvidia's New Rubin Data Centers Run Hotter to Slash Water Use",
