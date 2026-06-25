@@ -1,107 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI and Broadcom announce chip designed for LLM inference at scale",
-    "link": "https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale/",
-    "score": 95,
-    "reason": "Major hardware launch from OpenAI with concrete product (Jalapeño chip), partnership with Broadcom"
+    "headline": "OpenAI reveals its first AI processor: Jalapeño",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno",
+    "score": 94,
+    "reason": "Major hardware launch by leading AI company, concrete product announcement"
   },
   {
     "rank": 2,
-    "headline": "IBM claims world’s first sub-1 nanometer chip technology",
-    "link": "https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/",
+    "headline": "Qualcomm Buys Buzzy Chip Startup Modular for Nearly $4 Billion",
+    "link": "https://www.wired.com/story/qualcomm-buys-buzzy-chip-startup-modular-for-nearly-dollar4-billion/",
     "score": 92,
-    "reason": "Significant technical milestone, extends Moore's Law, big numbers (100B transistors)"
+    "reason": "Large acquisition, major player consolidation in AI chip space"
   },
   {
     "rank": 3,
-    "headline": "Anthropic accuses Alibaba of campaign to &apos;brazenly&apos; and &apos;illicitly&apos; extract AI capabilities",
-    "link": "https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html",
-    "score": 88,
-    "reason": "Major controversy between AI companies, IP theft allegations"
+    "headline": "Ford had to hire back former engineers to fix mistakes made by its automated systems",
+    "link": "https://www.theverge.com/transportation/956316/ford-quality-jd-power-ranking-ai-automated-mistakes",
+    "score": 90,
+    "reason": "Concrete failure case, major company, demonstrates automation risks"
   },
   {
     "rank": 4,
-    "headline": "Anthropic drops ‘workplace AI agents’ directly inside Slack",
-    "link": "https://www.artificialintelligence-news.com/news/anthropic-slack-workplace-ai-agents/",
-    "score": 85,
-    "reason": "Product launch in enterprise AI, major integration partnership"
+    "headline": "IBM has unveiled chip technology that could help extend Moore’s Law another decade",
+    "link": "https://www.technologyreview.com/2026/06/25/1139696/ibm-unveils-sub1nm-chip/",
+    "score": 88,
+    "reason": "Major hardware breakthrough, big tech company, significant technical claim"
   },
   {
     "rank": 5,
-    "headline": "Why corporate AI super PACs spent $27 million on a local election",
-    "link": "https://www.theverge.com/policy/954970/ai-super-pacs-alex-bores-new-york-12th-district",
-    "score": 84,
-    "reason": "Big numbers, controversy, AI influence in politics"
+    "headline": "The Trump White House Is Over Anthropic CEO Dario Amodei",
+    "link": "https://www.wired.com/story/the-trump-white-house-is-over-anthropics-dario-amodei/",
+    "score": 85,
+    "reason": "Political controversy involving major AI company and government relations"
   },
   {
     "rank": 6,
-    "headline": "Samsung opens ChatGPT Enterprise and Codex access after AI restrictions",
-    "link": "https://www.artificialintelligence-news.com/news/samsung-chatgpt-enterprise-codex-employee-ai-use/",
-    "score": 80,
-    "reason": "Policy reversal from major tech company, enterprise AI expansion"
+    "headline": "AI Is Designing Radio Chips That Humans Couldn’t Even Imagine",
+    "link": "https://spectrum.ieee.org/ai-radio-chip-design",
+    "score": 83,
+    "reason": "Concrete AI application with measurable capability advantage"
   },
   {
     "rank": 7,
-    "headline": "Amazon adds new funding, lifting India AI and cloud investment to $48 billion",
-    "link": "https://www.cnbc.com/2026/06/25/amazon-investment-billion-ai-india.html",
-    "score": 79,
-    "reason": "Major capital commitment ($48B), geographic expansion"
+    "headline": "Figma now has AI motion graphics and shader tools",
+    "link": "https://www.theverge.com/tech/955831/figma-code-design-tools-config-2026-announcements",
+    "score": 81,
+    "reason": "Feature launch from major design platform, practical AI integration"
   },
   {
     "rank": 8,
-    "headline": "Hollywood is bending the knee to OpenAI",
-    "link": "https://www.theverge.com/entertainment/954899/luca-guadagnino-artificial-sam-altman-amazon-a24-neon-mubi-chatgpt",
-    "score": 75,
-    "reason": "Industry shift/controversy regarding AI in entertainment"
+    "headline": "Stripe, Anthropic, and OpenAI are backing an effort to stop respiratory infections",
+    "link": "https://www.technologyreview.com/2026/06/24/1139621/stripe-anthropic-and-openai-are-backing-an-effort-to-stop-respiratory-infections/",
+    "score": 79,
+    "reason": "Multi-company AI collaboration for health application"
   },
   {
     "rank": 9,
-    "headline": "OpenAI's free GPT-5.5 model makes ChatGPT better at understanding context",
-    "link": "https://www.engadget.com/2201255/openai-gpt-5-5-instant-chatgpt-upgrade/",
-    "score": 72,
-    "reason": "Product capability improvement, free tier expansion"
+    "headline": "Notion killing Skiff-influenced email app since most users use AI agents instead",
+    "link": "https://arstechnica.com/gadgets/2026/06/notion-killing-skiff-influenced-email-app-since-most-users-use-ai-agents-instead/",
+    "score": 76,
+    "reason": "Concrete business decision driven by AI agent adoption shift"
   },
   {
     "rank": 10,
-    "headline": "A24 Knows You’re Mad About the Google AI Collab",
-    "link": "https://www.wired.com/story/a24-knows-youre-mad-about-the-google-ai-collab/",
-    "score": 70,
-    "reason": "Controversy in content creator community, major studio involved"
-  },
-  {
-    "rank": 11,
-    "headline": "British Police Built a Sprawling Crime-Prediction Machine. Some Results Couldn’t Be Trusted",
-    "link": "https://www.wired.com/story/british-police-built-a-sprawling-crime-prediction-machine-some-results-couldnt-be-trusted/",
-    "score": 68,
-    "reason": "AI system failure/controversy in government application"
-  },
-  {
-    "rank": 12,
-    "headline": "Anthropic&apos;s latest hiring spree reveals where it&apos;s building AI data centers next",
-    "link": "https://www.cnbc.com/2026/06/25/anthropic-global-ai-data-center-push.html",
-    "score": 65,
-    "reason": "Infrastructure expansion, scale indicators"
-  },
-  {
-    "rank": 13,
-    "headline": "What bubble? JPMorgan says the $5.5 trillion AI capex explosion is profitable–for now",
-    "link": "https://fortune.com/2026/06/25/what-bubble-jpmorgan-5-5-trillion-ai-capex-explosion-profitable-for-now/",
-    "score": 62,
-    "reason": "Big numbers, addresses AI bubble controversy with data"
-  },
-  {
-    "rank": 14,
-    "headline": "How to Opt Out of Google Search’s New AI Data Training Feature",
-    "link": "https://www.wired.com/story/how-to-opt-out-of-google-search-new-ai-data-training/",
-    "score": 60,
-    "reason": "Privacy/controversy regarding AI training data"
-  },
-  {
-    "rank": 15,
-    "headline": "Morgan Stanley doubles China humanoid robot shipment forecast as commercialization accelerates",
-    "link": "https://www.cnbc.com/2026/06/24/morgan-stanley-china-humanoid-robot-market-forecast.html",
-    "score": 58,
-    "reason": "Market forecast shift, hardware commercialization milestone"
+    "headline": "Congresswoman denies staff used AI to write defense funding amendment",
+    "link": "https://www.theverge.com/policy/956394/florida-anna-paulina-luna-anthropic-claude",
+    "score": 74,
+    "reason": "Government AI use controversy, policy implications"
   }
 ]
