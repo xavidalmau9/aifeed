@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI reveals its first AI processor: Jalapeño",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno",
-    "score": 94,
-    "reason": "Major hardware launch by leading AI company, concrete product announcement"
+    "headline": "OpenAI and Broadcom announce chip designed for LLM inference at scale",
+    "link": "https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale/",
+    "score": 92,
+    "reason": "Major hardware launch from OpenAI with concrete partner and use case"
   },
   {
     "rank": 2,
-    "headline": "Qualcomm Buys Buzzy Chip Startup Modular for Nearly $4 Billion",
-    "link": "https://www.wired.com/story/qualcomm-buys-buzzy-chip-startup-modular-for-nearly-dollar4-billion/",
-    "score": 92,
-    "reason": "Large acquisition, major player consolidation in AI chip space"
+    "headline": "IBM claims world’s first sub-1 nanometer chip technology",
+    "link": "https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/",
+    "score": 91,
+    "reason": "Significant technical breakthrough with measurable spec improvement"
   },
   {
     "rank": 3,
-    "headline": "Ford had to hire back former engineers to fix mistakes made by its automated systems",
-    "link": "https://www.theverge.com/transportation/956316/ford-quality-jd-power-ranking-ai-automated-mistakes",
-    "score": 90,
-    "reason": "Concrete failure case, major company, demonstrates automation risks"
+    "headline": "Amazon adds new funding, lifting India AI and cloud investment to $48 billion",
+    "link": "https://www.cnbc.com/2026/06/25/amazon-investment-billion-ai-india.html",
+    "score": 89,
+    "reason": "Large capital commitment with specific dollar amount to emerging market"
   },
   {
     "rank": 4,
-    "headline": "IBM has unveiled chip technology that could help extend Moore’s Law another decade",
-    "link": "https://www.technologyreview.com/2026/06/25/1139696/ibm-unveils-sub1nm-chip/",
-    "score": 88,
-    "reason": "Major hardware breakthrough, big tech company, significant technical claim"
+    "headline": "Why Amazon Dropped Its OpenAI Movie, Data Center Workers Fight Back, and Meta Leaks Employee Data",
+    "link": "https://www.wired.com/story/uncanny-valley-podcast-amazon-mgm-openai-movie-data-center-workers-fight-back-meta-leaks-employee-data/",
+    "score": 87,
+    "reason": "Multiple controversies: business decision reversal, labor conflict, data breach"
   },
   {
     "rank": 5,
-    "headline": "The Trump White House Is Over Anthropic CEO Dario Amodei",
-    "link": "https://www.wired.com/story/the-trump-white-house-is-over-anthropics-dario-amodei/",
-    "score": 85,
-    "reason": "Political controversy involving major AI company and government relations"
+    "headline": "Airwallex hits $11 billion valuation with $320 million raise as fintech pushes into finance run by AI agents",
+    "link": "https://www.cnbc.com/2026/06/26/airwallex-series-h-funding-11-billion-valuation-ai-finance.html",
+    "score": 84,
+    "reason": "Major expansion announcement with geographic specifics"
   },
   {
     "rank": 6,
-    "headline": "AI Is Designing Radio Chips That Humans Couldn’t Even Imagine",
-    "link": "https://spectrum.ieee.org/ai-radio-chip-design",
-    "score": 83,
-    "reason": "Concrete AI application with measurable capability advantage"
+    "headline": "California launches tracker for AI-related job losses",
+    "link": "https://www.engadget.com/2202231/californa-launches-ai-job-loss-tracker/",
+    "score": 82,
+    "reason": "Government action on AI job displacement with measurable tracking"
   },
   {
     "rank": 7,
-    "headline": "Figma now has AI motion graphics and shader tools",
-    "link": "https://www.theverge.com/tech/955831/figma-code-design-tools-config-2026-announcements",
+    "headline": "Two former governors launch a bipartisan coalition to confront the coming AI jobs shock",
+    "link": "https://fortune.com/2026/06/26/raise-us-coalition-ai-jobs-shock/",
     "score": 81,
-    "reason": "Feature launch from major design platform, practical AI integration"
+    "reason": "Political response to AI job disruption with notable figures"
   },
   {
     "rank": 8,
-    "headline": "Stripe, Anthropic, and OpenAI are backing an effort to stop respiratory infections",
-    "link": "https://www.technologyreview.com/2026/06/24/1139621/stripe-anthropic-and-openai-are-backing-an-effort-to-stop-respiratory-infections/",
+    "headline": "Disney agreed to $50M settlement over claims it made live-TV streaming expensive",
+    "link": "https://arstechnica.com/tech-policy/2026/06/disney-agreed-to-50m-settlement-over-claims-it-made-live-tv-streaming-expensive/",
     "score": 79,
-    "reason": "Multi-company AI collaboration for health application"
+    "reason": "Concrete settlement amount, consumer protection controversy"
   },
   {
     "rank": 9,
-    "headline": "Notion killing Skiff-influenced email app since most users use AI agents instead",
-    "link": "https://arstechnica.com/gadgets/2026/06/notion-killing-skiff-influenced-email-app-since-most-users-use-ai-agents-instead/",
-    "score": 76,
-    "reason": "Concrete business decision driven by AI agent adoption shift"
+    "headline": "British Police Built a Sprawling Crime-Prediction Machine. Some Results Couldn’t Be Trusted",
+    "link": "https://www.wired.com/story/british-police-built-a-sprawling-crime-prediction-machine-some-results-couldnt-be-trusted/",
+    "score": 78,
+    "reason": "Controversy over AI system reliability in law enforcement"
   },
   {
     "rank": 10,
-    "headline": "Congresswoman denies staff used AI to write defense funding amendment",
-    "link": "https://www.theverge.com/policy/956394/florida-anna-paulina-luna-anthropic-claude",
-    "score": 74,
-    "reason": "Government AI use controversy, policy implications"
+    "headline": "How to Opt Out of Google Search’s New AI Data Training Feature",
+    "link": "https://www.wired.com/story/how-to-opt-out-of-google-search-new-ai-data-training/",
+    "score": 76,
+    "reason": "Google's controversial data collection practice for AI training"
+  },
+  {
+    "rank": 11,
+    "headline": "OpenAI will delay GPT-5.6 after Trump administration request",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request",
+    "score": 75,
+    "reason": "Major product delay due to government pressure"
+  },
+  {
+    "rank": 12,
+    "headline": "I Met With China’s Top AI Experts. They’re Freaking Out, Too",
+    "link": "https://www.wired.com/story/ai-arms-race-china-us-cooperation/",
+    "score": 73,
+    "reason": "Geopolitical AI concerns with firsthand reporting"
+  },
+  {
+    "rank": 13,
+    "headline": "A24 Knows You’re Mad About the Google AI Collab",
+    "link": "https://www.wired.com/story/a24-knows-youre-mad-about-the-google-ai-collab/",
+    "score": 71,
+    "reason": "Content industry backlash against AI training partnerships"
+  },
+  {
+    "rank": 14,
+    "headline": "Anthropic Thinks Its Own Success Is Key to Making AI Safe",
+    "link": "https://www.wired.com/story/anthropic-thinks-ai-can-only-be-safe-under-its-control/",
+    "score": 69,
+    "reason": "AI safety strategy statement from major lab"
+  },
+  {
+    "rank": 15,
+    "headline": "Gemini in Chrome adds ‘Select from screen’ tool as Gemini 3.5 Flash gains computer use",
+    "link": "https://9to5google.com/2026/06/24/gemini-chrome-select-screen/",
+    "score": 67,
+    "reason": "New AI capability launch across major platform"
+  },
+  {
+    "rank": 16,
+    "headline": "Gemini begins rolling out for existing Android Automotive vehicles",
+    "link": "https://9to5google.com/2026/06/26/gemini-begins-rolling-out-for-existing-android-automotive-vehicles/",
+    "score": 65,
+    "reason": "AI integration into automotive platform expansion"
+  },
+  {
+    "rank": 17,
+    "headline": "Google Home will soon get better at recognizing you",
+    "link": "https://www.theverge.com/tech/955385/google-home-familiar-faces-clothing",
+    "score": 63,
+    "reason": "Feature upgrade to existing AI product line"
+  },
+  {
+    "rank": 18,
+    "headline": "Facebook’s Creator Studio has been revived as an AI companion app",
+    "link": "https://www.theverge.com/tech/956668/meta-facebook-creator-studio-ai-app-relaunch",
+    "score": 61,
+    "reason": "Meta product pivot to AI focus"
+  },
+  {
+    "rank": 19,
+    "headline": "Xbox prices are rising again after Microsoft helped drive up component costs",
+    "link": "https://www.engadget.com/2201787/xbox-prices-are-going-up-again-after-microsoft-helps-drive-up-component-costs/",
+    "score": 59,
+    "reason": "AI-driven hardware cost impact on consumer pricing"
+  },
+  {
+    "rank": 20,
+    "headline": "Spain will require carriers to keep mobile networks live during power outages",
+    "link": "https://www.engadget.com/2201931/spain-will-require-carriers-to-keep-mobile-networks-live-during-power-outages/",
+    "score": 57,
+    "reason": "Regulatory response to infrastructure challenges from energy-intensive AI"
   }
 ]
