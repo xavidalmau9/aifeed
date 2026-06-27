@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI will initially only release ChatGPT 5.6 to government-approved customers",
-    "link": "https://www.engadget.com/2202129/openai-will-initially-only-release-chatgpt-5-6-to-government-approved-customers/",
+    "headline": "OpenAI unveils GPT-5.6 amid US AI regulatory drama",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview",
     "score": 94,
-    "reason": "Major product launch with significant regulatory controversy and access restrictions"
+    "reason": "Major model launch with regulatory controversy; concrete product news"
   },
   {
     "rank": 2,
-    "headline": "Ford had to hire back former engineers to fix mistakes made by its automated systems",
-    "link": "https://www.theverge.com/transportation/956316/ford-quality-jd-power-ranking-ai-automated-mistakes",
-    "score": 89,
-    "reason": "Concrete operational failure of AI systems with measurable business impact"
+    "headline": "Anthropic gets US government's permission to redeploy its Mythos cybersecurity AI model",
+    "link": "https://www.engadget.com/2203088/anthropic-redeploy-mythos-cybersecurity-ai-model/",
+    "score": 88,
+    "reason": "Significant regulatory approval; rare government-sanctioned AI deployment"
   },
   {
     "rank": 3,
-    "headline": "Anthropic and OpenAI waged a $27 million proxy war in a Manhattan congressional race. The winner told them both to get lost",
-    "link": "https://fortune.com/2026/06/26/anthropic-openai-ny12-proxy-war-no-winners-election-super-pac-donations/",
-    "score": 87,
-    "reason": "Big numbers, direct competition between major AI companies with political involvement"
+    "headline": "OpenAI limits new AI models to &apos;trusted partners&apos; at request of U.S. government",
+    "link": "https://www.cnbc.com/2026/06/26/openai-limits-new-ai-models-to-trusted-partners-request-us-government.html",
+    "score": 86,
+    "reason": "Major controversy; government intervention in AI distribution"
   },
   {
     "rank": 4,
-    "headline": "Meet Micron, the under-the-radar chipmaker that just reported a 346% sales surge and helped stop a global AI selloff",
-    "link": "https://fortune.com/2026/06/26/micron-technology-346-percent-revenue-surge-ai-memory-chips-hbm-earnings-2026/",
-    "score": 85,
-    "reason": "Massive growth numbers and significant market impact"
+    "headline": "Apple executive in charge of Vision Pro is reportedly leaving for OpenAI",
+    "link": "https://www.engadget.com/2203115/apple-executive-vision-pro-leaving-for-openai/",
+    "score": 79,
+    "reason": "Major executive move; signals strategic shift at both companies"
   },
   {
     "rank": 5,
-    "headline": "IBM has unveiled chip technology that could help extend Moore’s Law another decade",
-    "link": "https://www.technologyreview.com/2026/06/25/1139696/ibm-unveils-sub1nm-chip/",
-    "score": 83,
-    "reason": "Major technology launch with decade-scale implications"
+    "headline": "China&apos;s Zhipu is closing in on top U.S. AI models with Anthropic and OpenAI held back",
+    "link": "https://www.cnbc.com/2026/06/26/china-zhipu-z-ai-open-source-anthropic-openai.html",
+    "score": 77,
+    "reason": "Competitive threat; geopolitical AI race implications"
   },
   {
     "rank": 6,
-    "headline": "Europe Is Fed Up and Wants Its Own AI",
-    "link": "https://www.wired.com/story/europe-is-fed-up-and-wants-its-own-ai/",
-    "score": 81,
-    "reason": "Major geopolitical AI initiative and sovereignty push"
+    "headline": "Qualcomm’s big AI gamble: Breaking Nvidia’s chips stronghold",
+    "link": "https://fortune.com/2026/06/27/qualcomm-nvidia-ai-data-center-chips/",
+    "score": 75,
+    "reason": "Major competitive challenge to market leader; significant tech shift"
   },
   {
     "rank": 7,
-    "headline": "China's new open-source model accelerates AI hacking threat",
-    "link": "https://www.axios.com/2026/06/25/china-glm-52-open-source-hackers",
-    "score": 79,
-    "reason": "Security controversy with international AI competition implications"
+    "headline": "California launches tracker for AI-related job losses",
+    "link": "https://www.engadget.com/2202231/californa-launches-ai-job-loss-tracker/",
+    "score": 72,
+    "reason": "Concrete policy response; measurable AI impact data"
   },
   {
     "rank": 8,
-    "headline": "The AI price shock is here: Apple, Microsoft hike prices",
-    "link": "https://www.axios.com/2026/06/26/apple-microsoft-prices-ai",
-    "score": 77,
-    "reason": "Major tech companies raising prices, industry-wide impact"
+    "headline": "Why Amazon Dropped Its OpenAI Movie, Data Center Workers Fight Back, and Meta Leaks Employee Data",
+    "link": "https://www.wired.com/story/uncanny-valley-podcast-amazon-mgm-openai-movie-data-center-workers-fight-back-meta-leaks-employee-data/",
+    "score": 70,
+    "reason": "Multiple controversies; big company disputes and security breach"
   },
   {
     "rank": 9,
-    "headline": "Anthropic's Mythos mess is only getting worse",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/957327/anthropic-mythos-fable-ai-trump-administration-negotiations",
-    "score": 75,
-    "reason": "Significant controversy at major AI company"
+    "headline": "One in 10 Gen Zers want their boss to be replaced by AI—they're already being polite to ChatGPT just in case",
+    "link": "https://fortune.com/article/gen-z-wants-boss-to-be-replaced-by-ai/",
+    "score": 68,
+    "reason": "Significant cultural shift data; AI adoption trend"
   },
   {
     "rank": 10,
-    "headline": "Netflix now requires every user profile to be tied to unique email address",
-    "link": "https://arstechnica.com/gadgets/2026/06/netflix-now-requires-every-user-profile-to-be-tied-to-unique-email-address/",
-    "score": 71,
-    "reason": "Major platform policy change affecting millions of users"
-  },
-  {
-    "rank": 11,
-    "headline": "Anthropic&apos;s latest hiring spree reveals where it&apos;s building AI data centers next",
-    "link": "https://www.cnbc.com/2026/06/25/anthropic-global-ai-data-center-push.html",
-    "score": 69,
-    "reason": "Expansion of major AI infrastructure"
-  },
-  {
-    "rank": 12,
-    "headline": "Digital sovereignty at the UN: Inside the global push to replace US cloud giants with open-source tech",
-    "link": "https://www.zdnet.com/article/digital-sovereignty-un-global-push-to-replace-us-cloud-giants-with-open-source-tech/",
-    "score": 68,
-    "reason": "Major geopolitical shift in cloud/AI infrastructure"
-  },
-  {
-    "rank": 13,
-    "headline": "YouTube TV subscribers win in lawsuit against Disney over driving up streaming costs",
-    "link": "https://9to5google.com/2026/06/24/youtube-tv-disney-class-action-lawsuit/",
+    "headline": "The 33-year-old executive Satya Nadella is trusting to fix Microsoft’s Copilot AI assistant",
+    "link": "https://fortune.com/2026/06/27/microsoft-copilot-boss-jacob-andreou-tapped-by-satya-nadella-to-save-ai-strategy/",
     "score": 65,
-    "reason": "Litigation victory with consumer impact"
-  },
-  {
-    "rank": 14,
-    "headline": "Oracle stock has worst week since 2001 dot-com bust as AI financing concerns escalate",
-    "link": "https://www.cnbc.com/2026/06/26/oracle-stock-ends-worst-week-since-2001-as-investors-dwell-on-finances.html",
-    "score": 63,
-    "reason": "Major market downturn with AI-related financial concerns"
-  },
-  {
-    "rank": 15,
-    "headline": "OpenAI and Anthropic face new AI reality as users shift from &apos;tokenmaxxing&apos; to efficiency",
-    "link": "https://www.cnbc.com/2026/06/26/openai-anthropic-new-ai-spending-reality-as-users-shift-to-efficiency.html",
-    "score": 61,
-    "reason": "Market behavior shift at major AI companies"
-  },
-  {
-    "rank": 16,
-    "headline": "Gemini’s new Google Play Store integration lets you chat to find Android apps, games",
-    "link": "https://9to5google.com/2026/06/26/gemini-google-play-store/",
-    "score": 58,
-    "reason": "New AI feature launch by major tech company"
-  },
-  {
-    "rank": 17,
-    "headline": "Notion Mail is shutting down",
-    "link": "https://www.engadget.com/2201940/notion-mail-is-shutting-down/",
-    "score": 55,
-    "reason": "Product shutdown due to AI agent adoption"
-  },
-  {
-    "rank": 18,
-    "headline": "China's AI progress strains U.S. alliance pitch",
-    "link": "https://www.axios.com/2026/06/26/china-ai-us-alliance",
-    "score": 52,
-    "reason": "Geopolitical AI competition concern"
-  },
-  {
-    "rank": 19,
-    "headline": "Trump administration asks OpenAI to limit next model release over security concerns",
-    "link": "https://www.axios.com/2026/06/25/trump-administration-openai-gpt-model-release",
-    "score": 50,
-    "reason": "Government intervention in AI product releases"
-  },
-  {
-    "rank": 20,
-    "headline": "OpenAI Has New AI Models. Here’s Why You Can’t Use Them",
-    "link": "https://www.wired.com/story/openai-gpt-56-model-release-trump-admin-approval/",
-    "score": 48,
-    "reason": "Access restrictions on new AI models"
+    "reason": "Major leadership decision; product turnaround attempt"
   }
 ]
