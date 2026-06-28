@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI limits new AI models to &apos;trusted partners&apos; at request of U.S. government",
-    "link": "https://www.cnbc.com/2026/06/26/openai-limits-new-ai-models-to-trusted-partners-request-us-government.html",
+    "headline": "Prosecutors used ChatGPT logs as evidence in the Palisades fire trial",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/958751/prosecutors-chatgpt-palisades-wildfire-arson-mistrial",
     "score": 92,
-    "reason": "Major regulatory action affecting model deployment; concrete government intervention in AI release strategy"
+    "reason": "Major controversy: AI logs used in legal proceedings sets significant precedent"
   },
   {
     "rank": 2,
-    "headline": "Trump admin allows Anthropic to release Mythos AI model to some companies, government agencies",
-    "link": "https://www.cnbc.com/2026/06/26/us-government-anthropic-claude-mythos5-ai.html",
-    "score": 91,
-    "reason": "Significant regulatory approval; cybersecurity AI deployment expansion; government partnership"
+    "headline": "Ford rehires &#x27;gray beard&#x27; engineers after AI falls short",
+    "link": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
+    "score": 88,
+    "reason": "Big story: Major automaker reverting to human expertise after AI implementation failure"
   },
   {
     "rank": 3,
-    "headline": "OpenAI unveils GPT-5.6 amid US AI regulatory drama",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview",
-    "score": 88,
-    "reason": "Major model release with regulatory controversy context"
+    "headline": "How AI helped the FBI investigate the White House Correspondents' Dinner attack",
+    "link": "https://www.axios.com/2026/06/28/ai-fbi-whcd-attack-investigation",
+    "score": 85,
+    "reason": "Significant: Real-world law enforcement use of AI in high-profile investigation"
   },
   {
     "rank": 4,
-    "headline": "China&apos;s Zhipu is closing in on top U.S. AI models with Anthropic and OpenAI held back",
-    "link": "https://www.cnbc.com/2026/06/26/china-zhipu-z-ai-open-source-anthropic-openai.html",
-    "score": 86,
-    "reason": "Competitive landscape shift; big numbers implication; geopolitical AI race"
+    "headline": "Trump Administration Allows Anthropic to Release  Mythos to Select US Organizations",
+    "link": "https://www.wired.com/story/anthropic-restores-access-to-mythos/",
+    "score": 83,
+    "reason": "Major launch: Government approval of new Anthropic model release"
   },
   {
     "rank": 5,
-    "headline": "Apple executive in charge of Vision Pro is reportedly leaving for OpenAI",
-    "link": "https://www.engadget.com/2203115/apple-executive-vision-pro-leaving-for-openai/",
-    "score": 84,
-    "reason": "Major talent departure; significant executive move between tech giants"
+    "headline": "Suno launches Spark incubator program to feed independent artists to its AI machine",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/958801/suno-launches-spark-incubator-program-to-feed-independent-artists-to-its-ai-machine",
+    "score": 81,
+    "reason": "Significant launch: Music AI company expanding with structured program"
   },
   {
     "rank": 6,
-    "headline": "OpenAI Has New AI Models. Here’s Why You Can’t Use Them",
-    "link": "https://www.wired.com/story/openai-gpt-56-model-release-trump-admin-approval/",
-    "score": 82,
-    "reason": "Access restrictions on new models; significant controversy about availability"
+    "headline": "GLM 5.2 beats Claude in our benchmarks",
+    "link": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
+    "score": 78,
+    "reason": "Competitive milestone: New model outperforms major competitor in testing"
   },
   {
     "rank": 7,
-    "headline": "Anthropic’s Alibaba fight raises a trillion-dollar question for IPO: How defensible is a frontier AI moat against China with Washington's toolbox?",
-    "link": "https://fortune.com/2026/06/28/anthropic-alibaba-fight-raises-ipo-question-frontier-ai-moat-defensible/",
-    "score": 80,
-    "reason": "Large financial stakes; competitive threat; IPO implications; geopolitical tension"
+    "headline": "OpenAI launches a limited preview of GPT-5.6 for a 'small group of trusted partners'",
+    "link": "https://www.engadget.com/2203102/openai-starts-previewing-gpt-56-and-its-three-variants/",
+    "score": 76,
+    "reason": "Major launch: New GPT version released despite speculation label"
   },
   {
     "rank": 8,
-    "headline": "Margaret Atwood says the problem with AI is 'garbage in, garbage out'",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/958715/margaret-atwood-ai-problem-garbage-in-garbage-out",
-    "score": 76,
-    "reason": "High-profile public figure commentary on AI fundamental problems; cultural impact"
+    "headline": "I used Claude Code to get a second opinion on my MRI",
+    "link": "https://antoine.fi/mri-analysis-using-claude-code-opus",
+    "score": 72,
+    "reason": "Practical AI application: Medical diagnosis use case emerging"
   },
   {
     "rank": 9,
-    "headline": "Anthropic's Mythos 5 is back",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/958458/anthropic-mythos-5-is-back-trump-negotiations",
-    "score": 72,
-    "reason": "Product launch/revival; government-approved deployment resumption"
+    "headline": "Scoop: Powerful Anthropic model, Fable 5, on track to return soon",
+    "link": "https://www.axios.com/2026/06/27/anthropic-fable-5-return-soon",
+    "score": 68,
+    "reason": "Anthropic product announcement with reported performance gains"
   },
   {
     "rank": 10,
-    "headline": "Wayfinder Router: deterministic routing of queries between local and hosted LLM",
-    "link": "https://github.com/itsthelore/wayfinder-router",
-    "score": 68,
-    "reason": "Technical infrastructure launch; hybrid LLM routing innovation"
+    "headline": "Your favorite tech will keep getting more expensive, and you can blame AI",
+    "link": "https://9to5google.com/2026/06/28/tech-price-hikes/",
+    "score": 65,
+    "reason": "Broader industry impact: AI driving consumer cost increases across tech sector"
   }
 ]
