@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Oracle stock has worst week since 2001 dot-com bust as AI financing concerns escalate",
-    "link": "https://www.cnbc.com/2026/06/26/oracle-stock-ends-worst-week-since-2001-as-investors-dwell-on-finances.html",
-    "score": 95,
-    "reason": "Major financial impact, quantifiable downturn, AI industry concern"
+    "headline": "OpenAI limits new AI models to &apos;trusted partners&apos; at request of U.S. government",
+    "link": "https://www.cnbc.com/2026/06/26/openai-limits-new-ai-models-to-trusted-partners-request-us-government.html",
+    "score": 92,
+    "reason": "Major regulatory action affecting model deployment; concrete government intervention in AI release strategy"
   },
   {
     "rank": 2,
-    "headline": "The AI price shock is here: Apple, Microsoft hike prices",
-    "link": "https://www.axios.com/2026/06/26/apple-microsoft-prices-ai",
-    "score": 92,
-    "reason": "Significant pricing changes from major companies, direct consumer impact"
+    "headline": "Trump admin allows Anthropic to release Mythos AI model to some companies, government agencies",
+    "link": "https://www.cnbc.com/2026/06/26/us-government-anthropic-claude-mythos5-ai.html",
+    "score": 91,
+    "reason": "Significant regulatory approval; cybersecurity AI deployment expansion; government partnership"
   },
   {
     "rank": 3,
-    "headline": "OpenAI will delay GPT-5.6 after Trump administration request",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request",
-    "score": 90,
-    "reason": "Major model delay, government intervention, high-stakes launch impact"
+    "headline": "OpenAI unveils GPT-5.6 amid US AI regulatory drama",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview",
+    "score": 88,
+    "reason": "Major model release with regulatory controversy context"
   },
   {
     "rank": 4,
-    "headline": "OpenAI launches a limited preview of GPT-5.6 for a 'small group of trusted partners'",
-    "link": "https://www.engadget.com/2203102/openai-starts-previewing-gpt-56-and-its-three-variants/",
-    "score": 88,
-    "reason": "New model launch, restricted access, major company announcement"
+    "headline": "China&apos;s Zhipu is closing in on top U.S. AI models with Anthropic and OpenAI held back",
+    "link": "https://www.cnbc.com/2026/06/26/china-zhipu-z-ai-open-source-anthropic-openai.html",
+    "score": 86,
+    "reason": "Competitive landscape shift; big numbers implication; geopolitical AI race"
   },
   {
     "rank": 5,
-    "headline": "Trump Administration Allows Anthropic to Release  Mythos to Select US Organizations",
-    "link": "https://www.wired.com/story/anthropic-restores-access-to-mythos/",
-    "score": 87,
-    "reason": "Government approval, model release, regulatory development"
+    "headline": "Apple executive in charge of Vision Pro is reportedly leaving for OpenAI",
+    "link": "https://www.engadget.com/2203115/apple-executive-vision-pro-leaving-for-openai/",
+    "score": 84,
+    "reason": "Major talent departure; significant executive move between tech giants"
   },
   {
     "rank": 6,
-    "headline": "Gemini’s new Google Play Store integration lets you chat to find Android apps, games",
-    "link": "https://9to5google.com/2026/06/26/gemini-google-play-store/",
-    "score": 85,
-    "reason": "Product launch, new capability, major company feature"
+    "headline": "OpenAI Has New AI Models. Here’s Why You Can’t Use Them",
+    "link": "https://www.wired.com/story/openai-gpt-56-model-release-trump-admin-approval/",
+    "score": 82,
+    "reason": "Access restrictions on new models; significant controversy about availability"
   },
   {
     "rank": 7,
-    "headline": "Netflix now requires every user profile to be tied to unique email address",
-    "link": "https://arstechnica.com/gadgets/2026/06/netflix-now-requires-every-user-profile-to-be-tied-to-unique-email-address/",
-    "score": 82,
-    "reason": "Major policy change, affects millions of users, significant restriction"
+    "headline": "Anthropic’s Alibaba fight raises a trillion-dollar question for IPO: How defensible is a frontier AI moat against China with Washington's toolbox?",
+    "link": "https://fortune.com/2026/06/28/anthropic-alibaba-fight-raises-ipo-question-frontier-ai-moat-defensible/",
+    "score": 80,
+    "reason": "Large financial stakes; competitive threat; IPO implications; geopolitical tension"
   },
   {
     "rank": 8,
-    "headline": "Why is Apple asking me to pay more for Big Tech’s AI obsession?",
-    "link": "https://www.theverge.com/report/958678/apple-consumer-price-increase-ai-big-tech",
-    "score": 80,
-    "reason": "Pricing controversy, consumer impact, major company criticism"
+    "headline": "Margaret Atwood says the problem with AI is 'garbage in, garbage out'",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/958715/margaret-atwood-ai-problem-garbage-in-garbage-out",
+    "score": 76,
+    "reason": "High-profile public figure commentary on AI fundamental problems; cultural impact"
   },
   {
     "rank": 9,
-    "headline": "China's AI progress strains U.S. alliance pitch",
-    "link": "https://www.axios.com/2026/06/26/china-ai-us-alliance",
-    "score": 79,
-    "reason": "Geopolitical AI concern, major strategic implication"
+    "headline": "Anthropic's Mythos 5 is back",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/958458/anthropic-mythos-5-is-back-trump-negotiations",
+    "score": 72,
+    "reason": "Product launch/revival; government-approved deployment resumption"
   },
   {
     "rank": 10,
-    "headline": "From concerts to train rides, bots are winning the ticket wars — but they&apos;re only part of the problem",
-    "link": "https://www.cnbc.com/2026/06/27/ticket-bots-concert-scalpers-ticketmaster-china-korea.html",
-    "score": 78,
-    "reason": "AI misuse controversy, widespread consumer impact"
-  },
-  {
-    "rank": 11,
-    "headline": "Gemini begins rolling out for existing Android Automotive vehicles",
-    "link": "https://9to5google.com/2026/06/26/gemini-begins-rolling-out-for-existing-android-automotive-vehicles/",
-    "score": 76,
-    "reason": "Product rollout, integration expansion"
-  },
-  {
-    "rank": 12,
-    "headline": "Asian AI startups launch Mythos-like models",
-    "link": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
-    "score": 75,
-    "reason": "Competitive model launches, market expansion"
-  },
-  {
-    "rank": 13,
-    "headline": "Europe Is Fed Up and Wants Its Own AI",
-    "link": "https://www.wired.com/story/europe-is-fed-up-and-wants-its-own-ai/",
-    "score": 74,
-    "reason": "Strategic AI development, geopolitical shift"
-  },
-  {
-    "rank": 14,
-    "headline": "Scoop: Powerful Anthropic model, Fable 5, on track to return soon",
-    "link": "https://www.axios.com/2026/06/27/anthropic-fable-5-return-soon",
-    "score": 72,
-    "reason": "Model comeback, major company development"
-  },
-  {
-    "rank": 15,
-    "headline": "OpenAI hasn&apos;t held pre-IPO investor meetings or set timeline yet, sources say",
-    "link": "https://www.cnbc.com/2026/06/26/open-ai-ipo-timeline-investors.html",
-    "score": 70,
-    "reason": "IPO delay, major company milestone uncertainty"
-  },
-  {
-    "rank": 16,
-    "headline": "SAP aligns commerce data for AI personalisation",
-    "link": "https://www.artificialintelligence-news.com/news/sap-aligns-commerce-data-for-ai-personalisation/",
+    "headline": "Wayfinder Router: deterministic routing of queries between local and hosted LLM",
+    "link": "https://github.com/itsthelore/wayfinder-router",
     "score": 68,
-    "reason": "Enterprise AI implementation, major company initiative"
-  },
-  {
-    "rank": 17,
-    "headline": "Anthropic Thinks Its Own Success Is Key to Making AI Safe",
-    "link": "https://www.wired.com/story/anthropic-thinks-ai-can-only-be-safe-under-its-control/",
-    "score": 66,
-    "reason": "AI safety stance, company strategy"
-  },
-  {
-    "rank": 18,
-    "headline": "Google rolling out first Fitbit Air firmware update",
-    "link": "https://9to5google.com/2026/06/25/first-fitbit-air-update/",
-    "score": 64,
-    "reason": "New product integration"
-  },
-  {
-    "rank": 19,
-    "headline": "Anthropic's Mythos mess is only getting worse",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/957327/anthropic-mythos-fable-ai-trump-administration-negotiations",
-    "score": 62,
-    "reason": "Model controversy, company challenges"
-  },
-  {
-    "rank": 20,
-    "headline": "The Download: brain-melting heatwaves and unprecedented OpenAI restrictions",
-    "link": "https://www.technologyreview.com/2026/06/26/1139780/the-download-heatwaves-brain-health-openai-restrictions/",
-    "score": 60,
-    "reason": "Regulatory restrictions, multiple impacts"
+    "reason": "Technical infrastructure launch; hybrid LLM routing innovation"
   }
 ]
