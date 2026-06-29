@@ -1,72 +1,86 @@
 [
   {
     "rank": 1,
-    "headline": "Prosecutors used ChatGPT logs as evidence in the Palisades fire trial",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/958751/prosecutors-chatgpt-palisades-wildfire-arson-mistrial",
+    "headline": "Baidu shares jump 7% as AI chip arm Kunlunxin said to target $50 billion Hong Kong IPO",
+    "link": "https://www.cnbc.com/2026/06/29/baidu-kunlunxin-hong-kong-ipo-50-billion-ai-chips.html",
     "score": 92,
-    "reason": "Major controversy: AI logs used in legal proceedings sets significant precedent"
+    "reason": "Major financial milestone, specific big number ($50B), concrete business action"
   },
   {
     "rank": 2,
-    "headline": "Ford rehires &#x27;gray beard&#x27; engineers after AI falls short",
-    "link": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
+    "headline": "Google reportedly capped Meta's use of Gemini AI for coding and chatbots",
+    "link": "https://www.engadget.com/2203579/google-reportedly-capped-meta-use-of-gemini-ai-for-coding-chatbots/",
     "score": 88,
-    "reason": "Big story: Major automaker reverting to human expertise after AI implementation failure"
+    "reason": "Significant competitive restriction between major tech players, concrete impact"
   },
   {
     "rank": 3,
-    "headline": "How AI helped the FBI investigate the White House Correspondents' Dinner attack",
-    "link": "https://www.axios.com/2026/06/28/ai-fbi-whcd-attack-investigation",
+    "headline": "Scam.ai Announces Qualcomm Partnership, Launches Halo Deepfake Detection Model at Computex 2026",
+    "link": "https://www.artificialintelligence-news.com/news/scam-ai-announces-qualcomm-partnership-launches-halo-deepfake-detection-model-at-computex-2026/",
     "score": 85,
-    "reason": "Significant: Real-world law enforcement use of AI in high-profile investigation"
+    "reason": "Product launch with major partnership, addresses real security concern"
   },
   {
     "rank": 4,
-    "headline": "Trump Administration Allows Anthropic to Release  Mythos to Select US Organizations",
-    "link": "https://www.wired.com/story/anthropic-restores-access-to-mythos/",
-    "score": 83,
-    "reason": "Major launch: Government approval of new Anthropic model release"
+    "headline": "South Korea says Samsung and SK Hynix investing in AI, semiconductor mega-projects",
+    "link": "https://www.cnbc.com/2026/06/29/samsung-sk-hynix-reported-1point3-reported-trillion-spending-plans.html",
+    "score": 84,
+    "reason": "Massive infrastructure investment from major manufacturers, strategic positioning"
   },
   {
     "rank": 5,
-    "headline": "Suno launches Spark incubator program to feed independent artists to its AI machine",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/958801/suno-launches-spark-incubator-program-to-feed-independent-artists-to-its-ai-machine",
-    "score": 81,
-    "reason": "Significant launch: Music AI company expanding with structured program"
+    "headline": "Why BlackRock, Nvidia, and Temasek are betting billions on quantum computing",
+    "link": "https://fortune.com/2026/06/29/blackrock-nvidia-temasek-betting-billions-quantum-computing/",
+    "score": 82,
+    "reason": "Major capital deployment by top-tier investors, big money figures implied"
   },
   {
     "rank": 6,
-    "headline": "GLM 5.2 beats Claude in our benchmarks",
-    "link": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
+    "headline": "Wimbledon adds IBM AI tools for live match coverage",
+    "link": "https://www.artificialintelligence-news.com/news/wimbledon-ibm-ai-tools-live-match-coverage/",
     "score": 78,
-    "reason": "Competitive milestone: New model outperforms major competitor in testing"
+    "reason": "Major sporting event adoption, concrete deployment at scale"
   },
   {
     "rank": 7,
-    "headline": "OpenAI launches a limited preview of GPT-5.6 for a 'small group of trusted partners'",
-    "link": "https://www.engadget.com/2203102/openai-starts-previewing-gpt-56-and-its-three-variants/",
+    "headline": "This Humanoid Robot Is a Terrifyingly Competent Office Intern",
+    "link": "https://www.wired.com/story/this-robot-is-going-to-replace-your-interns-flexion/",
     "score": 76,
-    "reason": "Major launch: New GPT version released despite speculation label"
+    "reason": "Tangible capability demonstration, workplace disruption angle"
   },
   {
     "rank": 8,
-    "headline": "I used Claude Code to get a second opinion on my MRI",
-    "link": "https://antoine.fi/mri-analysis-using-claude-code-opus",
-    "score": 72,
-    "reason": "Practical AI application: Medical diagnosis use case emerging"
+    "headline": "Mozilla President: meet the open source 'rebel alliance' that could break Big Tech's grip on AI",
+    "link": "https://fortune.com/2026/06/29/open-source-ai-mozilla-middle-powers-canada-eu-mark-surman/",
+    "score": 74,
+    "reason": "Industry power shift narrative, major player positioning against incumbents"
   },
   {
     "rank": 9,
-    "headline": "Scoop: Powerful Anthropic model, Fable 5, on track to return soon",
-    "link": "https://www.axios.com/2026/06/27/anthropic-fable-5-return-soon",
-    "score": 68,
-    "reason": "Anthropic product announcement with reported performance gains"
+    "headline": "Why is Apple asking me to pay more for Big Tech’s AI obsession?",
+    "link": "https://www.theverge.com/report/958678/apple-consumer-price-increase-ai-big-tech",
+    "score": 71,
+    "reason": "Consumer pricing controversy, major company strategy shift"
   },
   {
     "rank": 10,
-    "headline": "Your favorite tech will keep getting more expensive, and you can blame AI",
-    "link": "https://9to5google.com/2026/06/28/tech-price-hikes/",
+    "headline": "Professor denounces mass AI fraud on an exam at Brown",
+    "link": "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
+    "score": 68,
+    "reason": "Real-world integrity problem at major institution, concrete incident"
+  },
+  {
+    "rank": 11,
+    "headline": "From concerts to train rides, bots are winning the ticket wars — but they&apos;re only part of the problem",
+    "link": "https://www.cnbc.com/2026/06/27/ticket-bots-concert-scalpers-ticketmaster-china-korea.html",
     "score": 65,
-    "reason": "Broader industry impact: AI driving consumer cost increases across tech sector"
+    "reason": "Widespread practical problem with economic impact"
+  },
+  {
+    "rank": 12,
+    "headline": "xFusion scales enterprise AI from edge workstations to liquid-cooled data centres",
+    "link": "https://www.artificialintelligence-news.com/news/xfusion-scales-enterprise-ai-from-edge-workstations-to-liquid-cooled-data-centres/",
+    "score": 63,
+    "reason": "Infrastructure scaling achievement with technical specificity"
   }
 ]
