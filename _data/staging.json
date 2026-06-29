@@ -1,86 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Baidu shares jump 7% as AI chip arm Kunlunxin said to target $50 billion Hong Kong IPO",
-    "link": "https://www.cnbc.com/2026/06/29/baidu-kunlunxin-hong-kong-ipo-50-billion-ai-chips.html",
-    "score": 92,
-    "reason": "Major financial milestone, specific big number ($50B), concrete business action"
+    "headline": "Rocket Lab buys satellite company Iridium to go up against Starlink and Amazon's Leo",
+    "link": "https://www.engadget.com/2203612/rocket-lab-buys-satellite-company-iridium/",
+    "score": 94,
+    "reason": "Major M&A deal with big numbers, concrete competitive move"
   },
   {
     "rank": 2,
-    "headline": "Google reportedly capped Meta's use of Gemini AI for coding and chatbots",
-    "link": "https://www.engadget.com/2203579/google-reportedly-capped-meta-use-of-gemini-ai-for-coding-chatbots/",
+    "headline": "HP accelerates enterprise workflows with OpenAI Frontier",
+    "link": "https://www.artificialintelligence-news.com/news/hp-accelerates-enterprise-workflows-openai-frontier/",
     "score": 88,
-    "reason": "Significant competitive restriction between major tech players, concrete impact"
+    "reason": "Enterprise partnership launch with OpenAI's newest model"
   },
   {
     "rank": 3,
-    "headline": "Scam.ai Announces Qualcomm Partnership, Launches Halo Deepfake Detection Model at Computex 2026",
-    "link": "https://www.artificialintelligence-news.com/news/scam-ai-announces-qualcomm-partnership-launches-halo-deepfake-detection-model-at-computex-2026/",
+    "headline": "Suno launches Spark incubator program to feed independent artists to its AI machine",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/958801/suno-launches-spark-incubator-program-to-feed-independent-artists-to-its-ai-machine",
     "score": 85,
-    "reason": "Product launch with major partnership, addresses real security concern"
+    "reason": "Product launch, concrete program with stated purpose"
   },
   {
     "rank": 4,
-    "headline": "South Korea says Samsung and SK Hynix investing in AI, semiconductor mega-projects",
-    "link": "https://www.cnbc.com/2026/06/29/samsung-sk-hynix-reported-1point3-reported-trillion-spending-plans.html",
-    "score": 84,
-    "reason": "Massive infrastructure investment from major manufacturers, strategic positioning"
+    "headline": "Tidal won’t pay royalties on AI-generated music but isn’t banning it outright",
+    "link": "https://www.theverge.com/tech/959211/tidal-ai-music-policy-demonetizingdetect-label",
+    "score": 83,
+    "reason": "Significant policy controversy on creator compensation"
   },
   {
     "rank": 5,
-    "headline": "Why BlackRock, Nvidia, and Temasek are betting billions on quantum computing",
-    "link": "https://fortune.com/2026/06/29/blackrock-nvidia-temasek-betting-billions-quantum-computing/",
+    "headline": "Lawmakers want to ban AI companies from selling your health data",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/959033/health-location-data-protection-act-ai-warren-scanlon",
     "score": 82,
-    "reason": "Major capital deployment by top-tier investors, big money figures implied"
+    "reason": "Regulatory action with major implications"
   },
   {
     "rank": 6,
-    "headline": "Wimbledon adds IBM AI tools for live match coverage",
-    "link": "https://www.artificialintelligence-news.com/news/wimbledon-ibm-ai-tools-live-match-coverage/",
-    "score": 78,
-    "reason": "Major sporting event adoption, concrete deployment at scale"
+    "headline": "How AI helped the FBI investigate the White House Correspondents' Dinner attack",
+    "link": "https://www.axios.com/2026/06/28/ai-fbi-whcd-attack-investigation",
+    "score": 80,
+    "reason": "Real-world law enforcement application with controversy potential"
   },
   {
     "rank": 7,
-    "headline": "This Humanoid Robot Is a Terrifyingly Competent Office Intern",
-    "link": "https://www.wired.com/story/this-robot-is-going-to-replace-your-interns-flexion/",
-    "score": 76,
-    "reason": "Tangible capability demonstration, workplace disruption angle"
+    "headline": "The AI boom is colliding with a new threat: Severe weather",
+    "link": "https://www.cnbc.com/2026/06/29/ai-data-centers-heatwave-climate-risk-weather.html",
+    "score": 78,
+    "reason": "Infrastructure/environmental impact concrete numbers"
   },
   {
     "rank": 8,
-    "headline": "Mozilla President: meet the open source 'rebel alliance' that could break Big Tech's grip on AI",
-    "link": "https://fortune.com/2026/06/29/open-source-ai-mozilla-middle-powers-canada-eu-mark-surman/",
-    "score": 74,
-    "reason": "Industry power shift narrative, major player positioning against incumbents"
+    "headline": "Google expands personalized intelligence to Gemini app image creation",
+    "link": "https://www.engadget.com/2204410/google-expands-personalized-intelligence-to-gemini-app-image-creation/",
+    "score": 76,
+    "reason": "Product feature expansion launch"
   },
   {
     "rank": 9,
-    "headline": "Why is Apple asking me to pay more for Big Tech’s AI obsession?",
-    "link": "https://www.theverge.com/report/958678/apple-consumer-price-increase-ai-big-tech",
-    "score": 71,
-    "reason": "Consumer pricing controversy, major company strategy shift"
+    "headline": "Ford realized AI wasn’t capable of taking human jobs years ago—and hired 350 'gray beard' engineers to steer its program",
+    "link": "https://fortune.com/2026/06/29/ford-ai-hired-human-workers-gray-beards-automation/",
+    "score": 75,
+    "reason": "Specific numbers, contradicts AI jobs narrative"
   },
   {
     "rank": 10,
-    "headline": "Professor denounces mass AI fraud on an exam at Brown",
-    "link": "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
-    "score": 68,
-    "reason": "Real-world integrity problem at major institution, concrete incident"
+    "headline": "Alphabet stock pops 4% on Dow debut, but the tech giant faces major AI questions",
+    "link": "https://www.cnbc.com/2026/06/29/alphabet-googl-stock-dow-average.html",
+    "score": 73,
+    "reason": "Market movement with quantified impact"
   },
   {
     "rank": 11,
-    "headline": "From concerts to train rides, bots are winning the ticket wars — but they&apos;re only part of the problem",
-    "link": "https://www.cnbc.com/2026/06/27/ticket-bots-concert-scalpers-ticketmaster-china-korea.html",
-    "score": 65,
-    "reason": "Widespread practical problem with economic impact"
+    "headline": "Prosecutors used ChatGPT logs as evidence in the Palisades fire trial",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/958751/prosecutors-chatgpt-palisades-wildfire-arson-mistrial",
+    "score": 71,
+    "reason": "Legal precedent, controversial use case"
   },
   {
     "rank": 12,
-    "headline": "xFusion scales enterprise AI from edge workstations to liquid-cooled data centres",
-    "link": "https://www.artificialintelligence-news.com/news/xfusion-scales-enterprise-ai-from-edge-workstations-to-liquid-cooled-data-centres/",
-    "score": 63,
-    "reason": "Infrastructure scaling achievement with technical specificity"
+    "headline": "Half of social media child safety features don't work, report claims",
+    "link": "https://www.engadget.com/2203983/half-of-social-media-child-safety-features-dont-work-report-claims/",
+    "score": 69,
+    "reason": "Quantified failure, significant controversy"
+  },
+  {
+    "rank": 13,
+    "headline": "Your favorite tech will keep getting more expensive, and you can blame AI",
+    "link": "https://9to5google.com/2026/06/28/tech-price-hikes/",
+    "score": 67,
+    "reason": "Economic impact with broad implications"
+  },
+  {
+    "rank": 14,
+    "headline": "One in three Gen Zers is letting AI do their homebuying homework, but they still trust realtors with the closing process",
+    "link": "https://fortune.com/2026/06/28/gen-z-ai-homebuying-research-realtors-closing-process-bank-of-america/",
+    "score": 65,
+    "reason": "Quantified behavior, market impact"
+  },
+  {
+    "rank": 15,
+    "headline": "Ornith-1.0: self-improving open-source models for agentic coding",
+    "link": "https://github.com/deepreinforce-ai/Ornith-1",
+    "score": 62,
+    "reason": "Technical launch with self-improvement claim"
+  },
+  {
+    "rank": 16,
+    "headline": "Layoffs looming, Xbox union members argue for transparency and good-faith bargaining",
+    "link": "https://www.engadget.com/2204328/xbox-union-members-argue-for-transparency-and-good-faith-bargaining/",
+    "score": 61,
+    "reason": "Labor controversy with AI implications"
+  },
+  {
+    "rank": 17,
+    "headline": "The pro-AI movement is splintering",
+    "link": "https://www.axios.com/2026/06/29/trump-ai-model-release-delays-tech-backlash",
+    "score": 58,
+    "reason": "Significant ideological/movement shift"
+  },
+  {
+    "rank": 18,
+    "headline": "Micro-Agent: Beat Frontier Models with Collaboration Inside Model API",
+    "link": "https://vllm.ai/blog/2026-06-29-micro-agent-frontier-models",
+    "score": 55,
+    "reason": "Performance claim vs frontier models"
+  },
+  {
+    "rank": 19,
+    "headline": "OpenAI is teasing new hardware… for Codex",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/959174/openai-codex-hardware-work-louder",
+    "score": 52,
+    "reason": "Hardware launch tease, vague but from major company"
+  },
+  {
+    "rank": 20,
+    "headline": "ACL 1.0: A source-available commercial license for the AI era",
+    "link": "https://www.auditablelicense.org/",
+    "score": 48,
+    "reason": "New licensing framework for AI era"
   }
 ]
