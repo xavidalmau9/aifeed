@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Meta Contractors Posed as Teens to Prompt Rival Chatbots About Suicide, Sex, and Drugs",
-    "link": "https://www.wired.com/story/meta-contractors-pretending-to-be-teens-chatbot-testing/",
-    "score": 94,
-    "reason": "Major controversy involving Meta's deceptive testing practices against competitors; concrete adversarial action"
+    "headline": "61% of US adults use AI for health information now - up from 2% in 2024",
+    "link": "https://www.zdnet.com/article/us-adults-use-ai-for-health-information-now/",
+    "score": 96,
+    "reason": "Massive adoption spike (30x growth), concrete numbers, significant health behavior shift"
   },
   {
     "rank": 2,
-    "headline": "Waymo and Uber end robotaxi pilot in Phoenix",
-    "link": "https://www.cnbc.com/2026/06/29/waymo-uber-robotaxi-pilot-phoenix.html",
-    "score": 88,
-    "reason": "Significant business decision; major autonomous vehicle program termination"
+    "headline": "Netflix is using an AI-generated Gene Wilder voice in its Willy Wonka reality show",
+    "link": "https://www.theverge.com/streaming/959684/netflix-wonka-golden-ticket-gene-wilder",
+    "score": 94,
+    "reason": "Major company, controversial voice synthesis use case, real product launch"
   },
   {
     "rank": 3,
-    "headline": "Google reportedly capped Meta's use of Gemini AI for coding and chatbots",
-    "link": "https://www.engadget.com/2203579/google-reportedly-capped-meta-use-of-gemini-ai-for-coding-chatbots/",
-    "score": 86,
-    "reason": "Concrete business action with competitive implications; major tech companies"
+    "headline": "HP accelerates enterprise workflows with OpenAI Frontier",
+    "link": "https://www.artificialintelligence-news.com/news/hp-accelerates-enterprise-workflows-openai-frontier/",
+    "score": 88,
+    "reason": "Fortune 500 company partnership, specific product integration, enterprise adoption"
   },
   {
     "rank": 4,
-    "headline": "This Humanoid Robot Is a Terrifyingly Competent Office Intern",
-    "link": "https://www.wired.com/story/this-robot-is-going-to-replace-your-interns-flexion/",
-    "score": 84,
-    "reason": "Boston Dynamics or similar; demonstrates significant capability advancement in robotics"
+    "headline": "AWS puts $1 billion into new AI unit to embed engineers with customers, joining growing wave",
+    "link": "https://www.cnbc.com/2026/06/30/aws-amazon-ai-forward-deployed-engineers.html",
+    "score": 92,
+    "reason": "Large capital commitment, major strategic move, market consolidation signal"
   },
   {
     "rank": 5,
-    "headline": "Wimbledon adds IBM AI tools for live match coverage",
-    "link": "https://www.artificialintelligence-news.com/news/wimbledon-ibm-ai-tools-live-match-coverage/",
-    "score": 78,
-    "reason": "Major sports event deployment; enterprise AI launch with measurable impact"
+    "headline": "Google's AI boom sends emissions, power use soaring",
+    "link": "https://www.axios.com/2026/06/30/google-ai-boom-emissions-power-use",
+    "score": 87,
+    "reason": "Concrete impact data, infrastructure controversy, sustainability concerns"
   },
   {
     "rank": 6,
-    "headline": "Scam.ai Announces Qualcomm Partnership, Launches Halo Deepfake Detection Model at Computex 2026",
-    "link": "https://www.artificialintelligence-news.com/news/scam-ai-announces-qualcomm-partnership-launches-halo-deepfake-detection-model-at-computex-2026/",
-    "score": 76,
-    "reason": "Product launch with major partner; concrete deepfake detection deployment"
+    "headline": "Lawmakers want to ban AI companies from selling your health data",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/959033/health-location-data-protection-act-ai-warren-scanlon",
+    "score": 85,
+    "reason": "Regulatory action, privacy controversy, health data protection"
   },
   {
     "rank": 7,
-    "headline": "Mag 7 value shrinks by $2.3 trillion amid AI spending jitters — but investors are still backing chipmakers",
-    "link": "https://www.cnbc.com/2026/06/30/magnificent-7-stocks-sell-off-investors-grow-jittery-on-ai-spending.html",
-    "score": 82,
-    "reason": "Massive financial number ($2.3T); AI market sentiment shift"
+    "headline": "Google’s NotebookLM can sum up your research in a TikTok-style clip",
+    "link": "https://www.theverge.com/tech/959778/google-notebooklm-ai-clips",
+    "score": 83,
+    "reason": "New feature launch, major consumer product, content format innovation"
   },
   {
     "rank": 8,
-    "headline": "Boston Dynamics CEO: America's next 250 years will be built by robots. Here's what's standing in the way",
-    "link": "https://fortune.com/2026/06/30/boston-dynamics-ceo-robots-america-national-strategy-amanda-mcmaster/",
-    "score": 79,
-    "reason": "Major robotics leader statement; identifies regulatory/adoption barriers"
+    "headline": "Apple rushed to squash 29 bugs because AI is supercharging hackers - update ASAP",
+    "link": "https://www.zdnet.com/article/apple-rushed-software-fixes-over-ai-threats-update-iphone-asap/",
+    "score": 84,
+    "reason": "Security vulnerability, quantified threat, urgent update required"
   },
   {
     "rank": 9,
-    "headline": "Tidal isn't banning AI music, but it won't pay people who upload it",
-    "link": "https://www.engadget.com/2204169/tidal-isnt-banning-ai-music-but-it-wont-pay-people-who-upload-it/",
-    "score": 75,
-    "reason": "Concrete policy decision affecting AI music ecosystem; industry shift"
+    "headline": "Tidal won’t pay royalties on AI-generated music, but isn’t banning it outright",
+    "link": "https://www.theverge.com/tech/959211/tidal-ai-music-policy-demonetizingdetect-label",
+    "score": 82,
+    "reason": "Music industry controversy, policy decision, creator payment conflict"
   },
   {
     "rank": 10,
-    "headline": "America's AI hunger has reached the Nashville Zoo and its endangered animals may be the ones to pay the price",
-    "link": "https://fortune.com/2026/06/30/nashville-zoo-data-center-brad-paisley-petition-ai-celebrities-oppose/",
-    "score": 73,
-    "reason": "Unusual angle on AI resource consumption; environmental impact controversy"
+    "headline": "Trump administration&apos;s AI crackdown opens door for China to close gap",
+    "link": "https://www.cnbc.com/2026/06/30/white-house-ai-china-crackdown.html",
+    "score": 81,
+    "reason": "Geopolitical consequence, policy shift, competitive implications"
+  },
+  {
+    "rank": 11,
+    "headline": "Google's Gmail Live AI feature is now available in beta",
+    "link": "https://www.engadget.com/2204880/google-gmail-live-ai-feature-is-now-available-in-beta/",
+    "score": 79,
+    "reason": "Gmail integration, feature expansion, consumer AI availability"
+  },
+  {
+    "rank": 12,
+    "headline": "Google expands personalized intelligence to Gemini app image creation",
+    "link": "https://www.engadget.com/2204410/google-expands-personalized-intelligence-to-gemini-app-image-creation/",
+    "score": 78,
+    "reason": "Feature expansion, personalization capability, product integration"
+  },
+  {
+    "rank": 13,
+    "headline": "The pro-AI movement is splintering",
+    "link": "https://www.axios.com/2026/06/29/trump-ai-model-release-delays-tech-backlash",
+    "score": 76,
+    "reason": "Industry fracture, ideological conflict, movement shift"
+  },
+  {
+    "rank": 14,
+    "headline": "Zluda 6 release (run unmodified CUDA applications on non-Nvidia GPUs)",
+    "link": "https://vosen.github.io/ZLUDA/blog/zluda-update-q1q2-2026/",
+    "score": 75,
+    "reason": "Technical breakthrough, GPU alternative, competitive disruption"
+  },
+  {
+    "rank": 15,
+    "headline": "Gemini Spark rolling out to macOS app for local tasks, automation",
+    "link": "https://9to5google.com/2026/06/30/gemini-spark-mac-app/",
+    "score": 74,
+    "reason": "Feature rollout, local AI processing, platform expansion"
+  },
+  {
+    "rank": 16,
+    "headline": "Meet the lawyer who beat Elon Musk — twice",
+    "link": "https://www.theverge.com/column/959270/elon-musk-open-ai-bill-savitt-twitter",
+    "score": 71,
+    "reason": "Legal victory narrative, Musk involvement, AI regulation angle"
+  },
+  {
+    "rank": 17,
+    "headline": "Claude Sonnet 5",
+    "link": "https://www.anthropic.com/news/claude-sonnet-5",
+    "score": 70,
+    "reason": "Major model release, Anthropic benchmark, competitive capability"
+  },
+  {
+    "rank": 18,
+    "headline": "Claude Code is steganographically marking requests",
+    "link": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+    "score": 72,
+    "reason": "Security/privacy controversy, code obfuscation concern, Anthropic issue"
+  },
+  {
+    "rank": 19,
+    "headline": "Libby will filter out AI content, kind of",
+    "link": "https://www.theverge.com/column/959433/libby-ai-filter",
+    "score": 68,
+    "reason": "Content filtering policy, AI detection implementation, library platform"
+  },
+  {
+    "rank": 20,
+    "headline": "Agriculture is ready for AI, but its data isn't",
+    "link": "https://www.technologyreview.com/2026/06/30/1139513/agriculture-is-ready-for-ai-but-its-data-isnt/",
+    "score": 67,
+    "reason": "Industry adoption barrier, data readiness gap, sector-specific challenge"
   }
 ]
