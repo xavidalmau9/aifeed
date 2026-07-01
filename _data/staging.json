@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI, Anthropic backer MGX raises one of the biggest AI funds ever as it closes at $49 billion",
-    "link": "https://www.cnbc.com/2026/07/01/mgx-ai-fund-uae-49-billion.html",
-    "score": 98,
-    "reason": "Largest AI fund closing with big number ($49B), major funding milestone"
+    "headline": "Anthropic deploys Claude Sonnet 5, Fable and Mythos restored",
+    "link": "https://www.artificialintelligence-news.com/news/anthropic-deploys-claude-sonnet-5-fable-and-mythos-restored/",
+    "score": 94,
+    "reason": "Major product launch + regulatory resolution after government standoff. Concrete deliverable with multiple models."
   },
   {
     "rank": 2,
-    "headline": "Meta Contractors Posed as Teens to Prompt Rival Chatbots About Suicide, Sex, and Drugs",
-    "link": "https://www.wired.com/story/meta-contractors-pretending-to-be-teens-chatbot-testing/",
-    "score": 96,
-    "reason": "Major controversy involving deceptive testing practices against competitors"
+    "headline": "Netflix is using an AI-generated Gene Wilder voice in its Willy Wonka reality show",
+    "link": "https://www.theverge.com/streaming/959684/netflix-wonka-golden-ticket-gene-wilder",
+    "score": 88,
+    "reason": "Major controversy: AI-generated celebrity voice without apparent consent. High-profile implementation."
   },
   {
     "rank": 3,
-    "headline": "Claude Helped a Hacker Find a Way to Issue Tickets to Almost Every US Music Festival",
-    "link": "https://www.wired.com/story/claude-helped-a-hacker-find-a-way-to-issue-tickets-to-almost-every-us-music-festival/",
-    "score": 94,
-    "reason": "Security vulnerability with real-world exploitation impact, concrete damages"
+    "headline": "Meta pops 9% as company makes cloud push to sell excess AI compute power capacity",
+    "link": "https://www.cnbc.com/2026/07/01/meta-stock-cloud-ai-compute.html",
+    "score": 86,
+    "reason": "Major business pivot with immediate market reaction (9% stock pop). Concrete business model."
   },
   {
     "rank": 4,
-    "headline": "US government allows Anthropic to redeploy its Mythos and Fable AI models",
-    "link": "https://www.engadget.com/2205599/anthropic-redeploy-mythos-fable-ai-models/",
-    "score": 92,
-    "reason": "Major regulatory reversal, export control lifting, policy shift"
+    "headline": "Google’s NotebookLM can sum up your research in a TikTok-style clip",
+    "link": "https://www.theverge.com/tech/959778/google-notebooklm-ai-clips",
+    "score": 82,
+    "reason": "Major feature launch from top AI company. Specific use case with measurable format change."
   },
   {
     "rank": 5,
-    "headline": "Anthropic's new Sonnet 5 model is better at the tasks that are running up enterprise bills",
-    "link": "https://www.engadget.com/2205475/anthropic-releases-claude-sonnet-5-model/",
-    "score": 91,
-    "reason": "Major product launch (Sonnet 5) with tangible enterprise value proposition"
+    "headline": "Google's AI boom sends emissions, power use soaring",
+    "link": "https://www.axios.com/2026/06/30/google-ai-boom-emissions-power-use",
+    "score": 79,
+    "reason": "Quantifiable environmental impact story. Concrete data on AI infrastructure costs."
   },
   {
     "rank": 6,
-    "headline": "Google built a great smart speaker, but Gemini isn’t ready for it",
-    "link": "https://www.theverge.com/tech/959503/google-home-speaker-review-gemini-for-home",
-    "score": 88,
-    "reason": "Product launch with capability gap criticism, hardware readiness controversy"
+    "headline": "Tidal won’t pay royalties on AI-generated music, but isn’t banning it outright",
+    "link": "https://www.theverge.com/tech/959211/tidal-ai-music-policy-demonetizingdetect-label",
+    "score": 76,
+    "reason": "Explicit business policy decision with controversy. Major artist payment implication."
   },
   {
     "rank": 7,
-    "headline": "Japan's answer to its worker shortage: An AI model for 10 million robots",
-    "link": "https://www.artificialintelligence-news.com/news/japan-ai-robots-2040-national-ai-model/",
-    "score": 87,
-    "reason": "Major scale deployment number (10M robots), addresses real economic problem"
+    "headline": "Meet the lawyer who beat Elon Musk — twice",
+    "link": "https://www.theverge.com/column/959270/elon-musk-open-ai-bill-savitt-twitter",
+    "score": 74,
+    "reason": "AI-related legal controversy with specific wins against major figure. Demonstrates regulatory friction."
   },
   {
     "rank": 8,
-    "headline": "Netflix used AI to put Gene Wilder's voice into a new reality show",
-    "link": "https://www.engadget.com/2205408/netflix-used-ai-to-put-gene-wilder-s-voice-into-a-new-reality-show/",
-    "score": 85,
-    "reason": "Celebrity voice cloning controversy, entertainment industry disruption"
+    "headline": "UN report says policymakers are struggling to keep up with pace of AI development",
+    "link": "https://www.engadget.com/2205713/un-report-says-policymakers-are-struggling-to-keep-up-with-pace-of-ai-development/",
+    "score": 71,
+    "reason": "International governance gap documented. Quantifies regulatory lag."
   },
   {
     "rank": 9,
-    "headline": "Employers who laid off workers citing AI are already starting to regret it",
-    "link": "https://www.cnbc.com/2026/07/01/employers-who-laid-off-workers-for-ai-are-reversing-their-decisions.html",
-    "score": 84,
-    "reason": "Concrete business outcome data, AI impact reversal with actual layoff consequences"
+    "headline": "Report suggests SpaceX is testing a handheld AI device, Musk says it's 'utterly false'",
+    "link": "https://www.engadget.com/2206334/space-x-is-reportedly-testing-a-handheld-ai-device/",
+    "score": 68,
+    "reason": "Controversy with denial from major figure. Hardware AI speculation despite rejection."
   },
   {
     "rank": 10,
-    "headline": "Bank of England reviews AI rules for agentic AI in finance",
-    "link": "https://www.artificialintelligence-news.com/news/bank-of-england-agentic-ai-finance-rules/",
-    "score": 82,
-    "reason": "Major regulatory action on AI agents in critical financial infrastructure"
-  },
-  {
-    "rank": 11,
-    "headline": "OCBC rolls out its 'avatar banking' platform with 'Wendy' and 'Wayne,' two virtual financial advisors, as banks integrate AI into wealth management",
-    "link": "https://fortune.com/2026/07/01/ocbc-avatar-banking-ai-wendy-wayne-ceo-tan-teck-long/",
-    "score": 80,
-    "reason": "Concrete banking product launch with AI avatars in production"
-  },
-  {
-    "rank": 12,
-    "headline": "Google Drive’s Ask Gemini & AI Overviews come to Android with AI Pro",
-    "link": "https://9to5google.com/2026/06/30/google-drive-ask-gemini-android-ios/",
-    "score": 78,
-    "reason": "Feature expansion across major platform, integration launch"
-  },
-  {
-    "rank": 13,
-    "headline": "Exclusive: UN launches \"AI for Good\" commission",
-    "link": "https://www.axios.com/2026/07/01/un-ai-commission-ceos-world-leaders",
-    "score": 76,
-    "reason": "Major international governance body action, new institution creation"
-  },
-  {
-    "rank": 14,
-    "headline": "Godot will no longer accept AI-authored code contributions",
-    "link": "https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it/",
-    "score": 74,
-    "reason": "Open source policy reversal, AI contribution ban precedent"
-  },
-  {
-    "rank": 15,
-    "headline": "China-linked actors target more than technology as AI competition with U.S. intensifies",
-    "link": "https://www.cnbc.com/2026/07/01/china-ai-cyberattacks-startups-insider-risks-espionage.html",
-    "score": 72,
-    "reason": "Geopolitical AI competition escalation with security targeting"
-  },
-  {
-    "rank": 16,
-    "headline": "At the heart of Anthropic's clashes with the U.S. government, a decision not to play by the new rules of Trump's Washington",
-    "link": "https://fortune.com/2026/06/30/anthropic-clash-with-u-s-government-shows-its-failure-to-play-by-trump-administration-playbook/",
-    "score": 70,
-    "reason": "Government relations controversy, regulatory conflict narrative"
-  },
-  {
-    "rank": 17,
-    "headline": "Gemini Spark now supports 3rd-party apps, including MCP, adds real-time topic updates",
-    "link": "https://9to5google.com/2026/06/30/gemini-spark-apps-more/",
-    "score": 68,
-    "reason": "Feature expansion with third-party integration ecosystem development"
-  },
-  {
-    "rank": 18,
-    "headline": "One rare bipartisan AI bill is moving through Congress. Here's why it deserves to pass",
-    "link": "https://fortune.com/2026/07/01/create-ai-act-bipartisan-deserves-to-pass-cognizant/",
+    "headline": "Sony Deletes 551 Movies PlayStation Owners Paid For",
+    "link": "https://reclaimthenet.org/sony-deletes-551-studiocanal-movies-playstation-owners-paid-for",
     "score": 65,
-    "reason": "Congressional AI regulation progress, rare bipartisan legislation"
-  },
-  {
-    "rank": 19,
-    "headline": "KKR to control South Korea&apos;s $1.3 billion renewables platform with SK as AI power demand rises",
-    "link": "https://www.cnbc.com/2026/07/01/kkr-sk-launch-1-3-billion-south-korea-renewable-energy-platform-ai-data-centers.html",
-    "score": 63,
-    "reason": "Large acquisition ($1.3B) driven by AI infrastructure demand"
-  },
-  {
-    "rank": 20,
-    "headline": "The Orbital Data Center Hype Machine Is Already in Orbit",
-    "link": "https://spectrum.ieee.org/orbital-data-center-hype",
-    "score": 61,
-    "reason": "Space-based infrastructure deployment for AI compute, novel deployment"
+    "reason": "Security breach affecting millions. Concrete privacy failure in AI-adjacent feature."
   }
 ]
