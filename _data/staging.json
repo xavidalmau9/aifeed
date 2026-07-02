@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI floats giving Trump administration 5 percent cut of AI boom",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/960588/openai-government-5-percent-stake-trump",
-    "score": 95,
-    "reason": "Major controversy: OpenAI proposing equity stake to US government; political pressure on AI industry"
+    "headline": "Microsoft commits $2.5 billion and 6,000 employees to new AI implementation unit",
+    "link": "https://www.cnbc.com/2026/07/02/microsoft-commits-2point5-billion-6000-employees-ai-implementation-unit.html",
+    "score": 94,
+    "reason": "Major capital commitment with specific numbers and organizational restructuring"
   },
   {
     "rank": 2,
-    "headline": "Claude Helped a Hacker Find a Way to Issue Tickets to Almost Every US Music Festival",
-    "link": "https://www.wired.com/story/claude-helped-a-hacker-find-a-way-to-issue-tickets-to-almost-every-us-music-festival/",
+    "headline": "OpenAI proposes 5% stake to Trump administration to ease Washington pressure: Report",
+    "link": "https://www.cnbc.com/2026/07/02/openai-proposes-us-government-own-5percent-stake-to-address-political-blowback.html",
     "score": 92,
-    "reason": "Security vulnerability: AI model enabled large-scale ticket fraud; major exploitation incident"
+    "reason": "Significant controversy: equity offer to government, political pressure on AI company"
   },
   {
     "rank": 3,
-    "headline": "The Trump Administration Is Lifting Its Export Controls on Anthropic’s Mythos and Fable AI Models",
-    "link": "https://www.wired.com/story/trump-administration-lifts-export-controls-on-anthropics-mythos-and-fable-ai-models/",
-    "score": 88,
-    "reason": "Major policy reversal: Government lifts AI export restrictions; significant regulatory shift"
+    "headline": "Anthropic's Fable 5 is back after the Trump administration lifted export controls",
+    "link": "https://www.axios.com/2026/07/01/anthropic-fable-5-back-online-trump-export-controls-lifted",
+    "score": 90,
+    "reason": "Major policy reversal affecting AI competition and export restrictions"
   },
   {
     "rank": 4,
-    "headline": "Nvidia offers start-up customers chance to swap compute power for revenue share",
-    "link": "https://www.cnbc.com/2026/07/02/nvidia-plans-to-offer-start-up-customers-access-to-revenue-sharing-deals.html",
-    "score": 86,
-    "reason": "Business model launch: Major chip maker monetizing AI infrastructure differently; big numbers deal"
+    "headline": "NVIDIA BioNeMo accelerates Anthropic Claude Science",
+    "link": "https://www.artificialintelligence-news.com/news/nvidia-bionemo-accelerates-anthropic-claude-science/",
+    "score": 85,
+    "reason": "Significant partnership launch combining two major AI players in biotech domain"
   },
   {
     "rank": 5,
-    "headline": "Amazon is designing its own AI chips for Echo, Fire TV and future devices, exec tells CNBC",
-    "link": "https://www.cnbc.com/2026/07/02/amazon-ai-chips-devices.html",
-    "score": 85,
-    "reason": "Major hardware launch: Amazon enters AI chip market; vertical integration move"
+    "headline": "Brookfield wants to build AI data centers in London’s answer to Wall Street",
+    "link": "https://www.cnbc.com/2026/07/02/brookfield-london-wall-street-data-center-expansion.html",
+    "score": 82,
+    "reason": "Major infrastructure investment and international AI expansion announcement"
   },
   {
     "rank": 6,
-    "headline": "Alibaba-affiliate Ant Group rushes into humanoid robots with a dozen deals in 18 months",
-    "link": "https://www.cnbc.com/2026/07/01/alibaba-affiliate-ant-group-enters-the-humanoid-robot-market-with-12-deals.html",
-    "score": 82,
-    "reason": "Scaling milestone: 12 deals in 18 months; major robotics expansion by major tech company"
+    "headline": "Google built a great smart speaker, but Gemini isn’t ready for it",
+    "link": "https://www.theverge.com/tech/959503/google-home-speaker-review-gemini-for-home",
+    "score": 80,
+    "reason": "Product launch with execution controversy; hardware meets AI readiness concerns"
   },
   {
     "rank": 7,
-    "headline": "Meta Is Charging a Subscription for Smart Glasses Features. Welcome to the New Era of Consumer Tech",
-    "link": "https://www.wired.com/story/why-meta-is-charging-a-subscription-for-on-device-smart-glasses-features/",
-    "score": 80,
-    "reason": "Business model shift: Major tech company monetizing AI-powered hardware features"
+    "headline": "Report suggests SpaceX is testing a handheld AI device, Musk says it's 'utterly false'",
+    "link": "https://www.engadget.com/2206334/space-x-is-reportedly-testing-a-handheld-ai-device/",
+    "score": 78,
+    "reason": "Major company denying AI hardware development; public contradiction creates controversy"
   },
   {
     "rank": 8,
-    "headline": "Japan's answer to its worker shortage: An AI model for 10 million robots",
-    "link": "https://www.artificialintelligence-news.com/news/japan-ai-robots-2040-national-ai-model/",
-    "score": 78,
-    "reason": "Big numbers: 10 million robots; national-scale AI deployment for labor shortage"
+    "headline": "Spain Orders Blacklist of Palantir from Public and Private Companies",
+    "link": "https://clashreport.com/world/articles/spain-orders-blacklist-of-us-tech-giant-palantir-from-public-and-private-companies-fsnc2z17gjv",
+    "score": 76,
+    "reason": "Significant regulatory action against major AI/data company across entire economy"
   },
   {
     "rank": 9,
-    "headline": "Claude Science is Anthropic’s newest flagship product",
-    "link": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/",
-    "score": 76,
-    "reason": "Major product launch: Anthropic's specialized AI model for scientific research"
+    "headline": "AI can&#x27;t be listed as inventor on patent applications, Japan&#x27;s top court rules",
+    "link": "https://japannews.yomiuri.co.jp/science-nature/technology/20260306-314930/",
+    "score": 74,
+    "reason": "Major legal precedent establishing AI inventor limitations in significant market"
   },
   {
     "rank": 10,
-    "headline": "Employers who laid off workers citing AI are already starting to regret it",
-    "link": "https://www.cnbc.com/2026/07/01/employers-who-laid-off-workers-for-ai-are-reversing-their-decisions.html",
-    "score": 74,
-    "reason": "Controversy: AI hype cycle backfire; documented business failures from AI-driven layoffs"
+    "headline": "Gemini Spark now supports 3rd-party apps, including MCP, adds real-time topic updates",
+    "link": "https://9to5google.com/2026/06/30/gemini-spark-apps-more/",
+    "score": 72,
+    "reason": "Significant feature launch expanding AI model ecosystem integration"
   },
   {
     "rank": 11,
-    "headline": "Anthropic's long-sidelined Fable 5 is greenlit to return",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back",
-    "score": 72,
-    "reason": "Product revival: Censored model returns after regulatory approval reversal"
+    "headline": "Claude Fable 5 is making a dramatic return with 'extraordinarily strong' safeguards",
+    "link": "https://9to5google.com/2026/07/01/anthropic-fable-5-returns-to-claude/",
+    "score": 70,
+    "reason": "Major model relaunch with enhanced safety controls after policy changes"
   },
   {
     "rank": 12,
-    "headline": "Bank of England reviews AI rules for agentic AI in finance",
-    "link": "https://www.artificialintelligence-news.com/news/bank-of-england-agentic-ai-finance-rules/",
-    "score": 70,
-    "reason": "Regulatory action: Central bank establishing rules for autonomous AI in financial systems"
+    "headline": "Trump puts allies on notice: AI power comes first",
+    "link": "https://www.axios.com/2026/07/02/trump-allies-ai-power",
+    "score": 68,
+    "reason": "Political controversy: government prioritization signals major policy shift on AI"
   },
   {
     "rank": 13,
-    "headline": "AI agents will soon be able to match human traders, Robinhood CEO tells CNBC",
-    "link": "https://www.cnbc.com/2026/07/02/robinhood-ceo-ai-agents.html",
-    "score": 68,
-    "reason": "Milestone claim: AI parity with professional traders; major financial market implication"
+    "headline": "OpenAI reportedly wants all AI companies to give the US government a stake in their businesses",
+    "link": "https://www.engadget.com/2206552/openai-ai-companies-give-us-government-stake-businesses-proposal/",
+    "score": 66,
+    "reason": "Controversial proposal affecting entire AI industry's corporate structure and governance"
   },
   {
     "rank": 14,
-    "headline": "Anthropic Added a New Security Measure to Get Back Into the Trump Administration’s Good Graces",
-    "link": "https://www.wired.com/story/anthropic-added-a-new-security-measure-to-get-back-into-the-trump-administrations-good-graces/",
-    "score": 66,
-    "reason": "Policy compliance: AI company implementing safeguards to satisfy government demands"
+    "headline": "Meta’s cloud compute dreams: Why opt for U.S. AI data centers when Saudi Arabia has cheap oil and cheaper power?",
+    "link": "https://fortune.com/2026/07/02/meta-cloud-computing-detour-not-strategy-for-attention/",
+    "score": 64,
+    "reason": "Strategic infrastructure decision revealing major geographic shift in AI compute"
   },
   {
     "rank": 15,
-    "headline": "Want a private ChatGPT alternative? How Proton's Lumo 2.0 locks down your data, EU style",
-    "link": "https://www.zdnet.com/article/want-private-chatgpt-alternative-protons-lumo-2-0-locks-down-your-data/",
-    "score": 64,
-    "reason": "Product launch: Privacy-focused AI alternative leveraging EU regulations"
+    "headline": "How I set OpenAI API usage limits to stop agent overspending and other AI billing nightmares",
+    "link": "https://www.zdnet.com/article/how-to-set-openai-api-spend-usage-limits/",
+    "score": 62,
+    "reason": "Practical guide to significant problem: uncontrolled AI agent costs"
   },
   {
     "rank": 16,
-    "headline": "LLMs are stuck in a groupthink groove. This startup is trying to get them out.",
-    "link": "https://www.technologyreview.com/2026/07/01/1140003/llms-are-stuck-in-a-groupthink-rut-this-startup-is-trying-to-get-them-out/",
-    "score": 62,
-    "reason": "Technical innovation: Startup addresses fundamental LLM limitation; new approach to AI"
+    "headline": "Fable 5 just set a new AI freelance work performance record - but it can't replace humans yet",
+    "link": "https://www.zdnet.com/article/anthropic-fable-5-freelance-work-performance-record/",
+    "score": 60,
+    "reason": "Concrete benchmark achievement in AI model capabilities for real-world tasks"
   },
   {
     "rank": 17,
-    "headline": "You Can Now Sound the Alarm on AI Behaving Badly",
-    "link": "https://www.wired.com/story/flare-website-ai-flaw-reporting-safety/",
-    "score": 60,
-    "reason": "Accountability mechanism: Public reporting system for AI safety violations launched"
+    "headline": "The Download: a startup has a solution for AI’s groupthink problem",
+    "link": "https://www.technologyreview.com/2026/07/02/1140027/the-download-ai-groupthink-llms/",
+    "score": 58,
+    "reason": "New startup addressing specific AI limitation; identifies major systemic issue"
   },
   {
     "rank": 18,
-    "headline": "Exclusive: UN launches \"AI for Good\" commission",
-    "link": "https://www.axios.com/2026/07/01/un-ai-commission-ceos-world-leaders",
-    "score": 58,
-    "reason": "International governance: UN establishes formal AI oversight body; global coordination"
+    "headline": "As AI Reshapes Global Energy Systems, Melbourne Leads Through Engineering Collaboration",
+    "link": "https://spectrum.ieee.org/ai-energy-systems-melbourne",
+    "score": 56,
+    "reason": "Cross-sector AI deployment affecting infrastructure with geographic leadership claim"
   },
   {
     "rank": 19,
-    "headline": "Weave Robotics launches Isaac 1, a $7,999 home robot with Fall 2026 deliveries",
-    "link": "https://www.weaverobotics.com/isaac-1",
-    "score": 56,
-    "reason": "Product launch: Consumer robot with AI; major price point and delivery timeline announced"
+    "headline": "Google Drive’s Ask Gemini & AI Overviews come to Android with AI Pro",
+    "link": "https://9to5google.com/2026/06/30/google-drive-ask-gemini-android-ios/",
+    "score": 54,
+    "reason": "Multi-platform feature expansion integrating AI across Google's consumer ecosystem"
   },
   {
     "rank": 20,
-    "headline": "I had Gemini and Claude write my email replies - but only one sounds like me",
-    "link": "https://www.zdnet.com/article/gemini-vs-claude-write-email-replies-which-sound-human/",
-    "score": 54,
-    "reason": "Comparative analysis: Documented performance gap between major AI systems in real use case"
+    "headline": "Kimi K2.7 Code is generally available in GitHub Copilot",
+    "link": "https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/",
+    "score": 52,
+    "reason": "New coding model integrated into major development platform"
   }
 ]
