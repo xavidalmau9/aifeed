@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic deploys Claude Sonnet 5, Fable and Mythos restored",
-    "link": "https://www.artificialintelligence-news.com/news/anthropic-deploys-claude-sonnet-5-fable-and-mythos-restored/",
-    "score": 94,
-    "reason": "Major product launch + regulatory resolution after government standoff. Concrete deliverable with multiple models."
+    "headline": "OpenAI floats giving Trump administration 5 percent cut of AI boom",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/960588/openai-government-5-percent-stake-trump",
+    "score": 95,
+    "reason": "Major controversy: OpenAI proposing equity stake to US government; political pressure on AI industry"
   },
   {
     "rank": 2,
-    "headline": "Netflix is using an AI-generated Gene Wilder voice in its Willy Wonka reality show",
-    "link": "https://www.theverge.com/streaming/959684/netflix-wonka-golden-ticket-gene-wilder",
-    "score": 88,
-    "reason": "Major controversy: AI-generated celebrity voice without apparent consent. High-profile implementation."
+    "headline": "Claude Helped a Hacker Find a Way to Issue Tickets to Almost Every US Music Festival",
+    "link": "https://www.wired.com/story/claude-helped-a-hacker-find-a-way-to-issue-tickets-to-almost-every-us-music-festival/",
+    "score": 92,
+    "reason": "Security vulnerability: AI model enabled large-scale ticket fraud; major exploitation incident"
   },
   {
     "rank": 3,
-    "headline": "Meta pops 9% as company makes cloud push to sell excess AI compute power capacity",
-    "link": "https://www.cnbc.com/2026/07/01/meta-stock-cloud-ai-compute.html",
-    "score": 86,
-    "reason": "Major business pivot with immediate market reaction (9% stock pop). Concrete business model."
+    "headline": "The Trump Administration Is Lifting Its Export Controls on Anthropic’s Mythos and Fable AI Models",
+    "link": "https://www.wired.com/story/trump-administration-lifts-export-controls-on-anthropics-mythos-and-fable-ai-models/",
+    "score": 88,
+    "reason": "Major policy reversal: Government lifts AI export restrictions; significant regulatory shift"
   },
   {
     "rank": 4,
-    "headline": "Google’s NotebookLM can sum up your research in a TikTok-style clip",
-    "link": "https://www.theverge.com/tech/959778/google-notebooklm-ai-clips",
-    "score": 82,
-    "reason": "Major feature launch from top AI company. Specific use case with measurable format change."
+    "headline": "Nvidia offers start-up customers chance to swap compute power for revenue share",
+    "link": "https://www.cnbc.com/2026/07/02/nvidia-plans-to-offer-start-up-customers-access-to-revenue-sharing-deals.html",
+    "score": 86,
+    "reason": "Business model launch: Major chip maker monetizing AI infrastructure differently; big numbers deal"
   },
   {
     "rank": 5,
-    "headline": "Google's AI boom sends emissions, power use soaring",
-    "link": "https://www.axios.com/2026/06/30/google-ai-boom-emissions-power-use",
-    "score": 79,
-    "reason": "Quantifiable environmental impact story. Concrete data on AI infrastructure costs."
+    "headline": "Amazon is designing its own AI chips for Echo, Fire TV and future devices, exec tells CNBC",
+    "link": "https://www.cnbc.com/2026/07/02/amazon-ai-chips-devices.html",
+    "score": 85,
+    "reason": "Major hardware launch: Amazon enters AI chip market; vertical integration move"
   },
   {
     "rank": 6,
-    "headline": "Tidal won’t pay royalties on AI-generated music, but isn’t banning it outright",
-    "link": "https://www.theverge.com/tech/959211/tidal-ai-music-policy-demonetizingdetect-label",
-    "score": 76,
-    "reason": "Explicit business policy decision with controversy. Major artist payment implication."
+    "headline": "Alibaba-affiliate Ant Group rushes into humanoid robots with a dozen deals in 18 months",
+    "link": "https://www.cnbc.com/2026/07/01/alibaba-affiliate-ant-group-enters-the-humanoid-robot-market-with-12-deals.html",
+    "score": 82,
+    "reason": "Scaling milestone: 12 deals in 18 months; major robotics expansion by major tech company"
   },
   {
     "rank": 7,
-    "headline": "Meet the lawyer who beat Elon Musk — twice",
-    "link": "https://www.theverge.com/column/959270/elon-musk-open-ai-bill-savitt-twitter",
-    "score": 74,
-    "reason": "AI-related legal controversy with specific wins against major figure. Demonstrates regulatory friction."
+    "headline": "Meta Is Charging a Subscription for Smart Glasses Features. Welcome to the New Era of Consumer Tech",
+    "link": "https://www.wired.com/story/why-meta-is-charging-a-subscription-for-on-device-smart-glasses-features/",
+    "score": 80,
+    "reason": "Business model shift: Major tech company monetizing AI-powered hardware features"
   },
   {
     "rank": 8,
-    "headline": "UN report says policymakers are struggling to keep up with pace of AI development",
-    "link": "https://www.engadget.com/2205713/un-report-says-policymakers-are-struggling-to-keep-up-with-pace-of-ai-development/",
-    "score": 71,
-    "reason": "International governance gap documented. Quantifies regulatory lag."
+    "headline": "Japan's answer to its worker shortage: An AI model for 10 million robots",
+    "link": "https://www.artificialintelligence-news.com/news/japan-ai-robots-2040-national-ai-model/",
+    "score": 78,
+    "reason": "Big numbers: 10 million robots; national-scale AI deployment for labor shortage"
   },
   {
     "rank": 9,
-    "headline": "Report suggests SpaceX is testing a handheld AI device, Musk says it's 'utterly false'",
-    "link": "https://www.engadget.com/2206334/space-x-is-reportedly-testing-a-handheld-ai-device/",
-    "score": 68,
-    "reason": "Controversy with denial from major figure. Hardware AI speculation despite rejection."
+    "headline": "Claude Science is Anthropic’s newest flagship product",
+    "link": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/",
+    "score": 76,
+    "reason": "Major product launch: Anthropic's specialized AI model for scientific research"
   },
   {
     "rank": 10,
-    "headline": "Sony Deletes 551 Movies PlayStation Owners Paid For",
-    "link": "https://reclaimthenet.org/sony-deletes-551-studiocanal-movies-playstation-owners-paid-for",
-    "score": 65,
-    "reason": "Security breach affecting millions. Concrete privacy failure in AI-adjacent feature."
+    "headline": "Employers who laid off workers citing AI are already starting to regret it",
+    "link": "https://www.cnbc.com/2026/07/01/employers-who-laid-off-workers-for-ai-are-reversing-their-decisions.html",
+    "score": 74,
+    "reason": "Controversy: AI hype cycle backfire; documented business failures from AI-driven layoffs"
+  },
+  {
+    "rank": 11,
+    "headline": "Anthropic's long-sidelined Fable 5 is greenlit to return",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back",
+    "score": 72,
+    "reason": "Product revival: Censored model returns after regulatory approval reversal"
+  },
+  {
+    "rank": 12,
+    "headline": "Bank of England reviews AI rules for agentic AI in finance",
+    "link": "https://www.artificialintelligence-news.com/news/bank-of-england-agentic-ai-finance-rules/",
+    "score": 70,
+    "reason": "Regulatory action: Central bank establishing rules for autonomous AI in financial systems"
+  },
+  {
+    "rank": 13,
+    "headline": "AI agents will soon be able to match human traders, Robinhood CEO tells CNBC",
+    "link": "https://www.cnbc.com/2026/07/02/robinhood-ceo-ai-agents.html",
+    "score": 68,
+    "reason": "Milestone claim: AI parity with professional traders; major financial market implication"
+  },
+  {
+    "rank": 14,
+    "headline": "Anthropic Added a New Security Measure to Get Back Into the Trump Administration’s Good Graces",
+    "link": "https://www.wired.com/story/anthropic-added-a-new-security-measure-to-get-back-into-the-trump-administrations-good-graces/",
+    "score": 66,
+    "reason": "Policy compliance: AI company implementing safeguards to satisfy government demands"
+  },
+  {
+    "rank": 15,
+    "headline": "Want a private ChatGPT alternative? How Proton's Lumo 2.0 locks down your data, EU style",
+    "link": "https://www.zdnet.com/article/want-private-chatgpt-alternative-protons-lumo-2-0-locks-down-your-data/",
+    "score": 64,
+    "reason": "Product launch: Privacy-focused AI alternative leveraging EU regulations"
+  },
+  {
+    "rank": 16,
+    "headline": "LLMs are stuck in a groupthink groove. This startup is trying to get them out.",
+    "link": "https://www.technologyreview.com/2026/07/01/1140003/llms-are-stuck-in-a-groupthink-rut-this-startup-is-trying-to-get-them-out/",
+    "score": 62,
+    "reason": "Technical innovation: Startup addresses fundamental LLM limitation; new approach to AI"
+  },
+  {
+    "rank": 17,
+    "headline": "You Can Now Sound the Alarm on AI Behaving Badly",
+    "link": "https://www.wired.com/story/flare-website-ai-flaw-reporting-safety/",
+    "score": 60,
+    "reason": "Accountability mechanism: Public reporting system for AI safety violations launched"
+  },
+  {
+    "rank": 18,
+    "headline": "Exclusive: UN launches \"AI for Good\" commission",
+    "link": "https://www.axios.com/2026/07/01/un-ai-commission-ceos-world-leaders",
+    "score": 58,
+    "reason": "International governance: UN establishes formal AI oversight body; global coordination"
+  },
+  {
+    "rank": 19,
+    "headline": "Weave Robotics launches Isaac 1, a $7,999 home robot with Fall 2026 deliveries",
+    "link": "https://www.weaverobotics.com/isaac-1",
+    "score": 56,
+    "reason": "Product launch: Consumer robot with AI; major price point and delivery timeline announced"
+  },
+  {
+    "rank": 20,
+    "headline": "I had Gemini and Claude write my email replies - but only one sounds like me",
+    "link": "https://www.zdnet.com/article/gemini-vs-claude-write-email-replies-which-sound-human/",
+    "score": 54,
+    "reason": "Comparative analysis: Documented performance gap between major AI systems in real use case"
   }
 ]
