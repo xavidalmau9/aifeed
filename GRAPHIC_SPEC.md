@@ -17,12 +17,14 @@ Every graphic MUST include ALL of these. Do not omit any when copying a previous
 
 **Rule:** before rendering any graphic, verify all six are present. If a prior consistent element is missing from the template, restore it — never ship without it.
 
-### 📸 PHOTO COMPOSITION — subject must ride HIGH (Jun 12, 2026)
-The main subject (rocket, robot, person, product, building) must sit in the **upper ~60%** of the canvas — clearly visible, NOT sunk into the dark lower third where the headline/subtitle and bottom gradient live. A subject lost at the bottom is a reject.
-- **Pick photos where the subject is already in the upper/middle of the frame**, with a darker or emptier lower area for text (e.g. a rocket *launching upward* with flames below beats a rocket sitting centered).
-- Keep `object-position: center top` so the top of the photo is anchored.
-- If the subject still sits too low, choose a better-composed photo (preferred) rather than fighting it with crops.
-- Always eyeball the rendered PNG before sharing — if the subject is hard to see against the headline, reshoot the choice.
+### 📸 PHOTO COMPOSITION — MANDATORY PRE-SHARE CHECK (updated Jul 2, 2026)
+**NEVER present the first render blind.** After rendering, LOOK at the PNG and confirm all three before sharing. If any fails, fix it (adjust `object-position`, then re-render) BEFORE showing the user — do not make them tell you.
+1. **Subject fills the frame / rides high** — the main subject (building, rocket, robot, person, product) occupies the upper ~60%, clearly visible, not sunk into the dark lower third behind the headline.
+2. **No dead/empty space** — no big band of blank sky/gray/wall at the top or middle. If the subject is low in the source, that empty area shows at top — crop it out.
+3. **Bright & legible** — not too dark/murky to see the subject.
+- **`object-position` is your tool, not just `center top`.** Default `center top` leaves empty sky when the subject is low in the source. If the subject is in the lower/middle of the photo (buildings, launches, people), switch to **`center bottom`** or a `center NN%` value so the subject fills the frame. (This is exactly what fixed the Wimbledon and Microsoft graphics.)
+- Prefer a well-composed photo first; but ALWAYS also tune `object-position` to place the subject — top-anchoring is a default, not a rule.
+- Recurring failure to avoid: building/skyline shots where the structure sits low → top-anchored crop shows a huge empty sky. Use `center bottom`.
 
 ### Category pill (REQUIRED — matches the website category colors)
 ```css
