@@ -1,142 +1,107 @@
 [
   {
     "rank": 1,
-    "headline": "Microsoft commits $2.5 billion and 6,000 employees to new AI implementation unit",
-    "link": "https://www.cnbc.com/2026/07/02/microsoft-commits-2point5-billion-6000-employees-ai-implementation-unit.html",
-    "score": 94,
-    "reason": "Major capital commitment with specific numbers and organizational restructuring"
+    "headline": "OpenAI floats giving Trump administration 5 percent cut of AI boom",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/960588/openai-government-5-percent-stake-trump",
+    "score": 95,
+    "reason": "Major controversy: OpenAI offering revenue cut to Trump admin, significant political/business implications"
   },
   {
     "rank": 2,
-    "headline": "OpenAI proposes 5% stake to Trump administration to ease Washington pressure: Report",
-    "link": "https://www.cnbc.com/2026/07/02/openai-proposes-us-government-own-5percent-stake-to-address-political-blowback.html",
-    "score": 92,
-    "reason": "Significant controversy: equity offer to government, political pressure on AI company"
+    "headline": "Takeda signs US$600M AI drug discovery deal with Insilico",
+    "link": "https://www.artificialintelligence-news.com/news/takeda-insilico-ai-drug-discovery-deal/",
+    "score": 90,
+    "reason": "Big number ($600M), major pharma deal, concrete launch/partnership"
   },
   {
     "rank": 3,
-    "headline": "Anthropic's Fable 5 is back after the Trump administration lifted export controls",
-    "link": "https://www.axios.com/2026/07/01/anthropic-fable-5-back-online-trump-export-controls-lifted",
-    "score": 90,
-    "reason": "Major policy reversal affecting AI competition and export restrictions"
+    "headline": "AI’s Volatile Power Use Quietly Tests Grid Limits",
+    "link": "https://spectrum.ieee.org/data-centers-grid-instability",
+    "score": 88,
+    "reason": "Infrastructure impact story, big-picture controversy about AI energy demands"
   },
   {
     "rank": 4,
-    "headline": "NVIDIA BioNeMo accelerates Anthropic Claude Science",
-    "link": "https://www.artificialintelligence-news.com/news/nvidia-bionemo-accelerates-anthropic-claude-science/",
-    "score": 85,
-    "reason": "Significant partnership launch combining two major AI players in biotech domain"
+    "headline": "Meta has released an app for making generative AI games",
+    "link": "https://www.engadget.com/2207426/meta-has-released-an-app-for-making-generative-ai-games/",
+    "score": 82,
+    "reason": "Product launch, major company entering new AI application space"
   },
   {
     "rank": 5,
-    "headline": "Brookfield wants to build AI data centers in London’s answer to Wall Street",
-    "link": "https://www.cnbc.com/2026/07/02/brookfield-london-wall-street-data-center-expansion.html",
-    "score": 82,
-    "reason": "Major infrastructure investment and international AI expansion announcement"
+    "headline": "Cloudflare will filter out web crawlers that serve AI companies",
+    "link": "https://www.engadget.com/2207360/cloudflare-will-filter-out-web-crawlers-that-serve-ai-companies/",
+    "score": 80,
+    "reason": "Significant action against AI training, potential industry impact"
   },
   {
     "rank": 6,
-    "headline": "Google built a great smart speaker, but Gemini isn’t ready for it",
-    "link": "https://www.theverge.com/tech/959503/google-home-speaker-review-gemini-for-home",
-    "score": 80,
-    "reason": "Product launch with execution controversy; hardware meets AI readiness concerns"
+    "headline": "Nvidia offers start-up customers chance to swap compute power for revenue share",
+    "link": "https://www.cnbc.com/2026/07/02/nvidia-plans-to-offer-start-up-customers-access-to-revenue-sharing-deals.html",
+    "score": 78,
+    "reason": "Major company business model shift, affects AI startup ecosystem"
   },
   {
     "rank": 7,
-    "headline": "Report suggests SpaceX is testing a handheld AI device, Musk says it's 'utterly false'",
-    "link": "https://www.engadget.com/2206334/space-x-is-reportedly-testing-a-handheld-ai-device/",
-    "score": 78,
-    "reason": "Major company denying AI hardware development; public contradiction creates controversy"
+    "headline": "Alibaba to ban Claude Code in workplace over alleged backdoor risks, source says",
+    "link": "https://www.reuters.com/world/china/alibaba-ban-claude-code-workplace-over-alleged-backdoor-risks-source-says-2026-07-03/",
+    "score": 76,
+    "reason": "Controversy: Anthropic product banned by major company over security claims"
   },
   {
     "rank": 8,
-    "headline": "Spain Orders Blacklist of Palantir from Public and Private Companies",
-    "link": "https://clashreport.com/world/articles/spain-orders-blacklist-of-us-tech-giant-palantir-from-public-and-private-companies-fsnc2z17gjv",
-    "score": 76,
-    "reason": "Significant regulatory action against major AI/data company across entire economy"
+    "headline": "Anthropic Added a New Security Measure to Get Back Into the Trump Administration’s Good Graces",
+    "link": "https://www.wired.com/story/anthropic-added-a-new-security-measure-to-get-back-into-the-trump-administrations-good-graces/",
+    "score": 74,
+    "reason": "Political controversy, security implications, major company policy shift"
   },
   {
     "rank": 9,
-    "headline": "AI can&#x27;t be listed as inventor on patent applications, Japan&#x27;s top court rules",
-    "link": "https://japannews.yomiuri.co.jp/science-nature/technology/20260306-314930/",
-    "score": 74,
-    "reason": "Major legal precedent establishing AI inventor limitations in significant market"
+    "headline": "Meta Is Charging a Subscription for Smart Glasses Features. Welcome to the New Era of Consumer Tech",
+    "link": "https://www.wired.com/story/why-meta-is-charging-a-subscription-for-on-device-smart-glasses-features/",
+    "score": 72,
+    "reason": "Major business model, AI-enabled consumer product monetization trend"
   },
   {
     "rank": 10,
-    "headline": "Gemini Spark now supports 3rd-party apps, including MCP, adds real-time topic updates",
-    "link": "https://9to5google.com/2026/06/30/gemini-spark-apps-more/",
-    "score": 72,
-    "reason": "Significant feature launch expanding AI model ecosystem integration"
+    "headline": "Kuaishou shares jump after Tencent joins $2.8 billion raise for Kling AI subsidiary",
+    "link": "https://www.cnbc.com/2026/07/03/kuaishou-shares-fall-after-securing-tencent-funding-for-kling-ai.html",
+    "score": 70,
+    "reason": "Big funding number ($2.8B), major investor involvement, video AI play"
   },
   {
     "rank": 11,
-    "headline": "Claude Fable 5 is making a dramatic return with 'extraordinarily strong' safeguards",
-    "link": "https://9to5google.com/2026/07/01/anthropic-fable-5-returns-to-claude/",
-    "score": 70,
-    "reason": "Major model relaunch with enhanced safety controls after policy changes"
+    "headline": "You Can Now Sound the Alarm on AI Behaving Badly",
+    "link": "https://www.wired.com/story/flare-website-ai-flaw-reporting-safety/",
+    "score": 68,
+    "reason": "New mechanism for AI safety/accountability, launches reporting system"
   },
   {
     "rank": 12,
-    "headline": "Trump puts allies on notice: AI power comes first",
-    "link": "https://www.axios.com/2026/07/02/trump-allies-ai-power",
-    "score": 68,
-    "reason": "Political controversy: government prioritization signals major policy shift on AI"
+    "headline": "LLMs are stuck in a groupthink groove. This startup is trying to get them out.",
+    "link": "https://www.technologyreview.com/2026/07/01/1140003/llms-are-stuck-in-a-groupthink-rut-this-startup-is-trying-to-get-them-out/",
+    "score": 66,
+    "reason": "Startup addressing real LLM limitation, concrete product/approach"
   },
   {
     "rank": 13,
-    "headline": "OpenAI reportedly wants all AI companies to give the US government a stake in their businesses",
-    "link": "https://www.engadget.com/2206552/openai-ai-companies-give-us-government-stake-businesses-proposal/",
-    "score": 66,
-    "reason": "Controversial proposal affecting entire AI industry's corporate structure and governance"
+    "headline": "Microsoft's new Azure Linux 4.0 is here, and it could replace Windows Server in the enterprise",
+    "link": "https://www.zdnet.com/article/microsoft-azure-linux-4-0-could-replace-windows-server-in-enterprise/",
+    "score": 64,
+    "reason": "Major platform launch with enterprise implications"
   },
   {
     "rank": 14,
-    "headline": "Meta’s cloud compute dreams: Why opt for U.S. AI data centers when Saudi Arabia has cheap oil and cheaper power?",
-    "link": "https://fortune.com/2026/07/02/meta-cloud-computing-detour-not-strategy-for-attention/",
-    "score": 64,
-    "reason": "Strategic infrastructure decision revealing major geographic shift in AI compute"
+    "headline": "AI agents will soon be able to match human traders, Robinhood CEO tells CNBC",
+    "link": "https://www.cnbc.com/2026/07/02/robinhood-ceo-ai-agents.html",
+    "score": 62,
+    "reason": "Bold claim about AI capability milestone in high-stakes domain"
   },
   {
     "rank": 15,
-    "headline": "How I set OpenAI API usage limits to stop agent overspending and other AI billing nightmares",
-    "link": "https://www.zdnet.com/article/how-to-set-openai-api-spend-usage-limits/",
-    "score": 62,
-    "reason": "Practical guide to significant problem: uncontrolled AI agent costs"
-  },
-  {
-    "rank": 16,
-    "headline": "Fable 5 just set a new AI freelance work performance record - but it can't replace humans yet",
-    "link": "https://www.zdnet.com/article/anthropic-fable-5-freelance-work-performance-record/",
-    "score": 60,
-    "reason": "Concrete benchmark achievement in AI model capabilities for real-world tasks"
-  },
-  {
-    "rank": 17,
-    "headline": "The Download: a startup has a solution for AI’s groupthink problem",
-    "link": "https://www.technologyreview.com/2026/07/02/1140027/the-download-ai-groupthink-llms/",
+    "headline": "A behind-the-scenes look at Midjourney’s medical scanner leaves many questions unanswered",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/961265/midjourney-medical-ultrasound-scanner-behind-the-scenes-video",
     "score": 58,
-    "reason": "New startup addressing specific AI limitation; identifies major systemic issue"
-  },
-  {
-    "rank": 18,
-    "headline": "As AI Reshapes Global Energy Systems, Melbourne Leads Through Engineering Collaboration",
-    "link": "https://spectrum.ieee.org/ai-energy-systems-melbourne",
-    "score": 56,
-    "reason": "Cross-sector AI deployment affecting infrastructure with geographic leadership claim"
-  },
-  {
-    "rank": 19,
-    "headline": "Google Drive’s Ask Gemini & AI Overviews come to Android with AI Pro",
-    "link": "https://9to5google.com/2026/06/30/google-drive-ask-gemini-android-ios/",
-    "score": 54,
-    "reason": "Multi-platform feature expansion integrating AI across Google's consumer ecosystem"
-  },
-  {
-    "rank": 20,
-    "headline": "Kimi K2.7 Code is generally available in GitHub Copilot",
-    "link": "https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/",
-    "score": 52,
-    "reason": "New coding model integrated into major development platform"
+    "reason": "Controversy: Questions about AI capabilities and transparency in medical domain"
   }
 ]
