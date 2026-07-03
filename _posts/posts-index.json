@@ -1,5 +1,24 @@
 [
   {
+    "id": "openai-5pct-stake-trump-admin-20260703",
+    "slug": "openai-5pct-stake-trump-admin",
+    "headline": "OpenAI Floats Giving the Trump Administration a 5% Cut of the AI Boom",
+    "summary": "OpenAI has proposed giving the Trump administration a 5% equity stake in its profits — a bold move signaling how the AI industry is reshaping its relationship with government.",
+    "body": "<p><strong>OpenAI has proposed giving the Trump administration a 5% equity stake in the company's profits—a bold move that signals how the AI industry is reshaping its relationship with government. This isn't just a financial arrangement; it's a strategic bet on influence and regulatory favor during a critical moment for AI oversight.</strong></p>\n<p>The tech industry has long resisted heavy-handed regulation, but OpenAI's proposal suggests a new approach: voluntary partnership with government leadership. By offering a direct financial stake, OpenAI is essentially saying that aligning with policy makers is worth the cost of giving up revenue. This reflects the mature realization that AI's future will be shaped by regulation, whether companies cooperate or not.</p>\n<p>The strategic calculation here is significant. OpenAI gains goodwill and potential policy advantages at a time when AI regulation remains undefined. The Trump administration gets a financial interest in AI success and a seat at the table in one of the most important technology sectors. It's a mutual interest alignment that could set precedent for how other tech giants approach government relations.</p>\n<p>For the broader AI industry, this proposal has ripple effects. If OpenAI successfully negotiates favorable terms through this partnership, competitors may follow suit. Alternatively, this could accelerate calls for stronger regulatory frameworks that don't rely on backroom deals. The line between corporate influence and legitimate public interest oversight becomes increasingly blurred.</p>\n<p>Looking ahead, expect more tech companies to explore similar government partnerships. The days of pure opposition to regulation appear to be ending, replaced by a new era where major tech firms actively shape policy through direct investment and collaboration.</p>\n<p>The real question isn't whether government should have a stake in AI—it's whether this model creates genuine public benefit or simply entrenches corporate influence under a different guise.</p>",
+    "category": "Business",
+    "hashtags": [
+      "AI",
+      "ArtificialIntelligence",
+      "TechPolicy",
+      "Regulation",
+      "OpenAI"
+    ],
+    "imageUrl": "https://aifeed.run/images/aifeed_openai_5pct_government_20260703.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/960588/openai-government-5-percent-stake-trump",
+    "publishedAt": "2026-07-03T11:00:00.000-04:00",
+    "isVideo": false
+  },
+  {
     "id": "microsoft-25b-ai-implementation-unit-20260702",
     "slug": "microsoft-25b-ai-implementation-unit",
     "headline": "Microsoft Commits $2.5 Billion and 6,000 Employees to an AI Implementation Unit",
