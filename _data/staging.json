@@ -1,100 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "NVIDIA BioNeMo accelerates Anthropic Claude Science",
-    "link": "https://www.artificialintelligence-news.com/news/nvidia-bionemo-accelerates-anthropic-claude-science/",
+    "headline": "Takeda signs US$600M AI drug discovery deal with Insilico",
+    "link": "https://www.artificialintelligence-news.com/news/takeda-insilico-ai-drug-discovery-deal/",
     "score": 92,
-    "reason": "Major partnership launch between NVIDIA and Anthropic for drug discovery acceleration - concrete business expansion"
+    "reason": "Major pharma partnership with concrete $600M valuation; launches commercial AI application"
   },
   {
     "rank": 2,
-    "headline": "Anthropic wants to develop its own drugs",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
+    "headline": "Kuaishou shares jump after Tencent joins $2.8 billion raise for Kling AI subsidiary",
+    "link": "https://www.cnbc.com/2026/07/03/kuaishou-shares-fall-after-securing-tencent-funding-for-kling-ai.html",
     "score": 88,
-    "reason": "Anthropic's major new business vertical into pharmaceuticals - significant strategic pivot"
+    "reason": "Massive $2.8B funding round; major tech conglomerate backing; significant market movement"
   },
   {
     "rank": 3,
-    "headline": "OpenAI proposes 5% stake to Trump administration to ease Washington pressure: Report",
-    "link": "https://www.cnbc.com/2026/07/02/openai-proposes-us-government-own-5percent-stake-to-address-political-blowback.html",
-    "score": 87,
-    "reason": "High-stakes political/regulatory controversy - OpenAI making unprecedented government equity offer"
+    "headline": "AI’s Volatile Power Use Quietly Tests Grid Limits",
+    "link": "https://spectrum.ieee.org/data-centers-grid-instability",
+    "score": 85,
+    "reason": "Infrastructure impact story with systemic implications; concrete operational challenge"
   },
   {
     "rank": 4,
-    "headline": "Google DeepMind Unionization Talks Are Off to a Rocky Start",
-    "link": "https://www.wired.com/story/google-deepmind-unionization-talks-are-off-to-a-rocky-start/",
-    "score": 85,
-    "reason": "Labor controversy at major AI company - significant internal conflict"
+    "headline": "Midjourney wants the Hollywood studios that sued it to show the court how they use AI",
+    "link": "https://www.engadget.com/2207936/midjourney-wants-studios-that-sued-show-court-ai-use/",
+    "score": 83,
+    "reason": "Active legal controversy; major copyright lawsuit development; accountability pressure"
   },
   {
     "rank": 5,
-    "headline": "Fable 5 just set a new AI freelance work performance record - but it can't replace humans yet",
-    "link": "https://www.zdnet.com/article/anthropic-fable-5-freelance-work-performance-record/",
-    "score": 82,
-    "reason": "Quantified performance milestone for AI agent - concrete benchmarking result"
+    "headline": "Cloudflare will filter out web crawlers that serve AI companies",
+    "link": "https://www.engadget.com/2207360/cloudflare-will-filter-out-web-crawlers-that-serve-ai-companies/",
+    "score": 80,
+    "reason": "Major infrastructure provider taking stance; affects training data access at scale"
   },
   {
     "rank": 6,
-    "headline": "AI is outpacing the rules, Europe’s top bankers and regulators warn",
-    "link": "https://www.cnbc.com/2026/07/03/ai-outpacing-rules-europe-top-bankers-regulators-warn.html",
-    "score": 80,
-    "reason": "Regulatory controversy from major financial authorities - systemic AI governance concern"
+    "headline": "OpenAI courts Trump administration as its latest investor",
+    "link": "https://www.axios.com/2026/07/02/openai-stake-trump-altman",
+    "score": 78,
+    "reason": "Political-corporate intersection; major player seeking government backing"
   },
   {
     "rank": 7,
-    "headline": "Microsoft’s next big bet isn’t on a model but on becoming the Swiss Army knife of enterprise AI",
-    "link": "https://fortune.com/2026/07/03/microsoft-big-bet-swiss-army-knife-enterprise-ai-frontier/",
-    "score": 78,
-    "reason": "Microsoft's strategic shift in AI platform approach - major business direction announcement"
+    "headline": "Nvidia offers start-up customers chance to swap compute power for revenue share",
+    "link": "https://www.cnbc.com/2026/07/02/nvidia-plans-to-offer-start-up-customers-access-to-revenue-sharing-deals.html",
+    "score": 76,
+    "reason": "Novel business model launch; affects startup AI economics; GPU market shift"
   },
   {
     "rank": 8,
-    "headline": "How I set OpenAI API usage limits to stop agent overspending and other AI billing nightmares",
-    "link": "https://www.zdnet.com/article/how-to-set-openai-api-spend-usage-limits/",
-    "score": 72,
-    "reason": "Real-world AI cost problem documentation - practical business pain point"
+    "headline": "From Macron to Modi, governments are rolling out the red carpet for AI giants",
+    "link": "https://www.cnbc.com/2026/07/04/macron-modi-ai-infrastructure-tech-ceos.html",
+    "score": 74,
+    "reason": "Multi-government policy shift; international AI competition escalation"
   },
   {
     "rank": 9,
-    "headline": "Trump puts allies on notice: AI power comes first",
-    "link": "https://www.axios.com/2026/07/02/trump-allies-ai-power",
-    "score": 70,
-    "reason": "High-level political prioritization of AI - governance shift"
+    "headline": "Meta has released an app for making generative AI games",
+    "link": "https://www.engadget.com/2207426/meta-has-released-an-app-for-making-generative-ai-games/",
+    "score": 71,
+    "reason": "Major platform product launch; new AI application category"
   },
   {
     "rank": 10,
-    "headline": "'It's just his AI and my AI going back and forth': The workplace phenomenon that's undermining human relationships",
-    "link": "https://fortune.com/article/ai-communication-undermining-human-relationships-middle-management/",
-    "score": 68,
-    "reason": "Social impact pattern emerging from widespread AI adoption - workplace disruption"
-  },
-  {
-    "rank": 11,
-    "headline": "60% Fable cost cut by converting code to images and having the model OCR it",
-    "link": "https://github.com/teamchong/pxpipe",
-    "score": 66,
-    "reason": "Quantified efficiency improvement in AI coding - significant cost reduction"
-  },
-  {
-    "rank": 12,
-    "headline": "A device that revives eyeballs from dead donors could make eye transplants possible",
-    "link": "https://www.technologyreview.com/2026/07/03/1140148/a-device-that-revives-eyeballs-from-dead-donors-could-make-eye-transplants-possible/",
-    "score": 64,
-    "reason": "Medical AI breakthrough for organ preservation - major healthcare application"
-  },
-  {
-    "rank": 13,
-    "headline": "Meta says WhatsApp usernames are safeguarded against scams after India flags cybersecurity risks",
-    "link": "https://www.cnbc.com/2026/07/02/meta-whatsapp-usernames-scams-india.html",
-    "score": 62,
-    "reason": "Meta addressing AI-enabled security vulnerability - regulatory response to scam concerns"
-  },
-  {
-    "rank": 14,
-    "headline": "How the world's top AI models were revived",
-    "link": "https://www.axios.com/2026/07/03/anthropic-ai-models-revived-behind-the-scenes",
-    "score": 60,
-    "reason": "Technical analysis of multiple AI model performance recovery - comparative benchmark"
+    "headline": "Brookfield wants to build AI data centers in London’s answer to Wall Street",
+    "link": "https://www.cnbc.com/2026/07/02/brookfield-london-wall-street-data-center-expansion.html",
+    "score": 69,
+    "reason": "Major infrastructure investment announcement; geographic expansion"
   }
 ]
