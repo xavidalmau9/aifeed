@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Takeda signs US$600M AI drug discovery deal with Insilico",
-    "link": "https://www.artificialintelligence-news.com/news/takeda-insilico-ai-drug-discovery-deal/",
+    "headline": "Anthropic wants to develop its own drugs",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
     "score": 92,
-    "reason": "Major pharma partnership with concrete $600M valuation; launches commercial AI application"
+    "reason": "Major expansion into pharma; concrete new business vertical for leading AI company"
   },
   {
     "rank": 2,
-    "headline": "Kuaishou shares jump after Tencent joins $2.8 billion raise for Kling AI subsidiary",
-    "link": "https://www.cnbc.com/2026/07/03/kuaishou-shares-fall-after-securing-tencent-funding-for-kling-ai.html",
+    "headline": "OpenAI proposes 5% stake to Trump administration to ease Washington pressure: Report",
+    "link": "https://www.cnbc.com/2026/07/02/openai-proposes-us-government-own-5percent-stake-to-address-political-blowback.html",
     "score": 88,
-    "reason": "Massive $2.8B funding round; major tech conglomerate backing; significant market movement"
+    "reason": "High-stakes political/regulatory controversy; concrete stake offer to government"
   },
   {
     "rank": 3,
-    "headline": "AI’s Volatile Power Use Quietly Tests Grid Limits",
-    "link": "https://spectrum.ieee.org/data-centers-grid-instability",
+    "headline": "AI is outpacing the rules, Europe’s top bankers and regulators warn",
+    "link": "https://www.cnbc.com/2026/07/03/ai-outpacing-rules-europe-top-bankers-regulators-warn.html",
     "score": 85,
-    "reason": "Infrastructure impact story with systemic implications; concrete operational challenge"
+    "reason": "Major regulatory warning from senior EU officials; systemic AI governance concern"
   },
   {
     "rank": 4,
-    "headline": "Midjourney wants the Hollywood studios that sued it to show the court how they use AI",
-    "link": "https://www.engadget.com/2207936/midjourney-wants-studios-that-sued-show-court-ai-use/",
-    "score": 83,
-    "reason": "Active legal controversy; major copyright lawsuit development; accountability pressure"
+    "headline": "Tesla expands robotaxi service to small section of Miami",
+    "link": "https://www.engadget.com/2207974/tesla-expands-robotaxi-service-to-small-section-of-miami/",
+    "score": 82,
+    "reason": "Concrete robotaxi launch expansion; autonomous vehicle milestone"
   },
   {
     "rank": 5,
-    "headline": "Cloudflare will filter out web crawlers that serve AI companies",
-    "link": "https://www.engadget.com/2207360/cloudflare-will-filter-out-web-crawlers-that-serve-ai-companies/",
-    "score": 80,
-    "reason": "Major infrastructure provider taking stance; affects training data access at scale"
+    "headline": "Google DeepMind Unionization Talks Are Off to a Rocky Start",
+    "link": "https://www.wired.com/story/google-deepmind-unionization-talks-are-off-to-a-rocky-start/",
+    "score": 79,
+    "reason": "Labor controversy at major AI lab; significant workforce tension"
   },
   {
     "rank": 6,
-    "headline": "OpenAI courts Trump administration as its latest investor",
-    "link": "https://www.axios.com/2026/07/02/openai-stake-trump-altman",
-    "score": 78,
-    "reason": "Political-corporate intersection; major player seeking government backing"
+    "headline": "How your smartwatch and AI might detect early signs of illness",
+    "link": "https://www.engadget.com/2206130/how-smartwatch-use-ai-to-detect-sickness/",
+    "score": 76,
+    "reason": "AI healthcare application with concrete device integration"
   },
   {
     "rank": 7,
-    "headline": "Nvidia offers start-up customers chance to swap compute power for revenue share",
-    "link": "https://www.cnbc.com/2026/07/02/nvidia-plans-to-offer-start-up-customers-access-to-revenue-sharing-deals.html",
-    "score": 76,
-    "reason": "Novel business model launch; affects startup AI economics; GPU market shift"
+    "headline": "The fanfiction community is at war with AI — and itself",
+    "link": "https://www.theverge.com/tech/960854/ai-fanfiction-ao3-claude-detector",
+    "score": 74,
+    "reason": "Community schism over AI; creator economy controversy"
   },
   {
     "rank": 8,
-    "headline": "From Macron to Modi, governments are rolling out the red carpet for AI giants",
-    "link": "https://www.cnbc.com/2026/07/04/macron-modi-ai-infrastructure-tech-ceos.html",
-    "score": 74,
-    "reason": "Multi-government policy shift; international AI competition escalation"
+    "headline": "What Gemini app upgrades you get with Google AI Plus & AI Pro",
+    "link": "https://9to5google.com/2026/07/04/gemini-app-free-plus-pro-features/",
+    "score": 71,
+    "reason": "Google's AI tier expansion; concrete product feature launches"
   },
   {
     "rank": 9,
-    "headline": "Meta has released an app for making generative AI games",
-    "link": "https://www.engadget.com/2207426/meta-has-released-an-app-for-making-generative-ai-games/",
-    "score": 71,
-    "reason": "Major platform product launch; new AI application category"
+    "headline": "Only these iPhone models are getting the new Siri AI this fall",
+    "link": "https://www.engadget.com/2206159/iphone-models-getting-new-siri-ai/",
+    "score": 68,
+    "reason": "Apple's AI rollout strategy; device fragmentation impact"
   },
   {
     "rank": 10,
-    "headline": "Brookfield wants to build AI data centers in London’s answer to Wall Street",
-    "link": "https://www.cnbc.com/2026/07/02/brookfield-london-wall-street-data-center-expansion.html",
-    "score": 69,
-    "reason": "Major infrastructure investment announcement; geographic expansion"
+    "headline": "A behind-the-scenes look at Midjourney’s medical scanner leaves many questions unanswered",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/961265/midjourney-medical-ultrasound-scanner-behind-the-scenes-video",
+    "score": 65,
+    "reason": "Transparency concerns about AI tool capabilities; medical application questions"
   }
 ]
