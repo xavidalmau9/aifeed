@@ -1,72 +1,44 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic wants to develop its own drugs",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
+    "headline": "Midjourney wants the Hollywood studios that sued it to show the court how they use AI",
+    "link": "https://www.engadget.com/2207936/midjourney-wants-studios-that-sued-show-court-ai-use/",
     "score": 92,
-    "reason": "Major expansion into pharma; concrete new business vertical for leading AI company"
+    "reason": "Major AI lawsuit development with specific legal action; concrete controversy with major studios"
   },
   {
     "rank": 2,
-    "headline": "OpenAI proposes 5% stake to Trump administration to ease Washington pressure: Report",
-    "link": "https://www.cnbc.com/2026/07/02/openai-proposes-us-government-own-5percent-stake-to-address-political-blowback.html",
-    "score": 88,
-    "reason": "High-stakes political/regulatory controversy; concrete stake offer to government"
+    "headline": "From Macron to Modi, governments are rolling out the red carpet for AI giants",
+    "link": "https://www.cnbc.com/2026/07/04/macron-modi-ai-infrastructure-tech-ceos.html",
+    "score": 85,
+    "reason": "Big picture story showing governments embracing AI; multiple major countries involved"
   },
   {
     "rank": 3,
-    "headline": "AI is outpacing the rules, Europe’s top bankers and regulators warn",
-    "link": "https://www.cnbc.com/2026/07/03/ai-outpacing-rules-europe-top-bankers-regulators-warn.html",
-    "score": 85,
-    "reason": "Major regulatory warning from senior EU officials; systemic AI governance concern"
+    "headline": "The CEO using AI to double revenue with 1,000 fewer hires: 'Nobody's going to replace the last mile'",
+    "link": "https://fortune.com/2026/07/05/west-shore-wj-werzyn-ai-claude-hallucination/",
+    "score": 82,
+    "reason": "Big numbers (2x revenue, 1,000 job reduction); concrete AI impact case study"
   },
   {
     "rank": 4,
-    "headline": "Tesla expands robotaxi service to small section of Miami",
-    "link": "https://www.engadget.com/2207974/tesla-expands-robotaxi-service-to-small-section-of-miami/",
-    "score": 82,
-    "reason": "Concrete robotaxi launch expansion; autonomous vehicle milestone"
+    "headline": "How Hollywood's youngest filmmakers are exposing Gen Z's real problem with AI",
+    "link": "https://fortune.com/2026/07/05/why-doesnt-gen-z-trust-ai-box-office-youtube-directors-backrooms-obsession/",
+    "score": 78,
+    "reason": "Cultural controversy around AI adoption; emerging generational perspective"
   },
   {
     "rank": 5,
-    "headline": "Google DeepMind Unionization Talks Are Off to a Rocky Start",
-    "link": "https://www.wired.com/story/google-deepmind-unionization-talks-are-off-to-a-rocky-start/",
-    "score": 79,
-    "reason": "Labor controversy at major AI lab; significant workforce tension"
+    "headline": "A device that revives eyeballs from dead donors could make eye transplants possible",
+    "link": "https://www.technologyreview.com/2026/07/03/1140148/a-device-that-revives-eyeballs-from-dead-donors-could-make-eye-transplants-possible/",
+    "score": 75,
+    "reason": "Significant medical technology breakthrough; major application of AI/biotech"
   },
   {
     "rank": 6,
-    "headline": "How your smartwatch and AI might detect early signs of illness",
-    "link": "https://www.engadget.com/2206130/how-smartwatch-use-ai-to-detect-sickness/",
-    "score": 76,
-    "reason": "AI healthcare application with concrete device integration"
-  },
-  {
-    "rank": 7,
-    "headline": "The fanfiction community is at war with AI — and itself",
-    "link": "https://www.theverge.com/tech/960854/ai-fanfiction-ao3-claude-detector",
-    "score": 74,
-    "reason": "Community schism over AI; creator economy controversy"
-  },
-  {
-    "rank": 8,
-    "headline": "What Gemini app upgrades you get with Google AI Plus & AI Pro",
-    "link": "https://9to5google.com/2026/07/04/gemini-app-free-plus-pro-features/",
-    "score": 71,
-    "reason": "Google's AI tier expansion; concrete product feature launches"
-  },
-  {
-    "rank": 9,
-    "headline": "Only these iPhone models are getting the new Siri AI this fall",
-    "link": "https://www.engadget.com/2206159/iphone-models-getting-new-siri-ai/",
-    "score": 68,
-    "reason": "Apple's AI rollout strategy; device fragmentation impact"
-  },
-  {
-    "rank": 10,
-    "headline": "A behind-the-scenes look at Midjourney’s medical scanner leaves many questions unanswered",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/961265/midjourney-medical-ultrasound-scanner-behind-the-scenes-video",
-    "score": 65,
-    "reason": "Transparency concerns about AI tool capabilities; medical application questions"
+    "headline": "The Tech Download: Amazon’s devices chief Panos Panay on tech giant&apos;s AI gadget push",
+    "link": "https://www.cnbc.com/2026/07/03/the-tech-download-amazon-devices-chief-panos-panay.html",
+    "score": 72,
+    "reason": "Major company (Amazon) AI product strategy announcement from leadership"
   }
 ]
