@@ -1,44 +1,44 @@
 [
   {
     "rank": 1,
-    "headline": "Midjourney wants the Hollywood studios that sued it to show the court how they use AI",
-    "link": "https://www.engadget.com/2207936/midjourney-wants-studios-that-sued-show-court-ai-use/",
+    "headline": "SK Hynix seeks access to AI investors in $29 billion U.S. listing",
+    "link": "https://fortune.com/2026/07/05/sk-hynix-us-stock-listing-nasdaq-29-billion-micron-ai-boom-chips/",
     "score": 92,
-    "reason": "Major AI lawsuit development with specific legal action; concrete controversy with major studios"
+    "reason": "Major capital raise, specific number, AI infrastructure play"
   },
   {
     "rank": 2,
-    "headline": "From Macron to Modi, governments are rolling out the red carpet for AI giants",
-    "link": "https://www.cnbc.com/2026/07/04/macron-modi-ai-infrastructure-tech-ceos.html",
-    "score": 85,
-    "reason": "Big picture story showing governments embracing AI; multiple major countries involved"
+    "headline": "Nvidia supplier Hon Hai’s sales beat on continued AI demand",
+    "link": "https://fortune.com/2026/07/05/nvidia-supplier-hon-hai-foxconn-sales-earnings-report-ai-demand/",
+    "score": 88,
+    "reason": "Concrete sales data, major supply chain indicator"
   },
   {
     "rank": 3,
-    "headline": "The CEO using AI to double revenue with 1,000 fewer hires: 'Nobody's going to replace the last mile'",
-    "link": "https://fortune.com/2026/07/05/west-shore-wj-werzyn-ai-claude-hallucination/",
-    "score": 82,
-    "reason": "Big numbers (2x revenue, 1,000 job reduction); concrete AI impact case study"
+    "headline": "Tesla expands robotaxi service to small section of Miami",
+    "link": "https://www.engadget.com/2207974/tesla-expands-robotaxi-service-to-small-section-of-miami/",
+    "score": 85,
+    "reason": "Concrete product launch, robotaxi expansion"
   },
   {
     "rank": 4,
-    "headline": "How Hollywood's youngest filmmakers are exposing Gen Z's real problem with AI",
-    "link": "https://fortune.com/2026/07/05/why-doesnt-gen-z-trust-ai-box-office-youtube-directors-backrooms-obsession/",
+    "headline": "Infuriating Google commercial imagines the founding fathers embracing AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/961468/google-ai-commercial-founding-fathers-declaration-of-independence",
     "score": 78,
-    "reason": "Cultural controversy around AI adoption; emerging generational perspective"
+    "reason": "Controversy/backlash, major brand campaign"
   },
   {
     "rank": 5,
-    "headline": "A device that revives eyeballs from dead donors could make eye transplants possible",
-    "link": "https://www.technologyreview.com/2026/07/03/1140148/a-device-that-revives-eyeballs-from-dead-donors-could-make-eye-transplants-possible/",
-    "score": 75,
-    "reason": "Significant medical technology breakthrough; major application of AI/biotech"
+    "headline": "Only these iPhone models are getting the new Siri AI this fall",
+    "link": "https://www.engadget.com/2206159/iphone-models-getting-new-siri-ai/",
+    "score": 76,
+    "reason": "Major product feature launch, concrete device specifications"
   },
   {
     "rank": 6,
-    "headline": "The Tech Download: Amazon’s devices chief Panos Panay on tech giant&apos;s AI gadget push",
-    "link": "https://www.cnbc.com/2026/07/03/the-tech-download-amazon-devices-chief-panos-panay.html",
-    "score": 72,
-    "reason": "Major company (Amazon) AI product strategy announcement from leadership"
+    "headline": "How your smartwatch and AI might detect early signs of illness",
+    "link": "https://www.engadget.com/2206130/how-smartwatch-use-ai-to-detect-sickness/",
+    "score": 68,
+    "reason": "Healthcare AI application with real-world impact"
   }
 ]
