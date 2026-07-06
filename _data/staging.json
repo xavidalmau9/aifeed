@@ -1,44 +1,58 @@
 [
   {
     "rank": 1,
-    "headline": "SK Hynix seeks access to AI investors in $29 billion U.S. listing",
-    "link": "https://fortune.com/2026/07/05/sk-hynix-us-stock-listing-nasdaq-29-billion-micron-ai-boom-chips/",
+    "headline": "$29 billion stock offering going live this week will test investor appetite for AI companies",
+    "link": "https://fortune.com/2026/07/06/sk-hynix-ipo-stock-offer-nasdaq-29-billion-ai/",
     "score": 92,
-    "reason": "Major capital raise, specific number, AI infrastructure play"
+    "reason": "Big numbers ($29B), major market event, concrete launch timing"
   },
   {
     "rank": 2,
-    "headline": "Nvidia supplier Hon Hai’s sales beat on continued AI demand",
-    "link": "https://fortune.com/2026/07/05/nvidia-supplier-hon-hai-foxconn-sales-earnings-report-ai-demand/",
+    "headline": "Nvidia&apos;s next-gen AI rack system delayed to 2028 on manufacturing snags, SemiAnalysis says",
+    "link": "https://www.cnbc.com/2026/07/06/nvidia-kyber-rack-system-delays-manufacturing-taiwan-rubin-chips-.html",
     "score": 88,
-    "reason": "Concrete sales data, major supply chain indicator"
+    "reason": "Major AI hardware company, significant delay announcement, manufacturing controversy"
   },
   {
     "rank": 3,
-    "headline": "Tesla expands robotaxi service to small section of Miami",
-    "link": "https://www.engadget.com/2207974/tesla-expands-robotaxi-service-to-small-section-of-miami/",
+    "headline": "China's AI companion rules: what Beijing is really going after",
+    "link": "https://www.artificialintelligence-news.com/news/china-ai-companion-rules/",
     "score": 85,
-    "reason": "Concrete product launch, robotaxi expansion"
+    "reason": "Regulatory action, geopolitical AI tension, concrete policy announcement"
   },
   {
     "rank": 4,
-    "headline": "Infuriating Google commercial imagines the founding fathers embracing AI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/961468/google-ai-commercial-founding-fathers-declaration-of-independence",
-    "score": 78,
-    "reason": "Controversy/backlash, major brand campaign"
+    "headline": "What Gemini app upgrades you get with Google AI Plus & AI Pro",
+    "link": "https://9to5google.com/2026/07/04/gemini-app-free-plus-pro-features/",
+    "score": 82,
+    "reason": "Google product launch, tiered subscription model, consumer-facing AI rollout"
   },
   {
     "rank": 5,
-    "headline": "Only these iPhone models are getting the new Siri AI this fall",
-    "link": "https://www.engadget.com/2206159/iphone-models-getting-new-siri-ai/",
-    "score": 76,
-    "reason": "Major product feature launch, concrete device specifications"
+    "headline": "C.H. Robinson's CEO is running his AI transformation on Lean principles: 'It’s been a game-changer for this company'",
+    "link": "https://fortune.com/2026/07/06/ch-robinson-ceo-dave-bozeman-lean-ai/",
+    "score": 78,
+    "reason": "Major enterprise AI implementation, measurable business impact, real-world deployment"
   },
   {
     "rank": 6,
-    "headline": "How your smartwatch and AI might detect early signs of illness",
-    "link": "https://www.engadget.com/2206130/how-smartwatch-use-ai-to-detect-sickness/",
+    "headline": "Some of the nation’s rich are letting AI teach their kids",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/961505/wealthy-ai-schools-alpha-forge-prep",
+    "score": 75,
+    "reason": "AI in education adoption, emerging consumer trend, behavioral shift"
+  },
+  {
+    "rank": 7,
+    "headline": "Meet the soccer-playing humanoid robot that just delivered the game ball at the Brazil v. Norway FIFA World Cup match",
+    "link": "https://fortune.com/2026/07/05/humanoid-robot-delivered-game-ball-brazil-norway-world-cup-match-fifa-boston-dynamics-hyundai/",
+    "score": 72,
+    "reason": "Robotics advancement demonstration, high-profile public event, tangible capability showcase"
+  },
+  {
+    "rank": 8,
+    "headline": "New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]",
+    "link": "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf",
     "score": 68,
-    "reason": "Healthcare AI application with real-world impact"
+    "reason": "Quantified AI education impact, academic study with measurable outcomes"
   }
 ]
