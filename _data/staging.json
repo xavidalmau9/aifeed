@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Samsung posts 1,800% jump in profit, but AI spending concerns spook investors",
-    "link": "https://www.cnbc.com/2026/07/07/samsung-electronics-preliminary-second-quarter-profit-hits-fresh-high.html",
-    "score": 92,
-    "reason": "Massive financial numbers (1,800% profit jump), major company, AI investment controversy"
+    "headline": "Microsoft is laying off 4,800 employees",
+    "link": "https://www.theverge.com/news/961528/microsoft-layoffs-july-2026-sales-xbox",
+    "score": 95,
+    "reason": "Major company, concrete numbers, significant business impact"
   },
   {
     "rank": 2,
-    "headline": "Nvidia&apos;s next-gen AI rack system delayed to 2028 on manufacturing snags, SemiAnalysis says",
-    "link": "https://www.cnbc.com/2026/07/06/nvidia-kyber-rack-system-delays-manufacturing-taiwan-rubin-chips-.html",
-    "score": 88,
-    "reason": "Major AI infrastructure company, significant product delay, concrete technical issue"
+    "headline": "Meta’s new Muse Image model can pull other Instagram users into AI photos",
+    "link": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
+    "score": 90,
+    "reason": "Major launch, big company, controversial privacy implications"
   },
   {
     "rank": 3,
-    "headline": "Chinese AI models are gaining ground with U.S. companies as OpenAI, Anthropic costs surge",
-    "link": "https://www.cnbc.com/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html",
-    "score": 86,
-    "reason": "Market shift, multiple companies affected, cost/competition controversy, geopolitical angle"
+    "headline": "Insilico Medicine advances AI drug for IPF to Phase III trials",
+    "link": "https://www.artificialintelligence-news.com/news/insilico-medicine-advances-ai-drug-for-ipf-to-phase-iii-trials/",
+    "score": 88,
+    "reason": "Concrete milestone, rare AI pharma breakthrough to clinical stage"
   },
   {
     "rank": 4,
-    "headline": "L’Oreal, Mondelez, and Nestle use AI to speed product development",
-    "link": "https://www.artificialintelligence-news.com/news/ai-product-development-loreal-mondelez-nestle/",
-    "score": 84,
-    "reason": "Three major Fortune 500 companies deploying AI, concrete business application"
+    "headline": "Anthropic is launching Claude Cowork on mobile and web",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web",
+    "score": 85,
+    "reason": "Major product launch across platforms, big company expansion"
   },
   {
     "rank": 5,
-    "headline": "China's AI companion rules: what Beijing is really going after",
-    "link": "https://www.artificialintelligence-news.com/news/china-ai-companion-rules/",
-    "score": 82,
-    "reason": "Major policy launch, regulatory action, geopolitical AI governance"
+    "headline": "Why this fully agentic ransomware attack is giving researchers nightmares",
+    "link": "https://www.zdnet.com/article/jadepuffer-fully-agentic-ransomware-attack-researchers-nightmares/",
+    "score": 84,
+    "reason": "Significant security concern, new threat class, controversy"
   },
   {
     "rank": 6,
-    "headline": "Small AI Models Gain Traction Around the World",
-    "link": "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals",
-    "score": 78,
-    "reason": "Industry trend with global scale, represents shift from large models"
+    "headline": "China&apos;s Alibaba bans Anthropic AI for employees after &apos;distillation attack&apos; accusation",
+    "link": "https://www.cnbc.com/2026/07/06/alibaba-anthropic-ai-ban-claude-china.html",
+    "score": 82,
+    "reason": "Major controversy, geopolitical angle, concrete action taken"
   },
   {
     "rank": 7,
-    "headline": "Erling Haaland Is Everywhere at the World Cup. Most of It Is AI",
-    "link": "https://www.wired.com/story/erling-haaland-is-everywhere-at-the-world-cup-most-of-it-is-ai/",
-    "score": 76,
-    "reason": "Viral AI misuse story, synthetic media controversy, major sports event"
+    "headline": "Reuters: DeepSeek is developing its own AI chips",
+    "link": "https://www.engadget.com/2209378/deepseek-reportedly-developing-ai-chips/",
+    "score": 80,
+    "reason": "Major company expansion, strategic importance, big numbers implications"
   },
   {
     "rank": 8,
-    "headline": "Some of the nation’s rich are letting AI teach their kids",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/961505/wealthy-ai-schools-alpha-forge-prep",
-    "score": 74,
-    "reason": "Education sector disruption, class divide angle, significant behavioral shift"
+    "headline": "Solos debuts an even lighter version of its camera-less smart glasses",
+    "link": "https://www.theverge.com/tech/961711/solos-airgo-a6-smart-glasses-ai-assistant-privacy",
+    "score": 78,
+    "reason": "Hardware launch, iteration, emerging AI hardware category"
   },
   {
     "rank": 9,
-    "headline": "GLM 5.2 and the coming AI margin collapse",
-    "link": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
-    "score": 72,
-    "reason": "Market economics prediction, competitive pressure on AI providers"
+    "headline": "Google Voice now offers paid tiers with call recording & Gemini for personal accounts",
+    "link": "https://9to5google.com/2026/07/07/paid-google-voice/",
+    "score": 76,
+    "reason": "Major feature launch, monetization strategy, big company product"
   },
   {
     "rank": 10,
-    "headline": "Anthropic says Claude has carved out its own space to ponder",
-    "link": "https://www.axios.com/2026/07/06/anthropic-claude-ai-conscious",
+    "headline": "xAI is now officially known as SpaceXAI",
+    "link": "https://www.engadget.com/2209300/xai-now-officially-spacexai/",
+    "score": 72,
+    "reason": "Significant rebranding, Musk company strategic move"
+  },
+  {
+    "rank": 11,
+    "headline": "AI start-ups are snubbing entry-level talent in favor of Silicon Valley men with top degrees, research shows",
+    "link": "https://fortune.com/2026/07/07/ai-start-ups-snubbing-entry-level-talent-for-silicon-valley-men-top-degrees/",
+    "score": 70,
+    "reason": "Industry trend data, hiring controversy, concrete research"
+  },
+  {
+    "rank": 12,
+    "headline": "Anthropic's Claude Cowork heads to the cloud as data shows 90% of sessions aren't for coding",
+    "link": "https://www.zdnet.com/article/anthropic-claude-cowork-comes-to-phone-web-cloud/",
     "score": 68,
-    "reason": "Major AI capability claim from Anthropic, philosophical AI advancement"
+    "reason": "Data-driven insight, strategic expansion, usage pattern revelation"
+  },
+  {
+    "rank": 13,
+    "headline": "Infuriating Google commercial imagines the founding fathers embracing AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/961468/google-ai-commercial-founding-fathers-declaration-of-independence",
+    "score": 65,
+    "reason": "Brand controversy, cultural backlash, notable reaction"
+  },
+  {
+    "rank": 14,
+    "headline": "Show HN: Halo – open-source, tamper-evident runtime evidence for AI agents",
+    "link": "https://github.com/bkuan001/halo-record",
+    "score": 62,
+    "reason": "Technical launch, AI safety focus, open-source tool"
+  },
+  {
+    "rank": 15,
+    "headline": "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
+    "link": "https://github.com/rowboatlabs/rowboat",
+    "score": 60,
+    "reason": "Community response to proprietary tool, technical alternative launch"
+  },
+  {
+    "rank": 16,
+    "headline": "All Cars Sold in the EU Now Require a Camera Aimed at Your Face",
+    "link": "https://allaboutcookies.org/eu-mandatory-distracted-driver-system",
+    "score": 58,
+    "reason": "Regulatory milestone, privacy implication, major policy impact"
+  },
+  {
+    "rank": 17,
+    "headline": "GitHub Freno: cooperative, highly available throttler service",
+    "link": "https://github.com/github/freno",
+    "score": 55,
+    "reason": "Infrastructure launch, technical tool for AI systems"
+  },
+  {
+    "rank": 18,
+    "headline": "Automating AI Away",
+    "link": "https://replicated.live/blog/away",
+    "score": 50,
+    "reason": "Trend analysis, employment impact discussion"
+  },
+  {
+    "rank": 19,
+    "headline": "Chat Control 1.0 and 2.0 Explained",
+    "link": "https://fightchatcontrol.eu/chat-control-overview",
+    "score": 48,
+    "reason": "Regulatory framework explanation, policy impact"
+  },
+  {
+    "rank": 20,
+    "headline": "The Download: your stake in OpenAI, and the Treasury's AI warning",
+    "link": "https://www.technologyreview.com/2026/07/07/1140197/the-download-your-openai-stake-treasury-ai-warning/",
+    "score": 45,
+    "reason": "Financial interest reveal, regulatory concern"
   }
 ]
