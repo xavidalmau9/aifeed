@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Microsoft is laying off 4,800 employees",
-    "link": "https://www.theverge.com/news/961528/microsoft-layoffs-july-2026-sales-xbox",
-    "score": 94,
-    "reason": "Major company layoff with specific numbers; significant business action"
+    "headline": "Samsung posts 1,800% jump in profit, but AI spending concerns spook investors",
+    "link": "https://www.cnbc.com/2026/07/07/samsung-electronics-preliminary-second-quarter-profit-hits-fresh-high.html",
+    "score": 92,
+    "reason": "Massive financial numbers (1,800% profit jump), major company, AI investment controversy"
   },
   {
     "rank": 2,
-    "headline": "Google now uses your uploaded search media to train AI",
-    "link": "https://www.engadget.com/2208978/google-now-uses-your-uploaded-search-media-to-train-ai/",
+    "headline": "Nvidia&apos;s next-gen AI rack system delayed to 2028 on manufacturing snags, SemiAnalysis says",
+    "link": "https://www.cnbc.com/2026/07/06/nvidia-kyber-rack-system-delays-manufacturing-taiwan-rubin-chips-.html",
     "score": 88,
-    "reason": "Controversy involving major company policy change affecting user data; tangible impact"
+    "reason": "Major AI infrastructure company, significant product delay, concrete technical issue"
   },
   {
     "rank": 3,
-    "headline": "China&apos;s Alibaba bans Anthropic AI for employees after &apos;distillation attack&apos; accusation",
-    "link": "https://www.cnbc.com/2026/07/06/alibaba-anthropic-ai-ban-claude-china.html",
-    "score": 85,
-    "reason": "Major company action, controversy involving security/IP concerns between competitors"
+    "headline": "Chinese AI models are gaining ground with U.S. companies as OpenAI, Anthropic costs surge",
+    "link": "https://www.cnbc.com/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html",
+    "score": 86,
+    "reason": "Market shift, multiple companies affected, cost/competition controversy, geopolitical angle"
   },
   {
     "rank": 4,
-    "headline": "Infuriating Google commercial imagines the founding fathers embracing AI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/961468/google-ai-commercial-founding-fathers-declaration-of-independence",
-    "score": 78,
-    "reason": "Major company controversy with public backlash; demonstrates resistance to AI messaging"
+    "headline": "L’Oreal, Mondelez, and Nestle use AI to speed product development",
+    "link": "https://www.artificialintelligence-news.com/news/ai-product-development-loreal-mondelez-nestle/",
+    "score": 84,
+    "reason": "Three major Fortune 500 companies deploying AI, concrete business application"
   },
   {
     "rank": 5,
-    "headline": "Reddit to combat AI with more AI",
-    "link": "https://www.engadget.com/2208616/reddit-to-combat-ai-with-more-ai/",
-    "score": 76,
-    "reason": "Major platform's strategic AI initiative; paradoxical approach generates discussion"
+    "headline": "China's AI companion rules: what Beijing is really going after",
+    "link": "https://www.artificialintelligence-news.com/news/china-ai-companion-rules/",
+    "score": 82,
+    "reason": "Major policy launch, regulatory action, geopolitical AI governance"
   },
   {
     "rank": 6,
-    "headline": "AMD Ryzen AI Halo – $4k AI Dev Kit",
-    "link": "https://www.lttlabs.com/articles/2026/07/06/amd-ryzen-ai-halo",
-    "score": 72,
-    "reason": "Major hardware launch with specific pricing; tangible product release"
+    "headline": "Small AI Models Gain Traction Around the World",
+    "link": "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals",
+    "score": 78,
+    "reason": "Industry trend with global scale, represents shift from large models"
   },
   {
     "rank": 7,
-    "headline": "Small-AI Models Gain Traction Around the World",
-    "link": "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals",
-    "score": 68,
-    "reason": "Significant trend with quantifiable adoption; industry shift"
+    "headline": "Erling Haaland Is Everywhere at the World Cup. Most of It Is AI",
+    "link": "https://www.wired.com/story/erling-haaland-is-everywhere-at-the-world-cup-most-of-it-is-ai/",
+    "score": 76,
+    "reason": "Viral AI misuse story, synthetic media controversy, major sports event"
   },
   {
     "rank": 8,
-    "headline": "I tested the new Claude Desktop on Linux - here's how it compares to rival apps",
-    "link": "https://www.zdnet.com/article/i-tested-claude-desktop-on-linux-how-it-compares-to-rival-apps/",
-    "score": 65,
-    "reason": "Anthropic product launch with comparative analysis"
+    "headline": "Some of the nation’s rich are letting AI teach their kids",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/961505/wealthy-ai-schools-alpha-forge-prep",
+    "score": 74,
+    "reason": "Education sector disruption, class divide angle, significant behavioral shift"
   },
   {
     "rank": 9,
-    "headline": "Your family's $300 stake in OpenAI",
-    "link": "https://www.technologyreview.com/2026/07/06/1140176/your-familys-300-stake-in-openai/",
-    "score": 58,
-    "reason": "Specific financial valuation mentioned; OpenAI-related news"
+    "headline": "GLM 5.2 and the coming AI margin collapse",
+    "link": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
+    "score": 72,
+    "reason": "Market economics prediction, competitive pressure on AI providers"
   },
   {
     "rank": 10,
-    "headline": "A global workspace in language models",
-    "link": "https://www.anthropic.com/research/global-workspace",
-    "score": 55,
-    "reason": "Technical advancement in language model architecture"
+    "headline": "Anthropic says Claude has carved out its own space to ponder",
+    "link": "https://www.axios.com/2026/07/06/anthropic-claude-ai-conscious",
+    "score": 68,
+    "reason": "Major AI capability claim from Anthropic, philosophical AI advancement"
   }
 ]
