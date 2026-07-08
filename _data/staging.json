@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Meta Now Lets Anyone Use Your Instagram Photos in AI Images—Unless You Opt Out",
-    "link": "https://www.wired.com/story/meta-now-lets-anyone-use-your-instagram-photos-in-ai-images-unless-you-opt-out/",
+    "headline": "IBM and Red Hat launch Lightwell to defend open-source code from AI attacks",
+    "link": "https://www.zdnet.com/article/ibm-and-red-hat-have-moved-project-lightwell-from-vision-to-product/",
     "score": 92,
-    "reason": "Major privacy controversy affecting millions of users, concrete policy with real impact"
+    "reason": "Major company partnership, specific product launch, addresses real security concern"
   },
   {
     "rank": 2,
-    "headline": "SambaNova hits $11 billion valuation as investors back Nvidia chip challengers",
-    "link": "https://www.cnbc.com/2026/07/08/sambanova-ai-chip-funding-valuation.html",
+    "headline": "Insilico Medicine advances AI drug for IPF to Phase III trials",
+    "link": "https://www.artificialintelligence-news.com/news/insilico-medicine-advances-ai-drug-for-ipf-to-phase-iii-trials/",
     "score": 88,
-    "reason": "Big funding number, significant valuation milestone, competitive market development"
+    "reason": "Concrete clinical milestone, big pharma application, measurable progress"
   },
   {
     "rank": 3,
-    "headline": "This Former DeepMind Exec Thinks the AI Arms Race Could End in Disaster",
-    "link": "https://www.wired.com/story/verity-harding-ai-arms-race-dangers-anthology/",
+    "headline": "Meta’s new Muse Image model can pull other Instagram users into AI photos",
+    "link": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
     "score": 85,
-    "reason": "Expert warning on existential AI risk, credible source from top AI lab"
+    "reason": "Major company launch with controversial privacy implications, concrete feature"
   },
   {
     "rank": 4,
-    "headline": "CNBC: The US wants to restrict corporate use of Chinese AI",
-    "link": "https://www.engadget.com/2210340/us-reportedly-wants-to-restrict-corporate-use-chinese-ai/",
+    "headline": "Microsoft is laying off 4,800 employees",
+    "link": "https://www.theverge.com/news/961528/microsoft-layoffs-july-2026-sales-xbox",
     "score": 83,
-    "reason": "Government policy action on AI, geopolitical implications, concrete restriction"
+    "reason": "Large-scale concrete action, major company, significant impact numbers"
   },
   {
     "rank": 5,
-    "headline": "OpenAI’s Chief Futurist Is Leaving the Company",
-    "link": "https://www.wired.com/story/openai-chief-futurist-joshua-achiam-is-leaving-the-company/",
+    "headline": "Anthropic is launching Claude Cowork on mobile and web",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web",
     "score": 81,
-    "reason": "Leadership departure from top AI company, signals internal strategy shift"
+    "reason": "Major AI company product launch across platforms, expansion milestone"
   },
   {
     "rank": 6,
-    "headline": "Shut Those Laptops! Anthropic Puts Its Claude Cowork Agent on Your Phone",
-    "link": "https://www.wired.com/story/shut-those-laptops-anthropic-puts-its-claude-cowork-agent-on-your-phone/",
-    "score": 78,
-    "reason": "Major product launch expanding AI agent accessibility to mobile"
+    "headline": "Google announces new 'Video Remix' feature its for AI subscribers",
+    "link": "https://www.engadget.com/2210417/google-announces-new-video-remix-feature-for-ai-subscribers/",
+    "score": 79,
+    "reason": "Major tech company feature launch, concrete product release"
   },
   {
     "rank": 7,
-    "headline": "Meta built an AI detection tool to ID images and video created with its new models",
-    "link": "https://www.engadget.com/2210223/meta-built-an-ai-detection-tool-to-id-images-and-video-created-with-its-new-models/",
-    "score": 76,
-    "reason": "Technical capability launch addressing authenticity concerns in AI images"
+    "headline": "GitHub's former CEO launches a distributed Git network built for the agentic coding age",
+    "link": "https://www.zdnet.com/article/githubs-former-ceo-launches-a-distributed-git-network-built-for-the-agentic-coding-age/",
+    "score": 77,
+    "reason": "Key industry figure startup, addresses emerging agentic AI trend"
   },
   {
     "rank": 8,
-    "headline": "AI learned faster than the tests designed to measure it",
-    "link": "https://www.axios.com/2026/07/07/ai-hacking-benchmarking-tests",
-    "score": 74,
-    "reason": "AI capability milestone, tests insufficient for measuring progress"
+    "headline": "ChatGPT’s upgraded voice mode is better at shutting up",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/962856/chatgpt-upgraded-voice-mode-gpt-live",
+    "score": 75,
+    "reason": "Major product update with specific UX improvement, OpenAI feature"
   },
   {
     "rank": 9,
-    "headline": "Lawmakers probe growing use of Chinese AI models in U.S. companies",
-    "link": "https://www.cnbc.com/2026/07/08/chinese-ai-models-probe-us-lawmakers.html",
-    "score": 72,
-    "reason": "Government investigation into geopolitical AI dependency risks"
+    "headline": "Anduril’s billionaire founder warns U.S. colleges are falling behind China—where students are learning AI. And it’s already ‘hollowed out’ companies",
+    "link": "https://fortune.com/2026/07/08/anduril-billionaire-founder-palmer-luckey-warns-us-falling-behind-china-higher-education-unversity-competitiveness/",
+    "score": 73,
+    "reason": "Geopolitical AI competitiveness concern, credible industry figure commentary"
   },
   {
     "rank": 10,
-    "headline": "GitLost: We Tricked GitHub&#x27;s AI Agent into Leaking Private Repos",
-    "link": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
+    "headline": "Bezos&apos; Blue Origin valued at $130 billion in first outside fundraising round",
+    "link": "https://www.cnbc.com/2026/07/08/blue-origin-bezos-fundraising.html",
     "score": 71,
-    "reason": "Security vulnerability in production AI system, privacy breach demonstration"
-  },
-  {
-    "rank": 11,
-    "headline": "AI Models Overthink Problems—and It’s a Security Risk",
-    "link": "https://spectrum.ieee.org/ai-reasoning-models-security-risk",
-    "score": 68,
-    "reason": "Security vulnerability discovery in AI reasoning, practical threat identified"
-  },
-  {
-    "rank": 12,
-    "headline": "Anthropic says Claude has carved out its own space to ponder",
-    "link": "https://www.axios.com/2026/07/06/anthropic-claude-ai-conscious",
-    "score": 65,
-    "reason": "Claude capability advancement in reasoning and reflection"
-  },
-  {
-    "rank": 13,
-    "headline": "Meta enters AI image model race in bid to court advertisers and subscribers",
-    "link": "https://www.cnbc.com/2026/07/07/meta-ai-muse-image.html",
-    "score": 64,
-    "reason": "Competitive market entry in generative image models by major tech company"
-  },
-  {
-    "rank": 14,
-    "headline": "Physical AI’s $50 trillion opportunity requires long-term conviction, but the payoff is huge",
-    "link": "https://fortune.com/2026/07/08/physical-ai-50-trillion-opportunity-bottlenecks-se-ventures/",
-    "score": 62,
-    "reason": "Large addressable market projection for embodied AI robotics"
-  },
-  {
-    "rank": 15,
-    "headline": "Nomagic's new AI lab headed by former Google DeepMind researcher claims success in early deployment of 'AI brain' for warehouse robots",
-    "link": "https://fortune.com/2026/07/08/nomagics-new-ai-lab-headed-by-former-google-deepmind-researcher-claims-success-in-early-deployment-of-ai-brain-for-warehouse-robots/",
-    "score": 60,
-    "reason": "Physical AI deployment success, talent acquisition from DeepMind"
-  },
-  {
-    "rank": 16,
-    "headline": "Small AI Models Gain Traction Around the World",
-    "link": "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals",
-    "score": 58,
-    "reason": "Market shift toward efficient models, global adoption trend"
-  },
-  {
-    "rank": 17,
-    "headline": "China warns about AI risks with Anthropic&apos;s Claude Code",
-    "link": "https://www.cnbc.com/2026/07/08/china-anthropic-ai-claude-code-backdoor-security-threat.html",
-    "score": 56,
-    "reason": "Geopolitical concern about AI capability, official government warning"
-  },
-  {
-    "rank": 18,
-    "headline": "L’Oreal, Mondelez, and Nestle use AI to speed product development",
-    "link": "https://www.artificialintelligence-news.com/news/ai-product-development-loreal-mondelez-nestle/",
-    "score": 54,
-    "reason": "Enterprise AI adoption by major corporations, productivity gains"
-  },
-  {
-    "rank": 19,
-    "headline": "Samsung-backed AI chip firm Rebellions targets IPO in South Korea next year, CEO tells CNBC",
-    "link": "https://www.cnbc.com/2026/07/08/rebellions-ipo-south-korea-ai-chips.html",
-    "score": 52,
-    "reason": "AI chip startup IPO plans, hardware competition emerging"
-  },
-  {
-    "rank": 20,
-    "headline": "AI is about to disrupt millions of jobs. A century ago, America's answer was to build a new high school",
-    "link": "https://fortune.com/2026/07/08/ai-jobs-high-school-education-reform-alabama-carnegie-tim-knowles/",
-    "score": 50,
-    "reason": "Large-scale employment impact forecast, policy response framework discussion"
+    "reason": "Major funding milestone with specific valuation, reflects AI/aerospace convergence investment"
   }
 ]
