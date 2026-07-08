@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Microsoft is laying off 4,800 employees",
-    "link": "https://www.theverge.com/news/961528/microsoft-layoffs-july-2026-sales-xbox",
-    "score": 95,
-    "reason": "Major company, concrete numbers, significant business impact"
+    "headline": "Meta Now Lets Anyone Use Your Instagram Photos in AI Images—Unless You Opt Out",
+    "link": "https://www.wired.com/story/meta-now-lets-anyone-use-your-instagram-photos-in-ai-images-unless-you-opt-out/",
+    "score": 92,
+    "reason": "Major privacy controversy affecting millions of users, concrete policy with real impact"
   },
   {
     "rank": 2,
-    "headline": "Meta’s new Muse Image model can pull other Instagram users into AI photos",
-    "link": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
-    "score": 90,
-    "reason": "Major launch, big company, controversial privacy implications"
+    "headline": "SambaNova hits $11 billion valuation as investors back Nvidia chip challengers",
+    "link": "https://www.cnbc.com/2026/07/08/sambanova-ai-chip-funding-valuation.html",
+    "score": 88,
+    "reason": "Big funding number, significant valuation milestone, competitive market development"
   },
   {
     "rank": 3,
-    "headline": "Insilico Medicine advances AI drug for IPF to Phase III trials",
-    "link": "https://www.artificialintelligence-news.com/news/insilico-medicine-advances-ai-drug-for-ipf-to-phase-iii-trials/",
-    "score": 88,
-    "reason": "Concrete milestone, rare AI pharma breakthrough to clinical stage"
+    "headline": "This Former DeepMind Exec Thinks the AI Arms Race Could End in Disaster",
+    "link": "https://www.wired.com/story/verity-harding-ai-arms-race-dangers-anthology/",
+    "score": 85,
+    "reason": "Expert warning on existential AI risk, credible source from top AI lab"
   },
   {
     "rank": 4,
-    "headline": "Anthropic is launching Claude Cowork on mobile and web",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web",
-    "score": 85,
-    "reason": "Major product launch across platforms, big company expansion"
+    "headline": "CNBC: The US wants to restrict corporate use of Chinese AI",
+    "link": "https://www.engadget.com/2210340/us-reportedly-wants-to-restrict-corporate-use-chinese-ai/",
+    "score": 83,
+    "reason": "Government policy action on AI, geopolitical implications, concrete restriction"
   },
   {
     "rank": 5,
-    "headline": "Why this fully agentic ransomware attack is giving researchers nightmares",
-    "link": "https://www.zdnet.com/article/jadepuffer-fully-agentic-ransomware-attack-researchers-nightmares/",
-    "score": 84,
-    "reason": "Significant security concern, new threat class, controversy"
+    "headline": "OpenAI’s Chief Futurist Is Leaving the Company",
+    "link": "https://www.wired.com/story/openai-chief-futurist-joshua-achiam-is-leaving-the-company/",
+    "score": 81,
+    "reason": "Leadership departure from top AI company, signals internal strategy shift"
   },
   {
     "rank": 6,
-    "headline": "China&apos;s Alibaba bans Anthropic AI for employees after &apos;distillation attack&apos; accusation",
-    "link": "https://www.cnbc.com/2026/07/06/alibaba-anthropic-ai-ban-claude-china.html",
-    "score": 82,
-    "reason": "Major controversy, geopolitical angle, concrete action taken"
+    "headline": "Shut Those Laptops! Anthropic Puts Its Claude Cowork Agent on Your Phone",
+    "link": "https://www.wired.com/story/shut-those-laptops-anthropic-puts-its-claude-cowork-agent-on-your-phone/",
+    "score": 78,
+    "reason": "Major product launch expanding AI agent accessibility to mobile"
   },
   {
     "rank": 7,
-    "headline": "Reuters: DeepSeek is developing its own AI chips",
-    "link": "https://www.engadget.com/2209378/deepseek-reportedly-developing-ai-chips/",
-    "score": 80,
-    "reason": "Major company expansion, strategic importance, big numbers implications"
+    "headline": "Meta built an AI detection tool to ID images and video created with its new models",
+    "link": "https://www.engadget.com/2210223/meta-built-an-ai-detection-tool-to-id-images-and-video-created-with-its-new-models/",
+    "score": 76,
+    "reason": "Technical capability launch addressing authenticity concerns in AI images"
   },
   {
     "rank": 8,
-    "headline": "Solos debuts an even lighter version of its camera-less smart glasses",
-    "link": "https://www.theverge.com/tech/961711/solos-airgo-a6-smart-glasses-ai-assistant-privacy",
-    "score": 78,
-    "reason": "Hardware launch, iteration, emerging AI hardware category"
+    "headline": "AI learned faster than the tests designed to measure it",
+    "link": "https://www.axios.com/2026/07/07/ai-hacking-benchmarking-tests",
+    "score": 74,
+    "reason": "AI capability milestone, tests insufficient for measuring progress"
   },
   {
     "rank": 9,
-    "headline": "Google Voice now offers paid tiers with call recording & Gemini for personal accounts",
-    "link": "https://9to5google.com/2026/07/07/paid-google-voice/",
-    "score": 76,
-    "reason": "Major feature launch, monetization strategy, big company product"
+    "headline": "Lawmakers probe growing use of Chinese AI models in U.S. companies",
+    "link": "https://www.cnbc.com/2026/07/08/chinese-ai-models-probe-us-lawmakers.html",
+    "score": 72,
+    "reason": "Government investigation into geopolitical AI dependency risks"
   },
   {
     "rank": 10,
-    "headline": "xAI is now officially known as SpaceXAI",
-    "link": "https://www.engadget.com/2209300/xai-now-officially-spacexai/",
-    "score": 72,
-    "reason": "Significant rebranding, Musk company strategic move"
+    "headline": "GitLost: We Tricked GitHub&#x27;s AI Agent into Leaking Private Repos",
+    "link": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
+    "score": 71,
+    "reason": "Security vulnerability in production AI system, privacy breach demonstration"
   },
   {
     "rank": 11,
-    "headline": "AI start-ups are snubbing entry-level talent in favor of Silicon Valley men with top degrees, research shows",
-    "link": "https://fortune.com/2026/07/07/ai-start-ups-snubbing-entry-level-talent-for-silicon-valley-men-top-degrees/",
-    "score": 70,
-    "reason": "Industry trend data, hiring controversy, concrete research"
+    "headline": "AI Models Overthink Problems—and It’s a Security Risk",
+    "link": "https://spectrum.ieee.org/ai-reasoning-models-security-risk",
+    "score": 68,
+    "reason": "Security vulnerability discovery in AI reasoning, practical threat identified"
   },
   {
     "rank": 12,
-    "headline": "Anthropic's Claude Cowork heads to the cloud as data shows 90% of sessions aren't for coding",
-    "link": "https://www.zdnet.com/article/anthropic-claude-cowork-comes-to-phone-web-cloud/",
-    "score": 68,
-    "reason": "Data-driven insight, strategic expansion, usage pattern revelation"
+    "headline": "Anthropic says Claude has carved out its own space to ponder",
+    "link": "https://www.axios.com/2026/07/06/anthropic-claude-ai-conscious",
+    "score": 65,
+    "reason": "Claude capability advancement in reasoning and reflection"
   },
   {
     "rank": 13,
-    "headline": "Infuriating Google commercial imagines the founding fathers embracing AI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/961468/google-ai-commercial-founding-fathers-declaration-of-independence",
-    "score": 65,
-    "reason": "Brand controversy, cultural backlash, notable reaction"
+    "headline": "Meta enters AI image model race in bid to court advertisers and subscribers",
+    "link": "https://www.cnbc.com/2026/07/07/meta-ai-muse-image.html",
+    "score": 64,
+    "reason": "Competitive market entry in generative image models by major tech company"
   },
   {
     "rank": 14,
-    "headline": "Show HN: Halo – open-source, tamper-evident runtime evidence for AI agents",
-    "link": "https://github.com/bkuan001/halo-record",
+    "headline": "Physical AI’s $50 trillion opportunity requires long-term conviction, but the payoff is huge",
+    "link": "https://fortune.com/2026/07/08/physical-ai-50-trillion-opportunity-bottlenecks-se-ventures/",
     "score": 62,
-    "reason": "Technical launch, AI safety focus, open-source tool"
+    "reason": "Large addressable market projection for embodied AI robotics"
   },
   {
     "rank": 15,
-    "headline": "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
-    "link": "https://github.com/rowboatlabs/rowboat",
+    "headline": "Nomagic's new AI lab headed by former Google DeepMind researcher claims success in early deployment of 'AI brain' for warehouse robots",
+    "link": "https://fortune.com/2026/07/08/nomagics-new-ai-lab-headed-by-former-google-deepmind-researcher-claims-success-in-early-deployment-of-ai-brain-for-warehouse-robots/",
     "score": 60,
-    "reason": "Community response to proprietary tool, technical alternative launch"
+    "reason": "Physical AI deployment success, talent acquisition from DeepMind"
   },
   {
     "rank": 16,
-    "headline": "All Cars Sold in the EU Now Require a Camera Aimed at Your Face",
-    "link": "https://allaboutcookies.org/eu-mandatory-distracted-driver-system",
+    "headline": "Small AI Models Gain Traction Around the World",
+    "link": "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals",
     "score": 58,
-    "reason": "Regulatory milestone, privacy implication, major policy impact"
+    "reason": "Market shift toward efficient models, global adoption trend"
   },
   {
     "rank": 17,
-    "headline": "GitHub Freno: cooperative, highly available throttler service",
-    "link": "https://github.com/github/freno",
-    "score": 55,
-    "reason": "Infrastructure launch, technical tool for AI systems"
+    "headline": "China warns about AI risks with Anthropic&apos;s Claude Code",
+    "link": "https://www.cnbc.com/2026/07/08/china-anthropic-ai-claude-code-backdoor-security-threat.html",
+    "score": 56,
+    "reason": "Geopolitical concern about AI capability, official government warning"
   },
   {
     "rank": 18,
-    "headline": "Automating AI Away",
-    "link": "https://replicated.live/blog/away",
-    "score": 50,
-    "reason": "Trend analysis, employment impact discussion"
+    "headline": "L’Oreal, Mondelez, and Nestle use AI to speed product development",
+    "link": "https://www.artificialintelligence-news.com/news/ai-product-development-loreal-mondelez-nestle/",
+    "score": 54,
+    "reason": "Enterprise AI adoption by major corporations, productivity gains"
   },
   {
     "rank": 19,
-    "headline": "Chat Control 1.0 and 2.0 Explained",
-    "link": "https://fightchatcontrol.eu/chat-control-overview",
-    "score": 48,
-    "reason": "Regulatory framework explanation, policy impact"
+    "headline": "Samsung-backed AI chip firm Rebellions targets IPO in South Korea next year, CEO tells CNBC",
+    "link": "https://www.cnbc.com/2026/07/08/rebellions-ipo-south-korea-ai-chips.html",
+    "score": 52,
+    "reason": "AI chip startup IPO plans, hardware competition emerging"
   },
   {
     "rank": 20,
-    "headline": "The Download: your stake in OpenAI, and the Treasury's AI warning",
-    "link": "https://www.technologyreview.com/2026/07/07/1140197/the-download-your-openai-stake-treasury-ai-warning/",
-    "score": 45,
-    "reason": "Financial interest reveal, regulatory concern"
+    "headline": "AI is about to disrupt millions of jobs. A century ago, America's answer was to build a new high school",
+    "link": "https://fortune.com/2026/07/08/ai-jobs-high-school-education-reform-alabama-carnegie-tim-knowles/",
+    "score": 50,
+    "reason": "Large-scale employment impact forecast, policy response framework discussion"
   }
 ]
