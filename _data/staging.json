@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Meta Now Lets Anyone Use Your Instagram Photos in AI Images—Unless You Opt Out",
-    "link": "https://www.wired.com/story/meta-now-lets-anyone-use-your-instagram-photos-in-ai-images-unless-you-opt-out/",
-    "score": 94,
-    "reason": "Major platform controversy affecting millions of users; real policy change with privacy implications"
+    "headline": "OpenAI rolls out GPT-5.6 after government greenlight — and announces ‘ChatGPT Work’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work",
+    "score": 95,
+    "reason": "Major product launch with regulatory milestone, new commercial offering, directly competitive announcement"
   },
   {
     "rank": 2,
-    "headline": "750 million fans and 2.7 million data points: How IBM’s AI powers Wimbledon from hidden ‘Court 19’",
-    "link": "https://fortune.com/2026/07/09/wimbledon-ibm-ai-digital-transformation-sports/",
+    "headline": "AWS GraphRAG deployment cuts drug research cycles by 87%",
+    "link": "https://www.artificialintelligence-news.com/news/aws-graphrag-deployment-cuts-drug-research-cycles-by-87/",
     "score": 88,
-    "reason": "Large scale deployment (750M users, 2.7M data points); concrete AI application in sports"
+    "reason": "Specific, quantified impact (87%), major use case demonstration, established company"
   },
   {
     "rank": 3,
-    "headline": "Shut Those Laptops! Anthropic Puts Its Claude Cowork Agent on Your Phone",
-    "link": "https://www.wired.com/story/shut-those-laptops-anthropic-puts-its-claude-cowork-agent-on-your-phone/",
-    "score": 86,
-    "reason": "Major product launch; agent AI moving to mobile; competitive response to OpenAI"
+    "headline": "Anthropic Wants You to Pay Up for Claude Fable 5",
+    "link": "https://www.wired.com/story/model-behavior-anthropic-will-charge-consumers-extra-to-use-claude-fable-5/",
+    "score": 85,
+    "reason": "Major model release with pricing change, direct competition in market, significant announcement"
   },
   {
     "rank": 4,
-    "headline": "Lawmakers probe growing use of Chinese AI models in U.S. companies",
-    "link": "https://www.cnbc.com/2026/07/08/chinese-ai-models-probe-us-lawmakers.html",
-    "score": 84,
-    "reason": "Regulatory controversy; national security implications; emerging policy concern"
+    "headline": "Meta says its new AI model is ready to compete on coding",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/963193/meta-muse-spark-model-api",
+    "score": 83,
+    "reason": "Major company entering competitive market, significant capability claim, coding market launch"
   },
   {
     "rank": 5,
-    "headline": "Scoop: Trump administration lifts restrictions on OpenAI's GPT 5.6",
-    "link": "https://www.axios.com/2026/07/08/openai-gpt-trump-ban-lifted",
-    "score": 82,
-    "reason": "Major policy shift; regulatory change affecting leading AI company; significant implications"
+    "headline": "Google will now tell you if an ad was made with AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/963628/google-ai-generated-ads-label",
+    "score": 81,
+    "reason": "Regulatory/transparency launch, addresses major AI controversy, implementation at scale"
   },
   {
     "rank": 6,
-    "headline": "OpenAI’s Chief Futurist Is Leaving the Company",
-    "link": "https://www.wired.com/story/openai-chief-futurist-joshua-achiam-is-leaving-the-company/",
+    "headline": "OpenAI&apos;s newest AI model is 54% more token efficient on agentic coding, Altman tells CNBC",
+    "link": "https://www.cnbc.com/2026/07/09/open-ai-sam-altman-chatgpt-5-6-sol.html",
     "score": 79,
-    "reason": "Executive departure from major AI company; leadership change at OpenAI"
+    "reason": "Specific performance metric (54%), direct CEO statement, technical advancement claim"
   },
   {
     "rank": 7,
-    "headline": "Scoop: SpaceXAI launches new model, Grok 4.5",
-    "link": "https://www.axios.com/2026/07/08/spacexai-grok-new-model",
-    "score": 77,
-    "reason": "New AI model launch; major company entering competitive market"
+    "headline": "The $28 Million Mistake That Inspired Estonia’s AI ‘Fuckup Finder’",
+    "link": "https://www.wired.com/story/the-28-million-dollar-mistake-that-inspired-estonias-ai-fuckup-finder/",
+    "score": 76,
+    "reason": "Concrete financial impact, novel use case, government deployment"
   },
   {
     "rank": 8,
-    "headline": "Samsung-backed AI chip firm Rebellions targets IPO in South Korea next year, CEO tells CNBC",
-    "link": "https://www.cnbc.com/2026/07/08/rebellions-ipo-south-korea-ai-chips.html",
-    "score": 75,
-    "reason": "Major funding/IPO milestone; AI chip company backed by Samsung; significant investment signal"
+    "headline": "Meta’s new Muse Image model can pull other Instagram users into AI photos",
+    "link": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
+    "score": 72,
+    "reason": "Specific capability launch, privacy/ethics angle, user-facing feature"
   },
   {
     "rank": 9,
-    "headline": "John Deere owners will get the right to repair equipment under FTC settlement",
-    "link": "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02",
-    "score": 74,
-    "reason": "New AI infrastructure tool from major company; developer-focused launch"
+    "headline": "The 1X Neo Robot Has Freaky Fast Fingers",
+    "link": "https://www.wired.com/story/the-1x-neo-robot-has-freaky-fast-fingers/",
+    "score": 68,
+    "reason": "Hardware AI advancement, specific capability improvement, robotics milestone"
   },
   {
     "rank": 10,
-    "headline": "NHS AI blood test could reduce invasive womb cancer checks",
-    "link": "https://www.artificialintelligence-news.com/news/nhs-ai-blood-test-womb-cancer-checks/",
-    "score": 72,
-    "reason": "Real-world healthcare AI application; measurable impact on patient outcomes"
+    "headline": "Companies embracing AI the most are hiring more people - including entry-level, report finds",
+    "link": "https://www.zdnet.com/article/high-intensity-adopters-of-ai-hiring-more-entry-level/",
+    "score": 66,
+    "reason": "Economic impact data, employment trend, contradicts AI displacement narrative"
   },
   {
     "rank": 11,
-    "headline": "Microsoft’s Brad Smith on Washington’s AI policy: ‘Regulation without transparent or complete rules’",
-    "link": "https://fortune.com/2026/07/09/microsoft-brad-smith-washingtons-ai-policy-regulation-without-transparent-rules/",
-    "score": 70,
-    "reason": "Major tech executive commentary on AI regulation; policy implications"
+    "headline": "Here's how to block Meta from using your Instagram pictures for its AI",
+    "link": "https://www.engadget.com/2211315/heres-how-to-block-meta-from-using-your-instagram-pictures-for-its-ai/",
+    "score": 64,
+    "reason": "Major privacy controversy, user control feature, regulatory response"
   },
   {
     "rank": 12,
-    "headline": "AI learned faster than the tests designed to measure it",
-    "link": "https://www.axios.com/2026/07/07/ai-hacking-benchmarking-tests",
-    "score": 68,
-    "reason": "Significant research finding about AI capability assessment; methodology challenge"
+    "headline": "Microsoft goes all in on new AI-powered Windows security strategy - what it means for you",
+    "link": "https://www.zdnet.com/article/microsoft-windows-ai-security-vulnerability-analysis/",
+    "score": 62,
+    "reason": "Major platform integration, security application, significant strategy shift"
   },
   {
     "rank": 13,
-    "headline": "This Former DeepMind Exec Thinks the AI Arms Race Could End in Disaster",
-    "link": "https://www.wired.com/story/verity-harding-ai-arms-race-dangers-anthology/",
-    "score": 66,
-    "reason": "Credible expert warning from major AI researcher; industry risk assessment"
+    "headline": "Anthropic found a hidden space where Claude puzzles over concepts",
+    "link": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
+    "score": 60,
+    "reason": "Novel technical discovery, interpretability breakthrough, research significance"
   },
   {
     "rank": 14,
-    "headline": "John Deere owners will get the right to repair equipment under FTC settlement",
-    "link": "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02",
-    "score": 65,
-    "reason": "Major feature launch from Google; multimodal AI application to consumer product"
+    "headline": "SpaceXAI launches Grok 4.5, its first built with Cursor's help",
+    "link": "https://www.engadget.com/2211260/spacex-ai-grok-4-5-cursor/",
+    "score": 58,
+    "reason": "New company entry, model release, partnership announcement"
   },
   {
     "rank": 15,
-    "headline": "Singapore&apos;s Temasek boosts China exposure by $7.7 billion, biggest rise in five years, in AI-driven pivot",
-    "link": "https://www.cnbc.com/2026/07/08/temaseks-china-investment-jumps-most-in-five-years-artificial-intelligence-.html",
-    "score": 63,
-    "reason": "Large capital deployment ($7.7B); strategic AI investment shift; geopolitical implications"
+    "headline": "The ChatGPT browser is already dead",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset",
+    "score": 55,
+    "reason": "Product failure/pivot, strategic reversal, market signal"
   },
   {
     "rank": 16,
-    "headline": "AI Models Overthink Problems—and It’s a Security Risk",
-    "link": "https://spectrum.ieee.org/ai-reasoning-models-security-risk",
-    "score": 61,
-    "reason": "Security vulnerability discovery in AI systems; practical risk identified"
+    "headline": "Say hello to Claude Wrapped",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/963105/anthropic-claude-wrapped-reflection-ai-usage",
+    "score": 52,
+    "reason": "New consumer feature launch, user engagement tool"
   },
   {
     "rank": 17,
-    "headline": "John Deere owners will get the right to repair equipment under FTC settlement",
-    "link": "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02",
-    "score": 58,
-    "reason": "Consumer-facing AI tool launch; practical productivity feature"
+    "headline": "Why the Next Era of AI Is About Infrastructure, Not Just Models",
+    "link": "https://blog.mozilla.ai/the-control-layer-why-the-next-era-of-ai-is-about-infrastructure-not-just-models/",
+    "score": 50,
+    "reason": "Market analysis of major trend shift, infrastructure investment implications"
   },
   {
     "rank": 18,
-    "headline": "Large Tabular Models Excel Where LLMs Fail",
-    "link": "https://spectrum.ieee.org/large-tabular-models-nexus",
-    "score": 56,
-    "reason": "Research breakthrough; alternative AI approach outperforming LLMs in specific domain"
+    "headline": "AI changes the economics of software rewrites",
+    "link": "https://thetruthasiseeitnow.com/ai-slop-starts-with-the-codebase-itself/",
+    "score": 48,
+    "reason": "Economic impact analysis, industry transformation"
   },
   {
     "rank": 19,
-    "headline": "John Deere owners will get the right to repair equipment under FTC settlement",
-    "link": "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02",
-    "score": 54,
-    "reason": "New evaluation methodology; developer tools update from major platform"
+    "headline": "ChatGPT’s upgraded voice mode is better at shutting up",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/962856/chatgpt-upgraded-voice-mode-gpt-live",
+    "score": 45,
+    "reason": "Product improvement launch, user experience enhancement"
   },
   {
     "rank": 20,
-    "headline": "I Built a Self-Improving AI, and So Can You",
-    "link": "https://www.wired.com/story/frontier-labs-arent-the-only-ones-pursuing-self-improving-ai/",
-    "score": 52,
-    "reason": "Accessible AI development; democratization of advanced capabilities"
+    "headline": "FL Studio 2026 turns its AI chatbot into your assistant engineer",
+    "link": "https://www.theverge.com/tech/963052/fl-studio-2026-music-daw-ai-chatbot",
+    "score": 42,
+    "reason": "Creative tool AI integration, music production application"
   }
 ]
