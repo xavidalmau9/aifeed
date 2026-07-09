@@ -1,5 +1,43 @@
 [
  {
+  "id": "chinese-ai-models-us-lawmakers-probe-20260708",
+  "slug": "chinese-ai-models-us-lawmakers-probe",
+  "headline": "U.S. Lawmakers Probe Growing Use of Chinese AI Models in American Companies",
+  "summary": "U.S. lawmakers are investigating the growing use of Chinese AI models inside American companies — a national-security probe that could reshape AI supply chains and push firms toward domestic or allied models.",
+  "body": "<p><strong>U.S. lawmakers are launching an investigation into American companies' growing adoption of Chinese AI models—a move that underscores the deepening geopolitical tensions surrounding artificial intelligence technology.</strong> This probe represents a critical moment where national security concerns are intersecting with corporate innovation strategies, forcing businesses to navigate an increasingly complex regulatory landscape.</p>\n<p>The investigation reflects broader anxieties about technological interdependence in the AI era. As Chinese AI models become more sophisticated and cost-effective, American companies have increasingly integrated them into their operations. However, this reliance raises fundamental questions about data sovereignty, intellectual property protection, and whether critical business processes should depend on foreign infrastructure controlled by geopolitical competitors.</p>\n<p>From a strategic perspective, this probe signals that policymakers are taking a hardline stance on AI supply chain resilience. The government appears to be signaling that companies should prioritize domestic or allied AI solutions, even if they come at higher costs or represent earlier-stage technology. This could reshape competitive dynamics across sectors—from tech to healthcare to finance.</p>\n<p>The broader AI industry should pay attention: regulatory frameworks around AI adoption are crystallizing faster than many anticipated. We're moving beyond the move-fast-and-break-things mentality toward a model where geopolitical alignment matters as much as technical capability. Companies will need to conduct AI supply chain audits and develop contingency plans.</p>\n<p>Looking ahead, expect bifurcation in global AI markets. The U.S. and allies will likely develop their own AI ecosystems with increasing barriers to Chinese technology, while other regions pursue different strategies. This isn't about stopping innovation—it's about ensuring that innovation serves national interests.</p>\n<p>The real lesson: in AI, geography and geopolitics matter as much as algorithms.</p>",
+  "category": "Industry",
+  "hashtags": [
+   "AI",
+   "Geopolitics",
+   "TechPolicy",
+   "Regulation",
+   "Cybersecurity"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_chinese_ai_probe_congress_20260708.png",
+  "sourceUrl": "https://www.cnbc.com/2026/07/08/chinese-ai-models-probe-us-lawmakers.html",
+  "publishedAt": "2026-07-08T14:00:00.000-04:00",
+  "isVideo": false
+ },
+ {
+  "id": "meta-instagram-photos-ai-training-optout-20260708",
+  "slug": "meta-instagram-photos-ai-training-optout",
+  "headline": "Meta Now Lets Anyone Use Your Instagram Photos in AI Images — Unless You Opt Out",
+  "summary": "Meta is now using Instagram photos to train its AI image models by default — unless you actively opt out in settings — reigniting the fight over consent, privacy and who owns your content.",
+  "body": "<p><strong>Meta just changed the game—and most Instagram users have no idea.</strong></p>\n<p>Effective immediately, Meta is using your Instagram photos to train AI image generation models. Unless you actively opt out through your settings, your content becomes part of Meta's AI training dataset. This represents a massive shift in how tech companies handle user-generated content, and it's raising serious questions about consent, privacy, and the true ownership of digital assets in the AI era.</p>\n<p>This move sits at the intersection of aggressive AI development and business model innovation. Meta is racing to compete with other AI companies, and user data is the most valuable fuel for training these models. By making opt-out the default rather than opt-in, Meta is essentially betting that most users won't take action—and they're probably right. This is standard tech industry playbook: make privacy harder to protect, not easier.</p>\n<p>The strategic implication is clear: data collection is becoming the new moat for AI companies. Meta isn't just a social network anymore—it's a data-harvesting engine for AI development. Any company that can't access massive datasets at scale will struggle to compete in the AI arms race.</p>\n<p>Broader industry context matters here too. We're seeing a pattern across Big Tech: OpenAI faced lawsuits over training data, Google is scraping the web, and now Meta is tapping user content directly. The AI industry is operating in a gray zone where traditional privacy frameworks haven't caught up with new technological capabilities.</p>\n<p>Looking ahead, this won't be the last controversy around AI training data. As regulations tighten—especially in the EU—we'll likely see more friction between tech companies and regulators. The real question is whether users will demand better protections, or if they'll simply accept this as the cost of free platforms.</p>\n<p>Bottom line: in the AI era, your data is the product, and companies are betting you won't fight back.</p>",
+  "category": "Safety",
+  "hashtags": [
+   "AI",
+   "Privacy",
+   "Meta",
+   "DataEthics",
+   "TechPolicy"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_meta_instagram_ai_training_20260708.png",
+  "sourceUrl": "https://www.wired.com/story/meta-now-lets-anyone-use-your-instagram-photos-in-ai-images-unless-you-opt-out/",
+  "publishedAt": "2026-07-08T13:00:00.000-04:00",
+  "isVideo": false
+ },
+ {
   "id": "haaland-worldcup-ai-deepfakes-20260707",
   "slug": "haaland-worldcup-ai-deepfakes",
   "headline": "Erling Haaland Is Everywhere at the World Cup — Most of It Is AI",
