@@ -1,128 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Microsoft’s carbon emissions went up 25 percent last year",
-    "link": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026",
-    "score": 92,
-    "reason": "Big number (25%), concrete impact of AI scaling, major company"
+    "headline": "Apple Is Suing OpenAI for Allegedly Stealing Hardware Secrets",
+    "link": "https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/",
+    "score": 95,
+    "reason": "Major lawsuit, big company vs company, concrete allegations"
   },
   {
     "rank": 2,
-    "headline": "OpenAI’s CEO of AGI Deployment, Fidji Simo, Is Stepping Down",
-    "link": "https://www.wired.com/story/fidji-simo-ceo-agi-deployment-openai/",
-    "score": 88,
-    "reason": "Major executive departure, leadership change at top AI company"
+    "headline": "OpenAI rolls out GPT-5.6 after government greenlight — and announces ‘ChatGPT Work’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work",
+    "score": 92,
+    "reason": "Product launch, regulatory milestone, new business line"
   },
   {
     "rank": 3,
-    "headline": "Robot Dogs, Teslas, and Rescue Helicopters: The UN AI Summit Was a Lot",
-    "link": "https://www.wired.com/story/robot-dogs-teslas-and-rescue-helicopters-the-un-ai-summit-was-alot/",
-    "score": 85,
-    "reason": "Concrete launches and demonstrations, international AI governance"
+    "headline": "AWS GraphRAG deployment cuts drug research cycles by 87%",
+    "link": "https://www.artificialintelligence-news.com/news/aws-graphrag-deployment-cuts-drug-research-cycles-by-87/",
+    "score": 88,
+    "reason": "Specific quantified impact, major use case, enterprise scale"
   },
   {
     "rank": 4,
-    "headline": "Meta jumps into AI coding market in effort to chase Anthropic and OpenAI",
-    "link": "https://www.cnbc.com/2026/07/09/meta-jumps-into-ai-coding-market-to-chase-anthropic-and-openai.html",
-    "score": 84,
-    "reason": "Major company launch into competitive AI market, clear business move"
+    "headline": "Microsoft's AI drive saw its carbon emissions grow by 25 percent in 2025",
+    "link": "https://www.engadget.com/2212136/microsoft-ai-drive-carbon-emissions-grow-25-percent-2025/",
+    "score": 85,
+    "reason": "Big number, sustainability controversy, major company"
   },
   {
     "rank": 5,
-    "headline": "OpenAI releases a new ChatGPT tool for all things work related",
-    "link": "https://www.engadget.com/2211869/openai-releases-chatgpt-work-tool-macos-windows-web-plans/",
+    "headline": "Fidji Simo steps down from leading OpenAI’s AGI work due to illness",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor",
     "score": 82,
-    "reason": "Product launch from major AI company, new market segment"
+    "reason": "Leadership change at key company, AGI division impact"
   },
   {
     "rank": 6,
-    "headline": "AI-generated ads on Google will hopefully get disclosures soon",
-    "link": "https://www.engadget.com/2211839/ai-generated-ads-google-get-disclosures-soon/",
+    "headline": "Meta says its new AI model is ready to compete on coding",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/963193/meta-muse-spark-model-api",
     "score": 80,
-    "reason": "Regulatory/policy development, major company affected"
+    "reason": "New capability launch, competitive milestone"
   },
   {
     "rank": 7,
-    "headline": "NHS AI blood test could reduce invasive womb cancer checks",
-    "link": "https://www.artificialintelligence-news.com/news/nhs-ai-blood-test-womb-cancer-checks/",
-    "score": 79,
-    "reason": "Concrete medical application, measurable health impact"
+    "headline": "Anthropic found a hidden space where Claude puzzles over concepts",
+    "link": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
+    "score": 78,
+    "reason": "Technical discovery, model interpretability breakthrough"
   },
   {
     "rank": 8,
-    "headline": "Four nuclear reactors hit a big milestone in the US",
-    "link": "https://www.technologyreview.com/2026/07/09/1140235/nuclear-reactor-milestone-criticality/",
-    "score": 77,
-    "reason": "Big milestone achieved, AI infrastructure/energy development"
+    "headline": "Google will now tell you if an ad was made with AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/963628/google-ai-generated-ads-label",
+    "score": 76,
+    "reason": "New transparency feature, regulatory/policy move"
   },
   {
     "rank": 9,
-    "headline": "NVIDIA decided now is the time to announce 'GeForce Trading Cards'",
-    "link": "https://www.engadget.com/2212119/nvidia-geforce-trading-cards/",
-    "score": 75,
-    "reason": "Major hardware company launch, novel AI-related product"
+    "headline": "Instagram’s Adam Mosseri: If you don't like AI, 'then you shouldn't have it in your feed'",
+    "link": "https://www.theverge.com/tech/963961/instagram-adam-mosseri-ai-feed-filters",
+    "score": 74,
+    "reason": "Controversial statement, major platform policy stance"
   },
   {
     "rank": 10,
-    "headline": "Claude's new Reflect dashboard wants to help you log off of Claude",
-    "link": "https://www.engadget.com/2211304/claude-reflect-dashboard-wants-to-help-you-log-off/",
-    "score": 73,
-    "reason": "Anthropic product launch, addresses AI usage ethics"
+    "headline": "Meta's new AI image maker draws fire over consent",
+    "link": "https://www.axios.com/2026/07/10/meta-ai-image-consent",
+    "score": 72,
+    "reason": "Controversy, ethical concerns, product launch"
   },
   {
     "rank": 11,
-    "headline": "I tested ChatGPT's Live Voice upgrade, and it almost felt human - how to try it",
-    "link": "https://www.zdnet.com/article/i-tried-chatgpt-live-voice-ai/",
-    "score": 71,
-    "reason": "Feature launch testing, significant capability update"
+    "headline": "Microsoft's AI boom collides with its climate goals",
+    "link": "https://www.axios.com/2026/07/09/microsoft-ai-data-centers-climate-goals",
+    "score": 70,
+    "reason": "Corporate conflict, sustainability issue"
   },
   {
     "rank": 12,
-    "headline": "Google is changing how it judges AI models for Android coding, updates list with Fable 5",
-    "link": "https://9to5google.com/2026/07/08/google-updating-android-bench-testing-method/",
-    "score": 70,
-    "reason": "Major platform policy change, new model capabilities"
+    "headline": "The ChatGPT browser is already dead",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset",
+    "score": 68,
+    "reason": "Product failure, reversal of strategy"
   },
   {
     "rank": 13,
-    "headline": "Google Photos rolling out 'Video Remix' powered by Gemini Omni",
-    "link": "https://9to5google.com/2026/07/08/google-photos-video-remix/",
-    "score": 68,
-    "reason": "Consumer-facing AI feature rollout from major company"
+    "headline": "Billionaires warned New York would scare off business. Anthropic and Airbnb just made their biggest bets on the city yet",
+    "link": "https://fortune.com/2026/07/10/billionaires-warned-nyc-flight-anthropic-airbnb/",
+    "score": 65,
+    "reason": "Major investment commitment, business decision"
   },
   {
     "rank": 14,
-    "headline": "AI boom puts Big Tech's transparency to the test",
-    "link": "https://www.axios.com/2026/07/10/ai-big-tech-transparency-electricity-water-use",
-    "score": 66,
-    "reason": "Industry-wide issue, major companies affected, transparency controversy"
+    "headline": "How the terrorist group Boko Haram uses frontier AI",
+    "link": "https://casp.ac/reports/ai-enabled-terrorism",
+    "score": 62,
+    "reason": "Misuse case, security/policy relevance"
   },
   {
     "rank": 15,
-    "headline": "Google might rebrand Pixel Magic Cue as Gemini ‘Proactive Assistance’",
-    "link": "https://9to5google.com/2026/07/09/pixel-magic-cue-gemini/",
-    "score": 64,
-    "reason": "Product strategy shift, major company AI rebranding"
+    "headline": "The $28 Million Mistake That Inspired Estonia’s AI ‘Fuckup Finder’",
+    "link": "https://www.wired.com/story/the-28-million-dollar-mistake-that-inspired-estonias-ai-fuckup-finder/",
+    "score": 60,
+    "reason": "Big number loss, government AI deployment"
   },
   {
     "rank": 16,
-    "headline": "John Deere owners will get the right to repair equipment under FTC settlement",
-    "link": "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02",
-    "score": 62,
-    "reason": "Major regulatory settlement, impacts AI/IoT device control"
+    "headline": "Large Tabular Models Excel Where LLMs Fail",
+    "link": "https://spectrum.ieee.org/large-tabular-models-nexus",
+    "score": 58,
+    "reason": "Technical capability finding, model capability gap"
   },
   {
     "rank": 17,
-    "headline": "Character.AI wants a piece of the microdrama pie",
-    "link": "https://www.theverge.com/entertainment/962897/character-ai-series-microdrama-vertical-video",
-    "score": 61,
-    "reason": "Startup expansion into new content market segment"
+    "headline": "Say hello to Claude Wrapped",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/963105/anthropic-claude-wrapped-reflection-ai-usage",
+    "score": 55,
+    "reason": "Product feature launch, consumer engagement"
   },
   {
     "rank": 18,
-    "headline": "Haves, have-nots and know-nots: Inside AI's new class divide",
-    "link": "https://www.axios.com/2026/07/10/ai-class-divide-fable-sol-mythos",
-    "score": 59,
-    "reason": "Major trend piece on AI inequality across society"
+    "headline": "The 1X Neo Robot Has Freaky Fast Fingers",
+    "link": "https://www.wired.com/story/the-1x-neo-robot-has-freaky-fast-fingers/",
+    "score": 52,
+    "reason": "Hardware advancement, robotics progress"
+  },
+  {
+    "rank": 19,
+    "headline": "Behind the Curtain: These 3 big AI trends are colliding at the same time",
+    "link": "https://www.axios.com/2026/07/09/ai-trends-fable-5-sol-grok-china-us",
+    "score": 50,
+    "reason": "Trend analysis, multiple convergences"
+  },
+  {
+    "rank": 20,
+    "headline": "Anthropic Wants You to Pay Up for Claude Fable 5",
+    "link": "https://www.wired.com/story/model-behavior-anthropic-will-charge-consumers-extra-to-use-claude-fable-5/",
+    "score": 48,
+    "reason": "Pricing model change, monetization strategy"
   }
 ]
