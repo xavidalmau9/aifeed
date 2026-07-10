@@ -1,142 +1,128 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI rolls out GPT-5.6 after government greenlight — and announces ‘ChatGPT Work’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work",
-    "score": 95,
-    "reason": "Major product launch with regulatory milestone, new commercial offering, directly competitive announcement"
+    "headline": "Microsoft’s carbon emissions went up 25 percent last year",
+    "link": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026",
+    "score": 92,
+    "reason": "Big number (25%), concrete impact of AI scaling, major company"
   },
   {
     "rank": 2,
-    "headline": "AWS GraphRAG deployment cuts drug research cycles by 87%",
-    "link": "https://www.artificialintelligence-news.com/news/aws-graphrag-deployment-cuts-drug-research-cycles-by-87/",
+    "headline": "OpenAI’s CEO of AGI Deployment, Fidji Simo, Is Stepping Down",
+    "link": "https://www.wired.com/story/fidji-simo-ceo-agi-deployment-openai/",
     "score": 88,
-    "reason": "Specific, quantified impact (87%), major use case demonstration, established company"
+    "reason": "Major executive departure, leadership change at top AI company"
   },
   {
     "rank": 3,
-    "headline": "Anthropic Wants You to Pay Up for Claude Fable 5",
-    "link": "https://www.wired.com/story/model-behavior-anthropic-will-charge-consumers-extra-to-use-claude-fable-5/",
+    "headline": "Robot Dogs, Teslas, and Rescue Helicopters: The UN AI Summit Was a Lot",
+    "link": "https://www.wired.com/story/robot-dogs-teslas-and-rescue-helicopters-the-un-ai-summit-was-alot/",
     "score": 85,
-    "reason": "Major model release with pricing change, direct competition in market, significant announcement"
+    "reason": "Concrete launches and demonstrations, international AI governance"
   },
   {
     "rank": 4,
-    "headline": "Meta says its new AI model is ready to compete on coding",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/963193/meta-muse-spark-model-api",
-    "score": 83,
-    "reason": "Major company entering competitive market, significant capability claim, coding market launch"
+    "headline": "Meta jumps into AI coding market in effort to chase Anthropic and OpenAI",
+    "link": "https://www.cnbc.com/2026/07/09/meta-jumps-into-ai-coding-market-to-chase-anthropic-and-openai.html",
+    "score": 84,
+    "reason": "Major company launch into competitive AI market, clear business move"
   },
   {
     "rank": 5,
-    "headline": "Google will now tell you if an ad was made with AI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/963628/google-ai-generated-ads-label",
-    "score": 81,
-    "reason": "Regulatory/transparency launch, addresses major AI controversy, implementation at scale"
+    "headline": "OpenAI releases a new ChatGPT tool for all things work related",
+    "link": "https://www.engadget.com/2211869/openai-releases-chatgpt-work-tool-macos-windows-web-plans/",
+    "score": 82,
+    "reason": "Product launch from major AI company, new market segment"
   },
   {
     "rank": 6,
-    "headline": "OpenAI&apos;s newest AI model is 54% more token efficient on agentic coding, Altman tells CNBC",
-    "link": "https://www.cnbc.com/2026/07/09/open-ai-sam-altman-chatgpt-5-6-sol.html",
-    "score": 79,
-    "reason": "Specific performance metric (54%), direct CEO statement, technical advancement claim"
+    "headline": "AI-generated ads on Google will hopefully get disclosures soon",
+    "link": "https://www.engadget.com/2211839/ai-generated-ads-google-get-disclosures-soon/",
+    "score": 80,
+    "reason": "Regulatory/policy development, major company affected"
   },
   {
     "rank": 7,
-    "headline": "The $28 Million Mistake That Inspired Estonia’s AI ‘Fuckup Finder’",
-    "link": "https://www.wired.com/story/the-28-million-dollar-mistake-that-inspired-estonias-ai-fuckup-finder/",
-    "score": 76,
-    "reason": "Concrete financial impact, novel use case, government deployment"
+    "headline": "NHS AI blood test could reduce invasive womb cancer checks",
+    "link": "https://www.artificialintelligence-news.com/news/nhs-ai-blood-test-womb-cancer-checks/",
+    "score": 79,
+    "reason": "Concrete medical application, measurable health impact"
   },
   {
     "rank": 8,
-    "headline": "Meta’s new Muse Image model can pull other Instagram users into AI photos",
-    "link": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
-    "score": 72,
-    "reason": "Specific capability launch, privacy/ethics angle, user-facing feature"
+    "headline": "Four nuclear reactors hit a big milestone in the US",
+    "link": "https://www.technologyreview.com/2026/07/09/1140235/nuclear-reactor-milestone-criticality/",
+    "score": 77,
+    "reason": "Big milestone achieved, AI infrastructure/energy development"
   },
   {
     "rank": 9,
-    "headline": "The 1X Neo Robot Has Freaky Fast Fingers",
-    "link": "https://www.wired.com/story/the-1x-neo-robot-has-freaky-fast-fingers/",
-    "score": 68,
-    "reason": "Hardware AI advancement, specific capability improvement, robotics milestone"
+    "headline": "NVIDIA decided now is the time to announce 'GeForce Trading Cards'",
+    "link": "https://www.engadget.com/2212119/nvidia-geforce-trading-cards/",
+    "score": 75,
+    "reason": "Major hardware company launch, novel AI-related product"
   },
   {
     "rank": 10,
-    "headline": "Companies embracing AI the most are hiring more people - including entry-level, report finds",
-    "link": "https://www.zdnet.com/article/high-intensity-adopters-of-ai-hiring-more-entry-level/",
-    "score": 66,
-    "reason": "Economic impact data, employment trend, contradicts AI displacement narrative"
+    "headline": "Claude's new Reflect dashboard wants to help you log off of Claude",
+    "link": "https://www.engadget.com/2211304/claude-reflect-dashboard-wants-to-help-you-log-off/",
+    "score": 73,
+    "reason": "Anthropic product launch, addresses AI usage ethics"
   },
   {
     "rank": 11,
-    "headline": "Here's how to block Meta from using your Instagram pictures for its AI",
-    "link": "https://www.engadget.com/2211315/heres-how-to-block-meta-from-using-your-instagram-pictures-for-its-ai/",
-    "score": 64,
-    "reason": "Major privacy controversy, user control feature, regulatory response"
+    "headline": "I tested ChatGPT's Live Voice upgrade, and it almost felt human - how to try it",
+    "link": "https://www.zdnet.com/article/i-tried-chatgpt-live-voice-ai/",
+    "score": 71,
+    "reason": "Feature launch testing, significant capability update"
   },
   {
     "rank": 12,
-    "headline": "Microsoft goes all in on new AI-powered Windows security strategy - what it means for you",
-    "link": "https://www.zdnet.com/article/microsoft-windows-ai-security-vulnerability-analysis/",
-    "score": 62,
-    "reason": "Major platform integration, security application, significant strategy shift"
+    "headline": "Google is changing how it judges AI models for Android coding, updates list with Fable 5",
+    "link": "https://9to5google.com/2026/07/08/google-updating-android-bench-testing-method/",
+    "score": 70,
+    "reason": "Major platform policy change, new model capabilities"
   },
   {
     "rank": 13,
-    "headline": "Anthropic found a hidden space where Claude puzzles over concepts",
-    "link": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
-    "score": 60,
-    "reason": "Novel technical discovery, interpretability breakthrough, research significance"
+    "headline": "Google Photos rolling out 'Video Remix' powered by Gemini Omni",
+    "link": "https://9to5google.com/2026/07/08/google-photos-video-remix/",
+    "score": 68,
+    "reason": "Consumer-facing AI feature rollout from major company"
   },
   {
     "rank": 14,
-    "headline": "SpaceXAI launches Grok 4.5, its first built with Cursor's help",
-    "link": "https://www.engadget.com/2211260/spacex-ai-grok-4-5-cursor/",
-    "score": 58,
-    "reason": "New company entry, model release, partnership announcement"
+    "headline": "AI boom puts Big Tech's transparency to the test",
+    "link": "https://www.axios.com/2026/07/10/ai-big-tech-transparency-electricity-water-use",
+    "score": 66,
+    "reason": "Industry-wide issue, major companies affected, transparency controversy"
   },
   {
     "rank": 15,
-    "headline": "The ChatGPT browser is already dead",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset",
-    "score": 55,
-    "reason": "Product failure/pivot, strategic reversal, market signal"
+    "headline": "Google might rebrand Pixel Magic Cue as Gemini ‘Proactive Assistance’",
+    "link": "https://9to5google.com/2026/07/09/pixel-magic-cue-gemini/",
+    "score": 64,
+    "reason": "Product strategy shift, major company AI rebranding"
   },
   {
     "rank": 16,
-    "headline": "Say hello to Claude Wrapped",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/963105/anthropic-claude-wrapped-reflection-ai-usage",
-    "score": 52,
-    "reason": "New consumer feature launch, user engagement tool"
+    "headline": "John Deere owners will get the right to repair equipment under FTC settlement",
+    "link": "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02",
+    "score": 62,
+    "reason": "Major regulatory settlement, impacts AI/IoT device control"
   },
   {
     "rank": 17,
-    "headline": "Why the Next Era of AI Is About Infrastructure, Not Just Models",
-    "link": "https://blog.mozilla.ai/the-control-layer-why-the-next-era-of-ai-is-about-infrastructure-not-just-models/",
-    "score": 50,
-    "reason": "Market analysis of major trend shift, infrastructure investment implications"
+    "headline": "Character.AI wants a piece of the microdrama pie",
+    "link": "https://www.theverge.com/entertainment/962897/character-ai-series-microdrama-vertical-video",
+    "score": 61,
+    "reason": "Startup expansion into new content market segment"
   },
   {
     "rank": 18,
-    "headline": "AI changes the economics of software rewrites",
-    "link": "https://thetruthasiseeitnow.com/ai-slop-starts-with-the-codebase-itself/",
-    "score": 48,
-    "reason": "Economic impact analysis, industry transformation"
-  },
-  {
-    "rank": 19,
-    "headline": "ChatGPT’s upgraded voice mode is better at shutting up",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/962856/chatgpt-upgraded-voice-mode-gpt-live",
-    "score": 45,
-    "reason": "Product improvement launch, user experience enhancement"
-  },
-  {
-    "rank": 20,
-    "headline": "FL Studio 2026 turns its AI chatbot into your assistant engineer",
-    "link": "https://www.theverge.com/tech/963052/fl-studio-2026-music-daw-ai-chatbot",
-    "score": 42,
-    "reason": "Creative tool AI integration, music production application"
+    "headline": "Haves, have-nots and know-nots: Inside AI's new class divide",
+    "link": "https://www.axios.com/2026/07/10/ai-class-divide-fable-sol-mythos",
+    "score": 59,
+    "reason": "Major trend piece on AI inequality across society"
   }
 ]
