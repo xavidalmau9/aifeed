@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Apple Is Suing OpenAI for Allegedly Stealing Hardware Secrets",
-    "link": "https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/",
-    "score": 95,
-    "reason": "Major lawsuit, big company vs company, concrete allegations"
+    "headline": "Apple sues OpenAI alleging trade secret theft, says scheme was &apos;at every level&apos;",
+    "link": "https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html",
+    "score": 94,
+    "reason": "Major lawsuit between two tech giants, specific allegations, high-stakes IP controversy"
   },
   {
     "rank": 2,
-    "headline": "OpenAI rolls out GPT-5.6 after government greenlight — and announces ‘ChatGPT Work’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work",
-    "score": 92,
-    "reason": "Product launch, regulatory milestone, new business line"
+    "headline": "Microsoft’s carbon emissions went up 25 percent last year",
+    "link": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026",
+    "score": 89,
+    "reason": "Big number (25%), AI infrastructure impact, major company accountability story"
   },
   {
     "rank": 3,
-    "headline": "AWS GraphRAG deployment cuts drug research cycles by 87%",
-    "link": "https://www.artificialintelligence-news.com/news/aws-graphrag-deployment-cuts-drug-research-cycles-by-87/",
-    "score": 88,
-    "reason": "Specific quantified impact, major use case, enterprise scale"
+    "headline": "SpaceX wants to launch 100,000 more Starlink satellites - for 100x the bandwidth",
+    "link": "https://www.zdnet.com/article/spacex-wants-to-launch-100000-more-starlink-satellites/",
+    "score": 87,
+    "reason": "Massive scale (100,000), quantified benefit (100x), major infrastructure announcement"
   },
   {
     "rank": 4,
-    "headline": "Microsoft's AI drive saw its carbon emissions grow by 25 percent in 2025",
-    "link": "https://www.engadget.com/2212136/microsoft-ai-drive-carbon-emissions-grow-25-percent-2025/",
+    "headline": "OpenAI’s Head of Safety Is Leaving the Company",
+    "link": "https://www.wired.com/story/openai-head-of-safety-leaving/",
     "score": 85,
-    "reason": "Big number, sustainability controversy, major company"
+    "reason": "Executive departure from critical role, safety concerns amid rapid scaling"
   },
   {
     "rank": 5,
-    "headline": "Fidji Simo steps down from leading OpenAI’s AGI work due to illness",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor",
-    "score": 82,
-    "reason": "Leadership change at key company, AGI division impact"
+    "headline": "OpenAI’s CEO of AGI Deployment, Fidji Simo, Is Stepping Down",
+    "link": "https://www.wired.com/story/fidji-simo-ceo-agi-deployment-openai/",
+    "score": 84,
+    "reason": "Senior leadership departure, AGI focus signals strategic shift"
   },
   {
     "rank": 6,
-    "headline": "Meta says its new AI model is ready to compete on coding",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/963193/meta-muse-spark-model-api",
-    "score": 80,
-    "reason": "New capability launch, competitive milestone"
+    "headline": "Meta turns off the Instagram feature that let users make AI deepfakes of public accounts",
+    "link": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
+    "score": 82,
+    "reason": "Feature removal due to AI misuse, privacy/safety controversy, major platform"
   },
   {
     "rank": 7,
-    "headline": "Anthropic found a hidden space where Claude puzzles over concepts",
-    "link": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
-    "score": 78,
-    "reason": "Technical discovery, model interpretability breakthrough"
+    "headline": "How SK Hynix just pulled off the second-largest U.S. share sale by quietly powering the AI boom",
+    "link": "https://fortune.com/2026/07/11/sk-hynix-us-stock-listing-nasdaq-second-largest-us-share-sale-ai-boom-hbw-memory/",
+    "score": 80,
+    "reason": "Record IPO scale, AI infrastructure monetization story"
   },
   {
     "rank": 8,
-    "headline": "Google will now tell you if an ad was made with AI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/963628/google-ai-generated-ads-label",
-    "score": 76,
-    "reason": "New transparency feature, regulatory/policy move"
+    "headline": "Meta jumps into AI coding market in effort to chase Anthropic and OpenAI",
+    "link": "https://www.cnbc.com/2026/07/09/meta-jumps-into-ai-coding-market-to-chase-anthropic-and-openai.html",
+    "score": 78,
+    "reason": "Major product launch into competitive market, diversification play"
   },
   {
     "rank": 9,
-    "headline": "Instagram’s Adam Mosseri: If you don't like AI, 'then you shouldn't have it in your feed'",
-    "link": "https://www.theverge.com/tech/963961/instagram-adam-mosseri-ai-feed-filters",
-    "score": 74,
-    "reason": "Controversial statement, major platform policy stance"
+    "headline": "I tested ChatGPT's Live Voice upgrade, and it almost felt human - how to try it",
+    "link": "https://www.zdnet.com/article/i-tried-chatgpt-live-voice-ai/",
+    "score": 76,
+    "reason": "Feature launch, consumer-facing AI capability milestone"
   },
   {
     "rank": 10,
-    "headline": "Meta's new AI image maker draws fire over consent",
-    "link": "https://www.axios.com/2026/07/10/meta-ai-image-consent",
-    "score": 72,
-    "reason": "Controversy, ethical concerns, product launch"
-  },
-  {
-    "rank": 11,
-    "headline": "Microsoft's AI boom collides with its climate goals",
-    "link": "https://www.axios.com/2026/07/09/microsoft-ai-data-centers-climate-goals",
-    "score": 70,
-    "reason": "Corporate conflict, sustainability issue"
-  },
-  {
-    "rank": 12,
-    "headline": "The ChatGPT browser is already dead",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset",
-    "score": 68,
-    "reason": "Product failure, reversal of strategy"
-  },
-  {
-    "rank": 13,
-    "headline": "Billionaires warned New York would scare off business. Anthropic and Airbnb just made their biggest bets on the city yet",
-    "link": "https://fortune.com/2026/07/10/billionaires-warned-nyc-flight-anthropic-airbnb/",
-    "score": 65,
-    "reason": "Major investment commitment, business decision"
-  },
-  {
-    "rank": 14,
-    "headline": "How the terrorist group Boko Haram uses frontier AI",
-    "link": "https://casp.ac/reports/ai-enabled-terrorism",
-    "score": 62,
-    "reason": "Misuse case, security/policy relevance"
-  },
-  {
-    "rank": 15,
-    "headline": "The $28 Million Mistake That Inspired Estonia’s AI ‘Fuckup Finder’",
-    "link": "https://www.wired.com/story/the-28-million-dollar-mistake-that-inspired-estonias-ai-fuckup-finder/",
-    "score": 60,
-    "reason": "Big number loss, government AI deployment"
-  },
-  {
-    "rank": 16,
-    "headline": "Large Tabular Models Excel Where LLMs Fail",
-    "link": "https://spectrum.ieee.org/large-tabular-models-nexus",
-    "score": 58,
-    "reason": "Technical capability finding, model capability gap"
-  },
-  {
-    "rank": 17,
-    "headline": "Say hello to Claude Wrapped",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/963105/anthropic-claude-wrapped-reflection-ai-usage",
-    "score": 55,
-    "reason": "Product feature launch, consumer engagement"
-  },
-  {
-    "rank": 18,
-    "headline": "The 1X Neo Robot Has Freaky Fast Fingers",
-    "link": "https://www.wired.com/story/the-1x-neo-robot-has-freaky-fast-fingers/",
-    "score": 52,
-    "reason": "Hardware advancement, robotics progress"
-  },
-  {
-    "rank": 19,
-    "headline": "Behind the Curtain: These 3 big AI trends are colliding at the same time",
-    "link": "https://www.axios.com/2026/07/09/ai-trends-fable-5-sol-grok-china-us",
-    "score": 50,
-    "reason": "Trend analysis, multiple convergences"
-  },
-  {
-    "rank": 20,
-    "headline": "Anthropic Wants You to Pay Up for Claude Fable 5",
-    "link": "https://www.wired.com/story/model-behavior-anthropic-will-charge-consumers-extra-to-use-claude-fable-5/",
-    "score": 48,
-    "reason": "Pricing model change, monetization strategy"
+    "headline": "AI boom puts Big Tech's transparency to the test",
+    "link": "https://www.axios.com/2026/07/10/ai-big-tech-transparency-electricity-water-use",
+    "score": 74,
+    "reason": "Industry-wide accountability issue, regulatory implications"
   }
 ]
