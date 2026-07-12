@@ -1,58 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "SpaceX wants to launch 100,000 more Starlink satellites - for 100x the bandwidth",
-    "link": "https://www.zdnet.com/article/spacex-wants-to-launch-100000-more-starlink-satellites/",
-    "score": 94,
-    "reason": "Major infrastructure expansion with concrete numbers and business implications"
+    "headline": "Apple sues OpenAI for allegedly stealing hardware secrets",
+    "link": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
+    "score": 92,
+    "reason": "Major lawsuit between tech giants; specific allegations; significant legal/business implications"
   },
   {
     "rank": 2,
-    "headline": "Apple Is Suing OpenAI for Allegedly Stealing Hardware Secrets",
-    "link": "https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/",
-    "score": 92,
-    "reason": "High-profile lawsuit between major tech companies with specific allegations"
+    "headline": "Meta deactivates feature that let you generate AI images of any public Instagram account",
+    "link": "https://www.engadget.com/2212843/meta-deactivates-muse-image-public-instagram-post-ai-images/",
+    "score": 85,
+    "reason": "Concrete product action; privacy controversy; major platform (Instagram) affected"
   },
   {
     "rank": 3,
-    "headline": "OpenAI’s Head of Safety Is Leaving the Company",
-    "link": "https://www.wired.com/story/openai-head-of-safety-leaving/",
-    "score": 88,
-    "reason": "Executive departure from major AI company with governance implications"
+    "headline": "OpenAI's head of safety is reportedly leaving as part of company reorganization",
+    "link": "https://www.engadget.com/2212941/openai-head-of-safety-leaving-company-reorganization/",
+    "score": 82,
+    "reason": "Safety leadership departure during critical period; organizational restructuring; credible controversy"
   },
   {
     "rank": 4,
-    "headline": "Meta turns off the Instagram feature that let users make AI deepfakes of public accounts",
-    "link": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
-    "score": 86,
-    "reason": "Feature shutdown due to controversy, addresses AI misuse concerns"
+    "headline": "Phoebe Gates' AI shopping app Phia reportedly claimed unearned affiliate sales through fake clicks",
+    "link": "https://www.engadget.com/2212973/phoebe-gates-ai-shopping-app-phia-affiliate-sales-fake-clicks/",
+    "score": 79,
+    "reason": "Concrete fraud allegation; specific numbers (fake clicks); business failure with reputational impact"
   },
   {
     "rank": 5,
-    "headline": "SK Hynix rises 13% in Nasdaq debut. Chairman tells CNBC &apos;demand is enormous&apos;",
-    "link": "https://www.cnbc.com/2026/07/10/sk-hynix-skhy-stock-nasdaq.html",
-    "score": 84,
-    "reason": "Major IPO with quantified market response and AI chip demand confirmation"
+    "headline": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
+    "link": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
+    "score": 78,
+    "reason": "Major project cancellation with tangible outcome; billions invested; hardware legacy"
   },
   {
     "rank": 6,
-    "headline": "‘Almost unlimited’: Execs says AI demand remains strong even as enterprises move to ‘valuemaxxing’",
-    "link": "https://www.cnbc.com/2026/07/12/ai-demand-chips-data-centers-stock-volatility.html",
-    "score": 79,
-    "reason": "Market dynamics and enterprise AI adoption trends with executive commentary"
+    "headline": "While Musk&apos;s Neuralink drills into skulls, China&apos;s BrainCo bets the future of brain tech is wearable",
+    "link": "https://www.cnbc.com/2026/07/11/chinas-brainco-bets-on-wearable-brain-tech.html",
+    "score": 74,
+    "reason": "Direct competition between major players; contrasting approaches; significant tech race implications"
   },
   {
     "rank": 7,
-    "headline": "More tech workers are retiring early because they don’t want to deal with AI-related changes: 'Many people believe it's overblown'",
-    "link": "https://fortune.com/2026/07/12/tech-workers-early-retirement-ai-workplace/",
-    "score": 76,
-    "reason": "Tangible labor market impact from AI adoption with human consequences"
+    "headline": "Migrating a production AI agent to GPT-5.6: 2.2x faster, 27% cheaper",
+    "link": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
+    "score": 71,
+    "reason": "Concrete performance metrics; real production deployment data; significant improvements quantified"
   },
   {
     "rank": 8,
-    "headline": "OpenAI's browser isn't dead, it just moved to the ChatGPT app",
-    "link": "https://www.engadget.com/2212701/openai-browser-isnt-dead/",
-    "score": 72,
-    "reason": "Product pivot affecting OpenAI's strategy and market positioning"
+    "headline": "Majority of U.S. workers support an AI wealth fund as tech layoffs surge, survey finds",
+    "link": "https://www.cnbc.com/2026/07/12/majority-of-us-workers-support-ai-fund-amid-tech-layoffs-survey.html",
+    "score": 69,
+    "reason": "Major survey finding; policy implications; ties to documented tech layoffs"
+  },
+  {
+    "rank": 9,
+    "headline": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+    "link": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+    "score": 65,
+    "reason": "Specific technical benchmark comparison; reveals efficiency differences between major models"
+  },
+  {
+    "rank": 10,
+    "headline": "Xbox gamer wins lawsuit against Microsoft to restore account and digital library",
+    "link": "https://www.engadget.com/2213111/xbox-gamer-wins-lawsuit-against-microsoft-to-restore-account-and-digital-library/",
+    "score": 62,
+    "reason": "Legal victory; consumer rights precedent; concrete outcome affecting digital ownership"
   }
 ]
