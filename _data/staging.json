@@ -1,142 +1,58 @@
 [
   {
     "rank": 1,
-    "headline": "Apple sues OpenAI for allegedly stealing hardware secrets",
-    "link": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
+    "headline": "SpaceX wants to launch 100,000 more Starlink satellites - for 100x the bandwidth",
+    "link": "https://www.zdnet.com/article/spacex-wants-to-launch-100000-more-starlink-satellites/",
     "score": 94,
-    "reason": "Major lawsuit between tech giants, concrete legal action with specific allegations"
+    "reason": "Major infrastructure expansion with concrete numbers and business implications"
   },
   {
     "rank": 2,
-    "headline": "Meta deactivates feature that let you generate AI images of any public Instagram account",
-    "link": "https://www.engadget.com/2212843/meta-deactivates-muse-image-public-instagram-post-ai-images/",
-    "score": 88,
-    "reason": "Significant product removal due to controversy, affects millions of users"
+    "headline": "Apple Is Suing OpenAI for Allegedly Stealing Hardware Secrets",
+    "link": "https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/",
+    "score": 92,
+    "reason": "High-profile lawsuit between major tech companies with specific allegations"
   },
   {
     "rank": 3,
-    "headline": "OpenAI's head of safety is reportedly leaving as part of company reorganization",
-    "link": "https://www.engadget.com/2212941/openai-head-of-safety-leaving-company-reorganization/",
-    "score": 85,
-    "reason": "Major executive departure at critical safety role, signals internal conflict"
+    "headline": "OpenAI’s Head of Safety Is Leaving the Company",
+    "link": "https://www.wired.com/story/openai-head-of-safety-leaving/",
+    "score": 88,
+    "reason": "Executive departure from major AI company with governance implications"
   },
   {
     "rank": 4,
-    "headline": "Phoebe Gates' AI shopping app Phia reportedly claimed unearned affiliate sales through fake clicks",
-    "link": "https://www.engadget.com/2212973/phoebe-gates-ai-shopping-app-phia-affiliate-sales-fake-clicks/",
-    "score": 82,
-    "reason": "Concrete fraud allegation, involves high-profile figure, specific misdoing"
+    "headline": "Meta turns off the Instagram feature that let users make AI deepfakes of public accounts",
+    "link": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
+    "score": 86,
+    "reason": "Feature shutdown due to controversy, addresses AI misuse concerns"
   },
   {
     "rank": 5,
-    "headline": "Robot Dogs, Teslas, and Rescue Helicopters: The UN AI Summit Was a Lot",
-    "link": "https://www.wired.com/story/robot-dogs-teslas-and-rescue-helicopters-the-un-ai-summit-was-alot/",
-    "score": 79,
-    "reason": "Major international AI summit with concrete demonstrations and global participation"
+    "headline": "SK Hynix rises 13% in Nasdaq debut. Chairman tells CNBC &apos;demand is enormous&apos;",
+    "link": "https://www.cnbc.com/2026/07/10/sk-hynix-skhy-stock-nasdaq.html",
+    "score": 84,
+    "reason": "Major IPO with quantified market response and AI chip demand confirmation"
   },
   {
     "rank": 6,
-    "headline": "Google will now tell you if an ad was made with AI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/963628/google-ai-generated-ads-label",
-    "score": 77,
-    "reason": "Major policy launch by Google affecting digital advertising transparency"
+    "headline": "‘Almost unlimited’: Execs says AI demand remains strong even as enterprises move to ‘valuemaxxing’",
+    "link": "https://www.cnbc.com/2026/07/12/ai-demand-chips-data-centers-stock-volatility.html",
+    "score": 79,
+    "reason": "Market dynamics and enterprise AI adoption trends with executive commentary"
   },
   {
     "rank": 7,
-    "headline": "While Musk&apos;s Neuralink drills into skulls, China&apos;s BrainCo bets the future of brain tech is wearable",
-    "link": "https://www.cnbc.com/2026/07/11/chinas-brainco-bets-on-wearable-brain-tech.html",
-    "score": 75,
-    "reason": "Concrete technology comparison between major competitors in emerging field"
+    "headline": "More tech workers are retiring early because they don’t want to deal with AI-related changes: 'Many people believe it's overblown'",
+    "link": "https://fortune.com/2026/07/12/tech-workers-early-retirement-ai-workplace/",
+    "score": 76,
+    "reason": "Tangible labor market impact from AI adoption with human consequences"
   },
   {
     "rank": 8,
-    "headline": "Instagram’s Adam Mosseri: If you don't like AI, 'then you shouldn't have it in your feed'",
-    "link": "https://www.theverge.com/tech/963961/instagram-adam-mosseri-ai-feed-filters",
+    "headline": "OpenAI's browser isn't dead, it just moved to the ChatGPT app",
+    "link": "https://www.engadget.com/2212701/openai-browser-isnt-dead/",
     "score": 72,
-    "reason": "Controversial statement from major platform executive, sparks debate on AI integration"
-  },
-  {
-    "rank": 9,
-    "headline": "The 'learn to code' era is over - and employers are on the hook for reskilling now",
-    "link": "https://www.zdnet.com/article/learn-to-code-era-is-over-employers-are-on-the-hook-for-reskilling-now/",
-    "score": 70,
-    "reason": "Significant shift in labor market and education paradigm due to AI"
-  },
-  {
-    "rank": 10,
-    "headline": "Haves, have-nots and know-nots: Inside AI's new class divide",
-    "link": "https://www.axios.com/2026/07/10/ai-class-divide-fable-sol-mythos",
-    "score": 68,
-    "reason": "Analysis of concrete economic inequality created by AI adoption"
-  },
-  {
-    "rank": 11,
-    "headline": "The Download: Claude's inner workings and OpenAI's \"super app\"",
-    "link": "https://www.technologyreview.com/2026/07/10/1140316/the-download-anthropic-claude-hidden-space-openai-super-app/",
-    "score": 65,
-    "reason": "Technical launch details from Anthropic and OpenAI about major product shifts"
-  },
-  {
-    "rank": 12,
-    "headline": "The Tech Download: Teen social media bans miss a key part of the puzzle: AI chatbots",
-    "link": "https://www.cnbc.com/2026/07/10/tech-download-social-media-bans-ai-chatbots.html",
-    "score": 62,
-    "reason": "Concrete policy gap in regulation discussions affecting millions"
-  },
-  {
-    "rank": 13,
-    "headline": "Meta's new AI image maker draws fire over consent",
-    "link": "https://www.axios.com/2026/07/10/meta-ai-image-consent",
-    "score": 60,
-    "reason": "Product launch with immediate controversy over ethical concerns"
-  },
-  {
-    "rank": 14,
-    "headline": "Meta added a privacy-safety feature to its AI glasses but is reportedly testing a ‘super-sensing’ prototype",
-    "link": "https://fortune.com/2026/07/11/meta-ray-ban-smart-glasses-camera-led-light-privacy-safeguard-super-sensing-ai-prototype-covert-recording-concerns/",
-    "score": 58,
-    "reason": "Concrete hardware development with privacy implications"
-  },
-  {
-    "rank": 15,
-    "headline": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
-    "link": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
-    "score": 56,
-    "reason": "Large-scale infrastructure financing pattern affecting AI buildout"
-  },
-  {
-    "rank": 16,
-    "headline": "Inside the alternative playbook to AI regulation",
-    "link": "https://www.axios.com/2026/07/10/alternative-playbook-ai-regulation",
-    "score": 54,
-    "reason": "Concrete policy approach diverging from major regulatory trends"
-  },
-  {
-    "rank": 17,
-    "headline": "The ChatGPT browser is already dead",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset",
-    "score": 52,
-    "reason": "Major product failure/pivot from OpenAI"
-  },
-  {
-    "rank": 18,
-    "headline": "Bluesky has an official CEO again",
-    "link": "https://www.engadget.com/2212928/bluesky-official-ceo-toni-schneider/",
-    "score": 50,
-    "reason": "Leadership announcement at AI-powered social network alternative"
-  },
-  {
-    "rank": 19,
-    "headline": "How to shrink the token budget without shrinking the team",
-    "link": "https://www.artificialintelligence-news.com/news/shrink-token-budget-not-team/",
-    "score": 48,
-    "reason": "Concrete cost optimization strategy reflecting LLM economics challenges"
-  },
-  {
-    "rank": 20,
-    "headline": "Fidji Simo steps down from leading OpenAI’s AGI work due to illness",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor",
-    "score": 46,
-    "reason": "Leadership change at critical AGI division, signals potential roadmap shifts"
+    "reason": "Product pivot affecting OpenAI's strategy and market positioning"
   }
 ]
