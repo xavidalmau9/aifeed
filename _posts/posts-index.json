@@ -1,5 +1,24 @@
 [
  {
+  "id": "waze-ai-motorcycle-less-chatty-20260709",
+  "slug": "waze-ai-motorcycle-less-chatty",
+  "headline": "Waze Rolls Out AI Features: Motorcycle Mode and a 'Less Chatty' Option",
+  "summary": "Google's Waze is rolling out AI-powered personalization — a Motorcycle mode that optimizes routes for two-wheelers, and a 'Less Chatty' option that cuts down distracting voice alerts.",
+  "body": "<p><strong>Waze is reshaping how we navigate, with personalization at the core of its latest AI rollout.</strong></p>\n<p>Google's navigation platform announced two significant AI-powered features—Motorcycle mode and a 'Less Chatty' option—that demonstrate a crucial shift in how navigation apps are evolving. Rather than pushing one-size-fits-all solutions, Waze is now using AI to adapt to different user preferences and vehicle types. The motorcycle mode specifically optimizes route planning for two-wheelers, considering road characteristics like tight turns and bike-friendly pathways that traditional routing algorithms overlook. The less chatty mode addresses a real user frustration: excessive voice notifications that distract rather than assist. This isn't incremental improvement; it's strategic personalization.</p>\n<p>This development reflects a broader industry trend where navigation is becoming contextual and adaptive. Waze has built its reputation on community-driven data and real-time traffic insights. Now, layering AI on top of that foundation allows the platform to create hyper-personalized experiences across different user segments—commuters, motorcycle riders, and those who prefer minimal audio cues.</p>\n<p>The strategic implication is clear: companies that can segment users and deliver tailored experiences will win loyalty. By offering motorcycle-specific routing and customizable AI interaction levels, Waze isn't just improving features—it's expanding addressable markets and deepening user engagement across diverse rider communities.</p>\n<p>In the broader AI landscape, this move exemplifies practical AI integration. Rather than AI for AI's sake, these features solve genuine user pain points. As navigation becomes smarter, the winners will be platforms that understand their users deeply enough to anticipate what they actually need.</p>\n<p>Looking ahead, expect more apps to follow this playbook: leverage AI not just for optimization, but for segmentation and personalization. The future of navigation—and many other services—belongs to platforms that say: \"I know who you are, and I'll work the way you work.\"</p>\n<p>The real competitive advantage in AI isn't the algorithm; it's understanding your user deeply enough to make the technology invisible.</p>",
+  "category": "Products",
+  "hashtags": [
+   "AI",
+   "Navigation",
+   "ProductStrategy",
+   "UserExperience",
+   "TechInnovation"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_waze_ai_motorcycle_lesschatty_20260709.png",
+  "sourceUrl": "https://www.engadget.com/2211810/waze-rolls-out-ai-features-motorcycle-less-chatty-modes/",
+  "publishedAt": "2026-07-09T15:00:00.000-04:00",
+  "isVideo": false
+ },
+ {
   "id": "meta-jumps-into-ai-coding-market-20260709",
   "slug": "meta-jumps-into-ai-coding-market",
   "headline": "Meta Jumps Into the AI Coding Market to Chase Anthropic and OpenAI",
