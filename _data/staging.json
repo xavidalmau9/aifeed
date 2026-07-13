@@ -1,72 +1,58 @@
 [
   {
     "rank": 1,
-    "headline": "Apple sues OpenAI for allegedly stealing hardware secrets",
-    "link": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
+    "headline": "Europe&apos;s Anduril rival Helsing raises $1.8 billion at $18 billion valuation",
+    "link": "https://www.cnbc.com/2026/07/13/helsing-fund-raise-defense-18-billion.html",
     "score": 92,
-    "reason": "Major lawsuit between tech giants; specific allegations; significant legal/business implications"
+    "reason": "Major funding round with specific valuation; defense AI company; concrete numbers"
   },
   {
     "rank": 2,
-    "headline": "Meta deactivates feature that let you generate AI images of any public Instagram account",
-    "link": "https://www.engadget.com/2212843/meta-deactivates-muse-image-public-instagram-post-ai-images/",
-    "score": 85,
-    "reason": "Concrete product action; privacy controversy; major platform (Instagram) affected"
+    "headline": "Valarian raises $50 million to help governments and enterprises escape America's cloud grip",
+    "link": "https://fortune.com/2026/07/13/ai-sovereignty-cloud-valarian-50-million-nea-palantir-europe-microsoft-aws-google-defense/",
+    "score": 88,
+    "reason": "Large funding with specific amount; geopolitical angle; infrastructure play"
   },
   {
     "rank": 3,
-    "headline": "OpenAI's head of safety is reportedly leaving as part of company reorganization",
-    "link": "https://www.engadget.com/2212941/openai-head-of-safety-leaving-company-reorganization/",
-    "score": 82,
-    "reason": "Safety leadership departure during critical period; organizational restructuring; credible controversy"
+    "headline": "Meta turns off the Instagram feature that let users make AI deepfakes of public accounts",
+    "link": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
+    "score": 85,
+    "reason": "Concrete product action; controversy/safety angle; Meta policy reversal"
   },
   {
     "rank": 4,
-    "headline": "Phoebe Gates' AI shopping app Phia reportedly claimed unearned affiliate sales through fake clicks",
-    "link": "https://www.engadget.com/2212973/phoebe-gates-ai-shopping-app-phia-affiliate-sales-fake-clicks/",
-    "score": 79,
-    "reason": "Concrete fraud allegation; specific numbers (fake clicks); business failure with reputational impact"
+    "headline": "‘Almost unlimited’: Execs says AI demand remains strong even as enterprises move to ‘valuemaxxing’",
+    "link": "https://www.cnbc.com/2026/07/12/ai-demand-chips-data-centers-stock-volatility.html",
+    "score": 78,
+    "reason": "Enterprise spending/demand metric; market shift in AI purchasing patterns"
   },
   {
     "rank": 5,
-    "headline": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
-    "link": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
-    "score": 78,
-    "reason": "Major project cancellation with tangible outcome; billions invested; hardware legacy"
+    "headline": "Elon Musk and Sam Altman spar on X after Apple files OpenAI lawsuit",
+    "link": "https://www.cnbc.com/2026/07/12/elon-musk-and-sam-altman-spar-.html",
+    "score": 82,
+    "reason": "High-profile controversy; major players; legal action; business conflict"
   },
   {
     "rank": 6,
-    "headline": "While Musk&apos;s Neuralink drills into skulls, China&apos;s BrainCo bets the future of brain tech is wearable",
-    "link": "https://www.cnbc.com/2026/07/11/chinas-brainco-bets-on-wearable-brain-tech.html",
-    "score": 74,
-    "reason": "Direct competition between major players; contrasting approaches; significant tech race implications"
+    "headline": "Waze rolls out new AI features including Motorcycle and 'Less Chatty' modes",
+    "link": "https://www.engadget.com/2211810/waze-rolls-out-ai-features-motorcycle-less-chatty-modes/",
+    "score": 72,
+    "reason": "Product launch with specific features; Google/Alphabet AI integration"
   },
   {
     "rank": 7,
-    "headline": "Migrating a production AI agent to GPT-5.6: 2.2x faster, 27% cheaper",
-    "link": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
-    "score": 71,
-    "reason": "Concrete performance metrics; real production deployment data; significant improvements quantified"
+    "headline": "AI agent crawlers now need permission. Here's how to get it",
+    "link": "https://www.artificialintelligence-news.com/news/ai-agent-crawlers-cloudflare-rules/",
+    "score": 75,
+    "reason": "Policy/regulatory change affecting AI operations; practical impact"
   },
   {
     "rank": 8,
-    "headline": "Majority of U.S. workers support an AI wealth fund as tech layoffs surge, survey finds",
-    "link": "https://www.cnbc.com/2026/07/12/majority-of-us-workers-support-ai-fund-amid-tech-layoffs-survey.html",
-    "score": 69,
-    "reason": "Major survey finding; policy implications; ties to documented tech layoffs"
-  },
-  {
-    "rank": 9,
-    "headline": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
-    "link": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
-    "score": 65,
-    "reason": "Specific technical benchmark comparison; reveals efficiency differences between major models"
-  },
-  {
-    "rank": 10,
-    "headline": "Xbox gamer wins lawsuit against Microsoft to restore account and digital library",
-    "link": "https://www.engadget.com/2213111/xbox-gamer-wins-lawsuit-against-microsoft-to-restore-account-and-digital-library/",
-    "score": 62,
-    "reason": "Legal victory; consumer rights precedent; concrete outcome affecting digital ownership"
+    "headline": "Lorde says Ray-Ban Meta AI glasses are ‘not sexy’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/964539/lorde-says-ray-ban-meta-ai-glasses-are-not-sexy",
+    "score": 70,
+    "reason": "Celebrity criticism of Meta hardware; cultural controversy angle"
   }
 ]
