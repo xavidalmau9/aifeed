@@ -1,5 +1,24 @@
 [
  {
+  "id": "new-york-ai-data-center-moratorium-20260709",
+  "slug": "new-york-ai-data-center-moratorium",
+  "headline": "New York Becomes First State to Impose a Moratorium on AI Data Center Construction",
+  "summary": "New York just became the first state to impose a moratorium on new AI data center construction — a landmark clash between AI's soaring power and water demands and environmental limits.",
+  "body": "<p><strong>New York just became the first state to impose a moratorium on AI data center construction—a watershed moment that signals growing tension between technological ambition and environmental responsibility.</strong></p>\n<p>This decision marks a significant inflection point in how states are approaching the infrastructure demands of artificial intelligence. Data centers are the backbone of AI systems, but they're also resource-intensive facilities that consume enormous amounts of electricity and water. New York's move reflects mounting pressure from environmental advocates and policymakers concerned about the sustainability implications of unchecked AI expansion during a critical period for climate action.</p>\n<p>From a business perspective, this moratorium creates a complex landscape for tech companies planning infrastructure investments. Organizations that have targeted the Northeast corridor for data center development now face regulatory barriers that could redirect billions in capital investment. This isn't merely a local issue—it sets a precedent that other states and regions may follow, fundamentally altering how companies evaluate expansion strategies.</p>\n<p>The broader AI industry implications are substantial. As demand for computational power accelerates, data center availability will become a critical competitive factor. This could incentivize innovation in energy-efficient computing, alternative power sources, and distributed infrastructure models. Companies that can demonstrate sustainability leadership may gain regulatory approval where others face barriers.</p>\n<p>Looking forward, we should expect more states to implement similar measures. The conversation is shifting from \"Can we build this?\" to \"Should we build this here, and at what cost?\" This represents a maturation of the AI policy conversation beyond pure innovation enablement to include environmental stewardship and resource management.</p>\n<p>The real question isn't whether AI development will continue—it will—but where, how sustainably, and at what pace that development occurs.</p>",
+  "category": "Infrastructure",
+  "hashtags": [
+   "AIPolicy",
+   "DataCenterMoratorium",
+   "TechRegulation",
+   "Sustainability",
+   "AIInfrastructure"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_ny_ai_datacenter_moratorium_20260709.png",
+  "sourceUrl": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
+  "publishedAt": "2026-07-09T16:00:00.000-04:00",
+  "isVideo": false
+ },
+ {
   "id": "waze-ai-motorcycle-less-chatty-20260709",
   "slug": "waze-ai-motorcycle-less-chatty",
   "headline": "Waze Rolls Out AI Features: Motorcycle Mode and a 'Less Chatty' Option",
