@@ -1,107 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Elon Musk and Sam Altman are accusing each other of scamming investors as SpaceX and OpenAI jockey to lead AI revolution",
-    "link": "https://fortune.com/2026/07/13/elon-musk-sam-altman-feud-scam-accusations-spacex-openai-ipos-grok-gpt-apple-lawsuit/",
-    "score": 95,
-    "reason": "Major controversy between two biggest AI figures with serious fraud allegations"
+    "headline": "Google’s Demis Hassabis says it’s time for a global AI watchdog — led by the US",
+    "link": "https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog",
+    "score": 88,
+    "reason": "Major AI governance proposal from Google DeepMind leader; regulatory controversy; significant industry statement"
   },
   {
     "rank": 2,
-    "headline": "The 6 wildest claims in Apple's lawsuit against OpenAI",
-    "link": "https://www.theverge.com/tech/964843/apple-openai-lawsuit-wildest-claims",
-    "score": 92,
-    "reason": "Major lawsuit with concrete claims; big companies in direct legal conflict"
+    "headline": "New York becomes the first state to enact a data center moratorium",
+    "link": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
+    "score": 85,
+    "reason": "First-mover regulatory action; major policy impact on AI infrastructure; concrete government decision"
   },
   {
     "rank": 3,
-    "headline": "Majority of U.S. workers support an AI wealth fund as tech layoffs surge, survey finds",
-    "link": "https://www.cnbc.com/2026/07/12/majority-of-us-workers-support-ai-fund-amid-tech-layoffs-survey.html",
-    "score": 88,
-    "reason": "Big numbers: survey data on major policy shift; ties to real economic impact"
+    "headline": "Meta turns off the Instagram feature that let users make AI deepfakes of public accounts",
+    "link": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
+    "score": 82,
+    "reason": "Major platform feature removal; addresses AI misuse controversy; significant policy reversal"
   },
   {
     "rank": 4,
-    "headline": "Siri AI is already changing how I use my iPhone",
-    "link": "https://www.theverge.com/tech/964714/siri-ai-public-beta-preview-ios-27-hands-on",
-    "score": 85,
-    "reason": "Apple product launch/update with user impact evidence"
+    "headline": "Siri AI Is Becoming Apple’s Everything Tool",
+    "link": "https://www.wired.com/story/siri-ai-is-now-apple-everything-tool/",
+    "score": 78,
+    "reason": "Apple's major AI product expansion; broad platform integration launch"
   },
   {
     "rank": 5,
-    "headline": "What Anthropic’s latest AI discovery does—and doesn’t—show",
-    "link": "https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/",
-    "score": 82,
-    "reason": "Major AI lab breakthrough with concrete findings"
+    "headline": "Google brings Gemini in Chrome to UK users",
+    "link": "https://www.engadget.com/2212958/google-gemini-in-chrome-uk/",
+    "score": 76,
+    "reason": "Major product launch expansion to new region; significant AI assistant deployment"
   },
   {
     "rank": 6,
-    "headline": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
-    "link": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
-    "score": 80,
-    "reason": "Tangible outcome from major project cancellation; chip technology impact"
+    "headline": "DOGE Used AI for Housing Policy. The Government Won’t Say How",
+    "link": "https://www.wired.com/story/doge-deployed-ai-housing-policy/",
+    "score": 74,
+    "reason": "AI governance controversy; government accountability issue; transparency conflict"
   },
   {
     "rank": 7,
-    "headline": "Waze is getting a bunch of new AI-powered features",
-    "link": "https://www.theverge.com/transportation/964132/waze-gemini-ai-voice-commands-less-chatty",
-    "score": 78,
-    "reason": "Google product launch with multiple new AI capabilities"
+    "headline": "Samsung Health will delete your data unless you hand it over for AI training",
+    "link": "https://9to5google.com/2026/07/13/samsung-health-ai-training-data-consent/",
+    "score": 72,
+    "reason": "Major privacy controversy; forced data collection for AI; consumer pushback trigger"
   },
   {
     "rank": 8,
-    "headline": "Google AI Mode now lets you search your chat history on Android",
-    "link": "https://9to5google.com/2026/07/13/google-ai-mode-search-chat-history/",
-    "score": 76,
-    "reason": "Google feature launch; practical new capability"
+    "headline": "Waze rolls out new AI features including Motorcycle and 'Less Chatty' modes",
+    "link": "https://www.engadget.com/2211810/waze-rolls-out-ai-features-motorcycle-less-chatty-modes/",
+    "score": 68,
+    "reason": "Concrete product feature launches; AI integration in navigation"
   },
   {
     "rank": 9,
-    "headline": "Windows questions? How Copilot can analyze your PC settings now",
-    "link": "https://www.zdnet.com/article/microsoft-copilot-analyze-windows/",
-    "score": 74,
-    "reason": "Microsoft Copilot capability expansion; real functionality"
+    "headline": "AI agent crawlers now need permission. Here's how to get it",
+    "link": "https://www.artificialintelligence-news.com/news/ai-agent-crawlers-cloudflare-rules/",
+    "score": 66,
+    "reason": "Policy change affecting AI operations; SEO/web scraping regulation"
   },
   {
     "rank": 10,
-    "headline": "The AI Arms Race in Technical Interviews Is Escalating",
-    "link": "https://spectrum.ieee.org/technical-interview-ai-arms-race",
-    "score": 72,
-    "reason": "Concrete trend with measurable escalation in AI usage"
-  },
-  {
-    "rank": 11,
-    "headline": "Building a Foundation Stack for General-Purpose Robots",
-    "link": "https://spectrum.ieee.org/x-square-robot-embodied-ai-stack",
-    "score": 70,
-    "reason": "Major AI infrastructure development for robotics"
-  },
-  {
-    "rank": 12,
-    "headline": "The fight against AI data centers is just beginning",
-    "link": "https://www.theverge.com/column/963346/ai-data-centers-fight",
-    "score": 68,
-    "reason": "Emerging controversy/conflict over AI infrastructure impact"
-  },
-  {
-    "rank": 13,
-    "headline": "Scientists’ Side Hustle? Using AI and Quantum Computing to Generate New Peptides",
-    "link": "https://www.wired.com/story/scientists-using-ai-and-quantum-computing-to-generate-new-peptides/",
-    "score": 65,
-    "reason": "Concrete AI application with measurable scientific output"
-  },
-  {
-    "rank": 14,
-    "headline": "TV-logging app TV Time is functionally relaunching as parent company pivots to AI",
-    "link": "https://www.engadget.com/2213944/tv-time-is-relaunching-as-its-parent-company-pivots-to-ai/",
+    "headline": "Lorde says Ray-Ban Meta AI glasses are ‘not sexy’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/964539/lorde-says-ray-ban-meta-ai-glasses-are-not-sexy",
     "score": 62,
-    "reason": "Company pivot to AI with tangible business change"
-  },
-  {
-    "rank": 15,
-    "headline": "Apple&#x27;s new SpeechAnalyzer API, benchmarked against Whisper and its predecessor",
-    "link": "https://get-inscribe.com/blog/apple-speech-api-benchmark.html",
-    "score": 60,
-    "reason": "Apple product launch with performance benchmarks"
+    "reason": "High-profile celebrity criticism of AI product; cultural pushback; media impact"
   }
 ]
