@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Google’s Demis Hassabis says it’s time for a global AI watchdog — led by the US",
-    "link": "https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog",
-    "score": 88,
-    "reason": "Major AI governance proposal from Google DeepMind leader; regulatory controversy; significant industry statement"
+    "headline": "SpaceXAI's Grok programming tool was uploading its users' entire codebase to cloud storage",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload",
+    "score": 94,
+    "reason": "Major security/privacy breach with concrete evidence of data exfiltration"
   },
   {
     "rank": 2,
-    "headline": "New York becomes the first state to enact a data center moratorium",
-    "link": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
-    "score": 85,
-    "reason": "First-mover regulatory action; major policy impact on AI infrastructure; concrete government decision"
+    "headline": "Meta accused of using biased AI targeting for mass layoffs",
+    "link": "https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs",
+    "score": 92,
+    "reason": "Lawsuit filed by employees; major controversy with systemic implications"
   },
   {
     "rank": 3,
-    "headline": "Meta turns off the Instagram feature that let users make AI deepfakes of public accounts",
-    "link": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
-    "score": 82,
-    "reason": "Major platform feature removal; addresses AI misuse controversy; significant policy reversal"
+    "headline": "U.S. trade official says &apos;very few&apos; Nvidia H200 AI chips have been shipped to China",
+    "link": "https://www.cnbc.com/2026/07/14/nvidia-h200-ai-chips-china.html",
+    "score": 88,
+    "reason": "Major geopolitical AI/chip export control story with quantified impact"
   },
   {
     "rank": 4,
-    "headline": "Siri AI Is Becoming Apple’s Everything Tool",
-    "link": "https://www.wired.com/story/siri-ai-is-now-apple-everything-tool/",
-    "score": 78,
-    "reason": "Apple's major AI product expansion; broad platform integration launch"
+    "headline": "Three publishers challenge Google over AI copyright infringement",
+    "link": "https://www.engadget.com/2215206/three-publishers-challenge-google-over-ai-copyright-infringement/",
+    "score": 87,
+    "reason": "Significant legal action against major AI player; systemic copyright issue"
   },
   {
     "rank": 5,
-    "headline": "Google brings Gemini in Chrome to UK users",
-    "link": "https://www.engadget.com/2212958/google-gemini-in-chrome-uk/",
-    "score": 76,
-    "reason": "Major product launch expansion to new region; significant AI assistant deployment"
+    "headline": "The Google Images homepage will recommend photos even before you search",
+    "link": "https://www.theverge.com/tech/965138/google-images-homepage-ai-overviews-search-nano-banana",
+    "score": 85,
+    "reason": "Major Google product launch; changes core search behavior"
   },
   {
     "rank": 6,
-    "headline": "DOGE Used AI for Housing Policy. The Government Won’t Say How",
-    "link": "https://www.wired.com/story/doge-deployed-ai-housing-policy/",
-    "score": 74,
-    "reason": "AI governance controversy; government accountability issue; transparency conflict"
+    "headline": "Google Search will let you instantly generate AI images for free - here's how",
+    "link": "https://www.zdnet.com/article/google-search-generate-ai-images-free/",
+    "score": 83,
+    "reason": "Significant Google feature launch with broad user impact"
   },
   {
     "rank": 7,
-    "headline": "Samsung Health will delete your data unless you hand it over for AI training",
-    "link": "https://9to5google.com/2026/07/13/samsung-health-ai-training-data-consent/",
-    "score": 72,
-    "reason": "Major privacy controversy; forced data collection for AI; consumer pushback trigger"
+    "headline": "Google is training AI on even more of your data now, unless you opt out - here's how",
+    "link": "https://www.zdnet.com/article/google-training-ai-on-more-of-your-data-now-unless-you-opt-out/",
+    "score": 82,
+    "reason": "Major policy change; privacy/consent controversy"
   },
   {
     "rank": 8,
-    "headline": "Waze rolls out new AI features including Motorcycle and 'Less Chatty' modes",
-    "link": "https://www.engadget.com/2211810/waze-rolls-out-ai-features-motorcycle-less-chatty-modes/",
-    "score": 68,
-    "reason": "Concrete product feature launches; AI integration in navigation"
+    "headline": "Spotify is now an AI chatbot, too",
+    "link": "https://www.theverge.com/entertainment/965358/spotify-ai-chatbot-interface-music-audiobooks-podcasts",
+    "score": 81,
+    "reason": "Major company pivots core product into AI; significant feature launch"
   },
   {
     "rank": 9,
-    "headline": "AI agent crawlers now need permission. Here's how to get it",
-    "link": "https://www.artificialintelligence-news.com/news/ai-agent-crawlers-cloudflare-rules/",
-    "score": 66,
-    "reason": "Policy change affecting AI operations; SEO/web scraping regulation"
+    "headline": "Google DeepMind chief Demis Hassabis calls for U.S. to spearhead AI standards body",
+    "link": "https://www.cnbc.com/2026/07/14/google-deepmind-demis-hassabis-us-led-ai-standards-body.html",
+    "score": 80,
+    "reason": "Major governance proposal from leading AI researcher; regulatory implication"
   },
   {
     "rank": 10,
-    "headline": "Lorde says Ray-Ban Meta AI glasses are ‘not sexy’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/964539/lorde-says-ray-ban-meta-ai-glasses-are-not-sexy",
-    "score": 62,
-    "reason": "High-profile celebrity criticism of AI product; cultural pushback; media impact"
+    "headline": "Bonsai 27B: A 27B-Class Model that runs on a phone",
+    "link": "https://prismml.com/news/bonsai-27b",
+    "score": 78,
+    "reason": "Significant technical milestone; enables on-device AI at scale"
   }
 ]
