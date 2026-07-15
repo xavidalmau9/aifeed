@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "SpaceXAI's Grok programming tool was uploading its users' entire codebase to cloud storage",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload",
-    "score": 94,
-    "reason": "Major security/privacy breach with concrete evidence of data exfiltration"
+    "headline": "OpenAI Staffers Are Funding a Rival Super PAC to Take on Their Boss",
+    "link": "https://www.wired.com/story/openai-employees-donations-guardrails-alliance-leading-the-future/",
+    "score": 95,
+    "reason": "Major controversy: internal rebellion with financial backing against leadership"
   },
   {
     "rank": 2,
-    "headline": "Meta accused of using biased AI targeting for mass layoffs",
-    "link": "https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs",
+    "headline": "Former employees sue over Meta's alleged use of biased AI systems during layoffs",
+    "link": "https://www.engadget.com/2215258/former-employees-sue-over-meta-s-alleged-use-of-biased-ai-systems-during-layoffs/",
     "score": 92,
-    "reason": "Lawsuit filed by employees; major controversy with systemic implications"
+    "reason": "Large-scale lawsuit alleging discrimination in AI deployment affecting thousands"
   },
   {
     "rank": 3,
-    "headline": "U.S. trade official says &apos;very few&apos; Nvidia H200 AI chips have been shipped to China",
-    "link": "https://www.cnbc.com/2026/07/14/nvidia-h200-ai-chips-china.html",
+    "headline": "Google’s Demis Hassabis says it’s time for a global AI watchdog — led by the US",
+    "link": "https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog",
     "score": 88,
-    "reason": "Major geopolitical AI/chip export control story with quantified impact"
+    "reason": "Major governance proposal from DeepMind CEO on regulatory framework"
   },
   {
     "rank": 4,
-    "headline": "Three publishers challenge Google over AI copyright infringement",
-    "link": "https://www.engadget.com/2215206/three-publishers-challenge-google-over-ai-copyright-infringement/",
+    "headline": "New York becomes the first state to enact a data center moratorium",
+    "link": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
     "score": 87,
-    "reason": "Significant legal action against major AI player; systemic copyright issue"
+    "reason": "First major regulatory action limiting AI infrastructure expansion"
   },
   {
     "rank": 5,
-    "headline": "The Google Images homepage will recommend photos even before you search",
-    "link": "https://www.theverge.com/tech/965138/google-images-homepage-ai-overviews-search-nano-banana",
+    "headline": "OpenAI's first device will reportedly be a 'humanlike' rechargeable speaker",
+    "link": "https://www.engadget.com/2215417/openai-first-device-humanlike-rechargeable-speaker/",
     "score": 85,
-    "reason": "Major Google product launch; changes core search behavior"
+    "reason": "Hardware launch announcement from major AI company"
   },
   {
     "rank": 6,
-    "headline": "Google Search will let you instantly generate AI images for free - here's how",
-    "link": "https://www.zdnet.com/article/google-search-generate-ai-images-free/",
+    "headline": "DOGE Used AI for Housing Policy. The Government Won’t Say How",
+    "link": "https://www.wired.com/story/doge-deployed-ai-housing-policy/",
     "score": 83,
-    "reason": "Significant Google feature launch with broad user impact"
+    "reason": "Government AI deployment controversy with lack of transparency"
   },
   {
     "rank": 7,
-    "headline": "Google is training AI on even more of your data now, unless you opt out - here's how",
-    "link": "https://www.zdnet.com/article/google-training-ai-on-more-of-your-data-now-unless-you-opt-out/",
-    "score": 82,
-    "reason": "Major policy change; privacy/consent controversy"
+    "headline": "Zipline adds ex-Tesla, Uber, Waymo execs to make drone delivery mainstream across U.S.",
+    "link": "https://www.cnbc.com/2026/07/14/zipline-drone-delivery-tesla-uber-waymo-executives.html",
+    "score": 81,
+    "reason": "Major team expansion signaling scaled AI/automation deployment"
   },
   {
     "rank": 8,
-    "headline": "Spotify is now an AI chatbot, too",
-    "link": "https://www.theverge.com/entertainment/965358/spotify-ai-chatbot-interface-music-audiobooks-podcasts",
-    "score": 81,
-    "reason": "Major company pivots core product into AI; significant feature launch"
+    "headline": "Apple in talks with startup that shrinks AI models to run on an iPhone",
+    "link": "https://www.cnbc.com/2026/07/14/apple-prismml-ai-compression-iphone.html",
+    "score": 80,
+    "reason": "Apple's on-device AI strategy announcement"
   },
   {
     "rank": 9,
-    "headline": "Google DeepMind chief Demis Hassabis calls for U.S. to spearhead AI standards body",
-    "link": "https://www.cnbc.com/2026/07/14/google-deepmind-demis-hassabis-us-led-ai-standards-body.html",
-    "score": 80,
-    "reason": "Major governance proposal from leading AI researcher; regulatory implication"
+    "headline": "YouTube and X Have Become ‘Gateways’ to Nudify Apps",
+    "link": "https://www.wired.com/story/youtube-and-x-have-become-gateways-to-nudify-apps/",
+    "score": 78,
+    "reason": "Major platform misuse and potential harms controversy"
   },
   {
     "rank": 10,
-    "headline": "Bonsai 27B: A 27B-Class Model that runs on a phone",
-    "link": "https://prismml.com/news/bonsai-27b",
-    "score": 78,
-    "reason": "Significant technical milestone; enables on-device AI at scale"
+    "headline": "Spotify adds its own AI chatbot – here's what you can do with it [Video]",
+    "link": "https://9to5google.com/2026/07/14/spotify-adds-its-own-ai-chatbot-heres-what-you-can-do-with-it-video/",
+    "score": 76,
+    "reason": "New AI product launch from major consumer platform"
+  },
+  {
+    "rank": 11,
+    "headline": "I tricked Claude into leaking your deepest, darkest secrets",
+    "link": "https://www.ayush.digital/blog/the-memory-heist",
+    "score": 75,
+    "reason": "Security/privacy vulnerability disclosure for major AI model"
+  },
+  {
+    "rank": 12,
+    "headline": "ASML rises 3% after hiking sales forecast for second time this year on strong AI chip demand",
+    "link": "https://www.cnbc.com/2026/07/15/asml-2q-earnings-ai-chips-orders.html",
+    "score": 74,
+    "reason": "Quantifiable market impact: repeated forecast raises due to AI"
+  },
+  {
+    "rank": 13,
+    "headline": "The AI boom just found two new winners: Goldman Sachs and JPMorgan Chase",
+    "link": "https://www.cnbc.com/2026/07/14/goldman-sachs-and-jpmorgan-chase-are-emerging-as-ai-winners.html",
+    "score": 72,
+    "reason": "Major financial institutions capturing AI-driven business value"
+  },
+  {
+    "rank": 14,
+    "headline": "Taiwan&apos;s second-largest chipmaker starts mass production in Singapore; Citi sees improving outlook",
+    "link": "https://www.cnbc.com/2026/07/14/umc-starts-mass-production-in-singapore-citi-sees-improving-outlook.html",
+    "score": 71,
+    "reason": "Major supply chain expansion for AI chip production"
+  },
+  {
+    "rank": 15,
+    "headline": "What Anthropic’s latest AI discovery does—and doesn’t—show",
+    "link": "https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/",
+    "score": 70,
+    "reason": "Anthropic research milestone announced"
+  },
+  {
+    "rank": 16,
+    "headline": "The 6 wildest claims in Apple's lawsuit against OpenAI",
+    "link": "https://www.theverge.com/tech/964843/apple-openai-lawsuit-wildest-claims",
+    "score": 68,
+    "reason": "Major lawsuit between tech giants over AI technology"
+  },
+  {
+    "rank": 17,
+    "headline": "Altman warns of \"hiccups\" with new flagship Sol model",
+    "link": "https://www.axios.com/2026/07/14/sam-altman-chat-gpt-sol-ultra-warning",
+    "score": 66,
+    "reason": "OpenAI flagship model performance issues disclosed"
+  },
+  {
+    "rank": 18,
+    "headline": "Help wanted: Anthropic hires to head off catastrophe",
+    "link": "https://www.axios.com/2026/07/15/anthropic-hiring-catastrophe-amodei",
+    "score": 64,
+    "reason": "Major hiring for AI safety addressing existential concerns"
+  },
+  {
+    "rank": 19,
+    "headline": "Samsung Health will delete your data unless you hand it over for AI training",
+    "link": "https://9to5google.com/2026/07/13/samsung-health-ai-training-data-consent/",
+    "score": 62,
+    "reason": "Privacy controversy: coercive data practices for AI training"
+  },
+  {
+    "rank": 20,
+    "headline": "The AI Arms Race in Technical Interviews Is Escalating",
+    "link": "https://spectrum.ieee.org/technical-interview-ai-arms-race",
+    "score": 60,
+    "reason": "Widespread AI adoption impact on hiring and assessment"
   }
 ]
