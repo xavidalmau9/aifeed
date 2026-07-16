@@ -1,5 +1,24 @@
 [
  {
+  "id": "ai-police-hidden-market-20260709",
+  "slug": "ai-police-hidden-market",
+  "headline": "Police Are Spending Millions on AI — and the Market Is Largely Hidden",
+  "summary": "A Verge investigation reveals a booming, largely hidden market selling facial-recognition and predictive-policing AI to U.S. police departments — with little public scrutiny or oversight.",
+  "body": "<p><strong>Police departments are spending millions on AI systems—but the full scope of this market and its implications remain largely hidden.</strong></p>\n<p>Law enforcement agencies across the United States are rapidly adopting artificial intelligence tools, from facial recognition systems to predictive policing algorithms. The Verge's investigation reveals how a growing ecosystem of companies is profiting from this trend, often with minimal public scrutiny or regulatory oversight. This shift represents a fundamental change in how policing operates, yet most citizens remain unaware of the extent to which their local departments deploy these technologies.</p>\n<p>The business model is straightforward: vendors offer AI-powered solutions that promise to make policing more efficient and effective. Companies market these tools as objective, data-driven alternatives to human judgment. However, the reality is far more complex. These systems are built on historical data that often reflects decades of biased policing practices, raising critical questions about whether AI amplifies or perpetuates systemic inequalities.</p>\n<p>From a strategic standpoint, police departments face pressure to modernize and appear technologically sophisticated. Budget constraints push them toward outsourced AI solutions rather than building capabilities in-house. This creates a dependency on private vendors whose profit incentives may not align with public accountability or transparency.</p>\n<p>The broader AI industry must reckon with how its products operate in real-world power structures. Selling to law enforcement isn't neutral—it's a choice with profound societal consequences. The companies involved bear responsibility for understanding and mitigating potential harms.</p>\n<p>As this market expands, the questions become urgent: Who audits these systems? How do we ensure accountability? What safeguards protect civil liberties? The answers will shape policing in America for decades to come.</p>\n<p>The fundamental takeaway: we need transparency, oversight, and public input before AI becomes the default decision-maker in law enforcement.</p>",
+  "category": "Safety",
+  "hashtags": [
+   "AIGovernance",
+   "LawEnforcement",
+   "ArtificialIntelligence",
+   "Ethics",
+   "FutureOfWork"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_ai_policing_hidden_market_20260709.png",
+  "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/965066/ai-police-cops",
+  "publishedAt": "2026-07-09T18:00:00.000-04:00",
+  "isVideo": false
+ },
+ {
   "id": "openai-first-device-ai-speaker-20260709",
   "slug": "openai-first-device-ai-speaker",
   "headline": "OpenAI's First Device Is Reportedly a Humanlike, Rechargeable AI Speaker",
