@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "COMPUTER COPS: Inside the big business of selling AI to the police",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/965066/ai-police-cops",
-    "score": 94,
-    "reason": "Major investigative piece on AI deployment in law enforcement with controversy angle"
+    "headline": "Google ordered to open Android and Search to rivals in Europe",
+    "link": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma",
+    "score": 96,
+    "reason": "Major regulatory action with concrete business impact; EU forcing structural changes to Google's business"
   },
   {
     "rank": 2,
-    "headline": "xAI sues a man for using Grok to generate CSAM 'deepfakes'",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/966293/xai-grok-user-lawsuit-csam",
-    "score": 92,
-    "reason": "Major lawsuit from xAI/Elon Musk, significant legal controversy over AI misuse"
+    "headline": "Suno snatched millions of songs from YouTube, Genius, and Deezer",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/966072/suno-ai-music-training-scraping-youtube-hack",
+    "score": 94,
+    "reason": "Major copyright controversy with specific numbers; ongoing legal/ethical dispute affecting AI music sector"
   },
   {
     "rank": 3,
-    "headline": "OpenAI Staffers Are Funding a Rival Super PAC to Take on Their Boss",
-    "link": "https://www.wired.com/story/openai-employees-donations-guardrails-alliance-leading-the-future/",
-    "score": 90,
-    "reason": "Major internal controversy at OpenAI, significant political/organizational conflict"
+    "headline": "The agent security gap: 54% of enterprises have already had an AI agent incident, and most still let agents share credentials",
+    "link": "https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials",
+    "score": 93,
+    "reason": "Significant security vulnerability discovery with big number; widespread enterprise risk exposure"
   },
   {
     "rank": 4,
-    "headline": "Neko Health raises $700 million to expand AI body scans in the US",
-    "link": "https://www.artificialintelligence-news.com/news/neko-health-700m-ai-body-scans-us/",
-    "score": 88,
-    "reason": "Large funding round ($700M) for AI healthcare application, significant expansion"
+    "headline": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
+    "link": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
+    "score": 91,
+    "reason": "Novel AI safety tool launch; concrete product addressing security gap"
   },
   {
     "rank": 5,
-    "headline": "Nvidia unveils new AI model and expands Japan’s physical AI ecosystem",
-    "link": "https://www.cnbc.com/2026/07/16/nvidia-reveals-new-ai-model-and-expands-japans-physical-ai-ecosystem.html",
-    "score": 86,
-    "reason": "Major Nvidia product launch with significant geographical expansion strategy"
+    "headline": "Claude can now use your 1Password credentials for you",
+    "link": "https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration",
+    "score": 90,
+    "reason": "Major capability launch with security implications; enables agent use cases"
   },
   {
     "rank": 6,
-    "headline": "OpenAI finally launches hardware… for Codex",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/965901/openai-hardware-codex-micro-launch",
-    "score": 84,
-    "reason": "OpenAI hardware launch, tangible product expansion beyond software"
+    "headline": "New York governor says she's using AI to analyze 'every single rule' in the state",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/966647/new-york-governor-kathy-hochul-ai-policies",
+    "score": 89,
+    "reason": "Large-scale government AI deployment; significant real-world application"
   },
   {
     "rank": 7,
-    "headline": "The Oversight Board says leading AI models might be restricting free expression",
-    "link": "https://www.engadget.com/2216274/the-oversight-board-says-leading-ai-models-might-be-restricting-free-expression/",
-    "score": 82,
-    "reason": "Major criticism from Facebook's Oversight Board of multiple AI models on censorship"
+    "headline": "Nvidia-backed Fireworks hits $17.5 billion valuation as companies pursue cheaper AI models",
+    "link": "https://www.cnbc.com/2026/07/16/fireworks-nvidia-cloud-ai-startup-value.html",
+    "score": 88,
+    "reason": "Major funding milestone with big number; reflects competitive AI infrastructure trend"
   },
   {
     "rank": 8,
-    "headline": "Bunkerhill Health raises $55 million to put AI agents to work inside hospitals",
-    "link": "https://fortune.com/2026/07/16/bunkerhill-health-raises-55-million-ai-agents-work-inside-hospitals/",
-    "score": 78,
-    "reason": "Significant healthcare AI funding round, agentic AI deployment"
+    "headline": "MLB bans using dugout iPads for AI-powered in-game strategy calls",
+    "link": "https://www.engadget.com/2217032/mlb-bans-using-dugout-ipads-for-ai-powered-in-game-strategy-calls/",
+    "score": 87,
+    "reason": "Significant controversy with concrete action; AI regulation in sports"
   },
   {
     "rank": 9,
-    "headline": "Catching up in the AI race? India gets its second AI unicorn in a month",
-    "link": "https://www.cnbc.com/2026/07/16/catching-up-in-the-ai-race-india-gets-its-second-ai-unicorn-in-a-month.html",
-    "score": 76,
-    "reason": "Major milestone in India's AI ecosystem development, big numbers on valuation"
+    "headline": "The AI compute gap: Enterprises are buying infrastructure faster than they can measure what it costs",
+    "link": "https://venturebeat.com/ai/the-ai-compute-gap-enterprises-are-buying-infrastructure-faster-than-they-can-measure-what-it-costs",
+    "score": 85,
+    "reason": "Major enterprise spending revelation; quantifies infrastructure scaling challenge"
   },
   {
     "rank": 10,
-    "headline": "YouTube and X Have Become ‘Gateways’ to Nudify Apps",
-    "link": "https://www.wired.com/story/youtube-and-x-have-become-gateways-to-nudify-apps/",
-    "score": 74,
-    "reason": "Major platforms identified enabling AI-generated sexual abuse material, serious controversy"
+    "headline": "Google AI Mode now integrates with Canva, YouTube Music and Instacart",
+    "link": "https://www.engadget.com/2216707/google-ai-mode-now-integrates-with-canva-youtube-music-and-instacart/",
+    "score": 84,
+    "reason": "Significant product ecosystem expansion; multiple integration launch"
   },
   {
     "rank": 11,
-    "headline": "This AI Folds DNA Into Mini Masterpieces",
-    "link": "https://spectrum.ieee.org/ai-dna-origami",
-    "score": 70,
-    "reason": "Significant AI application in synthetic biology/DNA engineering"
+    "headline": "Meta will alert parents if their teens discuss self harm with Meta AI tools",
+    "link": "https://www.engadget.com/2216412/meta-ai-alert-parents-if-teens-discuss-self-harm/",
+    "score": 83,
+    "reason": "Major safety feature launch; addresses child safety concern"
   },
   {
     "rank": 12,
-    "headline": "Gemini Spark gets Workspace upgrades as Google teases AI Pro access soon",
-    "link": "https://9to5google.com/2026/07/15/gemini-spark-workspace-upgrades/",
-    "score": 68,
-    "reason": "Google major product feature expansion for Gemini AI suite"
+    "headline": "Gemini 3.5 Pro delays due to coding performance, upgraded Flash model in testing",
+    "link": "https://9to5google.com/2026/07/16/gemini-3-5-pro-delays/",
+    "score": 82,
+    "reason": "Major product delay with specific technical reason; impacts competitive timeline"
   },
   {
     "rank": 13,
-    "headline": "An Inventor of Apple’s FaceID Wants to Analyze Your Brain’s Health With AI",
-    "link": "https://www.wired.com/story/the-apple-faceid-veteran-building-a-frontier-ai-model-for-the-human-brain/",
-    "score": 66,
-    "reason": "Major tech figure launching novel AI health application"
+    "headline": "It's official: EU will force Google to share search data and open up AI on Android",
+    "link": "https://arstechnica.com/gadgets/2026/07/its-official-eu-will-force-google-to-share-search-data-and-open-up-ai-on-android/",
+    "score": 81,
+    "reason": "Regulatory enforcement confirmation; concrete compliance requirements"
   },
   {
     "rank": 14,
-    "headline": "Spotify adds its own AI chatbot – here's what you can do with it [Video]",
-    "link": "https://9to5google.com/2026/07/14/spotify-adds-its-own-ai-chatbot-heres-what-you-can-do-with-it-video/",
-    "score": 64,
-    "reason": "Major consumer platform adds AI chatbot feature, significant expansion of AI integration"
+    "headline": "Here’s Why Anthropic Is Pushing States to Regulate AI Faster",
+    "link": "https://www.wired.com/story/why-anthropic-is-pushing-states-to-regulate-ai-faster/",
+    "score": 79,
+    "reason": "Major AI company advocacy for regulation; positions Anthropic on policy"
   },
   {
     "rank": 15,
-    "headline": "AWS and Bluesight build AI for hospital 340B compliance",
-    "link": "https://www.artificialintelligence-news.com/news/aws-and-bluesight-build-ai-for-hospital-340b-compliance/",
-    "score": 62,
-    "reason": "AWS major healthcare AI application launch with enterprise partner"
+    "headline": "Linus Torvalds puts his foot down, tells anti-AI programmers to 'fork it'",
+    "link": "https://www.zdnet.com/article/linus-torvalds-puts-his-foot-down-tells-anti-ai-programmers-to-fork-it/",
+    "score": 78,
+    "reason": "Significant open-source leadership stance; reflects AI integration debate in Linux"
   },
   {
     "rank": 16,
-    "headline": "Help wanted: Anthropic hires to head off catastrophe",
-    "link": "https://www.axios.com/2026/07/15/anthropic-hiring-catastrophe-amodei",
-    "score": 60,
-    "reason": "Anthropic major hiring push for AI safety/risk mitigation, significant investment signal"
+    "headline": "OpenAI may announce a ChatGPT smart speaker this year",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/965670/openai-chatgpt-ai-smart-speaker-hardware-device",
+    "score": 76,
+    "reason": "Product launch announcement; enters hardware market competing with Google/Amazon"
   },
   {
     "rank": 17,
-    "headline": "Behind the Curtain: AI godfathers converge on regulations",
-    "link": "https://www.axios.com/2026/07/16/ai-regulations-openai-anthropic-google",
-    "score": 58,
-    "reason": "Major AI leaders meeting on policy/regulation, industry-wide governance discussion"
+    "headline": "Buffett says AI giants are ‘playing a game they don’t want to play’ in the AI race, reveals he was behind Berkshire’s $31 billion bet on Google",
+    "link": "https://fortune.com/2026/07/16/warren-buffett-google-berkshire-ai-race/",
+    "score": 75,
+    "reason": "Major investor critique with $31B Google bet revelation; influential market perspective"
   },
   {
     "rank": 18,
-    "headline": "Apple is reportedly shopping for AI chip companies",
-    "link": "https://www.engadget.com/2215912/apple-is-reportedly-shopping-for-ai-chip-companies/",
-    "score": 56,
-    "reason": "Apple major acquisition targeting, vertical integration in AI infrastructure"
+    "headline": "Thinking Machines Lab Drops Its First Model",
+    "link": "https://www.wired.com/story/thinking-machines-lab-releases-its-first-model-inkling/",
+    "score": 73,
+    "reason": "New AI company model launch; new entrant in foundation models space"
   },
   {
     "rank": 19,
-    "headline": "Hyundai reportedly looking to take total control of robotics giant Boston Dynamics",
-    "link": "https://www.engadget.com/2216427/hyundai-reportedly-looking-to-buy-all-of-boston-dynamics-from-softbank/",
-    "score": 54,
-    "reason": "Major acquisition move for robotics/embodied AI company"
+    "headline": "Please Stop Making Me Opt Out of AI",
+    "link": "https://www.wired.com/story/please-stop-making-me-opt-out-of-ai/",
+    "score": 72,
+    "reason": "Consumer advocacy perspective on AI consent/defaults; growing user backlash"
   },
   {
     "rank": 20,
-    "headline": "Alibaba and Baidu shares jump in Hong Kong on Apple AI partnership",
-    "link": "https://www.cnbc.com/2026/07/16/alibaba-baidu-shares-jump-apple-ai-partnership-.html",
-    "score": 52,
-    "reason": "Major partnership between Apple and Chinese AI companies, significant market impact"
+    "headline": "Samsung Health won't delete all of your data if you opt out of AI training after all [U]",
+    "link": "https://9to5google.com/2026/07/15/samsung-health-ai-training-data-consent/",
+    "score": 71,
+    "reason": "User privacy policy reversal; consumer protection win on AI data usage"
   }
 ]
