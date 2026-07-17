@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "xAI sues a man for using Grok to generate CSAM 'deepfakes'",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/966293/xai-grok-user-lawsuit-csam",
+    "headline": "The agent security gap: 54% of enterprises have already had an AI agent incident, and most still let agents share credentials",
+    "link": "https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials",
     "score": 92,
-    "reason": "Major lawsuit, serious controversy, concrete legal action"
+    "reason": "Major security vulnerability with big numbers and real-world impact"
   },
   {
     "rank": 2,
-    "headline": "San Francisco Demands Apple and Google Delete AI ‘Nudify’ Apps From App Stores",
-    "link": "https://www.wired.com/story/san-francisco-demands-apple-and-google-delete-ai-nudify-apps-from-app-stores/",
-    "score": 89,
-    "reason": "Regulatory action, major companies, content moderation controversy"
+    "headline": "Bunkerhill raises $55M to scale agentic AI across health systems",
+    "link": "https://www.artificialintelligence-news.com/news/bunkerhill-raises-55m-scale-agentic-ai-health-systems/",
+    "score": 85,
+    "reason": "Significant funding round in emerging AI agent space"
   },
   {
     "rank": 3,
-    "headline": "Netflix used AI to produce 17 minutes of a documentary 'twice as fast and at half the cost'—as streaming competition drives up content spending to $20 billion",
-    "link": "https://fortune.com/2026/07/16/netflix-made-17-minutes-of-a-documentary-twice-as-fast-and-at-half-the-cost-amid-a-20-billion-projected-cost-for-content/",
-    "score": 87,
-    "reason": "Concrete production numbers, cost/speed metrics, major entertainment company"
+    "headline": "Google ordered to open Android and Search to rivals in Europe",
+    "link": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma",
+    "score": 88,
+    "reason": "Major regulatory action with major financial/operational implications"
   },
   {
     "rank": 4,
-    "headline": "Netflix says it's already used AI in 'roughly 300' titles this year",
-    "link": "https://www.engadget.com/2217157/netflix-says-it-s-already-used-ai-in-roughly-300-titles-this-year/",
-    "score": 85,
-    "reason": "Large-scale implementation number (300 titles), major studio adoption"
+    "headline": "It's official: EU will force Google to share search data and open up AI on Android",
+    "link": "https://arstechnica.com/gadgets/2026/07/its-official-eu-will-force-google-to-share-search-data-and-open-up-ai-on-android/",
+    "score": 87,
+    "reason": "Landmark regulatory enforcement with concrete requirements"
   },
   {
     "rank": 5,
-    "headline": "A Humanoid Company Backed by Eric Trump Is Preparing Its Robots for War",
-    "link": "https://www.wired.com/story/humanoid-robot-soldier-eric-trump-foundation-future-industries/",
-    "score": 84,
-    "reason": "Controversy, military robotics application, notable backing"
+    "headline": "Claude can now use your 1Password credentials for you",
+    "link": "https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration",
+    "score": 81,
+    "reason": "Significant AI capability launch with security implications"
   },
   {
     "rank": 6,
-    "headline": "Neko Health raises $700 million to expand AI body scans in the US",
-    "link": "https://www.artificialintelligence-news.com/news/neko-health-700m-ai-body-scans-us/",
-    "score": 83,
-    "reason": "Major funding round ($700M), healthcare AI launch"
+    "headline": "Meta is reportedly considering a multibillion-dollar data center deal with Anthropic",
+    "link": "https://www.engadget.com/2217904/meta-is-reportedly-considering-a-multibillion-dollar-data-center-deal-with-anthropic/",
+    "score": 84,
+    "reason": "Major corporate deal, big numbers, industry consolidation"
   },
   {
     "rank": 7,
-    "headline": "Anthropic's Claude Corps will pay $85,000 to 1,000 early-career professionals - apply now",
-    "link": "https://www.zdnet.com/article/anthropic-claude-corps-pays-early-career-professionals-apply-now/",
+    "headline": "Businesses are experimenting with cheaper Chinese AI models as U.S. rivals get more expensive",
+    "link": "https://fortune.com/2026/07/17/businesses-turn-to-cheaper-chinese-ai-models/",
     "score": 82,
-    "reason": "Program launch, $85M total commitment, talent initiative"
+    "reason": "Market shift with competitive and geopolitical implications"
   },
   {
     "rank": 8,
-    "headline": "1Password's new Agentic Mode lets Claude log into your accounts without seeing your credentials",
-    "link": "https://www.zdnet.com/article/1password-claude-agentic-mode/",
-    "score": 81,
-    "reason": "Feature launch, security implications, Anthropic partnership"
+    "headline": "Moonshot's open-source Kimi K3 model beats Anthropic's Fable 5 on this benchmark",
+    "link": "https://www.zdnet.com/article/ai-model-release-tracker/",
+    "score": 78,
+    "reason": "Competitive milestone in AI model performance"
   },
   {
     "rank": 9,
-    "headline": "Roblox will offer AI-generated game creation on mobile later this year",
-    "link": "https://www.engadget.com/2217106/roblox-will-offer-ai-generated-game-creation-on-mobile-later-this-year/",
+    "headline": "Zoox issues software recall because its robotaxis may be confused by smoke",
+    "link": "https://www.engadget.com/2217803/zoox-issues-software-recall-because-its-robotaxis-may-be-confused-by-smoke/",
     "score": 79,
-    "reason": "Major platform expansion, user-generation tool launch"
+    "reason": "Major safety incident with real-world autonomous vehicle failure"
   },
   {
     "rank": 10,
-    "headline": "Chinese startup Moonshot AI unveils Kimi model it says rivals OpenAI, Anthropic",
+    "headline": "Chinese AI has leveled up, and brought renewed focus on the open weight model shift",
     "link": "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html",
-    "score": 78,
-    "reason": "Model launch, competitive claim, China AI development"
+    "score": 80,
+    "reason": "Strategic tech shift with geopolitical significance"
   },
   {
     "rank": 11,
-    "headline": "China just erased America's AI lead",
-    "link": "https://www.axios.com/2026/07/17/china-ai-kimi-k3-open-source-anthropic-opus",
-    "score": 77,
-    "reason": "Major geopolitical claim, AI race milestone"
+    "headline": "The AI compute gap: Enterprises are buying infrastructure faster than they can measure what it costs",
+    "link": "https://venturebeat.com/ai/the-ai-compute-gap-enterprises-are-buying-infrastructure-faster-than-they-can-measure-what-it-costs",
+    "score": 76,
+    "reason": "Systemic adoption gap with quantifiable business impact"
   },
   {
     "rank": 12,
-    "headline": "Catching up in the AI race? India gets its second AI unicorn in a month",
-    "link": "https://www.cnbc.com/2026/07/16/catching-up-in-the-ai-race-india-gets-its-second-ai-unicorn-in-a-month.html",
-    "score": 76,
-    "reason": "Milestone (2nd unicorn), emerging market development"
+    "headline": "New York governor says she's using AI to analyze 'every single rule' in the state",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/966647/new-york-governor-kathy-hochul-ai-policies",
+    "score": 74,
+    "reason": "Government AI deployment at significant scale"
   },
   {
     "rank": 13,
-    "headline": "Nvidia unveils new AI model and expands Japan’s physical AI ecosystem",
-    "link": "https://www.cnbc.com/2026/07/16/nvidia-reveals-new-ai-model-and-expands-japans-physical-ai-ecosystem.html",
-    "score": 75,
-    "reason": "Product launch, ecosystem expansion"
+    "headline": "Here’s Why Anthropic Is Pushing States to Regulate AI Faster",
+    "link": "https://www.wired.com/story/why-anthropic-is-pushing-states-to-regulate-ai-faster/",
+    "score": 72,
+    "reason": "Major AI company advocacy for regulatory framework"
   },
   {
     "rank": 14,
-    "headline": "Suno brings its gen AI music gunk to iMessage",
-    "link": "https://www.engadget.com/2216558/suno-brings-gen-ai-music-gunk-to-imessage/",
-    "score": 74,
-    "reason": "Feature launch, major platform integration"
+    "headline": "TikTok is testing an AI likeness detection tool",
+    "link": "https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool",
+    "score": 68,
+    "reason": "Major platform launching AI safety feature"
   },
   {
     "rank": 15,
-    "headline": "Alphabet shares fall on report its most powerful AI model Gemini 3.5 Pro is delayed",
-    "link": "https://www.cnbc.com/2026/07/16/alphabet-stock-gemini-3-5-pro-ai.html",
-    "score": 73,
-    "reason": "Delay announcement, market impact, flagship model"
+    "headline": "Google is renaming NotebookLM to Gemini Notebook",
+    "link": "https://www.theverge.com/tech/966112/google-gemini-notebook-notebooklm",
+    "score": 65,
+    "reason": "Product rebranding indicating platform consolidation strategy"
   },
   {
     "rank": 16,
-    "headline": "This AI Folds DNA Into Mini Masterpieces",
-    "link": "https://spectrum.ieee.org/ai-dna-origami",
-    "score": 71,
-    "reason": "Scientific breakthrough, novel application"
+    "headline": "Examining Google DeepMind's AI bioresilience push",
+    "link": "https://www.artificialintelligence-news.com/news/examining-google-deepmind-ai-bioresilience-push/",
+    "score": 63,
+    "reason": "Major research initiative in AI safety domain"
   },
   {
     "rank": 17,
-    "headline": "Microsoft patches record 570 Windows security bugs with two exploited zero days - update now",
-    "link": "https://www.zdnet.com/article/microsoft-patches-570-vulnerabilities-exploited-zero-days/",
+    "headline": "Gemini 3.5 Pro delays due to coding performance, upgraded Flash model in testing",
+    "link": "https://9to5google.com/2026/07/16/gemini-3-5-pro-delays/",
     "score": 70,
-    "reason": "Record number (570), security incident"
+    "reason": "Missed launch milestone for major model"
   },
   {
     "rank": 18,
-    "headline": "Airbnb CEO Brian Chesky’s X account was hijacked in an AI slop hack pushing crypto tokenization",
-    "link": "https://fortune.com/2026/07/16/airbnb-ceo-x-hack-ai-slop-security/",
-    "score": 69,
-    "reason": "High-profile security breach, scam via AI"
+    "headline": "U.S.-China AI feud sees ASML walk tightrope between sales and geopolitics",
+    "link": "https://www.cnbc.com/2026/07/17/us-china-ai-feud-asml-tightrope-sales-geopolitics.html",
+    "score": 71,
+    "reason": "Critical supply chain tension in AI chip access"
   },
   {
     "rank": 19,
-    "headline": "73% of tech job listings require AI skills now: How to show off yours",
-    "link": "https://www.zdnet.com/article/73-of-tech-job-listings-require-ai-skills-show-off-yours/",
-    "score": 68,
-    "reason": "Large percentage metric, AI skill market impact"
+    "headline": "OpenAI's CFO: 4 questions that reveal if your AI spend is paying off",
+    "link": "https://fortune.com/2026/07/17/openai-cfo-4-questions-reveal-your-ai-spend-paying-off/",
+    "score": 62,
+    "reason": "Executive perspective on AI ROI and spending accountability"
   },
   {
     "rank": 20,
-    "headline": "OpenAI finally launches hardware… for Codex",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/965901/openai-hardware-codex-micro-launch",
-    "score": 67,
-    "reason": "Hardware launch, OpenAI product expansion"
+    "headline": "Apple and Google ordered by San Francisco attorney to take action against 'nudify' apps",
+    "link": "https://www.engadget.com/2217578/apple-and-google-ordered-by-san-francisco-attorney-to-take-action-against-nudify-apps/",
+    "score": 64,
+    "reason": "Enforcement action against AI misuse with platform implications"
   }
 ]
