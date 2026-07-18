@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "The agent security gap: 54% of enterprises have already had an AI agent incident, and most still let agents share credentials",
-    "link": "https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials",
-    "score": 92,
-    "reason": "Major security vulnerability with big numbers and real-world impact"
+    "headline": "The White House is dictating access to frontier AI models, shifting power from tech giants, sources say",
+    "link": "https://www.cnbc.com/2026/07/17/white-house-ai-access-anthropic-openai.html",
+    "score": 95,
+    "reason": "Major policy shift with big implications; government regulation of AI access is significant news"
   },
   {
     "rank": 2,
-    "headline": "Bunkerhill raises $55M to scale agentic AI across health systems",
-    "link": "https://www.artificialintelligence-news.com/news/bunkerhill-raises-55m-scale-agentic-ai-health-systems/",
-    "score": 85,
-    "reason": "Significant funding round in emerging AI agent space"
+    "headline": "China's open-weight Kimi model stuns AI world with frontier-level results",
+    "link": "https://www.axios.com/2026/07/16/moonshot-kimi-ai-china-model-openai-anthropic",
+    "score": 92,
+    "reason": "Concrete breakthrough; China closing AI gap with measurable frontier-level results"
   },
   {
     "rank": 3,
-    "headline": "Google ordered to open Android and Search to rivals in Europe",
-    "link": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma",
+    "headline": "San Francisco Demands Apple and Google Delete AI ‘Nudify’ Apps From App Stores",
+    "link": "https://www.wired.com/story/san-francisco-demands-apple-and-google-delete-ai-nudify-apps-from-app-stores/",
     "score": 88,
-    "reason": "Major regulatory action with major financial/operational implications"
+    "reason": "Major controversy; regulatory action against real harm with named companies"
   },
   {
     "rank": 4,
-    "headline": "It's official: EU will force Google to share search data and open up AI on Android",
-    "link": "https://arstechnica.com/gadgets/2026/07/its-official-eu-will-force-google-to-share-search-data-and-open-up-ai-on-android/",
-    "score": 87,
-    "reason": "Landmark regulatory enforcement with concrete requirements"
+    "headline": "Amazon&apos;s Zoox issues software recall after robotaxi drove into heavy smoke",
+    "link": "https://www.cnbc.com/2026/07/17/amazon-zoox-recalls-robotaxi-smoke.html",
+    "score": 85,
+    "reason": "Concrete safety failure; first major robotaxi recall indicating real-world AI problems"
   },
   {
     "rank": 5,
-    "headline": "Claude can now use your 1Password credentials for you",
-    "link": "https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration",
-    "score": 81,
-    "reason": "Significant AI capability launch with security implications"
+    "headline": "Apple’s plot to crush OpenAI",
+    "link": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
+    "score": 78,
+    "reason": "Corporate conflict; Apple vs OpenAI competition is significant but headline appears speculative"
   },
   {
     "rank": 6,
-    "headline": "Meta is reportedly considering a multibillion-dollar data center deal with Anthropic",
-    "link": "https://www.engadget.com/2217904/meta-is-reportedly-considering-a-multibillion-dollar-data-center-deal-with-anthropic/",
-    "score": 84,
-    "reason": "Major corporate deal, big numbers, industry consolidation"
+    "headline": "Anthropic's Claude Corps will pay $85,000 to 1,000 early-career professionals - apply now",
+    "link": "https://www.zdnet.com/article/anthropic-claude-corps-pays-early-career-professionals-apply-now/",
+    "score": 82,
+    "reason": "Concrete launch; $85M commitment to talent is measurable and significant"
   },
   {
     "rank": 7,
-    "headline": "Businesses are experimenting with cheaper Chinese AI models as U.S. rivals get more expensive",
-    "link": "https://fortune.com/2026/07/17/businesses-turn-to-cheaper-chinese-ai-models/",
-    "score": 82,
-    "reason": "Market shift with competitive and geopolitical implications"
+    "headline": "Anthropic in early talks with Meta to acquire compute power",
+    "link": "https://www.cnbc.com/2026/07/17/anthropic-meta-ai-compute.html",
+    "score": 72,
+    "reason": "Strategic deal in early stages; indicates Anthropic's compute needs but lacks concrete numbers"
   },
   {
     "rank": 8,
-    "headline": "Moonshot's open-source Kimi K3 model beats Anthropic's Fable 5 on this benchmark",
-    "link": "https://www.zdnet.com/article/ai-model-release-tracker/",
-    "score": 78,
-    "reason": "Competitive milestone in AI model performance"
+    "headline": "How Google’s New Gemini Rates Work and How to Track Your Usage",
+    "link": "https://www.wired.com/story/how-googles-new-gemini-rates-work-and-how-to-track-your-usage/",
+    "score": 75,
+    "reason": "Product launch; new pricing/tier structure for major AI product"
   },
   {
     "rank": 9,
-    "headline": "Zoox issues software recall because its robotaxis may be confused by smoke",
-    "link": "https://www.engadget.com/2217803/zoox-issues-software-recall-because-its-robotaxis-may-be-confused-by-smoke/",
-    "score": 79,
-    "reason": "Major safety incident with real-world autonomous vehicle failure"
+    "headline": "OpenAI will start notifying parents if their teen has been kicked off of ChatGPT",
+    "link": "https://www.engadget.com/2218076/openai-notify-parents-teen-banned-chatgpt-violence/",
+    "score": 70,
+    "reason": "Policy launch; youth safety measure from major AI provider"
   },
   {
     "rank": 10,
-    "headline": "Chinese AI has leveled up, and brought renewed focus on the open weight model shift",
-    "link": "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html",
-    "score": 80,
-    "reason": "Strategic tech shift with geopolitical significance"
-  },
-  {
-    "rank": 11,
-    "headline": "The AI compute gap: Enterprises are buying infrastructure faster than they can measure what it costs",
-    "link": "https://venturebeat.com/ai/the-ai-compute-gap-enterprises-are-buying-infrastructure-faster-than-they-can-measure-what-it-costs",
-    "score": 76,
-    "reason": "Systemic adoption gap with quantifiable business impact"
-  },
-  {
-    "rank": 12,
-    "headline": "New York governor says she's using AI to analyze 'every single rule' in the state",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/966647/new-york-governor-kathy-hochul-ai-policies",
-    "score": 74,
-    "reason": "Government AI deployment at significant scale"
-  },
-  {
-    "rank": 13,
-    "headline": "Here’s Why Anthropic Is Pushing States to Regulate AI Faster",
-    "link": "https://www.wired.com/story/why-anthropic-is-pushing-states-to-regulate-ai-faster/",
-    "score": 72,
-    "reason": "Major AI company advocacy for regulatory framework"
-  },
-  {
-    "rank": 14,
-    "headline": "TikTok is testing an AI likeness detection tool",
-    "link": "https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool",
+    "headline": "A Humanoid Company Backed by Eric Trump Is Preparing Its Robots for War",
+    "link": "https://www.wired.com/story/humanoid-robot-soldier-eric-trump-foundation-future-industries/",
     "score": 68,
-    "reason": "Major platform launching AI safety feature"
-  },
-  {
-    "rank": 15,
-    "headline": "Google is renaming NotebookLM to Gemini Notebook",
-    "link": "https://www.theverge.com/tech/966112/google-gemini-notebook-notebooklm",
-    "score": 65,
-    "reason": "Product rebranding indicating platform consolidation strategy"
-  },
-  {
-    "rank": 16,
-    "headline": "Examining Google DeepMind's AI bioresilience push",
-    "link": "https://www.artificialintelligence-news.com/news/examining-google-deepmind-ai-bioresilience-push/",
-    "score": 63,
-    "reason": "Major research initiative in AI safety domain"
-  },
-  {
-    "rank": 17,
-    "headline": "Gemini 3.5 Pro delays due to coding performance, upgraded Flash model in testing",
-    "link": "https://9to5google.com/2026/07/16/gemini-3-5-pro-delays/",
-    "score": 70,
-    "reason": "Missed launch milestone for major model"
-  },
-  {
-    "rank": 18,
-    "headline": "U.S.-China AI feud sees ASML walk tightrope between sales and geopolitics",
-    "link": "https://www.cnbc.com/2026/07/17/us-china-ai-feud-asml-tightrope-sales-geopolitics.html",
-    "score": 71,
-    "reason": "Critical supply chain tension in AI chip access"
-  },
-  {
-    "rank": 19,
-    "headline": "OpenAI's CFO: 4 questions that reveal if your AI spend is paying off",
-    "link": "https://fortune.com/2026/07/17/openai-cfo-4-questions-reveal-your-ai-spend-paying-off/",
-    "score": 62,
-    "reason": "Executive perspective on AI ROI and spending accountability"
-  },
-  {
-    "rank": 20,
-    "headline": "Apple and Google ordered by San Francisco attorney to take action against 'nudify' apps",
-    "link": "https://www.engadget.com/2217578/apple-and-google-ordered-by-san-francisco-attorney-to-take-action-against-nudify-apps/",
-    "score": 64,
-    "reason": "Enforcement action against AI misuse with platform implications"
+    "reason": "Controversy; military robotics development with political backing"
   }
 ]
