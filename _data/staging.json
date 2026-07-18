@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "The White House is dictating access to frontier AI models, shifting power from tech giants, sources say",
-    "link": "https://www.cnbc.com/2026/07/17/white-house-ai-access-anthropic-openai.html",
-    "score": 95,
-    "reason": "Major policy shift with big implications; government regulation of AI access is significant news"
+    "headline": "Bunkerhill raises $55M to scale agentic AI across health systems",
+    "link": "https://www.artificialintelligence-news.com/news/bunkerhill-raises-55m-scale-agentic-ai-health-systems/",
+    "score": 92,
+    "reason": "Significant funding announcement for AI agent deployment in healthcare"
   },
   {
     "rank": 2,
-    "headline": "China's open-weight Kimi model stuns AI world with frontier-level results",
-    "link": "https://www.axios.com/2026/07/16/moonshot-kimi-ai-china-model-openai-anthropic",
-    "score": 92,
-    "reason": "Concrete breakthrough; China closing AI gap with measurable frontier-level results"
+    "headline": "Meta is reportedly considering a multibillion-dollar data center deal with Anthropic",
+    "link": "https://www.engadget.com/2217904/meta-is-reportedly-considering-a-multibillion-dollar-data-center-deal-with-anthropic/",
+    "score": 89,
+    "reason": "Major partnership/investment between two AI leaders, big numbers"
   },
   {
     "rank": 3,
-    "headline": "San Francisco Demands Apple and Google Delete AI ‘Nudify’ Apps From App Stores",
-    "link": "https://www.wired.com/story/san-francisco-demands-apple-and-google-delete-ai-nudify-apps-from-app-stores/",
-    "score": 88,
-    "reason": "Major controversy; regulatory action against real harm with named companies"
+    "headline": "Zoox issues software recall because its robotaxis may be confused by smoke",
+    "link": "https://www.engadget.com/2217803/zoox-issues-software-recall-because-its-robotaxis-may-be-confused-by-smoke/",
+    "score": 85,
+    "reason": "Real-world safety issue with deployed AI robotaxis"
   },
   {
     "rank": 4,
-    "headline": "Amazon&apos;s Zoox issues software recall after robotaxi drove into heavy smoke",
-    "link": "https://www.cnbc.com/2026/07/17/amazon-zoox-recalls-robotaxi-smoke.html",
-    "score": 85,
-    "reason": "Concrete safety failure; first major robotaxi recall indicating real-world AI problems"
+    "headline": "Dave Eggers told OpenAI staff  that ChatGPT was ‘silencing an entire generation’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation",
+    "score": 83,
+    "reason": "Notable controversy/criticism from prominent figure regarding OpenAI product impact"
   },
   {
     "rank": 5,
-    "headline": "Apple’s plot to crush OpenAI",
-    "link": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
-    "score": 78,
-    "reason": "Corporate conflict; Apple vs OpenAI competition is significant but headline appears speculative"
+    "headline": "Moonshot's open-source Kimi K3 model beats Anthropic's Fable 5 on this benchmark",
+    "link": "https://www.zdnet.com/article/ai-model-release-tracker/",
+    "score": 81,
+    "reason": "Direct model comparison showing Chinese AI competitive progress"
   },
   {
     "rank": 6,
-    "headline": "Anthropic's Claude Corps will pay $85,000 to 1,000 early-career professionals - apply now",
-    "link": "https://www.zdnet.com/article/anthropic-claude-corps-pays-early-career-professionals-apply-now/",
-    "score": 82,
-    "reason": "Concrete launch; $85M commitment to talent is measurable and significant"
+    "headline": "TikTok is testing an AI likeness detection tool",
+    "link": "https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool",
+    "score": 78,
+    "reason": "Major platform launch of AI safety feature"
   },
   {
     "rank": 7,
-    "headline": "Anthropic in early talks with Meta to acquire compute power",
-    "link": "https://www.cnbc.com/2026/07/17/anthropic-meta-ai-compute.html",
-    "score": 72,
-    "reason": "Strategic deal in early stages; indicates Anthropic's compute needs but lacks concrete numbers"
+    "headline": "Apple and Google ordered by San Francisco attorney to take action against 'nudify' apps",
+    "link": "https://www.engadget.com/2217578/apple-and-google-ordered-by-san-francisco-attorney-to-take-action-against-nudify-apps/",
+    "score": 76,
+    "reason": "Legal action against AI-generated content abuse"
   },
   {
     "rank": 8,
-    "headline": "How Google’s New Gemini Rates Work and How to Track Your Usage",
-    "link": "https://www.wired.com/story/how-googles-new-gemini-rates-work-and-how-to-track-your-usage/",
+    "headline": "Chinese AI has leveled up, and brought renewed focus on the open weight model shift",
+    "link": "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html",
     "score": 75,
-    "reason": "Product launch; new pricing/tier structure for major AI product"
+    "reason": "Major market shift in AI landscape with geopolitical implications"
   },
   {
     "rank": 9,
-    "headline": "OpenAI will start notifying parents if their teen has been kicked off of ChatGPT",
-    "link": "https://www.engadget.com/2218076/openai-notify-parents-teen-banned-chatgpt-violence/",
-    "score": 70,
-    "reason": "Policy launch; youth safety measure from major AI provider"
+    "headline": "AI race splits in two as China wages open-weight insurgency",
+    "link": "https://www.axios.com/2026/07/18/china-ai-open-source-kimi-anthropic-openai",
+    "score": 74,
+    "reason": "Significant structural change in AI competition model"
   },
   {
     "rank": 10,
-    "headline": "A Humanoid Company Backed by Eric Trump Is Preparing Its Robots for War",
-    "link": "https://www.wired.com/story/humanoid-robot-soldier-eric-trump-foundation-future-industries/",
-    "score": 68,
-    "reason": "Controversy; military robotics development with political backing"
+    "headline": "Prompt Injection Attacks Are Thwarting AI Hacking Agents",
+    "link": "https://www.wired.com/story/prompt-injection-attacks-are-thwarting-ai-hacking-agents/",
+    "score": 71,
+    "reason": "Security vulnerability discovery in AI agent systems"
   }
 ]
