@@ -1,44 +1,93 @@
 [
   {
     "rank": 1,
-    "headline": "AI race splits in two as China wages open-weight insurgency",
-    "link": "https://www.axios.com/2026/07/18/china-ai-open-source-kimi-anthropic-openai",
-    "score": 92,
-    "reason": "Major geopolitical AI development with concrete competitive implications"
+    "headline": "China delivers a one-two punch to America’s AI dominance",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen",
+    "score": 94,
+    "reason": "Geopolitical AI competition with major implications; concrete power dynamic shift"
   },
   {
     "rank": 2,
-    "headline": "Moonshot AI suspends new subscriptions due to Kimi K3 demand",
-    "link": "https://twitter.com/kimi_moonshot/status/2078855608565207130",
-    "score": 85,
-    "reason": "Quantifiable launch success with capacity constraints; concrete business impact"
+    "headline": "Kimi K3 open-weight model: China's biggest AI is a bet on memory, not compute",
+    "link": "https://www.artificialintelligence-news.com/news/kimi-k3-open-weight-model-memory-compute-china/",
+    "score": 89,
+    "reason": "Major Chinese AI launch with novel technical approach; substantive capability announcement"
   },
   {
     "rank": 3,
-    "headline": "Dave Eggers told OpenAI staff  that ChatGPT was ‘silencing an entire generation’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation",
-    "score": 78,
-    "reason": "High-profile controversy with significant cultural criticism from respected author"
+    "headline": "US public health agencies to test OpenAI and Anthropic AI models",
+    "link": "https://www.artificialintelligence-news.com/news/openai-anthropic-public-health-ai/",
+    "score": 87,
+    "reason": "Government deployment of AI in healthcare; significant institutional adoption"
   },
   {
     "rank": 4,
-    "headline": "Prompt Injection Attacks Are Thwarting AI Hacking Agents",
-    "link": "https://www.wired.com/story/prompt-injection-attacks-are-thwarting-ai-hacking-agents/",
-    "score": 72,
-    "reason": "Concrete security vulnerability affecting AI agent reliability"
+    "headline": "Bezos backs CuspAI as startup teams up with Nvidia to hunt for chipmaking materials",
+    "link": "https://www.cnbc.com/2026/07/20/bezos-cuspai-new-chip-materials-nvidia.html",
+    "score": 85,
+    "reason": "Major investor backing; Nvidia partnership; chip supply chain implications"
   },
   {
     "rank": 5,
-    "headline": "How To use Claude's Reflect dashboard and learn when it's time to touch grass",
-    "link": "https://www.engadget.com/2217921/how-to-use-claude-reflect-dashboard-guide/",
-    "score": 68,
-    "reason": "Claude feature launch with measurable user analytics capability"
+    "headline": "How AI is supercharging drug development",
+    "link": "https://www.axios.com/2026/07/20/artificial-intelligence-drug-development-impact",
+    "score": 83,
+    "reason": "Concrete real-world AI application with measurable impact in pharma"
   },
   {
     "rank": 6,
-    "headline": "I hate that I don’t hate this song made with Suno",
-    "link": "https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music",
+    "headline": "TSMC is accelerating Arizona factory buildout to capitalize on AI &apos;megatrend,&apos; CFO says",
+    "link": "https://www.cnbc.com/2026/07/20/tsmc-arizona-fab-capacity-ai-chip-demand.html",
+    "score": 82,
+    "reason": "Major infrastructure investment; quantifiable expansion tied to AI demand"
+  },
+  {
+    "rank": 7,
+    "headline": "The secret Trump administration battle to fight Chinese AI",
+    "link": "https://www.axios.com/2026/07/20/ai-us-china-open-source-kimi",
+    "score": 81,
+    "reason": "High-level policy conflict; strategic AI competition escalation"
+  },
+  {
+    "rank": 8,
+    "headline": "Top Pentagon official blasts OpenAI's Dean Ball",
+    "link": "https://www.axios.com/2026/07/19/pentagon-openai-dean-ball-trump-ai",
+    "score": 78,
+    "reason": "Government-AI company conflict; defense sector tensions"
+  },
+  {
+    "rank": 9,
+    "headline": "AI is more likely than humans to form biases when hiring",
+    "link": "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans/",
+    "score": 76,
+    "reason": "Empirical bias finding in AI systems; workplace impact"
+  },
+  {
+    "rank": 10,
+    "headline": "Claude Code uses Bun written in Rust now",
+    "link": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+    "score": 72,
+    "reason": "Anthropic technical architecture change; infrastructure optimization"
+  },
+  {
+    "rank": 11,
+    "headline": "Exploit brokers pay $500k for WordPress RCEs. I found one with GPT5.6 and $25",
+    "link": "https://slcyber.io/research-center/exploit-brokers-pay-500000-for-a-wordpress-rce-i-found-one-with-gpt5-6/",
+    "score": 70,
+    "reason": "AI security application; cost-benefit comparison of AI-assisted vulnerability finding"
+  },
+  {
+    "rank": 12,
+    "headline": "Claude Fable produced a counterexample to the Jacobian Conjecture",
+    "link": "https://xcancel.com/__alpoge__/status/2079028340955197566",
+    "score": 68,
+    "reason": "AI mathematical discovery; advanced reasoning capability demonstrated"
+  },
+  {
+    "rank": 13,
+    "headline": "Airbus Takes Flight from AWS",
+    "link": "https://www.theregister.com/columnists/2026/07/20/airbus-takes-flight-from-aws-what-happens-next-is-critical/5274109",
     "score": 65,
-    "reason": "Suno music generation quality milestone sparking cultural conversation"
+    "reason": "Major enterprise AI infrastructure partnership; aerospace application"
   }
 ]
