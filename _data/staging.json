@@ -1,93 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "China delivers a one-two punch to America’s AI dominance",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen",
+    "headline": "AMD launches Helios, its first rack AI system to rival Nvidia, adding Microsoft as newest buyer",
+    "link": "https://www.cnbc.com/2026/07/20/amd-helios-microsoft-ai-nvidia.html",
     "score": 94,
-    "reason": "Geopolitical AI competition with major implications; concrete power dynamic shift"
+    "reason": "Major hardware launch with concrete customer (Microsoft), directly challenges market leader"
   },
   {
     "rank": 2,
-    "headline": "Kimi K3 open-weight model: China's biggest AI is a bet on memory, not compute",
-    "link": "https://www.artificialintelligence-news.com/news/kimi-k3-open-weight-model-memory-compute-china/",
-    "score": 89,
-    "reason": "Major Chinese AI launch with novel technical approach; substantive capability announcement"
+    "headline": "An AI agent breached Hugging Face before an AI defender caught it: What users should do next",
+    "link": "https://www.zdnet.com/article/hugging-face-breach-blamed-on-ai-agent/",
+    "score": 88,
+    "reason": "Security breach with actionable impact, demonstrates real-world AI system vulnerabilities"
   },
   {
     "rank": 3,
-    "headline": "US public health agencies to test OpenAI and Anthropic AI models",
-    "link": "https://www.artificialintelligence-news.com/news/openai-anthropic-public-health-ai/",
-    "score": 87,
-    "reason": "Government deployment of AI in healthcare; significant institutional adoption"
+    "headline": "China&#x27;s open-weights AI strategy is winning",
+    "link": "https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/",
+    "score": 85,
+    "reason": "Strategic geopolitical AI development, contradicts Western dominance narrative"
   },
   {
     "rank": 4,
-    "headline": "Bezos backs CuspAI as startup teams up with Nvidia to hunt for chipmaking materials",
-    "link": "https://www.cnbc.com/2026/07/20/bezos-cuspai-new-chip-materials-nvidia.html",
-    "score": 85,
-    "reason": "Major investor backing; Nvidia partnership; chip supply chain implications"
+    "headline": "China’s AI models have Trump’s AI world at war with itself",
+    "link": "https://www.technologyreview.com/2026/07/20/1140675/chinas-ai-models-have-trumps-ai-world-at-war-with-itself/",
+    "score": 82,
+    "reason": "Controversy + geopolitical conflict, demonstrates competitive fragmentation"
   },
   {
     "rank": 5,
-    "headline": "How AI is supercharging drug development",
-    "link": "https://www.axios.com/2026/07/20/artificial-intelligence-drug-development-impact",
-    "score": 83,
-    "reason": "Concrete real-world AI application with measurable impact in pharma"
+    "headline": "The top AI fear for 6,000 tech pros isn't losing their jobs - it's more work for the same pay",
+    "link": "https://www.zdnet.com/article/top-ai-fear-tech-survey/",
+    "score": 79,
+    "reason": "Large survey (6,000), concrete finding contradicts mainstream narrative about job losses"
   },
   {
     "rank": 6,
-    "headline": "TSMC is accelerating Arizona factory buildout to capitalize on AI &apos;megatrend,&apos; CFO says",
-    "link": "https://www.cnbc.com/2026/07/20/tsmc-arizona-fab-capacity-ai-chip-demand.html",
-    "score": 82,
-    "reason": "Major infrastructure investment; quantifiable expansion tied to AI demand"
+    "headline": "Dave Eggers told OpenAI staff  that ChatGPT was ‘silencing an entire generation’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation",
+    "score": 76,
+    "reason": "Notable figure criticism of OpenAI, cultural controversy angle"
   },
   {
     "rank": 7,
-    "headline": "The secret Trump administration battle to fight Chinese AI",
-    "link": "https://www.axios.com/2026/07/20/ai-us-china-open-source-kimi",
-    "score": 81,
-    "reason": "High-level policy conflict; strategic AI competition escalation"
+    "headline": "Alphabet stock pops on report it&apos;s developing a more efficient AI chip",
+    "link": "https://www.cnbc.com/2026/07/20/alphabet-googl-stock-ai-chip-report.html",
+    "score": 74,
+    "reason": "Market impact (stock movement), hardware development competes with Nvidia"
   },
   {
     "rank": 8,
-    "headline": "Top Pentagon official blasts OpenAI's Dean Ball",
-    "link": "https://www.axios.com/2026/07/19/pentagon-openai-dean-ball-trump-ai",
-    "score": 78,
-    "reason": "Government-AI company conflict; defense sector tensions"
+    "headline": "NVIDIA data center hardware is being cooled with water 'hotter than a hot tub'",
+    "link": "https://www.engadget.com/2214770/nvidia-data-center-liquid-cooling-temperature-heat/",
+    "score": 72,
+    "reason": "Concrete technical achievement, scale implication for AI infrastructure"
   },
   {
     "rank": 9,
-    "headline": "AI is more likely than humans to form biases when hiring",
-    "link": "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans/",
-    "score": 76,
-    "reason": "Empirical bias finding in AI systems; workplace impact"
+    "headline": "How to check if ChatGPT and other AI tools cite your website - and improve your chances in 2026",
+    "link": "https://www.zdnet.com/article/how-to-check-if-chatgpt-ai-tools-cite-website-improve-chances/",
+    "score": 65,
+    "reason": "Practical tool for creators, addresses attribution controversy"
   },
   {
     "rank": 10,
-    "headline": "Claude Code uses Bun written in Rust now",
-    "link": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
-    "score": 72,
-    "reason": "Anthropic technical architecture change; infrastructure optimization"
-  },
-  {
-    "rank": 11,
-    "headline": "Exploit brokers pay $500k for WordPress RCEs. I found one with GPT5.6 and $25",
-    "link": "https://slcyber.io/research-center/exploit-brokers-pay-500000-for-a-wordpress-rce-i-found-one-with-gpt5-6/",
-    "score": 70,
-    "reason": "AI security application; cost-benefit comparison of AI-assisted vulnerability finding"
-  },
-  {
-    "rank": 12,
-    "headline": "Claude Fable produced a counterexample to the Jacobian Conjecture",
-    "link": "https://xcancel.com/__alpoge__/status/2079028340955197566",
-    "score": 68,
-    "reason": "AI mathematical discovery; advanced reasoning capability demonstrated"
-  },
-  {
-    "rank": 13,
-    "headline": "Airbus Takes Flight from AWS",
-    "link": "https://www.theregister.com/columnists/2026/07/20/airbus-takes-flight-from-aws-what-happens-next-is-critical/5274109",
-    "score": 65,
-    "reason": "Major enterprise AI infrastructure partnership; aerospace application"
+    "headline": "I hate that I don’t hate this song made with Suno",
+    "link": "https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music",
+    "score": 62,
+    "reason": "Creative AI application with honest assessment of quality progress"
   }
 ]
