@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "AMD launches Helios, its first rack AI system to rival Nvidia, adding Microsoft as newest buyer",
-    "link": "https://www.cnbc.com/2026/07/20/amd-helios-microsoft-ai-nvidia.html",
-    "score": 94,
-    "reason": "Major hardware launch with concrete customer (Microsoft), directly challenges market leader"
+    "headline": "Judge approves Anthropic's record-breaking $1.5 billion settlement for AI copyright lawsuit",
+    "link": "https://www.engadget.com/2219475/judge-approves-anthropic-1-5-billion-settlement-authors/",
+    "score": 95,
+    "reason": "Major legal settlement with big number, establishes precedent for AI copyright liability"
   },
   {
     "rank": 2,
-    "headline": "An AI agent breached Hugging Face before an AI defender caught it: What users should do next",
-    "link": "https://www.zdnet.com/article/hugging-face-breach-blamed-on-ai-agent/",
-    "score": 88,
-    "reason": "Security breach with actionable impact, demonstrates real-world AI system vulnerabilities"
+    "headline": "Here are the 30,000 songs Sony is suing Udio's AI music generator over",
+    "link": "https://www.theverge.com/tech/968375/sony-udio-lawsuit-songs-ai-copyright",
+    "score": 92,
+    "reason": "Major lawsuit with specific damage scale, Sony vs Udio confrontation"
   },
   {
     "rank": 3,
-    "headline": "China&#x27;s open-weights AI strategy is winning",
-    "link": "https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/",
-    "score": 85,
-    "reason": "Strategic geopolitical AI development, contradicts Western dominance narrative"
+    "headline": "Bristol Myers Squibb buys Nvidia AI system for drug discovery",
+    "link": "https://www.artificialintelligence-news.com/news/bristol-myers-squibb-nvidia-ai-system-drug-discovery/",
+    "score": 88,
+    "reason": "Major pharma company acquisition of AI system, real business application launch"
   },
   {
     "rank": 4,
-    "headline": "China’s AI models have Trump’s AI world at war with itself",
-    "link": "https://www.technologyreview.com/2026/07/20/1140675/chinas-ai-models-have-trumps-ai-world-at-war-with-itself/",
-    "score": 82,
-    "reason": "Controversy + geopolitical conflict, demonstrates competitive fragmentation"
+    "headline": "Nebius stock surges as Nvidia discloses 9.3% stake in neocloud",
+    "link": "https://www.cnbc.com/2026/07/21/nebius-stock-nvidia-stake-neocloud.html",
+    "score": 85,
+    "reason": "Major investor move, Nvidia stake announcement with market impact"
   },
   {
     "rank": 5,
-    "headline": "The top AI fear for 6,000 tech pros isn't losing their jobs - it's more work for the same pay",
-    "link": "https://www.zdnet.com/article/top-ai-fear-tech-survey/",
-    "score": 79,
-    "reason": "Large survey (6,000), concrete finding contradicts mainstream narrative about job losses"
+    "headline": "TSMC is accelerating Arizona factory build-out to capitalize on AI &apos;megatrend,&apos; CFO says",
+    "link": "https://www.cnbc.com/2026/07/20/tsmc-arizona-fab-capacity-ai-chip-demand.html",
+    "score": 84,
+    "reason": "Major capex commitment tied to AI demand, concrete expansion plan"
   },
   {
     "rank": 6,
-    "headline": "Dave Eggers told OpenAI staff  that ChatGPT was ‘silencing an entire generation’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation",
-    "score": 76,
-    "reason": "Notable figure criticism of OpenAI, cultural controversy angle"
+    "headline": "Samsung Electronics shares rise as robotics move highlights push into physical AI",
+    "link": "https://www.cnbc.com/2026/07/21/samsung-electronics-sets-up-robotics-unit-amid-push-into-physical-ai-.html",
+    "score": 82,
+    "reason": "Major hardware company pivoting to physical AI, market reaction"
   },
   {
     "rank": 7,
-    "headline": "Alphabet stock pops on report it&apos;s developing a more efficient AI chip",
-    "link": "https://www.cnbc.com/2026/07/20/alphabet-googl-stock-ai-chip-report.html",
-    "score": 74,
-    "reason": "Market impact (stock movement), hardware development competes with Nvidia"
+    "headline": "‘It’s a Modern-Day Draft’: Why Stanford Students Walked Out on Sundar Pichai’s Commencement Speech",
+    "link": "https://www.wired.com/story/big-interview-stanford-students-booing-sundar-pichai/",
+    "score": 80,
+    "reason": "Significant controversy and protest at Google CEO's speech, labor/ethics concerns"
   },
   {
     "rank": 8,
-    "headline": "NVIDIA data center hardware is being cooled with water 'hotter than a hot tub'",
-    "link": "https://www.engadget.com/2214770/nvidia-data-center-liquid-cooling-temperature-heat/",
-    "score": 72,
-    "reason": "Concrete technical achievement, scale implication for AI infrastructure"
+    "headline": "The Army Is Burning Through Its AI Tokens",
+    "link": "https://www.wired.com/story/the-army-is-burning-through-its-ai-tokens/",
+    "score": 78,
+    "reason": "Government AI consumption scale revealed, concrete usage metrics"
   },
   {
     "rank": 9,
-    "headline": "How to check if ChatGPT and other AI tools cite your website - and improve your chances in 2026",
-    "link": "https://www.zdnet.com/article/how-to-check-if-chatgpt-ai-tools-cite-website-improve-chances/",
-    "score": 65,
-    "reason": "Practical tool for creators, addresses attribution controversy"
+    "headline": "US public health agencies to test OpenAI and Anthropic AI models",
+    "link": "https://www.artificialintelligence-news.com/news/openai-anthropic-public-health-ai/",
+    "score": 76,
+    "reason": "Major government adoption initiative, testing two leading AI providers"
   },
   {
     "rank": 10,
-    "headline": "I hate that I don’t hate this song made with Suno",
-    "link": "https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music",
+    "headline": "Bezos backs CuspAI as startup teams up with Nvidia to hunt for chipmaking materials",
+    "link": "https://www.cnbc.com/2026/07/20/bezos-cuspai-new-chip-materials-nvidia.html",
+    "score": 75,
+    "reason": "Bezos investment in AI materials discovery startup, high-profile backing"
+  },
+  {
+    "rank": 11,
+    "headline": "Google’s Opal AI Builds Apps From Your Words — When It Works",
+    "link": "https://www.cnet.com/tech/services-and-software/googles-opal-ai-builds-apps-from-your-words-when-it-works/",
+    "score": 73,
+    "reason": "Google product launch for code generation, tested real-world performance"
+  },
+  {
+    "rank": 12,
+    "headline": "China delivers a one-two punch to America’s AI dominance",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen",
+    "score": 71,
+    "reason": "Geopolitical AI competition headline with concrete developments"
+  },
+  {
+    "rank": 13,
+    "headline": "Adobe’s ‘natural look’ camera app embraces generative AI",
+    "link": "https://www.theverge.com/tech/967791/adobe-indigo-camera-app-ai-playground-update",
+    "score": 70,
+    "reason": "Adobe product launch with generative AI integration"
+  },
+  {
+    "rank": 14,
+    "headline": "China’s Low-Priced Z.ai Model Is Exposing Costly Coder Habits",
+    "link": "https://spectrum.ieee.org/ai-coding-assistant-china-anthropic",
+    "score": 68,
+    "reason": "Chinese AI model launch with economic impact on pricing"
+  },
+  {
+    "rank": 15,
+    "headline": "SkyPilot, from Databricks' cofounder, raises $20M to be the Switzerland of AI compute",
+    "link": "https://fortune.com/2026/07/21/skypilot-from-databricks-cofounder-raises-20m-to-be-the-switzerland-of-ai-compute/",
+    "score": 66,
+    "reason": "New startup funding announcement from prominent founder"
+  },
+  {
+    "rank": 16,
+    "headline": "Kimi K3 open-weight model: China's biggest AI is a bet on memory, not compute",
+    "link": "https://www.artificialintelligence-news.com/news/kimi-k3-open-weight-model-memory-compute-china/",
+    "score": 64,
+    "reason": "Major Chinese model launch with technical differentiation"
+  },
+  {
+    "rank": 17,
+    "headline": "AI is more likely than humans to form biases when hiring",
+    "link": "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans/",
     "score": 62,
-    "reason": "Creative AI application with honest assessment of quality progress"
+    "reason": "Research-backed controversy about AI bias in critical application"
+  },
+  {
+    "rank": 18,
+    "headline": "Chinese open-weight models are cheap. Washington is deciding what that costs.",
+    "link": "https://www.artificialintelligence-news.com/news/chinese-open-weight-models-policy-risk/",
+    "score": 61,
+    "reason": "Geopolitical and policy implications of Chinese AI pricing strategy"
+  },
+  {
+    "rank": 19,
+    "headline": "Exclusive: KPMG and OpenAI bet the future of software is 'headless' — and the future of work is mostly talking",
+    "link": "https://fortune.com/2026/07/21/exclusive-kpmg-openai-elite-partner-headless-software/",
+    "score": 59,
+    "reason": "Major consulting firm partnership with OpenAI on enterprise software shift"
+  },
+  {
+    "rank": 20,
+    "headline": "How AI is supercharging drug development",
+    "link": "https://www.axios.com/2026/07/20/artificial-intelligence-drug-development-impact",
+    "score": 57,
+    "reason": "Concrete AI application in pharma with measurable impact"
   }
 ]
