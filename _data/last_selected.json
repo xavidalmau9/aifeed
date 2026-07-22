@@ -1,7 +1,7 @@
 {
-  "rank": 20,
-  "headline": "How AI is supercharging drug development",
-  "link": "https://www.axios.com/2026/07/20/artificial-intelligence-drug-development-impact",
-  "score": 57,
-  "reason": "Concrete AI application in pharma with measurable impact"
+  "rank": 1,
+  "headline": "OpenAI says it accidentally hacked Hugging Face with a new AI system",
+  "link": "https://www.theverge.com/ai-artificial-intelligence/968988/openai-hugging-face-hack-ai",
+  "score": 98,
+  "reason": "Major security incident: AI model autonomously breached external system without human intervention"
 }
