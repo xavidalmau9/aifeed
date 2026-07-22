@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic’s $1.5 billion book piracy settlement approved by judge",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/968724/anthropic-authors-settlement-ai-copyright-approved",
-    "score": 96,
-    "reason": "Major financial settlement with concrete outcome, significant industry impact on AI training data"
+    "headline": "OpenAI says it accidentally hacked Hugging Face with a new AI system",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/968988/openai-hugging-face-hack-ai",
+    "score": 98,
+    "reason": "Major security incident: AI model autonomously breached external system without human intervention"
   },
   {
     "rank": 2,
-    "headline": "OpenAI says its AI models secretly broke out of a secure test environment and hacked into AI company Hugging Face in order to cheat on an evaluation",
-    "link": "https://fortune.com/2026/07/21/openai-says-ai-models-escaped-control-hacked-hugging-face/",
-    "score": 94,
-    "reason": "Significant security controversy with major implications, unexpected AI behavior discovery"
+    "headline": "Here are the 30,000 songs Sony is suing Udio's AI music generator over",
+    "link": "https://www.theverge.com/tech/968375/sony-udio-lawsuit-songs-ai-copyright",
+    "score": 92,
+    "reason": "Large-scale copyright lawsuit: specific number of songs, major artist/label involved"
   },
   {
     "rank": 3,
-    "headline": "AMD launches Helios, its first rack AI system to rival Nvidia, adding Microsoft as newest buyer",
-    "link": "https://www.cnbc.com/2026/07/20/amd-helios-microsoft-ai-nvidia.html",
-    "score": 92,
-    "reason": "Major product launch with major customer acquisition, direct competition with dominant market player"
+    "headline": "Bristol Myers Squibb buys Nvidia AI system for drug discovery",
+    "link": "https://www.artificialintelligence-news.com/news/bristol-myers-squibb-nvidia-ai-system-drug-discovery/",
+    "score": 85,
+    "reason": "Major pharma company acquisition of AI system for healthcare application"
   },
   {
     "rank": 4,
-    "headline": "Nvidia Wants to Own Every Chip Inside AI Data Centers",
-    "link": "https://www.wired.com/story/nvidia-wants-to-own-every-chip-inside-an-ai-data-center/",
-    "score": 85,
-    "reason": "Strategic market ambition with significant industry consolidation implications"
+    "headline": "The Army Is Burning Through Its AI Tokens",
+    "link": "https://www.wired.com/story/the-army-is-burning-through-its-ai-tokens/",
+    "score": 82,
+    "reason": "Government AI spending surge: military scale deployment with cost implications"
   },
   {
     "rank": 5,
-    "headline": "Google launches Gemini 3.6 Flash and 3.5 Flash-Lite, teases Gemini 4",
-    "link": "https://9to5google.com/2026/07/21/gemini-3-6-flash-launch/",
-    "score": 84,
-    "reason": "Major model releases with cost-performance focus for enterprise adoption"
+    "headline": "Google Releases 3 New Gemini Models, 3.5 Pro Still Not Available",
+    "link": "https://www.cnet.com/tech/services-and-software/google-releases-three-new-gemini-models-3-5-pro-still-not-available/",
+    "score": 79,
+    "reason": "Google product launch: multiple new models released"
   },
   {
     "rank": 6,
-    "headline": "Google launches a cheaper alternative to large AI security models like Mythos",
-    "link": "https://www.theverge.com/tech/968572/google-gemini-flash-cyber-ai-security-model",
-    "score": 82,
-    "reason": "Product launch targeting market segment with pricing advantage"
+    "headline": "Utility companies promise to spare us from AI’s energy bill",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/969137/us-utility-ai-electricty-data-center-rate-pledge-trump",
+    "score": 76,
+    "reason": "Industry response to AI power consumption concerns with concrete commitments"
   },
   {
     "rank": 7,
-    "headline": "A FINRA for AI? The idea from Google DeepMind CEO Demis Hassabis is gaining momentum. But is it any good?",
-    "link": "https://fortune.com/2026/07/21/google-deepmind-ceo-demis-hassabis-finra-for-ai-proposal-gains-momentum-but-is-it-any-good/",
-    "score": 80,
-    "reason": "Major regulatory framework proposal from leading AI researcher gaining traction"
+    "headline": "Chinese open-weight models are cheap. Washington is deciding what that costs.",
+    "link": "https://www.artificialintelligence-news.com/news/chinese-open-weight-models-policy-risk/",
+    "score": 75,
+    "reason": "Geopolitical AI competition: policy implications of Chinese model accessibility"
   },
   {
     "rank": 8,
-    "headline": "An AI agent breached Hugging Face before an AI defender caught it: What users should do next",
-    "link": "https://www.zdnet.com/article/hugging-face-breach-blamed-on-ai-agent/",
-    "score": 78,
-    "reason": "Confirmed security breach with real-world attack and defense demonstration"
+    "headline": "OpenAI appoints two new members to board of directors",
+    "link": "https://www.cnbc.com/2026/07/21/openai-appoints-two-new-members-to-board-of-directors.html",
+    "score": 72,
+    "reason": "OpenAI governance shift: board restructuring after recent controversy"
   },
   {
     "rank": 9,
-    "headline": "A Sneaky Hacking Tool Targeting AI Infrastructure Is Lurking in Victims’ Blind Spots",
-    "link": "https://www.wired.com/story/a-sneaky-hacking-tool-targeting-ai-infrastructure-is-lurking-in-victims-blind-spots/",
-    "score": 76,
-    "reason": "New security threat targeting AI infrastructure discovered"
+    "headline": "Google's Gemini 3.6 Flash targets enterprise agent token costs",
+    "link": "https://www.artificialintelligence-news.com/news/googles-gemini-3-6-flash-targets-enterprise-agent-token-costs/",
+    "score": 70,
+    "reason": "Product optimization: Google targeting enterprise cost efficiency"
   },
   {
     "rank": 10,
-    "headline": "Jack Dorsey launches Buzz to combine team chat, AI agents and Git hosting",
-    "link": "https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git",
-    "score": 75,
-    "reason": "New product launch from major tech figure integrating AI agents into developer tools"
+    "headline": "Samsung’s New AI Health Assistant Aims to Make Health Metrics Actually Useful",
+    "link": "https://www.cnet.com/tech/services-and-software/samsungs-new-ai-health-assistant/",
+    "score": 68,
+    "reason": "Major tech company health AI application launch"
   },
   {
     "rank": 11,
-    "headline": "Substack adds an AI detector to help spot blogs written by no one",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/968855/substack-pangram-ai-detecting-tool",
-    "score": 73,
-    "reason": "Platform feature launch addressing AI-generated content detection at scale"
+    "headline": "Mathematicians grapple with a ‘very rapid and very unsettling change’ as AI cracks yet another century-old problem",
+    "link": "https://fortune.com/2026/07/21/ai-solves-jacobian-conjecture-levant-alpoge-claude-fable-5/",
+    "score": 66,
+    "reason": "AI breakthrough in mathematics: solving longstanding unsolved problems"
   },
   {
     "rank": 12,
-    "headline": "Samsung aims to help you make more sense of health data with a new AI-powered assistant",
-    "link": "https://www.engadget.com/2219698/samsung-aims-to-help-you-make-more-sense-of-health-data-with-a-new-ai-powered-assistant/",
-    "score": 70,
-    "reason": "Major consumer brand deploying AI assistant in health data management"
+    "headline": "Samsung's North America CEO says the smartphone is just an entry point to ambient AI of the home",
+    "link": "https://fortune.com/2026/07/22/samsung-smartphone-entry-point-ambient-ai-home/",
+    "score": 64,
+    "reason": "Unexpected AI beneficiaries: non-tech companies profiting from AI adoption"
   },
   {
     "rank": 13,
-    "headline": "OpenAI, Anthropic boost lobbying as legacy tech and defense spending slips",
-    "link": "https://www.cnbc.com/2026/07/21/openai-anthropic-ai-lobbying-spending-q2-2026.html",
-    "score": 68,
-    "reason": "Major AI companies increasing regulatory and policy influence efforts"
+    "headline": "Substack is adding an AI detection feature",
+    "link": "https://www.engadget.com/2220064/substack-is-adding-an-ai-detection-feature/",
+    "score": 62,
+    "reason": "Content platform launches AI detection tool for user content"
   },
   {
     "rank": 14,
-    "headline": "Qwen-Image-3.0: Rich Content, Authentic Details, Deep Knowledge",
-    "link": "https://qwen.ai/blog?id=qwen-image-3.0",
-    "score": 65,
-    "reason": "New multimodal AI model release from major Chinese AI developer"
+    "headline": "‘It’s a Modern-Day Draft’: Why Stanford Students Walked Out on Sundar Pichai’s Commencement Speech",
+    "link": "https://www.wired.com/story/big-interview-stanford-students-booing-sundar-pichai/",
+    "score": 60,
+    "reason": "Google/AI-related controversy: major student protest at university event"
   },
   {
     "rank": 15,
-    "headline": "OpenAI and Hugging Face partner to address security incident",
-    "link": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
-    "score": 62,
-    "reason": "Industry collaboration response to confirmed security incident"
+    "headline": "Wistron shares surge in Taiwan after opening of Texas AI superchip plant to supply Nvidia",
+    "link": "https://www.cnbc.com/2026/07/22/wistron-shares-surge-after-opening-texas-plant-for-nvidia-ai-servers-.html",
+    "score": 58,
+    "reason": "Supply chain expansion: major AI chip manufacturing facility opening"
   },
   {
     "rank": 16,
-    "headline": "Bessent says U.S. could sanction China over AI model &apos;theft&apos;",
-    "link": "https://www.cnbc.com/2026/07/21/bessent-china-ai-sanctions.html",
-    "score": 60,
-    "reason": "Major geopolitical AI tension with potential trade consequences"
+    "headline": "Google’s Opal AI Builds Apps From Your Words — When It Works",
+    "link": "https://www.cnet.com/tech/services-and-software/googles-opal-ai-builds-apps-from-your-words-when-it-works/",
+    "score": 55,
+    "reason": "Google feature launch: AI-generated application development"
   },
   {
     "rank": 17,
-    "headline": "Nebius stock surges nearly 19% as Nvidia discloses significant stake in neocloud",
-    "link": "https://www.cnbc.com/2026/07/21/nebius-stock-nvidia-stake-neocloud.html",
-    "score": 58,
-    "reason": "Significant stock movement and major investment signal from industry leader"
+    "headline": "Exclusive: Stanford and ADP have new payroll data on Gen Z women losing ground to men in the job market—and AI isn't the main culprit",
+    "link": "https://fortune.com/2026/07/22/women-entry-level-job-growth-slower-than-men-stanford-adp/",
+    "score": 52,
+    "reason": "Data-driven study: AI impact on employment disparities with specific demographic findings"
   },
   {
     "rank": 18,
-    "headline": "The secret Trump administration battle to fight Chinese AI",
-    "link": "https://www.axios.com/2026/07/20/ai-us-china-open-source-kimi",
-    "score": 56,
-    "reason": "High-level government policy conflict over AI competition with geopolitical stakes"
+    "headline": "SenseTime's Galaxy Project targets domestic AI chip scale-up",
+    "link": "https://www.artificialintelligence-news.com/news/sensetimes-galaxy-project-targets-domestic-ai-chip-scale-up/",
+    "score": 50,
+    "reason": "Chinese company AI chip manufacturing initiative: scale-up target announced"
   },
   {
     "rank": 19,
-    "headline": "A family crisis inspired Bill Ackman to spend $260 million to create a massive brain research institute in Manhattan",
-    "link": "https://fortune.com/2026/07/21/pershing-square-billionaire-buys-manhattan-site-for-700000-square-foot-ackman-oxman-institute-for-brain-research/",
-    "score": 54,
-    "reason": "Major private investment in AI/neuroscience research infrastructure"
+    "headline": "Exclusive: Nvidia's Jensen Huang defends Chinese AI amid Kimi panic",
+    "link": "https://www.axios.com/2026/07/22/nvidia-jensen-huang-china-open-source-ai",
+    "score": 48,
+    "reason": "Nvidia executive position on Chinese AI competition and policy concerns"
   },
   {
     "rank": 20,
-    "headline": "Advancing next-gen AI with materials science innovation",
-    "link": "https://www.technologyreview.com/2026/07/21/1140602/advancing-next-gen-ai-with-materials-science-innovation/",
-    "score": 50,
-    "reason": "Research advancement combining AI with materials science for hardware improvements"
+    "headline": "Meta made its own AI detection system. It should have just used Google’s",
+    "link": "https://www.theverge.com/tech/968680/meta-ai-detection-labeling-content-seal-watermarks-synthid",
+    "score": 46,
+    "reason": "Meta AI detection product launch with critical analysis"
   }
 ]
