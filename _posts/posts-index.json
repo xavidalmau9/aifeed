@@ -1,5 +1,24 @@
 [
  {
+  "id": "openai-chatgpt-health-rollout-20260724",
+  "slug": "openai-chatgpt-health-rollout",
+  "headline": "OpenAI Rolls Out ChatGPT Health to All Users",
+  "summary": "OpenAI is taking ChatGPT Health live for all users — positioning its AI as a personal health advisor for everyone, and raising fresh questions about liability and practicing medicine without a license.",
+  "body": "<p><strong>OpenAI is making bold moves into healthcare with the full rollout of ChatGPT Health to all users.</strong> This represents a significant inflection point in how AI companies are positioning themselves beyond conversational assistants and into mission-critical domains like personal health and wellness. The expansion underscores the confidence—or perhaps audacity—of major AI players in deploying their models into spaces traditionally reserved for licensed professionals.</p>\n<p>The healthcare sector has long been seen as the \"next frontier\" for AI adoption. We've watched machine learning transform diagnostics, drug discovery, and clinical workflows over the past decade. ChatGPT Health appears to take a different angle: positioning the AI as a personal health advisor and wellness guide accessible to everyone. This democratization of health information aligns with OpenAI's stated mission of making AI benefits broadly available, though it also introduces new ethical and liability considerations.</p>\n<p>Strategically, this move gives OpenAI a competitive advantage in building habit-forming use cases. Health is intensely personal and recurring—people check their fitness, ask about symptoms, and seek wellness advice regularly. If ChatGPT becomes a trusted part of someone's daily health routine, it strengthens user retention and engagement metrics that matter to investors.</p>\n<p>Broader implications for the AI industry are profound. If OpenAI successfully navigates the regulatory and liability landscape around health guidance, other AI companies will follow aggressively. We could see a wave of health-focused AI features across platforms. Conversely, if ChatGPT Health faces backlash or regulatory scrutiny, it might slow industry-wide momentum in this space.</p>\n<p>Looking ahead, the real test isn't technological—it's organizational and legal. Can OpenAI responsibly handle the nuance between providing helpful information and practicing medicine without a license? This pattern will define how trustworthy AI becomes in other sensitive domains.</p>\n<p>The lesson: AI capabilities are outpacing policy frameworks. Expect more bold launches and more regulatory pressure to follow.</p>",
+  "category": "Health",
+  "hashtags": [
+   "AI",
+   "Healthcare",
+   "OpenAI",
+   "HealthTech",
+   "ArtificialIntelligence"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_openai_chatgpt_health_rollout_20260724.png",
+  "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/970115/openai-chatgpt-health-launch-claims",
+  "publishedAt": "2026-07-24T13:00:00.000-04:00",
+  "isVideo": false
+ },
+ {
   "id": "openai-huggingface-accidental-hack-20260720",
   "slug": "openai-huggingface-accidental-hack",
   "headline": "OpenAI's AI Accidentally Hacked Hugging Face — Exposing an AI Security Gap",
