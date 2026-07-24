@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI says it accidentally hacked Hugging Face with a new AI system",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/968988/openai-hugging-face-hack-ai",
-    "score": 98,
-    "reason": "Major security incident: AI model autonomously breached external system without human intervention"
+    "headline": "AMD commits up to $5 billion to  Anthropic",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/969285/amd-anthropic-ai-infrastructure-deal",
+    "score": 94,
+    "reason": "Major infrastructure investment, big numbers, direct competitor move to OpenAI's partnerships"
   },
   {
     "rank": 2,
-    "headline": "Here are the 30,000 songs Sony is suing Udio's AI music generator over",
-    "link": "https://www.theverge.com/tech/968375/sony-udio-lawsuit-songs-ai-copyright",
+    "headline": "OpenAI is making big claims as it rolls out ChatGPT Health to everyone",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/970115/openai-chatgpt-health-launch-claims",
     "score": 92,
-    "reason": "Large-scale copyright lawsuit: specific number of songs, major artist/label involved"
+    "reason": "Major product launch at scale, healthcare application, significant claims about capabilities"
   },
   {
     "rank": 3,
-    "headline": "Bristol Myers Squibb buys Nvidia AI system for drug discovery",
-    "link": "https://www.artificialintelligence-news.com/news/bristol-myers-squibb-nvidia-ai-system-drug-discovery/",
-    "score": 85,
-    "reason": "Major pharma company acquisition of AI system for healthcare application"
+    "headline": "OpenAI Agent Escaped Testing and Launched an Autonomous Hack",
+    "link": "https://www.cnet.com/news/openai-agent-escaped-testing-launched-autonomous-hack-hugging-face/",
+    "score": 90,
+    "reason": "Significant security controversy, demonstrates real autonomous AI risk, verified incident not speculation"
   },
   {
     "rank": 4,
-    "headline": "The Army Is Burning Through Its AI Tokens",
-    "link": "https://www.wired.com/story/the-army-is-burning-through-its-ai-tokens/",
-    "score": 82,
-    "reason": "Government AI spending surge: military scale deployment with cost implications"
+    "headline": "Claude’s voice mode is now available for Opus and Sonnet",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/970065/anthropic-voice-mode-claude-opus-sonnet-haiku-ai",
+    "score": 85,
+    "reason": "Feature expansion across models, competitive response to voice AI offerings"
   },
   {
     "rank": 5,
-    "headline": "Google Releases 3 New Gemini Models, 3.5 Pro Still Not Available",
-    "link": "https://www.cnet.com/tech/services-and-software/google-releases-three-new-gemini-models-3-5-pro-still-not-available/",
-    "score": 79,
-    "reason": "Google product launch: multiple new models released"
+    "headline": "NASA Puts Google’s Gemma Large Language Model in Orbit",
+    "link": "https://spectrum.ieee.org/nasa-ai-satellite-image-analysis",
+    "score": 84,
+    "reason": "Major deployment milestone, government/space agency adoption, validates model capability"
   },
   {
     "rank": 6,
-    "headline": "Utility companies promise to spare us from AI’s energy bill",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/969137/us-utility-ai-electricty-data-center-rate-pledge-trump",
-    "score": 76,
-    "reason": "Industry response to AI power consumption concerns with concrete commitments"
+    "headline": "Lawmakers prepare bill requiring AI ‘kill switch’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal",
+    "score": 83,
+    "reason": "Major regulatory development, government intervention on AI safety, significant controversy"
   },
   {
     "rank": 7,
-    "headline": "Chinese open-weight models are cheap. Washington is deciding what that costs.",
-    "link": "https://www.artificialintelligence-news.com/news/chinese-open-weight-models-policy-risk/",
-    "score": 75,
-    "reason": "Geopolitical AI competition: policy implications of Chinese model accessibility"
+    "headline": "Intel&apos;s stock jumps as chipmaker rides AI boom to fastest revenue growth in almost 15 years",
+    "link": "https://www.cnbc.com/2026/07/23/intel-intc-earnings-report-q2-2026.html",
+    "score": 81,
+    "reason": "Significant financial milestone, major company benefiting from AI demand"
   },
   {
     "rank": 8,
-    "headline": "OpenAI appoints two new members to board of directors",
-    "link": "https://www.cnbc.com/2026/07/21/openai-appoints-two-new-members-to-board-of-directors.html",
-    "score": 72,
-    "reason": "OpenAI governance shift: board restructuring after recent controversy"
+    "headline": "Nvidia bets physical AI can solve healthcare robotics' data problem",
+    "link": "https://www.artificialintelligence-news.com/news/nvidia-bets-physical-ai-solve-healthcare-robotics-data-problem/",
+    "score": 80,
+    "reason": "Major tech company strategic bet, new AI application domain, healthcare focus"
   },
   {
     "rank": 9,
-    "headline": "Google's Gemini 3.6 Flash targets enterprise agent token costs",
-    "link": "https://www.artificialintelligence-news.com/news/googles-gemini-3-6-flash-targets-enterprise-agent-token-costs/",
-    "score": 70,
-    "reason": "Product optimization: Google targeting enterprise cost efficiency"
+    "headline": "AI image fraud will cost $40 billion next year - can these international standards help?",
+    "link": "https://www.zdnet.com/article/ai-image-fraud-new-global-standards/",
+    "score": 79,
+    "reason": "Large financial impact metric, emerging fraud crisis, international coordination effort"
   },
   {
     "rank": 10,
-    "headline": "Samsung’s New AI Health Assistant Aims to Make Health Metrics Actually Useful",
-    "link": "https://www.cnet.com/tech/services-and-software/samsungs-new-ai-health-assistant/",
-    "score": 68,
-    "reason": "Major tech company health AI application launch"
+    "headline": "Moonshot AI accessed Nvidia&apos;s chips despite Chinese export ban, White House official says",
+    "link": "https://www.cnbc.com/2026/07/23/moonshot-kimi-nvidia-ai-chips-export-ban.html",
+    "score": 78,
+    "reason": "Geopolitical controversy, export control evasion, US-China AI competition escalation"
   },
   {
     "rank": 11,
-    "headline": "Mathematicians grapple with a ‘very rapid and very unsettling change’ as AI cracks yet another century-old problem",
-    "link": "https://fortune.com/2026/07/21/ai-solves-jacobian-conjecture-levant-alpoge-claude-fable-5/",
-    "score": 66,
-    "reason": "AI breakthrough in mathematics: solving longstanding unsolved problems"
+    "headline": "250 Eiffel Towers' worth of waste: The AI boom's toxic hardware problem",
+    "link": "https://www.zdnet.com/article/ai-data-center-boom-e-waste-problem/",
+    "score": 77,
+    "reason": "Environmental impact story with dramatic scale, sustainability controversy, infrastructure concern"
   },
   {
     "rank": 12,
-    "headline": "Samsung's North America CEO says the smartphone is just an entry point to ambient AI of the home",
-    "link": "https://fortune.com/2026/07/22/samsung-smartphone-entry-point-ambient-ai-home/",
-    "score": 64,
-    "reason": "Unexpected AI beneficiaries: non-tech companies profiting from AI adoption"
+    "headline": "China’s Open AI Models Are Challenging Silicon Valley’s Playbook",
+    "link": "https://www.wired.com/story/chinas-open-ai-models-are-challenging-silicon-valleys-playbook/",
+    "score": 76,
+    "reason": "Major competitive shift, geopolitical AI competition, business model challenge"
   },
   {
     "rank": 13,
-    "headline": "Substack is adding an AI detection feature",
-    "link": "https://www.engadget.com/2220064/substack-is-adding-an-ai-detection-feature/",
-    "score": 62,
-    "reason": "Content platform launches AI detection tool for user content"
+    "headline": "How a Chinese AI model stopped OpenAI’s ‘unprecedented’ cyber attack",
+    "link": "https://www.cnbc.com/2026/07/24/chinese-ai-model-openai-cyber-attack.html",
+    "score": 75,
+    "reason": "Security incident with ironic twist, Chinese AI defensive success, OpenAI vulnerability"
   },
   {
     "rank": 14,
-    "headline": "‘It’s a Modern-Day Draft’: Why Stanford Students Walked Out on Sundar Pichai’s Commencement Speech",
-    "link": "https://www.wired.com/story/big-interview-stanford-students-booing-sundar-pichai/",
-    "score": 60,
-    "reason": "Google/AI-related controversy: major student protest at university event"
+    "headline": "The White House Is Trying to Figure Out What to Do About Chinese AI",
+    "link": "https://www.wired.com/story/the-white-house-is-trying-to-figure-out-what-to-do-about-chinese-ai/",
+    "score": 74,
+    "reason": "Government policy uncertainty, geopolitical AI strategy, White House intervention"
   },
   {
     "rank": 15,
-    "headline": "Wistron shares surge in Taiwan after opening of Texas AI superchip plant to supply Nvidia",
-    "link": "https://www.cnbc.com/2026/07/22/wistron-shares-surge-after-opening-texas-plant-for-nvidia-ai-servers-.html",
-    "score": 58,
-    "reason": "Supply chain expansion: major AI chip manufacturing facility opening"
+    "headline": "Apple’s OpenAI lawsuit is about who gets to define the post-smartphone era",
+    "link": "https://www.theverge.com/podcast/968787/apple-openai-trade-secrets-lawsuit-ai-hardware-smartphone-jony-ive",
+    "score": 73,
+    "reason": "Major company legal action, strategic AI competition, market definition battle"
   },
   {
     "rank": 16,
-    "headline": "Google’s Opal AI Builds Apps From Your Words — When It Works",
-    "link": "https://www.cnet.com/tech/services-and-software/googles-opal-ai-builds-apps-from-your-words-when-it-works/",
-    "score": 55,
-    "reason": "Google feature launch: AI-generated application development"
+    "headline": "Man Sues OpenAI, Alleging ChatGPT Gave Him ‘Dangerous Medical Advice’",
+    "link": "https://www.cnet.com/tech/services-and-software/man-sues-openai-alleging-chatgpt-gave-him-dangerous-medical-advice/",
+    "score": 71,
+    "reason": "Legal liability case, safety concerns, medical harm allegation"
   },
   {
     "rank": 17,
-    "headline": "Exclusive: Stanford and ADP have new payroll data on Gen Z women losing ground to men in the job market—and AI isn't the main culprit",
-    "link": "https://fortune.com/2026/07/22/women-entry-level-job-growth-slower-than-men-stanford-adp/",
-    "score": 52,
-    "reason": "Data-driven study: AI impact on employment disparities with specific demographic findings"
+    "headline": "OpenAI's agent breached Hugging Face before an AI defender caught it: What users should do next",
+    "link": "https://www.zdnet.com/article/hugging-face-breach-blamed-on-ai-agent/",
+    "score": 70,
+    "reason": "Security breach incident, real-world attack success, user safety implications"
   },
   {
     "rank": 18,
-    "headline": "SenseTime's Galaxy Project targets domestic AI chip scale-up",
-    "link": "https://www.artificialintelligence-news.com/news/sensetimes-galaxy-project-targets-domestic-ai-chip-scale-up/",
-    "score": 50,
-    "reason": "Chinese company AI chip manufacturing initiative: scale-up target announced"
+    "headline": "Amazon cracks down on use of AI images by sellers after New York law",
+    "link": "https://www.cnbc.com/2026/07/23/amazon-makes-sellers-label-ai-generated-people-in-images-after-ny-law.html",
+    "score": 69,
+    "reason": "Regulatory enforcement action, marketplace policy shift, AI-generated content restriction"
   },
   {
     "rank": 19,
-    "headline": "Exclusive: Nvidia's Jensen Huang defends Chinese AI amid Kimi panic",
-    "link": "https://www.axios.com/2026/07/22/nvidia-jensen-huang-china-open-source-ai",
-    "score": 48,
-    "reason": "Nvidia executive position on Chinese AI competition and policy concerns"
+    "headline": "Patreon is laying off 20 percent of workers",
+    "link": "https://www.theverge.com/tech/970211/patreon-layoffs-ai",
+    "score": 65,
+    "reason": "Significant layoff percentage, AI-related workforce reduction, creator economy impact"
   },
   {
     "rank": 20,
-    "headline": "Meta made its own AI detection system. It should have just used Google’s",
-    "link": "https://www.theverge.com/tech/968680/meta-ai-detection-labeling-content-seal-watermarks-synthid",
-    "score": 46,
-    "reason": "Meta AI detection product launch with critical analysis"
+    "headline": "Cerebras stock gains on AMD partnership",
+    "link": "https://www.cnbc.com/2026/07/23/cerebras-stock-gains-on-amd-partnership.html",
+    "score": 63,
+    "reason": "Strategic partnership announcement, AI chip industry consolidation"
   }
 ]
