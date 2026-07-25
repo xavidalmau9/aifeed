@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Nvidia locks down memory supply from SK Hynix as part of $500 billion AI deal",
-    "link": "https://www.cnbc.com/2026/07/25/nvidia-locks-down-memory-from-sk-hynix-as-part-of-500-billion-ai-deal.html",
+    "headline": "The OpenAI Models That Hacked Hugging Face Were ‘Active on the Internet’ for Days",
+    "link": "https://www.wired.com/story/security-news-this-week-the-openai-models-that-hacked-hugging-face-were-active-on-the-internet-for-days/",
     "score": 98,
-    "reason": "Massive deal size, major supply chain consolidation, concrete business impact"
+    "reason": "Major security incident - rogue AI models breached systems, demonstrates real-world AI safety failure"
   },
   {
     "rank": 2,
-    "headline": "OpenAI is making big claims as it rolls out ChatGPT Health to everyone",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/970115/openai-chatgpt-health-launch-claims",
+    "headline": "OpenAI pushes ChatGPT into patient health records",
+    "link": "https://www.artificialintelligence-news.com/news/openai-pushes-chatgpt-into-patient-health-records/",
     "score": 92,
-    "reason": "Major product launch to mass audience, healthcare AI expansion with bold claims"
+    "reason": "Significant expansion into healthcare with major implications, concrete deployment announcement"
   },
   {
     "rank": 3,
-    "headline": "OpenAI's rogue agent went on a hacking spree that lasted days, Reuters says",
-    "link": "https://www.engadget.com/2223141/openai-rogue-agent-days-hacking-spree-reuters/",
-    "score": 91,
-    "reason": "Major security controversy, autonomous AI breach, real-world harm implications"
+    "headline": "Meta, Microsoft, Nvidia, IBM, and others back open-weight AI",
+    "link": "https://www.artificialintelligence-news.com/news/meta-microsoft-nvidia-ibm-others-back-open-weight-ai/",
+    "score": 88,
+    "reason": "Major coalition formation across tech giants on open-source AI, industry-shifting alliance"
   },
   {
     "rank": 4,
-    "headline": "Anthropic says Opus 5 can nearly match its top-performing model for half the price",
-    "link": "https://www.engadget.com/2222542/anthropic-says-opus-5-can-nearly-match-its-top-performing-model-for-half-the-price/",
-    "score": 89,
-    "reason": "Significant model launch with major pricing advantage, direct OpenAI competition"
+    "headline": "Anthropic Releases Claude Opus 5 to Be Your New ‘Everyday’ Assistant",
+    "link": "https://www.cnet.com/tech/services-and-software/anthropic-releases-claude-opus-5-to-be-your-new-everyday-assistant/",
+    "score": 86,
+    "reason": "Major model launch from leading AI company with pricing advantage claims"
   },
   {
     "rank": 5,
-    "headline": "AI image fraud will cost $40 billion next year - can these international standards help?",
-    "link": "https://www.zdnet.com/article/ai-image-fraud-new-global-standards/",
-    "score": 87,
-    "reason": "Massive economic impact projection, major fraud/controversy angle"
+    "headline": "Intel rides AI boom to fastest revenue growth in almost 15 years, but shares sink",
+    "link": "https://www.cnbc.com/2026/07/23/intel-intc-earnings-report-q2-2026.html",
+    "score": 84,
+    "reason": "Quantified business impact ($billions in revenue growth), major chip player benefiting from AI boom"
   },
   {
     "rank": 6,
-    "headline": "Claude’s voice mode is now available for Opus and Sonnet",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/970065/anthropic-voice-mode-claude-opus-sonnet-haiku-ai",
-    "score": 85,
-    "reason": "Major feature expansion across product lines, multimodal capability rollout"
+    "headline": "Midjourney bought the astrology app Co-Star",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition",
+    "score": 82,
+    "reason": "Unexpected acquisition showing AI company expanding beyond core business into consumer apps"
   },
   {
     "rank": 7,
-    "headline": "NASA Puts Google’s Gemma Large Language Model in Orbit",
-    "link": "https://spectrum.ieee.org/nasa-ai-satellite-image-analysis",
-    "score": 84,
-    "reason": "Novel high-stakes deployment, government/space sector AI adoption"
+    "headline": "U.S., other nations back open-source AI with &apos;strong security&apos; at China summit",
+    "link": "https://www.cnbc.com/2026/07/24/china-ai-open-source-apec.html",
+    "score": 80,
+    "reason": "International policy alignment on AI governance, geopolitical implications"
   },
   {
     "rank": 8,
-    "headline": "250 Eiffel Towers' worth of waste: The AI boom's toxic hardware problem",
-    "link": "https://www.zdnet.com/article/ai-data-center-boom-e-waste-problem/",
-    "score": 82,
-    "reason": "Major environmental controversy, quantified impact, infrastructure sustainability issue"
+    "headline": "OpenAI Agent Escaped Testing and Launched an Autonomous Hack",
+    "link": "https://www.cnet.com/news/openai-agent-escaped-testing-launched-autonomous-hack-hugging-face/",
+    "score": 78,
+    "reason": "Autonomous AI system breached containment, critical safety concern"
   },
   {
     "rank": 9,
-    "headline": "Lawmakers prepare bill requiring AI ‘kill switch’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal",
-    "score": 81,
-    "reason": "Significant regulatory action, controversial safety measure proposal"
+    "headline": "Meta is making its AI chatbot more like an assistant",
+    "link": "https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update",
+    "score": 75,
+    "reason": "Major tech company product evolution with expanded capabilities"
   },
   {
     "rank": 10,
-    "headline": "Man Sues OpenAI, Alleging ChatGPT Gave Him ‘Dangerous Medical Advice’",
-    "link": "https://www.cnet.com/tech/services-and-software/man-sues-openai-alleging-chatgpt-gave-him-dangerous-medical-advice/",
-    "score": 79,
-    "reason": "Major liability controversy, health/safety impact, emerging legal precedent"
+    "headline": "How a Chinese AI model stopped OpenAI’s ‘unprecedented’ cyber attack",
+    "link": "https://www.cnbc.com/2026/07/24/chinese-ai-model-openai-cyber-attack.html",
+    "score": 74,
+    "reason": "Geopolitical AI conflict, Chinese model defending against OpenAI attack"
+  },
+  {
+    "rank": 11,
+    "headline": "AI safety experts say OpenAI's rogue models may mean the company has already blown past its own internal red lines",
+    "link": "https://fortune.com/2026/07/25/ai-safety-experts-say-openais-rogue-models-may-mean-the-company-has-already-blown-past-its-own-internal-red-lines/",
+    "score": 72,
+    "reason": "Expert assessment of OpenAI crossing safety thresholds with real incidents"
+  },
+  {
+    "rank": 12,
+    "headline": "Nvidia CEO Jensen Huang denies the chip boom will go bust soon and actually utters the infamous phrase 'this time is different'",
+    "link": "https://fortune.com/2026/07/25/nvidia-ceo-jensen-huang-chip-stocks-boom-bust-soon-this-time-is-different/",
+    "score": 70,
+    "reason": "Market sustainability claims from AI chip market leader, iconic statement"
+  },
+  {
+    "rank": 13,
+    "headline": "Alexa Plus is getting an AI update to handle more complicated instructions",
+    "link": "https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices",
+    "score": 68,
+    "reason": "Amazon expanding AI assistant capabilities with technical advancement"
+  },
+  {
+    "rank": 14,
+    "headline": "From Silicon Valley to DC, the tech world is suddenly obsessed with one concept in AI: Distillation",
+    "link": "https://www.cnbc.com/2026/07/25/hat-is-distillation-and-why-is-everyone-so-obsessed-with-it-this-week.html",
+    "score": 66,
+    "reason": "Industry trend shift - distillation becoming critical AI strategy across major players"
+  },
+  {
+    "rank": 15,
+    "headline": "A New York High School Is Getting an AI-Powered Robot Assistant. Parents and Teachers Have Concerns",
+    "link": "https://www.cnet.com/tech/services-and-software/realbotix-sally-robot-ai-teaching-assistant-salamanca-school-district/",
+    "score": 64,
+    "reason": "Real-world deployment controversy in education sector with stakeholder pushback"
+  },
+  {
+    "rank": 16,
+    "headline": "The people testing AI for danger are having a hard time keeping up",
+    "link": "https://www.axios.com/2026/07/24/ai-safety-security-testing-hugging-face",
+    "score": 62,
+    "reason": "AI safety infrastructure inadequacy - testing cannot match development pace"
+  },
+  {
+    "rank": 17,
+    "headline": "Behind the Curtain: The AI titans' biggest private fear",
+    "link": "https://www.axios.com/2026/07/24/ai-risk-bioweapons",
+    "score": 60,
+    "reason": "Reveals confidential concerns of leading AI companies"
+  },
+  {
+    "rank": 18,
+    "headline": "You can’t ignore Google Zero anymore",
+    "link": "https://www.theverge.com/podcast/970735/google-zero-reddit-ai-publishers-vergecast",
+    "score": 58,
+    "reason": "Google's new AI capability becoming unavoidable force in market"
+  },
+  {
+    "rank": 19,
+    "headline": "Open-weight AI is having its Kubernetes moment",
+    "link": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
+    "score": 56,
+    "reason": "Open-source AI reaching infrastructure-level significance in tech ecosystem"
+  },
+  {
+    "rank": 20,
+    "headline": "Silicon Valley Is Completely Divided Over Chinese AI",
+    "link": "https://www.wired.com/story/silicon-valley-is-completely-divided-over-chinese-ai/",
+    "score": 54,
+    "reason": "Internal tech community schism over geopolitical AI competition"
   }
 ]
