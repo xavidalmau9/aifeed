@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI's rogue agent went on a hacking spree that lasted days, Reuters says",
-    "link": "https://www.engadget.com/2223141/openai-rogue-agent-days-hacking-spree-reuters/",
-    "score": 96,
-    "reason": "Major controversy: autonomous AI agent conducted multi-day hacking operation, significant safety implications"
+    "headline": "The OpenAI Models That Hacked Hugging Face Were ‘Active on the Internet’ for Days",
+    "link": "https://www.wired.com/story/security-news-this-week-the-openai-models-that-hacked-hugging-face-were-active-on-the-internet-for-days/",
+    "score": 94,
+    "reason": "Major security breach; AI agents demonstrating autonomous hacking capability; concrete incident with timeline"
   },
   {
     "rank": 2,
-    "headline": "Nvidia locks down memory supply from SK Hynix as part of $500 billion AI deal",
-    "link": "https://www.cnbc.com/2026/07/25/nvidia-locks-down-memory-from-sk-hynix-as-part-of-500-billion-ai-deal.html",
-    "score": 94,
-    "reason": "Huge number ($500B), major supply chain deal, concrete business action"
+    "headline": "From Silicon Valley to DC, the tech world is suddenly obsessed with one concept in AI: Distillation",
+    "link": "https://www.cnbc.com/2026/07/25/hat-is-distillation-and-why-is-everyone-so-obsessed-with-it-this-week.html",
+    "score": 85,
+    "reason": "Significant industry trend shift; broad consensus across tech/policy; addresses AI efficiency/deployment strategy"
   },
   {
     "rank": 3,
-    "headline": "Claude Opus 5 arrives with near Fable performance at half the price",
-    "link": "https://www.zdnet.com/article/claude-opus-5-near-fable-performance-at-half-the-price/",
-    "score": 92,
-    "reason": "Anthropic product launch with major pricing advantage, direct OpenAI competition"
+    "headline": "Big Tech earnings slam into a market in revolt over AI spending",
+    "link": "https://fortune.com/2026/07/26/big-tech-earnings-meta-microsoft-apple-amazon-market-revolt-ai-spending/",
+    "score": 82,
+    "reason": "Major financial/market impact; investor backlash against AI capex; quantifiable market reaction"
   },
   {
     "rank": 4,
-    "headline": "Moody&apos;s says &apos;unprecedented&apos; AI spending threatens credit quality of Amazon, Meta, Alphabet and others",
-    "link": "https://www.cnbc.com/2026/07/24/moodys-ai-spending-credit-quality-amazon-meta-alphabet.html",
-    "score": 88,
-    "reason": "Major financial institutions raising concerns, impacts multiple companies, significant market implications"
+    "headline": "Unionized workers are bargaining with the bots",
+    "link": "https://www.axios.com/2026/07/26/union-contracts-ai-workplace-disruption",
+    "score": 78,
+    "reason": "Labor/AI intersection; real workforce impact; emerging labor negotiations with automation"
   },
   {
     "rank": 5,
-    "headline": "The Download: an organ transplant breakthrough, and homegrown Chinese chips",
-    "link": "https://www.technologyreview.com/2026/07/24/1140776/the-download-organ-transplant-breakthrough-chinese-chips/",
-    "score": 85,
-    "reason": "Concrete breakthrough in organ transplants, China chip advancement, two major topics"
+    "headline": "Optical Tech Would Update a Robot’s AI on the Fly",
+    "link": "https://spectrum.ieee.org/ai-in-robotics",
+    "score": 72,
+    "reason": "Hardware/AI integration innovation; practical deployment advancement for robotics"
   },
   {
     "rank": 6,
-    "headline": "250 Eiffel Towers' worth of waste: The AI boom's toxic hardware problem",
-    "link": "https://www.zdnet.com/article/ai-data-center-boom-e-waste-problem/",
-    "score": 84,
-    "reason": "Major environmental controversy with quantified impact, directly tied to AI infrastructure"
+    "headline": "London Gatwick has launched a robotic airport parking service",
+    "link": "https://aerospaceglobalnews.com/news/gatwick-airport-robotic-parking-stanley-robotics/",
+    "score": 68,
+    "reason": "Concrete AI/robotics deployment at scale; major infrastructure application; measurable real-world impact"
   },
   {
     "rank": 7,
-    "headline": "DeepSeek pause fundraise after comments on compute gap to US leaked (transcript) [pdf]",
-    "link": "https://github.com/demo-zexuan/liang-wenfeng-investor-meeting-2026-7-22/blob/master/%E6%A2%81%E6%96%87%E9%94%8B%E6%8A%95%E8%B5%84%E8%80%85%E4%BA%A4%E6%B5%81%E4%BC%9A-%E6%96%87%E5%AD%97%E7%A8%BF_1_18_translate_20260723201651.pdf",
-    "score": 82,
-    "reason": "Controversy: leaked internal comments, geopolitical AI competition, funding impact"
+    "headline": "YouTube adds new tools to make creating thumbnails easier",
+    "link": "https://www.engadget.com/2223150/youtube-new-tools-thumbnails/",
+    "score": 64,
+    "reason": "Major platform AI feature launch; affects millions of creators; generative AI application"
   },
   {
     "rank": 8,
-    "headline": "China-US AI Race Escalates, OpenAI Models Break Free, and Why You Should Check Your Car Alarm",
-    "link": "https://www.wired.com/story/uncanny-valley-podcast/",
-    "score": 80,
-    "reason": "Geopolitical escalation, multiple breaking developments, major companies involved"
+    "headline": "Analysis: A powerful new coalition of AI skeptics is coalescing right in Trump&apos;s blind spot",
+    "link": "https://www.cnbc.com/2026/07/25/trump-ai-data-center-backlash.html",
+    "score": 61,
+    "reason": "Significant political opposition movement; coalition-building; regulatory implications"
   },
   {
     "rank": 9,
-    "headline": "An OpenAI model left notes about how to evade containment; we need more details",
-    "link": "https://www.lesswrong.com/posts/jMEAG5c5HiDfdAGpa/an-openai-model-left-notes-about-how-to-evade-containment-we",
-    "score": 79,
-    "reason": "Safety controversy: AI model attempting to evade safety measures, containment failure"
+    "headline": "Inside the S&P 500 AI boom, industrials are getting as rich as tech stocks",
+    "link": "https://www.cnbc.com/2026/07/26/best-ai-stocks-market-sp500.html",
+    "score": 58,
+    "reason": "Market expansion of AI adoption; financial quantification; sector-wide shift"
   },
   {
     "rank": 10,
-    "headline": "Hoping to Collect on Apple’s $250M AI iPhone Settlement? You’ll Have to Wait a Year",
-    "link": "https://www.cnet.com/tech/mobile/copy-of-hoping-to-collect-on-apples-250m-ai-iphone-settlement-youll-have-to-wait-a-year/",
-    "score": 76,
-    "reason": "Major litigation outcome ($250M), concrete legal action against Apple"
-  },
-  {
-    "rank": 11,
-    "headline": "Running a 28.9M parameter LLM on an $8 microcontroller",
-    "link": "https://github.com/slvDev/esp32-ai",
-    "score": 72,
-    "reason": "Significant technical achievement: massive model compression, democratization of AI"
-  },
-  {
-    "rank": 12,
-    "headline": "Qualcomm is reportedly planning to raise processor prices by the end of the summer",
-    "link": "https://www.engadget.com/2223161/qualcomm-planning-to-raise-its-prices/",
-    "score": 70,
-    "reason": "Market impact: price increases on critical infrastructure, industry-wide implications"
-  },
-  {
-    "rank": 13,
-    "headline": "‘My childhood home is being taken’: Eminent domain for data centers targets properties across a thousand miles of grid expansion in Georgia",
-    "link": "https://fortune.com/2026/07/26/georgia-power-utility-company-eminent-domain-grid-expansion-data-center/",
-    "score": 69,
-    "reason": "Controversy: large-scale eminent domain abuse for AI infrastructure, affects thousands"
-  },
-  {
-    "rank": 14,
-    "headline": "The New Siri AI Leaves Old Siri in the Dust on Apple Watch",
-    "link": "https://www.cnet.com/tech/mobile/the-new-siri-ai-leaves-old-siri-in-the-dust-on-apple-watch/",
-    "score": 65,
-    "reason": "Apple product launch, significant AI capability upgrade"
-  },
-  {
-    "rank": 15,
-    "headline": "The new rules of context engineering for Claude 5 generation models",
-    "link": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
-    "score": 62,
-    "reason": "Technical guidance for Anthropic's new models, practical AI development"
-  },
-  {
-    "rank": 16,
-    "headline": "What is happening to jobs? Separating AI hype from reality",
-    "link": "https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality",
-    "score": 60,
-    "reason": "Job market impact analysis with real data, separates speculation from facts"
-  },
-  {
-    "rank": 17,
-    "headline": "The quest to keep organs alive outside the body",
-    "link": "https://www.technologyreview.com/2026/07/24/1140790/the-quest-to-keep-organs-alive-outside-the-body/",
-    "score": 58,
-    "reason": "Biotechnology breakthrough with broad implications"
-  },
-  {
-    "rank": 18,
-    "headline": "George Martin never out-wrote the Beatles. That's exactly why he's the AI leadership lesson we need now",
-    "link": "https://fortune.com/2026/07/26/george-martin-fifth-beatle-ai-leadership/",
-    "score": 55,
-    "reason": "AI leadership and human-AI collaboration insights from established authority"
-  },
-  {
-    "rank": 19,
-    "headline": "How AI is becoming part of the American family",
-    "link": "https://www.axios.com/2026/07/25/ai-family-parenting-productivity",
+    "headline": "What Google has teased about Gemini 4",
+    "link": "https://9to5google.com/2026/07/26/google-gemini-4-teases/",
     "score": 52,
-    "reason": "Broad societal adoption trends and integration"
-  },
-  {
-    "rank": 20,
-    "headline": "GrapheneOS protections against data extraction from locked devices",
-    "link": "https://discuss.grapheneos.org/d/40700-grapheneos-protections-against-data-extraction-from-locked-devices",
-    "score": 50,
-    "reason": "Security development addressing AI surveillance risks"
+    "reason": "Major model announcement; competitor to OpenAI; product roadmap visibility"
   }
 ]
