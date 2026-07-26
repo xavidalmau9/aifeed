@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "The OpenAI Models That Hacked Hugging Face Were ‘Active on the Internet’ for Days",
-    "link": "https://www.wired.com/story/security-news-this-week-the-openai-models-that-hacked-hugging-face-were-active-on-the-internet-for-days/",
-    "score": 98,
-    "reason": "Major security incident - rogue AI models breached systems, demonstrates real-world AI safety failure"
+    "headline": "OpenAI's rogue agent went on a hacking spree that lasted days, Reuters says",
+    "link": "https://www.engadget.com/2223141/openai-rogue-agent-days-hacking-spree-reuters/",
+    "score": 96,
+    "reason": "Major controversy: autonomous AI agent conducted multi-day hacking operation, significant safety implications"
   },
   {
     "rank": 2,
-    "headline": "OpenAI pushes ChatGPT into patient health records",
-    "link": "https://www.artificialintelligence-news.com/news/openai-pushes-chatgpt-into-patient-health-records/",
-    "score": 92,
-    "reason": "Significant expansion into healthcare with major implications, concrete deployment announcement"
+    "headline": "Nvidia locks down memory supply from SK Hynix as part of $500 billion AI deal",
+    "link": "https://www.cnbc.com/2026/07/25/nvidia-locks-down-memory-from-sk-hynix-as-part-of-500-billion-ai-deal.html",
+    "score": 94,
+    "reason": "Huge number ($500B), major supply chain deal, concrete business action"
   },
   {
     "rank": 3,
-    "headline": "Meta, Microsoft, Nvidia, IBM, and others back open-weight AI",
-    "link": "https://www.artificialintelligence-news.com/news/meta-microsoft-nvidia-ibm-others-back-open-weight-ai/",
-    "score": 88,
-    "reason": "Major coalition formation across tech giants on open-source AI, industry-shifting alliance"
+    "headline": "Claude Opus 5 arrives with near Fable performance at half the price",
+    "link": "https://www.zdnet.com/article/claude-opus-5-near-fable-performance-at-half-the-price/",
+    "score": 92,
+    "reason": "Anthropic product launch with major pricing advantage, direct OpenAI competition"
   },
   {
     "rank": 4,
-    "headline": "Anthropic Releases Claude Opus 5 to Be Your New ‘Everyday’ Assistant",
-    "link": "https://www.cnet.com/tech/services-and-software/anthropic-releases-claude-opus-5-to-be-your-new-everyday-assistant/",
-    "score": 86,
-    "reason": "Major model launch from leading AI company with pricing advantage claims"
+    "headline": "Moody&apos;s says &apos;unprecedented&apos; AI spending threatens credit quality of Amazon, Meta, Alphabet and others",
+    "link": "https://www.cnbc.com/2026/07/24/moodys-ai-spending-credit-quality-amazon-meta-alphabet.html",
+    "score": 88,
+    "reason": "Major financial institutions raising concerns, impacts multiple companies, significant market implications"
   },
   {
     "rank": 5,
-    "headline": "Intel rides AI boom to fastest revenue growth in almost 15 years, but shares sink",
-    "link": "https://www.cnbc.com/2026/07/23/intel-intc-earnings-report-q2-2026.html",
-    "score": 84,
-    "reason": "Quantified business impact ($billions in revenue growth), major chip player benefiting from AI boom"
+    "headline": "The Download: an organ transplant breakthrough, and homegrown Chinese chips",
+    "link": "https://www.technologyreview.com/2026/07/24/1140776/the-download-organ-transplant-breakthrough-chinese-chips/",
+    "score": 85,
+    "reason": "Concrete breakthrough in organ transplants, China chip advancement, two major topics"
   },
   {
     "rank": 6,
-    "headline": "Midjourney bought the astrology app Co-Star",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition",
-    "score": 82,
-    "reason": "Unexpected acquisition showing AI company expanding beyond core business into consumer apps"
+    "headline": "250 Eiffel Towers' worth of waste: The AI boom's toxic hardware problem",
+    "link": "https://www.zdnet.com/article/ai-data-center-boom-e-waste-problem/",
+    "score": 84,
+    "reason": "Major environmental controversy with quantified impact, directly tied to AI infrastructure"
   },
   {
     "rank": 7,
-    "headline": "U.S., other nations back open-source AI with &apos;strong security&apos; at China summit",
-    "link": "https://www.cnbc.com/2026/07/24/china-ai-open-source-apec.html",
-    "score": 80,
-    "reason": "International policy alignment on AI governance, geopolitical implications"
+    "headline": "DeepSeek pause fundraise after comments on compute gap to US leaked (transcript) [pdf]",
+    "link": "https://github.com/demo-zexuan/liang-wenfeng-investor-meeting-2026-7-22/blob/master/%E6%A2%81%E6%96%87%E9%94%8B%E6%8A%95%E8%B5%84%E8%80%85%E4%BA%A4%E6%B5%81%E4%BC%9A-%E6%96%87%E5%AD%97%E7%A8%BF_1_18_translate_20260723201651.pdf",
+    "score": 82,
+    "reason": "Controversy: leaked internal comments, geopolitical AI competition, funding impact"
   },
   {
     "rank": 8,
-    "headline": "OpenAI Agent Escaped Testing and Launched an Autonomous Hack",
-    "link": "https://www.cnet.com/news/openai-agent-escaped-testing-launched-autonomous-hack-hugging-face/",
-    "score": 78,
-    "reason": "Autonomous AI system breached containment, critical safety concern"
+    "headline": "China-US AI Race Escalates, OpenAI Models Break Free, and Why You Should Check Your Car Alarm",
+    "link": "https://www.wired.com/story/uncanny-valley-podcast/",
+    "score": 80,
+    "reason": "Geopolitical escalation, multiple breaking developments, major companies involved"
   },
   {
     "rank": 9,
-    "headline": "Meta is making its AI chatbot more like an assistant",
-    "link": "https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update",
-    "score": 75,
-    "reason": "Major tech company product evolution with expanded capabilities"
+    "headline": "An OpenAI model left notes about how to evade containment; we need more details",
+    "link": "https://www.lesswrong.com/posts/jMEAG5c5HiDfdAGpa/an-openai-model-left-notes-about-how-to-evade-containment-we",
+    "score": 79,
+    "reason": "Safety controversy: AI model attempting to evade safety measures, containment failure"
   },
   {
     "rank": 10,
-    "headline": "How a Chinese AI model stopped OpenAI’s ‘unprecedented’ cyber attack",
-    "link": "https://www.cnbc.com/2026/07/24/chinese-ai-model-openai-cyber-attack.html",
-    "score": 74,
-    "reason": "Geopolitical AI conflict, Chinese model defending against OpenAI attack"
+    "headline": "Hoping to Collect on Apple’s $250M AI iPhone Settlement? You’ll Have to Wait a Year",
+    "link": "https://www.cnet.com/tech/mobile/copy-of-hoping-to-collect-on-apples-250m-ai-iphone-settlement-youll-have-to-wait-a-year/",
+    "score": 76,
+    "reason": "Major litigation outcome ($250M), concrete legal action against Apple"
   },
   {
     "rank": 11,
-    "headline": "AI safety experts say OpenAI's rogue models may mean the company has already blown past its own internal red lines",
-    "link": "https://fortune.com/2026/07/25/ai-safety-experts-say-openais-rogue-models-may-mean-the-company-has-already-blown-past-its-own-internal-red-lines/",
+    "headline": "Running a 28.9M parameter LLM on an $8 microcontroller",
+    "link": "https://github.com/slvDev/esp32-ai",
     "score": 72,
-    "reason": "Expert assessment of OpenAI crossing safety thresholds with real incidents"
+    "reason": "Significant technical achievement: massive model compression, democratization of AI"
   },
   {
     "rank": 12,
-    "headline": "Nvidia CEO Jensen Huang denies the chip boom will go bust soon and actually utters the infamous phrase 'this time is different'",
-    "link": "https://fortune.com/2026/07/25/nvidia-ceo-jensen-huang-chip-stocks-boom-bust-soon-this-time-is-different/",
+    "headline": "Qualcomm is reportedly planning to raise processor prices by the end of the summer",
+    "link": "https://www.engadget.com/2223161/qualcomm-planning-to-raise-its-prices/",
     "score": 70,
-    "reason": "Market sustainability claims from AI chip market leader, iconic statement"
+    "reason": "Market impact: price increases on critical infrastructure, industry-wide implications"
   },
   {
     "rank": 13,
-    "headline": "Alexa Plus is getting an AI update to handle more complicated instructions",
-    "link": "https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices",
-    "score": 68,
-    "reason": "Amazon expanding AI assistant capabilities with technical advancement"
+    "headline": "‘My childhood home is being taken’: Eminent domain for data centers targets properties across a thousand miles of grid expansion in Georgia",
+    "link": "https://fortune.com/2026/07/26/georgia-power-utility-company-eminent-domain-grid-expansion-data-center/",
+    "score": 69,
+    "reason": "Controversy: large-scale eminent domain abuse for AI infrastructure, affects thousands"
   },
   {
     "rank": 14,
-    "headline": "From Silicon Valley to DC, the tech world is suddenly obsessed with one concept in AI: Distillation",
-    "link": "https://www.cnbc.com/2026/07/25/hat-is-distillation-and-why-is-everyone-so-obsessed-with-it-this-week.html",
-    "score": 66,
-    "reason": "Industry trend shift - distillation becoming critical AI strategy across major players"
+    "headline": "The New Siri AI Leaves Old Siri in the Dust on Apple Watch",
+    "link": "https://www.cnet.com/tech/mobile/the-new-siri-ai-leaves-old-siri-in-the-dust-on-apple-watch/",
+    "score": 65,
+    "reason": "Apple product launch, significant AI capability upgrade"
   },
   {
     "rank": 15,
-    "headline": "A New York High School Is Getting an AI-Powered Robot Assistant. Parents and Teachers Have Concerns",
-    "link": "https://www.cnet.com/tech/services-and-software/realbotix-sally-robot-ai-teaching-assistant-salamanca-school-district/",
-    "score": 64,
-    "reason": "Real-world deployment controversy in education sector with stakeholder pushback"
+    "headline": "The new rules of context engineering for Claude 5 generation models",
+    "link": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+    "score": 62,
+    "reason": "Technical guidance for Anthropic's new models, practical AI development"
   },
   {
     "rank": 16,
-    "headline": "The people testing AI for danger are having a hard time keeping up",
-    "link": "https://www.axios.com/2026/07/24/ai-safety-security-testing-hugging-face",
-    "score": 62,
-    "reason": "AI safety infrastructure inadequacy - testing cannot match development pace"
+    "headline": "What is happening to jobs? Separating AI hype from reality",
+    "link": "https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality",
+    "score": 60,
+    "reason": "Job market impact analysis with real data, separates speculation from facts"
   },
   {
     "rank": 17,
-    "headline": "Behind the Curtain: The AI titans' biggest private fear",
-    "link": "https://www.axios.com/2026/07/24/ai-risk-bioweapons",
-    "score": 60,
-    "reason": "Reveals confidential concerns of leading AI companies"
+    "headline": "The quest to keep organs alive outside the body",
+    "link": "https://www.technologyreview.com/2026/07/24/1140790/the-quest-to-keep-organs-alive-outside-the-body/",
+    "score": 58,
+    "reason": "Biotechnology breakthrough with broad implications"
   },
   {
     "rank": 18,
-    "headline": "You can’t ignore Google Zero anymore",
-    "link": "https://www.theverge.com/podcast/970735/google-zero-reddit-ai-publishers-vergecast",
-    "score": 58,
-    "reason": "Google's new AI capability becoming unavoidable force in market"
+    "headline": "George Martin never out-wrote the Beatles. That's exactly why he's the AI leadership lesson we need now",
+    "link": "https://fortune.com/2026/07/26/george-martin-fifth-beatle-ai-leadership/",
+    "score": 55,
+    "reason": "AI leadership and human-AI collaboration insights from established authority"
   },
   {
     "rank": 19,
-    "headline": "Open-weight AI is having its Kubernetes moment",
-    "link": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
-    "score": 56,
-    "reason": "Open-source AI reaching infrastructure-level significance in tech ecosystem"
+    "headline": "How AI is becoming part of the American family",
+    "link": "https://www.axios.com/2026/07/25/ai-family-parenting-productivity",
+    "score": 52,
+    "reason": "Broad societal adoption trends and integration"
   },
   {
     "rank": 20,
-    "headline": "Silicon Valley Is Completely Divided Over Chinese AI",
-    "link": "https://www.wired.com/story/silicon-valley-is-completely-divided-over-chinese-ai/",
-    "score": 54,
-    "reason": "Internal tech community schism over geopolitical AI competition"
+    "headline": "GrapheneOS protections against data extraction from locked devices",
+    "link": "https://discuss.grapheneos.org/d/40700-grapheneos-protections-against-data-extraction-from-locked-devices",
+    "score": 50,
+    "reason": "Security development addressing AI surveillance risks"
   }
 ]
