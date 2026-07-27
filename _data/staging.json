@@ -1,72 +1,44 @@
 [
   {
     "rank": 1,
-    "headline": "America's AI Investment Boom Is Reshaping the Economy",
-    "link": "https://www.artificialintelligence-news.com/news/americas-ai-investment-boom-is-reshaping-the-economy/",
-    "score": 92,
-    "reason": "Big numbers topic, economic impact, concrete market reshaping"
+    "headline": "Nvidia, Microsoft launch open AI security alliance — without OpenAI, Google, or Anthropic",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity",
+    "score": 94,
+    "reason": "Major launch by two tech giants, concrete alliance formation, notable exclusions of competitors"
   },
   {
     "rank": 2,
-    "headline": "Nvidia, SpaceX, Microsoft launch AI safety initiative as OpenAI cyberattack fallout continues",
-    "link": "https://www.cnbc.com/2026/07/27/nvidia-ai-initiative-openai-cyber-attack.html",
-    "score": 88,
-    "reason": "Major multi-company launch, controversy (cyberattack), safety focus"
+    "headline": "From Silicon Valley to DC, the tech world is suddenly obsessed with one concept in AI: Distillation",
+    "link": "https://www.cnbc.com/2026/07/25/hat-is-distillation-and-why-is-everyone-so-obsessed-with-it-this-week.html",
+    "score": 82,
+    "reason": "Industry trend with broad adoption signal, concrete technical focus, cross-sector interest"
   },
   {
     "rank": 3,
-    "headline": "NVIDIA launches 'Open Secure AI Alliance' initiative to improve cyber defense",
-    "link": "https://www.engadget.com/2223796/nvidia-launches-open-securte-ai-alliance-initiative-to-improve-cyber-defense/",
-    "score": 85,
-    "reason": "Major company launch, cyber security focus, concrete initiative"
+    "headline": "A Chinese chip maker's shares surged 466% in their first day of trading as AI boom worm turns",
+    "link": "https://fortune.com/2026/07/27/cxmt-china-biggest-ipo-since-2010/",
+    "score": 88,
+    "reason": "Massive quantifiable number (466%), market validation, geopolitical AI competition angle"
   },
   {
     "rank": 4,
-    "headline": "AI safety experts say OpenAI's rogue models may mean the company has already blown past its own internal red lines",
-    "link": "https://fortune.com/2026/07/25/ai-safety-experts-say-openais-rogue-models-may-mean-the-company-has-already-blown-past-its-own-internal-red-lines/",
-    "score": 82,
-    "reason": "Controversy, safety concerns, expert criticism of major player"
+    "headline": "AI companies are shredding rare books",
+    "link": "https://xcancel.com/HedgieMarkets/status/2081534588485296565",
+    "score": 79,
+    "reason": "Controversy involving major AI players, training data ethics issue, concrete practice exposed"
   },
   {
     "rank": 5,
-    "headline": "How an ex-AWS scientist plans to take on OpenAI and Meta in voice AI models",
-    "link": "https://fortune.com/2026/07/27/ex-aws-scientist-alex-smola-boson-ai-speech-to-speech-voice-model/",
-    "score": 78,
-    "reason": "Competitive launch, voice AI category, direct challenge narrative"
+    "headline": "Off-grid data centers aren't the panacea that some AI firms hoped",
+    "link": "https://www.axios.com/2026/07/27/off-grid-ai-data-centers-reckoning",
+    "score": 76,
+    "reason": "Infrastructure challenge revealed, contradicts AI hype narrative, operational limitations"
   },
   {
     "rank": 6,
-    "headline": "How AI is shortening drug discovery timelines in China",
-    "link": "https://www.artificialintelligence-news.com/news/ai-drug-discovery-china/",
-    "score": 75,
-    "reason": "Big numbers (time reduction), concrete application, China market focus"
-  },
-  {
-    "rank": 7,
-    "headline": "Building the enterprise environment for agentic AI",
-    "link": "https://www.technologyreview.com/2026/07/27/1140668/building-the-enterprise-environment-for-agentic-ai/",
-    "score": 72,
-    "reason": "Agentic AI trend, enterprise infrastructure, practical implementation"
-  },
-  {
-    "rank": 8,
-    "headline": "Elevated errors on Claude Opus 5",
-    "link": "https://status.claude.com/incidents/lhqp09kxq7pb",
-    "score": 68,
-    "reason": "Anthropic product issue, concrete problem, quality concern"
-  },
-  {
-    "rank": 9,
-    "headline": "Closing the data loop in AI-driven drug discovery",
-    "link": "https://www.technologyreview.com/2026/07/27/1139667/closing-the-data-loop-in-ai-driven-drug-discovery/",
-    "score": 65,
-    "reason": "Healthcare application, data efficiency, technical advancement"
-  },
-  {
-    "rank": 10,
-    "headline": "How AI is becoming part of the American family",
-    "link": "https://www.axios.com/2026/07/25/ai-family-parenting-productivity",
-    "score": 62,
-    "reason": "Consumer adoption, market penetration, cultural impact"
+    "headline": "Unionized workers are bargaining with the bots",
+    "link": "https://www.axios.com/2026/07/26/union-contracts-ai-workplace-disruption",
+    "score": 74,
+    "reason": "Labor impact of AI, concrete negotiation scenario, real-world disruption evidence"
   }
 ]
