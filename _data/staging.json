@@ -1,44 +1,114 @@
 [
   {
     "rank": 1,
-    "headline": "Nvidia, Microsoft launch open AI security alliance — without OpenAI, Google, or Anthropic",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity",
-    "score": 94,
-    "reason": "Major launch by two tech giants, concrete alliance formation, notable exclusions of competitors"
+    "headline": "America's AI Investment Boom Is Reshaping the Economy",
+    "link": "https://www.artificialintelligence-news.com/news/americas-ai-investment-boom-is-reshaping-the-economy/",
+    "score": 92,
+    "reason": "Big economic numbers, concrete impact on economy, major trend"
   },
   {
     "rank": 2,
-    "headline": "From Silicon Valley to DC, the tech world is suddenly obsessed with one concept in AI: Distillation",
-    "link": "https://www.cnbc.com/2026/07/25/hat-is-distillation-and-why-is-everyone-so-obsessed-with-it-this-week.html",
-    "score": 82,
-    "reason": "Industry trend with broad adoption signal, concrete technical focus, cross-sector interest"
+    "headline": "Nvidia, SpaceX, Microsoft launch AI safety initiative as OpenAI cyberattack fallout continues",
+    "link": "https://www.cnbc.com/2026/07/27/nvidia-ai-initiative-openai-cyber-attack.html",
+    "score": 88,
+    "reason": "Major company launch, three major players, security controversy"
   },
   {
     "rank": 3,
-    "headline": "A Chinese chip maker's shares surged 466% in their first day of trading as AI boom worm turns",
-    "link": "https://fortune.com/2026/07/27/cxmt-china-biggest-ipo-since-2010/",
-    "score": 88,
-    "reason": "Massive quantifiable number (466%), market validation, geopolitical AI competition angle"
+    "headline": "NVIDIA launches 'Open Secure AI Alliance' initiative to improve cyber defense",
+    "link": "https://www.engadget.com/2223796/nvidia-launches-open-securte-ai-alliance-initiative-to-improve-cyber-defense/",
+    "score": 85,
+    "reason": "Major launch with specific alliance name, cybersecurity focus"
   },
   {
     "rank": 4,
-    "headline": "AI companies are shredding rare books",
-    "link": "https://xcancel.com/HedgieMarkets/status/2081534588485296565",
-    "score": 79,
-    "reason": "Controversy involving major AI players, training data ethics issue, concrete practice exposed"
+    "headline": "How AI is shortening drug discovery timelines in China",
+    "link": "https://www.artificialintelligence-news.com/news/ai-drug-discovery-china/",
+    "score": 80,
+    "reason": "Concrete timeline improvements, real-world drug discovery impact"
   },
   {
     "rank": 5,
-    "headline": "Off-grid data centers aren't the panacea that some AI firms hoped",
-    "link": "https://www.axios.com/2026/07/27/off-grid-ai-data-centers-reckoning",
-    "score": 76,
-    "reason": "Infrastructure challenge revealed, contradicts AI hype narrative, operational limitations"
+    "headline": "Closing the data loop in AI-driven drug discovery",
+    "link": "https://www.technologyreview.com/2026/07/27/1139667/closing-the-data-loop-in-ai-driven-drug-discovery/",
+    "score": 78,
+    "reason": "Technical advancement in drug discovery, measurable improvement"
   },
   {
     "rank": 6,
-    "headline": "Unionized workers are bargaining with the bots",
-    "link": "https://www.axios.com/2026/07/26/union-contracts-ai-workplace-disruption",
-    "score": 74,
-    "reason": "Labor impact of AI, concrete negotiation scenario, real-world disruption evidence"
+    "headline": "This Is Donald Trump’s AI Brain Trust",
+    "link": "https://www.wired.com/story/this-is-donald-trumps-ai-brain-trust/",
+    "score": 77,
+    "reason": "Political controversy, specific personnel announcement"
+  },
+  {
+    "rank": 7,
+    "headline": "The path to artificial superintelligence",
+    "link": "https://www.technologyreview.com/2026/07/27/1140724/the-path-to-artificial-superintelligence/",
+    "score": 75,
+    "reason": "Major capability milestone discussion, significant technical roadmap"
+  },
+  {
+    "rank": 8,
+    "headline": "How would AI data centers in space even work? A former NASA robotics chief explains",
+    "link": "https://www.zdnet.com/article/how-would-ai-data-centers-in-space-even-work-a-former-nasa-robotics-chief-explains/",
+    "score": 72,
+    "reason": "Novel infrastructure proposal, credible expert analysis"
+  },
+  {
+    "rank": 9,
+    "headline": "Building the enterprise environment for agentic AI",
+    "link": "https://www.technologyreview.com/2026/07/27/1140668/building-the-enterprise-environment-for-agentic-ai/",
+    "score": 70,
+    "reason": "Agentic AI deployment, enterprise-scale implementation"
+  },
+  {
+    "rank": 10,
+    "headline": "Elevated errors on Claude Opus 5",
+    "link": "https://status.claude.com/incidents/mfdtrknpxghq",
+    "score": 68,
+    "reason": "Concrete performance issue, documented problem with specific model"
+  },
+  {
+    "rank": 11,
+    "headline": "The tech-broification of American science has officially begun",
+    "link": "https://www.theverge.com/science/970534/genesis-mission-ai-science-funding-trump-grants",
+    "score": 65,
+    "reason": "Cultural shift in scientific funding and approach"
+  },
+  {
+    "rank": 12,
+    "headline": "Optical Tech Would Update a Robot’s AI on the Fly",
+    "link": "https://spectrum.ieee.org/ai-in-robotics",
+    "score": 63,
+    "reason": "Real hardware advancement for AI systems"
+  },
+  {
+    "rank": 13,
+    "headline": "What Google has teased about Gemini 4",
+    "link": "https://9to5google.com/2026/07/26/google-gemini-4-teases/",
+    "score": 60,
+    "reason": "Major model launch preparation"
+  },
+  {
+    "rank": 14,
+    "headline": "Inside the S&P 500 AI boom, industrials are getting as rich as tech stocks",
+    "link": "https://www.cnbc.com/2026/07/26/best-ai-stocks-market-sp500.html",
+    "score": 58,
+    "reason": "Big numbers on market shift, AI economic impact"
+  },
+  {
+    "rank": 15,
+    "headline": "US citizen charged after GrapheneOS phone wipes during airport search",
+    "link": "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html",
+    "score": 55,
+    "reason": "AI privacy/security controversy with legal implications"
+  },
+  {
+    "rank": 16,
+    "headline": "We have proof automation now",
+    "link": "https://www.imperialviolet.org/2026/07/26/zstd-lean.html",
+    "score": 52,
+    "reason": "Documented evidence of automation capability"
   }
 ]
