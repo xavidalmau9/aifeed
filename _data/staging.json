@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Nvidia and OpenAI in talks for up to $250 billion dollar backstop to fund AI infrastructure plans",
-    "link": "https://www.cnbc.com/2026/07/27/nvidia-and-openai-in-talks-for-up-to-250-billion-dollar-ai-backstop.html",
-    "score": 98,
-    "reason": "Massive funding number, major companies, concrete deal talks"
+    "headline": "Hugging Face Has a Deepfake Nudes Problem",
+    "link": "https://www.wired.com/story/hugging-face-has-a-nonconsensual-deepfakes-problem/",
+    "score": 92,
+    "reason": "Major platform controversy with real harm; confirmed issue affecting vulnerable populations"
   },
   {
     "rank": 2,
-    "headline": "Nvidia, Microsoft launch open AI security alliance — without OpenAI, Google, or Anthropic",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity",
-    "score": 92,
-    "reason": "Major launch with notable exclusions, significant industry fracture"
+    "headline": "Nvidia and OpenAI in talks for up to $250 billion backstop to fund AI infrastructure plans",
+    "link": "https://www.cnbc.com/2026/07/27/nvidia-and-openai-in-talks-for-up-to-250-billion-dollar-ai-backstop.html",
+    "score": 90,
+    "reason": "Massive funding number; major companies; concrete infrastructure investment"
   },
   {
     "rank": 3,
-    "headline": "Private Claude Chats Exposed in Google and Bing Search Results",
-    "link": "https://www.wired.com/story/private-claude-chats-exposed-in-google-and-bing-search-results/",
-    "score": 90,
-    "reason": "Major privacy controversy affecting users, multiple platforms involved"
+    "headline": "Microsoft Says Its New Cybersecurity AI Beats Industry Leaders at Half the Cost",
+    "link": "https://www.cnet.com/tech/services-and-software/microsoft-says-its-new-cybersecurity-ai-beats-industry-leaders-at-half-the-cost/",
+    "score": 85,
+    "reason": "Product launch with significant cost advantage claim; enterprise application"
   },
   {
     "rank": 4,
-    "headline": "Why China is giving away its best AI models",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/971444/how-chinese-open-weight-ai-models-impact-us-companies",
-    "score": 85,
-    "reason": "Strategic geopolitical AI move, significant market shift"
+    "headline": "ChatGPT is now refusing requests to write in famous authors' styles",
+    "link": "https://www.engadget.com/2224867/chatgpt-refusing-to-write-in-famous-authors-styles/",
+    "score": 82,
+    "reason": "Policy change affecting millions of users; relates to copyright/IP controversy"
   },
   {
     "rank": 5,
-    "headline": "Assume AI cybersecurity attacks are the future: 43% of companies have already experienced it",
-    "link": "https://www.zdnet.com/article/assume-ai-cybersecurity-attacks-are-the-future-43-percent-of-companies-have-already-experienced-it/",
-    "score": 82,
-    "reason": "Large quantified statistic, widespread enterprise impact"
+    "headline": "Claude AI shared chats indexed by Google - see if your conversations were exposed",
+    "link": "https://www.zdnet.com/article/claude-ai-shared-chats-indexed-by-google/",
+    "score": 81,
+    "reason": "Privacy breach; Anthropic/Google; impacts user data"
   },
   {
     "rank": 6,
-    "headline": "OpenAI called the Hugging Face attack unprecedented. But we’ve been here before.",
-    "link": "https://www.technologyreview.com/2026/07/27/1140836/openai-hugging-face-attack-precedent/",
+    "headline": "Lyft and Baidu start testing robotaxis in London",
+    "link": "https://www.engadget.com/2224882/lyft-and-baidu-start-testing-robotaxis-in-london/",
     "score": 78,
-    "reason": "Major security incident, challenges industry narrative"
+    "reason": "Major autonomous vehicle deployment; international expansion"
   },
   {
     "rank": 7,
-    "headline": "All Threads users can now DM Meta AI",
-    "link": "https://www.engadget.com/2223799/all-threads-users-can-now-dm-meta-ai/",
-    "score": 75,
-    "reason": "Major platform feature launch, Meta's AI integration"
+    "headline": "Samsung’s chip workers are jumping ship to rival SK Hynix",
+    "link": "https://www.technologyreview.com/2026/07/28/1140853/samsung-chip-workers-exodus-sk-hynix/",
+    "score": 76,
+    "reason": "Tech talent flight; semiconductor industry; competitive dynamics"
   },
   {
     "rank": 8,
-    "headline": "Professor&#x27;s invisible prompt trap catches 32&#x2F;35 students cheating with AI",
-    "link": "https://www.techspot.com/news/113243-professor-invisible-prompt-trap-catches-32-students-cheating.html",
-    "score": 72,
-    "reason": "Significant detection rate, emerging education controversy"
+    "headline": "Anthropic, OpenAI blow past Starbucks, McDonald's amid AI boom",
+    "link": "https://www.axios.com/2026/07/28/anthropic-openai-revenue-mcdonalds-starbucks-yum",
+    "score": 74,
+    "reason": "Valuation milestone; AI company significance relative to established brands"
   },
   {
     "rank": 9,
-    "headline": "Is open source the answer to rogue AI agents? Nvidia's new alliance says yes",
-    "link": "https://www.zdnet.com/article/is-open-source-the-answer-to-rogue-ai-security-incidents-nvidia-thinks-so/",
-    "score": 70,
-    "reason": "Open source AI governance debate, Nvidia positioning"
+    "headline": "Anthropic CEO Dario Amodei says AI company isn&apos;t advocating for ban of open-weight models",
+    "link": "https://www.cnbc.com/2026/07/27/anthropic-ceo-dario-amodei-isnt-advocating-open-weight-model-ban.html",
+    "score": 71,
+    "reason": "Policy position on contentious AI regulation issue"
   },
   {
     "rank": 10,
-    "headline": "Unionized workers are bargaining with the bots",
-    "link": "https://www.axios.com/2026/07/26/union-contracts-ai-workplace-disruption",
+    "headline": "Can the New York Times Save Journalism From Our AI Overlords?",
+    "link": "https://www.wired.com/story/the-big-interview-podcast-a-g-sulzberger-new-york-times/",
     "score": 68,
-    "reason": "Labor-AI conflict emerging, quantified workplace impact"
+    "reason": "Major publisher; AI impact on media industry; ongoing litigation relevance"
   }
 ]
