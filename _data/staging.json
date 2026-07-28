@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Hugging Face Has a Deepfake Nudes Problem",
-    "link": "https://www.wired.com/story/hugging-face-has-a-nonconsensual-deepfakes-problem/",
+    "headline": "Nvidia, Microsoft launch open AI security alliance — without OpenAI, Google, or Anthropic",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity",
     "score": 92,
-    "reason": "Major platform controversy with real harm; confirmed issue affecting vulnerable populations"
+    "reason": "Major tech launch with significant industry implications and notable exclusions"
   },
   {
     "rank": 2,
-    "headline": "Nvidia and OpenAI in talks for up to $250 billion backstop to fund AI infrastructure plans",
-    "link": "https://www.cnbc.com/2026/07/27/nvidia-and-openai-in-talks-for-up-to-250-billion-dollar-ai-backstop.html",
-    "score": 90,
-    "reason": "Massive funding number; major companies; concrete infrastructure investment"
+    "headline": "Hugging Face is being used to easily undress women and children",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children",
+    "score": 91,
+    "reason": "Major platform controversy with serious implications for AI safety"
   },
   {
     "rank": 3,
-    "headline": "Microsoft Says Its New Cybersecurity AI Beats Industry Leaders at Half the Cost",
-    "link": "https://www.cnet.com/tech/services-and-software/microsoft-says-its-new-cybersecurity-ai-beats-industry-leaders-at-half-the-cost/",
-    "score": 85,
-    "reason": "Product launch with significant cost advantage claim; enterprise application"
+    "headline": "AI’s finally expensive enough to make Wall Street nervous",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/972119/ai-stock-fall-google-capex",
+    "score": 88,
+    "reason": "Significant market movement and investment concern with big numbers"
   },
   {
     "rank": 4,
-    "headline": "ChatGPT is now refusing requests to write in famous authors' styles",
-    "link": "https://www.engadget.com/2224867/chatgpt-refusing-to-write-in-famous-authors-styles/",
-    "score": 82,
-    "reason": "Policy change affecting millions of users; relates to copyright/IP controversy"
+    "headline": "Private Claude Chats Exposed in Google and Bing Search Results",
+    "link": "https://www.wired.com/story/private-claude-chats-exposed-in-google-and-bing-search-results/",
+    "score": 87,
+    "reason": "Major security breach affecting major AI company and search engines"
   },
   {
     "rank": 5,
-    "headline": "Claude AI shared chats indexed by Google - see if your conversations were exposed",
-    "link": "https://www.zdnet.com/article/claude-ai-shared-chats-indexed-by-google/",
-    "score": 81,
-    "reason": "Privacy breach; Anthropic/Google; impacts user data"
+    "headline": "Perplexity’s Personal Computer turns Windows PCs into AI agents",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/971750/perplexity-personal-computer-windows-ai-agents",
+    "score": 85,
+    "reason": "Significant product launch expanding AI agent capabilities to consumer base"
   },
   {
     "rank": 6,
-    "headline": "Lyft and Baidu start testing robotaxis in London",
-    "link": "https://www.engadget.com/2224882/lyft-and-baidu-start-testing-robotaxis-in-london/",
-    "score": 78,
-    "reason": "Major autonomous vehicle deployment; international expansion"
+    "headline": "The future of Wall Street is here as startups and brokers build AI agents to trade 24/7",
+    "link": "https://www.cnbc.com/2026/07/28/ai-agents-build-to-trade-24/7-the-future-of-wall-street.html",
+    "score": 84,
+    "reason": "Major industry application launch with significant financial implications"
   },
   {
     "rank": 7,
-    "headline": "Samsung’s chip workers are jumping ship to rival SK Hynix",
-    "link": "https://www.technologyreview.com/2026/07/28/1140853/samsung-chip-workers-exodus-sk-hynix/",
-    "score": 76,
-    "reason": "Tech talent flight; semiconductor industry; competitive dynamics"
+    "headline": "Why China is giving away its best AI models",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/971444/how-chinese-open-weight-ai-models-impact-us-companies",
+    "score": 82,
+    "reason": "Significant geopolitical AI strategy with major market implications"
   },
   {
     "rank": 8,
-    "headline": "Anthropic, OpenAI blow past Starbucks, McDonald's amid AI boom",
-    "link": "https://www.axios.com/2026/07/28/anthropic-openai-revenue-mcdonalds-starbucks-yum",
-    "score": 74,
-    "reason": "Valuation milestone; AI company significance relative to established brands"
+    "headline": "The Trump administration is exempting data centers from pollution laws intended to prevent acid rain",
+    "link": "https://www.engadget.com/2225156/trump-administration-is-exempting-data-centers-from-pollution-laws-intended-to-prevent-acid-rain/",
+    "score": 81,
+    "reason": "Major policy decision affecting AI infrastructure and environmental regulation"
   },
   {
     "rank": 9,
-    "headline": "Anthropic CEO Dario Amodei says AI company isn&apos;t advocating for ban of open-weight models",
-    "link": "https://www.cnbc.com/2026/07/27/anthropic-ceo-dario-amodei-isnt-advocating-open-weight-model-ban.html",
-    "score": 71,
-    "reason": "Policy position on contentious AI regulation issue"
+    "headline": "Is open source the answer to rogue AI agents? Nvidia's new alliance says yes",
+    "link": "https://www.zdnet.com/article/is-open-source-the-answer-to-rogue-ai-security-incidents-nvidia-thinks-so/",
+    "score": 80,
+    "reason": "Major industry response to AI safety concerns with Nvidia backing"
   },
   {
     "rank": 10,
-    "headline": "Can the New York Times Save Journalism From Our AI Overlords?",
-    "link": "https://www.wired.com/story/the-big-interview-podcast-a-g-sulzberger-new-york-times/",
+    "headline": "Armenia’s AI Bet Is Not Chip Manufacturing. It Is Compute Sovereignty",
+    "link": "https://www.artificialintelligence-news.com/news/armenias-ai-bet-is-not-chip-manufacturing-it-is-compute-sovereignty/",
+    "score": 79,
+    "reason": "Significant geopolitical AI infrastructure strategy by emerging player"
+  },
+  {
+    "rank": 11,
+    "headline": "Visa is cutting 7% of employees in efficiency push as AI reshapes work",
+    "link": "https://www.cnbc.com/2026/07/28/visa-is-cutting-7percent-of-employees-in-efficiency-push-as-ai-reshapes-work.html",
+    "score": 78,
+    "reason": "Major company workforce reduction attributed to AI automation"
+  },
+  {
+    "rank": 12,
+    "headline": "Nvidia’s Jensen Huang says AI is killing tasks, not jobs—and the white-collar bloodbath narrative gets the future of work 'exactly backwards'",
+    "link": "https://fortune.com/2026/07/28/nvidia-jensen-huang-ai-killing-tasks-not-jobs/",
+    "score": 77,
+    "reason": "Major industry leader commentary on AI employment impact controversy"
+  },
+  {
+    "rank": 13,
+    "headline": "Anthropic CEO Dario Amodei says he does not support open-weight AI ban",
+    "link": "https://www.axios.com/2026/07/27/anthropic-open-weight-ban-china-dario-amodei",
+    "score": 76,
+    "reason": "Major AI safety policy position from leading AI company executive"
+  },
+  {
+    "rank": 14,
+    "headline": "Top AI companies say they want Chinese models to stay available. Is it genuine?",
+    "link": "https://fortune.com/2026/07/28/top-ai-companies-say-they-want-chinese-models-to-stay-available-is-it-genuine/",
+    "score": 75,
+    "reason": "Major geopolitical AI policy controversy with multiple company positions"
+  },
+  {
+    "rank": 15,
+    "headline": "Apple ends day as world&apos;s most valuable company, passing Nvidia",
+    "link": "https://www.cnbc.com/2026/07/27/apple-most-valuable-company-nvidia.html",
+    "score": 74,
+    "reason": "Major market shift in AI-related company valuations"
+  },
+  {
+    "rank": 16,
+    "headline": "Token-maxing is an AI cost sink - how to use agents without busting your budget",
+    "link": "https://www.zdnet.com/article/token-maxing-ai-cost-sink-use-agents-without-busting-budget/",
+    "score": 73,
+    "reason": "Emerging major cost concern for AI agent deployment"
+  },
+  {
+    "rank": 17,
+    "headline": "Microsoft's new AI model beats Mythos on security benchmark",
+    "link": "https://www.zdnet.com/article/ai-model-release-tracker/",
+    "score": 71,
+    "reason": "Significant product benchmark achievement from major AI company"
+  },
+  {
+    "rank": 18,
+    "headline": "Off-grid data centers aren't the panacea that some AI firms hoped",
+    "link": "https://www.axios.com/2026/07/27/off-grid-ai-data-centers-reckoning",
+    "score": 70,
+    "reason": "Major infrastructure challenge for AI companies' expansion plans"
+  },
+  {
+    "rank": 19,
+    "headline": "These 5 AI risks have the highest potential for catastrophe",
+    "link": "https://www.axios.com/2026/07/27/mit-study-ai-risks-urgent-weapons-cyber-attacks",
+    "score": 69,
+    "reason": "Significant safety analysis identifying major risk categories"
+  },
+  {
+    "rank": 20,
+    "headline": "This Is Donald Trump’s AI Brain Trust",
+    "link": "https://www.wired.com/story/this-is-donald-trumps-ai-brain-trust/",
     "score": 68,
-    "reason": "Major publisher; AI impact on media industry; ongoing litigation relevance"
+    "reason": "Major political appointment affecting AI policy direction"
   }
 ]
