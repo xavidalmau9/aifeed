@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI says the rogue agent that hacked Hugging Face also breached other services",
-    "link": "https://www.engadget.com/2225812/openai-rogue-agent-hacked-hugging-face-breached-other-services/",
-    "score": 94,
-    "reason": "Major security incident with multiple victims, concrete evidence of AI agent causing real damage"
+    "headline": "OpenAI’s rogue AI agent didn’t stop at hacking Hugging Face",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/972441/openai-rogue-ai-agent-hacked-more-than-hugging-face",
+    "score": 95,
+    "reason": "Major security incident with big implications for AI safety; autonomous agent breach across multiple systems"
   },
   {
     "rank": 2,
-    "headline": "Hugging Face Has a Deepfake Nudes Problem",
-    "link": "https://www.wired.com/story/hugging-face-has-a-nonconsensual-deepfakes-problem/",
+    "headline": "Artists are lawyering up against AI slop, and some are even winning",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/971059/ai-artists-lawsuit-google-meta-anthropic",
     "score": 88,
-    "reason": "Significant platform abuse discovery, controversy around AI-generated content harms"
+    "reason": "Significant legal victories in AI copyright litigation; validates emerging controversy"
   },
   {
     "rank": 3,
-    "headline": "Chip stocks shed more than $1 trillion as selloff hits companies powering AI boom",
-    "link": "https://www.cnbc.com/2026/07/29/chip-selloff-sk-hynix-samsung-softbank.html",
-    "score": 86,
-    "reason": "Big numbers ($1 trillion), major market event tied to AI sector correction"
+    "headline": "It’s Frighteningly Easy to Jailbreak Some Frontier AI Models",
+    "link": "https://www.wired.com/story/jailbreaking-ai-models-google-anthropic-openai-spacexai/",
+    "score": 85,
+    "reason": "Security vulnerability affecting multiple frontier models; high-impact research finding"
   },
   {
     "rank": 4,
-    "headline": "Google shuts down its Nobel-prize winning AlphaFold project as it focuses on Gemini",
-    "link": "https://www.engadget.com/2225849/google-shuts-down-alphafold/",
-    "score": 84,
-    "reason": "Major company decision to shut prestigious project, strategic pivot in AI focus"
+    "headline": "AI’s finally expensive enough to make Wall Street nervous",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/972119/ai-stock-fall-google-capex",
+    "score": 83,
+    "reason": "Major market reaction; contradicts hype narrative with concrete economic data"
   },
   {
     "rank": 5,
-    "headline": "Private Claude Conversations Have Been Indexed by Search Engines",
-    "link": "https://www.cnet.com/tech/services-and-software/private-claude-conversations-have-been-indexed-by-search-engines/",
-    "score": 82,
-    "reason": "Privacy scandal, concrete product failure with real user impact"
+    "headline": "Perplexity’s Personal Computer turns Windows PCs into AI agents",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/971750/perplexity-personal-computer-windows-ai-agents",
+    "score": 78,
+    "reason": "Significant product launch by major AI company; broad consumer deployment"
   },
   {
     "rank": 6,
-    "headline": "Google AI Overviews become more common in search",
-    "link": "https://www.artificialintelligence-news.com/news/google-ai-overviews-us-searches/",
-    "score": 78,
-    "reason": "Major product launch expansion, significant user-facing rollout"
+    "headline": "Hugging Face is being used to easily undress women and children",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children",
+    "score": 77,
+    "reason": "Major controversy; abuse of AI platform with legal/ethical implications"
   },
   {
     "rank": 7,
-    "headline": "Elon Musk&apos;s xAI sues Minnesota over law to ban &apos;nudify&apos; apps",
-    "link": "https://www.cnbc.com/2026/07/28/spacexs-xai-sues-minnesota-over-law-to-ban-nudify-apps-.html",
+    "headline": "Open weights vs. closed: An AI civil war's afoot, and the stakes are existential",
+    "link": "https://www.zdnet.com/article/open-weight-ai-civil-war/",
     "score": 76,
-    "reason": "Major legal controversy, company vs. government regulation battle"
+    "reason": "Fundamental industry divide with major strategic implications; non-speculative analysis"
   },
   {
     "rank": 8,
-    "headline": "We’re running out of reasons to ignore AI safety",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/972380/open-ai-hugging-face-hack-ai-safety-warning",
-    "score": 74,
-    "reason": "Safety concerns backed by real incidents, shift in industry acknowledgment"
+    "headline": "Armenia’s AI Bet Is Not Chip Manufacturing. It Is Compute Sovereignty",
+    "link": "https://www.artificialintelligence-news.com/news/armenias-ai-bet-is-not-chip-manufacturing-it-is-compute-sovereignty/",
+    "score": 72,
+    "reason": "Geopolitical shift in AI infrastructure; emerging market strategy"
   },
   {
     "rank": 9,
-    "headline": "Microsoft Says Its New Cybersecurity AI Beats Industry Leaders at Half the Cost",
-    "link": "https://www.cnet.com/tech/services-and-software/microsoft-says-its-new-cybersecurity-ai-beats-industry-leaders-at-half-the-cost/",
-    "score": 72,
-    "reason": "Product launch with performance comparison, competitive advantage claim"
+    "headline": "Microsoft's new AI model beats Mythos on security benchmark",
+    "link": "https://www.zdnet.com/article/ai-model-release-tracker/",
+    "score": 70,
+    "reason": "Competitive breakthrough with measurable performance gains on specific metric"
   },
   {
     "rank": 10,
-    "headline": "AI company employees petition US government for regulation",
-    "link": "https://www.engadget.com/2225612/ai-company-employees-petition-us-government-for-regulation/",
-    "score": 70,
-    "reason": "Industry insiders seeking regulation, notable sentiment shift within sector"
+    "headline": "Hugging Face drops in-depth hack report, while OpenAI gives us 7 bullets. Here's what we know now, and what remains a mystery",
+    "link": "https://fortune.com/2026/07/29/openai-hugging-face-new-details-hack-everything-we-know-dont-know/",
+    "score": 68,
+    "reason": "Transparency contrast in major security incident; reveals company response differences"
+  },
+  {
+    "rank": 11,
+    "headline": "OpenAI president says it's 'building a family of devices' for its AI chatbots",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/972709/openai-hardware-greg-brockman-interview",
+    "score": 65,
+    "reason": "Major product category expansion announcement; significant market ambition"
+  },
+  {
+    "rank": 12,
+    "headline": "xAI is challenging a new Minnesota law banning 'nudify' apps",
+    "link": "https://www.engadget.com/2225792/xai-challenging-new-minnesota-law-banning-nudify-apps/",
+    "score": 64,
+    "reason": "Direct legal confrontation over AI regulation; emerging company staking position"
+  },
+  {
+    "rank": 13,
+    "headline": "OpenAI launches free AI access program for academic researchers",
+    "link": "https://www.axios.com/2026/07/29/openai-academics-research-chatgpt-sol",
+    "score": 62,
+    "reason": "Strategic market move to deepen academic adoption; significant access expansion"
+  },
+  {
+    "rank": 14,
+    "headline": "Gemini comes to Waymo for assistance and cabin controls",
+    "link": "https://9to5google.com/2026/07/29/gemini-waymo-ojai/",
+    "score": 61,
+    "reason": "Major integration of AI into autonomous vehicles; Google/Waymo cross-product strategy"
+  },
+  {
+    "rank": 15,
+    "headline": "AI leaders sign a statement asking the government to do something about automated AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/972161/ai-leaders-us-government-openai-anthropic-google-meta",
+    "score": 58,
+    "reason": "Industry consensus on regulation request; signals maturity of sector concerns"
+  },
+  {
+    "rank": 16,
+    "headline": "Guardoc Health processes clinical documentation using Amazon Nova models",
+    "link": "https://www.artificialintelligence-news.com/news/guardoc-health-processes-clinical-documentation-using-amazon-nova-models/",
+    "score": 55,
+    "reason": "Enterprise AI deployment in healthcare; Amazon's model adoption in production"
+  },
+  {
+    "rank": 17,
+    "headline": "74% of workers ask AI questions instead of colleagues - with potentially serious consequences",
+    "link": "https://www.zdnet.com/article/74-of-workers-ask-ai-questions-instead-of-colleagues/",
+    "score": 52,
+    "reason": "Major behavioral shift with workplace implications; significant adoption metric"
+  },
+  {
+    "rank": 18,
+    "headline": "Can the New York Times Save Journalism From Our AI Overlords?",
+    "link": "https://www.wired.com/story/the-big-interview-podcast-a-g-sulzberger-new-york-times/",
+    "score": 50,
+    "reason": "Major media company's strategic positioning against AI; industry-wide implications"
+  },
+  {
+    "rank": 19,
+    "headline": "Major labels call for AI slop songs to be banned from entering charts around the world",
+    "link": "https://www.engadget.com/2226234/major-labels-call-for-ai-slop-songs-to-be-banned-from-entering-charts-around-the-world/",
+    "score": 48,
+    "reason": "Industry coalition against AI-generated content; regulatory push across major sector"
+  },
+  {
+    "rank": 20,
+    "headline": "OpenAI report links coding agents to faster science software builds",
+    "link": "https://www.artificialintelligence-news.com/news/openai-report-coding-agents-faster-science-software-builds/",
+    "score": 45,
+    "reason": "Quantified productivity gains from AI agents; concrete research impact"
   }
 ]
