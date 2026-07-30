@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI’s Rogue AI Agent Hacked More Than Just Hugging Face",
-    "link": "https://www.wired.com/story/openais-rogue-ai-agent-hacked-more-than-just-hugging-face/",
-    "score": 94,
-    "reason": "Major security incident with concrete impact; demonstrates real-world AI system failure"
+    "headline": "Microsoft's stock has biggest one-day gain since 2008, adding $480 billion in market value as cloud business booms",
+    "link": "https://fortune.com/2026/07/30/microsoft-stock-biggest-one-day-gain-since-2008-480-billion-market-value-cloud-growth/",
+    "score": 95,
+    "reason": "Largest single-day gain since 2008, $480B market value creation, concrete business impact"
   },
   {
     "rank": 2,
-    "headline": "OpenAI CFO Sarah Friar tells employees that annualized revenue in July topped all of Q2",
-    "link": "https://www.cnbc.com/2026/07/29/openai-cfo-sarah-friar-tells-employees-arr-in-july-topped-all-of-q2.html",
+    "headline": "Google DeepMind’s new AI model can control a robot’s entire body",
+    "link": "https://www.theverge.com/tech/973276/google-deepmind-gemini-robotics-2-whole-body",
     "score": 92,
-    "reason": "Big number: revenue milestone; concrete financial achievement"
+    "reason": "Major robotics breakthrough, full-body control capability, significant technical advancement"
   },
   {
     "rank": 3,
-    "headline": "Microsoft confirms Copilot ‘super app’ coming this year",
-    "link": "https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed",
+    "headline": "OpenAI's rogue agent didn't stop at Hugging Face - here's what we know",
+    "link": "https://www.zdnet.com/article/openais-rogue-ai-models-attacked-other-companies-besides-hugging-face/",
     "score": 90,
-    "reason": "Major product launch from top company; concrete timeline"
+    "reason": "Controversy about autonomous AI agent behavior, security implications, multiple incidents"
   },
   {
     "rank": 4,
-    "headline": "Zuckerberg details Meta's personal AI superintelligence strategy",
-    "link": "https://www.artificialintelligence-news.com/news/zuckerberg-details-meta-personal-ai-superintelligence-strategy/",
-    "score": 89,
-    "reason": "CEO strategy announcement; substantial AI commitment from major company"
+    "headline": "Chrome Needs Twice-a-Week Patching Thanks to AI Bug Hunting",
+    "link": "https://www.wired.com/story/chrome-needs-twice-a-week-patching-thanks-to-ai-bug-hunting-for-now/",
+    "score": 85,
+    "reason": "Concrete impact metric (2x/week patching), AI-driven vulnerability discovery, systemic issue"
   },
   {
     "rank": 5,
-    "headline": "Mark Zuckerberg is planning a big push into personal AI agents",
-    "link": "https://www.theverge.com/tech/972294/meta-q2-2026-earnings-mark-zuckerberg-personal-ai-agents",
-    "score": 87,
-    "reason": "Major strategic pivot; personal AI agent focus"
+    "headline": "OpenAI report links coding agents to faster science software builds",
+    "link": "https://www.artificialintelligence-news.com/news/openai-report-coding-agents-faster-science-software-builds/",
+    "score": 83,
+    "reason": "Quantified productivity gains, agent capability demonstration, business value"
   },
   {
     "rank": 6,
-    "headline": "A fundamental flaw leaves LLMs strikingly vulnerable to attack",
-    "link": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack/",
-    "score": 85,
-    "reason": "Security vulnerability affecting all LLMs; significant technical discovery"
+    "headline": "China’s open-weight model lead exposes America’s AI blind spot",
+    "link": "https://www.cnbc.com/2026/07/30/china-open-source-trump-ai.html",
+    "score": 82,
+    "reason": "Geopolitical competition, market dominance shift, strategic concern"
   },
   {
     "rank": 7,
-    "headline": "Microsoft Says Workers Are Now Using Copilot AI as Much as Teams and Outlook",
-    "link": "https://www.cnet.com/tech/services-and-software/microsoft-fiscal-year-2026-q4-earnings-agentic-ai-work/",
-    "score": 83,
-    "reason": "Big adoption number; major software integration milestone"
+    "headline": "OpenAI president says it's 'building a family of devices' for its AI chatbots",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/972709/openai-hardware-greg-brockman-interview",
+    "score": 81,
+    "reason": "Product expansion into hardware, strategic diversification, multiple device launches"
   },
   {
     "rank": 8,
-    "headline": "xAI’s last-minute scramble to stop Minnesota’s anti-nudification app law",
-    "link": "https://www.theverge.com/policy/972850/xai-grok-minnesota-nudification-lawsuit",
-    "score": 82,
-    "reason": "Controversy/regulatory conflict; concrete legislative issue"
+    "headline": "Gemini Robotics 2 Brings Google's AI Into the Physical World",
+    "link": "https://www.wired.com/story/google-gemini-can-control-humanoid-robots/",
+    "score": 80,
+    "reason": "Major robotics platform launch, whole-body control, physical world integration"
   },
   {
     "rank": 9,
-    "headline": "Hugging Face Users Easily Created and Shared Abusive AI Images, Study Finds",
-    "link": "https://www.cnet.com/tech/services-and-software/hugging-face-ai-nonconsensual-deepfakes-study/",
-    "score": 80,
-    "reason": "Major platform vulnerability; abuse at scale"
+    "headline": "LinkedIn actually adds a ‘seems like AI slop’ button",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/973384/linkedin-seems-like-ai-slop-button",
+    "score": 78,
+    "reason": "Major feature launch addressing AI content problem, user-reported spam mechanism"
   },
   {
     "rank": 10,
-    "headline": "Private Claude Conversations Have Been Indexed by Search Engines",
-    "link": "https://www.cnet.com/tech/services-and-software/private-claude-conversations-have-been-indexed-by-search-engines/",
-    "score": 78,
-    "reason": "Privacy breach; Anthropic product; concrete security failure"
+    "headline": "OpenAI cuts prices for two of its GPT-5.6 AI models as companies grow sensitive to costs",
+    "link": "https://www.cnbc.com/2026/07/30/open-ai-price-cut-gpt.html",
+    "score": 77,
+    "reason": "Price cuts indicate cost sensitivity, competitive pressure, market dynamics shift"
   },
   {
     "rank": 11,
-    "headline": "The U.S. wants Asia to use its AI — but China dominates cheaper models",
-    "link": "https://www.cnbc.com/2026/07/30/us-wants-asia-to-use-its-ai-but-china-dominates-cheaper-models.html",
-    "score": 76,
-    "reason": "Big geopolitical/market issue; substantive competition analysis"
+    "headline": "It’s Frighteningly Easy to Jailbreak Some Frontier AI Models",
+    "link": "https://www.wired.com/story/jailbreaking-ai-models-google-anthropic-openai-spacexai/",
+    "score": 75,
+    "reason": "Security vulnerability, frontier models affected, ease of exploitation"
   },
   {
     "rank": 12,
-    "headline": "Forget robots on assembly lines. Foundational Industries wants AI to run the entire factory",
-    "link": "https://fortune.com/2026/07/30/forget-robots-assembly-lines-foundational-industries-ai-to-run-entire-factory-manufacturing-china-robotics/",
-    "score": 75,
-    "reason": "Major use case expansion; industrial AI strategy"
+    "headline": "AI Scammers Are Better at Building Trust Than Humans",
+    "link": "https://www.wired.com/story/ai-scammers-are-better-at-building-trust-than-humans/",
+    "score": 73,
+    "reason": "Adversarial capability demonstrated, trust manipulation, fraud implications"
   },
   {
     "rank": 13,
-    "headline": "Google AI Overviews become more common in search",
-    "link": "https://www.artificialintelligence-news.com/news/google-ai-overviews-us-searches/",
-    "score": 73,
-    "reason": "Significant product rollout; major search integration"
+    "headline": "Microsoft's $500 billion rally fuels a debate: financial nihilism or the true AI moat, finally coming into view?",
+    "link": "https://fortune.com/2026/07/30/why-did-microsoft-stock-increase-500-billion-market-cap/",
+    "score": 72,
+    "reason": "$500B valuation movement, AI competitive advantage debate, market validation"
   },
   {
     "rank": 14,
-    "headline": "Google will let Mac users talk to Gemini simply by pressing the 'fn' key",
-    "link": "https://www.engadget.com/2224915/google-lets-mad-users-talk-to-gemini-by-pressing-fn/",
-    "score": 71,
-    "reason": "New feature launch; expanded access"
+    "headline": "Friend re-launches its AI pendant with a speaker that talks to you, for twice the price",
+    "link": "https://www.theverge.com/gadgets/973163/friend-re-launches-its-ai-pendant-with-a-speaker-that-talks-to-you-for-twice-the-price",
+    "score": 70,
+    "reason": "Product relaunch with price increase, hardware capability addition"
   },
   {
     "rank": 15,
-    "headline": "OpenAI will provide free AI models to select researchers",
-    "link": "https://www.engadget.com/2226656/openai-will-provide-free-ai-models-to-select-researchers/",
-    "score": 70,
-    "reason": "Model access program; research initiative"
+    "headline": "Gemini Spark can now use Chrome to auto browse, AI Pro access goes international",
+    "link": "https://9to5google.com/2026/07/30/gemini-spark-chrome-auto-browse/",
+    "score": 68,
+    "reason": "Feature expansion, international availability, browsing integration"
   },
   {
     "rank": 16,
-    "headline": "China threatens retaliation against U.S. humanoid robot ban, says it &apos;severely damages&apos; relations",
-    "link": "https://www.cnbc.com/2026/07/30/china-us-robot-humanoid-ban-trump-visit.html",
-    "score": 69,
-    "reason": "Major geopolitical controversy; concrete trade/policy conflict"
+    "headline": "I Got a Free Meal From a Private Chef—Who Filmed It All to Train Robots",
+    "link": "https://www.wired.com/story/i-let-a-private-chef-film-my-kitchen-for-robot-training-data/",
+    "score": 67,
+    "reason": "Real-world AI training data collection, practical robotics application"
   },
   {
     "rank": 17,
-    "headline": "AI labs face prisoner's dilemma as momentum grows for safety slowdown",
-    "link": "https://www.axios.com/2026/07/30/ai-safety-slowdown-anthropic-openai",
-    "score": 68,
-    "reason": "Industry-wide safety trend; substantive competitive dynamic"
+    "headline": "Nvidia’s Open Source Alliance Is Missing Some Key Names: OpenAI and Anthropic",
+    "link": "https://www.wired.com/story/nvidias-open-source-alliance-snubs-openai-and-anthropic/",
+    "score": 65,
+    "reason": "Strategic alignment absence, market fragmentation in open-source AI"
   },
   {
     "rank": 18,
-    "headline": "Claude AI Recovering After Widespread Outage on Wednesday",
-    "link": "https://www.cnet.com/tech/services-and-software/claude-ai-recovering-after-widespread-outage-on-wednesday/",
-    "score": 66,
-    "reason": "Major service outage; concrete reliability issue"
+    "headline": "Gemini comes to Waymo for assistance and cabin controls",
+    "link": "https://9to5google.com/2026/07/29/gemini-waymo-ojai/",
+    "score": 63,
+    "reason": "Autonomous vehicle integration, practical deployment"
   },
   {
     "rank": 19,
-    "headline": "Scoop: Second account accessed by OpenAI's agent tied to cyber safety testing",
-    "link": "https://www.axios.com/2026/07/29/openai-hugging-face-modal-cyber-benchmark",
-    "score": 65,
-    "reason": "Confirmed security incident; additional breach details"
+    "headline": "Mark Zuckerberg Is Putting All His Chips on an AI Future, Whether You Want It or Not",
+    "link": "https://www.cnet.com/tech/services-and-software/mark-zuckerberg-meta-earnings-call-big-ai-investment/",
+    "score": 60,
+    "reason": "Major strategic pivot by tech leader, comprehensive AI commitment"
   },
   {
     "rank": 20,
-    "headline": "AI Is Hyper-Scaling Digital Inequality",
-    "link": "https://spectrum.ieee.org/ai-digital-divide",
-    "score": 63,
-    "reason": "Substantive analysis of AI impact; systematic issue"
+    "headline": "A tech podcast inspired AI workers to donate $40 million to improve the lives of chickens, pigs, and other factory-farmed animals",
+    "link": "https://fortune.com/2026/07/30/artifical-intelligence-workers-wealth-influx-rewriting-philanthropy-giving-to-save-factory-farm-animals-openai-anthropic-ipo-wealth/",
+    "score": 58,
+    "reason": "Concrete $40M impact, cultural movement among AI workers"
   }
 ]
