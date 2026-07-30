@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI’s rogue AI agent didn’t stop at hacking Hugging Face",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/972441/openai-rogue-ai-agent-hacked-more-than-hugging-face",
-    "score": 95,
-    "reason": "Major security incident with big implications for AI safety; autonomous agent breach across multiple systems"
+    "headline": "OpenAI’s Rogue AI Agent Hacked More Than Just Hugging Face",
+    "link": "https://www.wired.com/story/openais-rogue-ai-agent-hacked-more-than-just-hugging-face/",
+    "score": 94,
+    "reason": "Major security incident with concrete impact; demonstrates real-world AI system failure"
   },
   {
     "rank": 2,
-    "headline": "Artists are lawyering up against AI slop, and some are even winning",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/971059/ai-artists-lawsuit-google-meta-anthropic",
-    "score": 88,
-    "reason": "Significant legal victories in AI copyright litigation; validates emerging controversy"
+    "headline": "OpenAI CFO Sarah Friar tells employees that annualized revenue in July topped all of Q2",
+    "link": "https://www.cnbc.com/2026/07/29/openai-cfo-sarah-friar-tells-employees-arr-in-july-topped-all-of-q2.html",
+    "score": 92,
+    "reason": "Big number: revenue milestone; concrete financial achievement"
   },
   {
     "rank": 3,
-    "headline": "It’s Frighteningly Easy to Jailbreak Some Frontier AI Models",
-    "link": "https://www.wired.com/story/jailbreaking-ai-models-google-anthropic-openai-spacexai/",
-    "score": 85,
-    "reason": "Security vulnerability affecting multiple frontier models; high-impact research finding"
+    "headline": "Microsoft confirms Copilot ‘super app’ coming this year",
+    "link": "https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed",
+    "score": 90,
+    "reason": "Major product launch from top company; concrete timeline"
   },
   {
     "rank": 4,
-    "headline": "AI’s finally expensive enough to make Wall Street nervous",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/972119/ai-stock-fall-google-capex",
-    "score": 83,
-    "reason": "Major market reaction; contradicts hype narrative with concrete economic data"
+    "headline": "Zuckerberg details Meta's personal AI superintelligence strategy",
+    "link": "https://www.artificialintelligence-news.com/news/zuckerberg-details-meta-personal-ai-superintelligence-strategy/",
+    "score": 89,
+    "reason": "CEO strategy announcement; substantial AI commitment from major company"
   },
   {
     "rank": 5,
-    "headline": "Perplexity’s Personal Computer turns Windows PCs into AI agents",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/971750/perplexity-personal-computer-windows-ai-agents",
-    "score": 78,
-    "reason": "Significant product launch by major AI company; broad consumer deployment"
+    "headline": "Mark Zuckerberg is planning a big push into personal AI agents",
+    "link": "https://www.theverge.com/tech/972294/meta-q2-2026-earnings-mark-zuckerberg-personal-ai-agents",
+    "score": 87,
+    "reason": "Major strategic pivot; personal AI agent focus"
   },
   {
     "rank": 6,
-    "headline": "Hugging Face is being used to easily undress women and children",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children",
-    "score": 77,
-    "reason": "Major controversy; abuse of AI platform with legal/ethical implications"
+    "headline": "A fundamental flaw leaves LLMs strikingly vulnerable to attack",
+    "link": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack/",
+    "score": 85,
+    "reason": "Security vulnerability affecting all LLMs; significant technical discovery"
   },
   {
     "rank": 7,
-    "headline": "Open weights vs. closed: An AI civil war's afoot, and the stakes are existential",
-    "link": "https://www.zdnet.com/article/open-weight-ai-civil-war/",
-    "score": 76,
-    "reason": "Fundamental industry divide with major strategic implications; non-speculative analysis"
+    "headline": "Microsoft Says Workers Are Now Using Copilot AI as Much as Teams and Outlook",
+    "link": "https://www.cnet.com/tech/services-and-software/microsoft-fiscal-year-2026-q4-earnings-agentic-ai-work/",
+    "score": 83,
+    "reason": "Big adoption number; major software integration milestone"
   },
   {
     "rank": 8,
-    "headline": "Armenia’s AI Bet Is Not Chip Manufacturing. It Is Compute Sovereignty",
-    "link": "https://www.artificialintelligence-news.com/news/armenias-ai-bet-is-not-chip-manufacturing-it-is-compute-sovereignty/",
-    "score": 72,
-    "reason": "Geopolitical shift in AI infrastructure; emerging market strategy"
+    "headline": "xAI’s last-minute scramble to stop Minnesota’s anti-nudification app law",
+    "link": "https://www.theverge.com/policy/972850/xai-grok-minnesota-nudification-lawsuit",
+    "score": 82,
+    "reason": "Controversy/regulatory conflict; concrete legislative issue"
   },
   {
     "rank": 9,
-    "headline": "Microsoft's new AI model beats Mythos on security benchmark",
-    "link": "https://www.zdnet.com/article/ai-model-release-tracker/",
-    "score": 70,
-    "reason": "Competitive breakthrough with measurable performance gains on specific metric"
+    "headline": "Hugging Face Users Easily Created and Shared Abusive AI Images, Study Finds",
+    "link": "https://www.cnet.com/tech/services-and-software/hugging-face-ai-nonconsensual-deepfakes-study/",
+    "score": 80,
+    "reason": "Major platform vulnerability; abuse at scale"
   },
   {
     "rank": 10,
-    "headline": "Hugging Face drops in-depth hack report, while OpenAI gives us 7 bullets. Here's what we know now, and what remains a mystery",
-    "link": "https://fortune.com/2026/07/29/openai-hugging-face-new-details-hack-everything-we-know-dont-know/",
-    "score": 68,
-    "reason": "Transparency contrast in major security incident; reveals company response differences"
+    "headline": "Private Claude Conversations Have Been Indexed by Search Engines",
+    "link": "https://www.cnet.com/tech/services-and-software/private-claude-conversations-have-been-indexed-by-search-engines/",
+    "score": 78,
+    "reason": "Privacy breach; Anthropic product; concrete security failure"
   },
   {
     "rank": 11,
-    "headline": "OpenAI president says it's 'building a family of devices' for its AI chatbots",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/972709/openai-hardware-greg-brockman-interview",
-    "score": 65,
-    "reason": "Major product category expansion announcement; significant market ambition"
+    "headline": "The U.S. wants Asia to use its AI — but China dominates cheaper models",
+    "link": "https://www.cnbc.com/2026/07/30/us-wants-asia-to-use-its-ai-but-china-dominates-cheaper-models.html",
+    "score": 76,
+    "reason": "Big geopolitical/market issue; substantive competition analysis"
   },
   {
     "rank": 12,
-    "headline": "xAI is challenging a new Minnesota law banning 'nudify' apps",
-    "link": "https://www.engadget.com/2225792/xai-challenging-new-minnesota-law-banning-nudify-apps/",
-    "score": 64,
-    "reason": "Direct legal confrontation over AI regulation; emerging company staking position"
+    "headline": "Forget robots on assembly lines. Foundational Industries wants AI to run the entire factory",
+    "link": "https://fortune.com/2026/07/30/forget-robots-assembly-lines-foundational-industries-ai-to-run-entire-factory-manufacturing-china-robotics/",
+    "score": 75,
+    "reason": "Major use case expansion; industrial AI strategy"
   },
   {
     "rank": 13,
-    "headline": "OpenAI launches free AI access program for academic researchers",
-    "link": "https://www.axios.com/2026/07/29/openai-academics-research-chatgpt-sol",
-    "score": 62,
-    "reason": "Strategic market move to deepen academic adoption; significant access expansion"
+    "headline": "Google AI Overviews become more common in search",
+    "link": "https://www.artificialintelligence-news.com/news/google-ai-overviews-us-searches/",
+    "score": 73,
+    "reason": "Significant product rollout; major search integration"
   },
   {
     "rank": 14,
-    "headline": "Gemini comes to Waymo for assistance and cabin controls",
-    "link": "https://9to5google.com/2026/07/29/gemini-waymo-ojai/",
-    "score": 61,
-    "reason": "Major integration of AI into autonomous vehicles; Google/Waymo cross-product strategy"
+    "headline": "Google will let Mac users talk to Gemini simply by pressing the 'fn' key",
+    "link": "https://www.engadget.com/2224915/google-lets-mad-users-talk-to-gemini-by-pressing-fn/",
+    "score": 71,
+    "reason": "New feature launch; expanded access"
   },
   {
     "rank": 15,
-    "headline": "AI leaders sign a statement asking the government to do something about automated AI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/972161/ai-leaders-us-government-openai-anthropic-google-meta",
-    "score": 58,
-    "reason": "Industry consensus on regulation request; signals maturity of sector concerns"
+    "headline": "OpenAI will provide free AI models to select researchers",
+    "link": "https://www.engadget.com/2226656/openai-will-provide-free-ai-models-to-select-researchers/",
+    "score": 70,
+    "reason": "Model access program; research initiative"
   },
   {
     "rank": 16,
-    "headline": "Guardoc Health processes clinical documentation using Amazon Nova models",
-    "link": "https://www.artificialintelligence-news.com/news/guardoc-health-processes-clinical-documentation-using-amazon-nova-models/",
-    "score": 55,
-    "reason": "Enterprise AI deployment in healthcare; Amazon's model adoption in production"
+    "headline": "China threatens retaliation against U.S. humanoid robot ban, says it &apos;severely damages&apos; relations",
+    "link": "https://www.cnbc.com/2026/07/30/china-us-robot-humanoid-ban-trump-visit.html",
+    "score": 69,
+    "reason": "Major geopolitical controversy; concrete trade/policy conflict"
   },
   {
     "rank": 17,
-    "headline": "74% of workers ask AI questions instead of colleagues - with potentially serious consequences",
-    "link": "https://www.zdnet.com/article/74-of-workers-ask-ai-questions-instead-of-colleagues/",
-    "score": 52,
-    "reason": "Major behavioral shift with workplace implications; significant adoption metric"
+    "headline": "AI labs face prisoner's dilemma as momentum grows for safety slowdown",
+    "link": "https://www.axios.com/2026/07/30/ai-safety-slowdown-anthropic-openai",
+    "score": 68,
+    "reason": "Industry-wide safety trend; substantive competitive dynamic"
   },
   {
     "rank": 18,
-    "headline": "Can the New York Times Save Journalism From Our AI Overlords?",
-    "link": "https://www.wired.com/story/the-big-interview-podcast-a-g-sulzberger-new-york-times/",
-    "score": 50,
-    "reason": "Major media company's strategic positioning against AI; industry-wide implications"
+    "headline": "Claude AI Recovering After Widespread Outage on Wednesday",
+    "link": "https://www.cnet.com/tech/services-and-software/claude-ai-recovering-after-widespread-outage-on-wednesday/",
+    "score": 66,
+    "reason": "Major service outage; concrete reliability issue"
   },
   {
     "rank": 19,
-    "headline": "Major labels call for AI slop songs to be banned from entering charts around the world",
-    "link": "https://www.engadget.com/2226234/major-labels-call-for-ai-slop-songs-to-be-banned-from-entering-charts-around-the-world/",
-    "score": 48,
-    "reason": "Industry coalition against AI-generated content; regulatory push across major sector"
+    "headline": "Scoop: Second account accessed by OpenAI's agent tied to cyber safety testing",
+    "link": "https://www.axios.com/2026/07/29/openai-hugging-face-modal-cyber-benchmark",
+    "score": 65,
+    "reason": "Confirmed security incident; additional breach details"
   },
   {
     "rank": 20,
-    "headline": "OpenAI report links coding agents to faster science software builds",
-    "link": "https://www.artificialintelligence-news.com/news/openai-report-coding-agents-faster-science-software-builds/",
-    "score": 45,
-    "reason": "Quantified productivity gains from AI agents; concrete research impact"
+    "headline": "AI Is Hyper-Scaling Digital Inequality",
+    "link": "https://spectrum.ieee.org/ai-digital-divide",
+    "score": 63,
+    "reason": "Substantive analysis of AI impact; systematic issue"
   }
 ]
