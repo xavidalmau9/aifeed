@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic Says Claude Hacked 3 Organizations During Cybersecurity Tests",
-    "link": "https://www.wired.com/story/anthropic-says-claude-hacked-real-systems-during-cybersecurity-tests/",
+    "headline": "Anthropic says Claude accidentally hacked real companies too",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests",
     "score": 95,
-    "reason": "Major controversy: AI model demonstrated unauthorized access capability during controlled tests. Significant security implications."
+    "reason": "Major security incident with concrete evidence; high-stakes AI safety issue"
   },
   {
     "rank": 2,
-    "headline": "Microsoft confirms Copilot ‘super app’ coming this year",
-    "link": "https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed",
+    "headline": "Google DeepMind’s new AI model can control a robot’s entire body",
+    "link": "https://www.theverge.com/tech/973276/google-deepmind-gemini-robotics-2-whole-body",
     "score": 92,
-    "reason": "Major product launch confirmation from top AI player. Concrete timeline and product scope."
+    "reason": "Significant capability launch bridging AI to physical world; major tech milestone"
   },
   {
     "rank": 3,
-    "headline": "Amazon's Zoox is the first steering wheel-free robotaxi to get regulatory approval for paid rides",
-    "link": "https://www.engadget.com/2227649/amazon-zoox-first-steering-wheel-free-robotaxi-regulatory-approval-paid-rides/",
-    "score": 90,
-    "reason": "Major milestone: first regulatory approval for autonomous vehicle without steering wheel. Concrete achievement, not speculation."
+    "headline": "Google Earth's AI deepfake tool only lasted one day",
+    "link": "https://www.theverge.com/tech/973943/google-earth-ai-image-generation-deepfake-tool",
+    "score": 88,
+    "reason": "Major product rollback; concrete controversy with immediate real-world impact"
   },
   {
     "rank": 4,
-    "headline": "Zuckerberg details Meta's personal AI superintelligence strategy",
-    "link": "https://www.artificialintelligence-news.com/news/zuckerberg-details-meta-personal-ai-superintelligence-strategy/",
-    "score": 88,
-    "reason": "Major strategic announcement from top AI investor. Concrete plans for AI agents and superintelligence development."
+    "headline": "LinkedIn actually adds a ‘seems like AI slop’ button",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/973384/linkedin-seems-like-ai-slop-button",
+    "score": 84,
+    "reason": "Major platform taking action against AI-generated content; broad user impact"
   },
   {
     "rank": 5,
-    "headline": "Google's new Gemini Robotics 2 platform allows for 'intelligent whole-body control'",
-    "link": "https://www.engadget.com/2227268/google-gemini-robotics-2-platform-intelligent-whole-body-control/",
-    "score": 87,
-    "reason": "Major product launch: new robotics platform with significant capability advancement. Verified release, not speculation."
+    "headline": "The major labels propose rules to keep AI slop off the charts",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/973741/ai-music-major-record-labels-charts",
+    "score": 82,
+    "reason": "Industry-wide response to AI threat; significant regulatory/competitive development"
   },
   {
     "rank": 6,
-    "headline": "Microsoft Says Workers Are Now Using Copilot AI as Much as Teams and Outlook",
-    "link": "https://www.cnet.com/tech/services-and-software/microsoft-fiscal-year-2026-q4-earnings-agentic-ai-work/",
-    "score": 85,
-    "reason": "Big numbers: major adoption metric showing Copilot mainstream integration in enterprise. Quantifiable business impact."
+    "headline": "Chrome Needs Twice-a-Week Patching Thanks to AI Bug Hunting",
+    "link": "https://www.wired.com/story/chrome-needs-twice-a-week-patching-thanks-to-ai-bug-hunting-for-now/",
+    "score": 80,
+    "reason": "Quantified impact on major product; AI tools forcing resource-intensive changes"
   },
   {
     "rank": 7,
-    "headline": "Private Claude Conversations Have Been Indexed by Search Engines",
-    "link": "https://www.cnet.com/tech/services-and-software/private-claude-conversations-have-been-indexed-by-search-engines/",
-    "score": 84,
-    "reason": "Major privacy controversy: security vulnerability affecting Anthropic's platform. Real user impact demonstrated."
+    "headline": "How OpenAI's agent escaped: Sprung by humans in a series of preventable events",
+    "link": "https://www.zdnet.com/article/how-openais-agent-escaped-mapping-a-series-of-preventable-events/",
+    "score": 79,
+    "reason": "Major OpenAI safety incident with documented details; competitive intelligence reveal"
   },
   {
     "rank": 8,
-    "headline": "Open weights vs. closed: An AI civil war's afoot, and the stakes are existential",
-    "link": "https://www.zdnet.com/article/open-weight-ai-civil-war/",
-    "score": 83,
-    "reason": "Major industry controversy: fundamental split between open and closed AI models. Existential business implications."
+    "headline": "Friend re-launches its AI pendant with a speaker that talks to you, for twice the price",
+    "link": "https://www.theverge.com/gadgets/973163/friend-re-launches-its-ai-pendant-with-a-speaker-that-talks-to-you-for-twice-the-price",
+    "score": 76,
+    "reason": "Significant product iteration with pricing data; consumer AI hardware market move"
   },
   {
     "rank": 9,
-    "headline": "A fundamental flaw leaves LLMs strikingly vulnerable to attack",
-    "link": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack/",
-    "score": 82,
-    "reason": "Major security discovery: widespread vulnerability across LLMs. Affects entire AI industry."
+    "headline": "EU will mandate labels on authentic-looking AI content starting August 2",
+    "link": "https://www.engadget.com/2227966/eu-mandate-labels-on-authentic-looking-ai-content/",
+    "score": 75,
+    "reason": "Major regulatory milestone with specific enforcement date; continent-wide mandate"
   },
   {
     "rank": 10,
-    "headline": "China threatens retaliation against U.S. humanoid robot ban, says it &apos;severely damages&apos; relations",
-    "link": "https://www.cnbc.com/2026/07/30/china-us-robot-humanoid-ban-trump-visit.html",
-    "score": 81,
-    "reason": "Major geopolitical controversy: international AI trade dispute with diplomatic consequences. Concrete policy action."
+    "headline": "Snapchat is cracking down on AI slop in Spotlight",
+    "link": "https://www.engadget.com/2228152/snapchat-is-cracking-down-on-ai-slop-in-spotlight/",
+    "score": 73,
+    "reason": "Major platform enforcing AI content policies; addresses AI spam at scale"
   },
   {
     "rank": 11,
-    "headline": "Mark Zuckerberg is planning a big push into personal AI agents",
-    "link": "https://www.theverge.com/tech/972294/meta-q2-2026-earnings-mark-zuckerberg-personal-ai-agents",
-    "score": 80,
-    "reason": "Major strategic investment announcement. Concrete commitment to AI agents market from top player."
+    "headline": "OpenAI aligns safety practices with EU AI Act's GPAI Code",
+    "link": "https://www.artificialintelligence-news.com/news/openai-aligns-safety-practices-with-eu-ai-act-gpai-code/",
+    "score": 72,
+    "reason": "Major compliance commitment from leading AI company; regulatory alignment"
   },
   {
     "rank": 12,
-    "headline": "Hugging Face Users Easily Created and Shared Abusive AI Images, Study Finds",
-    "link": "https://www.cnet.com/tech/services-and-software/hugging-face-ai-nonconsensual-deepfakes-study/",
-    "score": 79,
-    "reason": "Major platform safety controversy: demonstrated ability to create abusive content at scale. Research-backed findings."
+    "headline": "Fintech broker Clear Street offers investors pre-IPO access to $188 billion AI giant Databricks",
+    "link": "https://www.cnbc.com/2026/07/31/clear-street-pre-ipo-platform-databricks.html",
+    "score": 70,
+    "reason": "Large funding valuation milestone; significant capital market activity"
   },
   {
     "rank": 13,
-    "headline": "OpenAI’s Hacking Debacle Comes Down to Human Error",
-    "link": "https://www.wired.com/story/openais-hacking-debacle-was-a-human-mistake/",
-    "score": 77,
-    "reason": "Major security incident: breach affecting top AI company. Confirmed root cause and industry implications."
+    "headline": "Mark Zuckerberg Is Putting All His Chips on an AI Future, Whether You Want It or Not",
+    "link": "https://www.cnet.com/tech/services-and-software/mark-zuckerberg-meta-earnings-call-big-ai-investment/",
+    "score": 68,
+    "reason": "Major strategic commitment from tech giant; Meta's AI pivot emphasis"
   },
   {
     "rank": 14,
-    "headline": "LinkedIn is testing a 'seems like AI slop' reporting tool",
-    "link": "https://www.engadget.com/2227188/linkedin-testing-seems-like-ai-slop-reporting-tool/",
-    "score": 76,
-    "reason": "Major platform feature: significant social network addressing AI-generated content spam at scale."
+    "headline": "Dwindling cash and soaring memory costs: Tech&apos;s AI buildout has ballooning price tag",
+    "link": "https://www.cnbc.com/2026/07/31/tech-earnings-cash-memory-ai.html",
+    "score": 67,
+    "reason": "Quantified financial burden on AI infrastructure; industry-wide cost crisis"
   },
   {
     "rank": 15,
-    "headline": "Iran struck Amazon data centers again amid widening war, satellites show",
-    "link": "https://arstechnica.com/gadgets/2026/07/satellites-spot-new-war-damage-to-amazon-data-centers-and-saudi-oil-site/",
-    "score": 75,
-    "reason": "Major geopolitical event: direct cyberattack on US tech infrastructure. Concrete satellite evidence."
+    "headline": "SK Hynix, Samsung shares skyrocket to clock best days as AI rally roars back",
+    "link": "https://www.cnbc.com/2026/07/31/sk-hynix-samsung-ai-rally-chipmakers.html",
+    "score": 65,
+    "reason": "Market impact data; AI demand driving semiconductor valuations"
   },
   {
     "rank": 16,
-    "headline": "Claude AI Recovering After Widespread Outage on Wednesday",
-    "link": "https://www.cnet.com/tech/services-and-software/claude-ai-recovering-after-widespread-outage-on-wednesday/",
-    "score": 74,
-    "reason": "Major operational incident: service disruption for leading AI platform. Measurable business impact."
+    "headline": "How Leopold Aschenbrenner built a $45 billion AI hedge fund — and lost most of it in days",
+    "link": "https://www.cnbc.com/2026/07/31/leopold-aschenbrenner-situational-awareness-fund-fire-sale.html",
+    "score": 63,
+    "reason": "Dramatic financial story with large numbers; AI finance sector volatility"
   },
   {
     "rank": 17,
-    "headline": "Tim Cook hints at iCloud Plus tier for AI power users",
-    "link": "https://www.theverge.com/tech/973552/apple-ceo-tim-cook-icloud-plus-ai",
-    "score": 72,
-    "reason": "Major product strategy: Apple entering AI monetization with tiered pricing model. Concrete business move."
+    "headline": "OpenAI's rogue agent didn't stop at Hugging Face - here's what we know",
+    "link": "https://www.zdnet.com/article/openais-rogue-ai-models-attacked-other-companies-besides-hugging-face/",
+    "score": 62,
+    "reason": "Expanded scope of OpenAI agent incident; additional affected targets revealed"
   },
   {
     "rank": 18,
-    "headline": "AI investor Leopold Aschenbrenner forced to unwind all public stock positions after steep losses, sources say",
-    "link": "https://www.cnbc.com/2026/07/30/leopold-aschenbrenners-hedge-fund-is-facing-steep-ai-losses.html",
-    "score": 71,
-    "reason": "Major financial consequence: significant AI investor liquidation due to market losses. Big numbers impact."
+    "headline": "It’s time to panic about AI safety",
+    "link": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
+    "score": 58,
+    "reason": "Major safety concern escalation; calls for urgency in industry"
   },
   {
     "rank": 19,
-    "headline": "xAI’s last-minute scramble to stop Minnesota’s anti-nudification app law",
-    "link": "https://www.theverge.com/policy/972850/xai-grok-minnesota-nudification-lawsuit",
-    "score": 70,
-    "reason": "Major regulatory controversy: company lobbying against specific state legislation. Concrete policy battle."
+    "headline": "Nvidia’s Open Source Alliance Is Missing Some Key Names: OpenAI and Anthropic",
+    "link": "https://www.wired.com/story/nvidias-open-source-alliance-snubs-openai-and-anthropic/",
+    "score": 55,
+    "reason": "Competitive tensions between major AI players; strategic alliance fragmentation"
   },
   {
     "rank": 20,
-    "headline": "Gemini for MacOS Gets New Voice and ‘Screen Awareness’ Features",
-    "link": "https://www.cnet.com/tech/services-and-software/gemini-for-macos-get-new-voice-and-screen-awareness-features/",
-    "score": 68,
-    "reason": "Major product feature expansion: Google adding significant capabilities to main AI offering on major platform."
+    "headline": "Everyone Is Freaking Out About OpenAI and Anthropic’s Race for Dominance",
+    "link": "https://www.wired.com/story/everyone-is-freaking-out-about-openai-and-anthropics-race-for-dominance/",
+    "score": 52,
+    "reason": "Market-wide reaction to competitive AI race; investor sentiment indicator"
   }
 ]
