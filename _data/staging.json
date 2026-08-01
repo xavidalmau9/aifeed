@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic Says Claude Hacked Into 3 Organizations During Cybersecurity Tests",
-    "link": "https://www.wired.com/story/anthropic-says-claude-hacked-real-systems-during-cybersecurity-tests/",
+    "headline": "Anthropic says Claude accidentally hacked real companies too",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests",
     "score": 95,
-    "reason": "Major controversy: real unauthorized access by AI during tests, big security implications"
+    "reason": "Major AI safety incident with concrete impact; real-world hacking during testing"
   },
   {
     "rank": 2,
-    "headline": "Nobody Knows if OpenAI’s and Anthropic’s AI Hacking Sprees Are Illegal",
-    "link": "https://www.wired.com/story/openai-anthropic-ai-hacking-sprees-illegal/",
-    "score": 90,
-    "reason": "Controversy: legal ambiguity around AI system penetration testing, affects multiple companies"
+    "headline": "Google Earth's AI deepfake tool only lasted one day",
+    "link": "https://www.theverge.com/tech/973943/google-earth-ai-image-generation-deepfake-tool",
+    "score": 92,
+    "reason": "Significant launch/retraction; demonstrates real product controls"
   },
   {
     "rank": 3,
-    "headline": "Google DeepMind Shows Off Gemini Robotics 2 Doing Chores, and the Future Is Here",
-    "link": "https://www.cnet.com/videos/google-deepmind-shows-off-gemini-robotics-2-doing-chores-and-the-future-is-here/",
+    "headline": "Judge refuses xAI's request to stop a Minnesota law banning 'nudify' apps",
+    "link": "https://www.engadget.com/2228460/judge-refuses-xai-request-to-stop-minnesota-law-banning-nudify-apps/",
     "score": 88,
-    "reason": "Major product launch: Gemini Robotics 2 with demonstrated real-world capabilities"
+    "reason": "Major legal/regulatory win; direct AI controversy with enforcement"
   },
   {
     "rank": 4,
-    "headline": "Google rolls back the needless AI generation tools it added to Google Earth",
-    "link": "https://www.engadget.com/2228142/google-rolls-back-the-needless-ai-generation-tools-it-added-to-google-earth/",
-    "score": 82,
-    "reason": "Controversy: Google reverses AI feature, shows pushback against poor AI implementations"
+    "headline": "DeepSeek's new bargain model accelerates AI's race to zero",
+    "link": "https://www.axios.com/2026/08/01/deepseek-model-cheap-ai-price-war",
+    "score": 85,
+    "reason": "Significant market shift; new competitor with major price disruption"
   },
   {
     "rank": 5,
-    "headline": "Tim Cook says Apple may charge for AI Siri",
-    "link": "https://www.axios.com/2026/07/30/tim-cook-apple-may-charge-for-ai-siri",
-    "score": 80,
-    "reason": "Major announcement: Apple's monetization strategy for AI features, impacts user costs"
+    "headline": "LinkedIn actually adds a ‘seems like AI slop’ button",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/973384/linkedin-seems-like-ai-slop-button",
+    "score": 84,
+    "reason": "Major platform launches explicit AI content control; concrete feature launch"
   },
   {
     "rank": 6,
-    "headline": "Private Claude Conversations Have Been Indexed by Search Engines",
-    "link": "https://www.cnet.com/tech/services-and-software/private-claude-conversations-have-been-indexed-by-search-engines/",
-    "score": 78,
-    "reason": "Controversy: privacy breach, sensitive data exposed publicly without user consent"
+    "headline": "How OpenAI's agent escaped: Sprung by humans in a series of preventable events",
+    "link": "https://www.zdnet.com/article/how-openais-agent-escaped-mapping-a-series-of-preventable-events/",
+    "score": 83,
+    "reason": "Major safety incident with detailed failure analysis"
   },
   {
     "rank": 7,
-    "headline": "Gemini Spark can now use Chrome to auto browse, AI Pro access goes international",
-    "link": "https://9to5google.com/2026/07/30/gemini-spark-chrome-auto-browse/",
-    "score": 75,
-    "reason": "Product launch: Gemini Spark expansion with new capabilities and international rollout"
+    "headline": "The major labels propose rules to keep AI slop off the charts",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/973741/ai-music-major-record-labels-charts",
+    "score": 81,
+    "reason": "Industry-wide response to AI music; major coordinated action"
   },
   {
     "rank": 8,
-    "headline": "Publishers are losing Google traffic as AI answers replace links",
-    "link": "https://www.axios.com/2026/07/31/google-search-publishers-seo-geo-llms-ai",
-    "score": 73,
-    "reason": "Major impact: quantifiable business disruption, widespread industry consequence"
+    "headline": "Not just OpenAI - Anthropic says Claude's hacking spree 'falls short of ideal behavior'",
+    "link": "https://www.zdnet.com/article/anthropic-claude-ai-hacked-organizations-during-security-tests/",
+    "score": 79,
+    "reason": "Direct competitive comparison of AI safety issues"
   },
   {
     "rank": 9,
-    "headline": "Trump&apos;s AI executive order nears key deadline as regulation debate intensifies",
-    "link": "https://www.cnbc.com/2026/07/31/trump-ai-executive-order-nears-key-deadline-regulation-debate-heats-up.html",
-    "score": 72,
-    "reason": "Policy launch: major regulatory development with significant industry implications"
+    "headline": "Snapchat is cracking down on AI slop in Spotlight",
+    "link": "https://www.engadget.com/2228152/snapchat-is-cracking-down-on-ai-slop-in-spotlight/",
+    "score": 77,
+    "reason": "Major platform implements AI content controls"
   },
   {
     "rank": 10,
-    "headline": "7 States’ Water Systems Hit by Cyberattacks Likely Tied to Iran",
-    "link": "https://www.wired.com/story/security-news-this-week-7-states-water-systems-hit-by-cyberattacks-likely-tied-to-iran/",
-    "score": 70,
-    "reason": "Major incident: large-scale critical infrastructure attack with geopolitical dimensions"
+    "headline": "How Leopold Aschenbrenner built a $45 billion AI hedge fund — and lost most of it in days",
+    "link": "https://www.cnbc.com/2026/07/31/leopold-aschenbrenner-situational-awareness-fund-fire-sale.html",
+    "score": 76,
+    "reason": "Major financial story; specific large numbers with dramatic reversal"
   },
   {
     "rank": 11,
-    "headline": "Gemini will create mobile & desktop apps in the future as AI Studio for Android, iOS is canceled",
-    "link": "https://9to5google.com/2026/07/31/gemini-ai-studio-app/",
-    "score": 68,
-    "reason": "Strategic shift: Google canceling AI Studio, pivoting to Gemini apps on major platforms"
+    "headline": "The OpenAI and Anthropic AI Hacking Sprees Are a Messy New Legal Frontier",
+    "link": "https://www.wired.com/story/openai-anthropic-ai-hacking-sprees-illegal/",
+    "score": 74,
+    "reason": "Competitive AI safety incidents creating legal precedent"
   },
   {
     "rank": 12,
-    "headline": "LinkedIn's new 'Seems like AI slop' button lets you report all those cringey posts",
-    "link": "https://www.zdnet.com/article/thought-leadership-cultivate-and-align-ai-slop-is-all-over-linkedin-but-its-fighting-back/",
-    "score": 65,
-    "reason": "Feature launch: LinkedIn's response to AI-generated content problem with user reporting"
+    "headline": "OpenAI aligns safety practices with EU AI Act's GPAI Code",
+    "link": "https://www.artificialintelligence-news.com/news/openai-aligns-safety-practices-with-eu-ai-act-gpai-code/",
+    "score": 71,
+    "reason": "Regulatory milestone; major governance implementation"
   },
   {
     "rank": 13,
-    "headline": "Google fixed more Chrome bugs in June than over the past two years, thanks to AI",
-    "link": "https://blog.google/security/chrome-stronger-with-every-update/",
-    "score": 63,
-    "reason": "Big number: massive improvement in bug fixes using AI, quantified impact"
+    "headline": "Why your Windows installation files keep getting bigger - AI is filling up smaller drives",
+    "link": "https://www.zdnet.com/article/windows-installation-files-getting-bigger-blame-ai/",
+    "score": 68,
+    "reason": "Concrete technical impact of AI implementation"
   },
   {
     "rank": 14,
-    "headline": "AI Slop Melodramas Are Taking Over X—and Their Creators Are Cashing In",
-    "link": "https://www.wired.com/story/ai-slop-melodramas-are-taking-over-x-and-their-creators-are-cashing-in/",
-    "score": 60,
-    "reason": "Controversy: monetization of low-quality AI content, platform degradation issue"
+    "headline": "Apple’s CEO Hints That Heavy Use of Siri AI Could Cost You",
+    "link": "https://www.cnet.com/tech/services-and-software/apples-ceo-hints-that-heavy-use-of-siri-ai-could-cost-you/",
+    "score": 66,
+    "reason": "Major platform pricing strategy shift on AI"
   },
   {
     "rank": 15,
-    "headline": "Tim Cook hints at iCloud Plus tier for AI power users",
-    "link": "https://www.theverge.com/tech/973552/apple-ceo-tim-cook-icloud-plus-ai",
-    "score": 58,
-    "reason": "Product hint: Apple's tiered AI subscription strategy for paying users"
+    "headline": "U.S. lawmakers request information from DoorDash on use of Chinese AI models",
+    "link": "https://www.cnbc.com/2026/07/31/us-lawmakers-doordash-chinese-ai-models.html",
+    "score": 65,
+    "reason": "Regulatory pressure; geopolitical AI concern"
   },
   {
     "rank": 16,
-    "headline": "Here’s the problem with putting an AI image generator in Google Earth",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/973764/google-earth-ai-satellite-images",
-    "score": 55,
-    "reason": "Controversy: concerns about AI image generation in mapping service, potential misinformation"
+    "headline": "When Flock Comes to Town: How These AI Cameras Work and What to Do About Them",
+    "link": "https://www.cnet.com/home/security/when-flock-comes-to-town-why-cities-are-axing-the-controversial-surveillance-technology/",
+    "score": 63,
+    "reason": "Emerging AI surveillance technology with public impact"
   },
   {
     "rank": 17,
-    "headline": "Inside Europe's lessons on AI safety as U.S. rules loom",
-    "link": "https://www.axios.com/2026/07/31/inside-europe-lessons-ai-safety-trump-rules-loom",
-    "score": 52,
-    "reason": "Policy analysis: EU AI Act implications informing U.S. regulation"
+    "headline": "Is this Billboard Hot 100 hit AI slop?",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/974209/fenix-flexin-billboard-hot-100-rubberz-ai-slop",
+    "score": 61,
+    "reason": "High-profile AI music controversy in mainstream culture"
   },
   {
     "rank": 18,
-    "headline": "AI-focused hedge fund sells all of its stocks",
-    "link": "https://www.axios.com/2026/07/30/ai-hedge-fund-situational-awareness-citadel",
-    "score": 48,
-    "reason": "Market signal: major AI investment fund exits positions, indicates sentiment shift"
+    "headline": "Chinese AI Researchers Are Finding Their Voice on X",
+    "link": "https://www.wired.com/story/chinese-ai-researchers-are-finding-their-voice-on-x/",
+    "score": 58,
+    "reason": "Geopolitical AI development shift"
   },
   {
     "rank": 19,
-    "headline": "Are AI Models Working Harder Than They Need to?",
-    "link": "https://spectrum.ieee.org/ai-energy-weightless-neural-networks",
-    "score": 45,
-    "reason": "Technical analysis: efficiency question about AI model operations"
+    "headline": "Dwindling cash and soaring memory costs: Tech&apos;s AI buildout has ballooning price tag",
+    "link": "https://www.cnbc.com/2026/07/31/tech-earnings-cash-memory-ai.html",
+    "score": 56,
+    "reason": "Major infrastructure cost analysis"
   },
   {
     "rank": 20,
-    "headline": "The New Friend AI Pendant Can Now Talk Back to You",
-    "link": "https://www.wired.com/story/the-friend-2-necklace-can-talk-back-to-you-now/",
-    "score": 40,
-    "reason": "Product feature: new conversational capability in AI hardware device"
+    "headline": "The Tech Download: Anduril CEO Brian Schimpf talks AI in warfare and manufacturing push",
+    "link": "https://www.cnbc.com/2026/07/31/the-tech-download-anduril-ceo-brian-schimpf.html",
+    "score": 54,
+    "reason": "AI in military applications; emerging sector"
   }
 ]
