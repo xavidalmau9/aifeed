@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic says Claude accidentally hacked real companies too",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests",
-    "score": 95,
-    "reason": "Major AI safety incident with concrete impact; real-world hacking during testing"
+    "headline": "Google rolls back the needless AI generation tools it added to Google Earth",
+    "link": "https://www.engadget.com/2228142/google-rolls-back-the-needless-ai-generation-tools-it-added-to-google-earth/",
+    "score": 92,
+    "reason": "Major company reversal on AI feature; concrete product action; controversy-driven"
   },
   {
     "rank": 2,
-    "headline": "Google Earth's AI deepfake tool only lasted one day",
-    "link": "https://www.theverge.com/tech/973943/google-earth-ai-image-generation-deepfake-tool",
-    "score": 92,
-    "reason": "Significant launch/retraction; demonstrates real product controls"
+    "headline": "Here’s the problem with putting an AI image generator in Google Earth",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/973764/google-earth-ai-satellite-images",
+    "score": 88,
+    "reason": "Google AI controversy; documented problems with major product"
   },
   {
     "rank": 3,
-    "headline": "Judge refuses xAI's request to stop a Minnesota law banning 'nudify' apps",
-    "link": "https://www.engadget.com/2228460/judge-refuses-xai-request-to-stop-minnesota-law-banning-nudify-apps/",
-    "score": 88,
-    "reason": "Major legal/regulatory win; direct AI controversy with enforcement"
+    "headline": "LinkedIn's new 'Seems like AI slop' button lets you report all those cringey posts",
+    "link": "https://www.zdnet.com/article/thought-leadership-cultivate-and-align-ai-slop-is-all-over-linkedin-but-its-fighting-back/",
+    "score": 85,
+    "reason": "Major platform launch addressing AI content problem; concrete feature"
   },
   {
     "rank": 4,
-    "headline": "DeepSeek's new bargain model accelerates AI's race to zero",
-    "link": "https://www.axios.com/2026/08/01/deepseek-model-cheap-ai-price-war",
-    "score": 85,
-    "reason": "Significant market shift; new competitor with major price disruption"
+    "headline": "Trump&apos;s AI executive order nears key deadline as regulation debate intensifies",
+    "link": "https://www.cnbc.com/2026/07/31/trump-ai-executive-order-nears-key-deadline-regulation-debate-heats-up.html",
+    "score": 82,
+    "reason": "Major regulatory development; high-stakes policy deadline"
   },
   {
     "rank": 5,
-    "headline": "LinkedIn actually adds a ‘seems like AI slop’ button",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/973384/linkedin-seems-like-ai-slop-button",
-    "score": 84,
-    "reason": "Major platform launches explicit AI content control; concrete feature launch"
+    "headline": "Gemini will create mobile & desktop apps in the future as AI Studio for Android, iOS is canceled",
+    "link": "https://9to5google.com/2026/07/31/gemini-ai-studio-app/",
+    "score": 79,
+    "reason": "Google product pivot; concrete strategic change in AI deployment"
   },
   {
     "rank": 6,
-    "headline": "How OpenAI's agent escaped: Sprung by humans in a series of preventable events",
-    "link": "https://www.zdnet.com/article/how-openais-agent-escaped-mapping-a-series-of-preventable-events/",
-    "score": 83,
-    "reason": "Major safety incident with detailed failure analysis"
+    "headline": "AI Slop Melodramas Are Taking Over X—and Their Creators Are Cashing In",
+    "link": "https://www.wired.com/story/ai-slop-melodramas-are-taking-over-x-and-their-creators-are-cashing-in/",
+    "score": 76,
+    "reason": "Major platform controversy; documented monetization of AI-generated content"
   },
   {
     "rank": 7,
-    "headline": "The major labels propose rules to keep AI slop off the charts",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/973741/ai-music-major-record-labels-charts",
-    "score": 81,
-    "reason": "Industry-wide response to AI music; major coordinated action"
+    "headline": "Fintech broker Clear Street offers investors pre-IPO access to $188 billion AI giant Databricks",
+    "link": "https://www.cnbc.com/2026/07/31/clear-street-pre-ipo-platform-databricks.html",
+    "score": 74,
+    "reason": "Massive valuation ($188B); major financing event"
   },
   {
     "rank": 8,
-    "headline": "Not just OpenAI - Anthropic says Claude's hacking spree 'falls short of ideal behavior'",
-    "link": "https://www.zdnet.com/article/anthropic-claude-ai-hacked-organizations-during-security-tests/",
-    "score": 79,
-    "reason": "Direct competitive comparison of AI safety issues"
+    "headline": "Generative AI floods and dilutes the market for books",
+    "link": "https://arxiv.org/abs/2607.20349",
+    "score": 71,
+    "reason": "Documented market impact of AI; quantifiable industry disruption"
   },
   {
     "rank": 9,
-    "headline": "Snapchat is cracking down on AI slop in Spotlight",
-    "link": "https://www.engadget.com/2228152/snapchat-is-cracking-down-on-ai-slop-in-spotlight/",
-    "score": 77,
-    "reason": "Major platform implements AI content controls"
+    "headline": "How to keep your AI conversations as private as possible",
+    "link": "https://www.zdnet.com/article/ai-conversations-private/",
+    "score": 68,
+    "reason": "AI privacy controversy; user-protective guidance on major tools"
   },
   {
     "rank": 10,
-    "headline": "How Leopold Aschenbrenner built a $45 billion AI hedge fund — and lost most of it in days",
-    "link": "https://www.cnbc.com/2026/07/31/leopold-aschenbrenner-situational-awareness-fund-fire-sale.html",
-    "score": 76,
-    "reason": "Major financial story; specific large numbers with dramatic reversal"
-  },
-  {
-    "rank": 11,
-    "headline": "The OpenAI and Anthropic AI Hacking Sprees Are a Messy New Legal Frontier",
-    "link": "https://www.wired.com/story/openai-anthropic-ai-hacking-sprees-illegal/",
-    "score": 74,
-    "reason": "Competitive AI safety incidents creating legal precedent"
-  },
-  {
-    "rank": 12,
-    "headline": "OpenAI aligns safety practices with EU AI Act's GPAI Code",
-    "link": "https://www.artificialintelligence-news.com/news/openai-aligns-safety-practices-with-eu-ai-act-gpai-code/",
-    "score": 71,
-    "reason": "Regulatory milestone; major governance implementation"
-  },
-  {
-    "rank": 13,
-    "headline": "Why your Windows installation files keep getting bigger - AI is filling up smaller drives",
-    "link": "https://www.zdnet.com/article/windows-installation-files-getting-bigger-blame-ai/",
-    "score": 68,
-    "reason": "Concrete technical impact of AI implementation"
-  },
-  {
-    "rank": 14,
-    "headline": "Apple’s CEO Hints That Heavy Use of Siri AI Could Cost You",
-    "link": "https://www.cnet.com/tech/services-and-software/apples-ceo-hints-that-heavy-use-of-siri-ai-could-cost-you/",
-    "score": 66,
-    "reason": "Major platform pricing strategy shift on AI"
-  },
-  {
-    "rank": 15,
-    "headline": "U.S. lawmakers request information from DoorDash on use of Chinese AI models",
-    "link": "https://www.cnbc.com/2026/07/31/us-lawmakers-doordash-chinese-ai-models.html",
+    "headline": "AI in Formula One: Competitive advantage is all about the human in the loop",
+    "link": "https://www.zdnet.com/article/ai-in-formula-one-competitive-advantage-is-all-about-the-human-in-the-loop/",
     "score": 65,
-    "reason": "Regulatory pressure; geopolitical AI concern"
-  },
-  {
-    "rank": 16,
-    "headline": "When Flock Comes to Town: How These AI Cameras Work and What to Do About Them",
-    "link": "https://www.cnet.com/home/security/when-flock-comes-to-town-why-cities-are-axing-the-controversial-surveillance-technology/",
-    "score": 63,
-    "reason": "Emerging AI surveillance technology with public impact"
-  },
-  {
-    "rank": 17,
-    "headline": "Is this Billboard Hot 100 hit AI slop?",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/974209/fenix-flexin-billboard-hot-100-rubberz-ai-slop",
-    "score": 61,
-    "reason": "High-profile AI music controversy in mainstream culture"
-  },
-  {
-    "rank": 18,
-    "headline": "Chinese AI Researchers Are Finding Their Voice on X",
-    "link": "https://www.wired.com/story/chinese-ai-researchers-are-finding-their-voice-on-x/",
-    "score": 58,
-    "reason": "Geopolitical AI development shift"
-  },
-  {
-    "rank": 19,
-    "headline": "Dwindling cash and soaring memory costs: Tech&apos;s AI buildout has ballooning price tag",
-    "link": "https://www.cnbc.com/2026/07/31/tech-earnings-cash-memory-ai.html",
-    "score": 56,
-    "reason": "Major infrastructure cost analysis"
-  },
-  {
-    "rank": 20,
-    "headline": "The Tech Download: Anduril CEO Brian Schimpf talks AI in warfare and manufacturing push",
-    "link": "https://www.cnbc.com/2026/07/31/the-tech-download-anduril-ceo-brian-schimpf.html",
-    "score": 54,
-    "reason": "AI in military applications; emerging sector"
+    "reason": "AI in high-profile industry; competitive application story"
   }
 ]
