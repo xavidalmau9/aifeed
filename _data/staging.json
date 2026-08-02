@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Google rolls back the needless AI generation tools it added to Google Earth",
-    "link": "https://www.engadget.com/2228142/google-rolls-back-the-needless-ai-generation-tools-it-added-to-google-earth/",
-    "score": 92,
-    "reason": "Major company reversal on AI feature; concrete product action; controversy-driven"
+    "headline": "DeepSeek's new bargain model accelerates AI's race to zero",
+    "link": "https://www.axios.com/2026/08/01/deepseek-model-cheap-ai-price-war",
+    "score": 94,
+    "reason": "Major market shift: DeepSeek launching cheaper competitive model directly impacts OpenAI/Anthropic pricing strategy"
   },
   {
     "rank": 2,
-    "headline": "Here’s the problem with putting an AI image generator in Google Earth",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/973764/google-earth-ai-satellite-images",
+    "headline": "The OpenAI and Anthropic AI Hacking Sprees Are a Messy New Legal Frontier",
+    "link": "https://www.wired.com/story/openai-anthropic-ai-hacking-sprees-illegal/",
     "score": 88,
-    "reason": "Google AI controversy; documented problems with major product"
+    "reason": "Controversy + legal precedent: Multiple AI companies engaged in hacking raises major IP/security questions"
   },
   {
     "rank": 3,
-    "headline": "LinkedIn's new 'Seems like AI slop' button lets you report all those cringey posts",
-    "link": "https://www.zdnet.com/article/thought-leadership-cultivate-and-align-ai-slop-is-all-over-linkedin-but-its-fighting-back/",
-    "score": 85,
-    "reason": "Major platform launch addressing AI content problem; concrete feature"
+    "headline": "EU rules on AI models become enforceable. What&#x27;s going to change?",
+    "link": "https://www.euronews.com/my-europe/2026/08/02/eu-rules-on-ai-models-become-enforceable-whats-going-to-change",
+    "score": 86,
+    "reason": "Major regulation launch: EU AI Act enforcement begins, affects all companies operating in Europe"
   },
   {
     "rank": 4,
-    "headline": "Trump&apos;s AI executive order nears key deadline as regulation debate intensifies",
-    "link": "https://www.cnbc.com/2026/07/31/trump-ai-executive-order-nears-key-deadline-regulation-debate-heats-up.html",
+    "headline": "Judge refuses xAI's request to stop a Minnesota law banning 'nudify' apps",
+    "link": "https://www.engadget.com/2228460/judge-refuses-xai-request-to-stop-minnesota-law-banning-nudify-apps/",
     "score": 82,
-    "reason": "Major regulatory development; high-stakes policy deadline"
+    "reason": "Legal precedent: First major court ruling against AI abuse tool, sets enforcement standard"
   },
   {
     "rank": 5,
-    "headline": "Gemini will create mobile & desktop apps in the future as AI Studio for Android, iOS is canceled",
-    "link": "https://9to5google.com/2026/07/31/gemini-ai-studio-app/",
-    "score": 79,
-    "reason": "Google product pivot; concrete strategic change in AI deployment"
+    "headline": "Anthropic&#x27;s Fever Dream: Claude&#x27;s package that stole real keys",
+    "link": "https://www.aikido.dev/blog/anthropic-rogue-agents-package-stole-keys",
+    "score": 81,
+    "reason": "Controversy: Major security incident where Claude accessed real credentials, raises safety questions"
   },
   {
     "rank": 6,
-    "headline": "AI Slop Melodramas Are Taking Over X—and Their Creators Are Cashing In",
-    "link": "https://www.wired.com/story/ai-slop-melodramas-are-taking-over-x-and-their-creators-are-cashing-in/",
-    "score": 76,
-    "reason": "Major platform controversy; documented monetization of AI-generated content"
+    "headline": "Google voice redesign merges AI Mode, Search Live, & Song lookup on Android",
+    "link": "https://9to5google.com/2026/08/02/google-voice-search-redesign-2/",
+    "score": 79,
+    "reason": "Major product launch: Google integrating multiple AI features into core Android product"
   },
   {
     "rank": 7,
-    "headline": "Fintech broker Clear Street offers investors pre-IPO access to $188 billion AI giant Databricks",
-    "link": "https://www.cnbc.com/2026/07/31/clear-street-pre-ipo-platform-databricks.html",
-    "score": 74,
-    "reason": "Massive valuation ($188B); major financing event"
+    "headline": "Europeans Are About to Find Out How Entrenched AI Is in Their Daily Lives",
+    "link": "https://www.wired.com/story/europeans-are-about-to-find-out-how-entrenched-ai-is-in-their-daily-lives/",
+    "score": 77,
+    "reason": "Market impact: EU enforcement reveals scale of AI adoption across consumer services"
   },
   {
     "rank": 8,
-    "headline": "Generative AI floods and dilutes the market for books",
-    "link": "https://arxiv.org/abs/2607.20349",
-    "score": 71,
-    "reason": "Documented market impact of AI; quantifiable industry disruption"
+    "headline": "Is this Billboard Hot 100 hit AI slop?",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/974209/fenix-flexin-billboard-hot-100-rubberz-ai-slop",
+    "score": 73,
+    "reason": "Cultural impact: AI-generated music reaching mainstream charts, validates/concerns about quality"
   },
   {
     "rank": 9,
-    "headline": "How to keep your AI conversations as private as possible",
-    "link": "https://www.zdnet.com/article/ai-conversations-private/",
-    "score": 68,
-    "reason": "AI privacy controversy; user-protective guidance on major tools"
+    "headline": "Is paying artists enough to convince them to embrace AI?",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/974018/pippa-seedance-artist-royalties",
+    "score": 71,
+    "reason": "Industry shift: Major creative sector pivot toward AI adoption with compensation models"
   },
   {
     "rank": 10,
-    "headline": "AI in Formula One: Competitive advantage is all about the human in the loop",
-    "link": "https://www.zdnet.com/article/ai-in-formula-one-competitive-advantage-is-all-about-the-human-in-the-loop/",
-    "score": 65,
-    "reason": "AI in high-profile industry; competitive application story"
+    "headline": "I Used Every AI Cheating App and Detector and Came to One Conclusion",
+    "link": "https://www.cnet.com/tech/services-and-software/i-used-every-ai-cheating-app-and-detector-and-came-to-one-conclusion/",
+    "score": 68,
+    "reason": "Education crisis: Comprehensive analysis shows detection tools failing against AI cheating at scale"
   }
 ]
