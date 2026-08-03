@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "DeepSeek's new bargain model accelerates AI's race to zero",
-    "link": "https://www.axios.com/2026/08/01/deepseek-model-cheap-ai-price-war",
-    "score": 94,
-    "reason": "Major market shift: DeepSeek launching cheaper competitive model directly impacts OpenAI/Anthropic pricing strategy"
+    "headline": "Alibaba shares rally after unveiling its &apos;most powerful&apos; AI model as U.S.-China competition heats up",
+    "link": "https://www.cnbc.com/2026/08/03/alibaba-ai-model-qwen-rival-anthropic.html",
+    "score": 92,
+    "reason": "Major product launch with stock market impact and geopolitical significance"
   },
   {
     "rank": 2,
-    "headline": "The OpenAI and Anthropic AI Hacking Sprees Are a Messy New Legal Frontier",
-    "link": "https://www.wired.com/story/openai-anthropic-ai-hacking-sprees-illegal/",
+    "headline": "Anthropic, OpenAI among firms facing new scrutiny under EU AI Act enforcement powers",
+    "link": "https://www.cnbc.com/2026/08/03/eu-ai-act-enforcement-powers.html",
     "score": 88,
-    "reason": "Controversy + legal precedent: Multiple AI companies engaged in hacking raises major IP/security questions"
+    "reason": "Major regulatory enforcement action against leading AI companies"
   },
   {
     "rank": 3,
-    "headline": "EU rules on AI models become enforceable. What&#x27;s going to change?",
-    "link": "https://www.euronews.com/my-europe/2026/08/02/eu-rules-on-ai-models-become-enforceable-whats-going-to-change",
-    "score": 86,
-    "reason": "Major regulation launch: EU AI Act enforcement begins, affects all companies operating in Europe"
+    "headline": "As Amazon pours billions into AI, Jeff Bezos says the real edge lies in what won't change",
+    "link": "https://fortune.com/article/as-amazon-pours-billions-into-ai-jeff-bezos-says-the-real-edge-lies-in-what-wont-change/",
+    "score": 82,
+    "reason": "Major company AI investment with billion-dollar commitment"
   },
   {
     "rank": 4,
-    "headline": "Judge refuses xAI's request to stop a Minnesota law banning 'nudify' apps",
-    "link": "https://www.engadget.com/2228460/judge-refuses-xai-request-to-stop-minnesota-law-banning-nudify-apps/",
-    "score": 82,
-    "reason": "Legal precedent: First major court ruling against AI abuse tool, sets enforcement standard"
+    "headline": "Here’s why AI agents lie and cheat to reach their goals",
+    "link": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
+    "score": 79,
+    "reason": "Documented AI behavior concern with broad implications"
   },
   {
     "rank": 5,
-    "headline": "Anthropic&#x27;s Fever Dream: Claude&#x27;s package that stole real keys",
-    "link": "https://www.aikido.dev/blog/anthropic-rogue-agents-package-stole-keys",
-    "score": 81,
-    "reason": "Controversy: Major security incident where Claude accessed real credentials, raises safety questions"
+    "headline": "U.S. lawmakers request information from DoorDash on use of Chinese AI models",
+    "link": "https://www.cnbc.com/2026/07/31/us-lawmakers-doordash-chinese-ai-models.html",
+    "score": 78,
+    "reason": "Government scrutiny of AI usage in major company"
   },
   {
     "rank": 6,
-    "headline": "Google voice redesign merges AI Mode, Search Live, & Song lookup on Android",
-    "link": "https://9to5google.com/2026/08/02/google-voice-search-redesign-2/",
-    "score": 79,
-    "reason": "Major product launch: Google integrating multiple AI features into core Android product"
+    "headline": "AI Conquered Coding. Fast Food Is Next",
+    "link": "https://www.wired.com/story/ai-conquered-coding-fast-food-is-next/",
+    "score": 75,
+    "reason": "AI expanding into new major industry sector"
   },
   {
     "rank": 7,
-    "headline": "Europeans Are About to Find Out How Entrenched AI Is in Their Daily Lives",
-    "link": "https://www.wired.com/story/europeans-are-about-to-find-out-how-entrenched-ai-is-in-their-daily-lives/",
-    "score": 77,
-    "reason": "Market impact: EU enforcement reveals scale of AI adoption across consumer services"
+    "headline": "To power AI, Khosla and a16z bet this startup can reinvent mining",
+    "link": "https://fortune.com/2026/08/03/power-ai-khosla-a16z-bet-startup-reinvent-mining-mariana-minerals/",
+    "score": 72,
+    "reason": "Major VC investment in AI infrastructure scaling"
   },
   {
     "rank": 8,
-    "headline": "Is this Billboard Hot 100 hit AI slop?",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/974209/fenix-flexin-billboard-hot-100-rubberz-ai-slop",
-    "score": 73,
-    "reason": "Cultural impact: AI-generated music reaching mainstream charts, validates/concerns about quality"
+    "headline": "Ikea's AI bot didn't replace workers. It made them more valuable",
+    "link": "https://fortune.com/2026/08/03/ikea-ai-reskill-workers/",
+    "score": 68,
+    "reason": "Documented real-world AI implementation at scale"
   },
   {
     "rank": 9,
-    "headline": "Is paying artists enough to convince them to embrace AI?",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/974018/pippa-seedance-artist-royalties",
-    "score": 71,
-    "reason": "Industry shift: Major creative sector pivot toward AI adoption with compensation models"
+    "headline": "Why biological data matters more in AI drug discovery",
+    "link": "https://www.artificialintelligence-news.com/news/gsk-relation-therapeutics-ai-drug-discovery-biological-data/",
+    "score": 65,
+    "reason": "AI application in high-stakes healthcare domain"
   },
   {
     "rank": 10,
-    "headline": "I Used Every AI Cheating App and Detector and Came to One Conclusion",
-    "link": "https://www.cnet.com/tech/services-and-software/i-used-every-ai-cheating-app-and-detector-and-came-to-one-conclusion/",
-    "score": 68,
-    "reason": "Education crisis: Comprehensive analysis shows detection tools failing against AI cheating at scale"
+    "headline": "DuckDuckGo’s Anti-AI Sunglasses Won’t Spy On Anyone",
+    "link": "https://www.cnet.com/tech/mobile/duckduckgo-anti-ai-sunglasses-wont-spy/",
+    "score": 61,
+    "reason": "Novel privacy-focused AI product launch"
   }
 ]
