@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Alibaba shares rally after unveiling its &apos;most powerful&apos; AI model as U.S.-China competition heats up",
-    "link": "https://www.cnbc.com/2026/08/03/alibaba-ai-model-qwen-rival-anthropic.html",
+    "headline": "How Google used AI agents to find and fix 1,072 Chrome security bugs - in 60 days",
+    "link": "https://www.zdnet.com/article/google-used-ai-to-fix-1072-chrome-security-bugs-in-60-days/",
     "score": 92,
-    "reason": "Major product launch with stock market impact and geopolitical significance"
+    "reason": "Big numbers (1,072 bugs, 60 days), concrete launch of AI capability, Google"
   },
   {
     "rank": 2,
-    "headline": "Anthropic, OpenAI among firms facing new scrutiny under EU AI Act enforcement powers",
-    "link": "https://www.cnbc.com/2026/08/03/eu-ai-act-enforcement-powers.html",
+    "headline": "AI shopping searches surged 200% in one year - and it's a top priority for commerce leaders now",
+    "link": "https://www.zdnet.com/article/ai-shopping-searches-surging-commerce-leaders-top-priority/",
     "score": 88,
-    "reason": "Major regulatory enforcement action against leading AI companies"
+    "reason": "Major growth metric (200%), industry-wide adoption signal, concrete business impact"
   },
   {
     "rank": 3,
-    "headline": "As Amazon pours billions into AI, Jeff Bezos says the real edge lies in what won't change",
-    "link": "https://fortune.com/article/as-amazon-pours-billions-into-ai-jeff-bezos-says-the-real-edge-lies-in-what-wont-change/",
-    "score": 82,
-    "reason": "Major company AI investment with billion-dollar commitment"
+    "headline": "Visa to buy cybersecurity firm BioCatch for $2.4 billion amid surge in AI-powered scams",
+    "link": "https://www.cnbc.com/2026/08/03/visa-buys-biocatch-fraud-detection.html",
+    "score": 87,
+    "reason": "Large acquisition amount ($2.4B), major company, AI-driven fraud response"
   },
   {
     "rank": 4,
-    "headline": "Here’s why AI agents lie and cheat to reach their goals",
-    "link": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
-    "score": 79,
-    "reason": "Documented AI behavior concern with broad implications"
+    "headline": "Europe’s AI labeling and transparency rules are now in effect",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes",
+    "score": 85,
+    "reason": "Major regulatory launch, EU AI Act implementation, affects entire continent"
   },
   {
     "rank": 5,
-    "headline": "U.S. lawmakers request information from DoorDash on use of Chinese AI models",
-    "link": "https://www.cnbc.com/2026/07/31/us-lawmakers-doordash-chinese-ai-models.html",
-    "score": 78,
-    "reason": "Government scrutiny of AI usage in major company"
+    "headline": "China's Alibaba takes another swipe at America’s AI supremacy",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai",
+    "score": 82,
+    "reason": "Geopolitical competition angle, major company, concrete product action"
   },
   {
     "rank": 6,
-    "headline": "AI Conquered Coding. Fast Food Is Next",
-    "link": "https://www.wired.com/story/ai-conquered-coding-fast-food-is-next/",
-    "score": 75,
-    "reason": "AI expanding into new major industry sector"
+    "headline": "Hugging Face CEO says China is winning the AI race and dominating on open models",
+    "link": "https://www.cnbc.com/2026/08/03/hugging-face-china-ai-race-open-models.html",
+    "score": 79,
+    "reason": "Controversy/hot take, China dominance claim, open source AI shift"
   },
   {
     "rank": 7,
-    "headline": "To power AI, Khosla and a16z bet this startup can reinvent mining",
-    "link": "https://fortune.com/2026/08/03/power-ai-khosla-a16z-bet-startup-reinvent-mining-mariana-minerals/",
-    "score": 72,
-    "reason": "Major VC investment in AI infrastructure scaling"
+    "headline": "Trump’s AI protectionism has come for robotics",
+    "link": "https://www.technologyreview.com/2026/08/03/1141056/trumps-ai-protectionism-has-come-for-robotics/",
+    "score": 77,
+    "reason": "Policy controversy, new protectionist stance, robotics sector impact"
   },
   {
     "rank": 8,
-    "headline": "Ikea's AI bot didn't replace workers. It made them more valuable",
-    "link": "https://fortune.com/2026/08/03/ikea-ai-reskill-workers/",
-    "score": 68,
-    "reason": "Documented real-world AI implementation at scale"
+    "headline": "AI is both a cyber weapon and a massive target, CrowdStrike warns",
+    "link": "https://www.zdnet.com/article/ai-is-cyber-weapon-and-massive-target-crowdstrike-warns/",
+    "score": 75,
+    "reason": "Security industry warning, dual-use AI concerns, major firm commentary"
   },
   {
     "rank": 9,
-    "headline": "Why biological data matters more in AI drug discovery",
-    "link": "https://www.artificialintelligence-news.com/news/gsk-relation-therapeutics-ai-drug-discovery-biological-data/",
-    "score": 65,
-    "reason": "AI application in high-stakes healthcare domain"
+    "headline": "Gemini Spark now has Chrome web-browsing capabilities",
+    "link": "https://www.engadget.com/2229209/gemini-spark-now-has-chrome-web-browsing-capabliities/",
+    "score": 73,
+    "reason": "Google feature launch, capability expansion, concrete product update"
   },
   {
     "rank": 10,
-    "headline": "DuckDuckGo’s Anti-AI Sunglasses Won’t Spy On Anyone",
-    "link": "https://www.cnet.com/tech/mobile/duckduckgo-anti-ai-sunglasses-wont-spy/",
-    "score": 61,
-    "reason": "Novel privacy-focused AI product launch"
+    "headline": "White House to host AI companies Tuesday to review new model-testing framework",
+    "link": "https://www.cnbc.com/2026/08/03/white-house-ai-companies-voluntary-framework-meeting.html",
+    "score": 70,
+    "reason": "U.S. policy development, industry framework launch, regulatory direction"
   }
 ]
