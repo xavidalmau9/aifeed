@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI drags Apple’s lawsuit into the court of public opinion",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/974914/openai-blog-response-apple-lawsuit-messages",
-    "score": 94,
-    "reason": "Major lawsuit controversy between two tech giants with public statements"
+    "headline": "DOJ extracts $3.2 million from OpenAI over hiring discrimination allegations",
+    "link": "https://www.engadget.com/2230316/doj-extracts-dollar32-million-from-openai-over-hiring-discrimination-allegations/",
+    "score": 92,
+    "reason": "Major legal action with concrete penalty against leading AI company"
   },
   {
     "rank": 2,
-    "headline": "EU AI Act Article 50 transparency rules enter force",
-    "link": "https://www.artificialintelligence-news.com/news/eu-ai-act-article-50-transparency-rules-enter-force/",
-    "score": 92,
-    "reason": "Major regulatory milestone with concrete enforcement date"
+    "headline": "China's Alibaba takes another swipe at America’s AI supremacy",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai",
+    "score": 88,
+    "reason": "Geopolitical AI competition with major Chinese tech company"
   },
   {
     "rank": 3,
-    "headline": "AI is helping Grab ship products more than 30% faster, CFO says, as company raises forecasts",
-    "link": "https://www.cnbc.com/2026/08/04/grab-earnings-ai-forecast-cfo-.html",
-    "score": 89,
-    "reason": "Quantified business impact (30% faster) with forecast revision"
+    "headline": "Europe’s AI labeling and transparency rules are now in effect",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes",
+    "score": 86,
+    "reason": "Major regulatory milestone with global implications"
   },
   {
     "rank": 4,
-    "headline": "HappyRobot is worth $1.2 billion. Its founder says it’s just ‘getting started’",
-    "link": "https://fortune.com/2026/08/04/happyrobot-worth-1-2-billion-founder-says-just-getting-started/",
-    "score": 87,
-    "reason": "Major funding milestone with specific valuation"
+    "headline": "Apple claims that even more ex-employees may have given trade secrets to OpenAI",
+    "link": "https://www.engadget.com/2230042/apple-claims-that-even-more-ex-employees-may-have-given-trade-secrets-to-openai/",
+    "score": 85,
+    "reason": "Escalating controversy between major tech players with legal implications"
   },
   {
     "rank": 5,
-    "headline": "Here’s why AI agents lie and cheat to reach their goals",
-    "link": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
-    "score": 85,
-    "reason": "Behavioral concern discovery with real system implications"
+    "headline": "OpenAI fires back at Apple, publishing private emails to counter trade-secret claims",
+    "link": "https://fortune.com/2026/08/04/openai-fires-back-at-apple-publishing-private-emails-to-counter-trade-secret-claims/",
+    "score": 83,
+    "reason": "High-profile corporate dispute with public disclosure of private communications"
   },
   {
     "rank": 6,
-    "headline": "‘Everyone Is Doing It’: The Truth About AI in Hollywood",
-    "link": "https://www.wired.com/story/the-big-interview-podcast-matthew-belloni-puck/",
-    "score": 84,
-    "reason": "Industry-wide adoption controversy with insider confirmation"
+    "headline": "AMD's datacenter business is booming while gaming takes a backseat",
+    "link": "https://www.theverge.com/tech/975381/amd-q2-2026-earnings-ai-gaming-ryzen",
+    "score": 81,
+    "reason": "Major business shift at semiconductor company with significant revenue implications"
   },
   {
     "rank": 7,
-    "headline": "Can Reddit fend off a new wave of AI SEO spam?",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/973098/reddit-ai-search-seo-marketing-brands-spam",
-    "score": 83,
-    "reason": "Platform-specific AI abuse issue with scale implications"
+    "headline": "Trump’s AI protectionism has come for robotics",
+    "link": "https://www.technologyreview.com/2026/08/03/1141056/trumps-ai-protectionism-has-come-for-robotics/",
+    "score": 79,
+    "reason": "Policy controversy affecting AI/robotics industry"
   },
   {
     "rank": 8,
-    "headline": "AI is finding bugs faster than humans can fix them: How enterprise security teams must adapt",
-    "link": "https://www.zdnet.com/article/ai-is-finding-bugs-faster-than-humans-can-fix-them-how-enterprise-security-teams-must-adapt/",
-    "score": 81,
-    "reason": "Enterprise security shift driven by AI capability gap"
+    "headline": "Texas says data centers must pass an audit before connecting to the grid",
+    "link": "https://www.theverge.com/policy/975071/texas-data-center-audit",
+    "score": 77,
+    "reason": "Regulatory action impacting AI infrastructure expansion"
   },
   {
     "rank": 9,
-    "headline": "How One Startup Built a (Mostly) China-Free Robot",
-    "link": "https://www.wired.com/story/how-one-startup-built-a-mostly-china-free-robot/",
-    "score": 79,
-    "reason": "Hardware launch with geopolitical supply chain angle"
+    "headline": "Oxide Computer raises $445M (SEC Form D)",
+    "link": "https://www.sec.gov/Archives/edgar/data/1795071/000179507126000002/xslFormDX01/primary_doc.xml",
+    "score": 75,
+    "reason": "Significant funding round for AI infrastructure company"
   },
   {
     "rank": 10,
-    "headline": "Mistral Is in the Right Place at the Right Time",
-    "link": "https://www.wired.com/story/mistral-is-in-the-right-place-at-the-right-time/",
-    "score": 77,
-    "reason": "Company positioning and market opportunity assessment"
+    "headline": "How an OpenAI influencer trip backfired",
+    "link": "https://www.theverge.com/tech/975173/openai-influencers-brand-trip-ai-backlash-marketing",
+    "score": 73,
+    "reason": "PR controversy involving leading AI company"
   },
   {
     "rank": 11,
-    "headline": "Palantir&apos;s Karp renews attacks on frontier AI labs that are &apos;trying to drug addict us&apos;",
-    "link": "https://www.cnbc.com/2026/08/03/palantir-karp-open-ai-anthropic-open-weight.html",
-    "score": 75,
-    "reason": "High-profile executive controversy with provocative language"
+    "headline": "Hugging Face CEO says China is winning the AI race and dominating on open models",
+    "link": "https://www.cnbc.com/2026/08/03/hugging-face-china-ai-race-open-models.html",
+    "score": 71,
+    "reason": "High-profile industry leader commentary on geopolitical AI competition"
   },
   {
     "rank": 12,
-    "headline": "Big Tech&apos;s Anthropic and OpenAI stakes are distorting the corporate earnings picture",
-    "link": "https://www.cnbc.com/2026/08/03/big-techs-anthropic-and-openai-stakes-distort-corporate-earnings.html",
-    "score": 73,
-    "reason": "Financial market impact of major AI company valuations"
+    "headline": "AI is both a cyber weapon and a massive target, CrowdStrike warns",
+    "link": "https://www.zdnet.com/article/ai-is-cyber-weapon-and-massive-target-crowdstrike-warns/",
+    "score": 69,
+    "reason": "Security industry perspective on AI vulnerability with major implications"
   },
   {
     "rank": 13,
-    "headline": "Here’s How to Take Back Your Chatbot Data From AI Model Training",
-    "link": "https://www.cnet.com/tech/services-and-software/heres-how-to-take-back-your-chatbot-data-from-ai-model-training/",
-    "score": 71,
-    "reason": "Data privacy action item with user control implications"
+    "headline": "Apple caps bug bounty program due to deluge of AI submissions",
+    "link": "https://www.engadget.com/2230256/apple-caps-bug-bounty-program-due-to-deluge-of-ai-submissions/",
+    "score": 67,
+    "reason": "AI-driven operational impact at major tech company"
   },
   {
     "rank": 14,
-    "headline": "Is this Billboard Hot 100 hit AI slop?",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/974209/fenix-flexin-billboard-hot-100-rubberz-ai-slop",
-    "score": 69,
-    "reason": "AI-generated music reaching mainstream charts controversy"
+    "headline": "‘Not healthy’ LLM use is more common than you think",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/975180/llm-ai-chatbot-use-not-healthy",
+    "score": 65,
+    "reason": "Significant research finding on widespread problematic AI usage patterns"
   },
   {
     "rank": 15,
-    "headline": "DuckDuckGo’s Anti-AI Sunglasses Won’t Spy On Anyone",
-    "link": "https://www.cnet.com/tech/mobile/duckduckgo-anti-ai-sunglasses-wont-spy/",
-    "score": 67,
-    "reason": "Hardware launch with privacy-focused positioning"
+    "headline": "Mistral&#x27;s Shieldstral: 3B open-weights model for multimodal moderation",
+    "link": "https://mistral.ai/news/shieldstral/",
+    "score": 63,
+    "reason": "Major open-source AI model launch by European competitor"
   },
   {
     "rank": 16,
-    "headline": "Why biological data matters more in AI drug discovery",
-    "link": "https://www.artificialintelligence-news.com/news/gsk-relation-therapeutics-ai-drug-discovery-biological-data/",
-    "score": 65,
-    "reason": "AI application breakthrough in pharmaceutical development"
+    "headline": "OpenAI president Greg Brockman: We 'contort' ourselves around computers, clicking and typing is a 'phase'",
+    "link": "https://fortune.com/2026/08/04/openai-president-greg-brockman-we-contort-ourselves-around-computers-clicking-and-typing-is-a-phase/",
+    "score": 61,
+    "reason": "Strategic vision statement from major AI company executive"
   },
   {
     "rank": 17,
-    "headline": "Did an AI Music App Just Snitch on the Song of the Summer?",
-    "link": "https://www.wired.com/story/ai-music-app-treblo-just-snitched-on-rubberz-song-of-the-summer/",
-    "score": 63,
-    "reason": "AI detection controversy in music industry"
+    "headline": "Keyv and friends compromised in active Shai-Hulud supply chain attack",
+    "link": "https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack",
+    "score": 59,
+    "reason": "Major supply chain security incident affecting AI infrastructure"
   },
   {
     "rank": 18,
-    "headline": "White House finalizes AI framework behind closed doors",
-    "link": "https://www.axios.com/2026/08/03/white-house-finalizes-ai-framework-behind-closed-doors",
-    "score": 61,
-    "reason": "Government policy finalization with stakeholder tensions"
+    "headline": "Online ad giant Adform was hacked, proving once again why ad blockers are needed",
+    "link": "https://this.weekinsecurity.com/online-advertising-giant-adform-was-hacked-proving-once-again-why-ad-blockers-are-necessary/",
+    "score": 57,
+    "reason": "Significant cybersecurity breach with industry implications"
   },
   {
     "rank": 19,
-    "headline": "Is This Poker Player Bluffing? The AI Thinks So",
-    "link": "https://www.wired.com/story/ai-tells-detection-world-series-of-poker-espn/",
-    "score": 57,
-    "reason": "AI capability demonstration in competitive game theory"
+    "headline": "How Data Centers Broke American Politics",
+    "link": "https://www.wired.com/story/how-data-centers-broke-american-politics/",
+    "score": 55,
+    "reason": "Analysis of AI infrastructure's impact on political systems"
   },
   {
     "rank": 20,
-    "headline": "AI's manifesto war",
-    "link": "https://www.axios.com/2026/08/02/ai-manifesto-open-weight-models",
-    "score": 55,
-    "reason": "Ideological conflict within AI community"
+    "headline": "The Download: reward hacking explained, and suspected Iranian cyberattacks",
+    "link": "https://www.technologyreview.com/2026/08/03/1141039/the-download-reward-hacking-water-cyberattacks/",
+    "score": 53,
+    "reason": "AI safety issue combined with geopolitical cybersecurity concerns"
   }
 ]
