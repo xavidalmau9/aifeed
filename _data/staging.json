@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "SpaceX's first public earnings statement shows the financials of an AI company in 2026",
-    "link": "https://www.engadget.com/2230455/spacex-s-first-public-earnings-statement-shows-the-financials-of-an-ai-company-in-2026/",
-    "score": 94,
-    "reason": "Major financial milestone with specific numbers, concrete launch of earnings data"
+    "headline": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
+    "link": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
+    "score": 98,
+    "reason": "Major controversy, concrete harm, significant platform accountability issue"
   },
   {
     "rank": 2,
-    "headline": "OpenAI and Anthropic models went on a hacking spree when tested by the UK's AI research institute",
-    "link": "https://www.engadget.com/2230628/openai-anthropic-models-hacking-spree-test-uk-ai-research-institute/",
-    "score": 92,
-    "reason": "Significant security controversy with multiple major AI companies, concrete incident"
+    "headline": "Google just announced a major shakeup of its top AI leadership",
+    "link": "https://www.theverge.com/tech/975677/google-deepmind-ai-demis-hassabis-shakeup",
+    "score": 96,
+    "reason": "Leadership departure of Demis Hassabis and Jeff Dean, significant organizational restructuring"
   },
   {
     "rank": 3,
-    "headline": "Flock’s AI Cameras May Have Misread Over 70% of License Plates, Creating New Headaches for Cities",
-    "link": "https://www.cnet.com/home/security/flocks-ai-cameras-may-have-misread-over-70-of-license-plates-creating-new-headaches-for-cities/",
-    "score": 90,
-    "reason": "Major controversy with specific quantified failure rate, real-world impact"
+    "headline": "Meta debuts first AI coding agent to take on Anthropic and OpenAI",
+    "link": "https://www.cnbc.com/2026/08/05/meta-debuts-muse-code-to-take-on-anthropic-and-openai-.html",
+    "score": 91,
+    "reason": "Major product launch competing in AI agent space"
   },
   {
     "rank": 4,
-    "headline": "Google Assistant will disappear from your phone next month",
-    "link": "https://www.theverge.com/tech/975516/google-assistant-android-phones-tablets-shutdown",
-    "score": 88,
-    "reason": "Major product discontinuation from Google, concrete timeline"
+    "headline": "Rogue AI agents created fake online identities in another hacking attempt",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/975577/aisi-openai-anthropic-agent-hacking",
+    "score": 89,
+    "reason": "Security concern demonstrating autonomous AI misuse, concrete incident"
   },
   {
     "rank": 5,
-    "headline": "Perplexity has successfully overturned Amazon's injunction on its AI shopping bot",
-    "link": "https://www.engadget.com/2230471/perplexity-has-successfully-overturned-amazon-injunction-on-its-ai-shopping-bot/",
+    "headline": "U.K. government reports OpenAI, Anthropic models attempted to hack companies",
+    "link": "https://www.axios.com/2026/08/04/anthropic-openai-uk-ai-security-institute",
     "score": 87,
-    "reason": "Legal victory for AI startup, concrete lawsuit outcome"
+    "reason": "Government security finding, multiple companies involved, adversarial AI testing"
   },
   {
     "rank": 6,
-    "headline": "OpenAI Hits Back at Apple, Calls Lawsuit ‘Careless, Aggressive and Oddly Personal’",
-    "link": "https://www.cnet.com/tech/services-and-software/openai-apple-lawsuit-released-texts-emails-august-2026-news/",
+    "headline": "Microsoft AI exec tells developers to default to OpenAI&apos;s top model as part of efficiency push",
+    "link": "https://www.cnbc.com/2026/08/05/microsoft-makes-openai-gpt-5point6-sol-default-in-github-copilot-for-staff.html",
     "score": 85,
-    "reason": "High-profile legal controversy between major tech companies"
+    "reason": "Strategic shift in Microsoft-OpenAI partnership, developer impact"
   },
   {
     "rank": 7,
-    "headline": "OpenAI drags Apple’s lawsuit into the court of public opinion",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/974914/openai-blog-response-apple-lawsuit-messages",
+    "headline": "YouTube explains its AI slop policy and why some creators won't get paid",
+    "link": "https://www.engadget.com/2226445/youtube-explains-ai-slop-policy-why-some-creators-wont-get-paid/",
     "score": 83,
-    "reason": "Major legal dispute between marquee companies, public controversy"
+    "reason": "Major policy on AI-generated content monetization affecting creators"
   },
   {
     "rank": 8,
-    "headline": "AMD's data center business is booming while gaming takes a backseat",
-    "link": "https://www.theverge.com/tech/975381/amd-q2-2026-earnings-ai-gaming-ryzen",
+    "headline": "Old Reddit could be the next casualty of Reddit's war on AI scraping",
+    "link": "https://www.engadget.com/2230544/old-reddit-could-be-the-next-casualty-of-reddits-war-on-ai-scraping/",
     "score": 81,
-    "reason": "Significant business shift with AI focus, concrete revenue implications"
+    "reason": "Platform policy shift blocking AI training data access"
   },
   {
     "rank": 9,
-    "headline": "Anthropic&apos;s Mythos created fake identities to fool humans in new cyber incident",
-    "link": "https://www.cnbc.com/2026/08/05/anthropic-mythos-openai-security-breaches.html",
+    "headline": "Nothing is using AI-generated people to show off its new earbuds – everyone hates it [Gallery]",
+    "link": "https://9to5google.com/2026/08/05/nothing-cmf-ai-generated-people-marketing/",
     "score": 79,
-    "reason": "Security incident with concrete methodology, AI misuse controversy"
+    "reason": "Brand controversy over AI-generated imagery, public backlash"
   },
   {
     "rank": 10,
-    "headline": "OpenAI to pay $3.2M to settle DOJ worker discrimination case",
-    "link": "https://www.axios.com/2026/08/04/trump-doj-openai-hiring-settlement",
+    "headline": "Sam Altman’s OpenAI publishes brutal critique of Apple lawsuit: ‘Apple is getting this wrong’",
+    "link": "https://fortune.com/2026/08/04/sam-altman-openai-lawsuit-apple-is-getting-this-wrong/",
     "score": 77,
-    "reason": "Specific financial settlement, concrete regulatory action"
+    "reason": "Major company dispute, legal controversy"
   },
   {
     "rank": 11,
-    "headline": "OK, Well, Rogue AI Agents Are Hacking Again",
-    "link": "https://www.wired.com/story/ok-well-there-are-even-more-ai-agent-hacking-incidents/",
-    "score": 74,
-    "reason": "Security controversy with autonomous AI systems"
+    "headline": "Reddit is introducing a new moderator: AI",
+    "link": "https://www.theverge.com/tech/975398/reddit-ai-rules-hub-moderator-old-reddit-developer-platform",
+    "score": 75,
+    "reason": "Major platform feature launch automating content moderation"
   },
   {
     "rank": 12,
-    "headline": "Can Reddit fend off a new wave of AI SEO spam?",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/973098/reddit-ai-search-seo-marketing-brands-spam",
-    "score": 72,
-    "reason": "Concrete platform challenge from AI misuse"
+    "headline": "SpaceX stock falls 13% as AI spending surge rattles investors and massive share unlock looms",
+    "link": "https://www.cnbc.com/2026/08/05/spacex-spcx-stock-today-earnings.html",
+    "score": 73,
+    "reason": "Market impact from AI investment strategy, significant stock movement"
   },
   {
     "rank": 13,
-    "headline": "This AI Agent Can Negotiate Bills for You – if It Doesn’t Reject the Lower Offers",
-    "link": "https://www.cnet.com/tech/services-and-software/this-ai-agent-can-negotiate-bills-for-you-if-it-doesnt-reject-the-lower-offers/",
-    "score": 70,
-    "reason": "AI agent launch with controversial behavior pattern"
+    "headline": "How an OpenAI influencer trip backfired",
+    "link": "https://www.theverge.com/tech/975173/openai-influencers-brand-trip-ai-backlash-marketing",
+    "score": 71,
+    "reason": "OpenAI controversy and reputational issue"
   },
   {
     "rank": 14,
-    "headline": "Mistral Is in the Right Place at the Right Time",
-    "link": "https://www.wired.com/story/mistral-is-in-the-right-place-at-the-right-time/",
-    "score": 68,
-    "reason": "European AI company momentum, market positioning"
+    "headline": "AI Hacks Are Bad. AI Worms and Viruses Will Be Worse",
+    "link": "https://www.wired.com/story/ai-agents-could-act-like-computer-viruses-and-worms/",
+    "score": 69,
+    "reason": "Security threat assessment on autonomous AI malware"
   },
   {
     "rank": 15,
-    "headline": "White House plans to keep AI framework under wraps",
-    "link": "https://www.axios.com/2026/08/04/white-house-ai-framework-under-wraps",
-    "score": 66,
-    "reason": "Government AI policy controversy, transparency debate"
+    "headline": "Sure seems like Fenix Flexin used AI music generator Treblo",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/975528/fenix-flexin-ai-music-generator-treblo",
+    "score": 67,
+    "reason": "Concrete evidence of AI music tool usage by creator"
   },
   {
     "rank": 16,
-    "headline": "Trump’s AI testing plan is limited and vague",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/975509/white-house-ai-framework-open-models-excluded",
-    "score": 64,
-    "reason": "Government AI policy with concrete criticism"
+    "headline": "The AI Notetaker Has Been Invited to All the Meetings",
+    "link": "https://www.wired.com/story/ai-notetakers-invited-to-the-meetings/",
+    "score": 65,
+    "reason": "AI adoption in workplace productivity, widespread implementation"
   },
   {
     "rank": 17,
-    "headline": "SpaceX dives 12% after AI spending surge rattles investors",
-    "link": "https://www.cnbc.com/2026/08/05/spacex-spcx-stock-today-earnings.html",
-    "score": 62,
-    "reason": "Market reaction to AI strategy with specific numbers"
+    "headline": "In its first deal since going public, Italian unicorn Bending Spoons buys Airtable at a $9 billion discount",
+    "link": "https://fortune.com/2026/08/05/bending-spoons-italian-unicorn-startup-airtale-ipo/",
+    "score": 63,
+    "reason": "Significant acquisition in AI/productivity software space, valuation impact"
   },
   {
     "rank": 18,
-    "headline": "‘Everyone Is Doing It’: The Truth About AI in Hollywood",
-    "link": "https://www.wired.com/story/the-big-interview-podcast-matthew-belloni-puck/",
-    "score": 60,
-    "reason": "Industry-wide AI adoption controversy"
+    "headline": "We're headed toward the first true AI election",
+    "link": "https://www.axios.com/2026/08/05/ai-election-bots-simulated-voters-2026-2028",
+    "score": 61,
+    "reason": "AI's role in 2024 election campaigns and political influence"
   },
   {
     "rank": 19,
-    "headline": "$25 billion in data centers shows St. Louis is serious about competing in the AI economy",
-    "link": "https://fortune.com/2026/08/05/25-billion-data-centers-st-louis/",
-    "score": 58,
-    "reason": "Significant infrastructure investment with specific numbers"
+    "headline": "The White House Is Keeping Its AI Cybersecurity Framework Secret",
+    "link": "https://www.wired.com/story/the-white-house-is-keeping-its-ai-cybersecurity-framework-secret/",
+    "score": 59,
+    "reason": "Government policy decision limiting AI security information transparency"
   },
   {
     "rank": 20,
-    "headline": "How One Startup Built a (Mostly) China-Free Robot",
-    "link": "https://www.wired.com/story/how-one-startup-built-a-mostly-china-free-robot/",
-    "score": 56,
-    "reason": "Supply chain innovation launch, geopolitical angle"
+    "headline": "IEEE Course Teaches How to Use AI to Modernize Power Grids",
+    "link": "https://spectrum.ieee.org/ieee-course-ai-power-grids",
+    "score": 57,
+    "reason": "Educational initiative for AI infrastructure deployment"
   }
 ]
