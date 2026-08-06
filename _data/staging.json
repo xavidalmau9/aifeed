@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
-    "link": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
-    "score": 98,
-    "reason": "Major controversy, concrete harm, significant platform accountability issue"
+    "headline": "OpenAI Didn’t Notice Its AI Agents Using a Message Board to Plan Their Hacking Spree",
+    "link": "https://www.wired.com/story/openai-didnt-notice-its-ai-agents-using-a-message-board-to-plan-their-hacking-spree/",
+    "score": 96,
+    "reason": "Major controversy: AI agents autonomously exploited security vulnerability, demonstrates real-world AI safety failure"
   },
   {
     "rank": 2,
-    "headline": "Google just announced a major shakeup of its top AI leadership",
-    "link": "https://www.theverge.com/tech/975677/google-deepmind-ai-demis-hassabis-shakeup",
-    "score": 96,
-    "reason": "Leadership departure of Demis Hassabis and Jeff Dean, significant organizational restructuring"
+    "headline": "Meta apps displayed ads that contained AI-generated CSAM",
+    "link": "https://www.engadget.com/2231100/meta-apps-displayed-ads-that-contained-ai-generated-csam/",
+    "score": 94,
+    "reason": "Serious controversy: AI-generated child abuse material in ads, major platform failure at scale"
   },
   {
     "rank": 3,
-    "headline": "Meta debuts first AI coding agent to take on Anthropic and OpenAI",
-    "link": "https://www.cnbc.com/2026/08/05/meta-debuts-muse-code-to-take-on-anthropic-and-openai-.html",
-    "score": 91,
-    "reason": "Major product launch competing in AI agent space"
+    "headline": "Google's AI shake-up: DeepMind's Hassabis steps aside, senior scientists depart",
+    "link": "https://arstechnica.com/gadgets/2026/08/googles-ai-shakeup-deepminds-hassabis-steps-aside-senior-scientists-depart/",
+    "score": 92,
+    "reason": "Major leadership changes: CEO transition + mass departure of top scientists indicates internal instability"
   },
   {
     "rank": 4,
-    "headline": "Rogue AI agents created fake online identities in another hacking attempt",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/975577/aisi-openai-anthropic-agent-hacking",
+    "headline": "OpenAI says Apple’s trade secrets lawsuit is ‘rotten to its core’",
+    "link": "https://www.theverge.com/tech/976042/openai-apple-trade-secrets-lawsuit-dismissal-request",
     "score": 89,
-    "reason": "Security concern demonstrating autonomous AI misuse, concrete incident"
+    "reason": "High-stakes legal controversy between major tech players with significant IP implications"
   },
   {
     "rank": 5,
-    "headline": "U.K. government reports OpenAI, Anthropic models attempted to hack companies",
-    "link": "https://www.axios.com/2026/08/04/anthropic-openai-uk-ai-security-institute",
+    "headline": "OpenAI’s Browser Could Be Hijacked to Spam Your WhatsApp Contacts",
+    "link": "https://www.wired.com/story/openais-browser-could-be-hijacked-to-spam-your-whatsapp-contacts/",
     "score": 87,
-    "reason": "Government security finding, multiple companies involved, adversarial AI testing"
+    "reason": "Critical security vulnerability in widely-deployed consumer product"
   },
   {
     "rank": 6,
-    "headline": "Microsoft AI exec tells developers to default to OpenAI&apos;s top model as part of efficiency push",
-    "link": "https://www.cnbc.com/2026/08/05/microsoft-makes-openai-gpt-5point6-sol-default-in-github-copilot-for-staff.html",
+    "headline": "Meta Is Challenging Claude Code and Codex With New Muse Code",
+    "link": "https://www.cnet.com/tech/services-and-software/meta-muse-code-spark-1-2-news/",
     "score": 85,
-    "reason": "Strategic shift in Microsoft-OpenAI partnership, developer impact"
+    "reason": "Major product launch: Meta enters competitive coding AI market against established players"
   },
   {
     "rank": 7,
-    "headline": "YouTube explains its AI slop policy and why some creators won't get paid",
-    "link": "https://www.engadget.com/2226445/youtube-explains-ai-slop-policy-why-some-creators-wont-get-paid/",
-    "score": 83,
-    "reason": "Major policy on AI-generated content monetization affecting creators"
+    "headline": "Google’s Top AI Brains Are Leaving to Launch Discovery Loop",
+    "link": "https://www.wired.com/story/jeff-dean-google-discovery-loop-startup/",
+    "score": 84,
+    "reason": "Startup exodus: senior Google scientists launching competitor, indicates talent drain from big tech"
   },
   {
     "rank": 8,
-    "headline": "Old Reddit could be the next casualty of Reddit's war on AI scraping",
-    "link": "https://www.engadget.com/2230544/old-reddit-could-be-the-next-casualty-of-reddits-war-on-ai-scraping/",
-    "score": 81,
-    "reason": "Platform policy shift blocking AI training data access"
+    "headline": "Google Assistant will disappear from your phone next month",
+    "link": "https://www.theverge.com/tech/975516/google-assistant-android-phones-tablets-shutdown",
+    "score": 82,
+    "reason": "Major product discontinuation affecting millions of users"
   },
   {
     "rank": 9,
-    "headline": "Nothing is using AI-generated people to show off its new earbuds – everyone hates it [Gallery]",
-    "link": "https://9to5google.com/2026/08/05/nothing-cmf-ai-generated-people-marketing/",
-    "score": 79,
-    "reason": "Brand controversy over AI-generated imagery, public backlash"
+    "headline": "SoftBank gets $8.2 billion boost from Intel as OpenAI takes a backseat",
+    "link": "https://www.cnbc.com/2026/08/06/softbank-q1-earnings-intel-bytedance-stakes.html",
+    "score": 80,
+    "reason": "Big numbers: $8.2B investment signals shift in AI funding priorities"
   },
   {
     "rank": 10,
-    "headline": "Sam Altman’s OpenAI publishes brutal critique of Apple lawsuit: ‘Apple is getting this wrong’",
-    "link": "https://fortune.com/2026/08/04/sam-altman-openai-lawsuit-apple-is-getting-this-wrong/",
-    "score": 77,
-    "reason": "Major company dispute, legal controversy"
+    "headline": "AMD's data center business is booming while gaming takes a backseat",
+    "link": "https://www.theverge.com/tech/975381/amd-q2-2026-earnings-ai-gaming-ryzen",
+    "score": 78,
+    "reason": "Major business shift: AMD pivoting to AI/datacenter, significant industry trend"
   },
   {
     "rank": 11,
-    "headline": "Reddit is introducing a new moderator: AI",
-    "link": "https://www.theverge.com/tech/975398/reddit-ai-rules-hub-moderator-old-reddit-developer-platform",
-    "score": 75,
-    "reason": "Major platform feature launch automating content moderation"
+    "headline": "Europe’s AI sovereignty is under threat. Could Mistral be the answer?",
+    "link": "https://fortune.com/2026/08/05/mistral-europe-ai-sovereignty-us-openai-anthropic-google-deepmind/",
+    "score": 76,
+    "reason": "Strategic geopolitical AI development: European alternative to US/China dominance"
   },
   {
     "rank": 12,
-    "headline": "SpaceX stock falls 13% as AI spending surge rattles investors and massive share unlock looms",
-    "link": "https://www.cnbc.com/2026/08/05/spacex-spcx-stock-today-earnings.html",
-    "score": 73,
-    "reason": "Market impact from AI investment strategy, significant stock movement"
+    "headline": "eBay CEO Jamie Iannone’s new playbook embraces AI tools while blocking AI buyers",
+    "link": "https://fortune.com/2026/08/06/ebay-ceo-jamie-iannone-ai-tools-ai-buyers-shopping-agents-earnings/",
+    "score": 74,
+    "reason": "Major platform policy shift: selective AI integration with controversial buyer restrictions"
   },
   {
     "rank": 13,
-    "headline": "How an OpenAI influencer trip backfired",
-    "link": "https://www.theverge.com/tech/975173/openai-influencers-brand-trip-ai-backlash-marketing",
-    "score": 71,
-    "reason": "OpenAI controversy and reputational issue"
+    "headline": "AI isn’t enough to protect social media communities from AI",
+    "link": "https://arstechnica.com/gadgets/2026/08/ai-isnt-enough-to-protect-social-media-communities-from-ai/",
+    "score": 72,
+    "reason": "Substantive research: demonstrates limitations of AI-on-AI safety approach"
   },
   {
     "rank": 14,
-    "headline": "AI Hacks Are Bad. AI Worms and Viruses Will Be Worse",
-    "link": "https://www.wired.com/story/ai-agents-could-act-like-computer-viruses-and-worms/",
-    "score": 69,
-    "reason": "Security threat assessment on autonomous AI malware"
+    "headline": "This AI Agent Can Negotiate Bills for You – if It Doesn’t Reject the Lower Offers",
+    "link": "https://www.cnet.com/tech/services-and-software/this-ai-agent-can-negotiate-bills-for-you-if-it-doesnt-reject-the-lower-offers/",
+    "score": 70,
+    "reason": "Consumer AI agent launch with documented failure case showing real-world limitations"
   },
   {
     "rank": 15,
-    "headline": "Sure seems like Fenix Flexin used AI music generator Treblo",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/975528/fenix-flexin-ai-music-generator-treblo",
-    "score": 67,
-    "reason": "Concrete evidence of AI music tool usage by creator"
+    "headline": "Welcome to the singularity: AI's architects say the next era of human history is here",
+    "link": "https://www.axios.com/2026/08/06/ai-singularity-intelligence-explosion",
+    "score": 68,
+    "reason": "Major industry claim from builders themselves about AI inflection point"
   },
   {
     "rank": 16,
-    "headline": "The AI Notetaker Has Been Invited to All the Meetings",
-    "link": "https://www.wired.com/story/ai-notetakers-invited-to-the-meetings/",
+    "headline": "Nashville uses eminent domain to block data center near zoo",
+    "link": "https://www.costar.com/article/970809918/nashville-council-approves-eminent-domain-action-to-halt-data-center-project",
     "score": 65,
-    "reason": "AI adoption in workplace productivity, widespread implementation"
+    "reason": "Emerging conflict: government intervention against AI infrastructure expansion"
   },
   {
     "rank": 17,
-    "headline": "In its first deal since going public, Italian unicorn Bending Spoons buys Airtable at a $9 billion discount",
-    "link": "https://fortune.com/2026/08/05/bending-spoons-italian-unicorn-startup-airtale-ipo/",
+    "headline": "Should Researchers Write Papers for AI Instead of People?",
+    "link": "https://spectrum.ieee.org/ai-scientist-research-paper-format",
     "score": 63,
-    "reason": "Significant acquisition in AI/productivity software space, valuation impact"
+    "reason": "Substantive academic debate about AI's role in knowledge production"
   },
   {
     "rank": 18,
-    "headline": "We're headed toward the first true AI election",
-    "link": "https://www.axios.com/2026/08/05/ai-election-bots-simulated-voters-2026-2028",
+    "headline": "DuckDuckGo's new iPhone feature is a privacy win - I recommend getting it now",
+    "link": "https://www.zdnet.com/article/duckduckgo-is-adding-a-feature-for-iphone-that-everyone-should-have/",
     "score": 61,
-    "reason": "AI's role in 2024 election campaigns and political influence"
+    "reason": "Privacy-focused product launch counter to mainstream AI data collection"
   },
   {
     "rank": 19,
-    "headline": "The White House Is Keeping Its AI Cybersecurity Framework Secret",
-    "link": "https://www.wired.com/story/the-white-house-is-keeping-its-ai-cybersecurity-framework-secret/",
+    "headline": "Has the AI race shifted from U.S. vs China to open vs closed?",
+    "link": "https://fortune.com/2026/08/04/has-the-ai-race-shifted-from-u-s-vs-china-to-open-vs-closed/",
     "score": 59,
-    "reason": "Government policy decision limiting AI security information transparency"
+    "reason": "Significant strategic shift in AI competition model"
   },
   {
     "rank": 20,
-    "headline": "IEEE Course Teaches How to Use AI to Modernize Power Grids",
-    "link": "https://spectrum.ieee.org/ieee-course-ai-power-grids",
+    "headline": "Google is expanding its AI empire — and losing the people who built it",
+    "link": "https://www.cnbc.com/2026/08/05/google-is-expanding-its-ai-empire-and-losing-the-people-who-built-it.html",
     "score": 57,
-    "reason": "Educational initiative for AI infrastructure deployment"
+    "reason": "Expansion-driven talent exodus indicating retention challenges at scale"
   }
 ]
