@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Scientists Used AI to Create 16 New Viruses",
-    "link": "https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses/",
-    "score": 98,
-    "reason": "Major controversy: AI-generated biological weapons capability, significant safety implications"
+    "headline": "One of China’s Most Powerful AI Models Has Also Escaped Containment",
+    "link": "https://www.wired.com/story/moonshot-kimi-k3-ai-model-escape-sandbox/",
+    "score": 94,
+    "reason": "Major security incident with established AI company; concrete containment breach fact"
   },
   {
     "rank": 2,
-    "headline": "OpenAI puts the brakes on a new model because it's supposedly too powerful",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities",
-    "score": 96,
-    "reason": "OpenAI model halt - rare safety intervention demonstrating capability concerns"
+    "headline": "AI designs new virus not found in nature",
+    "link": "https://www.axios.com/2026/08/06/ai-virus-designed-bacteria-viruses",
+    "score": 92,
+    "reason": "Significant controversy; AI creating novel biological entities; high stakes impact"
   },
   {
     "rank": 3,
-    "headline": "How OpenAI's agents broke out of testing to hack Hugging Face",
-    "link": "https://www.axios.com/2026/08/06/openai-hugging-face-black-hat",
-    "score": 94,
-    "reason": "AI agent jailbreak/security breach - agents escaping containment, major red flag"
+    "headline": "The messy politics behind Google’s big AI shakeup",
+    "link": "https://www.theverge.com/tech/976108/google-ai-leadership-shakeup-jeff-dean-demis-hassabis-deepmind",
+    "score": 88,
+    "reason": "Major company restructuring; political controversy; concrete organizational changes"
   },
   {
     "rank": 4,
-    "headline": "After blowing through its entire 2026 AI budget in months, Uber CTO says, ‘We’re coming to the end of the so-called tokenmaxxing era’",
-    "link": "https://fortune.com/2026/08/07/uber-ai-spending-tokenmaxxing-is-over-cto/",
-    "score": 92,
-    "reason": "Large spending ($), industry trend shift, credible executive quote on AI economics"
+    "headline": "SoftBank donated $50 million to Trump’s library months before federal data center deal",
+    "link": "https://www.theverge.com/policy/976138/softbank-trump-library-data-center-ohio",
+    "score": 87,
+    "reason": "Big numbers ($50M); potential quid pro quo controversy; documented timeline"
   },
   {
     "rank": 5,
-    "headline": "What's behind the Google AI shake-up",
-    "link": "https://www.theverge.com/podcast/976784/google-deepmind-ai-race-vergecast",
-    "score": 90,
-    "reason": "Major organizational change at Google's AI leadership, strategic implications"
+    "headline": "DeepMind&#x27;s WeatherNext model achieves breakthrough forecasting cyclones",
+    "link": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+    "score": 85,
+    "reason": "Major capability launch from top AI lab; measurable performance breakthrough"
   },
   {
     "rank": 6,
-    "headline": "Chinese AI model Moonshot Kimi K3 also escaped its testing environment",
-    "link": "https://www.engadget.com/2232256/chinese-ai-kimi-k3-also-escaped-containment/",
-    "score": 88,
-    "reason": "China AI jailbreak incident, geopolitical competition angle, security failure"
+    "headline": "U.S. Department of Energy Launches the Genesis Open Models Initiative",
+    "link": "https://genesisopenmodels.anl.gov/",
+    "score": 82,
+    "reason": "Government AI initiative launch; institutional commitment; concrete program"
   },
   {
     "rank": 7,
-    "headline": "DeepMind Says Its AI Can Predict Hurricanes Earlier Than Everyone Else",
-    "link": "https://www.wired.com/story/deepmind-ai-model-can-predict-hurricanes-earlier/",
-    "score": 87,
-    "reason": "DeepMind major capability claim, real-world impact application"
+    "headline": "OpenAI's ring-shaped smart speaker will reportedly cost between $300 and $400",
+    "link": "https://www.engadget.com/2232108/openai-s-ring-shaped-smart-speaker-will-reportedly-cost-between-300-and-400/",
+    "score": 79,
+    "reason": "Major product launch with pricing; hardware diversification from leading company"
   },
   {
     "rank": 8,
-    "headline": "OpenAI is giving ChatGPT free users unlimited text chats",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/976239/openai-chatgpt-free-go-text-chats",
-    "score": 85,
-    "reason": "OpenAI product launch/expansion, significant user access change"
+    "headline": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
+    "link": "https://simonwillison.net/2026/Aug/7/openai-timeline/",
+    "score": 78,
+    "reason": "Security incident with documented timeline; concrete attack details"
   },
   {
     "rank": 9,
-    "headline": "China is gaining ground in AI. But the U.S. still has a major advantage",
-    "link": "https://www.cnbc.com/2026/08/07/china-us-ai-race-hugging-face-models.html",
-    "score": 84,
-    "reason": "Geopolitical AI competition, major trend analysis with numbers"
+    "headline": "The Download: a censorship conspiracy theory and the first virus created by AI",
+    "link": "https://www.technologyreview.com/2026/08/07/1141389/the-download-censorship-conspiracy-theory-first-ai-virus/",
+    "score": 76,
+    "reason": "Combines AI-generated virus with censorship controversy; dual controversy angle"
   },
   {
     "rank": 10,
-    "headline": "The Hugging Face hack is now a PR crisis that’s costing OpenAI millions",
-    "link": "https://fortune.com/2026/08/07/the-hugging-face-hack-is-now-a-pr-crisis-thats-costing-openai-millions/",
-    "score": 83,
-    "reason": "Major security breach, financial impact quantified, OpenAI reputation damage"
+    "headline": "Google open-sources an AI model it says can help with earlier hurricane warnings",
+    "link": "https://www.engadget.com/2232141/google-open-source-ai-model-can-help-with-earlier-hurricane-warnings/",
+    "score": 74,
+    "reason": "Concrete model launch; real-world application; measurable impact potential"
   },
   {
     "rank": 11,
-    "headline": "Oracle bans AI-generated code from OpenJDK",
-    "link": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
-    "score": 81,
-    "reason": "Major enterprise policy: Oracle blocks AI code, significant industry stance"
+    "headline": "AI is changing cybersecurity in quick and terrifying ways",
+    "link": "https://www.engadget.com/2229315/ai-changing-cybersecurity-quick-terrifying-way/",
+    "score": 71,
+    "reason": "Broad security implications; industry impact assessment"
   },
   {
     "rank": 12,
-    "headline": "Jony Ive's first OpenAI gadget is reportedly a hockey puck-sized smart speaker",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/976431/openai-chatgpt-battery-smart-speaker-rumor",
-    "score": 80,
-    "reason": "OpenAI hardware launch with major designer, product category expansion"
+    "headline": "Suno Plans New Tools to Make AI-Generated Music More Transparent. Is It Enough?",
+    "link": "https://www.cnet.com/tech/services-and-software/suno-plans-new-tools-to-make-ai-generated-music-more-transparent-is-it-enough/",
+    "score": 69,
+    "reason": "Transparency initiative launch; industry controversy response"
   },
   {
     "rank": 13,
-    "headline": "Databricks drove down AI coding spend 70%",
-    "link": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
-    "score": 79,
-    "reason": "Large percentage improvement (70%), cost efficiency achievement"
+    "headline": "Voters face uneven AI deepfake protections",
+    "link": "https://www.axios.com/2026/08/07/election-ai-deepfake-rules-states",
+    "score": 67,
+    "reason": "Systemic vulnerability; concrete policy gap; election-related impact"
   },
   {
     "rank": 14,
-    "headline": "Alibaba tests new business model for Qwen open-source AI",
-    "link": "https://www.artificialintelligence-news.com/news/alibaba-qwen-open-source-ai-revenue-sharing/",
-    "score": 78,
-    "reason": "Alibaba strategic shift, open-source AI model monetization experiment"
+    "headline": "ICE’s DNA Collection Increases, SpaceX’s Rocket Crashes Into the Moon, and the AI Backlash Grows",
+    "link": "https://www.wired.com/story/ice-dna-collection-increases-spacex-rocket-crashes-into-the-moon-and-the-ai-backlash-grows/",
+    "score": 65,
+    "reason": "Broader backlash trend; documented growth pattern"
   },
   {
     "rank": 15,
-    "headline": "Fenix Flexin isn’t even denying using AI to make ‘Rubberz’ anymore",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/976801/fenix-flexin-rubberz-ai-song-treblo",
-    "score": 77,
-    "reason": "AI music controversy, artist admission, cultural impact controversy"
+    "headline": "Photo and Video Editing in ChatGPT Just Got an Adobe-Size Update",
+    "link": "https://www.cnet.com/tech/services-and-software/adobe-for-chatgpt-updated-plugins-editing-news-2/",
+    "score": 63,
+    "reason": "Major feature expansion; competitive implications"
   },
   {
     "rank": 16,
-    "headline": "Suno shares plans to combat spammy AI music",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/976289/suno-ai-music-spam-watermark",
-    "score": 76,
-    "reason": "Suno policy/product response, addressing AI music spam concerns"
+    "headline": "The Download: Google’s AI shake-up and Meta’s rogue model",
+    "link": "https://www.technologyreview.com/2026/08/06/1141278/the-download-google-ai-shake-up-meta-rogue-model/",
+    "score": 61,
+    "reason": "Dual major company incidents; Meta model escape confirmed"
   },
   {
     "rank": 17,
-    "headline": "Chesky says Airbnb will spend ‘a lot more’ on AI as earnings beat and stock surges 15%",
-    "link": "https://www.cnbc.com/2026/08/07/chesky-airbnb-ai-earnings.html",
-    "score": 75,
-    "reason": "Large investment commitment ($), stock impact (15%), strategic escalation"
+    "headline": "Watching Roku’s AI channel is like eating from a trough",
+    "link": "https://www.theverge.com/entertainment/976939/roku-fairground-ai-fast-channel",
+    "score": 58,
+    "reason": "User experience controversy; specific company product criticism"
   },
   {
     "rank": 18,
-    "headline": "AI Safety Regulations in the U.S. Could Give Hackers an Edge",
-    "link": "https://spectrum.ieee.org/hugging-face-openai-cyberattack",
-    "score": 74,
-    "reason": "Policy/regulation controversy, unintended security consequences"
+    "headline": "You Can Now Have Unlimited Text Chats Without Paying for ChatGPT",
+    "link": "https://www.cnet.com/tech/services-and-software/free-chatgpt-users-unlimited-text-news/",
+    "score": 56,
+    "reason": "Pricing/access change; product availability shift"
   },
   {
     "rank": 19,
-    "headline": "AI isn’t enough to protect social media communities from AI",
-    "link": "https://arstechnica.com/gadgets/2026/08/ai-isnt-enough-to-protect-social-media-communities-from-ai/",
-    "score": 73,
-    "reason": "Paradox/limitation revealed: AI moderation insufficient, systemic challenge"
+    "headline": "How Chevron became the AI darling of Big Oil",
+    "link": "https://fortune.com/2026/08/08/how-chevron-became-the-ai-darling-of-big-oil/",
+    "score": 54,
+    "reason": "Enterprise AI adoption; industry transformation signal"
   },
   {
     "rank": 20,
-    "headline": "Stanford Evo 2 AI model generates phages against E. coli",
-    "link": "https://www.artificialintelligence-news.com/news/stanford-evo-2-ai-model-generates-phages-against-e-coli/",
-    "score": 72,
-    "reason": "Stanford biotech AI capability, biological application, research breakthrough"
+    "headline": "Managing AI Coding Costs at Scale",
+    "link": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
+    "score": 52,
+    "reason": "Operational cost challenge; industry-wide economic impact"
   }
 ]
