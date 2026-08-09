@@ -1,142 +1,51 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI puts the brakes on a new model because it's supposedly too powerful",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities",
-    "score": 95,
-    "reason": "Major AI safety controversy - top lab halting release due to capability concerns"
+    "headline": "The Download: a censorship conspiracy theory and the first virus created by AI",
+    "link": "https://www.technologyreview.com/2026/08/07/1141389/the-download-censorship-conspiracy-theory-first-ai-virus/",
+    "score": 92,
+    "reason": "Major controversy + first AI-created virus = landmark moment"
   },
   {
     "rank": 2,
-    "headline": "Scientists Used AI to Create 16 New Viruses",
-    "link": "https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses/",
-    "score": 92,
-    "reason": "Significant biosecurity concern - AI-generated dangerous biological threats"
+    "headline": "Software Giant SAP Stops Most Travel and Hiring Because of AI&#x27;s Soaring Cost",
+    "link": "https://www.404media.co/software-giant-sap-stops-most-travel-and-hiring-because-of-ais-soaring-cost/",
+    "score": 88,
+    "reason": "Major company action on AI economics; concrete business impact"
   },
   {
     "rank": 3,
-    "headline": "Fenix Flexin isn’t even denying using AI to make ‘Rubberz’ anymore",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/976801/fenix-flexin-rubberz-ai-song-treblo",
-    "score": 88,
-    "reason": "Entertainment industry AI controversy - creator openly using generative AI"
+    "headline": "How to Disable Gemini in Gmail and Google Docs",
+    "link": "https://www.wired.com/story/how-to-disable-the-gemini-ai-features-in-gmail-and-google-docs/",
+    "score": 82,
+    "reason": "Google AI rollback indicates user rejection/controversy"
   },
   {
     "rank": 4,
-    "headline": "OpenAI’s expensive smart speaker will use moving parts to seem “more alive”",
-    "link": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
-    "score": 85,
-    "reason": "Major product launch - OpenAI hardware entry with significant investment"
+    "headline": "AI is changing cybersecurity in quick and terrifying ways",
+    "link": "https://www.engadget.com/2229315/ai-changing-cybersecurity-quick-terrifying-way/",
+    "score": 79,
+    "reason": "Major topic intersection (AI + security); significant implications"
   },
   {
     "rank": 5,
-    "headline": "Hugging Face hack marks start of dangerous AI cyber era and many firms &apos;don&apos;t even know it&apos;",
-    "link": "https://www.cnbc.com/2026/08/08/hugging-face-ai-hack-cybersecurity-black-hat.html",
-    "score": 84,
-    "reason": "Security breach affecting major AI platform - signals broader vulnerability trend"
+    "headline": "Details Leak on OpenAI’s Doughnut-Shaped Speaker",
+    "link": "https://www.cnet.com/tech/services-and-software/details-leak-openai-doughnut-shaped-speaker/",
+    "score": 76,
+    "reason": "OpenAI hardware launch leak; new product category"
   },
   {
     "rank": 6,
-    "headline": "What's behind the Google AI shake-up",
-    "link": "https://www.theverge.com/podcast/976784/google-deepmind-ai-race-vergecast",
-    "score": 82,
-    "reason": "Organizational controversy at major AI player - internal restructuring"
+    "headline": "Watching Roku’s AI channel is like eating from a trough",
+    "link": "https://www.theverge.com/entertainment/976939/roku-fairground-ai-fast-channel",
+    "score": 71,
+    "reason": "AI product criticism; content quality controversy"
   },
   {
     "rank": 7,
-    "headline": "Alibaba tests new business model for Qwen open-source AI",
-    "link": "https://www.artificialintelligence-news.com/news/alibaba-qwen-open-source-ai-revenue-sharing/",
-    "score": 80,
-    "reason": "Major tech company pivot - new monetization strategy for open-source AI"
-  },
-  {
-    "rank": 8,
-    "headline": "China is gaining ground in AI. But the U.S. still has a major advantage",
-    "link": "https://www.cnbc.com/2026/08/07/china-us-ai-race-hugging-face-models.html",
-    "score": 79,
-    "reason": "Geopolitical analysis - competitive landscape shift in AI development"
-  },
-  {
-    "rank": 9,
-    "headline": "Chesky says Airbnb will spend ‘a lot more’ on AI as earnings beat and stock surges 15%",
-    "link": "https://www.cnbc.com/2026/08/07/chesky-airbnb-ai-earnings.html",
-    "score": 77,
-    "reason": "Major corporate AI investment signal - real business impact with stock movement"
-  },
-  {
-    "rank": 10,
-    "headline": "AI is changing work faster than the data can keep up",
-    "link": "https://fortune.com/2026/08/08/ai-is-changing-work-faster-than-the-data-can-keep-up/",
-    "score": 75,
-    "reason": "Labor market disruption - systemic workplace transformation"
-  },
-  {
-    "rank": 11,
-    "headline": "Denmark Requires Oral Defenses for Students&#x27; Written Work to Counter AI Cheating",
-    "link": "https://mezha.net/eng/bukvy/ca117584_denmark_requires_oral/",
-    "score": 73,
-    "reason": "Government policy response - institutional AI mitigation measure"
-  },
-  {
-    "rank": 12,
-    "headline": "20% of Americans are already using AI for financial advice — another 70% don't trust it",
-    "link": "https://fortune.com/2026/08/08/financial-advisers-trust-ai-usage-gap-gallup/",
-    "score": 72,
-    "reason": "Consumer adoption data - significant usage with trust gap"
-  },
-  {
-    "rank": 13,
-    "headline": "Stanford Evo 2 AI model generates phages against E. coli",
-    "link": "https://www.artificialintelligence-news.com/news/stanford-evo-2-ai-model-generates-phages-against-e-coli/",
-    "score": 70,
-    "reason": "Scientific achievement - AI-designed biological solutions"
-  },
-  {
-    "rank": 14,
-    "headline": "The Hottest New AI Chatbot Is Just a Guy Answering Your Questions",
-    "link": "https://www.wired.com/story/this-chatbot-is-just-a-random-guy-lol/",
-    "score": 68,
-    "reason": "Consumer behavior shift - human replacement trend reversal"
-  },
-  {
-    "rank": 15,
-    "headline": "An Amazon data center could have the worst polluting power plant in the country",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant",
-    "score": 66,
-    "reason": "Environmental impact of AI infrastructure - major sustainability concern"
-  },
-  {
-    "rank": 16,
-    "headline": "Suspected AI use is the entertainment industry's scarlet letter",
-    "link": "https://www.axios.com/2026/08/08/generative-ai-accusations-hank-green-jerry-falade",
-    "score": 64,
-    "reason": "Industry-wide controversy - stigmatization of AI-generated content"
-  },
-  {
-    "rank": 17,
-    "headline": "How I Got the New Siri AI to Actually Help Me",
-    "link": "https://www.cnet.com/videos/how-i-got-the-new-siri-ai-to-actually-help-me/",
-    "score": 62,
-    "reason": "Apple AI capability update - practical product improvement"
-  },
-  {
-    "rank": 18,
-    "headline": "New Gemini overlay for Wear OS rolling out to Pixel Watch",
-    "link": "https://9to5google.com/2026/08/06/gemini-overlay-wear-os/",
-    "score": 60,
-    "reason": "Google wearable AI launch - platform expansion"
-  },
-  {
-    "rank": 19,
-    "headline": "How AI Is changing Instagram engagement without replacing the human touch",
-    "link": "https://www.artificialintelligence-news.com/news/how-ai-is-changing-instagram-engagement-without-replacing-the-human-touch/",
-    "score": 58,
-    "reason": "Social platform AI integration - engagement methodology shift"
-  },
-  {
-    "rank": 20,
-    "headline": "Claude Vs ChatGPT: How These AI Assistants Differ",
-    "link": "https://www.engadget.com/2229993/claude-vs-chatgpt-how-ai-assistants-differ/",
-    "score": 55,
-    "reason": "Competitive analysis - major chatbot comparison amid market consolidation"
+    "headline": "Meetily Lets You Transcribe and Summarize Meetings Without a Subscription—Here’s How",
+    "link": "https://www.wired.com/story/meetily-lets-you-transcribe-and-summarize-meetings-without-a-subscription-heres-how/",
+    "score": 65,
+    "reason": "AI tool launch; alternative pricing model"
   }
 ]
