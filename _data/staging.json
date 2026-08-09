@@ -1,51 +1,44 @@
 [
   {
     "rank": 1,
-    "headline": "The Download: a censorship conspiracy theory and the first virus created by AI",
-    "link": "https://www.technologyreview.com/2026/08/07/1141389/the-download-censorship-conspiracy-theory-first-ai-virus/",
+    "headline": "How a small Israeli startup was linked to rogue AI hacks at OpenAI, Anthropic and Meta",
+    "link": "https://www.cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html",
     "score": 92,
-    "reason": "Major controversy + first AI-created virus = landmark moment"
+    "reason": "Major security breach affecting top 3 AI companies, concrete incident with named actors"
   },
   {
     "rank": 2,
-    "headline": "Software Giant SAP Stops Most Travel and Hiring Because of AI&#x27;s Soaring Cost",
-    "link": "https://www.404media.co/software-giant-sap-stops-most-travel-and-hiring-because-of-ais-soaring-cost/",
+    "headline": "Hugging Face hack marks start of dangerous AI cyber era and many firms &apos;don&apos;t even know it&apos;",
+    "link": "https://www.cnbc.com/2026/08/08/hugging-face-ai-hack-cybersecurity-black-hat.html",
     "score": 88,
-    "reason": "Major company action on AI economics; concrete business impact"
+    "reason": "High-profile AI infrastructure hack with broader industry implications and big numbers claim"
   },
   {
     "rank": 3,
-    "headline": "How to Disable Gemini in Gmail and Google Docs",
-    "link": "https://www.wired.com/story/how-to-disable-the-gemini-ai-features-in-gmail-and-google-docs/",
-    "score": 82,
-    "reason": "Google AI rollback indicates user rejection/controversy"
+    "headline": "An Amazon data center could have the worst polluting power plant in the country",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant",
+    "score": 85,
+    "reason": "Major controversy: environmental impact of big tech AI expansion with quantifiable superlative"
   },
   {
     "rank": 4,
-    "headline": "AI is changing cybersecurity in quick and terrifying ways",
-    "link": "https://www.engadget.com/2229315/ai-changing-cybersecurity-quick-terrifying-way/",
-    "score": 79,
-    "reason": "Major topic intersection (AI + security); significant implications"
+    "headline": "How to use Claude's voice mode",
+    "link": "https://www.engadget.com/2231293/how-to-use-claude-voice-mode/",
+    "score": 72,
+    "reason": "Anthropic feature launch expanding AI capability"
   },
   {
     "rank": 5,
-    "headline": "Details Leak on OpenAI’s Doughnut-Shaped Speaker",
-    "link": "https://www.cnet.com/tech/services-and-software/details-leak-openai-doughnut-shaped-speaker/",
-    "score": 76,
-    "reason": "OpenAI hardware launch leak; new product category"
+    "headline": "How to use ChatGPT's new, more natural Voice Mode for conversations",
+    "link": "https://www.engadget.com/2230975/how-to-use-chatgpt-voice-mode/",
+    "score": 70,
+    "reason": "OpenAI feature launch with improved AI capability"
   },
   {
     "rank": 6,
-    "headline": "Watching Roku’s AI channel is like eating from a trough",
-    "link": "https://www.theverge.com/entertainment/976939/roku-fairground-ai-fast-channel",
-    "score": 71,
-    "reason": "AI product criticism; content quality controversy"
-  },
-  {
-    "rank": 7,
-    "headline": "Meetily Lets You Transcribe and Summarize Meetings Without a Subscription—Here’s How",
-    "link": "https://www.wired.com/story/meetily-lets-you-transcribe-and-summarize-meetings-without-a-subscription-heres-how/",
-    "score": 65,
-    "reason": "AI tool launch; alternative pricing model"
+    "headline": "Made by Google 2026: How to watch and what to expect from at the Pixel 11 event",
+    "link": "https://www.zdnet.com/article/what-to-expect-rumors-made-by-google-2026/",
+    "score": 68,
+    "reason": "Google AI hardware launch event announcement"
   }
 ]
