@@ -1,44 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "How a small Israeli startup was linked to rogue AI hacks at OpenAI, Anthropic and Meta",
-    "link": "https://www.cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html",
-    "score": 92,
-    "reason": "Major security breach affecting top 3 AI companies, concrete incident with named actors"
+    "headline": "World&apos;s biggest chipmaker TSMC&apos;s sales surge 45% amid buoyant AI demand",
+    "link": "https://www.cnbc.com/2026/08/10/tsmc-revenue-surge-ai-chip-big-tech.html",
+    "score": 96,
+    "reason": "Major financial milestone with concrete 45% growth number tied to AI demand"
   },
   {
     "rank": 2,
-    "headline": "Hugging Face hack marks start of dangerous AI cyber era and many firms &apos;don&apos;t even know it&apos;",
-    "link": "https://www.cnbc.com/2026/08/08/hugging-face-ai-hack-cybersecurity-black-hat.html",
-    "score": 88,
-    "reason": "High-profile AI infrastructure hack with broader industry implications and big numbers claim"
+    "headline": "OpenAI tightens controls on its new model over cybersecurity risks, as AI security debate intensifies",
+    "link": "https://www.cnbc.com/2026/08/10/openai-astra-cybersecurity-risks.html",
+    "score": 94,
+    "reason": "Significant controversy and policy shift from major AI leader affecting product rollout"
   },
   {
     "rank": 3,
-    "headline": "An Amazon data center could have the worst polluting power plant in the country",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant",
-    "score": 85,
-    "reason": "Major controversy: environmental impact of big tech AI expansion with quantifiable superlative"
+    "headline": "OpenAI slows down Astra development due to cybersecurity concerns",
+    "link": "https://www.engadget.com/2233237/openai-slows-down-astra-development-due-to-cybersecurity-concerns/",
+    "score": 91,
+    "reason": "Major product development delay from industry leader with security implications"
   },
   {
     "rank": 4,
-    "headline": "How to use Claude's voice mode",
-    "link": "https://www.engadget.com/2231293/how-to-use-claude-voice-mode/",
-    "score": 72,
-    "reason": "Anthropic feature launch expanding AI capability"
+    "headline": "Top economist warns that the AI math doesn’t make sense: 'Profits are currently being funded by investors rather than earned from customers'",
+    "link": "https://fortune.com/2026/08/10/torsten-slok-ai-profit-margins-capex-oracle/",
+    "score": 89,
+    "reason": "Significant controversy challenging AI industry fundamentals with expert credibility"
   },
   {
     "rank": 5,
-    "headline": "How to use ChatGPT's new, more natural Voice Mode for conversations",
-    "link": "https://www.engadget.com/2230975/how-to-use-chatgpt-voice-mode/",
-    "score": 70,
-    "reason": "OpenAI feature launch with improved AI capability"
+    "headline": "The AI Slop Backlash Is Actually Having an Impact",
+    "link": "https://www.wired.com/story/the-ai-slop-backlash-is-actually-having-an-impact/",
+    "score": 87,
+    "reason": "Meaningful industry trend with demonstrated consequences for AI-generated content"
   },
   {
     "rank": 6,
-    "headline": "Made by Google 2026: How to watch and what to expect from at the Pixel 11 event",
-    "link": "https://www.zdnet.com/article/what-to-expect-rumors-made-by-google-2026/",
-    "score": 68,
-    "reason": "Google AI hardware launch event announcement"
+    "headline": "How stalled models, missed deadlines and staff burnout led to the unraveling of Google's DeepMind",
+    "link": "https://fortune.com/2026/08/10/how-stalled-models-missed-deadlines-and-staff-burnout-lead-to-the-unraveling-of-googles-deepmind/",
+    "score": 86,
+    "reason": "Major institutional controversy at top AI lab with operational failures"
+  },
+  {
+    "rank": 7,
+    "headline": "Meta Muse Glimmer brings local AI agents to consumer GPUs",
+    "link": "https://www.artificialintelligence-news.com/news/meta-muse-glimmer-local-ai-agents-consumer-gpus/",
+    "score": 84,
+    "reason": "Product launch from major tech company expanding AI accessibility"
+  },
+  {
+    "rank": 8,
+    "headline": "Zuckerberg: AI's biggest risk is one entity with too much control",
+    "link": "https://www.axios.com/2026/08/10/zuckerberg-ai-manifesto-meta",
+    "score": 82,
+    "reason": "High-profile founder raises significant policy concern about AI concentration"
+  },
+  {
+    "rank": 9,
+    "headline": "If You’re Hoping to Collect on Apple’s $250M AI iPhone Settlement, You’ll Have to Wait a Year",
+    "link": "https://www.cnet.com/tech/mobile/if-youre-hoping-to-collect-on-apples-250m-ai-iphone-settlement-youll-have-to-wait-a-year/",
+    "score": 81,
+    "reason": "Large settlement amount ($250M) with legal/controversy significance"
+  },
+  {
+    "rank": 10,
+    "headline": "The Rise of the 1 am Job Interview",
+    "link": "https://www.wired.com/story/the-rise-of-the-1-am-job-interview/",
+    "score": 79,
+    "reason": "Tangible trend showing AI's impact on employment practices and scheduling"
   }
 ]
