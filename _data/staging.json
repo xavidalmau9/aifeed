@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "World&apos;s biggest chipmaker TSMC&apos;s sales surge 45% amid buoyant AI demand",
-    "link": "https://www.cnbc.com/2026/08/10/tsmc-revenue-surge-ai-chip-big-tech.html",
-    "score": 96,
-    "reason": "Major financial milestone with concrete 45% growth number tied to AI demand"
+    "headline": "Meta to open source its most powerful AI model as it takes swipe at OpenAI, Anthropic",
+    "link": "https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html",
+    "score": 94,
+    "reason": "Major product launch with competitive positioning; concrete action against closed rivals"
   },
   {
     "rank": 2,
-    "headline": "OpenAI tightens controls on its new model over cybersecurity risks, as AI security debate intensifies",
-    "link": "https://www.cnbc.com/2026/08/10/openai-astra-cybersecurity-risks.html",
-    "score": 94,
-    "reason": "Significant controversy and policy shift from major AI leader affecting product rollout"
+    "headline": "Intel plans $15 billion stock offering as AI demand accelerates",
+    "link": "https://www.cnbc.com/2026/08/10/intel-intc-stock-offering-ai.html",
+    "score": 92,
+    "reason": "Large financial commitment ($15B); concrete business action driven by AI demand"
   },
   {
     "rank": 3,
-    "headline": "OpenAI slows down Astra development due to cybersecurity concerns",
-    "link": "https://www.engadget.com/2233237/openai-slows-down-astra-development-due-to-cybersecurity-concerns/",
-    "score": 91,
-    "reason": "Major product development delay from industry leader with security implications"
+    "headline": "An Amazon data center could have the worst polluting power plant in the country",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant",
+    "score": 88,
+    "reason": "Significant environmental controversy; measurable impact claim"
   },
   {
     "rank": 4,
-    "headline": "Top economist warns that the AI math doesn’t make sense: 'Profits are currently being funded by investors rather than earned from customers'",
-    "link": "https://fortune.com/2026/08/10/torsten-slok-ai-profit-margins-capex-oracle/",
-    "score": 89,
-    "reason": "Significant controversy challenging AI industry fundamentals with expert credibility"
+    "headline": "An OpenClaw agent reportedly hacked a gym's booking system and kicked someone off a waiting list",
+    "link": "https://www.engadget.com/2233656/an-openclaw-agent-reportedly-hacked-a-gym-booking-system-and-kicked-soemone-off-a-waiting-list/",
+    "score": 86,
+    "reason": "Concrete controversy: AI agent security breach with real-world consequences"
   },
   {
     "rank": 5,
-    "headline": "The AI Slop Backlash Is Actually Having an Impact",
-    "link": "https://www.wired.com/story/the-ai-slop-backlash-is-actually-having-an-impact/",
-    "score": 87,
-    "reason": "Meaningful industry trend with demonstrated consequences for AI-generated content"
+    "headline": "How a small Israeli startup was linked to rogue AI hacks at OpenAI, Anthropic and Meta",
+    "link": "https://www.cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html",
+    "score": 85,
+    "reason": "Multi-company security breach; affects major AI labs"
   },
   {
     "rank": 6,
-    "headline": "How stalled models, missed deadlines and staff burnout led to the unraveling of Google's DeepMind",
-    "link": "https://fortune.com/2026/08/10/how-stalled-models-missed-deadlines-and-staff-burnout-lead-to-the-unraveling-of-googles-deepmind/",
-    "score": 86,
-    "reason": "Major institutional controversy at top AI lab with operational failures"
+    "headline": "OpenAI expands Daybreak cybersecurity initiative as AI agent threats evolve",
+    "link": "https://www.cnbc.com/2026/08/10/open-ai-daybreak-cybersecurity.html",
+    "score": 80,
+    "reason": "Major security initiative launch; responds to evolving threat landscape"
   },
   {
     "rank": 7,
-    "headline": "Meta Muse Glimmer brings local AI agents to consumer GPUs",
-    "link": "https://www.artificialintelligence-news.com/news/meta-muse-glimmer-local-ai-agents-consumer-gpus/",
-    "score": 84,
-    "reason": "Product launch from major tech company expanding AI accessibility"
+    "headline": "Four takeaways from Mark Zuckerberg's massive AI manifesto",
+    "link": "https://www.theverge.com/tech/977395/meta-mark-zuckerberg-superintelligent-ai-ramble",
+    "score": 79,
+    "reason": "Significant strategic statement from major AI player"
   },
   {
     "rank": 8,
-    "headline": "Zuckerberg: AI's biggest risk is one entity with too much control",
-    "link": "https://www.axios.com/2026/08/10/zuckerberg-ai-manifesto-meta",
-    "score": 82,
-    "reason": "High-profile founder raises significant policy concern about AI concentration"
+    "headline": "Claude's Record-a-Skill cut my research from hours to 30 minutes - but the magic has limits",
+    "link": "https://www.zdnet.com/article/how-i-use-claude-cowork-record-a-skill-for-automated-research/",
+    "score": 75,
+    "reason": "Anthropic feature launch with measurable performance claims"
   },
   {
     "rank": 9,
-    "headline": "If You’re Hoping to Collect on Apple’s $250M AI iPhone Settlement, You’ll Have to Wait a Year",
-    "link": "https://www.cnet.com/tech/mobile/if-youre-hoping-to-collect-on-apples-250m-ai-iphone-settlement-youll-have-to-wait-a-year/",
-    "score": 81,
-    "reason": "Large settlement amount ($250M) with legal/controversy significance"
+    "headline": "I tried Google Wallet's new allowance feature, and my kid's already ditched their debit card",
+    "link": "https://www.zdnet.com/article/i-tried-google-wallets-new-allowance-feature/",
+    "score": 72,
+    "reason": "Google product launch; measurable user behavior change"
   },
   {
     "rank": 10,
-    "headline": "The Rise of the 1 am Job Interview",
-    "link": "https://www.wired.com/story/the-rise-of-the-1-am-job-interview/",
-    "score": 79,
-    "reason": "Tangible trend showing AI's impact on employment practices and scheduling"
+    "headline": "Meta's 'open source' Muse Glimmer model can run on a single computer",
+    "link": "https://www.engadget.com/2233312/metas-open-source-muse-glimmer-model-can-run-on-a-single-computer/",
+    "score": 70,
+    "reason": "Meta model release; accessibility milestone"
   }
 ]
