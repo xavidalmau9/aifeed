@@ -1,5 +1,24 @@
 [
  {
+  "id": "ai-schizophrenia-genetics-20260810",
+  "slug": "ai-schizophrenia-genetics",
+  "headline": "AI Is Helping Decode the Genetic Puzzle of Schizophrenia",
+  "summary": "Machine learning is parsing the tangled genetics of schizophrenia — spotting risk patterns across thousands of variants that eluded researchers for decades, and opening the door to precision psychiatry.",
+  "body": "<p><strong>Artificial intelligence is fundamentally accelerating our understanding of one of psychiatry's most complex challenges: the genetic basis of schizophrenia.</strong> A new report from Wired reveals how machine learning algorithms are successfully parsing through intricate genetic data to identify patterns and risk factors that have eluded researchers for decades, offering real hope for improved diagnosis and treatment strategies.</p>\n<p>The intersection of AI and genomics represents a significant technological convergence. Traditional genetic analysis relies on manual pattern recognition and hypothesis-driven research—approaches that struggle with the sheer complexity of conditions like schizophrenia, which involves thousands of genetic variants. Machine learning excels precisely where human analysis reaches its limits, processing vast datasets and discovering non-obvious correlations at scale.</p>\n<p>The strategic implications are profound for the healthcare and pharmaceutical industries. Companies and research institutions that leverage AI-powered genetic analysis gain competitive advantages in drug discovery, patient stratification, and personalized medicine approaches. This capability transforms how we approach mental health treatment from one-size-fits-all to precision psychiatry.</p>\n<p>This breakthrough exemplifies AI's expanding role in life sciences beyond autonomous systems and content generation. We're seeing AI tackle fundamental scientific challenges that have resisted traditional methodologies for years. Mental health research, in particular, stands to benefit enormously from these computational advances.</p>\n<p>Looking forward, expect AI-driven genetic analysis to become standard practice across psychiatric and neurological research. The next frontier involves translating these genetic insights into clinical interventions and understanding how environmental factors interact with genetic predispositions.</p>\n<p>When artificial intelligence meets human suffering, transformative breakthroughs become possible.</p>",
+  "category": "Health",
+  "hashtags": [
+   "AI",
+   "Genomics",
+   "MentalHealth",
+   "PrecisionMedicine",
+   "HealthTech"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_ai_schizophrenia_genetics_20260810.png",
+  "sourceUrl": "https://www.wired.com/story/ai-helping-solve-intricate-genetic-puzzle-schizophrenia/",
+  "publishedAt": "2026-08-10T14:00:00.000-04:00",
+  "isVideo": false
+ },
+ {
   "id": "meta-opensource-most-powerful-ai-model-20260810",
   "slug": "meta-opensource-most-powerful-ai-model",
   "headline": "Meta Open-Sources Its Most Powerful AI Model to Take On OpenAI and Anthropic",
