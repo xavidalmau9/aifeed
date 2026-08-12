@@ -1,5 +1,24 @@
 [
  {
+  "id": "claude-watermark-ai-content-20260810",
+  "slug": "claude-watermark-ai-content",
+  "headline": "Anthropic's Claude Will Add Watermarks to All AI-Generated Text and Files",
+  "summary": "Anthropic says Claude will add watermarks to all AI-generated text and files — a bet that provenance and transparency, not just capability, define trust in the AI era.",
+  "body": "<p><strong>Anthropic is taking a bold step toward AI transparency: Claude will now watermark all AI-generated text and files.</strong> This isn't just a feature—it's a statement about accountability in the AI era.</p>\n<p>Why this matters now: As generative AI proliferates across industries, distinguishing human-created content from machine-generated work has become a critical challenge. Misinformation, copyright concerns, and authenticity questions loom large. Anthropic's watermarking approach addresses these head-on, giving users and creators a verifiable way to identify AI-generated material.</p>\n<p>From a business perspective, this move positions Anthropic as a thought leader in responsible AI development. While competitors race to expand capabilities, Anthropic is betting that transparency and trust will become competitive advantages. Watermarking isn't flashy, but it's strategically smart.</p>\n<p>The broader AI industry is at an inflection point. We're moving from a phase of \"can we build it?\" to \"should we, and how do we do it responsibly?\" Watermarking could become the industry standard, similar to how digital signatures transformed data security. Other AI companies will likely follow suit.</p>\n<p>Looking ahead, this is just the beginning. As AI-generated content becomes indistinguishable from human work, provenance and authentication will be fundamental infrastructure. The companies that solve this problem early will define how trust operates in an AI-powered world.</p>\n<p>The takeaway: Transparency isn't slowing down AI adoption—it's making it sustainable.</p>",
+  "category": "Safety",
+  "hashtags": [
+   "AITransparency",
+   "ResponsibleAI",
+   "Anthropic",
+   "AIEthics",
+   "FutureOfWork"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_claude_watermark_ai_content_20260810.png",
+  "sourceUrl": "https://www.cnet.com/tech/services-and-software/anthropics-claude-will-add-watermarks-to-ai-generated-text-and-files/",
+  "publishedAt": "2026-08-10T15:00:00.000-04:00",
+  "isVideo": false
+ },
+ {
   "id": "ai-schizophrenia-genetics-20260810",
   "slug": "ai-schizophrenia-genetics",
   "headline": "AI Is Helping Decode the Genetic Puzzle of Schizophrenia",
