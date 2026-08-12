@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Gemini app hits 1 billion monthly users, Google teases what’s next",
-    "link": "https://9to5google.com/2026/08/11/gemini-app-1-billion/",
-    "score": 96,
-    "reason": "Big number milestone, major product adoption metric"
+    "headline": "ChatGPT and Gemini both just passed 1 billion users",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users",
+    "score": 98,
+    "reason": "Massive user milestone, concrete numbers, major companies"
   },
   {
     "rank": 2,
-    "headline": "CoreWeave stock pops 12% as revenue doubles on accelerating AI infrastructure demand",
-    "link": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html",
-    "score": 94,
-    "reason": "Quantified growth metric, infrastructure play"
+    "headline": "Anthropic’s Claude Will Add Watermarks to AI-Generated Text and Files",
+    "link": "https://www.cnet.com/tech/services-and-software/anthropics-claude-will-add-watermarks-to-ai-generated-text-and-files/",
+    "score": 87,
+    "reason": "Major product launch, significant technical feature, market differentiation"
   },
   {
     "rank": 3,
-    "headline": "A Zoom Screen-Sharing Bug Let Anyone Take Over Other Devices on a Call",
-    "link": "https://www.wired.com/story/a-zoom-screen-sharing-bug-let-anyone-take-over-other-devices-on-a-call/",
-    "score": 92,
-    "reason": "Security vulnerability with high impact, concrete technical flaw"
+    "headline": "Novo Nordisk and AWS bring agentic AI into drug discovery",
+    "link": "https://www.artificialintelligence-news.com/news/novo-nordisk-ai-drug-discovery-aws/",
+    "score": 85,
+    "reason": "Major partnership, enterprise AI application, healthcare impact"
   },
   {
     "rank": 4,
-    "headline": "Claude will apply invisible watermarks to AI text and images",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images",
-    "score": 90,
-    "reason": "Major product feature launch, anti-AI-slop measure"
+    "headline": "Grok is now an AI ‘teammate’ you can assign work",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/978666/spacexai-grok-bot-ai-agent-beta-launch",
+    "score": 82,
+    "reason": "Product launch, functionality expansion, competitive positioning"
   },
   {
     "rank": 5,
-    "headline": "Meta to open source its most powerful AI model as it takes swipe at OpenAI, Anthropic",
-    "link": "https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html",
-    "score": 89,
-    "reason": "Competitive escalation, major strategic move"
+    "headline": "Meta’s New Open-Weight Model Can Run AI Agents on Your Laptop",
+    "link": "https://www.cnet.com/tech/services-and-software/meta-ai-glimmer-open-weights-news-2026/",
+    "score": 81,
+    "reason": "Significant technical release, democratization of AI, consumer impact"
   },
   {
     "rank": 6,
-    "headline": "Samsung's Galaxy Buds are getting an FDA-approved hearing aid feature",
-    "link": "https://9to5google.com/2026/08/11/samsung-galaxy-buds-hearing-aid-feature/",
-    "score": 87,
-    "reason": "Regulatory approval, new capability launch"
+    "headline": "Oh Lord, AI Reporters Are Actually Breaking Big News",
+    "link": "https://www.wired.com/story/ai-newsrooms-are-breaking-news-now-haha-im-in-danger/",
+    "score": 79,
+    "reason": "Real-world application controversy, editorial implications, concrete examples"
   },
   {
     "rank": 7,
-    "headline": "‘Zoomsday’ hack uncovered using fewer than 20 AI prompts",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/977909/zoom-vulnerability-ai-attack",
-    "score": 86,
-    "reason": "Vulnerability discovery, specific technical detail"
+    "headline": "This New Open-Weight AI Model Is Built for Video and Robots",
+    "link": "https://www.cnet.com/tech/services-and-software/ltx-2-5-ai-open-weights-video-robotics-news/",
+    "score": 77,
+    "reason": "Major technical capability launch, multimodal advancement"
   },
   {
     "rank": 8,
-    "headline": "Apple could help you prove your iPhone photos aren’t deepfakes",
-    "link": "https://www.theverge.com/tech/977921/apple-reference-image-iphone-metadata",
-    "score": 85,
-    "reason": "Concrete feature launch, authentication solution"
+    "headline": "A New Trick Reveals AI Models’ Inner Thoughts",
+    "link": "https://www.wired.com/story/a-new-trick-reveals-ai-models-inner-thoughts/",
+    "score": 75,
+    "reason": "Scientific breakthrough in AI interpretability, research validation"
   },
   {
     "rank": 9,
-    "headline": "Riot Platforms strikes deal with Anthropic as bitcoin miners shift focus to AI infrastructure",
-    "link": "https://www.cnbc.com/2026/08/11/riot-platforms-signs-anthropic-deal-as-miners-shift-to-ai-infrastructure-.html",
-    "score": 84,
-    "reason": "Business partnership, industry shift"
+    "headline": "Google’s new AI boss inherits a race to catch OpenAI and Anthropic",
+    "link": "https://www.cnbc.com/2026/08/12/google-deepmind-koray-kavukcuoglu.html",
+    "score": 74,
+    "reason": "Executive leadership change, competitive strategy significance"
   },
   {
     "rank": 10,
-    "headline": "Target appoints its first chief AI officer as big retailers bet on AI",
-    "link": "https://www.cnbc.com/2026/08/11/target-appoints-chief-ai-officer-chandhu-nair.html",
-    "score": 83,
-    "reason": "Enterprise adoption milestone"
+    "headline": "AI agents&apos; &apos;alarming&apos; hacking skills creates rush to spend on cybersecurity",
+    "link": "https://www.cnbc.com/2026/08/12/ai-agents-hacks-cybersecurity-spending-boom.html",
+    "score": 73,
+    "reason": "Security controversy, market impact, concrete capabilities"
   },
   {
     "rank": 11,
-    "headline": "OpenAI’s head of ethics leaves less than a year after joining",
-    "link": "https://www.ft.com/content/e49dfb75-f841-4466-a577-f7aaff8779a0",
-    "score": 81,
-    "reason": "Leadership departure, internal controversy"
+    "headline": "AI Is Helping Solve the Intricate Genetic Puzzle of Schizophrenia",
+    "link": "https://www.wired.com/story/ai-helping-solve-intricate-genetic-puzzle-schizophrenia/",
+    "score": 71,
+    "reason": "Medical application, scientific impact, real-world benefit"
   },
   {
     "rank": 12,
-    "headline": "Spotify says it won't recommend music from 'AI Personas'",
-    "link": "https://www.theverge.com/entertainment/977815/spotify-ai-persona-label-recommendations",
-    "score": 80,
-    "reason": "Policy decision against AI content"
+    "headline": "Saber denies replacing Rideshare Stimulator's writers with ChatGPT",
+    "link": "https://www.theverge.com/games/978558/rideshare-stimulator-writer-ai-saber-interactive",
+    "score": 68,
+    "reason": "Industry controversy, job displacement concerns, denial context"
   },
   {
     "rank": 13,
-    "headline": "Abbott partners with Google Health for AI-powered glucose monitoring",
-    "link": "https://www.engadget.com/2234851/abbott-partners-with-google-health-for-ai-powered-glucose-monitoring/",
-    "score": 79,
-    "reason": "Healthcare AI partnership launch"
+    "headline": "The Gulf’s AI boom is driving the race to control the data highways",
+    "link": "https://fortune.com/2026/08/12/the-gulf-ai-boom-is-driving-the-race-to-control-the-data-highways/",
+    "score": 67,
+    "reason": "Geopolitical dimension, infrastructure investment, regional competition"
   },
   {
     "rank": 14,
-    "headline": "Nvidia's open Nemotron 3.5 Lightning model is all about specialized, local agentic AI",
-    "link": "https://www.zdnet.com/article/ai-model-release-tracker/",
-    "score": 78,
-    "reason": "New model release, localized AI approach"
+    "headline": "Another OpenAI executive takes off",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/978048/brad-lightcap-openai-executive-departure",
+    "score": 64,
+    "reason": "Leadership departure, organizational instability indicator"
   },
   {
     "rank": 15,
-    "headline": "Zuckerberg: AI's biggest risk is one entity with too much control",
-    "link": "https://www.axios.com/2026/08/10/zuckerberg-ai-manifesto-meta",
-    "score": 77,
-    "reason": "Major executive statement on AI concentration"
+    "headline": "AI brings savings to clinical trials: study",
+    "link": "https://www.axios.com/2026/08/12/ai-clinical-trials-cost-savings",
+    "score": 62,
+    "reason": "Economic impact quantified, healthcare efficiency, research validation"
   },
   {
     "rank": 16,
-    "headline": "Claude's Record-a-Skill cut my research from hours to 30 minutes - but the magic has limits",
-    "link": "https://www.zdnet.com/article/how-i-use-claude-cowork-record-a-skill-for-automated-research/",
-    "score": 75,
-    "reason": "Quantified productivity gain, realistic assessment"
+    "headline": "Pakistani Judges Give Their Verdict on JudgeGPT",
+    "link": "https://spectrum.ieee.org/judgegpt-experiment",
+    "score": 61,
+    "reason": "International AI governance, judicial system application, regulatory perspective"
   },
   {
     "rank": 17,
-    "headline": "Longtime OpenAI executive Brad Lightcap leaves as shake-up at AI lab continues",
-    "link": "https://www.cnbc.com/2026/08/11/longtime-openai-executive-brad-lightcap-leaves-as-shakeup-at-ai-lab-continues.html",
-    "score": 74,
-    "reason": "Leadership departure during organizational change"
+    "headline": "Anthropic's text watermarks signal new front in AI detection",
+    "link": "https://www.axios.com/2026/08/12/anthropic-claude-watermarks-ai-detection",
+    "score": 60,
+    "reason": "Technical arms race, detection methodology, authenticity concerns"
   },
   {
     "rank": 18,
-    "headline": "Tech giants are pushing for a new AI agent incident reporting framework",
-    "link": "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting",
-    "score": 73,
-    "reason": "Industry coordination on AI safety"
+    "headline": "How AI is changing the vulnerability response timeline",
+    "link": "https://www.artificialintelligence-news.com/news/how-ai-is-changing-the-vulnerability-response-timeline/",
+    "score": 58,
+    "reason": "Security impact quantification, operational change"
   },
   {
     "rank": 19,
-    "headline": "Spotify AI Persona labels will alert listeners if an artist isn't real",
-    "link": "https://www.engadget.com/2234144/spotify-launches-ai-persona-labels/",
-    "score": 72,
-    "reason": "Transparency measure for AI-generated content"
+    "headline": "From Edison to the AI age: inside GE Vernova's reinvention and 600% stock spike",
+    "link": "https://fortune.com/2026/08/12/from-edison-to-the-ai-age-inside-ge-vernovas-reinvention-and-600-stock-spike/",
+    "score": 57,
+    "reason": "Market reaction quantified, industrial transformation, stock performance"
   },
   {
     "rank": 20,
-    "headline": "Exclusive: Sanders calls for AI development pause",
-    "link": "https://www.axios.com/2026/08/10/sanders-ai-development-pause",
-    "score": 71,
-    "reason": "Political intervention in AI development"
+    "headline": "Universities are buying and selling property for data centers, prompting concerns about an AI brain drain",
+    "link": "https://fortune.com/2026/08/12/george-washington-university-of-michigan-property-sale-ai-data-center-development/",
+    "score": 56,
+    "reason": "Institutional impact, resource allocation shift, workforce implications"
   }
 ]
