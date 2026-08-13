@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "A Zoom Screen-Sharing Bug Let Anyone Take Over Other Devices on a Call",
-    "link": "https://www.wired.com/story/a-zoom-screen-sharing-bug-let-anyone-take-over-other-devices-on-a-call/",
-    "score": 92,
-    "reason": "Major security vulnerability with real exploit impact, no speculation"
+    "headline": "ChatGPT and Gemini both just passed 1 billion users",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users",
+    "score": 98,
+    "reason": "Major milestone, concrete big number, two companies, significant market validation"
   },
   {
     "rank": 2,
-    "headline": "Microsoft fixes 421 bugs and a Windows zero-day in August Patch Tuesday - update ASAP",
-    "link": "https://www.zdnet.com/article/microsoft-august-windows-update-421-bugs-zero-day-exploited/",
-    "score": 88,
-    "reason": "Large number of fixes, zero-day exploit, concrete security news"
+    "headline": "Grok is now an AI ‘teammate’ you can assign work",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/978666/spacexai-grok-bot-ai-agent-beta-launch",
+    "score": 92,
+    "reason": "Significant product launch, practical AI agent capability, major use case expansion"
   },
   {
     "rank": 3,
-    "headline": "Twitch streamers can now opt out from training Amazon’s AI",
-    "link": "https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai",
-    "score": 85,
-    "reason": "Content creator policy launch, addresses major AI training controversy"
+    "headline": "Meta is giving away 15,000 AI glasses to blind and visually impaired people in Ireland",
+    "link": "https://www.engadget.com/2236054/meta-donates-15000-ray-ban-meta-glasses-to-vision-ireland/",
+    "score": 88,
+    "reason": "Major deployment, real-world impact, specific numbers, social benefit"
   },
   {
     "rank": 4,
-    "headline": "Guitar company D’Addario admits that AI music was used in a promotional video",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/978982/daddario-guitar-ai-music-suno",
-    "score": 83,
-    "reason": "Concrete controversy: undisclosed AI use in commercial content"
+    "headline": "Pakistani Judges Give Their Verdict on JudgeGPT",
+    "link": "https://spectrum.ieee.org/judgegpt-experiment",
+    "score": 85,
+    "reason": "Controversial regulatory action, AI system in judiciary, real-world consequence"
   },
   {
     "rank": 5,
-    "headline": "Canva was the rare startup that grew fast and made money—then AI costs slashed its growth forecast by a third",
-    "link": "https://fortune.com/2026/08/12/canva-startup-growth-ai-costs-revenue-forecast-by-third/",
-    "score": 82,
-    "reason": "Major impact: 33% growth forecast reduction due to AI infrastructure costs"
+    "headline": "Oh Lord, AI Reporters Are Actually Breaking Big News",
+    "link": "https://www.wired.com/story/ai-newsrooms-are-breaking-news-now-haha-im-in-danger/",
+    "score": 84,
+    "reason": "Significant capability milestone, AI replacing human function, real news impact"
   },
   {
     "rank": 6,
-    "headline": "Tech giants are pushing for a new AI agent incident reporting framework",
-    "link": "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting",
-    "score": 79,
-    "reason": "Industry-wide regulatory response to AI agent risks"
+    "headline": "Anthropic’s Claude Will Add Watermarks to AI-Generated Text and Files",
+    "link": "https://www.cnet.com/tech/services-and-software/anthropics-claude-will-add-watermarks-to-ai-generated-text-and-files/",
+    "score": 83,
+    "reason": "Major product feature launch, addresses authenticity concern, industry-wide implications"
   },
   {
     "rank": 7,
-    "headline": "German nonprofit files criminal complaint over Meta smart glasses privacy",
-    "link": "https://www.engadget.com/2235857/german-nonprofit-files-criminal-complaint-over-meta-smart-glasses-privacy/",
-    "score": 77,
-    "reason": "Concrete legal action against major AI/camera product"
+    "headline": "Honor launches its long-awaited Robot Phone and yes it can wiggle at you",
+    "link": "https://www.engadget.com/2235640/honor-launches-its-long-awaited-robot-phone-and-yes-it-can-wiggle-at-you/",
+    "score": 80,
+    "reason": "Hardware launch, novel form factor, practical robotics product"
   },
   {
     "rank": 8,
-    "headline": "Apple could help you prove your iPhone photos aren’t deepfakes",
-    "link": "https://www.theverge.com/tech/977921/apple-reference-image-iphone-metadata",
-    "score": 76,
-    "reason": "Major feature launch addressing deepfake verification problem"
+    "headline": "An AI Agent Reportedly Hacked a Gym to Get Someone Into a Class",
+    "link": "https://www.cnet.com/tech/services-and-software/an-ai-agent-reportedly-hacked-a-gym-to-get-someone-into-a-class/",
+    "score": 79,
+    "reason": "Controversial incident, AI agent autonomy concern, real-world harm"
   },
   {
     "rank": 9,
-    "headline": "Google tests AMIE for clinical video consultations",
-    "link": "https://www.artificialintelligence-news.com/news/google-tests-amie-for-clinical-video-consultations/",
-    "score": 74,
-    "reason": "Concrete AI deployment in healthcare sector"
+    "headline": "Anthropic reportedly plans a $2 trillion IPO in October—the largest ever—that will eclipse SpaceX",
+    "link": "https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/",
+    "score": 78,
+    "reason": "Massive funding/valuation claim, company milestone, market significance"
   },
   {
     "rank": 10,
-    "headline": "Inside the Data Bottleneck Slowing Visual and Physical AI",
-    "link": "https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-models-and-production/",
-    "score": 72,
-    "reason": "Identifies major infrastructure constraint in AI development"
+    "headline": "Twitch content has trained Amazon AI for years, but users can opt out now",
+    "link": "https://arstechnica.com/ai/2026/08/twitch-content-has-trained-amazon-ai-for-years-but-users-can-opt-out-now/",
+    "score": 77,
+    "reason": "Major policy shift, large-scale data practice, user control implementation"
   },
   {
     "rank": 11,
-    "headline": "Nvidia found a new way to keep the AI boom funded: your retirement money",
-    "link": "https://fortune.com/2026/08/12/nvidia-private-capital-deal-circular-financing-ai-boom/",
-    "score": 70,
-    "reason": "Significant financial mechanism for AI infrastructure funding"
+    "headline": "There’s a Fatty Liver Epidemic. AI Could Help Get Ahead of It",
+    "link": "https://www.wired.com/story/fatty-liver-disease-ai-detection-cancer/",
+    "score": 76,
+    "reason": "AI application in healthcare, addresses major health crisis"
   },
   {
     "rank": 12,
-    "headline": "Google’s new Pixel 11 puts Gemini at center of AI phone battle with Apple",
-    "link": "https://www.cnbc.com/2026/08/12/google-pixel-11-gemini-ai-phone-apple.html",
-    "score": 68,
-    "reason": "Major product launch with AI as core differentiator"
+    "headline": "The White House Is Going to Expand Its AI Policy",
+    "link": "https://www.wired.com/story/the-white-house-is-going-to-expand-its-ai-policy/",
+    "score": 75,
+    "reason": "Government regulation expansion, policy milestone"
   },
   {
     "rank": 13,
-    "headline": "CIOs and CTOs spent years lauding AI. Now, with costs rising, they're putting limits on how it's used",
-    "link": "https://fortune.com/2026/08/12/cios-and-ctos-spent-years-lauding-ai-now-with-costs-rising-theyre-putting-limits-on-how-its-used/",
-    "score": 66,
-    "reason": "Enterprise-wide shift in AI deployment due to cost constraints"
+    "headline": "Saber denies replacing Rideshare Stimulator's writers with ChatGPT",
+    "link": "https://www.theverge.com/games/978558/rideshare-stimulator-writer-ai-saber-interactive",
+    "score": 74,
+    "reason": "Controversy denial, AI workforce displacement concern, industry tension"
   },
   {
     "rank": 14,
-    "headline": "Google drops the AI Pro to 6 months with Pixel 11 Pro, ditches free plan for base model",
-    "link": "https://9to5google.com/2026/08/12/google-drops-the-ai-pro-to-6-months-with-pixel-11-pro-ditches-free-plan-for-base-model/",
-    "score": 64,
-    "reason": "Significant pricing/access change for AI services"
+    "headline": "Claude Cowork can now run in a Chrome sidebar",
+    "link": "https://www.engadget.com/2235919/claude-cowork-can-now-run-in-a-chrome-sidebar/",
+    "score": 72,
+    "reason": "Product expansion, integration launch, accessibility improvement"
   },
   {
     "rank": 15,
-    "headline": "Honor finally launches Robot Phone starting at around $1,500",
-    "link": "https://9to5google.com/2026/08/12/honor-finally-launches-robot-phone-starting-at-around-1500/",
-    "score": 62,
-    "reason": "Novel AI hardware product launch with concrete pricing"
+    "headline": "This New Open-Weight AI Model Is Built for Video and Robots",
+    "link": "https://www.cnet.com/tech/services-and-software/ltx-2-5-ai-open-weights-video-robotics-news/",
+    "score": 71,
+    "reason": "Model architecture advancement, robotics capability"
   },
   {
     "rank": 16,
-    "headline": "As AI safety concerns mount, three pioneers make the case for staying open",
-    "link": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/",
-    "score": 58,
-    "reason": "Major safety debate with named expert positions"
+    "headline": "An inside look at SK Hynix $720 billion AI-fueled buildout that&apos;s taking over South Korea",
+    "link": "https://www.cnbc.com/2026/08/13/inside-sk-hynixs-720-billion-bet-to-build-enough-memory-for-ai.html",
+    "score": 70,
+    "reason": "Massive infrastructure investment, supply chain significance"
   },
   {
     "rank": 17,
-    "headline": "Pixel 11 camera gets new main sensors, 'Camera Looks,' 'Instant Night Sight,' and much more",
-    "link": "https://9to5google.com/2026/08/12/google-pixel-11-camera-whats-new/",
-    "score": 55,
-    "reason": "Multiple concrete camera AI feature launches"
+    "headline": "Another OpenAI executive takes off",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/978048/brad-lightcap-openai-executive-departure",
+    "score": 68,
+    "reason": "Leadership departure, company stability concern"
   },
   {
     "rank": 18,
-    "headline": "Chinese tech giant Tencent sees spending surge, defends potential &apos;superior&apos; AI returns",
-    "link": "https://www.cnbc.com/2026/08/12/china-tencent-earnings-q2-2026-gaming-ai-advertising.html",
-    "score": 52,
-    "reason": "Major AI investment push by large tech company"
+    "headline": "Musk and Zuckerberg claw back into AI race with new model momentum",
+    "link": "https://www.axios.com/2026/08/13/grok-elon-musk-ai-zuckerberg-and-meta",
+    "score": 67,
+    "reason": "Competitive intensity, multiple major players, momentum shift"
   },
   {
     "rank": 19,
-    "headline": "AI’s costly build-out complicates the Fed’s inflation fight",
-    "link": "https://www.cnbc.com/2026/08/12/ais-costly-buildout-complicates-the-feds-inflation-fight.html",
-    "score": 50,
-    "reason": "Macroeconomic impact of AI infrastructure spending"
+    "headline": "Every Pixel device announced at Made by Google 2026: 11 Pro Fold, Pixel Watch 5, and more",
+    "link": "https://www.zdnet.com/article/everything-announced-at-made-by-google-2026-pixel-11-pro-fold-pixel-watch-5/",
+    "score": 66,
+    "reason": "Multi-product launch, hardware ecosystem expansion"
   },
   {
     "rank": 20,
-    "headline": "Of course the ChatGPT dog cancer vaccine spawned a startup",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/978671/ai-cured-dog-cancer-mrna-vaccine-startup-gamgee",
-    "score": 48,
-    "reason": "Concrete startup launch demonstrating AI application"
+    "headline": "Okta targets AI agent token costs with MCP scoping",
+    "link": "https://www.artificialintelligence-news.com/news/okta-targets-ai-agent-token-costs-with-mcp-scoping/",
+    "score": 64,
+    "reason": "Cost optimization solution, enterprise AI efficiency"
   }
 ]
