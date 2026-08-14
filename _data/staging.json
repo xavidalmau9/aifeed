@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Buried in OpenAI's latest research: No correlation between AI use and revenue per employee",
-    "link": "https://fortune.com/2026/08/13/buried-in-openais-latest-research-no-correlation-between-ai-use-and-revenue-per-employee/",
-    "score": 96,
-    "reason": "Major finding contradicting AI ROI narrative; concrete data undermines industry hype"
+    "headline": "The Safety Reckoning Inside OpenAI",
+    "link": "https://www.wired.com/story/openai-safety-security-ai-agents-culture/",
+    "score": 94,
+    "reason": "Major controversy about AI safety at leading company; significant organizational tension"
   },
   {
     "rank": 2,
-    "headline": "OpenAI is losing its second executive this week",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/979815/openai-denise-dresser-leaving-executive-departure",
-    "score": 94,
-    "reason": "Second major executive departure signals internal instability at leading AI company"
+    "headline": "OpenAI swaps chief revenue officer amid executive departures",
+    "link": "https://fortune.com/2026/08/14/openai-swaps-chief-revenue-officer-amid-executive-departures/",
+    "score": 89,
+    "reason": "Concrete executive departure; signals internal instability at major AI lab pre-IPO"
   },
   {
     "rank": 3,
-    "headline": "OpenAI loses revenue chief Denise Dresser, second major executive departure in days",
-    "link": "https://www.cnbc.com/2026/08/13/openai-denise-dresser-executive-exits.html",
-    "score": 93,
-    "reason": "Executive exodus; quantifies leadership departures at critical time"
+    "headline": "Apple trained its own AI model for China with help from Alibaba",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
+    "score": 87,
+    "reason": "Major tech company launches proprietary AI; significant strategic partnership and geographic expansion"
   },
   {
     "rank": 4,
-    "headline": "75% of developers I surveyed prefer Claude Code - here's why they choose it over Codex",
-    "link": "https://www.zdnet.com/article/why-most-developers-prefer-claude-code-over-codex/",
-    "score": 88,
-    "reason": "Market shift data; Claude gaining developer mindshare over competitors"
+    "headline": "The White House Is Going to Expand Its AI Policy",
+    "link": "https://www.wired.com/story/the-white-house-is-going-to-expand-its-ai-policy/",
+    "score": 85,
+    "reason": "Government regulation expansion; major policy development affecting AI industry"
   },
   {
     "rank": 5,
-    "headline": "Anthropic CFO Krishna Rao is leading early IPO meetings with investors and has not discussed valuation, sources say",
-    "link": "https://www.cnbc.com/2026/08/13/anthropic-cfo-early-ipo-meetings-valuation.html",
-    "score": 87,
-    "reason": "Major funding milestone; Anthropic moving toward public markets"
+    "headline": "AI’s infrastructure boom is getting more leveraged — and harder to track",
+    "link": "https://www.cnbc.com/2026/08/14/ai-infrastructure-debt-leverage-risks.html",
+    "score": 83,
+    "reason": "Big numbers/bubble risk; reveals systemic financial vulnerability in AI sector"
   },
   {
     "rank": 6,
-    "headline": "Microsoft is combining its Copilot apps ahead of a ‘super app’",
-    "link": "https://www.theverge.com/tech/979466/microsoft-copilot-365-app-unified-experience",
-    "score": 85,
-    "reason": "Strategic consolidation; Microsoft shifting product strategy for AI integration"
+    "headline": "DeepSeek's AI models are about to cost four times more",
+    "link": "https://www.engadget.com/2236912/deepseek-ai-models-get-four-times-pricier/",
+    "score": 81,
+    "reason": "Concrete pricing change; significant cost escalation in AI market"
   },
   {
     "rank": 7,
-    "headline": "A San Francisco 'tech prankster' got 50 Waymos ordered onto the same street, exposing robotaxis' cyber/airbag problem",
-    "link": "https://fortune.com/2026/08/13/a-san-francisco-tech-prankster-got-50-waymos-ordered-onto-the-same-street-exposing-robotaxis-cyber-airbag-problem/",
-    "score": 84,
-    "reason": "Security vulnerability exposed; highlights autonomous vehicle AI system flaws"
+    "headline": "Twitch streamers can now opt out from training Amazon’s AI",
+    "link": "https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai",
+    "score": 80,
+    "reason": "Major platform reverses AI training policy; consumer/creator pushback results in concrete action"
   },
   {
     "rank": 8,
-    "headline": "Kalshi's CEO is racing to build a futures market for AI's most precious resource, which could be worth $100 trillion by 2030",
-    "link": "https://fortune.com/2026/08/12/kalshi-compute-futures-cme-intercontinental/",
-    "score": 83,
-    "reason": "Big number projection; new market structure for AI compute trading"
+    "headline": "Uber partners with China&apos;s Pony.ai for 2,000 robotaxis in Europe",
+    "link": "https://www.cnbc.com/2026/08/14/uber-partners-with-chinas-ponyai-for-2000-robotaxis-in-europe.html",
+    "score": 79,
+    "reason": "Large-scale autonomous vehicle deployment; major international partnership and big numbers"
   },
   {
     "rank": 9,
-    "headline": "Google tests AMIE for clinical video consultations",
-    "link": "https://www.artificialintelligence-news.com/news/google-tests-amie-for-clinical-video-consultations/",
-    "score": 81,
-    "reason": "AI deployment in healthcare; Google expanding beyond search"
+    "headline": "Google AI health coach to use Abbott glucose data",
+    "link": "https://www.artificialintelligence-news.com/news/google-ai-health-coach-abbott-glucose-data/",
+    "score": 76,
+    "reason": "Concrete AI product launch; major health integration with real healthcare data"
   },
   {
     "rank": 10,
-    "headline": "Guitar company D’Addario admits that AI music was used in a promotional video",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/978982/daddario-guitar-ai-music-suno",
-    "score": 80,
-    "reason": "Corporate controversy; AI music use without disclosure"
+    "headline": "Microsoft is merging Copilot and Copilot 365 into one unified app - and retiring 3 features",
+    "link": "https://www.zdnet.com/article/microsoft-to-merge-copilot-and-copilot-365-into-one-unified-app-retiring-features/",
+    "score": 75,
+    "reason": "Major product restructuring; significant platform consolidation announcement"
   },
   {
     "rank": 11,
-    "headline": "How to stop Twitch from training AI on your streams",
-    "link": "https://www.engadget.com/2235928/how-to-stop-twitch-training-ai-on-streams/",
-    "score": 79,
-    "reason": "Creator backlash against AI training; platform policy controversy"
+    "headline": "Arm co-founder Hermann Hauser’s AI warning: The revolution is real, but so is the bubble risk",
+    "link": "https://www.cnbc.com/2026/08/14/arm-ai-bubble-hermann-hauser-the-tech-download.html",
+    "score": 74,
+    "reason": "Industry insider raises bubble concerns; credible voice warns of systemic risk"
   },
   {
     "rank": 12,
-    "headline": "As AI safety concerns mount, three pioneers make the case for staying open",
-    "link": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/",
-    "score": 78,
-    "reason": "Major safety debate; industry disagreement on model transparency"
+    "headline": "Apple is reportedly turning to publishers for help with Siri AI",
+    "link": "https://www.engadget.com/2236317/apple-is-reportedly-turning-to-publishers-for-help-with-siri-ai/",
+    "score": 72,
+    "reason": "Major strategic pivot for Apple's AI; significant new partnership model"
   },
   {
     "rank": 13,
-    "headline": "Spotify has roped the indie publisher Kobalt into its AI platform for covers and remixes",
-    "link": "https://www.engadget.com/2236313/spotify-has-roped-the-indie-pubisher-kobalt-into-its-ai-platform-for-covers-and-remixes/",
-    "score": 77,
-    "reason": "Music platform pivoting to AI-generated content; industry shift"
+    "headline": "Gemini 3.7 Flash launches three weeks after last model, live in Spark",
+    "link": "https://9to5google.com/2026/08/13/gemini-3-7-flash-launch/",
+    "score": 70,
+    "reason": "Rapid model release cycle; concrete product launch"
   },
   {
     "rank": 14,
-    "headline": "Inside the Data Bottleneck Slowing Visual and Physical AI",
-    "link": "https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-models-and-production/",
-    "score": 76,
-    "reason": "Infrastructure constraint limiting AI advancement; concrete technical limitation"
+    "headline": "There’s a Fatty Liver Epidemic. AI Could Help Get Ahead of It",
+    "link": "https://www.wired.com/story/fatty-liver-disease-ai-detection-cancer/",
+    "score": 68,
+    "reason": "AI applied to significant public health issue; real-world medical application"
   },
   {
     "rank": 15,
-    "headline": "Does Google even want to win at AI?",
-    "link": "https://www.theverge.com/podcast/979370/google-deepmind-ai-race-lose-jeff-dean-demis-hassabis",
-    "score": 74,
-    "reason": "Strategy question about market leader; suggests product hesitation"
+    "headline": "AI scrambles the political map",
+    "link": "https://www.axios.com/2026/08/14/ai-scrambles-political-map",
+    "score": 66,
+    "reason": "Broad societal impact; AI reshaping political landscape"
   },
   {
     "rank": 16,
-    "headline": "Suno is trying to look more like a real music production tool",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/979345/suno-studio-2-0-midi-chatbot-custom-effects",
-    "score": 72,
-    "reason": "AI music startup pivoting business model; market positioning shift"
+    "headline": "Okta targets AI agent token costs with MCP scoping",
+    "link": "https://www.artificialintelligence-news.com/news/okta-targets-ai-agent-token-costs-with-mcp-scoping/",
+    "score": 64,
+    "reason": "Enterprise AI cost optimization; addresses growing infrastructure challenge"
   },
   {
     "rank": 17,
-    "headline": "'Multi-part case study on China’s media' finds that AI models can't hallucinate away Chinese censorship",
-    "link": "https://fortune.com/2026/08/13/chinese-censorship-ai-models-case-study/",
-    "score": 71,
-    "reason": "AI limitation in specific context; geopolitical angle"
+    "headline": "OpenAI Now Has a ChatGPT Desktop App for Linux",
+    "link": "https://www.cnet.com/tech/services-and-software/openai-now-has-a-chatgpt-desktop-app-for-linux/",
+    "score": 62,
+    "reason": "Concrete product launch; platform expansion"
   },
   {
     "rank": 18,
-    "headline": "Anthropic's text watermarks signal new front in AI detection",
-    "link": "https://www.axios.com/2026/08/12/anthropic-claude-watermarks-ai-detection",
-    "score": 70,
-    "reason": "New detection method launched; watermarking becoming standard practice"
+    "headline": "Gemini is getting over a dozen new connected apps – here's the list",
+    "link": "https://9to5google.com/2026/08/13/gemini-is-getting-over-a-dozen-new-connected-apps-heres-the-list/",
+    "score": 60,
+    "reason": "Significant feature expansion; AI ecosystem integration"
   },
   {
     "rank": 19,
-    "headline": "AI brings savings to clinical trials: study",
-    "link": "https://www.axios.com/2026/08/12/ai-clinical-trials-cost-savings",
-    "score": 68,
-    "reason": "Quantified benefit; AI reducing trial costs"
+    "headline": "Microsoft’s Clippy-like Mico character is no longer the face of Copilot",
+    "link": "https://www.theverge.com/tech/979871/microsoft-copilot-mico-retired",
+    "score": 58,
+    "reason": "Brand/messaging shift; reveals user reception challenges with AI mascots"
   },
   {
     "rank": 20,
-    "headline": "I looked inside an AI generated movie, and the best parts were all human",
-    "link": "https://www.theverge.com/entertainment/977994/higgsfield-ai-cully-hill-boys-black-list",
-    "score": 66,
-    "reason": "Creative quality analysis; human superiority in AI-generated content"
+    "headline": "Using AI Shopping Carts Could Lead You to Spend More Money, Study Says",
+    "link": "https://www.cnet.com/tech/using-ai-shopping-carts-could-lead-you-to-spend-more-money-study-says/",
+    "score": 56,
+    "reason": "Research findings on AI impact; consumer behavior analysis"
   }
 ]
