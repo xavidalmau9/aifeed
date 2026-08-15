@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Mark Zuckerberg has an Instagzam",
-    "link": "https://www.theverge.com/podcast/980367/instagram-logo-new-zuckerberg-ai-vergecast",
-    "score": 50,
-    "reason": "recency"
+    "headline": "The Safety Reckoning Inside OpenAI",
+    "link": "https://www.wired.com/story/openai-safety-security-ai-agents-culture/",
+    "score": 94,
+    "reason": "Major controversy about AI safety at leading company; substantive internal conflict"
   },
   {
     "rank": 2,
-    "headline": "You can now turn off Google Gemini's visible watermarks",
-    "link": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal",
-    "score": 50,
-    "reason": "recency"
+    "headline": "OpenAI talent exodus raises &apos;huge red flag&apos; ahead of IPO",
+    "link": "https://www.cnbc.com/2026/08/14/open-ai-ipo-red-flag.html",
+    "score": 92,
+    "reason": "Executive departures signal major instability at critical moment; concrete evidence of problems"
   },
   {
     "rank": 3,
-    "headline": "OpenAI is losing its second executive this week",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/979815/openai-denise-dresser-leaving-executive-departure",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Amazon Can Use Your Twitch Content to Train Its AI—Unless You Opt Out",
+    "link": "https://www.wired.com/story/amazon-uses-your-twitch-content-to-train-its-ai-how-to-opt-out/",
+    "score": 89,
+    "reason": "Major company policy affecting millions of users; significant data usage announcement"
   },
   {
     "rank": 4,
-    "headline": "Suno is trying to look more like a real music production tool",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/979345/suno-studio-2-0-midi-chatbot-custom-effects",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Uber partners with China&apos;s Pony.ai for 2,000 robotaxis in Europe",
+    "link": "https://www.cnbc.com/2026/08/14/uber-partners-with-chinas-ponyai-for-2000-robotaxis-in-europe.html",
+    "score": 88,
+    "reason": "Large deployment scale; major cross-border robotaxi partnership launch"
   },
   {
     "rank": 5,
-    "headline": "I looked inside an AI generated movie, and the best parts were all human",
-    "link": "https://www.theverge.com/entertainment/977994/higgsfield-ai-cully-hill-boys-black-list",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Apple trained its own AI model for China with help from Alibaba",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
+    "score": 86,
+    "reason": "Major tech company building proprietary AI; significant China market move"
   },
   {
     "rank": 6,
-    "headline": "Does Google even want to win at AI?",
-    "link": "https://www.theverge.com/podcast/979370/google-deepmind-ai-race-lose-jeff-dean-demis-hassabis",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Google will now allow users to remove visible watermarks from AI content",
+    "link": "https://www.engadget.com/2237340/google-will-now-allow-users-to-remove-visible-watermarks-from-ai-content/",
+    "score": 84,
+    "reason": "Policy reversal on AI content; affects transparency of generated material"
   },
   {
     "rank": 7,
-    "headline": "Microsoft is combining its Copilot apps ahead of a ‘super app’",
-    "link": "https://www.theverge.com/tech/979466/microsoft-copilot-365-app-unified-experience",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Microsoft is merging Copilot and Copilot 365 into one unified app - and retiring 3 features",
+    "link": "https://www.zdnet.com/article/microsoft-to-merge-copilot-and-copilot-365-into-one-unified-app-retiring-features/",
+    "score": 82,
+    "reason": "Major product restructuring; consolidation of AI offerings"
   },
   {
     "rank": 8,
-    "headline": "Tech Visionary Says the Big AI Labs Don’t Get What People Want",
-    "link": "https://www.wired.com/story/tech-visionary-says-the-big-ai-labs-dont-get-what-people-want/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Google is making private AI practical with homomorphic encryption",
+    "link": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+    "score": 81,
+    "reason": "Technical breakthrough in privacy-preserving AI; significant cryptographic advance"
   },
   {
     "rank": 9,
-    "headline": "These ‘Masturbation Consultants’ Were Hired to Pleasure Themselves With AI",
-    "link": "https://www.wired.com/story/these-masturbation-consultants-were-hired-to-pleasure-themselves-using-ai/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "75% of developers I surveyed prefer Claude Code - here's why they choose it over Codex",
+    "link": "https://www.zdnet.com/article/why-most-developers-prefer-claude-code-over-codex/",
+    "score": 79,
+    "reason": "Market shift data; developer preference change favoring Anthropic"
   },
   {
     "rank": 10,
-    "headline": "People Are ‘Marrying’ Chatbots. These Lawmakers Want to Stop Them",
-    "link": "https://www.wired.com/story/people-are-marrying-chatbots-these-lawmakers-want-to-stop-them/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Google Meet can take notes for your in-person meetings now - here's how it works",
+    "link": "https://www.zdnet.com/article/google-meet-take-notes-in-person-meetings-how-it-works/",
+    "score": 77,
+    "reason": "New AI feature launch; expands meeting assistant capabilities"
   },
   {
     "rank": 11,
-    "headline": "Mark Zuckerberg’s AI Manifesto Is 6,500 Words—and Barely Says Anything",
-    "link": "https://www.wired.com/story/mark-zuckerbergs-ai-manifesto-is-6500-words-and-barely-says-anything/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Google AI health coach to use Abbott glucose data",
+    "link": "https://www.artificialintelligence-news.com/news/google-ai-health-coach-abbott-glucose-data/",
+    "score": 76,
+    "reason": "Major health data partnership; AI health application launch"
   },
   {
     "rank": 12,
-    "headline": "The Download: Flock's new rules, cloning's future, and children's cells",
-    "link": "https://www.technologyreview.com/2026/08/14/1142033/the-download-flock-new-rules-cloning-future/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Gemini 3.7 Flash launches three weeks after last model, live in Spark",
+    "link": "https://9to5google.com/2026/08/13/gemini-3-7-flash-launch/",
+    "score": 74,
+    "reason": "Rapid model release cycle; AI capability advancement"
   },
   {
     "rank": 13,
-    "headline": "This scientist is helping build a missing map of childhood",
-    "link": "https://www.technologyreview.com/2026/08/14/1141354/deanne-taylor-gene-expression-children/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Nvidia discloses $21 billion stake in SpaceX at end of second quarter",
+    "link": "https://www.cnbc.com/2026/08/14/nvidia-discloses-21-billion-stake-in-spacex-at-end-of-second-quarter.html",
+    "score": 72,
+    "reason": "Massive financial commitment; AI infrastructure company investing in space tech"
   },
   {
     "rank": 14,
-    "headline": "Job titles of the future: Space travel agent",
-    "link": "https://www.technologyreview.com/2026/08/14/1141431/job-titles-space-travel-agent-roman-chiporukha/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "ChatGPT's new Computer History tracks your Mac activity to create a timeline -  but should you let it?",
+    "link": "https://www.zdnet.com/article/chatgpt-computer-history/",
+    "score": 70,
+    "reason": "Privacy controversy; new data collection capability"
   },
   {
     "rank": 15,
-    "headline": "Cloning could be used to save species—or make human “organ sacks”",
-    "link": "https://www.technologyreview.com/2026/08/14/1141919/cloning-save-species-or-make-human-organ-sacks/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "\"There's no point\": AI forces college students to rethink their major",
+    "link": "https://www.axios.com/2026/08/15/college-major-ai-skills-job-search",
+    "score": 68,
+    "reason": "AI impact on education; student behavior change evidence"
   },
   {
     "rank": 16,
-    "headline": "Roundtables: Inside the \"Censorship-Industrial Complex\" Idea Shaping US Policy",
-    "link": "https://www.technologyreview.com/2026/08/13/1141399/roundtables-inside-the-censorship-industrial-complex-idea-shaping-us-policy/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "OpenAI loses revenue chief Denise Dresser, second major executive departure in days",
+    "link": "https://www.cnbc.com/2026/08/13/openai-denise-dresser-executive-exits.html",
+    "score": 67,
+    "reason": "Executive exodus continues; leadership instability at key function"
   },
   {
     "rank": 17,
-    "headline": "Building a practical path to post-quantum cryptography",
-    "link": "https://www.technologyreview.com/2026/08/13/1141041/building-a-practical-path-to-post-quantum-cryptography/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Anthropic needs to bring in Amazon-style earnings to justify its $2 trillion valuation—but it’s barely turned a profit",
+    "link": "https://fortune.com/2026/08/14/anthropic-valuation-ipo-amazon-trillion-openai/",
+    "score": 65,
+    "reason": "Financial reality check; valuation vs. profitability gap for major AI company"
   },
   {
     "rank": 18,
-    "headline": "Flock is tightening its rules in response to a growing surveillance backlash",
-    "link": "https://www.technologyreview.com/2026/08/13/1141904/flock-is-tightening-its-rules-in-response-to-a-growing-surveillance-backlash/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "The Next Big Influencer Is This 4-Foot-Tall Robot From China",
+    "link": "https://www.wired.com/story/unitree-influencer-4-foot-robot-from-china/",
+    "score": 63,
+    "reason": "Viral robot launch; AI-powered influencer trend"
   },
   {
     "rank": 19,
-    "headline": "The Download: kids' thoughts on AI, and female clones of male mice",
-    "link": "https://www.technologyreview.com/2026/08/13/1141896/the-download-kids-thoughts-on-ai-female-clones-male-mice/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Suspecting court of using AI, man injected prompts in filings to try to win case",
+    "link": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case/",
+    "score": 61,
+    "reason": "AI controversy in legal system; unusual adversarial AI usage"
   },
   {
     "rank": 20,
-    "headline": "What’s behind this summer’s heat, and why 2027 could be worse",
-    "link": "https://www.technologyreview.com/2026/08/13/1141788/summer-heat-el-nino/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Arm co-founder Hermann Hauser’s AI warning: The revolution is real, but so is the bubble risk",
+    "link": "https://www.cnbc.com/2026/08/14/arm-ai-bubble-hermann-hauser-the-tech-download.html",
+    "score": 59,
+    "reason": "Industry expert warns of AI bubble; credible critique from tech founder"
   }
 ]
