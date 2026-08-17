@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI reportedly disbanded its preparedness team",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
-    "score": 92,
-    "reason": "Major controversy involving safety team dissolution at leading AI company"
+    "headline": "Nvidia backing $105 billion in financing for OpenAI data center in Ohio",
+    "link": "https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html",
+    "score": 96,
+    "reason": "Massive funding number, major company commitment, concrete infrastructure launch"
   },
   {
     "rank": 2,
-    "headline": "Google Workspace lets Gemini access your company data by default - how to shut it down",
-    "link": "https://www.zdnet.com/article/google-workspace-lets-gemini-access-your-company-data-by-default-how-to-shut-it-down/",
-    "score": 88,
-    "reason": "Significant privacy/security issue affecting millions of enterprise users"
+    "headline": "Uber aims for 1 million daily drone deliveries with Zipline partnership",
+    "link": "https://www.engadget.com/2238260/uber-aims-for-1-million-daily-drone-deliveries-with-zipline-partnership/",
+    "score": 92,
+    "reason": "Huge scale target, major partnership, real-world deployment milestone"
   },
   {
     "rank": 3,
-    "headline": "Anthropic explains how Claude's invisible text watermarks will work",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system",
-    "score": 82,
-    "reason": "Technical launch of content authentication feature by major AI company"
+    "headline": "Business adoption of AI agents tripled this year - as measurable ROI emerges",
+    "link": "https://www.zdnet.com/article/ai-agent-adoption-tripled-measurable-roi/",
+    "score": 90,
+    "reason": "Significant growth metric (3x), concrete business impact measurement"
   },
   {
     "rank": 4,
-    "headline": "Alibaba answers Meta’s AI challenge with new laptop-ready model",
-    "link": "https://www.cnbc.com/2026/08/17/alibaba-meta-qwen-open-weight-ai-laptop-models.html",
-    "score": 80,
-    "reason": "Major product launch competing with Meta's AI offerings"
+    "headline": "AI Used to Verify Toughest Mathematics Proof Yet",
+    "link": "https://spectrum.ieee.org/axiom-math-246-theorem-formalization",
+    "score": 88,
+    "reason": "Major scientific achievement, practical AI application breakthrough"
   },
   {
     "rank": 5,
-    "headline": "The U.S. government wants allies to pick a side in the AI race",
-    "link": "https://fortune.com/2026/08/17/the-us-government-wants-allies-to-pick-a-side-in-the-ai-race/",
-    "score": 78,
-    "reason": "Geopolitical controversy over AI dominance and alignment"
+    "headline": "Synchrony, credit card issuer to Amazon and Walmart, partners with OpenAI for ChatGPT shopping",
+    "link": "https://www.cnbc.com/2026/08/17/synchrony-openai-chatgpt-shopping.html",
+    "score": 87,
+    "reason": "Major enterprise partnership, real consumer impact integration"
   },
   {
     "rank": 6,
-    "headline": "Tether has the gold. Now, CEO Paolo Ardoino is making a bold push into AI",
-    "link": "https://fortune.com/2026/08/17/tether-gold-ai-push-kpmg-audit-reserves-paolo-ardoino-interview/",
-    "score": 75,
-    "reason": "Major funding/investment move by billionaire-backed entity into AI"
+    "headline": "ByteDance agrees to reel in its AI models to protect Hollywood IPs",
+    "link": "https://www.engadget.com/2238384/bytedance-agrees-to-reel-in-its-ai-models-to-protect-hollywood-ip/",
+    "score": 85,
+    "reason": "Significant policy/regulatory outcome, major company concession"
   },
   {
     "rank": 7,
-    "headline": "The AI Credit Resale Economy",
-    "link": "https://vectoral.com/blog/who-are-the-token-brokers",
-    "score": 72,
-    "reason": "Significant economic model emerging around AI resource allocation"
+    "headline": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake&#x27;s Jira",
+    "link": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+    "score": 84,
+    "reason": "Major security vulnerability, real breach incident, AI tool failure"
   },
   {
     "rank": 8,
-    "headline": "How AI could bring Mayo-quality health care to everyone",
-    "link": "https://www.axios.com/2026/08/16/ai-mayo-clinic-health-care-fix-jim-vandehei",
-    "score": 70,
-    "reason": "Major healthcare application with significant scale implications"
+    "headline": "ChatGPT’s Computer History tracks your clicks and keystrokes",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes",
+    "score": 82,
+    "reason": "Privacy controversy, concrete feature issue affecting users"
   },
   {
     "rank": 9,
-    "headline": "Look for These Red Flags to Avoid Falling Prey to AI Scams",
-    "link": "https://www.cnet.com/tech/services-and-software/copy-of-look-for-these-red-flags-to-avoid-falling-prey-to-ai-scams/",
-    "score": 68,
-    "reason": "Growing controversy around AI-enabled fraud and scams"
+    "headline": "Google just bought a bunch of Spirit Airlines data for AI training",
+    "link": "https://9to5google.com/2026/08/17/google-just-bought-a-bunch-of-spirit-airlines-data-for-ai-training/",
+    "score": 79,
+    "reason": "Controversial data acquisition, major tech company action"
   },
   {
     "rank": 10,
-    "headline": "Red queen hypothesis – A new way forward for self-improving AI",
-    "link": "https://www.cst.cam.ac.uk/news/red-queen-hypothesis-new-way-forward-self-improving-ai",
-    "score": 65,
-    "reason": "Novel technical approach to AI self-improvement development"
+    "headline": "Google wants you to use its phones less and its AI more - but who's buying it?",
+    "link": "https://www.zdnet.com/article/google-wants-you-to-use-its-phones-less-and-its-ai-more/",
+    "score": 76,
+    "reason": "Major strategy shift, market skepticism indicator"
   }
 ]
