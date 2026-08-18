@@ -1,107 +1,128 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic’s annual revenue run rate reportedly hits $65 billion",
-    "link": "https://fortune.com/2026/08/18/anthropic-annual-revenue-run-rate-65-billion/",
-    "score": 94,
-    "reason": "Major financial milestone for AI company; big number; concrete metric"
+    "headline": "OpenAI lays out new security changes after its AI hacked Hugging Face",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
+    "score": 95,
+    "reason": "Major security incident with concrete response; OpenAI; launches new protocols"
   },
   {
     "rank": 2,
-    "headline": "OpenAI reportedly disbanded its preparedness team",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
-    "score": 92,
-    "reason": "High-impact organizational news; safety/controversy angle; significant change"
+    "headline": "Business adoption of AI agents tripled this year - as measurable ROI emerges",
+    "link": "https://www.zdnet.com/article/ai-agent-adoption-tripled-measurable-roi/",
+    "score": 90,
+    "reason": "Big number (3x growth); quantifiable business impact; emerging trend"
   },
   {
     "rank": 3,
-    "headline": "The Powerful Chinese AI Model Experts Warned About Is Here",
-    "link": "https://www.wired.com/story/zai-open-weight-ai-models-release-cybersecurity-hacking/",
-    "score": 87,
-    "reason": "Major model launch; geopolitical significance; expert concern validates importance"
+    "headline": "AI Used to Verify Toughest Mathematics Proof Yet",
+    "link": "https://spectrum.ieee.org/axiom-math-246-theorem-formalization",
+    "score": 88,
+    "reason": "Significant capability milestone; concrete achievement; major validation"
   },
   {
     "rank": 4,
-    "headline": "ChatGPT's stricter teen mode starts rolling out today",
-    "link": "https://www.engadget.com/2238773/chatgpt-stricter-teen-mode-starts-rolling-out-today/",
+    "headline": "Google just bought a bunch of Spirit Airlines data for AI training",
+    "link": "https://9to5google.com/2026/08/17/google-just-bought-a-bunch-of-spirit-airlines-data-for-ai-training/",
     "score": 85,
-    "reason": "Product launch with regulatory/safety implications; affects major user segment"
+    "reason": "Major acquisition; Google; controversial data sourcing practice"
   },
   {
     "rank": 5,
-    "headline": "Anthropic’s Claude Will Add Watermarks to AI-Generated Text and Files",
-    "link": "https://www.cnet.com/tech/services-and-software/anthropics-claude-will-add-watermarks-to-ai-generated-text-and-files/",
+    "headline": "Google's AI can see your business data by default in Workspace - unless you disable it",
+    "link": "https://www.zdnet.com/article/googles-ai-can-see-your-business-data-by-default-in-workspace-unless-you-disable-it/",
     "score": 83,
-    "reason": "Feature launch addressing AI detection/authentication; industry-wide implications"
+    "reason": "Privacy controversy; Google; default opt-in issue; enterprise impact"
   },
   {
     "rank": 6,
-    "headline": "Credit card issuer Synchrony announces partnership with OpenAI",
-    "link": "https://www.cnbc.com/2026/08/17/synchrony-openai.html",
-    "score": 79,
-    "reason": "Major partnership announcement; significant enterprise adoption"
+    "headline": "ChatGPT is getting a dedicated mode for teens",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/981333/openai-chatgpt-teen-mode",
+    "score": 80,
+    "reason": "OpenAI; new feature launch; targets specific demographic"
   },
   {
     "rank": 7,
-    "headline": "Alibaba answers Meta’s AI challenge with new laptop-ready model",
-    "link": "https://www.cnbc.com/2026/08/17/alibaba-meta-qwen-open-weight-ai-laptop-models.html",
+    "headline": "Anthropic explains how Claude's invisible text watermarks will work",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system",
     "score": 78,
-    "reason": "Competitive model launch; cross-company rivalry; product availability"
+    "reason": "Anthropic; technical launch; addresses AI detection challenge"
   },
   {
     "rank": 8,
-    "headline": "Nvidia&apos;s AI moat is shifting from chips to capital",
-    "link": "https://www.cnbc.com/2026/08/18/nvidias-ai-moat-is-shifting-from-chips-to-capital.html",
-    "score": 76,
-    "reason": "Major strategic shift by dominant AI hardware company; industry implications"
+    "headline": "Data centers raise nearby temperatures by up to 4 degrees in Phoenix",
+    "link": "https://asmedigitalcollection.asme.org/sustainablebuildings/article/7/2/024501/1233035/Data-Center-Waste-Heat-as-an-Emerging-Urban",
+    "score": 75,
+    "reason": "Concrete environmental impact; big number; AI infrastructure controversy"
   },
   {
     "rank": 9,
-    "headline": "AI gets its own \"boiler room\" scandal",
-    "link": "https://fortune.com/2026/08/18/ai-gets-its-own-boiler-room-scandal/",
-    "score": 75,
-    "reason": "Controversy involving fraud/misconduct; negative real-world impact"
+    "headline": "The startup using AI to help rare disease families develop custom treatments",
+    "link": "https://www.cnbc.com/2026/08/18/the-startup-using-ai-to-help-build-custom-treatments-for-rare-diseases.html",
+    "score": 72,
+    "reason": "Healthcare application; concrete use case; startup innovation"
   },
   {
     "rank": 10,
-    "headline": "AI-generated bills are reportedly causing problems in the Capitol",
-    "link": "https://www.engadget.com/2238945/ai-generated-bills-causing-problems-in-the-capitol/",
-    "score": 74,
-    "reason": "Controversy with government impact; concrete problem manifestation"
+    "headline": "Reading Zhipu's GLM-5.3 results past the headline number",
+    "link": "https://www.artificialintelligence-news.com/news/zhipu-glm-5-3-benchmarks-explained/",
+    "score": 70,
+    "reason": "New model release; critical analysis; Zhipu competitor launch"
   },
   {
     "rank": 11,
-    "headline": "Israel creates fake think tank in likely attempt to dupe AI chatbots",
-    "link": "https://responsiblestatecraft.org/israel-influence-chatgpt/",
-    "score": 72,
-    "reason": "Controversy; novel adversarial use case; geopolitical significance"
+    "headline": "OpenAI Overhauls Safety Protocols After Its AI Agents Went Rogue",
+    "link": "https://www.wired.com/story/openai-overhauls-safety-protocols-after-its-ai-agents-went-rogue/",
+    "score": 68,
+    "reason": "OpenAI; agents going rogue incident; safety overhaul launch"
   },
   {
     "rank": 12,
-    "headline": "Women are missing out on the AI jobs boom",
-    "link": "https://www.axios.com/2026/08/18/ai-women-jobs-hiring",
-    "score": 70,
-    "reason": "Significant demographic disparity in emerging industry"
+    "headline": "Gemini in Chrome and auto browse roll out on Android in the US",
+    "link": "https://9to5google.com/2026/08/18/gemini-chrome-android-us/",
+    "score": 65,
+    "reason": "Google; product launch; feature expansion"
   },
   {
     "rank": 13,
-    "headline": "Google buys crashed airline Spirit&#x27;s data at auction, because AI",
-    "link": "https://www.theregister.com/ai-and-ml/2026/08/18/google-buys-crashed-airline-spirits-data-at-auction-because-ai/5288962",
-    "score": 68,
-    "reason": "Novel use case; major company acquisition for AI purposes"
+    "headline": "Sea Ray parent Brunswick bets on AI navigation and new revenue streams to help stalling boat sales",
+    "link": "https://www.cnbc.com/2026/08/18/sea-ray-parent-brunswick-ai-recurring-revenue-boat-sales.html",
+    "score": 62,
+    "reason": "Enterprise AI adoption; revenue impact; industry application"
   },
   {
     "rank": 14,
-    "headline": "From AI Copilots to Agent Swarms",
-    "link": "https://spectrum.ieee.org/amd-agent-swarms",
-    "score": 65,
-    "reason": "Describes significant architectural evolution in AI systems"
+    "headline": "Study finds X algorithm prioritizes ragebait that disproportionately impacts Democrats",
+    "link": "https://www.engadget.com/2239421/study-finds-x-algorithm-prioritizes-ragebait-that-disproportionately-impacts-democrats/",
+    "score": 60,
+    "reason": "Algorithm controversy; research findings; X/Twitter platform"
   },
   {
     "rank": 15,
-    "headline": "Google hires former Gmail lead to be Chrome’s new VP of Product",
-    "link": "https://9to5google.com/2026/08/17/chrome-new-vp-product/",
-    "score": 63,
-    "reason": "Major personnel move suggesting strategic AI integration in core product"
+    "headline": "Young adults are losing faith in AI's upside",
+    "link": "https://www.axios.com/2026/08/18/young-adults-ai-job-loss",
+    "score": 58,
+    "reason": "Sentiment shift; demographic study; market perception change"
+  },
+  {
+    "rank": 16,
+    "headline": "AI-enriched Linux 7.2 delivers cache-aware scheduling - here's everything new",
+    "link": "https://www.zdnet.com/article/ai-linux-7-2-release-cache-aware-scheduling/",
+    "score": 55,
+    "reason": "Technical launch; infrastructure improvement; Linux update"
+  },
+  {
+    "rank": 17,
+    "headline": "I’m a College Professor. Here’s How AI Has Changed the Way I Teach",
+    "link": "https://www.cnet.com/tech/services-and-software/as-the-new-school-year-begins-this-is-how-i-use-ai-as-a-college-professor/",
+    "score": 52,
+    "reason": "Education sector impact; real-world application; teaching methodology shift"
+  },
+  {
+    "rank": 18,
+    "headline": "Pacing model development in an era of cyber-critical capabilities",
+    "link": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+    "score": 50,
+    "reason": "AI safety strategy; development governance; policy consideration"
   }
 ]
