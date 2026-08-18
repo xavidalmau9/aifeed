@@ -1,72 +1,107 @@
 [
   {
     "rank": 1,
-    "headline": "Nvidia backing $105 billion in financing for OpenAI data center in Ohio",
-    "link": "https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html",
-    "score": 96,
-    "reason": "Massive funding number, major company commitment, concrete infrastructure launch"
+    "headline": "Anthropic’s annual revenue run rate reportedly hits $65 billion",
+    "link": "https://fortune.com/2026/08/18/anthropic-annual-revenue-run-rate-65-billion/",
+    "score": 94,
+    "reason": "Major financial milestone for AI company; big number; concrete metric"
   },
   {
     "rank": 2,
-    "headline": "Uber aims for 1 million daily drone deliveries with Zipline partnership",
-    "link": "https://www.engadget.com/2238260/uber-aims-for-1-million-daily-drone-deliveries-with-zipline-partnership/",
+    "headline": "OpenAI reportedly disbanded its preparedness team",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
     "score": 92,
-    "reason": "Huge scale target, major partnership, real-world deployment milestone"
+    "reason": "High-impact organizational news; safety/controversy angle; significant change"
   },
   {
     "rank": 3,
-    "headline": "Business adoption of AI agents tripled this year - as measurable ROI emerges",
-    "link": "https://www.zdnet.com/article/ai-agent-adoption-tripled-measurable-roi/",
-    "score": 90,
-    "reason": "Significant growth metric (3x), concrete business impact measurement"
+    "headline": "The Powerful Chinese AI Model Experts Warned About Is Here",
+    "link": "https://www.wired.com/story/zai-open-weight-ai-models-release-cybersecurity-hacking/",
+    "score": 87,
+    "reason": "Major model launch; geopolitical significance; expert concern validates importance"
   },
   {
     "rank": 4,
-    "headline": "AI Used to Verify Toughest Mathematics Proof Yet",
-    "link": "https://spectrum.ieee.org/axiom-math-246-theorem-formalization",
-    "score": 88,
-    "reason": "Major scientific achievement, practical AI application breakthrough"
+    "headline": "ChatGPT's stricter teen mode starts rolling out today",
+    "link": "https://www.engadget.com/2238773/chatgpt-stricter-teen-mode-starts-rolling-out-today/",
+    "score": 85,
+    "reason": "Product launch with regulatory/safety implications; affects major user segment"
   },
   {
     "rank": 5,
-    "headline": "Synchrony, credit card issuer to Amazon and Walmart, partners with OpenAI for ChatGPT shopping",
-    "link": "https://www.cnbc.com/2026/08/17/synchrony-openai-chatgpt-shopping.html",
-    "score": 87,
-    "reason": "Major enterprise partnership, real consumer impact integration"
+    "headline": "Anthropic’s Claude Will Add Watermarks to AI-Generated Text and Files",
+    "link": "https://www.cnet.com/tech/services-and-software/anthropics-claude-will-add-watermarks-to-ai-generated-text-and-files/",
+    "score": 83,
+    "reason": "Feature launch addressing AI detection/authentication; industry-wide implications"
   },
   {
     "rank": 6,
-    "headline": "ByteDance agrees to reel in its AI models to protect Hollywood IPs",
-    "link": "https://www.engadget.com/2238384/bytedance-agrees-to-reel-in-its-ai-models-to-protect-hollywood-ip/",
-    "score": 85,
-    "reason": "Significant policy/regulatory outcome, major company concession"
+    "headline": "Credit card issuer Synchrony announces partnership with OpenAI",
+    "link": "https://www.cnbc.com/2026/08/17/synchrony-openai.html",
+    "score": 79,
+    "reason": "Major partnership announcement; significant enterprise adoption"
   },
   {
     "rank": 7,
-    "headline": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake&#x27;s Jira",
-    "link": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
-    "score": 84,
-    "reason": "Major security vulnerability, real breach incident, AI tool failure"
+    "headline": "Alibaba answers Meta’s AI challenge with new laptop-ready model",
+    "link": "https://www.cnbc.com/2026/08/17/alibaba-meta-qwen-open-weight-ai-laptop-models.html",
+    "score": 78,
+    "reason": "Competitive model launch; cross-company rivalry; product availability"
   },
   {
     "rank": 8,
-    "headline": "ChatGPT’s Computer History tracks your clicks and keystrokes",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes",
-    "score": 82,
-    "reason": "Privacy controversy, concrete feature issue affecting users"
+    "headline": "Nvidia&apos;s AI moat is shifting from chips to capital",
+    "link": "https://www.cnbc.com/2026/08/18/nvidias-ai-moat-is-shifting-from-chips-to-capital.html",
+    "score": 76,
+    "reason": "Major strategic shift by dominant AI hardware company; industry implications"
   },
   {
     "rank": 9,
-    "headline": "Google just bought a bunch of Spirit Airlines data for AI training",
-    "link": "https://9to5google.com/2026/08/17/google-just-bought-a-bunch-of-spirit-airlines-data-for-ai-training/",
-    "score": 79,
-    "reason": "Controversial data acquisition, major tech company action"
+    "headline": "AI gets its own \"boiler room\" scandal",
+    "link": "https://fortune.com/2026/08/18/ai-gets-its-own-boiler-room-scandal/",
+    "score": 75,
+    "reason": "Controversy involving fraud/misconduct; negative real-world impact"
   },
   {
     "rank": 10,
-    "headline": "Google wants you to use its phones less and its AI more - but who's buying it?",
-    "link": "https://www.zdnet.com/article/google-wants-you-to-use-its-phones-less-and-its-ai-more/",
-    "score": 76,
-    "reason": "Major strategy shift, market skepticism indicator"
+    "headline": "AI-generated bills are reportedly causing problems in the Capitol",
+    "link": "https://www.engadget.com/2238945/ai-generated-bills-causing-problems-in-the-capitol/",
+    "score": 74,
+    "reason": "Controversy with government impact; concrete problem manifestation"
+  },
+  {
+    "rank": 11,
+    "headline": "Israel creates fake think tank in likely attempt to dupe AI chatbots",
+    "link": "https://responsiblestatecraft.org/israel-influence-chatgpt/",
+    "score": 72,
+    "reason": "Controversy; novel adversarial use case; geopolitical significance"
+  },
+  {
+    "rank": 12,
+    "headline": "Women are missing out on the AI jobs boom",
+    "link": "https://www.axios.com/2026/08/18/ai-women-jobs-hiring",
+    "score": 70,
+    "reason": "Significant demographic disparity in emerging industry"
+  },
+  {
+    "rank": 13,
+    "headline": "Google buys crashed airline Spirit&#x27;s data at auction, because AI",
+    "link": "https://www.theregister.com/ai-and-ml/2026/08/18/google-buys-crashed-airline-spirits-data-at-auction-because-ai/5288962",
+    "score": 68,
+    "reason": "Novel use case; major company acquisition for AI purposes"
+  },
+  {
+    "rank": 14,
+    "headline": "From AI Copilots to Agent Swarms",
+    "link": "https://spectrum.ieee.org/amd-agent-swarms",
+    "score": 65,
+    "reason": "Describes significant architectural evolution in AI systems"
+  },
+  {
+    "rank": 15,
+    "headline": "Google hires former Gmail lead to be Chrome’s new VP of Product",
+    "link": "https://9to5google.com/2026/08/17/chrome-new-vp-product/",
+    "score": 63,
+    "reason": "Major personnel move suggesting strategic AI integration in core product"
   }
 ]
