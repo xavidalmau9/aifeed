@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI reportedly disbanded its preparedness team",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
-    "score": 92,
-    "reason": "Major controversy: OpenAI dissolved safety team amid industry debate about AI risks"
+    "headline": "OpenAI lays out new security changes after its AI hacked Hugging Face",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
+    "score": 98,
+    "reason": "Major security breach with AI going rogue, concrete incident, significant safety implications"
   },
   {
     "rank": 2,
-    "headline": "The Powerful Chinese AI Model Experts Warned About Is Here",
-    "link": "https://www.wired.com/story/zai-open-weight-ai-models-release-cybersecurity-hacking/",
-    "score": 88,
-    "reason": "Launch of significant Chinese AI model; geopolitical implications"
+    "headline": "Marvell&apos;s stock pops 10% on AI chip deal that lets Google buy up to $12.2 billion in shares",
+    "link": "https://www.cnbc.com/2026/08/19/marvell-google-ai-chips.html",
+    "score": 92,
+    "reason": "Big number ($12.2B), concrete deal, market-moving impact"
   },
   {
     "rank": 3,
-    "headline": "Flock Has a Powerful New AI Tool for Police. We Got Its Code",
-    "link": "https://www.wired.com/story/flock-safety-os-investigate/",
-    "score": 85,
-    "reason": "Controversy: Police AI surveillance tool code obtained; raises ethical questions"
+    "headline": "Stripe to buy OpenRouter as fintech expands deeper into AI",
+    "link": "https://www.cnbc.com/2026/08/19/stripe-openrouter-fintech-ai-model-marketplace-.html",
+    "score": 88,
+    "reason": "Major acquisition, strategic expansion, concrete deal"
   },
   {
     "rank": 4,
-    "headline": "ChatGPT Launches a Version of Its Model for Teens",
-    "link": "https://www.cnet.com/tech/services-and-software/chatgpt-launches-version-of-its-model-for-teens/",
+    "headline": "Meta AI now has a dedicated desktop app for Mac",
+    "link": "https://www.engadget.com/2240154/meta-ai-now-has-a-dedicated-desktop-app-for-mac/",
     "score": 82,
-    "reason": "OpenAI product launch targeting new demographic"
+    "reason": "Product launch, major platform expansion"
   },
   {
     "rank": 5,
-    "headline": "Anthropic’s Claude Will Add Watermarks to AI-Generated Text and Files",
-    "link": "https://www.cnet.com/tech/services-and-software/anthropics-claude-will-add-watermarks-to-ai-generated-text-and-files/",
+    "headline": "Coders Say They Already Found Workarounds to Claude’s Invisible Watermarks",
+    "link": "https://www.wired.com/story/coders-say-they-already-found-workarounds-to-claudes-invisible-watermarks/",
     "score": 80,
-    "reason": "Major feature launch; addresses AI content authenticity concerns"
+    "reason": "Security/AI safety controversy, active workaround discovered"
   },
   {
     "rank": 6,
-    "headline": "Gemini in Chrome Is Now Available for Android Users",
-    "link": "https://www.cnet.com/tech/services-and-software/gemini-in-chrome-now-available-for-android-users/",
+    "headline": "ChatGPT is getting a dedicated mode for teens",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/981333/openai-chatgpt-teen-mode",
     "score": 78,
-    "reason": "Google product launch expanding AI integration to Android platform"
+    "reason": "Product launch with regulatory/safety angle"
   },
   {
     "rank": 7,
-    "headline": "Claude can now send emails in Gmail, even without your approval",
-    "link": "https://9to5google.com/2026/08/18/claude-can-now-send-emails-in-gmail-even-without-your-approval/",
+    "headline": "Google is offering college students a year of its AI Pro plan for free",
+    "link": "https://www.engadget.com/2240161/google-is-offering-college-students-a-year-of-ai-pro-for-free/",
     "score": 76,
-    "reason": "Controversy: AI capability raises privacy/consent concerns"
+    "reason": "Major user acquisition initiative, concrete offering"
   },
   {
     "rank": 8,
-    "headline": "The U.S. banned Nvidia&apos;s best chips from going to China. Now it&apos;s trying to close a crucial loophole",
-    "link": "https://www.cnbc.com/2026/08/19/china-ai-nvidia-chips-us-export-controls.html",
+    "headline": "Amazon's Alexa+ AI assistant is now free for anyone with a Fire TV device",
+    "link": "https://www.engadget.com/2239785/amazons-alexa-ai-assistant-is-now-free-for-anyone-with-a-fire-tv-device/",
     "score": 74,
-    "reason": "Major geopolitical AI restriction; significant trade implications"
+    "reason": "Product launch, major distribution expansion"
   },
   {
     "rank": 9,
-    "headline": "China’s backflipping robot maker Unitree pops 542% in Shanghai debut",
-    "link": "https://www.cnbc.com/2026/08/19/china-backflipping-robot-maker-unitree-jumps-shanghai-ipo.html",
+    "headline": "Gemini Live adds Deep Research as Notebooks come to AI Mode",
+    "link": "https://9to5google.com/2026/08/19/gemini-app-ai-mode-study-tools/",
     "score": 72,
-    "reason": "Big number: 542% stock surge; Chinese AI robotics milestone"
+    "reason": "Feature expansion, concrete capability launch"
   },
   {
     "rank": 10,
-    "headline": "Goldman studied where AI is squeezing labor markets. Here&apos;s what it found",
-    "link": "https://www.cnbc.com/2026/08/19/goldman-ai-impact-employment-jobs.html",
+    "headline": "OpenAI hit the brakes. Now what?",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
     "score": 70,
-    "reason": "Major economic impact study: AI job displacement data"
-  },
-  {
-    "rank": 11,
-    "headline": "&apos;Worrisome&apos;: AI is driving a looming market correction, European central bank economists warn",
-    "link": "https://www.cnbc.com/2026/08/18/ai-tech-rally-correction-economists.html",
-    "score": 68,
-    "reason": "Major economic warning from ECB; AI market risks flagged"
-  },
-  {
-    "rank": 12,
-    "headline": "Robin Williams’ Instagram account brought back to fight ‘AI abuse’",
-    "link": "https://www.theverge.com/entertainment/981644/robin-williams-instagram-account-ai",
-    "score": 66,
-    "reason": "Controversy: Using deceased celebrity AI image to combat deepfakes"
-  },
-  {
-    "rank": 13,
-    "headline": "OpenAI hits pause on training in Hugging Face aftermath",
-    "link": "https://fortune.com/2026/08/19/openai-hits-pause-on-training-in-hugging-face-aftermath/",
-    "score": 64,
-    "reason": "OpenAI policy shift following controversy"
-  },
-  {
-    "rank": 14,
-    "headline": "Tesla asked Las Vegas for 5,000 robotaxi permits. Sin City gave it 10, capped the speed at 45mph, and banned airport trips",
-    "link": "https://fortune.com/2026/08/19/tesla-las-vegas-5000-robotaxi-permits-sin-city-10-capped/",
-    "score": 62,
-    "reason": "Major regulatory clash: Tesla robotaxi severely restricted"
-  },
-  {
-    "rank": 15,
-    "headline": "Women are missing out on the AI jobs boom",
-    "link": "https://www.axios.com/2026/08/18/ai-women-jobs-hiring",
-    "score": 60,
-    "reason": "Significant diversity/inclusion concern in AI sector"
-  },
-  {
-    "rank": 16,
-    "headline": "Alvys launches AI agents for freight TMS workflows",
-    "link": "https://www.artificialintelligence-news.com/news/alvys-ai-agents-freight-tms/",
-    "score": 58,
-    "reason": "Startup product launch for enterprise AI agents"
-  },
-  {
-    "rank": 17,
-    "headline": "Gmail verification program lets political campaigns escape its spam filter",
-    "link": "https://www.engadget.com/2239388/gmail-verification-program-lets-political-campaigns-escape-its-spam-filter/",
-    "score": 56,
-    "reason": "Controversy: Gmail policy enables political content bypass"
-  },
-  {
-    "rank": 18,
-    "headline": "How to avoid Claude watermarking your content",
-    "link": "https://www.zdnet.com/article/how-to-avoid-claude-watermarking-your-content/",
-    "score": 54,
-    "reason": "Workaround to new AI safety feature; user resistance to watermarking"
-  },
-  {
-    "rank": 19,
-    "headline": "Elon Musk broke the FAA — Palantir is picking up the pieces",
-    "link": "https://www.theverge.com/transportation/981194/faa-air-traffic-elon-musk-peter-thiel-palantir",
-    "score": 52,
-    "reason": "Controversy: Regulatory clash with aerospace/AI implications"
-  },
-  {
-    "rank": 20,
-    "headline": "Behind the Curtain: The new existential threat to AI",
-    "link": "https://www.axios.com/2026/08/19/data-centers-ai-political-opinion",
-    "score": 50,
-    "reason": "AI safety concern; existential risk discussion"
+    "reason": "Strategic shift, safety/policy controversy"
   }
 ]
