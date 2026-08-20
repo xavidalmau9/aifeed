@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI lays out new security changes after its AI hacked Hugging Face",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
-    "score": 98,
-    "reason": "Major security breach with AI going rogue, concrete incident, significant safety implications"
+    "headline": "OpenAI Overhauls Safety Protocols After Its AI Agents Went Rogue",
+    "link": "https://www.wired.com/story/openai-overhauls-safety-protocols-after-its-ai-agents-went-rogue/",
+    "score": 95,
+    "reason": "Major controversy: AI safety failure with concrete impact"
   },
   {
     "rank": 2,
-    "headline": "Marvell&apos;s stock pops 10% on AI chip deal that lets Google buy up to $12.2 billion in shares",
-    "link": "https://www.cnbc.com/2026/08/19/marvell-google-ai-chips.html",
+    "headline": "OpenAI Pauses Training of New AI Models, Citing Cybersecurity Worries",
+    "link": "https://www.cnet.com/tech/services-and-software/openai-pauses-training-new-ai-models-cybersecurity-2026/",
     "score": 92,
-    "reason": "Big number ($12.2B), concrete deal, market-moving impact"
+    "reason": "Significant business action: training halt due to security incident"
   },
   {
     "rank": 3,
-    "headline": "Stripe to buy OpenRouter as fintech expands deeper into AI",
-    "link": "https://www.cnbc.com/2026/08/19/stripe-openrouter-fintech-ai-model-marketplace-.html",
+    "headline": "Stripe agrees to buy OpenRouter as AI model routing expands",
+    "link": "https://www.artificialintelligence-news.com/news/stripe-openrouter-acquisition-ai-model-routing/",
     "score": 88,
-    "reason": "Major acquisition, strategic expansion, concrete deal"
+    "reason": "Major acquisition: big money M&A in AI infrastructure"
   },
   {
     "rank": 4,
-    "headline": "Meta AI now has a dedicated desktop app for Mac",
-    "link": "https://www.engadget.com/2240154/meta-ai-now-has-a-dedicated-desktop-app-for-mac/",
-    "score": 82,
-    "reason": "Product launch, major platform expansion"
+    "headline": "Google is trying to solve contrails with AI",
+    "link": "https://www.engadget.com/2240125/google-is-trying-to-solve-contrails-with-ai/",
+    "score": 85,
+    "reason": "Launch: concrete new AI application for climate problem"
   },
   {
     "rank": 5,
-    "headline": "Coders Say They Already Found Workarounds to Claude’s Invisible Watermarks",
-    "link": "https://www.wired.com/story/coders-say-they-already-found-workarounds-to-claudes-invisible-watermarks/",
-    "score": 80,
-    "reason": "Security/AI safety controversy, active workaround discovered"
+    "headline": "Claude can now send emails in Gmail, even without your approval",
+    "link": "https://9to5google.com/2026/08/18/claude-can-now-send-emails-in-gmail-even-without-your-approval/",
+    "score": 82,
+    "reason": "Controversy: significant privacy/security concern with major platform"
   },
   {
     "rank": 6,
-    "headline": "ChatGPT is getting a dedicated mode for teens",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/981333/openai-chatgpt-teen-mode",
-    "score": 78,
-    "reason": "Product launch with regulatory/safety angle"
+    "headline": "Flock Has a Powerful New AI Tool for Police. We Got Its Code",
+    "link": "https://www.wired.com/story/flock-safety-os-investigate/",
+    "score": 81,
+    "reason": "Controversy: law enforcement AI surveillance tool with code analysis"
   },
   {
     "rank": 7,
-    "headline": "Google is offering college students a year of its AI Pro plan for free",
-    "link": "https://www.engadget.com/2240161/google-is-offering-college-students-a-year-of-ai-pro-for-free/",
-    "score": 76,
-    "reason": "Major user acquisition initiative, concrete offering"
+    "headline": "Agentic AI in government just hit the hard part: deciding what a machine may decide",
+    "link": "https://www.artificialintelligence-news.com/news/agentic-ai-in-government-uae-classification/",
+    "score": 79,
+    "reason": "Policy controversy: government deployment of autonomous AI agents"
   },
   {
     "rank": 8,
-    "headline": "Amazon's Alexa+ AI assistant is now free for anyone with a Fire TV device",
-    "link": "https://www.engadget.com/2239785/amazons-alexa-ai-assistant-is-now-free-for-anyone-with-a-fire-tv-device/",
-    "score": 74,
-    "reason": "Product launch, major distribution expansion"
+    "headline": "Robin Williams’ Instagram account brought back to fight ‘AI abuse’",
+    "link": "https://www.theverge.com/entertainment/981644/robin-williams-instagram-account-ai",
+    "score": 77,
+    "reason": "Controversy: high-profile AI deepfake/abuse case"
   },
   {
     "rank": 9,
-    "headline": "Gemini Live adds Deep Research as Notebooks come to AI Mode",
-    "link": "https://9to5google.com/2026/08/19/gemini-app-ai-mode-study-tools/",
-    "score": 72,
-    "reason": "Feature expansion, concrete capability launch"
+    "headline": "What to Know About Anthropic’s New Claude Watermarking on AI-Generated Text and Files",
+    "link": "https://www.cnet.com/tech/services-and-software/anthropics-claude-will-add-watermarks-to-ai-generated-text-and-files-2/",
+    "score": 75,
+    "reason": "Launch: major safety/detection feature across major model"
   },
   {
     "rank": 10,
-    "headline": "OpenAI hit the brakes. Now what?",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
+    "headline": "Alibaba shares fall 3% as AI spending drives 75% drop in net income",
+    "link": "https://www.cnbc.com/2026/08/20/alibaba-cloud-revenue.html",
+    "score": 74,
+    "reason": "Big numbers: massive revenue impact from AI investment"
+  },
+  {
+    "rank": 11,
+    "headline": "Goldman studied where AI is squeezing labor markets. Here&apos;s what it found",
+    "link": "https://www.cnbc.com/2026/08/19/goldman-ai-impact-employment-jobs.html",
+    "score": 73,
+    "reason": "Major study: quantified labor market impact of AI"
+  },
+  {
+    "rank": 12,
+    "headline": "Amazon aims for delivery drones to reach 500 US neighborhoods by end of 2026",
+    "link": "https://arstechnica.com/gadgets/2026/08/amazon-aims-for-delivery-drones-to-reach-500-us-neighborhoods-by-end-of-2026/",
+    "score": 71,
+    "reason": "Launch: major scale expansion of autonomous delivery"
+  },
+  {
+    "rank": 13,
+    "headline": "ChatGPT Launches a Version of Its Model for Teens",
+    "link": "https://www.cnet.com/tech/services-and-software/chatgpt-launches-version-of-its-model-for-teens/",
     "score": 70,
-    "reason": "Strategic shift, safety/policy controversy"
+    "reason": "Launch: new product targeting specific demographic"
+  },
+  {
+    "rank": 14,
+    "headline": "Meta AI is getting a Mac app",
+    "link": "https://www.theverge.com/tech/982270/meta-ai-mac-app",
+    "score": 68,
+    "reason": "Launch: platform expansion for major AI system"
+  },
+  {
+    "rank": 15,
+    "headline": "Flock is testing a new AI tool that tracks and identifies people based on their driving habits",
+    "link": "https://www.engadget.com/2240069/flock-testing-new-ai-police-tool-tracks-identifies-drivers/",
+    "score": 67,
+    "reason": "Controversy: surveillance AI with behavioral tracking"
+  },
+  {
+    "rank": 16,
+    "headline": "Companies are spending trillions on AI. The C-suite doesn’t know who is in charge of it",
+    "link": "https://fortune.com/2026/08/20/companies-spending-ai-ceo-csuite-board/",
+    "score": 65,
+    "reason": "Big numbers: massive spending with governance issues"
+  },
+  {
+    "rank": 17,
+    "headline": "Gemini in Chrome Is Now Available for Android Users",
+    "link": "https://www.cnet.com/tech/services-and-software/gemini-in-chrome-now-available-for-android-users/",
+    "score": 63,
+    "reason": "Launch: major platform rollout for integrated AI"
+  },
+  {
+    "rank": 18,
+    "headline": "Digital Marketers Are Using AI at Record Rates, but Formal Rules Lag Behind",
+    "link": "https://www.cnet.com/tech/services-and-software/metricool-survey-2026-social-media-workers-ai-usage/",
+    "score": 61,
+    "reason": "Adoption surge: widespread use outpacing regulation"
+  },
+  {
+    "rank": 19,
+    "headline": "I Saw the Future of AI in a Robot That Can Learn on the Spot",
+    "link": "https://www.wired.com/story/generalist-ai-robots-learn-like-clever-toddlers/",
+    "score": 59,
+    "reason": "Technology breakthrough: on-the-spot learning capability"
+  },
+  {
+    "rank": 20,
+    "headline": "Elon Musk broke the FAA — Palantir is picking up the pieces",
+    "link": "https://www.theverge.com/transportation/981194/faa-air-traffic-elon-musk-peter-thiel-palantir",
+    "score": 57,
+    "reason": "Controversy: regulatory disruption and intervention"
   }
 ]
