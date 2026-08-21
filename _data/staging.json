@@ -1,142 +1,128 @@
 [
   {
     "rank": 1,
-    "headline": "Amazon's Prime Air autonomous drones to reach 500 US cities",
-    "link": "https://www.artificialintelligence-news.com/news/amazons-prime-air-autonomous-drones-to-reach-500-us-cities/",
-    "score": 94,
-    "reason": "Major product launch with specific scale numbers; concrete business expansion"
+    "headline": "Stripe agrees to buy OpenRouter as AI model routing expands",
+    "link": "https://www.artificialintelligence-news.com/news/stripe-openrouter-acquisition-ai-model-routing/",
+    "score": 92,
+    "reason": "Major acquisition with big financial implications, concrete business move"
   },
   {
     "rank": 2,
-    "headline": "Waymo Ojai vans are now available for all riders in three cities",
-    "link": "https://www.engadget.com/2240419/waymo-ojai-vans-are-now-available-for-all-riders-in-three-cities/",
-    "score": 92,
-    "reason": "Autonomous vehicle expansion; real-world deployment milestone"
+    "headline": "Amazon aims for delivery drones to reach 500 US neighborhoods by end of 2026",
+    "link": "https://arstechnica.com/gadgets/2026/08/amazon-aims-for-delivery-drones-to-reach-500-us-neighborhoods-by-end-of-2026/",
+    "score": 88,
+    "reason": "Significant scale launch with concrete number and timeline"
   },
   {
     "rank": 3,
-    "headline": "Alibaba shares fall 5% as AI spending drives 75% drop in net income",
-    "link": "https://www.cnbc.com/2026/08/20/alibaba-cloud-revenue.html",
-    "score": 90,
-    "reason": "Major financial impact; significant business consequence from AI investment"
+    "headline": "Nevada allows Uber, Tesla and Waymo to start paid robotaxi service",
+    "link": "https://www.engadget.com/2241379/nevada-allows-uber-tesla-waymo-paid-robotaxis/",
+    "score": 87,
+    "reason": "Major regulatory milestone enabling commercial robotaxi operations"
   },
   {
     "rank": 4,
-    "headline": "It’s Greg Brockman’s OpenAI now",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion",
-    "score": 88,
-    "reason": "Leadership controversy; major organizational change at top AI company"
+    "headline": "ChatGPT on Mac can now read and respond to Apple iMessages",
+    "link": "https://www.engadget.com/2241390/openai-chatgpt-imessage-integration/",
+    "score": 85,
+    "reason": "Significant product launch integrating AI into core platform"
   },
   {
     "rank": 5,
-    "headline": "OpenAI hit the brakes. Now what?",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
-    "score": 86,
-    "reason": "Policy shift/controversy; uncertainty in AI safety stance"
+    "headline": "OpenAI Pauses Training of New AI Models, Citing Cybersecurity Worries",
+    "link": "https://www.cnet.com/tech/services-and-software/openai-pauses-training-new-ai-models-cybersecurity-2026/",
+    "score": 84,
+    "reason": "Major controversy and operational decision from leading AI company"
   },
   {
     "rank": 6,
-    "headline": "Coders Say They Already Found Workarounds to Claude’s Invisible Watermarks",
-    "link": "https://www.wired.com/story/coders-say-they-already-found-workarounds-to-claudes-invisible-watermarks/",
-    "score": 84,
-    "reason": "Controversy over AI watermarks; security workaround demonstration"
+    "headline": "Meta AI is getting a Mac app",
+    "link": "https://www.theverge.com/tech/982270/meta-ai-mac-app",
+    "score": 82,
+    "reason": "Major platform expansion for leading AI company"
   },
   {
     "rank": 7,
-    "headline": "A third of ChatGPT ads appear in irrelevant conversations",
-    "link": "https://www.artificialintelligence-news.com/news/a-third-of-chatgpt-ads-appear-in-irrelevant-conversations/",
-    "score": 82,
-    "reason": "Quantified problem; OpenAI ad quality controversy"
+    "headline": "Agentic AI in government just hit the hard part: deciding what a machine may decide",
+    "link": "https://www.artificialintelligence-news.com/news/agentic-ai-in-government-uae-classification/",
+    "score": 81,
+    "reason": "Significant policy and real-world deployment challenge"
   },
   {
     "rank": 8,
-    "headline": "Meta's app for creating generative AI minigames is now available in the US",
-    "link": "https://www.engadget.com/2241098/meta-pocket-app-for-creating-generative-ai-minigames-available-in-us/",
-    "score": 80,
-    "reason": "New product launch; consumer AI feature rollout"
+    "headline": "US distributor of China’s most popular humanoid robots pivots after US ban",
+    "link": "https://arstechnica.com/gadgets/2026/08/us-distributor-of-chinas-most-popular-humanoid-robots-pivots-after-us-ban/",
+    "score": 79,
+    "reason": "Major geopolitical/regulatory impact on AI robotics"
   },
   {
     "rank": 9,
-    "headline": "The AI industry is getting better at spotting dangerous behavior. It is less clear that labs know how to stop it.",
-    "link": "https://fortune.com/2026/08/20/ai-safety-agent-hacks-harder-to-stop/",
+    "headline": "Apple Music will reportedly label any AI-made tracks later this year",
+    "link": "https://www.engadget.com/2241260/apple-music-will-reportedly-label-any-ai-made-tracks-later-this-year/",
     "score": 78,
-    "reason": "Safety/controversy; research finding about capability gap"
+    "reason": "Major platform policy launch addressing AI content transparency"
   },
   {
     "rank": 10,
-    "headline": "Welcome to the AI crisis in math",
-    "link": "https://www.theverge.com/podcast/982434/ai-math-openai-astra-existential-crisis",
+    "headline": "What to Know About Anthropic’s New Claude Watermarking on AI-Generated Text and Files",
+    "link": "https://www.cnet.com/tech/services-and-software/anthropics-claude-will-add-watermarks-to-ai-generated-text-and-files-2/",
     "score": 76,
-    "reason": "Controversy about AI limitations; specific problem domain identified"
+    "reason": "Significant product feature launch for content authentication"
   },
   {
     "rank": 11,
-    "headline": "Nvidia plays matchmaker in Nordics, sources tell CNBC, as AI data center deals boom in region",
-    "link": "https://www.cnbc.com/2026/08/19/nvidia-nordic-ai-data-centers.html",
+    "headline": "The Single English County Saying No to Palantir",
+    "link": "https://www.wired.com/story/the-single-english-county-saying-no-to-palantir/",
     "score": 74,
-    "reason": "Major hardware company expansion; data center boom evidence"
+    "reason": "Notable controversy over AI surveillance deployment"
   },
   {
     "rank": 12,
-    "headline": "HoneyBook bets on agentic AI to streamline small business operations with its new Claude connector",
-    "link": "https://www.artificialintelligence-news.com/news/honeybook-bets-on-agentic-ai-to-streamline-small-business-operations-with-its-new-claude-connector/",
+    "headline": "No Mic Needed: You Can Create Music and Speech With Adobe’s AI Audio Tools",
+    "link": "https://www.cnet.com/tech/services-and-software/adobe-ai-audio-soundtrack-music-speech-general-release-2026/",
     "score": 72,
-    "reason": "Product launch; agentic AI integration for business software"
+    "reason": "Major product launch enabling generative audio capabilities"
   },
   {
     "rank": 13,
-    "headline": "Gemini Live adds Deep Research as Notebooks come to AI Mode",
-    "link": "https://9to5google.com/2026/08/19/gemini-app-ai-mode-study-tools/",
+    "headline": "I Saw the Future of AI in a Robot That Can Learn on the Spot",
+    "link": "https://www.wired.com/story/generalist-ai-robots-learn-like-clever-toddlers/",
     "score": 70,
-    "reason": "Google feature expansion; product capability increase"
+    "reason": "Significant robotics capability breakthrough with real-world demonstration"
   },
   {
     "rank": 14,
-    "headline": "Exclusive: GOP warns AI companies that data centers are politically radioactive",
-    "link": "https://www.axios.com/2026/08/19/gop-data-center-memo-ai-election",
+    "headline": "Digital Marketers Are Using AI at Record Rates, but Formal Rules Lag Behind",
+    "link": "https://www.cnet.com/tech/services-and-software/metricool-survey-2026-social-media-workers-ai-usage/",
     "score": 68,
-    "reason": "Political controversy; industry facing regulatory backlash"
+    "reason": "Big numbers on adoption showing widespread AI integration"
   },
   {
     "rank": 15,
-    "headline": "AI data center outrage is showing up everywhere from ads to elections",
-    "link": "https://www.cnbc.com/2026/08/20/ai-data-center-election-backlash.html",
+    "headline": "Can AI Actually Tell if a Student Cheated With AI? I Tested All the Detectors to Find Out",
+    "link": "https://www.cnet.com/tech/services-and-software/i-used-every-ai-cheating-app-and-detector-and-came-to-one-conclusion/",
     "score": 66,
-    "reason": "Controversy spreading; public backlash against data center expansion"
+    "reason": "Practical evaluation of AI detection capabilities with real testing"
   },
   {
     "rank": 16,
-    "headline": "Google Gemini is getting a dedicated student hub",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/982425/google-gemini-student-hub",
+    "headline": "A roadmap for safeguarding against AI bioweapons",
+    "link": "https://www.axios.com/2026/08/21/safeguards-ai-bioweapons-roadmap",
     "score": 64,
-    "reason": "Product launch; education-focused feature expansion"
+    "reason": "Significant policy/security guidance on critical AI risk"
   },
   {
     "rank": 17,
-    "headline": "AI data centre regulation just got a template that needs no new law",
-    "link": "https://www.artificialintelligence-news.com/news/ai-data-centre-regulation-pennsylvania-template/",
+    "headline": "How AI coding tools are contributing to the popularity of JavaScript",
+    "link": "https://www.artificialintelligence-news.com/news/how-ai-coding-tools-are-contributing-to-the-popularity-of-javascript/",
     "score": 62,
-    "reason": "Regulatory development; policy framework emerging"
+    "reason": "Concrete impact data showing AI's influence on development patterns"
   },
   {
     "rank": 18,
-    "headline": "Slack is launching collaborative vibe-coding channels",
-    "link": "https://www.theverge.com/tech/982628/slack-code-vibe-coding-channels-launch",
+    "headline": "A low-tech solution from the past may be your best defense against AI deepfakes",
+    "link": "https://www.zdnet.com/article/ai-deepfakes-passwords-defense/",
     "score": 60,
-    "reason": "Product launch; AI-assisted development feature"
-  },
-  {
-    "rank": 19,
-    "headline": "Google will let you tailor your Discover feed using natural language now",
-    "link": "https://www.zdnet.com/article/google-more-control-over-discover-feed-algorithm/",
-    "score": 58,
-    "reason": "Consumer feature launch; natural language interface for search"
-  },
-  {
-    "rank": 20,
-    "headline": "Tesla's Robotaxi fleet might finally be driving around Austin unsupervised",
-    "link": "https://www.engadget.com/2240859/tesla-robotaxi-fleet-might-finally-be-driving-around-austin-unsupervised/",
-    "score": 56,
-    "reason": "Autonomous vehicle deployment; unsupervised operation milestone"
+    "reason": "Practical counter-measure to AI-generated content threat"
   }
 ]
