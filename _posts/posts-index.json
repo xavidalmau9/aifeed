@@ -1,5 +1,24 @@
 [
  {
+  "id": "nevada-robotaxi-approval-uber-tesla-waymo-20260810",
+  "slug": "nevada-robotaxi-approval-uber-tesla-waymo",
+  "headline": "Nevada Approves Commercial Robotaxis for Uber, Tesla, and Waymo",
+  "summary": "Nevada just approved paid robotaxi service for Uber, Tesla and Waymo — moving self-driving cars from pilots to full commercial operations, and setting a precedent other states may follow.",
+  "body": "<p><strong>Nevada has officially approved commercial robotaxi operations for Uber, Tesla, and Waymo — marking a critical inflection point for autonomous vehicle deployment in the United States.</strong></p>\n<p>This regulatory approval represents far more than a local milestone. For years, autonomous vehicles existed in a regulatory gray zone: heavily tested but never fully commercialized at scale. Nevada's decision moves three major players from pilot programs into full-scale paid service operations. This signals that regulators now view self-driving technology as mature enough for real-world deployment with paying passengers. The stakes are significant because Nevada's approval could cascade into similar authorizations across other states.</p>\n<p>The competitive dynamics here are fascinating. Waymo has spent over a decade perfecting autonomous technology. Tesla has unparalleled sensor data from millions of vehicles on the road. Uber brings established marketplace infrastructure and customer trust. Each company brings different competitive advantages, and Nevada's approval unleashes all three simultaneously. This creates a fascinating natural experiment in autonomous vehicle adoption and consumer behavior.</p>\n<p>Beyond transportation, this reflects broader AI industry maturation. We're witnessing the transition from \"AI research\" to \"AI deployment at scale.\" When regulators trust AI systems with passenger safety, it signals confidence in machine learning reliability and safety protocols. This credibility will accelerate AI adoption across other sectors — healthcare, logistics, manufacturing — where safety-critical decisions matter.</p>\n<p>The real question now isn't whether autonomous vehicles work. It's how quickly consumer adoption happens and which company executes best in real-world conditions. Nevada just became the proving ground for the next generation of transportation infrastructure.</p>\n<p>This approval represents the moment autonomous vehicles stopped being futuristic and became inevitable.</p>",
+  "category": "Industry",
+  "hashtags": [
+   "AutonomousVehicles",
+   "RoboTaxi",
+   "AI",
+   "FutureOfWork",
+   "Innovation"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_nevada_robotaxi_approval_20260810.png",
+  "sourceUrl": "https://www.engadget.com/2241379/nevada-allows-uber-tesla-waymo-paid-robotaxis/",
+  "publishedAt": "2026-08-10T17:00:00.000-04:00",
+  "isVideo": false
+ },
+ {
   "id": "chatgpt-gemini-1-billion-users-20260810",
   "slug": "chatgpt-gemini-1-billion-users",
   "headline": "ChatGPT and Gemini Have Each Surpassed 1 Billion Users",
