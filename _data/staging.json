@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Amazon's Prime Air autonomous drones to reach 500 US cities",
-    "link": "https://www.artificialintelligence-news.com/news/amazons-prime-air-autonomous-drones-to-reach-500-us-cities/",
-    "score": 95,
-    "reason": "Major expansion milestone with specific scale, concrete launch metric"
+    "headline": "Over 1 million people have clicked LinkedIn’s AI slop button",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/983502/linkedin-ai-slop-button-one-million-people-message",
+    "score": 92,
+    "reason": "Big number metric, concrete user action data, major platform feature"
   },
   {
     "rank": 2,
-    "headline": "It’s Greg Brockman’s OpenAI now",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion",
-    "score": 92,
-    "reason": "Significant leadership change at major AI company"
+    "headline": "US distributor of China’s most popular humanoid robots pivots after US ban",
+    "link": "https://arstechnica.com/gadgets/2026/08/us-distributor-of-chinas-most-popular-humanoid-robots-pivots-after-us-ban/",
+    "score": 88,
+    "reason": "Major geopolitical controversy, concrete business impact, hardware AI"
   },
   {
     "rank": 3,
-    "headline": "A third of ChatGPT ads appear in irrelevant conversations",
-    "link": "https://www.artificialintelligence-news.com/news/a-third-of-chatgpt-ads-appear-in-irrelevant-conversations/",
-    "score": 88,
-    "reason": "Measurable problem with ChatGPT product, specific data point"
+    "headline": "Nevada allows Uber, Tesla and Waymo to start paid robotaxi service",
+    "link": "https://www.engadget.com/2241379/nevada-allows-uber-tesla-waymo-paid-robotaxis/",
+    "score": 86,
+    "reason": "Regulatory approval, major autonomous vehicle launch, concrete deployment"
   },
   {
     "rank": 4,
-    "headline": "Major YouTube creators are facing backlash for accepting AI money",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/983181/matti-haapoja-sam-kold-kolder-higgsfield-seedance-backlash",
-    "score": 85,
-    "reason": "Controversy around AI monetization and creator ethics"
+    "headline": "Apple Music will reportedly label any AI-made tracks later this year",
+    "link": "https://www.engadget.com/2241260/apple-music-will-reportedly-label-any-ai-made-tracks-later-this-year/",
+    "score": 84,
+    "reason": "Major platform policy launch, AI content regulation, industry-wide impact"
   },
   {
     "rank": 5,
-    "headline": "Welcome to the AI crisis in math",
-    "link": "https://www.theverge.com/podcast/982434/ai-math-openai-astra-existential-crisis",
+    "headline": "Anthropic IPO filing will show AI backlash as a risk factor, sources say",
+    "link": "https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html",
     "score": 82,
-    "reason": "Significant problem emergence with AI systems"
+    "reason": "Major company milestone, market controversy documentation, financial significance"
   },
   {
     "rank": 6,
-    "headline": "80% of developers find AI coding more addictive than helpful",
-    "link": "https://www.zdnet.com/article/80-of-developers-find-ai-coding-more-addictive-than-helpful/",
-    "score": 80,
-    "reason": "Large survey showing developer sentiment shift on AI tools"
+    "headline": "This CEO was out to dinner when he caught his AI agent wasting $1,000 in tokens. He says 'insecurity' is a bigger problem",
+    "link": "https://fortune.com/2026/08/22/tokenmaxxing-ceo-dinner-1000-dollars-insecurity-maxio-jenkins/",
+    "score": 78,
+    "reason": "Concrete cost problem, AI agent autonomy issue, business impact example"
   },
   {
     "rank": 7,
-    "headline": "Child safety experts are skeptical of OpenAI's ChatGPT for Teens",
-    "link": "https://www.engadget.com/2241179/child-safety-experts-skeptical-of-openai-chatgpt-for-teens/",
-    "score": 78,
-    "reason": "Safety controversy around OpenAI product launch"
+    "headline": "The Single English County Saying No to Palantir",
+    "link": "https://www.wired.com/story/the-single-english-county-saying-no-to-palantir/",
+    "score": 76,
+    "reason": "Government AI controversy, policy rejection, Palantir controversy"
   },
   {
     "rank": 8,
-    "headline": "‘Adding insult to injury’: Flight attendants accuse Google of creepy deal to access ‘confidential’ data for AI in Spirit Airlines transaction",
-    "link": "https://fortune.com/2026/08/21/flight-attendant-union-google-confidential-data-spirit-airlines/",
-    "score": 76,
-    "reason": "Major controversy around data collection for AI"
+    "headline": "How AI coding tools are contributing to the popularity of JavaScript",
+    "link": "https://www.artificialintelligence-news.com/news/how-ai-coding-tools-are-contributing-to-the-popularity-of-javascript/",
+    "score": 72,
+    "reason": "Measurable impact data, developer tool ecosystem shift"
   },
   {
     "rank": 9,
-    "headline": "Google Discover is getting an AI chatbot-tuned feed",
-    "link": "https://www.theverge.com/tech/983088/google-discover-ai-chatbot-feed",
-    "score": 74,
-    "reason": "Major product feature launch from Google"
+    "headline": "Can AI Actually Tell if a Student Cheated With AI? I Tested All the Detectors to Find Out",
+    "link": "https://www.cnet.com/tech/services-and-software/i-used-every-ai-cheating-app-and-detector-and-came-to-one-conclusion/",
+    "score": 70,
+    "reason": "Concrete testing results, education AI detection failure, practical finding"
   },
   {
     "rank": 10,
-    "headline": "LinkedIn says its AI slop button is working",
-    "link": "https://www.engadget.com/2241857/linkedin-says-its-ai-slop-button-is-working/",
-    "score": 72,
-    "reason": "Specific product feature addressing AI spam issue"
+    "headline": "ChatGPT on Mac can now read and respond to Apple iMessages",
+    "link": "https://www.engadget.com/2241390/openai-chatgpt-imessage-integration/",
+    "score": 68,
+    "reason": "Feature launch, major platform integration, user capability expansion"
   },
   {
     "rank": 11,
-    "headline": "AI data center outrage is showing up everywhere from ads to elections",
-    "link": "https://www.cnbc.com/2026/08/20/ai-data-center-election-backlash.html",
-    "score": 70,
-    "reason": "Widespread controversy about AI infrastructure impact"
+    "headline": "Powering the cloud after 60 years underground: Ormat's geothermal pivot to AI",
+    "link": "https://fortune.com/2026/08/22/after-60-years-underground-power-cloud-ormat-ai-pivot/",
+    "score": 66,
+    "reason": "Business pivot, infrastructure for AI boom, energy solution"
   },
   {
     "rank": 12,
-    "headline": "Audio Deepfakes Are Here: How to Protect Yourself From AI-Impersonation Scams",
-    "link": "https://www.cnet.com/videos/audio-deepfakes-are-here-how-to-protect-yourself-from-ai-impersonation-scams/",
-    "score": 68,
-    "reason": "Emerging threat with practical security implications"
+    "headline": "The veteran Fortune 500 CEO who turned an 80-year-old AC company into an AI darling",
+    "link": "https://fortune.com/article/dave-cote-vertiv-stock-performance-ai-boom/",
+    "score": 64,
+    "reason": "Major business transformation, legacy company pivot to AI"
   },
   {
     "rank": 13,
-    "headline": "HoneyBook bets on agentic AI to streamline small business operations with its new Claude connector",
-    "link": "https://www.artificialintelligence-news.com/news/honeybook-bets-on-agentic-ai-to-streamline-small-business-operations-with-its-new-claude-connector/",
-    "score": 65,
-    "reason": "Product integration launch for agentic AI"
+    "headline": "The Unlikely Place at the Center of China’s AI Boom",
+    "link": "https://www.wired.com/story/the-unlikely-place-at-the-center-of-chinas-ai-boom/",
+    "score": 62,
+    "reason": "Geopolitical AI infrastructure story, location-based AI development"
   },
   {
     "rank": 14,
-    "headline": "How AWS Marketplace is using AI agents to meet the rising demand for AI agents",
-    "link": "https://www.zdnet.com/article/application-marketplaces-aws-ai-agents/",
-    "score": 62,
-    "reason": "Major cloud provider expanding agentic AI offering"
+    "headline": "Slack is launching collaborative vibe-coding channels",
+    "link": "https://www.theverge.com/tech/982628/slack-code-vibe-coding-channels-launch",
+    "score": 58,
+    "reason": "Feature launch, major platform update, developer collaboration tool"
   },
   {
     "rank": 15,
-    "headline": "AI data centre regulation just got a template that needs no new law",
-    "link": "https://www.artificialintelligence-news.com/news/ai-data-centre-regulation-pennsylvania-template/",
-    "score": 60,
-    "reason": "Significant regulatory development without new legislation"
+    "headline": "A roadmap for safeguarding against AI bioweapons",
+    "link": "https://www.axios.com/2026/08/21/safeguards-ai-bioweapons-roadmap",
+    "score": 56,
+    "reason": "Safety framework, AI misuse prevention, policy guidance"
   },
   {
     "rank": 16,
-    "headline": "China joins Europe in scrapping Windows for Linux",
-    "link": "https://www.zdnet.com/article/china-drops-windows-for-linux/",
-    "score": 58,
-    "reason": "Major geopolitical shift in computing platforms"
+    "headline": "How we made a text-to-speech model respond in sub-50 ms",
+    "link": "https://nari-labs.com/blog/qwen3-tts-speed-cost-frontier/",
+    "score": 54,
+    "reason": "Technical achievement, performance benchmark, model advancement"
   },
   {
     "rank": 17,
-    "headline": "This company’s plans to deploy space mirrors could jeopardize the night sky for many",
-    "link": "https://www.technologyreview.com/2026/08/21/1142755/space-mirrors-night-sky/",
-    "score": 55,
-    "reason": "Controversial infrastructure proposal with environmental impact"
+    "headline": "Why replacing staff with AI backfires - and 5 ways smart leaders generate real value instead",
+    "link": "https://www.zdnet.com/article/why-replacing-staff-with-ai-backfires-and-how-smart-leaders-generate-real-value-instead/",
+    "score": 52,
+    "reason": "Business impact data, AI implementation strategy, workplace disruption"
   },
   {
     "rank": 18,
-    "headline": "AI Labels Are Big Tech’s Most Basic Responsibility, Even Those Claude Watermarks",
-    "link": "https://www.cnet.com/tech/services-and-software/claude-watermarks-ai-labels-commentary-2026/",
-    "score": 52,
-    "reason": "Policy debate on AI transparency and labeling"
+    "headline": "The AI boom is lifting economies across Asia. But for Southeast Asia, it might just be a ‘short-term blip’",
+    "link": "https://fortune.com/2026/08/21/asia-ai-boom-southeast-asia-economic-geopolitical-divide-short-term-blip/",
+    "score": 50,
+    "reason": "Economic impact analysis, regional disparity, growth sustainability question"
   },
   {
     "rank": 19,
-    "headline": "Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders",
-    "link": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders",
+    "headline": "No Mic Needed: You Can Create Music and Speech With Adobe’s AI Audio Tools",
+    "link": "https://www.cnet.com/tech/services-and-software/adobe-ai-audio-soundtrack-music-speech-general-release-2026/",
     "score": 48,
-    "reason": "Product capability expansion for enterprise security"
+    "reason": "Feature launch, major creative tool, AI audio generation"
   },
   {
     "rank": 20,
-    "headline": "America's capital crunch: Soaring debt collides with AI spending spree",
-    "link": "https://www.axios.com/2026/08/21/national-debt-deficit-ai-spending",
-    "score": 45,
-    "reason": "Economic impact analysis of AI infrastructure investments"
+    "headline": "MAHA warns Trump against coal-powered AI data centers",
+    "link": "https://www.axios.com/2026/08/21/ai-data-centers-coal-trump-rfk-maga-warning",
+    "score": 46,
+    "reason": "Policy controversy, environmental AI concern, political opposition"
   }
 ]
