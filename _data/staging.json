@@ -1,142 +1,58 @@
 [
   {
     "rank": 1,
-    "headline": "90% of executives say AI hasn't boosted productivity. Some are still cutting jobs",
-    "link": "https://fortune.com/2026/08/22/executives-ai-productivity-layoffs-study/",
+    "headline": "Over 1 million people have clicked LinkedIn’s AI slop button",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/983502/linkedin-ai-slop-button-one-million-people-message",
     "score": 92,
-    "reason": "Major number (90%), contradicts AI hype narrative, real business impact data"
+    "reason": "Big number (1M+), concrete user engagement metric, demonstrates AI content moderation at scale"
   },
   {
     "rank": 2,
-    "headline": "'I can't stop': 80% of developers find AI coding more addictive than helpful",
-    "link": "https://www.zdnet.com/article/i-cant-stop-80-of-developers-find-ai-coding-more-addictive-than-helpful/",
+    "headline": "At Olympics-like event, Chinese robots smash athletic records set by humans — including Usain Bolt's 100-meter sprint time",
+    "link": "https://fortune.com/2026/08/22/chinese-robots-beijing-games-athletic-records-humans-usain-bolt/",
     "score": 88,
-    "reason": "Significant survey data (80%), reveals developer sentiment contradiction, concrete finding"
+    "reason": "Significant AI/robotics milestone, quantifiable achievement, geopolitical angle"
   },
   {
     "rank": 3,
-    "headline": "Nvidia customers reportedly warned about AI-related price hikes",
-    "link": "https://www.cnbc.com/2026/08/22/nvidia-customers-reportedly-warned-about-ai-related-price-hikes-.html",
-    "score": 84,
-    "reason": "Major vendor warning, cost impact for AI infrastructure, market-moving news"
+    "headline": "Anthropic IPO filing will show AI backlash as a risk factor, sources say",
+    "link": "https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html",
+    "score": 85,
+    "reason": "Major company milestone (IPO), emerging controversy/risk factor, significant financial event"
   },
   {
     "rank": 4,
-    "headline": "Major YouTube creators are facing backlash for accepting AI money",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/983181/matti-haapoja-sam-kold-kolder-higgsfield-seedance-backlash",
-    "score": 82,
-    "reason": "Controversy, creator economy impact, real-world AI monetization backlash"
+    "headline": "ChatGPT Can Take Over Your iMessages. But Do You Really Want That?",
+    "link": "https://www.cnet.com/tech/services-and-software/chatgpt-take-over-imessage/",
+    "score": 78,
+    "reason": "Major product launch (OpenAI/Apple integration), user controversy about AI autonomy"
   },
   {
     "rank": 5,
-    "headline": "Google Discover is getting an AI chatbot-tuned feed",
-    "link": "https://www.theverge.com/tech/983088/google-discover-ai-chatbot-feed",
-    "score": 78,
-    "reason": "Major product launch from Google, significant feature expansion for discovery"
+    "headline": "If Waymo cars are Level 4 automation, what does it take to be a Level 5?",
+    "link": "https://www.engadget.com/2240138/if-waymo-cars-are-level-4-automation-what-is-level-5/",
+    "score": 76,
+    "reason": "Waymo operational deployment, discusses regulatory/technical thresholds for AI autonomy"
   },
   {
     "rank": 6,
-    "headline": "LinkedIn says its AI slop button is working",
-    "link": "https://www.engadget.com/2241857/linkedin-says-its-ai-slop-button-is-working/",
-    "score": 75,
-    "reason": "Major platform addressing AI content problem, measurable feature effectiveness claim"
+    "headline": "The Unlikely Place at the Center of China’s AI Boom",
+    "link": "https://www.wired.com/story/the-unlikely-place-at-the-center-of-chinas-ai-boom/",
+    "score": 72,
+    "reason": "Geopolitical AI infrastructure story, concrete location-based discovery"
   },
   {
     "rank": 7,
-    "headline": "OpenAI calls for California to strengthen its AI safety laws",
-    "link": "https://www.engadget.com/2242200/openai-calls-for-california-to-strengthen-ai-safety-laws/",
-    "score": 73,
-    "reason": "Major vendor policy stance, regulatory influence attempt by OpenAI"
+    "headline": "Flock cameras join data centers as a top AI boogeyman in 2026 midterms",
+    "link": "https://www.axios.com/2026/08/23/flock-cameras-data-centers-ai-midterms-2026-tech",
+    "score": 70,
+    "reason": "Emerging AI controversy, political impact, surveillance-AI intersection"
   },
   {
     "rank": 8,
-    "headline": "Anthropic appears to be A&#x2F;B testing reduced effort levels in Claude Code",
-    "link": "https://twitter.com/argofowl/status/2091150597374537729",
-    "score": 71,
-    "reason": "Controversy, potential product degradation, insider observation of behavior change"
-  },
-  {
-    "rank": 9,
-    "headline": "How a Texas student blew the whistle on a rogue AI hacking attempt",
-    "link": "https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20/",
-    "score": 69,
-    "reason": "AI security incident, real-world attack documented, whistleblower story"
-  },
-  {
-    "rank": 10,
-    "headline": "How to limit Instagram from using your data for AI and ads",
-    "link": "https://www.engadget.com/2240136/how-to-limit-instragram-from-using-data-for-ai-ads/",
-    "score": 65,
-    "reason": "User privacy control launch, Meta AI data usage concern, actionable feature"
-  },
-  {
-    "rank": 11,
-    "headline": "How AWS Marketplace is using AI agents to meet the rising demand for AI agents",
-    "link": "https://www.zdnet.com/article/application-marketplaces-aws-ai-agents/",
-    "score": 63,
-    "reason": "AWS market expansion, AI infrastructure monetization move"
-  },
-  {
-    "rank": 12,
-    "headline": "ChatGPT's new Mac plugin analyzed my iMessages - and I found it surprisingly useful",
-    "link": "https://www.zdnet.com/article/chatgpts-new-mac-plugin-analyzed-my-imessages-and-i-found-it-surprisingly-useful/",
-    "score": 62,
-    "reason": "OpenAI new capability launch, integration with Apple ecosystem"
-  },
-  {
-    "rank": 13,
-    "headline": "Chinese humanoid robots&apos; biggest obstacle: Humans are still (mostly) better",
-    "link": "https://www.cnbc.com/2026/08/21/chinese-humanoid-robots-face-challenge-of-their-own-capabilities.html",
-    "score": 60,
-    "reason": "Competitive analysis, robotics progress assessment, geopolitical AI development"
-  },
-  {
-    "rank": 14,
-    "headline": "Why your local LLM feels dumber than it is",
-    "link": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
-    "score": 58,
-    "reason": "Technical analysis of AI performance discrepancy, user experience issue"
-  },
-  {
-    "rank": 15,
-    "headline": "When AI designs a drug, who gets the credit?",
-    "link": "https://www.technologyreview.com/2026/08/21/1142627/when-ai-designs-a-drug-who-gets-the-credit/",
-    "score": 57,
-    "reason": "AI in pharma, intellectual property question, emerging business model issue"
-  },
-  {
-    "rank": 16,
-    "headline": "Sonos' improved Voice Control points to an intriguing smart home future",
-    "link": "https://www.zdnet.com/article/sonos-improved-voice-control-intriguing-smart-home-future/",
-    "score": 55,
-    "reason": "Product feature improvement, smart home AI evolution"
-  },
-  {
-    "rank": 17,
-    "headline": "Pixel Watch 5's AI watch face generator keeps the same form factor feeling fresh [Gallery]",
-    "link": "https://9to5google.com/2026/08/21/google-pixel-watch-5-ai-face-generator-feature/",
-    "score": 53,
-    "reason": "Google feature launch, generative AI in wearables"
-  },
-  {
-    "rank": 18,
-    "headline": "A low-tech solution from the past may be your best defense against AI deepfakes",
-    "link": "https://www.zdnet.com/article/ai-deepfakes-passwords-defense/",
-    "score": 51,
-    "reason": "AI security/defense strategy, deepfake mitigation approach"
-  },
-  {
-    "rank": 19,
-    "headline": "AI Labels Are Big Tech’s Most Basic Responsibility, Even Those Claude Watermarks",
-    "link": "https://www.cnet.com/tech/services-and-software/claude-watermarks-ai-labels-commentary-2026/",
-    "score": 49,
-    "reason": "AI transparency requirement, industry standards debate, Anthropic mentioned"
-  },
-  {
-    "rank": 20,
-    "headline": "China joins Europe in scrapping Windows for Linux",
-    "link": "https://www.zdnet.com/article/china-drops-windows-for-linux/",
-    "score": 47,
-    "reason": "Geopolitical AI/tech shift, major OS policy change affecting software ecosystem"
+    "headline": "The Download: threats from space mirrors and credit for AI drugs",
+    "link": "https://www.technologyreview.com/2026/08/21/1142762/the-download-space-mirrors-threats-ai-designed-drugs-credit/",
+    "score": 68,
+    "reason": "Multiple AI-related topics, concrete applications (drug development), emerging risks"
   }
 ]
