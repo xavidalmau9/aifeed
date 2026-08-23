@@ -1,58 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Over 1 million people have clicked LinkedIn’s AI slop button",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/983502/linkedin-ai-slop-button-one-million-people-message",
+    "headline": "Twitch and Amazon hit with lawsuit for training AI with streamers' content",
+    "link": "https://www.engadget.com/2242283/twitch-amazon-hit-with-lawsuit-for-training-ai-with-streamers-content/",
     "score": 92,
-    "reason": "Big number (1M+), concrete user engagement metric, demonstrates AI content moderation at scale"
+    "reason": "Major lawsuit against tech giant; concrete legal action over AI training data"
   },
   {
     "rank": 2,
-    "headline": "At Olympics-like event, Chinese robots smash athletic records set by humans — including Usain Bolt's 100-meter sprint time",
-    "link": "https://fortune.com/2026/08/22/chinese-robots-beijing-games-athletic-records-humans-usain-bolt/",
+    "headline": "Humanoid robots have beaten Usain Bolt's 100-meter dash record",
+    "link": "https://www.engadget.com/2242295/humanoid-robots-have-beaten-usain-bolts-100-meter-dash-record/",
     "score": 88,
-    "reason": "Significant AI/robotics milestone, quantifiable achievement, geopolitical angle"
+    "reason": "Significant benchmark achievement; quantified performance milestone"
   },
   {
     "rank": 3,
-    "headline": "Anthropic IPO filing will show AI backlash as a risk factor, sources say",
-    "link": "https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html",
+    "headline": "'I can't stop': 80% of developers find AI coding more addictive than helpful",
+    "link": "https://www.zdnet.com/article/i-cant-stop-80-of-developers-find-ai-coding-more-addictive-than-helpful/",
     "score": 85,
-    "reason": "Major company milestone (IPO), emerging controversy/risk factor, significant financial event"
+    "reason": "Specific statistic on developer behavior; reveals user sentiment paradox"
   },
   {
     "rank": 4,
-    "headline": "ChatGPT Can Take Over Your iMessages. But Do You Really Want That?",
-    "link": "https://www.cnet.com/tech/services-and-software/chatgpt-take-over-imessage/",
-    "score": 78,
-    "reason": "Major product launch (OpenAI/Apple integration), user controversy about AI autonomy"
+    "headline": "Texas welcomed the AI boom. Now Abbott says data centers \"dug their own grave\"",
+    "link": "https://www.axios.com/2026/08/23/greg-abbott-texas-data-centers-ai-backlash",
+    "score": 82,
+    "reason": "Policy reversal by major state official; infrastructure controversy"
   },
   {
     "rank": 5,
-    "headline": "If Waymo cars are Level 4 automation, what does it take to be a Level 5?",
-    "link": "https://www.engadget.com/2240138/if-waymo-cars-are-level-4-automation-what-is-level-5/",
-    "score": 76,
-    "reason": "Waymo operational deployment, discusses regulatory/technical thresholds for AI autonomy"
+    "headline": "Nvidia customers reportedly warned about AI-related price hikes",
+    "link": "https://www.cnbc.com/2026/08/22/nvidia-customers-reportedly-warned-about-ai-related-price-hikes-.html",
+    "score": 78,
+    "reason": "Market impact story; affects major AI infrastructure provider"
   },
   {
     "rank": 6,
-    "headline": "The Unlikely Place at the Center of China’s AI Boom",
-    "link": "https://www.wired.com/story/the-unlikely-place-at-the-center-of-chinas-ai-boom/",
-    "score": 72,
-    "reason": "Geopolitical AI infrastructure story, concrete location-based discovery"
+    "headline": "OpenAI calls for California to strengthen its AI safety laws",
+    "link": "https://www.engadget.com/2242200/openai-calls-for-california-to-strengthen-ai-safety-laws/",
+    "score": 75,
+    "reason": "Leading AI company position on regulation; policy advocacy"
   },
   {
     "rank": 7,
-    "headline": "Flock cameras join data centers as a top AI boogeyman in 2026 midterms",
-    "link": "https://www.axios.com/2026/08/23/flock-cameras-data-centers-ai-midterms-2026-tech",
-    "score": 70,
-    "reason": "Emerging AI controversy, political impact, surveillance-AI intersection"
+    "headline": "Anthropic&#x27;s best AI model struggles to attract users as cheaper tools thrive",
+    "link": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+    "score": 72,
+    "reason": "Market dynamics; major AI startup facing competition challenges"
   },
   {
     "rank": 8,
-    "headline": "The Download: threats from space mirrors and credit for AI drugs",
-    "link": "https://www.technologyreview.com/2026/08/21/1142762/the-download-space-mirrors-threats-ai-designed-drugs-credit/",
+    "headline": "Powering the cloud after 60 years underground: Ormat's geothermal pivot to AI",
+    "link": "https://fortune.com/2026/08/22/after-60-years-underground-power-cloud-ormat-ai-pivot/",
     "score": 68,
-    "reason": "Multiple AI-related topics, concrete applications (drug development), emerging risks"
+    "reason": "Infrastructure strategy shift; energy company entering AI sector"
+  },
+  {
+    "rank": 9,
+    "headline": "You can instantly curate your Discover feed now by telling Google exactly what you want",
+    "link": "https://www.zdnet.com/article/how-to-fix-your-google-discover-feed-algorithm/",
+    "score": 65,
+    "reason": "Google product launch; user control feature"
+  },
+  {
+    "rank": 10,
+    "headline": "Google's new Pixel Tag tracker has a big advantage over AirTags (and they cost the same)",
+    "link": "https://www.zdnet.com/article/google-pixel-tag-ultra-wideband-bluetooth-channel-sounding/",
+    "score": 62,
+    "reason": "Hardware launch; competitive product comparison"
   }
 ]
