@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Taiwan reportedly indicted NVIDIA employees for exporting prohibited AI servers to China",
-    "link": "https://www.engadget.com/2242415/taiwan-reportedly-indicted-nvidia-employees-for-exporting-prohibited-ai-servers-to-china/",
+    "headline": "XPENG IRON humanoid robot draws record physical AI funding",
+    "link": "https://www.artificialintelligence-news.com/news/xpeng-iron-humanoid-robot-draws-record-physical-ai-funding/",
     "score": 94,
-    "reason": "Major controversy: criminal indictment of NVIDIA employees for illegal exports, significant geopolitical implications"
+    "reason": "Record funding milestone for robotics; major company milestone"
   },
   {
     "rank": 2,
-    "headline": "Alibaba plunges after announcing $10.2 billion share placement to fund AI push",
-    "link": "https://www.cnbc.com/2026/08/24/alibaba-share-placement-drop-ai-hong-kong.html",
+    "headline": "Humanoid robots have beaten Usain Bolt's 100-meter dash record",
+    "link": "https://www.engadget.com/2242295/humanoid-robots-have-beaten-usain-bolts-100-meter-dash-record/",
     "score": 92,
-    "reason": "Big number ($10.2B), major company commitment to AI, measurable market reaction"
+    "reason": "Quantified performance benchmark; physical AI achievement"
   },
   {
     "rank": 3,
-    "headline": "They Dedicated Their Lives to Teaching. Then the Deepfakes Started",
-    "link": "https://www.wired.com/story/teachers-deepfake-ai-students-content/",
-    "score": 88,
-    "reason": "Significant controversy: deepfake abuse of educators, real-world harm documented"
+    "headline": "Nvidia says Groq racks will be online this year following $20 billion purchase",
+    "link": "https://www.cnbc.com/2026/08/24/nvidia-says-groq-racks-will-be-online-this-year-after-20-billion-deal.html",
+    "score": 89,
+    "reason": "Major $20B infrastructure investment; concrete launch timeline"
   },
   {
     "rank": 4,
-    "headline": "Kids outlearn AI—and we still don't know why",
-    "link": "https://www.technologyreview.com/2026/08/24/1141740/kids-machines-language-learning/",
-    "score": 85,
-    "reason": "Launches research findings about AI limitations, contrasts with AI hype"
+    "headline": "Google's AI-first Googlebook laptop is almost here - can it avoid the Copilot+ PC problem?",
+    "link": "https://www.zdnet.com/article/googlebook-laptop-is-almost-here-can-it-avoid-copilot-pc-problem/",
+    "score": 87,
+    "reason": "Major product launch from top company; addresses market controversy"
   },
   {
     "rank": 5,
-    "headline": "How to limit Instagram from using your data for AI and ads",
-    "link": "https://www.engadget.com/2240136/how-to-limit-instragram-from-using-data-for-ai-ads/",
-    "score": 78,
-    "reason": "User control feature launch, reflects privacy controversy around Meta's AI training"
+    "headline": "Amazon hikes prices on Echos, Kindles, Fire TVs as much as 60% - here's what you'll pay now",
+    "link": "https://www.zdnet.com/article/amazon-raises-prices-echos-kindles/",
+    "score": 85,
+    "reason": "Quantified impact (60%); Amazon AI device pricing controversy"
   },
   {
     "rank": 6,
-    "headline": "If Waymo cars are Level 4 automation, what does it take to be a Level 5?",
-    "link": "https://www.engadget.com/2240138/if-waymo-cars-are-level-4-automation-what-is-level-5/",
-    "score": 75,
-    "reason": "Waymo achievement milestone (Level 4 deployment), defines future autonomy benchmarks"
+    "headline": "I tried Meta's new free vibe coding app to make my own games, and it was surprisingly fun",
+    "link": "https://www.zdnet.com/article/i-tried-metas-vibe-coding-app-to-make-own-games/",
+    "score": 81,
+    "reason": "Meta AI coding tool launch; hands-on testing verification"
   },
   {
     "rank": 7,
-    "headline": "FDA clears blood test to aid evaluation for Alzheimer&#x27;s disease",
-    "link": "https://medicine.washu.edu/news/fda-clears-blood-test-to-aid-evaluation-for-alzheimers-disease/",
-    "score": 72,
-    "reason": "Regulatory approval, AI-enabled medical diagnostic launch with real healthcare impact"
+    "headline": "FTC moves to make retailers disclose use of ‘personalized pricing’ as technology now enables broad consumer surveillance",
+    "link": "https://fortune.com/2026/08/24/ftc-retailers-personalized-pricing-consumer-surveillance/",
+    "score": 79,
+    "reason": "Major regulatory action on AI surveillance; broad consumer impact"
   },
   {
     "rank": 8,
-    "headline": "From AI tools to alcohol drops: The unexpected forces driving America's crime decline",
-    "link": "https://www.axios.com/2026/08/24/violent-crime-decline-theories",
-    "score": 68,
-    "reason": "Launch data on AI crime-fighting effectiveness, measurable societal impact"
+    "headline": "Texas welcomed the AI boom. Now Abbott says data centers \"dug their own grave\"",
+    "link": "https://www.axios.com/2026/08/23/greg-abbott-texas-data-centers-ai-backlash",
+    "score": 77,
+    "reason": "AI infrastructure controversy; major state government opposition"
   },
   {
     "rank": 9,
-    "headline": "2028 Dems dodge on Bernie's push to pause AI development",
-    "link": "https://www.axios.com/2026/08/23/2028-democrats-ai-bernie-sanders",
-    "score": 65,
-    "reason": "Political controversy: major AI regulation debate among presidential candidates"
+    "headline": "LLMs could control their host machines by exploiting inference engines",
+    "link": "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines",
+    "score": 75,
+    "reason": "Security vulnerability discovery; significant safety concern"
   },
   {
     "rank": 10,
-    "headline": "After 10 years at United, CEO Scott Kirby is thinking big about the future of his airline from JFK to AI",
-    "link": "https://www.cnbc.com/2026/08/23/united-airlines-ceo-scott-kirby.html",
-    "score": 62,
-    "reason": "Major airline AI integration announcement from CEO, enterprise deployment"
+    "headline": "Goldman Sachs partner warns of &apos;huge danger&apos; in letting AI replace bankers&apos; reasoning skills",
+    "link": "https://www.cnbc.com/2026/08/24/goldman-sachs-ai-partner-danger-skills.html",
+    "score": 73,
+    "reason": "Major financial sector warning; workplace replacement controversy"
   }
 ]
