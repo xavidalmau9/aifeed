@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Twitch and Amazon hit with lawsuit for training AI with streamers' content",
-    "link": "https://www.engadget.com/2242283/twitch-amazon-hit-with-lawsuit-for-training-ai-with-streamers-content/",
-    "score": 92,
-    "reason": "Major lawsuit against tech giant; concrete legal action over AI training data"
+    "headline": "Taiwan reportedly indicted NVIDIA employees for exporting prohibited AI servers to China",
+    "link": "https://www.engadget.com/2242415/taiwan-reportedly-indicted-nvidia-employees-for-exporting-prohibited-ai-servers-to-china/",
+    "score": 94,
+    "reason": "Major controversy: criminal indictment of NVIDIA employees for illegal exports, significant geopolitical implications"
   },
   {
     "rank": 2,
-    "headline": "Humanoid robots have beaten Usain Bolt's 100-meter dash record",
-    "link": "https://www.engadget.com/2242295/humanoid-robots-have-beaten-usain-bolts-100-meter-dash-record/",
-    "score": 88,
-    "reason": "Significant benchmark achievement; quantified performance milestone"
+    "headline": "Alibaba plunges after announcing $10.2 billion share placement to fund AI push",
+    "link": "https://www.cnbc.com/2026/08/24/alibaba-share-placement-drop-ai-hong-kong.html",
+    "score": 92,
+    "reason": "Big number ($10.2B), major company commitment to AI, measurable market reaction"
   },
   {
     "rank": 3,
-    "headline": "'I can't stop': 80% of developers find AI coding more addictive than helpful",
-    "link": "https://www.zdnet.com/article/i-cant-stop-80-of-developers-find-ai-coding-more-addictive-than-helpful/",
-    "score": 85,
-    "reason": "Specific statistic on developer behavior; reveals user sentiment paradox"
+    "headline": "They Dedicated Their Lives to Teaching. Then the Deepfakes Started",
+    "link": "https://www.wired.com/story/teachers-deepfake-ai-students-content/",
+    "score": 88,
+    "reason": "Significant controversy: deepfake abuse of educators, real-world harm documented"
   },
   {
     "rank": 4,
-    "headline": "Texas welcomed the AI boom. Now Abbott says data centers \"dug their own grave\"",
-    "link": "https://www.axios.com/2026/08/23/greg-abbott-texas-data-centers-ai-backlash",
-    "score": 82,
-    "reason": "Policy reversal by major state official; infrastructure controversy"
+    "headline": "Kids outlearn AI—and we still don't know why",
+    "link": "https://www.technologyreview.com/2026/08/24/1141740/kids-machines-language-learning/",
+    "score": 85,
+    "reason": "Launches research findings about AI limitations, contrasts with AI hype"
   },
   {
     "rank": 5,
-    "headline": "Nvidia customers reportedly warned about AI-related price hikes",
-    "link": "https://www.cnbc.com/2026/08/22/nvidia-customers-reportedly-warned-about-ai-related-price-hikes-.html",
+    "headline": "How to limit Instagram from using your data for AI and ads",
+    "link": "https://www.engadget.com/2240136/how-to-limit-instragram-from-using-data-for-ai-ads/",
     "score": 78,
-    "reason": "Market impact story; affects major AI infrastructure provider"
+    "reason": "User control feature launch, reflects privacy controversy around Meta's AI training"
   },
   {
     "rank": 6,
-    "headline": "OpenAI calls for California to strengthen its AI safety laws",
-    "link": "https://www.engadget.com/2242200/openai-calls-for-california-to-strengthen-ai-safety-laws/",
+    "headline": "If Waymo cars are Level 4 automation, what does it take to be a Level 5?",
+    "link": "https://www.engadget.com/2240138/if-waymo-cars-are-level-4-automation-what-is-level-5/",
     "score": 75,
-    "reason": "Leading AI company position on regulation; policy advocacy"
+    "reason": "Waymo achievement milestone (Level 4 deployment), defines future autonomy benchmarks"
   },
   {
     "rank": 7,
-    "headline": "Anthropic&#x27;s best AI model struggles to attract users as cheaper tools thrive",
-    "link": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+    "headline": "FDA clears blood test to aid evaluation for Alzheimer&#x27;s disease",
+    "link": "https://medicine.washu.edu/news/fda-clears-blood-test-to-aid-evaluation-for-alzheimers-disease/",
     "score": 72,
-    "reason": "Market dynamics; major AI startup facing competition challenges"
+    "reason": "Regulatory approval, AI-enabled medical diagnostic launch with real healthcare impact"
   },
   {
     "rank": 8,
-    "headline": "Powering the cloud after 60 years underground: Ormat's geothermal pivot to AI",
-    "link": "https://fortune.com/2026/08/22/after-60-years-underground-power-cloud-ormat-ai-pivot/",
+    "headline": "From AI tools to alcohol drops: The unexpected forces driving America's crime decline",
+    "link": "https://www.axios.com/2026/08/24/violent-crime-decline-theories",
     "score": 68,
-    "reason": "Infrastructure strategy shift; energy company entering AI sector"
+    "reason": "Launch data on AI crime-fighting effectiveness, measurable societal impact"
   },
   {
     "rank": 9,
-    "headline": "You can instantly curate your Discover feed now by telling Google exactly what you want",
-    "link": "https://www.zdnet.com/article/how-to-fix-your-google-discover-feed-algorithm/",
+    "headline": "2028 Dems dodge on Bernie's push to pause AI development",
+    "link": "https://www.axios.com/2026/08/23/2028-democrats-ai-bernie-sanders",
     "score": 65,
-    "reason": "Google product launch; user control feature"
+    "reason": "Political controversy: major AI regulation debate among presidential candidates"
   },
   {
     "rank": 10,
-    "headline": "Google's new Pixel Tag tracker has a big advantage over AirTags (and they cost the same)",
-    "link": "https://www.zdnet.com/article/google-pixel-tag-ultra-wideband-bluetooth-channel-sounding/",
+    "headline": "After 10 years at United, CEO Scott Kirby is thinking big about the future of his airline from JFK to AI",
+    "link": "https://www.cnbc.com/2026/08/23/united-airlines-ceo-scott-kirby.html",
     "score": 62,
-    "reason": "Hardware launch; competitive product comparison"
+    "reason": "Major airline AI integration announcement from CEO, enterprise deployment"
   }
 ]
