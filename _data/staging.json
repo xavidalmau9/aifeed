@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "XPENG IRON humanoid robot draws record physical AI funding",
-    "link": "https://www.artificialintelligence-news.com/news/xpeng-iron-humanoid-robot-draws-record-physical-ai-funding/",
+    "headline": "Taiwan reportedly indicted NVIDIA employees for exporting prohibited AI servers to China",
+    "link": "https://www.engadget.com/2242415/taiwan-reportedly-indicted-nvidia-employees-for-exporting-prohibited-ai-servers-to-china/",
     "score": 94,
-    "reason": "Record funding milestone for robotics; major company milestone"
+    "reason": "Major legal action, specific numbers, geopolitical impact"
   },
   {
     "rank": 2,
-    "headline": "Humanoid robots have beaten Usain Bolt's 100-meter dash record",
-    "link": "https://www.engadget.com/2242295/humanoid-robots-have-beaten-usain-bolts-100-meter-dash-record/",
+    "headline": "OpenAI subpoenaed by Alabama AG over Hugging Face hack",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/984239/alabama-attorney-general-subpoena-openai-hugging-face-hack",
     "score": 92,
-    "reason": "Quantified performance benchmark; physical AI achievement"
+    "reason": "Legal controversy, major company, security breach"
   },
   {
     "rank": 3,
-    "headline": "Nvidia says Groq racks will be online this year following $20 billion purchase",
-    "link": "https://www.cnbc.com/2026/08/24/nvidia-says-groq-racks-will-be-online-this-year-after-20-billion-deal.html",
-    "score": 89,
-    "reason": "Major $20B infrastructure investment; concrete launch timeline"
+    "headline": "OpenAI bans Russian ChatGPT accounts used in covert misinformation campaign",
+    "link": "https://www.cnbc.com/2026/08/25/openai-russia-chatgpt-influence-campaign.html",
+    "score": 88,
+    "reason": "Concrete enforcement action, security/abuse case"
   },
   {
     "rank": 4,
-    "headline": "Google's AI-first Googlebook laptop is almost here - can it avoid the Copilot+ PC problem?",
-    "link": "https://www.zdnet.com/article/googlebook-laptop-is-almost-here-can-it-avoid-copilot-pc-problem/",
-    "score": 87,
-    "reason": "Major product launch from top company; addresses market controversy"
+    "headline": "Porsche inks $1.5 billion deal for AI deployment with India’s largest IT services firm Tata Consultancy",
+    "link": "https://www.cnbc.com/2026/08/25/porsche-inks-billion-ai-deal-india-it-tcs.html",
+    "score": 85,
+    "reason": "Major deal announcement, specific dollar amount"
   },
   {
     "rank": 5,
-    "headline": "Amazon hikes prices on Echos, Kindles, Fire TVs as much as 60% - here's what you'll pay now",
-    "link": "https://www.zdnet.com/article/amazon-raises-prices-echos-kindles/",
-    "score": 85,
-    "reason": "Quantified impact (60%); Amazon AI device pricing controversy"
+    "headline": "SEC reportedly subpoenas Wall Street banks over AI hedge fund Situational Awareness&apos;s near collapse",
+    "link": "https://www.cnbc.com/2026/08/25/sec-situational-awareness-hedge-fund-subpoenas.html",
+    "score": 83,
+    "reason": "Regulatory action, financial impact"
   },
   {
     "rank": 6,
-    "headline": "I tried Meta's new free vibe coding app to make my own games, and it was surprisingly fun",
-    "link": "https://www.zdnet.com/article/i-tried-metas-vibe-coding-app-to-make-own-games/",
+    "headline": "Spirit Airlines Wants to Sell Its Data to Google. Former Flight Attendants Are Freaked Out",
+    "link": "https://www.wired.com/story/spirit-airlines-wants-to-sell-its-data-to-google-former-flight-attendants-are-freaked-out/",
     "score": 81,
-    "reason": "Meta AI coding tool launch; hands-on testing verification"
+    "reason": "Controversy, data privacy issue"
   },
   {
     "rank": 7,
-    "headline": "FTC moves to make retailers disclose use of ‘personalized pricing’ as technology now enables broad consumer surveillance",
-    "link": "https://fortune.com/2026/08/24/ftc-retailers-personalized-pricing-consumer-surveillance/",
-    "score": 79,
-    "reason": "Major regulatory action on AI surveillance; broad consumer impact"
+    "headline": "The Fed doesn't know who's financing the $3 trillion AI boom",
+    "link": "https://fortune.com/2026/08/25/the-fed-doesnt-know-whos-financing-the-3-trillion-ai-boom/",
+    "score": 80,
+    "reason": "Big number, systemic risk angle"
   },
   {
     "rank": 8,
-    "headline": "Texas welcomed the AI boom. Now Abbott says data centers \"dug their own grave\"",
-    "link": "https://www.axios.com/2026/08/23/greg-abbott-texas-data-centers-ai-backlash",
-    "score": 77,
-    "reason": "AI infrastructure controversy; major state government opposition"
+    "headline": "They Dedicated Their Lives to Teaching. Then the Deepfakes Started",
+    "link": "https://www.wired.com/story/teachers-deepfake-ai-students-content/",
+    "score": 78,
+    "reason": "Concrete controversy, real-world impact"
   },
   {
     "rank": 9,
-    "headline": "LLMs could control their host machines by exploiting inference engines",
-    "link": "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines",
+    "headline": "Kids outlearn AI—and we still don't know why",
+    "link": "https://www.technologyreview.com/2026/08/24/1141740/kids-machines-language-learning/",
     "score": 75,
-    "reason": "Security vulnerability discovery; significant safety concern"
+    "reason": "Counterintuitive finding, capability limits"
   },
   {
     "rank": 10,
-    "headline": "Goldman Sachs partner warns of &apos;huge danger&apos; in letting AI replace bankers&apos; reasoning skills",
-    "link": "https://www.cnbc.com/2026/08/24/goldman-sachs-ai-partner-danger-skills.html",
+    "headline": "UAW and Deere are set to clash amid AI sales boom",
+    "link": "https://www.axios.com/2026/08/24/uaw-deere-shawn-fain-ai",
     "score": 73,
-    "reason": "Major financial sector warning; workplace replacement controversy"
+    "reason": "Labor controversy, specific sector"
   }
 ]
