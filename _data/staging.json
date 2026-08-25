@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Taiwan reportedly indicted NVIDIA employees for exporting prohibited AI servers to China",
-    "link": "https://www.engadget.com/2242415/taiwan-reportedly-indicted-nvidia-employees-for-exporting-prohibited-ai-servers-to-china/",
-    "score": 94,
-    "reason": "Major legal action, specific numbers, geopolitical impact"
+    "headline": "OpenAI says its Jalapeño chip can power faster AI responses than the competition",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/984290/openai-jalapeno-ai-chip-benchmarks",
+    "score": 92,
+    "reason": "Major hardware launch with direct competitive claim; significant numbers/performance implied"
   },
   {
     "rank": 2,
-    "headline": "OpenAI subpoenaed by Alabama AG over Hugging Face hack",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/984239/alabama-attorney-general-subpoena-openai-hugging-face-hack",
-    "score": 92,
-    "reason": "Legal controversy, major company, security breach"
+    "headline": "XPENG IRON humanoid robot draws record physical AI funding",
+    "link": "https://www.artificialintelligence-news.com/news/xpeng-iron-humanoid-robot-draws-record-physical-ai-funding/",
+    "score": 88,
+    "reason": "Record funding amount; major robotics launch; big numbers emphasized"
   },
   {
     "rank": 3,
-    "headline": "OpenAI bans Russian ChatGPT accounts used in covert misinformation campaign",
-    "link": "https://www.cnbc.com/2026/08/25/openai-russia-chatgpt-influence-campaign.html",
-    "score": 88,
-    "reason": "Concrete enforcement action, security/abuse case"
+    "headline": "Apple's M5 Ultra is its most powerful chip ever - with 4x faster AI performance than M3 Ultra",
+    "link": "https://www.zdnet.com/article/mac-mini-mac-studio-new-m6-m5-max-ultra/",
+    "score": 86,
+    "reason": "Major chip launch; quantified performance claim (4x faster); significant product announcement"
   },
   {
     "rank": 4,
-    "headline": "Porsche inks $1.5 billion deal for AI deployment with India’s largest IT services firm Tata Consultancy",
-    "link": "https://www.cnbc.com/2026/08/25/porsche-inks-billion-ai-deal-india-it-tcs.html",
-    "score": 85,
-    "reason": "Major deal announcement, specific dollar amount"
+    "headline": "Portable Computer is Perplexity's new local AI agent - why it's a game changer",
+    "link": "https://www.zdnet.com/article/portable-computer-perplexity-local-ai-agent/",
+    "score": 82,
+    "reason": "Major product launch from Perplexity; local AI agent category emergence"
   },
   {
     "rank": 5,
-    "headline": "SEC reportedly subpoenas Wall Street banks over AI hedge fund Situational Awareness&apos;s near collapse",
-    "link": "https://www.cnbc.com/2026/08/25/sec-situational-awareness-hedge-fund-subpoenas.html",
-    "score": 83,
-    "reason": "Regulatory action, financial impact"
+    "headline": "Apple decides undermining its own email privacy feature was a bad idea after all",
+    "link": "https://www.engadget.com/2243812/apple-decides-undermining-its-own-email-privacy-feature-was-a-bad-idea-after-all/",
+    "score": 81,
+    "reason": "Significant controversy reversal; policy U-turn on privacy; major company admission"
   },
   {
     "rank": 6,
-    "headline": "Spirit Airlines Wants to Sell Its Data to Google. Former Flight Attendants Are Freaked Out",
-    "link": "https://www.wired.com/story/spirit-airlines-wants-to-sell-its-data-to-google-former-flight-attendants-are-freaked-out/",
-    "score": 81,
-    "reason": "Controversy, data privacy issue"
+    "headline": "MIT AI forecasts extreme weather without historical data",
+    "link": "https://www.artificialintelligence-news.com/news/mit-ai-forecasts-extreme-weather-without-historical-data/",
+    "score": 79,
+    "reason": "Major technical breakthrough; real-world application in critical domain"
   },
   {
     "rank": 7,
-    "headline": "The Fed doesn't know who's financing the $3 trillion AI boom",
-    "link": "https://fortune.com/2026/08/25/the-fed-doesnt-know-whos-financing-the-3-trillion-ai-boom/",
-    "score": 80,
-    "reason": "Big number, systemic risk angle"
+    "headline": "Anthropic Unifies Memory Across Claude and Cowork",
+    "link": "https://www.cnet.com/tech/services-and-software/anthropic-unifies-memory-across-claude-and-cowork/",
+    "score": 77,
+    "reason": "Major feature expansion; cross-platform integration launch; Anthropic/Claude product advance"
   },
   {
     "rank": 8,
-    "headline": "They Dedicated Their Lives to Teaching. Then the Deepfakes Started",
-    "link": "https://www.wired.com/story/teachers-deepfake-ai-students-content/",
-    "score": 78,
-    "reason": "Concrete controversy, real-world impact"
+    "headline": "AI Agents Are a Cybersecurity Nightmare That’s Only Just Begun",
+    "link": "https://www.cnet.com/tech/services-and-software/ai-agents-are-a-cybersecurity-nightmare-thats-only-just-begun/",
+    "score": 75,
+    "reason": "Significant security controversy/concern; emerging threat category"
   },
   {
     "rank": 9,
-    "headline": "Kids outlearn AI—and we still don't know why",
-    "link": "https://www.technologyreview.com/2026/08/24/1141740/kids-machines-language-learning/",
-    "score": 75,
-    "reason": "Counterintuitive finding, capability limits"
+    "headline": "AI is making critical infrastructure easier to attack",
+    "link": "https://www.axios.com/2026/08/25/ai-critical-infrastructure-cyberattacks",
+    "score": 74,
+    "reason": "Major security controversy; critical infrastructure implications"
   },
   {
     "rank": 10,
-    "headline": "UAW and Deere are set to clash amid AI sales boom",
-    "link": "https://www.axios.com/2026/08/24/uaw-deere-shawn-fain-ai",
-    "score": 73,
-    "reason": "Labor controversy, specific sector"
+    "headline": "Apple announces new Mac Mini and Mac Studio models with AI upgrades",
+    "link": "https://www.cnbc.com/2026/08/25/apple-announces-new-mac-mini-and-mac-studio-models-with-ai-upgrades.html",
+    "score": 72,
+    "reason": "Multiple hardware launches; AI integration announcement; major product refresh"
+  },
+  {
+    "rank": 11,
+    "headline": "Americans Want to Know When Their Healthcare Providers Use AI",
+    "link": "https://www.cnet.com/tech/services-and-software/americans-want-to-know-when-their-healthcare-providers-use-ai/",
+    "score": 70,
+    "reason": "Major survey finding; healthcare AI transparency demand; significant public concern"
+  },
+  {
+    "rank": 12,
+    "headline": "Pope Leo XIV on AI's new 'form of domination': it risks becoming a tool of 'economic colonialism'",
+    "link": "https://fortune.com/2026/08/25/pope-leo-xiv-ai-domination-risks-economic-colonialism/",
+    "score": 68,
+    "reason": "Major controversy/criticism from high-profile source; systemic risk concerns"
+  },
+  {
+    "rank": 13,
+    "headline": "ChatGPT vs. Gemini: Which Chatbot Is Better at Seeing the World Around You?",
+    "link": "https://www.cnet.com/tech/services-and-software/chatgpt-vs-gemini-which-chatbot-is-best-at-seeing-the-world/",
+    "score": 65,
+    "reason": "Head-to-head competitive comparison; major AI systems; vision capability test"
+  },
+  {
+    "rank": 14,
+    "headline": "SpaceX to use NVIDIA GPUs for its Starmind project — Here's what they'll face in space",
+    "link": "https://www.engadget.com/2243934/spacex-use-nvidia-gpu-for-starmind-project/",
+    "score": 63,
+    "reason": "Major collaboration; space AI application; NVIDIA deployment in extreme environment"
+  },
+  {
+    "rank": 15,
+    "headline": "Businesses must reinvent their processes and workforce to scale agentic AI adoption",
+    "link": "https://www.zdnet.com/article/businesses-must-reinvent-their-processes-and-workforce-to-scale-agentic-ai-adoption/",
+    "score": 60,
+    "reason": "Agentic AI trend emergence; major workforce implications; business transformation signal"
+  },
+  {
+    "rank": 16,
+    "headline": "I tried Meta's new free vibe coding app to make my own games, and it was surprisingly fun",
+    "link": "https://www.zdnet.com/article/i-tried-metas-vibe-coding-app-to-make-own-games/",
+    "score": 58,
+    "reason": "Meta major AI product launch; democratization of game creation; hands-on demo"
+  },
+  {
+    "rank": 17,
+    "headline": "A troubling recent rogue AI incident is just one reason why the U.K. AI Security Institute deserves far greater scrutiny",
+    "link": "https://fortune.com/2026/08/25/uk-ai-security-institute-rogue-ai-incident-github-shows-why-agency-needs-more-scrutiny/",
+    "score": 57,
+    "reason": "Rogue AI incident; regulatory concern; security institute criticism"
+  },
+  {
+    "rank": 18,
+    "headline": "AI Companion Robots Are Closing the Human Connection in Modern Homes",
+    "link": "https://spectrum.ieee.org/ollobot-ai-companion-robot",
+    "score": 55,
+    "reason": "Social impact of AI; widespread robot deployment trend; controversy on human connection"
+  },
+  {
+    "rank": 19,
+    "headline": "How to Stop AI Chatbots From Training on Your Personal Data",
+    "link": "https://www.cnet.com/tech/services-and-software/how-to-stop-ai-chatbots-from-training-on-your-personal-data/",
+    "score": 52,
+    "reason": "Privacy concern; data protection issue; user control over AI training"
+  },
+  {
+    "rank": 20,
+    "headline": "I spent a day at a robot “carnival” in Shanghai. Here’s what I saw.",
+    "link": "https://www.technologyreview.com/2026/08/25/1141907/dispatch-shanghai-humanoid-robot-carnival/",
+    "score": 50,
+    "reason": "Robotics showcase; major deployment trend in China; hands-on coverage"
   }
 ]
