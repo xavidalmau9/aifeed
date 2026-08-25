@@ -1,5 +1,24 @@
 [
  {
+  "id": "americans-want-healthcare-ai-disclosure-20260810",
+  "slug": "americans-want-healthcare-ai-disclosure",
+  "headline": "Americans Want to Know When Their Healthcare Providers Use AI",
+  "summary": "Americans increasingly want healthcare providers to disclose when AI is used in their diagnosis and treatment — making transparency and informed consent the new expectation in medicine.",
+  "body": "<p><strong>Americans demand transparency: healthcare providers must disclose when they're using AI in patient care.</strong> A striking shift is happening in healthcare. Patients are increasingly asking critical questions about artificial intelligence in their medical treatment, and they're not accepting vague answers. According to new reporting from CNET, there's growing public demand for clear disclosure when healthcare providers deploy AI systems in clinical decision-making. This isn't just consumer preference — it's becoming a fundamental expectation that will reshape how healthcare organizations operate.</p>\n<p>The healthcare industry has quietly integrated AI into numerous workflows, from diagnostic imaging analysis to treatment recommendation systems. While these applications often improve accuracy and efficiency, the technology has developed faster than transparency frameworks. Patients are rightfully concerned about algorithmic bias, data privacy, and the fundamental question of whether their provider is making decisions based on human judgment or machine learning models.</p>\n<p>This transparency demand carries significant strategic implications for healthcare providers and health tech companies. Organizations that proactively disclose AI usage, explain how algorithms work, and demonstrate safety protocols will build competitive advantages in trust and patient retention. Conversely, providers caught using undisclosed AI risk regulatory backlash, reputation damage, and patient distrust. The message is clear: informed consent in the AI era means full disclosure.</p>\n<p>Beyond healthcare, this trend reflects a broader cultural reckoning with AI deployment. As artificial intelligence touches more critical life decisions — from medical care to financial services — the demand for human oversight and algorithmic transparency is intensifying across sectors. Healthcare is becoming the proving ground for responsible AI implementation.</p>\n<p>The path forward requires establishing clear regulatory standards, industry best practices, and patient communication frameworks. Healthcare leaders who view transparency as an obligation rather than an obstacle will emerge as trusted partners in the AI-enhanced healthcare ecosystem.</p>\n<p>Informed patients + transparent AI deployment = the future of healthcare.</p>",
+  "category": "Health",
+  "hashtags": [
+   "HealthcareAI",
+   "AITransparency",
+   "HealthTech",
+   "PatientCare",
+   "DigitalHealth"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_healthcare_ai_disclosure_20260810.png",
+  "sourceUrl": "https://www.cnet.com/tech/services-and-software/americans-want-to-know-when-their-healthcare-providers-use-ai/",
+  "publishedAt": "2026-08-10T19:00:00.000-04:00",
+  "isVideo": false
+ },
+ {
   "id": "xpeng-iron-humanoid-record-funding-20260810",
   "slug": "xpeng-iron-humanoid-record-funding",
   "headline": "XPeng's IRON Humanoid Robot Draws Record Physical-AI Funding",
