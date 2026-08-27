@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Nvidia is about to be a hundred-billion-dollar-a-quarter company",
-    "link": "https://www.theverge.com/tech/985387/nvidia-hundred-billion-dollar-quarterly-revenue",
-    "score": 95,
-    "reason": "Major financial milestone with concrete numbers; demonstrates AI market scale"
+    "headline": "OpenAI releases sweeping report on Hugging Face AI agent hack",
+    "link": "https://www.cnbc.com/2026/08/26/open-ai-hugging-face-hack.html",
+    "score": 94,
+    "reason": "Major security breach with detailed post-mortem; significant controversy in AI safety"
   },
   {
     "rank": 2,
-    "headline": "OpenAI’s rogue AI model incident was worse than we thought",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
+    "headline": "A quarter of Nvidia's business next year comes from labs it is financing",
+    "link": "https://www.artificialintelligence-news.com/news/nvidia-circular-financing-ai-labs/",
     "score": 92,
-    "reason": "Significant AI safety controversy; operational incident with real consequences"
+    "reason": "Massive financial number (25% of business); Nvidia's market dominance and potential conflicts of interest"
   },
   {
     "rank": 3,
-    "headline": "Gatik raises $200M to scale AI-powered autonomous freight",
-    "link": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight/",
-    "score": 88,
-    "reason": "Large funding round; concrete expansion of AI application in logistics"
+    "headline": "OpenAI bans pro-Russia ChatGPT accounts used to spread pro-Kremlin content including an Israel-based think tank using real researchers' names",
+    "link": "https://fortune.com/2026/08/27/openai-bans-cluster-russian-chatgpt-users-burke-institute-influence-campaign-cybersecurity/",
+    "score": 90,
+    "reason": "Major content moderation action; geopolitical controversy; impersonation scandal"
   },
   {
     "rank": 4,
-    "headline": "OpenAI details the failures that led to Hugging Face breach in official report",
-    "link": "https://www.engadget.com/2245119/openai-details-the-failures-that-led-to-hugging-face-breach-in-official-report/",
-    "score": 87,
-    "reason": "Security breach post-mortem with institutional accountability; operational failure"
+    "headline": "OpenAI Is Developing a ‘Persistent’ AI Agent",
+    "link": "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/",
+    "score": 88,
+    "reason": "Significant product launch; persistent agents represent major capability escalation"
   },
   {
     "rank": 5,
-    "headline": "Nvidia agrees to buy Hugging Face for $12.9 billion, report says",
-    "link": "https://www.cnbc.com/2026/08/27/nvidia-hugging-face-acquisition.html",
+    "headline": "This Is How Anthropic Thinks AI Agents Should Navigate the Physical World",
+    "link": "https://www.wired.com/story/anthropic-standard-ai-agents-coming-to-the-physical-world/",
     "score": 86,
-    "reason": "Major acquisition with large valuation; consolidation in AI infrastructure"
+    "reason": "Major capability announcement; physical world AI represents new frontier"
   },
   {
     "rank": 6,
-    "headline": "Nvidia projects 70% revenue growth in 2028",
-    "link": "https://www.axios.com/2026/08/26/nvidia-earnings-jensen-huang-ai",
-    "score": 85,
-    "reason": "Concrete growth projection; demonstrates sustained AI market demand"
+    "headline": "Bill Gates says we’ve passed AI’s danger thresholds. Now what?",
+    "link": "https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/",
+    "score": 84,
+    "reason": "High-profile AI safety controversy from major tech figure"
   },
   {
     "rank": 7,
-    "headline": "Google says its latest Gemini transcription model can turn your ramblings into structured text",
-    "link": "https://www.engadget.com/2244799/google-gemini-latest-transcription-model-can-turn-ramblings-into-structured-text/",
+    "headline": "How Facebook and Instagram will change after Meta's $18B settlement - and where the money is going",
+    "link": "https://www.zdnet.com/article/meta-settlement-will-change-facebook-and-instagram-where-money-is-going/",
     "score": 82,
-    "reason": "New product launch with functional capability; Google competing in AI agents space"
+    "reason": "Massive $18B regulatory settlement; major policy changes announced"
   },
   {
     "rank": 8,
-    "headline": "Anthropic's Claude and Cowork will share memories about you now - unless you opt out",
-    "link": "https://www.zdnet.com/article/anthropic-claude-and-cowork-share-memories-now-unless-you-opt-out/",
+    "headline": "A Georgia Cop Used Flock to Track 2 Other Cops: His Ex and Her Friend",
+    "link": "https://www.wired.com/story/a-georgia-cop-used-flock-to-track-2-other-cops-his-ex-and-her-friend/",
     "score": 80,
-    "reason": "New feature launch; shows AI personalization advancement and privacy implications"
+    "reason": "Controversial misuse of surveillance AI; law enforcement abuse case"
   },
   {
     "rank": 9,
-    "headline": "Australia's recording association bans AI-made music from charts",
-    "link": "https://www.engadget.com/2245151/australia-s-recording-association-bans-ai-made-music-from-charts/",
-    "score": 79,
-    "reason": "Regulatory action against AI content; significant policy development"
+    "headline": "Chinese open-source AI is starting to win over U.S. businesses",
+    "link": "https://fortune.com/2026/08/27/chinese-open-source-ai-is-starting-to-win-over-u-s-businesses/",
+    "score": 78,
+    "reason": "Major market shift; geopolitical and competitive controversy"
   },
   {
     "rank": 10,
-    "headline": "Without local languages, ‘AI is essentially useless’: Hong Kong’s Votee AI is taking on English and Mandarin’s AI dominance with a Cantonese model",
-    "link": "https://fortune.com/2026/08/27/votee-ai-hong-kong-cantonese-llm-pak-sun-ting-ceo/",
-    "score": 77,
-    "reason": "New AI model launch; addresses language diversity gap in AI"
+    "headline": "OpenAI's executive exodus has one big winner",
+    "link": "https://www.theverge.com/podcast/985332/openai-greg-brockman-sam-altman-leader-executive-exodus",
+    "score": 76,
+    "reason": "Significant leadership turnover; organizational controversy"
   },
   {
     "rank": 11,
-    "headline": "Salesforce stock jumps 12% on AI growth and Anthropic investment gain",
-    "link": "https://www.cnbc.com/2026/08/26/salesforce-crm-q2-earnings-report-2027.html",
-    "score": 76,
-    "reason": "Market reaction to AI investment; financial impact of AI strategy"
+    "headline": "ChatGPT can log into your web accounts without you now - but should you let it?",
+    "link": "https://www.zdnet.com/article/chatgpt-can-log-into-your-web-accounts-without-you-now-but-should-you-let-it/",
+    "score": 74,
+    "reason": "Major capability launch; significant privacy/security controversy"
   },
   {
     "rank": 12,
-    "headline": "Okta pops 20% after topping estimates as AI threat spikes demand for identity security",
-    "link": "https://www.cnbc.com/2026/08/26/okta-okta-earnings-q2-2027.html",
-    "score": 75,
-    "reason": "Market reaction showing AI driving cybersecurity demand; financial impact"
+    "headline": "Nvidia is bolstering support for Chinese open AI models as it warns of White House crackdown",
+    "link": "https://www.cnbc.com/2026/08/27/nvidia-chinese-ai-models.html",
+    "score": 72,
+    "reason": "Controversial geopolitical move; White House conflict"
   },
   {
     "rank": 13,
-    "headline": "NVIDIA Jetson Orin Nano 2 brings physical AI to drones and robots",
-    "link": "https://www.artificialintelligence-news.com/news/nvidia-jetson-orin-nano-2-physical-ai-to-drones-and-robots/",
-    "score": 74,
-    "reason": "Hardware product launch; expansion of AI into edge devices and robotics"
+    "headline": "Jensen Huang says Nvidia achieved AGI, again — not that it matters",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/985597/jensen-huang-says-nvidia-achieved-senseless-agi",
+    "score": 70,
+    "reason": "AGI claim controversy; Nvidia's exaggeration pattern"
   },
   {
     "rank": 14,
-    "headline": "OpenAI had warnings before its agents broke out",
-    "link": "https://www.axios.com/2026/08/26/openai-hugging-face-technical-report-ai-hack",
-    "score": 73,
-    "reason": "Safety failure evidence; institutional knowledge of AI risks before incident"
+    "headline": "Salesforce stock jumps 18% on AI growth and Anthropic investment gain",
+    "link": "https://www.cnbc.com/2026/08/26/salesforce-crm-q2-earnings-report-2027.html",
+    "score": 68,
+    "reason": "Major stock move (18%); significant AI investment announcement"
   },
   {
     "rank": 15,
-    "headline": "How Meta's $18B settlement will change Facebook and Instagram - and where the money is going",
-    "link": "https://www.zdnet.com/article/meta-settlement-will-change-facebook-and-instagram-where-money-is-going/",
-    "score": 70,
-    "reason": "Major settlement affecting AI/recommendation systems; regulatory consequence"
+    "headline": "Google’s new AI transcription edits out your 'ums' and 'ahs'",
+    "link": "https://www.theverge.com/tech/985186/google-gemini-3-5-transcribe-audio-ai",
+    "score": 66,
+    "reason": "Meaningful product launch; AI capability for content modification"
   },
   {
     "rank": 16,
-    "headline": "Gemini Live gets productivity upgrade with Spark, Gmail, and other integrations",
-    "link": "https://9to5google.com/2026/08/26/gemini-live-productivity-upgrade/",
-    "score": 68,
-    "reason": "Product feature expansion; Google AI agent integration advancement"
+    "headline": "Adobe is adding more AI to Photoshop",
+    "link": "https://www.theverge.com/tech/985491/adobe-photoshop-ai-assisted-editor-markup",
+    "score": 64,
+    "reason": "Significant creative tool enhancement; major software integration"
   },
   {
     "rank": 17,
-    "headline": "Bill Gates is deeply worried about AI, and he’s no longer staying quiet",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/984923/bill-gates-is-deeply-worried-about-ai-and-hes-no-longer-staying-quiet",
-    "score": 67,
-    "reason": "Major public figure warns on AI impacts; influential voice on governance"
+    "headline": "Hugging Face and Pollen Robotics open pre-orders for the $399 Microduck",
+    "link": "https://www.engadget.com/2245407/huggingface-and-pollen-robotics-opn-pre-orders-for-the-microduck-robot/",
+    "score": 62,
+    "reason": "New robotics product launch; physical AI commercialization"
   },
   {
     "rank": 18,
-    "headline": "Z.ai shares surge 8% after releasing new AI model running only on Chinese chips",
-    "link": "https://www.cnbc.com/2026/08/27/zai-shares-surge-new-ai-model-using-chinese-chips.html",
-    "score": 65,
-    "reason": "New AI model launch; geopolitical angle on chip independence"
+    "headline": "Google brings trip-planning features to Search's AI Mode",
+    "link": "https://www.engadget.com/2245553/google-brings-trip-planning-features-to-search-ai-mode/",
+    "score": 60,
+    "reason": "Significant feature expansion; consumer AI application launch"
   },
   {
     "rank": 19,
-    "headline": "Nvidia jumps 7% after blockbuster earnings boost AI confidence",
-    "link": "https://www.cnbc.com/2026/08/27/nvidia-nvda-q2-earnings.html",
-    "score": 63,
-    "reason": "Stock reaction to earnings; market confidence metric for AI market"
+    "headline": "Anthropic makes first move into physical AI with new way for scientists, manufacturers to bring equipment to life",
+    "link": "https://fortune.com/2026/08/27/anthropic-makes-first-move-into-physical-ai-with-universal-standard-for-scientists-manufacturing/",
+    "score": 58,
+    "reason": "New category launch; physical world AI capabilities"
   },
   {
     "rank": 20,
-    "headline": "New Platform Peers Inside AI’s Black Box",
-    "link": "https://spectrum.ieee.org/silico-ai-interpretability",
-    "score": 61,
-    "reason": "AI transparency tool launch; addresses explainability challenge"
+    "headline": "Plaud is launching AI earbuds",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/985500/plaud-one-earbuds-ai-recorder-price-availability",
+    "score": 56,
+    "reason": "Consumer AI hardware launch; wearable AI product"
   }
 ]
