@@ -1,5 +1,24 @@
 [
  {
+  "id": "nvidia-100-billion-quarter-20260810",
+  "slug": "nvidia-100-billion-quarter",
+  "headline": "Nvidia Is About to Become a $100-Billion-a-Quarter Company",
+  "summary": "Nvidia is on track to make $100 billion in a single quarter — a milestone that shows AI compute has gone from hype to essential, mission-critical infrastructure.",
+  "body": "<p><strong>Nvidia is about to become a hundred-billion-dollar-a-quarter company—a milestone that fundamentally illustrates the explosive demand for AI infrastructure.</strong></p>\n<p>This achievement represents far more than just impressive financial performance. It signals that the AI revolution has moved from hype cycle into genuine, sustained commercial deployment at scale. When a single company's quarterly revenue approaches the annual GDP of many nations, it reflects the mission-critical nature of AI compute infrastructure across virtually every major industry.</p>\n<p>Nvidia's dominance stems from their complete control of the GPU market, which has become the de facto standard for AI training and inference. While competitors are emerging, Nvidia's architectural advantages, software ecosystem (CUDA), and manufacturing relationships create formidable moats. This concentration of power in AI infrastructure represents both an opportunity and a potential bottleneck for the broader industry.</p>\n<p>The broader implications for AI development are significant. As Nvidia's revenue scales, so does their ability to invest in next-generation chip design, software optimization, and strategic partnerships. This creates a virtuous cycle where their market dominance enables further innovation, making it increasingly difficult for competitors to challenge their position. The AI industry quite literally runs on Nvidia's silicon.</p>\n<p>Looking ahead, the question isn't whether demand will continue—it's whether supply can keep pace. Data centers worldwide are racing to build out AI capacity, and the bottleneck remains chip availability and manufacturing. Nvidia's path to $100B+ quarterly revenue underscores that we're still in the early innings of enterprise AI adoption.</p>\n<p>The hundred-billion-dollar milestone represents a watershed moment: AI infrastructure has transitioned from emerging technology to essential utility.</p>",
+  "category": "Business",
+  "hashtags": [
+   "NvidiaEarnings",
+   "AIInfrastructure",
+   "TechInvestment",
+   "GPUMarket",
+   "ArtificialIntelligence"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_nvidia_100b_quarter_20260810.png",
+  "sourceUrl": "https://www.theverge.com/tech/985387/nvidia-hundred-billion-dollar-quarterly-revenue",
+  "publishedAt": "2026-08-10T20:00:00.000-04:00",
+  "isVideo": false
+ },
+ {
   "id": "americans-want-healthcare-ai-disclosure-20260810",
   "slug": "americans-want-healthcare-ai-disclosure",
   "headline": "Americans Want to Know When Their Healthcare Providers Use AI",
