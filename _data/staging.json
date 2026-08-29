@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic was illegally blacklisted by the Trump administration, court rules",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling",
-    "score": 92,
-    "reason": "Major legal victory with concrete ruling; high-stakes government controversy"
+    "headline": "Sony Music and Warner Chappell are suing Anthropic",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
+    "score": 95,
+    "reason": "Major lawsuit by two largest music publishers alleging copyright infringement; significant legal/financial stakes"
   },
   {
     "rank": 2,
-    "headline": "The Cybersecurity Apocalypse Is Coming in ‘Months,’ AI Giants Warn",
-    "link": "https://www.wired.com/story/security-news-this-week-the-cybersecurity-apocalypse-is-coming-in-months-ai-giants-warn/",
-    "score": 88,
-    "reason": "Big numbers/urgency claim from major AI companies; security controversy"
+    "headline": "A Judge Has Blocked the Pentagon’s Attempt to Blacklist Anthropic",
+    "link": "https://www.wired.com/story/a-judge-has-blocked-the-pentagons-attempt-to-blacklist-anthropic/",
+    "score": 92,
+    "reason": "Major court ruling with national security implications; concrete legal victory with regulatory impact"
   },
   {
     "rank": 3,
-    "headline": "Inside Meta’s Push to Put Robots to Work in Data Centers",
-    "link": "https://www.wired.com/story/inside-metas-experiments-with-data-center-robots/",
-    "score": 85,
-    "reason": "Major company product launch; robots in production deployment"
+    "headline": "OpenAI will pull its models from Cursor due to SpaceXAI acquisition",
+    "link": "https://www.engadget.com/2246969/openai-pull-its-models-from-cursor-due-to-spacexai-acquisition/",
+    "score": 88,
+    "reason": "High-profile tech conflict involving OpenAI, Elon Musk, and major AI acquisition; concrete business action"
   },
   {
     "rank": 4,
-    "headline": "AI Agents Are Hacking Systems. Could That Push the US and China to Cooperate?",
-    "link": "https://www.wired.com/story/ai-agents-hacking-systems-could-push-the-us-and-china-to-cooperate/",
-    "score": 83,
-    "reason": "Agents causing real security breaches; geopolitical implications"
+    "headline": "Plaud is launching AI earbuds",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/985500/plaud-one-earbuds-ai-recorder-price-availability",
+    "score": 78,
+    "reason": "Hardware product launch in emerging AI devices category; tangible new product"
   },
   {
     "rank": 5,
-    "headline": "Even an AI cost-management vendor can lose control of its agent spending",
-    "link": "https://www.zdnet.com/article/even-an-ai-cost-management-vendor-can-lose-control-of-its-agent-spending/",
-    "score": 81,
-    "reason": "Concrete failure example; agents causing financial damage"
+    "headline": "ICE explores purchasing robot dogs in enforcement tech push",
+    "link": "https://fortune.com/2026/08/29/ice-contract-robot-dogs-trump-immigration-crackdown-deportation/",
+    "score": 76,
+    "reason": "Government AI deployment in law enforcement; controversial application with big implications"
   },
   {
     "rank": 6,
-    "headline": "Human, Beware: The Secrets We Tell AI Chatbots Aren’t Private",
-    "link": "https://www.cnet.com/tech/services-and-software/human-beware-the-secrets-we-tell-ai-chatbots-arent-private/",
-    "score": 79,
-    "reason": "Privacy controversy with user impact"
+    "headline": "AI Has Human Doctors Asking: What’s Left for Us?",
+    "link": "https://www.wired.com/story/ai-has-human-doctors-asking-whats-left-for-us/",
+    "score": 74,
+    "reason": "Significant impact on professional workforce; emerging controversy about AI disruption in healthcare"
   },
   {
     "rank": 7,
-    "headline": "Adobe Photoshop Adds a Whole New AI Editing Mode",
-    "link": "https://www.cnet.com/tech/services-and-software/adobe-photoshop-adds-a-whole-new-ai-editing-mode/",
-    "score": 77,
-    "reason": "Major software launch with new AI feature"
+    "headline": "The EU AI Act gets real",
+    "link": "https://www.axios.com/2026/08/28/eu-ai-act-gets-real",
+    "score": 72,
+    "reason": "Major regulatory milestone with global implications; concrete implementation of landmark AI legislation"
   },
   {
     "rank": 8,
-    "headline": "OpenAI rolls out ads on select ChatGPT plans in India to boost monetization, support wider access",
-    "link": "https://www.cnbc.com/2026/08/28/openai-strategy-india-anthropic-ipo.html",
-    "score": 75,
-    "reason": "Monetization launch; business model change"
+    "headline": "Trump’s EPA wants to let data centers hide their air pollution",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/986176/data-center-pollution-epa-rule-change-air-permit",
+    "score": 70,
+    "reason": "Environmental/regulatory controversy; AI infrastructure policy with potential major impact"
   },
   {
     "rank": 9,
-    "headline": "Nvidia adds more than $400 billion in value after blowout earnings boost AI confidence",
-    "link": "https://www.cnbc.com/2026/08/27/nvidia-nvda-q2-earnings.html",
-    "score": 82,
-    "reason": "Big numbers ($400B); major market impact"
+    "headline": "3 surveys deliver the same uncomfortable truth about adopting agentic AI",
+    "link": "https://www.zdnet.com/article/3-surveys-uncomfortable-adopting-agentic-ai/",
+    "score": 68,
+    "reason": "Data-driven findings on enterprise AI adoption challenges; quantified business reality"
   },
   {
     "rank": 10,
-    "headline": "Google’s AI note-taking app now allows you to interact with books",
-    "link": "https://www.theverge.com/tech/985567/google-gemini-notebook-expert-sources-books",
-    "score": 74,
-    "reason": "Google product feature launch"
+    "headline": "91% of professionals say their firm still falls short on AI - how to fix that",
+    "link": "https://www.zdnet.com/article/thomson-reuters-report-ai-value-gap-business/",
+    "score": 66,
+    "reason": "Large-scale survey data (91%) revealing significant enterprise AI skills gap"
   },
   {
     "rank": 11,
-    "headline": "Hugging Face’s new robot is an adorable rollerskating duck",
-    "link": "https://www.theverge.com/gadgets/985549/hugging-face-microduck-robot",
-    "score": 72,
-    "reason": "Hugging Face robot product launch"
+    "headline": "Nvidia almighty: Chip riches flood through AI universe",
+    "link": "https://www.axios.com/2026/08/28/nvidia-ai-chip-circular-finance-startups",
+    "score": 65,
+    "reason": "Major financial/market story about AI's economic dominance; big numbers in chip sector"
   },
   {
     "rank": 12,
-    "headline": "He Scraped All of Their Art for AI. Now He’s Collaborating on a Tool to Help Them",
-    "link": "https://www.wired.com/story/he-scraped-art-from-cara-for-ai-now-he-is-collaborating-on-a-tool-to-help-them/",
-    "score": 73,
-    "reason": "AI training data controversy with resolution"
+    "headline": "Lawsuit says Oura sleep tracking has 'a coin flip's chance of being correct'",
+    "link": "https://www.zdnet.com/article/lawsuit-says-oura-sleep-tracking-has-a-coin-flips-chance-of-being-correct/",
+    "score": 64,
+    "reason": "Product controversy with specific claim; accuracy litigation against AI health device"
   },
   {
     "rank": 13,
-    "headline": "AI a 'force multiplier' for low-skilled threat actors: 4 ways organizations should respond",
-    "link": "https://www.zdnet.com/article/ai-armed-script-kiddies-power-of-state-threat-actors-unit-42/",
-    "score": 76,
-    "reason": "Cybersecurity threat assessment from major tech response"
+    "headline": "Warp builds self-improving agents on Claude",
+    "link": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude",
+    "score": 62,
+    "reason": "New AI agent capability launched; agentic AI development milestone"
   },
   {
     "rank": 14,
-    "headline": "X claims it found a Chinese bot farm posting anti-AI data center sentiments",
-    "link": "https://www.engadget.com/2246140/x-chinese-bot-farm-anti-ai-data-center-sentiments/",
-    "score": 78,
-    "reason": "Disinformation campaign discovery; geopolitical controversy"
+    "headline": "A week with the Google Pixel 11 changed my mind about Gemini (for the better)",
+    "link": "https://www.zdnet.com/article/google-pixel-11-review/",
+    "score": 60,
+    "reason": "Major consumer AI product (Gemini) quality improvement; flagship device integration"
   },
   {
     "rank": 15,
-    "headline": "Scientists are using AI to track permafrost thaw as Arctic lakes vanish in hours",
-    "link": "https://fortune.com/2026/08/29/ai-permafrost-thaw-tracking-tool/",
-    "score": 70,
-    "reason": "AI application launch for climate monitoring"
+    "headline": "Musicians-turned-detectives are hunting for AI grifters",
+    "link": "https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai",
+    "score": 58,
+    "reason": "Emerging controversy in AI misuse; concrete grassroots response to AI fraud"
   },
   {
     "rank": 16,
-    "headline": "Gemini Intelligence requires Gemini Nano 3, Google lists first Nano 4 phones",
-    "link": "https://9to5google.com/2026/08/27/gemini-intelligence-nano-4/",
-    "score": 71,
-    "reason": "Google hardware/software capability launch"
+    "headline": "Tech backlash reaches fever pitch as AI angst collides with social media fears",
+    "link": "https://www.cnbc.com/2026/08/29/tech-backlash-ai-data-centers-elections.html",
+    "score": 56,
+    "reason": "Major cultural/sentiment shift against AI; broader tech controversy escalation"
   },
   {
     "rank": 17,
-    "headline": "Google announces ‘Expert Intelligence’ to let you add Play Books in Gemini Notebook",
-    "link": "https://9to5google.com/2026/08/27/gemini-notebook-play-books/",
-    "score": 69,
-    "reason": "Google Gemini feature expansion"
+    "headline": "Mammotion Luba 3 changed my mind about robot lawnmowers",
+    "link": "https://9to5google.com/2026/08/29/mammotion-luba-3-review-robot-lawnmower/",
+    "score": 54,
+    "reason": "Consumer AI robotics product maturity milestone; hardware capability breakthrough"
   },
   {
     "rank": 18,
-    "headline": "Galaxy Z Fold 8 Ultra finally dies in bend test, unlike past models [Video]",
-    "link": "https://9to5google.com/2026/08/27/galaxy-z-fold-8-ultra-finally-dies-in-bend-test-unlike-past-models-video/",
-    "score": 68,
-    "reason": "Hardware durability breakthrough"
+    "headline": "This pocket AI voice recorder took me back to the good old days of dictation (and shorthand)",
+    "link": "https://www.zdnet.com/article/comulytic-note-pro-ai-voice-recorder-review/",
+    "score": 52,
+    "reason": "Consumer AI hardware category gaining adoption; practical application validation"
   },
   {
     "rank": 19,
-    "headline": "Tech Companies Call for Improved Cyber Defenses After AI-Enabled Attacks",
-    "link": "https://www.cnet.com/tech/services-and-software/tech-companies-call-for-improved-cyber-defenses-after-ai-enabled-attacks/",
-    "score": 80,
-    "reason": "AI-powered attacks forcing industry response"
+    "headline": "Gemini Notebook switching to compute-based usage limits, like Gemini app",
+    "link": "https://9to5google.com/2026/08/28/gemini-notebook-usage-limits/",
+    "score": 50,
+    "reason": "Google Gemini pricing/model change; product policy shift with user impact"
   },
   {
     "rank": 20,
-    "headline": "The Powerful Stealth AI Model ‘Ox Alpha’ Is Now GLM-5.3-Flash, and You Can Use It",
-    "link": "https://www.cnet.com/tech/services-and-software/the-powerful-stealth-ai-model-ox-alpha-is-glm-5-3-flash-and-you-can-use-it-now/",
-    "score": 67,
-    "reason": "New powerful open model release"
+    "headline": "The 5 craziest discoveries from OpenAI's HuggingFace investigation",
+    "link": "https://www.axios.com/2026/08/29/openai-huggingface-hack-investigation-highlights",
+    "score": 48,
+    "reason": "Significant research findings from major AI investigation; data-driven security insights"
   }
 ]
