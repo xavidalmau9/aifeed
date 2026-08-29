@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "A quarter of Nvidia's business next year comes from labs it is financing",
-    "link": "https://www.artificialintelligence-news.com/news/nvidia-circular-financing-ai-labs/",
-    "score": 95,
-    "reason": "Big number (25% revenue), major financial revelation about Nvidia's business model concentration"
+    "headline": "Anthropic was illegally blacklisted by the Trump administration, court rules",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling",
+    "score": 92,
+    "reason": "Major legal victory with concrete ruling; high-stakes government controversy"
   },
   {
     "rank": 2,
-    "headline": "A Judge Has Blocked the Pentagon’s Attempt to Blacklist Anthropic",
-    "link": "https://www.wired.com/story/a-judge-has-blocked-the-pentagons-attempt-to-blacklist-anthropic/",
-    "score": 92,
-    "reason": "Major legal victory for Anthropic, significant controversy/regulatory event"
+    "headline": "The Cybersecurity Apocalypse Is Coming in ‘Months,’ AI Giants Warn",
+    "link": "https://www.wired.com/story/security-news-this-week-the-cybersecurity-apocalypse-is-coming-in-months-ai-giants-warn/",
+    "score": 88,
+    "reason": "Big numbers/urgency claim from major AI companies; security controversy"
   },
   {
     "rank": 3,
-    "headline": "Trump’s EPA wants to let data centers hide their air pollution",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/986176/data-center-pollution-epa-rule-change-air-permit",
-    "score": 88,
-    "reason": "Significant controversy, major policy implications for AI infrastructure"
+    "headline": "Inside Meta’s Push to Put Robots to Work in Data Centers",
+    "link": "https://www.wired.com/story/inside-metas-experiments-with-data-center-robots/",
+    "score": 85,
+    "reason": "Major company product launch; robots in production deployment"
   },
   {
     "rank": 4,
-    "headline": "OpenAI Is Developing a ‘Persistent’ AI Agent",
-    "link": "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/",
-    "score": 86,
-    "reason": "Major product launch announcement from leading AI company"
+    "headline": "AI Agents Are Hacking Systems. Could That Push the US and China to Cooperate?",
+    "link": "https://www.wired.com/story/ai-agents-hacking-systems-could-push-the-us-and-china-to-cooperate/",
+    "score": 83,
+    "reason": "Agents causing real security breaches; geopolitical implications"
   },
   {
     "rank": 5,
-    "headline": "OpenAI's executive exodus has one big winner",
-    "link": "https://www.theverge.com/podcast/985332/openai-greg-brockman-sam-altman-leader-executive-exodus",
-    "score": 84,
-    "reason": "Significant organizational change and leadership controversy at major AI company"
+    "headline": "Even an AI cost-management vendor can lose control of its agent spending",
+    "link": "https://www.zdnet.com/article/even-an-ai-cost-management-vendor-can-lose-control-of-its-agent-spending/",
+    "score": 81,
+    "reason": "Concrete failure example; agents causing financial damage"
   },
   {
     "rank": 6,
-    "headline": "Microsoft-backed AI data center has been accused of violating federal law",
-    "link": "https://www.engadget.com/2246451/microsoft-backed-ai-data-center-has-been-accused-of-violating-federal-law/",
-    "score": 82,
-    "reason": "Major controversy involving Microsoft and federal law violations"
+    "headline": "Human, Beware: The Secrets We Tell AI Chatbots Aren’t Private",
+    "link": "https://www.cnet.com/tech/services-and-software/human-beware-the-secrets-we-tell-ai-chatbots-arent-private/",
+    "score": 79,
+    "reason": "Privacy controversy with user impact"
   },
   {
     "rank": 7,
-    "headline": "3 surveys deliver the same uncomfortable truth about adopting agentic AI",
-    "link": "https://www.zdnet.com/article/3-surveys-uncomfortable-adopting-agentic-ai/",
-    "score": 80,
-    "reason": "Data-driven finding on enterprise AI adoption challenges"
+    "headline": "Adobe Photoshop Adds a Whole New AI Editing Mode",
+    "link": "https://www.cnet.com/tech/services-and-software/adobe-photoshop-adds-a-whole-new-ai-editing-mode/",
+    "score": 77,
+    "reason": "Major software launch with new AI feature"
   },
   {
     "rank": 8,
-    "headline": "Iranian operatives used AI to impersonate Americans",
-    "link": "https://www.axios.com/2026/08/27/facebook-instagram-iran-ai-disinformation",
-    "score": 78,
-    "reason": "Significant security threat demonstrating real-world AI misuse"
+    "headline": "OpenAI rolls out ads on select ChatGPT plans in India to boost monetization, support wider access",
+    "link": "https://www.cnbc.com/2026/08/28/openai-strategy-india-anthropic-ipo.html",
+    "score": 75,
+    "reason": "Monetization launch; business model change"
   },
   {
     "rank": 9,
-    "headline": "Jensen Huang says Nvidia achieved AGI, again — not that it matters",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/985597/jensen-huang-says-nvidia-achieved-senseless-agi",
-    "score": 75,
-    "reason": "Controversial statement from Nvidia CEO about AI milestone"
+    "headline": "Nvidia adds more than $400 billion in value after blowout earnings boost AI confidence",
+    "link": "https://www.cnbc.com/2026/08/27/nvidia-nvda-q2-earnings.html",
+    "score": 82,
+    "reason": "Big numbers ($400B); major market impact"
   },
   {
     "rank": 10,
-    "headline": "Nvidia is bolstering support for Chinese open AI models as it warns of White House crackdown",
-    "link": "https://www.cnbc.com/2026/08/27/nvidia-chinese-ai-models.html",
+    "headline": "Google’s AI note-taking app now allows you to interact with books",
+    "link": "https://www.theverge.com/tech/985567/google-gemini-notebook-expert-sources-books",
     "score": 74,
-    "reason": "Major geopolitical AI tension between US and China"
+    "reason": "Google product feature launch"
   },
   {
     "rank": 11,
-    "headline": "AI Has Human Doctors Asking: What’s Left for Us?",
-    "link": "https://www.wired.com/story/ai-has-human-doctors-asking-whats-left-for-us/",
+    "headline": "Hugging Face’s new robot is an adorable rollerskating duck",
+    "link": "https://www.theverge.com/gadgets/985549/hugging-face-microduck-robot",
     "score": 72,
-    "reason": "Significant impact story on AI disrupting professional workforce"
+    "reason": "Hugging Face robot product launch"
   },
   {
     "rank": 12,
-    "headline": "A Georgia Cop Used Flock to Track 2 Other Cops: His Ex and Her Friend",
-    "link": "https://www.wired.com/story/a-georgia-cop-used-flock-to-track-2-other-cops-his-ex-and-her-friend/",
-    "score": 70,
-    "reason": "Controversy involving AI surveillance misuse by law enforcement"
+    "headline": "He Scraped All of Their Art for AI. Now He’s Collaborating on a Tool to Help Them",
+    "link": "https://www.wired.com/story/he-scraped-art-from-cara-for-ai-now-he-is-collaborating-on-a-tool-to-help-them/",
+    "score": 73,
+    "reason": "AI training data controversy with resolution"
   },
   {
     "rank": 13,
-    "headline": "The EU AI Act gets real",
-    "link": "https://www.axios.com/2026/08/28/eu-ai-act-gets-real",
-    "score": 68,
-    "reason": "Major regulatory implementation affecting global AI industry"
+    "headline": "AI a 'force multiplier' for low-skilled threat actors: 4 ways organizations should respond",
+    "link": "https://www.zdnet.com/article/ai-armed-script-kiddies-power-of-state-threat-actors-unit-42/",
+    "score": 76,
+    "reason": "Cybersecurity threat assessment from major tech response"
   },
   {
     "rank": 14,
-    "headline": "Big Tech's AI spending is bigger than you think",
-    "link": "https://www.axios.com/2026/08/27/ai-spending-spending-balance-sheet",
-    "score": 66,
-    "reason": "Significant financial data on AI industry investment scale"
+    "headline": "X claims it found a Chinese bot farm posting anti-AI data center sentiments",
+    "link": "https://www.engadget.com/2246140/x-chinese-bot-farm-anti-ai-data-center-sentiments/",
+    "score": 78,
+    "reason": "Disinformation campaign discovery; geopolitical controversy"
   },
   {
     "rank": 15,
-    "headline": "This Is How Anthropic Thinks AI Agents Should Navigate the Physical World",
-    "link": "https://www.wired.com/story/anthropic-standard-ai-agents-coming-to-the-physical-world/",
-    "score": 64,
-    "reason": "Major AI capability development announcement from Anthropic"
+    "headline": "Scientists are using AI to track permafrost thaw as Arctic lakes vanish in hours",
+    "link": "https://fortune.com/2026/08/29/ai-permafrost-thaw-tracking-tool/",
+    "score": 70,
+    "reason": "AI application launch for climate monitoring"
   },
   {
     "rank": 16,
-    "headline": "Tech giants warn time is running out to prepare for AI threats",
-    "link": "https://www.axios.com/2026/08/27/openai-anthropic-issue-dire-cyber-threat-warning",
-    "score": 62,
-    "reason": "Industry-wide warning on AI safety and security challenges"
+    "headline": "Gemini Intelligence requires Gemini Nano 3, Google lists first Nano 4 phones",
+    "link": "https://9to5google.com/2026/08/27/gemini-intelligence-nano-4/",
+    "score": 71,
+    "reason": "Google hardware/software capability launch"
   },
   {
     "rank": 17,
-    "headline": "Gemini Notebook switching to compute-based usage limits, like Gemini app",
-    "link": "https://9to5google.com/2026/08/28/gemini-notebook-usage-limits/",
-    "score": 58,
-    "reason": "Google pricing model change for Gemini product"
+    "headline": "Google announces ‘Expert Intelligence’ to let you add Play Books in Gemini Notebook",
+    "link": "https://9to5google.com/2026/08/27/gemini-notebook-play-books/",
+    "score": 69,
+    "reason": "Google Gemini feature expansion"
   },
   {
     "rank": 18,
-    "headline": "Plaud is launching AI earbuds",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/985500/plaud-one-earbuds-ai-recorder-price-availability",
-    "score": 56,
-    "reason": "Product launch in AI hardware category"
+    "headline": "Galaxy Z Fold 8 Ultra finally dies in bend test, unlike past models [Video]",
+    "link": "https://9to5google.com/2026/08/27/galaxy-z-fold-8-ultra-finally-dies-in-bend-test-unlike-past-models-video/",
+    "score": 68,
+    "reason": "Hardware durability breakthrough"
   },
   {
     "rank": 19,
-    "headline": "Adobe is adding more AI to Photoshop",
-    "link": "https://www.theverge.com/tech/985491/adobe-photoshop-ai-assisted-editor-markup",
-    "score": 54,
-    "reason": "Major feature expansion from Adobe for professional tools"
+    "headline": "Tech Companies Call for Improved Cyber Defenses After AI-Enabled Attacks",
+    "link": "https://www.cnet.com/tech/services-and-software/tech-companies-call-for-improved-cyber-defenses-after-ai-enabled-attacks/",
+    "score": 80,
+    "reason": "AI-powered attacks forcing industry response"
   },
   {
     "rank": 20,
-    "headline": "91% of professionals say their firm still falls short on AI - how to fix that",
-    "link": "https://www.zdnet.com/article/thomson-reuters-report-ai-value-gap-business/",
-    "score": 52,
-    "reason": "Significant statistic on enterprise AI readiness gap"
+    "headline": "The Powerful Stealth AI Model ‘Ox Alpha’ Is Now GLM-5.3-Flash, and You Can Use It",
+    "link": "https://www.cnet.com/tech/services-and-software/the-powerful-stealth-ai-model-ox-alpha-is-glm-5-3-flash-and-you-can-use-it-now/",
+    "score": 67,
+    "reason": "New powerful open model release"
   }
 ]
