@@ -1,72 +1,58 @@
 [
   {
     "rank": 1,
-    "headline": "The Cybersecurity Apocalypse Is Coming in ‘Months,’ AI Giants Warn",
-    "link": "https://www.wired.com/story/security-news-this-week-the-cybersecurity-apocalypse-is-coming-in-months-ai-giants-warn/",
+    "headline": "Sony Music Publishing and Warner Chappell are suing Anthropic",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
     "score": 92,
-    "reason": "Major controversy/warning from multiple AI companies with concrete timeline, high stakes"
+    "reason": "Major lawsuit against major AI company; significant legal/financial implications; establishes precedent"
   },
   {
     "rank": 2,
-    "headline": "Sony and Warner sue Anthropic for 'blatant violation' of copyright law",
-    "link": "https://www.engadget.com/2246997/sony-warner-sue-anthropic-for-blatant-violation-of-copyright-law/",
+    "headline": "He beat Big Tobacco. Will the same playbook work against Meta and social media?",
+    "link": "https://www.cnbc.com/2026/08/30/mike-moore-ag-social-media-settlement-big-tobacco.html",
     "score": 88,
-    "reason": "Major lawsuit from two major corporations against AI company, significant legal controversy"
+    "reason": "Major controversy; meta-story about regulatory strategy; significant business/legal implications"
   },
   {
     "rank": 3,
-    "headline": "Music publishers sue Anthropic, allege \"blantant theft\" of copyrighted music",
-    "link": "https://www.axios.com/2026/08/29/anthropic-sony-warner-music-copyright",
+    "headline": "The AI boom hasn’t stopped U.S. companies from hiring cheap offshore labor, and overseas call center employment is still skyrocketing",
+    "link": "https://fortune.com/article/why-hasnt-ai-boom-displaced-call-center-workers-employment-offshoring-india-philippines/",
     "score": 85,
-    "reason": "Another major lawsuit against Anthropic, copyright controversy with multiple parties"
+    "reason": "Big numbers story; contradicts AI automation narrative; significant economic/employment controversy"
   },
   {
     "rank": 4,
-    "headline": "OpenAI to end model access to Cursor after acquisition by Elon Musk&apos;s SpaceX",
-    "link": "https://www.cnbc.com/2026/08/29/openai-cursor-spacex-model-access.html",
+    "headline": "Tech backlash reaches fever pitch as AI angst collides with social media fears",
+    "link": "https://www.cnbc.com/2026/08/29/tech-backlash-ai-data-centers-elections.html",
     "score": 82,
-    "reason": "Major business action affecting API access, involves Elon Musk/SpaceX acquisition angle"
+    "reason": "Broad controversy story; captures major cultural/regulatory momentum; significant trend indicator"
   },
   {
     "rank": 5,
-    "headline": "Google’s AI note-taking app now allows you to interact with books",
-    "link": "https://www.theverge.com/tech/985567/google-gemini-notebook-expert-sources-books",
-    "score": 76,
-    "reason": "Major Google product launch with expanded AI capabilities"
+    "headline": "It's not just math and reading. Classroom devices deprive kids of skills needed in the AI future and how to be 'fully human,' education experts say",
+    "link": "https://fortune.com/2026/08/30/classroom-devices-backlash-online-learning-test-scores-cognition-human-skills-ai-future/",
+    "score": 78,
+    "reason": "Major controversy in education sector; challenges AI adoption narrative; expert consensus story"
   },
   {
     "rank": 6,
-    "headline": "Nvidia&#x27;s AI advantage is moving beyond the GPU",
-    "link": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
-    "score": 75,
-    "reason": "Significant strategic shift for major AI hardware leader"
+    "headline": "A week with the Google Pixel 11 changed my mind about Gemini (for the better)",
+    "link": "https://www.zdnet.com/article/google-pixel-11-review/",
+    "score": 72,
+    "reason": "Google product launch with AI integration; positive review signals improved AI performance"
   },
   {
     "rank": 7,
-    "headline": "Fair Work Commission condemns &#x27;plain wrong&#x27; AI legal advice",
-    "link": "https://www.abc.net.au/news/2026-08-29/fair-work-commission-condemns-ai-legal-advice/107089766",
-    "score": 72,
-    "reason": "Regulatory body condemning AI system failure in critical domain (legal advice)"
+    "headline": "U.S. appeals court rules against prediction markets, sets up likely fight at Supreme Court",
+    "link": "https://www.cnbc.com/2026/08/28/appeals-court-rules-against-prediction-markets-tees-up-scotus-fight.html",
+    "score": 70,
+    "reason": "Major legal ruling with Supreme Court implications; significant regulatory development"
   },
   {
     "rank": 8,
-    "headline": "People are sticking the Fitbit Air to their bodies, literally, and it works [Gallery]",
-    "link": "https://9to5google.com/2026/08/28/fitbit-air-tape-bicep-tracking/",
-    "score": 68,
-    "reason": "Novel consumer AI/hardware adoption with tangible usage pattern"
-  },
-  {
-    "rank": 9,
-    "headline": "The big lesson from this week&apos;s earnings: The AI buildout is not a zero-sum game",
-    "link": "https://www.cnbc.com/2026/08/29/big-lesson-from-this-weeks-earnings-ai-buildout-is-not-a-zero-sum-game.html",
+    "headline": "Texas Governor Abbott blocks funding for more Flock cameras",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/986541/texas-governor-abbott-flock-cameras",
     "score": 65,
-    "reason": "Market analysis of AI economics with earnings data insights"
-  },
-  {
-    "rank": 10,
-    "headline": "South Korea may be getting too old to take advantage of its AI boom",
-    "link": "https://fortune.com/2026/08/30/south-korea-may-be-getting-too-old-for-ai-boom-goldman-sachs/",
-    "score": 62,
-    "reason": "Demographic challenge to AI development in major tech nation"
+    "reason": "Government action against AI surveillance; regulatory controversy; state-level policy decision"
   }
 ]
