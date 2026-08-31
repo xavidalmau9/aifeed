@@ -1,58 +1,58 @@
 [
   {
     "rank": 1,
-    "headline": "Sony Music Publishing and Warner Chappell are suing Anthropic",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
+    "headline": "Bank of England chief warns new AI models threaten global financial stability",
+    "link": "https://www.cnbc.com/2026/08/31/bailey-frontier-ai-financial-stability-risk.html",
     "score": 92,
-    "reason": "Major lawsuit against major AI company; significant legal/financial implications; establishes precedent"
+    "reason": "Major institutional warning on AI systemic risk; concrete concern from financial authority"
   },
   {
     "rank": 2,
-    "headline": "He beat Big Tobacco. Will the same playbook work against Meta and social media?",
-    "link": "https://www.cnbc.com/2026/08/30/mike-moore-ag-social-media-settlement-big-tobacco.html",
+    "headline": "Music publishers sue Anthropic, allege \"blantant theft\" of copyrighted music",
+    "link": "https://www.axios.com/2026/08/29/anthropic-sony-warner-music-copyright",
     "score": 88,
-    "reason": "Major controversy; meta-story about regulatory strategy; significant business/legal implications"
+    "reason": "Major lawsuit against AI company; concrete legal controversy over training data"
   },
   {
     "rank": 3,
-    "headline": "The AI boom hasn’t stopped U.S. companies from hiring cheap offshore labor, and overseas call center employment is still skyrocketing",
-    "link": "https://fortune.com/article/why-hasnt-ai-boom-displaced-call-center-workers-employment-offshoring-india-philippines/",
-    "score": 85,
-    "reason": "Big numbers story; contradicts AI automation narrative; significant economic/employment controversy"
+    "headline": "OpenAI to end model access to Cursor after acquisition by Elon Musk&apos;s SpaceX",
+    "link": "https://www.cnbc.com/2026/08/29/openai-cursor-spacex-model-access.html",
+    "score": 86,
+    "reason": "Major policy change; cross-company AI conflict with notable figures"
   },
   {
     "rank": 4,
-    "headline": "Tech backlash reaches fever pitch as AI angst collides with social media fears",
-    "link": "https://www.cnbc.com/2026/08/29/tech-backlash-ai-data-centers-elections.html",
-    "score": 82,
-    "reason": "Broad controversy story; captures major cultural/regulatory momentum; significant trend indicator"
+    "headline": "What Is Grok? Everything to Know About Elon Musk’s AI Tool",
+    "link": "https://www.cnet.com/tech/services-and-software/what-is-grok-everything-to-know-about-elon-musks-ai-tool/",
+    "score": 81,
+    "reason": "Major new AI product launch from high-profile figure"
   },
   {
     "rank": 5,
-    "headline": "It's not just math and reading. Classroom devices deprive kids of skills needed in the AI future and how to be 'fully human,' education experts say",
-    "link": "https://fortune.com/2026/08/30/classroom-devices-backlash-online-learning-test-scores-cognition-human-skills-ai-future/",
-    "score": 78,
-    "reason": "Major controversy in education sector; challenges AI adoption narrative; expert consensus story"
+    "headline": "Temu spent up to $962 million on ads that helped finance an army of fake creators on Meta platforms, research claims",
+    "link": "https://fortune.com/2026/08/31/temu-962-million-meta-partnership-ads-fake-creators/",
+    "score": 79,
+    "reason": "Specific financial figure; AI-generated content controversy; major platforms involved"
   },
   {
     "rank": 6,
-    "headline": "A week with the Google Pixel 11 changed my mind about Gemini (for the better)",
-    "link": "https://www.zdnet.com/article/google-pixel-11-review/",
+    "headline": "GXO CEO: Better robot hands, not Olympic-level humanoids, are what businesses really need",
+    "link": "https://fortune.com/2026/08/31/gxo-humanoid-robots-warehouse-logistics-patrick-kelleher/",
     "score": 72,
-    "reason": "Google product launch with AI integration; positive review signals improved AI performance"
+    "reason": "Robotics AI reality check; enterprise perspective on practical AI needs"
   },
   {
     "rank": 7,
-    "headline": "U.S. appeals court rules against prediction markets, sets up likely fight at Supreme Court",
-    "link": "https://www.cnbc.com/2026/08/28/appeals-court-rules-against-prediction-markets-tees-up-scotus-fight.html",
+    "headline": "AI giants lean into health care to stall public backlash",
+    "link": "https://www.axios.com/2026/08/31/ai-health-care-cures-disease-anthropic-open-ai",
     "score": 70,
-    "reason": "Major legal ruling with Supreme Court implications; significant regulatory development"
+    "reason": "Strategic pivot by AI industry; addresses reputational concerns"
   },
   {
     "rank": 8,
-    "headline": "Texas Governor Abbott blocks funding for more Flock cameras",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/986541/texas-governor-abbott-flock-cameras",
-    "score": 65,
-    "reason": "Government action against AI surveillance; regulatory controversy; state-level policy decision"
+    "headline": "The big lesson from this week&apos;s earnings: The AI buildout is not a zero-sum game",
+    "link": "https://www.cnbc.com/2026/08/29/big-lesson-from-this-weeks-earnings-ai-buildout-is-not-a-zero-sum-game.html",
+    "score": 68,
+    "reason": "Market-wide AI investment trend; earnings-based insight"
   }
 ]
