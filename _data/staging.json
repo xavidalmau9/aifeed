@@ -1,58 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Bank of England chief warns new AI models threaten global financial stability",
-    "link": "https://www.cnbc.com/2026/08/31/bailey-frontier-ai-financial-stability-risk.html",
-    "score": 92,
-    "reason": "Major institutional warning on AI systemic risk; concrete concern from financial authority"
+    "headline": "Sony Music Publishing and Warner Chappell are suing Anthropic",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
+    "score": 94,
+    "reason": "Major lawsuit from two music giants against AI company; concrete legal action on IP infringement"
   },
   {
     "rank": 2,
-    "headline": "Music publishers sue Anthropic, allege \"blantant theft\" of copyrighted music",
-    "link": "https://www.axios.com/2026/08/29/anthropic-sony-warner-music-copyright",
-    "score": 88,
-    "reason": "Major lawsuit against AI company; concrete legal controversy over training data"
+    "headline": "OpenAI&apos;s ad business shows blistering growth, hits $1 billion annualized revenue run rate",
+    "link": "https://www.cnbc.com/2026/08/31/open-ai-chatgpt-ads-revenue.html",
+    "score": 92,
+    "reason": "Significant financial milestone; quantified business expansion for major AI player"
   },
   {
     "rank": 3,
-    "headline": "OpenAI to end model access to Cursor after acquisition by Elon Musk&apos;s SpaceX",
-    "link": "https://www.cnbc.com/2026/08/29/openai-cursor-spacex-model-access.html",
-    "score": 86,
-    "reason": "Major policy change; cross-company AI conflict with notable figures"
+    "headline": "ChatGPT to face tougher regulation in the EU",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
+    "score": 88,
+    "reason": "Major regulatory action against leading AI company; concrete policy impact"
   },
   {
     "rank": 4,
-    "headline": "What Is Grok? Everything to Know About Elon Musk’s AI Tool",
-    "link": "https://www.cnet.com/tech/services-and-software/what-is-grok-everything-to-know-about-elon-musks-ai-tool/",
-    "score": 81,
-    "reason": "Major new AI product launch from high-profile figure"
+    "headline": "'Sophisticated' AI swarm attacks are months away, OpenAI warns: What experts say businesses must do",
+    "link": "https://www.zdnet.com/article/openai-warns-malicious-agents-coming-recommended-action/",
+    "score": 85,
+    "reason": "Security controversy; OpenAI warning of imminent threat from autonomous AI systems"
   },
   {
     "rank": 5,
-    "headline": "Temu spent up to $962 million on ads that helped finance an army of fake creators on Meta platforms, research claims",
-    "link": "https://fortune.com/2026/08/31/temu-962-million-meta-partnership-ads-fake-creators/",
-    "score": 79,
-    "reason": "Specific financial figure; AI-generated content controversy; major platforms involved"
+    "headline": "Instagram cracks down on AI accounts pretending to be human",
+    "link": "https://www.theverge.com/tech/986593/instagram-addresses-fake-ai-profile-slop",
+    "score": 82,
+    "reason": "Major platform enforcement action; affects multiple accounts; addresses AI deception"
   },
   {
     "rank": 6,
-    "headline": "GXO CEO: Better robot hands, not Olympic-level humanoids, are what businesses really need",
-    "link": "https://fortune.com/2026/08/31/gxo-humanoid-robots-warehouse-logistics-patrick-kelleher/",
-    "score": 72,
-    "reason": "Robotics AI reality check; enterprise perspective on practical AI needs"
+    "headline": "Gemini Notebook can analyze your Google Play books now: 3 ways I use this feature",
+    "link": "https://www.zdnet.com/article/gemini-ai-notebook-google-play-books-feature/",
+    "score": 78,
+    "reason": "New Google AI feature launch with demonstrated use cases"
   },
   {
     "rank": 7,
-    "headline": "AI giants lean into health care to stall public backlash",
-    "link": "https://www.axios.com/2026/08/31/ai-health-care-cures-disease-anthropic-open-ai",
-    "score": 70,
-    "reason": "Strategic pivot by AI industry; addresses reputational concerns"
+    "headline": "Google is making AI Overviews even bigger on some search queries",
+    "link": "https://9to5google.com/2026/08/31/google-search-ai-overviews-bigger/",
+    "score": 76,
+    "reason": "Major product change to search by dominant player; scaling AI integration"
   },
   {
     "rank": 8,
-    "headline": "The big lesson from this week&apos;s earnings: The AI buildout is not a zero-sum game",
-    "link": "https://www.cnbc.com/2026/08/29/big-lesson-from-this-weeks-earnings-ai-buildout-is-not-a-zero-sum-game.html",
+    "headline": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
+    "link": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
+    "score": 74,
+    "reason": "Significant supply chain impact from AI workload demand; major tech company affected"
+  },
+  {
+    "rank": 9,
+    "headline": "I used Perplexity's AI agent in Windows to tackle 5 complex tasks - here's what impressed me most",
+    "link": "https://www.zdnet.com/article/perplexity-ai-agentic-personal-computer-complex-tasks-windows/",
+    "score": 72,
+    "reason": "Perplexity AI agent launch on Windows; new capability demonstration"
+  },
+  {
+    "rank": 10,
+    "headline": "Debian won't ban AI code from its Linux distribution",
+    "link": "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
     "score": 68,
-    "reason": "Market-wide AI investment trend; earnings-based insight"
+    "reason": "Major open-source decision on AI-generated code acceptance; policy stance"
   }
 ]
