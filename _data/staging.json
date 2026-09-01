@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Temu spent up to $962 million on ads that helped finance an army of fake creators on Meta platforms, research claims",
-    "link": "https://fortune.com/2026/08/31/temu-962-million-meta-partnership-ads-fake-creators/",
-    "score": 92,
-    "reason": "Major controversy with big numbers; documented deceptive practice across platforms"
+    "headline": "OpenAI's reports on its AI agents' attack on Hugging Face should be ringing alarm bells—and making all companies rethink how they secure AI agents",
+    "link": "https://fortune.com/2026/09/01/openais-reports-on-its-ai-agents-attack-on-hugging-face-should-be-ringing-alarm-bellsand-making-all-companies-rethink-how-they-secure-ai-agents/",
+    "score": 94,
+    "reason": "Major controversy: autonomous AI agents conducting real attacks; security implications; actionable proof of capability"
   },
   {
     "rank": 2,
-    "headline": "Apple adds more allegations to its trade secrets lawsuit against OpenAI",
-    "link": "https://www.engadget.com/2248199/apple-adds-more-allegations-to-its-trade-secrets-lawsuit-against-openai/",
-    "score": 88,
-    "reason": "Escalating high-stakes legal controversy between major tech companies"
+    "headline": "Apple accuses OpenAI of destroying evidence",
+    "link": "https://www.theverge.com/tech/987575/apple-openai-destroying-evidence-trade-secrets-lawsuit",
+    "score": 92,
+    "reason": "High-stakes legal dispute between major companies; serious allegations; escalating conflict"
   },
   {
     "rank": 3,
-    "headline": "Qualcomm rival MediaTek jumps 10% after $3.5 billion Nvidia AI chip deal",
-    "link": "https://www.cnbc.com/2026/09/01/nvidia-deal-mediatek-shares.html",
-    "score": 85,
-    "reason": "Major deal value with tangible market impact and stock movement"
+    "headline": "OpenAI to limit access to Astra model's advanced cyber features due to hacking concerns",
+    "link": "https://fortune.com/2026/09/01/openai-to-limit-release-of-its-asttra-model-astra-due-to-hacking-concerns/",
+    "score": 90,
+    "reason": "Concrete response to security threat; rollback of capabilities; acknowledges critical vulnerability"
   },
   {
     "rank": 4,
-    "headline": "Trump says U.S. communities opposing AI data centers could end up &apos;backwards and poor&apos;",
-    "link": "https://www.cnbc.com/2026/08/31/trump-data-centers-backlash-elections-congress.html",
-    "score": 83,
-    "reason": "Significant political controversy; high-profile statement on AI infrastructure conflict"
+    "headline": "GoPro joins AI bonanza with pivot into data centers as shares skyrocket 40%",
+    "link": "https://www.cnbc.com/2026/09/01/gopro-stock-ai-data-centers.html",
+    "score": 88,
+    "reason": "Big number (40% jump); major business pivot; market validation"
   },
   {
     "rank": 5,
-    "headline": "Anthropic paused some AI training after Claude took unauthorized  actions",
-    "link": "https://www.axios.com/2026/09/01/anthropic-paused-some-ai-training-after-claude-took-unauthorized-actions",
-    "score": 81,
-    "reason": "Concrete technical controversy; documented safety issue with major AI model"
+    "headline": "GoPro says it's moving into AI data centers as part of a $285 million merger",
+    "link": "https://www.engadget.com/2248633/gopro-says-its-moving-into-ai-data-centers-as-part-of-a-dollar285-million-merger/",
+    "score": 87,
+    "reason": "Major deal ($285M); strategic shift; big number"
   },
   {
     "rank": 6,
-    "headline": "Google Rolls Out 3 New Ways to Book Travel Using AI Mode in Search",
-    "link": "https://www.cnet.com/tech/services-and-software/google-rolls-out-3-new-ways-to-book-travel-using-ai-mode-in-search/",
-    "score": 75,
-    "reason": "Major product launch from top AI company with multiple new features"
+    "headline": "Waymo robotaxi rides are now open to the public in Denver, San Diego and Tampa",
+    "link": "https://www.engadget.com/2248696/waymo-robotaxi-rides-are-now-open-to-the-public-in-denver-san-diego-and-tampa/",
+    "score": 85,
+    "reason": "Significant launch expansion; three new cities; public access milestone"
   },
   {
     "rank": 7,
-    "headline": "Instagram Says It’s Pulling the Mask Off AI Influencers",
-    "link": "https://www.cnet.com/tech/services-and-software/instagram-ai-generated-profile-label-fake-influencer-profiles-2/",
-    "score": 72,
-    "reason": "Major platform enforcement action on AI-generated content deception"
+    "headline": "Palo Alto Networks beats quarterly estimates on AI demand, continues acquisition spree",
+    "link": "https://www.cnbc.com/2026/09/01/palo-alto-networks-panw-q4-2026-earnings.html",
+    "score": 83,
+    "reason": "Financial performance; big numbers (acquisitions); market dominance"
   },
   {
     "rank": 8,
-    "headline": "Microsoft Outlook and OpenAI&apos;s ChatGPT Work are experiencing user outages",
-    "link": "https://www.cnbc.com/2026/08/31/microsoft-outlook-and-openais-chatgpt-work-experience-outages-.html",
-    "score": 68,
-    "reason": "Major service disruption affecting millions of users across key platforms"
+    "headline": "The Pentagon is giving 3 million military and civilian workers access to ChatGPT and Grok through a secure AI platform built for ‘warfighter needs’",
+    "link": "https://fortune.com/2026/09/01/pentagon-chatgpt-grok-government-military-ai-members-pete-hegseth-defense-department/",
+    "score": 82,
+    "reason": "Big number (3M users); significant government adoption; major institutional shift"
   },
   {
     "rank": 9,
-    "headline": "Hugging Face&apos;s new duck robot is selling fast. A Chinese chip powers it",
-    "link": "https://www.cnbc.com/2026/09/01/hugging-faces-new-duck-robot-is-selling-fast-a-chinese-chip-powers-it.html",
-    "score": 65,
-    "reason": "Concrete product launch with geopolitical supply chain angle"
+    "headline": "Softbank&apos;s SB Energy files for IPO, says it&apos;s &apos;substantially dependent&apos; on OpenAI",
+    "link": "https://www.cnbc.com/2026/09/01/sb-energy-ipo-softbank-open-ai-nvidia.html",
+    "score": 80,
+    "reason": "Major financial event (IPO); dependency disclosure; business risk indicator"
   },
   {
     "rank": 10,
-    "headline": "AI giants lean into health care to stall public backlash",
-    "link": "https://www.axios.com/2026/08/31/ai-health-care-cures-disease-anthropic-open-ai",
+    "headline": "A new bill would tax AI tokens to fund jobs if the technology causes mass unemployment",
+    "link": "https://fortune.com/2026/09/01/bill-tax-ai-tokens-fund-jobs-technology-unemployment/",
+    "score": 78,
+    "reason": "Policy launch; regulatory response; addresses macro AI impact concerns"
+  },
+  {
+    "rank": 11,
+    "headline": "Anthropic changes data retention policy after pushback from customers",
+    "link": "https://www.cnbc.com/2026/09/01/anthropic-data-retention.html",
+    "score": 76,
+    "reason": "Concrete policy reversal due to pressure; customer-driven change; privacy concern"
+  },
+  {
+    "rank": 12,
+    "headline": "AI labs are facing an agent control problem",
+    "link": "https://www.axios.com/2026/09/01/openai-hugging-face-ai-agent-security",
+    "score": 74,
+    "reason": "System-wide industry crisis; control/safety failure; affects multiple labs"
+  },
+  {
+    "rank": 13,
+    "headline": "Instagram cracks down on AI accounts pretending to be human",
+    "link": "https://www.theverge.com/tech/986593/instagram-addresses-fake-ai-profile-slop",
+    "score": 72,
+    "reason": "Enforcement action; major platform policy; addresses deception at scale"
+  },
+  {
+    "rank": 14,
+    "headline": "John Deere launched an AI chatbot for farmers",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/987486/john-deere-jd-ai-chatbot",
+    "score": 70,
+    "reason": "Concrete launch; enterprise/agriculture focus; specific use case"
+  },
+  {
+    "rank": 15,
+    "headline": "Perplexity's Hybrid Compute splits sensitive tasks between cloud and local AI",
+    "link": "https://www.engadget.com/2248548/perplexitys-hybrid-compute-splits-sensitive-tasks-between-cloud-and-local-ai/",
+    "score": 68,
+    "reason": "Product launch; novel architecture; privacy-focused innovation"
+  },
+  {
+    "rank": 16,
+    "headline": "ChatGPT to face tougher regulation in the EU",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
+    "score": 66,
+    "reason": "Major regulatory action; impacts market leader; enforcement escalation"
+  },
+  {
+    "rank": 17,
+    "headline": "Nvidia's controversial DLSS 5 arrives September 3rd and requires serious GPU horsepower",
+    "link": "https://www.theverge.com/tech/986378/nvidia-dlss-5-launch-nba-2k27",
+    "score": 64,
+    "reason": "Product launch date; controversy around requirements; hardware implications"
+  },
+  {
+    "rank": 18,
+    "headline": "AI token prices are hitting new record lows",
+    "link": "https://www.cnbc.com/2026/09/01/ai-token-prices-lows.html",
     "score": 62,
-    "reason": "Strategic industry shift by major AI companies in response to controversy"
+    "reason": "Big number trend; market indicator; shows commoditization/cost compression"
+  },
+  {
+    "rank": 19,
+    "headline": "Google is making AI Overviews even bigger on some search queries",
+    "link": "https://9to5google.com/2026/08/31/google-search-ai-overviews-bigger/",
+    "score": 60,
+    "reason": "Major product expansion; search algorithm shift; affects millions of queries"
+  },
+  {
+    "rank": 20,
+    "headline": "AI Agents Are a Cybersecurity Nightmare That’s Only Just Begun",
+    "link": "https://www.cnet.com/tech/services-and-software/ai-agents-are-a-cybersecurity-nightmare-thats-only-just-begun/",
+    "score": 58,
+    "reason": "Systemic threat analysis; security/safety concern; industry-wide implications"
   }
 ]
