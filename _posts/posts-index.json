@@ -1,5 +1,24 @@
 [
  {
+  "id": "claude-fable-51-agent-cost-cuts-20260810",
+  "slug": "claude-fable-51-agent-cost-cuts",
+  "headline": "Claude Fable 5.1 Cuts Agentic AI Costs by Up to 45%",
+  "summary": "Anthropic's new Claude Fable 5.1 delivers up to 45% cost reductions for agentic work — making autonomous AI agents dramatically more affordable and viable for enterprise deployment.",
+  "body": "<p><strong>Anthropic's latest move signals a fundamental shift in AI economics: Claude Fable 5.1 delivers up to 45% cost reductions for agentic work, making autonomous AI systems dramatically more accessible and viable for enterprise deployment.</strong></p>\n<p>This announcement comes at a critical inflection point in the AI industry. As organizations move beyond experimental chatbots toward production-grade autonomous agents, the economics of AI infrastructure become paramount. The previous generation of models, while powerful, carried prohibitive costs for resource-intensive agentic tasks. Anthropic's optimization directly addresses this friction point, potentially unlocking widespread adoption of AI agents across enterprise workflows.</p>\n<p>The strategic implications are substantial. By reducing operational costs, Anthropic positions itself competitively against rivals like OpenAI and Google while simultaneously expanding its addressable market. Companies that previously deemed agent automation cost-prohibitive can now justify implementation. This creates a virtuous cycle: lower costs drive adoption, adoption drives innovation, innovation attracts developers to the platform.</p>\n<p>Broader industry impact cannot be overstated. We're witnessing consolidation around cost-efficient AI infrastructure as the primary competitive battleground. The companies that solve the \"expensive inference\" problem at scale will own the next era of AI adoption. Anthropic's move suggests they're thinking strategically about this future.</p>\n<p>Looking forward, expect pricing and efficiency to become the defining differentiator between AI providers. Capability parity is increasingly assumed; cost leadership and operational efficiency are now the table-stakes metrics that drive real-world implementation and market share.</p>\n<p>The race to democratize AI economics is accelerating.</p>",
+  "category": "Models",
+  "hashtags": [
+   "AnthropicAI",
+   "ArtificialIntelligence",
+   "AIStrategy",
+   "EnterpriseTech",
+   "FutureOfWork"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_claude_fable_agent_costs_20260810.png",
+  "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
+  "publishedAt": "2026-08-10T23:00:00.000-04:00",
+  "isVideo": false
+ },
+ {
   "id": "google-ai-travel-booking-search-20260810",
   "slug": "google-ai-travel-booking-search",
   "headline": "Google Rolls Out AI Travel Booking in Search's AI Mode",
