@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "ChatGPT Ads passes $1B run rate in 200 days",
-    "link": "https://www.artificialintelligence-news.com/news/chatgpt-ads-passes-1b-run-rate-in-200-days/",
-    "score": 95,
-    "reason": "Major revenue milestone, concrete big number, significant business launch"
+    "headline": "OpenAI accused of ‘aiding and abetting’ Tumbler Ridge mass shooting in dozens of new lawsuits",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/988261/openai-tumbler-ridge-shooting-lawsuit-aiding-abetting",
+    "score": 94,
+    "reason": "Major controversy with significant legal action and multiple lawsuits"
   },
   {
     "rank": 2,
-    "headline": "The Trump administration is supporting OpenAI in the NYT copyright lawsuit",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/988344/trump-administration-new-york-times-openai-lawsuit",
-    "score": 92,
-    "reason": "Significant political-legal development, high stakes copyright controversy"
+    "headline": "Anthropic launches Claude Fable 5.1 and says it's up to 45 percent cheaper for agentic work",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
+    "score": 88,
+    "reason": "Product launch with quantified performance claim (45% cost reduction)"
   },
   {
     "rank": 3,
-    "headline": "NYC bans AI use for students until they reach high school",
-    "link": "https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban",
-    "score": 88,
-    "reason": "Major regulatory action, concrete policy with broad impact"
+    "headline": "OpenAI Is About to Release Its First AI Model With ‘Critical’ Cyber Abilities",
+    "link": "https://www.wired.com/story/openai-astra-first-ai-model-with-critical-cyber-abilities/",
+    "score": 85,
+    "reason": "Major capability launch with security implications"
   },
   {
     "rank": 4,
-    "headline": "These Russian Mathematicians Taught AI Models How to Talk to Each Other Without Using Words",
-    "link": "https://www.wired.com/story/russian-startup-mostik-ai-models-communication/",
-    "score": 78,
-    "reason": "Novel AI capability breakthrough, technical innovation"
+    "headline": "NYC bans the use of generative AI tools in public schools for students through eighth grade",
+    "link": "https://www.engadget.com/2249790/nyc-generative-ai-ban-in-public-schools-through-eighth-grade/",
+    "score": 83,
+    "reason": "Significant regulatory action with broad policy implications"
   },
   {
     "rank": 5,
-    "headline": "At G20, Big Tech and Global Leaders Can’t Escape AI’s Data Center Problem",
-    "link": "https://www.cnet.com/tech/services-and-software/g20-tech-government-leaders-ai-data-centers-protests/",
-    "score": 77,
-    "reason": "International policy development, infrastructure scale concerns"
+    "headline": "Researchers fear safety disaster ahead of OpenAI's Astra release",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/988334/openai-astra-ai-monitoring-safety",
+    "score": 80,
+    "reason": "Major safety controversy around significant product launch"
   },
   {
     "rank": 6,
-    "headline": "AI Agents Are a Cybersecurity Nightmare That’s Only Just Begun",
-    "link": "https://www.cnet.com/tech/services-and-software/ai-agents-are-a-cybersecurity-nightmare-thats-only-just-begun/",
-    "score": 75,
-    "reason": "Security controversy, emerging risk category"
+    "headline": "Uber launches first robotaxis in London (with human supervisors)",
+    "link": "https://www.engadget.com/2248610/uber-launches-first-robotaxis-in-london-with-human-supervisors/",
+    "score": 78,
+    "reason": "Major deployment milestone in new geography"
   },
   {
     "rank": 7,
-    "headline": "Gemini 3.8 Flash rolling out three weeks after last release",
-    "link": "https://9to5google.com/2026/09/02/gemini-3-8-flash-launch/",
-    "score": 73,
-    "reason": "Major product launch from Google, rapid release cycle"
+    "headline": "Trump Administration Sides With OpenAI in New York Times Copyright Lawsuit",
+    "link": "https://www.wired.com/story/trump-administration-sides-with-ai-giants-new-york-times-lawsuit/",
+    "score": 76,
+    "reason": "Significant government action on major legal dispute"
   },
   {
     "rank": 8,
-    "headline": "iRobot's new $1,199 Roomba Max 875 Combo is its most powerful robot yet",
-    "link": "https://www.engadget.com/2249331/irobot-roomba-max-875-plus-678-combo/",
-    "score": 70,
-    "reason": "Premium product launch, robotics advancement"
+    "headline": "Anthropic pauses some AI training following rogue agent hacks. Here’s how it compares with OpenAI",
+    "link": "https://fortune.com/2026/09/02/anthropic-ai-pause-rogue-agent-hacks-openai/",
+    "score": 74,
+    "reason": "Security incident with operational impact and competitive comparison"
   },
   {
     "rank": 9,
-    "headline": "Meta settlement could clear the way for new AI product launches, Morgan Stanley says",
-    "link": "https://www.cnbc.com/2026/09/02/meta-18-billion-settlement-ai-products.html",
-    "score": 68,
-    "reason": "Legal resolution enabling product expansion"
+    "headline": "Snowflake spikes 22% on healthy results and AI coding momentum",
+    "link": "https://www.cnbc.com/2026/09/02/snowflake-snow-q2-earnings-report-2027.html",
+    "score": 72,
+    "reason": "Quantified market response (22% stock spike) to AI capabilities"
   },
   {
     "rank": 10,
-    "headline": "Google is sending MrBeast into the wilderness, armed with AI",
-    "link": "https://www.theverge.com/tech/988355/mrbeast-google-partnership-gemini-fitbit",
-    "score": 65,
-    "reason": "Major marketing partnership, consumer-facing AI demo"
+    "headline": "Hidden China risks are emerging in America’s multibillion-dollar AI data center boom",
+    "link": "https://www.cnbc.com/2026/09/03/us-ai-data-centers-china-supply-chain.html",
+    "score": 70,
+    "reason": "Significant geopolitical risk to large-scale infrastructure"
   },
   {
     "rank": 11,
-    "headline": "AI labs are facing an agent control problem",
-    "link": "https://www.axios.com/2026/09/01/openai-hugging-face-ai-agent-security",
-    "score": 62,
-    "reason": "Emerging safety controversy in agent development"
+    "headline": "The U.S. is about to churn out much more natural gas to power AI and to export—and it’s triggering a wave of multibillion-dollar acquisitions",
+    "link": "https://fortune.com/2026/09/02/us-churn-natural-gas-power-ai-export-slew-multibillion-dollar-deals/",
+    "score": 68,
+    "reason": "Major industry trend with quantified deal activity"
   },
   {
     "rank": 12,
-    "headline": "Qualcomm's upcoming premium chip has Adreno 'Neural Fusion' GPU",
-    "link": "https://9to5google.com/2026/09/02/qualcomm-details-adreno-neural-fusion-gpu-for-next-snapdragon-chip/",
-    "score": 60,
-    "reason": "Hardware innovation for AI inference"
+    "headline": "Google says its new Gemini 3.8 Flash model ‘works harder’ but might cost more",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash",
+    "score": 65,
+    "reason": "Product launch with performance-cost tradeoff announcement"
   },
   {
     "rank": 13,
-    "headline": "How AI is playing a growing role in wildfire response",
-    "link": "https://www.axios.com/2026/09/02/ai-wildfire-response-help",
-    "score": 58,
-    "reason": "Real-world application deployment at scale"
+    "headline": "Runway’s New AI Model Creates Digital Worlds Without Code",
+    "link": "https://www.cnet.com/tech/services-and-software/runways-new-ai-model-creates-digital-worlds-without-code/",
+    "score": 63,
+    "reason": "Significant capability launch in creative AI space"
   },
   {
     "rank": 14,
-    "headline": "AI Efficiency Could Cost Us the Next Generation of Experts",
-    "link": "https://spectrum.ieee.org/ai-engineer-skills",
-    "score": 55,
-    "reason": "Societal impact concern, talent development controversy"
+    "headline": "This Is Flock’s AI Search Tool for Cops",
+    "link": "https://www.wired.com/story/flock-ai-search-user-interface/",
+    "score": 61,
+    "reason": "Controversial deployment of AI in law enforcement"
   },
   {
     "rank": 15,
-    "headline": "WebLLM: high-performance in-browser LLM inference engine",
-    "link": "https://github.com/mlc-ai/web-llm",
-    "score": 52,
-    "reason": "Technical capability launch, distributed AI infrastructure"
+    "headline": "Meta Pushes Its New AI Agent on Employees—but Eases Off on Tokenmaxxing",
+    "link": "https://www.wired.com/story/meta-pushes-its-new-ai-agent-on-employees-but-eases-off-on-tokenmaxxing/",
+    "score": 58,
+    "reason": "Internal deployment reversal and policy shift on major initiative"
   },
   {
     "rank": 16,
-    "headline": "Motional and MIT AI explains self-driving car decisions",
-    "link": "https://www.artificialintelligence-news.com/news/motional-and-mit-ai-explains-self-driving-car-decisions/",
-    "score": 50,
-    "reason": "Autonomous vehicle safety transparency development"
+    "headline": "OpenAI delayed its new model’s development after the Hugging Face hack",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay",
+    "score": 56,
+    "reason": "Security incident causing measurable project delay"
   },
   {
     "rank": 17,
-    "headline": "No ‘DMV for AI’: US Pushes Against AI Regulations at Global Forum",
-    "link": "https://www.cnet.com/tech/services-and-software/g20-innovation-ministerial-ai-regulation-us-news/",
-    "score": 48,
-    "reason": "International regulatory policy stance"
+    "headline": "Anthropic’s Content Checker Tool Is Here, With One Big Catch",
+    "link": "https://www.cnet.com/tech/services-and-software/anthropics-content-checker-tool-is-here-with-one-big-catch/",
+    "score": 54,
+    "reason": "Tool launch with notable limitation"
   },
   {
     "rank": 18,
-    "headline": "Berkshire CEO Abel says Alphabet a &apos;significant player&apos; in AI after growing stake in Q2",
-    "link": "https://www.cnbc.com/2026/09/02/berkshire-ceo-abel-says-alphabet-a-significant-player-in-ai-after-growing-stake-in-q2.html",
-    "score": 46,
-    "reason": "Major investor confidence signal in Google's AI"
+    "headline": "Altman raises stakes on government scrutiny as AI advances",
+    "link": "https://www.axios.com/2026/09/03/altman-government-scrutiny-ai-g20",
+    "score": 51,
+    "reason": "Executive leadership commentary on regulatory pressure"
   },
   {
     "rank": 19,
-    "headline": "Amazon’s AI assistant can now spot fake emails from the company",
-    "link": "https://www.theverge.com/tech/988518/amazon-alexa-for-shopping-verify-emails",
-    "score": 42,
-    "reason": "Consumer security feature launch"
+    "headline": "OpenAI, Anthropic aim to balance safety, progress as IPOs near",
+    "link": "https://www.axios.com/2026/09/02/openai-anthropic-fable-astra-ipo",
+    "score": 49,
+    "reason": "Major milestone announcement (IPO preparation) from multiple companies"
   },
   {
     "rank": 20,
-    "headline": "Tim Cook's legacy hinges on Apple's AI bet",
-    "link": "https://www.axios.com/2026/09/01/tim-cooks-legacy-hinges-on-apples-ai-bet",
-    "score": 40,
-    "reason": "Strategic AI positioning for major tech company"
+    "headline": "A dark horse enters China&#x27;s AI race: StartLux",
+    "link": "https://chinaonchina.com/article/chen-dawei-returns-enters-the-large-model-sector",
+    "score": 47,
+    "reason": "New competitor emergence in major geopolitical AI competition"
   }
 ]
