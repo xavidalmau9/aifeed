@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "GPT-6 Astra Is Here—and OpenAI Thinks It May Kick Off the AGI Era",
-    "link": "https://www.wired.com/story/openai-says-gpt-6-can-use-a-computer-better-than-a-human/",
+    "headline": "NVIDIA to acquire Hugging Face for $12.93B",
+    "link": "https://www.artificialintelligence-news.com/news/nvidia-to-acquire-hugging-face-for-12-93b/",
     "score": 98,
-    "reason": "Major product launch with AGI claims; significant controversy (locked out paying users per #3)"
+    "reason": "Largest AI acquisition; major consolidation; concrete deal size"
   },
   {
     "rank": 2,
-    "headline": "Nvidia’s Hugging Face Acquisition Is a $12.9 Billion Bet on Open-Source AI",
-    "link": "https://www.wired.com/story/nvidias-hugging-face-acquisition-is-a-dollar129-billion-bet-on-open-source-ai/",
+    "headline": "OpenAI’s next big AI model has ‘entered the AGI era’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
     "score": 96,
-    "reason": "Massive acquisition deal; major consolidation in AI infrastructure"
+    "reason": "Major capability claim; AGI milestone; OpenAI flagship product"
   },
   {
     "rank": 3,
-    "headline": "Sam Altman apologizes for 'messy' GPT-6 Astra rollout that’s locked out paying users",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout",
-    "score": 94,
-    "reason": "Executive apology; service disruption controversy affecting paying customers"
+    "headline": "OpenAI’s Astra Is Here: What to Know About GPT-6",
+    "link": "https://www.cnet.com/tech/services-and-software/openai-gpt-6-astra-release-ai-agi-chatgpt/",
+    "score": 95,
+    "reason": "Major product launch; GPT-6 release; concrete model deployment"
   },
   {
     "rank": 4,
-    "headline": "ChatGPT, Grok, and Claude all went down at the same time",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/989503/chatgpt-grok-claude-outage-down",
+    "headline": "OpenAI Cut Off a Billion-Dollar Customer to Avoid Elon Musk",
+    "link": "https://www.wired.com/story/openai-elon-musk-cursor-billion-revenue/",
     "score": 92,
-    "reason": "Widespread infrastructure outage across multiple AI services; major incident"
+    "reason": "High-value controversy; business impact; Elon conflict"
   },
   {
     "rank": 5,
-    "headline": "Tesla starts offering Cybercab robotaxi rides",
-    "link": "https://www.engadget.com/2250874/tesla-offering-cybercab-robotaxi-rides/",
+    "headline": "AI’s Very Bad Morning: Claude, ChatGPT and Grok Had Outages at the Same Time",
+    "link": "https://www.cnet.com/tech/services-and-software/sept-3-claude-chatgpt-grok-widespread-ai-outages/",
     "score": 90,
-    "reason": "Commercial autonomous vehicle service launch; tangible AI deployment"
+    "reason": "Major simultaneous outage; multiple companies; infrastructure failure"
   },
   {
     "rank": 6,
-    "headline": "Trump Administration Sides With OpenAI in New York Times Copyright Lawsuit",
-    "link": "https://www.wired.com/story/trump-administration-sides-with-ai-giants-new-york-times-lawsuit/",
+    "headline": "Rogue OpenAI agents appear to have organized another attack using a German wiki",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/990149/openai-rogue-agents-german-wiki",
     "score": 88,
-    "reason": "Government policy decision on AI training rights; major legal precedent"
+    "reason": "Security breach; autonomous agent behavior; rogue AI controversy"
   },
   {
     "rank": 7,
-    "headline": "Nvidia RTX Spark ‘Superchip’: The First AI PCs Are Here",
-    "link": "https://www.wired.com/story/nvidia-rtx-spark-laptops-first-look/",
-    "score": 86,
-    "reason": "New product category launch; hardware milestone for AI consumer devices"
+    "headline": "Google's new AI weather model uses live satellite data for higher-resolution forecasts",
+    "link": "https://www.engadget.com/2250687/googles-new-ai-weather-model-uses-live-satellite-data-for-higher-resolution-forecasts/",
+    "score": 85,
+    "reason": "Google product launch; measurable improvement; real-world application"
   },
   {
     "rank": 8,
-    "headline": "GPT-6 Stole the Show, but Anthropic, Meta and Google Also Had New AI Models This Week",
-    "link": "https://www.cnet.com/tech/services-and-software/gpt-6-stole-the-show-but-anthropic-meta-and-google-also-had-new-ai-models-this-week/",
-    "score": 84,
-    "reason": "Multiple major model releases; competitive landscape shift"
+    "headline": "Nvidia launches free tool that links idle computers into a personal AI data center",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook",
+    "score": 83,
+    "reason": "Nvidia product launch; distributed computing; consumer infrastructure"
   },
   {
     "rank": 9,
-    "headline": "OpenAI agents hijacked German website in previously undisclosed AI breakout",
-    "link": "https://www.reuters.com/world/europe/openai-agents-hijacked-german-website-previously-undisclosed-ai-breakout-this-2026-09-04/",
+    "headline": "Microsoft says virtually nobody was grabbing NYT articles through its chatbot",
+    "link": "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
     "score": 82,
-    "reason": "Security incident; autonomous AI system behavior concerns"
+    "reason": "NYT lawsuit resolution; concrete data; Microsoft-OpenAI controversy"
   },
   {
     "rank": 10,
-    "headline": "AI Use in the Job Market Is Creating an Infinite Doom Loop",
-    "link": "https://www.wired.com/story/ai-job-market-infinite-doom-loop/",
+    "headline": "Why Nvidia&apos;s &apos;defensive move&apos; to acquire Hugging Face is about much more than chips",
+    "link": "https://www.cnbc.com/2026/09/04/nvidia-hugging-face-deal-chips.html",
     "score": 80,
-    "reason": "Economic impact analysis; systemic employment consequences"
+    "reason": "Acquisition analysis; strategic consolidation; ecosystem control"
   },
   {
     "rank": 11,
-    "headline": "The Take It Down Act Is Just the Beginning of Fighting AI Abuse Online",
-    "link": "https://www.cnet.com/tech/services-and-software/inside-take-it-down-act-ai-deepfakes-image-abuse-analysis/",
+    "headline": "Instagram’s AI detection is a mess (again)",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/989617/instagram-ai-content-label-confusion",
     "score": 78,
-    "reason": "Legislation focused on AI-generated abuse; regulatory response"
+    "reason": "Meta AI failure; repeated controversy; product dysfunction"
   },
   {
     "rank": 12,
-    "headline": "SpaceXAI apologizes for outage that affected Grok and other 'compute partners'",
-    "link": "https://www.engadget.com/2250789/spacexai-apologizes-for-outage-that-affected-grok-and-other-compute-partners/",
+    "headline": "Data from drones in Ukraine is fueling a new Wild West marketplace",
+    "link": "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west/",
     "score": 76,
-    "reason": "Infrastructure dependency revealed; critical service failures"
+    "reason": "Big numbers; drone data; emerging marketplace"
   },
   {
     "rank": 13,
-    "headline": "Google says its AI weather model is getting better",
-    "link": "https://www.theverge.com/tech/988921/weather-forecast-ai-model-google-satellite-update",
-    "score": 74,
-    "reason": "Quantifiable performance improvements in production AI system"
+    "headline": "Nvidia&apos;s investments grow to $99 billion as chip giant becomes major backer of AI companies",
+    "link": "https://www.cnbc.com/2026/09/04/nvidia-ai-investments-99-billion.html",
+    "score": 75,
+    "reason": "Large investment figure; strategic positioning; consolidation"
   },
   {
     "rank": 14,
-    "headline": "This Is Flock’s AI Search Tool for Cops",
-    "link": "https://www.wired.com/story/flock-ai-search-user-interface/",
+    "headline": "Roland is getting into generative AI music with Melody Flip",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/990197/roland-ai-music-melody-flip",
     "score": 72,
-    "reason": "Law enforcement AI deployment; specific controversial application"
+    "reason": "Roland product launch; new domain; music generation"
   },
   {
     "rank": 15,
-    "headline": "This NAS company wants to run your local smart home",
-    "link": "https://www.theverge.com/tech/990006/this-nas-company-wants-to-run-your-local-smart-home",
+    "headline": "Anthropic’s Content Checker Tool Is Here, With One Big Catch",
+    "link": "https://www.cnet.com/tech/services-and-software/anthropics-content-checker-tool-is-here-with-one-big-catch/",
     "score": 70,
-    "reason": "Local AI infrastructure alternative; decentralization trend"
+    "reason": "Anthropic product launch; safety tool; limitation revealed"
   },
   {
     "rank": 16,
-    "headline": "Microsoft’s Project Zenith is a ‘distraction-free Windows experience’ for developers",
-    "link": "https://www.theverge.com/news/990051/microsoft-project-zenith-windows-developers",
+    "headline": "South Korea&apos;s AI rally is reshaping romance, reality shows and academic preferences",
+    "link": "https://www.cnbc.com/2026/09/04/south-korea-ai-rally-society-impact.html",
     "score": 68,
-    "reason": "Major OS feature integration; developer-focused AI product"
+    "reason": "Big numbers; cultural impact; widespread adoption"
   },
   {
     "rank": 17,
-    "headline": "Meta Pushes Its New AI Agent on Employees—but Eases Off on Tokenmaxxing",
-    "link": "https://www.wired.com/story/meta-pushes-its-new-ai-agent-on-employees-but-eases-off-on-tokenmaxxing/",
-    "score": 66,
-    "reason": "Internal AI deployment; policy reversal on worker incentives"
+    "headline": "‘Feeding the beast’: Meta faces allegations of using its ‘perv glasses’ to train AI in new lawsuit",
+    "link": "https://fortune.com/2026/09/04/meta-perv-glasses-ai-lawsuit/",
+    "score": 67,
+    "reason": "Meta lawsuit; training data controversy; serious allegation"
   },
   {
     "rank": 18,
-    "headline": "AI Efficiency Could Cost Us the Next Generation of Experts",
-    "link": "https://spectrum.ieee.org/ai-engineer-skills",
-    "score": 64,
-    "reason": "Long-term education/expertise implications; systemic risk analysis"
+    "headline": "Rogue OpenAI agents took over a German coding forum in a previously undisclosed hijacking",
+    "link": "https://www.engadget.com/2251091/rogue-openai-agents-took-over-german-coding-forum-in-previously-undisclosed-hijacking/",
+    "score": 65,
+    "reason": "OpenAI security incident; autonomous agent behavior; undisclosed breach"
   },
   {
     "rank": 19,
-    "headline": "Hugging Face approached Nvidia’s Huang weeks ahead of $12.9B acquisition, CEO tells CNBC",
-    "link": "https://www.cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html",
-    "score": 62,
-    "reason": "Acquisition backstory; strategic timing revelation"
+    "headline": "OpenAI unveils plan to protect critical services from AI cyberattacks",
+    "link": "https://www.axios.com/2026/09/03/openai-critical-infrastructure-cyber-ai-models",
+    "score": 63,
+    "reason": "OpenAI security initiative; critical infrastructure; response to capabilities"
   },
   {
     "rank": 20,
-    "headline": "Top Pentagon official reaffirms Anthropic blacklist despite Lutnick comments",
-    "link": "https://www.axios.com/2026/09/03/pentagon-reaffirms-anthropic-blacklist",
-    "score": 60,
-    "reason": "Government AI vendor restrictions; policy contradiction"
+    "headline": "A &apos;shakeout&apos; in early-stage AI may be coming as VC money gets pickier on valuations",
+    "link": "https://www.cnbc.com/2026/09/04/ai-bubble-valuations-venture-capital.html",
+    "score": 61,
+    "reason": "Market consolidation; funding trends; VC behavior shift"
   }
 ]
