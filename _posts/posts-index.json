@@ -1,5 +1,24 @@
 [
  {
+  "id": "openai-gpt6-astra-agi-era-20260811",
+  "slug": "openai-gpt6-astra-agi-era",
+  "headline": "OpenAI Announces GPT-6 Astra — and Says It May Begin the AGI Era",
+  "summary": "OpenAI unveiled GPT-6 Astra — a model it says can use a computer better than a human, and that may mark the beginning of the AGI era.",
+  "body": "<p><strong>OpenAI just announced GPT-6 Astra—and the company believes it may mark the beginning of the AGI era.</strong></p>\n<p>GPT-6 Astra represents a fundamental shift in AI capabilities. Unlike previous models that primarily process and generate text, this system can use computers better than humans—navigating interfaces, executing programs, and solving complex digital tasks autonomously. According to OpenAI's assessment, this crosses a critical threshold in AI development that has profound implications for how we think about machine intelligence.</p>\n<p>This breakthrough comes at a pivotal moment in the AI industry. We've moved beyond the era of language models as conversational tools into a phase where AI systems can take independent action in digital environments. The ability to use a computer autonomously—understanding context, making decisions, and executing sequences of actions—suggests we're approaching capabilities previously thought to be years away.</p>\n<p>The strategic implications are substantial. If AGI-adjacent capabilities are genuinely emerging, the competitive landscape shifts dramatically for every industry. Organizations will need to rethink their digital infrastructure, workforce planning, and operational models. The speed of this transition may surprise even industry insiders who've been tracking AI development closely.</p>\n<p>Beyond OpenAI's claims, this development signals the broader industry is accelerating toward artificial general intelligence. Competitors, enterprises, and policymakers must now prepare for systems that don't just assist humans but can autonomously manage complex digital workflows. The question isn't whether AGI is possible—it's when and what we do about it.</p>\n<p>The implications extend to governance, safety, and societal adaptation. Organizations and governments need frameworks ready now, not later. This moment demands proactive thinking about how we deploy, monitor, and govern increasingly autonomous AI systems.</p>\n<p>One thing is certain: the AI timeline just compressed significantly.</p>",
+  "category": "Models",
+  "hashtags": [
+   "GPT6Astra",
+   "AGI",
+   "ArtificialIntelligence",
+   "AIStrategy",
+   "FutureOfWork"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_openai_gpt6_astra_agi_20260810.png",
+  "sourceUrl": "https://www.wired.com/story/openai-says-gpt-6-can-use-a-computer-better-than-a-human/",
+  "publishedAt": "2026-08-11T09:00:00.000-04:00",
+  "isVideo": false
+ },
+ {
   "id": "claude-fable-51-agent-cost-cuts-20260810",
   "slug": "claude-fable-51-agent-cost-cuts",
   "headline": "Claude Fable 5.1 Cuts Agentic AI Costs by Up to 45%",
