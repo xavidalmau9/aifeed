@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "GPT-6 Astra Is Here—and OpenAI Thinks It May Kick Off the AGI Era",
-    "link": "https://www.wired.com/story/openai-says-gpt-6-can-use-a-computer-better-than-a-human/",
-    "score": 98,
-    "reason": "Major product launch with bold AGI claim from top AI company; concrete deliverable"
+    "headline": "OpenAI’s next big AI model has ‘entered the AGI era’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
+    "score": 92,
+    "reason": "Major capability milestone claim from top AI lab; significant if substantiated"
   },
   {
     "rank": 2,
-    "headline": "Sam Altman apologizes for 'messy' GPT-6 Astra rollout that’s locked out paying users",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout",
-    "score": 92,
-    "reason": "Major controversy: paying customers locked out of new product; executive apology"
+    "headline": "Nvidia&apos;s investments grow to $99 billion as chip giant becomes major backer of AI companies",
+    "link": "https://www.cnbc.com/2026/09/04/nvidia-ai-investments-99-billion.html",
+    "score": 88,
+    "reason": "Massive financial figure; concrete market consolidation; Nvidia expanding AI ecosystem control"
   },
   {
     "rank": 3,
-    "headline": "Nvidia’s Hugging Face Acquisition Is a $12.9 Billion Bet on Open-Source AI",
-    "link": "https://www.wired.com/story/nvidias-hugging-face-acquisition-is-a-dollar129-billion-bet-on-open-source-ai/",
-    "score": 88,
-    "reason": "Massive acquisition price; strategic consolidation play in AI infrastructure"
+    "headline": "Why Nvidia&apos;s &apos;defensive move&apos; to acquire Hugging Face is about much more than chips",
+    "link": "https://www.cnbc.com/2026/09/04/nvidia-hugging-face-deal-chips.html",
+    "score": 85,
+    "reason": "Major acquisition; strategic AI infrastructure play; suggests competitive pressure"
   },
   {
     "rank": 4,
-    "headline": "Nvidia RTX Spark ‘Superchip’: The First AI PCs Are Here",
-    "link": "https://www.wired.com/story/nvidia-rtx-spark-laptops-first-look/",
-    "score": 85,
-    "reason": "Major hardware launch category; concrete product availability"
+    "headline": "Two more news organizations sue OpenAI and Microsoft for copyright infringement",
+    "link": "https://www.engadget.com/2251707/seattle-times-newsday-sue-openai-microsoft-for-copyright-infringement/",
+    "score": 84,
+    "reason": "Growing legal controversy; multiple plaintiffs escalating; threatens core training practices"
   },
   {
     "rank": 5,
-    "headline": "Tesla starts offering Cybercab robotaxi rides",
-    "link": "https://www.engadget.com/2250874/tesla-offering-cybercab-robotaxi-rides/",
-    "score": 84,
-    "reason": "Real-world deployment of autonomous vehicles; operational launch"
+    "headline": "Roland is getting into generative AI music with Melody Flip",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/990197/roland-ai-music-melody-flip",
+    "score": 72,
+    "reason": "Major hardware brand entering generative AI; new product category launch"
   },
   {
     "rank": 6,
-    "headline": "GPT-6 Stole the Show, but Anthropic, Meta and Google Also Had New AI Models This Week",
-    "link": "https://www.cnet.com/tech/services-and-software/gpt-6-stole-the-show-but-anthropic-meta-and-google-also-had-new-ai-models-this-week/",
-    "score": 80,
-    "reason": "Multiple major model launches; industry-wide competitive surge"
+    "headline": "Nobody Is Saying Why OpenAI and Anthropic Had Outages Today",
+    "link": "https://www.wired.com/story/nobody-is-saying-why-openai-and-anthropic-had-outages-today/",
+    "score": 68,
+    "reason": "Dual outage of top AI labs; infrastructure vulnerability; transparency gap"
   },
   {
     "rank": 7,
-    "headline": "It's not just you; ChatGPT, Claude, and Grok were all down in confirmed outages",
-    "link": "https://9to5google.com/2026/09/03/chatgpt-claude-grok-outages/",
-    "score": 78,
-    "reason": "Widespread infrastructure failure affecting all major AI providers simultaneously"
+    "headline": "OpenAI admits to German wiki ‘incident’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident",
+    "score": 66,
+    "reason": "Security incident admission; data access controversy; reputation impact"
   },
   {
     "rank": 8,
-    "headline": "Google’s WeatherNext 3 AI model in Search, Gemini has ’50% more accurate precipitation forecasts’",
-    "link": "https://9to5google.com/2026/09/03/google-weathernext-3/",
-    "score": 76,
-    "reason": "Quantified performance improvement; real-world application deployment"
+    "headline": "Data from drones in Ukraine is fueling a new Wild West marketplace",
+    "link": "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west/",
+    "score": 64,
+    "reason": "Real-world AI data marketplace emerging; geopolitical implications; concrete monetization"
   },
   {
     "rank": 9,
-    "headline": "SpaceXAI apologizes for outage that affected Grok and other 'compute partners'",
-    "link": "https://www.engadget.com/2250789/spacexai-apologizes-for-outage-that-affected-grok-and-other-compute-partners/",
-    "score": 74,
-    "reason": "Major infrastructure incident; affects multiple dependent services"
+    "headline": "EU tech chief: AI guardrails inevitable for U.S.",
+    "link": "https://www.axios.com/2026/09/04/eu-tech-chief-ai-guardrails-inevitable-us",
+    "score": 62,
+    "reason": "Regulatory pressure signals; EU influence on US policy; governance escalation"
   },
   {
     "rank": 10,
-    "headline": "OpenAI quietly boosts some of Astra's evaluation metrics, and continues to change others post-launch",
-    "link": "https://fortune.com/2026/09/04/openai-quietly-boosts-some-of-astras-evaluation-metrics-amid-rare-delay-in-publication-of-the-modeblog-post-announcement/",
-    "score": 72,
-    "reason": "Post-launch metric manipulation controversy; questions credibility of claims"
-  },
-  {
-    "rank": 11,
-    "headline": "OpenAI Agents Hacked Another Website",
-    "link": "https://www.wired.com/story/security-news-this-week-openai-agents-hacked-another-website/",
-    "score": 68,
-    "reason": "Security breach involving autonomous AI; demonstrates real-world vulnerability"
-  },
-  {
-    "rank": 12,
-    "headline": "AI Use in the Job Market Is Creating an Infinite Doom Loop",
-    "link": "https://www.wired.com/story/ai-job-market-infinite-doom-loop/",
-    "score": 66,
-    "reason": "Systemic economic impact; employment market disruption"
-  },
-  {
-    "rank": 13,
-    "headline": "Microsoft’s Project Zenith is a ‘distraction-free Windows experience’ for developers",
-    "link": "https://www.theverge.com/news/990051/microsoft-project-zenith-windows-developers",
-    "score": 64,
-    "reason": "Major OS update focused on AI developer experience; Microsoft competitive move"
-  },
-  {
-    "rank": 14,
-    "headline": "Gemini Spark rolling out Google Photos control for automated editing, sharing, & more",
-    "link": "https://9to5google.com/2026/09/03/gemini-spark-google-photos/",
-    "score": 62,
-    "reason": "Feature rollout with AI-powered automation; consumer product deployment"
-  },
-  {
-    "rank": 15,
-    "headline": "This NAS company wants to run your local smart home",
-    "link": "https://www.theverge.com/tech/990006/this-nas-company-wants-to-run-your-local-smart-home",
-    "score": 60,
-    "reason": "Local AI infrastructure play; edge computing category emergence"
-  },
-  {
-    "rank": 16,
-    "headline": "AI handles incidents, engineers lose touch with their systems",
-    "link": "https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems",
+    "headline": "M&T Bank expands enterprise AI after years of technology overhaul",
+    "link": "https://www.artificialintelligence-news.com/news/mt-bank-enterprise-ai-15000-employees/",
     "score": 58,
-    "reason": "Systemic operational risk; changing engineering practices with documented consequences"
-  },
-  {
-    "rank": 17,
-    "headline": "Nvidia PAIR Speeds Up AI Agents by Annexing PCs on Your Network",
-    "link": "https://www.cnet.com/tech/services-and-software/nvidia-pair-speeds-ai-agents-by-annexing-pcs-on-your-network/",
-    "score": 56,
-    "reason": "Novel distributed computing approach for AI; technical innovation"
-  },
-  {
-    "rank": 18,
-    "headline": "Google rolling out Gmail Live, Docs Live, and Keep Live",
-    "link": "https://9to5google.com/2026/09/03/gmail-docs-keep-live/",
-    "score": 54,
-    "reason": "Multi-product AI feature rollout; productivity suite integration"
-  },
-  {
-    "rank": 19,
-    "headline": "The Take It Down Act Is Just the Beginning of Fighting AI Abuse Online",
-    "link": "https://www.cnet.com/tech/services-and-software/inside-take-it-down-act-ai-deepfakes-image-abuse-analysis/",
-    "score": 52,
-    "reason": "Regulatory action against AI-generated abuse; policy response to emerging harm"
-  },
-  {
-    "rank": 20,
-    "headline": "AI models are becoming unknowable",
-    "link": "https://www.axios.com/2026/09/04/astra-openai-how-ai-models-think",
-    "score": 50,
-    "reason": "Fundamental transparency crisis in AI systems; interpretability concern"
+    "reason": "Major financial institution scaling AI; concrete enterprise adoption; banking sector commitment"
   }
 ]
