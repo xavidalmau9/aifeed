@@ -1,72 +1,58 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI’s next big AI model has ‘entered the AGI era’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
+    "headline": "OpenAI responds after report exposed another incident in which its AI agents went rogue",
+    "link": "https://www.engadget.com/2251725/openai-responds-after-report-exposed-another-incident-in-which-its-ai-agents-went-rogue/",
     "score": 92,
-    "reason": "Major capability milestone claim from top AI lab; significant if substantiated"
+    "reason": "Major controversy: OpenAI AI agents hacking websites. Concrete incident with company response."
   },
   {
     "rank": 2,
-    "headline": "Nvidia&apos;s investments grow to $99 billion as chip giant becomes major backer of AI companies",
-    "link": "https://www.cnbc.com/2026/09/04/nvidia-ai-investments-99-billion.html",
+    "headline": "Microsoft says virtually nobody was grabbing NYT articles through its chatbot",
+    "link": "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
     "score": 88,
-    "reason": "Massive financial figure; concrete market consolidation; Nvidia expanding AI ecosystem control"
+    "reason": "Major legal/IP controversy resolution. Specific quantified claim from Microsoft in ongoing NYT lawsuit."
   },
   {
     "rank": 3,
-    "headline": "Why Nvidia&apos;s &apos;defensive move&apos; to acquire Hugging Face is about much more than chips",
-    "link": "https://www.cnbc.com/2026/09/04/nvidia-hugging-face-deal-chips.html",
-    "score": 85,
-    "reason": "Major acquisition; strategic AI infrastructure play; suggests competitive pressure"
+    "headline": "This enhanced geothermal project aims to unlock gigawatts of power to fuel the data center boom",
+    "link": "https://www.cnbc.com/2026/09/05/fervo-energys-enhanced-geothermal-project-aims-to-power-data-center-boom.html",
+    "score": 82,
+    "reason": "Big infrastructure numbers (gigawatts). Concrete project launch addressing AI data center power needs."
   },
   {
     "rank": 4,
-    "headline": "Two more news organizations sue OpenAI and Microsoft for copyright infringement",
-    "link": "https://www.engadget.com/2251707/seattle-times-newsday-sue-openai-microsoft-for-copyright-infringement/",
-    "score": 84,
-    "reason": "Growing legal controversy; multiple plaintiffs escalating; threatens core training practices"
+    "headline": "Abel: Two ways Berkshire hopes to cash in on AI",
+    "link": "https://www.cnbc.com/2026/09/05/abel-two-ways-berkshire-hopes-in-cash-in-on-ai.html",
+    "score": 78,
+    "reason": "Major investor (Berkshire Hathaway) strategic moves in AI. Significant financial implications."
   },
   {
     "rank": 5,
-    "headline": "Roland is getting into generative AI music with Melody Flip",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/990197/roland-ai-music-melody-flip",
-    "score": 72,
-    "reason": "Major hardware brand entering generative AI; new product category launch"
+    "headline": "Meet the CISO: A new front line star in the AI cybersecurity war",
+    "link": "https://www.cnbc.com/2026/09/05/ai-cybersecurity-ciso-executive.html",
+    "score": 75,
+    "reason": "Emerging trend: AI-driven cybersecurity threats creating new executive roles. Concrete industry shift."
   },
   {
     "rank": 6,
-    "headline": "Nobody Is Saying Why OpenAI and Anthropic Had Outages Today",
-    "link": "https://www.wired.com/story/nobody-is-saying-why-openai-and-anthropic-had-outages-today/",
-    "score": 68,
-    "reason": "Dual outage of top AI labs; infrastructure vulnerability; transparency gap"
+    "headline": "The Download: selling battlefield drone data and AI reshaping language",
+    "link": "https://www.technologyreview.com/2026/09/04/1143457/the-download-ukraine-selling-drone-data-ai-reshaping-language/",
+    "score": 72,
+    "reason": "Dual story: AI military applications and language model impact. Concrete use cases emerging."
   },
   {
     "rank": 7,
-    "headline": "OpenAI admits to German wiki ‘incident’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident",
-    "score": 66,
-    "reason": "Security incident admission; data access controversy; reputation impact"
+    "headline": "Your Roku TV offers AI slop for free (if you're into that sort of thing)",
+    "link": "https://www.engadget.com/2245485/roku-tv-channel-ai-slop-free-fairground/",
+    "score": 68,
+    "reason": "Major consumer product launch. Roku integrating AI-generated content at scale."
   },
   {
     "rank": 8,
-    "headline": "Data from drones in Ukraine is fueling a new Wild West marketplace",
-    "link": "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west/",
-    "score": 64,
-    "reason": "Real-world AI data marketplace emerging; geopolitical implications; concrete monetization"
-  },
-  {
-    "rank": 9,
-    "headline": "EU tech chief: AI guardrails inevitable for U.S.",
-    "link": "https://www.axios.com/2026/09/04/eu-tech-chief-ai-guardrails-inevitable-us",
-    "score": 62,
-    "reason": "Regulatory pressure signals; EU influence on US policy; governance escalation"
-  },
-  {
-    "rank": 10,
-    "headline": "M&T Bank expands enterprise AI after years of technology overhaul",
-    "link": "https://www.artificialintelligence-news.com/news/mt-bank-enterprise-ai-15000-employees/",
-    "score": 58,
-    "reason": "Major financial institution scaling AI; concrete enterprise adoption; banking sector commitment"
+    "headline": "U.S. &apos;Economic Outcast’ operation gains momentum as EU joins sanctions; South Korea weighs military backing",
+    "link": "https://www.cnbc.com/2026/09/04/us-iran-war-trump-hormuz-operation-economic-outcast-sanctions-campaign.html",
+    "score": 65,
+    "reason": "Geopolitical AI/tech sanctions coalition. Multiple countries taking coordinated action."
   }
 ]
