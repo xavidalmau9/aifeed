@@ -1,58 +1,44 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI responds after report exposed another incident in which its AI agents went rogue",
-    "link": "https://www.engadget.com/2251725/openai-responds-after-report-exposed-another-incident-in-which-its-ai-agents-went-rogue/",
+    "headline": "OpenAI says it reached its goal of creating an automated research intern",
+    "link": "https://www.engadget.com/2251859/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern/",
     "score": 92,
-    "reason": "Major controversy: OpenAI AI agents hacking websites. Concrete incident with company response."
+    "reason": "Major capability milestone with concrete achievement claim; significant product launch"
   },
   {
     "rank": 2,
-    "headline": "Microsoft says virtually nobody was grabbing NYT articles through its chatbot",
-    "link": "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
+    "headline": "OpenAI admits to German wiki ‘incident’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident",
     "score": 88,
-    "reason": "Major legal/IP controversy resolution. Specific quantified claim from Microsoft in ongoing NYT lawsuit."
+    "reason": "Controversy involving data/security incident with admission; substantive negative news"
   },
   {
     "rank": 3,
-    "headline": "This enhanced geothermal project aims to unlock gigawatts of power to fuel the data center boom",
-    "link": "https://www.cnbc.com/2026/09/05/fervo-energys-enhanced-geothermal-project-aims-to-power-data-center-boom.html",
-    "score": 82,
-    "reason": "Big infrastructure numbers (gigawatts). Concrete project launch addressing AI data center power needs."
+    "headline": "OpenAI Agents Hacked Another Website",
+    "link": "https://www.wired.com/story/security-news-this-week-openai-agents-hacked-another-website/",
+    "score": 85,
+    "reason": "Security vulnerability in deployed AI agents; concrete incident with impact"
   },
   {
     "rank": 4,
-    "headline": "Abel: Two ways Berkshire hopes to cash in on AI",
-    "link": "https://www.cnbc.com/2026/09/05/abel-two-ways-berkshire-hopes-in-cash-in-on-ai.html",
+    "headline": "Claude can help manage your email inbox, but there are some risks involved",
+    "link": "https://www.engadget.com/2247891/claude-help-manage-emails-risks-involved/",
     "score": 78,
-    "reason": "Major investor (Berkshire Hathaway) strategic moves in AI. Significant financial implications."
+    "reason": "Anthropic feature launch with identified risks; substantive capability announcement"
   },
   {
     "rank": 5,
-    "headline": "Meet the CISO: A new front line star in the AI cybersecurity war",
-    "link": "https://www.cnbc.com/2026/09/05/ai-cybersecurity-ciso-executive.html",
-    "score": 75,
-    "reason": "Emerging trend: AI-driven cybersecurity threats creating new executive roles. Concrete industry shift."
+    "headline": "‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
+    "link": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
+    "score": 76,
+    "reason": "Industry trend story with big picture implications; market saturation signal"
   },
   {
     "rank": 6,
-    "headline": "The Download: selling battlefield drone data and AI reshaping language",
-    "link": "https://www.technologyreview.com/2026/09/04/1143457/the-download-ukraine-selling-drone-data-ai-reshaping-language/",
+    "headline": "Gemini overlay gets bubble minimization and multitasking on Android",
+    "link": "https://9to5google.com/2026/09/04/gemini-minimize-bubble/",
     "score": 72,
-    "reason": "Dual story: AI military applications and language model impact. Concrete use cases emerging."
-  },
-  {
-    "rank": 7,
-    "headline": "Your Roku TV offers AI slop for free (if you're into that sort of thing)",
-    "link": "https://www.engadget.com/2245485/roku-tv-channel-ai-slop-free-fairground/",
-    "score": 68,
-    "reason": "Major consumer product launch. Roku integrating AI-generated content at scale."
-  },
-  {
-    "rank": 8,
-    "headline": "U.S. &apos;Economic Outcast’ operation gains momentum as EU joins sanctions; South Korea weighs military backing",
-    "link": "https://www.cnbc.com/2026/09/04/us-iran-war-trump-hormuz-operation-economic-outcast-sanctions-campaign.html",
-    "score": 65,
-    "reason": "Geopolitical AI/tech sanctions coalition. Multiple countries taking coordinated action."
+    "reason": "Google/Alphabet feature rollout; concrete Android platform expansion"
   }
 ]
