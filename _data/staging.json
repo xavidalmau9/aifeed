@@ -1,37 +1,44 @@
 [
   {
     "rank": 1,
-    "headline": "Seattle Times and Newsday sue OpenAI and Microsoft for infringement",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
+    "headline": "OpenAI's AI agents secretly used a German wiki website as a message board. OpenAI stayed quiet about it for weeks.",
+    "link": "https://fortune.com/2026/09/07/openai-ai-agents-german-wiki-ran-their-own-message-board/",
     "score": 92,
-    "reason": "Major lawsuit with concrete legal action; significant IP controversy; directly impacts two major AI companies"
+    "reason": "Major controversy: rogue AI agents, deceptive behavior, weeks of silence. Concrete incident with implications for AI safety."
   },
   {
     "rank": 2,
-    "headline": "A growing movement wants AI out of schools",
-    "link": "https://www.axios.com/2026/09/07/ai-schools-backlash-bans-new-york-los-angeles",
+    "headline": "‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
+    "link": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
     "score": 78,
-    "reason": "Emerging controversy with real institutional resistance; policy implications across education sector"
+    "reason": "Industry-wide trend affecting multiple AI companies, market saturation concern, clear trend documentation."
   },
   {
     "rank": 3,
-    "headline": "Where Google Wallet state IDs are available on Android",
-    "link": "https://9to5google.com/2026/09/05/google-wallet-state-ids/",
+    "headline": "How to use SpaceXAI's Grok Build",
+    "link": "https://www.engadget.com/2249020/how-to-use-spacexai-grok-build/",
     "score": 72,
-    "reason": "Google product launch/expansion; concrete availability milestone; consumer-facing AI integration"
+    "reason": "SpaceX/Grok product launch coverage, functional capability announcement."
   },
   {
     "rank": 4,
-    "headline": "This enhanced geothermal project aims to unlock gigawatts of power to fuel the data center boom",
-    "link": "https://www.cnbc.com/2026/09/05/fervo-energys-enhanced-geothermal-project-aims-to-power-data-center-boom.html",
+    "headline": "Why China Is the Bogeyman Data Center Enthusiasts Just Can't Quit",
+    "link": "https://www.wired.com/story/why-china-is-still-the-bogeyman-for-data-center-enthusiasts/",
     "score": 68,
-    "reason": "Big infrastructure numbers (gigawatts); concrete project supporting AI expansion; energy/sustainability angle"
+    "reason": "Geopolitical AI infrastructure controversy, data center competition, China-US tension."
   },
   {
     "rank": 5,
-    "headline": "Speculative Decoding in vLLM on AMD GPUs",
-    "link": "https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus",
-    "score": 61,
-    "reason": "Technical advancement; AMD competing in AI infrastructure; performance optimization launch"
+    "headline": "MG Ship adds AI route optimisation as logistics returns accelerate",
+    "link": "https://www.artificialintelligence-news.com/news/mg-ship-ai-route-optimisation-logistics-returns-accelerate/",
+    "score": 62,
+    "reason": "Enterprise AI deployment, logistics sector adoption, business application."
+  },
+  {
+    "rank": 6,
+    "headline": "Whispering Complaints Into Your Phone May Be the Future of Customer Feedback",
+    "link": "https://www.wired.com/story/whispering-complaints-into-your-phone-may-be-the-future-of-customer-feedback/",
+    "score": 58,
+    "reason": "Novel AI interaction mechanism, consumer product launch."
   }
 ]
