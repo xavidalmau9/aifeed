@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI claims to have solved the 90-year-old Navier-Stokes math problem in 88 hours",
-    "link": "https://www.cnbc.com/2026/09/09/openai-navier-stokes-math-problem-solved.html",
-    "score": 94,
-    "reason": "Major technical breakthrough with concrete claim; high-profile math milestone"
+    "headline": "AI power users claim Anthropic duped them with subscriptions, and they’re taking it to court",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
+    "score": 92,
+    "reason": "Major controversy with legal action; concrete dispute over subscription practices"
   },
   {
     "rank": 2,
-    "headline": "OpenAI Just Claimed a Huge Math Discovery. Some Academics Are Crying Foul",
-    "link": "https://www.wired.com/story/openai-navier-stokes-math-discovery-academics/",
-    "score": 92,
-    "reason": "Same breakthrough but with controversy angle; credibility dispute from experts"
+    "headline": "Drama swirls around OpenAI’s legendary mathematical milestone",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution",
+    "score": 88,
+    "reason": "Significant controversy around major technical achievement; credit/attribution disputes"
   },
   {
     "rank": 3,
-    "headline": "Worried Anthropic researchers warn that AI 'could kill all humans'",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
-    "score": 88,
-    "reason": "Major controversy; insider warnings from leading AI safety researchers"
+    "headline": "Google DeepMind Maps 9 Billion Possible DNA Variants",
+    "link": "https://spectrum.ieee.org/alphagenome-atlas",
+    "score": 86,
+    "reason": "Large scale dataset (9 billion); major launch with scientific impact"
   },
   {
     "rank": 4,
-    "headline": "Meta bets on AI agent Muse to catch up in AI race",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
-    "score": 85,
-    "reason": "Major product launch by top company; competitive AI agents race"
+    "headline": "Amazon Prime Video’s new AI tech matches lips to dubbed audio",
+    "link": "https://www.theverge.com/tech/991809/amazon-prime-video-ai-lip-sync-dubbing",
+    "score": 82,
+    "reason": "Concrete product launch; solves real production problem at scale"
   },
   {
     "rank": 5,
-    "headline": "Google to invest record $15 billion in AI infrastructure in the &apos;Texas of Europe&apos;",
-    "link": "https://www.cnbc.com/2026/09/09/google-finland-ai-infrastructure-investment.html",
-    "score": 84,
-    "reason": "Massive capital commitment; record investment number"
+    "headline": "Microsoft has new AI privacy rules for schools",
+    "link": "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
+    "score": 80,
+    "reason": "Policy launch addressing major sector; concrete restrictions on data usage"
   },
   {
     "rank": 6,
-    "headline": "US authorities accuse Chinese AI companies of industrial-scale campaigns to copy American models",
-    "link": "https://www.engadget.com/2253604/us-authorities-accuse-chinese-ai-companies-of-industrial-scale-campaigns-to-copy-american-models/",
-    "score": 82,
-    "reason": "Major geopolitical controversy; official accusations of IP theft"
+    "headline": "Muse, Meta’s New Personal AI Agent, Needs You to Trust It",
+    "link": "https://www.wired.com/story/meta-releases-muse-a-personal-ai-agent-with-privacy-built-into-it/",
+    "score": 78,
+    "reason": "Major product launch from major company; new capability category"
   },
   {
     "rank": 7,
-    "headline": "Suno trained its v6 AI music models with help from Warner and BMG",
-    "link": "https://www.engadget.com/2251539/suno-trained-its-v6-ai-music-models-with-help-from-warner-and-bmg/",
-    "score": 78,
-    "reason": "Major music industry partnership; significant licensing deal"
+    "headline": "Silver Lake to merge two software firms in $11.6 billion bet on AI",
+    "link": "https://www.cnbc.com/2026/09/09/silver-lake-merges-cegid-silae-ai-software-deal.html",
+    "score": 76,
+    "reason": "Large dollar amount ($11.6B); significant M&A activity"
   },
   {
     "rank": 8,
-    "headline": "Historic NYT v. OpenAI copyright battle heats up",
-    "link": "https://www.axios.com/2026/09/08/nyt-openai-microsoft-copyright-lawsuit",
-    "score": 77,
-    "reason": "Landmark legal controversy; high-stakes IP case"
+    "headline": "YouTube Appears in 53% of Google AI Overviews for Vitamin and Supplement Searches",
+    "link": "https://www.artificialintelligence-news.com/news/youtube-appears-in-53-of-google-ai-overviews-for-vitamin-and-supplement-searches/",
+    "score": 74,
+    "reason": "Quantified finding (53%); raises SEO/bias concerns"
   },
   {
     "rank": 9,
-    "headline": "Samsung taps Mistral AI models for semiconductor manufacturing",
-    "link": "https://www.artificialintelligence-news.com/news/samsung-mistral-ai-models-for-semiconductor-manufacturing/",
-    "score": 75,
-    "reason": "Enterprise AI adoption by major chip maker; manufacturing use case"
+    "headline": "AI Slop Is Changing How Engineers Review Code",
+    "link": "https://spectrum.ieee.org/ai-code-review-software-engineers",
+    "score": 72,
+    "reason": "Concrete impact on professional workflow; measurable industry change"
   },
   {
     "rank": 10,
-    "headline": "Arm launches Total Design for Physical AI and robotics framework",
-    "link": "https://www.artificialintelligence-news.com/news/arm-total-design-for-physical-ai-and-robotics-framework/",
-    "score": 73,
-    "reason": "Major product launch; physical AI infrastructure"
+    "headline": "Apple’s new iPhone camera mode promises to prove your photo isn’t AI",
+    "link": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
+    "score": 70,
+    "reason": "Major product feature from big company; addresses authenticity verification"
   },
   {
     "rank": 11,
-    "headline": "China’s Regulators Take Aim at “AI Boyfriends”",
-    "link": "https://spectrum.ieee.org/china-ai-chatbot-regulation",
-    "score": 71,
-    "reason": "Significant regulatory action; controversial AI application crackdown"
+    "headline": "ChatGPT Sketch turns your bad drawings into detailed AI images",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+    "score": 68,
+    "reason": "New OpenAI product feature; practical user-facing capability"
   },
   {
     "rank": 12,
-    "headline": "AI weather forecasting enters the energy market as Google targets grid operators with WeatherNext 3",
-    "link": "https://www.artificialintelligence-news.com/news/ai-weather-forecasting-google-weathernext-3-energy/",
-    "score": 69,
-    "reason": "New market application; Google product launch in critical infrastructure"
+    "headline": "Students who use AI generally score worse at school",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/991956/student-ai-use-scores-oecd-pisa",
+    "score": 66,
+    "reason": "Quantified negative outcome; impacts important demographic"
   },
   {
     "rank": 13,
-    "headline": "AI agents are poised to be the next hacking victims, cyber CEO predicts",
-    "link": "https://www.axios.com/2026/09/08/ai-agents-bugcrowd-cyberattacks-hack",
-    "score": 67,
-    "reason": "Security vulnerability warning; emerging threat category"
+    "headline": "Experts weigh in as researcher says AI has more than 10% chance of &apos;killing all humans&apos;",
+    "link": "https://www.cnbc.com/2026/09/09/anthropic-researcher-quits-ai-safety.html",
+    "score": 64,
+    "reason": "Controversial AI risk assessment with specific probability claim"
   },
   {
     "rank": 14,
-    "headline": "CloudNC aims to accelerate AI supply chain machining",
-    "link": "https://www.artificialintelligence-news.com/news/cloudnc-aims-to-accelerate-ai-supply-chain-machining/",
-    "score": 64,
-    "reason": "Industrial AI application; manufacturing efficiency"
+    "headline": "The latest 'crack in the thesis' for the trillion-dollar AI boom: Tokens are getting cheaper",
+    "link": "https://fortune.com/2026/09/09/ai-compute-tokens-cheaper-boom/",
+    "score": 62,
+    "reason": "Challenges trillion-dollar valuation thesis; economic trend"
   },
   {
     "rank": 15,
-    "headline": "Alibaba President: AI agents can talk, but can they actually do the work?",
-    "link": "https://fortune.com/2026/09/09/alibaba-president-kuo-zhang-ai-agents-can-talk-but-not-work/",
-    "score": 62,
-    "reason": "Executive skepticism from major tech company; capabilities debate"
+    "headline": "Arm's new CPU cores and GPUs for Android chips promise 'desktop-class' games, more AI power",
+    "link": "https://9to5google.com/2026/09/08/arms-new-cpu-cores-and-gpus-for-android-chips-promise-desktop-class-games-more-ai-power/",
+    "score": 60,
+    "reason": "Major chip architecture launch; enables new device capabilities"
   },
   {
     "rank": 16,
-    "headline": "The Download: the hunt for underground hydrogen and more rogue OpenAI agents",
-    "link": "https://www.technologyreview.com/2026/09/07/1143592/the-download-underground-hydrogen-search-rogue-openai-agents/",
-    "score": 60,
-    "reason": "OpenAI agent issue; emerging safety concern"
+    "headline": "Google’s Atlas of the human genome could pave the way for new treatments",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
+    "score": 58,
+    "reason": "Major scientific database launch; medical applications"
   },
   {
     "rank": 17,
-    "headline": "Coca-Cola uses AI to improve retailer ordering in Malaysia",
-    "link": "https://www.artificialintelligence-news.com/news/coca-cola-ai-retailer-ordering-malaysia/",
-    "score": 58,
-    "reason": "Enterprise AI deployment; business optimization"
+    "headline": "AI Models Are Watermarking Text—Will You Notice?",
+    "link": "https://spectrum.ieee.org/ai-watermark-text-anthropic-openai",
+    "score": 56,
+    "reason": "Technical countermeasure trend; detection/authenticity concern"
   },
   {
     "rank": 18,
-    "headline": "Tao: Open math problems being non-renewably mined by AI",
-    "link": "https://mathstodon.xyz/@tao/117237320796901560",
-    "score": 56,
-    "reason": "Research sustainability concern; novel AI resource depletion issue"
+    "headline": "Google upgrades all Gemini side panels in Workspace to have the same features",
+    "link": "https://9to5google.com/2026/09/09/gemini-workspace-side-panel-upgrade/",
+    "score": 54,
+    "reason": "Product upgrade across major enterprise suite; feature parity"
   },
   {
     "rank": 19,
-    "headline": "Desert Ant Labs: local, fast models that run on device",
-    "link": "https://desertant.com/blog/introducing-desert-ant-labs/",
-    "score": 54,
-    "reason": "On-device AI development; edge computing approach"
+    "headline": "AI is making it harder to trust your own eyes this election",
+    "link": "https://www.axios.com/2026/09/09/ai-political-ads-deepfakes-2026-elections",
+    "score": 52,
+    "reason": "Concrete societal impact; timing-relevant with measurable consequences"
   },
   {
     "rank": 20,
-    "headline": "Large language models develop novel social biases through adaptive exploration",
-    "link": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH",
-    "score": 52,
-    "reason": "AI bias research; emergent behavior discovery"
+    "headline": "Shopify acquires Tailwind",
+    "link": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
+    "score": 50,
+    "reason": "Major acquisition of AI content tool; significant e-commerce integration"
   }
 ]
