@@ -1,5 +1,24 @@
 [
  {
+  "id": "anthropic-existential-ai-risk-20260909",
+  "slug": "anthropic-existential-ai-risk",
+  "headline": "Anthropic Researchers Warn AI Could Pose Existential Risks to Humanity",
+  "summary": "Researchers building frontier AI say unaligned, uncontrolled systems could pose existential risks — and the window to build in safety is closing fast.",
+  "body": "<p>Leading researchers at Anthropic — one of the world's most prominent AI safety organizations — have issued a stark warning: advanced AI systems could pose existential risks to humanity if left unaligned and uncontrolled.</p><p>These are not warnings from fringe voices. They come from the engineers and scientists actively building frontier AI systems. The message is clear — we need robust safety measures, better alignment techniques, and proactive governance frameworks before we reach critical capability thresholds.</p><p>The context is crucial. We're in a period of rapid advancement where systems are becoming more capable, autonomous, and difficult to interpret. Yet the gap between technical capabilities and safety infrastructure remains dangerously wide.</p><p>The strategic implication is urgent: AI safety is now a business and societal imperative, not a nice-to-have research direction. The window for building safety into AI systems before deployment is closing.</p><p>The real insight isn't about stopping AI progress — it's about channeling it responsibly. The question isn't whether we build advanced AI; it's whether we build it safely.</p>",
+  "category": "Safety",
+  "hashtags": [
+   "AISafety",
+   "AIAlignment",
+   "ExistentialRisk",
+   "ResponsibleAI",
+   "Anthropic"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_anthropic_existential_risk_20260909.png",
+  "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
+  "publishedAt": "2026-09-09T11:30:00-04:00",
+  "isVideo": false
+ },
+ {
   "id": "plan-ahead-ai-agents-hafner-20260909",
   "slug": "plan-ahead-ai-agents-hafner",
   "headline": "AI Agents That Plan Ahead — Not Just React — Are Being Built Now",
