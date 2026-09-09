@@ -1,128 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI says it cracked one of math's grand challenges. But there are troubling questions about how they did it—and what it means for us all",
-    "link": "https://fortune.com/2026/09/08/openai-says-it-cracked-navier-stokes-math-grand-challenge-buckmaster-accusation-cheating-intimidation-tao-lament/",
-    "score": 95,
-    "reason": "Major controversy + big technical claim + multiple sources (1,8,45,54 corroborate). Significant impact on AI credibility."
+    "headline": "OpenAI claims to have solved the 90-year-old Navier-Stokes math problem in 88 hours",
+    "link": "https://www.cnbc.com/2026/09/09/openai-navier-stokes-math-problem-solved.html",
+    "score": 94,
+    "reason": "Major technical breakthrough with concrete claim; high-profile math milestone"
   },
   {
     "rank": 2,
-    "headline": "AI power users claim Anthropic duped them with subscriptions, and they’re taking it to court",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
-    "score": 88,
-    "reason": "Litigation + concrete controversy. Direct business impact. Only Anthropic story in list."
+    "headline": "OpenAI Just Claimed a Huge Math Discovery. Some Academics Are Crying Foul",
+    "link": "https://www.wired.com/story/openai-navier-stokes-math-discovery-academics/",
+    "score": 92,
+    "reason": "Same breakthrough but with controversy angle; credibility dispute from experts"
   },
   {
     "rank": 3,
-    "headline": "Google DeepMind Maps 9 Billion Possible DNA Variants",
-    "link": "https://spectrum.ieee.org/alphagenome-atlas",
-    "score": 85,
-    "reason": "Big number (9B) + major scientific launch. Genomics breakthrough. Only DeepMind story."
+    "headline": "Worried Anthropic researchers warn that AI 'could kill all humans'",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
+    "score": 88,
+    "reason": "Major controversy; insider warnings from leading AI safety researchers"
   },
   {
     "rank": 4,
-    "headline": "Meta reveals its AI agent that can shop, send emails and plan trips on your behalf",
-    "link": "https://www.engadget.com/2253133/meta-reveals-its-ai-agent-that-can-shop-send-emails-and-plan-trips-on-your-behalf/",
-    "score": 82,
-    "reason": "Product launch (agent capabilities). Competitive move in AI race. Better sourced than duplicates (3,7,51)."
+    "headline": "Meta bets on AI agent Muse to catch up in AI race",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+    "score": 85,
+    "reason": "Major product launch by top company; competitive AI agents race"
   },
   {
     "rank": 5,
-    "headline": "ChatGPT Sketch turns your bad drawings into detailed AI images",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
-    "score": 78,
-    "reason": "New product feature launch. Consumer-facing. OpenAI (already has math story, so pick most concrete launch)."
+    "headline": "Google to invest record $15 billion in AI infrastructure in the &apos;Texas of Europe&apos;",
+    "link": "https://www.cnbc.com/2026/09/09/google-finland-ai-infrastructure-investment.html",
+    "score": 84,
+    "reason": "Massive capital commitment; record investment number"
   },
   {
     "rank": 6,
-    "headline": "AI Slop Is Changing How Engineers Review Code",
-    "link": "https://spectrum.ieee.org/ai-code-review-software-engineers",
-    "score": 75,
-    "reason": "Industry impact trend. Concrete behavioral change. Avoids speculation."
+    "headline": "US authorities accuse Chinese AI companies of industrial-scale campaigns to copy American models",
+    "link": "https://www.engadget.com/2253604/us-authorities-accuse-chinese-ai-companies-of-industrial-scale-campaigns-to-copy-american-models/",
+    "score": 82,
+    "reason": "Major geopolitical controversy; official accusations of IP theft"
   },
   {
     "rank": 7,
-    "headline": "Adobe is trying to make its AI generators idiot-proof in Premiere",
-    "link": "https://www.theverge.com/tech/991133/adobe-is-trying-to-make-its-ai-generators-idiot-proof-in-premiere",
-    "score": 73,
-    "reason": "Product innovation. Professional tool enhancement. Adobe story."
+    "headline": "Suno trained its v6 AI music models with help from Warner and BMG",
+    "link": "https://www.engadget.com/2251539/suno-trained-its-v6-ai-music-models-with-help-from-warner-and-bmg/",
+    "score": 78,
+    "reason": "Major music industry partnership; significant licensing deal"
   },
   {
     "rank": 8,
-    "headline": "Arm's new CPU cores and GPUs for Android chips promise 'desktop-class' games, more AI power",
-    "link": "https://9to5google.com/2026/09/08/arms-new-cpu-cores-and-gpus-for-android-chips-promise-desktop-class-games-more-ai-power/",
-    "score": 70,
-    "reason": "Hardware launch with AI capability claims. Infrastructure play."
+    "headline": "Historic NYT v. OpenAI copyright battle heats up",
+    "link": "https://www.axios.com/2026/09/08/nyt-openai-microsoft-copyright-lawsuit",
+    "score": 77,
+    "reason": "Landmark legal controversy; high-stakes IP case"
   },
   {
     "rank": 9,
-    "headline": "TikTok to expand data center capacity in Finland amid boom in AI infrastructure deals",
-    "link": "https://www.cnbc.com/2026/09/08/tiktok-expand-data-center-capacity-finland.html",
-    "score": 68,
-    "reason": "Concrete investment/infrastructure expansion. Signals AI demand surge."
+    "headline": "Samsung taps Mistral AI models for semiconductor manufacturing",
+    "link": "https://www.artificialintelligence-news.com/news/samsung-mistral-ai-models-for-semiconductor-manufacturing/",
+    "score": 75,
+    "reason": "Enterprise AI adoption by major chip maker; manufacturing use case"
   },
   {
     "rank": 10,
-    "headline": "Pony.ai’s CEO thinks robotaxis will be widespread within five years: ‘The technology problem is pretty much already solved’",
-    "link": "https://fortune.com/2026/09/08/pony-ai-ceo-robotaxis-five-years/",
-    "score": 65,
-    "reason": "Bold claim from autonomous driving AI company. Concrete timeline assertion."
+    "headline": "Arm launches Total Design for Physical AI and robotics framework",
+    "link": "https://www.artificialintelligence-news.com/news/arm-total-design-for-physical-ai-and-robotics-framework/",
+    "score": 73,
+    "reason": "Major product launch; physical AI infrastructure"
   },
   {
     "rank": 11,
-    "headline": "YouTube Appears in 53% of Google AI Overviews for Vitamin and Supplement Searches",
-    "link": "https://www.artificialintelligence-news.com/news/youtube-appears-in-53-of-google-ai-overviews-for-vitamin-and-supplement-searches/",
-    "score": 63,
-    "reason": "Specific metric (53%). Concrete pattern. AI integration impact data."
+    "headline": "China’s Regulators Take Aim at “AI Boyfriends”",
+    "link": "https://spectrum.ieee.org/china-ai-chatbot-regulation",
+    "score": 71,
+    "reason": "Significant regulatory action; controversial AI application crackdown"
   },
   {
     "rank": 12,
-    "headline": "Gemini app makes Daily Brief free in the US",
-    "link": "https://9to5google.com/2026/09/08/gemini-daily-brief-free/",
-    "score": 60,
-    "reason": "Google product change. Consumer-facing launch."
+    "headline": "AI weather forecasting enters the energy market as Google targets grid operators with WeatherNext 3",
+    "link": "https://www.artificialintelligence-news.com/news/ai-weather-forecasting-google-weathernext-3-energy/",
+    "score": 69,
+    "reason": "New market application; Google product launch in critical infrastructure"
   },
   {
     "rank": 13,
-    "headline": "NVIDIA's DLSS 5 adds subtle details to NBA 2K27, but demands a lot more power",
-    "link": "https://www.engadget.com/2253085/nvidias-dlss-5-adds-subtle-details-to-nba-2k27-but-demands-a-lot-more-power/",
-    "score": 58,
-    "reason": "Concrete product demo. Hardware/AI integration."
+    "headline": "AI agents are poised to be the next hacking victims, cyber CEO predicts",
+    "link": "https://www.axios.com/2026/09/08/ai-agents-bugcrowd-cyberattacks-hack",
+    "score": 67,
+    "reason": "Security vulnerability warning; emerging threat category"
   },
   {
     "rank": 14,
-    "headline": "Google Find Hub update brings new ‘Remembered’ tab with Gemini",
-    "link": "https://9to5google.com/2026/09/08/find-hub-remembered/",
-    "score": 55,
-    "reason": "Product feature launch. Consumer AI tool."
+    "headline": "CloudNC aims to accelerate AI supply chain machining",
+    "link": "https://www.artificialintelligence-news.com/news/cloudnc-aims-to-accelerate-ai-supply-chain-machining/",
+    "score": 64,
+    "reason": "Industrial AI application; manufacturing efficiency"
   },
   {
     "rank": 15,
-    "headline": "Google’s Atlas of the human genome could pave the way for new treatments",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
-    "score": 52,
-    "reason": "Scientific application. Medical impact potential. Big data (genome)."
+    "headline": "Alibaba President: AI agents can talk, but can they actually do the work?",
+    "link": "https://fortune.com/2026/09/09/alibaba-president-kuo-zhang-ai-agents-can-talk-but-not-work/",
+    "score": 62,
+    "reason": "Executive skepticism from major tech company; capabilities debate"
   },
   {
     "rank": 16,
-    "headline": "Google's AI also cheats, but a little more honestly",
-    "link": "https://9to5google.com/2026/09/08/googles-ai-also-cheats-but-a-little-more-honestly/",
-    "score": 48,
-    "reason": "Controversy/comparison point. Behavioral finding about AI systems."
+    "headline": "The Download: the hunt for underground hydrogen and more rogue OpenAI agents",
+    "link": "https://www.technologyreview.com/2026/09/07/1143592/the-download-underground-hydrogen-search-rogue-openai-agents/",
+    "score": 60,
+    "reason": "OpenAI agent issue; emerging safety concern"
   },
   {
     "rank": 17,
-    "headline": "MG Ship adds AI route optimisation as logistics returns accelerate",
-    "link": "https://www.artificialintelligence-news.com/news/mg-ship-ai-route-optimisation-logistics-returns-accelerate/",
-    "score": 45,
-    "reason": "Concrete B2B implementation. Business impact."
+    "headline": "Coca-Cola uses AI to improve retailer ordering in Malaysia",
+    "link": "https://www.artificialintelligence-news.com/news/coca-cola-ai-retailer-ordering-malaysia/",
+    "score": 58,
+    "reason": "Enterprise AI deployment; business optimization"
   },
   {
     "rank": 18,
-    "headline": "The betrayal behind the data-center backlash: AI promised to break the rules of class but is just rewarding them so far",
-    "link": "https://fortune.com/2026/09/08/why-data-center-backlash-class-inequality-ai-wage-growth/",
-    "score": 42,
-    "reason": "Systemic controversy. Industry critique with traction."
+    "headline": "Tao: Open math problems being non-renewably mined by AI",
+    "link": "https://mathstodon.xyz/@tao/117237320796901560",
+    "score": 56,
+    "reason": "Research sustainability concern; novel AI resource depletion issue"
+  },
+  {
+    "rank": 19,
+    "headline": "Desert Ant Labs: local, fast models that run on device",
+    "link": "https://desertant.com/blog/introducing-desert-ant-labs/",
+    "score": 54,
+    "reason": "On-device AI development; edge computing approach"
+  },
+  {
+    "rank": 20,
+    "headline": "Large language models develop novel social biases through adaptive exploration",
+    "link": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH",
+    "score": 52,
+    "reason": "AI bias research; emergent behavior discovery"
   }
 ]
