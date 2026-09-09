@@ -1,5 +1,24 @@
 [
  {
+  "id": "plan-ahead-ai-agents-hafner-20260909",
+  "slug": "plan-ahead-ai-agents-hafner",
+  "headline": "AI Agents That Plan Ahead — Not Just React — Are Being Built Now",
+  "summary": "AI researcher Danijar Hafner is building autonomous agents that plan ahead for unexpected scenarios — a shift from reactive systems to genuinely predictive ones.",
+  "body": "<p><strong>AI agents that can anticipate the future are no longer science fiction—they're being built right now.</strong></p>\n<p>Danijar Hafner, an AI entrepreneur featured in Technology Review, is developing autonomous agents with a critical capability: the ability to plan ahead for unexpected scenarios. This breakthrough addresses one of the most persistent challenges in AI development—moving beyond reactive systems toward genuinely predictive ones. The implications for automation, robotics, and enterprise technology are profound.</p>\n<p>Traditional AI systems operate on pattern recognition and immediate response mechanisms. They excel at reacting to known variables but struggle when faced with novel situations or complex planning requirements. Hafner's approach fundamentally shifts this paradigm by building agents that don't just respond to what's happening—they anticipate what might happen and plan accordingly. This represents a significant leap in AI maturity and practical applicability.</p>\n<p>For businesses and organizations, this development has substantial strategic implications. Companies implementing next-generation AI agents could gain dramatic advantages in operational efficiency, risk mitigation, and resource optimization. Systems that anticipate problems rather than solve them reactively translate directly to cost savings and competitive advantage. Industries from manufacturing to supply chain management are particularly well-positioned to benefit.</p>\n<p>This advancement signals a broader inflection point in the AI industry. The market is shifting from narrow, task-specific models toward more flexible, forward-thinking autonomous systems. As these agents mature, we'll likely see accelerated adoption across sectors that depend on complex decision-making under uncertainty.</p>\n<p>The real opportunity lies in agents that combine predictive capability with adaptive learning. As AI systems become better at anticipating challenges, the nature of human-AI collaboration evolves too. We're moving toward partnerships where humans focus on strategy and judgment while AI handles sophisticated prediction and planning.</p>\n<p>The organization that cracks truly predictive, planning-capable AI agents won't just build better technology—they'll reshape entire industries.</p>",
+  "category": "Research",
+  "hashtags": [
+   "AI",
+   "ArtificialIntelligence",
+   "MachineLearning",
+   "AIStrategy",
+   "FutureOfWork"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_plan_ahead_ai_agents_20260909.png",
+  "sourceUrl": "https://www.technologyreview.com/2026/09/08/1142088/danijar-hafner-developing-plan-ahead-agents/",
+  "publishedAt": "2026-09-09T09:00:00.000-04:00",
+  "isVideo": false
+ },
+ {
   "id": "openai-gpt6-astra-agi-era-20260811",
   "slug": "openai-gpt6-astra-agi-era",
   "headline": "OpenAI Announces GPT-6 Astra — and Says It May Begin the AGI Era",
