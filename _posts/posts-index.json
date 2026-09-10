@@ -1,5 +1,24 @@
 [
  {
+  "id": "nasa-ibm-moon-ai-20260910",
+  "slug": "nasa-ibm-moon-ai",
+  "headline": "NASA and IBM Build an AI Model Made for the Moon",
+  "summary": "NASA and IBM built an AI model that lets lunar rovers and spacecraft analyze terrain and make decisions on their own — closing the dangerous Earth-to-Moon communication gap.",
+  "body": "<p>NASA and IBM have developed a groundbreaking AI model built specifically for lunar exploration — a milestone in the collaboration between space technology and artificial intelligence.</p><p>The model tackles one of the toughest challenges in lunar missions: the communication delay between Earth and the Moon. Instead of waiting on ground teams for every instruction, rovers and spacecraft can now analyze lunar terrain, identify obstacles, and optimize operations in real time.</p><p>Strategically, it marks a shift in how agencies approach space. Rather than relying solely on pre-programmed missions, they're leveraging AI to create adaptive, intelligent systems that reduce risk and open new possibilities for exploration and discovery on the lunar surface.</p><p>The broader industry is taking notice. When institutions like NASA adopt and champion AI, it validates the technology and accelerates enterprise adoption — proof that AI is becoming essential infrastructure for humanity's most ambitious endeavors.</p><p>This NASA–IBM collaboration is only the first step. As models grow more capable of handling extreme environments, expect similar applications across deep space, planetary science, and interplanetary missions.</p>",
+  "category": "Research",
+  "hashtags": [
+   "AI",
+   "NASA",
+   "SpaceExploration",
+   "ArtificialIntelligence",
+   "IBM"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_nasa_ibm_moon_ai_20260910.png",
+  "sourceUrl": "https://www.engadget.com/2254569/nasa-ibm-ai-model-moon/",
+  "publishedAt": "2026-09-10T18:00:00-04:00",
+  "isVideo": false
+ },
+ {
   "id": "apple-talking-about-ai-20260910",
   "slug": "apple-talking-about-ai",
   "headline": "Apple Is Finally Talking About AI — And a Lot of It",
