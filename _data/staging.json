@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic caught scientists using Claude to further biological weapon research",
-    "link": "https://www.engadget.com/2255473/anthropic-caught-scientists-using-claude-to-further-biological-weapon-research/",
-    "score": 98,
-    "reason": "Major controversy with concrete misuse case, significant safety implications"
+    "headline": "Lawyer fined $5K over AI-hallucinated witnesses in a murder case",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
+    "score": 96,
+    "reason": "Concrete legal consequence of AI hallucination; real-world impact; unique precedent"
   },
   {
     "rank": 2,
-    "headline": "Chinese AI labs secretly used millions of Claude exchanges to train their models, Anthropic says",
-    "link": "https://www.cnbc.com/2026/09/11/chinese-ai-labs-moonshot-deepseek-alibaba-anthropic.html",
-    "score": 96,
-    "reason": "Large-scale IP theft allegation, millions of exchanges, geopolitical tension"
+    "headline": "Meta Sued Over Training Data for Its AI and Face-Recognition Systems",
+    "link": "https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems/",
+    "score": 94,
+    "reason": "Major lawsuit; specific legal action; training data controversy; high stakes"
   },
   {
     "rank": 3,
-    "headline": "Clearview AI Is Testing an AI Tool That Would Let Cops Unearth Your Life Online",
-    "link": "https://www.wired.com/story/clearview-ai-is-testing-an-ai-tool-that-lets-cops-instantly-unearth-your-online-activity/",
-    "score": 94,
-    "reason": "Concrete product launch with major privacy/surveillance implications"
+    "headline": "Universal Music is launching an AI music platform with ElevenLabs",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
+    "score": 88,
+    "reason": "Significant partnership launch; major music industry player; concrete product"
   },
   {
     "rank": 4,
-    "headline": "San Francisco Orders Meta to Stop ‘Allowing’ AI Child Abuse Ads",
-    "link": "https://www.wired.com/story/san-francisco-orders-meta-to-stop-allowing-ai-child-abuse-ads/",
-    "score": 92,
-    "reason": "Regulatory action against major company for concrete harm"
+    "headline": "OpenAI has paused its $200 ChatGPT sign-ups as ‘unprecedented’ demand for new model Astra strains its system",
+    "link": "https://fortune.com/2026/09/11/openai-astra-chatgpt-pro-pause/",
+    "score": 87,
+    "reason": "Big number ($200); service pause indicates scale; new model launch stress test"
   },
   {
     "rank": 5,
-    "headline": "CA governor signs 'landmark' laws on youth use of social media and AI chatbots",
-    "link": "https://www.engadget.com/2255569/ca-governor-signs-landmark-laws-on-youth-use-of-social-media-and-ai-chatbots/",
-    "score": 90,
-    "reason": "Major regulation passed, broad impact on AI industry"
+    "headline": "Palantir Foundry and cuOpt drive NVIDIA supply chain allocation",
+    "link": "https://www.artificialintelligence-news.com/news/palantir-foundry-cuopt-nvidia-supply-chain-allocation/",
+    "score": 85,
+    "reason": "Enterprise AI deployment; major tech company partnerships; supply chain impact"
   },
   {
     "rank": 6,
-    "headline": "OpenAI’s sly mathematical breakthrough sends a chill through academia",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
-    "score": 88,
-    "reason": "Technical breakthrough with significant implications, academic controversy"
+    "headline": "Trump dismisses AI extinction risks as more than a dozen OpenAI, Anthropic insiders call for a slowdown",
+    "link": "https://www.cnbc.com/2026/09/11/trump-ai-extinction-risks.html",
+    "score": 84,
+    "reason": "Multiple insider defections; political controversy; extinction debate escalation"
   },
   {
     "rank": 7,
-    "headline": "JD.com expands physical AI in logistics with 3 million robots",
-    "link": "https://www.artificialintelligence-news.com/news/jd-com-physical-ai-logistics-3-million-robots/",
-    "score": 86,
-    "reason": "Large-scale deployment number, major commercial expansion"
+    "headline": "Meta says it's changing AI suggestions after posing invasive personal questions",
+    "link": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
+    "score": 83,
+    "reason": "Product controversy; privacy concerns; policy change response"
   },
   {
     "rank": 8,
-    "headline": "A Chinese humanoid startup flips &apos;distillation&apos; claim on OpenAI as it releases a new robotics model",
-    "link": "https://www.cnbc.com/2026/09/11/chinese-humanoid-robot-startup-distillation-claim-openai.html",
-    "score": 84,
-    "reason": "IP dispute controversy, new product launch, geopolitical angle"
+    "headline": "Governments are turning to Claude to automate spying",
+    "link": "https://www.axios.com/2026/09/10/anthropic-claude-government-surveillance-threats",
+    "score": 82,
+    "reason": "Controversial use case; government surveillance; significant new application"
   },
   {
     "rank": 9,
-    "headline": "Suno releases its first AI music model made with record industry help",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-    "score": 82,
-    "reason": "Major product launch with industry partnership, resolves past copyright disputes"
+    "headline": "Congress gripped by AI panic after doomsday warnings",
+    "link": "https://www.axios.com/2026/09/11/congress-ai-anthropic-coxon-researcher-democrats",
+    "score": 81,
+    "reason": "Political escalation; policy response; institutional impact"
   },
   {
     "rank": 10,
-    "headline": "Chinese Nvidia rival Enflame soars 206% on stock market debut as AI demand stays hot",
-    "link": "https://www.cnbc.com/2026/09/11/chinese-nvidia-rival-enflame-stock-market-debut-ai.html",
+    "headline": "Mathematicians want proof OpenAI didn’t use their work",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
     "score": 80,
-    "reason": "Big numbers (206% gain), major market event, competitive threat data"
-  },
-  {
-    "rank": 11,
-    "headline": "Universal Music Group is collaborating with ElevenLabs on a new AI-powered creation platform",
-    "link": "https://www.engadget.com/2255044/universal-music-group-is-collaborating-with-elevenlabs-on-a-new-ai-powered-creation-platform/",
-    "score": 78,
-    "reason": "Major company partnership, new platform launch in music/audio"
-  },
-  {
-    "rank": 12,
-    "headline": "OpenAI Wants to Know if an AI Industry Slowdown Would Even Be Legal",
-    "link": "https://www.wired.com/story/openai-wants-to-know-if-an-ai-industry-slowdown-would-even-be-legal/",
-    "score": 76,
-    "reason": "Regulatory/antitrust controversy with major implications"
-  },
-  {
-    "rank": 13,
-    "headline": "A Stealth Startup Thinks It Just Hacked the Memory Shortage",
-    "link": "https://www.wired.com/story/a-new-dollar400-million-startup-wants-to-fix-the-ai-memory-bottleneck/",
-    "score": 74,
-    "reason": "Significant technical breakthrough addressing major infrastructure bottleneck"
-  },
-  {
-    "rank": 14,
-    "headline": "Scoop: Anthropic whistleblower gave up his equity to leave the company",
-    "link": "https://www.axios.com/2026/09/09/anthropic-researcher-ai-warning-interview",
-    "score": 72,
-    "reason": "Insider controversy with financial stakes, company culture issues"
-  },
-  {
-    "rank": 15,
-    "headline": "Scoop: OpenAI faces GOP-led Senate investigation into Hugging Face breach",
-    "link": "https://www.axios.com/2026/09/10/openai-hugging-face-senate-investigation-hawley",
-    "score": 70,
-    "reason": "Security incident with government investigation"
-  },
-  {
-    "rank": 16,
-    "headline": "Claude is no longer available for minors",
-    "link": "https://support.claude.com/en/articles/15171100-age-assurance-on-claude",
-    "score": 68,
-    "reason": "Major policy change by Anthropic affecting product access"
-  },
-  {
-    "rank": 17,
-    "headline": "I Let an AI Agent Hack All My Gadgets—and I’d Do It Again",
-    "link": "https://www.wired.com/story/i-used-ai-to-hack-my-home-network/",
-    "score": 66,
-    "reason": "Concrete demonstration of agentic AI capabilities and risks"
-  },
-  {
-    "rank": 18,
-    "headline": "OpenAI Agents API",
-    "link": "https://developers.openai.com/api/docs/guides/agents-api/overview",
-    "score": 64,
-    "reason": "Major product launch of agents platform"
-  },
-  {
-    "rank": 19,
-    "headline": "Slack can now vibe-code interactive charts and reports inside chats",
-    "link": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
-    "score": 62,
-    "reason": "Feature launch by major company, workplace AI integration"
-  },
-  {
-    "rank": 20,
-    "headline": "More questions about whether researchers can trust OpenAI with unpublished math",
-    "link": "https://mathstodon.xyz/@andreasthom/117240535270608201",
-    "score": 60,
-    "reason": "Ongoing trust/disclosure controversy in academic partnerships"
+    "reason": "Specific legal demand; training data controversy; academic accusation"
   }
 ]
