@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Chinese AI labs secretly used millions of Claude exchanges to train their models, Anthropic says",
-    "link": "https://www.cnbc.com/2026/09/11/chinese-ai-labs-moonshot-deepseek-alibaba-anthropic.html",
-    "score": 94,
-    "reason": "Major controversy with concrete allegations of IP theft, significant scale (millions of exchanges), affects multiple companies"
+    "headline": "Meta Sued Over Training Data for Its AI and Face-Recognition Systems",
+    "link": "https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems/",
+    "score": 92,
+    "reason": "Major lawsuit against Meta; concrete legal action over AI training practices"
   },
   {
     "rank": 2,
-    "headline": "From Hacks to Bioweapons, Claude Misuse Is Now Everywhere",
-    "link": "https://www.wired.com/story/security-news-this-week-from-hacks-to-bioweapons-claude-misuse-is-now-everywhere/",
-    "score": 92,
-    "reason": "Serious safety/misuse controversy with broad implications, specific examples of harmful applications"
+    "headline": "Anthropic report: 5 ways Claude was exploited for war, spying and repression",
+    "link": "https://www.axios.com/2026/09/12/anthropic-ai-threat-report-russia-iran-china",
+    "score": 88,
+    "reason": "Research-backed documentation of AI misuse; specific harmful applications"
   },
   {
     "rank": 3,
-    "headline": "CA governor signs 'landmark' laws on youth use of social media and AI chatbots",
-    "link": "https://www.engadget.com/2255569/ca-governor-signs-landmark-laws-on-youth-use-of-social-media-and-ai-chatbots/",
-    "score": 89,
-    "reason": "Major regulatory action, landmark legislation, affects entire industry"
+    "headline": "OpenAI agents hacked a software service before the Hugging Face incident",
+    "link": "https://www.engadget.com/2256741/openai-agents-hacked-rubygems/",
+    "score": 86,
+    "reason": "Security vulnerability; confirmed attack on AI systems with big implications"
   },
   {
     "rank": 4,
-    "headline": "OpenAI Wants to Know if an AI Industry Slowdown Would Even Be Legal",
-    "link": "https://www.wired.com/story/openai-wants-to-know-if-an-ai-industry-slowdown-would-even-be-legal/",
-    "score": 87,
-    "reason": "Significant antitrust/legal challenge with major implications for industry regulation"
+    "headline": "Lawyer fined $5K over AI-hallucinated witnesses in a murder case",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
+    "score": 84,
+    "reason": "Concrete real-world consequences; AI failures in legal system with financial penalty"
   },
   {
     "rank": 5,
-    "headline": "After a decade of failed bills and three years of resignations, Washington finally discovers it cares about AI safety",
-    "link": "https://fortune.com/2026/09/12/after-three-years-of-silence-washington-discovers-it-finally-cares-about-ai-safety/",
-    "score": 85,
-    "reason": "Major policy shift with documented history of previous failures, concrete political action"
+    "headline": "Meta Pulls Invasive AI Prompts After Mother Reveals Feature Scraping Family Data",
+    "link": "https://www.cnet.com/tech/services-and-software/meta-ai-viral-video-personal-prompts-about-kids/",
+    "score": 82,
+    "reason": "Privacy scandal with documented evidence; major platform forced to retract feature"
   },
   {
     "rank": 6,
-    "headline": "Universal Music Group is collaborating with ElevenLabs on a new AI-powered creation platform",
-    "link": "https://www.engadget.com/2255044/universal-music-group-is-collaborating-with-elevenlabs-on-a-new-ai-powered-creation-platform/",
-    "score": 81,
-    "reason": "Major music industry partnership, significant company collaboration"
+    "headline": "OpenAI delaying IPO amid AI safety concerns, Sam Altman says",
+    "link": "https://www.axios.com/2026/09/12/openai-public-ipo-delay-sam-altman",
+    "score": 80,
+    "reason": "Major business decision; IPO delay with big financial implications"
   },
   {
     "rank": 7,
-    "headline": "Meta’s Muse AI works and creeps me out",
-    "link": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
-    "score": 79,
-    "reason": "Meta AI launch with reported functionality demonstration"
+    "headline": "Anthropic, OpenAI CEOs call for slowdown in AI development",
+    "link": "https://www.axios.com/2026/09/12/anthropic-ai-amodei-pacing",
+    "score": 78,
+    "reason": "Leaders of two major AI companies make unified call for caution"
   },
   {
     "rank": 8,
-    "headline": "Slack can now vibe-code interactive charts and reports inside chats",
-    "link": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
-    "score": 78,
-    "reason": "Feature launch by major company with concrete capability"
+    "headline": "Nvidia is the central bank of AI",
+    "link": "https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai",
+    "score": 76,
+    "reason": "Analysis of NVIDIA's dominant market position and power in AI infrastructure"
   },
   {
     "rank": 9,
-    "headline": "OpenAI agents carried out an undisclosed attack on RubyGems",
-    "link": "https://www.rubyhack.ai/",
-    "score": 76,
-    "reason": "Significant security incident with documented unauthorized action"
+    "headline": "Google Find Hub rolls out new ‘Remembered’ tab with Gemini [U]",
+    "link": "https://9to5google.com/2026/09/11/find-hub-remembered/",
+    "score": 72,
+    "reason": "New product launch from Google; Gemini feature expansion"
   },
   {
     "rank": 10,
-    "headline": "Chinese Nvidia rival Enflame soars 206% on stock market debut as AI demand stays hot",
-    "link": "https://www.cnbc.com/2026/09/11/chinese-nvidia-rival-enflame-stock-market-debut-ai.html",
-    "score": 74,
-    "reason": "Major market event with big numbers (206% surge), competitive threat to established players"
-  },
-  {
-    "rank": 11,
-    "headline": "A native Gemini app is finally available for Windows PCs",
-    "link": "https://www.engadget.com/2255197/a-native-gemini-app-is-finally-available-for-windows-pcs/",
-    "score": 72,
-    "reason": "Google major platform expansion, significant product launch"
-  },
-  {
-    "rank": 12,
-    "headline": "Mark Zuckerberg's Meta bet that AI would shrink its management ranks. Now it's quietly rebuilding them",
-    "link": "https://fortune.com/2026/09/12/meta-year-of-efficiency-managers-ai-investment/",
-    "score": 71,
-    "reason": "Major strategy reversal at big company with documented personnel changes"
-  },
-  {
-    "rank": 13,
-    "headline": "Supply chains detect fast, act slow: How AI agents fix it",
-    "link": "https://www.artificialintelligence-news.com/news/supply-chains-detect-fast-act-slow-how-ai-agents-fix-it/",
-    "score": 69,
-    "reason": "Concrete enterprise AI application with business impact"
-  },
-  {
-    "rank": 14,
-    "headline": "A Chinese humanoid startup flips &apos;distillation&apos; claim on OpenAI as it releases a new robotics model",
-    "link": "https://www.cnbc.com/2026/09/11/chinese-humanoid-robot-startup-distillation-claim-openai.html",
-    "score": 68,
-    "reason": "Significant technical development with direct OpenAI competitive challenge"
-  },
-  {
-    "rank": 15,
-    "headline": "How AI makes biological research more dangerous",
-    "link": "https://www.axios.com/2026/09/11/ai-warnings-biological-research-dangerous",
-    "score": 66,
-    "reason": "Documented safety concern with research implications"
-  },
-  {
-    "rank": 16,
-    "headline": "I spent $220 on Google app ads and 60% of the installs were robots",
-    "link": "https://dayzlegame.com/blog/google-ads-bot-farm/",
-    "score": 64,
-    "reason": "Concrete fraud with quantified impact on major platform"
-  },
-  {
-    "rank": 17,
-    "headline": "From AI FOMO to AI hangover: corporate America is taking a long, hard look in the mirror right now",
-    "link": "https://fortune.com/2026/09/12/ai-fomo-hangover-what-to-do-next-leadership/",
-    "score": 62,
-    "reason": "Significant market sentiment shift affecting enterprise investments"
-  },
-  {
-    "rank": 18,
-    "headline": "Anthropic spent this week in hot water over cybersecurity",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
-    "score": 60,
-    "reason": "Security controversy affecting major AI company"
-  },
-  {
-    "rank": 19,
-    "headline": "I spent $4,000 on a robot dog from China",
-    "link": "https://arstechnica.com/gadgets/2026/09/i-spent-4000-on-a-robot-dog-from-china/",
-    "score": 58,
-    "reason": "Consumer robotics product demonstration with real-world cost data"
-  },
-  {
-    "rank": 20,
-    "headline": "Scoop: Mike Johnson urged to cancel House recess over AI warnings",
-    "link": "https://www.axios.com/2026/09/11/mike-johnson-house-recess-ai-doom-warnings",
-    "score": 56,
-    "reason": "Political action on AI safety with documented high-level involvement"
+    "headline": "Congress gripped by AI panic after doomsday warnings",
+    "link": "https://www.axios.com/2026/09/11/congress-ai-anthropic-coxon-researcher-democrats",
+    "score": 70,
+    "reason": "Legislative response to AI safety concerns; political controversy"
   }
 ]
