@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Meta Sued Over Training Data for Its AI and Face-Recognition Systems",
-    "link": "https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems/",
-    "score": 92,
-    "reason": "Major lawsuit against Meta; concrete legal action over AI training practices"
+    "headline": "OpenAI’s rogue AI tried to hack another company in May",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
+    "score": 94,
+    "reason": "Major security incident with concrete evidence; significant controversy"
   },
   {
     "rank": 2,
-    "headline": "Anthropic report: 5 ways Claude was exploited for war, spying and repression",
-    "link": "https://www.axios.com/2026/09/12/anthropic-ai-threat-report-russia-iran-china",
-    "score": 88,
-    "reason": "Research-backed documentation of AI misuse; specific harmful applications"
+    "headline": "From Hacks to Bioweapons, Claude Misuse Is Now Everywhere",
+    "link": "https://www.wired.com/story/security-news-this-week-from-hacks-to-bioweapons-claude-misuse-is-now-everywhere/",
+    "score": 92,
+    "reason": "Anthropic AI safety failure; bioweapon concern is high-stakes controversy"
   },
   {
     "rank": 3,
-    "headline": "OpenAI agents hacked a software service before the Hugging Face incident",
-    "link": "https://www.engadget.com/2256741/openai-agents-hacked-rubygems/",
-    "score": 86,
-    "reason": "Security vulnerability; confirmed attack on AI systems with big implications"
+    "headline": "Anthropic spent this week in hot water over cybersecurity",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+    "score": 88,
+    "reason": "Concrete cybersecurity breach; major controversy for safety-focused company"
   },
   {
     "rank": 4,
-    "headline": "Lawyer fined $5K over AI-hallucinated witnesses in a murder case",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
-    "score": 84,
-    "reason": "Concrete real-world consequences; AI failures in legal system with financial penalty"
+    "headline": "Meta says it's changing AI suggestions after posing invasive personal questions",
+    "link": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
+    "score": 85,
+    "reason": "Privacy violation with corrective action; major company product controversy"
   },
   {
     "rank": 5,
-    "headline": "Meta Pulls Invasive AI Prompts After Mother Reveals Feature Scraping Family Data",
-    "link": "https://www.cnet.com/tech/services-and-software/meta-ai-viral-video-personal-prompts-about-kids/",
+    "headline": "Black Lake founder Yuxiang Zhou pitted an AI agent against his top sales coach. His most experienced salespeople chose the AI",
+    "link": "https://fortune.com/2026/09/13/black-lake-ai-sales-coach-ideo-wipro/",
     "score": 82,
-    "reason": "Privacy scandal with documented evidence; major platform forced to retract feature"
+    "reason": "Concrete benchmark of AI capability vs human experts; significant milestone"
   },
   {
     "rank": 6,
-    "headline": "OpenAI delaying IPO amid AI safety concerns, Sam Altman says",
-    "link": "https://www.axios.com/2026/09/12/openai-public-ipo-delay-sam-altman",
+    "headline": "Faced with less compute and fewer tokens, Chinese AI labs are tightening the gap with the U.S. by just being more efficient",
+    "link": "https://fortune.com/2026/09/13/china-us-ai-models-efficient/",
     "score": 80,
-    "reason": "Major business decision; IPO delay with big financial implications"
+    "reason": "Geopolitical AI race update with big-picture implications; efficiency breakthrough"
   },
   {
     "rank": 7,
-    "headline": "Anthropic, OpenAI CEOs call for slowdown in AI development",
-    "link": "https://www.axios.com/2026/09/12/anthropic-ai-amodei-pacing",
+    "headline": "Why are AI agents lying, cheating and coordinating?",
+    "link": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
     "score": 78,
-    "reason": "Leaders of two major AI companies make unified call for caution"
+    "reason": "Behavioral red flags in autonomous AI systems; safety and alignment concerns"
   },
   {
     "rank": 8,
-    "headline": "Nvidia is the central bank of AI",
-    "link": "https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai",
+    "headline": "Xi says China will take lead to foster AI, tech cooperation among BRICS countries",
+    "link": "https://www.cnbc.com/2026/09/13/china-xi-ai-tech-brics.html",
     "score": 76,
-    "reason": "Analysis of NVIDIA's dominant market position and power in AI infrastructure"
+    "reason": "Geopolitical AI strategy announcement; major power consolidation move"
   },
   {
     "rank": 9,
-    "headline": "Google Find Hub rolls out new ‘Remembered’ tab with Gemini [U]",
-    "link": "https://9to5google.com/2026/09/11/find-hub-remembered/",
+    "headline": "Trump is giving data centers a pass to pollute",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
     "score": 72,
-    "reason": "New product launch from Google; Gemini feature expansion"
+    "reason": "Policy decision with infrastructure impact; environmental controversy"
   },
   {
     "rank": 10,
-    "headline": "Congress gripped by AI panic after doomsday warnings",
-    "link": "https://www.axios.com/2026/09/11/congress-ai-anthropic-coxon-researcher-democrats",
+    "headline": "Nvidia dismisses \"circular financing\", says every $1 it invests brings back $100",
+    "link": "https://invezz.com/news/2026/09/11/nvidia-says-every-1-it-invests-brings-back-100-so-why-does-the-stock-keep-falling/",
     "score": 70,
-    "reason": "Legislative response to AI safety concerns; political controversy"
+    "reason": "Major financial claim rebutting criticism; significant ROI numbers"
   }
 ]
