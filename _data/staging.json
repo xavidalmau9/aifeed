@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI’s rogue AI tried to hack another company in May",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
-    "score": 94,
-    "reason": "Major security incident with concrete evidence; significant controversy"
+    "headline": "Anthropic report: 5 ways Claude was exploited for war, spying and repression",
+    "link": "https://www.axios.com/2026/09/12/anthropic-ai-threat-report-russia-iran-china",
+    "score": 92,
+    "reason": "Concrete controversy with specific misuse cases; demonstrates real-world harms"
   },
   {
     "rank": 2,
-    "headline": "From Hacks to Bioweapons, Claude Misuse Is Now Everywhere",
-    "link": "https://www.wired.com/story/security-news-this-week-from-hacks-to-bioweapons-claude-misuse-is-now-everywhere/",
-    "score": 92,
-    "reason": "Anthropic AI safety failure; bioweapon concern is high-stakes controversy"
+    "headline": "Meta Pulls Invasive AI Prompts After Mother Reveals Feature Scraping Family Data",
+    "link": "https://www.cnet.com/tech/services-and-software/meta-ai-viral-video-personal-prompts-about-kids/",
+    "score": 89,
+    "reason": "Major tech company pulling feature; privacy scandal with verified impact"
   },
   {
     "rank": 3,
-    "headline": "Anthropic spent this week in hot water over cybersecurity",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
-    "score": 88,
-    "reason": "Concrete cybersecurity breach; major controversy for safety-focused company"
+    "headline": "OpenAI rules out IPO this year as Altman, Musk & Amodei warn AI is moving too fast",
+    "link": "https://www.cnbc.com/2026/09/12/anthropics-amodei-proposes-plan-to-slow-the-pace-of-advancing-ai-capabilities.html",
+    "score": 87,
+    "reason": "Big business decision + safety warnings from multiple CEO leaders"
   },
   {
     "rank": 4,
-    "headline": "Meta says it's changing AI suggestions after posing invasive personal questions",
-    "link": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
+    "headline": "'It’s really embarrassing that this is still a possibility' — AI could exploit a flaw in Georgia's voting equipment and match voters to their ballots",
+    "link": "https://fortune.com/2026/09/13/ai-flaw-georgia-voting-equipment-match-voters-ballots/",
     "score": 85,
-    "reason": "Privacy violation with corrective action; major company product controversy"
+    "reason": "Election security vulnerability; high-stakes concrete concern"
   },
   {
     "rank": 5,
-    "headline": "Black Lake founder Yuxiang Zhou pitted an AI agent against his top sales coach. His most experienced salespeople chose the AI",
-    "link": "https://fortune.com/2026/09/13/black-lake-ai-sales-coach-ideo-wipro/",
-    "score": 82,
-    "reason": "Concrete benchmark of AI capability vs human experts; significant milestone"
+    "headline": "Anthropic CEO says it’s time to pump the brakes on AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
+    "score": 83,
+    "reason": "CEO of major lab calling for slowdown; leadership position statement"
   },
   {
     "rank": 6,
-    "headline": "Faced with less compute and fewer tokens, Chinese AI labs are tightening the gap with the U.S. by just being more efficient",
-    "link": "https://fortune.com/2026/09/13/china-us-ai-models-efficient/",
-    "score": 80,
-    "reason": "Geopolitical AI race update with big-picture implications; efficiency breakthrough"
+    "headline": "Anthropic CEO Dario Amodei and AI whistleblower Jacob Coxon agree: Something terrifying could happen in a matter of months",
+    "link": "https://fortune.com/2026/09/13/anthropic-dario-amodei-ai-whistleblower-jacob-coxon-openai-sam-altman-recursive-self-improvement/",
+    "score": 81,
+    "reason": "Whistleblower + CEO alignment on near-term risk; specific timeline"
   },
   {
     "rank": 7,
-    "headline": "Why are AI agents lying, cheating and coordinating?",
-    "link": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
-    "score": 78,
-    "reason": "Behavioral red flags in autonomous AI systems; safety and alignment concerns"
+    "headline": "Anthropic&apos;s Amodei says China presents &apos;toughest dilemma&apos; for his proposed AI slowdown",
+    "link": "https://www.cnbc.com/2026/09/13/china-dilemma-ai-slowdown-anthropic.html",
+    "score": 79,
+    "reason": "Geopolitical AI competition angle; policy proposal conflict"
   },
   {
     "rank": 8,
-    "headline": "Xi says China will take lead to foster AI, tech cooperation among BRICS countries",
-    "link": "https://www.cnbc.com/2026/09/13/china-xi-ai-tech-brics.html",
+    "headline": "I fixed a tractor using John Deere’s self-repair service. Farmers aren’t sold on it.",
+    "link": "https://arstechnica.com/gadgets/2026/09/i-fixed-a-tractor-using-john-deeres-self-repair-service-farmers-arent-sold-on-it/",
     "score": 76,
-    "reason": "Geopolitical AI strategy announcement; major power consolidation move"
+    "reason": "Real-world AI application adoption with user resistance; right-to-repair angle"
   },
   {
     "rank": 9,
-    "headline": "Trump is giving data centers a pass to pollute",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
-    "score": 72,
-    "reason": "Policy decision with infrastructure impact; environmental controversy"
+    "headline": "While Barack Obama urges Democrats to make AI a campaign issue, Trump downplays the need to slow development despite dire warnings",
+    "link": "https://fortune.com/2026/09/13/barack-obama-democrats-ai-campaign-issue-midterm-elections-trump-dire-warnings/",
+    "score": 74,
+    "reason": "Political divergence on AI policy; major figures taking opposite stances"
   },
   {
     "rank": 10,
-    "headline": "Nvidia dismisses \"circular financing\", says every $1 it invests brings back $100",
-    "link": "https://invezz.com/news/2026/09/11/nvidia-says-every-1-it-invests-brings-back-100-so-why-does-the-stock-keep-falling/",
-    "score": 70,
-    "reason": "Major financial claim rebutting criticism; significant ROI numbers"
+    "headline": "I spent $4,000 on a robot dog from China",
+    "link": "https://arstechnica.com/gadgets/2026/09/i-spent-4000-on-a-robot-dog-from-china/",
+    "score": 68,
+    "reason": "Consumer robotics market entry; big price point verification"
   }
 ]
