@@ -1,72 +1,107 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic report: 5 ways Claude was exploited for war, spying and repression",
-    "link": "https://www.axios.com/2026/09/12/anthropic-ai-threat-report-russia-iran-china",
-    "score": 92,
-    "reason": "Concrete controversy with specific misuse cases; demonstrates real-world harms"
+    "headline": "OpenAI’s rogue AI tried to hack another company in May",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
+    "score": 98,
+    "reason": "Security incident with big implications; actual event not speculation"
   },
   {
     "rank": 2,
-    "headline": "Meta Pulls Invasive AI Prompts After Mother Reveals Feature Scraping Family Data",
-    "link": "https://www.cnet.com/tech/services-and-software/meta-ai-viral-video-personal-prompts-about-kids/",
-    "score": 89,
-    "reason": "Major tech company pulling feature; privacy scandal with verified impact"
+    "headline": "Sexually Explicit Deepfake Sites Target 100-Plus Politicians in Europe",
+    "link": "https://www.wired.com/story/sexually-explicit-deepfake-sites-target-100-plus-politicians-in-europe/",
+    "score": 96,
+    "reason": "Major controversy; quantified scale (100+ politicians); real harm documented"
   },
   {
     "rank": 3,
-    "headline": "OpenAI rules out IPO this year as Altman, Musk & Amodei warn AI is moving too fast",
-    "link": "https://www.cnbc.com/2026/09/12/anthropics-amodei-proposes-plan-to-slow-the-pace-of-advancing-ai-capabilities.html",
-    "score": 87,
-    "reason": "Big business decision + safety warnings from multiple CEO leaders"
+    "headline": "Anthropic walks tightrope to Nasdaq, pushing for a slowdown while pursuing $2 trillion valuation",
+    "link": "https://www.cnbc.com/2026/09/14/anthropic-walks-tightrope-to-nasdaq-pushing-slowdown-and-pursuing-ipo.html",
+    "score": 94,
+    "reason": "Major contradiction/hypocrisy angle; big number ($2T); different company from OpenAI"
   },
   {
     "rank": 4,
-    "headline": "'It’s really embarrassing that this is still a possibility' — AI could exploit a flaw in Georgia's voting equipment and match voters to their ballots",
-    "link": "https://fortune.com/2026/09/13/ai-flaw-georgia-voting-equipment-match-voters-ballots/",
-    "score": 85,
-    "reason": "Election security vulnerability; high-stakes concrete concern"
+    "headline": "OpenAI boss Sam Altman spells out how and why the AI industry wants to slow down: &apos;We could lose control&apos;",
+    "link": "https://www.cnbc.com/2026/09/14/sam-altman-ai-slowdown-anthropic-amodei-musk.html",
+    "score": 92,
+    "reason": "Control/safety concerns from top CEO; concrete industry position on slowdown"
   },
   {
     "rank": 5,
-    "headline": "Anthropic CEO says it’s time to pump the brakes on AI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
-    "score": 83,
-    "reason": "CEO of major lab calling for slowdown; leadership position statement"
+    "headline": "China says AI CEOs&apos; call for a slowdown is &apos;fear mongering&apos;",
+    "link": "https://www.cnbc.com/2026/09/14/china-ai-slowdown-us-tech-ceos.html",
+    "score": 90,
+    "reason": "Geopolitical controversy; direct contradiction to Western AI narrative"
   },
   {
     "rank": 6,
-    "headline": "Anthropic CEO Dario Amodei and AI whistleblower Jacob Coxon agree: Something terrifying could happen in a matter of months",
-    "link": "https://fortune.com/2026/09/13/anthropic-dario-amodei-ai-whistleblower-jacob-coxon-openai-sam-altman-recursive-self-improvement/",
-    "score": 81,
-    "reason": "Whistleblower + CEO alignment on near-term risk; specific timeline"
+    "headline": "Faced with less compute and fewer tokens, Chinese AI labs are tightening the gap with the U.S. by just being more efficient",
+    "link": "https://fortune.com/2026/09/13/china-us-ai-models-efficient/",
+    "score": 88,
+    "reason": "Quantified competitive shift; real technical progress by rival nation"
   },
   {
     "rank": 7,
-    "headline": "Anthropic&apos;s Amodei says China presents &apos;toughest dilemma&apos; for his proposed AI slowdown",
-    "link": "https://www.cnbc.com/2026/09/13/china-dilemma-ai-slowdown-anthropic.html",
-    "score": 79,
-    "reason": "Geopolitical AI competition angle; policy proposal conflict"
+    "headline": "'They’re likely to get squeezed': AI slop books are flooding online marketplaces—and it’s coming at the expense of paychecks for human authors",
+    "link": "https://fortune.com/2026/09/14/ai-slop-books-amazon-marketplace-publishing-human-authors/",
+    "score": 86,
+    "reason": "Economic harm documented; mass scale phenomenon; human impact"
   },
   {
     "rank": 8,
-    "headline": "I fixed a tractor using John Deere’s self-repair service. Farmers aren’t sold on it.",
-    "link": "https://arstechnica.com/gadgets/2026/09/i-fixed-a-tractor-using-john-deeres-self-repair-service-farmers-arent-sold-on-it/",
-    "score": 76,
-    "reason": "Real-world AI application adoption with user resistance; right-to-repair angle"
+    "headline": "Z.ai shares tumble over 10% after $5 billion fundraising, its second major raise in two months",
+    "link": "https://www.cnbc.com/2026/09/14/zai-shares-tumble-second-major-raise-two-months-.html",
+    "score": 84,
+    "reason": "Market reaction with big numbers; investor skepticism signal"
   },
   {
     "rank": 9,
-    "headline": "While Barack Obama urges Democrats to make AI a campaign issue, Trump downplays the need to slow development despite dire warnings",
-    "link": "https://fortune.com/2026/09/13/barack-obama-democrats-ai-campaign-issue-midterm-elections-trump-dire-warnings/",
-    "score": 74,
-    "reason": "Political divergence on AI policy; major figures taking opposite stances"
+    "headline": "AI is remaking the workforce faster than universities can decide how—or whether—to teach it",
+    "link": "https://fortune.com/2026/09/14/employers-ai-skills-college-graduates-professors-ban-chatgpt-students-workplace-higher-education-ai-use/",
+    "score": 82,
+    "reason": "Systemic impact on education/employment; real trend documentation"
   },
   {
     "rank": 10,
-    "headline": "I spent $4,000 on a robot dog from China",
-    "link": "https://arstechnica.com/gadgets/2026/09/i-spent-4000-on-a-robot-dog-from-china/",
-    "score": 68,
-    "reason": "Consumer robotics market entry; big price point verification"
+    "headline": "Trump is giving data centers a pass to pollute",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
+    "score": 80,
+    "reason": "Policy controversy; environmental impact of AI infrastructure"
+  },
+  {
+    "rank": 11,
+    "headline": "AI Leaders Are Calling for a Slowdown. Trump’s Team Says It’s on Them",
+    "link": "https://www.wired.com/story/ai-leaders-are-calling-for-a-slowdown-trumps-team-says-its-on-them/",
+    "score": 78,
+    "reason": "Political controversy; regulatory tension emerging"
+  },
+  {
+    "rank": 12,
+    "headline": "Trump and Mike Johnson think the AI industry is overreacting",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
+    "score": 76,
+    "reason": "Political pushback to industry safety concerns; establishes tension"
+  },
+  {
+    "rank": 13,
+    "headline": "Humanoids will have their ‘GPT-3.5’ moment within 5 years, says AGIBOT co-founder Yao Maoqing",
+    "link": "https://fortune.com/2026/09/14/humanoids-gpt-3-5-moment-agibot/",
+    "score": 74,
+    "reason": "Robotics company prediction; timeline-specific forecast of major capability shift"
+  },
+  {
+    "rank": 14,
+    "headline": "Why Andon Labs Puts AI Agents in Charge of Real Businesses",
+    "link": "https://spectrum.ieee.org/andon-labs-agentic-ai-businesses",
+    "score": 72,
+    "reason": "Autonomous agents controlling actual operations; novel application launch"
+  },
+  {
+    "rank": 15,
+    "headline": "AI Agents Are Thirsty for Power",
+    "link": "https://www.wired.com/story/ai-agents-are-thirsty-for-power/",
+    "score": 70,
+    "reason": "Resource consumption by autonomous systems; infrastructure impact"
   }
 ]
