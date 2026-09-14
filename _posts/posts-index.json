@@ -1,5 +1,24 @@
 [
  {
+  "id": "anthropic-2t-ipo-slowdown-20260914",
+  "slug": "anthropic-2t-ipo-slowdown",
+  "headline": "Anthropic Wants a $2 Trillion IPO — While Urging Slower AI",
+  "summary": "Anthropic is chasing one of tech's biggest valuations while publicly pushing the industry to slow down — a bet that Wall Street will reward safety-first AI.",
+  "body": "<p>Anthropic is attempting something rarely seen in tech IPOs: pursuing an aggressive valuation while publicly advocating for slower AI development. The paradox reveals the pressures facing next-generation AI companies as they approach public markets.</p><p>The dual strategy — seeking a roughly $2 trillion valuation while pushing the industry toward more cautious practices — reflects a fundamental tension in AI entrepreneurship. Investors demand growth and disruption; regulators and society increasingly demand safety and responsibility.</p><p>Strategically, the approach serves multiple purposes. Championing safety builds trust with regulators, policymakers, and the public — valuable assets entering public markets. The massive valuation target simultaneously signals to investors that growth ambitions remain intact.</p><p>The broader industry is watching. Anthropic's IPO could establish whether investors will reward companies that embrace more cautious development timelines, or whether the market continues punishing anything perceived as restraint.</p><p>The real story isn't about valuation — it's about whether the market will finally align financial incentives with responsible innovation.</p>",
+  "category": "Business",
+  "hashtags": [
+   "Anthropic",
+   "AI",
+   "IPO",
+   "AISafety",
+   "TechInvesting"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_anthropic_ipo_2t_20260914.png",
+  "sourceUrl": "https://www.cnbc.com/2026/09/14/anthropic-walks-tightrope-to-nasdaq-pushing-slowdown-and-pursuing-ipo.html",
+  "publishedAt": "2026-09-14T09:15:00-04:00",
+  "isVideo": false
+ },
+ {
   "id": "nasa-ibm-moon-ai-20260910",
   "slug": "nasa-ibm-moon-ai",
   "headline": "NASA and IBM Build an AI Model Made for the Moon",
