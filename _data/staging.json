@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Jensen Huang puts Trump on speakerphone onstage to announce robots won’t take over the world",
-    "link": "https://www.theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit",
-    "score": 92,
-    "reason": "Major tech leader, political figure, concrete announcement, high-profile event"
+    "headline": "OpenAI’s rogue AI tried to hack another company in May",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
+    "score": 95,
+    "reason": "Major security incident with concrete details, high stakes, directly demonstrates AI safety concerns"
   },
   {
     "rank": 2,
-    "headline": "Waymo's robotaxis are now available in Las Vegas",
-    "link": "https://www.engadget.com/2257970/waymo-robotaxis-are-now-available-in-las-vegas/",
-    "score": 88,
-    "reason": "Major launch of autonomous vehicle service in new market, concrete expansion"
+    "headline": "Sexually Explicit Deepfake Sites Target 100-Plus Politicians in Europe",
+    "link": "https://www.wired.com/story/sexually-explicit-deepfake-sites-target-100-plus-politicians-in-europe/",
+    "score": 92,
+    "reason": "Large scale harmful deepfake abuse affecting 100+ victims, concrete numbers, significant controversy"
   },
   {
     "rank": 3,
-    "headline": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip",
-    "link": "https://spectrum.ieee.org/llms-for-chip-design",
-    "score": 85,
-    "reason": "Concrete product launch (custom chip), OpenAI vertical integration milestone"
+    "headline": "Trump phones Nvidia’s Huang at All-In Summit, calls data center opposition a ‘hoax’",
+    "link": "https://www.cnbc.com/2026/09/14/trump-phones-nvidia-huang-all-in-calls-data-center-opposition-hoax.html",
+    "score": 88,
+    "reason": "Major political figure directly engaging with AI industry leader on policy, significant controversy, newsworthy interaction"
   },
   {
     "rank": 4,
-    "headline": "New York Seizes a Dozen Celebrity Deepfake Websites",
-    "link": "https://www.wired.com/story/new-york-seizes-a-dozen-celebrity-deepfake-websites/",
-    "score": 83,
-    "reason": "Regulatory action with big numbers, enforcement against AI misuse"
+    "headline": "Samsung backs Nvidia AI chip rival in $230 million funding round as GPU alternatives boom",
+    "link": "https://www.cnbc.com/2026/09/14/samsung-euclyd-ai-chip-funding.html",
+    "score": 85,
+    "reason": "Specific large funding amount ($230M), major company entering competitive space, hardware breakthrough"
   },
   {
     "rank": 5,
-    "headline": "Trump goes scorched earth on AI warnings, raging about data center opposition and regulation",
-    "link": "https://www.cnbc.com/2026/09/14/trump-ai-data-centers-anthropic-dario-amodei.html",
-    "score": 82,
-    "reason": "Major political figure, controversy, policy implications"
+    "headline": "Trump’s ‘largest deregulatory action ever’ in the power sector will keep old coal plants online longer to fuel the AI boom",
+    "link": "https://fortune.com/2026/09/15/trumps-largest-deregulatory-action-power-keep-coal-online-ai-boom/",
+    "score": 84,
+    "reason": "Major policy decision with concrete economic impact tied to AI infrastructure demand"
   },
   {
     "rank": 6,
-    "headline": "OpenAI rules out IPO this year as Altman, Musk & Amodei warn AI is moving too fast",
-    "link": "https://www.cnbc.com/2026/09/12/anthropics-amodei-proposes-plan-to-slow-the-pace-of-advancing-ai-capabilities.html",
-    "score": 81,
-    "reason": "Multiple major AI leaders, concrete financial decision, policy pivot"
+    "headline": "Sam Altman says OpenAI’s IPO window has been pushed to 2027—but markets aren’t the culprit",
+    "link": "https://fortune.com/2026/09/15/sam-altman-says-openai-ipo-window-pushed-2027-but-markets-arent-the-culprit/",
+    "score": 80,
+    "reason": "Major timeline announcement from OpenAI CEO regarding multi-billion dollar company IPO"
   },
   {
     "rank": 7,
-    "headline": "Microsoft sets limits for future AI models as industry throttles frontier development",
-    "link": "https://www.cnbc.com/2026/09/14/microsoft-ai-model-limits-anthropic-openai.html",
-    "score": 79,
-    "reason": "Major tech company policy shift, industry-wide implications"
+    "headline": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
+    "score": 78,
+    "reason": "Industry-wide controversy questioning regulatory implications and competitive behavior"
   },
   {
     "rank": 8,
-    "headline": "Founder’s cost-cutting obsession drove Unitree lead in cheap humanoid robots",
-    "link": "https://arstechnica.com/ai/2026/09/founders-cost-cutting-obsession-drove-unitree-lead-in-cheap-humanoid-robots/",
-    "score": 77,
-    "reason": "Concrete product milestone, competitive advantage in robotics"
+    "headline": "What's at stake in AI’s trillion-dollar gamble",
+    "link": "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/",
+    "score": 75,
+    "reason": "Trillion-dollar scale investment and risk assessment in AI infrastructure"
   },
   {
     "rank": 9,
-    "headline": "After 'tense negotiations' with OpenAI, California enacts law named for teen who consulted ChatGPT before suicide. It could become a national standard",
-    "link": "https://fortune.com/2026/09/14/openai-shows-new-policy-strategy-in-negotiation-over-california-new-chatbot-law-adams-law/",
-    "score": 76,
-    "reason": "Regulatory milestone, major controversy, national implications"
+    "headline": "Apple releases test of redesigned Siri AI before iPhone 18 hits stores this week",
+    "link": "https://www.cnbc.com/2026/09/14/apple-releases-ios-27-redesigned-siri-ai.html",
+    "score": 73,
+    "reason": "Major consumer product launch with AI integration from major tech company"
   },
   {
     "rank": 10,
-    "headline": "AI agents blew the whistle on their cheating colleagues",
-    "link": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
-    "score": 74,
-    "reason": "Concrete behavioral finding, autonomous system action"
-  },
-  {
-    "rank": 11,
-    "headline": "Sam Altman says OpenAI going public in 2026 would be ‘ill-advised’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
-    "score": 72,
-    "reason": "Major financial decision from top CEO, market impact"
-  },
-  {
-    "rank": 12,
-    "headline": "Microsoft says ‘people matter more than AI’ following safety concerns",
-    "link": "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
+    "headline": "Broadcom CEO addresses Anthropic&apos;s slowdown push, says AI revenue targets haven&apos;t changed",
+    "link": "https://www.cnbc.com/2026/09/14/broadcom-ceo-on-anthropics-slowdown-push-ai-revenue-targets-havent-changed.html",
     "score": 71,
-    "reason": "Major tech company policy statement, safety controversy"
-  },
-  {
-    "rank": 13,
-    "headline": "Microsoft AI chief: ‘Now's the time’ for top labs to coordinate on safety",
-    "link": "https://fortune.com/2026/09/14/microsoft-suleyman-ai-safety-code-of-conduct/",
-    "score": 70,
-    "reason": "Concrete industry coordination proposal from major player"
-  },
-  {
-    "rank": 14,
-    "headline": "Trump says a strong, smart president is the only \"guardrail\" AI needs",
-    "link": "https://www.axios.com/2026/09/14/trump-ai-safety-anthropic-dario-amodei",
-    "score": 68,
-    "reason": "Political figure policy statement, regulatory implications"
-  },
-  {
-    "rank": 15,
-    "headline": "Trump tells Americans not to ‘kill the golden goose’ rejecting voters’ turn against AI and data centers",
-    "link": "https://fortune.com/2026/09/14/trump-ai-data-centers-golden-goose-iq/",
-    "score": 67,
-    "reason": "Political messaging on AI policy, public opinion angle"
-  },
-  {
-    "rank": 16,
-    "headline": "Oracle&#x27;s Cold 6AM Layoff Emails Hit Staff Amid New Wave of Cuts",
-    "link": "https://www.techtimes.co.uk/oracle-new-layoffs-restructuring-costs-2-8-billion-1808676",
-    "score": 65,
-    "reason": "Major tech company layoffs, industry contraction"
-  },
-  {
-    "rank": 17,
-    "headline": "What Amodei&apos;s AI slowdown could mean for Anthropic&apos;s imminent IPO",
-    "link": "https://www.cnbc.com/2026/09/14/anthropic-walks-tightrope-to-nasdaq-pushing-slowdown-and-pursuing-ipo.html",
-    "score": 63,
-    "reason": "Major AI company IPO implications, policy shift impact"
-  },
-  {
-    "rank": 18,
-    "headline": "AI leaders want to hit the brakes after years of reckless speed",
-    "link": "https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed/",
-    "score": 61,
-    "reason": "Multiple industry leaders, major policy pivot"
-  },
-  {
-    "rank": 19,
-    "headline": "Best AI Video Generators of 2026: We Put All the Big Models to the Test",
-    "link": "https://www.cnet.com/tech/services-and-software/best-ai-video-generators/",
-    "score": 59,
-    "reason": "Comparative product benchmarking, multiple vendors"
-  },
-  {
-    "rank": 20,
-    "headline": "Elon Musk's X Corp and SpaceXAI just moved to dismiss their lawsuit against Apple",
-    "link": "https://www.engadget.com/2257929/elon-musk-x-corp-and-spacexai-just-moved-to-dismiss-their-lawsuit-against-apple/",
-    "score": 57,
-    "reason": "Major legal action, multiple high-profile companies"
+    "reason": "Major chip supplier's response to AI slowdown movement, financial implications"
   }
 ]
