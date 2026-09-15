@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI’s rogue AI tried to hack another company in May",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
-    "score": 95,
-    "reason": "Major security incident with concrete details, high stakes, directly demonstrates AI safety concerns"
+    "headline": "New York Seizes a Dozen Celebrity Deepfake Websites",
+    "link": "https://www.wired.com/story/new-york-seizes-a-dozen-celebrity-deepfake-websites/",
+    "score": 92,
+    "reason": "Major enforcement action with specific numbers; concrete regulatory outcome"
   },
   {
     "rank": 2,
-    "headline": "Sexually Explicit Deepfake Sites Target 100-Plus Politicians in Europe",
-    "link": "https://www.wired.com/story/sexually-explicit-deepfake-sites-target-100-plus-politicians-in-europe/",
-    "score": 92,
-    "reason": "Large scale harmful deepfake abuse affecting 100+ victims, concrete numbers, significant controversy"
+    "headline": "Meta's new One subscriptions put a price on social media and AI",
+    "link": "https://www.theverge.com/tech/995453/meta-one-subscriptions-ai",
+    "score": 90,
+    "reason": "Major platform launch with new business model; significant revenue implications"
   },
   {
     "rank": 3,
-    "headline": "Trump phones Nvidia’s Huang at All-In Summit, calls data center opposition a ‘hoax’",
-    "link": "https://www.cnbc.com/2026/09/14/trump-phones-nvidia-huang-all-in-calls-data-center-opposition-hoax.html",
+    "headline": "Jensen Huang puts Trump on speakerphone onstage to announce robots won’t take over the world",
+    "link": "https://www.theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit",
     "score": 88,
-    "reason": "Major political figure directly engaging with AI industry leader on policy, significant controversy, newsworthy interaction"
+    "reason": "Major public figure collaboration; addresses key controversy; unexpected partnership"
   },
   {
     "rank": 4,
-    "headline": "Samsung backs Nvidia AI chip rival in $230 million funding round as GPU alternatives boom",
-    "link": "https://www.cnbc.com/2026/09/14/samsung-euclyd-ai-chip-funding.html",
-    "score": 85,
-    "reason": "Specific large funding amount ($230M), major company entering competitive space, hardware breakthrough"
+    "headline": "Publishers Argue AI Firms Should Pay for Content as Copyright Case Advances",
+    "link": "https://www.cnet.com/tech/services-and-software/publishers-argue-ai-firms-should-pay-for-content-as-copyright-case-advances/",
+    "score": 86,
+    "reason": "Major legal advancement; significant industry impact; copyright controversy"
   },
   {
     "rank": 5,
-    "headline": "Trump’s ‘largest deregulatory action ever’ in the power sector will keep old coal plants online longer to fuel the AI boom",
-    "link": "https://fortune.com/2026/09/15/trumps-largest-deregulatory-action-power-keep-coal-online-ai-boom/",
+    "headline": "Exclusive: Manufacturing AI startup CADDi valued at $1.2 billion following $114 million Series D funding round",
+    "link": "https://fortune.com/2026/09/15/caddi-manufacturing-startup-valuation-funding-round-series-d-exclusive/",
     "score": 84,
-    "reason": "Major policy decision with concrete economic impact tied to AI infrastructure demand"
+    "reason": "Specific funding numbers; significant valuation milestone"
   },
   {
     "rank": 6,
-    "headline": "Sam Altman says OpenAI’s IPO window has been pushed to 2027—but markets aren’t the culprit",
-    "link": "https://fortune.com/2026/09/15/sam-altman-says-openai-ipo-window-pushed-2027-but-markets-arent-the-culprit/",
-    "score": 80,
-    "reason": "Major timeline announcement from OpenAI CEO regarding multi-billion dollar company IPO"
+    "headline": "Pony.ai unveils autonomous electric truck for logistics fleets",
+    "link": "https://www.artificialintelligence-news.com/news/pony-ai-autonomous-electric-truck-for-logistics-fleets/",
+    "score": 83,
+    "reason": "Product launch; autonomous vehicle advancement; commercial deployment"
   },
   {
     "rank": 7,
-    "headline": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
-    "score": 78,
-    "reason": "Industry-wide controversy questioning regulatory implications and competitive behavior"
+    "headline": "AI models need more data about biology, and OpenAI is paying to create it",
+    "link": "https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/",
+    "score": 82,
+    "reason": "Major investment initiative; specific business practice revealed"
   },
   {
     "rank": 8,
-    "headline": "What's at stake in AI’s trillion-dollar gamble",
-    "link": "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/",
-    "score": 75,
-    "reason": "Trillion-dollar scale investment and risk assessment in AI infrastructure"
+    "headline": "AI agents blew the whistle on their cheating colleagues",
+    "link": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
+    "score": 81,
+    "reason": "Controversy; unusual agent behavior; raises governance questions"
   },
   {
     "rank": 9,
-    "headline": "Apple releases test of redesigned Siri AI before iPhone 18 hits stores this week",
-    "link": "https://www.cnbc.com/2026/09/14/apple-releases-ios-27-redesigned-siri-ai.html",
-    "score": 73,
-    "reason": "Major consumer product launch with AI integration from major tech company"
+    "headline": "How Cisco is confronting the security crisis of agentic AI",
+    "link": "https://www.zdnet.com/paid-content/article/how-cisco-is-confronting-the-security-crisis-of-agentic-ai/",
+    "score": 79,
+    "reason": "Enterprise security implications; major company response"
   },
   {
     "rank": 10,
-    "headline": "Broadcom CEO addresses Anthropic&apos;s slowdown push, says AI revenue targets haven&apos;t changed",
-    "link": "https://www.cnbc.com/2026/09/14/broadcom-ceo-on-anthropics-slowdown-push-ai-revenue-targets-havent-changed.html",
+    "headline": "Walt Disney World Brings AI Into Its Booking Site",
+    "link": "https://www.cnet.com/tech/services-and-software/walt-disney-world-brings-ai-into-its-booking-site/",
+    "score": 78,
+    "reason": "Major brand implementation; consumer-facing deployment"
+  },
+  {
+    "rank": 11,
+    "headline": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip",
+    "link": "https://spectrum.ieee.org/llms-for-chip-design",
+    "score": 77,
+    "reason": "Self-referential AI development; chip hardware advancement"
+  },
+  {
+    "rank": 12,
+    "headline": "AI Script Readers Are Giving Hollywood Writers Feedback – and Headaches",
+    "link": "https://www.cnet.com/tech/services-and-software/ai-script-readers-are-giving-hollywood-writers-feedback-and-headaches/",
+    "score": 76,
+    "reason": "Industry disruption; creative sector impact; controversy"
+  },
+  {
+    "rank": 13,
+    "headline": "A single firm is behind OpenAI, Anthropic, and Meta hacking scandals",
+    "link": "https://www.effort.news/irregular",
+    "score": 75,
+    "reason": "Major security breach revelation; multiple companies affected"
+  },
+  {
+    "rank": 14,
+    "headline": "Baker Hughes sees no slowdown in energy projects despite higher rates as AI buildouts stoke LNG demand",
+    "link": "https://www.cnbc.com/2026/09/14/baker-hughes-ceo-no-slowdown-in-energy-projects-despite-higher-rates-.html",
+    "score": 73,
+    "reason": "Specific economic impact; AI infrastructure demand quantified"
+  },
+  {
+    "rank": 15,
+    "headline": "Microsoft says ‘people matter more than AI’ following safety concerns",
+    "link": "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
+    "score": 72,
+    "reason": "Corporate safety stance; responds to concerns"
+  },
+  {
+    "rank": 16,
+    "headline": "Trump says a strong, smart president is the only \"guardrail\" AI needs",
+    "link": "https://www.axios.com/2026/09/14/trump-ai-safety-anthropic-dario-amodei",
     "score": 71,
-    "reason": "Major chip supplier's response to AI slowdown movement, financial implications"
+    "reason": "Major political figure statement on regulation; governance controversy"
+  },
+  {
+    "rank": 17,
+    "headline": "Siri AI Will Have Deep Integration With ChatGPT and Claude Models, Leaked Build Shows",
+    "link": "https://www.cnet.com/tech/services-and-software/siri-ai-will-have-deep-integration-with-chatgpt-and-claude-models-leaked-build-shows/",
+    "score": 70,
+    "reason": "Major integration announcement; competitor collaboration"
+  },
+  {
+    "rank": 18,
+    "headline": "OpenAI, Google, Anthropic discussing collaboration on AI safety issues",
+    "link": "https://www.cnbc.com/2026/09/15/open-ai-google-anthropic-safety.html",
+    "score": 69,
+    "reason": "Major competitor collaboration; safety focus"
+  },
+  {
+    "rank": 19,
+    "headline": "Founder’s cost-cutting obsession drove Unitree lead in cheap humanoid robots",
+    "link": "https://arstechnica.com/ai/2026/09/founders-cost-cutting-obsession-drove-unitree-lead-in-cheap-humanoid-robots/",
+    "score": 68,
+    "reason": "Humanoid robot advancement; cost-driven competition"
+  },
+  {
+    "rank": 20,
+    "headline": "iOS 27 is finally here, with the new Siri AI beta – and 120 security patches",
+    "link": "https://www.zdnet.com/business/ios-27-siri-ai-beta-how-to-try/",
+    "score": 67,
+    "reason": "Major OS launch; AI integration; security focus"
   }
 ]
