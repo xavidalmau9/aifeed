@@ -1,5 +1,24 @@
 [
  {
+  "id": "ny-seizes-celebrity-deepfake-sites-20260915",
+  "slug": "ny-seizes-celebrity-deepfake-sites",
+  "headline": "New York Seizes a Dozen Celebrity Deepfake Websites",
+  "summary": "State authorities have shut down a dozen websites that generated non-consensual celebrity deepfakes — a landmark move that turns synthetic-media abuse into a prosecutable crime.",
+  "body": "<p>New York has seized a dozen websites dedicated to creating celebrity deepfakes — a significant enforcement action in the fight against non-consensual synthetic media, and a signal that authorities are moving from awareness into active intervention.</p><p>The deepfake industry has grown into a troubling ecosystem where bad actors exploit generative AI to create explicit, non-consensual content of real people. These operations ran with relative impunity for years while causing measurable harm to victims.</p><p>The action carries strategic implications for the broader AI industry: platforms, hosting providers, and payment processors face increasing legal pressure to identify and shut down abusive applications. Investments in content moderation and synthetic-media detection now have regulatory validation.</p><p>Rather than waiting for federal legislation, states are using existing laws around harassment, impersonation, and exploitation to target deepfake operations — creating patchwork enforcement but accelerating consequences for bad actors.</p><p>The real takeaway: synthetic-media abuse isn't a technical problem anymore — it's a legal liability that authorities can and will prosecute.</p>",
+  "category": "Safety",
+  "hashtags": [
+   "AI",
+   "Deepfakes",
+   "Cybersecurity",
+   "RegTech",
+   "DigitalGovernance"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_ny_deepfake_seizures_20260915.png",
+  "sourceUrl": "https://www.wired.com/story/new-york-seizes-a-dozen-celebrity-deepfake-websites/",
+  "publishedAt": "2026-09-15T17:35:00-04:00",
+  "isVideo": false
+ },
+ {
   "id": "anthropic-2t-ipo-slowdown-20260914",
   "slug": "anthropic-2t-ipo-slowdown",
   "headline": "Anthropic Wants a $2 Trillion IPO — While Urging Slower AI",
