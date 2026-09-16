@@ -1,5 +1,24 @@
 [
  {
+  "id": "bigtech-ai-slowdown-safety-or-cartel-20260916",
+  "slug": "bigtech-ai-slowdown-safety-or-cartel",
+  "headline": "Is Big Tech's AI Slowdown Safety — or a Cartel?",
+  "summary": "As Big Tech coordinates a slower AI rollout in the name of safety, critics ask whether it's really market gatekeeping — letting the giants consolidate while rivals stall.",
+  "body": "<p>Big Tech's recent deceleration in AI deployment has sparked a critical debate: is a coordinated slowdown really about safety — or market gatekeeping on an unprecedented scale?</p><p>Multiple major companies have announced reduced rollout timelines for advanced AI, citing safety and ethics. But economists and industry observers are asking whether these coordinated delays reflect genuine responsibility or a sophisticated consolidation strategy by the firms already dominating AI.</p><p>The context matters. OpenAI, Google, and Meta have poured billions into AI infrastructure. A slowdown in the deployment race could let market leaders lock in their positions while smaller competitors and startups struggle to justify continued investment.</p><p>A coordinated deceleration serves powerful interests: established players frame restraint as ethical leadership, while rivals must either match it — limiting growth — or forge ahead alone and invite regulatory scrutiny. That's the moral high ground and a competitive moat at once.</p><p>The distinction between responsible innovation and competitive gatekeeping may ultimately determine who builds AI's future — and who benefits from it.</p>",
+  "category": "Industry",
+  "hashtags": [
+   "AI",
+   "BigTech",
+   "ArtificialIntelligence",
+   "Competition",
+   "TechPolicy"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_bigtech_ai_slowdown_cartel_20260916.png",
+  "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
+  "publishedAt": "2026-09-16T10:50:00-04:00",
+  "isVideo": false
+ },
+ {
   "id": "ny-seizes-celebrity-deepfake-sites-20260915",
   "slug": "ny-seizes-celebrity-deepfake-sites",
   "headline": "New York Seizes a Dozen Celebrity Deepfake Websites",
