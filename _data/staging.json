@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI IPO looks like a no-go: Sam Altman is discussing a new round of VC funding valuing the company at $1.2 trillion",
-    "link": "https://fortune.com/2026/09/16/openai-ipo-sam-altman-vc-funding-valuation-1-2-trillion/",
-    "score": 95,
-    "reason": "Major valuation milestone, concrete funding development, not speculation"
+    "headline": "Google will now let any AI agent run your smart home",
+    "link": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+    "score": 92,
+    "reason": "Major product launch with broad capability expansion; multiple AI models supported"
   },
   {
     "rank": 2,
-    "headline": "Arcee AI trained four models for $20 million. Now, it's worth $1 billion.",
-    "link": "https://fortune.com/2026/09/16/arcee-ai-trained-four-models-for-20-million-now-its-worth-1-billion/",
-    "score": 92,
-    "reason": "Significant valuation jump with concrete numbers, funding milestone"
+    "headline": "Claude comes for Gemini with its own take on Docs and Slides",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
+    "score": 90,
+    "reason": "Direct competitive launch against Google; expands Claude into productivity tools"
   },
   {
     "rank": 3,
-    "headline": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
+    "headline": "Meta's new One subscriptions put a price on social media and AI",
+    "link": "https://www.theverge.com/tech/995453/meta-one-subscriptions-ai",
     "score": 88,
-    "reason": "Major controversy/regulatory concern with serious implications"
+    "reason": "Major monetization launch; billion-user platform pricing AI features"
   },
   {
     "rank": 4,
-    "headline": "Meta CEO Mark Zuckerberg sides with Nvidia&apos;s Huang on AI safety and slowdown debate",
-    "link": "https://www.cnbc.com/2026/09/15/meta-mark-zuckerberg-with-nvidia-huang-ai-safety-slowdown.html",
-    "score": 86,
-    "reason": "Major CEO controversy, conflicting positions between industry leaders"
+    "headline": "AI models need more data about biology, and OpenAI is paying to create it",
+    "link": "https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/",
+    "score": 85,
+    "reason": "Concrete business action; OpenAI investing in synthetic data generation"
   },
   {
     "rank": 5,
-    "headline": "Nvidia&apos;s Huang diverges with CEOs of Anthropic, OpenAI on AI safety at Dreamforce",
-    "link": "https://www.cnbc.com/2026/09/15/nvidia-and-anthropic-ceos-diverge-on-ai-safety-at-dreamforce.html",
-    "score": 85,
-    "reason": "Public controversy between major companies and leaders on AI safety"
+    "headline": "How Cisco is confronting the security crisis of agentic AI",
+    "link": "https://www.zdnet.com/paid-content/article/how-cisco-is-confronting-the-security-crisis-of-agentic-ai/",
+    "score": 83,
+    "reason": "Enterprise security response to emerging agentic AI risks"
   },
   {
     "rank": 6,
-    "headline": "Trump and Jensen Huang unite against AI doomers in surprise on-stage call",
-    "link": "https://www.axios.com/2026/09/14/trump-jensen-huang-nvidia-ai-all-in-summit",
-    "score": 83,
-    "reason": "Unexpected political/industry alliance, public controversy"
+    "headline": "Publishers Argue AI Firms Should Pay for Content as Copyright Case Advances",
+    "link": "https://www.cnet.com/tech/services-and-software/publishers-argue-ai-firms-should-pay-for-content-as-copyright-case-advances/",
+    "score": 81,
+    "reason": "Major legal escalation; significant financial implications for AI companies"
   },
   {
     "rank": 7,
-    "headline": "What an Ex-Anthropic Researcher’s Warning About Human Extinction Really Means",
-    "link": "https://www.cnet.com/tech/services-and-software/ex-anthropic-researcher-warning-human-extinction-ai/",
-    "score": 82,
-    "reason": "Major controversy - whistleblower from leading AI safety company"
+    "headline": "OpenAI investors have approached the company about a new funding round",
+    "link": "https://www.cnbc.com/2026/09/16/open-ai-investors-new-funding-round.html",
+    "score": 79,
+    "reason": "Concrete funding development; valuation/growth indicator"
   },
   {
     "rank": 8,
-    "headline": "AI and data centers are incredibly unpopular in every poll",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
-    "score": 80,
-    "reason": "Big numbers, broad public sentiment data, significant concern"
+    "headline": "The AI data center e-waste problem is huge — and getting bigger",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
+    "score": 77,
+    "reason": "Environmental impact quantification; growing infrastructure consequences"
   },
   {
     "rank": 9,
-    "headline": "China Isn’t Buying Silicon Valley’s Call for an AI Slowdown",
-    "link": "https://www.wired.com/story/china-isnt-buying-silicon-valley-call-for-ai-slowdown/",
-    "score": 78,
-    "reason": "Geopolitical controversy, major player rejection of industry consensus"
+    "headline": "AI agents are going rogue. CIOs are racing to put guardrails around them",
+    "link": "https://fortune.com/2026/09/16/ai-agents-are-going-rogue-cios-are-racing-to-put-guardrails-around-them/",
+    "score": 75,
+    "reason": "Emerging real-world deployment challenge; enterprise operational risk"
   },
   {
     "rank": 10,
-    "headline": "AWS says it can&apos;t restore service to Bahrain, UAE facilities 6 months after Iran strikes",
-    "link": "https://www.cnbc.com/2026/09/15/aws-cant-restore-service-to-bahrain-uae-6-months-after-iran-strikes.html",
-    "score": 76,
-    "reason": "Major infrastructure impact, geopolitical incident with lasting consequences"
+    "headline": "Pony.ai unveils autonomous electric truck for logistics fleets",
+    "link": "https://www.artificialintelligence-news.com/news/pony-ai-autonomous-electric-truck-for-logistics-fleets/",
+    "score": 73,
+    "reason": "Concrete commercial deployment; autonomous system launch"
   },
   {
     "rank": 11,
-    "headline": "Ukraine&apos;s message to Asian nations: your chips are turning up in Russian missiles",
-    "link": "https://www.cnbc.com/2026/09/16/russia-ukraine-war-sanction-oil-missile-weapons-.html",
-    "score": 74,
-    "reason": "Geopolitical controversy, supply chain security concern"
+    "headline": "Walt Disney World Brings AI Into Its Booking Site",
+    "link": "https://www.cnet.com/tech/services-and-software/walt-disney-world-brings-ai-into-its-booking-site-2/",
+    "score": 71,
+    "reason": "Major brand integration; customer-facing AI implementation"
   },
   {
     "rank": 12,
-    "headline": "What's at stake in AI’s trillion-dollar gamble",
-    "link": "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/",
-    "score": 72,
-    "reason": "Massive financial scale, existential industry stakes"
+    "headline": "Microsoft AI CEO criticises Anthropic over model ‘rights’",
+    "link": "https://www.artificialintelligence-news.com/news/microsoft-ai-ceo-criticises-anthropic-over-model-rights/",
+    "score": 69,
+    "reason": "Executive controversy; corporate tension in AI industry"
   },
   {
     "rank": 13,
-    "headline": "AI ‘Actor’ Tilly Norwood Told Me That ‘All Lives Matter’",
-    "link": "https://www.wired.com/story/ai-actor-tilly-norwood-told-me-that-all-lives-matter/",
-    "score": 70,
-    "reason": "Novel AI application controversy, public concern about AI bias"
+    "headline": "The sexy AI-powered dating app scams are here",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
+    "score": 67,
+    "reason": "Consumer fraud emergence; real-world AI misuse impact"
   },
   {
     "rank": 14,
-    "headline": "Mistral X Mozilla: Private, Multilingual AI Browsing",
-    "link": "https://mistral.ai/news/mistral-x-mozilla/",
-    "score": 68,
-    "reason": "Major partnership launch between significant players"
+    "headline": "Scoop: U.S. open to discuss AI \"shared risks\" with China, Bessent says",
+    "link": "https://www.axios.com/2026/09/16/us-open-ai-shared-risks-china-bessent",
+    "score": 65,
+    "reason": "Geopolitical AI governance development; US-China dialogue shift"
   },
   {
     "rank": 15,
-    "headline": "Gemini 3.8 Live Extended Thinking powers Gemini Live, Gmail, & Keep",
-    "link": "https://9to5google.com/2026/09/15/gemini-3-8-live-announced/",
-    "score": 66,
-    "reason": "Major Google feature launch across multiple products"
+    "headline": "Mark Zuckerberg says AI doesn't need an industry-wide slowdown because market forces and competition will push companies to make their models safe",
+    "link": "https://fortune.com/2026/09/16/mark-zuckerberg-meta-ai-safety-jensen-huang-dario-amodei/",
+    "score": 63,
+    "reason": "Executive stance on regulation controversy; major industry leader position"
   },
   {
     "rank": 16,
-    "headline": "ChatGPT pioneer launches Jev model for programmatic logic",
-    "link": "https://www.artificialintelligence-news.com/news/chatgpt-pioneer-launches-jev-model-for-programmatic-logic/",
-    "score": 64,
-    "reason": "New model launch from major company"
+    "headline": "Anthropic policy chief says AI companies can&apos;t be expected to operate on &apos;honor code&apos;",
+    "link": "https://www.cnbc.com/2026/09/16/anthropic-policy-chief-says-ai-companies-cant-operate-on-honor-code.html",
+    "score": 61,
+    "reason": "Regulation perspective; industry self-governance critique"
   },
   {
     "rank": 17,
-    "headline": "AI panic sparks rare bipartisan moment on Capitol Hill",
-    "link": "https://www.axios.com/2026/09/15/ai-congress-regulation-bill-trump-bipartisan",
-    "score": 62,
-    "reason": "Regulatory/political development, unusual consensus"
+    "headline": "AI environmental concerns build as lawmakers grapple with tech panic",
+    "link": "https://www.axios.com/2026/09/16/ai-concerns-congress-regulation",
+    "score": 59,
+    "reason": "Policy response to growing environmental impact concerns"
   },
   {
     "rank": 18,
-    "headline": "The AI Talent Britain Fought to Hire May Be Recalculating Its Future",
-    "link": "https://www.artificialintelligence-news.com/news/the-ai-talent-britain-fought-to-hire-may-be-recalculating-its-future/",
-    "score": 60,
-    "reason": "Geopolitical brain drain concern, talent market shift"
+    "headline": "Apple might make servers again to cash in on the AI rush",
+    "link": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
+    "score": 57,
+    "reason": "Strategic hardware pivot; Apple entering data center market for AI"
   },
   {
     "rank": 19,
-    "headline": "Why a swift AI pause is unlikely: No one trusts AI companies",
-    "link": "https://www.axios.com/2026/09/15/ai-trust-safety-anthropic-openai",
-    "score": 58,
-    "reason": "Industry trust crisis, regulatory stalemate"
+    "headline": "Reddit co-founder says tech industry has been &apos;tone deaf&apos; in explaining AI: &apos;Misinformation flying around&apos;",
+    "link": "https://www.cnbc.com/2026/09/16/reddit-ai-risk-humanity-warning-tech.html",
+    "score": 55,
+    "reason": "Industry criticism; public communication gap identified"
   },
   {
     "rank": 20,
-    "headline": "I’ve visited school districts from Tennessee to NYC. American kids are not ready for the AI revolution",
-    "link": "https://fortune.com/2026/09/16/schools-cant-block-their-way-out-of-the-ai-era/",
-    "score": 56,
-    "reason": "Societal impact concern with on-the-ground reporting"
+    "headline": "AI’s Rising Costs Cast Doubts on Cloud Gaming’s Future",
+    "link": "https://www.cnet.com/tech/services-and-software/ai-rising-costs-cloud-gaming-future/",
+    "score": 53,
+    "reason": "Concrete economic impact; AI infrastructure costs affecting adjacent industries"
   }
 ]
