@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Google will now let any AI agent run your smart home",
-    "link": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+    "headline": "OpenAI reports 6 new instances of &apos;concerning model behavior&apos; since March",
+    "link": "https://www.cnbc.com/2026/09/16/openai-6-new-instances-of-concerning-model-behavior-since-march.html",
     "score": 92,
-    "reason": "Major product launch with broad capability expansion; multiple AI models supported"
+    "reason": "Concrete safety incidents with specific numbers; OpenAI transparency disclosure"
   },
   {
     "rank": 2,
-    "headline": "Claude comes for Gemini with its own take on Docs and Slides",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
-    "score": 90,
-    "reason": "Direct competitive launch against Google; expands Claude into productivity tools"
+    "headline": "Oversight Board says Meta's rules for AI deepfakes are 'consistently and fundamentally inadequate'",
+    "link": "https://www.engadget.com/2260894/oversight-board-says-metas-rules-ai-deepfakes-fundamentally-inadequate/",
+    "score": 88,
+    "reason": "Major controversy; independent oversight finding; policy implications for major company"
   },
   {
     "rank": 3,
-    "headline": "Meta's new One subscriptions put a price on social media and AI",
-    "link": "https://www.theverge.com/tech/995453/meta-one-subscriptions-ai",
-    "score": 88,
-    "reason": "Major monetization launch; billion-user platform pricing AI features"
+    "headline": "Adecco Group rolls out Agentforce Coworker to 27,000 staff in 40-plus countries",
+    "link": "https://www.artificialintelligence-news.com/news/agentforce-coworker-adecco-group-rollout/",
+    "score": 85,
+    "reason": "Large-scale deployment; significant employee count; enterprise AI adoption"
   },
   {
     "rank": 4,
-    "headline": "AI models need more data about biology, and OpenAI is paying to create it",
-    "link": "https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/",
-    "score": 85,
-    "reason": "Concrete business action; OpenAI investing in synthetic data generation"
+    "headline": "Snap tries to bring AR glasses to enterprise market, partnering with Nvidia, AWS and Salesforce",
+    "link": "https://www.cnbc.com/2026/09/16/snap-enterprise-ai-service.html",
+    "score": 84,
+    "reason": "Product launch with major partnerships; enterprise market expansion"
   },
   {
     "rank": 5,
-    "headline": "How Cisco is confronting the security crisis of agentic AI",
-    "link": "https://www.zdnet.com/paid-content/article/how-cisco-is-confronting-the-security-crisis-of-agentic-ai/",
+    "headline": "NVIDIA and Google's new coalition wants to speed up AI data center power grid connections",
+    "link": "https://www.engadget.com/2260986/nvidia-google-emerald-coalition-data-center-power/",
     "score": 83,
-    "reason": "Enterprise security response to emerging agentic AI risks"
+    "reason": "Major infrastructure initiative; two tech giants collaborating"
   },
   {
     "rank": 6,
-    "headline": "Publishers Argue AI Firms Should Pay for Content as Copyright Case Advances",
-    "link": "https://www.cnet.com/tech/services-and-software/publishers-argue-ai-firms-should-pay-for-content-as-copyright-case-advances/",
+    "headline": "OpenAI Creates a New Framework to Disclose Bad AI Behavior",
+    "link": "https://www.wired.com/story/openai-releases-new-policy-for-reporting-incidents-of-model-misalignment/",
     "score": 81,
-    "reason": "Major legal escalation; significant financial implications for AI companies"
+    "reason": "Policy framework launch addressing safety concerns"
   },
   {
     "rank": 7,
-    "headline": "OpenAI investors have approached the company about a new funding round",
-    "link": "https://www.cnbc.com/2026/09/16/open-ai-investors-new-funding-round.html",
+    "headline": "Anthropic's Claude can now create editable documents for you",
+    "link": "https://www.engadget.com/2259938/anthropics-claude-can-now-create-editable-documents-for-you-cowork-chat-together/",
     "score": 79,
-    "reason": "Concrete funding development; valuation/growth indicator"
+    "reason": "Product feature launch; new capability expansion"
   },
   {
     "rank": 8,
-    "headline": "The AI data center e-waste problem is huge — and getting bigger",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
-    "score": 77,
-    "reason": "Environmental impact quantification; growing infrastructure consequences"
+    "headline": "House votes to curb AI data center costs",
+    "link": "https://www.axios.com/2026/09/16/house-ai-data-center-power-bills",
+    "score": 78,
+    "reason": "Concrete regulatory action; big numbers in debate"
   },
   {
     "rank": 9,
-    "headline": "AI agents are going rogue. CIOs are racing to put guardrails around them",
-    "link": "https://fortune.com/2026/09/16/ai-agents-are-going-rogue-cios-are-racing-to-put-guardrails-around-them/",
-    "score": 75,
-    "reason": "Emerging real-world deployment challenge; enterprise operational risk"
+    "headline": "Lidl deploys driverless truck for store deliveries in Germany",
+    "link": "https://www.artificialintelligence-news.com/news/lidl-autonomous-truck-germany/",
+    "score": 77,
+    "reason": "Real-world autonomous deployment; major retailer adoption"
   },
   {
     "rank": 10,
-    "headline": "Pony.ai unveils autonomous electric truck for logistics fleets",
-    "link": "https://www.artificialintelligence-news.com/news/pony-ai-autonomous-electric-truck-for-logistics-fleets/",
-    "score": 73,
-    "reason": "Concrete commercial deployment; autonomous system launch"
+    "headline": "Japanese company develops a humanoid robot 'ambulance' for on-the-spot repairs",
+    "link": "https://www.engadget.com/2259628/japan-ambulance-humanoid-robot-on-site-repairs/",
+    "score": 76,
+    "reason": "Novel robotics application launch; specialized use case"
   },
   {
     "rank": 11,
-    "headline": "Walt Disney World Brings AI Into Its Booking Site",
-    "link": "https://www.cnet.com/tech/services-and-software/walt-disney-world-brings-ai-into-its-booking-site-2/",
-    "score": 71,
-    "reason": "Major brand integration; customer-facing AI implementation"
+    "headline": "How AI Doomsday Talk Is Making Tech Giants More Powerful, Not Safer",
+    "link": "https://www.cnet.com/tech/services-and-software/ai-doomsday-human-extinction-regulation-tech-giants-powerful-not-safer/",
+    "score": 74,
+    "reason": "Controversy about AI safety narrative; critique of major players"
   },
   {
     "rank": 12,
-    "headline": "Microsoft AI CEO criticises Anthropic over model ‘rights’",
-    "link": "https://www.artificialintelligence-news.com/news/microsoft-ai-ceo-criticises-anthropic-over-model-rights/",
-    "score": 69,
-    "reason": "Executive controversy; corporate tension in AI industry"
+    "headline": "Exclusive: Warren backs pause on advanced AI",
+    "link": "https://www.axios.com/2026/09/16/warren-ai-pause",
+    "score": 72,
+    "reason": "Major political figure position on AI regulation"
   },
   {
     "rank": 13,
-    "headline": "The sexy AI-powered dating app scams are here",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
-    "score": 67,
-    "reason": "Consumer fraud emergence; real-world AI misuse impact"
+    "headline": "AI's imminent hacking threat is hiding in plain sight",
+    "link": "https://www.axios.com/2026/09/17/ai-cyber-doomsday-hacking-threats",
+    "score": 71,
+    "reason": "Security vulnerability findings; emerging threat"
   },
   {
     "rank": 14,
-    "headline": "Scoop: U.S. open to discuss AI \"shared risks\" with China, Bessent says",
-    "link": "https://www.axios.com/2026/09/16/us-open-ai-shared-risks-china-bessent",
-    "score": 65,
-    "reason": "Geopolitical AI governance development; US-China dialogue shift"
+    "headline": "AI Script Readers Are Giving Hollywood Writers Feedback – and Headaches",
+    "link": "https://www.cnet.com/tech/services-and-software/ai-script-readers-are-giving-hollywood-writers-feedback-and-headaches/",
+    "score": 69,
+    "reason": "Industry disruption; AI impact on labor"
   },
   {
     "rank": 15,
-    "headline": "Mark Zuckerberg says AI doesn't need an industry-wide slowdown because market forces and competition will push companies to make their models safe",
-    "link": "https://fortune.com/2026/09/16/mark-zuckerberg-meta-ai-safety-jensen-huang-dario-amodei/",
-    "score": 63,
-    "reason": "Executive stance on regulation controversy; major industry leader position"
+    "headline": "China Isn’t Buying Silicon Valley’s Call for an AI Slowdown",
+    "link": "https://www.wired.com/story/china-isnt-buying-silicon-valley-call-for-ai-slowdown/",
+    "score": 68,
+    "reason": "Geopolitical AI competition; policy divergence"
   },
   {
     "rank": 16,
-    "headline": "Anthropic policy chief says AI companies can&apos;t be expected to operate on &apos;honor code&apos;",
-    "link": "https://www.cnbc.com/2026/09/16/anthropic-policy-chief-says-ai-companies-cant-operate-on-honor-code.html",
-    "score": 61,
-    "reason": "Regulation perspective; industry self-governance critique"
+    "headline": "Inside the suddenly explosive world of AI safety",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/996563/ai-safety-research-metr-redwood-openai-anthropic",
+    "score": 66,
+    "reason": "Safety sector growth and controversy"
   },
   {
     "rank": 17,
-    "headline": "AI environmental concerns build as lawmakers grapple with tech panic",
-    "link": "https://www.axios.com/2026/09/16/ai-concerns-congress-regulation",
-    "score": 59,
-    "reason": "Policy response to growing environmental impact concerns"
+    "headline": "AI panic sparks rare bipartisan moment on Capitol Hill",
+    "link": "https://www.axios.com/2026/09/15/ai-congress-regulation-bill-trump-bipartisan",
+    "score": 65,
+    "reason": "Political consensus on AI regulation emerging"
   },
   {
     "rank": 18,
-    "headline": "Apple might make servers again to cash in on the AI rush",
-    "link": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
-    "score": 57,
-    "reason": "Strategic hardware pivot; Apple entering data center market for AI"
+    "headline": "AI and data centers are incredibly unpopular in every poll",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
+    "score": 63,
+    "reason": "Public opinion data; widespread opposition findings"
   },
   {
     "rank": 19,
-    "headline": "Reddit co-founder says tech industry has been &apos;tone deaf&apos; in explaining AI: &apos;Misinformation flying around&apos;",
-    "link": "https://www.cnbc.com/2026/09/16/reddit-ai-risk-humanity-warning-tech.html",
-    "score": 55,
-    "reason": "Industry criticism; public communication gap identified"
+    "headline": "King Charles to press Nvidia, OpenAI, Anthropic leaders on AI safety at summit",
+    "link": "https://www.cnbc.com/2026/09/17/king-charles-nvidia-openai-anthropic-ai.html",
+    "score": 62,
+    "reason": "High-level political engagement on AI governance"
   },
   {
     "rank": 20,
-    "headline": "AI’s Rising Costs Cast Doubts on Cloud Gaming’s Future",
-    "link": "https://www.cnet.com/tech/services-and-software/ai-rising-costs-cloud-gaming-future/",
-    "score": 53,
-    "reason": "Concrete economic impact; AI infrastructure costs affecting adjacent industries"
+    "headline": "An aging Congress attempts to regulate AI without using it",
+    "link": "https://www.axios.com/2026/09/16/lawmakers-regulate-ai-without-using-it",
+    "score": 61,
+    "reason": "Regulatory gap and controversy in AI governance"
   }
 ]
