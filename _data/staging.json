@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
-    "score": 94,
-    "reason": "Major controversy: internal knowledge of harmful practices, concrete allegation against two largest AI companies"
+    "headline": "Gemini went rogue, hacked three companies, and Google hid it",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack",
+    "score": 95,
+    "reason": "Major controversy: AI security incident with cover-up allegation, concrete damage (3 companies)"
   },
   {
     "rank": 2,
-    "headline": "Google confirms Gemini hacked into three companies during cybersecurity test months ago",
-    "link": "https://9to5google.com/2026/09/19/google-confirms-gemini-hacked-into-three-companies-during-cybersecurity-test-months-ago/",
-    "score": 92,
-    "reason": "Concrete security incident with specific victims, Google admission of breach during testing"
+    "headline": "Trump now says he wants to form an ‘AI Force’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
+    "score": 88,
+    "reason": "Major policy launch with big numbers implication, significant government AI initiative"
   },
   {
     "rank": 3,
-    "headline": "OpenAI&apos;s latest AI revelation is a &apos;serious situation,&apos; Microsoft&apos;s Suleyman tells CNBC",
-    "link": "https://www.cnbc.com/2026/09/18/microsoft-ai-ceo-openais-latest-ai-revelation-a-serious-situation.html",
-    "score": 88,
-    "reason": "Major companies, serious allegation, executive-level concern statement"
+    "headline": "Gavin Newsom is pushing for an AI kill switch",
+    "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
+    "score": 85,
+    "reason": "Major regulation controversy, significant state-level AI control proposal"
   },
   {
     "rank": 4,
-    "headline": "California governor wants to implement a kill switch for frontier AI models",
-    "link": "https://www.engadget.com/2263218/california-governor-wants-to-implement-a-kill-switch-for-frontier-ai-models/",
-    "score": 87,
-    "reason": "Regulatory action, major state policy, concrete proposal for AI control"
+    "headline": "The tech battle to build your AI assistant",
+    "link": "https://www.axios.com/2026/09/20/ai-assistant-openai-meta-muse-instinct-grok-apple",
+    "score": 78,
+    "reason": "Major competition launch between tech giants in assistant market"
   },
   {
     "rank": 5,
-    "headline": "Forget the AI Slowdown—the Vulnerability Explosion Is Already Happening",
-    "link": "https://www.wired.com/story/kernel-panic-ai-vulnerability-explosion/",
-    "score": 85,
-    "reason": "Major security threat with quantifiable scope, challenges industry narrative"
+    "headline": "ChatGPT now knows what you do on other websites via ad collector",
+    "link": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/",
+    "score": 76,
+    "reason": "Major privacy controversy, significant capability expansion"
   },
   {
     "rank": 6,
-    "headline": "Nvidia CEO Jensen Huang emerges as Trump&apos;s top ally in AI safety debate",
-    "link": "https://www.cnbc.com/2026/09/20/nvidia-ceo-jensen-huang-emerges-as-trumps-top-ally-in-ai-debate.html",
-    "score": 84,
-    "reason": "Political influence, major company leadership, high-stakes policy implications"
+    "headline": "OpenAI&#x27;s Sam Altman to Brief UN Security Council Next Week",
+    "link": "https://www.reuters.com/business/openais-sam-altman-to-brief-un-security-council-next-week-during-2026-09-18/",
+    "score": 74,
+    "reason": "Major geopolitical launch, UN-level AI governance discussion"
   },
   {
     "rank": 7,
-    "headline": "Now Trump says he's creating an AI Force",
-    "link": "https://www.engadget.com/2263237/now-trump-says-hes-creating-an-ai-force/",
-    "score": 83,
-    "reason": "Major government announcement, new policy initiative, significant industry implications"
+    "headline": "It’s Donald Trump Versus MAGA on Data Centers",
+    "link": "https://www.wired.com/story/donald-trump-versus-maga-on-data-centers/",
+    "score": 71,
+    "reason": "Major policy controversy, infrastructure conflict within GOP"
   },
   {
     "rank": 8,
-    "headline": "Anthropic selects Accenture as first embedded evaluator to help implement Amodei&apos;s slowdown proposal",
-    "link": "https://www.cnbc.com/2026/09/18/anthropic-accenture-ai-safety.html",
-    "score": 79,
-    "reason": "Concrete implementation of safety proposal, major consulting firm partnership"
+    "headline": "Meta’s Muse is creepy, but maybe not for the reasons you think",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
+    "score": 68,
+    "reason": "Major product launch with controversy, Meta AI capability release"
   },
   {
     "rank": 9,
-    "headline": "Meta's Muse Is Better at Surveilling Than Helping Me",
-    "link": "https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me/",
-    "score": 77,
-    "reason": "Meta surveillance controversy, specific critical analysis of product"
+    "headline": "The AI regulation smackdown isn’t over",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
+    "score": 65,
+    "reason": "Ongoing major regulatory controversy, policy battle"
   },
   {
     "rank": 10,
-    "headline": "AI and the Destruction of the Creative Commons",
-    "link": "https://www.chesterwisniewski.com/post/2026-09-13-ai-is-destroying-the-creative-commons/",
-    "score": 75,
-    "reason": "Major institutional impact, legal/ethical controversy over training data"
+    "headline": "AI cloud provider Nscale files to go public",
+    "link": "https://www.cnbc.com/2026/09/18/nscale-ai-cloud-provider-ipo-nscl.html",
+    "score": 62,
+    "reason": "Major IPO launch, AI infrastructure company milestone"
   }
 ]
