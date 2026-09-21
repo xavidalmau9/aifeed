@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Gemini went rogue, hacked three companies, and Google hid it",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack",
-    "score": 95,
-    "reason": "Major controversy: AI security incident with cover-up allegation, concrete damage (3 companies)"
+    "headline": "OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
+    "score": 92,
+    "reason": "Major controversy: internal knowledge of negative consequences, involves two biggest AI companies"
   },
   {
     "rank": 2,
-    "headline": "Trump now says he wants to form an ‘AI Force’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
+    "headline": "Amazon bars Meta's Muse AI from shopping on its site",
+    "link": "https://www.engadget.com/2263659/amazon-bars-metas-muse-ai-from-shopping-on-its-site/",
     "score": 88,
-    "reason": "Major policy launch with big numbers implication, significant government AI initiative"
+    "reason": "Big launch + controversy: major company rejection of AI agent, concrete business impact"
   },
   {
     "rank": 3,
-    "headline": "Gavin Newsom is pushing for an AI kill switch",
-    "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
+    "headline": "Google confirms Gemini hacked into three companies during cybersecurity test months ago",
+    "link": "https://9to5google.com/2026/09/19/google-confirms-gemini-hacked-into-three-companies-during-cybersecurity-test-months-ago/",
     "score": 85,
-    "reason": "Major regulation controversy, significant state-level AI control proposal"
+    "reason": "Concrete numbers + controversy: confirmed security breach by major AI model"
   },
   {
     "rank": 4,
-    "headline": "The tech battle to build your AI assistant",
-    "link": "https://www.axios.com/2026/09/20/ai-assistant-openai-meta-muse-instinct-grok-apple",
-    "score": 78,
-    "reason": "Major competition launch between tech giants in assistant market"
+    "headline": "US and China Discuss Alerting Each Other to AI National Security Threats",
+    "link": "https://www.wired.com/story/us-and-china-discuss-alerting-each-other-to-ai-national-security-threats/",
+    "score": 82,
+    "reason": "Major geopolitical development: superpowers coordinating on AI safety"
   },
   {
     "rank": 5,
-    "headline": "ChatGPT now knows what you do on other websites via ad collector",
-    "link": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/",
-    "score": 76,
-    "reason": "Major privacy controversy, significant capability expansion"
+    "headline": "‘Be transparent only if asked': Inside OpenAI's rogue AI transcripts",
+    "link": "https://fortune.com/2026/09/21/be-transparent-only-if-asked-inside-openai-rogue-ai-transcripts/",
+    "score": 80,
+    "reason": "Major controversy: internal policy contradicts public statements on transparency"
   },
   {
     "rank": 6,
-    "headline": "OpenAI&#x27;s Sam Altman to Brief UN Security Council Next Week",
-    "link": "https://www.reuters.com/business/openais-sam-altman-to-brief-un-security-council-next-week-during-2026-09-18/",
-    "score": 74,
-    "reason": "Major geopolitical launch, UN-level AI governance discussion"
+    "headline": "Trump wants a new AI czar and an \"AI Force\" modeled on Space Force",
+    "link": "https://www.axios.com/2026/09/19/trump-ai-czar-space-force-safety",
+    "score": 78,
+    "reason": "Major launch: government-level AI infrastructure plan with big implications"
   },
   {
     "rank": 7,
-    "headline": "It’s Donald Trump Versus MAGA on Data Centers",
-    "link": "https://www.wired.com/story/donald-trump-versus-maga-on-data-centers/",
-    "score": 71,
-    "reason": "Major policy controversy, infrastructure conflict within GOP"
+    "headline": "Money-losing Nscale’s $35 billion IPO includes a $3 billion deal with Nvidia and ‘going concern’ worries",
+    "link": "https://fortune.com/2026/09/21/nscale-35-billion-ipo-nvidia-going-concern/",
+    "score": 76,
+    "reason": "Big numbers: $35B IPO + $3B Nvidia deal, controversy with going concern warnings"
   },
   {
     "rank": 8,
-    "headline": "Meta’s Muse is creepy, but maybe not for the reasons you think",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
-    "score": 68,
-    "reason": "Major product launch with controversy, Meta AI capability release"
+    "headline": "UN says AI safeguards can’t wait for certainty",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle",
+    "score": 74,
+    "reason": "Major institutional stance: UN calling for immediate AI regulation"
   },
   {
     "rank": 9,
-    "headline": "The AI regulation smackdown isn’t over",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
-    "score": 65,
-    "reason": "Ongoing major regulatory controversy, policy battle"
+    "headline": "Meta's Muse Is Better at Surveilling Than Helping Me",
+    "link": "https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me/",
+    "score": 70,
+    "reason": "Controversy: major privacy/surveillance concerns with Meta's new AI agent"
   },
   {
     "rank": 10,
-    "headline": "AI cloud provider Nscale files to go public",
-    "link": "https://www.cnbc.com/2026/09/18/nscale-ai-cloud-provider-ipo-nscl.html",
-    "score": 62,
-    "reason": "Major IPO launch, AI infrastructure company milestone"
+    "headline": "Humans, not rogue AI, are still the biggest cybersecurity risk to energy systems",
+    "link": "https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure",
+    "score": 68,
+    "reason": "Concrete finding: contradicts AI hype narrative, data-driven conclusion"
   }
 ]
