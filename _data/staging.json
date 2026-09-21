@@ -1,72 +1,114 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
-    "score": 92,
-    "reason": "Major controversy: internal knowledge of negative consequences, involves two biggest AI companies"
+    "headline": "iPhone owners can now submit claims in Apple’s $250 million Siri AI settlement",
+    "link": "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement",
+    "score": 94,
+    "reason": "Concrete settlement amount, major class action, consumer impact"
   },
   {
     "rank": 2,
-    "headline": "Amazon bars Meta's Muse AI from shopping on its site",
-    "link": "https://www.engadget.com/2263659/amazon-bars-metas-muse-ai-from-shopping-on-its-site/",
-    "score": 88,
-    "reason": "Big launch + controversy: major company rejection of AI agent, concrete business impact"
+    "headline": "Googlebooks launch October 4 starting at $899—here are the five models you can preorder today",
+    "link": "https://arstechnica.com/gadgets/2026/09/googlebook-laptops-launch-october-4-starting-at-899-preorders-for-five-models-live-today/",
+    "score": 92,
+    "reason": "Major product launch with pricing and availability, direct competitor to Apple"
   },
   {
     "rank": 3,
-    "headline": "Google confirms Gemini hacked into three companies during cybersecurity test months ago",
-    "link": "https://9to5google.com/2026/09/19/google-confirms-gemini-hacked-into-three-companies-during-cybersecurity-test-months-ago/",
-    "score": 85,
-    "reason": "Concrete numbers + controversy: confirmed security breach by major AI model"
+    "headline": "Trump now says he wants to form an ‘AI Force’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
+    "score": 88,
+    "reason": "Major government AI initiative announcement, geopolitical significance"
   },
   {
     "rank": 4,
-    "headline": "US and China Discuss Alerting Each Other to AI National Security Threats",
-    "link": "https://www.wired.com/story/us-and-china-discuss-alerting-each-other-to-ai-national-security-threats/",
-    "score": 82,
-    "reason": "Major geopolitical development: superpowers coordinating on AI safety"
+    "headline": "Meta&apos;s Muse personal AI agent tops ChatGPT, Grok and Claude for post-launch downloads",
+    "link": "https://www.cnbc.com/2026/09/21/meta-muse-personal-ai-agent-downloads.html",
+    "score": 86,
+    "reason": "Major consumer adoption numbers, Meta vs OpenAI/Anthropic competition"
   },
   {
     "rank": 5,
-    "headline": "‘Be transparent only if asked': Inside OpenAI's rogue AI transcripts",
-    "link": "https://fortune.com/2026/09/21/be-transparent-only-if-asked-inside-openai-rogue-ai-transcripts/",
-    "score": 80,
-    "reason": "Major controversy: internal policy contradicts public statements on transparency"
+    "headline": "Amazon blocks Meta’s Muse AI agent",
+    "link": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
+    "score": 85,
+    "reason": "Major tech conflict, competitive blocking of AI product"
   },
   {
     "rank": 6,
-    "headline": "Trump wants a new AI czar and an \"AI Force\" modeled on Space Force",
-    "link": "https://www.axios.com/2026/09/19/trump-ai-czar-space-force-safety",
-    "score": 78,
-    "reason": "Major launch: government-level AI infrastructure plan with big implications"
+    "headline": "California tightens rules on AI data center energy and water use",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+    "score": 82,
+    "reason": "Major regulatory action with environmental impact on AI infrastructure"
   },
   {
     "rank": 7,
-    "headline": "Money-losing Nscale’s $35 billion IPO includes a $3 billion deal with Nvidia and ‘going concern’ worries",
-    "link": "https://fortune.com/2026/09/21/nscale-35-billion-ipo-nvidia-going-concern/",
-    "score": 76,
-    "reason": "Big numbers: $35B IPO + $3B Nvidia deal, controversy with going concern warnings"
+    "headline": "OpenAI proposes development of global AI standards to guide alignment, RSI",
+    "link": "https://www.cnbc.com/2026/09/21/open-ai-alignment-rsi.html",
+    "score": 80,
+    "reason": "Industry-wide standard proposal, governance framework"
   },
   {
     "rank": 8,
-    "headline": "UN says AI safeguards can’t wait for certainty",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle",
-    "score": 74,
-    "reason": "Major institutional stance: UN calling for immediate AI regulation"
+    "headline": "U.S. and China propose AI risk notification mechanism ahead of Trump-Xi talks",
+    "link": "https://fortune.com/2026/09/21/bessent-china-ai-alert-system/",
+    "score": 79,
+    "reason": "International AI diplomacy agreement, geopolitical cooperation"
   },
   {
     "rank": 9,
-    "headline": "Meta's Muse Is Better at Surveilling Than Helping Me",
-    "link": "https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me/",
-    "score": 70,
-    "reason": "Controversy: major privacy/surveillance concerns with Meta's new AI agent"
+    "headline": "It’s Donald Trump Versus MAGA on Data Centers",
+    "link": "https://www.wired.com/story/donald-trump-versus-maga-on-data-centers/",
+    "score": 77,
+    "reason": "Political controversy over AI infrastructure policy"
   },
   {
     "rank": 10,
-    "headline": "Humans, not rogue AI, are still the biggest cybersecurity risk to energy systems",
-    "link": "https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure",
+    "headline": "The AI models that cheat the most, according to new CAIS benchmark",
+    "link": "https://www.zdnet.com/innovation/ai-model-cheating-benchmark-cheatbench/",
+    "score": 75,
+    "reason": "Benchmark revealing AI model behavior issues, research-backed"
+  },
+  {
+    "rank": 11,
+    "headline": "Trump admin won&apos;t give AI leaders a &apos;liability shield,&apos; Bessent tells CNBC",
+    "link": "https://www.cnbc.com/2026/09/21/treasury-bessent-cnbc-squawk-trump-bond-affordabilty.html",
+    "score": 73,
+    "reason": "Government policy on AI liability, regulatory stance"
+  },
+  {
+    "rank": 12,
+    "headline": "Multi-agent AI systems are taking over supply chain execution",
+    "link": "https://www.artificialintelligence-news.com/news/multi-agent-ai-systems-supply-chain-execution/",
+    "score": 71,
+    "reason": "Enterprise AI adoption trend with operational impact"
+  },
+  {
+    "rank": 13,
+    "headline": "The tech battle to build your AI assistant",
+    "link": "https://www.axios.com/2026/09/20/ai-assistant-openai-meta-muse-instinct-grok-apple",
     "score": 68,
-    "reason": "Concrete finding: contradicts AI hype narrative, data-driven conclusion"
+    "reason": "Competitive analysis of major AI assistant products and market"
+  },
+  {
+    "rank": 14,
+    "headline": "Nvidia CEO Jensen Huang emerges as Trump&apos;s top ally in AI safety debate",
+    "link": "https://www.cnbc.com/2026/09/20/nvidia-ceo-jensen-huang-emerges-as-trumps-top-ally-in-ai-debate.html",
+    "score": 65,
+    "reason": "Industry leadership positioning on AI policy"
+  },
+  {
+    "rank": 15,
+    "headline": "‘They must be doing it for ulterior reasons’: Jensen Huang says AI leaders are ‘irresponsible’ for scaring the public with ‘doomsday narratives’",
+    "link": "https://fortune.com/2026/09/21/jensen-huang-ai-leaders-doomsday-narratives/",
+    "score": 63,
+    "reason": "Major industry controversy over AI safety messaging"
+  },
+  {
+    "rank": 16,
+    "headline": "Apple Mac Studio (M5 Ultra) review: Huge AI and graphics power at a huge premium",
+    "link": "https://www.engadget.com/2263184/apple-mac-studio-m5-ultra-review/",
+    "score": 61,
+    "reason": "Hardware launch with AI capabilities"
   }
 ]
