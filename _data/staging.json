@@ -1,114 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "iPhone owners can now submit claims in Apple’s $250 million Siri AI settlement",
-    "link": "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement",
-    "score": 94,
-    "reason": "Concrete settlement amount, major class action, consumer impact"
+    "headline": "Meta patches Muse exploit that let attackers control the AI agent",
+    "link": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
+    "score": 92,
+    "reason": "Security vulnerability in major AI product launch, concrete impact"
   },
   {
     "rank": 2,
-    "headline": "Googlebooks launch October 4 starting at $899—here are the five models you can preorder today",
-    "link": "https://arstechnica.com/gadgets/2026/09/googlebook-laptops-launch-october-4-starting-at-899-preorders-for-five-models-live-today/",
-    "score": 92,
-    "reason": "Major product launch with pricing and availability, direct competitor to Apple"
+    "headline": "A New Tool Found Malware That’s Guided by an AI Hive Mind—No Humans in Sight",
+    "link": "https://www.wired.com/story/a-tool-for-tracking-ai-integrated-malware-uncovered-an-autonomous-command-system/",
+    "score": 88,
+    "reason": "First autonomous AI-controlled malware discovery, significant threat"
   },
   {
     "rank": 3,
-    "headline": "Trump now says he wants to form an ‘AI Force’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
-    "score": 88,
-    "reason": "Major government AI initiative announcement, geopolitical significance"
+    "headline": "Toyota’s $6.4bn robotics estimate puts physical AI in focus",
+    "link": "https://www.artificialintelligence-news.com/news/toyota-physical-ai-factory-robotics/",
+    "score": 85,
+    "reason": "Major capital commitment to physical AI, concrete numbers"
   },
   {
     "rank": 4,
-    "headline": "Meta&apos;s Muse personal AI agent tops ChatGPT, Grok and Claude for post-launch downloads",
-    "link": "https://www.cnbc.com/2026/09/21/meta-muse-personal-ai-agent-downloads.html",
-    "score": 86,
-    "reason": "Major consumer adoption numbers, Meta vs OpenAI/Anthropic competition"
+    "headline": "Alibaba shares jump as new AI chip, data center buildout plans unveiled",
+    "link": "https://www.cnbc.com/2026/09/22/alibaba-ai-alibabacloud-zhenwu-v900-.html",
+    "score": 83,
+    "reason": "Major tech company entering AI chip race with significant investment"
   },
   {
     "rank": 5,
-    "headline": "Amazon blocks Meta’s Muse AI agent",
-    "link": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
-    "score": 85,
-    "reason": "Major tech conflict, competitive blocking of AI product"
+    "headline": "Jamie Dimon says hyperscaler AI spending could hit $1 trillion next year",
+    "link": "https://www.cnbc.com/2026/09/21/jamie-dimon-jpm-jpmorgan-indiaconference.html",
+    "score": 81,
+    "reason": "Massive market projection from financial authority"
   },
   {
     "rank": 6,
-    "headline": "California tightens rules on AI data center energy and water use",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
-    "score": 82,
-    "reason": "Major regulatory action with environmental impact on AI infrastructure"
+    "headline": "Money-losing Nscale’s $35 billion IPO includes a $3 billion deal with Nvidia that puts ‘going concern’ worries behind it",
+    "link": "https://fortune.com/2026/09/21/nscale-35-billion-ipo-nvidia-going-concern/",
+    "score": 79,
+    "reason": "Massive funding round with major player partnership"
   },
   {
     "rank": 7,
-    "headline": "OpenAI proposes development of global AI standards to guide alignment, RSI",
-    "link": "https://www.cnbc.com/2026/09/21/open-ai-alignment-rsi.html",
-    "score": 80,
-    "reason": "Industry-wide standard proposal, governance framework"
+    "headline": "No Shirt, No Shoes, No Service: Amazon Blocks Meta’s Muse AI From Shopping",
+    "link": "https://www.cnet.com/tech/services-and-software/amazon-blocks-metas-muse-ai/",
+    "score": 77,
+    "reason": "Major competitor blocks AI product from platform, significant conflict"
   },
   {
     "rank": 8,
-    "headline": "U.S. and China propose AI risk notification mechanism ahead of Trump-Xi talks",
-    "link": "https://fortune.com/2026/09/21/bessent-china-ai-alert-system/",
-    "score": 79,
-    "reason": "International AI diplomacy agreement, geopolitical cooperation"
+    "headline": "Claim up to $95 today from Apple’s Siri AI settlement – here’s how",
+    "link": "https://www.zdnet.com/business/claim-your-payout-now-from-apple-siri-ai-settlement/",
+    "score": 75,
+    "reason": "Legal action against major company for AI product failure"
   },
   {
     "rank": 9,
-    "headline": "It’s Donald Trump Versus MAGA on Data Centers",
-    "link": "https://www.wired.com/story/donald-trump-versus-maga-on-data-centers/",
-    "score": 77,
-    "reason": "Political controversy over AI infrastructure policy"
+    "headline": "Meta&apos;s Muse AI agent downloads are surging. Here&apos;s how it compares to ChatGPT, Grok and Claude",
+    "link": "https://www.cnbc.com/2026/09/21/meta-muse-personal-ai-agent-downloads.html",
+    "score": 73,
+    "reason": "Major AI product launch metrics and competitive analysis"
   },
   {
     "rank": 10,
-    "headline": "The AI models that cheat the most, according to new CAIS benchmark",
-    "link": "https://www.zdnet.com/innovation/ai-model-cheating-benchmark-cheatbench/",
-    "score": 75,
-    "reason": "Benchmark revealing AI model behavior issues, research-backed"
+    "headline": "US and China Discuss Alerting Each Other to AI National Security Threats",
+    "link": "https://www.wired.com/story/us-and-china-discuss-alerting-each-other-to-ai-national-security-threats/",
+    "score": 71,
+    "reason": "Geopolitical agreement on AI governance framework"
   },
   {
     "rank": 11,
-    "headline": "Trump admin won&apos;t give AI leaders a &apos;liability shield,&apos; Bessent tells CNBC",
-    "link": "https://www.cnbc.com/2026/09/21/treasury-bessent-cnbc-squawk-trump-bond-affordabilty.html",
-    "score": 73,
-    "reason": "Government policy on AI liability, regulatory stance"
+    "headline": "Disturbing Experiment Points to Dangers of Using AI Models Not Meant for Robotics",
+    "link": "https://www.cnet.com/tech/services-and-software/robot-ai-experiments-unsafe-commands-llms-robocurve/",
+    "score": 68,
+    "reason": "Research findings on AI system misuse and failure modes"
   },
   {
     "rank": 12,
-    "headline": "Multi-agent AI systems are taking over supply chain execution",
-    "link": "https://www.artificialintelligence-news.com/news/multi-agent-ai-systems-supply-chain-execution/",
-    "score": 71,
-    "reason": "Enterprise AI adoption trend with operational impact"
+    "headline": "Military milestone: Ukrainian naval drone sinks Russian kamikaze drone boat",
+    "link": "https://arstechnica.com/gadgets/2026/09/military-milestone-ukrainian-naval-drone-sinks-russian-kamikaze-drone-boat/",
+    "score": 66,
+    "reason": "Documented use of autonomous AI in military conflict"
   },
   {
     "rank": 13,
-    "headline": "The tech battle to build your AI assistant",
-    "link": "https://www.axios.com/2026/09/20/ai-assistant-openai-meta-muse-instinct-grok-apple",
-    "score": 68,
-    "reason": "Competitive analysis of major AI assistant products and market"
+    "headline": "Google fully details Googlebooks: $899+, October launch, & more",
+    "link": "https://9to5google.com/2026/09/21/googlebook-launch/",
+    "score": 64,
+    "reason": "Major tech company AI hardware product launch with specifications"
   },
   {
     "rank": 14,
-    "headline": "Nvidia CEO Jensen Huang emerges as Trump&apos;s top ally in AI safety debate",
-    "link": "https://www.cnbc.com/2026/09/20/nvidia-ceo-jensen-huang-emerges-as-trumps-top-ally-in-ai-debate.html",
-    "score": 65,
-    "reason": "Industry leadership positioning on AI policy"
+    "headline": "Ahead of Sam Altman's UN address, OpenAI proposes new ways to track AI misalignment risks",
+    "link": "https://www.axios.com/2026/09/21/openai-ai-safety-standards-us-china",
+    "score": 62,
+    "reason": "Major AI lab introduces safety monitoring framework"
   },
   {
     "rank": 15,
-    "headline": "‘They must be doing it for ulterior reasons’: Jensen Huang says AI leaders are ‘irresponsible’ for scaring the public with ‘doomsday narratives’",
-    "link": "https://fortune.com/2026/09/21/jensen-huang-ai-leaders-doomsday-narratives/",
-    "score": 63,
-    "reason": "Major industry controversy over AI safety messaging"
+    "headline": "Americans are turning to AI to survive a brutal housing market—37% would let it buy their next home with 'minimal human involvement'",
+    "link": "https://fortune.com/2026/09/22/american-ai-housing-market-realtor-buy-sell-mortgage-rate-increase/",
+    "score": 60,
+    "reason": "Significant adoption metric showing real-world AI delegation"
   },
   {
     "rank": 16,
-    "headline": "Apple Mac Studio (M5 Ultra) review: Huge AI and graphics power at a huge premium",
-    "link": "https://www.engadget.com/2263184/apple-mac-studio-m5-ultra-review/",
-    "score": 61,
-    "reason": "Hardware launch with AI capabilities"
+    "headline": "AI ‘Actress’ Tilly Norwood Glitches on Live TV in Surreal Nightmare",
+    "link": "https://www.cnet.com/tech/services-and-software/tilly-norwood-ai-actress-speaks-cantonese-live-interview-glitch/",
+    "score": 57,
+    "reason": "Public failure of AI avatar product demonstrates limitations"
+  },
+  {
+    "rank": 17,
+    "headline": "Napster Developing AI Teacher Clones to Provide Personalized Homework Support",
+    "link": "https://www.cnet.com/tech/services-and-software/napster-developing-ai-teacher-clones-education/",
+    "score": 55,
+    "reason": "Established company launching AI education product"
+  },
+  {
+    "rank": 18,
+    "headline": "A New Chatbot Wants to Unlock the Secrets in Tattered Ancient Greek Records",
+    "link": "https://www.wired.com/story/apollo-ai-model-ancient-greek-secrets-papyrus/",
+    "score": 53,
+    "reason": "AI application achieving specific technical breakthrough"
+  },
+  {
+    "rank": 19,
+    "headline": "JetBrains Air: A System of Products for Agentic Software Development",
+    "link": "https://blog.jetbrains.com/blog/2026/09/22/introducing-jetbrains-air/",
+    "score": 51,
+    "reason": "Major developer tools company launches AI agent platform"
+  },
+  {
+    "rank": 20,
+    "headline": "AutoScheduler launches warehouse app builder for logistics teams",
+    "link": "https://www.artificialintelligence-news.com/news/autoscheduler-warehouse-app-builder-for-logistics-teams/",
+    "score": 49,
+    "reason": "Enterprise AI product launch in logistics sector"
   }
 ]
