@@ -1,5 +1,24 @@
 [
  {
+  "id": "california-ai-datacenter-energy-water-rules-20260923",
+  "slug": "california-ai-datacenter-energy-water-rules",
+  "headline": "California Caps AI Data Centers' Energy and Water Use",
+  "summary": "California has enacted stricter limits on the electricity and water AI data centers consume — a watershed move that could reshape where and how AI infrastructure gets built.",
+  "body": "<p>California just raised the stakes for AI infrastructure — enacting stricter regulations on the energy and water that AI data centers consume. It's a watershed moment in balancing AI innovation with environmental responsibility.</p><p>Data centers powering modern AI are among the most resource-intensive facilities on the planet, drawing massive amounts of electricity and water for cooling — often straining local infrastructure and driving up emissions. California's move holds that infrastructure to a higher environmental standard as AI adoption accelerates.</p><p>The rules carry real strategic weight for tech companies: expect new investment in renewable energy, water-efficient cooling, and sustainable operations. Firms that adapt fast gain a competitive and reputational edge; laggards face compliance costs and scrutiny.</p><p>The ripple effects reach far beyond California. As the industry's standard-setter, the state's decisions tend to shape national policy and corporate practice — so other states are likely to follow, and major players may rethink global data-center strategy.</p><p>Looking ahead, sustainability will become as decisive as raw compute in the AI race. The competitive edge belongs to those who innovate responsibly.</p>",
+  "category": "Infrastructure",
+  "hashtags": [
+   "AIInfrastructure",
+   "SustainableTech",
+   "DataCenters",
+   "EnergyPolicy",
+   "ArtificialIntelligence"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_california_ai_datacenter_rules_20260923.png",
+  "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+  "publishedAt": "2026-09-23T10:25:00-04:00",
+  "isVideo": false
+ },
+ {
   "id": "bigtech-ai-slowdown-safety-or-cartel-20260916",
   "slug": "bigtech-ai-slowdown-safety-or-cartel",
   "headline": "Is Big Tech's AI Slowdown Safety — or a Cartel?",
