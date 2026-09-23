@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Jamie Dimon says hyperscaler AI spending could hit $1 trillion next year",
-    "link": "https://www.cnbc.com/2026/09/21/jamie-dimon-jpm-jpmorgan-indiaconference.html",
-    "score": 95,
-    "reason": "Big number ($1T), from credible source (JPMorgan CEO), concrete prediction on AI infrastructure spending"
+    "headline": "Anthropic launches Claude Opus 5.5 with stricter safeguards for cybersecurity",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
+    "score": 92,
+    "reason": "Major product launch from top AI company with security focus"
   },
   {
     "rank": 2,
-    "headline": "Toyota’s $6.4bn robotics estimate puts physical AI in focus",
-    "link": "https://www.artificialintelligence-news.com/news/toyota-physical-ai-factory-robotics/",
-    "score": 92,
-    "reason": "Large capital commitment ($6.4B), major company entering robotics, tangible investment signal"
+    "headline": "Anthropic and OpenAI Drop New High-Efficiency Models",
+    "link": "https://www.cnet.com/tech/services-and-software/anthropic-and-openai-drop-new-high-efficiency-models/",
+    "score": 88,
+    "reason": "Dual major launches from two leading AI companies with cost/efficiency angle"
   },
   {
     "rank": 3,
-    "headline": "Anthropic and OpenAI announce more powerful (and cheaper) AI models",
-    "link": "https://www.engadget.com/2265801/anthropic-and-openai-announce-more-powerful-and-cheaper-ai-models/",
-    "score": 90,
-    "reason": "Both major AI companies, product launch, price reduction announcement, direct competition"
+    "headline": "Meta’s Muse AI Assistant Rolled Out With a Serious Security Flaw",
+    "link": "https://www.wired.com/story/metas-muse-ai-agent-zero-day/",
+    "score": 85,
+    "reason": "Major company product launch with significant controversy/security issue"
   },
   {
     "rank": 4,
-    "headline": "How to Claim Your Cut of Apple’s $250 Million Siri Settlement",
-    "link": "https://www.wired.com/story/how-to-claim-your-cut-of-apple-250-million-siri-settlement/",
-    "score": 88,
-    "reason": "Large settlement ($250M), major company liability, AI product failure consequence"
+    "headline": "California tightens rules on AI data center energy and water use",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+    "score": 82,
+    "reason": "Regulatory action with real impact on major infrastructure"
   },
   {
     "rank": 5,
-    "headline": "Meta patches Muse exploit that let attackers control the AI agent",
-    "link": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
-    "score": 85,
-    "reason": "Security vulnerability, major company AI system compromised, active exploitation"
+    "headline": "AI drone maker hits $6.4 billion valuation as Ukraine war spurs defense tech",
+    "link": "https://www.cnbc.com/2026/09/23/ai-drone-maker-ukraine-war-defense-tech.html",
+    "score": 79,
+    "reason": "Big valuation number, real-world deployment in active conflict"
   },
   {
     "rank": 6,
-    "headline": "No Shirt, No Shoes, No Service: Amazon Blocks Meta’s Muse AI From Shopping",
-    "link": "https://www.cnet.com/tech/services-and-software/amazon-blocks-metas-muse-ai/",
-    "score": 82,
-    "reason": "Major platform conflict, AI agent blocked from real commerce, competitive rejection"
+    "headline": "U.S. TRANSCOM deploys randomised AI to secure military logistics",
+    "link": "https://www.artificialintelligence-news.com/news/us-transcom-deploys-randomised-ai-to-secure-military-logistics/",
+    "score": 77,
+    "reason": "Military deployment of AI at scale, concrete implementation"
   },
   {
     "rank": 7,
-    "headline": "A New Tool Found Malware That’s Guided by an AI Hive Mind—No Humans in Sight",
-    "link": "https://www.wired.com/story/a-tool-for-tracking-ai-integrated-malware-uncovered-an-autonomous-command-system/",
-    "score": 80,
-    "reason": "Security breakthrough, autonomous AI malware discovery, emerging threat pattern"
+    "headline": "Qualcomm releases Android chip built for AI as memory shortage weighs on smartphone market",
+    "link": "https://www.cnbc.com/2026/09/22/qualcomm-releases-android-chip-built-for-ai-amid-memory-shortage.html",
+    "score": 76,
+    "reason": "Major hardware launch from big player with market impact angle"
   },
   {
     "rank": 8,
-    "headline": "AT&T Is Automating Away Jobs—and Its Old Telecom Empire",
-    "link": "https://www.wired.com/story/atandt-is-automating-away-its-old-telecom-empire/",
-    "score": 78,
-    "reason": "Large-scale job displacement, major enterprise AI automation, tangible economic impact"
+    "headline": "Nearly 70% of workers use AI regularly now – but many get no time to upskill",
+    "link": "https://www.zdnet.com/innovation/workera-study-ai-skills-upskilling-2026/",
+    "score": 74,
+    "reason": "Large statistical finding with workplace adoption implications"
   },
   {
     "rank": 9,
-    "headline": "AI Agents Are Becoming a New Malware Distribution Channel",
-    "link": "https://www.artificialintelligence-news.com/news/ai-agents-are-becoming-a-new-malware-distribution-channel/",
-    "score": 77,
-    "reason": "New attack vector identified, security threat emerging, widespread implications"
+    "headline": "Andreessen Horowitz is launching an ‘academy’ with no homework and partnerships with Palantir, Google, and Meta",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/998813/andreessen-horowitz-ai-academy",
+    "score": 72,
+    "reason": "Major initiative launch with multiple tier-1 company partnerships"
   },
   {
     "rank": 10,
-    "headline": "Rabbit Is Back, This Time With an AI Agent App",
-    "link": "https://www.wired.com/story/rabbit-r1-os3-jesse-lyu/",
-    "score": 75,
-    "reason": "Product relaunch, consumer AI agent, startup comeback narrative"
+    "headline": "OpenAI nabs key Patreon execs ahead of upcoming announcement",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/999249/openai-creators-patreon-execs-hire-sam-yam",
+    "score": 68,
+    "reason": "Major hiring news suggesting significant product announcement from OpenAI"
   },
   {
     "rank": 11,
-    "headline": "AI is killing the grunt work, forcing companies to rethink entry-level hiring",
-    "link": "https://www.cnbc.com/2026/09/23/ai-workplace-graduate-entry-level-junior-hiring.html",
-    "score": 73,
-    "reason": "Labor market disruption, systemic hiring changes, business model impact"
+    "headline": "McKinsey: Cheaper AI models, bigger AI bills",
+    "link": "https://fortune.com/2026/09/23/mckinsey-cheaper-ai-models-bigger-ai-bills-cfo/",
+    "score": 66,
+    "reason": "Industry analysis with paradoxical economic finding from major consulting firm"
   },
   {
     "rank": 12,
-    "headline": "A New Chatbot Wants to Unlock the Secrets in Tattered Ancient Greek Records",
-    "link": "https://www.wired.com/story/apollo-ai-model-ancient-greek-secrets-papyrus/",
-    "score": 70,
-    "reason": "Novel AI application, historical impact, academic breakthrough use case"
+    "headline": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005",
+    "link": "https://www.cryptocellar.org/bgac/the-mvueh-break.html",
+    "score": 65,
+    "reason": "Concrete capability demonstration with historical achievement angle"
   },
   {
     "rank": 13,
-    "headline": "Smart glasses are already causing havoc in India",
-    "link": "https://www.technologyreview.com/2026/09/23/1144953/smart-glasses-havoc-india/",
-    "score": 68,
-    "reason": "Real-world AI safety issue, privacy controversy, regional impact"
+    "headline": "Rabbit’s new AI agent doesn’t need an R1 to run",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/999094/rabbit-ai-agent-os3",
+    "score": 62,
+    "reason": "Product launch expanding accessibility of existing technology"
   },
   {
     "rank": 14,
-    "headline": "Disturbing Experiment Points to Dangers of Using AI Models Not Meant for Robotics",
-    "link": "https://www.cnet.com/tech/services-and-software/robot-ai-experiments-unsafe-commands-llms-robocurve/",
-    "score": 66,
-    "reason": "Safety concern demonstrated, model misuse risk, empirical evidence of failure"
+    "headline": "Claim up to $95 today from Apple’s Siri AI settlement – here’s how",
+    "link": "https://www.zdnet.com/business/claim-your-payout-now-from-apple-siri-ai-settlement/",
+    "score": 61,
+    "reason": "Legal action against major company with concrete financial impact"
   },
   {
     "rank": 15,
-    "headline": "Nscale’s $35 billion IPO is largely silent about its biggest customer in 2025, China’s ByteDance, which wants access to Nvidia’s chips",
-    "link": "https://fortune.com/2026/09/23/nscale-35-billion-ipo-bytedance-nvidia-chips/",
-    "score": 64,
-    "reason": "Major IPO ($35B), geopolitical AI concern, chip supply chain controversy"
+    "headline": "Ahead of Sam Altman's UN address, OpenAI proposes new ways to track AI misalignment risks",
+    "link": "https://www.axios.com/2026/09/21/openai-ai-safety-standards-us-china",
+    "score": 59,
+    "reason": "Safety framework proposal with governance implications"
   },
   {
     "rank": 16,
-    "headline": "Nest Doorbell has been triggering Gemini's American accent, no matter what language you speak; fix coming",
-    "link": "https://9to5google.com/2026/09/22/gemini-switches-to-american-accent-but-just-for-nest-doorbells/",
-    "score": 62,
-    "reason": "Product bug, Google AI failure, usability issue requiring fix"
+    "headline": "Multi-agent AI systems are taking over supply chain execution",
+    "link": "https://www.artificialintelligence-news.com/news/multi-agent-ai-systems-supply-chain-execution/",
+    "score": 57,
+    "reason": "Broad industry shift in major business sector"
   },
   {
     "rank": 17,
-    "headline": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
-    "link": "https://www.bloomberg.com/graphics/2026-iran-school-attack/",
-    "score": 61,
-    "reason": "Military AI failure, humanitarian consequence, official accountability statement"
+    "headline": "U.S.-China \"red telephone\" could bring a Cold War guardrail to AI",
+    "link": "https://www.axios.com/2026/09/22/trump-china-ai-hotline-xi-summit",
+    "score": 55,
+    "reason": "Major geopolitical development affecting AI governance"
   },
   {
     "rank": 18,
-    "headline": "Napster Developing AI Teacher Clones to Provide Personalized Homework Support",
-    "link": "https://www.cnet.com/tech/services-and-software/napster-developing-ai-teacher-clones-education/",
-    "score": 58,
-    "reason": "Education sector AI launch, personalization use case, brand pivot"
+    "headline": "AI Models Built From Rat Brains Just Got Closer to Reality",
+    "link": "https://www.wired.com/story/ai-models-built-from-rat-brains-are-about-to-become-a-reality/",
+    "score": 52,
+    "reason": "Breakthrough in novel AI architecture approaching commercialization"
   },
   {
     "rank": 19,
-    "headline": "Why Read a Research Paper When You Can Turn It Into an AI Agent?",
-    "link": "https://spectrum.ieee.org/paper2agent-ai-agents-research-papers",
-    "score": 55,
-    "reason": "New workflow paradigm, knowledge worker impact, productivity transformation"
+    "headline": "OpenAI wants to consult elite mathematicians about how to not fumble again",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel",
+    "score": 48,
+    "reason": "Organizational change addressing past failures at top AI company"
   },
   {
     "rank": 20,
-    "headline": "Viture’s Vonder Glasses Are Meant to Map Your Mind",
-    "link": "https://www.wired.com/story/viture-vonder-glasses-are-meant-to-map-your-mind/",
-    "score": 52,
-    "reason": "Novel hardware-AI integration, brain-computer interface ambition, speculative but concrete product"
+    "headline": "Cheap, powerful AI models are increasing usage, a bullish sign for the AI boom",
+    "link": "https://www.axios.com/2026/09/22/cheap-powerful-models-new-ai-frontier",
+    "score": 46,
+    "reason": "Market trend analysis with adoption implications"
   }
 ]
