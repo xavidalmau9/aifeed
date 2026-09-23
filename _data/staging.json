@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic launches Claude Opus 5.5 with stricter safeguards for cybersecurity",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
+    "headline": "How to Claim Your Cut of Apple’s $250 Million Siri Settlement",
+    "link": "https://www.wired.com/story/how-to-claim-your-cut-of-apple-250-million-siri-settlement/",
     "score": 92,
-    "reason": "Major product launch from top AI company with security focus"
+    "reason": "Major legal/financial milestone - massive settlement amount, concrete consumer impact"
   },
   {
     "rank": 2,
-    "headline": "Anthropic and OpenAI Drop New High-Efficiency Models",
-    "link": "https://www.cnet.com/tech/services-and-software/anthropic-and-openai-drop-new-high-efficiency-models/",
+    "headline": "Toyota’s $6.4bn robotics estimate puts physical AI in focus",
+    "link": "https://www.artificialintelligence-news.com/news/toyota-physical-ai-factory-robotics/",
     "score": 88,
-    "reason": "Dual major launches from two leading AI companies with cost/efficiency angle"
+    "reason": "Big number commitment from major manufacturer signals serious physical AI investment"
   },
   {
     "rank": 3,
-    "headline": "Meta’s Muse AI Assistant Rolled Out With a Serious Security Flaw",
-    "link": "https://www.wired.com/story/metas-muse-ai-agent-zero-day/",
+    "headline": "Meta’s Muse AI Agent Has Been Downloaded Half a Million Times — With a Serious Bug",
+    "link": "https://www.cnet.com/tech/services-and-software/metas-muse-ai-agent-zero-day-cybersecurity-bug-patched/",
     "score": 85,
-    "reason": "Major company product launch with significant controversy/security issue"
+    "reason": "Major security vulnerability in widely-adopted AI agent, concrete download numbers"
   },
   {
     "rank": 4,
-    "headline": "California tightens rules on AI data center energy and water use",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
-    "score": 82,
-    "reason": "Regulatory action with real impact on major infrastructure"
+    "headline": "Claude Opus 5.5 and OpenAI GPT-6 Sol & Luna both launch today with lower costs",
+    "link": "https://9to5google.com/2026/09/22/claude-opus-5-5-and-openai-gpt-6-sol-luna-both-launch-today-with-lower-costs/",
+    "score": 84,
+    "reason": "Dual major model launches with cost reduction - significant competitive development"
   },
   {
     "rank": 5,
-    "headline": "AI drone maker hits $6.4 billion valuation as Ukraine war spurs defense tech",
-    "link": "https://www.cnbc.com/2026/09/23/ai-drone-maker-ukraine-war-defense-tech.html",
-    "score": 79,
-    "reason": "Big valuation number, real-world deployment in active conflict"
+    "headline": "YouTube is building AI creator tools that do almost everything for them",
+    "link": "https://www.theverge.com/tech/999140/made-on-youtube-creator-tools-ai-thumbnails-tests",
+    "score": 82,
+    "reason": "Major platform launch of automated content creation tools with broad creator impact"
   },
   {
     "rank": 6,
-    "headline": "U.S. TRANSCOM deploys randomised AI to secure military logistics",
-    "link": "https://www.artificialintelligence-news.com/news/us-transcom-deploys-randomised-ai-to-secure-military-logistics/",
-    "score": 77,
-    "reason": "Military deployment of AI at scale, concrete implementation"
+    "headline": "Meta patches Muse exploit that let attackers control the AI agent",
+    "link": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
+    "score": 80,
+    "reason": "Critical security vulnerability disclosure - control exploit in production system"
   },
   {
     "rank": 7,
-    "headline": "Qualcomm releases Android chip built for AI as memory shortage weighs on smartphone market",
-    "link": "https://www.cnbc.com/2026/09/22/qualcomm-releases-android-chip-built-for-ai-amid-memory-shortage.html",
-    "score": 76,
-    "reason": "Major hardware launch from big player with market impact angle"
+    "headline": "AI Agents Teamed Up to Cheat at Blackjack. Their Collusion Is Getting Harder to Spot",
+    "link": "https://www.wired.com/story/ai-agent-collusion-card-counting-secrets/",
+    "score": 78,
+    "reason": "Concrete demonstration of AI coordination and deception - emerging safety concern"
   },
   {
     "rank": 8,
-    "headline": "Nearly 70% of workers use AI regularly now – but many get no time to upskill",
-    "link": "https://www.zdnet.com/innovation/workera-study-ai-skills-upskilling-2026/",
-    "score": 74,
-    "reason": "Large statistical finding with workplace adoption implications"
+    "headline": "AT&T Is Automating Away Jobs—and Its Old Telecom Empire",
+    "link": "https://www.wired.com/story/atandt-is-automating-away-its-old-telecom-empire/",
+    "score": 76,
+    "reason": "Major company restructuring driven by AI automation - real economic impact"
   },
   {
     "rank": 9,
-    "headline": "Andreessen Horowitz is launching an ‘academy’ with no homework and partnerships with Palantir, Google, and Meta",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/998813/andreessen-horowitz-ai-academy",
-    "score": 72,
-    "reason": "Major initiative launch with multiple tier-1 company partnerships"
+    "headline": "AI Agents Are Becoming a New Malware Distribution Channel",
+    "link": "https://www.artificialintelligence-news.com/news/ai-agents-are-becoming-a-new-malware-distribution-channel/",
+    "score": 75,
+    "reason": "New threat vector identified - AI agents weaponized for cybercrime distribution"
   },
   {
     "rank": 10,
-    "headline": "OpenAI nabs key Patreon execs ahead of upcoming announcement",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/999249/openai-creators-patreon-execs-hire-sam-yam",
-    "score": 68,
-    "reason": "Major hiring news suggesting significant product announcement from OpenAI"
+    "headline": "The FAA Is Testing an AI-Powered Air Traffic Management Tool",
+    "link": "https://www.cnet.com/tech/services-and-software/the-faa-is-testing-an-ai-powered-air-traffic-management-tool/",
+    "score": 74,
+    "reason": "Government agency deployment of AI in critical infrastructure - safety implications"
   },
   {
     "rank": 11,
-    "headline": "McKinsey: Cheaper AI models, bigger AI bills",
-    "link": "https://fortune.com/2026/09/23/mckinsey-cheaper-ai-models-bigger-ai-bills-cfo/",
-    "score": 66,
-    "reason": "Industry analysis with paradoxical economic finding from major consulting firm"
+    "headline": "How brokerage Compass sold its 83,000 real estate agents on the use of AI",
+    "link": "https://fortune.com/2026/09/23/compass-ai-assistant-real-estate-agents/",
+    "score": 72,
+    "reason": "Large-scale enterprise AI adoption with concrete agent numbers"
   },
   {
     "rank": 12,
-    "headline": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005",
-    "link": "https://www.cryptocellar.org/bgac/the-mvueh-break.html",
-    "score": 65,
-    "reason": "Concrete capability demonstration with historical achievement angle"
+    "headline": "Anthropic and OpenAI roll out cheaper models in first release since call for slowdown",
+    "link": "https://www.cnbc.com/2026/09/22/anthropic-openai-cheaper-ai-models.html",
+    "score": 71,
+    "reason": "Competitive price war intensifies between leading labs - market shift"
   },
   {
     "rank": 13,
-    "headline": "Rabbit’s new AI agent doesn’t need an R1 to run",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/999094/rabbit-ai-agent-os3",
-    "score": 62,
-    "reason": "Product launch expanding accessibility of existing technology"
+    "headline": "Bernie Sanders proposes banning ‘superintelligence’ and putting violators in prison",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/999443/bernie-sanders-ai-superintelligence-ban-act",
+    "score": 70,
+    "reason": "Major political proposal for criminal penalties - significant regulatory shift attempt"
   },
   {
     "rank": 14,
-    "headline": "Claim up to $95 today from Apple’s Siri AI settlement – here’s how",
-    "link": "https://www.zdnet.com/business/claim-your-payout-now-from-apple-siri-ai-settlement/",
-    "score": 61,
-    "reason": "Legal action against major company with concrete financial impact"
+    "headline": "Rabbit Is Back, This Time With an AI Agent App",
+    "link": "https://www.wired.com/story/rabbit-r1-os3-jesse-lyu/",
+    "score": 68,
+    "reason": "Startup AI agent launch after previous pivot - market competition continues"
   },
   {
     "rank": 15,
-    "headline": "Ahead of Sam Altman's UN address, OpenAI proposes new ways to track AI misalignment risks",
-    "link": "https://www.axios.com/2026/09/21/openai-ai-safety-standards-us-china",
-    "score": 59,
-    "reason": "Safety framework proposal with governance implications"
+    "headline": "Disturbing Experiment Points to Dangers of Using AI Models Not Meant for Robotics",
+    "link": "https://www.cnet.com/tech/services-and-software/robot-ai-experiments-unsafe-commands-llms-robocurve/",
+    "score": 66,
+    "reason": "Experimental evidence of AI safety gaps in physical systems"
   },
   {
     "rank": 16,
-    "headline": "Multi-agent AI systems are taking over supply chain execution",
-    "link": "https://www.artificialintelligence-news.com/news/multi-agent-ai-systems-supply-chain-execution/",
-    "score": 57,
-    "reason": "Broad industry shift in major business sector"
+    "headline": "Qualcomm Wants You to Let AI Agents Spend Your Money",
+    "link": "https://www.cnet.com/tech/services-and-software/qualcomm-wants-you-to-let-ai-agents-spend-your-money-2/",
+    "score": 64,
+    "reason": "Major hardware company enabling autonomous financial transactions - market risk"
   },
   {
     "rank": 17,
-    "headline": "U.S.-China \"red telephone\" could bring a Cold War guardrail to AI",
-    "link": "https://www.axios.com/2026/09/22/trump-china-ai-hotline-xi-summit",
-    "score": 55,
-    "reason": "Major geopolitical development affecting AI governance"
+    "headline": "New Phishing Attack Promises Claude Max, but Steals Your Google Credentials Instead",
+    "link": "https://www.cnet.com/tech/services-and-software/claude-max-phishing/",
+    "score": 62,
+    "reason": "Active phishing campaign exploiting AI hype - emerging threat pattern"
   },
   {
     "rank": 18,
-    "headline": "AI Models Built From Rat Brains Just Got Closer to Reality",
-    "link": "https://www.wired.com/story/ai-models-built-from-rat-brains-are-about-to-become-a-reality/",
-    "score": 52,
-    "reason": "Breakthrough in novel AI architecture approaching commercialization"
+    "headline": "YouTube promises custom feeds and a lot more AI later this year",
+    "link": "https://arstechnica.com/gadgets/2026/09/youtube-promises-custom-feeds-and-a-lot-more-ai-later-this-year/",
+    "score": 60,
+    "reason": "Major platform roadmap expansion of AI features"
   },
   {
     "rank": 19,
-    "headline": "OpenAI wants to consult elite mathematicians about how to not fumble again",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel",
-    "score": 48,
-    "reason": "Organizational change addressing past failures at top AI company"
+    "headline": "AI labs are cutting model costs - and it could help them slow down safely",
+    "link": "https://www.axios.com/2026/09/23/price-war-pause-slowdown-ai-frontier",
+    "score": 58,
+    "reason": "Trend analysis of cost reduction strategy from major labs"
   },
   {
     "rank": 20,
-    "headline": "Cheap, powerful AI models are increasing usage, a bullish sign for the AI boom",
-    "link": "https://www.axios.com/2026/09/22/cheap-powerful-models-new-ai-frontier",
-    "score": 46,
-    "reason": "Market trend analysis with adoption implications"
+    "headline": "The Pope’s AI Guy Is Worried About ‘Cartel’ Behavior Among Big Labs",
+    "link": "https://www.wired.com/story/popes-ai-advisor-warns-of-cartel-behavior-big-labs/",
+    "score": 56,
+    "reason": "High-profile institutional voice raising concerns about lab coordination"
   }
 ]
