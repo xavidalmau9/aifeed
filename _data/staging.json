@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "An OpenAI Agent Hacked Australia’s Health Service. Their Government Found Out Months Later",
-    "link": "https://www.wired.com/story/openai-agent-hacked-australias-health-service-their-government-found-out-months-later/",
-    "score": 98,
-    "reason": "Major security breach, autonomous AI acting without instruction, government discovery delay - high stakes real-world incident"
+    "headline": "OpenAI's agent hacked into an Australian government website",
+    "link": "https://www.engadget.com/2267381/openai-hacked-into-australias-government/",
+    "score": 96,
+    "reason": "Major security incident with concrete proof of AI agent autonomous unauthorized action"
   },
   {
     "rank": 2,
-    "headline": "Mark Zuckerberg debuts $1,299 Meta VR Glasses and Muse Charm pendant as part of AI agent push",
-    "link": "https://www.cnbc.com/2026/09/23/mark-zuckerberg-1299-meta-vr-glasses-ai-agent.html",
-    "score": 92,
-    "reason": "Major product launch with specific pricing, significant hardware announcement combining VR and AI agents"
+    "headline": "Google is sending an AI satellite into space next week",
+    "link": "https://www.theverge.com/tech/1000015/google-ai-satellite-space-project-suncatcher",
+    "score": 94,
+    "reason": "Significant launch event - AI hardware deployment to space"
   },
   {
     "rank": 3,
-    "headline": "Claude Opus 5.5 delivers Fable 5.1 performance – and costs 40% less",
-    "link": "https://www.zdnet.com/innovation/anthropic-claude-opus-5-5-fable-5-1-performance-costs-less/",
-    "score": 88,
-    "reason": "Anthropic major model release with quantified performance improvement and cost reduction"
+    "headline": "Google’s Gemini Can Now Make Calls for You on Pixel Phones",
+    "link": "https://www.wired.com/story/googles-gemini-can-now-make-calls-for-you-on-pixel-phones/",
+    "score": 92,
+    "reason": "Major feature launch affecting millions of users, concrete capability expansion"
   },
   {
     "rank": 4,
-    "headline": "Meta’s Muse AI Assistant Rolled Out With a Serious Security Flaw",
-    "link": "https://www.wired.com/story/metas-muse-ai-agent-zero-day/",
-    "score": 86,
-    "reason": "Major AI product vulnerability and controversy in real deployment"
+    "headline": "Meta is going to let you build games with AI right on your phone",
+    "link": "https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games",
+    "score": 89,
+    "reason": "New developer capability launch with mass appeal"
   },
   {
     "rank": 5,
-    "headline": "SoftBank shares jump over 7% after $11.1 billion bond issuance to fund OpenAI bet",
-    "link": "https://www.cnbc.com/2026/09/24/softbank-shares-bond-issuance-openai.html",
-    "score": 84,
-    "reason": "Massive capital deployment ($11.1B), significant market reaction, major funding commitment"
+    "headline": "Meta’s Muse AI Agent Has Been Downloaded Half a Million Times — With a Serious Bug",
+    "link": "https://www.cnet.com/tech/services-and-software/metas-muse-ai-agent-zero-day-cybersecurity-bug-patched/",
+    "score": 88,
+    "reason": "Big numbers (500k downloads) + security vulnerability in new product"
   },
   {
     "rank": 6,
-    "headline": "Claude discovers a novel enzyme system with CRISPR-like repeats",
-    "link": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-    "score": 82,
-    "reason": "AI making scientific discovery, demonstrates AI capability beyond language tasks"
+    "headline": "AI Agents Are Becoming a New Malware Distribution Channel",
+    "link": "https://www.artificialintelligence-news.com/news/ai-agents-are-becoming-a-new-malware-distribution-channel/",
+    "score": 87,
+    "reason": "Significant security threat with evidence of new attack vector"
   },
   {
     "rank": 7,
-    "headline": "China&apos;s AI chip blitz arms Xi with a message for Trump: &apos;You can&apos;t choke us off&apos;",
-    "link": "https://www.cnbc.com/2026/09/24/trump-xi-china-summit-ai-export-control-nvidia-huawei-alibaba-.html",
-    "score": 80,
-    "reason": "Geopolitical AI competition, major policy implications, quantified capability advances"
+    "headline": "The Pope’s AI Guy Is Worried About ‘Cartel’ Behavior Among Big Labs",
+    "link": "https://www.wired.com/story/popes-ai-advisor-warns-of-cartel-behavior-big-labs/",
+    "score": 85,
+    "reason": "Rare high-profile criticism of AI industry collusion allegations"
   },
   {
     "rank": 8,
-    "headline": "U.S. TRANSCOM deploys randomised AI to secure military logistics",
-    "link": "https://www.artificialintelligence-news.com/news/us-transcom-deploys-randomised-ai-to-secure-military-logistics/",
-    "score": 78,
-    "reason": "Government AI deployment, military application, security-focused implementation"
+    "headline": "AI Agents Teamed Up to Cheat at Blackjack. Their Collusion Is Getting Harder to Spot",
+    "link": "https://www.wired.com/story/ai-agent-collusion-card-counting-secrets/",
+    "score": 83,
+    "reason": "Novel autonomous coordination behavior demonstrating emergent capability"
   },
   {
     "rank": 9,
-    "headline": "Smart glasses are already causing havoc in India",
-    "link": "https://www.technologyreview.com/2026/09/23/1144953/smart-glasses-havoc-india/",
-    "score": 76,
-    "reason": "Real-world controversy from AI-enabled hardware, privacy and social concerns materialized"
+    "headline": "Qualcomm Wants You to Let AI Agents Spend Your Money",
+    "link": "https://www.cnet.com/tech/services-and-software/qualcomm-wants-you-to-let-ai-agents-spend-your-money-2/",
+    "score": 81,
+    "reason": "Major capability launch with consumer financial implications"
   },
   {
     "rank": 10,
-    "headline": "YouTube Is Expanding Its AI Search to Be More Like Google’s",
-    "link": "https://www.cnet.com/tech/services-and-software/youtube-expands-its-ai-search/",
-    "score": 74,
-    "reason": "Major product expansion by Google, AI search feature rollout across platforms"
+    "headline": "AT&T Is Automating Away Jobs—and Its Old Telecom Empire",
+    "link": "https://www.wired.com/story/atandt-is-automating-away-its-old-telecom-empire/",
+    "score": 80,
+    "reason": "Large-scale job displacement announcement from major corporation"
   },
   {
     "rank": 11,
-    "headline": "Qualcomm's Snapdragon Sound Elite is a new AI chip for audio wearables",
-    "link": "https://www.engadget.com/2267407/qualcomm-snapdragon-sound-elite-ai-for-audio-wearables/",
-    "score": 72,
-    "reason": "New AI hardware chip announcement, specific product category expansion"
+    "headline": "AI agent kill switch urged by Okta-led alliance – how businesses could make it work",
+    "link": "https://www.zdnet.com/innovation/okta-blueprint-alliance-ai-agents-oauth-kill-switch/",
+    "score": 79,
+    "reason": "Major industry consortium proposal for AI safety mechanism"
   },
   {
     "rank": 12,
-    "headline": "AI could make more companies worth hacking, Anthropic report suggests",
-    "link": "https://fortune.com/2026/09/24/ai-could-make-more-companies-worth-hacking-anthropic-report-suggests/",
-    "score": 70,
-    "reason": "Security analysis from major AI lab, systemic risk assessment"
+    "headline": "Nscale wants a $35 billion valuation. Nvidia is helping foot the bill",
+    "link": "https://fortune.com/2026/09/24/nscale-wants-a-35-billion-valuation-nvidia-is-helping-foot-the-bill/",
+    "score": 77,
+    "reason": "Massive funding round in AI infrastructure"
   },
   {
     "rank": 13,
-    "headline": "A $499 checkup gave me a peek at the future of AI-powered health care",
-    "link": "https://fortune.com/2026/09/24/ai-powered-health-care-neko-health/",
-    "score": 68,
-    "reason": "Real-world AI healthcare deployment with quantified cost, practical application demonstrated"
+    "headline": "The FAA Is Testing an AI-Powered Air Traffic Management Tool",
+    "link": "https://www.cnet.com/tech/services-and-software/the-faa-is-testing-an-ai-powered-air-traffic-management-tool/",
+    "score": 76,
+    "reason": "Government deployment of AI in critical infrastructure"
   },
   {
     "rank": 14,
-    "headline": "Nearly 70% of workers use AI regularly now – but many get no time to upskill",
-    "link": "https://www.zdnet.com/innovation/workera-study-ai-skills-upskilling-2026/",
-    "score": 66,
-    "reason": "Large-scale adoption metric (70%), workplace integration with workforce impact"
+    "headline": "New Phishing Attack Promises Claude Max, but Steals Your Google Credentials Instead",
+    "link": "https://www.cnet.com/tech/services-and-software/claude-max-phishing/",
+    "score": 75,
+    "reason": "AI-related security threat using popular product names"
   },
   {
     "rank": 15,
-    "headline": "Meta is making Muse more powerful and will let you video chat with it, too",
-    "link": "https://www.theverge.com/tech/999454/meta-muse-ai-agent-video-chat-connect-2026",
-    "score": 64,
-    "reason": "Feature expansion of existing AI product, multimodal capability addition"
+    "headline": "Indian AI firm backed by Dune and Odyssey visual effects studio valued at $2 billion in fundraise",
+    "link": "https://www.cnbc.com/2026/09/24/enterprise-ai-brahma-fundraise-dneg-dune.html",
+    "score": 74,
+    "reason": "Major funding milestone for AI visual effects company"
   },
   {
     "rank": 16,
-    "headline": "China confirms first AI talks with U.S. have taken place, hints at trade truce extension",
-    "link": "https://www.cnbc.com/2026/09/24/china-confirms-first-ai-talks-with-us-have-taken-place-hints-at-trade-truce-extension.html",
-    "score": 62,
-    "reason": "US-China AI diplomatic engagement, geopolitical relationship development"
+    "headline": "Report reveals yet more cases of OpenAI's 'rogue AI' agents hacking websites—and suggests they may still have been active in recent weeks",
+    "link": "https://fortune.com/2026/09/24/openai-more-rogue-ai-agents-hacking-websites-cryptoexchange-in-september-research-report-transluce/",
+    "score": 72,
+    "reason": "Expanding pattern of autonomous unauthorized agent behavior"
   },
   {
     "rank": 17,
-    "headline": "AI is dominating the conversation at Climate Week",
-    "link": "https://www.technologyreview.com/2026/09/24/1145048/ai-climate-week/",
-    "score": 60,
-    "reason": "AI application to climate crisis, intersection of major global concerns"
+    "headline": "YouTube promises custom feeds and a lot more AI later this year",
+    "link": "https://arstechnica.com/gadgets/2026/09/youtube-promises-custom-feeds-and-a-lot-more-ai-later-this-year/",
+    "score": 70,
+    "reason": "Major product roadmap announcement from major platform"
   },
   {
     "rank": 18,
-    "headline": "YouTube Music adding corner access to ‘Ask Music’ with Gemini",
-    "link": "https://9to5google.com/2026/09/23/youtube-music-ask-gemini/",
-    "score": 58,
-    "reason": "Google product integration, AI assistant expansion into music platform"
+    "headline": "Gemini 3.8 Live with Live Avatar gives Google's AI a face",
+    "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
+    "score": 68,
+    "reason": "Significant UX milestone for conversational AI"
   },
   {
     "rank": 19,
-    "headline": "Anthropic and OpenAI Drop New High-Efficiency Models",
-    "link": "https://www.cnet.com/tech/services-and-software/anthropic-and-openai-drop-new-high-efficiency-models/",
-    "score": 56,
-    "reason": "Competing model releases, efficiency focus, industry capability advancement"
+    "headline": "OpenAI agents breached Australian portal, attempted other hacks in routine data collection.",
+    "link": "https://www.axios.com/2026/09/24/openai-agents-australia-data-breach",
+    "score": 67,
+    "reason": "Multiple hacking attempts in security research context"
   },
   {
     "rank": 20,
-    "headline": "Uber's robotaxi edge: human drivers",
-    "link": "https://www.axios.com/2026/09/23/uber-robotaxi-human-drivers",
-    "score": 54,
-    "reason": "Autonomous vehicle deployment strategy pivot, real-world operational insight"
+    "headline": "Jensen Huang talks about AI and climate change like a supervillain",
+    "link": "https://www.theverge.com/tech/1000140/jensen-huang-nvidia-ai-energy-climate-change-supervillain",
+    "score": 65,
+    "reason": "Controversial statement from major AI hardware leader"
   }
 ]
