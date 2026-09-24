@@ -1,5 +1,24 @@
 [
  {
+  "id": "meta-1299-vr-glasses-ai-agents-20260924",
+  "slug": "meta-1299-vr-glasses-ai-agents",
+  "headline": "Meta's $1,299 Bet: VR Glasses Run by AI Agents",
+  "summary": "Zuckerberg unveiled $1,299 VR glasses and a Muse pendant built around AI agents — betting wearable assistants, not phones, are the next computing platform.",
+  "body": "<p>Meta just put a $1,299 price tag on new VR glasses paired with an AI-agent strategy — and it signals a fundamental shift in how tech companies view the next computing platform.</p><p>Zuckerberg unveiled the glasses alongside the Muse Charm pendant, positioning both as vehicles for practical AI agents that execute tasks, manage information, and act as personal assistants — not just gaming or metaverse hardware. It's a reimagining of human-computer interaction at scale.</p><p>The business case is clear: as smartphones plateau, Meta is betting AI agents become the next essential interface. Bundling hardware with sophisticated AI creates ecosystem lock-in — early adopters don't just buy glasses, they adopt an AI-powered lifestyle centered on Meta's platform.</p><p>It also shows leading firms now see hardware-software convergence as critical to AI deployment — AI becoming embodied in wearables and spatial computing rather than living only in the cloud or on phones. New opportunities for developers, new privacy questions for users.</p><p>The real question isn't whether the glasses succeed — it's whether Meta can make AI agents genuinely useful enough to justify the price.</p>",
+  "category": "Hardware",
+  "hashtags": [
+   "AIAgents",
+   "VirtualReality",
+   "Metaverse",
+   "WearableTech",
+   "Meta"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_meta_1299_vr_glasses_ai_agents_20260924.png",
+  "sourceUrl": "https://www.cnbc.com/2026/09/23/mark-zuckerberg-1299-meta-vr-glasses-ai-agent.html",
+  "publishedAt": "2026-09-24T11:00:00-04:00",
+  "isVideo": false
+ },
+ {
   "id": "california-ai-datacenter-energy-water-rules-20260923",
   "slug": "california-ai-datacenter-energy-water-rules",
   "headline": "California Caps AI Data Centers' Energy and Water Use",
