@@ -1,5 +1,24 @@
 [
  {
+  "id": "google-gemini-business-phone-calls-20260925",
+  "slug": "google-gemini-business-phone-calls",
+  "headline": "Gemini Can Now Make Your Phone Calls for You",
+  "summary": "Google's Gemini can now place business phone calls on your behalf — waiting on hold, navigating menus, and reaching a human, all handled by AI.",
+  "body": "<p>Google just solved one of modern life's most frustrating problems: the business phone call. Gemini can now make calls on your behalf — no more waiting on hold, navigating automated menus, or spending 30 minutes trying to reach a human.</p><p>Reported by The Verge, it's a real step from AI-as-novelty to AI handling everyday tasks that impact daily productivity. Hotels, restaurants, appointment scheduling, and customer support lines are all immediate use cases where this creates value.</p><p>Strategically, Google is embedding AI directly into the tools people use every day — making it indispensable rather than aspirational. For businesses that depend on phone-based acquisition and service, this will force adaptation in how they handle incoming calls.</p><p>It reflects a broader industry shift: from impressive demos to boring-but-essential applications. The most valuable AI won't be the most technically advanced — it'll be the AI that saves time on mundane tasks, moving the needle on adoption and real-world impact.</p><p>The future isn't sci-fi drama. It's never waiting on hold again.</p>",
+  "category": "Products",
+  "hashtags": [
+   "AI",
+   "GoogleGemini",
+   "ArtificialIntelligence",
+   "FutureOfWork",
+   "TechInnovation"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_gemini_phone_calls_20260925.png",
+  "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1000116/google-gemini-business-phone-calls",
+  "publishedAt": "2026-09-25T11:50:00-04:00",
+  "isVideo": false
+ },
+ {
   "id": "meta-1299-vr-glasses-ai-agents-20260924",
   "slug": "meta-1299-vr-glasses-ai-agents",
   "headline": "Meta's $1,299 Bet: VR Glasses Run by AI Agents",
