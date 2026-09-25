@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "An OpenAI Agent Hacked Australia’s Health Service. Their Government Found Out Months Later",
-    "link": "https://www.wired.com/story/openai-agent-hacked-australias-health-service-their-government-found-out-months-later/",
-    "score": 96,
-    "reason": "Major security breach with real-world impact; government discovery delay adds severity"
+    "headline": "Australia Says an OpenAI Agent Hacked Into a Government Health Site",
+    "link": "https://www.cnet.com/tech/services-and-software/australia-government-health-site-openai-agent-hack/",
+    "score": 98,
+    "reason": "Major security breach, real incident, big controversy"
   },
   {
     "rank": 2,
-    "headline": "Mark Zuckerberg debuts $1,299 Meta VR Glasses and Muse Charm pendant as part of AI agent push",
-    "link": "https://www.cnbc.com/2026/09/23/mark-zuckerberg-1299-meta-vr-glasses-ai-agent.html",
-    "score": 93,
-    "reason": "Significant product launch with specific pricing; major consumer AI device market entry"
+    "headline": "Appeals Court Lets the Pentagon Designate Anthropic a Supply-Chain Risk",
+    "link": "https://www.wired.com/story/appeals-court-lets-the-pentagon-designate-anthropic-a-supply-chain-risk/",
+    "score": 96,
+    "reason": "Significant regulatory action, binding court decision, Anthropic impact"
   },
   {
     "rank": 3,
-    "headline": "Gemini can now call businesses for you so you don’t have to wait on hold",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1000116/google-gemini-business-phone-calls",
-    "score": 88,
-    "reason": "Google major feature launch; practical AI capability deployment"
+    "headline": "Microsoft thinks its new Copilot ‘super app’ will be as influential as Office",
+    "link": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
+    "score": 94,
+    "reason": "Major product launch, bold claim from major company, clear business stakes"
   },
   {
     "rank": 4,
-    "headline": "Meta’s Muse AI Assistant Rolled Out With a Serious Security Flaw",
-    "link": "https://www.wired.com/story/metas-muse-ai-agent-zero-day/",
-    "score": 85,
-    "reason": "Major security vulnerability in new product; concrete technical issue"
+    "headline": "Sony and UMG are suing Suno again",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1000758/suno-sony-umg-lawsuit-ai-music",
+    "score": 92,
+    "reason": "Major copyright lawsuit, high-stakes controversy, music industry impact"
   },
   {
     "rank": 5,
-    "headline": "The Pentagon wants $30 million to build an AI-powered lie detector",
-    "link": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/",
-    "score": 84,
-    "reason": "Specific budget allocation; government AI application with controversy potential"
+    "headline": "Google’s Gemini Can Now Make Calls for You on Pixel Phones",
+    "link": "https://www.wired.com/story/googles-gemini-can-now-make-calls-for-you-on-pixel-phones/",
+    "score": 90,
+    "reason": "Significant product feature launch, major tech player, new capability"
   },
   {
     "rank": 6,
-    "headline": "Muse will apparently let you download its entire filesystem",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
-    "score": 82,
-    "reason": "Critical security flaw with concrete technical implications"
+    "headline": "Gemini 3.8 Live with Live Avatar gives Google's AI a face",
+    "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
+    "score": 88,
+    "reason": "Major feature launch, visible technology advancement, Google's push"
   },
   {
     "rank": 7,
-    "headline": "Nearly 70% of workers use AI regularly now – but many get no time to upskill",
-    "link": "https://www.zdnet.com/innovation/workera-study-ai-skills-upskilling-2026/",
-    "score": 80,
-    "reason": "Large statistical finding (70%); workforce impact data"
+    "headline": "How to stop Meta training its AI models on your smart glasses' visual data",
+    "link": "https://www.engadget.com/2269454/how-to-stop-meta-training-its-ai-models-on-your-smart-glasses-visual-data/",
+    "score": 86,
+    "reason": "Major privacy controversy, consumer impact, Ray-Ban Meta glasses"
   },
   {
     "rank": 8,
-    "headline": "Google is sending a teensy-tiny AI data center to space",
-    "link": "https://www.engadget.com/2267975/google-is-sending-a-teensy-tiny-ai-data-center-to-space/",
-    "score": 78,
-    "reason": "Novel infrastructure launch; significant technical milestone"
+    "headline": "One company is at the center of a wave of rogue AI attacks",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
+    "score": 84,
+    "reason": "Security breach pattern, identifies culprit, active threat"
   },
   {
     "rank": 9,
-    "headline": "'I can't believe it's already broken': Samsung customers are complaining to the company over spoiled food after an update bricked AI smart fridges",
-    "link": "https://fortune.com/2026/09/25/samsung-customers-complain-spoiled-food-after-update-bricked-ai-smart-fridges/",
-    "score": 76,
-    "reason": "Product failure with consumer impact; AI integration gone wrong"
+    "headline": "Bill Gates warns AI is powerful enough to cause \"a billion deaths\"",
+    "link": "https://www.axios.com/2026/09/25/bill-gates-ai-deaths-doom",
+    "score": 82,
+    "reason": "Major figure, extreme prediction, significant controversy"
   },
   {
     "rank": 10,
-    "headline": "China&apos;s Xi urges U.S. to cooperate on AI",
-    "link": "https://www.cnbc.com/2026/09/25/chinas-xi-urges-us-to-cooperate-on-ai.html",
-    "score": 75,
-    "reason": "High-level geopolitical AI diplomacy statement"
+    "headline": "Microsoft's Copilot app adds Office, natural coding and automation",
+    "link": "https://www.engadget.com/2268096/microsofts-copilot-app-adds-office-natural-coding-and-automation/",
+    "score": 80,
+    "reason": "Major feature expansion, Microsoft integration, business capability"
   },
   {
     "rank": 11,
-    "headline": "Robots make combat airdrops, clear mines as Ukraine defeats Russian pincer",
-    "link": "https://arstechnica.com/gadgets/2026/09/robots-make-combat-airdrops-clear-mines-as-ukraine-defeats-russian-pincer/",
-    "score": 74,
-    "reason": "Real-world military AI deployment with concrete outcomes"
+    "headline": "Meta is going to let you build games with AI right on your phone",
+    "link": "https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games",
+    "score": 78,
+    "reason": "New product capability, consumer-facing, Meta's AI push"
   },
   {
     "rank": 12,
-    "headline": "New York City writes bill to rein in AI while insisting it wants to be the ‘AI capital of the world’",
-    "link": "https://fortune.com/2026/09/25/new-york-city-council-speaker-ai-regulation-bills-openai-anthropic/",
-    "score": 72,
-    "reason": "Regulatory action with contradiction; major jurisdiction moving on AI"
+    "headline": "Meta’s New AI Device Is This Tamagotchi-Like Muse Charm Keychain",
+    "link": "https://www.cnet.com/tech/services-and-software/meta-connect-muse-charm-ai-keychain-announcement/",
+    "score": 76,
+    "reason": "New hardware launch, consumer device, unique form factor"
   },
   {
     "rank": 13,
-    "headline": "Google says Gemini 4 release is coming 'as soon as possible'",
-    "link": "https://9to5google.com/2026/09/24/google-says-gemini-4-release-is-coming-as-soon-as-possible/",
-    "score": 70,
-    "reason": "Major model release announcement from Google"
+    "headline": "Microsoft unveils Copilot super app, targeting business users with AI agents",
+    "link": "https://fortune.com/2026/09/25/microsoft-unveils-copilot-super-app-targeting-business-users-with-ai-agents/",
+    "score": 74,
+    "reason": "Major product announcement, business focus, Microsoft strategy"
   },
   {
     "rank": 14,
-    "headline": "Scoop: Trump allies open new front on Anthropic CEO as face of AI \"doomerism\"",
-    "link": "https://www.axios.com/2026/09/24/trump-anthropic-ai-doomerism-dario-amodei",
-    "score": 68,
-    "reason": "Political controversy targeting major AI company leadership"
+    "headline": "Can Apple Home’s AI camera features outsmart Amazon’s and Google’s? I put them to the test",
+    "link": "https://www.theverge.com/tech/1000321/apple-intelligence-home-security-camera-amazon-ring-alexa-google-nest-gemini-home-review",
+    "score": 72,
+    "reason": "Major product comparison, Apple entry, competitive launch"
   },
   {
     "rank": 15,
-    "headline": "AI's never-before-seen capital grab",
-    "link": "https://www.axios.com/2026/09/24/ai-private-credit-capital-grab",
-    "score": 66,
-    "reason": "Major funding/investment trends in AI sector"
+    "headline": "Inside China's mind on AI",
+    "link": "https://www.axios.com/2026/09/24/china-ai-plan-trump-xi-visit",
+    "score": 70,
+    "reason": "Geopolitical perspective, major market analysis, strategic implications"
   },
   {
     "rank": 16,
-    "headline": "AI is dominating the conversation at Climate Week",
-    "link": "https://www.technologyreview.com/2026/09/24/1145048/ai-climate-week/",
-    "score": 64,
-    "reason": "AI integration into major global initiative"
+    "headline": "‘Our industry sees the risks and is concerned’: European tech leaders join calls for AI slowdown",
+    "link": "https://fortune.com/2026/09/25/our-industry-sees-the-risks-and-is-concerned-europe-tech-leaders-join-calls-for-ai-slowdown/",
+    "score": 68,
+    "reason": "Industry-wide concern, regulatory pressure, major companies joining"
   },
   {
     "rank": 17,
-    "headline": "YouTube Is Expanding Its AI Search to Be More Like Google’s",
-    "link": "https://www.cnet.com/tech/services-and-software/youtube-expands-its-ai-search/",
-    "score": 62,
-    "reason": "Major platform feature expansion from Google subsidiary"
+    "headline": "AI agent kill switch urged by Okta-led alliance – how businesses could make it work",
+    "link": "https://www.zdnet.com/innovation/okta-blueprint-alliance-ai-agents-oauth-kill-switch/",
+    "score": 66,
+    "reason": "Safety initiative, business coalition, practical framework"
   },
   {
     "rank": 18,
-    "headline": "The vibes are bad for Flock in Washington",
-    "link": "https://www.theverge.com/policy/1000005/flock-senate-hearing",
-    "score": 58,
-    "reason": "AI startup facing regulatory/political headwinds"
+    "headline": "Muse sure looks a lot like OpenClaw",
+    "link": "https://www.theverge.com/report/1000180/muse-openclaw-instinct-lookalike",
+    "score": 64,
+    "reason": "Meta copying allegation, product controversy, IP questions"
   },
   {
     "rank": 19,
-    "headline": "Qualcomm announces Snapdragon Sound Elite Gen 2 for AI 'hearables,' even ones with cameras",
-    "link": "https://9to5google.com/2026/09/23/qualcomm-announces-snapdragon-sound-elite-gen-2/",
-    "score": 56,
-    "reason": "Hardware chipset launch for AI devices"
+    "headline": "OpenAI agents breached Australian portal, attempted other hacks in routine data collection.",
+    "link": "https://www.axios.com/2026/09/24/openai-agents-australia-data-breach",
+    "score": 62,
+    "reason": "Security incident, multiple attempts, OpenAI responsibility"
   },
   {
     "rank": 20,
-    "headline": "\"We have a choice\": AI leaders sound alarm at UN",
-    "link": "https://www.axios.com/2026/09/23/ai-leaders-un-security-council-global-safeguards",
-    "score": 54,
-    "reason": "High-profile AI industry warning at major international forum"
+    "headline": "I Think I Found an AI Agent Worth the Risk",
+    "link": "https://www.wired.com/story/i-finally-found-an-ai-agent-worth-the-risk/",
+    "score": 60,
+    "reason": "AI agent utility assessment, practical evaluation, emerging category"
   }
 ]
