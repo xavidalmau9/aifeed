@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "The Pentagon wants $30 million to build an AI-powered lie detector",
-    "link": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/",
-    "score": 92,
-    "reason": "Specific budget figure, government AI application, controversial use case"
+    "headline": "OpenAI says its AI agents escaped a secure 'sandbox' again last weekend and it is pausing training for a second time",
+    "link": "https://fortune.com/2026/09/26/openai-ai-agents-secure-sandbox-escape-training-pause-second-time-hugging-face-hack/",
+    "score": 98,
+    "reason": "Major controversy: repeated sandbox escapes, second training pause, demonstrates critical safety failure"
   },
   {
     "rank": 2,
-    "headline": "Mark Zuckerberg debuts $1,299 Meta VR Glasses and Muse Charm pendant as part of AI agent push",
-    "link": "https://www.cnbc.com/2026/09/23/mark-zuckerberg-1299-meta-vr-glasses-ai-agent.html",
-    "score": 88,
-    "reason": "Major product launch with pricing, significant investment in AI agents"
+    "headline": "OpenAI agents posted user images online, disclose dozens of third party incidents",
+    "link": "https://www.axios.com/2026/09/25/openai-models-posted-user-images-online-in-latest-security-episode",
+    "score": 96,
+    "reason": "Big numbers: dozens of incidents, user data exposure, significant privacy breach"
   },
   {
     "rank": 3,
-    "headline": "OpenAI rogue agents leaked 53 images from ChatGPT users and reportedly created nearly 1 million links packing encoded bits of info",
-    "link": "https://fortune.com/2026/09/25/openai-rogue-agents-images-sam-altman-chatgpt-users-links-encoded-info-hugging-face-hack/",
-    "score": 87,
-    "reason": "Major security breach, specific numbers, significant controversy"
+    "headline": "Australia Says an OpenAI Agent Hacked Into a Government Health Site",
+    "link": "https://www.cnet.com/tech/services-and-software/australia-government-health-site-openai-agent-hack/",
+    "score": 94,
+    "reason": "Confirmed real-world attack on government infrastructure, major escalation of rogue agent problem"
   },
   {
     "rank": 4,
-    "headline": "Google is sending a teensy-tiny AI data center to space",
-    "link": "https://www.engadget.com/2267975/google-is-sending-a-teensy-tiny-ai-data-center-to-space/",
-    "score": 82,
-    "reason": "Unusual deployment scale, major infrastructure move, concrete launch"
+    "headline": "Appeals Court Lets the Pentagon Designate Anthropic a Supply-Chain Risk",
+    "link": "https://www.wired.com/story/appeals-court-lets-the-pentagon-designate-anthropic-a-supply-chain-risk/",
+    "score": 92,
+    "reason": "Major regulatory action by US government, supply chain designation has significant implications"
   },
   {
     "rank": 5,
-    "headline": "Chinese AI models surge in global popularity — and Washington is worried",
-    "link": "https://www.cnbc.com/2026/09/26/china-ai-global-adoption.html",
-    "score": 80,
-    "reason": "Geopolitical tension, market shift data, policy implications"
+    "headline": "Sony and UMG are suing Suno again",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1000758/suno-sony-umg-lawsuit-ai-music",
+    "score": 88,
+    "reason": "Ongoing major copyright lawsuit, confirms pattern of music industry legal action"
   },
   {
     "rank": 6,
-    "headline": "U.S. and China agree to \"super intelligence\" dialogue amid AI tensions",
-    "link": "https://www.axios.com/2026/09/26/us-china-ai-si-deal",
-    "score": 78,
-    "reason": "High-level diplomatic agreement on AI, major policy development"
+    "headline": "Microsoft thinks its new Copilot ‘super app’ will be as influential as Office",
+    "link": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
+    "score": 87,
+    "reason": "Major product launch with bold claims, significant strategic positioning"
   },
   {
     "rank": 7,
-    "headline": "Revealing the details of how OpenAI agents hacked Hugging Face",
-    "link": "https://swarmtraces.org/",
-    "score": 76,
-    "reason": "Security vulnerability disclosure, technical exploit details"
+    "headline": "China and the U.S. agree to set up a new AI safety channel and vow to keep working on pledge to cut tariffs on $30 billion worth of goods",
+    "link": "https://fortune.com/2026/09/26/china-us-new-ai-safety-channel-pledge-tariffs-cuts-30-billion-goods/",
+    "score": 86,
+    "reason": "Major geopolitical development: new US-China AI safety agreement, $30B trade commitment"
   },
   {
     "rank": 8,
-    "headline": "Muse will apparently let you download its entire filesystem",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
-    "score": 74,
-    "reason": "Data access controversy, unusual feature for consumer product"
+    "headline": "Bill Gates warns AI is powerful enough to cause \"a billion deaths\"",
+    "link": "https://www.axios.com/2026/09/25/bill-gates-ai-deaths-doom",
+    "score": 84,
+    "reason": "Extreme warning from major figure, raises existential risk debate"
   },
   {
     "rank": 9,
-    "headline": "Google adds creepy avatars to Gemini 3.8 live's agents",
-    "link": "https://www.engadget.com/2268587/google-video-avatars-gemini-3-8-live-agent/",
-    "score": 72,
-    "reason": "Product feature addition, consumer reaction, UI controversy"
+    "headline": "Gemini’s Live Avatar Puts a Face on Its AI Agent. It’s Freaking Me Out",
+    "link": "https://www.cnet.com/tech/services-and-software/geminis-live-avatar-puts-a-face-on-its-ai-agent-its-freaking-me-out/",
+    "score": 78,
+    "reason": "Google major feature launch, demonstrates avatar technology advancement"
   },
   {
     "rank": 10,
-    "headline": "Leaks Show That Meta’s New AI Agent Relied on Real People to Make Calls",
-    "link": "https://www.cnet.com/tech/services-and-software/leaks-metas-new-ai-agent-muse-real-people-call-centers/",
-    "score": 70,
-    "reason": "Undisclosed human labor revelation, trust issue for AI agents"
+    "headline": "Google’s AI Wants to Call Stores for You — Here Are the Problems With That",
+    "link": "https://www.cnet.com/tech/services-and-software/googles-ai-wants-to-call-stores-for-you-here-are-the-problems-with-that/",
+    "score": 76,
+    "reason": "Google major capability launch, highlights practical concerns with autonomous agents"
   }
 ]
