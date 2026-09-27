@@ -1,86 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI pauses training of its ‘most capable models’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
+    "headline": "OpenAI agents tried to ‘bruteforce’ a UN website",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
     "score": 92,
-    "reason": "Major operational decision by leading AI company; significant business impact"
+    "reason": "Major security incident with real-world consequences; autonomous agent misbehavior; significant controversy"
   },
   {
     "rank": 2,
-    "headline": "OpenAI expands review of model behavior after more rogue agent incidents emerge",
-    "link": "https://www.cnbc.com/2026/09/26/openai-agent-model-behavior-review.html",
-    "score": 88,
-    "reason": "Escalating controversy with quantified incidents; safety concern trend"
+    "headline": "OpenAI agents posted user images online, disclose dozens of third party incidents",
+    "link": "https://www.axios.com/2026/09/25/openai-models-posted-user-images-online-in-latest-security-episode",
+    "score": 90,
+    "reason": "Concrete security breach with quantified impact (dozens of incidents); privacy violation; major controversy"
   },
   {
     "rank": 3,
-    "headline": "One company is at the center of a wave of rogue AI attacks",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
+    "headline": "Scoop: Anthropic's Dario Amodei to have White House dinner with Trump",
+    "link": "https://www.axios.com/2026/09/27/anthropic-trump-dario-amodei-dinner-invite",
     "score": 85,
-    "reason": "Concrete controversy with measurable incident wave; security crisis"
+    "reason": "High-profile political development; major AI company leadership access to power"
   },
   {
     "rank": 4,
-    "headline": "Scoop: Top AI companies probing tens of thousands of security incidents",
-    "link": "https://www.axios.com/2026/09/26/openai-anthropic-thousands-ai-security-incidents",
-    "score": 84,
-    "reason": "Big numbers (tens of thousands); multiple companies; breaking news format"
+    "headline": "Meta’s Muse Is Adults-Only. Why Does It Look Like a Kids’ Toy?",
+    "link": "https://www.wired.com/story/meta-muse-is-adults-only-why-does-it-look-like-a-cute-kids-toy/",
+    "score": 78,
+    "reason": "Controversy around product design and age-appropriateness; significant product launch"
   },
   {
     "rank": 5,
-    "headline": "Chinese AI models surge in global popularity — and Washington is worried",
-    "link": "https://www.cnbc.com/2026/09/26/china-ai-global-adoption.html",
-    "score": 81,
-    "reason": "Geopolitical significance; quantified trend; established controversy"
+    "headline": "Debt-hungry AI companies face increased risk as bond yields spike",
+    "link": "https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html",
+    "score": 75,
+    "reason": "Major financial/structural risk to AI industry; big numbers in funding implications"
   },
   {
     "rank": 6,
-    "headline": "U.S. and China agree to \"super intelligence\" dialogue amid AI tensions",
-    "link": "https://www.axios.com/2026/09/26/us-china-ai-si-deal",
-    "score": 79,
-    "reason": "Major diplomatic development; direct US-China AI agreement"
+    "headline": "Bill Gates says it's 'completely irresponsible' for AI to not have safeguards",
+    "link": "https://www.engadget.com/2270166/bill-gates-says-that-its-completely-irresponsible-for-ai-to-not-have-safeguards/",
+    "score": 72,
+    "reason": "High-profile critique of industry safety practices; controversy from influential figure"
   },
   {
     "rank": 7,
-    "headline": "Microsoft’s new Copilot app puts everything in one place – but the price is ‘evolving’",
-    "link": "https://www.zdnet.com/innovation/microsoft-new-copilot-unified-ai-app/",
-    "score": 76,
-    "reason": "Product launch with pricing controversy; major company announcement"
+    "headline": "Gemini app replacing Gems with skills in November",
+    "link": "https://9to5google.com/2026/09/27/gemini-gems-skills/",
+    "score": 68,
+    "reason": "Google product launch/feature change; significant product update"
   },
   {
     "rank": 8,
-    "headline": "Leaks Show That Meta’s New AI Agent Relied on Real People to Make Calls",
-    "link": "https://www.cnet.com/tech/services-and-software/leaks-metas-new-ai-agent-muse-real-people-call-centers/",
-    "score": 74,
-    "reason": "Significant product revelation; labor/ethics controversy"
+    "headline": "Humanoid robots are getting even creepier (this one can cry on command)",
+    "link": "https://www.engadget.com/2266933/humanoid-robot-cries-on-command/",
+    "score": 65,
+    "reason": "Tangible robotics advancement; emotional capability demonstration"
   },
   {
     "rank": 9,
-    "headline": "Can Cloudflare CEO Matthew Prince save the web from AI?",
-    "link": "https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising",
-    "score": 68,
-    "reason": "Notable figure addressing systemic AI concern; infrastructure perspective"
+    "headline": "Why letting Claude clean your TV's bloatware isn't the best idea",
+    "link": "https://www.engadget.com/2267074/why-claude-cleaning-tv-bloatware-not-best-idea/",
+    "score": 58,
+    "reason": "Real-world safety issue with deployed AI agent; practical concern"
   },
   {
     "rank": 10,
-    "headline": "Why NVIDIA's most powerful GPU is so rarely sold to consumers",
-    "link": "https://www.engadget.com/2265946/why-most-powerful-nvidia-gpu-rarely-sold-to-consumers/",
-    "score": 67,
-    "reason": "Quantified supply constraint; major AI infrastructure story"
-  },
-  {
-    "rank": 11,
-    "headline": "Her school blocked ChatGPT. Now this 17-year-old high school senior runs an AI startup with 1,000 users",
-    "link": "https://fortune.com/2026/09/27/17-year-old-ai-founder-banned-in-school/",
-    "score": 65,
-    "reason": "Concrete numbers; human interest with AI adoption angle"
-  },
-  {
-    "rank": 12,
-    "headline": "Can Apple Home’s AI camera features outsmart Amazon’s and Google’s? I put them to the test",
-    "link": "https://www.theverge.com/tech/1000321/apple-intelligence-home-security-camera-amazon-ring-alexa-google-nest-gemini-home-review",
-    "score": 62,
-    "reason": "Product launch comparison; competitive AI feature analysis"
+    "headline": "Gemini Live vs. ChatGPT Voice: Which AI offers a more natural conversation?",
+    "link": "https://www.engadget.com/2266889/gemini-live-vs-gpt-live-which-offers-more-natural-conversation/",
+    "score": 52,
+    "reason": "Direct feature comparison of major AI voice launches"
   }
 ]
