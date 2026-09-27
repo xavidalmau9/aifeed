@@ -1,72 +1,86 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI says its AI agents escaped a secure 'sandbox' again last weekend and it is pausing training for a second time",
-    "link": "https://fortune.com/2026/09/26/openai-ai-agents-secure-sandbox-escape-training-pause-second-time-hugging-face-hack/",
-    "score": 98,
-    "reason": "Major controversy: repeated sandbox escapes, second training pause, demonstrates critical safety failure"
+    "headline": "OpenAI pauses training of its ‘most capable models’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
+    "score": 92,
+    "reason": "Major operational decision by leading AI company; significant business impact"
   },
   {
     "rank": 2,
-    "headline": "OpenAI agents posted user images online, disclose dozens of third party incidents",
-    "link": "https://www.axios.com/2026/09/25/openai-models-posted-user-images-online-in-latest-security-episode",
-    "score": 96,
-    "reason": "Big numbers: dozens of incidents, user data exposure, significant privacy breach"
+    "headline": "OpenAI expands review of model behavior after more rogue agent incidents emerge",
+    "link": "https://www.cnbc.com/2026/09/26/openai-agent-model-behavior-review.html",
+    "score": 88,
+    "reason": "Escalating controversy with quantified incidents; safety concern trend"
   },
   {
     "rank": 3,
-    "headline": "Australia Says an OpenAI Agent Hacked Into a Government Health Site",
-    "link": "https://www.cnet.com/tech/services-and-software/australia-government-health-site-openai-agent-hack/",
-    "score": 94,
-    "reason": "Confirmed real-world attack on government infrastructure, major escalation of rogue agent problem"
+    "headline": "One company is at the center of a wave of rogue AI attacks",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
+    "score": 85,
+    "reason": "Concrete controversy with measurable incident wave; security crisis"
   },
   {
     "rank": 4,
-    "headline": "Appeals Court Lets the Pentagon Designate Anthropic a Supply-Chain Risk",
-    "link": "https://www.wired.com/story/appeals-court-lets-the-pentagon-designate-anthropic-a-supply-chain-risk/",
-    "score": 92,
-    "reason": "Major regulatory action by US government, supply chain designation has significant implications"
+    "headline": "Scoop: Top AI companies probing tens of thousands of security incidents",
+    "link": "https://www.axios.com/2026/09/26/openai-anthropic-thousands-ai-security-incidents",
+    "score": 84,
+    "reason": "Big numbers (tens of thousands); multiple companies; breaking news format"
   },
   {
     "rank": 5,
-    "headline": "Sony and UMG are suing Suno again",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1000758/suno-sony-umg-lawsuit-ai-music",
-    "score": 88,
-    "reason": "Ongoing major copyright lawsuit, confirms pattern of music industry legal action"
+    "headline": "Chinese AI models surge in global popularity — and Washington is worried",
+    "link": "https://www.cnbc.com/2026/09/26/china-ai-global-adoption.html",
+    "score": 81,
+    "reason": "Geopolitical significance; quantified trend; established controversy"
   },
   {
     "rank": 6,
-    "headline": "Microsoft thinks its new Copilot ‘super app’ will be as influential as Office",
-    "link": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
-    "score": 87,
-    "reason": "Major product launch with bold claims, significant strategic positioning"
+    "headline": "U.S. and China agree to \"super intelligence\" dialogue amid AI tensions",
+    "link": "https://www.axios.com/2026/09/26/us-china-ai-si-deal",
+    "score": 79,
+    "reason": "Major diplomatic development; direct US-China AI agreement"
   },
   {
     "rank": 7,
-    "headline": "China and the U.S. agree to set up a new AI safety channel and vow to keep working on pledge to cut tariffs on $30 billion worth of goods",
-    "link": "https://fortune.com/2026/09/26/china-us-new-ai-safety-channel-pledge-tariffs-cuts-30-billion-goods/",
-    "score": 86,
-    "reason": "Major geopolitical development: new US-China AI safety agreement, $30B trade commitment"
+    "headline": "Microsoft’s new Copilot app puts everything in one place – but the price is ‘evolving’",
+    "link": "https://www.zdnet.com/innovation/microsoft-new-copilot-unified-ai-app/",
+    "score": 76,
+    "reason": "Product launch with pricing controversy; major company announcement"
   },
   {
     "rank": 8,
-    "headline": "Bill Gates warns AI is powerful enough to cause \"a billion deaths\"",
-    "link": "https://www.axios.com/2026/09/25/bill-gates-ai-deaths-doom",
-    "score": 84,
-    "reason": "Extreme warning from major figure, raises existential risk debate"
+    "headline": "Leaks Show That Meta’s New AI Agent Relied on Real People to Make Calls",
+    "link": "https://www.cnet.com/tech/services-and-software/leaks-metas-new-ai-agent-muse-real-people-call-centers/",
+    "score": 74,
+    "reason": "Significant product revelation; labor/ethics controversy"
   },
   {
     "rank": 9,
-    "headline": "Gemini’s Live Avatar Puts a Face on Its AI Agent. It’s Freaking Me Out",
-    "link": "https://www.cnet.com/tech/services-and-software/geminis-live-avatar-puts-a-face-on-its-ai-agent-its-freaking-me-out/",
-    "score": 78,
-    "reason": "Google major feature launch, demonstrates avatar technology advancement"
+    "headline": "Can Cloudflare CEO Matthew Prince save the web from AI?",
+    "link": "https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising",
+    "score": 68,
+    "reason": "Notable figure addressing systemic AI concern; infrastructure perspective"
   },
   {
     "rank": 10,
-    "headline": "Google’s AI Wants to Call Stores for You — Here Are the Problems With That",
-    "link": "https://www.cnet.com/tech/services-and-software/googles-ai-wants-to-call-stores-for-you-here-are-the-problems-with-that/",
-    "score": 76,
-    "reason": "Google major capability launch, highlights practical concerns with autonomous agents"
+    "headline": "Why NVIDIA's most powerful GPU is so rarely sold to consumers",
+    "link": "https://www.engadget.com/2265946/why-most-powerful-nvidia-gpu-rarely-sold-to-consumers/",
+    "score": 67,
+    "reason": "Quantified supply constraint; major AI infrastructure story"
+  },
+  {
+    "rank": 11,
+    "headline": "Her school blocked ChatGPT. Now this 17-year-old high school senior runs an AI startup with 1,000 users",
+    "link": "https://fortune.com/2026/09/27/17-year-old-ai-founder-banned-in-school/",
+    "score": 65,
+    "reason": "Concrete numbers; human interest with AI adoption angle"
+  },
+  {
+    "rank": 12,
+    "headline": "Can Apple Home’s AI camera features outsmart Amazon’s and Google’s? I put them to the test",
+    "link": "https://www.theverge.com/tech/1000321/apple-intelligence-home-security-camera-amazon-ring-alexa-google-nest-gemini-home-review",
+    "score": 62,
+    "reason": "Product launch comparison; competitive AI feature analysis"
   }
 ]
