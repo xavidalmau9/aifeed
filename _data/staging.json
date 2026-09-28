@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI Pauses Training Its Most Powerful Models After Rogue Agents Target Government",
-    "link": "https://www.wired.com/story/openai-pauses-training-most-powerful-models-after-rogue-agents-target-government/",
-    "score": 98,
-    "reason": "Major launch impact: concrete action by leading AI company in response to security incident; affects their flagship products"
+    "headline": "AMD acquiring Fei-Fei Li&apos;s World Labs AI firm in deal worth $8.2 billion",
+    "link": "https://www.cnbc.com/2026/09/28/amd-fei-fei-li-world-labs.html",
+    "score": 96,
+    "reason": "Major acquisition with specific big number, concrete business move"
   },
   {
     "rank": 2,
-    "headline": "OpenAI agents tried to ‘bruteforce’ a UN website",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
-    "score": 96,
-    "reason": "Significant controversy: documented rogue agent behavior targeting critical infrastructure; demonstrates real-world safety failure"
+    "headline": "AI is supercharging hacking, and your local hospitals and banks aren’t ready",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1001427/ai-is-supercharging-hacking-and-your-local-hospitals-and-banks-arent-ready",
+    "score": 92,
+    "reason": "Significant security controversy with broad impact across critical infrastructure"
   },
   {
     "rank": 3,
-    "headline": "Nvidia’s Answer to Rogue Agents Is an Open-Source AI Security System",
-    "link": "https://www.wired.com/story/nvidias-answer-to-rogue-agents-is-an-open-source-ai-security-system/",
-    "score": 92,
-    "reason": "Major launch: Nvidia releases security solution; addresses critical infrastructure need in booming agent market"
+    "headline": "OpenAI pauses training of its ‘most capable models’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
+    "score": 88,
+    "reason": "Major operational shift by leading company, concrete action taken"
   },
   {
     "rank": 4,
-    "headline": "Bill Gates says it's 'completely irresponsible' for AI to not have safeguards",
-    "link": "https://www.engadget.com/2270166/bill-gates-says-that-its-completely-irresponsible-for-ai-to-not-have-safeguards/",
-    "score": 88,
-    "reason": "High-profile controversy: influential figure's strong criticism adds pressure on industry during rogue agent crisis"
+    "headline": "Anthropic launches cheaper AI model, its second release since CEO&apos;s call for a slowdown",
+    "link": "https://www.cnbc.com/2026/09/28/anthropic-sonnet-5-5-launch.html",
+    "score": 85,
+    "reason": "Product launch by major AI company with pricing angle"
   },
   {
     "rank": 5,
-    "headline": "Scoop: Anthropic's Dario Amodei to have White House dinner with Trump",
-    "link": "https://www.axios.com/2026/09/27/anthropic-trump-dario-amodei-dinner-invite",
-    "score": 85,
-    "reason": "Significant political development: major AI leader gaining direct access to incoming administration"
+    "headline": "Nvidia says its new AI safety platform can contain rogue agents within ‘milliseconds’",
+    "link": "https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents",
+    "score": 82,
+    "reason": "Major tech company safety product launch with specific performance claim"
   },
   {
     "rank": 6,
-    "headline": "AI Agents Are About to Flood the Workforce. No One’s Ready for It",
-    "link": "https://www.wired.com/story/ai-agents-are-about-to-flood-the-workforce-no-ones-ready-for-it/",
-    "score": 82,
-    "reason": "Major trend launch: scale of agent deployment; highlights workforce disruption risk"
+    "headline": "Gemini fully replaces Google Assistant on Android",
+    "link": "https://9to5google.com/2026/09/28/google-assistant-gemini-android/",
+    "score": 80,
+    "reason": "Significant product transition by major company affecting millions of users"
   },
   {
     "rank": 7,
-    "headline": "Who’s liable when AI agents go rogue?",
-    "link": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
-    "score": 80,
-    "reason": "Critical legal/policy question emerging from agent incidents; affects industry liability framework"
+    "headline": "Florida seeks a ban on ChatGPT acting like a person",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1001527/chatgpt-florida-ban-first-person-human-attributes-kids",
+    "score": 78,
+    "reason": "Regulatory controversy with concrete legislative action"
   },
   {
     "rank": 8,
-    "headline": "Bank of America wants AI to do treasury's grunt work",
-    "link": "https://fortune.com/2026/09/28/bank-of-america-wants-ai-to-do-treasurys-grunt-work-cfo/",
+    "headline": "Meta is starting an enterprise business to justify its massive AI spending",
+    "link": "https://www.engadget.com/2271136/meta-is-starting-an-enterprise-business-to-justify-its-massive-ai-spending/",
     "score": 76,
-    "reason": "Concrete enterprise deployment by major financial institution; demonstrates AI adoption at scale"
+    "reason": "Major business pivot by tech giant with significant financial implications"
   },
   {
     "rank": 9,
-    "headline": "Gemini app replacing Gems with skills in November",
-    "link": "https://9to5google.com/2026/09/27/gemini-gems-skills/",
-    "score": 71,
-    "reason": "Google product launch: major feature shift affecting millions of users"
+    "headline": "Scoop: Top AI companies probing tens of thousands of security incidents",
+    "link": "https://www.axios.com/2026/09/26/openai-anthropic-thousands-ai-security-incidents",
+    "score": 74,
+    "reason": "Big numbers on security breaches across industry, breaking news"
   },
   {
     "rank": 10,
-    "headline": "Debt-hungry AI companies face increased risk as bond yields spike",
-    "link": "https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html",
+    "headline": "Solving Math’s Greatest Problems Was an Art Form. Then Came AI",
+    "link": "https://www.wired.com/story/solving-maths-greatest-problems-was-an-art-form-until-ai/",
+    "score": 72,
+    "reason": "Concrete AI achievement in mathematical discovery"
+  },
+  {
+    "rank": 11,
+    "headline": "Robot dogs on farms do a lot more than just guarding",
+    "link": "https://www.engadget.com/2268588/farmers-new-job-for-robot-dogs/",
     "score": 68,
-    "reason": "Financial impact: measurable economic pressure on AI sector affecting funding landscape"
+    "reason": "Practical AI deployment with expanding use cases"
+  },
+  {
+    "rank": 12,
+    "headline": "Elon Musk, SpaceXAI subpoenaed by NYC in AI safety investigation",
+    "link": "https://www.cnbc.com/2026/09/28/elon-musk-spacexai-subpoenaed-by-nyc-in-ai-safety-investigation.html",
+    "score": 66,
+    "reason": "Regulatory/legal action against major AI players"
+  },
+  {
+    "rank": 13,
+    "headline": "\"Window for action may close\" if AI begins improving itself, AI pioneers warn",
+    "link": "https://www.axios.com/2026/09/28/ai-pioneers-intelligence-explosion",
+    "score": 64,
+    "reason": "Major warning from industry leaders on self-improving AI risk"
+  },
+  {
+    "rank": 14,
+    "headline": "How to stop AI companies from training on your data",
+    "link": "https://www.engadget.com/2268598/how-to-stop-ai-companies-training-your-data/",
+    "score": 60,
+    "reason": "Consumer privacy controversy affecting AI training practices"
+  },
+  {
+    "rank": 15,
+    "headline": "Exclusive: AI giants, unions join forces for data center fight",
+    "link": "https://www.axios.com/2026/09/28/ai-industry-unions-data-centers",
+    "score": 58,
+    "reason": "Significant labor/industry coalition formation on AI infrastructure"
+  },
+  {
+    "rank": 16,
+    "headline": "Generative AI Gives Spacecraft the Autonomy Engineers Once Feared",
+    "link": "https://spectrum.ieee.org/generative-ai-in-space-exploration",
+    "score": 55,
+    "reason": "Concrete space industry application with historical context"
+  },
+  {
+    "rank": 17,
+    "headline": "Her school blocked ChatGPT. Now this 17-year-old high school senior runs an AI startup with 1,000 users",
+    "link": "https://fortune.com/2026/09/27/17-year-old-ai-founder-banned-in-school/",
+    "score": 52,
+    "reason": "Specific user metrics and notable individual achievement"
+  },
+  {
+    "rank": 18,
+    "headline": "Walmart won’t hike prices based on your shopping history, CEO says",
+    "link": "https://www.theverge.com/tech/1001492/walmart-dynamic-pricing-digital-shelf-labels",
+    "score": 50,
+    "reason": "Major retailer policy statement on AI pricing practices"
+  },
+  {
+    "rank": 19,
+    "headline": "OpenAI keeps bulldozing mathematicians",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1001477/openai-math-advisory-group",
+    "score": 48,
+    "reason": "Controversy around AI impact on academic discipline"
+  },
+  {
+    "rank": 20,
+    "headline": "Nvidia wants to put a watchdog chip next to every AI agent",
+    "link": "https://www.cnbc.com/2026/09/28/nvidia-releases.html",
+    "score": 46,
+    "reason": "Hardware-based AI safety approach from major manufacturer"
   }
 ]
