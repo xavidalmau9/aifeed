@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI pauses training of its ‘most capable models’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
-    "score": 94,
-    "reason": "Major operational pause by leading AI company; concrete action on safety concerns"
+    "headline": "OpenAI Pauses Training Its Most Powerful Models After Rogue Agents Target Government",
+    "link": "https://www.wired.com/story/openai-pauses-training-most-powerful-models-after-rogue-agents-target-government/",
+    "score": 98,
+    "reason": "Major launch impact: concrete action by leading AI company in response to security incident; affects their flagship products"
   },
   {
     "rank": 2,
-    "headline": "Nvidia releases software platform to stop AI agents from misbehaving",
-    "link": "https://www.cnbc.com/2026/09/28/nvidia-releases.html",
-    "score": 89,
-    "reason": "Major tech company product launch addressing rogue AI agents; technical solution with scale"
+    "headline": "OpenAI agents tried to ‘bruteforce’ a UN website",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
+    "score": 96,
+    "reason": "Significant controversy: documented rogue agent behavior targeting critical infrastructure; demonstrates real-world safety failure"
   },
   {
     "rank": 3,
-    "headline": "OpenAI expands review of model behavior after more rogue agent incidents emerge",
-    "link": "https://www.cnbc.com/2026/09/26/openai-agent-model-behavior-review.html",
-    "score": 85,
-    "reason": "Escalating controversy with multiple incidents; expansion of safety protocols"
+    "headline": "Nvidia’s Answer to Rogue Agents Is an Open-Source AI Security System",
+    "link": "https://www.wired.com/story/nvidias-answer-to-rogue-agents-is-an-open-source-ai-security-system/",
+    "score": 92,
+    "reason": "Major launch: Nvidia releases security solution; addresses critical infrastructure need in booming agent market"
   },
   {
     "rank": 4,
-    "headline": "Scoop: Top AI companies probing tens of thousands of security incidents",
-    "link": "https://www.axios.com/2026/09/26/openai-anthropic-thousands-ai-security-incidents",
-    "score": 83,
-    "reason": "Big number (tens of thousands); multiple companies; security vulnerability scope"
+    "headline": "Bill Gates says it's 'completely irresponsible' for AI to not have safeguards",
+    "link": "https://www.engadget.com/2270166/bill-gates-says-that-its-completely-irresponsible-for-ai-to-not-have-safeguards/",
+    "score": 88,
+    "reason": "High-profile controversy: influential figure's strong criticism adds pressure on industry during rogue agent crisis"
   },
   {
     "rank": 5,
-    "headline": "The US government plans to use AI to help redact documents",
-    "link": "https://www.engadget.com/2270348/the-us-government-plans-to-use-ai-to-help-redact-documents/",
-    "score": 78,
-    "reason": "Government deployment of AI; significant real-world application"
+    "headline": "Scoop: Anthropic's Dario Amodei to have White House dinner with Trump",
+    "link": "https://www.axios.com/2026/09/27/anthropic-trump-dario-amodei-dinner-invite",
+    "score": 85,
+    "reason": "Significant political development: major AI leader gaining direct access to incoming administration"
   },
   {
     "rank": 6,
-    "headline": "Solving Math’s Greatest Problems Was an Art Form. Then Came AI",
-    "link": "https://www.wired.com/story/solving-maths-greatest-problems-was-an-art-form-until-ai/",
-    "score": 76,
-    "reason": "AI breakthrough in mathematical problem-solving; paradigm shift"
+    "headline": "AI Agents Are About to Flood the Workforce. No One’s Ready for It",
+    "link": "https://www.wired.com/story/ai-agents-are-about-to-flood-the-workforce-no-ones-ready-for-it/",
+    "score": 82,
+    "reason": "Major trend launch: scale of agent deployment; highlights workforce disruption risk"
   },
   {
     "rank": 7,
-    "headline": "Generative AI Gives Spacecraft the Autonomy Engineers Once Feared",
-    "link": "https://spectrum.ieee.org/generative-ai-in-space-exploration",
-    "score": 74,
-    "reason": "Novel AI deployment in space technology; controversial autonomy shift"
+    "headline": "Who’s liable when AI agents go rogue?",
+    "link": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
+    "score": 80,
+    "reason": "Critical legal/policy question emerging from agent incidents; affects industry liability framework"
   },
   {
     "rank": 8,
-    "headline": "Memo smearing Anthropic's Amodei circulated in White House before CEO’s dinner with President Trump",
-    "link": "https://fortune.com/2026/09/28/memo-smear-dario-amodei-white-house-anthropic-ceo-dinner-president-trump/",
-    "score": 71,
-    "reason": "Political controversy involving major AI company; White House involvement"
+    "headline": "Bank of America wants AI to do treasury's grunt work",
+    "link": "https://fortune.com/2026/09/28/bank-of-america-wants-ai-to-do-treasurys-grunt-work-cfo/",
+    "score": 76,
+    "reason": "Concrete enterprise deployment by major financial institution; demonstrates AI adoption at scale"
   },
   {
     "rank": 9,
-    "headline": "Exclusive: AI giants, unions join forces for data center fight",
-    "link": "https://www.axios.com/2026/09/28/ai-industry-unions-data-centers",
-    "score": 68,
-    "reason": "Unusual alliance; labor movement engagement with AI sector"
+    "headline": "Gemini app replacing Gems with skills in November",
+    "link": "https://9to5google.com/2026/09/27/gemini-gems-skills/",
+    "score": 71,
+    "reason": "Google product launch: major feature shift affecting millions of users"
   },
   {
     "rank": 10,
-    "headline": "U.K. government’s AI lead has a message on frontier risks—it’s time to ‘harden and build defenses’",
-    "link": "https://fortune.com/2026/09/28/u-k-governments-ai-lead-has-a-message-on-frontier-ai-risk-its-time-to-harden-and-build-defenses/",
-    "score": 65,
-    "reason": "Government policy response to AI risks; regulatory positioning"
+    "headline": "Debt-hungry AI companies face increased risk as bond yields spike",
+    "link": "https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html",
+    "score": 68,
+    "reason": "Financial impact: measurable economic pressure on AI sector affecting funding landscape"
   }
 ]
