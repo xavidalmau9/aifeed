@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "AMD acquiring Fei-Fei Li&apos;s World Labs AI firm in deal worth $8.2 billion",
-    "link": "https://www.cnbc.com/2026/09/28/amd-fei-fei-li-world-labs.html",
-    "score": 96,
-    "reason": "Major acquisition with specific big number, concrete business move"
+    "headline": "AMD is acquiring AI company World Labs in a deal worth more than $8 billion",
+    "link": "https://www.theverge.com/tech/1001749/amd-world-labs-ai-acquisition-deal",
+    "score": 95,
+    "reason": "Major acquisition, specific large number, concrete business action"
   },
   {
     "rank": 2,
-    "headline": "AI is supercharging hacking, and your local hospitals and banks aren’t ready",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1001427/ai-is-supercharging-hacking-and-your-local-hospitals-and-banks-arent-ready",
+    "headline": "OpenAI Pauses Training Its Most Powerful Models After Rogue Agents Target Government",
+    "link": "https://www.wired.com/story/openai-pauses-training-most-powerful-models-after-rogue-agents-target-government/",
     "score": 92,
-    "reason": "Significant security controversy with broad impact across critical infrastructure"
+    "reason": "Major controversy, concrete action (pause), government involvement, agent misbehavior"
   },
   {
     "rank": 3,
-    "headline": "OpenAI pauses training of its ‘most capable models’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
-    "score": 88,
-    "reason": "Major operational shift by leading company, concrete action taken"
+    "headline": "Anthropic lost $8 billion last year and said its AI could destroy humanity",
+    "link": "https://www.engadget.com/2271659/anthropic-lost-8-billion-says-it-could-destroy-humanity/",
+    "score": 90,
+    "reason": "Major financial disclosure, specific number, existential risk statement"
   },
   {
     "rank": 4,
-    "headline": "Anthropic launches cheaper AI model, its second release since CEO&apos;s call for a slowdown",
-    "link": "https://www.cnbc.com/2026/09/28/anthropic-sonnet-5-5-launch.html",
+    "headline": "Exclusive: AI housing unicorn EliseAI hits $4 billion valuation in new funding round led by a16z and Bessemer",
+    "link": "https://fortune.com/2026/09/29/elise-ai-4-billion-valuation-funding-round-housing-unicorn-andreessen-bessemer/",
     "score": 85,
-    "reason": "Product launch by major AI company with pricing angle"
+    "reason": "Specific valuation number, major VCs, concrete funding announcement"
   },
   {
     "rank": 5,
-    "headline": "Nvidia says its new AI safety platform can contain rogue agents within ‘milliseconds’",
-    "link": "https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents",
-    "score": 82,
-    "reason": "Major tech company safety product launch with specific performance claim"
+    "headline": "Samsung to inject $1 billion into Nvidia- and KKR-backed AI infrastructure firm",
+    "link": "https://www.cnbc.com/2026/09/29/samsung-investment-nvidia-kkr-ai-helix-digital.html",
+    "score": 84,
+    "reason": "Specific investment amount, major companies, infrastructure play"
   },
   {
     "rank": 6,
-    "headline": "Gemini fully replaces Google Assistant on Android",
-    "link": "https://9to5google.com/2026/09/28/google-assistant-gemini-android/",
-    "score": 80,
-    "reason": "Significant product transition by major company affecting millions of users"
+    "headline": "Nvidia’s Answer to Rogue Agents Is an Open-Source AI Security System",
+    "link": "https://www.wired.com/story/nvidias-answer-to-rogue-agents-is-an-open-source-ai-security-system/",
+    "score": 82,
+    "reason": "Product launch, addresses agent safety controversy, major vendor response"
   },
   {
     "rank": 7,
-    "headline": "Florida seeks a ban on ChatGPT acting like a person",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1001527/chatgpt-florida-ban-first-person-human-attributes-kids",
-    "score": 78,
-    "reason": "Regulatory controversy with concrete legislative action"
+    "headline": "Nvidia releases software platform to stop AI agents from misbehaving",
+    "link": "https://www.cnbc.com/2026/09/28/nvidia-releases.html",
+    "score": 81,
+    "reason": "Product launch, addresses concrete problem (rogue agents), security focus"
   },
   {
     "rank": 8,
-    "headline": "Meta is starting an enterprise business to justify its massive AI spending",
-    "link": "https://www.engadget.com/2271136/meta-is-starting-an-enterprise-business-to-justify-its-massive-ai-spending/",
-    "score": 76,
-    "reason": "Major business pivot by tech giant with significant financial implications"
+    "headline": "Nvidia says new tool can contain rogue AI agents in \"milliseconds\"",
+    "link": "https://www.axios.com/2026/09/28/nvidia-ai-agent-safety",
+    "score": 79,
+    "reason": "Product capability claim, agent safety, performance metric"
   },
   {
     "rank": 9,
-    "headline": "Scoop: Top AI companies probing tens of thousands of security incidents",
-    "link": "https://www.axios.com/2026/09/26/openai-anthropic-thousands-ai-security-incidents",
-    "score": 74,
-    "reason": "Big numbers on security breaches across industry, breaking news"
+    "headline": "Florida AG requests emergency order to stop OpenAI model development",
+    "link": "https://www.engadget.com/2270988/florida-ag-requests-emergency-order-to-stop-openai-model-development/",
+    "score": 78,
+    "reason": "Legal action, regulatory controversy, government intervention"
   },
   {
     "rank": 10,
-    "headline": "Solving Math’s Greatest Problems Was an Art Form. Then Came AI",
-    "link": "https://www.wired.com/story/solving-maths-greatest-problems-was-an-art-form-until-ai/",
-    "score": 72,
-    "reason": "Concrete AI achievement in mathematical discovery"
+    "headline": "OpenAI Delays Release of Latest Model Over Safety Concerns",
+    "link": "https://www.wired.com/story/openai-delays-release-of-latest-model-over-safety-concerns/",
+    "score": 77,
+    "reason": "Major product delay, safety controversy, OpenAI action"
   },
   {
     "rank": 11,
-    "headline": "Robot dogs on farms do a lot more than just guarding",
-    "link": "https://www.engadget.com/2268588/farmers-new-job-for-robot-dogs/",
-    "score": 68,
-    "reason": "Practical AI deployment with expanding use cases"
+    "headline": "Meta launches Muse for Small Business as Zuckerberg pushes beyond consumer AI market",
+    "link": "https://www.cnbc.com/2026/09/29/meta-launches-muse-for-small-business-zuckerberg-pushes-enterprise-ai.html",
+    "score": 75,
+    "reason": "Product launch, new market expansion, Meta strategic shift"
   },
   {
     "rank": 12,
-    "headline": "Elon Musk, SpaceXAI subpoenaed by NYC in AI safety investigation",
-    "link": "https://www.cnbc.com/2026/09/28/elon-musk-spacexai-subpoenaed-by-nyc-in-ai-safety-investigation.html",
-    "score": 66,
-    "reason": "Regulatory/legal action against major AI players"
+    "headline": "Anthropic’s leaked IPO prospectus details steep losses, rapid growth, and a fear that AI could end humanity",
+    "link": "https://fortune.com/2026/09/29/anthropic-leaked-ipo-prospectus-losses-growth-ai-end-humanity/",
+    "score": 74,
+    "reason": "IPO disclosure, specific financial data, existential risk concern"
   },
   {
     "rank": 13,
-    "headline": "\"Window for action may close\" if AI begins improving itself, AI pioneers warn",
-    "link": "https://www.axios.com/2026/09/28/ai-pioneers-intelligence-explosion",
-    "score": 64,
-    "reason": "Major warning from industry leaders on self-improving AI risk"
+    "headline": "Nvidia’s $150 Billion Buyback: A Lifeline for AI Hype, Not Everyday Investors",
+    "link": "https://www.cnet.com/tech/services-and-software/nvidia-150-billion-buyback-ai-hype-not-everyday-investors/",
+    "score": 73,
+    "reason": "Massive buyback amount, financial announcement, market impact"
   },
   {
     "rank": 14,
-    "headline": "How to stop AI companies from training on your data",
-    "link": "https://www.engadget.com/2268598/how-to-stop-ai-companies-training-your-data/",
-    "score": 60,
-    "reason": "Consumer privacy controversy affecting AI training practices"
+    "headline": "OpenAI cancels GPT-6.1 Astra release over misbehavior & safety concerns",
+    "link": "https://9to5google.com/2026/09/28/openai-cancels-gpt-6-1-astra-release-over-misbehavior-safety-concerns/",
+    "score": 72,
+    "reason": "Product cancellation, agent misbehavior, safety controversy"
   },
   {
     "rank": 15,
-    "headline": "Exclusive: AI giants, unions join forces for data center fight",
-    "link": "https://www.axios.com/2026/09/28/ai-industry-unions-data-centers",
-    "score": 58,
-    "reason": "Significant labor/industry coalition formation on AI infrastructure"
+    "headline": "OpenAI agents tried to ‘bruteforce’ a UN website",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
+    "score": 71,
+    "reason": "Concrete agent misbehavior, government target, specific incident"
   },
   {
     "rank": 16,
-    "headline": "Generative AI Gives Spacecraft the Autonomy Engineers Once Feared",
-    "link": "https://spectrum.ieee.org/generative-ai-in-space-exploration",
-    "score": 55,
-    "reason": "Concrete space industry application with historical context"
+    "headline": "Did Anthropic Really Make a Big Biology Breakthrough? We Asked Scientists to Weigh In",
+    "link": "https://www.cnet.com/tech/services-and-software/did-anthropic-find-a-novel-enzyme/",
+    "score": 68,
+    "reason": "Scientific claim verification, Anthropic achievement, expert review"
   },
   {
     "rank": 17,
-    "headline": "Her school blocked ChatGPT. Now this 17-year-old high school senior runs an AI startup with 1,000 users",
-    "link": "https://fortune.com/2026/09/27/17-year-old-ai-founder-banned-in-school/",
-    "score": 52,
-    "reason": "Specific user metrics and notable individual achievement"
+    "headline": "AI Agents Are About to Flood the Workforce. No One’s Ready for It",
+    "link": "https://www.wired.com/story/ai-agents-are-about-to-flood-the-workforce-no-ones-ready-for-it/",
+    "score": 67,
+    "reason": "Major trend, workforce impact, readiness controversy"
   },
   {
     "rank": 18,
-    "headline": "Walmart won’t hike prices based on your shopping history, CEO says",
-    "link": "https://www.theverge.com/tech/1001492/walmart-dynamic-pricing-digital-shelf-labels",
-    "score": 50,
-    "reason": "Major retailer policy statement on AI pricing practices"
+    "headline": "Who’s liable when AI agents go rogue?",
+    "link": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
+    "score": 65,
+    "reason": "Legal/liability framework, emerging agent problem, regulatory question"
   },
   {
     "rank": 19,
-    "headline": "OpenAI keeps bulldozing mathematicians",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1001477/openai-math-advisory-group",
-    "score": 48,
-    "reason": "Controversy around AI impact on academic discipline"
+    "headline": "Mistral CEO says U.S. AI safety debate masks competitors’ &apos;negligence&apos;",
+    "link": "https://www.cnbc.com/2026/09/29/mistral-ai-safety-openai-anthropic.html",
+    "score": 64,
+    "reason": "CEO controversy, safety criticism, competitive dynamics"
   },
   {
     "rank": 20,
-    "headline": "Nvidia wants to put a watchdog chip next to every AI agent",
-    "link": "https://www.cnbc.com/2026/09/28/nvidia-releases.html",
-    "score": 46,
-    "reason": "Hardware-based AI safety approach from major manufacturer"
+    "headline": "The AI industry's contradictions take center stage in Washington, Silicon Valley",
+    "link": "https://www.axios.com/2026/09/29/washington-ai-regulation-openai-devday-anthropic",
+    "score": 62,
+    "reason": "Industry-wide controversy, policy impact, major contradiction narrative"
   }
 ]
