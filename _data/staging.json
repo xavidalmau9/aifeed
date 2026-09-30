@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI hit with landmark lawsuit following Hugging Face hack",
-    "link": "https://www.axios.com/2026/09/29/openai-sued-hugging-face-breach",
-    "score": 94,
-    "reason": "Major legal controversy with concrete incident; establishes precedent"
+    "headline": "Scoop: OpenAI's annual recurring revenue nears $70B",
+    "link": "https://www.axios.com/2026/09/29/scoop-openais-annual-recurring-revenue-nears-70b",
+    "score": 98,
+    "reason": "Major financial milestone with concrete big number"
   },
   {
     "rank": 2,
-    "headline": "Nvidia says new tool can contain rogue AI agents in \"milliseconds\"",
-    "link": "https://www.axios.com/2026/09/28/nvidia-ai-agent-safety",
+    "headline": "Google rolls out Gemini 4 Argon, its most advanced AI model",
+    "link": "https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html",
     "score": 92,
-    "reason": "Significant product launch addressing safety concern; quantifiable performance claim"
+    "reason": "Major product launch from top AI company"
   },
   {
     "rank": 3,
-    "headline": "OpenAI Delays Release of Latest Model Over Safety Concerns",
-    "link": "https://www.wired.com/story/openai-delays-release-of-latest-model-over-safety-concerns/",
-    "score": 91,
-    "reason": "Major model delay; concrete safety action; high-stakes decision"
+    "headline": "Florida Asks Judge to Stop OpenAI From Training New Models After Latest Incidents",
+    "link": "https://www.cnet.com/tech/services-and-software/florida-judge-stop-openai-training-new-models-incidents/",
+    "score": 88,
+    "reason": "Significant legal controversy and regulatory action"
   },
   {
     "rank": 4,
-    "headline": "Nvidia’s $150 Billion Buyback: A Lifeline for AI Hype, Not Everyday Investors",
-    "link": "https://www.cnet.com/tech/services-and-software/nvidia-150-billion-buyback-ai-hype-not-everyday-investors/",
-    "score": 89,
-    "reason": "Large financial figure; critical analysis of market dynamics"
+    "headline": "FTC is investigating OpenAI, Anthropic and other AI companies over product risks",
+    "link": "https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html",
+    "score": 85,
+    "reason": "Major regulatory investigation affecting multiple companies"
   },
   {
     "rank": 5,
-    "headline": "Trump, top AI leaders agree to voluntary ​AI ​standards",
-    "link": "https://www.axios.com/2026/09/29/trump-ai-voluntary-safety-white-house-zuckerberg",
-    "score": 87,
-    "reason": "Major policy development; multiple stakeholder agreement"
+    "headline": "OpenAI’s Dots Are Always-On AI Agents—and Its Answer to Meta’s Muse",
+    "link": "https://www.wired.com/story/openai-dots-always-on-ai-agents-that-proactively-help/",
+    "score": 83,
+    "reason": "Major product launch in competitive personal AI agent market"
   },
   {
     "rank": 6,
-    "headline": "Trump's AI \"constitution\" crowns day of accelerating ambition",
-    "link": "https://www.axios.com/2026/09/30/ai-constitution-trump-white-house",
-    "score": 86,
-    "reason": "Significant policy announcement; sets regulatory framework"
+    "headline": "All the latest news on Meta’s cute, creepy Muse AI agent",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1002671/meta-muse-ai",
+    "score": 81,
+    "reason": "Major product launch with notable controversy"
   },
   {
     "rank": 7,
-    "headline": "Did Anthropic Really Make a Big Biology Breakthrough? We Asked Scientists to Weigh In",
-    "link": "https://www.cnet.com/tech/services-and-software/did-anthropic-find-a-novel-enzyme/",
-    "score": 85,
-    "reason": "Scientific breakthrough claim with expert verification; major research claim"
+    "headline": "Google reportedly tests paying publishers for AI search results",
+    "link": "https://www.theverge.com/tech/1002665/google-paying-publishers-ai-search-features",
+    "score": 79,
+    "reason": "Significant business model shift with major company and concrete action"
   },
   {
     "rank": 8,
-    "headline": "Sam Altman says OpenAI won’t go public until its models are safe",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1002505/sam-altman-openai-ipo-devday-ai-safety",
-    "score": 84,
-    "reason": "Major corporate decision affecting IPO timeline; safety-first stance"
+    "headline": "OpenAI Gets Sued Over the Hugging Face Hack",
+    "link": "https://www.wired.com/story/openai-sued-over-the-hugging-face-hack/",
+    "score": 77,
+    "reason": "Major legal controversy with concrete incident"
   },
   {
     "rank": 9,
-    "headline": "OpenAI launches Dots, new 'always-on agents' you can assign tasks to",
-    "link": "https://9to5google.com/2026/09/29/openai-dots-agent/",
-    "score": 83,
-    "reason": "Major product launch; new AI agent category"
+    "headline": "Trump’s ‘AI Accord’ Does Little to Actually Keep AI Safe, Experts Say",
+    "link": "https://www.cnet.com/tech/services-and-software/trumps-ai-voluntary-accord-wont-make-ai-safe-experts-say/",
+    "score": 75,
+    "reason": "Significant controversy over regulatory approach"
   },
   {
     "rank": 10,
-    "headline": "Trump orders US government to call AI ‘Super Intelligence’",
-    "link": "https://www.theverge.com/policy/1002468/trump-ai-superintelligence-executive-order-ai",
-    "score": 81,
-    "reason": "Controversial policy action; significant terminology shift"
+    "headline": "Robinhood unveils weekend hours, AI agents to allow users to trade nonstop",
+    "link": "https://www.cnbc.com/2026/09/30/robinhood-unveils-weekend-hours-ai-agents-to-allow-users-to-trade-nonstop.html",
+    "score": 72,
+    "reason": "Major product launch with concrete use case expansion"
   },
   {
     "rank": 11,
-    "headline": "AI is giving CFOs a bigger slice of the C-suite, new IBM data shows",
-    "link": "https://fortune.com/2026/09/30/ai-giving-cfo-bigger-slice-c-suite-new-ibm-data-shows/",
-    "score": 80,
-    "reason": "Quantifiable business impact data; organizational restructuring trend"
+    "headline": "Meta stock enjoys best month since 2022 on AI momentum",
+    "link": "https://www.cnbc.com/2026/09/30/meta-stock-best-month-2013-ai.html",
+    "score": 70,
+    "reason": "Significant market impact from AI initiatives"
   },
   {
     "rank": 12,
-    "headline": "Mistral CEO says U.S. AI safety debate masks competitors’ &apos;negligence&apos;",
-    "link": "https://www.cnbc.com/2026/09/29/mistral-ai-safety-openai-anthropic.html",
-    "score": 78,
-    "reason": "Direct industry controversy; competitive criticism from CEO"
+    "headline": "OpenAI DevDay: You Can Now Use GPT-6.1 Sol and Dots, Plus Big Subscription Changes",
+    "link": "https://www.cnet.com/tech/services-and-software/everything-announced-at-openai-devday-subscription-changes-new-models-and-dots/",
+    "score": 68,
+    "reason": "Major product announcements with business model changes"
   },
   {
     "rank": 13,
-    "headline": "Florida asks for order to halt ChatGPT development",
-    "link": "https://www.axios.com/2026/09/28/florida-openai-chatgpt-injunction-uthmeier",
-    "score": 77,
-    "reason": "Major regulatory challenge; government action to restrict product"
+    "headline": "Trump’s AI Safety ‘Accord’ Is a Fancy Pinky-Swear",
+    "link": "https://www.wired.com/story/trumps-ai-safety-accord-is-a-fancy-pinky-swear/",
+    "score": 66,
+    "reason": "Notable controversy over safety standards"
   },
   {
     "rank": 14,
-    "headline": "Google Play adding Usage-Based Billing subscriptions aimed at AI apps",
-    "link": "https://9to5google.com/2026/09/29/google-play-usage-subscriptions/",
-    "score": 76,
-    "reason": "Major platform policy change for AI monetization"
+    "headline": "How to Stop AI Agents From Secretly Collaborating",
+    "link": "https://spectrum.ieee.org/ai-agent-security",
+    "score": 63,
+    "reason": "Significant safety concern with agents"
   },
   {
     "rank": 15,
-    "headline": "SNL Skewers Anthropic CEO: ‘I Urge You to Urge Me to Stop’",
-    "link": "https://www.cnet.com/tech/services-and-software/snl-skewers-anthropic-ceo-i-urge-you-to-urge-me-to-stop/",
-    "score": 74,
-    "reason": "Cultural controversy; CEO public criticism in mainstream media"
+    "headline": "Anthropic Says It Discovered a Crispr-Like System. Now What?",
+    "link": "https://www.wired.com/story/anthropic-says-it-discovered-a-crispr-like-system-now-what/",
+    "score": 61,
+    "reason": "Major scientific discovery from significant AI company"
   },
   {
     "rank": 16,
-    "headline": "AI agents have a normal-people problem",
-    "link": "https://www.axios.com/2026/09/30/ai-agents-adoption-meta-muse",
-    "score": 73,
-    "reason": "Critical analysis of deployment challenges; mainstream usability issue"
+    "headline": "LLMjacking can run up your business’ AI bill fast – how to stop it",
+    "link": "https://www.zdnet.com/innovation/llmjacking-business-ai-bill-cost-how-to-stop/",
+    "score": 58,
+    "reason": "Emerging security concern with business impact"
   },
   {
     "rank": 17,
-    "headline": "The AI industry wants models to assist in legal battles, but will they help?",
-    "link": "https://www.engadget.com/2271692/ai-industry-want-use-models-legal-battle-law-assistance/",
-    "score": 71,
-    "reason": "Major industry application push; regulatory and practical questions"
+    "headline": "Sen. Hawley: OpenAI CEO Sam Altman declined to testify at rogue AI hearing",
+    "link": "https://www.cnbc.com/2026/09/30/hawley-openai-sam-altman-rogue-ai.html",
+    "score": 56,
+    "reason": "Significant regulatory/political controversy"
   },
   {
     "rank": 18,
-    "headline": "Trump floats Jay Clayton as AI czar as he looks to fill the position in days",
-    "link": "https://www.axios.com/2026/09/29/ai-czar-white-house-trump-jay-clayton",
-    "score": 70,
-    "reason": "Major regulatory appointment; government AI oversight structure"
+    "headline": "AI broke the job application. What replaces it?",
+    "link": "https://www.cnbc.com/2026/09/30/ai-resume-cv-job-application-interview.html",
+    "score": 54,
+    "reason": "Significant AI impact on major industry process"
   },
   {
     "rank": 19,
-    "headline": "The future is AI vs. AI",
-    "link": "https://www.axios.com/2026/09/29/the-future-is-ai-vs-ai",
-    "score": 68,
-    "reason": "Emerging competitive trend; new market dynamic"
+    "headline": "Trump and top AI leaders agree to voluntary ​AI ​standards",
+    "link": "https://www.axios.com/2026/09/29/trump-ai-voluntary-safety-white-house-zuckerberg",
+    "score": 52,
+    "reason": "Major policy agreement between government and industry"
   },
   {
     "rank": 20,
-    "headline": "“We’re not going to shoot ourselves in the foot” over hack fallout, says OpenAI’s chief research officer",
-    "link": "https://www.technologyreview.com/2026/09/30/1145339/were-not-going-to-shoot-ourselves-in-the-foot-over-hugging-face-says-openais-chief-research-officer/",
-    "score": 66,
-    "reason": "Response to security incident; CTO statement on incident handling"
+    "headline": "Here's how much Google is testing paying web publishers for AI Overview usage",
+    "link": "https://9to5google.com/2026/09/30/google-ai-overview-payout-test-details/",
+    "score": 50,
+    "reason": "Concrete business initiative with specific amounts"
   }
 ]
