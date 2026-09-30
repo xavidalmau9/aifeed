@@ -1,5 +1,24 @@
 [
  {
+  "id": "ai-vs-ai-arms-race-20260930",
+  "slug": "ai-vs-ai-arms-race",
+  "headline": "AI Is Now Being Deployed Against Other AI",
+  "summary": "Fraud AI fights fraud AI. Cyber defenses battle AI-powered attacks. The technology is becoming both the threat and the shield — and an arms race is on.",
+  "body": "<p>The competitive landscape of AI just entered a new phase: AI systems are now being deployed against each other. It's a fundamental shift in how we approach technology, security, and strategic advantage — yesterday's cutting-edge AI may be obsolete against tomorrow's adversarial counterpart.</p><p>We're moving beyond AI as a productivity tool toward AI as an active participant in competitive ecosystems. Financial institutions use AI to detect fraud created by AI. Cybersecurity teams deploy AI defenses against AI-powered attacks. The technology is becoming both the problem and the solution.</p><p>The strategic implications are profound. Companies that understand this dynamic gain asymmetric advantages; those that stay passive risk obsolescence. Investment in AI R&D isn't just about efficiency anymore — it's about survival in increasingly automated competitive environments.</p><p>Expect accelerated investment in adversarial AI research, new regulatory frameworks to manage AI-on-AI competition, and entirely new job categories focused on these digital rivalries. The arms-race dynamic is real.</p><p>The winners won't necessarily have the 'smartest' AI — they'll have systems that adapt, learn from competition, and evolve faster than their rivals. The future belongs to those who can orchestrate intelligence rather than simply create it.</p>",
+  "category": "Industry",
+  "hashtags": [
+   "AI",
+   "ArtificialIntelligence",
+   "Technology",
+   "Innovation",
+   "FutureOfWork"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_ai_vs_ai_arms_race_20260930.png",
+  "sourceUrl": "https://www.axios.com/2026/09/29/the-future-is-ai-vs-ai",
+  "publishedAt": "2026-09-30T09:18:00-04:00",
+  "isVideo": false
+ },
+ {
   "id": "amd-world-labs-8b-acquisition-20260929",
   "slug": "amd-world-labs-8b-acquisition",
   "headline": "AMD Buys World Labs for Over $8 Billion to Chase Nvidia in AI",
