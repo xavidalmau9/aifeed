@@ -1,142 +1,135 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI’s Dot agent is enterprise software that can also order your dinner",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
-    "score": 92,
-    "reason": "Major product launch from OpenAI in competitive agent space with concrete use cases"
+    "headline": "How AI is redefining Wall Street jobs — and boosting demand for this new &apos;hottest skill&apos; by 1,721%",
+    "link": "https://www.cnbc.com/2026/10/02/ai-redefining-wall-street-jobs.html",
+    "score": 94,
+    "reason": "Big numbers (1,721% demand increase), concrete impact on jobs market, measurable data"
   },
   {
     "rank": 2,
-    "headline": "Amazon writes scary blog warning communities not to block data centers",
-    "link": "https://www.theverge.com/tech/1003929/amazon-ai-data-center-blog-warning",
-    "score": 88,
-    "reason": "Significant infrastructure controversy showing real-world resistance to AI scaling"
+    "headline": "AI will create more jobs than it kills, McKinsey says. The catch: 11 million Americans may need new careers",
+    "link": "https://fortune.com/2026/10/03/ai-job-displacement-creation-new-careers-11-million-americans-workforce-mobility/",
+    "score": 92,
+    "reason": "Major research finding, big numbers (11 million), significant economic impact claim"
   },
   {
     "rank": 3,
-    "headline": "Judge dismisses antitrust lawsuits over Google’s AI Overviews",
-    "link": "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
-    "score": 85,
-    "reason": "Major legal ruling affecting Google's AI product strategy"
+    "headline": "Apple will limit Mac disk access as AI agents ‘substantially’ increase risk",
+    "link": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
+    "score": 88,
+    "reason": "Major tech company security response, AI agent vulnerability launch, concrete action"
   },
   {
     "rank": 4,
-    "headline": "AI Is Making a Mess of Nurses’ Schedules. They Say It’s a Safety Issue",
-    "link": "https://www.wired.com/story/ai-making-mess-of-nurses-schedules-they-say-its-a-safety-issue/",
-    "score": 82,
-    "reason": "Concrete controversy showing AI harm in critical healthcare sector"
+    "headline": "A Flaw in ChatGPT’s Mac App Could Have Let Hackers Grab Sensitive Data",
+    "link": "https://www.wired.com/story/a-flaw-in-chatgpts-mac-app-could-have-let-hackers-grab-sensitive-data/",
+    "score": 86,
+    "reason": "OpenAI security vulnerability, concrete flaw discovered, privacy risk"
   },
   {
     "rank": 5,
-    "headline": "NVIDIA's smuggling problem is getting worse",
-    "link": "https://www.engadget.com/2275633/nvidias-smuggling-problem-is-getting-worse/",
-    "score": 80,
-    "reason": "Ongoing major supply chain controversy affecting AI chip leader"
+    "headline": "Meta open sources code to let you make Muse AI gadgets",
+    "link": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link",
+    "score": 84,
+    "reason": "Meta major launch, open-source initiative, hardware AI expansion"
   },
   {
     "rank": 6,
-    "headline": "Gemini 4 Is Here: When You May Be Able to Use Google’s New AI Model",
-    "link": "https://www.cnet.com/tech/services-and-software/google-gemini-4-argon-ai-model-release/",
-    "score": 78,
-    "reason": "Google's major model release and competitive response to OpenAI"
+    "headline": "AI music maker Suno now generates spoken words",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
+    "score": 80,
+    "reason": "Suno product feature launch, capability expansion in generative AI"
   },
   {
     "rank": 7,
-    "headline": "Trump’s Crazy AI Rebrand Was a Loyalty Test for Tech Execs—and It Worked",
-    "link": "https://www.wired.com/story/trumps-crazy-ai-rebrand-was-a-loyalty-test-for-tech-execs-and-it-worked/",
-    "score": 75,
-    "reason": "Political controversy revealing tech industry dynamics around AI policy"
+    "headline": "\"We're not asking for charity\": Wikimedia CEO calls out AI for unpaid data use",
+    "link": "https://www.axios.com/2026/10/02/wikipedia-ceo-ai-traffic-loss",
+    "score": 79,
+    "reason": "Major controversy over AI training data usage, high-profile pushback from established institution"
   },
   {
     "rank": 8,
-    "headline": "Apple sounds the alarm on AI agents and 'Full Disk Access'",
-    "link": "https://www.engadget.com/2276186/apple-sounds-the-alarm-on-ai-agents-and-full-disk-access/",
-    "score": 73,
-    "reason": "Major security controversy from Apple regarding AI safety risks"
+    "headline": "Inside the AI industry's grassroots rebellion, led by elite researchers at frontier companies",
+    "link": "https://www.axios.com/2026/10/02/openai-anthropic-ai-researchers-rebellion",
+    "score": 77,
+    "reason": "Significant controversy, researcher rebellion at major AI companies"
   },
   {
     "rank": 9,
-    "headline": "'Sometimes it's more expensive than having humans': Ecolab gets real about AI's limits in the physical world",
-    "link": "https://fortune.com/2026/10/02/more-expensive-having-ai-than-humans-honeywell-ecolab/",
-    "score": 70,
-    "reason": "Enterprise reality check on AI ROI with big numbers implications"
+    "headline": "Can Google&apos;s new model really catch up to OpenAI and Anthropic at the frontier?",
+    "link": "https://www.cnbc.com/2026/10/02/tech-download-google-argon-frontier-openai-anthropic.html",
+    "score": 75,
+    "reason": "Google major model launch, competitive landscape with measurable comparison"
   },
   {
     "rank": 10,
-    "headline": "Trump expected to tap DNI Jay Clayton as new AI czar",
-    "link": "https://www.axios.com/2026/10/02/trump-new-ai-czar-jay-clayton-dni",
-    "score": 68,
-    "reason": "Emerging controversy around AI-generated election interference"
+    "headline": "Keep Your Data Yours: How to Opt Out of AI Chatbot Training",
+    "link": "https://www.cnet.com/tech/services-and-software/how-to-stop-ai-chatbots-from-training-on-your-personal-data/",
+    "score": 72,
+    "reason": "Practical consumer response to AI training concerns, reflects broader privacy controversy"
   },
   {
     "rank": 11,
-    "headline": "Booking Holdings CFO says even AI hyperscalers don’t know their ROI—but he’s learning from his ‘AI coach’",
-    "link": "https://fortune.com/2026/10/02/booking-holdings-cfo-says-even-ai-hyperscalers-dont-know-their-roi-but-hes-learning-from-his-ai-coach/",
-    "score": 65,
-    "reason": "Enterprise adoption reality from major company with ROI admission"
+    "headline": "AI campaign deepfakes are starting to draw legal threats",
+    "link": "https://www.axios.com/2026/10/02/ai-deepfake-election-campaign-lawsuits",
+    "score": 70,
+    "reason": "Emerging controversy, legal escalation of AI-generated media in politics"
   },
   {
     "rank": 12,
-    "headline": "Trump, Big AI go all-in together",
-    "link": "https://www.axios.com/2026/10/01/trump-ai-industry-risks-safety-gamble",
-    "score": 64,
-    "reason": "Political alignment controversy affecting AI industry direction"
+    "headline": "Can AI Fix Your Chaotic Inbox? I Unleashed It On 200,000 Unread Emails",
+    "link": "https://www.cnet.com/tech/services-and-software/ai-fix-your-inbox-unread-emails/",
+    "score": 68,
+    "reason": "Big number (200,000), practical AI application test with measurable results"
   },
   {
     "rank": 13,
-    "headline": "Google stands by Gemini 4 performance as some claim it 'struggles' in real-world use",
-    "link": "https://9to5google.com/2026/10/01/gemini-4-struggle-report/",
-    "score": 62,
-    "reason": "Product controversy with performance claims disputed"
+    "headline": "Don’t be fooled—LLMs don’t reason",
+    "link": "https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/",
+    "score": 66,
+    "reason": "Significant research finding challenging AI capability claims"
   },
   {
     "rank": 14,
-    "headline": "Pope Leo says AI lacks the \"spark of humanity\" — and wants artists and the church to fight back",
-    "link": "https://www.axios.com/2026/10/02/pope-leo-xiv-catcholic-church-ai-waring-artists",
-    "score": 58,
-    "reason": "Unique institutional controversy from religious authority on AI ethics"
+    "headline": "Google’s new Guided Vision feature can help you read the fine print",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
+    "score": 62,
+    "reason": "Google accessibility AI feature launch"
   },
   {
     "rank": 15,
-    "headline": "ServiceNow unpacks the Fortune AIQ list, where the widest gap between AI leaders and laggards is training for humans",
-    "link": "https://fortune.com/2026/10/02/servicenow-aiq-data-pacesetters-diana-david/",
-    "score": 56,
-    "reason": "Enterprise readiness analysis revealing significant implementation gaps"
+    "headline": "What to expect at Microsoft's Windows, Surface and AI event on October 7",
+    "link": "https://www.engadget.com/2275196/microsoft-surface-windows-event-october-7-preview/",
+    "score": 60,
+    "reason": "Microsoft major AI event announcement"
   },
   {
     "rank": 16,
-    "headline": "Nvidia Shield TV Pro is now $299 – a $100 price hike seven years after the Android TV box launched",
-    "link": "https://9to5google.com/2026/10/02/nvidia-shield-tv-pro-price-hike/",
-    "score": 54,
-    "reason": "Market signal of AI-driven pricing pressure affecting consumer hardware"
+    "headline": "These AI Experts Want to Do High-Stakes Research Out in the Open",
+    "link": "https://www.wired.com/story/trillium-labs-wants-to-do-high-risk-ai-research-in-the-open/",
+    "score": 58,
+    "reason": "Research community movement on AI safety and transparency"
   },
   {
     "rank": 17,
-    "headline": "Samsung officially raises Galaxy S26 prices by $100, but it hasn't changed everywhere",
-    "link": "https://9to5google.com/2026/10/01/samsung-galaxy-s26-price-hike/",
-    "score": 52,
-    "reason": "AI-driven price increase trend across multiple manufacturers"
+    "headline": "Gemini for Android Auto is just giving up on answers for some drivers",
+    "link": "https://9to5google.com/2026/10/02/gemini-for-android-auto-is-just-giving-up-on-answers-for-some-drivers/",
+    "score": 55,
+    "reason": "Google Gemini functionality failure, reliability concern"
   },
   {
     "rank": 18,
-    "headline": "This new ChatGPT scam tricks you into installing malware – how to spot the trap",
-    "link": "https://www.zdnet.com/innovation/chatgpt-scam-malware-trap/",
-    "score": 48,
-    "reason": "Security/fraud controversy leveraging AI brand for attacks"
+    "headline": "Don't let the adorable AI agents fool you",
+    "link": "https://www.engadget.com/2275148/dont-let-the-adorable-ai-agents-fool-you/",
+    "score": 52,
+    "reason": "Critical perspective on AI agents reliability and safety"
   },
   {
     "rank": 19,
-    "headline": "Behind the Curtain: AI's existential legal crisis",
-    "link": "https://www.axios.com/2026/10/02/artificial-intelligence-ai-legal-liability",
-    "score": 45,
-    "reason": "Broad legal framework crisis affecting AI industry"
-  },
-  {
-    "rank": 20,
-    "headline": "If a data center is camouflaged in the woods, will anyone hate it?",
-    "link": "https://www.theverge.com/tech/1003681/microsoft-data-centers-ai-environment-biomimicry",
-    "score": 42,
-    "reason": "Infrastructure controversy revealing environmental resistance to AI scaling"
+    "headline": "Redefining enterprise intelligence with autonomous AI",
+    "link": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
+    "score": 50,
+    "reason": "Enterprise AI capability announcement"
   }
 ]
