@@ -1,135 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "An OpenAI safety employee has quit and is sounding the alarm",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+    "headline": "How AI is redefining Wall Street jobs — and boosting demand for this new &apos;hottest skill&apos; by 1,721%",
+    "link": "https://www.cnbc.com/2026/10/02/ai-redefining-wall-street-jobs.html",
     "score": 94,
-    "reason": "Major controversy: insider departure with safety concerns at leading AI company"
+    "reason": "Big number (1,721% demand increase), specific impact, quantifiable economic data"
   },
   {
     "rank": 2,
-    "headline": "Former OpenAI employee says AI should be regulated like nuclear power plants",
-    "link": "https://www.engadget.com/2276577/former-openai-employee-says-ai-should-be-regulated-like-nuclear-power-plants/",
+    "headline": "Trump taps Director of National Intelligence Jay Clayton as AI czar",
+    "link": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
     "score": 92,
-    "reason": "High-profile safety controversy with concrete regulatory proposal"
+    "reason": "Major government appointment, direct AI governance decision, high-stakes leadership role"
   },
   {
     "rank": 3,
-    "headline": "OpenAI’s Dot agent is enterprise software that can also order your dinner",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
-    "score": 88,
-    "reason": "Major product launch demonstrating autonomous agent capabilities"
+    "headline": "Apple will limit Mac disk access as AI agents ‘substantially’ increase risk",
+    "link": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
+    "score": 89,
+    "reason": "Major company (Apple) launches security feature, addresses AI safety concern, substantial impact"
   },
   {
     "rank": 4,
-    "headline": "McKinsey: AI will create more jobs than it kills — after destroying 11 million",
-    "link": "https://fortune.com/2026/10/03/ai-job-displacement-creation-new-careers-11-million-americans-workforce-mobility/",
+    "headline": "Ukraine’s surprise robot offensive exposes a vulnerability in Putin’s war machine",
+    "link": "https://www.cnbc.com/2026/10/04/russia-ukraine-war-putin-zelenskyy-donbas-lyman.html",
     "score": 87,
-    "reason": "Big numbers: 11 million job displacement figure from major consultancy"
+    "reason": "AI/robotics deployed in real conflict, major geopolitical implication, concrete use case"
   },
   {
     "rank": 5,
-    "headline": "AI Is Making a Mess of Nurses’ Schedules. They Say It’s a Safety Issue",
-    "link": "https://www.wired.com/story/ai-making-mess-of-nurses-schedules-they-say-its-a-safety-issue/",
+    "headline": "Amazon writes scary blog warning communities not to block data centers",
+    "link": "https://www.theverge.com/tech/1003929/amazon-ai-data-center-blog-warning",
     "score": 85,
-    "reason": "Real-world controversy: AI causing workplace safety problems in healthcare"
+    "reason": "Major company (Amazon), data center controversy, community conflict narrative"
   },
   {
     "rank": 6,
-    "headline": "Gemini app limiting what models free & AI Plus users can access, AI Pro adding Deep Think",
-    "link": "https://9to5google.com/2026/10/03/gemini-model-limits-oct-26/",
-    "score": 82,
-    "reason": "Google major product change: new tier structure and feature differentiation"
+    "headline": "Meta open sources code to let you make Muse AI gadgets",
+    "link": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link",
+    "score": 84,
+    "reason": "Major company (Meta) launches hardware/AI initiative, open source release"
   },
   {
     "rank": 7,
-    "headline": "Trump expected to tap DNI Jay Clayton as new AI czar",
-    "link": "https://www.axios.com/2026/10/02/trump-new-ai-czar-jay-clayton-dni",
-    "score": 81,
-    "reason": "Major regulatory announcement: new government AI leadership appointment"
+    "headline": "Capcom plans to use AI to speed up the game development process",
+    "link": "https://www.engadget.com/2276597/capcom-plans-to-use-ai-to-speed-up-the-game-development-process/",
+    "score": 80,
+    "reason": "Major company (Capcom) announces AI integration, industry transformation"
   },
   {
     "rank": 8,
-    "headline": "The Nvidia Shield TV Is 7 Years Old. It Just Got a $100 Price Hike",
-    "link": "https://www.wired.com/story/7-year-old-tv-now-100-dollars-more-expensive-thank-ai/",
+    "headline": "AI campaign deepfakes are starting to draw legal threats",
+    "link": "https://www.axios.com/2026/10/02/ai-deepfake-election-campaign-lawsuits",
     "score": 78,
-    "reason": "Nvidia pricing controversy tied to AI trend; big number (100% price increase)"
+    "reason": "AI controversy with legal/regulatory implications, emerging problem"
   },
   {
     "rank": 9,
-    "headline": "Rogue AI agents expose internet's frail foundation",
-    "link": "https://www.axios.com/2026/10/03/rogue-ai-agents-internet-defenses",
+    "headline": "Meet the 'mini Erin Brockoviches' fighting off eminent domain—and the shadow of Amazon—as a data center hands out $10,000 to their neighbors",
+    "link": "https://fortune.com/2026/10/04/mini-erin-brockoviches-fighting-project-hazelnut-eminent-domain-10000-dollar-data-center-incentive/",
     "score": 76,
-    "reason": "Autonomous agents causing real security incidents; infrastructure vulnerability"
+    "reason": "Data center controversy, Amazon involvement, community conflict"
   },
   {
     "rank": 10,
-    "headline": "Muse Creates Detailed Profiles of All Your Friends and Family",
-    "link": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/",
+    "headline": "Rural Data Centers Are in for a Big Federal Tax Break",
+    "link": "https://www.wired.com/story/rural-data-centers-are-in-for-a-big-federal-tax-break/",
     "score": 74,
-    "reason": "Privacy controversy: AI system creating profiles without consent"
-  },
-  {
-    "rank": 11,
-    "headline": "Capcom is preparing for a ‘future where we create games together with AI’",
-    "link": "https://www.theverge.com/games/1004418/capcom-ai-game-development",
-    "score": 72,
-    "reason": "Major gaming company commitment to AI integration in development"
-  },
-  {
-    "rank": 12,
-    "headline": "California will fine robotaxi companies if their vehicles block first responders",
-    "link": "https://www.engadget.com/2276543/california-fine-robotaxi-companies-vehicles-block-first-responders/",
-    "score": 70,
-    "reason": "Regulatory action: autonomous vehicles safety enforcement with penalties"
-  },
-  {
-    "rank": 13,
-    "headline": "OpenAI's Altman: Ascribing religion to models a \"safety issue\"",
-    "link": "https://www.axios.com/2026/10/03/openai-anthropic-altman-amodei-religious-force-models",
-    "score": 68,
-    "reason": "Controversy about AI anthropomorphization and safety implications"
-  },
-  {
-    "rank": 14,
-    "headline": "Splice CEO Kakul Srivastava thinks AI emails are killing conversations",
-    "link": "https://www.theverge.com/entertainment/1004162/splice-ceo-kakul-srivastava-ai-interview",
-    "score": 65,
-    "reason": "Business leader commentary on AI's negative workplace communication impact"
-  },
-  {
-    "rank": 15,
-    "headline": "This new ChatGPT scam tricks you into installing malware – how to spot the trap",
-    "link": "https://www.zdnet.com/innovation/chatgpt-scam-malware-trap/",
-    "score": 62,
-    "reason": "Security vulnerability: malware scams exploiting ChatGPT's reputation"
-  },
-  {
-    "rank": 16,
-    "headline": "Pope Leo says AI lacks the \"spark of humanity\" — and wants artists and the church to fight back",
-    "link": "https://www.axios.com/2026/10/02/pope-leo-xiv-catholic-church-ai-warning-artists",
-    "score": 60,
-    "reason": "Religious institutional opposition to AI; cultural controversy"
-  },
-  {
-    "rank": 17,
-    "headline": "Behind the Curtain: AI's existential legal crisis",
-    "link": "https://www.axios.com/2026/10/02/artificial-intelligence-ai-legal-liability",
-    "score": 58,
-    "reason": "Systemic legal/regulatory challenges facing AI industry broadly"
-  },
-  {
-    "rank": 18,
-    "headline": "Trump’s Crazy AI Rebrand Was a Loyalty Test for Tech Execs—and It Worked",
-    "link": "https://www.wired.com/story/trumps-crazy-ai-rebrand-was-a-loyalty-test-for-tech-execs-and-it-worked/",
-    "score": 55,
-    "reason": "Political controversy affecting AI sector leadership decisions"
-  },
-  {
-    "rank": 19,
-    "headline": "Gemini app gains new ‘Map’ tool, replacing '/' with '@'",
-    "link": "https://9to5google.com/2026/10/02/gemini-app-map-tool/",
-    "score": 52,
-    "reason": "Google product update: UI changes in major AI interface"
+    "reason": "Government policy change supporting AI infrastructure, significant financial incentive"
   }
 ]
