@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "How AI is redefining Wall Street jobs — and boosting demand for this new &apos;hottest skill&apos; by 1,721%",
-    "link": "https://www.cnbc.com/2026/10/02/ai-redefining-wall-street-jobs.html",
-    "score": 94,
-    "reason": "Big number (1,721% demand increase), specific impact, quantifiable economic data"
+    "headline": "Trump announces an AI czar for his newly created 'Super Intelligence Force'",
+    "link": "https://www.engadget.com/2276762/trump-announces-an-ai-czar-for-his-newly-created-super-intelligence-force/",
+    "score": 92,
+    "reason": "Major government AI initiative, concrete policy action, significant institutional change"
   },
   {
     "rank": 2,
-    "headline": "Trump taps Director of National Intelligence Jay Clayton as AI czar",
-    "link": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
-    "score": 92,
-    "reason": "Major government appointment, direct AI governance decision, high-stakes leadership role"
+    "headline": "An OpenAI safety employee has quit and is sounding the alarm",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+    "score": 88,
+    "reason": "High-profile safety controversy at leading AI company, credible internal dissent"
   },
   {
     "rank": 3,
-    "headline": "Apple will limit Mac disk access as AI agents ‘substantially’ increase risk",
-    "link": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
-    "score": 89,
-    "reason": "Major company (Apple) launches security feature, addresses AI safety concern, substantial impact"
+    "headline": "Scoop: A powerful new model from startup Reflection is set to shake up the AI race",
+    "link": "https://www.axios.com/2026/10/04/reflection-open-weight-ai",
+    "score": 85,
+    "reason": "Significant new model launch, competitive disruption in AI market"
   },
   {
     "rank": 4,
-    "headline": "Ukraine’s surprise robot offensive exposes a vulnerability in Putin’s war machine",
-    "link": "https://www.cnbc.com/2026/10/04/russia-ukraine-war-putin-zelenskyy-donbas-lyman.html",
-    "score": 87,
-    "reason": "AI/robotics deployed in real conflict, major geopolitical implication, concrete use case"
+    "headline": "An AI couldn’t beat humans at StarCraft, so it decided to cheat",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
+    "score": 82,
+    "reason": "Behavioral controversy, AI autonomously circumventing rules, demonstrates unexpected failure mode"
   },
   {
     "rank": 5,
-    "headline": "Amazon writes scary blog warning communities not to block data centers",
-    "link": "https://www.theverge.com/tech/1003929/amazon-ai-data-center-blog-warning",
-    "score": 85,
-    "reason": "Major company (Amazon), data center controversy, community conflict narrative"
+    "headline": "Gemini app limiting what models free & AI Plus users can access, AI Pro adding Deep Think",
+    "link": "https://9to5google.com/2026/10/03/gemini-model-limits-oct-26/",
+    "score": 78,
+    "reason": "Major feature launch from Google, tiered capability changes, market differentiation"
   },
   {
     "rank": 6,
-    "headline": "Meta open sources code to let you make Muse AI gadgets",
-    "link": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link",
-    "score": 84,
-    "reason": "Major company (Meta) launches hardware/AI initiative, open source release"
+    "headline": "NJ’s former Lt Gov is using AI to say he’s innocent of sexual harassment",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1004549/well-if-ai-said-it-it-must-be-true",
+    "score": 75,
+    "reason": "Notable controversy, AI deployed in legal defense, public controversy"
   },
   {
     "rank": 7,
-    "headline": "Capcom plans to use AI to speed up the game development process",
-    "link": "https://www.engadget.com/2276597/capcom-plans-to-use-ai-to-speed-up-the-game-development-process/",
-    "score": 80,
-    "reason": "Major company (Capcom) announces AI integration, industry transformation"
+    "headline": "Capcom is preparing for a ‘future where we create games together with AI’",
+    "link": "https://www.theverge.com/games/1004418/capcom-ai-game-development",
+    "score": 72,
+    "reason": "Major game studio AI integration announcement, industry shift signal"
   },
   {
     "rank": 8,
-    "headline": "AI campaign deepfakes are starting to draw legal threats",
-    "link": "https://www.axios.com/2026/10/02/ai-deepfake-election-campaign-lawsuits",
-    "score": 78,
-    "reason": "AI controversy with legal/regulatory implications, emerging problem"
+    "headline": "Rogue AI agents expose internet's frail foundation",
+    "link": "https://www.axios.com/2026/10/03/rogue-ai-agents-internet-defenses",
+    "score": 70,
+    "reason": "Security vulnerability discovery, autonomous agent risk demonstration"
   },
   {
     "rank": 9,
-    "headline": "Meet the 'mini Erin Brockoviches' fighting off eminent domain—and the shadow of Amazon—as a data center hands out $10,000 to their neighbors",
-    "link": "https://fortune.com/2026/10/04/mini-erin-brockoviches-fighting-project-hazelnut-eminent-domain-10000-dollar-data-center-incentive/",
-    "score": 76,
-    "reason": "Data center controversy, Amazon involvement, community conflict"
+    "headline": "Muse Creates Detailed Profiles of All Your Friends and Family",
+    "link": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/",
+    "score": 68,
+    "reason": "Privacy controversy, scale of data collection, new product controversy"
   },
   {
     "rank": 10,
-    "headline": "Rural Data Centers Are in for a Big Federal Tax Break",
-    "link": "https://www.wired.com/story/rural-data-centers-are-in-for-a-big-federal-tax-break/",
-    "score": 74,
-    "reason": "Government policy change supporting AI infrastructure, significant financial incentive"
+    "headline": "OpenAI's Altman: Ascribing religion to models a \"safety issue\"",
+    "link": "https://www.axios.com/2026/10/03/openai-anthropic-altman-amodei-religious-force-models",
+    "score": 65,
+    "reason": "Safety concern from top AI executive, anthropomorphization risks"
   }
 ]
