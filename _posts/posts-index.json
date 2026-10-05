@@ -1,5 +1,24 @@
 [
  {
+  "id": "altman-accept-bad-things-20261005",
+  "slug": "altman-accept-bad-things",
+  "headline": "Sam Altman: 'The World Should Accept Some Bad Things' for AI",
+  "summary": "OpenAI CEO Sam Altman says society should tolerate some harm for AI's benefits — reigniting the debate over how much risk is acceptable in the race to deploy.",
+  "body": "<p>Sam Altman's recent statement that “the world should accept some bad things happening for the benefits of this technology” has sparked a critical conversation about the true cost of AI advancement. The OpenAI CEO's candid remarks highlight a fundamental tension: how much disruption and risk should society tolerate in pursuit of transformative progress?</p><p>Altman's position reflects a utilitarian view increasingly common in tech leadership. The argument: breakthrough technologies — from electricity to the internet — have always carried unintended consequences. But the scale and speed of AI deployment raises new questions about whether historical precedent is an adequate guide for managing systemic risk in autonomous systems.</p><p>Strategically, by publicly normalizing acceptable negative externalities, Altman is establishing a narrative frame that could shape regulatory discussions, investor expectations, and public discourse around AI safety guardrails. It's a bold bet that the market rewards innovation velocity over precaution.</p><p>The broader industry is watching. Competitors will face pressure to either align with this vision or differentiate as more cautious — a choice with profound implications for corporate culture and regulatory standing.</p><p>The real question isn't whether AI will bring challenges — it will. It's whether those challenges should be features of the rollout strategy, or bugs to be fixed.</p>",
+  "category": "Safety",
+  "hashtags": [
+   "AI",
+   "OpenAI",
+   "Technology",
+   "AIGovernance",
+   "Innovation"
+  ],
+  "imageUrl": "https://aifeed.run/images/aifeed_altman_accept_bad_things_20261005.png",
+  "sourceUrl": "https://fortune.com/2026/10/05/openai-sam-altman-the-world-should-accept-some-bad-things-happening/",
+  "publishedAt": "2026-10-05T11:52:00-04:00",
+  "isVideo": false
+ },
+ {
   "id": "ai-vs-ai-arms-race-20260930",
   "slug": "ai-vs-ai-arms-race",
   "headline": "AI Is Now Being Deployed Against Other AI",
