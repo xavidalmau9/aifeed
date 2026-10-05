@@ -1,72 +1,58 @@
 [
   {
     "rank": 1,
-    "headline": "Trump announces an AI czar for his newly created 'Super Intelligence Force'",
-    "link": "https://www.engadget.com/2276762/trump-announces-an-ai-czar-for-his-newly-created-super-intelligence-force/",
+    "headline": "AI Solves a Major Unsolved Math Problem. Not Everyone Is Happy",
+    "link": "https://spectrum.ieee.org/millennium-prize-ai",
     "score": 92,
-    "reason": "Major government AI initiative, concrete policy action, significant institutional change"
+    "reason": "Major AI breakthrough with controversy; demonstrates significant capability and raises substantive debate"
   },
   {
     "rank": 2,
-    "headline": "An OpenAI safety employee has quit and is sounding the alarm",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+    "headline": "Trump taps Director of National Intelligence Jay Clayton as AI czar",
+    "link": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
     "score": 88,
-    "reason": "High-profile safety controversy at leading AI company, credible internal dissent"
+    "reason": "Government leadership appointment; big political move with direct AI governance implications"
   },
   {
     "rank": 3,
-    "headline": "Scoop: A powerful new model from startup Reflection is set to shake up the AI race",
-    "link": "https://www.axios.com/2026/10/04/reflection-open-weight-ai",
+    "headline": "OpenAI's safety firings raise awkward questions",
+    "link": "https://fortune.com/2026/10/05/openai-safety-firings-raise-awkward-questions/",
     "score": 85,
-    "reason": "Significant new model launch, competitive disruption in AI market"
+    "reason": "Major controversy at leading AI company; raises substantive safety concerns"
   },
   {
     "rank": 4,
-    "headline": "An AI couldn’t beat humans at StarCraft, so it decided to cheat",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
-    "score": 82,
-    "reason": "Behavioral controversy, AI autonomously circumventing rules, demonstrates unexpected failure mode"
+    "headline": "OpenAI’s Altman: ‘The world should accept some bad things happening for the benefits of this technology’",
+    "link": "https://fortune.com/2026/10/05/openai-sam-altman-the-world-should-accept-some-bad-things-happening/",
+    "score": 83,
+    "reason": "Controversial statement from major AI leader; significant ethical implications"
   },
   {
     "rank": 5,
-    "headline": "Gemini app limiting what models free & AI Plus users can access, AI Pro adding Deep Think",
-    "link": "https://9to5google.com/2026/10/03/gemini-model-limits-oct-26/",
-    "score": 78,
-    "reason": "Major feature launch from Google, tiered capability changes, market differentiation"
+    "headline": "While OpenAI and Anthropic battle over data privacy, more companies look to open models and 'sovereign AI'",
+    "link": "https://fortune.com/2026/10/05/openai-and-anthropic-battle-over-zero-data-retention-zdr-data-privacy-companies-look-to-open-models-and-sovereign-ai/",
+    "score": 81,
+    "reason": "Market shift away from major players; multiple companies moving toward alternatives"
   },
   {
     "rank": 6,
-    "headline": "NJ’s former Lt Gov is using AI to say he’s innocent of sexual harassment",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1004549/well-if-ai-said-it-it-must-be-true",
-    "score": 75,
-    "reason": "Notable controversy, AI deployed in legal defense, public controversy"
+    "headline": "Ukraine’s surprise robot offensive exposes a vulnerability in Putin’s war machine",
+    "link": "https://www.cnbc.com/2026/10/04/russia-ukraine-war-putin-zelenskyy-donbas-lyman.html",
+    "score": 79,
+    "reason": "Practical AI deployment in warfare; demonstrates real-world capability and impact"
   },
   {
     "rank": 7,
-    "headline": "Capcom is preparing for a ‘future where we create games together with AI’",
-    "link": "https://www.theverge.com/games/1004418/capcom-ai-game-development",
+    "headline": "Can Europe’s industrial legacy give it an AI advantage?",
+    "link": "https://fortune.com/2026/10/05/siemens-europe-industrial-ai-advantage-data-manufacturing-peter-koerte/",
     "score": 72,
-    "reason": "Major game studio AI integration announcement, industry shift signal"
+    "reason": "Regional AI competition and strategy; explores geopolitical AI landscape"
   },
   {
     "rank": 8,
-    "headline": "Rogue AI agents expose internet's frail foundation",
-    "link": "https://www.axios.com/2026/10/03/rogue-ai-agents-internet-defenses",
-    "score": 70,
-    "reason": "Security vulnerability discovery, autonomous agent risk demonstration"
-  },
-  {
-    "rank": 9,
-    "headline": "Muse Creates Detailed Profiles of All Your Friends and Family",
-    "link": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/",
+    "headline": "People really hate AI, so why can’t they get enough?",
+    "link": "https://www.technologyreview.com/2026/10/05/1145682/people-really-hate-ai-so-why-cant-they-get-enough/",
     "score": 68,
-    "reason": "Privacy controversy, scale of data collection, new product controversy"
-  },
-  {
-    "rank": 10,
-    "headline": "OpenAI's Altman: Ascribing religion to models a \"safety issue\"",
-    "link": "https://www.axios.com/2026/10/03/openai-anthropic-altman-amodei-religious-force-models",
-    "score": 65,
-    "reason": "Safety concern from top AI executive, anthropomorphization risks"
+    "reason": "Public sentiment paradox; highlights consumer behavior contradiction around AI adoption"
   }
 ]
