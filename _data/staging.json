@@ -1,58 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "AI Solves a Major Unsolved Math Problem. Not Everyone Is Happy",
-    "link": "https://spectrum.ieee.org/millennium-prize-ai",
+    "headline": "Nvidia&apos;s $20 billion Groq deal faces lawsuit alleging startup&apos;s stockholders were shortchanged",
+    "link": "https://www.cnbc.com/2026/10/05/nvidia-groq-deal-stockholder-lawsuit.html",
     "score": 92,
-    "reason": "Major AI breakthrough with controversy; demonstrates significant capability and raises substantive debate"
+    "reason": "Major acquisition with legal controversy and financial stakes"
   },
   {
     "rank": 2,
-    "headline": "Trump taps Director of National Intelligence Jay Clayton as AI czar",
-    "link": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
+    "headline": "Wikipedia operator says OpenAI's 'rogue' bots may be linked to a May outage",
+    "link": "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
     "score": 88,
-    "reason": "Government leadership appointment; big political move with direct AI governance implications"
+    "reason": "Concrete incident with unauthorized activity and major platform impact"
   },
   {
     "rank": 3,
-    "headline": "OpenAI's safety firings raise awkward questions",
-    "link": "https://fortune.com/2026/10/05/openai-safety-firings-raise-awkward-questions/",
-    "score": 85,
-    "reason": "Major controversy at leading AI company; raises substantive safety concerns"
+    "headline": "It's 'more likely than not' humanity loses control: Former AI insiders testify safety fixes may be 'duct tape that will fall off later'",
+    "link": "https://fortune.com/2026/10/05/new-york-city-council-hearing-openai-anthropic-ai-safety-google-meta/",
+    "score": 86,
+    "reason": "High-stakes testimony from credible insiders on critical safety issue"
   },
   {
     "rank": 4,
-    "headline": "OpenAI’s Altman: ‘The world should accept some bad things happening for the benefits of this technology’",
-    "link": "https://fortune.com/2026/10/05/openai-sam-altman-the-world-should-accept-some-bad-things-happening/",
-    "score": 83,
-    "reason": "Controversial statement from major AI leader; significant ethical implications"
+    "headline": "OpenAI PR tells journalist to ‘move on’ while asking Sam Altman about a ChatGPT user's suicide",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1004827/openai-sam-altman-vanity-fair-interview-pr",
+    "score": 84,
+    "reason": "Significant controversy involving company response to serious incident"
   },
   {
     "rank": 5,
-    "headline": "While OpenAI and Anthropic battle over data privacy, more companies look to open models and 'sovereign AI'",
-    "link": "https://fortune.com/2026/10/05/openai-and-anthropic-battle-over-zero-data-retention-zdr-data-privacy-companies-look-to-open-models-and-sovereign-ai/",
-    "score": 81,
-    "reason": "Market shift away from major players; multiple companies moving toward alternatives"
+    "headline": "OpenAI is adding text watermarking in ChatGPT and Codex",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act",
+    "score": 79,
+    "reason": "Major feature launch addressing content provenance"
   },
   {
     "rank": 6,
-    "headline": "Ukraine’s surprise robot offensive exposes a vulnerability in Putin’s war machine",
-    "link": "https://www.cnbc.com/2026/10/04/russia-ukraine-war-putin-zelenskyy-donbas-lyman.html",
-    "score": 79,
-    "reason": "Practical AI deployment in warfare; demonstrates real-world capability and impact"
+    "headline": "An open-source tool lets you delete 12GB of Apple Intelligence data on macOS",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1004672/mac-delete-apple-intelligence-ai-tool",
+    "score": 76,
+    "reason": "Concrete privacy capability with measurable impact"
   },
   {
     "rank": 7,
-    "headline": "Can Europe’s industrial legacy give it an AI advantage?",
-    "link": "https://fortune.com/2026/10/05/siemens-europe-industrial-ai-advantage-data-manufacturing-peter-koerte/",
-    "score": 72,
-    "reason": "Regional AI competition and strategy; explores geopolitical AI landscape"
+    "headline": "Scoop: A powerful new model from startup Reflection is set to shake up the AI race",
+    "link": "https://www.axios.com/2026/10/04/reflection-open-weight-ai",
+    "score": 75,
+    "reason": "New competitor launch with potential market disruption"
   },
   {
     "rank": 8,
-    "headline": "People really hate AI, so why can’t they get enough?",
-    "link": "https://www.technologyreview.com/2026/10/05/1145682/people-really-hate-ai-so-why-cant-they-get-enough/",
+    "headline": "Nvidia-backed Reflection AI unveils its first open model, Beam. Could it be America's best chance to compete with China?",
+    "link": "https://fortune.com/2026/10/05/reflection-ai-unveils-beam-a-new-us-based-open-source-model-to-compete-with-china/",
+    "score": 74,
+    "reason": "Product launch with geopolitical significance"
+  },
+  {
+    "rank": 9,
+    "headline": "All the drama around AI's takeover of mathematics",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1004933/ai-math-openai-breakthrough-solution",
+    "score": 71,
+    "reason": "Significant controversy in academic/research domain"
+  },
+  {
+    "rank": 10,
+    "headline": "Satya Nadella reinvented Microsoft once. Can he do it again in the AI era?",
+    "link": "https://www.cnbc.com/2026/10/05/satya-nadella-reinvented-microsoft-once-can-he-do-it-in-the-ai-era.html",
     "score": 68,
-    "reason": "Public sentiment paradox; highlights consumer behavior contradiction around AI adoption"
+    "reason": "Major strategic repositioning at large company"
+  },
+  {
+    "rank": 11,
+    "headline": "GOP senator warns Anthropic of \"alarmist\" approach to AI",
+    "link": "https://www.axios.com/2026/10/05/gop-senator-bernie-moreno-ai-anthropic-dario-amodei-superintelligence",
+    "score": 65,
+    "reason": "Political pressure on major AI company"
+  },
+  {
+    "rank": 12,
+    "headline": "How I made a paid Mac app in 11 days with Claude – without writing a single line of code",
+    "link": "https://www.zdnet.com/innovation/claude-code-vibe-coding-mac-app/",
+    "score": 62,
+    "reason": "Concrete capability demonstration with measurable outcome"
+  },
+  {
+    "rank": 13,
+    "headline": "AI researcher warns &apos;we are racing to build and grow our own adversary&apos; in NYC hearing",
+    "link": "https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html",
+    "score": 60,
+    "reason": "Public safety warning on record"
+  },
+  {
+    "rank": 14,
+    "headline": "This startup is issuing AI-generated acne prescriptions",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions",
+    "score": 58,
+    "reason": "Controversial medical application launch"
+  },
+  {
+    "rank": 15,
+    "headline": "OpenAI is sticking more ads in ChatGPT",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1004655/openai-chatgpt-visual-ads",
+    "score": 55,
+    "reason": "Business model shift at major platform"
+  },
+  {
+    "rank": 16,
+    "headline": "Rural Data Centers Are in for a Big Federal Tax Break",
+    "link": "https://www.wired.com/story/rural-data-centers-are-in-for-a-big-federal-tax-break/",
+    "score": 52,
+    "reason": "Concrete policy with quantifiable impact"
+  },
+  {
+    "rank": 17,
+    "headline": "Sam Altman says ‘some bad things' will happen, but AI is totally worth it",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1004811/openai-altman-bad-things-ai-tradeoff",
+    "score": 48,
+    "reason": "Controversial statement from major figure on risks"
+  },
+  {
+    "rank": 18,
+    "headline": "Attempts to Keep Humans in the AI Loop May Actually Push Them Out",
+    "link": "https://spectrum.ieee.org/agentic-ai-humans-in-loop",
+    "score": 45,
+    "reason": "Research finding on automation paradox"
+  },
+  {
+    "rank": 19,
+    "headline": "Our minds aren’t equipped to handle AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1003794/ai-education-computational-model-thought",
+    "score": 42,
+    "reason": "Expert warning on human-AI interaction limits"
+  },
+  {
+    "rank": 20,
+    "headline": "OpenAI is testing more ads in ChatGPT",
+    "link": "https://www.engadget.com/2277271/openai-is-testing-more-ads-in-chatgpt/",
+    "score": 38,
+    "reason": "Incremental business model test"
   }
 ]
