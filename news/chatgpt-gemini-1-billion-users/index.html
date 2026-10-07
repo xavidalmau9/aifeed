@@ -591,8 +591,8 @@
       <!-- Success state -->
       <div id="sub-success-state" style="display:none;">
         <div style="font-size:64px;line-height:1;margin-bottom:20px;">🎉</div>
-        <h2 style="font-family:'Syne',sans-serif;font-size:24px;font-weight:800;color:#f0eeff;margin-bottom:10px;">You're in!</h2>
-        <p style="font-size:15px;color:#7b78a8;line-height:1.7;margin-bottom:28px;">Welcome to the feed. First issue hits your inbox tomorrow morning.</p>
+        <h2 style="font-family:'Syne',sans-serif;font-size:24px;font-weight:800;color:#f0eeff;margin-bottom:10px;">Almost there!</h2>
+        <p style="font-size:15px;color:#7b78a8;line-height:1.7;margin-bottom:28px;">Finish signing up in the tab that just opened, then check your inbox to confirm. Welcome to the feed!</p>
         <button onclick="closeSubOverlay()" style="background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;border:none;border-radius:12px;padding:13px 32px;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;cursor:pointer;">Done</button>
       </div>
     </div>
@@ -800,6 +800,7 @@
       e.preventDefault();
       const email = document.getElementById('inline-email').value;
       e.target.reset();
+      window.__subSource = 'article';
       openSubOverlay(email);
     }
 
@@ -813,19 +814,20 @@
       document.body.style.overflow = 'hidden';
     }
 
+    const BEEHIIV_SUBSCRIBE_URL = 'https://aifeed.beehiiv.com/subscribe'; // publication pub_eb0b9508-1ffd-4fb1-a63c-e762fa86569c
+
     async function submitSubscribe(e) {
       e.preventDefault();
       const email = document.getElementById('sub-email-field').value;
       const btn = document.getElementById('sub-btn');
-      btn.textContent = 'Subscribing...';
+      btn.textContent = 'Opening signup...';
       btn.disabled = true;
-      try {
-        await fetch('https://formsubmit.co/ajax/theaifeed.run@gmail.com', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify({ email: email, name: 'AIFeed Subscriber', _subject: 'New subscriber: ' + email, _captcha: 'false' })
-        });
-      } catch(err) {}
+      // Beehiiv public signup (no API key client-side): opens the AIFeed.run Beehiiv signup with the email prefilled.
+      const bhUrl = BEEHIIV_SUBSCRIBE_URL + '?email=' + encodeURIComponent(email)
+        + '&utm_source=aifeed.run&utm_medium=website&utm_campaign=' + encodeURIComponent(window.__subSource || 'site');
+      const w = window.open(bhUrl, '_blank');
+      if (!w) { window.location.href = bhUrl; return; }  // popup blocked: continue in same tab
+      try { w.opener = null; } catch (err) {}
       document.getElementById('sub-form-state').style.display = 'none';
       document.getElementById('sub-success-state').style.display = 'block';
     }
