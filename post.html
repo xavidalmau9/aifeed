@@ -557,7 +557,7 @@
       <div id="sub-success-state" style="display:none;">
         <div style="font-size:64px;line-height:1;margin-bottom:20px;">🎉</div>
         <h2 style="font-family:'Syne',sans-serif;font-size:24px;font-weight:800;color:#f0eeff;margin-bottom:10px;">Almost there!</h2>
-        <p style="font-size:15px;color:#7b78a8;line-height:1.7;margin-bottom:28px;">Finish signing up in the tab that just opened, then check your inbox to confirm. Welcome to the feed!</p>
+        <p style="font-size:15px;color:#7b78a8;line-height:1.7;margin-bottom:28px;">Tap "Click to subscribe" in the tab that just opened to confirm. Welcome to the feed!</p>
         <button onclick="closeSubOverlay()" style="background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;border:none;border-radius:12px;padding:13px 32px;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;cursor:pointer;">Done</button>
       </div>
     </div>
@@ -779,7 +779,7 @@
       document.body.style.overflow = 'hidden';
     }
 
-    const BEEHIIV_SUBSCRIBE_URL = 'https://aifeed.beehiiv.com/subscribe'; // publication pub_eb0b9508-1ffd-4fb1-a63c-e762fa86569c
+    const BEEHIIV_SUBSCRIBE_URL = 'https://magic.beehiiv.com/v1/eb0b9508-1ffd-4fb1-a63c-e762fa86569c'; // Beehiiv public Magic Link for AIFeed.run (pub_eb0b9508-…), no API key
 
     async function submitSubscribe(e) {
       e.preventDefault();
@@ -787,7 +787,7 @@
       const btn = document.getElementById('sub-btn');
       btn.textContent = 'Opening signup...';
       btn.disabled = true;
-      // Beehiiv public signup (no API key client-side): opens the AIFeed.run Beehiiv signup with the email prefilled.
+      // Opens Beehiiv's one-click confirm page for this email ("You'll be subscribed with …"). No secret client-side.
       const bhUrl = BEEHIIV_SUBSCRIBE_URL + '?email=' + encodeURIComponent(email)
         + '&utm_source=aifeed.run&utm_medium=website&utm_campaign=' + encodeURIComponent(window.__subSource || 'site');
       const w = window.open(bhUrl, '_blank');
