@@ -1,0 +1,2925 @@
+{
+  "id": "aifeedAutopilot1",
+  "name": "AIFeed Autopilot (8am #1 / 5pm #2 ET)",
+  "nodes": [
+    {
+      "id": "schedule-8am+5pm-et",
+      "name": "Schedule 8am+5pm ET",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 8,17 * * *"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "config",
+      "name": "Config",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        220,
+        0
+      ],
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={\n \"repo\": \"xavidalmau9/aifeed\",\n \"branch\": \"main\",\n \"siteUrl\": \"https://aifeed.run\",\n \"igUserId\": \"17841442136197946\",\n \"fbPageId\": \"1434982969687864\",\n \"metaAppId\": \"1367205021940381\",\n \"graphVersion\": \"v21.0\",\n \"linkedinAuthorUrn\": \"urn:li:person:REPLACE (or urn:li:organization:REPLACE)\",\n \"linkedinVersion\": \"202509\",\n \"endCardUrl\": \"https://aifeed.run/images/aifeed_endslide.png\",\n \"telegramChatId\": \"7748417469\",\n \"renderUrl\": \"http://127.0.0.1:3000\",\n \"anthropicModel\": \"claude-haiku-4-5\",\n \"today\": \"{{ $now.setZone('America/New_York').toFormat('yyyy-MM-dd') }}\",\n \"slot\": {{ $now.setZone('America/New_York').hour < 12 ? 1 : 2 }},\n \"fbEnabled\": false,\n \"dryRun\": false,\n \"dryRunDir\": \"/home/box/aifeed-n8n/dryrun\",\n \"dedupDays\": 30,\n \"similarityThreshold\": 0.5\n}"
+      }
+    },
+    {
+      "id": "gh-get-history",
+      "name": "GH Get History",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        440,
+        0
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "=https://api.github.com/repos/{{ $('Config').first().json.repo }}/contents/_data/history.json",
+        "options": {
+          "response": {
+            "response": {
+              "neverError": true
+            }
+          }
+        },
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi"
+      },
+      "credentials": {
+        "githubApi": {
+          "id": "aifeedGithub0001",
+          "name": "GitHub aifeed (fine-grained PAT)"
+        }
+      }
+    },
+    {
+      "id": "gh-get-posts-index",
+      "name": "GH Get Posts Index",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        0
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "=https://api.github.com/repos/{{ $('Config').first().json.repo }}/contents/_posts/posts-index.json",
+        "options": {},
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi"
+      },
+      "credentials": {
+        "githubApi": {
+          "id": "aifeedGithub0001",
+          "name": "GitHub aifeed (fine-grained PAT)"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 2,
+      "waitBetweenTries": 5000,
+      "onError": "continueRegularOutput",
+      "alwaysOutputData": true
+    },
+    {
+      "id": "ig-get-recent-media",
+      "name": "IG Get Recent Media",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        880,
+        0
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "=https://graph.facebook.com/{{ $('Config').first().json.graphVersion }}/{{ $('Config').first().json.igUserId }}/media",
+        "options": {},
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "caption,timestamp"
+            },
+            {
+              "name": "limit",
+              "value": "100"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "aifeedMetaIG0001",
+          "name": "Meta IG long-lived token (access_token)"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 2,
+      "waitBetweenTries": 5000,
+      "onError": "continueRegularOutput",
+      "alwaysOutputData": true
+    },
+    {
+      "id": "fetch-rss-+-dedup",
+      "name": "Fetch RSS + Dedup",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1100,
+        0
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// \u2500\u2500 Shared dedupe helpers (inlined into \"Fetch RSS + Dedup\"; also used by tests) \u2500\u2500\n// n8n task runners have no URL global, so parse with a regex.\nfunction parseUrl(u) {\n  const m = String(u || '').trim().match(/^(https?):\\/\\/([^\\/?#\\s]+)([^?#\\s]*)(\\?[^#\\s]*)?/i);\n  return m ? { host: m[2].toLowerCase(), path: m[3] || '', query: (m[4] || '').slice(1) } : null;\n}\nfunction hostOf(u) { const p = parseUrl(u); return p ? p.host.replace(/^www\\./, '') : ''; }\n// Normalized source URL: no scheme, no www./m., no tracking/any query (except real ids), no trailing slash or /amp.\nfunction canonUrl(u) {\n  const p = parseUrl(u); if (!p) return String(u || '').trim().toLowerCase();\n  const keep = p.query.split('&').filter(kv => /^(id|p|v|story|article|item)=/i.test(kv)).join('&');\n  const path = p.path.replace(/\\/amp\\/?$/i, '').replace(/\\/(index\\.html?)$/i, '').replace(/\\/+$/, '');\n  return (p.host.replace(/^(www|m|amp)\\./, '') + path + (keep ? '?' + keep : '')).toLowerCase();\n}\nconst STOP = new Set(('a an the of to in on for and or with is are was were be been by at from as its it this that these those new says said say after over into how why what who when will can could would should just now ai '\n  + 'about up out off than then their they them his her he she we you your our us not no yes more most report reports reportedly amid via vs here there has have had do does did get gets got make makes made '\n  + 'launch launches launched announce announces announced unveil unveils unveiled').split(/\\s+/));\nfunction tokens(t) {\n  return String(t || '').toLowerCase().replace(/[\u2019']/g, '').replace(/[^a-z0-9$ ]/g, ' ').split(/\\s+/)\n    .filter(w => w.length > 1 && !STOP.has(w)).map(w => w.replace(/(ies)$/, 'y').replace(/([^s])s$/, '$1'));\n}\nfunction titleSim(a, b) {\n  const A = new Set(tokens(a)), B = new Set(tokens(b));\n  if (!A.size || !B.size) return { jac: 0, ovl: 0, shared: 0 };\n  let i = 0; A.forEach(w => { if (B.has(w)) i++; });\n  return { jac: i / (A.size + B.size - i), ovl: i / Math.min(A.size, B.size), shared: i };\n}\n// History entry: { src, title, url, canon, date }\nconst DAY = 86400000;\nfunction cheapRepeat(cand, hist, opts) {\n  const o = Object.assign({ jaccard: 0.6, overlap: 0.6, overlapMinShared: 3, overlapDays: 120 }, opts || {});\n  const cu = canonUrl(cand.link || cand.url || '');\n  for (const h of hist) {\n    if (h.canon && cu && h.canon === cu) return { reason: 'same source URL', match: h };\n  }\n  for (const h of hist) {\n    if (!h.title) continue;\n    const s = titleSim(cand.title, h.title);\n    if (s.jac >= o.jaccard) return { reason: 'similar title (jaccard ' + s.jac.toFixed(2) + ')', match: h };\n    const recent = !h.date || (Date.now() - new Date(h.date).getTime()) < o.overlapDays * DAY;\n    if (recent && s.shared >= o.overlapMinShared && s.ovl >= o.overlap) return { reason: 'similar title (overlap ' + s.ovl.toFixed(2) + ', ' + s.shared + ' shared words)', match: h };\n  }\n  return null;\n}\nconst decodeEnt = s => String(s || '').replace(/<!\\[CDATA\\[|\\]\\]>/g, '').replace(/&#x([0-9a-f]+);/gi, (_, c) => String.fromCharCode(parseInt(c, 16))).replace(/&#(\\d+);/g, (_, c) => String.fromCharCode(+c)).replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '\"').replace(/&#39;|&apos;/g, \"'\").replace(/<[^>]+>/g, '').trim();\n// Website posts-index.json entries -> history entries\nfunction siteHistory(posts) {\n  return (posts || []).map(p => ({ src: 'site', title: p.headline || '', summary: (p.summary || '').slice(0, 160), url: p.sourceUrl || '', canon: p.sourceUrl ? canonUrl(p.sourceUrl) : '', date: p.publishedAt || p.date || null, slug: p.slug || '' }));\n}\n// aifeed.run/feed.xml (fallback when posts-index cannot be read)\nfunction feedHistory(xml) {\n  return (String(xml || '').match(/<item>[\\s\\S]*?<\\/item>/gi) || []).map(b => {\n    const g = re => decodeEnt((b.match(re) || [])[1] || '');\n    const src = g(/<aifeed:sourceUrl>([\\s\\S]*?)<\\/aifeed:sourceUrl>/i);\n    return { src: 'site', title: g(/<title>([\\s\\S]*?)<\\/title>/i), summary: g(/<description>([\\s\\S]*?)<\\/description>/i).slice(0, 160), url: src, canon: src ? canonUrl(src) : '', date: g(/<pubDate>([\\s\\S]*?)<\\/pubDate>/i) || null };\n  }).filter(h => h.title);\n}\n// Instagram captions -> history entries (URL from the \"Source\" line, title = first line / hook)\nfunction igHistory(media) {\n  return (media || []).filter(m => m && m.caption).map(m => {\n    const urls = (m.caption.match(/https?:\\/\\/[^\\s<>\"')]+/g) || []).map(u => u.replace(/[.,;:!?]+$/, '')).filter(u => !/aifeed\\.run/i.test(u));\n    const first = m.caption.split('\\n').map(l => l.replace(/^[\\s\\u2800]+|[\\s\\u2800]+$/g, '')).find(l => l && !/^source:/i.test(l)) || '';\n    const hook = first.replace(/[\\u{1F000}-\\u{1FAFF}\\u{2600}-\\u{27BF}\\u{FE0F}\\u{200D}]/gu, '').trim();\n    const body = m.caption.replace(/\\s+/g, ' ').slice(0, 220);\n    return { src: 'instagram', title: hook, summary: body, url: urls[0] || '', canon: urls[0] ? canonUrl(urls[0]) : '', date: m.timestamp || null };\n  });\n}\nfunction logHistory(history) {\n  return ((history && history.posted) || []).map(p => ({ src: 'log', title: p.headline || '', url: p.url || '', canon: p.canonUrl || (p.url ? canonUrl(p.url) : ''), date: p.postedAt || p.date || null }));\n}\n\n// Loads the FULL posted history (website + Instagram + workflow log), fetches RSS, and removes anything\n// already posted (same normalized source URL or similar title). A semantic same-event check runs later.\n// (dedup_lib.js is prepended by build.py)\nconst cfg = $('Config').first().json;\nconst decode64 = r => { try { return r && r.content ? JSON.parse(Buffer.from(r.content, 'base64').toString('utf8')) : null; } catch (e) { return null; } };\nconst histResp = $('GH Get History').first().json || {};\nconst postsResp = $('GH Get Posts Index').first().json || {};\nconst history = decode64(histResp) || { posted: [], rankings: {} };\nhistory.posted = history.posted || []; history.rankings = history.rankings || {};\nconst status = { website: null, instagram: null, log: history.posted.length };\nconst bust = u => u + (u.includes('?') ? '&' : '?') + 't=' + Date.now();\n\n// (a) Website history (posts-index.json = every story on aifeed.run): GitHub API -> download_url (files >1MB have no\n// inline content) -> raw.githubusercontent -> live site JSON, each tried twice.\nlet posts = decode64(postsResp);\nlet siteHist = null;\nif (Array.isArray(posts) && posts.length) { siteHist = siteHistory(posts); status.website = 'github-api (' + posts.length + ')'; }\nelse {\n  posts = null;\n  const urls = [postsResp.download_url, `https://raw.githubusercontent.com/${cfg.repo}/${cfg.branch}/_posts/posts-index.json`, cfg.siteUrl + '/_posts/posts-index.json'].filter(Boolean);\n  outer: for (const u of urls) for (let t = 0; t < 2; t++) {\n    try {\n      const r = await this.helpers.httpRequest({ method: 'GET', url: bust(u), timeout: 20000 });\n      const arr = typeof r === 'string' ? JSON.parse(r) : r;\n      if (Array.isArray(arr) && arr.length) { posts = arr; siteHist = siteHistory(arr); status.website = hostOf(u) + ' (' + arr.length + ')'; break outer; }\n    } catch (e) { /* retry / next source */ }\n  }\n}\n// Safety rule: never post unless the website history loaded.\nif (!siteHist || !siteHist.length) throw new Error('Dedupe safety stop: website post history could not be loaded (GitHub API, raw and site JSON all failed) - nothing posted');\n\n// (b) Instagram captions (HTTP node retries once; on failure we continue with website + log only).\nlet igHist = [];\ntry {\n  const media = $('IG Get Recent Media').all().flatMap(i => (i.json && Array.isArray(i.json.data)) ? i.json.data : []);\n  igHist = igHistory(media);\n  status.instagram = media.length ? 'ok (' + media.length + ' posts)' : 'FAILED - using website + log only';\n} catch (e) { status.instagram = 'FAILED - using website + log only'; }\n\n// (c) workflow's own posted log\nconst logHist = logHistory(history);\nconst allHist = [...siteHist, ...igHist, ...logHist];\n\nconst FEEDS = ['https://techcrunch.com/tag/artificial-intelligence/feed/','https://www.theverge.com/rss/ai-artificial-intelligence/index.xml','https://venturebeat.com/category/ai/feed/','https://www.wired.com/feed/tag/ai/latest/rss','https://www.technologyreview.com/feed/','https://www.artificialintelligence-news.com/feed/','https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss','https://www.zdnet.com/topic/artificial-intelligence/rss.xml','https://www.cnet.com/rss/ai/','https://www.cnbc.com/id/100727362/device/rss/rss.html','https://9to5google.com/feed/','https://9to5mac.com/feed/','https://arstechnica.com/ai/feed/','https://www.engadget.com/rss.xml','https://news.ycombinator.com/rss'];\nconst GENERAL_FROM = 11; // feeds from this index need an AI keyword filter\nconst AI_RE = /\\b(ai|a\\.i\\.|artificial intelligence|gpt|llm|openai|anthropic|gemini|claude|chatgpt|copilot|nvidia|deepmind|mistral|llama|grok|xai|robot|agentic|agent|neural|generative|machine learning)\\b/i;\n\nasync function feed(url, idx) {\n  try {\n    const raw = await this.helpers.httpRequest({ method: 'GET', url, timeout: 12000, headers: { 'User-Agent': 'Mozilla/5.0 AIFeedBot' } });\n    const xml = typeof raw === 'string' ? raw : String(raw?.body || raw || '');\n    const blocks = xml.match(/<item[\\s>][\\s\\S]*?<\\/item>/gi) || xml.match(/<entry[\\s>][\\s\\S]*?<\\/entry>/gi) || [];\n    const out = [];\n    for (const b of blocks.slice(0, 30)) {\n      const title = decodeEnt((b.match(/<title[^>]*>([\\s\\S]*?)<\\/title>/i) || [])[1] || '');\n      const link = ((b.match(/<link[^>]*>\\s*(https?:\\/\\/[^\\s<]+)\\s*<\\/link>/i) || b.match(/<link[^>]+href=\"(https?:\\/\\/[^\"]+)\"/i) || b.match(/<guid[^>]*>(https?:\\/\\/[^\\s<]+)<\\/guid>/i) || [])[1] || '').trim();\n      const dateStr = ((b.match(/<pubDate[^>]*>([\\s\\S]*?)<\\/pubDate>/i) || b.match(/<(?:updated|published)[^>]*>([\\s\\S]*?)<\\/(?:updated|published)>/i) || [])[1] || '').trim();\n      const desc = decodeEnt(decodeEnt((b.match(/<description[^>]*>([\\s\\S]*?)<\\/description>/i) || b.match(/<summary[^>]*>([\\s\\S]*?)<\\/summary>/i) || [])[1] || '')).replace(/\\s+/g, ' ').slice(0, 240);\n      if (!title || title.length < 20 || !link) continue;\n      const ts = dateStr ? new Date(dateStr).getTime() : NaN;\n      if (!isNaN(ts) && Date.now() - ts > 36 * 3600000) continue;\n      if (idx >= GENERAL_FROM && !AI_RE.test(title)) continue;\n      out.push({ title, link, desc, publishedAt: isNaN(ts) ? null : new Date(ts).toISOString(), source: hostOf(link) });\n    }\n    return out;\n  } catch (e) { return []; }\n}\nconst res = await Promise.allSettled(FEEDS.map((u, i) => feed.call(this, u, i)));\nconst all = res.flatMap(r => r.status === 'fulfilled' ? r.value : []);\n\nconst fresh = [], skipped = [];\nfor (const it of all) {\n  const cu = canonUrl(it.link);\n  const rep = cheapRepeat(it, allHist);\n  if (rep) { skipped.push({ title: it.title, reason: rep.reason, matched: `[${rep.match.src}] ${rep.match.title}`.slice(0, 140) }); continue; }\n  if (fresh.some(f => f.canonUrl === cu || titleSim(f.title, it.title).jac >= 0.6)) continue;  // dedup inside this batch\n  fresh.push({ ...it, canonUrl: cu });\n  if (fresh.length >= 80) break;\n}\nif (!fresh.length) throw new Error('No fresh, non-duplicate stories found in RSS feeds - nothing posted');\n\n// Compact \"already posted\" list for the ranking prompt and the semantic same-event check (last 90 days, site + IG + log).\nconst cutoff = Date.now() - 90 * DAY;\nconst compact = [];\nconst seenC = new Set();\nfor (const h of [...logHist, ...siteHist, ...igHist]) {\n  const t = h.date ? new Date(h.date).getTime() : NaN;\n  if (!isNaN(t) && t < cutoff) continue;\n  const key = h.canon || h.title.toLowerCase();\n  if (!h.title || seenC.has(key)) continue;\n  seenC.add(key);\n  compact.push({ src: h.src, date: isNaN(t) ? '' : new Date(t).toISOString().slice(0, 10), title: h.title.slice(0, 140), summary: (h.summary || '').slice(0, 140), outlet: hostOf(h.url) });\n  if (compact.length >= 160) break;\n}\nconst recentList = compact.slice(0, 60).map(c => '- ' + c.title).join('\\n') || '- (none)';\nconst list = fresh.map((s, i) => `${i + 1}. ${s.title} (${s.source})`).join('\\n');\nconst rankPrompt = `You are the editor of AIFeed.run, an Instagram + LinkedIn AI news brand.\\nRank the best stories below for a broad AI-curious audience. Prefer: major launches, big numbers, policy/legal moves, surprising research, controversy with substance. Reject: opinion pieces, listicles, deals/discount posts, how-tos, rumors, minor updates, non-AI stories.\\nMAX 1 story per company and per event.\\nSEMANTIC DEDUP: exclude any story that covers the SAME underlying event as anything in \"Already posted\" even if worded differently or from a different outlet.\\n\\nAlready posted (most recent first):\\n${recentList}\\n\\nCandidates:\\n${list}\\n\\nReturn ONLY a JSON array (best first, up to 12): [{\"index\": <candidate number>, \"score\": <0-100>, \"reason\": \"<short>\"}]`;\nreturn [{ json: { fresh, rankPrompt, history, historySha: histResp.sha || null, posts, postsSha: postsResp.sha || null, postedCompact: compact, dedupStatus: status, dedupSkipped: skipped.slice(0, 40), historyCounts: { site: siteHist.length, instagram: igHist.length, log: logHist.length } } }];\n"
+      }
+    },
+    {
+      "id": "claude-rank",
+      "name": "Claude Rank",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1320,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "options": {},
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "anthropic-version",
+              "value": "2023-06-01"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({model: $('Config').first().json.anthropicModel, max_tokens: 2500, messages:[{role:'user', content: $json.rankPrompt}]}) }}"
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "aifeedAnthrop001",
+          "name": "Anthropic x-api-key"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "id": "pick-slot-story",
+      "name": "Pick Slot Story",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1540,
+        0
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Orders today's candidates (8am -> best story, 5pm -> best story not yet posted; the morning story is already\n// removed by the dedupe) and builds the strict same-event prompt for up to 15 candidates.\nconst cfg = $('Config').first().json;\nconst base = $('Fetch RSS + Dedup').first().json;\nconst txt = $input.first().json?.content?.[0]?.text || '';\nlet ranked = [];\ntry { ranked = JSON.parse((txt.match(/\\[[\\s\\S]*\\]/) || ['[]'])[0]); } catch (e) { ranked = []; }\nlet ordered = ranked.map(r => base.fresh[parseInt(r.index) - 1]).filter(Boolean);\nif (!ordered.length) ordered = base.fresh.slice(0, 12); // Claude failed -> recency order\n\nconst history = base.history;\nif (cfg.slot === 2) {\n  const morning = history.rankings[cfg.today];\n  if (morning && morning.length) {\n    // Morning ranking first (whatever of it is still unposted/fresh), then anything new from the fresh ranking.\n    const fresh = new Set(base.fresh.map(f => f.canonUrl));\n    const fromMorning = morning.filter(m => fresh.has(m.canonUrl));\n    const seen = new Set(fromMorning.map(m => m.canonUrl));\n    ordered = [...fromMorning.map(m => base.fresh.find(f => f.canonUrl === m.canonUrl)), ...ordered.filter(o => !seen.has(o.canonUrl))];\n  }\n} else {\n  history.rankings[cfg.today] = ordered.slice(0, 12).map((o, i) => ({ rank: i + 1, title: o.title, canonUrl: o.canonUrl }));\n}\n// Pool for the semantic check: ranked stories, topped up with the next freshest unranked ones (so repeats can be replaced).\nconst pool = [...ordered];\nfor (const f of base.fresh) { if (pool.length >= 15) break; if (!pool.some(p => p.canonUrl === f.canonUrl)) pool.push(f); }\npool.splice(15);\nif (!pool.length) throw new Error('No candidates left for slot ' + cfg.slot);\nObject.keys(history.rankings).sort().slice(0, -14).forEach(k => delete history.rankings[k]);\n\nconst posted = base.postedCompact.map((p, i) => `P${i + 1}. [${p.date}${p.outlet ? ' ' + p.outlet : ''}] ${p.title}${p.summary && p.src !== 'instagram' ? ' - ' + p.summary : ''}`).join('\\n');\nconst cands = pool.map((c, i) => `C${i + 1}. ${c.title} (${c.source})${c.desc ? ' - ' + c.desc.slice(0, 200) : ''}`).join('\\n');\nconst sameEventPrompt = `You are a strict duplicate detector for an AI news account that must NEVER post the same news twice.\nFor EACH candidate, decide: is it the SAME NEWS EVENT as any item in ALREADY POSTED?\nSAME event = same company/organization/person AND the same specific announcement, launch, deal, funding round, lawsuit, incident, research result, report or statement. It is still the same event if it comes from a different outlet, has a different headline or angle, or is a follow-up/analysis piece without a materially new development.\nNOT the same event: a different product or announcement from the same company, a clearly new development (e.g. a ruling weeks after a lawsuit was filed), or merely the same general topic.\nWhen unsure whether two items describe the same announcement, answer repeat=true.\n\nALREADY POSTED (P = posted on aifeed.run / Instagram; newest first):\n${posted}\n\nCANDIDATES:\n${cands}\n\nReturn ONLY a JSON array with one object per candidate, in order:\n[{\"c\": 1, \"repeat\": true|false, \"match\": \"<P number of the matching posted item, or null>\", \"why\": \"<max 12 words>\"}]`;\nreturn [{ json: { pool, history, sameEventPrompt } }];\n"
+      }
+    },
+    {
+      "id": "claude-same-event-check",
+      "name": "Claude Same-Event Check",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1760,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "options": {},
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "anthropic-version",
+              "value": "2023-06-01"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({model: $('Config').first().json.anthropicModel, max_tokens: 3000, temperature: 0, messages:[{role:'user', content: $json.sameEventPrompt}]}) }}"
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "aifeedAnthrop001",
+          "name": "Anthropic x-api-key"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "id": "drop-same-event-repeats",
+      "name": "Drop Same-Event Repeats",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1980,
+        0
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Applies the semantic same-event verdicts: drops repeats, keeps the first 5 non-repeats as the candidates.\n// Fails safe (no post) if the verdict is unreadable or every candidate is a repeat.\nconst { pool, history } = $('Pick Slot Story').first().json;\nconst compact = $('Fetch RSS + Dedup').first().json.postedCompact;\nconst txt = $input.first().json?.content?.[0]?.text || '';\nlet verdicts = null;\ntry { verdicts = JSON.parse((txt.match(/\\[[\\s\\S]*\\]/) || [''])[0]); } catch (e) { verdicts = null; }\nif (!Array.isArray(verdicts) || !verdicts.length) throw new Error('Same-event check returned no readable verdict - nothing posted (safety stop)');\nconst byC = {}; verdicts.forEach(v => { const n = parseInt(String(v.c ?? v.candidate).replace(/\\D/g, '')); if (n) byC[n] = v; });\nconst kept = [], skipped = [];\npool.forEach((c, i) => {\n  const v = byC[i + 1];\n  if (!v) { skipped.push({ title: c.title, reason: 'no verdict (treated as repeat)' }); return; }\n  const isRep = v.repeat === true || String(v.repeat).toLowerCase() === 'true';\n  if (isRep) {\n    const m = parseInt(String(v.match || '').replace(/\\D/g, ''));\n    skipped.push({ title: c.title, reason: 'same event: ' + (v.why || ''), matched: compact[m - 1] ? compact[m - 1].title : (v.match || '') });\n  } else kept.push(c);\n});\nconst candidates = kept.slice(0, 5);\nif (!candidates.length) throw new Error('All ' + pool.length + ' candidate stories were already posted (same news event) - nothing posted this run. Skipped: ' + skipped.map(s => s.title + ' => ' + (s.matched || s.reason)).join(' | ').slice(0, 900));\nreturn [{ json: { candidates, history, sameEventSkipped: skipped } }];\n"
+      }
+    },
+    {
+      "id": "fetch-articles",
+      "name": "Fetch Articles",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2200,
+        0
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Verifies each candidate link loads; grabs og:image, site name, description and body text for fact-checking.\nconst { candidates, history } = $input.first().json;\nconst meta = (html, p) => { const m = html.match(new RegExp(`<meta[^>]+(?:property|name)=[\"']${p}[\"'][^>]+content=[\"']([^\"']+)`, 'i')) || html.match(new RegExp(`<meta[^>]+content=[\"']([^\"']+)[\"'][^>]+(?:property|name)=[\"']${p}[\"']`, 'i')); return m ? m[1] : ''; };\nconst out = await Promise.all(candidates.map(async c => {\n  let ok = false, html = '';\n  try { html = String(await this.helpers.httpRequest({ method: 'GET', url: c.link, timeout: 25000, headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh) AppleWebKit/537.36 Chrome/124 Safari/537.36' } })); ok = html.length > 2000; } catch (e) { ok = false; }\n  const text = html.replace(/<script[\\s\\S]*?<\\/script>|<style[\\s\\S]*?<\\/style>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/\\s+/g, ' ').slice(0, 3500);\n  return { ...c, linkOk: ok, ogImage: meta(html, 'og:image') || meta(html, 'twitter:image'), siteName: meta(html, 'og:site_name') || c.source, description: meta(html, 'og:description'), text };\n}));\nconst usable = out.filter(c => c.linkOk);\nif (!usable.length) throw new Error('All candidate source links failed to load');\nconst blocks = usable.map((c, i) => `### CANDIDATE ${i}\\nHeadline: ${c.title}\\nPublication: ${c.siteName}\\nURL: ${c.link}\\nArticle text (truncated): ${c.text}`).join('\\n\\n');\nconst captionPrompt = `For EACH candidate below write AIFeed.run social copy using ONLY facts stated in its article text. Return STRUCTURED parts only; our code assembles and formats the final captions, so do NOT include emojis except where stated, URLs, \"Source\" lines, hashtags inside text, or line breaks inside fields.\n\nFields per candidate:\n- igHook: one punchy line, starts with exactly one strong emoji (\ud83d\ude80\ud83d\udca1\ud83d\udd25\ud83e\udd16\u26a1\ufe0f\ud83d\udcc9\ud83d\udcc8\u26a0\ufe0f\ud83e\udde0), max 18 words.\n- igParagraphs: array of 3 or 4 short paragraphs, each 1-2 sentences, 15-45 words, conversational, no emojis.\n- liHook: bold opening statement or surprising stat, no emoji, max 25 words.\n- liParagraphs: array of 5 paragraphs (what happened; business/tech context; strategic implications; industry impact; outlook), each 2-4 sentences, 40-80 words.\n- liTakeaway: one crisp takeaway sentence.\n- igHashtags: exactly 5 hashtags without the # sign, letters/digits only (e.g. \"OpenAI\").\n- liHashtags: exactly 5 professional hashtags, same format.\n- outlet: publication name as it brands itself (e.g. \"CNBC\", \"The Verge\", \"9to5Google\").\n- graphicHeadline: ALL CAPS, 4-8 words, punchy, factual. highlightWords: number of trailing words of graphicHeadline to color pink (1-3).\n- summary: 1 sentence, 14-26 words.\n- category: one of BUSINESS, MODELS, TOOLS, RESEARCH, POLICY, HARDWARE, SAFETY.\n- supported: false if any claim is not in the article text, or the article is opinion, an ad, a rumor, or not about AI.\n- safe: false for anything defamatory, graphic, or medical/financial advice.\n- issues: short note.\n\n${blocks}\n\nReturn ONLY a JSON array, one object per candidate in the same order:\n[{\"candidate\":0,\"igHook\":\"...\",\"igParagraphs\":[\"...\"],\"liHook\":\"...\",\"liParagraphs\":[\"...\"],\"liTakeaway\":\"...\",\"igHashtags\":[\"...\"],\"liHashtags\":[\"...\"],\"outlet\":\"...\",\"graphicHeadline\":\"...\",\"highlightWords\":2,\"summary\":\"...\",\"category\":\"...\",\"supported\":true,\"safe\":true,\"issues\":\"\"}]`;\nreturn [{ json: { usable, history, captionPrompt } }];\n"
+      }
+    },
+    {
+      "id": "claude-captions-+-fact-check",
+      "name": "Claude Captions + Fact Check",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2420,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "options": {},
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "anthropic-version",
+              "value": "2023-06-01"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({model: $('Config').first().json.anthropicModel, max_tokens: 6000, messages:[{role:'user', content: $json.captionPrompt}]}) }}"
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "aifeedAnthrop001",
+          "name": "Anthropic x-api-key"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "id": "quality-checks-+-build-html",
+      "name": "Quality Checks + Build HTML",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2640,
+        0
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// \u2500\u2500 Deterministic caption builder + layout validator (shared by QC, Layout Check and Merge LI nodes) \u2500\u2500\nconst SPACER = '\u2800'; // U+2800 invisible line used by Instagram to keep blank lines\nfunction normText(s) {\n  return String(s || '')\n    .replace(/[\\u2018\\u2019\\u201B\\u2032]/g, \"'\").replace(/[\\u201C\\u201D\\u201F\\u2033]/g, '\"')\n    .replace(/[\\u2013\\u2014\\u2212]/g, '\u2014').replace(/\\s*\u2014\\s*/g, ' \u2014 ').replace(/\\u2026/g, '...')\n    .replace(/[\\u00A0\\u2000-\\u200B\\u202F\\u205F\\u3000\\u2800]/g, ' ')\n    .replace(/https?:\\/\\/\\S+/g, '').replace(/(^|\\s)#\\w+/g, '$1')\n    .replace(/\\s*\\n+\\s*/g, ' ').replace(/ {2,}/g, ' ').replace(/\\s+([,.!?;:])/g, '$1').trim();\n}\nfunction normTag(t) { return String(t || '').replace(/^#+/, '').replace(/[^A-Za-z0-9]/g, ''); }\nfunction tags5(arr) { const out = []; for (const t of (arr || []).map(normTag)) if (t && !out.some(o => o.toLowerCase() === t.toLowerCase())) out.push(t); return out.slice(0, 5); }\nfunction cleanUrl(u) { return String(u || '').trim().replace(/[?#].*$/, m => /utm_|fbclid|gclid/.test(m) ? '' : m); }\nfunction buildIg(g, url) {\n  const hook = normText(g.igHook), paras = (g.igParagraphs || []).map(normText).filter(Boolean).slice(0, 4), tg = tags5(g.igHashtags);\n  const blocks = [hook, ...paras, `Source: ${normText(g.outlet)} \u00b7 ${cleanUrl(url)}\\n\ud83d\udce9 Free daily AI brief \u2192 link in bio`, tg.map(t => '#' + t).join(' ')];\n  return blocks.join(`\\n${SPACER}\\n`);\n}\nfunction buildLi(g, url) {\n  const paras = [normText(g.liHook), ...(g.liParagraphs || []).map(normText).filter(Boolean), normText(g.liTakeaway)].filter(Boolean);\n  const tg = tags5(g.liHashtags);\n  return [...paras, `Source: ${normText(g.outlet)} \u00b7 ${cleanUrl(url)}\\nGet the daily AI brief: https://aifeed.run`, tg.map(t => '#' + t).join(' ')].join('\\n\\n');\n}\nfunction checkIg(c, url) {\n  const e = [], lines = c.split('\\n');\n  if (c !== c.trim()) e.push('leading/trailing whitespace');\n  if (/ {2,}/.test(c)) e.push('double spaces');\n  if (/\\n\\s*\\n/.test(c)) e.push('raw blank line (must use spacer)');\n  if (lines.some(l => l !== l.trim())) e.push('line with edge whitespace');\n  const blocks = c.split(`\\n${SPACER}\\n`);\n  if (blocks.some(b => b.includes(SPACER))) e.push('stray spacer');\n  const n = blocks.length; // hook + 3-4 paras + source block + hashtags\n  if (n < 6 || n > 7) e.push(`block count ${n} (want hook + 3-4 paragraphs + source + hashtags)`);\n  if (!/^\\p{Extended_Pictographic}/u.test(blocks[0] || '')) e.push('hook must start with emoji');\n  if (blocks.slice(0, -1).some(b => b.split('\\n').length > (b.startsWith('Source:') ? 2 : 1))) e.push('paragraph contains line break');\n  const src = blocks[n - 2] || '';\n  if (!/^Source: [^\u00b7\\n]+ \u00b7 https?:\\/\\/\\S+\\n\ud83d\udce9 Free daily AI brief \u2192 link in bio$/.test(src)) e.push('source block malformed');\n  if ((c.match(/https?:\\/\\//g) || []).length !== 1) e.push('URL must appear exactly once');\n  if (!/^(#[A-Za-z0-9]+ ){4}#[A-Za-z0-9]+$/.test(blocks[n - 1] || '')) e.push('hashtag line must be exactly 5 tags');\n  if ((c.match(/#[A-Za-z0-9]+/g) || []).length !== 5) e.push('hashtags outside last line');\n  if (/[\\u2018\\u2019\\u201C\\u201D\\u2013]/.test(c)) e.push('un-normalized quotes/dashes');\n  const w = blocks.slice(0, n - 2).join(' ').split(/\\s+/).filter(Boolean).length;\n  if (w < 70 || w > 230) e.push('IG body words ' + w);\n  if (c.length > 2200) e.push('IG caption > 2200 chars');\n  return e;\n}\nfunction checkLi(c) {\n  const e = [];\n  if (c !== c.trim()) e.push('edge whitespace');\n  if (/\\n{3,}/.test(c) || / {2,}/.test(c) || c.includes(SPACER)) e.push('spacing');\n  if ((c.match(/https?:\\/\\//g) || []).length !== 2) e.push('links: want source URL once + aifeed.run once');\n  if (!/\\n\\n(#[A-Za-z0-9]+ ){4}#[A-Za-z0-9]+$/.test(c)) e.push('hashtag line');\n  return e;\n}\n\n// Automatic quality gate: first candidate that passes every check wins (fallback = next story). Builds the graphic HTML.\nconst { usable, history } = $('Fetch Articles').first().json;\nconst txt = $input.first().json?.content?.[0]?.text || '';\nlet gen = [];\ntry { gen = JSON.parse((txt.replace(/```json|```/g, '').match(/\\[[\\s\\S]*\\]/) || ['[]'])[0]); } catch (e) { throw new Error('Caption JSON parse failed: ' + txt.slice(0, 200)); }\nconst words = s => String(s || '').split(/\\s+/).filter(Boolean).length;\nconst tags = s => (String(s || '').match(/#\\w+/g) || []).length;\nconst CATS = ['BUSINESS', 'MODELS', 'TOOLS', 'RESEARCH', 'POLICY', 'HARDWARE', 'SAFETY'];\nconst failures = [];\nlet pick = null;\nfor (const g of gen) {\n  const c = usable[g.candidate];\n  const problems = [];\n  if (!c) problems.push('bad candidate index');\n  if (!g.supported) problems.push('fact check: ' + (g.issues || 'unsupported'));\n  if (!g.safe) problems.push('safety');\n  if (c) {\n    g.igCaption = buildIg(g, c.link);\n    g.liCaption = buildLi(g, c.link);\n    checkIg(g.igCaption, c.link).forEach(x => problems.push('IG layout: ' + x));\n    g.liLayoutWarnings = checkLi(g.liCaption); // LinkedIn issues never cause fallback\n  }\n  const hw = words(g.graphicHeadline);\n  if (hw < 3 || hw > 9 || String(g.graphicHeadline).length > 60) problems.push('graphic headline length');\n  if (words(g.summary) > 30) problems.push('summary too long');\n  if (problems.length) { failures.push(`${c ? c.title.slice(0, 60) : '?'}: ${problems.join('; ')}`); continue; }\n  pick = { c, g }; break;\n}\nif (!pick) throw new Error('No candidate passed quality checks \u2192 ' + failures.join(' | '));\nconst { c, g } = pick;\ng.summary = normText(g.summary); g.graphicHeadline = normText(g.graphicHeadline).toUpperCase();\nconst cat = CATS.includes(String(g.category).toUpperCase()) ? String(g.category).toUpperCase() : 'INDUSTRY';\nconst esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\"/g, '&quot;');\nconst hwords = String(g.graphicHeadline).toUpperCase().split(/\\s+/);\nconst k = Math.min(Math.max(parseInt(g.highlightWords) || 2, 1), Math.min(3, hwords.length - 1));\n// last two words are glued with &nbsp; so no line can end with a single orphan word\nconst hw2 = hwords.map(esc), cut = hw2.length - k;\nconst join = arr => arr.map((w, i) => (i === 0 ? '' : (i === arr.length - 1 ? '&nbsp;' : ' ')) + w).join('');\nconst hlHtml = (k >= 2 || cut < 1)\n  ? hw2.slice(0, cut).join(' ') + (cut ? ' ' : '') + '<span class=\"pink\">' + join(hw2.slice(cut)) + '</span>'\n  : hw2.slice(0, cut).join(' ') + '&nbsp;<span class=\"pink\">' + hw2[cut] + '</span>';\nconst sumHtml = (() => { const w = normText(g.summary).split(' ').map(esc); return w.length > 2 ? w.slice(0, -1).join(' ') + '&nbsp;' + w[w.length - 1] : w.join(' '); })();\nconst fontPx = String(g.graphicHeadline).length > 40 ? 84 : String(g.graphicHeadline).length > 28 ? 96 : 108;\nconst photo = c.ogImage || 'https://source.unsplash.com/1080x1350/?technology,ai';\nconst domain = c.source;\nconst html = `<!doctype html><html><head><meta charset=\"utf-8\">\n<link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@600;800;900&family=Inter:wght@400;500&display=block\" rel=\"stylesheet\">\n<style>\n*{margin:0;padding:0;box-sizing:border-box}\nhtml,body{width:1080px;height:1350px;overflow:hidden;background:#0d0b14}\n.wrap{position:relative;width:1080px;height:1350px;font-family:Inter,sans-serif;color:#fff}\n.photo{position:absolute;inset:0;background:url(\"${esc(photo)}\") center/cover no-repeat}\n.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,11,20,0) 0%,rgba(13,11,20,.05) 38%,rgba(13,11,20,.82) 58%,#0d0b14 72%,#0d0b14 100%)}\n.badge{position:absolute;top:44px;left:44px;padding:14px 26px;border-radius:40px;font:800 26px Poppins;letter-spacing:.5px;background:linear-gradient(90deg,#ff8a00,#c040ff)}\n.content{position:absolute;left:56px;right:56px;bottom:120px}\n.cat{display:inline-block;padding:10px 22px;border-radius:30px;border:2px solid #ff5f8f;background:rgba(255,95,143,.25);color:#ff8fb0;font:600 24px Poppins;letter-spacing:3px;margin-bottom:28px}\nh1{font:900 ${fontPx}px/1.04 Poppins;text-wrap:balance;overflow-wrap:normal;text-transform:uppercase;letter-spacing:-1px}\n.pink{color:#ff6f91}\n.rule{width:52px;height:4px;background:linear-gradient(90deg,#ff8a00,#c040ff);margin:34px 0 26px}\np{font:400 32px/1.42 Inter;color:#d9d6e3;text-wrap:pretty}\n.foot{position:absolute;left:0;right:0;bottom:0;height:92px;background:#0a0910;display:flex;align-items:center;justify-content:space-between;padding:0 56px}\n.src{font:400 24px Inter;color:#77738a}\n.logo{font:800 36px Poppins;background:linear-gradient(90deg,#ff8a00,#c040ff);-webkit-background-clip:text;color:transparent}\n.logo b{color:#fff;-webkit-text-fill-color:#fff}\n</style></head><body><div class=\"wrap\">\n<div class=\"photo\"></div><div class=\"shade\"></div>\n<div class=\"badge\">AIFEED.RUN \u2022 AI NEWS</div>\n<div class=\"content\"><div class=\"cat\">${cat}</div><h1>${hlHtml}</h1><div class=\"rule\"></div><p>${sumHtml}</p></div>\n<div class=\"foot\"><div class=\"src\">Source: ${esc(c.siteName)} \u00b7 ${esc(domain)}</div><div class=\"logo\">aifeed<b>.run</b></div></div>\n</div><script>\n(function(){\n  // Text-fit: shrink headline/summary until the block fits its box, no clipping, no orphan last word.\n  const R = {ok:true, notes:[]};\n  const H = document.querySelector('h1'), P = document.querySelector('.content p'), C = document.querySelector('.content'), T = document.querySelector('.badge');\n  const minTop = T.getBoundingClientRect().bottom + 40;\n  const lines = el => Math.round(el.getBoundingClientRect().height / parseFloat(getComputedStyle(el).lineHeight));\n  const overflowX = el => el.scrollWidth > el.clientWidth + 1;\n  const orphan = el => { const r = document.createRange(); r.selectNodeContents(el); const rects = [...r.getClientRects()].filter(x => x.width > 0); if (rects.length < 2) return false; const lastTop = rects[rects.length-1].top; const lastLine = rects.filter(x => Math.abs(x.top - lastTop) < 4); const words = (el.innerText || '').split('\\\\n').pop().trim().split(/\\\\s+/); return lastLine.reduce((a,x)=>a+x.width,0) < el.clientWidth * 0.12 && words.length < 2; };\n  let hf = parseFloat(getComputedStyle(H).fontSize), pf = parseFloat(getComputedStyle(P).fontSize);\n  for (let i = 0; i < 40; i++) {\n    const bad = C.getBoundingClientRect().top < minTop || lines(H) > 4 || overflowX(H) || lines(P) > 3;\n    if (!bad) break;\n    if (lines(H) > 4 || overflowX(H) || hf > 64 + 20) { if (hf > 64) { hf -= 4; H.style.fontSize = hf + 'px'; continue; } }\n    if (pf > 26) { pf -= 2; P.style.fontSize = pf + 'px'; continue; }\n    break;\n  }\n  [H, P].forEach(el => { if (orphan(el)) { el.style.textWrap = 'balance'; } });\n  if (C.getBoundingClientRect().top < minTop) { R.ok = false; R.notes.push('content overlaps top badge'); }\n  if (lines(H) > 4) { R.ok = false; R.notes.push('headline > 4 lines'); }\n  if (overflowX(H) || overflowX(P)) { R.ok = false; R.notes.push('horizontal overflow'); }\n  if (lines(P) > 3) { R.ok = false; R.notes.push('summary > 3 lines'); }\n  if (orphan(H)) { R.ok = false; R.notes.push('headline orphan word'); }\n  if (C.getBoundingClientRect().bottom > document.querySelector('.foot').getBoundingClientRect().top - 20) { R.ok = false; R.notes.push('content overlaps footer'); }\n  R.headlinePx = hf; R.summaryPx = pf; R.headlineLines = lines(H); R.summaryLines = lines(P);\n  window.__fitReport = R;\n})();\n</script></body></html>`;\n\n// \u2500\u2500 9:16 Story version (safe zones: top 250px / bottom 340px kept clear of key content) \u2500\u2500\nconst sFont = String(g.graphicHeadline).length > 40 ? 92 : String(g.graphicHeadline).length > 28 ? 104 : 116;\nconst storyHtml = `<!doctype html><html><head><meta charset=\"utf-8\">\n<link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@600;800;900&family=Inter:wght@400;500&display=block\" rel=\"stylesheet\">\n<style>\n*{margin:0;padding:0;box-sizing:border-box}\nhtml,body{width:1080px;height:1920px;overflow:hidden;background:#0d0b14}\n.wrap{position:relative;width:1080px;height:1920px;font-family:Inter,sans-serif;color:#fff}\n.photo{position:absolute;left:0;right:0;top:0;height:1250px;background:url(\"${esc(photo)}\") center/cover no-repeat}\n.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,11,20,.55) 0%,rgba(13,11,20,0) 16%,rgba(13,11,20,0) 38%,rgba(13,11,20,.85) 50%,#0d0b14 64%,#0d0b14 100%)}\n.top{position:absolute;top:260px;left:64px;right:64px;display:flex;justify-content:space-between;align-items:center}\n.badge{padding:16px 30px;border-radius:44px;font:800 30px Poppins;background:linear-gradient(90deg,#ff8a00,#c040ff)}\n.new{padding:14px 26px;border-radius:44px;font:800 30px Poppins;background:#fff;color:#0d0b14}\n.content{position:absolute;left:64px;right:64px;bottom:540px}\n.cat{display:inline-block;padding:12px 24px;border-radius:30px;border:2px solid #ff5f8f;background:rgba(255,95,143,.25);color:#ff8fb0;font:600 28px Poppins;letter-spacing:3px;margin-bottom:30px}\nh1{font:900 ${sFont}px/1.04 Poppins;text-wrap:balance;overflow-wrap:normal;text-transform:uppercase;letter-spacing:-1px}\n.pink{color:#ff6f91}\n.rule{width:60px;height:5px;background:linear-gradient(90deg,#ff8a00,#c040ff);margin:36px 0 28px}\np{font:400 36px/1.42 Inter;color:#d9d6e3;text-wrap:pretty}\n.foot{position:absolute;left:0;right:0;bottom:350px;text-align:center}\n.cta{font:600 32px Poppins;color:#bdb8cc;margin-bottom:14px}\n.logo{font:800 56px Poppins;background:linear-gradient(90deg,#ff8a00,#c040ff);-webkit-background-clip:text;color:transparent}\n.logo b{-webkit-text-fill-color:#fff}\n</style></head><body><div class=\"wrap\">\n<div class=\"photo\"></div><div class=\"shade\"></div>\n<div class=\"top\"><div class=\"badge\">AIFEED.RUN \u2022 AI NEWS</div><div class=\"new\">NEW POST \u2193</div></div>\n<div class=\"content\"><div class=\"cat\">${cat}</div><h1>${hlHtml}</h1><div class=\"rule\"></div><p>${sumHtml}</p></div>\n<div class=\"foot\"><div class=\"cta\">Tap to read the full post \u00b7 Source: ${esc(c.siteName)}</div><div class=\"logo\">aifeed<b>.run</b></div></div>\n</div><script>\n(function(){\n  // Text-fit: shrink headline/summary until the block fits its box, no clipping, no orphan last word.\n  const R = {ok:true, notes:[]};\n  const H = document.querySelector('h1'), P = document.querySelector('.content p'), C = document.querySelector('.content'), T = document.querySelector('.top');\n  const minTop = T.getBoundingClientRect().bottom + 40;\n  const lines = el => Math.round(el.getBoundingClientRect().height / parseFloat(getComputedStyle(el).lineHeight));\n  const overflowX = el => el.scrollWidth > el.clientWidth + 1;\n  const orphan = el => { const r = document.createRange(); r.selectNodeContents(el); const rects = [...r.getClientRects()].filter(x => x.width > 0); if (rects.length < 2) return false; const lastTop = rects[rects.length-1].top; const lastLine = rects.filter(x => Math.abs(x.top - lastTop) < 4); const words = (el.innerText || '').split('\\\\n').pop().trim().split(/\\\\s+/); return lastLine.reduce((a,x)=>a+x.width,0) < el.clientWidth * 0.12 && words.length < 2; };\n  let hf = parseFloat(getComputedStyle(H).fontSize), pf = parseFloat(getComputedStyle(P).fontSize);\n  for (let i = 0; i < 40; i++) {\n    const bad = C.getBoundingClientRect().top < minTop || lines(H) > 5 || overflowX(H) || lines(P) > 4;\n    if (!bad) break;\n    if (lines(H) > 5 || overflowX(H) || hf > 72 + 20) { if (hf > 72) { hf -= 4; H.style.fontSize = hf + 'px'; continue; } }\n    if (pf > 30) { pf -= 2; P.style.fontSize = pf + 'px'; continue; }\n    break;\n  }\n  [H, P].forEach(el => { if (orphan(el)) { el.style.textWrap = 'balance'; } });\n  if (C.getBoundingClientRect().top < minTop) { R.ok = false; R.notes.push('content overlaps top badge'); }\n  if (lines(H) > 5) { R.ok = false; R.notes.push('headline > 5 lines'); }\n  if (overflowX(H) || overflowX(P)) { R.ok = false; R.notes.push('horizontal overflow'); }\n  if (lines(P) > 4) { R.ok = false; R.notes.push('summary > 4 lines'); }\n  if (orphan(H)) { R.ok = false; R.notes.push('headline orphan word'); }\n  if (C.getBoundingClientRect().bottom > document.querySelector('.foot').getBoundingClientRect().top - 20) { R.ok = false; R.notes.push('content overlaps footer'); }\n  R.headlinePx = hf; R.summaryPx = pf; R.headlineLines = lines(H); R.summaryLines = lines(P);\n  window.__fitReport = R;\n})();\n</script></body></html>`;\nconst liWords = words(g.liCaption);\nconst liShort = liWords < 200;\nreturn [{ json: { story: c, gen: g, category: cat, history, failures, liShort, liWords, liExpandPrompt: liShort ? `Expand this LinkedIn post using ONLY facts from the article text below. Return ONLY JSON: {\"liHook\":\"bold opening, no emoji, max 25 words\",\"liParagraphs\":[5 paragraphs of 2-4 sentences, 45-80 words each],\"liTakeaway\":\"one crisp sentence\"}. No URLs, hashtags or line breaks inside fields.\\n\\nCURRENT POST:\\n${g.liCaption}\\n\\nARTICLE TEXT:\\n${c.text}` : '' }, binary: { html: await this.helpers.prepareBinaryData(Buffer.from(html, 'utf8'), 'index.html', 'text/html'), storyHtml: await this.helpers.prepareBinaryData(Buffer.from(storyHtml, 'utf8'), 'index.html', 'text/html') } }];\n"
+      }
+    },
+    {
+      "id": "render-png-(gotenberg)",
+      "name": "Render PNG (Gotenberg)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2860,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.renderUrl }}/forms/chromium/screenshot/html",
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "parameterType": "formBinaryData",
+              "name": "files",
+              "inputDataFieldName": "html"
+            },
+            {
+              "name": "width",
+              "value": "1080"
+            },
+            {
+              "name": "height",
+              "value": "1350"
+            },
+            {
+              "name": "clip",
+              "value": "true"
+            },
+            {
+              "name": "format",
+              "value": "png"
+            },
+            {
+              "name": "waitDelay",
+              "value": "3s"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file",
+              "outputPropertyName": "png"
+            }
+          },
+          "timeout": 60000
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 2
+    },
+    {
+      "id": "validate-png-+-prep-commits",
+      "name": "Validate PNG + Prep Commits",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3080,
+        0
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Validates the rendered PNG and prepares GitHub commits (image, posts-index.json, history.json).\nconst cfg = $('Config').first().json;\nconst q = $('Quality Checks + Build HTML').first().json;\nconst base = $('Fetch RSS + Dedup').first().json;\nconst buf = await this.helpers.getBinaryDataBuffer(0, 'png');\nconst isPng = buf.slice(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]));\nconst w = buf.readUInt32BE(16), h = buf.readUInt32BE(20);\nif (!isPng || w !== 1080 || h !== 1350 || buf.length < 60000) throw new Error(`Rendered image invalid (png=${isPng}, ${w}x${h}, ${buf.length} bytes)`);\nif (buf.length > 8 * 1024 * 1024) throw new Error('PNG over 8MB Instagram limit');\n\nconst { story, gen, category } = q;\nlet liCaption = gen.liCaption, liWarning = q.liShort ? `LinkedIn caption short (${q.liWords} words)` : null;\ntry { const m = $('Merge LI Caption').first().json; liCaption = m.liCaption; liWarning = m.liWarning; } catch (e) { /* no retry was needed */ }\nif (liCaption.length > 2950) { liCaption = liCaption.slice(0, 2950).replace(/\\s+\\S*$/, '') + '\u2026'; liWarning = (liWarning ? liWarning + '; ' : '') + 'LinkedIn caption trimmed to 3000 chars'; }\nconst slug = story.title.toLowerCase().replace(/[^a-z0-9\\s]/g, '').trim().split(/\\s+/).filter(x => x.length >= 2).slice(0, 6).join('-');\nconst stamp = cfg.today.replace(/-/g, '');\nconst pngName = `aifeed_${slug}_${stamp}_${cfg.slot === 1 ? 'am' : 'pm'}.png`;\nconst nowIso = new Date().toISOString();\nconst toHtml = cap => cap.split(/\\n\\n+/).map(p => p.trim()).filter(p => p && !/^Source:/i.test(p) && !/^https?:/.test(p) && !/^Get the daily/i.test(p) && !/^#\\w/.test(p)).map(p => '<p>' + p.replace(/\\n/g, ' ') + '</p>').join('\\n');\nconst post = {\n  id: slug + '-' + stamp, slug, headline: story.title, summary: gen.summary,\n  body: toHtml(liCaption), category: category.charAt(0) + category.slice(1).toLowerCase(),\n  imageUrl: `${cfg.siteUrl}/images/${pngName}`, image: `images/${pngName}`,\n  sourceUrl: story.link, publishedAt: nowIso, hashtags: (gen.igCaption.match(/#(\\w+)/g) || []).map(t => t.slice(1)), isVideo: false\n};\nconst posts = [post, ...(base.posts || [])];\nconst history = q.history;\nhistory.posted.unshift({ postedAt: nowIso, date: cfg.today, slot: cfg.slot, headline: story.title, canonUrl: story.canonUrl, url: story.link, slug, image: pngName });\nhistory.posted = history.posted.slice(0, 2000);\nconst b64 = o => Buffer.from(JSON.stringify(o, null, 2)).toString('base64');\nreturn [{ json: { pngName, pngBase64: buf.toString('base64'), post, igCaption: gen.igCaption, liCaption, liWarning, postsBase64: b64(posts), postsSha: base.postsSha, historyBase64: b64(history), historySha: base.historySha } }];\n"
+      }
+    },
+    {
+      "id": "gh-commit-image",
+      "name": "GH Commit Image",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3300,
+        0
+      ],
+      "parameters": {
+        "method": "PUT",
+        "url": "=https://api.github.com/repos/{{ $('Config').first().json.repo }}/contents/images/{{ $json.pngName }}",
+        "options": {},
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({message: 'AIFeed image: ' + $json.pngName, branch: $('Config').first().json.branch, content: $json.pngBase64}) }}"
+      },
+      "credentials": {
+        "githubApi": {
+          "id": "aifeedGithub0001",
+          "name": "GitHub aifeed (fine-grained PAT)"
+        }
+      }
+    },
+    {
+      "id": "gh-update-posts-index",
+      "name": "GH Update Posts Index",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3520,
+        0
+      ],
+      "parameters": {
+        "method": "PUT",
+        "url": "=https://api.github.com/repos/{{ $('Config').first().json.repo }}/contents/_posts/posts-index.json",
+        "options": {},
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify(Object.assign({message: 'Publish: ' + $('Validate PNG + Prep Commits').first().json.post.headline.substring(0,60), branch: $('Config').first().json.branch, content: $('Validate PNG + Prep Commits').first().json.postsBase64}, $('Validate PNG + Prep Commits').first().json.postsSha ? {sha: $('Validate PNG + Prep Commits').first().json.postsSha} : {})) }}"
+      },
+      "credentials": {
+        "githubApi": {
+          "id": "aifeedGithub0001",
+          "name": "GitHub aifeed (fine-grained PAT)"
+        }
+      }
+    },
+    {
+      "id": "gh-update-history",
+      "name": "GH Update History",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3740,
+        0
+      ],
+      "parameters": {
+        "method": "PUT",
+        "url": "=https://api.github.com/repos/{{ $('Config').first().json.repo }}/contents/_data/history.json",
+        "options": {},
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify(Object.assign({message: 'History: ' + $('Validate PNG + Prep Commits').first().json.post.slug, branch: $('Config').first().json.branch, content: $('Validate PNG + Prep Commits').first().json.historyBase64}, $('Validate PNG + Prep Commits').first().json.historySha ? {sha: $('Validate PNG + Prep Commits').first().json.historySha} : {})) }}"
+      },
+      "credentials": {
+        "githubApi": {
+          "id": "aifeedGithub0001",
+          "name": "GitHub aifeed (fine-grained PAT)"
+        }
+      }
+    },
+    {
+      "id": "wait-for-github-pages",
+      "name": "Wait for GitHub Pages",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        3960,
+        0
+      ],
+      "parameters": {
+        "amount": 60,
+        "unit": "seconds"
+      }
+    },
+    {
+      "id": "check-image-is-public",
+      "name": "Check Image Is Public",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4180,
+        0
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $('Validate PNG + Prep Commits').first().json.post.imageUrl }}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 20000
+        }
+      }
+    },
+    {
+      "id": "ig-child-1-(story)",
+      "name": "IG Child 1 (Story)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4400,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/{{ $('Config').first().json.graphVersion }}/{{ $('Config').first().json.igUserId }}/media",
+        "options": {},
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendBody": true,
+        "contentType": "form-urlencoded",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "image_url",
+              "value": "={{ $('Validate PNG + Prep Commits').first().json.post.imageUrl }}"
+            },
+            {
+              "name": "is_carousel_item",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "aifeedMetaIG0001",
+          "name": "Meta IG long-lived token (access_token)"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 15000
+    },
+    {
+      "id": "ig-child-2-(end-card)",
+      "name": "IG Child 2 (End Card)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4620,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/{{ $('Config').first().json.graphVersion }}/{{ $('Config').first().json.igUserId }}/media",
+        "options": {},
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendBody": true,
+        "contentType": "form-urlencoded",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "image_url",
+              "value": "={{ $('Config').first().json.endCardUrl }}"
+            },
+            {
+              "name": "is_carousel_item",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "aifeedMetaIG0001",
+          "name": "Meta IG long-lived token (access_token)"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 15000
+    },
+    {
+      "id": "ig-create-carousel",
+      "name": "IG Create Carousel",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4840,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/{{ $('Config').first().json.graphVersion }}/{{ $('Config').first().json.igUserId }}/media",
+        "options": {},
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendBody": true,
+        "contentType": "form-urlencoded",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "media_type",
+              "value": "CAROUSEL"
+            },
+            {
+              "name": "children",
+              "value": "={{ $('IG Child 1 (Story)').first().json.id }},{{ $('IG Child 2 (End Card)').first().json.id }}"
+            },
+            {
+              "name": "caption",
+              "value": "={{ $('Validate PNG + Prep Commits').first().json.igCaption }}"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "aifeedMetaIG0001",
+          "name": "Meta IG long-lived token (access_token)"
+        }
+      }
+    },
+    {
+      "id": "wait-ig-processing",
+      "name": "Wait IG Processing",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        5060,
+        0
+      ],
+      "parameters": {
+        "amount": 15,
+        "unit": "seconds"
+      }
+    },
+    {
+      "id": "ig-get-status",
+      "name": "IG Get Status",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        5280,
+        0
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "=https://graph.facebook.com/{{ $('Config').first().json.graphVersion }}/{{ $('IG Create Carousel').first().json.id }}?fields=status_code,status",
+        "options": {},
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth"
+      },
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "aifeedMetaIG0001",
+          "name": "Meta IG long-lived token (access_token)"
+        }
+      }
+    },
+    {
+      "id": "ig-check-status",
+      "name": "IG Check Status",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        5500,
+        0
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const s = $input.first().json.status_code;\nconst attempt = $runIndex + 1;\nif (s === 'ERROR' || s === 'EXPIRED') throw new Error('IG carousel container ' + s + ': ' + ($input.first().json.status || ''));\nif (s !== 'FINISHED' && attempt >= 12) throw new Error('IG carousel not FINISHED after ' + attempt + ' polls (last: ' + s + ')');\nreturn [{ json: { ready: s === 'FINISHED', status_code: s, attempt } }];"
+      }
+    },
+    {
+      "id": "ig-ready?",
+      "name": "IG Ready?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        5720,
+        0
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "r",
+              "leftValue": "={{ $json.ready }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "ig-publish",
+      "name": "IG Publish",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        5940,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/{{ $('Config').first().json.graphVersion }}/{{ $('Config').first().json.igUserId }}/media_publish",
+        "options": {},
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendBody": true,
+        "contentType": "form-urlencoded",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "creation_id",
+              "value": "={{ $('IG Create Carousel').first().json.id }}"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "aifeedMetaIG0001",
+          "name": "Meta IG long-lived token (access_token)"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 20000
+    },
+    {
+      "id": "li-init-upload-(story)",
+      "name": "LI Init Upload (Story)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        6160,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.linkedin.com/rest/images?action=initializeUpload",
+        "options": {},
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "LinkedIn-Version",
+              "value": "={{ $('Config').first().json.linkedinVersion }}"
+            },
+            {
+              "name": "X-Restli-Protocol-Version",
+              "value": "2.0.0"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({initializeUploadRequest:{owner: $('Config').first().json.linkedinAuthorUrn}}) }}"
+      },
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "aifeedLinkedIn01",
+          "name": "LinkedIn OAuth2"
+        }
+      }
+    },
+    {
+      "id": "attach-story-png",
+      "name": "Attach Story PNG",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        6380,
+        0
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const png = $('Render PNG (Gotenberg)').first().binary;\nreturn [{ json: $input.first().json.value, binary: png }];"
+      }
+    },
+    {
+      "id": "li-upload-story",
+      "name": "LI Upload Story",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        6600,
+        0
+      ],
+      "parameters": {
+        "method": "PUT",
+        "url": "={{ $json.uploadUrl }}",
+        "options": {},
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "sendBody": true,
+        "contentType": "binaryData",
+        "inputDataFieldName": "png"
+      },
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "aifeedLinkedIn01",
+          "name": "LinkedIn OAuth2"
+        }
+      }
+    },
+    {
+      "id": "li-init-upload-(end-card)",
+      "name": "LI Init Upload (End Card)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        6820,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.linkedin.com/rest/images?action=initializeUpload",
+        "options": {},
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "LinkedIn-Version",
+              "value": "={{ $('Config').first().json.linkedinVersion }}"
+            },
+            {
+              "name": "X-Restli-Protocol-Version",
+              "value": "2.0.0"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({initializeUploadRequest:{owner: $('Config').first().json.linkedinAuthorUrn}}) }}"
+      },
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "aifeedLinkedIn01",
+          "name": "LinkedIn OAuth2"
+        }
+      }
+    },
+    {
+      "id": "download-end-card",
+      "name": "Download End Card",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        7040,
+        0
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $('Config').first().json.endCardUrl }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file",
+              "outputPropertyName": "png"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "li-upload-end-card",
+      "name": "LI Upload End Card",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        7260,
+        0
+      ],
+      "parameters": {
+        "method": "PUT",
+        "url": "={{ $('LI Init Upload (End Card)').first().json.value.uploadUrl }}",
+        "options": {},
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "sendBody": true,
+        "contentType": "binaryData",
+        "inputDataFieldName": "png"
+      },
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "aifeedLinkedIn01",
+          "name": "LinkedIn OAuth2"
+        }
+      }
+    },
+    {
+      "id": "li-create-post",
+      "name": "LI Create Post",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        7480,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.linkedin.com/rest/posts",
+        "options": {},
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "LinkedIn-Version",
+              "value": "={{ $('Config').first().json.linkedinVersion }}"
+            },
+            {
+              "name": "X-Restli-Protocol-Version",
+              "value": "2.0.0"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({author: $('Config').first().json.linkedinAuthorUrn, commentary: $('Validate PNG + Prep Commits').first().json.liCaption.replace(/[\\\\(){}\\[\\]<>@|~_*#]/g, m => '\\\\' + m), visibility:'PUBLIC', distribution:{feedDistribution:'MAIN_FEED', targetEntities:[], thirdPartyDistributionChannels:[]}, content:{multiImage:{images:[{id: $('LI Init Upload (Story)').first().json.value.image, altText: $('Validate PNG + Prep Commits').first().json.post.headline}, {id: $('LI Init Upload (End Card)').first().json.value.image, altText: 'Follow AIFeed.run - AI News Delivered by AI'}]}}, lifecycleState:'PUBLISHED', isReshareDisabledByAuthor:false}) }}"
+      },
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "aifeedLinkedIn01",
+          "name": "LinkedIn OAuth2"
+        }
+      }
+    },
+    {
+      "id": "story:-attach-html",
+      "name": "Story: Attach HTML",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3960,
+        320
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "return [{ json: {}, binary: { storyHtml: $('Quality Checks + Build HTML').first().binary.storyHtml } }];"
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "story:-render-png",
+      "name": "Story: Render PNG",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4180,
+        320
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.renderUrl }}/forms/chromium/screenshot/html",
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "parameterType": "formBinaryData",
+              "name": "files",
+              "inputDataFieldName": "storyHtml"
+            },
+            {
+              "name": "width",
+              "value": "1080"
+            },
+            {
+              "name": "height",
+              "value": "1920"
+            },
+            {
+              "name": "clip",
+              "value": "true"
+            },
+            {
+              "name": "format",
+              "value": "png"
+            },
+            {
+              "name": "waitDelay",
+              "value": "3s"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file",
+              "outputPropertyName": "png"
+            }
+          },
+          "timeout": 60000
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 2,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "story:-validate-+-prep",
+      "name": "Story: Validate + Prep",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4400,
+        320
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Validates the 1080x1920 Story PNG and prepares its GitHub commit.\nconst cfg = $('Config').first().json;\nconst P = $('Validate PNG + Prep Commits').first().json;\nconst buf = await this.helpers.getBinaryDataBuffer(0, 'png');\nconst isPng = buf.slice(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]));\nconst w = buf.readUInt32BE(16), h = buf.readUInt32BE(20);\nif (!isPng || w !== 1080 || h !== 1920 || buf.length < 60000) throw new Error(`Story image invalid (png=${isPng}, ${w}x${h}, ${buf.length} bytes)`);\nconst storyName = P.pngName.replace(/\\.png$/, '_story.png');\nreturn [{ json: { storyName, storyBase64: buf.toString('base64'), storyUrl: `${cfg.siteUrl}/images/${storyName}` } }];\n"
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "story:-gh-commit-image",
+      "name": "Story: GH Commit Image",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4620,
+        320
+      ],
+      "parameters": {
+        "method": "PUT",
+        "url": "=https://api.github.com/repos/{{ $('Config').first().json.repo }}/contents/images/{{ $json.storyName }}",
+        "options": {},
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({message: 'AIFeed story image: ' + $json.storyName, branch: $('Config').first().json.branch, content: $json.storyBase64}) }}"
+      },
+      "credentials": {
+        "githubApi": {
+          "id": "aifeedGithub0001",
+          "name": "GitHub aifeed (fine-grained PAT)"
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "story:-wait-for-pages",
+      "name": "Story: Wait for Pages",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        4840,
+        320
+      ],
+      "parameters": {
+        "amount": 60,
+        "unit": "seconds"
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "story:-check-image-public",
+      "name": "Story: Check Image Public",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        5060,
+        320
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $('Story: Validate + Prep').first().json.storyUrl }}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 20000
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "story:-ig-create-container",
+      "name": "Story: IG Create Container",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        5280,
+        320
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/{{ $('Config').first().json.graphVersion }}/{{ $('Config').first().json.igUserId }}/media",
+        "options": {},
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendBody": true,
+        "contentType": "form-urlencoded",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "media_type",
+              "value": "STORIES"
+            },
+            {
+              "name": "image_url",
+              "value": "={{ $('Story: Validate + Prep').first().json.storyUrl }}"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "aifeedMetaIG0001",
+          "name": "Meta IG long-lived token (access_token)"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 15000,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "story:-wait-processing",
+      "name": "Story: Wait Processing",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        5500,
+        320
+      ],
+      "parameters": {
+        "amount": 10,
+        "unit": "seconds"
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "story:-ig-get-status",
+      "name": "Story: IG Get Status",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        5720,
+        320
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "=https://graph.facebook.com/{{ $('Config').first().json.graphVersion }}/{{ $('Story: IG Create Container').first().json.id }}?fields=status_code,status",
+        "options": {},
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth"
+      },
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "aifeedMetaIG0001",
+          "name": "Meta IG long-lived token (access_token)"
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "story:-check-status",
+      "name": "Story: Check Status",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        5940,
+        320
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const s = $input.first().json.status_code;\nconst attempt = $runIndex + 1;\nif (s === 'ERROR' || s === 'EXPIRED') throw new Error('IG story container ' + s + ': ' + ($input.first().json.status || ''));\nif (s !== 'FINISHED' && attempt >= 12) throw new Error('IG story not FINISHED after ' + attempt + ' polls (last: ' + s + ')');\nreturn [{ json: { ready: s === 'FINISHED', status_code: s, attempt } }];"
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "story:-ready?",
+      "name": "Story: Ready?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        6160,
+        320
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "r",
+              "leftValue": "={{ $json.ready }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "story:-ig-publish",
+      "name": "Story: IG Publish",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        6380,
+        320
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/{{ $('Config').first().json.graphVersion }}/{{ $('Config').first().json.igUserId }}/media_publish",
+        "options": {},
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendBody": true,
+        "contentType": "form-urlencoded",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "creation_id",
+              "value": "={{ $('Story: IG Create Container').first().json.id }}"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "aifeedMetaIG0001",
+          "name": "Meta IG long-lived token (access_token)"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 20000,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "story-failed-alert",
+      "name": "Story Failed Alert",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        6600,
+        520
+      ],
+      "parameters": {
+        "chatId": "={{ $('Config').first().json.telegramChatId }}",
+        "text": "=\u26a0\ufe0f AIFeed: Instagram Story failed (feed post + LinkedIn unaffected)\nStep: {{ $json.error ? '' : '' }}{{ $prevNode.name }}\nError: {{ $json.error?.message || $json.error || JSON.stringify($json).slice(0,300) }}",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "credentials": {
+        "telegramApi": {
+          "id": "aifeedTelegram01",
+          "name": "Telegram AIFeed bot (NEW token)"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "id": "image-live",
+      "name": "Image Live?",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4180,
+        200
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const st = $input.first().json.statusCode;\nconst attempt = $runIndex + 1;\nif (st !== 200 && attempt >= 9) throw new Error('Image URL still not public after ~5 min (HTTP ' + st + ')');\nreturn [{ json: { ready: st === 200, statusCode: st, attempt } }];"
+      }
+    },
+    {
+      "id": "image-ready",
+      "name": "Image Ready?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        4400,
+        200
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "c",
+              "leftValue": "={{ $json.ready }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "wait-30s-retry",
+      "name": "Wait 30s Retry",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        4620,
+        200
+      ],
+      "parameters": {
+        "amount": 30,
+        "unit": "seconds"
+      }
+    },
+    {
+      "id": "story-image-live",
+      "name": "Story: Image Live?",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        5060,
+        520
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const st = $input.first().json.statusCode;\nconst attempt = $runIndex + 1;\nif (st !== 200 && attempt >= 9) throw new Error('Image URL still not public after ~5 min (HTTP ' + st + ')');\nreturn [{ json: { ready: st === 200, statusCode: st, attempt } }];"
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "story-image-ready",
+      "name": "Story: Image Ready?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        5280,
+        520
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "c",
+              "leftValue": "={{ $json.ready }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "story-wait-30s-retry",
+      "name": "Story: Wait 30s Retry",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        5500,
+        520
+      ],
+      "parameters": {
+        "amount": 30,
+        "unit": "seconds"
+      }
+    },
+    {
+      "id": "linkedin-enabled",
+      "name": "LinkedIn Enabled?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        6160,
+        -200
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "c",
+              "leftValue": "={{ /^urn:li:(person|organization):[A-Za-z0-9_-]+$/.test($('Config').first().json.linkedinAuthorUrn || '') }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "layout-check",
+      "name": "Layout Check",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2700,
+        -450
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// \u2500\u2500 Deterministic caption builder + layout validator (shared by QC, Layout Check and Merge LI nodes) \u2500\u2500\nconst SPACER = '\u2800'; // U+2800 invisible line used by Instagram to keep blank lines\nfunction normText(s) {\n  return String(s || '')\n    .replace(/[\\u2018\\u2019\\u201B\\u2032]/g, \"'\").replace(/[\\u201C\\u201D\\u201F\\u2033]/g, '\"')\n    .replace(/[\\u2013\\u2014\\u2212]/g, '\u2014').replace(/\\s*\u2014\\s*/g, ' \u2014 ').replace(/\\u2026/g, '...')\n    .replace(/[\\u00A0\\u2000-\\u200B\\u202F\\u205F\\u3000\\u2800]/g, ' ')\n    .replace(/https?:\\/\\/\\S+/g, '').replace(/(^|\\s)#\\w+/g, '$1')\n    .replace(/\\s*\\n+\\s*/g, ' ').replace(/ {2,}/g, ' ').replace(/\\s+([,.!?;:])/g, '$1').trim();\n}\nfunction normTag(t) { return String(t || '').replace(/^#+/, '').replace(/[^A-Za-z0-9]/g, ''); }\nfunction tags5(arr) { const out = []; for (const t of (arr || []).map(normTag)) if (t && !out.some(o => o.toLowerCase() === t.toLowerCase())) out.push(t); return out.slice(0, 5); }\nfunction cleanUrl(u) { return String(u || '').trim().replace(/[?#].*$/, m => /utm_|fbclid|gclid/.test(m) ? '' : m); }\nfunction buildIg(g, url) {\n  const hook = normText(g.igHook), paras = (g.igParagraphs || []).map(normText).filter(Boolean).slice(0, 4), tg = tags5(g.igHashtags);\n  const blocks = [hook, ...paras, `Source: ${normText(g.outlet)} \u00b7 ${cleanUrl(url)}\\n\ud83d\udce9 Free daily AI brief \u2192 link in bio`, tg.map(t => '#' + t).join(' ')];\n  return blocks.join(`\\n${SPACER}\\n`);\n}\nfunction buildLi(g, url) {\n  const paras = [normText(g.liHook), ...(g.liParagraphs || []).map(normText).filter(Boolean), normText(g.liTakeaway)].filter(Boolean);\n  const tg = tags5(g.liHashtags);\n  return [...paras, `Source: ${normText(g.outlet)} \u00b7 ${cleanUrl(url)}\\nGet the daily AI brief: https://aifeed.run`, tg.map(t => '#' + t).join(' ')].join('\\n\\n');\n}\nfunction checkIg(c, url) {\n  const e = [], lines = c.split('\\n');\n  if (c !== c.trim()) e.push('leading/trailing whitespace');\n  if (/ {2,}/.test(c)) e.push('double spaces');\n  if (/\\n\\s*\\n/.test(c)) e.push('raw blank line (must use spacer)');\n  if (lines.some(l => l !== l.trim())) e.push('line with edge whitespace');\n  const blocks = c.split(`\\n${SPACER}\\n`);\n  if (blocks.some(b => b.includes(SPACER))) e.push('stray spacer');\n  const n = blocks.length; // hook + 3-4 paras + source block + hashtags\n  if (n < 6 || n > 7) e.push(`block count ${n} (want hook + 3-4 paragraphs + source + hashtags)`);\n  if (!/^\\p{Extended_Pictographic}/u.test(blocks[0] || '')) e.push('hook must start with emoji');\n  if (blocks.slice(0, -1).some(b => b.split('\\n').length > (b.startsWith('Source:') ? 2 : 1))) e.push('paragraph contains line break');\n  const src = blocks[n - 2] || '';\n  if (!/^Source: [^\u00b7\\n]+ \u00b7 https?:\\/\\/\\S+\\n\ud83d\udce9 Free daily AI brief \u2192 link in bio$/.test(src)) e.push('source block malformed');\n  if ((c.match(/https?:\\/\\//g) || []).length !== 1) e.push('URL must appear exactly once');\n  if (!/^(#[A-Za-z0-9]+ ){4}#[A-Za-z0-9]+$/.test(blocks[n - 1] || '')) e.push('hashtag line must be exactly 5 tags');\n  if ((c.match(/#[A-Za-z0-9]+/g) || []).length !== 5) e.push('hashtags outside last line');\n  if (/[\\u2018\\u2019\\u201C\\u201D\\u2013]/.test(c)) e.push('un-normalized quotes/dashes');\n  const w = blocks.slice(0, n - 2).join(' ').split(/\\s+/).filter(Boolean).length;\n  if (w < 70 || w > 230) e.push('IG body words ' + w);\n  if (c.length > 2200) e.push('IG caption > 2200 chars');\n  return e;\n}\nfunction checkLi(c) {\n  const e = [];\n  if (c !== c.trim()) e.push('edge whitespace');\n  if (/\\n{3,}/.test(c) || / {2,}/.test(c) || c.includes(SPACER)) e.push('spacing');\n  if ((c.match(/https?:\\/\\//g) || []).length !== 2) e.push('links: want source URL once + aifeed.run once');\n  if (!/\\n\\n(#[A-Za-z0-9]+ ){4}#[A-Za-z0-9]+$/.test(c)) e.push('hashtag line');\n  return e;\n}\n\n// Final gate: re-validates the assembled IG caption exactly as it will be posted.\nconst it = $input.first();\nconst errs = checkIg(it.json.gen.igCaption, it.json.story.link);\nif (errs.length) throw new Error('IG caption layout check failed: ' + errs.join('; '));\nreturn [it];"
+      }
+    },
+    {
+      "id": "li-caption-short",
+      "name": "LI Caption Short?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        2750,
+        -250
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "c",
+              "leftValue": "={{ $json.liShort === true }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "claude-expand-linkedin",
+      "name": "Claude Expand LinkedIn",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2970,
+        -250
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "anthropic-version",
+              "value": "2023-06-01"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({model: $('Config').first().json.anthropicModel, max_tokens: 2000, messages:[{role:'user', content: $json.liExpandPrompt}]}) }}",
+        "options": {}
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "aifeedAnthrop001",
+          "name": "Anthropic x-api-key"
+        }
+      },
+      "onError": "continueRegularOutput",
+      "retryOnFail": true,
+      "maxTries": 2
+    },
+    {
+      "id": "merge-li-caption",
+      "name": "Merge LI Caption",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3190,
+        -250
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// \u2500\u2500 Deterministic caption builder + layout validator (shared by QC, Layout Check and Merge LI nodes) \u2500\u2500\nconst SPACER = '\u2800'; // U+2800 invisible line used by Instagram to keep blank lines\nfunction normText(s) {\n  return String(s || '')\n    .replace(/[\\u2018\\u2019\\u201B\\u2032]/g, \"'\").replace(/[\\u201C\\u201D\\u201F\\u2033]/g, '\"')\n    .replace(/[\\u2013\\u2014\\u2212]/g, '\u2014').replace(/\\s*\u2014\\s*/g, ' \u2014 ').replace(/\\u2026/g, '...')\n    .replace(/[\\u00A0\\u2000-\\u200B\\u202F\\u205F\\u3000\\u2800]/g, ' ')\n    .replace(/https?:\\/\\/\\S+/g, '').replace(/(^|\\s)#\\w+/g, '$1')\n    .replace(/\\s*\\n+\\s*/g, ' ').replace(/ {2,}/g, ' ').replace(/\\s+([,.!?;:])/g, '$1').trim();\n}\nfunction normTag(t) { return String(t || '').replace(/^#+/, '').replace(/[^A-Za-z0-9]/g, ''); }\nfunction tags5(arr) { const out = []; for (const t of (arr || []).map(normTag)) if (t && !out.some(o => o.toLowerCase() === t.toLowerCase())) out.push(t); return out.slice(0, 5); }\nfunction cleanUrl(u) { return String(u || '').trim().replace(/[?#].*$/, m => /utm_|fbclid|gclid/.test(m) ? '' : m); }\nfunction buildIg(g, url) {\n  const hook = normText(g.igHook), paras = (g.igParagraphs || []).map(normText).filter(Boolean).slice(0, 4), tg = tags5(g.igHashtags);\n  const blocks = [hook, ...paras, `Source: ${normText(g.outlet)} \u00b7 ${cleanUrl(url)}\\n\ud83d\udce9 Free daily AI brief \u2192 link in bio`, tg.map(t => '#' + t).join(' ')];\n  return blocks.join(`\\n${SPACER}\\n`);\n}\nfunction buildLi(g, url) {\n  const paras = [normText(g.liHook), ...(g.liParagraphs || []).map(normText).filter(Boolean), normText(g.liTakeaway)].filter(Boolean);\n  const tg = tags5(g.liHashtags);\n  return [...paras, `Source: ${normText(g.outlet)} \u00b7 ${cleanUrl(url)}\\nGet the daily AI brief: https://aifeed.run`, tg.map(t => '#' + t).join(' ')].join('\\n\\n');\n}\nfunction checkIg(c, url) {\n  const e = [], lines = c.split('\\n');\n  if (c !== c.trim()) e.push('leading/trailing whitespace');\n  if (/ {2,}/.test(c)) e.push('double spaces');\n  if (/\\n\\s*\\n/.test(c)) e.push('raw blank line (must use spacer)');\n  if (lines.some(l => l !== l.trim())) e.push('line with edge whitespace');\n  const blocks = c.split(`\\n${SPACER}\\n`);\n  if (blocks.some(b => b.includes(SPACER))) e.push('stray spacer');\n  const n = blocks.length; // hook + 3-4 paras + source block + hashtags\n  if (n < 6 || n > 7) e.push(`block count ${n} (want hook + 3-4 paragraphs + source + hashtags)`);\n  if (!/^\\p{Extended_Pictographic}/u.test(blocks[0] || '')) e.push('hook must start with emoji');\n  if (blocks.slice(0, -1).some(b => b.split('\\n').length > (b.startsWith('Source:') ? 2 : 1))) e.push('paragraph contains line break');\n  const src = blocks[n - 2] || '';\n  if (!/^Source: [^\u00b7\\n]+ \u00b7 https?:\\/\\/\\S+\\n\ud83d\udce9 Free daily AI brief \u2192 link in bio$/.test(src)) e.push('source block malformed');\n  if ((c.match(/https?:\\/\\//g) || []).length !== 1) e.push('URL must appear exactly once');\n  if (!/^(#[A-Za-z0-9]+ ){4}#[A-Za-z0-9]+$/.test(blocks[n - 1] || '')) e.push('hashtag line must be exactly 5 tags');\n  if ((c.match(/#[A-Za-z0-9]+/g) || []).length !== 5) e.push('hashtags outside last line');\n  if (/[\\u2018\\u2019\\u201C\\u201D\\u2013]/.test(c)) e.push('un-normalized quotes/dashes');\n  const w = blocks.slice(0, n - 2).join(' ').split(/\\s+/).filter(Boolean).length;\n  if (w < 70 || w > 230) e.push('IG body words ' + w);\n  if (c.length > 2200) e.push('IG caption > 2200 chars');\n  return e;\n}\nfunction checkLi(c) {\n  const e = [];\n  if (c !== c.trim()) e.push('edge whitespace');\n  if (/\\n{3,}/.test(c) || / {2,}/.test(c) || c.includes(SPACER)) e.push('spacing');\n  if ((c.match(/https?:\\/\\//g) || []).length !== 2) e.push('links: want source URL once + aifeed.run once');\n  if (!/\\n\\n(#[A-Za-z0-9]+ ){4}#[A-Za-z0-9]+$/.test(c)) e.push('hashtag line');\n  return e;\n}\n\nconst q = $('Quality Checks + Build HTML').first();\nconst t = ($input.first().json?.content?.[0]?.text || '');\nlet liCaption = q.json.gen.liCaption, liWarning = null;\ntry {\n  const p = JSON.parse((t.match(/\\{[\\s\\S]*\\}/) || ['{}'])[0]);\n  const cand = buildLi({ ...q.json.gen, ...p }, q.json.story.link);\n  const w = cand.split(/\\s+/).length;\n  if (p.liParagraphs && checkLi(cand).length === 0 && w >= 200) liCaption = cand; else liWarning = 'LinkedIn caption short after retry - posted anyway';\n} catch (e) { liWarning = 'LinkedIn retry unparseable - posted original'; }\nreturn [{ json: { liCaption, liWarning }, binary: q.binary }];"
+      }
+    },
+    {
+      "id": "dry-run",
+      "name": "Dry Run?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        3190,
+        500
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "c",
+              "leftValue": "={{ $('Config').first().json.dryRun === true }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "dry-attach-html",
+      "name": "Dry: Attach HTML",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3080,
+        700
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "return [{ json: {}, binary: { storyHtml: $('Quality Checks + Build HTML').first().binary.storyHtml } }];"
+      }
+    },
+    {
+      "id": "dry-render-story",
+      "name": "Dry: Render Story",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3300,
+        700
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.renderUrl }}/forms/chromium/screenshot/html",
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "parameterType": "formBinaryData",
+              "name": "files",
+              "inputDataFieldName": "storyHtml"
+            },
+            {
+              "name": "width",
+              "value": "1080"
+            },
+            {
+              "name": "height",
+              "value": "1920"
+            },
+            {
+              "name": "format",
+              "value": "png"
+            },
+            {
+              "name": "waitDelay",
+              "value": "3s"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file",
+              "outputPropertyName": "storyPng"
+            }
+          },
+          "timeout": 60000
+        }
+      }
+    },
+    {
+      "id": "dry-collect",
+      "name": "Dry: Collect",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3520,
+        700
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const P = $('Validate PNG + Prep Commits').first().json;\nconst q = $('Quality Checks + Build HTML').first().json;\nconst feed = $('Render PNG (Gotenberg)').first().binary.png;\nconst story = $input.first().binary.storyPng;\nfeed.fileName = P.pngName; story.fileName = P.pngName.replace(/\\.png$/, '_story.png');\nreturn [{ json: { pngName: P.pngName, storyName: story.fileName, headline: q.story.title, url: q.story.link, igCaption: P.igCaption, liCaption: P.liCaption, failures: q.failures }, binary: { feed, story } }];"
+      }
+    },
+    {
+      "id": "dry-save-feed-png",
+      "name": "Dry: Save Feed PNG",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        3740,
+        700
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "={{ $('Config').first().json.dryRunDir }}/{{ $json.pngName }}",
+        "dataPropertyName": "feed",
+        "options": {}
+      }
+    },
+    {
+      "id": "dry-save-story-png",
+      "name": "Dry: Save Story PNG",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        3960,
+        700
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "={{ $('Config').first().json.dryRunDir }}/{{ $('Dry: Collect').first().json.storyName }}",
+        "dataPropertyName": "story",
+        "options": {}
+      }
+    },
+    {
+      "id": "dry-reattach",
+      "name": "Dry: Reattach",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4070,
+        900
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const c = $('Dry: Collect').first();\nreturn [{ json: c.json, binary: c.binary }];"
+      }
+    },
+    {
+      "id": "dry-tg-feed-photo",
+      "name": "Dry: TG Feed Photo",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        4180,
+        700
+      ],
+      "parameters": {
+        "operation": "sendPhoto",
+        "chatId": "={{ $('Config').first().json.telegramChatId }}",
+        "binaryData": true,
+        "binaryPropertyName": "feed",
+        "additionalFields": {
+          "caption": "=\ud83e\uddea DRY RUN (slot {{ $('Config').first().json.slot }}) \u2014 feed graphic\n{{ $('Dry: Collect').first().json.headline }}"
+        }
+      },
+      "credentials": {
+        "telegramApi": {
+          "id": "aifeedTelegram01",
+          "name": "Telegram AIFeed bot (NEW token)"
+        }
+      }
+    },
+    {
+      "id": "dry-reattach-2",
+      "name": "Dry: Reattach 2",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4290,
+        900
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const c = $('Dry: Collect').first();\nreturn [{ json: c.json, binary: c.binary }];"
+      }
+    },
+    {
+      "id": "dry-tg-story-photo",
+      "name": "Dry: TG Story Photo",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        4400,
+        700
+      ],
+      "parameters": {
+        "operation": "sendPhoto",
+        "chatId": "={{ $('Config').first().json.telegramChatId }}",
+        "binaryData": true,
+        "binaryPropertyName": "story",
+        "additionalFields": {
+          "caption": "\ud83e\uddea DRY RUN \u2014 story graphic"
+        }
+      },
+      "credentials": {
+        "telegramApi": {
+          "id": "aifeedTelegram01",
+          "name": "Telegram AIFeed bot (NEW token)"
+        }
+      }
+    },
+    {
+      "id": "dry-tg-caption",
+      "name": "Dry: TG Caption",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        4620,
+        700
+      ],
+      "parameters": {
+        "chatId": "={{ $('Config').first().json.telegramChatId }}",
+        "text": "=\ud83e\uddea DRY RUN \u2014 IG caption (nothing was published)\n\n{{ $('Dry: Collect').first().json.igCaption.substring(0, 3500) }}\n\nSource story: {{ $('Dry: Collect').first().json.url }}",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "credentials": {
+        "telegramApi": {
+          "id": "aifeedTelegram01",
+          "name": "Telegram AIFeed bot (NEW token)"
+        }
+      }
+    },
+    {
+      "id": "facebook-enabled",
+      "name": "Facebook Enabled?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        6160,
+        -450
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "c",
+              "leftValue": "={{ $('Config').first().json.fbEnabled === true }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "fb-upload-photo-1",
+      "name": "FB Upload Photo 1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        6380,
+        -450
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/{{ $('Config').first().json.graphVersion }}/{{ $('Config').first().json.fbPageId }}/photos",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendBody": true,
+        "contentType": "form-urlencoded",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "url",
+              "value": "={{ $('Validate PNG + Prep Commits').first().json.post.imageUrl }}"
+            },
+            {
+              "name": "published",
+              "value": "false"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "aifeedMetaIG0001",
+          "name": "Meta IG long-lived token (access_token)"
+        }
+      },
+      "onError": "continueErrorOutput",
+      "retryOnFail": true,
+      "maxTries": 2,
+      "waitBetweenTries": 5000
+    },
+    {
+      "id": "fb-upload-photo-2",
+      "name": "FB Upload Photo 2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        6600,
+        -450
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/{{ $('Config').first().json.graphVersion }}/{{ $('Config').first().json.fbPageId }}/photos",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendBody": true,
+        "contentType": "form-urlencoded",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "url",
+              "value": "={{ $('Config').first().json.endCardUrl }}"
+            },
+            {
+              "name": "published",
+              "value": "false"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "aifeedMetaIG0001",
+          "name": "Meta IG long-lived token (access_token)"
+        }
+      },
+      "onError": "continueErrorOutput",
+      "retryOnFail": true,
+      "maxTries": 2,
+      "waitBetweenTries": 5000
+    },
+    {
+      "id": "fb-create-post",
+      "name": "FB Create Post",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        6820,
+        -450
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/{{ $('Config').first().json.graphVersion }}/{{ $('Config').first().json.fbPageId }}/feed",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendBody": true,
+        "contentType": "form-urlencoded",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $('Validate PNG + Prep Commits').first().json.igCaption }}"
+            },
+            {
+              "name": "attached_media",
+              "value": "={{ JSON.stringify([{media_fbid: $('FB Upload Photo 1').first().json.id}, {media_fbid: $('FB Upload Photo 2').first().json.id}]) }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "aifeedMetaIG0001",
+          "name": "Meta IG long-lived token (access_token)"
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "fb-failed-alert",
+      "name": "FB Failed Alert",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        6820,
+        -650
+      ],
+      "parameters": {
+        "chatId": "={{ $('Config').first().json.telegramChatId }}",
+        "text": "=\u26a0\ufe0f AIFeed: Facebook Page post failed (Instagram + website unaffected)\nError: {{ $json.error?.message || $json.error || JSON.stringify($json).slice(0,300) }}",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "credentials": {
+        "telegramApi": {
+          "id": "aifeedTelegram01",
+          "name": "Telegram AIFeed bot (NEW token)"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "id": "manual-trigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        -200
+      ],
+      "parameters": {}
+    }
+  ],
+  "connections": {
+    "Schedule 8am+5pm ET": {
+      "main": [
+        [
+          {
+            "node": "Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Config": {
+      "main": [
+        [
+          {
+            "node": "GH Get History",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GH Get History": {
+      "main": [
+        [
+          {
+            "node": "GH Get Posts Index",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GH Get Posts Index": {
+      "main": [
+        [
+          {
+            "node": "IG Get Recent Media",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IG Get Recent Media": {
+      "main": [
+        [
+          {
+            "node": "Fetch RSS + Dedup",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch RSS + Dedup": {
+      "main": [
+        [
+          {
+            "node": "Claude Rank",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Claude Rank": {
+      "main": [
+        [
+          {
+            "node": "Pick Slot Story",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pick Slot Story": {
+      "main": [
+        [
+          {
+            "node": "Claude Same-Event Check",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Claude Same-Event Check": {
+      "main": [
+        [
+          {
+            "node": "Drop Same-Event Repeats",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Drop Same-Event Repeats": {
+      "main": [
+        [
+          {
+            "node": "Fetch Articles",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Articles": {
+      "main": [
+        [
+          {
+            "node": "Claude Captions + Fact Check",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Claude Captions + Fact Check": {
+      "main": [
+        [
+          {
+            "node": "Quality Checks + Build HTML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Quality Checks + Build HTML": {
+      "main": [
+        [
+          {
+            "node": "Layout Check",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Render PNG (Gotenberg)": {
+      "main": [
+        [
+          {
+            "node": "Validate PNG + Prep Commits",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate PNG + Prep Commits": {
+      "main": [
+        [
+          {
+            "node": "Dry Run?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GH Commit Image": {
+      "main": [
+        [
+          {
+            "node": "GH Update Posts Index",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GH Update Posts Index": {
+      "main": [
+        [
+          {
+            "node": "GH Update History",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GH Update History": {
+      "main": [
+        [
+          {
+            "node": "Wait for GitHub Pages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait for GitHub Pages": {
+      "main": [
+        [
+          {
+            "node": "Check Image Is Public",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Image Is Public": {
+      "main": [
+        [
+          {
+            "node": "Image Live?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IG Child 1 (Story)": {
+      "main": [
+        [
+          {
+            "node": "IG Child 2 (End Card)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IG Child 2 (End Card)": {
+      "main": [
+        [
+          {
+            "node": "IG Create Carousel",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IG Create Carousel": {
+      "main": [
+        [
+          {
+            "node": "Wait IG Processing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait IG Processing": {
+      "main": [
+        [
+          {
+            "node": "IG Get Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IG Get Status": {
+      "main": [
+        [
+          {
+            "node": "IG Check Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IG Check Status": {
+      "main": [
+        [
+          {
+            "node": "IG Ready?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IG Ready?": {
+      "main": [
+        [
+          {
+            "node": "IG Publish",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait IG Processing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IG Publish": {
+      "main": [
+        [
+          {
+            "node": "LinkedIn Enabled?",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Story: Attach HTML",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Facebook Enabled?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "LI Init Upload (Story)": {
+      "main": [
+        [
+          {
+            "node": "Attach Story PNG",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Attach Story PNG": {
+      "main": [
+        [
+          {
+            "node": "LI Upload Story",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "LI Upload Story": {
+      "main": [
+        [
+          {
+            "node": "LI Init Upload (End Card)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "LI Init Upload (End Card)": {
+      "main": [
+        [
+          {
+            "node": "Download End Card",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download End Card": {
+      "main": [
+        [
+          {
+            "node": "LI Upload End Card",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "LI Upload End Card": {
+      "main": [
+        [
+          {
+            "node": "LI Create Post",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Story: Attach HTML": {
+      "main": [
+        [
+          {
+            "node": "Story: Render PNG",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Story Failed Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Story: Render PNG": {
+      "main": [
+        [
+          {
+            "node": "Story: Validate + Prep",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Story Failed Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Story: Validate + Prep": {
+      "main": [
+        [
+          {
+            "node": "Story: GH Commit Image",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Story Failed Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Story: GH Commit Image": {
+      "main": [
+        [
+          {
+            "node": "Story: Wait for Pages",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Story Failed Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Story: Wait for Pages": {
+      "main": [
+        [
+          {
+            "node": "Story: Check Image Public",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Story Failed Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Story: Check Image Public": {
+      "main": [
+        [
+          {
+            "node": "Story: Image Live?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Story Failed Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Story: IG Create Container": {
+      "main": [
+        [
+          {
+            "node": "Story: Wait Processing",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Story Failed Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Story: Wait Processing": {
+      "main": [
+        [
+          {
+            "node": "Story: IG Get Status",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Story Failed Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Story: IG Get Status": {
+      "main": [
+        [
+          {
+            "node": "Story: Check Status",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Story Failed Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Story: Check Status": {
+      "main": [
+        [
+          {
+            "node": "Story: Ready?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Story Failed Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Story: Ready?": {
+      "main": [
+        [
+          {
+            "node": "Story: IG Publish",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Story: Wait Processing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Story: IG Publish": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Story Failed Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Image Live?": {
+      "main": [
+        [
+          {
+            "node": "Image Ready?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Image Ready?": {
+      "main": [
+        [
+          {
+            "node": "IG Child 1 (Story)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait 30s Retry",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait 30s Retry": {
+      "main": [
+        [
+          {
+            "node": "Check Image Is Public",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Story: Image Live?": {
+      "main": [
+        [
+          {
+            "node": "Story: Image Ready?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Story Failed Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Story: Image Ready?": {
+      "main": [
+        [
+          {
+            "node": "Story: IG Create Container",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Story: Wait 30s Retry",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Story: Wait 30s Retry": {
+      "main": [
+        [
+          {
+            "node": "Story: Check Image Public",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "LinkedIn Enabled?": {
+      "main": [
+        [
+          {
+            "node": "LI Init Upload (Story)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "Layout Check": {
+      "main": [
+        [
+          {
+            "node": "LI Caption Short?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "LI Caption Short?": {
+      "main": [
+        [
+          {
+            "node": "Claude Expand LinkedIn",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Render PNG (Gotenberg)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Claude Expand LinkedIn": {
+      "main": [
+        [
+          {
+            "node": "Merge LI Caption",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge LI Caption": {
+      "main": [
+        [
+          {
+            "node": "Render PNG (Gotenberg)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dry Run?": {
+      "main": [
+        [
+          {
+            "node": "Dry: Attach HTML",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "GH Commit Image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dry: Attach HTML": {
+      "main": [
+        [
+          {
+            "node": "Dry: Render Story",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dry: Render Story": {
+      "main": [
+        [
+          {
+            "node": "Dry: Collect",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dry: Collect": {
+      "main": [
+        [
+          {
+            "node": "Dry: Save Feed PNG",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dry: Save Feed PNG": {
+      "main": [
+        [
+          {
+            "node": "Dry: Save Story PNG",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dry: Save Story PNG": {
+      "main": [
+        [
+          {
+            "node": "Dry: Reattach",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dry: Reattach": {
+      "main": [
+        [
+          {
+            "node": "Dry: TG Feed Photo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dry: TG Feed Photo": {
+      "main": [
+        [
+          {
+            "node": "Dry: Reattach 2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dry: Reattach 2": {
+      "main": [
+        [
+          {
+            "node": "Dry: TG Story Photo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dry: TG Story Photo": {
+      "main": [
+        [
+          {
+            "node": "Dry: TG Caption",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Facebook Enabled?": {
+      "main": [
+        [
+          {
+            "node": "FB Upload Photo 1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "FB Upload Photo 1": {
+      "main": [
+        [
+          {
+            "node": "FB Upload Photo 2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "FB Failed Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "FB Upload Photo 2": {
+      "main": [
+        [
+          {
+            "node": "FB Create Post",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "FB Failed Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "FB Create Post": {
+      "main": [
+        [],
+        [
+          {
+            "node": "FB Failed Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "timezone": "America/New_York",
+    "executionOrder": "v1",
+    "errorWorkflow": "aifeedErrAlert01",
+    "saveDataErrorExecution": "all"
+  },
+  "active": false,
+  "pinData": {}
+}
