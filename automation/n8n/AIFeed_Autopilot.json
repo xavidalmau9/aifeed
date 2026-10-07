@@ -78,7 +78,7 @@
       ],
       "parameters": {
         "mode": "runOnceForAllItems",
-        "jsCode": "// Shared lock with GitHub Actions. Stop the 8:40/5:40 fallback when this date+slot is claimed or posted.\nconst cfg = $('Config').first().json;\nconst resp = $input.first().json || {};\nlet doc = null;\nconst msg = String(resp.message || '');\nif (resp.content) {\n  try { doc = JSON.parse(Buffer.from(resp.content, 'base64').toString('utf8')); }\n  catch (e) { throw new Error('Slot claim file was not valid JSON - fallback stopped to avoid a double post'); }\n} else if (/not found/i.test(msg)) {\n  doc = { claims: {} };\n} else if (!msg) {\n  doc = { claims: {} };\n} else {\n  throw new Error('Could not read _data/slot-claims.json (' + msg.slice(0, 180) + ') - fallback stopped to avoid a double post');\n}\nconst key = cfg.today + ':' + cfg.slot;\nconst row = (doc.claims || {})[key] || null;\nconst status = row && String(row.status || '').toLowerCase();\nconst blocked = status === 'claimed' || status === 'posted';\nreturn [{ json: { blocked, reason: blocked ? ('slot ' + key + ' is ' + status + (row.by ? ' by ' + row.by : '')) : ('slot ' + key + ' is free'), claim: row } }];"
+        "jsCode": "// Shared lock with GitHub Actions. Stop the 8:40/5:40 fallback when this date+slot is claimed or posted\n// in _data/slot-claims.json, OR when _data/history.json already has a post for this date+slot.\nconst cfg = $('Config').first().json;\nfunction readDoc(resp, label, empty) {\n  resp = resp || {};\n  const msg = String(resp.message || '');\n  if (resp.content) {\n    try { return JSON.parse(Buffer.from(resp.content, 'base64').toString('utf8')); }\n    catch (e) { throw new Error(label + ' was not valid JSON - fallback stopped to avoid a double post'); }\n  }\n  if (/not found/i.test(msg)) return empty;\n  if (!msg && !resp.sha && !resp.size) return empty;\n  throw new Error('Could not read ' + label + ' (' + (msg || 'no content, size ' + resp.size).slice(0, 180) + ') - fallback stopped to avoid a double post');\n}\nconst doc = readDoc($('GH Get Slot Claims').first().json, '_data/slot-claims.json', { claims: {} });\nconst hist = readDoc($input.first().json, '_data/history.json', { posted: [] });\nconst key = cfg.today + ':' + cfg.slot;\nconst row = (doc.claims || {})[key] || null;\nconst status = row && String(row.status || '').toLowerCase();\nconst posted = (hist.posted || []).find(p => p && p.date === cfg.today && Number(p.slot) === Number(cfg.slot)) || null;\nconst blocked = status === 'claimed' || status === 'posted' || !!posted;\nconst reason = posted\n  ? ('history already has a post for ' + key + ' (' + String(posted.headline || posted.slug || '').slice(0, 80) + ')')\n  : blocked ? ('slot ' + key + ' is ' + status + (row.by ? ' by ' + row.by : '')) : ('slot ' + key + ' is free');\nreturn [{ json: { blocked, reason, claim: row, historyHit: !!posted } }];"
       }
     },
     {
@@ -2119,6 +2119,35 @@
         -200
       ],
       "parameters": {}
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "=https://api.github.com/repos/{{ $('Config').first().json.repo }}/contents/_data/history.json",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "options": {
+          "response": {
+            "response": {
+              "neverError": true
+            }
+          }
+        }
+      },
+      "id": "a1f0c0de-0000-4000-8000-0000000000a1",
+      "name": "GH Get History (slot gate)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        550,
+        -100
+      ],
+      "credentials": {
+        "githubApi": {
+          "id": "aifeedGithub0001",
+          "name": "GitHub aifeed (fine-grained PAT)"
+        }
+      }
     }
   ],
   "connections": {
@@ -3094,7 +3123,7 @@
       "main": [
         [
           {
-            "node": "Claim Check",
+            "node": "GH Get History (slot gate)",
             "type": "main",
             "index": 0
           }
@@ -3122,6 +3151,17 @@
           }
         ],
         []
+      ]
+    },
+    "GH Get History (slot gate)": {
+      "main": [
+        [
+          {
+            "node": "Claim Check",
+            "type": "main",
+            "index": 0
+          }
+        ]
       ]
     }
   },

@@ -2,7 +2,7 @@
 
 The daily post (8:00am ET slot 1, 5:00pm ET slot 2) runs in GitHub Actions from `.github/workflows/autopilot.yml`. The pipeline code is `automation/actions/`. It follows the live n8n workflow: same feeds, prompts, caption builder, graphic HTML, text-fit check, 2-slide Instagram carousel (story graphic + `https://aifeed.run/images/aifeed_endslide.png`), then a 9:16 Instagram Story.
 
-n8n is only a fallback. Import `automation/n8n/AIFeed_Autopilot.json`. Its schedule is **8:40am and 5:40pm America/New_York**, and it stops when `_data/slot-claims.json` shows that slot as `claimed` or `posted`.
+n8n is only a fallback. Import `automation/n8n/AIFeed_Autopilot.json`. Its schedule is **8:40am and 5:40pm America/New_York**, and it stops when `_data/slot-claims.json` shows that slot as `claimed` or `posted`, or when `_data/history.json` already has a post for that date and slot.
 
 ## Secrets
 
@@ -39,7 +39,7 @@ A dry run still needs `ANTHROPIC_API_KEY` and `META_PAGE_TOKEN` (ranking, captio
 1. Add the secrets above. Do not commit them.
 2. Run one **dry run** for slot `1` or `2` and compare the artifact with a recent post. (Before the merge, run `pipeline.js` locally with `DRY_RUN=1`; `workflow_dispatch` only works once the workflow is on `main`, and the post job always checks out `main`.)
 3. Before merging, import `automation/n8n/AIFeed_Autopilot.json` into n8n (this replaces the 8:00/17:00 schedule with 8:40/17:40). Import `automation/n8n/AIFeed_Error_Alerts.json` and set it as the error workflow. Put the new bot token in the n8n Telegram credential. The chat id in the JSON is `__TELEGRAM_CHAT_ID__`; replace that placeholder in the n8n Config node with the real chat id (it is not stored in the repo copy).
-4. Leave n8n **active** until Actions has posted on its own for a few days. n8n reads `_data/slot-claims.json` immediately after Config and stops when that slot is `claimed` or `posted`.
+4. Leave n8n **active** until Actions has posted on its own for a few days. n8n reads `_data/slot-claims.json` and `_data/history.json` immediately after Config and stops when that slot is `claimed` or `posted`, or already in history.
 5. Confirm the Actions run at 8:00am ET posts, and the 8:40am n8n execution ends on "slot is claimed/posted" without publishing.
 6. **Disable n8n** once you trust Actions: deactivate **AIFeed Autopilot** and **AIFeed Error Alerts** in n8n, and you can shut the machine off. Deactivate rather than deleting until you have seen a few Actions posts.
 
