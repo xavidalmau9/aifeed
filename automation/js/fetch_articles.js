@@ -9,8 +9,14 @@ const out = await Promise.all(candidates.map(async c => {
 }));
 const usable = out.filter(c => c.linkOk);
 if (!usable.length) throw new Error('All candidate source links failed to load');
-const blocks = usable.map((c, i) => `### CANDIDATE ${i}\nHeadline: ${c.title}\nPublication: ${c.siteName}\nURL: ${c.link}\nArticle text (truncated): ${c.text}`).join('\n\n');
+const blocks = usable.map((c, i) => `### CANDIDATE ${i}\nHeadline: ${c.title}\nPublication: ${c.siteName}\nURL: ${c.link}\nFeed description: ${c.desc || c.description || '(none)'}\nArticle text (truncated): ${c.text}`).join('\n\n');
 const captionPrompt = `For EACH candidate below write AIFeed.run social copy using ONLY facts stated in its article text. Return STRUCTURED parts only; our code assembles and formats the final captions, so do NOT include emojis except where stated, URLs, "Source" lines, hashtags inside text, or line breaks inside fields.
+
+ACCURACY RULES (strict; copy that breaks them is rejected automatically):
+- Keep every hedge from the source: considers, plans, reportedly, in talks, sources say, may, expected to, up to, proposed. If the source reports something as a plan, talks, a rumor or "sources say", the graphicHeadline, summary and igHook must ALL say so too (e.g. "DEEPSEEK WEIGHS DOUBLING ROUND TO UP TO $15B", not "DEEPSEEK DOUBLES FUNDING TO $15B").
+- Never state a rumor, plan, proposal or report as done. Do not upgrade "up to" to an exact figure.
+- Never invent details that are not in the article text (no "strong demand", motives, outcomes, quotes or numbers that are not there).
+- Keep currency symbols and units exactly: "$15B" or "$15 billion", never "15 BILLION". Keep non-dollar currencies as written (e.g. "100 billion yuan").
 
 Fields per candidate:
 - igHook: one punchy line, starts with exactly one strong emoji (🚀💡🔥🤖⚡️📉📈⚠️🧠), max 18 words.
@@ -21,7 +27,7 @@ Fields per candidate:
 - igHashtags: exactly 5 hashtags without the # sign, letters/digits only (e.g. "OpenAI").
 - liHashtags: exactly 5 professional hashtags, same format.
 - outlet: publication name as it brands itself (e.g. "CNBC", "The Verge", "9to5Google").
-- graphicHeadline: ALL CAPS, 4-8 words, punchy, factual. highlightWords: number of trailing words of graphicHeadline to color pink (1-3).
+- graphicHeadline: ALL CAPS, 4-8 words, punchy, factual, hedged when the source is hedged, $ kept on money. highlightWords: number of trailing words of graphicHeadline to color pink (1-3).
 - summary: 1 sentence, 14-26 words.
 - category: one of BUSINESS, MODELS, TOOLS, RESEARCH, POLICY, HARDWARE, SAFETY.
 - supported: false if any claim is not in the article text, or the article is opinion, an ad, a rumor, or not about AI.

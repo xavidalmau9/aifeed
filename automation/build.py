@@ -152,8 +152,8 @@ q=N("Quality Checks + Build HTML")["position"]
 mk("Layout Check","n8n-nodes-base.code",2,{"mode":"runOnceForAllItems","jsCode":R("js/captions_lib.js")+"""
 // Final gate: re-validates the assembled IG caption exactly as it will be posted.
 const it = $input.first();
-const errs = checkIg(it.json.gen.igCaption, it.json.story.link);
-if (errs.length) throw new Error('IG caption layout check failed: ' + errs.join('; '));
+const errs = [...checkIg(it.json.gen.igCaption, it.json.story.link), ...checkAccuracy(it.json.gen, it.json.story).map(x => 'accuracy: ' + x)];
+if (errs.length) throw new Error('IG caption layout/accuracy check failed: ' + errs.join('; '));
 return [it];"""},[q[0]+60,q[1]-450])
 mk("LI Caption Short?","n8n-nodes-base.if",2,IFP("={{ $json.liShort === true }}"),[q[0]+110,q[1]-250])
 mk("Claude Expand LinkedIn","n8n-nodes-base.httpRequest",4.2,{"method":"POST","url":"https://api.anthropic.com/v1/messages","authentication":"genericCredentialType","genericAuthType":"httpHeaderAuth","sendHeaders":True,"headerParameters":{"parameters":[{"name":"anthropic-version","value":"2023-06-01"}]},"sendBody":True,"specifyBody":"json","jsonBody":"={{ JSON.stringify({model: "+CFG+".anthropicModel, max_tokens: 2000, messages:[{role:'user', content: $json.liExpandPrompt}]}) }}","options":{}},[q[0]+330,q[1]-250],ANTC,extra={"onError":"continueRegularOutput","retryOnFail":True,"maxTries":2})
@@ -168,7 +168,12 @@ try {
   if (p.liParagraphs && checkLi(cand).length === 0 && w >= 200) liCaption = cand; else liWarning = 'LinkedIn caption short after retry - posted anyway';
 } catch (e) { liWarning = 'LinkedIn retry unparseable - posted original'; }
 return [{ json: { liCaption, liWarning }, binary: q.binary }];"""},[q[0]+550,q[1]-250])
-conn["Quality Checks + Build HTML"]={"main":[L("Layout Check")]}
+# accuracy gate: one regeneration of the best candidate's copy, then QC re-runs (and falls back to the next candidate)
+mk("Accuracy Fix Needed?","n8n-nodes-base.if",2,IFP("={{ $json.accuracyRetry === true }}"),[q[0]-110,q[1]-650])
+mk("Claude Fix Accuracy","n8n-nodes-base.httpRequest",4.2,{"method":"POST","url":"https://api.anthropic.com/v1/messages","authentication":"genericCredentialType","genericAuthType":"httpHeaderAuth","sendHeaders":True,"headerParameters":{"parameters":[{"name":"anthropic-version","value":"2023-06-01"}]},"sendBody":True,"specifyBody":"json","jsonBody":"={{ JSON.stringify({model: "+CFG+".anthropicModel, max_tokens: 3000, temperature: 0, messages:[{role:'user', content: $json.accuracyPrompt}]}) }}","options":{}},[q[0]+110,q[1]-650],ANTC,extra={"onError":"continueRegularOutput","retryOnFail":True,"maxTries":2,"waitBetweenTries":5000})
+conn["Quality Checks + Build HTML"]={"main":[L("Accuracy Fix Needed?")]}
+conn["Accuracy Fix Needed?"]={"main":[L("Claude Fix Accuracy"),L("Layout Check")]}
+conn["Claude Fix Accuracy"]={"main":[L("Quality Checks + Build HTML")]}
 conn["Layout Check"]={"main":[L("LI Caption Short?")]}
 conn["LI Caption Short?"]={"main":[L("Claude Expand LinkedIn"),L("Render PNG (Gotenberg)")]}
 conn["Claude Expand LinkedIn"]={"main":[L("Merge LI Caption")]}

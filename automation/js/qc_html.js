@@ -1,8 +1,23 @@
 // Automatic quality gate: first candidate that passes every check wins (fallback = next story). Builds the graphic HTML.
+// Accuracy gate: if the best candidate fails ONLY the accuracy check (hedge dropped / $ dropped), its copy is regenerated
+// once ("Claude Fix Accuracy" loops back into this node); if it still fails, the next candidate is used.
 const { usable, history } = $('Fetch Articles').first().json;
-const txt = $input.first().json?.content?.[0]?.text || '';
+const parseArr = t => JSON.parse((String(t).replace(/```json|```/g, '').match(/\[[\s\S]*\]/) || ['[]'])[0]);
+const txt = $('Claude Captions + Fact Check').first().json?.content?.[0]?.text || '';
 let gen = [];
-try { gen = JSON.parse((txt.replace(/```json|```/g, '').match(/\[[\s\S]*\]/) || ['[]'])[0]); } catch (e) { throw new Error('Caption JSON parse failed: ' + txt.slice(0, 200)); }
+try { gen = parseArr(txt); } catch (e) { throw new Error('Caption JSON parse failed: ' + txt.slice(0, 200)); }
+let fixPass = false, fixNote = null;
+fixPass = $runIndex > 0; // 2nd run of this node = after the one-time accuracy regeneration (never loops again)
+if (fixPass) {
+  const prev = $('Accuracy Fix Needed?').first().json;
+  const ft = $('Claude Fix Accuracy').first().json?.content?.[0]?.text || '';
+  try {
+    const fix = JSON.parse((ft.replace(/```json|```/g, '').match(/\{[\s\S]*\}/) || ['{}'])[0]);
+    const i = gen.findIndex(x => x.candidate === prev.accuracyCandidate);
+    if (i >= 0 && fix && fix.graphicHeadline) { gen[i] = { ...gen[i], ...fix, candidate: prev.accuracyCandidate }; fixNote = 'accuracy regenerated for candidate ' + prev.accuracyCandidate; }
+    else fixNote = 'accuracy regeneration unusable - falling back';
+  } catch (e) { fixNote = 'accuracy regeneration unparseable - falling back'; }
+}
 const words = s => String(s || '').split(/\s+/).filter(Boolean).length;
 const tags = s => (String(s || '').match(/#\w+/g) || []).length;
 const CATS = ['BUSINESS', 'MODELS', 'TOOLS', 'RESEARCH', 'POLICY', 'HARDWARE', 'SAFETY'];
@@ -20,9 +35,22 @@ for (const g of gen) {
     checkIg(g.igCaption, c.link).forEach(x => problems.push('IG layout: ' + x));
     g.liLayoutWarnings = checkLi(g.liCaption); // LinkedIn issues never cause fallback
   }
+  const acc = c ? checkAccuracy(g, c) : [];
   const hw = words(g.graphicHeadline);
   if (hw < 3 || hw > 9 || String(g.graphicHeadline).length > 60) problems.push('graphic headline length');
   if (words(g.summary) > 30) problems.push('summary too long');
+  if (!problems.length && acc.length && !fixPass) {
+    // Only the accuracy gate failed: regenerate this candidate's copy once before falling back.
+    const fixPrompt = `Rewrite the AIFeed.run copy below so it is strictly accurate to the source. Problems found: ${acc.join('; ')}.
+RULES: keep every hedge from the source (considers, plans, reportedly, in talks, sources say, may, up to, expected to...). Never state a report, plan, proposal or rumor as done. Use ONLY facts in the source text; invent nothing (no "strong demand", no outcomes, no numbers that are not there). Keep currency symbols and units exactly: write $15B or $15 billion, never "15 BILLION".
+SOURCE TITLE: ${c.title}
+SOURCE DESCRIPTION: ${c.desc || c.description || ''}
+SOURCE TEXT (truncated): ${c.text}
+CURRENT COPY: ${JSON.stringify({ graphicHeadline: g.graphicHeadline, highlightWords: g.highlightWords, summary: g.summary, igHook: g.igHook, igParagraphs: g.igParagraphs, liHook: g.liHook, liParagraphs: g.liParagraphs, liTakeaway: g.liTakeaway })}
+Return ONLY one JSON object with the same keys: graphicHeadline (ALL CAPS, 4-8 words, max 60 chars, MUST contain a hedge word such as WEIGHS, MULLS, PLANS, EYES, IN TALKS, MAY, UP TO, REPORTEDLY when the source is hedged), highlightWords (1-3), summary (1 sentence, 14-26 words, hedged), igHook (starts with one emoji, max 18 words, hedged), igParagraphs (3-4 paragraphs, 15-45 words each, no emojis), liHook, liParagraphs (5), liTakeaway.`;
+    return [{ json: { accuracyRetry: true, accuracyCandidate: g.candidate, accuracyProblems: acc, accuracyPrompt: fixPrompt } }];
+  }
+  acc.forEach(x => problems.push('accuracy: ' + x));
   if (problems.length) { failures.push(`${c ? c.title.slice(0, 60) : '?'}: ${problems.join('; ')}`); continue; }
   pick = { c, g }; break;
 }
@@ -76,11 +104,13 @@ p{font:400 32px/1.42 Inter;color:#d9d6e3;text-wrap:pretty}
   const lines = el => Math.round(el.getBoundingClientRect().height / parseFloat(getComputedStyle(el).lineHeight));
   const overflowX = el => el.scrollWidth > el.clientWidth + 1;
   const orphan = el => { const r = document.createRange(); r.selectNodeContents(el); const rects = [...r.getClientRects()].filter(x => x.width > 0); if (rects.length < 2) return false; const lastTop = rects[rects.length-1].top; const lastLine = rects.filter(x => Math.abs(x.top - lastTop) < 4); const words = (el.innerText || '').split('\\n').pop().trim().split(/\\s+/); return lastLine.reduce((a,x)=>a+x.width,0) < el.clientWidth * 0.12 && words.length < 2; };
-  let hf = parseFloat(getComputedStyle(H).fontSize), pf = parseFloat(getComputedStyle(P).fontSize);
+  let hf = parseFloat(getComputedStyle(H).fontSize), pf = parseFloat(getComputedStyle(P).fontSize), ug = false;
   for (let i = 0; i < 40; i++) {
     const bad = C.getBoundingClientRect().top < minTop || lines(H) > 4 || overflowX(H) || lines(P) > 3;
     if (!bad) break;
     if (lines(H) > 4 || overflowX(H) || hf > 64 + 20) { if (hf > 64) { hf -= 4; H.style.fontSize = hf + 'px'; continue; } }
+    // last resort for a too-wide glued word pair (e.g. 'WORKSPACE INTEGRATION'): let it break normally
+    if ((overflowX(H) || overflowX(P)) && !ug) { ug = true; [H, P].forEach(el => { el.innerHTML = el.innerHTML.replace(/&nbsp;|\u00a0/g, ' '); }); continue; }
     if (pf > 26) { pf -= 2; P.style.fontSize = pf + 'px'; continue; }
     break;
   }
@@ -133,11 +163,13 @@ p{font:400 36px/1.42 Inter;color:#d9d6e3;text-wrap:pretty}
   const lines = el => Math.round(el.getBoundingClientRect().height / parseFloat(getComputedStyle(el).lineHeight));
   const overflowX = el => el.scrollWidth > el.clientWidth + 1;
   const orphan = el => { const r = document.createRange(); r.selectNodeContents(el); const rects = [...r.getClientRects()].filter(x => x.width > 0); if (rects.length < 2) return false; const lastTop = rects[rects.length-1].top; const lastLine = rects.filter(x => Math.abs(x.top - lastTop) < 4); const words = (el.innerText || '').split('\\n').pop().trim().split(/\\s+/); return lastLine.reduce((a,x)=>a+x.width,0) < el.clientWidth * 0.12 && words.length < 2; };
-  let hf = parseFloat(getComputedStyle(H).fontSize), pf = parseFloat(getComputedStyle(P).fontSize);
+  let hf = parseFloat(getComputedStyle(H).fontSize), pf = parseFloat(getComputedStyle(P).fontSize), ug = false;
   for (let i = 0; i < 40; i++) {
     const bad = C.getBoundingClientRect().top < minTop || lines(H) > 5 || overflowX(H) || lines(P) > 4;
     if (!bad) break;
     if (lines(H) > 5 || overflowX(H) || hf > 72 + 20) { if (hf > 72) { hf -= 4; H.style.fontSize = hf + 'px'; continue; } }
+    // last resort for a too-wide glued word pair (e.g. 'WORKSPACE INTEGRATION'): let it break normally
+    if ((overflowX(H) || overflowX(P)) && !ug) { ug = true; [H, P].forEach(el => { el.innerHTML = el.innerHTML.replace(/&nbsp;|\u00a0/g, ' '); }); continue; }
     if (pf > 30) { pf -= 2; P.style.fontSize = pf + 'px'; continue; }
     break;
   }
@@ -154,4 +186,4 @@ p{font:400 36px/1.42 Inter;color:#d9d6e3;text-wrap:pretty}
 </script></body></html>`;
 const liWords = words(g.liCaption);
 const liShort = liWords < 200;
-return [{ json: { story: c, gen: g, category: cat, history, failures, liShort, liWords, liExpandPrompt: liShort ? `Expand this LinkedIn post using ONLY facts from the article text below. Return ONLY JSON: {"liHook":"bold opening, no emoji, max 25 words","liParagraphs":[5 paragraphs of 2-4 sentences, 45-80 words each],"liTakeaway":"one crisp sentence"}. No URLs, hashtags or line breaks inside fields.\n\nCURRENT POST:\n${g.liCaption}\n\nARTICLE TEXT:\n${c.text}` : '' }, binary: { html: await this.helpers.prepareBinaryData(Buffer.from(html, 'utf8'), 'index.html', 'text/html'), storyHtml: await this.helpers.prepareBinaryData(Buffer.from(storyHtml, 'utf8'), 'index.html', 'text/html') } }];
+return [{ json: { accuracyRetry: false, accuracyNote: fixNote, story: c, gen: g, category: cat, history, failures, liShort, liWords, liExpandPrompt: liShort ? `Expand this LinkedIn post using ONLY facts from the article text below. Return ONLY JSON: {"liHook":"bold opening, no emoji, max 25 words","liParagraphs":[5 paragraphs of 2-4 sentences, 45-80 words each],"liTakeaway":"one crisp sentence"}. No URLs, hashtags or line breaks inside fields.\n\nCURRENT POST:\n${g.liCaption}\n\nARTICLE TEXT:\n${c.text}` : '' }, binary: { html: await this.helpers.prepareBinaryData(Buffer.from(html, 'utf8'), 'index.html', 'text/html'), storyHtml: await this.helpers.prepareBinaryData(Buffer.from(storyHtml, 'utf8'), 'index.html', 'text/html') } }];

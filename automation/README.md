@@ -22,3 +22,14 @@ Checks per candidate, cheapest first:
   in the last 90 days, regardless of outlet or headline. Unreadable verdict = stop; unsure = repeat.
 Repeats are skipped and the next candidate (pool of up to 15) is used; if all are repeats, the run fails safely
 through the error workflow and nothing is posted.
+
+## Accuracy rule
+The caption prompt requires hedges from the source (considers, plans, reportedly, in talks, sources say, may, up to)
+to be kept, nothing invented, and currency kept as written ($15B, never "15 BILLION"). A deterministic gate
+(`checkAccuracy` in `js/captions_lib.js`, run per candidate in Quality Checks and again in Layout Check) rejects copy
+where the source title/description is hedged but the graphic headline, summary or IG hook is not, or where a money
+amount lost its `$`. The best candidate's copy is regenerated once ("Claude Fix Accuracy"); if it still fails, the
+next candidate is used.
+
+## Renderer
+`js/renderer_server.js` (deployed as `renderer/server.js`) returns HTTP 400 on missing/invalid bodies instead of crashing.

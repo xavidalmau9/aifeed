@@ -52,3 +52,24 @@ function checkLi(c) {
   if (!/\n\n(#[A-Za-z0-9]+ ){4}#[A-Za-z0-9]+$/.test(c)) e.push('hashtag line');
   return e;
 }
+// ── Accuracy gate: never turn a report/plan/rumor into a fact; keep currency symbols ──
+// Source hedges (title + feed description + og:description). Lowercase "may" only, so the month "May" does not count.
+const SRC_HEDGE_RE = /\b(considers?|considering|weighs?|weighing|mulls?|mulling|explores?|exploring|plans?|planning|planned|in talks|talks (?:to|with|over)|negotiat\w*|reportedly|sources? (?:say|said|says)|people familiar|according to (?:a |the )?(?:report|sources|people)|report(?:s|ed)? (?:say|says|said|that)|rumou?r\w*|might|up to|expected to|set to|seeks?|seeking|nears?|close to|potential(?:ly)?|propos\w+|is said to|aims? to|intends? to|could)\b|\bmay\b/;
+// Hedges accepted in generated copy (broader, case-insensitive; graphic headlines are ALL CAPS).
+const GEN_HEDGE_RE = /\b(considers?|considering|weighs?|weighing|mulls?|mulling|eyes|eyeing|explores?|exploring|plans?|planning|planned|in talks|talks|negotiat\w*|reportedly|reports?|reported|sources?|rumou?r\w*|may|might|could|would|up to|expected|set to|seeks?|seeking|nears?|close to|potential(?:ly)?|propos\w+|possibl[ey]|said to|aims? to|aiming to|looks? to|looking to|wants? to|hopes? to|intends?|considered)\b|\?/i;
+function hedgeSource(c) { return [c && c.title, c && c.desc, c && c.description].filter(Boolean).join(' \n '); }
+function srcHasHedge(c) { return SRC_HEDGE_RE.test(String(hedgeSource(c)).replace(/(^|[.!?]\s+)May\b/g, '$1')); }
+const BARE_AMOUNT_RE = /(^|[^$€£¥\d.,])(\d[\d.,]*)\s*(billion|million|trillion|bn)\b(?![\s-]*(?:yuan|euros?|pounds?|yen|won|rupees?|dollars?|usd|eur|gbp|rmb|parameters?|params|users?|people|tokens?|downloads?|subscribers?|views?|times|years?|devices?|units?|chips?|gpus?|images?|videos?|messages?|queries|requests?|customers?|members?|monthly|weekly|daily|active))/i;
+function checkAccuracy(g, c) {
+  const e = [];
+  const parts = { headline: normText(g.graphicHeadline), summary: normText(g.summary), hook: normText(g.igHook) };
+  if (srcHasHedge(c)) {
+    const miss = Object.keys(parts).filter(k => !GEN_HEDGE_RE.test(parts[k]));
+    if (miss.length) e.push('source is hedged (report/plan/rumor) but ' + miss.join(' + ') + ' state it as fact');
+  }
+  const srcText = [c && c.title, c && c.desc, c && c.description, c && c.text].filter(Boolean).join(' ');
+  if (/[$]\s?\d/.test(srcText)) {
+    for (const k of ['headline', 'summary', 'hook']) { const m = parts[k].match(BARE_AMOUNT_RE); if (m) e.push(`${k} has "${(m[2] + ' ' + m[3]).trim()}" without $ (source uses $)`); }
+  }
+  return e;
+}
