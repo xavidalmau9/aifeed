@@ -2,7 +2,7 @@
 
 The daily post (8:00am ET slot 1, 5:00pm ET slot 2) runs in GitHub Actions from `.github/workflows/autopilot.yml`. The pipeline code is `automation/actions/`. It follows the live n8n workflow: same feeds, prompts, caption builder, graphic HTML, text-fit check, 2-slide Instagram carousel (story graphic + `https://aifeed.run/images/aifeed_endslide.png`), then a 9:16 Instagram Story.
 
-n8n is only a fallback. Import `automation/n8n/AIFeed_Autopilot.json`. Its schedule is **8:40am and 5:40pm America/New_York**, and it stops when `_data/slot-claims.json` shows that slot as `claimed` or `posted`, or when `_data/history.json` already has a post for that date and slot.
+n8n is only a fallback. Import `automation/n8n/AIFeed_Autopilot.json`. Its schedule is **8:50am and 5:50pm America/New_York**, and it stops when `_data/slot-claims.json` shows that slot as `claimed` or `posted`, or when `_data/history.json` already has a post for that date and slot.
 
 ## Secrets
 
@@ -38,9 +38,9 @@ A dry run still needs `ANTHROPIC_API_KEY` and `META_PAGE_TOKEN` (ranking, captio
 
 1. Add the secrets above. Do not commit them.
 2. Run one **dry run** for slot `1` or `2` and compare the artifact with a recent post. (Before the merge, run `pipeline.js` locally with `DRY_RUN=1`; `workflow_dispatch` only works once the workflow is on `main`, and the post job always checks out `main`.)
-3. Before merging, import `automation/n8n/AIFeed_Autopilot.json` into n8n (this replaces the 8:00/17:00 schedule with 8:40/17:40). Import `automation/n8n/AIFeed_Error_Alerts.json` and set it as the error workflow. Put the new bot token in the n8n Telegram credential. The chat id in the JSON is `__TELEGRAM_CHAT_ID__`; replace that placeholder in the n8n Config node with the real chat id (it is not stored in the repo copy).
+3. Before merging, import `automation/n8n/AIFeed_Autopilot.json` into n8n (this replaces the 8:00/17:00 schedule with 8:50/17:50). Import `automation/n8n/AIFeed_Error_Alerts.json` and set it as the error workflow. Put the new bot token in the n8n Telegram credential. The chat id in the JSON is `__TELEGRAM_CHAT_ID__`; replace that placeholder in the n8n Config node with the real chat id (it is not stored in the repo copy).
 4. Leave n8n **active** until Actions has posted on its own for a few days. n8n reads `_data/slot-claims.json` and `_data/history.json` immediately after Config and stops when that slot is `claimed` or `posted`, or already in history.
-5. Confirm the Actions run at 8:00am ET posts, and the 8:40am n8n execution ends on "slot is claimed/posted" without publishing.
+5. Confirm the Actions run at 8:00am ET posts, and the 8:50am n8n execution ends on "slot is claimed/posted" without publishing.
 6. **Disable n8n** once you trust Actions: deactivate **AIFeed Autopilot** and **AIFeed Error Alerts** in n8n, and you can shut the machine off. Deactivate rather than deleting until you have seen a few Actions posts.
 
 `take_over` on a manual run reclaims a slot left in `claimed` after a crash before publish. It does not override `posted` or an entry already in `_data/history.json`. Do not re-import `automation/AIFeed_Autopilot.json`; that older file is still the 8:00/17:00 workflow.
@@ -64,3 +64,15 @@ A dry run still needs `ANTHROPIC_API_KEY` and `META_PAGE_TOKEN` (ranking, captio
 ## What the job posts
 
 Instagram carousel (feed graphic + end card) and an Instagram Story. Facebook only when `fbEnabled` is `true`. LinkedIn only when `linkedinEnabled` is `true`, the author URN is a real `urn:li:person:` or `urn:li:organization:` value, and `LINKEDIN_ACCESS_TOKEN` is set. Website updates are a commit to `images/`, `_posts/posts-index.json`, and `_data/history.json` on `main`.
+
+## Source fact check (Actions and the n8n fallback)
+
+After the caption parts are written and before the layout check, every published sentence (graphic headline, summary, IG hook, each IG body sentence, and the LinkedIn hook, body and takeaway) is sent to Claude with the article text that was fetched (or the RSS/page description if no article text loaded). Claude returns, per sentence, whether the source supports it.
+
+- Unsupported body sentences are dropped. If dropping would leave the IG caption too thin (under 3 paragraphs or 75 words), the sentence is rewritten once using only the source.
+- An unsupported headline, summary or hook is rewritten once from the source.
+- Only rewritten text is checked a second time. If it is still unsupported, or any verdict cannot be read (bad JSON, missing ids, API error), the candidate is rejected and the next candidate is used. If none pass, nothing is posted.
+- The one-time accuracy (hedge/$) regeneration and the LinkedIn expansion are verified the same way without further rewrites. A LinkedIn expansion that fails keeps the original LinkedIn caption.
+- Layout rules (one Source line, spacers, 5 hashtags, carousel/story) are checked after this step, unchanged.
+
+Code: `automation/actions/lib/factcheck.js`. The n8n fallback inlines the same code in its Code nodes. After editing `factcheck.js` or `articleText()` in `lib/articles.js`, run `python3 automation/n8n/sync_source_check.py`; `test/n8n-fallback.test.js` fails if the n8n JSON is out of date. A dry run's `story.json` lists the per-candidate result under `sourceCheck`.

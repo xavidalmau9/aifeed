@@ -6,6 +6,19 @@ function meta(html, p) {
   return m ? m[1] : '';
 }
 
+// Article body for captions and the source fact check. Pages start with navigation menus, so the first 3500
+// characters of the whole page often held almost none of the story; prefer the <p> paragraphs.
+function articleText(html) {
+  const clean = String(html || '').replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<noscript[\s\S]*?<\/noscript>/gi, ' ');
+  const strip = t => t.replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#0?39;|&#x27;|&rsquo;|&lsquo;/g, "'").replace(/&ldquo;|&rdquo;/g, '"').replace(/&#(\d+);/g, (m, n) => String.fromCharCode(+n)).replace(/\s+/g, ' ').trim();
+  const seen = new Set();
+  const paras = (clean.match(/<p[\s>][\s\S]*?<\/p>/gi) || []).map(strip)
+    .filter(t => t.length >= 40 && !seen.has(t) && seen.add(t))
+    .filter(t => !/^(Posts from this (topic|author)|Sign up|Subscribe|Follow topics|Most Popular|Advertisement|Read more:)/i.test(t));
+  const body = paras.join(' ');
+  return (body.length >= 600 ? body : strip(clean)).slice(0, 6000);
+}
+
 function buildCaptionPrompt(usable) {
   const blocks = usable.map((c, i) => `### CANDIDATE ${i}\nHeadline: ${c.title}\nPublication: ${c.siteName}\nURL: ${c.link}\nFeed description: ${c.desc || c.description || '(none)'}\nArticle text (truncated): ${c.text}`).join('\n\n');
   return `For EACH candidate below write AIFeed.run social copy using ONLY facts stated in its article text. Return STRUCTURED parts only; our code assembles and formats the final captions, so do NOT include emojis except where stated, URLs, "Source" lines, hashtags inside text, or line breaks inside fields.
@@ -86,7 +99,7 @@ async function fetchArticles(candidates, { fetchImpl = globalThis.fetch } = {}) 
     } catch (e) {
       ok = false;
     }
-    const text = html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 3500);
+    const text = articleText(html);
     const ogImage = ok ? photoUrl(meta(html, 'og:image') || meta(html, 'twitter:image'), c.link) : '';
     const photo = ok ? await probePhoto(ogImage, fetchImpl) : { ok: false, reason: 'article did not load' };
     return Object.assign({}, c, {
@@ -104,4 +117,4 @@ async function fetchArticles(candidates, { fetchImpl = globalThis.fetch } = {}) 
   return { usable, captionPrompt: buildCaptionPrompt(usable) };
 }
 
-module.exports = { meta, photoUrl, probePhoto, GENERIC_PHOTO_RE, buildCaptionPrompt, fetchArticles };
+module.exports = { meta, articleText, photoUrl, probePhoto, GENERIC_PHOTO_RE, buildCaptionPrompt, fetchArticles };

@@ -1,6 +1,6 @@
 # AIFeed autopilot (n8n) — source
 
-The live publisher is GitHub Actions. See `ACTIONS_SETUP.md`. The n8n workflow to import as a fallback (8:40am / 5:40pm ET, same slot-claim file) is `n8n/AIFeed_Autopilot.json`, not the older JSON in this folder.
+The live publisher is GitHub Actions. See `ACTIONS_SETUP.md`. The n8n workflow to import as a fallback (8:50am / 5:50pm ET, same slot-claim file) is `n8n/AIFeed_Autopilot.json`, not the older JSON in this folder.
 
 No secrets live here. Credentials (GitHub, Anthropic, Meta/Instagram, Telegram, LinkedIn) are stored only in n8n's
 encrypted credential store on the automation box; the workflow JSON references them by id/name.

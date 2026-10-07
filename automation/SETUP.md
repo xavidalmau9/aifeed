@@ -75,7 +75,7 @@ Instagram limits: at most 100 API posts per 24h (you'll use 2), JPEG/PNG, 4:5 ra
 ## How "no approval" stays safe (automatic checks)
 1. **Dedup**: the link (with tracking tags removed) is compared to every past post. Titles are compared by word overlap against the last 30 days. Claude is also told to skip any story about the same event as a recent post.
 2. **Freshness**: stories must be under 36h old and the source link must actually load.
-3. **Fact check**: captions are written only from the article text. Claude marks unsupported, opinion, rumor or unsafe stories, and those are rejected.
+3. **Fact check**: captions are written only from the article text. Claude marks unsupported, opinion, rumor or unsafe stories, and those are rejected. A second source check then verifies every caption sentence against the article text (see `ACTIONS_SETUP.md`, "Source fact check").
 4. **Format checks**: word counts, Instagram's 2,200-character limit, 3–6 hashtags, a source line, headline length that fits the graphic, and a real 1080×1350 PNG.
 5. **Fallback**: if a story fails any check, the next story (up to 3) is used automatically. If all fail, nothing posts and you get a Telegram alert.
 
