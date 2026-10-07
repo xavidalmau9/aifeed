@@ -1797,7 +1797,7 @@
       ],
       "parameters": {
         "mode": "runOnceForAllItems",
-        "jsCode": "const P = $('Validate PNG + Prep Commits').first().json;\nconst q = $('Quality Checks + Build HTML').first().json;\nconst feed = $('Render PNG (Gotenberg)').first().binary.png;\nconst story = $input.first().binary.storyPng;\nfeed.fileName = P.pngName; story.fileName = P.pngName.replace(/\\.png$/, '_story.png');\nreturn [{ json: { pngName: P.pngName, storyName: story.fileName, headline: q.story.title, url: q.story.link, igCaption: P.igCaption, liCaption: P.liCaption, failures: q.failures }, binary: { feed, story } }];"
+        "jsCode": "const P = $('Validate PNG + Prep Commits').first().json;\nconst q = $('Quality Checks + Build HTML').first().json;\nconst feed = $('Render PNG (Gotenberg)').first().binary.png;\nconst story = $input.first().binary.storyPng;\nfeed.fileName = P.pngName; story.fileName = P.pngName.replace(/\\.png$/, '_story.png');\nreturn [{ json: { pngName: P.pngName, storyName: story.fileName, headline: q.story.title, url: q.story.link, igCaption: P.igCaption, liCaption: P.liCaption, failures: q.failures, sourceCheck: q.sourceCheck, accuracyNote: q.accuracyNote }, binary: { feed, story } }];"
       }
     },
     {

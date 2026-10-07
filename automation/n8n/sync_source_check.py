@@ -219,6 +219,12 @@ cj = cj.replace(": blocked ? ('slot ' + key + ' is '", ": wouldBlock ? ('slot ' 
 cj = cj.replace('8:40/5:40', '8:50/5:50')
 cc['jsCode'] = cj
 
+# Dry run output shows the source-check result per candidate.
+dc = nodes['Dry: Collect']['parameters']
+if 'sourceCheck: q.sourceCheck' not in dc['jsCode']:
+    dc['jsCode'] = dc['jsCode'].replace('failures: q.failures }', 'failures: q.failures, sourceCheck: q.sourceCheck, accuracyNote: q.accuracyNote }')
+assert 'sourceCheck: q.sourceCheck' in dc['jsCode']
+
 # Schedule 8:50 / 17:50 ET.
 for old_name in [n['name'] for n in d['nodes'] if n['type'].endswith('scheduleTrigger')]:
     n = nodes[old_name]
