@@ -1,0 +1,46 @@
+name: SEO pages, sitemap & RSS
+# Rebuilds /news/<slug>/ pages, sitemap.xml and feed.xml whenever the automation updates posts-index.json.
+# No loop: this job only commits news/, sitemap.xml, feed.xml (not in the trigger paths), and pushes made
+# with GITHUB_TOKEN never trigger workflows anyway.
+on:
+  push:
+    branches: [main]
+    paths: ['_posts/posts-index.json', 'post.html', 'scripts/build_seo.py']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: seo-build
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            _posts/
+            post.html
+            scripts/
+            news/
+            sitemap.xml
+            feed.xml
+      - name: Build and commit (retries on concurrent pushes from the post automation)
+        run: |
+          git config user.name "aifeed-seo-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for i in 1 2 3 4 5; do
+            git fetch -q --depth=1 origin main
+            git reset -q --hard origin/main
+            python3 scripts/build_seo.py
+            git add -A news sitemap.xml feed.xml
+            if git diff --cached --quiet; then echo "No SEO changes"; exit 0; fi
+            git commit -q -m "SEO: rebuild story pages, sitemap, RSS"
+            if git push -q origin HEAD:main; then echo "Pushed"; exit 0; fi
+            echo "Push rejected (main moved), retrying"; sleep $((i*5))
+          done
+          exit 1
