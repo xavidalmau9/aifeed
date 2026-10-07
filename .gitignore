@@ -1,6 +1,7 @@
 node_modules/
 .DS_Store
 .claude/
-package-lock.json
-package.json
+/package-lock.json
+/package.json
 /tmp/
+automation/actions/out/
