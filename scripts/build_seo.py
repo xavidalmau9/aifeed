@@ -12,6 +12,25 @@ def dt(s):
     try: return datetime.datetime.fromisoformat(str(s).replace("Z", "+00:00"))
     except Exception: return None
 
+OUTLETS = {"theverge.com": "The Verge", "cnbc.com": "CNBC", "wired.com": "WIRED", "axios.com": "Axios", "fortune.com": "Fortune",
+    "9to5google.com": "9to5Google", "9to5mac.com": "9to5Mac", "engadget.com": "Engadget", "techcrunch.com": "TechCrunch",
+    "reuters.com": "Reuters", "bloomberg.com": "Bloomberg", "nytimes.com": "The New York Times", "wsj.com": "The Wall Street Journal",
+    "ft.com": "Financial Times", "arstechnica.com": "Ars Technica", "venturebeat.com": "VentureBeat", "businessinsider.com": "Business Insider",
+    "technologyreview.com": "MIT Technology Review", "theinformation.com": "The Information", "zdnet.com": "ZDNET", "cnn.com": "CNN",
+    "bbc.com": "BBC", "bbc.co.uk": "BBC", "theguardian.com": "The Guardian", "washingtonpost.com": "The Washington Post", "forbes.com": "Forbes",
+    "apnews.com": "AP News", "gizmodo.com": "Gizmodo", "mashable.com": "Mashable", "techradar.com": "TechRadar", "tomsguide.com": "Tom's Guide",
+    "theregister.com": "The Register", "semafor.com": "Semafor", "politico.com": "Politico", "nbcnews.com": "NBC News", "cbsnews.com": "CBS News",
+    "fastcompany.com": "Fast Company", "qz.com": "Quartz", "the-decoder.com": "The Decoder", "siliconangle.com": "SiliconANGLE",
+    "marktechpost.com": "MarkTechPost", "cnet.com": "CNET", "microsoft.com": "Microsoft", "cloudflare.com": "Cloudflare", "openai.com": "OpenAI", "anthropic.com": "Anthropic", "blog.google": "Google", "artificialintelligence-news.com": "AI News", "tomshardware.com": "Tom's Hardware", "scientificamerican.com": "Scientific American", "nature.com": "Nature", "time.com": "TIME"}
+def outlet(p):
+    if p.get("sourceName"): return strip(p["sourceName"])
+    m = re.match(r"https?://(?:www\.)?([^/]+)", p.get("sourceUrl") or "")
+    if not m: return ""
+    host = m.group(1).lower()
+    for dom, name in OUTLETS.items():
+        if host == dom or host.endswith("." + dom): return name
+    return host
+
 posts = json.load(open(os.path.join(ROOT, "_posts/posts-index.json")))
 seen, items = set(), []
 for p in sorted(posts, key=lambda p: str(p.get("publishedAt") or p.get("date") or ""), reverse=True):
@@ -69,7 +88,7 @@ for i, p in enumerate(items):
     related = [q for q in items if q is not p][:0]
     near = items[max(0, i - 3):i] + items[i + 1:i + 4]
     rel = "".join(f'<li><a href="news/{esc(q["slug"])}/">{esc(strip(q.get("headline")))}</a></li>' for q in near)
-    src = f'<p>Source: <a href="{esc(p["sourceUrl"])}" rel="noopener" target="_blank">{esc(p.get("sourceName") or "original report")}</a></p>' if p.get("sourceUrl") else ""
+    src = f'<p>Source: <a href="{esc(p["sourceUrl"])}" rel="noopener" target="_blank">{esc(outlet(p) or "original report")}</a></p>' if p.get("sourceUrl") else ""
     static = f"""<article class="seo-static">
       <h1>{esc(title)}</h1>
       <p><time datetime="{pub_s}">{pub.strftime('%B %d, %Y') if pub else ''}</time> · {esc(p.get('category') or 'AI')}</p>
@@ -94,7 +113,7 @@ for p in items:
 sm.append("</urlset>")
 open(os.path.join(ROOT, "sitemap.xml"), "w").write("\n".join(sm) + "\n")
 
-rss = ['<?xml version="1.0" encoding="UTF-8"?>', '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>',
+rss = ['<?xml version="1.0" encoding="UTF-8"?>', '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:aifeed="https://aifeed.run/ns/1.0"><channel>',
        "<title>AIFeed.run — Daily AI News</title>", f"<link>{SITE}/</link>",
        "<description>The top AI stories every day, zero noise.</description>", "<language>en-us</language>",
        f'<atom:link href="{SITE}/feed.xml" rel="self" type="application/rss+xml" />']
@@ -103,6 +122,8 @@ for p in items[:50]:
     rss.append(f"<item><title>{esc(strip(p.get('headline')))}</title><link>{u}</link><guid isPermaLink=\"true\">{u}</guid>"
                + (f"<pubDate>{format_datetime(pub)}</pubDate>" if pub and pub.tzinfo else "")
                + f"<description>{esc(strip(p.get('summary')))}</description>"
+               + (f"<category>{esc(p['category'])}</category>" if p.get("category") else "")
+               + (f"<aifeed:sourceName>{esc(outlet(p))}</aifeed:sourceName><aifeed:sourceUrl>{esc(p['sourceUrl'])}</aifeed:sourceUrl>" if p.get("sourceUrl") else "")
                + (f"<enclosure url=\"{esc(p['imageUrl'])}\" type=\"image/png\" length=\"0\" />" if p.get("imageUrl") else "") + "</item>")
 rss.append("</channel></rss>")
 open(os.path.join(ROOT, "feed.xml"), "w").write("\n".join(rss) + "\n")
