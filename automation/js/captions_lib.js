@@ -13,7 +13,7 @@ function tags5(arr) { const out = []; for (const t of (arr || []).map(normTag)) 
 function cleanUrl(u) { return String(u || '').trim().replace(/[?#].*$/, m => /utm_|fbclid|gclid/.test(m) ? '' : m); }
 function buildIg(g, url) {
   const hook = normText(g.igHook), paras = (g.igParagraphs || []).map(normText).filter(Boolean).slice(0, 4), tg = tags5(g.igHashtags);
-  const blocks = [hook, ...paras, `Source: ${normText(g.outlet)} · ${cleanUrl(url)}\n📩 Free daily AI brief → link in bio`, tg.map(t => '#' + t).join(' ')];
+  const blocks = [hook, ...paras, `Source: ${normText(g.outlet)} · ${cleanUrl(url)}`, '📩 Free daily AI brief → link in bio', tg.map(t => '#' + t).join(' ')];
   return blocks.join(`\n${SPACER}\n`);
 }
 function buildLi(g, url) {
@@ -29,17 +29,18 @@ function checkIg(c, url) {
   if (lines.some(l => l !== l.trim())) e.push('line with edge whitespace');
   const blocks = c.split(`\n${SPACER}\n`);
   if (blocks.some(b => b.includes(SPACER))) e.push('stray spacer');
-  const n = blocks.length; // hook + 3-4 paras + source block + hashtags
-  if (n < 6 || n > 7) e.push(`block count ${n} (want hook + 3-4 paragraphs + source + hashtags)`);
+  const n = blocks.length; // hook + 3-4 paras + source + brief CTA + hashtags
+  if (n < 7 || n > 8) e.push(`block count ${n} (want hook + 3-4 paragraphs + source + brief CTA + hashtags)`);
   if (!/^\p{Extended_Pictographic}/u.test(blocks[0] || '')) e.push('hook must start with emoji');
-  if (blocks.slice(0, -1).some(b => b.split('\n').length > (b.startsWith('Source:') ? 2 : 1))) e.push('paragraph contains line break');
-  const src = blocks[n - 2] || '';
-  if (!/^Source: [^·\n]+ · https?:\/\/\S+\n📩 Free daily AI brief → link in bio$/.test(src)) e.push('source block malformed');
+  if (blocks.slice(0, -1).some(b => b.split('\n').length > 1)) e.push('paragraph contains line break');
+  const src = blocks[n - 3] || '';
+  if (!/^Source: [^·\n]+ · https?:\/\/\S+$/.test(src)) e.push('source line malformed');
+  if ((blocks[n - 2] || '') !== '📩 Free daily AI brief → link in bio') e.push('brief CTA line malformed (must sit alone after a spacer below Source)');
   if ((c.match(/https?:\/\//g) || []).length !== 1) e.push('URL must appear exactly once');
   if (!/^(#[A-Za-z0-9]+ ){4}#[A-Za-z0-9]+$/.test(blocks[n - 1] || '')) e.push('hashtag line must be exactly 5 tags');
   if ((c.match(/#[A-Za-z0-9]+/g) || []).length !== 5) e.push('hashtags outside last line');
   if (/[\u2018\u2019\u201C\u201D\u2013]/.test(c)) e.push('un-normalized quotes/dashes');
-  const w = blocks.slice(0, n - 2).join(' ').split(/\s+/).filter(Boolean).length;
+  const w = blocks.slice(0, n - 3).join(' ').split(/\s+/).filter(Boolean).length;
   if (w < 70 || w > 230) e.push('IG body words ' + w);
   if (c.length > 2200) e.push('IG caption > 2200 chars');
   return e;
