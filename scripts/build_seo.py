@@ -50,6 +50,7 @@ for i, p in enumerate(items):
   <link rel="alternate" type="application/rss+xml" title="AIFeed.run" href="{SITE}/feed.xml" />
   <meta property="og:site_name" content="AIFeed.run" />
   <meta property="og:type" content="article" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:title" content="{esc(title)}" />
   <meta property="og:description" content="{esc(desc)}" />
   <meta property="og:url" content="{url}" />
