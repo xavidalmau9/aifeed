@@ -35,13 +35,18 @@ CURRENT COPY: ${JSON.stringify({ graphicHeadline: g.graphicHeadline, highlightWo
 Return ONLY one JSON object with the same keys: graphicHeadline (ALL CAPS, 4-8 words, max 60 chars, MUST contain a hedge word such as WEIGHS, MULLS, PLANS, EYES, IN TALKS, MAY, UP TO, REPORTEDLY when the source is hedged), highlightWords (1-3), summary (1 sentence, 14-26 words, hedged), igHook (starts with one emoji, max 18 words, hedged), igParagraphs (3-4 paragraphs, 15-45 words each, no emojis), liHook, liParagraphs (5), liTakeaway.`;
 }
 
-function runQuality({ usable, captionText, fixPass = false, fixText = '', accuracyCandidate = null }) {
+// gen: caption parts already parsed (and source-checked). captionText is the raw model output (older callers/tests).
+// preApplied: the accuracy fix was already merged into gen (and source-checked) by the caller.
+function runQuality({ usable, captionText, gen: genIn, fixPass = false, fixText = '', accuracyCandidate = null, preApplied = false }) {
   let gen;
-  try { gen = parseModelArray(captionText); } catch (e) {
-    throw new Error('Caption JSON parse failed: ' + String(captionText || '').slice(0, 200));
+  if (Array.isArray(genIn)) gen = JSON.parse(JSON.stringify(genIn));
+  else {
+    try { gen = parseModelArray(captionText); } catch (e) {
+      throw new Error('Caption JSON parse failed: ' + String(captionText || '').slice(0, 200));
+    }
   }
   let fixNote = null;
-  if (fixPass) fixNote = applyAccuracyFix(gen, { fixText, accuracyCandidate });
+  if (fixPass && !preApplied) fixNote = applyAccuracyFix(gen, { fixText, accuracyCandidate });
   const failures = [];
   let pick = null;
   for (const g of gen) {
@@ -189,5 +194,5 @@ function mergeHistory(fresh, { entry, rankings }) {
 }
 
 module.exports = {
-  CATS, words, runQuality, layoutErrors, mergeLiCaption, slugFromTitle, toHtml, assemblePublish, mergeHistory, applyAccuracyFix
+  CATS, words, parseModelArray, runQuality, layoutErrors, mergeLiCaption, slugFromTitle, toHtml, assemblePublish, mergeHistory, applyAccuracyFix
 };

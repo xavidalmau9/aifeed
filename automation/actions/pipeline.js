@@ -8,7 +8,8 @@ const { CLAIM_PATH, evaluateClaim, updateClaimDoc, SlotTaken } = require('./lib/
 const { fetchFeeds, assembleCandidates } = require('./lib/rss');
 const { orderPool, buildSameEventPrompt, applySameEvent } = require('./lib/pick');
 const { fetchArticles } = require('./lib/articles');
-const { runQuality, layoutErrors, mergeLiCaption, assemblePublish, mergeHistory } = require('./lib/quality');
+const { parseModelArray, runQuality, applyAccuracyFix, layoutErrors, mergeLiCaption, assemblePublish, mergeHistory } = require('./lib/quality');
+const { sourceCheckAll, verifyCandidate, checkLiExpansion } = require('./lib/factcheck');
 const { assertFeedPng, assertStoryPng } = require('./lib/png');
 const { renderHtml, closeBrowser } = require('./render');
 const { readJson, writeJson, commitApply, git } = require('./lib/git');
@@ -210,10 +211,23 @@ async function main() {
 
     const articles = await fetchArticles(dropped.candidates);
     articles.usable.filter(c => !c.photoOk).forEach(c => console.log('  photo skip: ' + c.title + ' (' + c.photoProblem + ')'));
-    let captionText = await claudeMessage(env.ANTHROPIC_API_KEY, {
+    const captionText = await claudeMessage(env.ANTHROPIC_API_KEY, {
       model: cfg.anthropicModel, prompt: articles.captionPrompt, maxTokens: 6000
     });
-    let qc = runQuality({ usable: articles.usable, captionText, fixPass: false });
+    let gen0;
+    try { gen0 = parseModelArray(captionText); } catch (e) {
+      throw new Error('Caption JSON parse failed: ' + String(captionText || '').slice(0, 200));
+    }
+    // Source fact check: every headline/summary/hook/body sentence against the fetched article (or RSS description).
+    const ask = prompt => claudeMessage(env.ANTHROPIC_API_KEY, {
+      model: cfg.anthropicModel, prompt, maxTokens: 4000, temperature: 0
+    });
+    const checked = await sourceCheckAll({ gen: gen0, usable: articles.usable, ask });
+    const sourceCheckLog = checked.log.slice();
+    checked.log.forEach(l => console.log('  source check C' + l.candidate + ' ' + l.status + ': ' + l.title.slice(0, 70)
+      + (l.changes.length ? ' [' + l.changes.join(', ') + ']' : '') + (l.status === 'fail' ? ' (' + l.problems.join('; ').slice(0, 300) + ')' : '')));
+    let gen = checked.gen;
+    let qc = runQuality({ usable: articles.usable, gen, fixPass: false });
     if (qc.accuracyRetry) {
       console.log('Accuracy fix for candidate ' + qc.accuracyCandidate + ': ' + qc.accuracyProblems.join('; '));
       let fixText = '';
@@ -224,13 +238,18 @@ async function main() {
       } catch (e) {
         console.log('Accuracy regeneration failed: ' + redact(e.message));
       }
-      qc = runQuality({
-        usable: articles.usable,
-        captionText,
-        fixPass: true,
-        fixText,
-        accuracyCandidate: qc.accuracyCandidate
-      });
+      const accuracyCandidate = qc.accuracyCandidate;
+      gen = JSON.parse(JSON.stringify(gen));
+      const fixNote = applyAccuracyFix(gen, { fixText, accuracyCandidate });
+      console.log('  ' + fixNote);
+      const fixed = gen.find(x => x.candidate === accuracyCandidate);
+      if (fixed && /^accuracy regenerated/.test(fixNote)) {
+        // The accuracy fix is already this candidate's one rewrite: verify it, no further rewriting.
+        const r = await verifyCandidate({ c: articles.usable[accuracyCandidate], g: fixed, ask });
+        sourceCheckLog.push({ candidate: accuracyCandidate, title: articles.usable[accuracyCandidate].title, status: 'after accuracy fix: ' + r.status, changes: r.changes, problems: r.problems });
+        console.log('  source check (after accuracy fix) C' + accuracyCandidate + ' ' + r.status + (r.problems.length ? ' (' + r.problems.join('; ').slice(0, 300) + ')' : ''));
+      }
+      qc = runQuality({ usable: articles.usable, gen, fixPass: true, preApplied: true, accuracyCandidate });
     }
     const layout = layoutErrors(qc.gen, qc.story);
     if (layout.length) throw new Error('IG caption layout/accuracy check failed: ' + layout.join('; '));
@@ -242,9 +261,15 @@ async function main() {
         const expanded = await claudeMessage(env.ANTHROPIC_API_KEY, {
           model: cfg.anthropicModel, prompt: qc.liExpandPrompt, maxTokens: 2000, tries: 2
         });
-        const merged = mergeLiCaption(qc.gen, qc.story.link, expanded, liCaption);
-        liCaption = merged.liCaption;
-        liWarning = merged.liWarning;
+        const liCheck = await checkLiExpansion({ c: qc.story, gen: qc.gen, expandedText: expanded, ask });
+        if (liCheck.ok) {
+          const merged = mergeLiCaption(qc.gen, qc.story.link, expanded, liCaption);
+          liCaption = merged.liCaption;
+          liWarning = merged.liWarning;
+        } else {
+          liWarning = 'LinkedIn expansion failed source check - kept original';
+          console.log(liWarning + ': ' + liCheck.reason);
+        }
       } catch (e) {
         liWarning = 'LinkedIn retry failed - posted original';
         console.log(liWarning + ': ' + redact(e.message));
@@ -285,6 +310,7 @@ async function main() {
         storyName: published.storyName,
         outlet: qc.gen.outlet,
         failures: qc.failures,
+        sourceCheck: sourceCheckLog,
         photo: qc.story.ogImage,
         sameEventSkipped: dropped.sameEventSkipped,
         cheapDedupSkipped: assembled.dedupSkipped,
