@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /graphics/
+Disallow: /_data/
+
+Sitemap: https://aifeed.run/sitemap.xml

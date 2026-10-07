@@ -20,14 +20,21 @@
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%2304020e'/%3E%3Crect width='100' height='100' rx='18' fill='none' stroke='%23a050ff' stroke-width='4' stroke-opacity='0.4'/%3E%3Ctext x='50' y='76' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='72' fill='%23a050ff' text-anchor='middle'%3Ea%3C/text%3E%3C/svg%3E">
-  <title>AIFeed.run — Your Daily AI Intelligence Feed</title>
-  <meta name="description" content="Your Daily AI Intelligence Feed. News that runs. Powered by AI.
-AI Discovery · Human Refined · Always On." />
-  <meta property="og:title" content="AIFeed.run — Your Daily AI Intelligence Feed" />
-  <meta property="og:description" content="News that runs. Powered by AI." />
+  <title>AIFeed.run — Daily AI News, Zero Noise</title>
+  <meta name="description" content="The top AI news stories every day — OpenAI, Google, Anthropic, Nvidia and more — explained in 60 seconds. Free daily AI brief." />
+  <link rel="canonical" href="https://aifeed.run/" />
+  <link rel="alternate" type="application/rss+xml" title="AIFeed.run" href="https://aifeed.run/feed.xml" />
+  <meta property="og:site_name" content="AIFeed.run" />
+  <meta property="og:title" content="AIFeed.run — Daily AI News, Zero Noise" />
+  <meta property="og:description" content="The top AI news stories every day, explained in 60 seconds." />
+  <meta property="og:url" content="https://aifeed.run/" />
   <meta property="og:image" content="https://aifeed.run/og-image.png" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AIFeed.run — Daily AI News, Zero Noise" />
+  <meta name="twitter:description" content="The top AI news stories every day, explained in 60 seconds." />
+  <meta name="twitter:image" content="https://aifeed.run/og-image.png" />
+  <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebSite", "name": "AIFeed.run", "url": "https://aifeed.run/", "description": "The top AI news stories every day, zero noise."}, {"@context": "https://schema.org", "@type": "Organization", "name": "AIFeed.run", "url": "https://aifeed.run/", "logo": "https://aifeed.run/og-image.png", "sameAs": ["https://instagram.com/aifeed.run", "https://www.linkedin.com/company/aifeed-run"]}]</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -2150,7 +2157,7 @@ AI Discovery · Human Refined · Always On.</p>
           : `<div class="post-card-img-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>`;
 
         return `
-          <a class="post-card" href="post.html?slug=${encodeURIComponent(post.slug)}" style="animation-delay:${i * 0.04}s">
+          <a class="post-card" href="news/${encodeURIComponent(post.slug)}/" style="animation-delay:${i * 0.04}s">
             ${imgEl}
             <div class="post-card-body">
               <div class="post-card-meta">
