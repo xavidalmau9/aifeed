@@ -1,0 +1,16 @@
+{
+  "name": "aifeed-autopilot",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AIFeed.run autopost pipeline for GitHub Actions",
+  "main": "pipeline.js",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "autopilot": "node pipeline.js",
+    "renderer": "node renderer/server.js"
+  },
+  "dependencies": {
+    "busboy": "^1.6.0",
+    "puppeteer-core": "^23.11.1"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "repo": "xavidalmau9/aifeed",
+  "branch": "main",
+  "siteUrl": "https://aifeed.run",
+  "igUserId": "17841442136197946",
+  "fbPageId": "1434982969687864",
+  "metaAppId": "1367205021940381",
+  "graphVersion": "v21.0",
+  "linkedinAuthorUrn": "urn:li:person:REPLACE (or urn:li:organization:REPLACE)",
+  "linkedinVersion": "202509",
+  "linkedinEnabled": false,
+  "endCardUrl": "https://aifeed.run/images/aifeed_endslide.png",
+  "anthropicModel": "claude-haiku-4-5",
+  "fbEnabled": false,
+  "dedupDays": 30,
+  "similarityThreshold": 0.5
+}
