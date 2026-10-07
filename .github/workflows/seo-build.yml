@@ -1,11 +1,11 @@
 name: SEO pages, sitemap & RSS
-# Rebuilds /news/<slug>/ pages, sitemap.xml and feed.xml whenever the automation updates posts-index.json.
-# No loop: this job only commits news/, sitemap.xml, feed.xml (not in the trigger paths), and pushes made
+# Rebuilds /news/<slug>/ pages, sitemap.xml, feed.xml and WebP card thumbnails (thumbs/) whenever the automation updates posts-index.json.
+# No loop: this job only commits news/, sitemap.xml, feed.xml, thumbs/ (not in the trigger paths), and pushes made
 # with GITHUB_TOKEN never trigger workflows anyway.
 on:
   push:
     branches: [main]
-    paths: ['_posts/posts-index.json', 'post.html', 'scripts/build_seo.py']
+    paths: ['_posts/posts-index.json', 'images/**', 'post.html', 'scripts/build_seo.py', 'scripts/build_thumbs.py']
   workflow_dispatch:
 permissions:
   contents: write
@@ -29,6 +29,8 @@ jobs:
             news/
             sitemap.xml
             feed.xml
+            thumbs/
+      - run: pip install --quiet pillow
       - name: Build and commit (retries on concurrent pushes from the post automation)
         run: |
           git config user.name "aifeed-seo-bot"
@@ -37,9 +39,10 @@ jobs:
             git fetch -q --depth=1 origin main
             git reset -q --hard origin/main
             python3 scripts/build_seo.py
-            git add -A news sitemap.xml feed.xml
+            python3 scripts/build_thumbs.py
+            git add -A news sitemap.xml feed.xml thumbs
             if git diff --cached --quiet; then echo "No SEO changes"; exit 0; fi
-            git commit -q -m "SEO: rebuild story pages, sitemap, RSS"
+            git commit -q -m "SEO: rebuild story pages, sitemap, RSS, thumbnails"
             if git push -q origin HEAD:main; then echo "Pushed"; exit 0; fi
             echo "Push rejected (main moved), retrying"; sleep $((i*5))
           done

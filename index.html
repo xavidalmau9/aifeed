@@ -1426,6 +1426,62 @@
       font-family: 'Syne', sans-serif;
       padding: 0 6px;
     }
+    /* ── v2 layout (engagement update) ── */
+    .post-card-title { display: none; }
+    .feed-signup { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;
+      background: linear-gradient(135deg, rgba(124,58,237,0.16), rgba(249,115,22,0.10)); border: 1px solid rgba(168,85,247,0.35);
+      border-radius: var(--radius); padding: 24px 28px; }
+    .feed-signup .eyebrow { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--orange); font-weight: 700; margin-bottom: 6px; }
+    .feed-signup h3 { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 800; color: var(--white); line-height: 1.25; }
+    .feed-signup-form { display: flex; gap: 10px; flex: 1; min-width: 260px; max-width: 460px; }
+    .feed-signup-form input { flex: 1; min-width: 0; background: rgba(255,255,255,0.06); border: 1px solid rgba(168,85,247,0.35); border-radius: 12px;
+      padding: 13px 16px; color: var(--white); font-size: 15px; font-family: 'Inter', sans-serif; outline: none; }
+    .feed-signup-form button { background: linear-gradient(135deg, var(--orange), var(--purple2)); color: #fff; border: none; border-radius: 12px;
+      padding: 13px 20px; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; white-space: nowrap; }
+    .ig-strip { margin: 56px 0 0; }
+    .ig-strip-sub { font-size: 14px; color: var(--muted); margin: -16px 0 18px; }
+    .ig-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+    .ig-tile { display: block; border-radius: 10px; overflow: hidden; border: 1px solid var(--card-border); transition: transform .2s, border-color .2s; }
+    .ig-tile:hover { transform: translateY(-2px); border-color: rgba(168,85,247,0.5); }
+    .ig-tile-img { width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover; display: block; background: var(--bg3); }
+    .ig-follow-btn { display: block; width: fit-content; margin: 20px auto 0; padding: 13px 26px; border-radius: 50px; text-decoration: none;
+      font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: #fff;
+      background: linear-gradient(135deg, #f97316, #ec4899 55%, #a855f7); }
+    .newsletter-bottom h2 { font-size: clamp(26px, 6vw, 36px); overflow-wrap: anywhere; }
+    .post-card-img { height: auto; }
+    @media (max-width: 900px) { .ig-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 640px) {
+      .hero { padding: 26px 0 10px; }
+      .hero-pill { margin-bottom: 12px; font-size: 11px; }
+      .hero h1 { font-size: 30px; letter-spacing: -0.5px; line-height: 1.1; }
+      .hero h1 .line2 { font-size: 21px; display: inline-block; margin-top: 6px; }
+      .hero-sub { font-size: 14px; margin-top: 10px; }
+      .hero-email-box { margin-top: 16px; }
+      .hero-email-box .label { margin-bottom: 8px; font-size: 11px; }
+      .hero-email-form { padding: 8px 10px; gap: 8px; }
+      .hero-email-form input { padding: 8px 6px; }
+      .hero-email-form button { padding: 11px 16px; }
+      .hero-social-proof { margin-top: 8px; }
+      .social-strip { margin-top: 14px; gap: 10px; }
+      .social-btn { padding: 7px 14px; font-size: 11px; }
+      .tag-bar { flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; margin: 18px -20px 16px; padding: 0 20px 4px; scrollbar-width: none; }
+      .tag-bar::-webkit-scrollbar { display: none; }
+      .tag-bar .tag { flex: 0 0 auto; }
+      .section-header { margin-bottom: 14px; }
+      .posts-grid { grid-template-columns: 1fr; gap: 10px; }
+      .post-card:not(.featured) { display: flex; flex-direction: row; align-items: stretch; }
+      .post-card:not(.featured) .post-card-img { width: 96px; min-width: 96px; aspect-ratio: 4/5; height: auto; }
+      .post-card:not(.featured) .post-card-body { padding: 12px 14px; justify-content: center; gap: 8px; }
+      .post-card:not(.featured) .post-card-title { display: block; font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 700; line-height: 1.3; color: var(--white);
+        display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+      .post-card.featured .post-card-body { padding: 12px 16px; }
+      .feed-signup { padding: 20px; }
+      .feed-signup-form { min-width: 100%; flex-direction: column; }
+      .newsletter-bottom { padding: 40px 22px; }
+      .ig-strip .section-header a { display: none; }
+      .ig-strip-sub { margin-top: -6px; }
+      .tools-section .section-header { flex-direction: column; align-items: flex-start; gap: 4px; }
+    }
   </style>
 </head>
 <body>
@@ -1449,23 +1505,22 @@
     <section class="hero">
       <div class="hero-pill">
         <span class="dot"></span>
-        Live · AI Discovery, Human Refined
+        Live · 2 new AI stories every day
       </div>
       <h1>
-        <span class="line1">Your Daily AI</span><br>
-        <span class="line2">Intelligence Feed</span>
+        <span class="line1">The AI news that matters.</span><br>
+        <span class="line2">2 stories a day, 60 seconds each.</span>
       </h1>
-      <p class="hero-sub">News that runs. Powered by AI.
-AI Discovery · Human Refined · Always On.</p>
+      <p class="hero-sub">No hype, no noise. Just what happened in AI and why it matters, with the source every time.</p>
 
       <!-- HERO EMAIL CAPTURE -->
       <div class="hero-email-box">
-        <p class="label">Join the newsletter — free forever</p>
+        <p class="label">The week's top AI stories, every Sunday. Free.</p>
         <form class="hero-email-form" onsubmit="handleSubscribe(event, 'hero')">
           <input type="email" placeholder="your@email.com" required id="hero-email-input" />
           <button type="submit">Subscribe Free →</button>
         </form>
-        <p class="hero-social-proof"><span>100% free.</span> No spam. Unsubscribe anytime.</p>
+        <p class="hero-social-proof"><span>Free.</span> No spam. Unsubscribe anytime.</p>
       </div>
 
       <!-- SOCIAL BUTTONS -->
@@ -1494,34 +1549,6 @@ AI Discovery · Human Refined · Always On.</p>
       <span class="tag tag-safety" data-cat="Safety">Safety</span>
     </div>
 
-    <!-- STATS -->
-    <div class="stats-bar">
-      <div class="stat">
-        <div class="stat-number purple" id="stat-posts">—</div>
-        <div class="stat-label">Stories Published</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number orange">Daily</div>
-        <div class="stat-label">Update Frequency</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number green">Zero</div>
-        <div class="stat-label">Noise</div>
-      </div>
-    </div>
-
-    <!-- AI TOOLS BANNER -->
-    <a href="#ai-tools" class="tools-banner">
-      <div class="tools-banner-left">
-        <span class="tools-banner-icon">🧰</span>
-        <div class="tools-banner-text">
-          <strong>Looking for AI tools?</strong>
-          <span>We've curated the best — tested &amp; hand-picked by the AIFeed team</span>
-        </div>
-      </div>
-      <span class="tools-banner-cta">See all tools ↓</span>
-    </a>
-
     <!-- SECTION HEADER -->
     <div class="section-header" id="stories-top">
       <span class="section-title">Latest Stories</span>
@@ -1537,35 +1564,43 @@ AI Discovery · Human Refined · Always On.</p>
       </div>
     </div>
 
+    <!-- AI TOOLS BANNER -->
+    <a href="#ai-tools" class="tools-banner">
+      <div class="tools-banner-left">
+        <span class="tools-banner-icon">🧰</span>
+        <div class="tools-banner-text">
+          <strong>Looking for AI tools?</strong>
+          <span>We've curated the best — tested &amp; hand-picked by the AIFeed team</span>
+        </div>
+      </div>
+      <span class="tools-banner-cta">See all tools ↓</span>
+    </a>
+
     <!-- MID-PAGE NEWSLETTER -->
     <section class="newsletter-mid" id="newsletter">
       <p class="eyebrow">📬 Free Newsletter</p>
       <h2>Stay in the <span style="color:var(--purple2)">feed</span></h2>
-      <p>The most important AI stories, delivered to your inbox every morning. Free, forever.</p>
+      <p>The week's top AI stories, every Sunday. Free.</p>
       <form class="newsletter-form-mid" onsubmit="handleSubscribe(event, 'mid')">
         <input type="email" placeholder="your@email.com" required id="mid-email-input" />
         <button type="submit">Subscribe →</button>
       </form>
       <div class="newsletter-perks">
-        <div class="newsletter-perk"><span>✓</span> Weekly briefing</div>
+        <div class="newsletter-perk"><span>✓</span> Every Sunday</div>
         <div class="newsletter-perk"><span>✓</span> Zero spam</div>
         <div class="newsletter-perk"><span>✓</span> Unsubscribe anytime</div>
       </div>
     </section>
 
-    <!-- VIDEO SECTION -->
-    <section class="videos-section">
+    <!-- FOLLOW ON INSTAGRAM -->
+    <section class="ig-strip" id="ig-strip">
       <div class="section-header">
-        <span class="section-title">📹 AI in Motion</span>
-        <a href="https://instagram.com/aifeed.run" target="_blank" class="section-title" style="color:var(--orange);text-decoration:none">See all on Instagram →</a>
+        <span class="section-title">📸 Follow @aifeed.run</span>
+        <a href="https://instagram.com/aifeed.run" target="_blank" rel="noopener" class="section-title" style="color:var(--orange);text-decoration:none">Open Instagram →</a>
       </div>
-      <div class="videos-grid" id="videos-grid">
-        <div class="loading">
-          <div class="loading-dot"></div>
-          <div class="loading-dot"></div>
-          <div class="loading-dot"></div>
-        </div>
-      </div>
+      <p class="ig-strip-sub">Every story drops on Instagram first: 2 a day, 8am and 5pm ET.</p>
+      <div class="ig-grid" id="ig-grid"></div>
+      <a href="https://instagram.com/aifeed.run" target="_blank" rel="noopener" class="ig-follow-btn">Follow @aifeed.run on Instagram</a>
     </section>
 
     <!-- AI TOOLS DIRECTORY -->
@@ -1616,87 +1651,6 @@ AI Discovery · Human Refined · Always On.</p>
           <p>AI writing assistant for blogs, ads, and SEO content. Faster than any human copywriter.</p>
           <span class="tool-try-btn">Try free <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
         </a>
-
-        <a href="https://surferseo.com" target="_blank" rel="noopener" class="tool-card">
-          <div class="tool-card-top">
-            <span class="tool-icon">🏄</span>
-            <span class="tool-badge paid">Paid</span>
-          </div>
-          <h3>Surfer SEO</h3>
-          <p>AI-powered SEO tool that analyzes top-ranking pages and tells you exactly what to write.</p>
-          <span class="tool-try-btn">Try it <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-        </a>
-
-        <a href="https://www.munch.studio" target="_blank" rel="noopener" class="tool-card">
-          <div class="tool-card-top">
-            <span class="tool-icon">🎬</span>
-            <span class="tool-badge paid">Paid</span>
-          </div>
-          <h3>Munch Studio</h3>
-          <p>Repurpose long-form video into viral short clips using AI. Built for creators and brands.</p>
-          <span class="tool-try-btn">Try it <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-        </a>
-
-        <a href="https://hubspot.com/artificial-intelligence" target="_blank" rel="noopener" class="tool-card">
-          <div class="tool-card-top">
-            <span class="tool-icon">🏢</span>
-            <span class="tool-badge freemium">Freemium</span>
-          </div>
-          <h3>HubSpot AI</h3>
-          <p>CRM, marketing, and sales tools powered by AI. Free tier for small teams and startups.</p>
-          <span class="tool-try-btn">Try free <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-        </a>
-
-        <a href="https://free-trial.adcreative.ai/g944t536drtc" target="_blank" rel="noopener" class="tool-card">
-          <div class="tool-card-top">
-            <span class="tool-icon">🖼️</span>
-            <span class="tool-badge paid">Paid</span>
-          </div>
-          <h3>AdCreative.ai</h3>
-          <p>AI-generated ad creatives that convert. Generate hundreds of unique ad variations instantly.</p>
-          <span class="tool-try-btn">Try free <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-        </a>
-
-        <a href="https://www.deeparteffects.com" target="_blank" rel="noopener" class="tool-card">
-          <div class="tool-card-top">
-            <span class="tool-icon">🎨</span>
-            <span class="tool-badge freemium">Freemium</span>
-          </div>
-          <h3>Deep Art Effects</h3>
-          <p>Transform your photos into stunning artwork using AI. 200+ artistic styles available.</p>
-          <span class="tool-try-btn">Try free <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-        </a>
-
-        <a href="https://www.perplexity.ai" target="_blank" rel="noopener" class="tool-card">
-          <div class="tool-card-top">
-            <span class="tool-icon">🔍</span>
-            <span class="tool-badge freemium">Freemium</span>
-          </div>
-          <h3>Perplexity AI</h3>
-          <p>The AI search engine replacing Google for millions. Real-time answers with sources.</p>
-          <span class="tool-try-btn">Try free <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-        </a>
-
-        <a href="https://claude.ai" target="_blank" rel="noopener" class="tool-card">
-          <div class="tool-card-top">
-            <span class="tool-icon">🤖</span>
-            <span class="tool-badge freemium">Freemium</span>
-          </div>
-          <h3>Claude (Anthropic)</h3>
-          <p>Anthropic's AI assistant — exceptional at writing, coding, and nuanced reasoning.</p>
-          <span class="tool-try-btn">Try free <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-        </a>
-
-        <a href="https://n8n.io" target="_blank" rel="noopener" class="tool-card">
-          <div class="tool-card-top">
-            <span class="tool-icon">⚙️</span>
-            <span class="tool-badge freemium">Freemium</span>
-          </div>
-          <h3>n8n</h3>
-          <p>The open-source workflow automation platform powering this very website. Build AI pipelines.</p>
-          <span class="tool-try-btn">Try free <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-        </a>
-
       </div>
     </section>
 
@@ -1719,13 +1673,13 @@ AI Discovery · Human Refined · Always On.</p>
     <!-- BOTTOM NEWSLETTER -->
     <section class="newsletter-bottom">
       <p class="eyebrow">📬 The AIFeed Newsletter</p>
-      <h2>Never miss a <span style="color:var(--purple2)">breakthrough</span></h2>
-      <p>Join readers who start their day with AIFeed — the fastest AI briefing on the internet.</p>
+      <h2>Never miss a <span style="color:var(--purple2)">big AI story</span></h2>
+      <p>The week's top AI stories, every Sunday. Free. The stories that mattered, two sentences each, with sources.</p>
       <form class="newsletter-form-bottom" onsubmit="handleSubscribe(event, 'bottom')">
         <input type="email" placeholder="your@email.com" required id="bottom-email-input" />
         <button type="submit">Get the Feed →</button>
       </form>
-      <p class="newsletter-fine">Free forever. Zero spam. Unsubscribe in one click.</p>
+      <p class="newsletter-fine">Free. Zero spam. Unsubscribe in one click.</p>
     </section>
 
   </main>
@@ -1751,7 +1705,7 @@ AI Discovery · Human Refined · Always On.</p>
       </div>
       <div class="footer-nav">
         <a href="#newsletter">Newsletter</a>
-        <a href="#tools">AI Tools</a>
+        <a href="#ai-tools">AI Tools</a>
         <a href="/AIFeed_MediaKit.pdf" target="_blank" rel="noopener">Media Kit</a>
         <a href="mailto:theaifeed.run@gmail.com?subject=Sponsorship%20Inquiry">Advertise</a>
         <a href="mailto:theaifeed.run@gmail.com">Contact</a>
@@ -1851,7 +1805,7 @@ AI Discovery · Human Refined · Always On.</p>
       <div id="sub-form-state">
         <div style="font-size:48px;line-height:1;margin-bottom:18px;">📬</div>
         <h2 style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:#f0eeff;margin-bottom:8px;line-height:1.2;">Join AI Feed</h2>
-        <p style="font-size:14px;color:#7b78a8;line-height:1.6;margin-bottom:24px;">Weekly AI intelligence, zero noise.<br>Free forever. Unsubscribe anytime.</p>
+        <p style="font-size:14px;color:#7b78a8;line-height:1.6;margin-bottom:24px;">The week's top AI stories,<br>every Sunday. Free. Unsubscribe anytime.</p>
         <form id="sub-form" onsubmit="submitSubscribe(event)" style="text-align:left;">
           <input type="email" id="sub-email-field" placeholder="your@email.com" required
             style="width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(168,85,247,0.35);border-radius:12px;padding:14px 18px;color:#f0eeff;font-size:15px;font-family:'Inter',sans-serif;outline:none;margin-bottom:12px;box-sizing:border-box;" />
@@ -1873,7 +1827,7 @@ AI Discovery · Human Refined · Always On.</p>
   </div>
 
   <!-- TOAST -->
-  <div class="toast" id="toast">🎉 You're subscribed! Welcome to the feed.</div>
+  <div class="toast" id="toast">📬 Almost there! Confirm in the Beehiiv tab.</div>
 
   <script>
     // ─── DATA LOADING ────────────────────────────────────────────────────
@@ -2053,7 +2007,7 @@ AI Discovery · Human Refined · Always On.</p>
 
       allPosts.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
       renderPosts();
-      document.getElementById('stat-posts').textContent = allPosts.length + '+';
+      const _sp = document.getElementById('stat-posts'); if (_sp) _sp.textContent = allPosts.length + '+';
     }
 
     function getDemoPosts() {
@@ -2122,6 +2076,32 @@ AI Discovery · Human Refined · Always On.</p>
     }
 
 
+    // ─── IMAGES: WebP thumbnails (built by the SEO Action) with PNG fallback ──
+    function escHtml(s) { return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+    function thumbBase(url) {
+      const m = /^(?:https:\/\/aifeed\.run)?\/?images\/([^\/?#]+)\.(?:png|jpe?g|webp)$/i.exec(url || '');
+      return m ? '/thumbs/' + m[1] : '';
+    }
+    function cardImg(url, alt, sizes, loading) {
+      const t = thumbBase(url);
+      const fb = `data-full="${escHtml(url)}" onerror="imgFallback(this)"`;
+      return t
+        ? `<img class="post-card-img" src="${t}-720.webp" srcset="${t}-240.webp 240w, ${t}-720.webp 720w" sizes="${sizes}" width="720" height="900" alt="${alt}" loading="${loading}" decoding="async" ${fb}>`
+        : `<img class="post-card-img" src="${escHtml(url)}" width="1080" height="1350" alt="${alt}" loading="${loading}" decoding="async" onerror="this.style.display='none'">`;
+    }
+    function imgFallback(el) {
+      if (!el.dataset.fb) { el.dataset.fb = '1'; el.removeAttribute('srcset'); el.src = el.dataset.full; }
+      else { el.style.display = 'none'; }
+    }
+    function renderIgStrip() {
+      const g = document.getElementById('ig-grid');
+      if (!g || g.dataset.done) return;
+      const recent = allPosts.filter(p => p.imageUrl).slice(0, 6);
+      if (!recent.length) { document.getElementById('ig-strip').style.display = 'none'; return; }
+      g.dataset.done = '1';
+      g.innerHTML = recent.map(p => `<a href="https://instagram.com/aifeed.run" target="_blank" rel="noopener" class="ig-tile" aria-label="See this story on Instagram @aifeed.run">${cardImg(p.imageUrl, escHtml(p.headline || 'AIFeed.run post') + ' — on Instagram @aifeed.run', '(max-width: 640px) 33vw, 180px', 'lazy').replace('class="post-card-img"', 'class="ig-tile-img"')}</a>`).join('');
+    }
+
     // ─── RENDER POSTS ────────────────────────────────────────────────────
     function renderPosts() {
       const grid = document.getElementById('posts-grid');
@@ -2148,25 +2128,39 @@ AI Discovery · Human Refined · Always On.</p>
         return;
       }
 
-      grid.innerHTML = pagePosts.map((post, i) => {
+      const cardHtml = (post, i) => {
         const img = post.imageUrl || getImageForHeadline(post.headline);
         const cat = post.category || 'Industry';
         const date = formatDate(post.publishedAt);
-        const imgEl = img
-          ? `<img class="post-card-img" src="${img}" alt="${String(post.headline || 'AI news story').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')} — AIFeed.run AI news graphic" loading="lazy" onerror="this.style.display='none'">`
-          : `<div class="post-card-img-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>`;
-
+        const title = escHtml(post.headline || 'AI news story');
+        const featured = i === 0 && currentPostPage === 1;
+        const imgEl = img ? cardImg(img, title + ' — AIFeed.run AI news graphic', featured ? '(max-width: 640px) 100vw, 400px' : '(max-width: 640px) 96px, 400px', featured ? 'eager' : 'lazy')
+          : `<div class="post-card-img-placeholder"></div>`;
         return `
-          <a class="post-card" href="news/${encodeURIComponent(post.slug)}/" style="animation-delay:${i * 0.04}s">
+          <a class="post-card${featured ? ' featured' : ''}" href="news/${encodeURIComponent(post.slug)}/" style="animation-delay:${i * 0.04}s">
             ${imgEl}
             <div class="post-card-body">
+              <h3 class="post-card-title">${title}</h3>
               <div class="post-card-meta">
                 <span class="post-category cat-${cat}">${cat}</span>
                 <span class="post-date">${date}</span>
               </div>
             </div>
           </a>`;
-      }).join('');
+      };
+      const feedSignup = `
+          <div class="feed-signup">
+            <div class="feed-signup-text">
+              <p class="eyebrow">📬 Free newsletter</p>
+              <h3>The week's top AI stories, every Sunday. Free.</h3>
+            </div>
+            <form class="feed-signup-form" onsubmit="handleSubscribe(event, 'feed')">
+              <input type="email" placeholder="your@email.com" required id="feed-email-input" aria-label="Email address" />
+              <button type="submit">Subscribe →</button>
+            </form>
+          </div>`;
+      grid.innerHTML = pagePosts.map((post, i) => cardHtml(post, i) + (i === 5 && pagePosts.length > 6 ? feedSignup : '')).join('');
+      renderIgStrip();
 
       renderPostPagination(totalPages, currentPostPage);
     }
@@ -2334,7 +2328,7 @@ AI Discovery · Human Refined · Always On.</p>
     // ─── NEWSLETTER SUBSCRIBE ────────────────────────────────────────────
     function handleSubscribe(e, source) {
       e.preventDefault();
-      const inputId = { hero: 'hero-email-input', mid: 'mid-email-input', bottom: 'bottom-email-input' }[source];
+      const inputId = { hero: 'hero-email-input', mid: 'mid-email-input', bottom: 'bottom-email-input', feed: 'feed-email-input' }[source];
       const email = document.getElementById(inputId).value;
       e.target.reset();
       window.__subSource = source;
@@ -2393,7 +2387,6 @@ AI Discovery · Human Refined · Always On.</p>
       }, 600);
     }
     loadPosts();
-    loadVideos();
   </script>
 </body>
 </html>
