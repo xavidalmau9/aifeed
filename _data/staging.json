@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Google is about to remove free access to Gemini Flash and Pro",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only",
+    "headline": "ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media",
     "score": 92,
-    "reason": "Major monetization shift by top AI company, concrete business impact"
+    "reason": "Major controversy from influential advocacy group; direct product/safety conflict"
   },
   {
     "rank": 2,
-    "headline": "Researchers tracked $80 million in political ads using AI—and Republicans were behind 83% of them",
-    "link": "https://fortune.com/2026/10/06/political-ads-ai-republican-no-disclaimer/",
+    "headline": "OpenAI Wants Its New Agent to Run Your Life. Mine Said It Loved Me",
+    "link": "https://www.wired.com/story/openai-wants-its-new-agent-to-run-your-life-mine-said-it-loved-me/",
     "score": 88,
-    "reason": "Large concrete number, significant political controversy"
+    "reason": "Major product launch (agents) with notable controversy; emotional/behavioral concerns"
   },
   {
     "rank": 3,
-    "headline": "Wikipedia operator says OpenAI's 'rogue' bots may be linked to a May outage",
-    "link": "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
-    "score": 86,
-    "reason": "Major controversy, concrete incident, OpenAI misconduct claim"
+    "headline": "Mistral Says Its New AI Model ‘Le Chonk’ Is the Best Open-Weight Offering Outside of China",
+    "link": "https://www.wired.com/story/mistral-new-model-le-chonk-open-source-china-us-frontier/",
+    "score": 85,
+    "reason": "Major model launch; competitive claims; open-source significance"
   },
   {
     "rank": 4,
-    "headline": "OpenAI PR tells journalist to ‘move on’ while asking Sam Altman about a ChatGPT user's suicide",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1004827/openai-sam-altman-vanity-fair-interview-pr",
-    "score": 85,
-    "reason": "Serious controversy, ethical concern, concrete incident"
+    "headline": "Gemini Call for Me might tell your mom you're running late",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors",
+    "score": 82,
+    "reason": "Major Google feature launch; privacy/autonomy concerns"
   },
   {
     "rank": 5,
-    "headline": "This startup is issuing AI-generated acne prescriptions",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions",
-    "score": 83,
-    "reason": "High-stakes healthcare application, regulatory concern"
+    "headline": "Amazon Alexa Plus keeps creepily singing ‘lalala’ for minutes on end",
+    "link": "https://www.theverge.com/tech/1005342/amazon-alexa-plus-keeps-creepily-singing-lalala-for-minutes-on-end",
+    "score": 78,
+    "reason": "Real product malfunction; user experience controversy; major company"
   },
   {
     "rank": 6,
-    "headline": "Claude launches Google Docs, Sheets, and Slides integration with sidebar and more",
-    "link": "https://9to5google.com/2026/10/06/claude-google-docs-sheet-slides/",
-    "score": 82,
-    "reason": "Major product launch by Anthropic, significant feature expansion"
+    "headline": "Attempts to Keep Humans in the AI Loop May Actually Push Them Out",
+    "link": "https://spectrum.ieee.org/agentic-ai-humans-in-loop",
+    "score": 76,
+    "reason": "Significant governance/safety study; counterintuitive finding on human oversight"
   },
   {
     "rank": 7,
-    "headline": "Anthropic expands Claude Startups program in bid to snag founders and fast-growing companies",
-    "link": "https://www.cnbc.com/2026/10/06/anthropic-claude-startups-program.html",
-    "score": 80,
-    "reason": "Anthropic expansion, market strategy launch"
+    "headline": "Why AI is both the hope and the hazard for world leaders, according to IMF chief Georgieva",
+    "link": "https://www.cnbc.com/2026/10/07/economy-inflation-ai-trade-imf-iran-hormuz-trump-.html",
+    "score": 74,
+    "reason": "Major institutional voice on AI; big-picture impact assessment"
   },
   {
     "rank": 8,
-    "headline": "OpenAI is adding text watermarking in ChatGPT and Codex",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act",
-    "score": 79,
-    "reason": "Major safety/anti-fraud feature launch by leading company"
+    "headline": "AI is heading toward a cash-flow negative inflection point, and spending will slow in 2027, Wall Street thinks",
+    "link": "https://fortune.com/2026/10/07/ai-cash-flow-negative-inflection-point-capex-slow/",
+    "score": 72,
+    "reason": "Major economic forecast; significant market implications"
   },
   {
     "rank": 9,
-    "headline": "Mistral’s New ‘Le Chonk’ AI Model Is Big, Open and Built for Agents",
-    "link": "https://www.cnet.com/tech/services-and-software/mistrals-new-le-chonk-ai-model-is-big-open-and-built-for-agents/",
-    "score": 77,
-    "reason": "Major model launch, open-weight competitor positioning"
+    "headline": "OpenAI drops another batch of mathematical breakthroughs",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
+    "score": 68,
+    "reason": "Technical achievement; math domain breakthrough (big numbers implied)"
   },
   {
     "rank": 10,
-    "headline": "AI tools flood into underground cybercrime markets",
-    "link": "https://www.axios.com/2026/10/06/ai-cybercrime-hacker-tools-marketplace",
-    "score": 76,
-    "reason": "Major security concern, concrete misuse evidence"
-  },
-  {
-    "rank": 11,
-    "headline": "Google AI Edge Foresight for Mac turns scribbles into full notes using offline recordings",
-    "link": "https://9to5google.com/2026/10/06/google-ai-edge-foresight/",
-    "score": 74,
-    "reason": "New product launch by Google"
-  },
-  {
-    "rank": 12,
-    "headline": "OpenAI Is Pissing Off a Bunch of Mathematicians—Again",
-    "link": "https://www.wired.com/story/openai-is-pissing-off-a-bunch-of-mathematicians-again/",
-    "score": 73,
-    "reason": "Ongoing controversy, professional community backlash"
-  },
-  {
-    "rank": 13,
-    "headline": "Exclusive: OpenAI is piloting a ‘mission interview’ for job candidates",
-    "link": "https://fortune.com/2026/10/05/openai-piloting-mission-interview-for-job-candidates/",
-    "score": 71,
-    "reason": "Concrete new hiring practice by OpenAI"
-  },
-  {
-    "rank": 14,
-    "headline": "GOP senator warns Anthropic of \"alarmist\" approach to AI",
-    "link": "https://www.axios.com/2026/10/05/gop-senator-bernie-moreno-ai-anthropic-dario-amodei-superintelligence",
-    "score": 69,
-    "reason": "Political controversy targeting major AI company"
-  },
-  {
-    "rank": 15,
-    "headline": "We can’t just change the definition of ‘recording’",
-    "link": "https://www.theverge.com/column/1005697/we-cant-just-change-the-definition-of-recording",
-    "score": 67,
-    "reason": "Regulatory/legal controversy around AI voice technology"
-  },
-  {
-    "rank": 16,
-    "headline": "\"I don't want an oligopoly\": New open-weight AI models mount a comeback against China",
-    "link": "https://www.axios.com/2026/10/06/reflection-mistral-open-weight-ai-models-china",
+    "headline": "Form Energy and its iron batteries",
+    "link": "https://www.technologyreview.com/2026/10/06/1145020/2026-climate-tech-companies-to-watch-form-energy-iron-batteries/",
     "score": 65,
-    "reason": "Strategic competitive positioning, geopolitical angle"
-  },
-  {
-    "rank": 17,
-    "headline": "Finding value from AI in big companies comes down to people, not technology",
-    "link": "https://fortune.com/2026/10/06/finding-value-from-ai-in-big-companies-comes-down-to-people-not-technology/",
-    "score": 63,
-    "reason": "Enterprise AI adoption insights"
-  },
-  {
-    "rank": 18,
-    "headline": "SF Fed president: AI demand could extend energy shock",
-    "link": "https://www.axios.com/2026/10/06/fed-ai-daly-inflation-chips",
-    "score": 62,
-    "reason": "Major economic impact assessment from Fed official"
-  },
-  {
-    "rank": 19,
-    "headline": "Google DeepMind&apos;s Lila Ibrahim, world&apos;s top AI &apos;readiness&apos; officer, on preparing for what&apos;s to come",
-    "link": "https://www.cnbc.com/2026/10/06/google-deepmind-ai-risks-lila-ibrahim.html",
-    "score": 60,
-    "reason": "Strategic positioning by Google DeepMind"
-  },
-  {
-    "rank": 20,
-    "headline": "‘Artificial’ Roasts AI’s Creators—and Sends a Dark Warning About Its Dangers",
-    "link": "https://www.wired.com/story/artificial-roasts-ais-creators-and-sends-a-dark-warning-about-its-dangers/",
-    "score": 58,
-    "reason": "Cultural commentary on AI risks"
+    "reason": "Energy technology launch; long-duration storage significance"
   }
 ]
