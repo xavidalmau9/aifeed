@@ -1,7 +1,8 @@
 name: AIFeed autopilot
 
 # GitHub cron is UTC. America/New_York is UTC-4 during EDT and UTC-5 during EST.
-# Both offsets are scheduled; the job exits immediately unless the local ET hour is 8 or 17.
+# Both offsets are scheduled; the job exits immediately unless the local ET hour is 8-9 (slot 1) or 17-18 (slot 2).
+# Hour 9 / 18 is a grace window for GitHub cron delays; the slot claim + history keep it to one post per slot.
 on:
   schedule:
     - cron: '0 12 * * *' # 08:00 EDT
@@ -66,6 +67,16 @@ jobs:
         run: |
           npm ci
           npm test
+      - name: Telegram alert when a scheduled run fails its tests
+        if: failure() && github.event_name != 'pull_request'
+        working-directory: automation/actions
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ALERT_TEXT: |
+            AIFeed Autopilot tests failed, so nothing was posted
+            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: node alert.js
 
   post:
     needs: test

@@ -24,19 +24,21 @@ Non-secret ids and toggles live in `automation/actions/config.json` (`igUserId`,
 
 Actions → **AIFeed autopilot** → **Run workflow**:
 
-- `slot`: `auto` (only runs at 8:00 or 17:00 ET), `1`, or `2`
+- `slot`: `auto` (only runs 8:00-9:59 or 17:00-18:59 ET), `1`, or `2`
 - `dry_run`: checked
 - `take_over`: leave unchecked
 
-The job does story selection, caption checks, and both renders. It does **not** write the claim file, commit, or call Instagram publish. The feed PNG, story PNG, and both captions are uploaded as the `aifeed-dry-run` artifact.
+The job does story selection, caption checks, and both renders. It does **not** write the claim file, commit, or call Instagram publish. If the slot was already posted, the log says a real run would skip, and the dry run still renders a preview. The feed PNG, story PNG, and both captions are uploaded as the `aifeed-dry-run` artifact.
 
 A dry run still needs `ANTHROPIC_API_KEY` and `META_PAGE_TOKEN` (ranking, captions, and the recent Instagram captions used for dedup).
 
 ## Cutover
 
+**Merging this PR turns on the 8:00 / 17:00 ET schedule.** The n8n workflow that is live today (`AIFeed Autopilot (8am #1 / 5pm #2 ET)`, 8:00 and 17:00, no claim check) must be deactivated or replaced by the fallback below **before the merge**, or both will post the same slot.
+
 1. Add the secrets above. Do not commit them.
-2. Run one **dry run** for slot `1` or `2` and compare the artifact with a recent post.
-3. Import `automation/n8n/AIFeed_Autopilot.json` into n8n (this replaces the 8:00/17:00 schedule with 8:40/17:40). Import `automation/n8n/AIFeed_Error_Alerts.json` and set it as the error workflow. Put the new bot token in the n8n Telegram credential. The chat id in the JSON is `__TELEGRAM_CHAT_ID__`; replace that placeholder in the n8n Config node with the real chat id (it is not stored in the repo copy).
+2. Run one **dry run** for slot `1` or `2` and compare the artifact with a recent post. (Before the merge, run `pipeline.js` locally with `DRY_RUN=1`; `workflow_dispatch` only works once the workflow is on `main`, and the post job always checks out `main`.)
+3. Before merging, import `automation/n8n/AIFeed_Autopilot.json` into n8n (this replaces the 8:00/17:00 schedule with 8:40/17:40). Import `automation/n8n/AIFeed_Error_Alerts.json` and set it as the error workflow. Put the new bot token in the n8n Telegram credential. The chat id in the JSON is `__TELEGRAM_CHAT_ID__`; replace that placeholder in the n8n Config node with the real chat id (it is not stored in the repo copy).
 4. Leave n8n **active** until Actions has posted on its own for a few days. n8n reads `_data/slot-claims.json` immediately after Config and stops when that slot is `claimed` or `posted`.
 5. Confirm the Actions run at 8:00am ET posts, and the 8:40am n8n execution ends on "slot is claimed/posted" without publishing.
 6. **Disable n8n** once you trust Actions: deactivate **AIFeed Autopilot** and **AIFeed Error Alerts** in n8n, and you can shut the machine off. Deactivate rather than deleting until you have seen a few Actions posts.
@@ -53,6 +55,10 @@ A dry run still needs `ANTHROPIC_API_KEY` and `META_PAGE_TOKEN` (ranking, captio
 - LinkedIn runs only when `linkedinEnabled` is true, the author URN is a real person or organization URN, and `LINKEDIN_ACCESS_TOKEN` is set. n8n enables LinkedIn from the URN alone. Both are off today.
 - Facebook, the Story, and LinkedIn run one after another. A Story or Facebook failure alerts and continues. A LinkedIn failure fails the run after the Story attempt.
 - `dedupDays` and `similarityThreshold` are recorded in config. The checks that actually run are the live ones: normalized URL, Jaccard 0.6, 120-day title overlap, and the 90-day same-event model check.
+- Scheduled runs accept 8:00-9:59 / 17:00-18:59 ET, so a run GitHub delays past the hour still posts. In EDT the 13:00 / 22:00 UTC cron is then a backup that stops at the claim/history check when the slot is done.
+- A candidate whose article has no usable photo (missing, placeholder, not an image, under 15 KB, or not loading) is skipped for the next candidate. n8n would render it with the dead `source.unsplash.com` fallback (blank background).
+- Graphics: hyphenated headline words (5-MINUTE, GPT-5) never split at the hyphen, and the Story shade is anchored to the text block so a long headline does not sit on a bright photo.
+- The source hedge check is case-insensitive (Title Case RSS headlines such as "Considers" or "Hopes to" count) and also counts "hopes to", "wants to", "looks to".
 - Missing `ANTHROPIC_API_KEY` or `META_PAGE_TOKEN` exits successfully with a log line and does not post. Telegram alerts do nothing when the bot token or chat id is empty.
 
 ## What the job posts

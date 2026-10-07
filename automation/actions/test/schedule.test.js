@@ -24,9 +24,11 @@ test('8:00 and 17:00 America/New_York run the right slot in EDT and EST', () => 
   assert.equal(edtMorning.date, '2026-07-15');
   assert.equal(etParts(new Date('2026-07-15T12:00:00Z')).hour, 8);
 
-  const edtWrongOffset = at('2026-07-15T13:00:00Z');
-  assert.equal(edtWrongOffset.run, false);
-  assert.equal(edtWrongOffset.hour, 9);
+  // 13:00 UTC in EDT is 9:00 ET: grace/backup run for slot 1 (the claim lock stops a second post).
+  const edtBackup = at('2026-07-15T13:00:00Z');
+  assert.equal(edtBackup.run, true);
+  assert.equal(edtBackup.slot, 1);
+  assert.equal(edtBackup.hour, 9);
 
   const estMorningOff = at('2026-01-15T12:00:00Z');
   assert.equal(estMorningOff.run, false);
@@ -42,8 +44,8 @@ test('8:00 and 17:00 America/New_York run the right slot in EDT and EST', () => 
   assert.equal(edtEvening.slot, 2);
   assert.equal(edtEvening.hour, 17);
 
-  assert.equal(at('2026-07-15T22:00:00Z').run, false);
-  assert.equal(at('2026-01-15T21:00:00Z').run, false);
+  assert.equal(at('2026-07-15T22:00:00Z').slot, 2); // 18:00 EDT grace/backup
+  assert.equal(at('2026-01-15T21:00:00Z').run, false); // 16:00 EST
 
   const estEvening = at('2026-01-15T22:00:00Z');
   assert.equal(estEvening.run, true);
@@ -57,6 +59,15 @@ test('DST transition weekends follow America/New_York, not a fixed offset', () =
   assert.equal(at('2026-03-08T12:00:00Z').slot, 1); // EDT, 8:00
   assert.equal(at('2026-11-01T12:00:00Z').run, false); // EST, 7:00
   assert.equal(at('2026-11-01T13:00:00Z').slot, 1); // EST, 8:00
+});
+
+test('a scheduled run delayed past the hour still posts its slot, but not later', () => {
+  assert.equal(at('2026-07-15T13:25:00Z').slot, 1); // 8:00 EDT run delayed to 9:25
+  assert.equal(at('2026-01-15T14:40:00Z').slot, 1); // 8:00 EST run delayed to 9:40
+  assert.equal(at('2026-01-15T15:05:00Z').run, false); // 10:05 EST
+  assert.equal(at('2026-07-15T22:50:00Z').slot, 2); // 17:00 EDT run delayed to 18:50
+  assert.equal(at('2026-07-15T23:01:00Z').run, false); // 19:01 EDT
+  assert.equal(at('2026-07-15T15:00:00Z').run, false); // 11:00 EDT
 });
 
 test('workflow_dispatch can force a slot outside 8:00 and 17:00, and auto still gates', () => {

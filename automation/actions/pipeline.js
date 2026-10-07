@@ -143,7 +143,11 @@ async function main() {
     claimsDoc, history, date: decision.date, slot: decision.slot, takeOver: env.TAKE_OVER && !env.DRY_RUN
   });
   console.log(gate.reason);
-  if (!gate.ok) return 0;
+  if (!gate.ok) {
+    if (!env.DRY_RUN) return 0;
+    // A dry run writes nothing, so preview the pick anyway (the artifact upload needs files).
+    console.log('Dry run: a real run would SKIP here; continuing the preview without claiming');
+  }
 
   let claimed = false;
   let contentCommitted = false;
@@ -202,8 +206,10 @@ async function main() {
     });
     const dropped = applySameEvent(ordered.pool, assembled.postedCompact, sameText);
     console.log('Same-event kept ' + dropped.candidates.length + ', skipped ' + dropped.sameEventSkipped.length);
+    dropped.sameEventSkipped.forEach(s => console.log('  same-event skip: ' + s.title + ' => ' + (s.matched || s.reason)));
 
     const articles = await fetchArticles(dropped.candidates);
+    articles.usable.filter(c => !c.photoOk).forEach(c => console.log('  photo skip: ' + c.title + ' (' + c.photoProblem + ')'));
     let captionText = await claudeMessage(env.ANTHROPIC_API_KEY, {
       model: cfg.anthropicModel, prompt: articles.captionPrompt, maxTokens: 6000
     });
@@ -279,6 +285,10 @@ async function main() {
         storyName: published.storyName,
         outlet: qc.gen.outlet,
         failures: qc.failures,
+        photo: qc.story.ogImage,
+        sameEventSkipped: dropped.sameEventSkipped,
+        cheapDedupSkipped: assembled.dedupSkipped,
+        historyCounts: assembled.historyCounts,
         liWarning: published.liWarning,
         fit: { feed: feed.fit, story: story.fit }
       }, null, 2) + '\n');

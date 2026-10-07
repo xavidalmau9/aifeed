@@ -50,6 +50,7 @@ function runQuality({ usable, captionText, fixPass = false, fixText = '', accura
     if (!c) problems.push('bad candidate index');
     if (!g.supported) problems.push('fact check: ' + (g.issues || 'unsupported'));
     if (!g.safe) problems.push('safety');
+    if (c && c.photoOk === false) problems.push('photo: ' + (c.photoProblem || 'unusable'));
     if (c) {
       g.igCaption = buildIg(g, c.link);
       g.liCaption = buildLi(g, c.link);

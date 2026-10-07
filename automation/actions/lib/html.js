@@ -14,7 +14,8 @@ function buildGraphics({ imageUrl, graphicHeadline, highlightWords, summary, cat
 const hwords = String(g.graphicHeadline).toUpperCase().split(/\s+/);
 const k = Math.min(Math.max(parseInt(g.highlightWords) || 2, 1), Math.min(3, hwords.length - 1));
 // last two words are glued with &nbsp; so no line can end with a single orphan word
-const hw2 = hwords.map(esc), cut = hw2.length - k;
+// hyphenated words (5-MINUTE, GPT-5) never split at the hyphen
+const hw2 = hwords.map(w => /-/.test(w) ? '<span class="nw">' + esc(w) + '</span>' : esc(w)), cut = hw2.length - k;
 const join = arr => arr.map((w, i) => (i === 0 ? '' : (i === arr.length - 1 ? '&nbsp;' : ' ')) + w).join('');
 const hlHtml = (k >= 2 || cut < 1)
   ? hw2.slice(0, cut).join(' ') + (cut ? ' ' : '') + '<span class="pink">' + join(hw2.slice(cut)) + '</span>'
@@ -36,6 +37,7 @@ html,body{width:1080px;height:1350px;overflow:hidden;background:#0d0b14}
 .cat{display:inline-block;padding:10px 22px;border-radius:30px;border:2px solid #ff5f8f;background:rgba(255,95,143,.25);color:#ff8fb0;font:600 24px Poppins;letter-spacing:3px;margin-bottom:28px}
 h1{font:900 ${fontPx}px/1.04 Poppins;text-wrap:balance;overflow-wrap:normal;text-transform:uppercase;letter-spacing:-1px}
 .pink{color:#ff6f91}
+.nw{white-space:nowrap}
 .rule{width:52px;height:4px;background:linear-gradient(90deg,#ff8a00,#c040ff);margin:34px 0 26px}
 p{font:400 32px/1.42 Inter;color:#d9d6e3;text-wrap:pretty}
 .foot{position:absolute;left:0;right:0;bottom:0;height:92px;background:#0a0910;display:flex;align-items:center;justify-content:space-between;padding:0 56px}
@@ -92,9 +94,10 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#0d0b14}
 .badge{padding:16px 30px;border-radius:44px;font:800 30px Poppins;background:linear-gradient(90deg,#ff8a00,#c040ff)}
 .new{padding:14px 26px;border-radius:44px;font:800 30px Poppins;background:#fff;color:#0d0b14}
 .content{position:absolute;left:64px;right:64px;bottom:540px}
-.cat{display:inline-block;padding:12px 24px;border-radius:30px;border:2px solid #ff5f8f;background:rgba(255,95,143,.25);color:#ff8fb0;font:600 28px Poppins;letter-spacing:3px;margin-bottom:30px}
-h1{font:900 ${sFont}px/1.04 Poppins;text-wrap:balance;overflow-wrap:normal;text-transform:uppercase;letter-spacing:-1px}
+.cat{display:inline-block;padding:12px 24px;border-radius:30px;border:2px solid #ff5f8f;background:linear-gradient(rgba(255,95,143,.25),rgba(255,95,143,.25)),rgba(13,11,20,.6);color:#ff8fb0;font:600 28px Poppins;letter-spacing:3px;margin-bottom:30px}
+h1{font:900 ${sFont}px/1.04 Poppins;text-wrap:balance;overflow-wrap:normal;text-transform:uppercase;letter-spacing:-1px;text-shadow:0 2px 22px rgba(13,11,20,.55)}
 .pink{color:#ff6f91}
+.nw{white-space:nowrap}
 .rule{width:60px;height:5px;background:linear-gradient(90deg,#ff8a00,#c040ff);margin:36px 0 28px}
 p{font:400 36px/1.42 Inter;color:#d9d6e3;text-wrap:pretty}
 .foot{position:absolute;left:0;right:0;bottom:350px;text-align:center}
@@ -131,6 +134,12 @@ p{font:400 36px/1.42 Inter;color:#d9d6e3;text-wrap:pretty}
   if (overflowX(H) || overflowX(P)) { R.ok = false; R.notes.push('horizontal overflow'); }
   if (lines(P) > 4) { R.ok = false; R.notes.push('summary > 4 lines'); }
   if (orphan(H)) { R.ok = false; R.notes.push('headline orphan word'); }
+  // Legibility: the static shade only gets dark around 960px, but a 3-5 line headline starts near 700px,
+  // so on a bright photo the top lines sat on bare image. Anchor the gradient to the actual text block.
+  const S = document.querySelector('.shade'), ct = Math.round(C.getBoundingClientRect().top);
+  const a = Math.max(320, ct - 220), b = ct + 70, d = ct + 360;
+  S.style.background = 'linear-gradient(180deg,rgba(13,11,20,.55) 0px,rgba(13,11,20,0) 307px,rgba(13,11,20,0) ' + a + 'px,rgba(13,11,20,.78) ' + b + 'px,#0d0b14 ' + d + 'px,#0d0b14 100%)';
+  R.shadeTop = a;
   if (C.getBoundingClientRect().bottom > document.querySelector('.foot').getBoundingClientRect().top - 20) { R.ok = false; R.notes.push('content overlaps footer'); }
   R.headlinePx = hf; R.summaryPx = pf; R.headlineLines = lines(H); R.summaryLines = lines(P);
   window.__fitReport = R;

@@ -1,7 +1,11 @@
 // GitHub Actions cron is UTC. America/New_York is UTC-4 (EDT) or UTC-5 (EST).
-// The workflow fires both offsets; this module keeps the run whose local hour is 8 or 17.
+// The workflow fires both offsets; this module keeps the run whose local hour is 8-9 (slot 1) or 17-18 (slot 2).
 
-const SLOT_HOURS = { 8: 1, 17: 2 };
+// GitHub delays scheduled runs at busy times (top of the hour), sometimes past the hour.
+// Hour 9 / 18 ET is a grace window so a late 8:00 / 17:00 run still posts. The slot claim and
+// history.json keep it to one post per slot, so in EDT the 13:00 / 22:00 UTC cron is a no-op
+// backup unless the first run failed before publishing.
+const SLOT_HOURS = { 8: 1, 9: 1, 17: 2, 18: 2 };
 
 // UTC hours registered in autopilot.yml. Both DST offsets for 8:00 and 17:00 ET.
 const SCHEDULED_UTC_HOURS = [12, 13, 21, 22];
@@ -30,7 +34,7 @@ function slotForEtHour(hour) {
 
 /**
  * Decide whether this Actions run should post.
- * schedule: only when America/New_York hour is 8 (slot 1) or 17 (slot 2).
+ * schedule: only when America/New_York hour is 8-9 (slot 1) or 17-18 (slot 2); the claim lock stops a second post.
  * workflow_dispatch: an explicit slot 1 or 2 runs at any hour; "auto" uses the same hour gate.
  */
 function decideRun({ now = new Date(), eventName = 'schedule', slotInput = 'auto' } = {}) {
@@ -53,7 +57,7 @@ function decideRun({ now = new Date(), eventName = 'schedule', slotInput = 'auto
       slot: null,
       date: et.date,
       hour: et.hour,
-      reason: `America/New_York hour is ${et.hour} on ${et.date}, not 8 (slot 1) or 17 (slot 2). Skipping so the other DST cron offset does not post.`
+      reason: `America/New_York hour is ${et.hour} on ${et.date}, not 8-9 (slot 1) or 17-18 (slot 2). Skipping so the other DST cron offset does not post.`
     };
   }
   return {

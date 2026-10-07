@@ -38,6 +38,39 @@ Return ONLY a JSON array, one object per candidate in the same order:
 [{"candidate":0,"igHook":"...","igParagraphs":["..."],"liHook":"...","liParagraphs":["..."],"liTakeaway":"...","igHashtags":["..."],"liHashtags":["..."],"outlet":"...","graphicHeadline":"...","highlightWords":2,"summary":"...","category":"...","supported":true,"safe":true,"issues":""}]`;
 }
 
+// og:image values are raw attribute text: decode entities (&amp; in query strings) and resolve relative URLs.
+function photoUrl(raw, pageUrl) {
+  const v = String(raw || '').trim().replace(/&amp;|&#0?38;/gi, '&').replace(/&#x2F;/gi, '/');
+  if (!v) return '';
+  try { return new URL(v, pageUrl).toString(); } catch (e) { return ''; }
+}
+
+// Default share cards and placeholders are not story photos.
+const GENERIC_PHOTO_RE = /(^|[\/_.-])(placeholder|fallback|og-default|default-og|social-default|default-social|share-default|default-share|default-image|no-image)([\/_.-]|$)/i;
+
+// The graphic is built around the article photo. A missing, generic, or unloadable og:image would
+// leave a blank card (the old source.unsplash.com fallback is gone), so the candidate is skipped instead.
+async function probePhoto(url, fetchImpl) {
+  if (!url) return { ok: false, reason: 'no og:image' };
+  if (!/^https:\/\//i.test(url)) return { ok: false, reason: 'og:image not https' };
+  if (GENERIC_PHOTO_RE.test(url.replace(/[?#].*$/, ''))) return { ok: false, reason: 'og:image looks like a default/placeholder card' };
+  try {
+    const res = await fetchImpl(url, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh) AppleWebKit/537.36 Chrome/124 Safari/537.36' },
+      signal: AbortSignal.timeout(20000),
+      redirect: 'follow'
+    });
+    const type = String(res.headers.get('content-type') || '');
+    const buf = Buffer.from(await res.arrayBuffer());
+    if (!res.ok) return { ok: false, reason: 'og:image HTTP ' + res.status };
+    if (!/^image\//i.test(type)) return { ok: false, reason: 'og:image is ' + (type || 'not an image') };
+    if (buf.length < 15000) return { ok: false, reason: 'og:image too small (' + buf.length + ' bytes)' };
+    return { ok: true, reason: '' };
+  } catch (e) {
+    return { ok: false, reason: 'og:image did not load' };
+  }
+}
+
 async function fetchArticles(candidates, { fetchImpl = globalThis.fetch } = {}) {
   const out = await Promise.all(candidates.map(async c => {
     let ok = false;
@@ -54,9 +87,13 @@ async function fetchArticles(candidates, { fetchImpl = globalThis.fetch } = {}) 
       ok = false;
     }
     const text = html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 3500);
+    const ogImage = ok ? photoUrl(meta(html, 'og:image') || meta(html, 'twitter:image'), c.link) : '';
+    const photo = ok ? await probePhoto(ogImage, fetchImpl) : { ok: false, reason: 'article did not load' };
     return Object.assign({}, c, {
       linkOk: ok,
-      ogImage: meta(html, 'og:image') || meta(html, 'twitter:image'),
+      ogImage,
+      photoOk: photo.ok,
+      photoProblem: photo.reason,
       siteName: meta(html, 'og:site_name') || c.source,
       description: meta(html, 'og:description'),
       text
@@ -67,4 +104,4 @@ async function fetchArticles(candidates, { fetchImpl = globalThis.fetch } = {}) 
   return { usable, captionPrompt: buildCaptionPrompt(usable) };
 }
 
-module.exports = { meta, buildCaptionPrompt, fetchArticles };
+module.exports = { meta, photoUrl, probePhoto, GENERIC_PHOTO_RE, buildCaptionPrompt, fetchArticles };

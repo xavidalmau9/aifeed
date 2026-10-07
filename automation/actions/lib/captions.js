@@ -54,12 +54,28 @@ function checkLi(c) {
   return e;
 }
 // ── Accuracy gate: never turn a report/plan/rumor into a fact; keep currency symbols ──
-// Source hedges (title + feed description + og:description). Lowercase "may" only, so the month "May" does not count.
-const SRC_HEDGE_RE = /\b(considers?|considering|weighs?|weighing|mulls?|mulling|explores?|exploring|plans?|planning|planned|in talks|talks (?:to|with|over)|negotiat\w*|reportedly|sources? (?:say|said|says)|people familiar|according to (?:a |the )?(?:report|sources|people)|report(?:s|ed)? (?:say|says|said|that)|rumou?r\w*|might|up to|expected to|set to|seeks?|seeking|nears?|close to|potential(?:ly)?|propos\w+|is said to|aims? to|intends? to|could)\b|\bmay\b/;
+// Source hedges (title + feed description + og:description).
+// Case-insensitive: RSS titles are often Title Case ("Considers", "Hopes To").
+const SRC_HEDGE_RE = /\b(considers?|considering|weighs?|weighing|mulls?|mulling|explores?|exploring|plans?|planning|planned|in talks|talks (?:to|with|over)|negotiat\w*|reportedly|sources? (?:say|said|says)|people familiar|according to (?:a |the )?(?:report|sources|people)|report(?:s|ed)? (?:say|says|said|that)|rumou?r\w*|might|up to|expected to|set to|seeks?|seeking|nears?|close to|potential(?:ly)?|propos\w+|is said to|aims? to|intends? to|hop(?:es|ing) to|wants? to|looks? to|could)\b/i;
+// Lowercase "may" anywhere is a hedge. Title Case "May" mid-headline ("OpenAI May Release") is too,
+// unless it reads as the month ("in May", "May 5", "May 2026").
+const SRC_MAY_LOWER_RE = /\bmay\b/;
+const MONTH_PREP = new Set(['in', 'on', 'since', 'until', 'by', 'last', 'next', 'early', 'late', 'mid', 'of', 'through', 'from', 'to', 'and', 'before', 'after', 'during']);
+function titleMayHedge(title) {
+  const re = /(\S+)\s+May\b(?![\s-]*\d)/g;
+  let m;
+  while ((m = re.exec(String(title || '')))) {
+    if (!MONTH_PREP.has(m[1].toLowerCase().replace(/[^a-z]/g, ''))) return true;
+  }
+  return false;
+}
 // Hedges accepted in generated copy (broader, case-insensitive; graphic headlines are ALL CAPS).
 const GEN_HEDGE_RE = /\b(considers?|considering|weighs?|weighing|mulls?|mulling|eyes|eyeing|explores?|exploring|plans?|planning|planned|in talks|talks|negotiat\w*|reportedly|reports?|reported|sources?|rumou?r\w*|may|might|could|would|up to|expected|set to|seeks?|seeking|nears?|close to|potential(?:ly)?|propos\w+|possibl[ey]|said to|aims? to|aiming to|looks? to|looking to|wants? to|hopes? to|intends?|considered)\b|\?/i;
 function hedgeSource(c) { return [c && c.title, c && c.desc, c && c.description].filter(Boolean).join(' \n '); }
-function srcHasHedge(c) { return SRC_HEDGE_RE.test(String(hedgeSource(c)).replace(/(^|[.!?]\s+)May\b/g, '$1')); }
+function srcHasHedge(c) {
+  const text = String(hedgeSource(c));
+  return SRC_HEDGE_RE.test(text) || SRC_MAY_LOWER_RE.test(text) || titleMayHedge(c && c.title);
+}
 const BARE_AMOUNT_RE = /(^|[^$€£¥\d.,])(\d[\d.,]*)\s*(billion|million|trillion|bn)\b(?![\s-]*(?:yuan|euros?|pounds?|yen|won|rupees?|dollars?|usd|eur|gbp|rmb|parameters?|params|users?|people|tokens?|downloads?|subscribers?|views?|times|years?|devices?|units?|chips?|gpus?|images?|videos?|messages?|queries|requests?|customers?|members?|monthly|weekly|daily|active))/i;
 function checkAccuracy(g, c) {
   const e = [];
