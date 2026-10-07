@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate static, crawlable SEO pages from _posts/posts-index.json.
-Outputs: news/<slug>/index.html, sitemap.xml, feed.xml. Safe to re-run; never edits posts-index.json."""
+Outputs: news/<slug>/index.html, sitemap.xml, feed.xml. Safe to re-run; never edits posts-index.json.
+Run automatically by .github/workflows/seo-build.yml on every posts-index.json change."""
 import json, html, re, os, datetime
 from email.utils import format_datetime
 SITE = "https://aifeed.run"
