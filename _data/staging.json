@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI publishes solutions to more than 370 outstanding math challenges. The results divide mathematicians but most agree: math will never be the same",
-    "link": "https://fortune.com/2026/10/07/openai-math-controversy-solutions-370-outstanding-challenges-published-criticisms-celebration/",
-    "score": 94,
-    "reason": "Big number (370+ problems), major launch, concrete achievement, divides mathematicians"
+    "headline": "AI startup Manus raises $500 million in first funding round since Meta breakup",
+    "link": "https://www.cnbc.com/2026/10/08/manus-fund-raise-meta-muse-tencent.html",
+    "score": 92,
+    "reason": "Largest funding amount, major company spinoff, concrete business event"
   },
   {
     "rank": 2,
-    "headline": "Apollo, banks in talks to finance SpaceX&apos;s $40 billion Nvidia GPU purchase",
-    "link": "https://www.cnbc.com/2026/10/07/spacex-nvidia-chips-apollo-financing.html",
-    "score": 92,
-    "reason": "Massive $40B figure, major financing deal, real business impact"
+    "headline": "Samsung forecasts record third-quarter profit of $80 billion as AI boom fuels chip demand",
+    "link": "https://www.cnbc.com/2026/10/08/samsung-q3-earnings.html",
+    "score": 89,
+    "reason": "Record financial numbers, direct AI impact quantified, major manufacturer"
   },
   {
     "rank": 3,
-    "headline": "Microsoft to sell $2,599 Surface Laptop Ultra containing Nvidia AI chip",
-    "link": "https://www.cnbc.com/2026/10/07/microsoft-starts-taking-preorders-for-2599-surface-laptop-ultra.html",
-    "score": 88,
-    "reason": "Major product launch with pricing, flagship AI hardware, big company announcement"
+    "headline": "Surface RTX Spark Dev Box is available for preorder for $5,999",
+    "link": "https://www.theverge.com/tech/1006915/microsoft-surface-rtx-spark-dev-box-preorder",
+    "score": 87,
+    "reason": "Hardware launch with pricing, Microsoft AI PC initiative, concrete availability"
   },
   {
     "rank": 4,
-    "headline": "Microsoft is giving Copilot more control over Windows and your files",
-    "link": "https://www.theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence",
-    "score": 86,
-    "reason": "Significant capability expansion, agentic AI shift, user control controversy potential"
+    "headline": "Is That Picture AI? Google’s SynthID Detector Launches to Identify AI-Generated Media",
+    "link": "https://www.cnet.com/tech/services-and-software/google-synthid-detector-launches/",
+    "score": 84,
+    "reason": "New product launch, addresses major controversy around AI-generated content"
   },
   {
     "rank": 5,
-    "headline": "ChatGPT's 'Intelligent UI' update fills its responses with pictures, charts, and buttons",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
-    "score": 84,
-    "reason": "Major UX launch, visual overhaul, substantial product update"
+    "headline": "ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media",
+    "score": 82,
+    "reason": "Major controversy/criticism from prominent watchdog, child safety angle"
   },
   {
     "rank": 6,
-    "headline": "Claude launches Google Docs, Sheets, and Slides integration with sidebar and more",
-    "link": "https://9to5google.com/2026/10/06/claude-google-docs-sheet-slides/",
-    "score": 82,
-    "reason": "Major ecosystem integration launch, Anthropic expanding reach, multi-product integration"
+    "headline": "OpenAI Wants Its New Agent to Run Your Life. Mine Said It Loved Me",
+    "link": "https://www.wired.com/story/openai-wants-its-new-agent-to-run-your-life-mine-said-it-loved-me/",
+    "score": 81,
+    "reason": "Agent launch controversy, unexpected behavior issues, significant capability claim"
   },
   {
     "rank": 7,
-    "headline": "OpenAI Is Pissing Off a Bunch of Mathematicians—Again",
-    "link": "https://www.wired.com/story/openai-is-pissing-off-a-bunch-of-mathematicians-again/",
-    "score": 80,
-    "reason": "Controversy angle, repeat friction with academic community, substantive dispute"
+    "headline": "TSMC’s September sales surge year-over-year as AI drives chip demand",
+    "link": "https://www.cnbc.com/2026/10/08/tsmc-september-sales-hit-another-record-as-ai-boom-rolls-on.html",
+    "score": 79,
+    "reason": "Quantified sales growth, AI demand validation, major chip supplier"
   },
   {
     "rank": 8,
-    "headline": "Google's SynthID AI content detector expands globally, will work on Apple's models 'soon'",
-    "link": "https://9to5google.com/2026/10/07/google-synthid-ai-image-detector-launches-globally/",
-    "score": 78,
-    "reason": "Global expansion, cross-company integration, detection technology rollout"
+    "headline": "Tristan Harris’ Tech Nonprofit Is Laying Off Most Staff and Going ‘Founder-Led’",
+    "link": "https://www.wired.com/story/tristan-harris-tech-nonprofit-is-laying-off-most-staff-and-going-founder-led/",
+    "score": 77,
+    "reason": "Significant organizational upheaval, prominent AI ethics figure"
   },
   {
     "rank": 9,
-    "headline": "Mistral’s New ‘Le Chonk’ AI Model Is Big, Open and Built for Agents",
-    "link": "https://www.cnet.com/tech/services-and-software/mistrals-new-le-chonk-ai-model-is-big-open-and-built-for-agents/",
+    "headline": "Managers are using AI to write performance reviews – and it shows",
+    "link": "https://www.zdnet.com/innovation/manager-ai-use-highwire-survey/",
     "score": 76,
-    "reason": "Open-weight model launch, agentic AI focus, competitive challenge to proprietary models"
+    "reason": "Workplace AI adoption with negative outcomes, widespread practice emerging"
   },
   {
     "rank": 10,
-    "headline": "These Researchers Made AI Drive a Toyota Corolla to Get In-N-Out",
-    "link": "https://www.wired.com/story/ai-is-driving-cars-now-oh-boy/",
+    "headline": "Mistral Says Its New AI Model ‘Le Chonk’ Is the Best Open-Weight Offering Outside of China",
+    "link": "https://www.wired.com/story/mistral-new-model-le-chonk-open-source-china-us-frontier/",
     "score": 74,
-    "reason": "Concrete real-world AI application, tangible demonstration, autonomous capability"
+    "reason": "New model launch, open-source alternative, competitive positioning"
   },
   {
     "rank": 11,
-    "headline": "Use Gemini for free? You’ll soon be limited to its weakest AI model",
-    "link": "https://www.zdnet.com/innovation/google-ai-free-model-access-limited/",
+    "headline": "Utah Now Allows AI to Scan Your Face and Prescribe Acne Medication",
+    "link": "https://www.cnet.com/tech/services-and-software/an-ai-doctor-in-utah-can-prescribe-medicine/",
     "score": 72,
-    "reason": "Major service change, user impact, product tier differentiation"
+    "reason": "Regulatory milestone, AI in healthcare deployment, privacy implications"
   },
   {
     "rank": 12,
-    "headline": "AI tools flood into underground cybercrime markets",
-    "link": "https://www.axios.com/2026/10/06/ai-cybercrime-hacker-tools-marketplace",
+    "headline": "Google's experimental Playground platform uses AI to create games for you",
+    "link": "https://www.engadget.com/2279750/googles-experimental-playground-platform-uses-ai-to-create-games-for-you/",
     "score": 70,
-    "reason": "Significant controversy, real-world harm implications, criminal adoption"
+    "reason": "New product/feature launch, creative application, Google initiative"
   },
   {
     "rank": 13,
-    "headline": "The Pentagon Hopes to Speed Up ‘Kill Chain’ AI Buys With 5-Minute Videos",
-    "link": "https://www.wired.com/story/the-pentagon-hopes-to-speed-up-kill-chain-ai-buys-with-5-minute-videos/",
+    "headline": "OpenAI's math breakthrough points beyond math",
+    "link": "https://www.axios.com/2026/10/08/openai-math-proofs-ai-model",
     "score": 68,
-    "reason": "Military AI application, government procurement change, controversial use case"
+    "reason": "Technical breakthrough, significant capability advancement"
   },
   {
     "rank": 14,
-    "headline": "Google invests millions in Mark Zuckerberg’s efforts to create a ‘virtual cell’",
-    "link": "https://www.theverge.com/tech/1006766/google-meta-biohub-investment-virtual-cell",
-    "score": 66,
-    "reason": "Major investment, cross-company collaboration, biotech AI application"
+    "headline": "AI could upend food delivery",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1005726/doordash-ai-agentic-food-delivery-bites",
+    "score": 65,
+    "reason": "Major industry disruption claim, real-world application impact"
   },
   {
     "rank": 15,
-    "headline": "\"I don't want an oligopoly\": New open-weight AI models mount a comeback against China",
-    "link": "https://www.axios.com/2026/10/06/reflection-mistral-open-weight-ai-models-china",
-    "score": 64,
-    "reason": "Competitive landscape shift, geopolitical angle, open-source momentum"
+    "headline": "Microsoft looks to reboot the AI PC with Nvidia",
+    "link": "https://www.axios.com/2026/10/07/microsoft-looks-to-reboot-the-ai-pc-with-nvidia",
+    "score": 63,
+    "reason": "Strategic partnership launch, major hardware initiative"
   },
   {
     "rank": 16,
-    "headline": "Microsoft shows off new Windows software, revamped for agentic AI",
-    "link": "https://fortune.com/2026/10/07/microsoft-unveils-windows-hybrid-intelligence-satya-nadella-surface-ultra-laptop/",
-    "score": 62,
-    "reason": "Major OS overhaul, agentic AI integration, platform-level shift"
+    "headline": "Weight-loss drugs show signs of slowing biological aging, say drugmakers",
+    "link": "https://www.technologyreview.com/2026/10/06/1145836/weight-loss-drugs-glp1-lilly-novo-aging-clocks/",
+    "score": 61,
+    "reason": "Biotech AI application, significant health claims, drug manufacturer statement"
   },
   {
     "rank": 17,
-    "headline": "\"Not safe for kids\": Advocacy group urges OpenAI to keep teens off ChatGPT",
-    "link": "https://www.axios.com/2026/10/07/chatgpt-teens-safety-risk-common-sense-media",
-    "score": 60,
-    "reason": "Safety controversy, youth protection angle, organized advocacy"
+    "headline": "Building a safer path to autonomous industrial AI",
+    "link": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
+    "score": 59,
+    "reason": "Safety framework, industrial automation focus"
   },
   {
     "rank": 18,
-    "headline": "‘Artificial’ Roasts AI’s Creators—and Sends a Dark Warning About Its Dangers",
-    "link": "https://www.wired.com/story/artificial-roasts-ais-creators-and-sends-a-dark-warning-about-its-dangers/",
-    "score": 58,
-    "reason": "Cultural commentary on AI risks, notable media coverage, industry criticism"
+    "headline": "ChatGPT is getting college planning tools",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1005194/openai-chatgpt-teens-college-planner-notecards",
+    "score": 57,
+    "reason": "New feature launch, education application"
   },
   {
     "rank": 19,
-    "headline": "OpenAI just posted hundreds more results on major math problems",
-    "link": "https://www.engadget.com/2279815/openai-just-posted-hundreds-more-results-on-major-math-problems/",
-    "score": 56,
-    "reason": "Significant research output, mathematical breakthrough claims, academic impact"
+    "headline": "Muse launches on the iPad",
+    "link": "https://www.theverge.com/tech/1006813/muse-ai-agent-ios-app-ipad-support",
+    "score": 54,
+    "reason": "Product launch, platform expansion"
   },
   {
     "rank": 20,
-    "headline": "Trillions are being ‘wasted’ on the AI boom, Arthur Hayes says. He’s betting on what comes next",
-    "link": "https://www.cnbc.com/2026/10/07/flop-ai-boom-arthur-hayes-bitcoin-bitmex-coinferencex-.html",
-    "score": 54,
-    "reason": "Major financial criticism, trillion-dollar scale commentary, market skepticism"
+    "headline": "Exclusive: Inside Trump's AI science summit",
+    "link": "https://www.axios.com/2026/10/07/exclusive-inside-trumps-ai-science-summit",
+    "score": 52,
+    "reason": "Government engagement, policy-relevant meeting"
   }
 ]
