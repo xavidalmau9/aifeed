@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "AI startup Manus raises $500 million in first funding round since Meta breakup",
-    "link": "https://www.cnbc.com/2026/10/08/manus-fund-raise-meta-muse-tencent.html",
-    "score": 92,
-    "reason": "Largest funding amount, major company spinoff, concrete business event"
+    "headline": "USA Today becomes the latest publisher to sue OpenAI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit",
+    "score": 94,
+    "reason": "Major litigation against OpenAI; concrete legal action, not speculation; represents industry trend"
   },
   {
     "rank": 2,
-    "headline": "Samsung forecasts record third-quarter profit of $80 billion as AI boom fuels chip demand",
-    "link": "https://www.cnbc.com/2026/10/08/samsung-q3-earnings.html",
+    "headline": "Child safety group calls ChatGPT for Teens an unacceptable risk",
+    "link": "https://www.engadget.com/2281719/child-safety-group-calls-chatgpt-for-teens-an-unacceptable-risk/",
     "score": 89,
-    "reason": "Record financial numbers, direct AI impact quantified, major manufacturer"
+    "reason": "Significant controversy with child safety implications; specific product criticism; regulatory concern"
   },
   {
     "rank": 3,
-    "headline": "Surface RTX Spark Dev Box is available for preorder for $5,999",
-    "link": "https://www.theverge.com/tech/1006915/microsoft-surface-rtx-spark-dev-box-preorder",
+    "headline": "Google is launching a one-stop Gemini agent for your work tasks",
+    "link": "https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise",
     "score": 87,
-    "reason": "Hardware launch with pricing, Microsoft AI PC initiative, concrete availability"
+    "reason": "Major product launch from Google; practical AI agent deployment; competes with OpenAI"
   },
   {
     "rank": 4,
-    "headline": "Is That Picture AI? Google’s SynthID Detector Launches to Identify AI-Generated Media",
-    "link": "https://www.cnet.com/tech/services-and-software/google-synthid-detector-launches/",
-    "score": 84,
-    "reason": "New product launch, addresses major controversy around AI-generated content"
+    "headline": "Google’s AI note-taking app transcribes your meetings completely offline",
+    "link": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
+    "score": 85,
+    "reason": "Significant privacy-focused product launch; offline capability is competitive differentiator"
   },
   {
     "rank": 5,
-    "headline": "ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media",
-    "score": 82,
-    "reason": "Major controversy/criticism from prominent watchdog, child safety angle"
+    "headline": "ChatGPT's 'Intelligent UI' update fills its responses with pictures, charts, and buttons",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
+    "score": 83,
+    "reason": "Major UI/UX update to ChatGPT; tangible product improvement; user-facing change"
   },
   {
     "rank": 6,
-    "headline": "OpenAI Wants Its New Agent to Run Your Life. Mine Said It Loved Me",
-    "link": "https://www.wired.com/story/openai-wants-its-new-agent-to-run-your-life-mine-said-it-loved-me/",
-    "score": 81,
-    "reason": "Agent launch controversy, unexpected behavior issues, significant capability claim"
+    "headline": "Trump admin suspends green cards to Microsoft as Vance accuses the company of replacing laid-off workers with ‘foreign indentured servants’",
+    "link": "https://fortune.com/2026/10/08/trump-admin-green-card-microsoft-domestic-workers/",
+    "score": 82,
+    "reason": "Major regulatory action; high-profile political controversy; concrete policy impact"
   },
   {
     "rank": 7,
-    "headline": "TSMC’s September sales surge year-over-year as AI drives chip demand",
-    "link": "https://www.cnbc.com/2026/10/08/tsmc-september-sales-hit-another-record-as-ai-boom-rolls-on.html",
-    "score": 79,
-    "reason": "Quantified sales growth, AI demand validation, major chip supplier"
+    "headline": "The U.S. Nuclear Plant Fleet Is Leaning Into AI",
+    "link": "https://spectrum.ieee.org/ai-assistants-nuclear-power-plant",
+    "score": 78,
+    "reason": "AI deployment in critical infrastructure; significant industry adoption; concrete use case"
   },
   {
     "rank": 8,
-    "headline": "Tristan Harris’ Tech Nonprofit Is Laying Off Most Staff and Going ‘Founder-Led’",
-    "link": "https://www.wired.com/story/tristan-harris-tech-nonprofit-is-laying-off-most-staff-and-going-founder-led/",
-    "score": 77,
-    "reason": "Significant organizational upheaval, prominent AI ethics figure"
+    "headline": "The Pentagon Hopes to Speed Up ‘Kill Chain’ AI Buys With 5-Minute Videos",
+    "link": "https://www.wired.com/story/the-pentagon-hopes-to-speed-up-kill-chain-ai-buys-with-5-minute-videos/",
+    "score": 76,
+    "reason": "Government AI procurement; defense sector adoption; quantified process improvement"
   },
   {
     "rank": 9,
-    "headline": "Managers are using AI to write performance reviews – and it shows",
-    "link": "https://www.zdnet.com/innovation/manager-ai-use-highwire-survey/",
-    "score": 76,
-    "reason": "Workplace AI adoption with negative outcomes, widespread practice emerging"
+    "headline": "AWS pricing team turns 18-tab Excel model into an AI chatbot to evaluate customer deals, CFO says",
+    "link": "https://fortune.com/2026/10/08/aws-pricing-team-18-tab-excel-model-into-ai-chatbot-evaluate-customer-deals-cfo/",
+    "score": 74,
+    "reason": "Concrete enterprise AI implementation; specific business impact; AWS internal use"
   },
   {
     "rank": 10,
-    "headline": "Mistral Says Its New AI Model ‘Le Chonk’ Is the Best Open-Weight Offering Outside of China",
-    "link": "https://www.wired.com/story/mistral-new-model-le-chonk-open-source-china-us-frontier/",
-    "score": 74,
-    "reason": "New model launch, open-source alternative, competitive positioning"
-  },
-  {
-    "rank": 11,
-    "headline": "Utah Now Allows AI to Scan Your Face and Prescribe Acne Medication",
-    "link": "https://www.cnet.com/tech/services-and-software/an-ai-doctor-in-utah-can-prescribe-medicine/",
+    "headline": "SpaceXAI backs Omarchy, the controversial Linux distro, with $1.5 million in compute",
+    "link": "https://www.theverge.com/tech/1008148/spacexai-omarchy-grok-david-heinemeier-hansson",
     "score": 72,
-    "reason": "Regulatory milestone, AI in healthcare deployment, privacy implications"
-  },
-  {
-    "rank": 12,
-    "headline": "Google's experimental Playground platform uses AI to create games for you",
-    "link": "https://www.engadget.com/2279750/googles-experimental-playground-platform-uses-ai-to-create-games-for-you/",
-    "score": 70,
-    "reason": "New product/feature launch, creative application, Google initiative"
-  },
-  {
-    "rank": 13,
-    "headline": "OpenAI's math breakthrough points beyond math",
-    "link": "https://www.axios.com/2026/10/08/openai-math-proofs-ai-model",
-    "score": 68,
-    "reason": "Technical breakthrough, significant capability advancement"
-  },
-  {
-    "rank": 14,
-    "headline": "AI could upend food delivery",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1005726/doordash-ai-agentic-food-delivery-bites",
-    "score": 65,
-    "reason": "Major industry disruption claim, real-world application impact"
-  },
-  {
-    "rank": 15,
-    "headline": "Microsoft looks to reboot the AI PC with Nvidia",
-    "link": "https://www.axios.com/2026/10/07/microsoft-looks-to-reboot-the-ai-pc-with-nvidia",
-    "score": 63,
-    "reason": "Strategic partnership launch, major hardware initiative"
-  },
-  {
-    "rank": 16,
-    "headline": "Weight-loss drugs show signs of slowing biological aging, say drugmakers",
-    "link": "https://www.technologyreview.com/2026/10/06/1145836/weight-loss-drugs-glp1-lilly-novo-aging-clocks/",
-    "score": 61,
-    "reason": "Biotech AI application, significant health claims, drug manufacturer statement"
-  },
-  {
-    "rank": 17,
-    "headline": "Building a safer path to autonomous industrial AI",
-    "link": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
-    "score": 59,
-    "reason": "Safety framework, industrial automation focus"
-  },
-  {
-    "rank": 18,
-    "headline": "ChatGPT is getting college planning tools",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1005194/openai-chatgpt-teens-college-planner-notecards",
-    "score": 57,
-    "reason": "New feature launch, education application"
-  },
-  {
-    "rank": 19,
-    "headline": "Muse launches on the iPad",
-    "link": "https://www.theverge.com/tech/1006813/muse-ai-agent-ios-app-ipad-support",
-    "score": 54,
-    "reason": "Product launch, platform expansion"
-  },
-  {
-    "rank": 20,
-    "headline": "Exclusive: Inside Trump's AI science summit",
-    "link": "https://www.axios.com/2026/10/07/exclusive-inside-trumps-ai-science-summit",
-    "score": 52,
-    "reason": "Government engagement, policy-relevant meeting"
+    "reason": "Specific funding amount; infrastructure backing; controversial project support"
   }
 ]
