@@ -10,12 +10,24 @@ let browser;
 
 async function getBrowser() {
   if (browser && browser.connected) return browser;
-  browser = await puppeteer.launch({
-    executablePath: chromePath(),
-    headless: true,
-    args: ['--no-sandbox', '--disable-dev-shm-usage', '--hide-scrollbars']
-  });
-  return browser;
+  // Chrome sometimes starts slowly on a fresh runner ("Timed out ... WS endpoint", Oct 8): 90s timeout, 3 tries.
+  let last;
+  for (let i = 0; i < 3; i++) {
+    try {
+      browser = await puppeteer.launch({
+        executablePath: chromePath(),
+        headless: true,
+        timeout: 90000,
+        args: ['--no-sandbox', '--disable-dev-shm-usage', '--hide-scrollbars']
+      });
+      return browser;
+    } catch (e) {
+      last = e;
+      console.log('Chrome launch failed (try ' + (i + 1) + '/3): ' + String(e && e.message || e).slice(0, 160));
+      await new Promise(r => setTimeout(r, 5000));
+    }
+  }
+  throw last;
 }
 
 async function renderHtml(html, { width = 1080, height = 1350, waitMs = 3000 } = {}) {
