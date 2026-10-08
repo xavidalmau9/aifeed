@@ -12,7 +12,7 @@ test('scheduled UTC hours cover both DST offsets for 8:00 and 17:00 ET', () => {
   assert.deepEqual(SCHEDULED_UTC_HOURS, [12, 13, 21, 22]);
   const yaml = fs.readFileSync(path.join(__dirname, '../../../.github/workflows/autopilot.yml'), 'utf8');
   for (const hour of SCHEDULED_UTC_HOURS) {
-    assert.match(yaml, new RegExp("cron: '0 " + hour + " \\* \\* \\*'"));
+    assert.match(yaml, new RegExp("cron: '3 " + hour + " \\* \\* \\*'"));
   }
   assert.match(yaml, /group: .*\|\| 'aifeed-autopilot'/);
 });

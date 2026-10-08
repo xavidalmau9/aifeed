@@ -33,7 +33,7 @@
       ],
       "parameters": {
         "mode": "raw",
-        "jsonOutput": "={\n \"repo\": \"xavidalmau9/aifeed\",\n \"branch\": \"main\",\n \"siteUrl\": \"https://aifeed.run\",\n \"igUserId\": \"17841442136197946\",\n \"fbPageId\": \"1434982969687864\",\n \"metaAppId\": \"1367205021940381\",\n \"graphVersion\": \"v21.0\",\n \"linkedinAuthorUrn\": \"urn:li:person:REPLACE (or urn:li:organization:REPLACE)\",\n \"linkedinVersion\": \"202509\",\n \"endCardUrl\": \"https://aifeed.run/images/aifeed_endslide.png\",\n \"telegramChatId\": \"__TELEGRAM_CHAT_ID__\",\n \"renderUrl\": \"http://127.0.0.1:3000\",\n \"anthropicModel\": \"claude-haiku-4-5\",\n \"today\": \"{{ $now.setZone('America/New_York').toFormat('yyyy-MM-dd') }}\",\n \"slot\": {{ $now.setZone('America/New_York').hour < 12 ? 1 : 2 }},\n \"fbEnabled\": false,\n \"dryRun\": false,\n \"dryRunDir\": \"/home/box/aifeed-n8n/dryrun\",\n \"dedupDays\": 30,\n \"similarityThreshold\": 0.5\n}"
+        "jsonOutput": "={\n \"repo\": \"xavidalmau9/aifeed\",\n \"branch\": \"main\",\n \"siteUrl\": \"https://aifeed.run\",\n \"igUserId\": \"17841442136197946\",\n \"fbPageId\": \"1434982969687864\",\n \"metaAppId\": \"1367205021940381\",\n \"graphVersion\": \"v21.0\",\n \"linkedinAuthorUrn\": \"urn:li:person:REPLACE (or urn:li:organization:REPLACE)\",\n \"linkedinVersion\": \"202509\",\n \"endCardUrl\": \"https://aifeed.run/images/aifeed_endslide.png\",\n \"telegramChatId\": \"__TELEGRAM_CHAT_ID__\",\n \"renderUrl\": \"http://127.0.0.1:3000\",\n \"anthropicModel\": \"claude-haiku-4-5\",\n \"today\": \"{{ $now.setZone('America/New_York').toFormat('yyyy-MM-dd') }}\",\n \"slot\": {{ $now.setZone('America/New_York').hour < 12 ? 1 : 2 }},\n \"fbEnabled\": true,\n \"dryRun\": false,\n \"dryRunDir\": \"/home/box/aifeed-n8n/dryrun\",\n \"dedupDays\": 30,\n \"similarityThreshold\": 0.5\n}"
       }
     },
     {
@@ -2067,7 +2067,7 @@
           "parameters": [
             {
               "name": "message",
-              "value": "={{ $('Validate PNG + Prep Commits').first().json.igCaption }}"
+              "value": "={{ $('Validate PNG + Prep Commits').first().json.igCaption.replace('\\n\u2800\\n\ud83d\udce9 Free daily AI brief \u2192 link in bio\\n\u2800\\n', '\\n\u2800\\n\ud83d\udce9 Free daily AI brief \u2192 aifeed.run\\n\u2800\\n') }}"
             },
             {
               "name": "attached_media",

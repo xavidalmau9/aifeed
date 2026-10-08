@@ -1,6 +1,6 @@
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
-const { SPACER, buildIg, checkIg, checkLi, checkAccuracy, buildLi } = require('../lib/captions');
+const { SPACER, buildIg, checkIg, checkLi, checkAccuracy, buildLi, buildFb, checkFb, FB_CTA } = require('../lib/captions');
 
 function words(n, salt) {
   const out = [];
@@ -76,4 +76,21 @@ test('accuracy gate keeps hedges and dollar signs from the source', () => {
     igHook: '🔥 DeepSeek weighs doubling its round to up to $15 billion'
   };
   assert.deepEqual(checkAccuracy(hedged, src), []);
+});
+
+test('Facebook caption = Instagram caption with the same spacers, Source line once, URL once, no "link in bio"', () => {
+  const ig = buildIg(sample(), URL);
+  const fb = buildFb(ig);
+  const blocks = fb.split('\n' + SPACER + '\n');
+  assert.equal(blocks.length, ig.split('\n' + SPACER + '\n').length);
+  assert.equal(blocks[blocks.length - 2], FB_CTA);
+  assert.equal(blocks[blocks.length - 3], 'Source: The Verge · https://www.theverge.com/ai/openai-math');
+  assert.equal(fb.split('\n').filter(l => l.startsWith('Source:')).length, 1);
+  assert.equal((fb.match(/https?:\/\//g) || []).length, 1);
+  assert.equal(/link in bio/i.test(fb), false);
+  assert.equal(fb.replace(FB_CTA, '📩 Free daily AI brief → link in bio'), ig);
+  assert.deepEqual(checkFb(fb, URL), []);
+  assert.ok(checkFb(ig, URL).length > 0, 'an unconverted IG caption must fail the FB check');
+  const doubled = fb.replace('\n' + SPACER + '\n' + FB_CTA, '\n' + SPACER + '\nSource: X · https://x.com/a\n' + SPACER + '\n' + FB_CTA);
+  assert.ok(checkFb(doubled, URL).some(e => /exactly once/.test(e)));
 });

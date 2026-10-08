@@ -110,3 +110,25 @@ test('n8n nodes: unreadable verdict or failed rewrite -> candidate marked unsupp
   const r3 = await runSourceCheck([bad], [source(0)], fakeAsk({ raw: '[]' }));
   assert.equal(r3.gen[0].supported, false);
 });
+
+test('n8n Facebook branch: enabled, after IG Publish, same caption as Actions (buildFb), failures only alert', () => {
+  const { buildFb, SPACER } = require('../lib/captions');
+  const cfg = NODES['Config'].parameters.jsonOutput;
+  const actionsCfg = JSON.parse(fs.readFileSync(path.join(__dirname, '../config.json'), 'utf8'));
+  assert.equal(/"fbEnabled": true/.test(cfg), actionsCfg.fbEnabled === true);
+  assert.ok(next('IG Publish').includes('Facebook Enabled?'));
+  assert.deepEqual(next('Facebook Enabled?'), ['FB Upload Photo 1']);
+  for (const n of ['FB Upload Photo 1', 'FB Upload Photo 2', 'FB Create Post']) {
+    assert.equal(NODES[n].onError, 'continueErrorOutput', n + ' must route errors to the alert');
+    assert.deepEqual((WF.connections[n].main[1] || []).map(c => c.node), ['FB Failed Alert']);
+    assert.equal(NODES[n].credentials.httpQueryAuth.id, 'aifeedMetaIG0001');
+  }
+  const expr = NODES['FB Create Post'].parameters.bodyParameters.parameters.find(p => p.name === 'message').value;
+  const m = expr.match(/^=\{\{ \$\('Validate PNG \+ Prep Commits'\)\.first\(\)\.json\.igCaption(\.replace\(.*\)) \}\}$/);
+  assert.ok(m, 'FB message expression shape changed');
+  const ig = ['🔥 Hook', 'Para one.', 'Para two.', 'Para three.', 'Source: The Verge · https://www.theverge.com/x',
+    '📩 Free daily AI brief → link in bio', '#A #B #C #D #E'].join('\n' + SPACER + '\n');
+  const igCaption = ig;
+  const out = eval('igCaption' + m[1]);
+  assert.equal(out, buildFb(ig));
+});

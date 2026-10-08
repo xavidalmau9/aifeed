@@ -14,9 +14,10 @@ const { assertFeedPng, assertStoryPng } = require('./lib/png');
 const { renderHtml, closeBrowser } = require('./render');
 const { readJson, writeJson, commitApply, git } = require('./lib/git');
 const {
-  claudeMessage, fetchIgMedia, graphForm, pollContainer, pollPublic, linkedinEnabled, linkedInPost, redact
+  claudeMessage, fetchIgMedia, graphForm, graphGet, pollContainer, pollPublic, linkedinEnabled, linkedInPost, redact
 } = require('./lib/net');
 const { sendAlert } = require('./alert');
+const { buildFb, checkFb } = require('./lib/captions');
 
 function loadConfig() {
   return JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json'), 'utf8'));
@@ -107,18 +108,43 @@ async function publishStory(cfg, env, storyUrl) {
   return published;
 }
 
-async function publishFacebook(cfg, env, imageUrl, caption) {
+// Facebook Page post = the same feed graphic + end card (2 photos) with the Instagram caption
+// (same blocks, spacers, Source line once; CTA says aifeed.run instead of "link in bio").
+function facebookMessage(igCaption, sourceUrl) {
+  const message = buildFb(igCaption);
+  const errs = checkFb(message, sourceUrl);
+  if (errs.length) throw new Error('Facebook caption layout check failed: ' + errs.join('; '));
+  return message;
+}
+
+async function publishFacebook(cfg, env, imageUrl, igCaption, sourceUrl) {
   const auth = { token: env.META_PAGE_TOKEN, appSecret: env.META_APP_SECRET };
   const base = `https://graph.facebook.com/${cfg.graphVersion}/${cfg.fbPageId}`;
+  const message = facebookMessage(igCaption, sourceUrl);
   const photo1 = await graphForm(base + '/photos', { url: imageUrl, published: 'false' }, Object.assign({ tries: 2, waitMs: 5000 }, auth));
   const photo2 = await graphForm(base + '/photos', { url: cfg.endCardUrl, published: 'false' }, Object.assign({ tries: 2, waitMs: 5000 }, auth));
   if (!photo1.id || !photo2.id) throw new Error('Facebook did not return photo ids');
   const post = await graphForm(base + '/feed', {
-    message: caption,
+    message,
     attached_media: JSON.stringify([{ media_fbid: photo1.id }, { media_fbid: photo2.id }])
   }, auth);
   console.log('Facebook post published ' + (post.id || ''));
   return post;
+}
+
+// Dry-run check that the Page token can post to the Page (read-only: debug_token, nothing is created).
+async function facebookPreflight(cfg, env) {
+  if (!env.META_APP_SECRET) return 'skipped (META_APP_SECRET not set)';
+  const u = new URL(`https://graph.facebook.com/${cfg.graphVersion}/debug_token`);
+  u.searchParams.set('input_token', env.META_PAGE_TOKEN);
+  u.searchParams.set('access_token', cfg.metaAppId + '|' + env.META_APP_SECRET);
+  const res = await fetch(u, { signal: AbortSignal.timeout(30000) });
+  const d = ((await res.json().catch(() => ({}))).data) || {};
+  const scopes = d.scopes || [];
+  const ok = d.is_valid && d.type === 'PAGE' && String(d.profile_id) === String(cfg.fbPageId) && scopes.includes('pages_manage_posts');
+  return (ok ? 'OK' : 'PROBLEM') + ': token type ' + d.type + ', page ' + d.profile_id + ', valid ' + d.is_valid
+    + ', pages_manage_posts ' + (scopes.includes('pages_manage_posts') ? 'yes' : 'NO')
+    + ', expires ' + (d.expires_at === 0 ? 'never' : d.expires_at);
 }
 
 async function main() {
@@ -318,6 +344,16 @@ async function main() {
         liWarning: published.liWarning,
         fit: { feed: feed.fit, story: story.fit }
       }, null, 2) + '\n');
+      if (cfg.fbEnabled) {
+        const fbMessage = facebookMessage(published.igCaption, qc.story.link);
+        fs.writeFileSync(path.join(env.OUT, 'facebook-caption.txt'), fbMessage + '\n');
+        console.log('Facebook plan: Page ' + cfg.fbPageId + ' post = feed graphic + end card (2 photos), caption '
+          + fbMessage.length + ' chars, Source line x1, URL x1, after the Instagram post + Story (a Facebook failure only alerts)');
+        try { console.log('Facebook preflight ' + await facebookPreflight(cfg, env)); }
+        catch (e) { console.log('Facebook preflight FAILED: ' + redact(e.message)); }
+      } else {
+        console.log('Facebook plan: disabled (fbEnabled false)');
+      }
       console.log('DRY RUN complete. Nothing was posted or committed. Artifacts: ' + env.OUT);
       return 0;
     }
@@ -367,7 +403,7 @@ async function main() {
 
     if (cfg.fbEnabled) {
       try {
-        await publishFacebook(cfg, env, published.post.imageUrl, published.igCaption);
+        await publishFacebook(cfg, env, published.post.imageUrl, published.igCaption, qc.story.link);
       } catch (e) {
         const msg = 'AIFeed: Facebook Page post failed (Instagram + website unaffected)\n' + redact(e.message);
         console.log(msg);
@@ -408,4 +444,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { main, runtimeEnv };
+module.exports = { main, runtimeEnv, facebookMessage };

@@ -16,6 +16,21 @@ function buildIg(g, url) {
   const blocks = [hook, ...paras, `Source: ${normText(g.outlet)} · ${cleanUrl(url)}`, '📩 Free daily AI brief → link in bio', tg.map(t => '#' + t).join(' ')];
   return blocks.join(`\n${SPACER}\n`);
 }
+// Facebook Page post: the Instagram caption with the same blocks and spacers. Only the CTA changes,
+// because Facebook has no "link in bio". Still exactly one URL (the source) and one Source line.
+const IG_CTA = '📩 Free daily AI brief → link in bio';
+const FB_CTA = '📩 Free daily AI brief → aifeed.run';
+function buildFb(igCaption) {
+  return String(igCaption || '').split(`\n${SPACER}\n`).map(b => (b === IG_CTA ? FB_CTA : b)).join(`\n${SPACER}\n`);
+}
+function checkFb(c, url) {
+  const s = String(c || '');
+  const e = [];
+  if (!s.includes(`\n${SPACER}\n${FB_CTA}\n${SPACER}\n`)) e.push('FB CTA line missing');
+  if (/link in bio/i.test(s)) e.push('FB caption still says "link in bio"');
+  if ((s.match(/^Source: /gm) || []).length !== 1) e.push('Source line must appear exactly once');
+  return e.concat(checkIg(s.split(`\n${SPACER}\n`).map(b => (b === FB_CTA ? IG_CTA : b)).join(`\n${SPACER}\n`), url));
+}
 function buildLi(g, url) {
   const paras = [normText(g.liHook), ...(g.liParagraphs || []).map(normText).filter(Boolean), normText(g.liTakeaway)].filter(Boolean);
   const tg = tags5(g.liHashtags);
@@ -92,6 +107,6 @@ function checkAccuracy(g, c) {
 }
 
 module.exports = {
-  SPACER, normText, normTag, tags5, cleanUrl, buildIg, buildLi, checkIg, checkLi,
+  SPACER, IG_CTA, FB_CTA, normText, normTag, tags5, cleanUrl, buildIg, buildFb, buildLi, checkIg, checkFb, checkLi,
   checkAccuracy, srcHasHedge, hedgeSource
 };

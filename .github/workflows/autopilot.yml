@@ -2,13 +2,14 @@ name: AIFeed autopilot
 
 # GitHub cron is UTC. America/New_York is UTC-4 during EDT and UTC-5 during EST.
 # Both offsets are scheduled; the job exits immediately unless the local ET hour is 8-9 (slot 1) or 17-18 (slot 2).
+# Minute :03, not :00: GitHub drops/delays many top-of-the-hour schedules. Gate windows are unchanged.
 # Hour 9 / 18 is a grace window for GitHub cron delays; the slot claim + history keep it to one post per slot.
 on:
   schedule:
-    - cron: '0 12 * * *' # 08:00 EDT
-    - cron: '0 13 * * *' # 08:00 EST
-    - cron: '0 21 * * *' # 17:00 EDT
-    - cron: '0 22 * * *' # 17:00 EST
+    - cron: '3 12 * * *' # 08:03 EDT
+    - cron: '3 13 * * *' # 08:03 EST
+    - cron: '3 21 * * *' # 17:03 EDT
+    - cron: '3 22 * * *' # 17:03 EST
   workflow_dispatch:
     inputs:
       slot:

@@ -11,7 +11,7 @@
   "linkedinEnabled": false,
   "endCardUrl": "https://aifeed.run/images/aifeed_endslide.png",
   "anthropicModel": "claude-haiku-4-5",
-  "fbEnabled": false,
+  "fbEnabled": true,
   "dedupDays": 30,
   "similarityThreshold": 0.5
 }
