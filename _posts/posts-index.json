@@ -1,5 +1,25 @@
 [
   {
+    "id": "microsoft-is-giving-copilot-more-control-20261008",
+    "slug": "microsoft-is-giving-copilot-more-control",
+    "headline": "Microsoft is giving Copilot more control over Windows and your files",
+    "summary": "Microsoft's upgraded Copilot will access local PC files and execute OS actions via Hybrid Intelligence, rolling out next couple months.",
+    "body": "<p>Microsoft is equipping Copilot with direct access to local Windows files and OS-level actions.</p>\n<p>At its Windows and Surface event, Microsoft unveiled an upgraded Copilot AI system capable of accessing local files on PCs and executing actions across the operating system. The capability is built on 'Hybrid Intelligence,' a framework combining local and cloud AI models to accomplish tasks efficiently.</p>\n<p>In a live demonstration, Microsoft's EVP of Copilot Jacob Andreou showed Autopilot handling a tax-filing workflow: searching across folders for documents, renaming files, creating a zip folder, and drafting an email to an accountant with the attachment included. This exemplifies how the technology coordinates multiple OS-level actions.</p>\n<p>Hybrid Intelligence features will reach Copilot users over the next couple of months, while a redesigned Windows search experience offering quick actions — dark mode toggles, mic volume sliders, text sending — launches this fall on Windows 11.</p>\n<p>Microsoft's Copilot gains direct Windows file access and OS control via Hybrid Intelligence, rolling out over coming months.</p>",
+    "category": "Tools",
+    "imageUrl": "https://aifeed.run/images/aifeed_microsoft-is-giving-copilot-more-control_20261008_am.png",
+    "image": "images/aifeed_microsoft-is-giving-copilot-more-control_20261008_am.png",
+    "sourceUrl": "https://www.theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence",
+    "publishedAt": "2026-10-08T12:53:17.996Z",
+    "hashtags": [
+      "CopilotAI",
+      "Microsoft",
+      "Windows",
+      "HybridIntelligence",
+      "AIagents"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "openai-drops-another-batch-of-mathematical-20261007",
     "slug": "openai-drops-another-batch-of-mathematical",
     "headline": "OpenAI drops another batch of mathematical breakthroughs",
