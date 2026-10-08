@@ -1,0 +1,50 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500&display=block" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1640px;height:924px;overflow:hidden;background:#0d0b14}
+.wrap{position:relative;width:1640px;height:924px;overflow:hidden;font-family:Inter,sans-serif;color:#fff;
+  background:
+    radial-gradient(ellipse 760px 520px at 50% 50%, rgba(109,63,232,.30) 0%, rgba(109,63,232,.10) 45%, rgba(13,11,20,0) 75%),
+    radial-gradient(circle 520px at 6% 108%, rgba(255,138,0,.16) 0%, rgba(255,138,0,0) 70%),
+    radial-gradient(circle 560px at 96% -10%, rgba(192,64,255,.20) 0%, rgba(192,64,255,0) 70%),
+    #0d0b14}
+/* faint star field like the end card */
+.stars{position:absolute;inset:0;opacity:.55;
+  background-image:
+    radial-gradient(1.4px 1.4px at 7% 22%, #fff 50%, transparent 51%),radial-gradient(1px 1px at 15% 64%, #fff 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 23% 12%, #fff 50%, transparent 51%),radial-gradient(1px 1px at 31% 82%, #fff 50%, transparent 51%),
+    radial-gradient(1.3px 1.3px at 12% 41%, #fff 50%, transparent 51%),radial-gradient(1px 1px at 88% 18%, #fff 50%, transparent 51%),
+    radial-gradient(1.4px 1.4px at 93% 57%, #fff 50%, transparent 51%),radial-gradient(1px 1px at 81% 79%, #fff 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 74% 9%, #fff 50%, transparent 51%),radial-gradient(1px 1px at 69% 90%, #fff 50%, transparent 51%),
+    radial-gradient(1.3px 1.3px at 97% 33%, #fff 50%, transparent 51%),radial-gradient(1px 1px at 4% 76%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 40% 6%, #fff 50%, transparent 51%),radial-gradient(1px 1px at 58% 95%, #fff 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 85% 44%, #fff 50%, transparent 51%),radial-gradient(1px 1px at 19% 90%, #fff 50%, transparent 51%)}
+/* the avatar's signal arcs, oversized and faint, as a brand watermark */
+.arcs{position:absolute;left:50%;top:50%;width:2100px;height:2100px;transform:translate(-50%,-47.5%);opacity:.09}
+.content{position:absolute;left:0;right:0;top:48.6%;transform:translateY(-50%);display:flex;flex-direction:column;align-items:center;text-align:center}
+.badge{padding:13px 28px;border-radius:40px;font:800 25px Poppins;letter-spacing:.5px;background:linear-gradient(90deg,#ff8a00,#c040ff);box-shadow:0 10px 40px rgba(192,64,255,.25)}
+.logo{margin-top:22px;font:800 156px/1 Poppins;letter-spacing:-3.5px;background:linear-gradient(90deg,#ff8a00,#c040ff);-webkit-background-clip:text;color:transparent;padding:0 8px 14px}
+.logo b{font-weight:800;color:#fff;-webkit-text-fill-color:#fff}
+.rule{width:64px;height:5px;border-radius:3px;background:linear-gradient(90deg,#ff8a00,#c040ff);margin:4px 0 28px}
+.tag{font:700 54px/1.15 Poppins;letter-spacing:-.5px}
+.sub{margin-top:10px;font:400 37px/1.35 Inter;color:#d9d6e3}
+.sub .pink{color:#ff6f91;font-weight:500}
+.cta{margin-top:30px;padding:13px 30px;border-radius:40px;border:1.5px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);font:500 29px Inter;color:#bdb8cc;letter-spacing:.2px}
+.cta b{color:#fff;font-weight:500}
+</style></head><body><div class="wrap">
+<div class="stars"></div>
+<svg class="arcs" viewBox="0 0 500 500" fill="none" stroke="#a070ff" stroke-linecap="round">
+  <path d="M140.29,245.18 A115.95,115.95 0 0 1 359.71,245.18" stroke-width="7"/>
+  <path d="M174.18,227.12 A80.05,80.05 0 0 1 325.82,227.12" stroke-width="7"/>
+  <path d="M206.06,211.25 A46.07,46.07 0 0 1 293.94,211.25" stroke-width="7"/>
+</svg>
+<div class="content">
+  <div class="badge">AIFEED.RUN • AI NEWS</div>
+  <div class="logo">aifeed<b>.run</b></div>
+  <div class="rule"></div>
+  <div class="tag">The AI news that matters.</div>
+  <div class="sub"><span class="pink">2 stories a day</span>, 60 seconds each.</div>
+  <div class="cta">Free weekly AI brief · <b>aifeed.run</b></div>
+</div>
+</div></body></html>
