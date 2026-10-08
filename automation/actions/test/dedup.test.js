@@ -83,7 +83,9 @@ test('same-event check drops repeats, treats a missing verdict as a repeat, and 
     { c: 1, repeat: true, match: 'P1', why: 'same funding round' },
     { c: 2, repeat: false, match: null, why: 'different announcement' }
   ]);
-  const out = applySameEvent(pool, compact, text);
+  // C1's match shares no key entity with P1, so it needs the single-pair confirm (unsure/same -> repeat).
+  assert.throws(() => applySameEvent(pool, compact, text), /confirm check returned no readable verdict/);
+  const out = applySameEvent(pool, compact, text, { 0: '{"same": true, "entity": null, "event": "funding round", "why": "unsure"}' });
   assert.equal(out.candidates.length, 1);
   assert.equal(out.candidates[0].title, pool[1].title);
   assert.equal(out.sameEventSkipped.length, 2);

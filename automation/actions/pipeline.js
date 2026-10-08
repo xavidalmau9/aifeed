@@ -6,7 +6,7 @@ const path = require('path');
 const { decideRun } = require('./lib/schedule');
 const { CLAIM_PATH, evaluateClaim, updateClaimDoc, SlotTaken } = require('./lib/claim');
 const { fetchFeeds, assembleCandidates } = require('./lib/rss');
-const { orderPool, buildSameEventPrompt, applySameEvent } = require('./lib/pick');
+const { orderPool, buildSameEventPrompt, classifySameEvent, finalizeSameEvent } = require('./lib/pick');
 const { fetchArticles } = require('./lib/articles');
 const { parseModelArray, runQuality, applyAccuracyFix, layoutErrors, mergeLiCaption, assemblePublish, mergeHistory } = require('./lib/quality');
 const { sourceCheckAll, verifyCandidate, checkLiExpansion } = require('./lib/factcheck');
@@ -231,9 +231,20 @@ async function main() {
       maxTokens: 3000,
       temperature: 0
     });
-    const dropped = applySameEvent(ordered.pool, assembled.postedCompact, sameText);
-    console.log('Same-event kept ' + dropped.candidates.length + ', skipped ' + dropped.sameEventSkipped.length);
-    dropped.sameEventSkipped.forEach(s => console.log('  same-event skip: ' + s.title + ' => ' + (s.matched || s.reason)));
+    const classified = classifySameEvent(ordered.pool, assembled.postedCompact, sameText);
+    // A repeat verdict whose match shares no key entity (or is not in the history) gets one confirming call
+    // with just that pair. Unsure counts as a repeat; an unreadable answer stops the run.
+    const confirmTexts = {};
+    for (const r of classified.filter(x => x.status === 'confirm')) {
+      confirmTexts[r.i] = await claudeMessage(env.ANTHROPIC_API_KEY, {
+        model: cfg.anthropicModel, prompt: r.prompt, maxTokens: 300, temperature: 0
+      });
+    }
+    const dropped = finalizeSameEvent(ordered.pool, classified, confirmTexts);
+    console.log('Same-event kept ' + dropped.candidates.length + ', skipped ' + dropped.sameEventSkipped.length
+      + ', repeat verdicts overturned after a pair check ' + dropped.sameEventOverturned.length);
+    dropped.sameEventSkipped.forEach(s => console.log('  same-event skip: ' + s.title + ' => ' + (s.matched || '') + ' (' + s.reason + ')'));
+    dropped.sameEventOverturned.forEach(s => console.log('  same-event overturned (new): ' + s.title + ' vs ' + s.wrongMatch + ' (' + s.note + '; ' + s.why + ')'));
 
     const articles = await fetchArticles(dropped.candidates);
     articles.usable.filter(c => !c.photoOk).forEach(c => console.log('  photo skip: ' + c.title + ' (' + c.photoProblem + ')'));
@@ -339,6 +350,7 @@ async function main() {
         sourceCheck: sourceCheckLog,
         photo: qc.story.ogImage,
         sameEventSkipped: dropped.sameEventSkipped,
+        sameEventOverturned: dropped.sameEventOverturned,
         cheapDedupSkipped: assembled.dedupSkipped,
         historyCounts: assembled.historyCounts,
         liWarning: published.liWarning,

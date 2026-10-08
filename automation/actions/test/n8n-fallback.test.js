@@ -132,3 +132,63 @@ test('n8n Facebook branch: enabled, after IG Publish, same caption as Actions (b
   const out = eval('igCaption' + m[1]);
   assert.equal(out, buildFb(ig));
 });
+
+// ---- same-event check (automation/n8n/sync_same_event.py inlines lib/sameevent.js) ----
+const SE_SRC = fs.readFileSync(path.join(__dirname, '../lib/sameevent.js'), 'utf8');
+const SE_LIB = SE_SRC.slice(0, SE_SRC.indexOf('// ---- end of shared same-event code ----')).trimEnd();
+
+test('n8n same-event nodes carry the current lib/sameevent.js (run sync_same_event.py after editing it) and are wired in order', () => {
+  for (const n of ['Pick Slot Story', 'Same-Event Verify', 'Drop Same-Event Repeats']) {
+    assert.ok(code(n).includes(SE_LIB), n + ' is out of date with lib/sameevent.js');
+  }
+  assert.match(code('Pick Slot Story'), /buildSameEventPrompt\(pool, base\.postedCompact\)/);
+  assert.deepEqual(next('Pick Slot Story'), ['Claude Same-Event Check']);
+  assert.deepEqual(next('Claude Same-Event Check'), ['Same-Event Verify']);
+  assert.deepEqual(next('Same-Event Verify'), ['Claude Same-Event Confirm']);
+  assert.deepEqual(next('Claude Same-Event Confirm'), ['Drop Same-Event Repeats']);
+  assert.deepEqual(next('Drop Same-Event Repeats'), ['Fetch Articles']);
+  const c = NODES['Claude Same-Event Confirm'];
+  assert.equal(c.credentials.httpHeaderAuth.id, 'aifeedAnthrop001');
+  assert.equal(c.onError, 'continueRegularOutput'); // API error = unreadable confirm = run stops in Drop
+  assert.match(c.parameters.jsonBody, /temperature: 0/);
+  assert.match(c.parameters.jsonBody, /\$json\.prompt/);
+});
+
+test('n8n same-event nodes: SynthID false positive overturned by the pair confirm, real repeat kept out', async () => {
+  const compact = [
+    { src: 'site', date: '2026-10-06', outlet: '9to5google.com', title: 'ChatGPT Is Now Putting Ads in Your Chats', summary: 'OpenAI has started rolling out ads to free users.' },
+    { src: 'site', date: '2026-09-29', outlet: 'theverge.com', title: 'AMD Buys World Labs for Over $8 Billion to Chase Nvidia in AI', summary: 'AMD is acquiring World Labs.' }
+  ];
+  const fresh = [
+    { title: 'Google rolls out improved SynthID AI content detector, now available globally', source: 'theverge.com', canonUrl: 'a' },
+    { title: 'OpenAI begins showing advertisements to free-tier users', source: 'cnbc.com', canonUrl: 'b' },
+    { title: 'Manus raises $500 million', source: 'techcrunch.com', canonUrl: 'c' }
+  ];
+  const out = {
+    Config: [{ slot: 1, today: '2026-10-08' }],
+    'Fetch RSS + Dedup': [{ fresh, history: { posted: [], rankings: {} }, postedCompact: compact }]
+  };
+  out['Pick Slot Story'] = await runNode('Pick Slot Story', out, [{ content: [{ text: '[{"index":1},{"index":2},{"index":3}]' }] }]);
+  assert.match(out['Pick Slot Story'][0].sameEventPrompt, /Never compare candidates with each other/);
+  out['Claude Same-Event Check'] = [{ content: [{ type: 'text', text: JSON.stringify([
+    { c: 1, repeat: true, match: 'P2', matchTitle: compact[1].title, entity: 'Google', event: 'SynthID rollout' },
+    { c: 2, repeat: true, match: 'P1', matchTitle: compact[0].title, entity: 'OpenAI', event: 'ChatGPT ads' },
+    { c: 3, repeat: false, match: null }
+  ]) }] }];
+  out['Same-Event Verify'] = await runNode('Same-Event Verify', out, out['Claude Same-Event Check']);
+  assert.equal(out['Same-Event Verify'].length, 1);
+  assert.equal(out['Same-Event Verify'][0].key, 0);
+  assert.match(out['Same-Event Verify'][0].prompt, /SynthID[\s\S]*AMD Buys World Labs/);
+  const confirm = text => out['Same-Event Verify'].map(() => ({ content: [{ type: 'text', text }] }));
+  const r = (await runNode('Drop Same-Event Repeats', out, confirm('{"same": false, "why": "different companies"}')))[0];
+  assert.deepEqual(r.candidates.map(c => c.canonUrl), ['a', 'c']);
+  assert.deepEqual(r.sameEventSkipped.map(s => s.matched), [compact[0].title]);
+  await assert.rejects(runNode('Drop Same-Event Repeats', out, [{ error: { message: 'HTTP 529' } }]), /no readable verdict/);
+  // nothing to confirm -> one dummy item keeps the HTTP node fed and is ignored
+  out['Claude Same-Event Check'] = [{ content: [{ type: 'text', text: '[{"c":1,"repeat":false},{"c":2,"repeat":true,"match":"P1","matchTitle":"ChatGPT Is Now Putting Ads in Your Chats"},{"c":3,"repeat":false}]' }] }];
+  out['Same-Event Verify'] = await runNode('Same-Event Verify', out, out['Claude Same-Event Check']);
+  assert.equal(out['Same-Event Verify'][0].key, null);
+  const r2 = (await runNode('Drop Same-Event Repeats', out, confirm('[]')))[0];
+  assert.deepEqual(r2.candidates.map(c => c.canonUrl), ['a', 'c']);
+  await assert.rejects(runNode('Same-Event Verify', out, [{ content: [{ text: 'oops' }] }]), /no readable verdict/);
+});
