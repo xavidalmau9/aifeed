@@ -45,7 +45,7 @@ tpl = tpl.replace("const slug = params.get('slug');", "const slug = params.get('
 HEAD_RE = re.compile(r"<title>.*?</title>\s*<meta name=\"description\"[^>]*>", re.S)
 org = {"@type": "Organization", "name": "AIFeed.run", "url": SITE + "/",
        "logo": {"@type": "ImageObject", "url": SITE + "/og-image.png"},
-       "sameAs": ["https://instagram.com/aifeed.run", "https://www.linkedin.com/company/aifeed-run"]}
+       "sameAs": ["https://www.instagram.com/aifeed.run/", "https://www.facebook.com/profile.php?id=61594868144059", "https://www.linkedin.com/company/aifeed-run"]}
 
 for i, p in enumerate(items):
     slug, url = p["slug"], f"{SITE}/news/{p['slug']}/"
@@ -114,8 +114,8 @@ sm.append("</urlset>")
 open(os.path.join(ROOT, "sitemap.xml"), "w").write("\n".join(sm) + "\n")
 
 rss = ['<?xml version="1.0" encoding="UTF-8"?>', '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:aifeed="https://aifeed.run/ns/1.0"><channel>',
-       "<title>AIFeed.run — Daily AI News</title>", f"<link>{SITE}/</link>",
-       "<description>The top AI stories every day, zero noise.</description>", "<language>en-us</language>",
+       "<title>AIFeed.run — The AI news that matters.</title>", f"<link>{SITE}/</link>",
+       "<description>The AI news that matters. Top AI stories, explained in 60 seconds.</description>", "<language>en-us</language>",
        f'<atom:link href="{SITE}/feed.xml" rel="self" type="application/rss+xml" />']
 for p in items[:50]:
     pub = dt(p.get("publishedAt")); u = f"{SITE}/news/{p['slug']}/"

@@ -1,0 +1,63 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500&display=block" rel="stylesheet">
+<style>
+/* 1702x630 = exactly 2x Facebook's recommended 851x315 (2.70:1), the shape of the live desktop cover box (measured 2.696:1). */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1702px;height:630px;overflow:hidden;background:#0d0b14}
+.wrap{position:relative;width:1702px;height:630px;overflow:hidden;font-family:Inter,sans-serif;color:#fff;
+  background:
+    radial-gradient(ellipse 700px 380px at 50% 50%, rgba(109,63,232,.30) 0%, rgba(109,63,232,.10) 45%, rgba(13,11,20,0) 75%),
+    radial-gradient(circle 420px at 4% 115%, rgba(255,138,0,.15) 0%, rgba(255,138,0,0) 70%),
+    radial-gradient(circle 460px at 97% -18%, rgba(192,64,255,.20) 0%, rgba(192,64,255,0) 70%),
+    #0d0b14}
+.stars{position:absolute;inset:0;opacity:.55;
+  background-image:
+    radial-gradient(1.4px 1.4px at 7% 22%, #fff 50%, transparent 51%),radial-gradient(1px 1px at 15% 64%, #fff 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 23% 12%, #fff 50%, transparent 51%),radial-gradient(1px 1px at 31% 82%, #fff 50%, transparent 51%),
+    radial-gradient(1.3px 1.3px at 12% 41%, #fff 50%, transparent 51%),radial-gradient(1px 1px at 88% 18%, #fff 50%, transparent 51%),
+    radial-gradient(1.4px 1.4px at 93% 57%, #fff 50%, transparent 51%),radial-gradient(1px 1px at 81% 79%, #fff 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 74% 9%, #fff 50%, transparent 51%),radial-gradient(1px 1px at 69% 90%, #fff 50%, transparent 51%),
+    radial-gradient(1.3px 1.3px at 97% 33%, #fff 50%, transparent 51%),radial-gradient(1px 1px at 4% 76%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 40% 6%, #fff 50%, transparent 51%),radial-gradient(1px 1px at 58% 95%, #fff 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 85% 44%, #fff 50%, transparent 51%),radial-gradient(1px 1px at 19% 90%, #fff 50%, transparent 51%)}
+.arcs{position:absolute;left:50%;top:50%;width:1300px;height:1300px;transform:translate(-50%,-45%);opacity:.09}
+.content{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;align-items:center;text-align:center}
+.badge{padding:10px 22px;border-radius:40px;font:800 20px Poppins;letter-spacing:.5px;background:linear-gradient(90deg,#ff8a00,#c040ff);box-shadow:0 10px 40px rgba(192,64,255,.25)}
+.logo{margin-top:16px;font:800 95px/1 Poppins;letter-spacing:-2px;background:linear-gradient(90deg,#ff8a00,#c040ff);-webkit-background-clip:text;color:transparent;padding:0 0 10px}
+.logo b{font-weight:800;color:#fff;-webkit-text-fill-color:#fff}
+.rule{width:56px;height:4px;border-radius:3px;background:linear-gradient(90deg,#ff8a00,#c040ff);margin:8px 0 24px}
+.tag{font:700 38px/1.12 Poppins;letter-spacing:-.5px}
+.sub{margin-top:8px;font:400 26px/1.3 Inter;color:#d9d6e3}
+.sub .pink{color:#ff6f91;font-weight:500}
+.cta{margin-top:26px;padding:9px 22px;border-radius:40px;border:1.5px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);font:500 22px Inter;color:#bdb8cc;letter-spacing:.2px}
+.cta b{color:#fff;font-weight:500}
+</style></head><body><div class="wrap">
+<div class="stars"></div>
+<svg class="arcs" viewBox="0 0 500 500" fill="none" stroke="#a070ff" stroke-linecap="round">
+  <path d="M140.29,245.18 A115.95,115.95 0 0 1 359.71,245.18" stroke-width="7"/>
+  <path d="M174.18,227.12 A80.05,80.05 0 0 1 325.82,227.12" stroke-width="7"/>
+  <path d="M206.06,211.25 A46.07,46.07 0 0 1 293.94,211.25" stroke-width="7"/>
+</svg>
+<div class="content">
+  <div class="badge">AIFEED.RUN • AI NEWS</div>
+  <div class="logo">aifeed<b>.run</b></div>
+  <div class="rule"></div>
+  <div class="tag">The AI news that matters.</div>
+  <div class="sub">Top AI stories, explained in <span class="pink">60 seconds</span>.</div>
+  <div class="cta">Free weekly AI brief at <b>aifeed.run</b></div>
+</div>
+</div><script>
+// Fit check (renderer returns 422 if not ok): every text element must sit >= 12% from top/bottom
+// and inside x 311-1100: visible in a 16:9 phone crop whether Facebook anchors it left (x 0-1120) or centered (x 291-1411), with 20 px margin.
+document.fonts.ready.then(function(){
+  const R={ok:true,notes:[]}, H=630, W=1702;
+  const els=[...document.querySelectorAll('.content > *')].map(e=>{if(!e.textContent.trim())return e.getBoundingClientRect();const r=document.createRange();r.selectNodeContents(e);const t=r.getBoundingClientRect(),b=e.getBoundingClientRect();return {top:b.top,bottom:b.bottom,left:Math.min(t.left,b.left),right:Math.max(t.right,b.right)};});
+  const top=Math.min(...els.map(r=>r.top)), bot=Math.max(...els.map(r=>r.bottom));
+  const l=Math.min(...els.map(r=>r.left)), rt=Math.max(...els.map(r=>r.right));
+  R.top=top; R.bottom=bot; R.left=l; R.right=rt; R.padTopPct=+(top/H*100).toFixed(1); R.padBotPct=+((H-bot)/H*100).toFixed(1);
+  if(top<H*.12||bot>H*.88){R.ok=false;R.notes.push('vertical padding < 12%');}
+  if(l<311||rt>1100){R.ok=false;R.notes.push('outside x 311-1100');}
+  R.widths=[...document.querySelectorAll('.content > *')].map(e=>{const r=document.createRange();r.selectNodeContents(e);const b=r.getBoundingClientRect();return e.className+':'+Math.round(b.left)+'-'+Math.round(b.right)});
+  window.__fitReport=R;
+});
+</script></body></html>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:aifeed="https://aifeed.run/ns/1.0"><channel>
-<title>AIFeed.run — Daily AI News</title>
+<title>AIFeed.run — The AI news that matters.</title>
 <link>https://aifeed.run/</link>
-<description>The top AI stories every day, zero noise.</description>
+<description>The AI news that matters. Top AI stories, explained in 60 seconds.</description>
 <language>en-us</language>
 <atom:link href="https://aifeed.run/feed.xml" rel="self" type="application/rss+xml" />
 <item><title>Microsoft is giving Copilot more control over Windows and your files</title><link>https://aifeed.run/news/microsoft-is-giving-copilot-more-control/</link><guid isPermaLink="true">https://aifeed.run/news/microsoft-is-giving-copilot-more-control/</guid><pubDate>Thu, 08 Oct 2026 12:53:17 +0000</pubDate><description>Microsoft&#x27;s upgraded Copilot will access local PC files and execute OS actions via Hybrid Intelligence, rolling out next couple months.</description><category>Tools</category><aifeed:sourceName>The Verge</aifeed:sourceName><aifeed:sourceUrl>https://www.theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence</aifeed:sourceUrl><enclosure url="https://aifeed.run/images/aifeed_microsoft-is-giving-copilot-more-control_20261008_am.png" type="image/png" length="0" /></item>
