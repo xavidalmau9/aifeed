@@ -3,10 +3,11 @@
 //
 // 1. One Claude call returns, per candidate: repeat yes/no, the matched posted item (P number + title),
 //    the shared company/entity and the shared event.
-// 2. A "repeat" is accepted only if the matched posted item exists AND it shares a key entity with the
-//    candidate (same company/organization/person, aliases like ChatGPT -> OpenAI included).
-// 3. Otherwise (matched item unrelated, or no resolvable match) one confirming call checks just that single
-//    pair. same=true or unsure -> repeat; same=false -> the candidate is new.
+// 2. A "repeat" is accepted only if the matched posted item exists AND shares a key entity with the candidate
+//    (company/organization/person, aliases like ChatGPT -> OpenAI) plus an event word, or the same big amount.
+//    Sharing only a big company (Google SynthID vs Google Gemini calls) is not enough on its own.
+// 3. Otherwise (matched item unrelated, company-only, or no resolvable match) one confirming call checks just
+//    that single pair. same=true or unsure -> repeat; same=false -> the candidate is new.
 // 4. A candidate with no verdict counts as a repeat; an unreadable answer (first call or confirm) stops the run.
 
 const SE_STOP = new Set(('a an the of to in on for and or with is are was were be been being by at from as its it this that these those '
@@ -28,7 +29,7 @@ const SE_STOP = new Set(('a an the of to in on for and or with is are was were b
   + 'smarter powerful advanced major huge massive key top best worst bad good real fake using use uses used help helps '
   + 'work works working way ways thing things move moves push pushes calls call called show shows showing shown '
   + 'lets let like now news story stories inside behind under across against between without within around back '
-  + 'online web internet search video videos image images photo photos voice text chat chats ads ad '
+  + 'online web internet search video videos image images photo photos voice text chat chats '
   + 'government federal state states law laws rule rules court lawsuit sues sued judge '
   + 'build builds built building create creates created creating detect detects detector detection content made'
 ).split(/\s+/));
@@ -37,8 +38,14 @@ const SE_ALIAS = {
   gemini: 'google', deepmind: 'google', alphabet: 'google', youtube: 'google', bard: 'google', synthid: 'google', android: 'google',
   claude: 'anthropic', copilot: 'microsoft', bing: 'microsoft', azure: 'microsoft', nadella: 'microsoft',
   llama: 'meta', instagram: 'meta', whatsapp: 'meta', facebook: 'meta', zuckerberg: 'meta',
-  grok: 'xai', aws: 'amazon', alexa: 'amazon', siri: 'apple', iphone: 'apple', huang: 'nvidia'
+  grok: 'xai', aws: 'amazon', alexa: 'amazon', siri: 'apple', iphone: 'apple', huang: 'nvidia',
+  advertisements: 'ads', advertisement: 'ads', advertising: 'ads', adverts: 'ads', advert: 'ads', sponsored: 'ads'
 };
+// Big companies with many announcements: sharing only one of these is NOT enough to accept a repeat
+// (Google SynthID vs Google Gemini phone calls); an event word or amount must match too, else pair confirm.
+const SE_COMPANY = new Set(('openai google anthropic microsoft meta xai amazon apple nvidia amd intel ibm nasa samsung tesla '
+  + 'spacex qualcomm oracle salesforce adobe perplexity mistral deepseek alibaba baidu tencent bytedance tiktok huawei '
+  + 'softbank uber netflix disney cursor github slack zoom spotify pentagon congress china chinese europe european trump').split(/\s+/));
 function seTokens(text) {
   return String(text || '').toLowerCase()
     .replace(/[\u2018\u2019\u02bc]/g, "'").replace(/'s\b/g, '')
@@ -65,21 +72,31 @@ function seSet(...texts) { const s = new Set(); texts.forEach(t => seTokens(t).f
 function seCandText(c) { return [c && c.title, c && c.desc ? String(c.desc).slice(0, 300) : ''].join(' \n '); }
 function sePostedText(p) { return [p && p.title, p && p.summary].join(' \n '); }
 
-// Key entities shared by a candidate and a posted item: non-generic words in BOTH titles, the same big money
-// amount, plus the model-named entity when all of its words appear on both sides (title + description/summary).
-function sharedEntities(cand, posted, modelEntities) {
+// Evidence that a candidate and a posted item are the same event.
+// company: big-company names in both (at least one title), or the model-named entity found on both sides.
+// core: other key words (event/product/small-company words, 6-letter stems) in one title and the other side.
+// amounts: the same >= $100M amount on both sides.
+// ok = amount, or company + core, or 2+ core words. Company alone is not enough (pair confirm decides).
+const seStem = w => w.slice(0, 6);
+function sameEventEvidence(cand, posted, modelEntities) {
   const cTitle = seSet(cand && cand.title), cAll = seSet(seCandText(cand));
   const pTitle = seSet(posted && posted.title), pAll = seSet(sePostedText(posted));
-  const out = new Set();
-  cTitle.forEach(w => { if (pTitle.has(w)) out.add(w); });
-  const pAmt = seAmounts(sePostedText(posted));
-  seAmounts(seCandText(cand)).forEach(a => { if (pAmt.has(a)) out.add(a); });
+  const company = new Set(), core = new Set(), amounts = new Set();
+  [...cAll].filter(w => SE_COMPANY.has(w) && pAll.has(w) && (cTitle.has(w) || pTitle.has(w))).forEach(w => company.add(w));
   (Array.isArray(modelEntities) ? modelEntities : [modelEntities]).filter(Boolean).forEach(e => {
     const toks = seTokens(e);
-    if (toks.length && toks.every(w => cAll.has(w) && pAll.has(w))) toks.forEach(w => out.add(w));
+    if (toks.length && toks.every(w => cAll.has(w) && pAll.has(w))) toks.forEach(w => (SE_COMPANY.has(w) ? company : core).add(w));
   });
-  return [...out];
+  const stems = set => new Set([...set].filter(w => !SE_COMPANY.has(w)).map(seStem));
+  const cT = stems(cTitle), cA = stems(cAll), pT = stems(pTitle), pA = stems(pAll);
+  cT.forEach(w => { if (pA.has(w)) core.add(w); });
+  pT.forEach(w => { if (cA.has(w)) core.add(w); });
+  const pAmt = seAmounts(sePostedText(posted));
+  seAmounts(seCandText(cand)).forEach(a => { if (pAmt.has(a)) amounts.add(a); });
+  const ok = amounts.size > 0 || (company.size > 0 && core.size > 0) || core.size >= 2;
+  return { ok, company: [...company], core: [...core], amounts: [...amounts], shared: [...company, ...core, ...amounts] };
 }
+function sharedEntities(cand, posted, modelEntities) { return sameEventEvidence(cand, posted, modelEntities).shared; }
 
 function sePostedLine(p, i) {
   return `P${i + 1}. [${p.date || ''}${p.outlet ? ' ' + p.outlet : ''}] ${p.title}${p.summary && p.src !== 'instagram' ? ' - ' + p.summary : ''}`;
@@ -185,13 +202,14 @@ function classifySameEvent(pool, postedCompact, modelText) {
     const m = resolveMatch(v, compact);
     const base = { i, title: c.title, why: v.why || '', entity: v.entity || null, event: v.event || null };
     if (m) {
-      const shared = sharedEntities(c, m.item, v.entity);
-      if (shared.length) {
-        return Object.assign(base, { status: 'repeat', matchIdx: m.idx, matched: m.item.title, shared,
-          reason: 'same event: ' + (v.event || v.why || '') + ' [shared: ' + shared.join(', ') + ']' });
+      const ev = sameEventEvidence(c, m.item, [v.entity, v.event]);
+      if (ev.ok) {
+        return Object.assign(base, { status: 'repeat', matchIdx: m.idx, matched: m.item.title, shared: ev.shared,
+          reason: 'same event: ' + (v.event || v.why || '') + ' [shared: ' + ev.shared.join(', ') + ']' });
       }
-      return Object.assign(base, { status: 'confirm', matchIdx: m.idx, matched: m.item.title,
-        note: 'model match shares no key entity', prompt: buildConfirmPrompt(c, m.item) });
+      return Object.assign(base, { status: 'confirm', matchIdx: m.idx, matched: m.item.title, shared: ev.shared,
+        note: ev.shared.length ? 'model match shares only ' + ev.shared.join(', ') + ' (no shared event words)' : 'model match shares no key entity',
+        prompt: buildConfirmPrompt(c, m.item) });
     }
     const p = bestPair(c, compact, v.entity);
     if (!p) return Object.assign(base, { status: 'new', note: 'repeat verdict but no posted history' });
@@ -228,6 +246,6 @@ function finalizeSameEvent(pool, classified, confirmTexts) {
 // ---- end of shared same-event code ----
 
 module.exports = {
-  SE_STOP, SE_ALIAS, seTokens, seAmounts, sharedEntities, buildSameEventPrompt, resolveMatch, buildConfirmPrompt, parseConfirm,
+  SE_STOP, SE_ALIAS, SE_COMPANY, seTokens, seAmounts, sameEventEvidence, sharedEntities, buildSameEventPrompt, resolveMatch, buildConfirmPrompt, parseConfirm,
   classifySameEvent, finalizeSameEvent
 };

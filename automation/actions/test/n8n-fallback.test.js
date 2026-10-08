@@ -127,7 +127,7 @@ test('n8n Facebook branch: enabled, after IG Publish, same caption as Actions (b
   const m = expr.match(/^=\{\{ \$\('Validate PNG \+ Prep Commits'\)\.first\(\)\.json\.igCaption(\.replace\(.*\)) \}\}$/);
   assert.ok(m, 'FB message expression shape changed');
   const ig = ['🔥 Hook', 'Para one.', 'Para two.', 'Para three.', 'Source: The Verge · https://www.theverge.com/x',
-    '📩 Free daily AI brief → link in bio', '#A #B #C #D #E'].join('\n' + SPACER + '\n');
+    '📩 Free weekly AI brief → link in bio', '#A #B #C #D #E'].join('\n' + SPACER + '\n');
   const igCaption = ig;
   const out = eval('igCaption' + m[1]);
   assert.equal(out, buildFb(ig));

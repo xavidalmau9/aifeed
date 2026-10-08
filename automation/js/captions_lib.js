@@ -13,13 +13,13 @@ function tags5(arr) { const out = []; for (const t of (arr || []).map(normTag)) 
 function cleanUrl(u) { return String(u || '').trim().replace(/[?#].*$/, m => /utm_|fbclid|gclid/.test(m) ? '' : m); }
 function buildIg(g, url) {
   const hook = normText(g.igHook), paras = (g.igParagraphs || []).map(normText).filter(Boolean).slice(0, 4), tg = tags5(g.igHashtags);
-  const blocks = [hook, ...paras, `Source: ${normText(g.outlet)} · ${cleanUrl(url)}`, '📩 Free daily AI brief → link in bio', tg.map(t => '#' + t).join(' ')];
+  const blocks = [hook, ...paras, `Source: ${normText(g.outlet)} · ${cleanUrl(url)}`, '📩 Free weekly AI brief → link in bio', tg.map(t => '#' + t).join(' ')];
   return blocks.join(`\n${SPACER}\n`);
 }
 function buildLi(g, url) {
   const paras = [normText(g.liHook), ...(g.liParagraphs || []).map(normText).filter(Boolean), normText(g.liTakeaway)].filter(Boolean);
   const tg = tags5(g.liHashtags);
-  return [...paras, `Source: ${normText(g.outlet)} · ${cleanUrl(url)}\nGet the daily AI brief: https://aifeed.run`, tg.map(t => '#' + t).join(' ')].join('\n\n');
+  return [...paras, `Source: ${normText(g.outlet)} · ${cleanUrl(url)}\nGet the free weekly AI brief at aifeed.run`, tg.map(t => '#' + t).join(' ')].join('\n\n');
 }
 function checkIg(c, url) {
   const e = [], lines = c.split('\n');
@@ -35,7 +35,7 @@ function checkIg(c, url) {
   if (blocks.slice(0, -1).some(b => b.split('\n').length > 1)) e.push('paragraph contains line break');
   const src = blocks[n - 3] || '';
   if (!/^Source: [^·\n]+ · https?:\/\/\S+$/.test(src)) e.push('source line malformed');
-  if ((blocks[n - 2] || '') !== '📩 Free daily AI brief → link in bio') e.push('brief CTA line malformed (must sit alone after a spacer below Source)');
+  if ((blocks[n - 2] || '') !== '📩 Free weekly AI brief → link in bio') e.push('brief CTA line malformed (must sit alone after a spacer below Source)');
   if ((c.match(/https?:\/\//g) || []).length !== 1) e.push('URL must appear exactly once');
   if (!/^(#[A-Za-z0-9]+ ){4}#[A-Za-z0-9]+$/.test(blocks[n - 1] || '')) e.push('hashtag line must be exactly 5 tags');
   if ((c.match(/#[A-Za-z0-9]+/g) || []).length !== 5) e.push('hashtags outside last line');
@@ -49,7 +49,8 @@ function checkLi(c) {
   const e = [];
   if (c !== c.trim()) e.push('edge whitespace');
   if (/\n{3,}/.test(c) || / {2,}/.test(c) || c.includes(SPACER)) e.push('spacing');
-  if ((c.match(/https?:\/\//g) || []).length !== 2) e.push('links: want source URL once + aifeed.run once');
+  if ((c.match(/https?:\/\//g) || []).length !== 1) e.push('links: want the source URL once');
+  if (!c.includes('\nGet the free weekly AI brief at aifeed.run\n')) e.push('weekly brief line missing');
   if (!/\n\n(#[A-Za-z0-9]+ ){4}#[A-Za-z0-9]+$/.test(c)) e.push('hashtag line');
   return e;
 }

@@ -16,7 +16,7 @@ const slug = story.title.toLowerCase().replace(/[^a-z0-9\s]/g, '').trim().split(
 const stamp = cfg.today.replace(/-/g, '');
 const pngName = `aifeed_${slug}_${stamp}_${cfg.slot === 1 ? 'am' : 'pm'}.png`;
 const nowIso = new Date().toISOString();
-const toHtml = cap => cap.split(/\n\n+/).map(p => p.trim()).filter(p => p && !/^Source:/i.test(p) && !/^https?:/.test(p) && !/^Get the daily/i.test(p) && !/^#\w/.test(p)).map(p => '<p>' + p.replace(/\n/g, ' ') + '</p>').join('\n');
+const toHtml = cap => cap.split(/\n\n+/).map(p => p.trim()).filter(p => p && !/^Source:/i.test(p) && !/^https?:/.test(p) && !/^Get the (free )?(daily|weekly)/i.test(p) && !/^#\w/.test(p)).map(p => '<p>' + p.replace(/\n/g, ' ') + '</p>').join('\n');
 const post = {
   id: slug + '-' + stamp, slug, headline: story.title, summary: gen.summary,
   body: toHtml(liCaption), category: category.charAt(0) + category.slice(1).toLowerCase(),

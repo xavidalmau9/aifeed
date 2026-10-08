@@ -140,7 +140,7 @@ function slugFromTitle(title) {
 }
 
 function toHtml(cap) {
-  return String(cap || '').split(/\n\n+/).map(p => p.trim()).filter(p => p && !/^Source:/i.test(p) && !/^https?:/.test(p) && !/^Get the daily/i.test(p) && !/^#\w/.test(p)).map(p => '<p>' + p.replace(/\n/g, ' ') + '</p>').join('\n');
+  return String(cap || '').split(/\n\n+/).map(p => p.trim()).filter(p => p && !/^Source:/i.test(p) && !/^https?:/.test(p) && !/^Get the (free )?(daily|weekly)/i.test(p) && !/^#\w/.test(p)).map(p => '<p>' + p.replace(/\n/g, ' ') + '</p>').join('\n');
 }
 
 function assemblePublish({ story, gen, category, liCaption, liWarning, today, slot, siteUrl, now = new Date() }) {

@@ -120,3 +120,22 @@ test('the same big money amount counts as a shared key (story that never names t
   // SynthID has no amount and no shared word -> still goes to the pair confirm
   assert.equal(classifySameEvent([SYNTH2], COMPACT, JSON.stringify([v(1, true, P(AMD))]))[0].status, 'confirm');
 });
+
+test('sharing only a big company is not enough: SynthID vs "Gemini Can Now Make Your Phone Calls" (Oct 8 dry run) needs the pair confirm', () => {
+  const GEM = { src: 'site', date: '2026-09-25', outlet: 'theverge.com', title: 'Gemini Can Now Make Your Phone Calls for You', summary: "Google's Gemini can now place business phone calls on your behalf, waiting on hold, navigating menus, and reaching a human, all handled by AI." };
+  const SYNTH3 = { title: 'Is That Picture AI? Google\u2019s SynthID Detector Launches to Identify AI-Generated Media', source: 'cnet.com' };
+  const compact = [GEM, ...COMPACT];
+  const text = JSON.stringify([
+    v(1, true, 'P1', { matchTitle: GEM.title, entity: 'Google', event: 'SynthID AI content detector global launch' }),
+    v(2, true, 'P1', { matchTitle: GEM.title, entity: 'Google', event: 'SynthID detector launch' }),
+    v(3, true, 'P1', { matchTitle: GEM.title, entity: 'Google', event: 'Gemini agent' })
+  ]);
+  const pool = [SYNTH1, SYNTH3, GEMINI_AGENT];
+  const cls = classifySameEvent(pool, compact, text);
+  assert.deepEqual(cls.map(r => r.status), ['confirm', 'confirm', 'confirm']);
+  assert.match(cls[0].note, /shares only google/);
+  const out = finalizeSameEvent(pool, cls, { 0: CONFIRM_NO, 1: CONFIRM_NO, 2: CONFIRM_NO });
+  assert.equal(out.candidates.length, 3);
+  // company + an event word is still accepted without a confirm (ChatGPT ads rewrite)
+  assert.equal(classifySameEvent([ADS_REWRITE], compact, JSON.stringify([v(1, true, 'P4', { matchTitle: ADS, entity: 'OpenAI', event: 'ads for free ChatGPT users' })]))[0].status, 'repeat');
+});
