@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<url><loc>https://aifeed.run/</loc><lastmod>2026-10-07</lastmod><changefreq>hourly</changefreq></url>
+<url><loc>https://aifeed.run/</loc><lastmod>2026-10-08</lastmod><changefreq>hourly</changefreq></url>
+<url><loc>https://aifeed.run/news/microsoft-is-giving-copilot-more-control/</loc><lastmod>2026-10-08</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_microsoft-is-giving-copilot-more-control_20261008_am.png</image:loc></image:image></url>
 <url><loc>https://aifeed.run/news/openai-drops-another-batch-of-mathematical/</loc><lastmod>2026-10-07</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_openai-drops-another-batch-of-mathematical_20261007_pm.png</image:loc></image:image></url>
 <url><loc>https://aifeed.run/news/chatgpt-introduces-ads/</loc><lastmod>2026-10-06</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_chatgpt_ads_20261006.png</image:loc></image:image></url>
 <url><loc>https://aifeed.run/news/altman-accept-bad-things/</loc><lastmod>2026-10-05</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_altman_accept_bad_things_20261005.png</image:loc></image:image></url>
