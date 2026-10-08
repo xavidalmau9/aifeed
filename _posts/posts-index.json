@@ -1,5 +1,25 @@
 [
   {
+    "id": "google-cloud-announces-gemini-agent-as-20261008",
+    "slug": "google-cloud-announces-gemini-agent-as",
+    "headline": "Google Cloud announces ‘Gemini agent’ as ‘universal agent for work’",
+    "summary": "Google Cloud announced Gemini agent, a universal enterprise assistant that works as personal assistant or team member.",
+    "body": "<p>Google Cloud unveils Gemini agent as universal enterprise assistant.</p>\n<p>Google Cloud announced the Gemini agent at Gemini at Work 2026, positioning it as a universal agent for enterprise work. Available in Gemini Enterprise, Workspace, and third-party services, it takes objectives rather than detailed instructions from users.</p>\n<p>The agent can answer questions, handle knowledge work, create media, and write or run code. It functions both as a personal assistant and as a team member — operating as a project manager or role-specific analyst within organizations.</p>\n<p>The Gemini agent selects the optimal model for each job, currently supporting Gemini and Claude families with future support for private and open models. This approach aims to deliver optimal quality and reduce costs while using sub-agents to tackle multi-step tasks.</p>\n<p>The agent maintains a single set of memories, context, and personalization graph in the cloud. It integrates via API as a headless agent without requiring a dedicated UI and supports interaction through Gmail, Docs, Sheets, Slides, Chat, command line, Workspace, Slack, and Microsoft 365.</p>\n<p>The Gemini agent is currently in private preview and will become widely available soon for Workspace customers with select Business and Enterprise plans, available from any device and channel.</p>\n<p>Google Cloud's Gemini agent is a model-agnostic enterprise assistant for work automation and team coordination.</p>",
+    "category": "Tools",
+    "imageUrl": "https://aifeed.run/images/aifeed_google-cloud-announces-gemini-agent-as_20261008_pm.png",
+    "image": "images/aifeed_google-cloud-announces-gemini-agent-as_20261008_pm.png",
+    "sourceUrl": "https://9to5google.com/2026/10/08/gemini-agent-google-cloud/",
+    "publishedAt": "2026-10-08T21:56:16.170Z",
+    "hashtags": [
+      "GoogleCloud",
+      "GeminiAgent",
+      "EnterpriseAI",
+      "Workspace",
+      "AIAssistant"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "microsoft-is-giving-copilot-more-control-20261008",
     "slug": "microsoft-is-giving-copilot-more-control",
     "headline": "Microsoft is giving Copilot more control over Windows and your files",
