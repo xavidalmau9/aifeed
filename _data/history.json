@@ -1,6 +1,16 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-09T12:40:08.024Z",
+      "date": "2026-10-09",
+      "slot": 1,
+      "headline": "OpenAI doubles down on decision to fire three AI safety researchers",
+      "canonUrl": "theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers",
+      "slug": "openai-doubles-down-on-decision-to",
+      "image": "aifeed_openai-doubles-down-on-decision-to_20261009_am.png"
+    },
+    {
       "postedAt": "2026-10-08T21:56:16.170Z",
       "date": "2026-10-08",
       "slot": 2,
@@ -92,6 +102,68 @@
         "rank": 12,
         "title": "Mistral says \"Le Chonk\" can challenge the best AI models",
         "canonUrl": "arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models"
+      }
+    ],
+    "2026-10-09": [
+      {
+        "rank": 1,
+        "title": "OpenAI doubles down on decision to fire three AI safety researchers",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers"
+      },
+      {
+        "rank": 2,
+        "title": "USA Today becomes the latest publisher to sue OpenAI",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit"
+      },
+      {
+        "rank": 3,
+        "title": "Anthropic launches free AI security scans for open-source projects",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner"
+      },
+      {
+        "rank": 4,
+        "title": "Regulators are trying to protect you from being fired by AI – here’s how",
+        "canonUrl": "zdnet.com/innovation/how-state-regulators-protect-you-fired-by-ai"
+      },
+      {
+        "rank": 5,
+        "title": "The U.S. Nuclear Plant Fleet Is Leaning Into AI",
+        "canonUrl": "spectrum.ieee.org/ai-assistants-nuclear-power-plant"
+      },
+      {
+        "rank": 6,
+        "title": "Utah Now Allows AI to Scan Your Face and Prescribe Acne Medication",
+        "canonUrl": "cnet.com/tech/services-and-software/an-ai-doctor-in-utah-can-prescribe-medicine"
+      },
+      {
+        "rank": 7,
+        "title": "Is That Picture AI? Google’s SynthID Detector Launches to Identify AI-Generated Media",
+        "canonUrl": "cnet.com/tech/services-and-software/google-synthid-detector-launches"
+      },
+      {
+        "rank": 8,
+        "title": "This ‘Mind-Reading’ AI Is a Wiz at Figuring Out What You See",
+        "canonUrl": "cnet.com/tech/services-and-software/brain-it-ai-model-image-decoding-mind-reading-weizmann-institute"
+      },
+      {
+        "rank": 9,
+        "title": "Nvidia-backed Aussie AI firm Firmus withdraws historic IPO, citing market volatility",
+        "canonUrl": "cnbc.com/2026/10/09/nvidia-ai-firmus-ipo-.html"
+      },
+      {
+        "rank": 10,
+        "title": "U.S. suspends Microsoft, Adobe from green card labor program in foreign worker crackdown",
+        "canonUrl": "cnbc.com/2026/10/08/microsoft-adobe-green-card-labor-suspension.html"
+      },
+      {
+        "rank": 11,
+        "title": "Google’s AI note-taking app transcribes your meetings completely offline",
+        "canonUrl": "theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
+      },
+      {
+        "rank": 12,
+        "title": "Fired OpenAI safety researchers dispute their dismissals in open letter",
+        "canonUrl": "engadget.com/2281966/fired-openai-safety-researchers-dispute-their-dismissals-in-open-letter"
       }
     ]
   }

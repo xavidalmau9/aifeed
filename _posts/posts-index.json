@@ -1,5 +1,25 @@
 [
   {
+    "id": "openai-doubles-down-on-decision-to-20261009",
+    "slug": "openai-doubles-down-on-decision-to",
+    "headline": "OpenAI doubles down on decision to fire three AI safety researchers",
+    "summary": "OpenAI stands by firing three safety researchers, citing breach of trust over policy violations.",
+    "body": "<p>OpenAI defends firing three safety researchers over alleged breach of trust.</p>\n<p>OpenAI is standing firm on its decision to fire three safety researchers — Jasmine Wang, Tomek Korbak, and Mikita Balesni — after an internal investigation found they committed a significant breach of trust by violating clear policies on handling sensitive information. The company made the announcement in a post on X on Friday in response to an open letter the researchers published Thursday.</p>\n<p>The fired researchers claimed they were dismissed for raising safety concerns and said they had acted in line with OpenAI's mission and within working norms. OpenAI directly disputed this framing, insisting the decision was not about them speaking out about AI safety issues.</p>\n<p>OpenAI said an internal investigation uncovered breaches beyond what was outlined in the researchers' letter but declined to provide specific details about the nature of those additional violations.</p>\n<p>The safety of frontier systems has become an increasing concern for staff inside AI companies, with many calling for companies to slow down and do more to guard against potential consequences of building self-improving systems.</p>\n<p>OpenAI maintains the researchers were fired for policy violations, not raising safety concerns, contradicting their public claims.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_openai-doubles-down-on-decision-to_20261009_am.png",
+    "image": "images/aifeed_openai-doubles-down-on-decision-to_20261009_am.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers",
+    "publishedAt": "2026-10-09T12:40:08.024Z",
+    "hashtags": [
+      "OpenAI",
+      "AI",
+      "Safety",
+      "Tech",
+      "Controversy"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "google-cloud-announces-gemini-agent-as-20261008",
     "slug": "google-cloud-announces-gemini-agent-as",
     "headline": "Google Cloud announces ‘Gemini agent’ as ‘universal agent for work’",
