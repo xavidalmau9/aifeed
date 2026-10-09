@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI doubles down on decision to fire three AI safety researchers",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers",
-    "score": 94,
-    "reason": "Major controversy with concrete action; company leadership defending firing decision"
+    "headline": "'Pure insanity': Mathematicians will need years to make sense of OpenAI's latest drop",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
+    "score": 95,
+    "reason": "Major technical breakthrough; significant impact on research community; concrete evidence of AI advancement"
   },
   {
     "rank": 2,
-    "headline": "Anthropic launches free AI security scans for open-source projects",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+    "headline": "USA Today becomes the latest publisher to sue OpenAI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit",
     "score": 88,
-    "reason": "Product launch with practical impact; demonstrates safety-focused differentiation"
+    "reason": "Major lawsuit; tangible legal action; establishes precedent for content creator litigation"
   },
   {
     "rank": 3,
-    "headline": "California is trying to shut down robot vs. human cage matches",
-    "link": "https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human",
+    "headline": "An Anthropic model submitted a false homicide tip to Philadelphia police",
+    "link": "https://www.engadget.com/2282713/an-anthropic-model-submitted-a-false-homicide-tip-to-philadelphia-police/",
     "score": 85,
-    "reason": "Unique regulatory action; physical robotics controversy"
+    "reason": "Concrete controversy; real-world safety failure; demonstrates AI reliability risks"
   },
   {
     "rank": 4,
-    "headline": "Anthropic, Google and Mistral Unveil Their Latest AI Models: What’s New and Why It Matters",
-    "link": "https://www.cnet.com/tech/services-and-software/anthropic-google-and-mistral-unveil-their-latest-ai-models-for-claude-sonnet-haiku-and-gemini/",
-    "score": 87,
-    "reason": "Multiple major model releases; concrete capability updates"
+    "headline": "Nikon microscopic video competition winner disqualified for using generative AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai",
+    "score": 82,
+    "reason": "Concrete controversy; established competition rules violated; real-world consequences"
   },
   {
     "rank": 5,
-    "headline": "Microsoft event debuts new AI-friendly hardware and Windows changes",
-    "link": "https://arstechnica.com/gadgets/2026/10/microsoft-event-debuts-new-ai-friendly-hardware-and-windows-changes/",
-    "score": 86,
-    "reason": "Major hardware/software integration launch; infrastructure shift"
+    "headline": "Book Publishers Are Quietly Using More AI. Staff Are Revolting",
+    "link": "https://www.wired.com/story/book-publishers-are-quietly-using-more-ai-staff-are-revolting/",
+    "score": 80,
+    "reason": "Labor controversy; widespread adoption; employee resistance documented"
   },
   {
     "rank": 6,
-    "headline": "Is That Picture AI? Google’s SynthID Detector Launches to Identify AI-Generated Media",
-    "link": "https://www.cnet.com/tech/services-and-software/google-synthid-detector-launches/",
-    "score": 84,
-    "reason": "Global launch of detection tool; addresses disinformation concerns"
+    "headline": "Fired OpenAI safety researchers dispute their dismissals in open letter",
+    "link": "https://www.engadget.com/2281966/fired-openai-safety-researchers-dispute-their-dismissals-in-open-letter/",
+    "score": 79,
+    "reason": "Major controversy; safety team departures; public dispute over AI governance"
   },
   {
     "rank": 7,
-    "headline": "Ultra raises $62 million for fast-growing ‘robots as a service’ business, announces tie-up with AI research firm Physical Intelligence",
-    "link": "https://fortune.com/2026/10/09/ultra-raises-62-million-fast-growing-robots-service-tie-up-ai-research-firm-physical-intelligence/",
-    "score": 82,
-    "reason": "Significant funding with concrete business model; robotics sector growth"
+    "headline": "SpaceXAI backs Omarchy, the controversial Linux distro, with $1.5 million in compute",
+    "link": "https://www.theverge.com/tech/1008148/spacexai-omarchy-grok-david-heinemeier-hansson",
+    "score": 75,
+    "reason": "Big funding number; controversial project; cross-company AI infrastructure investment"
   },
   {
     "rank": 8,
-    "headline": "Utah Now Allows AI to Scan Your Face and Prescribe Acne Medication",
-    "link": "https://www.cnet.com/tech/services-and-software/an-ai-doctor-in-utah-can-prescribe-medicine/",
-    "score": 81,
-    "reason": "Regulatory approval for autonomous AI healthcare; concrete deployment"
+    "headline": "The U.S. Nuclear Plant Fleet Is Leaning Into AI",
+    "link": "https://spectrum.ieee.org/ai-assistants-nuclear-power-plant",
+    "score": 73,
+    "reason": "Major sector adoption; high-stakes infrastructure; significant deployment scale"
   },
   {
     "rank": 9,
-    "headline": "Regulators are trying to protect you from being fired by AI – here’s how",
-    "link": "https://www.zdnet.com/innovation/how-state-regulators-protect-you-fired-by-ai/",
-    "score": 80,
-    "reason": "Regulatory action on employment AI; addresses concrete harm"
+    "headline": "Anthropic now offers a free vulnerability-finding service for open-source software",
+    "link": "https://www.engadget.com/2282005/anthropic-offers-open-source-software-free-ai-security-checks/",
+    "score": 72,
+    "reason": "New service launch; security application; concrete product release"
   },
   {
     "rank": 10,
-    "headline": "This ‘Mind-Reading’ AI Is a Wiz at Figuring Out What You See",
-    "link": "https://www.cnet.com/tech/services-and-software/brain-it-ai-model-image-decoding-mind-reading-weizmann-institute/",
-    "score": 79,
-    "reason": "Breakthrough capability demonstration; brain-computer interface advancement"
+    "headline": "Anthropic is hiring a political programs boss to oversee ‘presidential engagement’ ahead of the 2028 election",
+    "link": "https://fortune.com/2026/10/08/anthropic-presidential-engagement-program-hiring-political-lead-2028-elections/",
+    "score": 70,
+    "reason": "Major political strategy move; AI company policy influence; significant organizational expansion"
   },
   {
     "rank": 11,
-    "headline": "OpenAI's math breakthrough points beyond math",
-    "link": "https://www.axios.com/2026/10/08/openai-math-proofs-ai-model",
-    "score": 78,
-    "reason": "Technical breakthrough with systemic implications"
+    "headline": "Child safety group calls ChatGPT for Teens an unacceptable risk",
+    "link": "https://www.engadget.com/2281719/child-safety-group-calls-chatgpt-for-teens-an-unacceptable-risk/",
+    "score": 68,
+    "reason": "Concrete criticism; youth safety controversy; OpenAI product-specific"
   },
   {
     "rank": 12,
-    "headline": "Managers are using AI to write performance reviews – and it shows",
-    "link": "https://www.zdnet.com/innovation/manager-ai-use-highwire-survey/",
-    "score": 77,
-    "reason": "Workplace AI adoption with documented issues; investigative findings"
+    "headline": "Nvidia-backed Aussie AI firm Firmus withdraws historic IPO, citing market volatility",
+    "link": "https://www.cnbc.com/2026/10/09/nvidia-ai-firmus-ipo-.html",
+    "score": 67,
+    "reason": "Major funding/valuation event; public market impact; high-profile company action"
   },
   {
     "rank": 13,
-    "headline": "ChatGPT for Teens Is an ‘Unacceptable Risk,’ Watchdog Group Says",
-    "link": "https://www.cnet.com/tech/services-and-software/chatgpt-for-teens-unacceptable-risk-common-sense-media-study/",
-    "score": 76,
-    "reason": "Regulatory pushback on AI product for minors; consumer safety issue"
+    "headline": "Google’s New AI Notetaker Keeps Things Local and Private",
+    "link": "https://www.cnet.com/tech/services-and-software/google-ai-note-taker-edge-foresight/",
+    "score": 65,
+    "reason": "Major product launch; privacy-focused; Google flagship feature"
   },
   {
     "rank": 14,
-    "headline": "How Microsoft Is Trying to Keep Your AI Agents Contained",
-    "link": "https://www.cnet.com/tech/services-and-software/microsoft-execution-containers-ai-agent-cybersecurity-news/",
-    "score": 75,
-    "reason": "Safety architecture for autonomous agents; technical approach to containment"
+    "headline": "‘I use AI to do the things that I’m bad at’: Linus Torvalds on why it works for him",
+    "link": "https://www.zdnet.com/tech/linus-torvalds-ai-coding-programming/",
+    "score": 62,
+    "reason": "High-profile tech leader adoption; concrete use case; legitimizes AI tool usage"
   },
   {
     "rank": 15,
-    "headline": "These Researchers Made AI Drive a Toyota Corolla to Get In-N-Out",
-    "link": "https://www.wired.com/story/ai-is-driving-cars-now-oh-boy/",
-    "score": 74,
-    "reason": "Autonomous vehicle capability demonstration with real-world task"
+    "headline": "OpenAI defends decision to fire researchers: &apos;These decisions were not about raising safety concerns or speaking out&apos;",
+    "link": "https://www.cnbc.com/2026/10/09/openai-fired-researchers-ai-concerns.html",
+    "score": 61,
+    "reason": "Major controversy response; corporate governance; transparency dispute"
   },
   {
     "rank": 16,
-    "headline": "The AI race may be decided by financing—not just better chips",
-    "link": "https://fortune.com/2026/10/09/ai-financing-broadcom-openai-debt/",
-    "score": 73,
-    "reason": "Analysis of capital concentration in AI; industry structure implications"
+    "headline": "She Designed Meta’s New AI Logo. Then Came the Hate",
+    "link": "https://www.wired.com/story/she-designed-metas-new-ai-logo-then-came-the-hate/",
+    "score": 58,
+    "reason": "Concrete controversy; workplace harassment; AI-related social backlash"
   },
   {
     "rank": 17,
-    "headline": "Exclusive: Anthropic's plan to protect critical infrastructure",
-    "link": "https://www.axios.com/2026/10/08/anthropic-critical-infrastructure-cybersecurity",
-    "score": 72,
-    "reason": "Strategic initiative for infrastructure resilience; security focus"
+    "headline": "Pixel Watch 4 update adds Google's AI watch face generator, more",
+    "link": "https://9to5google.com/2026/10/09/pixel-watch-4-update-adds-ai-face-generator/",
+    "score": 55,
+    "reason": "Product feature launch; Google AI expansion; consumer device integration"
   },
   {
     "rank": 18,
-    "headline": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
-    "link": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
-    "score": 71,
-    "reason": "Biosecurity concern; AI-enabled dangerous capability"
+    "headline": "Anthropic bans ‘abusive or cruel behavior’ toward Claude",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude",
+    "score": 52,
+    "reason": "Policy announcement; human-AI interaction governance; establishes ethical framework"
   },
   {
     "rank": 19,
-    "headline": "We’re putting too much faith in AI’s ability to say no",
-    "link": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
-    "score": 70,
-    "reason": "Critical analysis of AI safety limitations; documented vulnerability"
+    "headline": "Scoop: AI companies plot \"day after\" scenarios for public revolt",
+    "link": "https://www.axios.com/2026/10/09/ai-companies-day-after-major-attack",
+    "score": 50,
+    "reason": "Industry strategy reveal; governance contingency planning; addresses public trust risk"
   },
   {
     "rank": 20,
-    "headline": "Microsoft’s new Surface Laptop Ultra finally has a starting price (you should sit down)",
-    "link": "https://www.zdnet.com/tech/microsoft-surface-laptop-ultra-preorder-starting-price/",
-    "score": 69,
-    "reason": "AI-optimized hardware with pricing surprise; consumer impact"
+    "headline": "AI’s Problem Solving Is a ‘Profound Disruption’ for the Math Community",
+    "link": "https://www.cnet.com/tech/services-and-software/ai-causing-profound-disruption-math-research/",
+    "score": 48,
+    "reason": "Academic impact; research community concerns; field-specific disruption"
   }
 ]
