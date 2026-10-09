@@ -4,6 +4,13 @@
       "status": "claimed",
       "at": "2026-10-09T12:38:46.787Z",
       "by": "github-actions"
+    },
+    "2026-10-08:2": {
+      "slug": "google-cloud-announces-gemini-agent-as",
+      "image": "aifeed_google-cloud-announces-gemini-agent-as_20261008_pm.png",
+      "status": "posted",
+      "at": "2026-10-09T14:06:38.835Z",
+      "by": "github-actions"
     }
   }
 }
