@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "USA Today becomes the latest publisher to sue OpenAI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit",
+    "headline": "OpenAI doubles down on decision to fire three AI safety researchers",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers",
     "score": 94,
-    "reason": "Major litigation against OpenAI; concrete legal action, not speculation; represents industry trend"
+    "reason": "Major controversy with concrete action; company leadership defending firing decision"
   },
   {
     "rank": 2,
-    "headline": "Child safety group calls ChatGPT for Teens an unacceptable risk",
-    "link": "https://www.engadget.com/2281719/child-safety-group-calls-chatgpt-for-teens-an-unacceptable-risk/",
-    "score": 89,
-    "reason": "Significant controversy with child safety implications; specific product criticism; regulatory concern"
+    "headline": "Anthropic launches free AI security scans for open-source projects",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+    "score": 88,
+    "reason": "Product launch with practical impact; demonstrates safety-focused differentiation"
   },
   {
     "rank": 3,
-    "headline": "Google is launching a one-stop Gemini agent for your work tasks",
-    "link": "https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise",
-    "score": 87,
-    "reason": "Major product launch from Google; practical AI agent deployment; competes with OpenAI"
+    "headline": "California is trying to shut down robot vs. human cage matches",
+    "link": "https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human",
+    "score": 85,
+    "reason": "Unique regulatory action; physical robotics controversy"
   },
   {
     "rank": 4,
-    "headline": "Google’s AI note-taking app transcribes your meetings completely offline",
-    "link": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
-    "score": 85,
-    "reason": "Significant privacy-focused product launch; offline capability is competitive differentiator"
+    "headline": "Anthropic, Google and Mistral Unveil Their Latest AI Models: What’s New and Why It Matters",
+    "link": "https://www.cnet.com/tech/services-and-software/anthropic-google-and-mistral-unveil-their-latest-ai-models-for-claude-sonnet-haiku-and-gemini/",
+    "score": 87,
+    "reason": "Multiple major model releases; concrete capability updates"
   },
   {
     "rank": 5,
-    "headline": "ChatGPT's 'Intelligent UI' update fills its responses with pictures, charts, and buttons",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
-    "score": 83,
-    "reason": "Major UI/UX update to ChatGPT; tangible product improvement; user-facing change"
+    "headline": "Microsoft event debuts new AI-friendly hardware and Windows changes",
+    "link": "https://arstechnica.com/gadgets/2026/10/microsoft-event-debuts-new-ai-friendly-hardware-and-windows-changes/",
+    "score": 86,
+    "reason": "Major hardware/software integration launch; infrastructure shift"
   },
   {
     "rank": 6,
-    "headline": "Trump admin suspends green cards to Microsoft as Vance accuses the company of replacing laid-off workers with ‘foreign indentured servants’",
-    "link": "https://fortune.com/2026/10/08/trump-admin-green-card-microsoft-domestic-workers/",
-    "score": 82,
-    "reason": "Major regulatory action; high-profile political controversy; concrete policy impact"
+    "headline": "Is That Picture AI? Google’s SynthID Detector Launches to Identify AI-Generated Media",
+    "link": "https://www.cnet.com/tech/services-and-software/google-synthid-detector-launches/",
+    "score": 84,
+    "reason": "Global launch of detection tool; addresses disinformation concerns"
   },
   {
     "rank": 7,
-    "headline": "The U.S. Nuclear Plant Fleet Is Leaning Into AI",
-    "link": "https://spectrum.ieee.org/ai-assistants-nuclear-power-plant",
-    "score": 78,
-    "reason": "AI deployment in critical infrastructure; significant industry adoption; concrete use case"
+    "headline": "Ultra raises $62 million for fast-growing ‘robots as a service’ business, announces tie-up with AI research firm Physical Intelligence",
+    "link": "https://fortune.com/2026/10/09/ultra-raises-62-million-fast-growing-robots-service-tie-up-ai-research-firm-physical-intelligence/",
+    "score": 82,
+    "reason": "Significant funding with concrete business model; robotics sector growth"
   },
   {
     "rank": 8,
-    "headline": "The Pentagon Hopes to Speed Up ‘Kill Chain’ AI Buys With 5-Minute Videos",
-    "link": "https://www.wired.com/story/the-pentagon-hopes-to-speed-up-kill-chain-ai-buys-with-5-minute-videos/",
-    "score": 76,
-    "reason": "Government AI procurement; defense sector adoption; quantified process improvement"
+    "headline": "Utah Now Allows AI to Scan Your Face and Prescribe Acne Medication",
+    "link": "https://www.cnet.com/tech/services-and-software/an-ai-doctor-in-utah-can-prescribe-medicine/",
+    "score": 81,
+    "reason": "Regulatory approval for autonomous AI healthcare; concrete deployment"
   },
   {
     "rank": 9,
-    "headline": "AWS pricing team turns 18-tab Excel model into an AI chatbot to evaluate customer deals, CFO says",
-    "link": "https://fortune.com/2026/10/08/aws-pricing-team-18-tab-excel-model-into-ai-chatbot-evaluate-customer-deals-cfo/",
-    "score": 74,
-    "reason": "Concrete enterprise AI implementation; specific business impact; AWS internal use"
+    "headline": "Regulators are trying to protect you from being fired by AI – here’s how",
+    "link": "https://www.zdnet.com/innovation/how-state-regulators-protect-you-fired-by-ai/",
+    "score": 80,
+    "reason": "Regulatory action on employment AI; addresses concrete harm"
   },
   {
     "rank": 10,
-    "headline": "SpaceXAI backs Omarchy, the controversial Linux distro, with $1.5 million in compute",
-    "link": "https://www.theverge.com/tech/1008148/spacexai-omarchy-grok-david-heinemeier-hansson",
+    "headline": "This ‘Mind-Reading’ AI Is a Wiz at Figuring Out What You See",
+    "link": "https://www.cnet.com/tech/services-and-software/brain-it-ai-model-image-decoding-mind-reading-weizmann-institute/",
+    "score": 79,
+    "reason": "Breakthrough capability demonstration; brain-computer interface advancement"
+  },
+  {
+    "rank": 11,
+    "headline": "OpenAI's math breakthrough points beyond math",
+    "link": "https://www.axios.com/2026/10/08/openai-math-proofs-ai-model",
+    "score": 78,
+    "reason": "Technical breakthrough with systemic implications"
+  },
+  {
+    "rank": 12,
+    "headline": "Managers are using AI to write performance reviews – and it shows",
+    "link": "https://www.zdnet.com/innovation/manager-ai-use-highwire-survey/",
+    "score": 77,
+    "reason": "Workplace AI adoption with documented issues; investigative findings"
+  },
+  {
+    "rank": 13,
+    "headline": "ChatGPT for Teens Is an ‘Unacceptable Risk,’ Watchdog Group Says",
+    "link": "https://www.cnet.com/tech/services-and-software/chatgpt-for-teens-unacceptable-risk-common-sense-media-study/",
+    "score": 76,
+    "reason": "Regulatory pushback on AI product for minors; consumer safety issue"
+  },
+  {
+    "rank": 14,
+    "headline": "How Microsoft Is Trying to Keep Your AI Agents Contained",
+    "link": "https://www.cnet.com/tech/services-and-software/microsoft-execution-containers-ai-agent-cybersecurity-news/",
+    "score": 75,
+    "reason": "Safety architecture for autonomous agents; technical approach to containment"
+  },
+  {
+    "rank": 15,
+    "headline": "These Researchers Made AI Drive a Toyota Corolla to Get In-N-Out",
+    "link": "https://www.wired.com/story/ai-is-driving-cars-now-oh-boy/",
+    "score": 74,
+    "reason": "Autonomous vehicle capability demonstration with real-world task"
+  },
+  {
+    "rank": 16,
+    "headline": "The AI race may be decided by financing—not just better chips",
+    "link": "https://fortune.com/2026/10/09/ai-financing-broadcom-openai-debt/",
+    "score": 73,
+    "reason": "Analysis of capital concentration in AI; industry structure implications"
+  },
+  {
+    "rank": 17,
+    "headline": "Exclusive: Anthropic's plan to protect critical infrastructure",
+    "link": "https://www.axios.com/2026/10/08/anthropic-critical-infrastructure-cybersecurity",
     "score": 72,
-    "reason": "Specific funding amount; infrastructure backing; controversial project support"
+    "reason": "Strategic initiative for infrastructure resilience; security focus"
+  },
+  {
+    "rank": 18,
+    "headline": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
+    "link": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
+    "score": 71,
+    "reason": "Biosecurity concern; AI-enabled dangerous capability"
+  },
+  {
+    "rank": 19,
+    "headline": "We’re putting too much faith in AI’s ability to say no",
+    "link": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
+    "score": 70,
+    "reason": "Critical analysis of AI safety limitations; documented vulnerability"
+  },
+  {
+    "rank": 20,
+    "headline": "Microsoft’s new Surface Laptop Ultra finally has a starting price (you should sit down)",
+    "link": "https://www.zdnet.com/tech/microsoft-surface-laptop-ultra-preorder-starting-price/",
+    "score": 69,
+    "reason": "AI-optimized hardware with pricing surprise; consumer impact"
   }
 ]
