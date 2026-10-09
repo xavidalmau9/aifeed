@@ -1,3 +1,9 @@
 {
-  "claims": {}
+  "claims": {
+    "2026-10-09:1": {
+      "status": "claimed",
+      "at": "2026-10-09T12:38:46.787Z",
+      "by": "github-actions"
+    }
+  }
 }
