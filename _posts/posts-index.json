@@ -1,5 +1,25 @@
 [
   {
+    "id": "usa-today-becomes-the-latest-publisher-20261009",
+    "slug": "usa-today-becomes-the-latest-publisher",
+    "headline": "USA Today becomes the latest publisher to sue OpenAI",
+    "summary": "USA Today Co. sues OpenAI for more than $250 million over alleged unauthorized copying of hundreds of thousands of articles.",
+    "body": "<p>USA Today Co. seeks over $250 million in damages against OpenAI over alleged copyright infringement.</p>\n<p>USA Today Co. and several local newspapers it owns have filed a lawsuit against OpenAI, alleging the company copied hundreds of thousands of articles to train its AI models without permission or authorization. The filing was made on Thursday.</p>\n<p>The lawsuit claims that OpenAI's unauthorized use of USA Today's content has caused real and continuing harm to its outlets. The publisher seeks damages of more than $250 million, asserting that OpenAI built products worth hundreds of billions of dollars through large-scale copyright infringement.</p>\n<p>The complaint includes The Tennessean, Indy Star, The Columbus Dispatch, The Oklahoman, and several other local outlets owned by USA Today Co. The lawsuit alleges OpenAI never sought permission to use the content.</p>\n<p>This case represents the latest in a series of copyright lawsuits filed against OpenAI by major publishers and media organizations. Legal action has also been taken by The New York Times, The Intercept, Ziff Davis, CBC/Radio-Canada, Encyclopaedia Britannica, Merriam-Webster, The Seattle Times, and a coalition of nearly 400 local newspapers.</p>\n<p>USA Today Co. joins dozens of publishers suing OpenAI over alleged unauthorized use of hundreds of thousands of articles in AI training.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_usa-today-becomes-the-latest-publisher_20261009_pm.png",
+    "image": "images/aifeed_usa-today-becomes-the-latest-publisher_20261009_pm.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit",
+    "publishedAt": "2026-10-09T21:27:17.825Z",
+    "hashtags": [
+      "OpenAI",
+      "UsaToday",
+      "CopyrightLaw",
+      "AILawsuit",
+      "MediaRights"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "openai-doubles-down-on-decision-to-20261009",
     "slug": "openai-doubles-down-on-decision-to",
     "headline": "OpenAI doubles down on decision to fire three AI safety researchers",
