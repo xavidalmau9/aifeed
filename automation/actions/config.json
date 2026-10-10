@@ -13,5 +13,6 @@
   "anthropicModel": "claude-haiku-4-5",
   "fbEnabled": true,
   "dedupDays": 30,
-  "similarityThreshold": 0.5
+  "similarityThreshold": 0.5,
+  "photoRecent": 14
 }

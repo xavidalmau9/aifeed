@@ -179,6 +179,15 @@ function assemblePublish({ story, gen, category, liCaption, liWarning, today, sl
     slug,
     image: pngName
   };
+  if (story.photoFingerprint && story.photoFingerprint.dhash) {
+    historyEntry.photo = {
+      dhash: story.photoFingerprint.dhash,
+      phash: story.photoFingerprint.phash,
+      hist: story.photoFingerprint.hist,
+      url: story.ogImage || '',
+      via: story.photoSource || 'og:image'
+    };
+  }
   return { slug, pngName, storyName, storyUrl: `${siteUrl}/images/${storyName}`, post, historyEntry, liCaption: caption, liWarning: warning, igCaption: gen.igCaption };
 }
 

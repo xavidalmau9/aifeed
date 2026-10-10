@@ -64,8 +64,18 @@ function selectFresh(items, allHist) {
       skipped.push({ title: it.title, reason: rep.reason, matched: `[${rep.match.src}] ${rep.match.title}`.slice(0, 140) });
       continue;
     }
-    if (fresh.some(f => f.canonUrl === cu || titleSim(f.title, it.title).jac >= 0.6)) continue;
-    fresh.push(Object.assign({}, it, { canonUrl: cu }));
+    const dup = fresh.find(f => f.canonUrl === cu || titleSim(f.title, it.title).jac >= 0.6);
+    if (dup) {
+      // Keep the other outlet. If this story's photo is a reused logo, we try theirs.
+      if (dup.canonUrl !== cu) {
+        dup.alts = dup.alts || [];
+        if (dup.alts.length < 4 && !dup.alts.some(a => a.link === it.link)) {
+          dup.alts.push({ title: it.title, link: it.link, source: it.source || hostOf(it.link), desc: it.desc || '' });
+        }
+      }
+      continue;
+    }
+    fresh.push(Object.assign({}, it, { canonUrl: cu, alts: [] }));
     if (fresh.length >= 80) break;
   }
   return { fresh, skipped };
