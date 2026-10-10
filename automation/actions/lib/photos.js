@@ -54,6 +54,17 @@ function imageVariants(url) {
   }
 }
 
+// Condé Nast CDNs (WIRED, New Yorker, Ars Technica, Vogue...) serve every crop of a photo from
+// /photos/<id>/<ratio>/<size>/<file>. The og:image is the wide 191:100 crop, which a 4:5 card has
+// to zoom ~2x into, cutting off faces (Oct 10 book-publishers post). Ask for the square crop instead.
+function tallerVariant(url) {
+  const m = String(url || '').match(/^(https:\/\/[^/]+\/photos\/[0-9a-f]{20,}\/)([0-9]+:[0-9]+|master)\/([^/]+)\/(.+)$/i);
+  if (!m) return '';
+  const [w, h] = m[2] === 'master' ? [1, 1] : m[2].split(':').map(Number);
+  if (!(w > h * 1.05)) return '';
+  return m[1] + '1:1/w_1600,c_limit/' + m[4];
+}
+
 // Classes and links of elements still open at this offset. A character lookbehind
 // misses Verge cards: the previous <img> is several thousand characters of srcset.
 function ancestorMarks(html, index) {
@@ -373,6 +384,17 @@ async function refinePhotos(candidates, opts = {}) {
       return false;
     };
 
+    // Swap a wide crop for a taller crop of the SAME photo when the CDN has one and it loads.
+    const upgrade = async item => {
+      const tall = tallerVariant(item.url);
+      if (!tall) return item;
+      let t = null;
+      try { t = await load(tall); } catch (e) { t = null; }
+      if (!t || !t.ok) return item;
+      note('  photo crop: ' + title + ' — using the taller 1:1 crop of the same photo');
+      return Object.assign({}, item, { url: tall });
+    };
+
     const tryOne = async item => {
       if (!item || !item.url) return false;
       const key = stripQuery(item.url);
@@ -416,10 +438,10 @@ async function refinePhotos(candidates, opts = {}) {
           return reject(item, item.via + ' rejected: does not match the story — ' + (verdict.reason || 'unrelated'));
         }
         if (verdict && verdict.kind === 'story-photo' && verdict.matches) {
-          return accept(item, loaded, 'story photo — ' + (verdict.reason || 'matches the story'));
+          return accept(await upgrade(item), loaded, 'story photo — ' + (verdict.reason || 'matches the story'));
         }
       }
-      return accept(item, loaded, 'distinct photo, not a near-duplicate of recent posts');
+      return accept(await upgrade(item), loaded, 'distinct photo, not a near-duplicate of recent posts');
     };
 
     if (c.ogImage) {
@@ -467,6 +489,7 @@ async function refinePhotos(candidates, opts = {}) {
 }
 
 module.exports = {
+  tallerVariant,
   articleImageUrls,
   imageVariants,
   buildPhotoJudgePrompt,

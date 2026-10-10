@@ -30,7 +30,8 @@ const html = `<!doctype html><html><head><meta charset="utf-8">
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1080px;height:1350px;overflow:hidden;background:#0d0b14}
 .wrap{position:relative;width:1080px;height:1350px;font-family:Inter,sans-serif;color:#fff}
-.photo{position:absolute;inset:0;background:url("${esc(photo)}") center/cover no-repeat}
+/* photo box = the area above the text block, so the subject is not centred behind the headline (Oct 10) */
+.photo{position:absolute;left:0;right:0;top:0;height:1000px;background:#000 url("${esc(photo)}") center 18%/cover no-repeat}
 .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,11,20,0) 0%,rgba(13,11,20,.05) 38%,rgba(13,11,20,.82) 58%,#0d0b14 72%,#0d0b14 100%)}
 .badge{position:absolute;top:44px;left:44px;padding:14px 26px;border-radius:40px;font:800 26px Poppins;letter-spacing:.5px;background:linear-gradient(90deg,#ff8a00,#c040ff)}
 .content{position:absolute;left:56px;right:56px;bottom:120px}
@@ -88,7 +89,8 @@ const storyHtml = `<!doctype html><html><head><meta charset="utf-8">
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1080px;height:1920px;overflow:hidden;background:#0d0b14}
 .wrap{position:relative;width:1080px;height:1920px;font-family:Inter,sans-serif;color:#fff}
-.photo{position:absolute;left:0;right:0;top:0;height:1250px;background:url("${esc(photo)}") center/cover no-repeat}
+/* story: photo starts below Instagram's top bar (profile name, progress line) and fades in, so heads are not hidden under it */
+.photo{position:absolute;left:0;right:0;top:80px;height:1170px;background:#000 url("${esc(photo)}") center 18%/cover no-repeat;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 90px);mask-image:linear-gradient(180deg,transparent 0,#000 90px)}
 .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,11,20,.55) 0%,rgba(13,11,20,0) 16%,rgba(13,11,20,0) 38%,rgba(13,11,20,.85) 50%,#0d0b14 64%,#0d0b14 100%)}
 .top{position:absolute;top:260px;left:64px;right:64px;display:flex;justify-content:space-between;align-items:center}
 .badge{padding:16px 30px;border-radius:44px;font:800 30px Poppins;background:linear-gradient(90deg,#ff8a00,#c040ff)}

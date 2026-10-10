@@ -155,6 +155,10 @@ async function main() {
     console.log('ANTHROPIC_API_KEY or META_PAGE_TOKEN is not set. Nothing will be posted.');
     return 0;
   }
+  if (env.EVENT_NAME === 'workflow_dispatch' && !env.DRY_RUN && require('./repost').hasRequest(env.REPO)) {
+    console.log('Repost request found: redoing one post instead of a normal run');
+    return require('./repost').runRepost(cfg, env, { publishInstagram, publishStory });
+  }
   const decision = decideRun({ now: new Date(), eventName: env.EVENT_NAME, slotInput: env.SLOT });
   console.log(decision.reason);
   if (!decision.run) return 0;
