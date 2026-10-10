@@ -8,13 +8,14 @@ const { CLAIM_PATH, evaluateClaim, updateClaimDoc, SlotTaken } = require('./lib/
 const { fetchFeeds, assembleCandidates } = require('./lib/rss');
 const { orderPool, buildSameEventPrompt, classifySameEvent, finalizeSameEvent } = require('./lib/pick');
 const { fetchArticles } = require('./lib/articles');
+const { refinePhotos, loadRecentPrints, applyPhotoBackfill, buildPhotoJudgePrompt, parsePhotoVerdict } = require('./lib/photos');
 const { parseModelArray, runQuality, applyAccuracyFix, layoutErrors, mergeLiCaption, assemblePublish, mergeHistory } = require('./lib/quality');
 const { sourceCheckAll, verifyCandidate, checkLiExpansion } = require('./lib/factcheck');
 const { assertFeedPng, assertStoryPng } = require('./lib/png');
 const { renderHtml, closeBrowser } = require('./render');
 const { readJson, writeJson, commitApply, git } = require('./lib/git');
 const {
-  claudeMessage, fetchIgMedia, graphForm, graphGet, pollContainer, pollPublic, linkedinEnabled, linkedInPost, redact
+  claudeMessage, claudeVision, fetchIgMedia, graphForm, graphGet, pollContainer, pollPublic, linkedinEnabled, linkedInPost, redact
 } = require('./lib/net');
 const { sendAlert } = require('./alert');
 const { buildFb, checkFb } = require('./lib/captions');
@@ -246,8 +247,32 @@ async function main() {
     dropped.sameEventSkipped.forEach(s => console.log('  same-event skip: ' + s.title + ' => ' + (s.matched || '') + ' (' + s.reason + ')'));
     dropped.sameEventOverturned.forEach(s => console.log('  same-event overturned (new): ' + s.title + ' vs ' + s.wrongMatch + ' (' + s.note + '; ' + s.why + ')'));
 
-    const articles = await fetchArticles(dropped.candidates);
-    articles.usable.filter(c => !c.photoOk).forEach(c => console.log('  photo skip: ' + c.title + ' (' + c.photoProblem + ')'));
+    const articles = await fetchArticles(dropped.candidates, { probe: false });
+    const recentPhotos = await loadRecentPrints({
+      history,
+      posts,
+      imagesDir: path.join(env.REPO, 'images'),
+      limit: cfg.photoRecent || 14
+    });
+    console.log('Recent photo fingerprints: ' + recentPhotos.prints.length
+      + ' (' + recentPhotos.backfill.length + ' read from images/)');
+    const photoPick = await refinePhotos(articles.usable, {
+      recent: recentPhotos.prints,
+      judge: async (jpeg, meta) => {
+        const text = await claudeVision(env.ANTHROPIC_API_KEY, {
+          model: cfg.anthropicModel,
+          text: buildPhotoJudgePrompt(meta.headline, meta.summary),
+          image: jpeg,
+          maxTokens: 300,
+          temperature: 0,
+          tries: 2
+        });
+        const verdict = parsePhotoVerdict(text);
+        if (!verdict) throw new Error('photo judge returned no JSON');
+        return verdict;
+      }
+    });
+    photoPick.lines.forEach(l => console.log(l));
     const captionText = await claudeMessage(env.ANTHROPIC_API_KEY, {
       model: cfg.anthropicModel, prompt: articles.captionPrompt, maxTokens: 6000
     });
@@ -327,6 +352,7 @@ async function main() {
       siteUrl: cfg.siteUrl
     });
     console.log('Story: ' + qc.story.title);
+    console.log('Photo: ' + (qc.story.photoSource || 'og:image') + ' — ' + (qc.story.photoWhy || '') + ' — ' + (qc.story.ogImage || ''));
     console.log('Image: ' + published.pngName);
 
     if (env.DRY_RUN) {
@@ -349,6 +375,9 @@ async function main() {
         failures: qc.failures,
         sourceCheck: sourceCheckLog,
         photo: qc.story.ogImage,
+        photoSource: qc.story.photoSource || '',
+        photoWhy: qc.story.photoWhy || '',
+        photoLog: photoPick.lines,
         sameEventSkipped: dropped.sameEventSkipped,
         sameEventOverturned: dropped.sameEventOverturned,
         cheapDedupSkipped: assembled.dedupSkipped,
@@ -375,6 +404,7 @@ async function main() {
     commitApply(env.REPO, 'Publish: ' + headline.substring(0, 60), () => {
       const freshPosts = readJson(env.REPO, '_posts/posts-index.json', []);
       const freshHist = readJson(env.REPO, '_data/history.json', { posted: [], rankings: {} });
+      applyPhotoBackfill(freshHist, recentPhotos.backfill);
       const imageRel = 'images/' + published.pngName;
       fs.mkdirSync(path.join(env.REPO, 'images'), { recursive: true });
       fs.writeFileSync(path.join(env.REPO, imageRel), feed.png);

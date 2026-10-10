@@ -84,7 +84,8 @@ async function probePhoto(url, fetchImpl) {
   }
 }
 
-async function fetchArticles(candidates, { fetchImpl = globalThis.fetch } = {}) {
+async function fetchArticles(candidates, { fetchImpl = globalThis.fetch, probe = true } = {}) {
+  const { articleImageUrls } = require('./photos');
   const out = await Promise.all(candidates.map(async c => {
     let ok = false;
     let html = '';
@@ -101,10 +102,16 @@ async function fetchArticles(candidates, { fetchImpl = globalThis.fetch } = {}) 
     }
     const text = articleText(html);
     const ogImage = ok ? photoUrl(meta(html, 'og:image') || meta(html, 'twitter:image'), c.link) : '';
-    const photo = ok ? await probePhoto(ogImage, fetchImpl) : { ok: false, reason: 'article did not load' };
+    const inlineImages = ok ? articleImageUrls(html, c.link, c.title) : [];
+    let photo;
+    if (!ok) photo = { ok: false, reason: 'article did not load' };
+    else if (!probe) photo = { ok: true, reason: '' };
+    else photo = await probePhoto(ogImage, fetchImpl);
     return Object.assign({}, c, {
       linkOk: ok,
       ogImage,
+      inlineImages,
+      alts: c.alts || [],
       photoOk: photo.ok,
       photoProblem: photo.reason,
       siteName: meta(html, 'og:site_name') || c.source,

@@ -33,6 +33,46 @@ async function withRetry(fn, tries, waitMs) {
   throw last;
 }
 
+async function claudeVision(apiKey, { model, text, image, mediaType = 'image/jpeg', maxTokens = 300, temperature = 0, tries = 2 }) {
+  const data = Buffer.isBuffer(image) ? image.toString('base64') : String(image || '');
+  let last;
+  for (let i = 0; i < tries; i++) {
+    try {
+      const body = {
+        model,
+        max_tokens: maxTokens,
+        messages: [{
+          role: 'user',
+          content: [
+            { type: 'image', source: { type: 'base64', media_type: mediaType, data } },
+            { type: 'text', text }
+          ]
+        }]
+      };
+      if (temperature !== undefined) body.temperature = temperature;
+      const res = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: {
+          'x-api-key': apiKey,
+          'anthropic-version': '2023-06-01',
+          'content-type': 'application/json'
+        },
+        body: JSON.stringify(body),
+        signal: AbortSignal.timeout(120000)
+      });
+      const json = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error('Anthropic HTTP ' + res.status + ' ' + JSON.stringify(json).slice(0, 300));
+      const out = json.content && json.content[0] && json.content[0].text;
+      if (!out) throw new Error('Anthropic response had no text');
+      return out;
+    } catch (e) {
+      last = e;
+      if (i < tries - 1) await sleep(5000);
+    }
+  }
+  throw last;
+}
+
 async function claudeMessage(apiKey, { model, prompt, maxTokens, temperature, tries = 3 }) {
   let last;
   for (let i = 0; i < tries; i++) {
@@ -210,6 +250,6 @@ async function linkedInPost({ cfg, env, liCaption, headline, feedPng, endCard })
 }
 
 module.exports = {
-  sleep, redact, appSecretProof, withGraphAuth, withRetry, claudeMessage, graphForm, graphGet,
+  sleep, redact, appSecretProof, withGraphAuth, withRetry, claudeMessage, claudeVision, graphForm, graphGet,
   fetchIgMedia, pollContainer, pollPublic, escapeLinkedIn, linkedinEnabled, linkedInPost
 };
