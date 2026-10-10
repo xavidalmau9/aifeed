@@ -1,6 +1,16 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-10T12:24:17.509Z",
+      "date": "2026-10-10",
+      "slot": 1,
+      "headline": "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
+      "canonUrl": "theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+      "slug": "anthropics-ai-gave-philadelphia-police-fake",
+      "image": "aifeed_anthropics-ai-gave-philadelphia-police-fake_20261010_am.png"
+    },
+    {
       "postedAt": "2026-10-09T21:27:17.825Z",
       "date": "2026-10-09",
       "slot": 2,
@@ -169,6 +179,68 @@
         "rank": 11,
         "title": "Google’s AI note-taking app transcribes your meetings completely offline",
         "canonUrl": "theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
+      },
+      {
+        "rank": 12,
+        "title": "Fired OpenAI safety researchers dispute their dismissals in open letter",
+        "canonUrl": "engadget.com/2281966/fired-openai-safety-researchers-dispute-their-dismissals-in-open-letter"
+      }
+    ],
+    "2026-10-10": [
+      {
+        "rank": 1,
+        "title": "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip"
+      },
+      {
+        "rank": 2,
+        "title": "Book Publishers Are Quietly Using More AI. Staff Are Revolting",
+        "canonUrl": "wired.com/story/book-publishers-are-quietly-using-more-ai-staff-are-revolting"
+      },
+      {
+        "rank": 3,
+        "title": "AI is changing how lawyers work — and putting the billable hour under pressure",
+        "canonUrl": "cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html"
+      },
+      {
+        "rank": 4,
+        "title": "AI coding agents generate more code, but not more software",
+        "canonUrl": "arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software"
+      },
+      {
+        "rank": 5,
+        "title": "AI Is Getting Really Good at Messing With Cybercriminals",
+        "canonUrl": "wired.com/story/ai-is-getting-really-good-at-messing-with-cybercriminals"
+      },
+      {
+        "rank": 6,
+        "title": "AI’s Problem Solving Is a ‘Profound Disruption’ for the Math Community",
+        "canonUrl": "cnet.com/tech/services-and-software/ai-causing-profound-disruption-math-research"
+      },
+      {
+        "rank": 7,
+        "title": "Anthropic now offers a free vulnerability-finding service for open-source software",
+        "canonUrl": "engadget.com/2282005/anthropic-offers-open-source-software-free-ai-security-checks"
+      },
+      {
+        "rank": 8,
+        "title": "Nvidia-backed Aussie AI firm Firmus withdraws historic IPO, citing market volatility",
+        "canonUrl": "cnbc.com/2026/10/09/nvidia-ai-firmus-ipo-.html"
+      },
+      {
+        "rank": 9,
+        "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+        "canonUrl": "arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google"
+      },
+      {
+        "rank": 10,
+        "title": "Don’t Be Cruel to Claude: Anthropic’s New Abuse Policy Tests AI Personhood",
+        "canonUrl": "cnet.com/tech/services-and-software/anthropic-cruel-claude-ai-model-abuse"
+      },
+      {
+        "rank": 11,
+        "title": "‘Pure insanity’: Mathematicians will need years to make sense of OpenAI’s latest drop",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos"
       },
       {
         "rank": 12,
