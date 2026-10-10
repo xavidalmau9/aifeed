@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "book-publishers-are-quietly-using-more",
+    "at": "2026-10-10T22:01:59.435Z",
+    "old": {
+      "igMediaId": "18131291680683884",
+      "igStoryId": "18487641634110262",
+      "fbPostId": "1434982969687864_122109278583495604"
+    },
+    "deleted": {
+      "igMediaId": "FAILED: Graph HTTP 400 {\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AypRt7RLmuQfD5eYIJ2tyBO\"}",
+      "igStoryId": "FAILED: Graph HTTP 400 {\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"ANCVojtjxjcmrGwoKxgAlhz\"}",
+      "fbPostId": "deleted"
+    },
+    "oldIgPermalink": "https://www.instagram.com/p/DeVA7jZDAd7/",
+    "oldFbPermalink": "https://www.facebook.com/122107110429495604/posts/122109278583495604",
+    "igId": "18435253813195001",
+    "igPermalink": "https://www.instagram.com/p/DeVHDIRD3ae/",
+    "storyId": "18017073977745517",
+    "fbId": "1434982969687864_122109307881495604",
+    "fbPermalink": "https://www.facebook.com/122107110429495604/posts/122109307881495604"
+  }
+]
