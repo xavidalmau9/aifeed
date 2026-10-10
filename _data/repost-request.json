@@ -1,5 +1,5 @@
 {
-  "status": "pending",
+  "status": "running",
   "requestedAt": "2026-10-10T21:50:00Z",
   "reason": "Javier (Slack #aifeed, 5:17pm ET): photo crop on the 5pm post was terrible - redo with correct positioning",
   "slug": "book-publishers-are-quietly-using-more",
@@ -10,5 +10,6 @@
     "igMediaId": "18131291680683884",
     "igStoryId": "18487641634110262",
     "fbPostId": "1434982969687864_122109278583495604"
-  }
+  },
+  "startedAt": "2026-10-10T22:01:58.093Z"
 }
