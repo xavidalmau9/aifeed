@@ -1,5 +1,25 @@
 [
   {
+    "id": "satya-nadella-says-we-should-assume-20261011",
+    "slug": "satya-nadella-says-we-should-assume",
+    "headline": "Satya Nadella says we should assume all AI models are ‘compromised’",
+    "summary": "Microsoft CEO Nadella says assume all AI models are compromised and build containment systems from the start.",
+    "body": "<p>Microsoft CEO Nadella calls for emergency brake on AI, treating all models as compromised.</p>\n<p>Microsoft CEO Satya Nadella has laid out his views on risks posed by highly advanced AI models in a lengthy post on X. He argues we can no longer accept a world where AI is treated as a set of nested black boxes whose advice and actions we simply accept or reject without understanding them.</p>\n<p>Nadella's framework calls for building more transparent systems where models can be contained and observed, leaving behind tamper-proof human-readable evidence. His recommendations align with broader industry calls for timely incident disclosure, independent audits, verifiable data, and containment measures.</p>\n<p>On containment, Nadella goes further than some in the field, stating that we must assume a model is compromised and contain it from the start, treating it like an emergency brake. An authorized person should always be able to pause or shut down a model mid-task.</p>\n<p>Nadella emphasizes that more advanced models will require more advanced containment technologies that the industry needs to standardize on.</p>\n<p>Nadella urges treating all AI models as potentially compromised and building standardized containment systems from the start.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_satya-nadella-says-we-should-assume_20261011_am.png",
+    "image": "images/aifeed_satya-nadella-says-we-should-assume_20261011_am.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+    "publishedAt": "2026-10-11T12:13:09.565Z",
+    "hashtags": [
+      "AISafety",
+      "MicrosoftAI",
+      "AIGovernance",
+      "NadellaAI",
+      "Containment"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "book-publishers-are-quietly-using-more-20261010",
     "slug": "book-publishers-are-quietly-using-more",
     "headline": "Book Publishers Are Quietly Using More AI. Staff Are Revolting",
