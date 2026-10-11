@@ -1,72 +1,65 @@
 [
   {
     "rank": 1,
-    "headline": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
-    "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
-    "score": 92,
-    "reason": "Major infrastructure impact, concrete military action with AI infrastructure as target"
+    "headline": "Microsoft&apos;s Nadella says AI needs an ‘emergency brake’ that humans control",
+    "link": "https://www.cnbc.com/2026/10/10/microsoft-satya-nadella-ai-emergency-brake-safety.html",
+    "score": 88,
+    "reason": "Major CEO statement on AI safety with concrete governance proposal; addresses critical concern"
   },
   {
     "rank": 2,
-    "headline": "Satya Nadella says we should assume all AI models are ‘compromised’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
-    "score": 88,
-    "reason": "Microsoft executive, significant security controversy, direct leadership statement on model integrity"
+    "headline": "Anthropic is cutting off its internal evaluations from the internet",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+    "score": 85,
+    "reason": "Significant safety measure by major AI lab; demonstrates concrete action on evaluation integrity"
   },
   {
     "rank": 3,
-    "headline": "Meet Aurora: the invite-only, $10,000-a-year AI concierge that anticipates the ultra-wealthy’s every need",
-    "link": "https://fortune.com/2026/10/11/meet-aurora-invite-only-ai-concierge-ultrawealthy-pay-10000-a-year-to-anticipate-their-every-need/",
+    "headline": "AI Is Getting Really Good at Messing With Cybercriminals",
+    "link": "https://www.wired.com/story/ai-is-getting-really-good-at-messing-with-cybercriminals/",
     "score": 82,
-    "reason": "New AI product launch with specific pricing, high-profile use case"
+    "reason": "Concrete demonstration of AI effectiveness in adversarial domain; measurable real-world impact"
   },
   {
     "rank": 4,
-    "headline": "McKinsey research shows AI creating more jobs than automation displaces — but 11 million American workers will need help this decade",
-    "link": "https://fortune.com/2026/10/11/mckinsey-research-11-million-americans-new-job-next-decade/",
-    "score": 80,
-    "reason": "Major research study with quantified impact numbers, significant workforce implications"
+    "headline": "Don’t Be ‘Cruel’ to Claude: Anthropic’s New Abuse Policy Tests AI Personhood",
+    "link": "https://www.cnet.com/tech/services-and-software/anthropic-cruel-claude-ai-model-abuse/",
+    "score": 79,
+    "reason": "Controversial policy shift by major AI company; raises significant questions about AI rights/personhood"
   },
   {
     "rank": 5,
-    "headline": "'Never seen anything quite like it': How rural Pennsylvania’s $165 million data center fight became representative of the bipartisan battle against AI",
-    "link": "https://fortune.com/2026/10/11/rural-pennsylvania-northpoint-development-amazon-data-center-backlash-bipartisan-opposition/",
-    "score": 78,
-    "reason": "Concrete $165M infrastructure controversy, bipartisan political dimension"
+    "headline": "AI’s quiet safety gatekeepers are stepping into the spotlight",
+    "link": "https://www.cnbc.com/2026/10/11/ais-quiet-safety-gatekeepers-are-stepping-into-the-spotlight.html",
+    "score": 76,
+    "reason": "Structural shift in AI industry; emerging safety infrastructure becoming visible"
   },
   {
     "rank": 6,
-    "headline": "Hollywood takes on Zuckerberg, Musk and Altman amid widespread anxiety over AI",
-    "link": "https://www.cnbc.com/2026/10/10/ai-movies-tech-ceos-hollywood.html",
-    "score": 75,
-    "reason": "Major industry controversy, multiple prominent figures, significant cultural conflict"
+    "headline": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
+    "score": 74,
+    "reason": "Industry-wide political/messaging coordination; demonstrates power dynamics in tech policy"
   },
   {
     "rank": 7,
-    "headline": "AI is changing how lawyers work — and putting the billable hour under pressure",
-    "link": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html",
-    "score": 72,
-    "reason": "Significant industry disruption with economic implications"
+    "headline": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
+    "link": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
+    "score": 71,
+    "reason": "Concrete enforcement action in AI-music rights conflict; demonstrates real legal consequences"
   },
   {
     "rank": 8,
-    "headline": "Nvidia GPUs are everywhere. Here are the ways companies are accessing them",
-    "link": "https://www.cnbc.com/2026/10/10/nvidia-gpus-are-everywhere-heres-how-companies-access-them.html",
-    "score": 70,
-    "reason": "Market dominance report on critical AI infrastructure"
+    "headline": "Apple Home's new AI summaries for security cameras cost more than you'd think",
+    "link": "https://www.engadget.com/2281077/apple-home-ai-summaries-security-camera-prices/",
+    "score": 68,
+    "reason": "Quantified analysis of AI feature pricing; consumer impact data"
   },
   {
     "rank": 9,
-    "headline": "Free Gemini users now on ‘Auto’ models as app adds thinking levels",
-    "link": "https://9to5google.com/2026/10/09/gemini-auto-free-users/",
-    "score": 68,
-    "reason": "Google product feature launch with capability expansion"
-  },
-  {
-    "rank": 10,
-    "headline": "AI may change the price of your Big Mac and groceries — what this means for shoppers",
-    "link": "https://www.cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html",
-    "score": 65,
-    "reason": "Broad consumer impact with price implications"
+    "headline": "Learning to use local AI is exciting, overwhelming, and frustrating",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
+    "score": 64,
+    "reason": "User adoption friction in emerging AI category; reflects real deployment challenges"
   }
 ]
