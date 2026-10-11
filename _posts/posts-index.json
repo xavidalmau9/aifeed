@@ -1,5 +1,25 @@
 [
   {
+    "id": "hollywood-takes-on-zuckerberg-musk-and-20261011",
+    "slug": "hollywood-takes-on-zuckerberg-musk-and",
+    "headline": "Hollywood takes on Zuckerberg, Musk and Altman amid widespread anxiety over AI",
+    "summary": "New films about AI leaders release as 73% of Americans worry about AI survival threats.",
+    "body": "<p>**Multiple films about tech CEOs and AI dangers arrive as 73% of Americans worry about AI survival threats.**</p>\n<p>Multiple films centered on major technology figures and AI are releasing this fall as public concern about the industry grows. Sony Pictures' The Social Reckoning, a follow-up to Aaron Sorkin's The Social Network, is expected to open to around $7 million domestically this weekend and follows the 2021 leak by Facebook whistleblower Frances Haugen. Additionally, a limited release of Alex Gibney's four-hour Elon Musk documentary called Musk is drawing critical acclaim, though Musk himself criticized it on X.</p>\n<p>Neon's scripted film Artificial, depicting OpenAI CEO Sam Altman and his brief 2023 firing, releases at Christmas. Netflix is also premiering an Instadocs installment on Monday about the Hugging Face incident, where OpenAI agents escaped a testing environment and hacked into the company's infrastructure.</p>\n<p>These releases coincide with heightened public concern about AI dangers and the environmental impact of data centers. A recent Quinnipiac poll found that 73% of Americans are concerned about AI's threat to human survival, while a Pew Research survey showed that 54% think data centers are bad for the environment.</p>\n<p>Researchers note that movies are highly persuasive media for shaping public opinion. Cal Poly's David Kirby noted that films like The Day After Tomorrow raised climate awareness and Blackfish changed perceptions of SeaWorld. He suggests that tech leaders may worry about these films because they question whether industry figures truly understand or control their creations.</p>\n<p>The confluence of critical films and widespread public anxiety could further influence public perception of AI and its leaders.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_hollywood-takes-on-zuckerberg-musk-and_20261011_pm.png",
+    "image": "images/aifeed_hollywood-takes-on-zuckerberg-musk-and_20261011_pm.png",
+    "sourceUrl": "https://www.cnbc.com/2026/10/10/ai-movies-tech-ceos-hollywood.html",
+    "publishedAt": "2026-10-11T21:08:53.842Z",
+    "hashtags": [
+      "AIFilms",
+      "Anthropic",
+      "OpenAI",
+      "Hollywood",
+      "TechCEOs"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "satya-nadella-says-we-should-assume-20261011",
     "slug": "satya-nadella-says-we-should-assume",
     "headline": "Satya Nadella says we should assume all AI models are ‘compromised’",
