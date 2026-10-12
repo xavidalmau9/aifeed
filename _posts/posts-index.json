@@ -1,5 +1,25 @@
 [
   {
+    "id": "intel-broadcom-ceos-warn-capital-crunch-20261012",
+    "slug": "intel-broadcom-ceos-warn-capital-crunch",
+    "headline": "Intel, Broadcom CEOs warn capital crunch could become AI's biggest bottleneck",
+    "summary": "Intel and Broadcom CEOs warn that access to capital could emerge as a major constraint on AI expansion.",
+    "body": "<p>Capital access could emerge as AI's biggest constraint, warn Intel and Broadcom CEOs.</p>\n<p>Intel CEO Lip-Bu Tan and Broadcom CEO Hock Tan warned at the DBS Asia Future Forward Conference in Singapore that access to capital could emerge as a major constraint on the AI boom. Tan highlighted rising costs of capital and questions over whether companies investing heavily in AI will generate sufficient returns.</p>\n<p>The industry has poured enormous sums into data centers, advanced chips and power infrastructure in anticipation of surging demand. Rising bond yields could make it more expensive to fund data center construction and chip purchases, potentially putting pressure on project economics that may take years to generate returns.</p>\n<p>Both executives remained bullish on near-term demand for AI computing infrastructure, with Hock Tan saying demand could persist through 2029 and potentially into 2030. Tan noted the industry has repeatedly overcome supply bottlenecks over the past two years.</p>\n<p>Hock Tan suggested wafer shortages could ease by 2028 or 2029, while power availability could also improve as new infrastructure comes online. He noted memory shortages today might not persist a year from now.</p>\n<p>Sustaining growth beyond the next few years will depend on how quickly businesses adopt AI and whether the technology delivers meaningful economic benefits. Broadcom's Tan cautioned demand could slow if adoption of advanced AI models disappoints or capability improvements plateau.</p>\n<p>Capital constraints could pose a major challenge to AI expansion, the CEOs warned.</p>",
+    "category": "Business",
+    "imageUrl": "https://aifeed.run/images/aifeed_intel-broadcom-ceos-warn-capital-crunch_20261012_am.png",
+    "image": "images/aifeed_intel-broadcom-ceos-warn-capital-crunch_20261012_am.png",
+    "sourceUrl": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html",
+    "publishedAt": "2026-10-12T12:14:24.268Z",
+    "hashtags": [
+      "AI",
+      "Capital",
+      "Infrastructure",
+      "Tech",
+      "Intel"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "hollywood-takes-on-zuckerberg-musk-and-20261011",
     "slug": "hollywood-takes-on-zuckerberg-musk-and",
     "headline": "Hollywood takes on Zuckerberg, Musk and Altman amid widespread anxiety over AI",

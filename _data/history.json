@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-12T12:14:24.268Z",
+      "date": "2026-10-12",
+      "slot": 1,
+      "headline": "Intel, Broadcom CEOs warn capital crunch could become AI's biggest bottleneck",
+      "canonUrl": "cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html",
+      "url": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html",
+      "slug": "intel-broadcom-ceos-warn-capital-crunch",
+      "image": "aifeed_intel-broadcom-ceos-warn-capital-crunch_20261012_am.png",
+      "photo": {
+        "dhash": "5757a7b7b7a5696b",
+        "phash": "d30ec239f939c30b",
+        "hist": [
+          74,
+          311,
+          22,
+          0,
+          0,
+          2,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          51,
+          2,
+          0,
+          0,
+          8,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          74,
+          0,
+          0,
+          0,
+          13,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          425
+        ],
+        "url": "https://image.cnbcfm.com/api/v1/image/108315138-17804039612026-06-02t070118z_913331550_rc2jllarvolb_rtrmadp_0_computex-intel.jpeg?v=1780403995&w=1920&h=1080",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-11T21:08:53.842Z",
       "date": "2026-10-11",
       "slot": 2,
@@ -969,6 +1051,48 @@
         "rank": 10,
         "title": "Microsoft's Nadella says AI needs an ‘emergency brake’ that humans control",
         "canonUrl": "cnbc.com/2026/10/10/microsoft-satya-nadella-ai-emergency-brake-safety.html"
+      }
+    ],
+    "2026-10-12": [
+      {
+        "rank": 1,
+        "title": "Intel, Broadcom CEOs warn capital crunch could become AI's biggest bottleneck",
+        "canonUrl": "cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
+      },
+      {
+        "rank": 2,
+        "title": "World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI ‘tsunami’",
+        "canonUrl": "cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html"
+      },
+      {
+        "rank": 3,
+        "title": "AI’s quiet safety gatekeepers are stepping into the spotlight",
+        "canonUrl": "cnbc.com/2026/10/11/ais-quiet-safety-gatekeepers-are-stepping-into-the-spotlight.html"
+      },
+      {
+        "rank": 4,
+        "title": "Microsoft's president says AI is less regulated than a carton of milk",
+        "canonUrl": "engadget.com/2283487/microsoft-president-ai-less-regulated-than-a-carton-of-milk"
+      },
+      {
+        "rank": 5,
+        "title": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai"
+      },
+      {
+        "rank": 6,
+        "title": "TikTok CEO sees major scientific breakthroughs from AI within three years",
+        "canonUrl": "cnbc.com/2026/10/12/tiktok-ceo-bytedance-ai-scientific-breakthroughs.html"
+      },
+      {
+        "rank": 7,
+        "title": "AI may change the price of your Big Mac and groceries — what this means for shoppers",
+        "canonUrl": "cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html"
+      },
+      {
+        "rank": 8,
+        "title": "OpenAI Dot vs. Meta Muse: How do these AI agents compare?",
+        "canonUrl": "engadget.com/2281289/openai-dot-vs-meta-muse-ai-agents-comparison"
       }
     ]
   }
