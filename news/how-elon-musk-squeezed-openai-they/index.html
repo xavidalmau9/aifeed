@@ -836,8 +836,23 @@
       e.preventDefault();
       const email = document.getElementById('inline-email').value;
       e.target.reset();
-      window.__subSource = 'article';
-      openSubOverlay(email);
+      goSubscribe(email, 'article');
+    }
+
+
+    // One step: the email typed on the page goes straight to Beehiiv's confirm page (no second form).
+    function goSubscribe(email, source) {
+      window.__subSource = source;
+      const url = 'https://magic.beehiiv.com/v1/eb0b9508-1ffd-4fb1-a63c-e762fa86569c?email=' + encodeURIComponent(email)
+        + '&utm_source=aifeed.run&utm_medium=website&utm_campaign=' + encodeURIComponent(source || 'site');
+      const w = window.open(url, '_blank');
+      if (!w) { window.location.href = url; return; }
+      try { w.opener = null; } catch (err) {}
+      document.getElementById('sub-email-field').value = email;
+      document.getElementById('sub-form-state').style.display = 'none';
+      document.getElementById('sub-success-state').style.display = 'block';
+      document.getElementById('sub-overlay').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
     }
 
     function openSubOverlay(email) {
@@ -921,6 +936,16 @@
 
     // ─── INIT ────────────────────────────────────────────────────────────
     loadPost();
+  </script>
+
+  <!-- STICKY SUBSCRIBE BAR -->
+  <div id="sub-bar" style="display:none;position:fixed;left:0;right:0;bottom:0;z-index:900;background:linear-gradient(90deg,#e8551f,#b123c7);color:#fff;font-family:Poppins,Inter,sans-serif;padding:10px 44px 10px 14px;text-align:center;font-size:15px;font-weight:600;box-shadow:0 -4px 18px rgba(0,0,0,.35)">
+    <a href="/subscribe/?utm_source=aifeed.run&amp;utm_medium=sticky_bar" style="color:#fff;text-decoration:none">📩 Free weekly AI brief at aifeed.run · <u>Subscribe free →</u></a>
+    <button aria-label="Close" onclick="document.getElementById('sub-bar').style.display='none';try{localStorage.setItem('subBarClosed',Date.now())}catch(e){}" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:0;color:#fff;font-size:22px;cursor:pointer;line-height:1">×</button>
+  </div>
+  <script>
+    (function(){ try { var c=+localStorage.getItem('subBarClosed')||0; if (Date.now()-c < 7*864e5) return; } catch(e){}
+      window.addEventListener('scroll', function f(){ if (window.scrollY > 500) { document.getElementById('sub-bar').style.display='block'; window.removeEventListener('scroll', f); } }, {passive:true}); })();
   </script>
 </body>
 </html>
