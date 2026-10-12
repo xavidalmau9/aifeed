@@ -1,65 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Microsoft&apos;s Nadella says AI needs an ‘emergency brake’ that humans control",
-    "link": "https://www.cnbc.com/2026/10/10/microsoft-satya-nadella-ai-emergency-brake-safety.html",
-    "score": 88,
-    "reason": "Major CEO statement on AI safety with concrete governance proposal; addresses critical concern"
+    "headline": "Intel, Broadcom CEOs warn capital crunch could become AI&apos;s biggest bottleneck",
+    "link": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html",
+    "score": 92,
+    "reason": "Major company leaders identify concrete infrastructure constraint; significant implications for AI industry scaling"
   },
   {
     "rank": 2,
-    "headline": "Anthropic is cutting off its internal evaluations from the internet",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
-    "score": 85,
-    "reason": "Significant safety measure by major AI lab; demonstrates concrete action on evaluation integrity"
+    "headline": "World Bank jobs council urges &apos;crisis-era&apos; employment support measures as IMF warns of AI ‘tsunami’",
+    "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html",
+    "score": 88,
+    "reason": "Major international institutions quantify AI employment impact; policy-level response to technological disruption"
   },
   {
     "rank": 3,
-    "headline": "AI Is Getting Really Good at Messing With Cybercriminals",
-    "link": "https://www.wired.com/story/ai-is-getting-really-good-at-messing-with-cybercriminals/",
-    "score": 82,
-    "reason": "Concrete demonstration of AI effectiveness in adversarial domain; measurable real-world impact"
+    "headline": "AI may change the price of your Big Mac and groceries — what this means for shoppers",
+    "link": "https://www.cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html",
+    "score": 85,
+    "reason": "Concrete economic impact quantification; consumer-facing consequences of AI adoption"
   },
   {
     "rank": 4,
-    "headline": "Don’t Be ‘Cruel’ to Claude: Anthropic’s New Abuse Policy Tests AI Personhood",
-    "link": "https://www.cnet.com/tech/services-and-software/anthropic-cruel-claude-ai-model-abuse/",
-    "score": 79,
-    "reason": "Controversial policy shift by major AI company; raises significant questions about AI rights/personhood"
+    "headline": "Microsoft's president says AI is less regulated than a carton of milk",
+    "link": "https://www.engadget.com/2283487/microsoft-president-ai-less-regulated-than-a-carton-of-milk/",
+    "score": 83,
+    "reason": "Executive commentary on regulatory gap; Microsoft takes public stance on AI governance"
   },
   {
     "rank": 5,
-    "headline": "AI’s quiet safety gatekeepers are stepping into the spotlight",
-    "link": "https://www.cnbc.com/2026/10/11/ais-quiet-safety-gatekeepers-are-stepping-into-the-spotlight.html",
-    "score": 76,
-    "reason": "Structural shift in AI industry; emerging safety infrastructure becoming visible"
+    "headline": "Can we trust OpenAI and Anthropic to monitor their own technology?",
+    "link": "https://fortune.com/2026/10/12/can-we-trust-openai-and-anthropic-to-monitor-their-own-technology/",
+    "score": 81,
+    "reason": "Controversy over self-regulation by leading AI companies; governance and safety concerns"
   },
   {
     "rank": 6,
-    "headline": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
-    "score": 74,
-    "reason": "Industry-wide political/messaging coordination; demonstrates power dynamics in tech policy"
+    "headline": "OpenAI Dot vs. Meta Muse: How do these AI agents compare?",
+    "link": "https://www.engadget.com/2281289/openai-dot-vs-meta-muse-ai-agents-comparison/",
+    "score": 78,
+    "reason": "Head-to-head comparison of major AI agent launches from two largest companies"
   },
   {
     "rank": 7,
-    "headline": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
-    "link": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
-    "score": 71,
-    "reason": "Concrete enforcement action in AI-music rights conflict; demonstrates real legal consequences"
+    "headline": "I Made Terrible Games With Google’s AI Playground",
+    "link": "https://www.wired.com/story/i-made-terrible-games-with-googles-ai-playground/",
+    "score": 72,
+    "reason": "Google AI tool real-world application; practical limitations documented"
   },
   {
     "rank": 8,
-    "headline": "Apple Home's new AI summaries for security cameras cost more than you'd think",
-    "link": "https://www.engadget.com/2281077/apple-home-ai-summaries-security-camera-prices/",
-    "score": 68,
-    "reason": "Quantified analysis of AI feature pricing; consumer impact data"
+    "headline": "Recruiters could soon interview a candidate’s AI twin before meeting a real person",
+    "link": "https://fortune.com/2026/10/12/recruiter-interview-screen-ai-twin-ashutosh-garg-eightfold-ai-twincafe/",
+    "score": 70,
+    "reason": "Emerging AI application in hiring with workplace implications; novel use case"
   },
   {
     "rank": 9,
-    "headline": "Learning to use local AI is exciting, overwhelming, and frustrating",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
-    "score": 64,
-    "reason": "User adoption friction in emerging AI category; reflects real deployment challenges"
+    "headline": "Learning to Play Like a Pro: Adaptive Motion Planning and Tracking for Humanoid Robots",
+    "link": "https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-robots/",
+    "score": 68,
+    "reason": "Humanoid robotics advancement; technical breakthrough in AI-powered physical systems"
+  },
+  {
+    "rank": 10,
+    "headline": "TikTok CEO sees major scientific breakthroughs from AI within three years",
+    "link": "https://www.cnbc.com/2026/10/12/tiktok-ceo-bytedance-ai-scientific-breakthroughs.html",
+    "score": 65,
+    "reason": "Major platform executive prediction; big-number future impact claim"
   }
 ]
