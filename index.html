@@ -1522,10 +1522,7 @@
       <!-- HERO EMAIL CAPTURE -->
       <div class="hero-email-box">
         <p class="label">Free weekly AI brief, every Sunday.</p>
-        <form class="hero-email-form" onsubmit="handleSubscribe(event, 'hero')">
-          <input type="email" placeholder="your@email.com" required id="hero-email-input" />
-          <button type="submit">Subscribe Free →</button>
-        </form>
+        <div class="bh-embed" style="width:100%;max-width:480px;min-height:60px"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="f9ece7d9-daa1-4920-8d91-fa72ba66e8ff"></script></div>
         <p class="hero-social-proof"><span>Free.</span> No spam. Unsubscribe anytime.</p>
       </div>
 
@@ -1591,10 +1588,7 @@
       <p class="eyebrow">📬 Free Newsletter</p>
       <h2>Stay in the <span style="color:var(--purple2)">feed</span></h2>
       <p>Free weekly AI brief: the week's top AI stories, every Sunday.</p>
-      <form class="newsletter-form-mid" onsubmit="handleSubscribe(event, 'mid')">
-        <input type="email" placeholder="your@email.com" required id="mid-email-input" />
-        <button type="submit">Subscribe →</button>
-      </form>
+      <div class="bh-embed" style="width:100%;max-width:480px;min-height:60px"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="f9ece7d9-daa1-4920-8d91-fa72ba66e8ff"></script></div>
       <div class="newsletter-perks">
         <div class="newsletter-perk"><span>✓</span> Every Sunday</div>
         <div class="newsletter-perk"><span>✓</span> Zero spam</div>
@@ -1685,10 +1679,7 @@
       <p class="eyebrow">📬 The AIFeed Newsletter</p>
       <h2>Never miss a <span style="color:var(--purple2)">big AI story</span></h2>
       <p>Free weekly AI brief: the week's top AI stories every Sunday, two sentences each, with sources.</p>
-      <form class="newsletter-form-bottom" onsubmit="handleSubscribe(event, 'bottom')">
-        <input type="email" placeholder="your@email.com" required id="bottom-email-input" />
-        <button type="submit">Get the Feed →</button>
-      </form>
+      <div class="bh-embed" style="width:100%;max-width:480px;min-height:60px"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="f9ece7d9-daa1-4920-8d91-fa72ba66e8ff"></script></div>
       <p class="newsletter-fine">Free. Zero spam. Unsubscribe in one click.</p>
     </section>
 
@@ -2168,10 +2159,7 @@
               <p class="eyebrow">📬 Free newsletter</p>
               <h3>The week's top AI stories, every Sunday. Free.</h3>
             </div>
-            <form class="feed-signup-form" onsubmit="handleSubscribe(event, 'feed')">
-              <input type="email" placeholder="your@email.com" required id="feed-email-input" aria-label="Email address" />
-              <button type="submit">Subscribe →</button>
-            </form>
+            <a class="feed-signup-btn" href="/subscribe/?utm_source=aifeed.run&amp;utm_medium=website&amp;utm_campaign=feed" style="display:inline-block;padding:14px 22px;border-radius:12px;background:linear-gradient(90deg,#e8551f,#b123c7);color:#fff;font-weight:700;text-decoration:none">Subscribe free →</a>
           </div>`;
       grid.innerHTML = pagePosts.map((post, i) => cardHtml(post, i) + (i === 5 && pagePosts.length > 6 ? feedSignup : '')).join('');
       renderIgStrip();
@@ -2427,5 +2415,6 @@
     (function(){ try { var c=+localStorage.getItem('subBarClosed')||0; if (Date.now()-c < 7*864e5) return; } catch(e){}
       window.addEventListener('scroll', function f(){ if (window.scrollY > 500) { document.getElementById('sub-bar').style.display='block'; window.removeEventListener('scroll', f); } }, {passive:true}); })();
   </script>
+<script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script>
 </body>
 </html>

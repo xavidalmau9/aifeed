@@ -719,10 +719,7 @@
           <div class="follow-col follow-email">
             <p class="eyebrow">📬 Free newsletter</p>
             <h3>Free weekly AI brief at aifeed.run: the week's top AI stories, every Sunday.</h3>
-            <form class="inline-newsletter-form" onsubmit="handleSubscribe(event)">
-              <input type="email" placeholder="your@email.com" required id="inline-email" aria-label="Email address" />
-              <button type="submit">Subscribe →</button>
-            </form>
+            <div class="bh-embed" style="width:100%;max-width:480px;min-height:60px"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="f9ece7d9-daa1-4920-8d91-fa72ba66e8ff"></script></div>
           </div>
         </div>
 
@@ -914,5 +911,6 @@
     (function(){ try { var c=+localStorage.getItem('subBarClosed')||0; if (Date.now()-c < 7*864e5) return; } catch(e){}
       window.addEventListener('scroll', function f(){ if (window.scrollY > 500) { document.getElementById('sub-bar').style.display='block'; window.removeEventListener('scroll', f); } }, {passive:true}); })();
   </script>
+<script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script>
 </body>
 </html>

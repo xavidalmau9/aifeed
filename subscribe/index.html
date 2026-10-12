@@ -31,26 +31,11 @@
   <span class="pill">AIFEED.RUN</span>
   <h1>Free weekly <span>AI brief</span></h1>
   <p class="sub">The week's top AI stories every Sunday, explained in 60 seconds, with the source every time.</p>
-  <form id="f">
-    <input type="email" id="e" placeholder="your@email.com" required autocomplete="email" autofocus>
-    <button type="submit">Subscribe free →</button>
-  </form>
-  <div id="done"><p class="sub">Almost there. Tap <b>Subscribe</b> on the Beehiiv page that just opened to confirm. Welcome to the feed!</p></div>
+  <div class="bh-embed" style="width:100%;margin:0 auto;min-height:60px"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="f9ece7d9-daa1-4920-8d91-fa72ba66e8ff"></script></div>
   <ul><li>✓ One email, every Sunday</li><li>✓ Sources linked on every story</li><li>✓ Free. Unsubscribe in one click</li></ul>
   <p class="fine">Trouble with the form? <a href="https://aifeed.beehiiv.com/subscribe" rel="noopener">Subscribe on Beehiiv</a> · <a href="/">Read the latest stories</a></p>
 </main>
-<script>
-  var ML='https://magic.beehiiv.com/v1/eb0b9508-1ffd-4fb1-a63c-e762fa86569c';
-  var q=new URLSearchParams(location.search);
-  document.getElementById('f').addEventListener('submit',function(ev){
-    ev.preventDefault();
-    var url=ML+'?email='+encodeURIComponent(document.getElementById('e').value)
-      +'&utm_source='+encodeURIComponent(q.get('utm_source')||'aifeed.run')
-      +'&utm_medium='+encodeURIComponent(q.get('utm_medium')||'subscribe_page')
-      +'&utm_campaign='+encodeURIComponent(q.get('utm_campaign')||'subscribe');
-    url+='&redirect_to='+encodeURIComponent('https://aifeed.run/subscribe/thanks/');
-    location.href=url; // same tab: no popup prompts in Instagram's in-app browser
-  });
-</script>
+
+<script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script>
 </body>
 </html>
