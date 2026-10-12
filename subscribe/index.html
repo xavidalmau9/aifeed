@@ -48,10 +48,8 @@
       +'&utm_source='+encodeURIComponent(q.get('utm_source')||'aifeed.run')
       +'&utm_medium='+encodeURIComponent(q.get('utm_medium')||'subscribe_page')
       +'&utm_campaign='+encodeURIComponent(q.get('utm_campaign')||'subscribe');
-    var w=window.open(url,'_blank');
-    if(!w){location.href=url;return;}
-    try{w.opener=null}catch(e){}
-    this.style.display='none';document.getElementById('done').style.display='block';
+    url+='&redirect_to='+encodeURIComponent('https://aifeed.run/subscribe/thanks/');
+    location.href=url; // same tab: no popup prompts in Instagram's in-app browser
   });
 </script>
 </body>

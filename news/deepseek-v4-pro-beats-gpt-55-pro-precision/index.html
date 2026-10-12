@@ -847,8 +847,8 @@
       window.__subSource = source;
       const url = 'https://magic.beehiiv.com/v1/eb0b9508-1ffd-4fb1-a63c-e762fa86569c?email=' + encodeURIComponent(email)
         + '&utm_source=aifeed.run&utm_medium=website&utm_campaign=' + encodeURIComponent(source || 'site');
-      const w = window.open(url, '_blank');
-      if (!w) { window.location.href = url; return; }
+      // Same tab (no popup: in-app browsers like Instagram's prompt on new windows); Beehiiv sends the visitor to our thanks page after the one tap.
+      window.location.href = url + '&redirect_to=' + encodeURIComponent('https://aifeed.run/subscribe/thanks/'); return;
       try { w.opener = null; } catch (err) {}
       document.getElementById('sub-email-field').value = email;
       document.getElementById('sub-form-state').style.display = 'none';
@@ -878,8 +878,8 @@
       // Opens Beehiiv's one-click confirm page for this email ("You'll be subscribed with …"). No secret client-side.
       const bhUrl = BEEHIIV_SUBSCRIBE_URL + '?email=' + encodeURIComponent(email)
         + '&utm_source=aifeed.run&utm_medium=website&utm_campaign=' + encodeURIComponent(window.__subSource || 'site');
-      const w = window.open(bhUrl, '_blank');
-      if (!w) { window.location.href = bhUrl; return; }  // popup blocked: continue in same tab
+      // Same tab (no popup: in-app browsers like Instagram's prompt on new windows); Beehiiv sends the visitor to our thanks page after the one tap.
+      window.location.href = bhUrl + '&redirect_to=' + encodeURIComponent('https://aifeed.run/subscribe/thanks/'); return;
       try { w.opener = null; } catch (err) {}
       document.getElementById('sub-form-state').style.display = 'none';
       document.getElementById('sub-success-state').style.display = 'block';
