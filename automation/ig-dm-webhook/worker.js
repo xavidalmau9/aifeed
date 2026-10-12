@@ -48,7 +48,7 @@ export async function handleComment(env, v) {
   const key = `done:${cid}`;
   if (env.STATE && (await env.STATE.get(key))) return "dup";
   if (env.STATE) await env.STATE.put(key, "1", { expirationTtl: 90 * 86400 });
-  const dm = await graph(env, `${env.IG_USER_ID}/messages`,
+  const dm = await graph(env, `${env.FB_PAGE_ID || env.IG_USER_ID}/messages`,
     { recipient: { comment_id: cid }, message: { text: DM_TEXT } });
   let pub = { ok: false, skipped: true };
   if (dm.ok) pub = await graph(env, `${cid}/replies`, { message: PUBLIC_REPLY });

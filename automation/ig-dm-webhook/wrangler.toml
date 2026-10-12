@@ -4,8 +4,9 @@ compatibility_date = "2026-10-01"
 
 [vars]
 IG_USER_ID = "17841442136197946"
+FB_PAGE_ID = "1434982969687864"  # private replies must go via /{page-id}/messages (IG-id route returns #3)
 GRAPH_VERSION = "v21.0"
-ENABLED = "false"
+ENABLED = "true"
 
 # Create with: npx wrangler kv namespace create STATE  -> paste the id below
 [[kv_namespaces]]
