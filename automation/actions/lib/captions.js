@@ -13,13 +13,13 @@ function tags5(arr) { const out = []; for (const t of (arr || []).map(normTag)) 
 function cleanUrl(u) { return String(u || '').trim().replace(/[?#].*$/, m => /utm_|fbclid|gclid/.test(m) ? '' : m); }
 function buildIg(g, url) {
   const hook = normText(g.igHook), paras = (g.igParagraphs || []).map(normText).filter(Boolean).slice(0, 4), tg = tags5(g.igHashtags);
-  const blocks = [hook, ...paras, `Source: ${normText(g.outlet)} · ${cleanUrl(url)}`, '📩 Free weekly AI brief → link in bio', tg.map(t => '#' + t).join(' ')];
+  const blocks = [hook, ...paras, `Source: ${normText(g.outlet)} · ${cleanUrl(url)}`, IG_CTA, tg.map(t => '#' + t).join(' ')];
   return blocks.join(`\n${SPACER}\n`);
 }
 // Facebook Page post: the Instagram caption with the same blocks and spacers. Only the CTA changes,
 // because Facebook has no "link in bio". Still exactly one URL (the source) and one Source line.
-const IG_CTA = '📩 Free weekly AI brief → link in bio';
-const FB_CTA = '📩 Free weekly AI brief → aifeed.run';
+const IG_CTA = '📩 Free weekly AI brief at aifeed.run → link in bio';
+const FB_CTA = '📩 Free weekly AI brief at aifeed.run/subscribe';
 function buildFb(igCaption) {
   return String(igCaption || '').split(`\n${SPACER}\n`).map(b => (b === IG_CTA ? FB_CTA : b)).join(`\n${SPACER}\n`);
 }
@@ -50,7 +50,7 @@ function checkIg(c, url) {
   if (blocks.slice(0, -1).some(b => b.split('\n').length > 1)) e.push('paragraph contains line break');
   const src = blocks[n - 3] || '';
   if (!/^Source: [^·\n]+ · https?:\/\/\S+$/.test(src)) e.push('source line malformed');
-  if ((blocks[n - 2] || '') !== '📩 Free weekly AI brief → link in bio') e.push('brief CTA line malformed (must sit alone after a spacer below Source)');
+  if ((blocks[n - 2] || '') !== IG_CTA) e.push('brief CTA line malformed (must sit alone after a spacer below Source)');
   if ((c.match(/https?:\/\//g) || []).length !== 1) e.push('URL must appear exactly once');
   if (!/^(#[A-Za-z0-9]+ ){4}#[A-Za-z0-9]+$/.test(blocks[n - 1] || '')) e.push('hashtag line must be exactly 5 tags');
   if ((c.match(/#[A-Za-z0-9]+/g) || []).length !== 5) e.push('hashtags outside last line');

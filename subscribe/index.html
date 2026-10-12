@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free weekly AI brief | AIFeed.run</title>
+<meta name="description" content="Free weekly AI brief at aifeed.run: the week's top AI stories every Sunday, explained in 60 seconds, with sources.">
+<link rel="canonical" href="https://aifeed.run/subscribe/">
+<meta property="og:title" content="Free weekly AI brief | AIFeed.run">
+<meta property="og:description" content="The week's top AI stories every Sunday, explained in 60 seconds, with sources. Free.">
+<meta property="og:image" content="https://aifeed.run/og-image.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0}
+  body{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 30%,#2a1660,#0f0c24 70%);color:#fff;font-family:Inter,sans-serif;padding:24px}
+  .card{max-width:440px;width:100%;text-align:center}
+  .pill{display:inline-block;background:linear-gradient(90deg,#e8551f,#b123c7);border-radius:999px;padding:6px 16px;font:700 13px Poppins,sans-serif;letter-spacing:.5px}
+  h1{font:800 34px/1.15 Poppins,sans-serif;margin:18px 0 10px}
+  h1 span{color:#a259ff}
+  p.sub{color:#b9b5e0;font-size:16px;line-height:1.55;margin-bottom:22px}
+  input{width:100%;padding:15px 16px;border-radius:12px;border:1px solid #4b3c8f;background:#17123a;color:#fff;font-size:16px}
+  button{width:100%;margin-top:10px;padding:15px;border:0;border-radius:12px;background:linear-gradient(90deg,#e8551f,#b123c7);color:#fff;font:700 17px Poppins,sans-serif;cursor:pointer}
+  ul{list-style:none;padding:0;margin:20px 0 0;color:#b9b5e0;font-size:14px;line-height:1.9}
+  .fine{margin-top:18px;font-size:13px;color:#7b78a8}
+  .fine a{color:#b9b5e0}
+  #done{display:none}
+</style>
+</head>
+<body>
+<main class="card">
+  <span class="pill">AIFEED.RUN</span>
+  <h1>Free weekly <span>AI brief</span></h1>
+  <p class="sub">The week's top AI stories every Sunday, explained in 60 seconds, with the source every time.</p>
+  <form id="f">
+    <input type="email" id="e" placeholder="your@email.com" required autocomplete="email" autofocus>
+    <button type="submit">Subscribe free →</button>
+  </form>
+  <div id="done"><p class="sub">Almost there. Tap <b>Subscribe</b> on the Beehiiv page that just opened to confirm. Welcome to the feed!</p></div>
+  <ul><li>✓ One email, every Sunday</li><li>✓ Sources linked on every story</li><li>✓ Free. Unsubscribe in one click</li></ul>
+  <p class="fine">Trouble with the form? <a href="https://aifeed.beehiiv.com/subscribe" rel="noopener">Subscribe on Beehiiv</a> · <a href="/">Read the latest stories</a></p>
+</main>
+<script>
+  var ML='https://magic.beehiiv.com/v1/eb0b9508-1ffd-4fb1-a63c-e762fa86569c';
+  var q=new URLSearchParams(location.search);
+  document.getElementById('f').addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var url=ML+'?email='+encodeURIComponent(document.getElementById('e').value)
+      +'&utm_source='+encodeURIComponent(q.get('utm_source')||'aifeed.run')
+      +'&utm_medium='+encodeURIComponent(q.get('utm_medium')||'subscribe_page')
+      +'&utm_campaign='+encodeURIComponent(q.get('utm_campaign')||'subscribe');
+    var w=window.open(url,'_blank');
+    if(!w){location.href=url;return;}
+    try{w.opener=null}catch(e){}
+    this.style.display='none';document.getElementById('done').style.display='block';
+  });
+</script>
+</body>
+</html>

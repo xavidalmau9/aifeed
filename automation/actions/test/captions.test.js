@@ -33,7 +33,7 @@ test('Instagram caption has one Source line, the URL once, and a spacer before t
   assert.equal(sourceLines.length, 1);
   assert.equal(sourceLines[0], 'Source: The Verge · https://www.theverge.com/ai/openai-math');
   assert.equal(blocks[blocks.length - 3], sourceLines[0]);
-  assert.equal(blocks[blocks.length - 2], '📩 Free weekly AI brief → link in bio');
+  assert.equal(blocks[blocks.length - 2], '📩 Free weekly AI brief at aifeed.run → link in bio');
   assert.equal((cap.match(/https?:\/\//g) || []).length, 1);
   assert.equal(cap.includes('\n\n'), false);
   assert.deepEqual(checkIg(cap, URL), []);
@@ -59,9 +59,9 @@ test('LinkedIn caption: source URL once, then the free weekly brief line (newsle
 
 test('Instagram and Facebook CTAs say weekly, never daily', () => {
   const ig = buildIg(sample(), URL);
-  assert.ok(ig.includes('\n' + SPACER + '\n📩 Free weekly AI brief → link in bio\n' + SPACER + '\n'));
-  assert.equal(FB_CTA, '📩 Free weekly AI brief → aifeed.run');
-  assert.ok(buildFb(ig).includes('\n' + SPACER + '\n📩 Free weekly AI brief → aifeed.run\n' + SPACER + '\n'));
+  assert.ok(ig.includes('\n' + SPACER + '\n📩 Free weekly AI brief at aifeed.run → link in bio\n' + SPACER + '\n'));
+  assert.equal(FB_CTA, '📩 Free weekly AI brief at aifeed.run/subscribe');
+  assert.ok(buildFb(ig).includes('\n' + SPACER + '\n📩 Free weekly AI brief at aifeed.run/subscribe\n' + SPACER + '\n'));
   assert.equal(/daily/i.test(ig + buildFb(ig)), false);
   assert.ok(checkIg(ig.replace('weekly', 'daily'), URL).some(e => /brief CTA/.test(e)));
 });
@@ -99,7 +99,7 @@ test('Facebook caption = Instagram caption with the same spacers, Source line on
   assert.equal(fb.split('\n').filter(l => l.startsWith('Source:')).length, 1);
   assert.equal((fb.match(/https?:\/\//g) || []).length, 1);
   assert.equal(/link in bio/i.test(fb), false);
-  assert.equal(fb.replace(FB_CTA, '📩 Free weekly AI brief → link in bio'), ig);
+  assert.equal(fb.replace(FB_CTA, '📩 Free weekly AI brief at aifeed.run → link in bio'), ig);
   assert.deepEqual(checkFb(fb, URL), []);
   assert.ok(checkFb(ig, URL).length > 0, 'an unconverted IG caption must fail the FB check');
   const doubled = fb.replace('\n' + SPACER + '\n' + FB_CTA, '\n' + SPACER + '\nSource: X · https://x.com/a\n' + SPACER + '\n' + FB_CTA);
