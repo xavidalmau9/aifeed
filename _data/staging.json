@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Intel, Broadcom CEOs warn capital crunch could become AI&apos;s biggest bottleneck",
-    "link": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html",
-    "score": 92,
-    "reason": "Major company leaders identify concrete infrastructure constraint; significant implications for AI industry scaling"
+    "headline": "Microsoft’s new AI chip makes it less reliant on Nvidia’s GPUs",
+    "link": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+    "score": 94,
+    "reason": "Major infrastructure shift; big numbers implicit (reducing Nvidia dependence); concrete product launch"
   },
   {
     "rank": 2,
-    "headline": "World Bank jobs council urges &apos;crisis-era&apos; employment support measures as IMF warns of AI ‘tsunami’",
-    "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html",
-    "score": 88,
-    "reason": "Major international institutions quantify AI employment impact; policy-level response to technological disruption"
+    "headline": "Amazon has over 1 million robot workers. What’s next for human employees?",
+    "link": "https://arstechnica.com/ai/2026/10/inside-amazons-robotic-arms-race-and-what-it-means-for-the-future-of-human-work/",
+    "score": 92,
+    "reason": "Striking big number (1M robots); concrete milestone; employment controversy angle"
   },
   {
     "rank": 3,
-    "headline": "AI may change the price of your Big Mac and groceries — what this means for shoppers",
-    "link": "https://www.cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html",
-    "score": 85,
-    "reason": "Concrete economic impact quantification; consumer-facing consequences of AI adoption"
+    "headline": "Claude sent a false homicide tip to police – and it’s part of a troubling AI pattern",
+    "link": "https://www.zdnet.com/innovation/claude-false-homicide-tip/",
+    "score": 90,
+    "reason": "Concrete controversy; real-world harm; establishes pattern of AI failures"
   },
   {
     "rank": 4,
-    "headline": "Microsoft's president says AI is less regulated than a carton of milk",
-    "link": "https://www.engadget.com/2283487/microsoft-president-ai-less-regulated-than-a-carton-of-milk/",
-    "score": 83,
-    "reason": "Executive commentary on regulatory gap; Microsoft takes public stance on AI governance"
+    "headline": "Meta’s Muse AI Is Building a Dossier on You. Here’s What’s Actually in It",
+    "link": "https://www.cnet.com/tech/services-and-software/metas-muse-agentic-ai-privacy-violations-security-data/",
+    "score": 88,
+    "reason": "Privacy controversy; concrete investigation; Meta product launch with criticism"
   },
   {
     "rank": 5,
-    "headline": "Can we trust OpenAI and Anthropic to monitor their own technology?",
-    "link": "https://fortune.com/2026/10/12/can-we-trust-openai-and-anthropic-to-monitor-their-own-technology/",
-    "score": 81,
-    "reason": "Controversy over self-regulation by leading AI companies; governance and safety concerns"
+    "headline": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
+    "link": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
+    "score": 86,
+    "reason": "Concrete enforcement action; major lawsuit consequences; quantifiable impact on creators"
   },
   {
     "rank": 6,
-    "headline": "OpenAI Dot vs. Meta Muse: How do these AI agents compare?",
-    "link": "https://www.engadget.com/2281289/openai-dot-vs-meta-muse-ai-agents-comparison/",
-    "score": 78,
-    "reason": "Head-to-head comparison of major AI agent launches from two largest companies"
+    "headline": "Meet Aurora: the invite-only, $10,000-a-year AI concierge that anticipates the ultrawealthy’s every need",
+    "link": "https://fortune.com/2026/10/11/meet-aurora-invite-only-ai-concierge-ultrawealthy-pay-10000-a-year-to-anticipate-their-every-need/",
+    "score": 84,
+    "reason": "Concrete product launch; specific pricing; new AI service category"
   },
   {
     "rank": 7,
-    "headline": "I Made Terrible Games With Google’s AI Playground",
-    "link": "https://www.wired.com/story/i-made-terrible-games-with-googles-ai-playground/",
-    "score": 72,
-    "reason": "Google AI tool real-world application; practical limitations documented"
+    "headline": "The new energy permitting bill to feed the AI boom unites fossil fuels and clean power while dividing green energy and environmentalists",
+    "link": "https://fortune.com/2026/10/11/energy-permitting-ai-fossil-fuels-clean-power-environmentalists/",
+    "score": 82,
+    "reason": "Policy launch with major controversy; infrastructure for AI scaling; clear stakeholder conflict"
   },
   {
     "rank": 8,
-    "headline": "Recruiters could soon interview a candidate’s AI twin before meeting a real person",
-    "link": "https://fortune.com/2026/10/12/recruiter-interview-screen-ai-twin-ashutosh-garg-eightfold-ai-twincafe/",
-    "score": 70,
-    "reason": "Emerging AI application in hiring with workplace implications; novel use case"
+    "headline": "Epic reportedly delays its Disney video game so it can be made using more AI",
+    "link": "https://www.engadget.com/2284680/epic-reportedly-delays-its-disney-video-game-so-it-can-be-made-using-more-ai/",
+    "score": 80,
+    "reason": "Concrete product decision; major studio shift in AI adoption; game industry milestone"
   },
   {
     "rank": 9,
-    "headline": "Learning to Play Like a Pro: Adaptive Motion Planning and Tracking for Humanoid Robots",
-    "link": "https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-robots/",
-    "score": 68,
-    "reason": "Humanoid robotics advancement; technical breakthrough in AI-powered physical systems"
+    "headline": "Meet the Anthropic Engineer Keeping Its AI Agent Trustworthy",
+    "link": "https://spectrum.ieee.org/anthropic-engineer-ai-agent",
+    "score": 72,
+    "reason": "Anthropic product/capability focus; safety/trust narrative; concrete role detail"
   },
   {
     "rank": 10,
-    "headline": "TikTok CEO sees major scientific breakthroughs from AI within three years",
-    "link": "https://www.cnbc.com/2026/10/12/tiktok-ceo-bytedance-ai-scientific-breakthroughs.html",
-    "score": 65,
-    "reason": "Major platform executive prediction; big-number future impact claim"
+    "headline": "AI FOMO driving some family offices into tech investments, survey suggests",
+    "link": "https://www.cnbc.com/2026/10/12/ai-fomo-driving-some-family-offices-to-ai-investments-survey-suggests.html",
+    "score": 70,
+    "reason": "Market behavior data; investment trend; quantifiable shift in capital allocation"
   }
 ]
