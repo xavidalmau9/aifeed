@@ -14,5 +14,7 @@
   "fbEnabled": true,
   "dedupDays": 30,
   "similarityThreshold": 0.5,
-  "photoRecent": 14
+  "photoRecent": 14,
+  "bufferLinkedinEnabled": true,
+  "bufferLinkedinChannelId": "6ace69ec778b240e2ffa52a9"
 }

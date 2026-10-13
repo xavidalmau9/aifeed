@@ -3,6 +3,7 @@
 // Dry run renders and writes files under OUT_DIR and does not claim, commit, or post.
 const fs = require('fs');
 const path = require('path');
+const { bufferLinkedinEnabled, bufferLinkedinText, bufferLinkedinPost } = require('./lib/buffer');
 const { decideRun } = require('./lib/schedule');
 const { CLAIM_PATH, evaluateClaim, updateClaimDoc, SlotTaken } = require('./lib/claim');
 const { fetchFeeds, assembleCandidates } = require('./lib/rss');
@@ -34,6 +35,7 @@ function runtimeEnv() {
     META_PAGE_TOKEN: process.env.META_PAGE_TOKEN || '',
     META_APP_SECRET: process.env.META_APP_SECRET || '',
     LINKEDIN_ACCESS_TOKEN: process.env.LINKEDIN_ACCESS_TOKEN || '',
+    BUFFER_API_KEY: process.env.BUFFER_API_KEY || '',
     DRY_RUN: truthy(process.env.DRY_RUN),
     SLOT: process.env.SLOT || 'auto',
     EVENT_NAME: process.env.EVENT_NAME || 'schedule',
@@ -459,16 +461,39 @@ async function main() {
       console.log('Facebook disabled (fbEnabled false)');
     }
 
-    if (linkedinEnabled(cfg, env)) {
-      const endRes = await fetch(cfg.endCardUrl, { signal: AbortSignal.timeout(30000) });
-      if (!endRes.ok) throw new Error('End card HTTP ' + endRes.status);
-      const endCard = Buffer.from(await endRes.arrayBuffer());
-      await linkedInPost({
-        cfg, env, liCaption: published.liCaption, headline: published.post.headline, feedPng: feed.png, endCard
-      });
-      console.log('LinkedIn post published');
+    // LinkedIn through Buffer (AIFeed.run page only). A failure only alerts; IG, FB and the site are unaffected.
+    if (bufferLinkedinEnabled(cfg, env)) {
+      try {
+        const storyUrl = cfg.siteUrl + '/news/' + published.slug + '/';
+        const post = await bufferLinkedinPost({
+          cfg, env,
+          text: bufferLinkedinText(published.liCaption, storyUrl),
+          imageUrls: [published.post.imageUrl, cfg.endCardUrl],
+          videoUrl: published.post.videoUrl || '',
+          altText: published.post.headline
+        });
+        console.log('LinkedIn (Buffer) post created ' + post.id + ' ' + post.status);
+      } catch (e) {
+        const msg = 'AIFeed: LinkedIn (Buffer) post failed (Instagram, Facebook + website unaffected)\n' + redact(e.message);
+        console.log(msg);
+        await sendAlert(msg);
+      }
+    } else if (linkedinEnabled(cfg, env)) {
+      try {
+        const endRes = await fetch(cfg.endCardUrl, { signal: AbortSignal.timeout(30000) });
+        if (!endRes.ok) throw new Error('End card HTTP ' + endRes.status);
+        const endCard = Buffer.from(await endRes.arrayBuffer());
+        await linkedInPost({
+          cfg, env, liCaption: published.liCaption, headline: published.post.headline, feedPng: feed.png, endCard
+        });
+        console.log('LinkedIn post published');
+      } catch (e) {
+        const msg = 'AIFeed: LinkedIn post failed (other channels unaffected)\n' + redact(e.message);
+        console.log(msg);
+        await sendAlert(msg);
+      }
     } else {
-      console.log('LinkedIn disabled until linkedinEnabled is true, the author URN is real, and LINKEDIN_ACCESS_TOKEN is set');
+      console.log('LinkedIn disabled: set the BUFFER_API_KEY secret (bufferLinkedinEnabled + channel id are in config.json)');
     }
 
     console.log('Autopilot finished slot ' + decision.slot + ' ' + published.slug);
