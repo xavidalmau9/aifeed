@@ -1,5 +1,25 @@
 [
   {
+    "id": "ai-labs-are-buying-data-from-20261013",
+    "slug": "ai-labs-are-buying-data-from",
+    "headline": "AI labs are buying data from dead startups to train their models",
+    "summary": "AI labs are buying data from failed startups, with SimpleClosure brokering over 150 deals and expecting $10 million returned by 2026.",
+    "body": "<p>Failing startups' data now worth millions to AI labs training models.</p>\n<p>A crypto entrepreneur who wound down his startup has turned it into revenue, netting roughly $25,000 for code and around $15,000 for workspace data through SimpleClosure, a new marketplace connecting failed companies with AI buyers. The platform added data sales in April and has handled over 150 deals, expecting to return over $10 million to startups by end of 2026.</p>\n<p>AI labs face limits on public and synthetic datasets, driving demand for real-world alternatives. Companies like Surge AI buy data to build reinforcement-learning gyms where AI agents practice tasks. Pricing varies wildly based on data quality; one company's Slack history can be worth more than another's combined Slack, email, and calendars.</p>\n<p>High-value deals are already happening. Google outbid AI data company Mercor to purchase Spirit Airlines' bankruptcy data for $10 million, acquiring 100 million emails, 500 million Teams messages, and 176,000 employee records. Bloomberg reported SpaceX's AI unit is weighing data purchases from struggling startups.</p>\n<p>Privacy concerns mount as this market grows. Spirit's flight attendants' union objected to the sale, and legal experts warn of 'legally radioactive' personal details lurking in emails and calendars — doctor appointments, school arrangements, date plans. No federal law currently bans such sales, and proceeds flow to creditors and investors, not employees.</p>\n<p>Data prices will likely stabilize in coming years unless an AI bubble pops, but founders have little visibility into buyers' identities or intentions, and little assurance they're receiving fair offers. This emerging market represents both recovery opportunity and unresolved legal and ethical questions about worker data.</p>\n<p>AI labs are buying bankrupt startups' data as synthetic training datasets hit limits, raising unresolved privacy and consent questions.</p>",
+    "category": "Business",
+    "imageUrl": "https://aifeed.run/images/aifeed_ai-labs-are-buying-data-from_20261013_pm.png",
+    "image": "images/aifeed_ai-labs-are-buying-data-from_20261013_pm.png",
+    "sourceUrl": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+    "publishedAt": "2026-10-13T21:13:38.665Z",
+    "hashtags": [
+      "AI",
+      "StartupData",
+      "DataTraining",
+      "SimpleClosure",
+      "AITraining"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "microsofts-new-ai-chip-makes-it-20261013",
     "slug": "microsofts-new-ai-chip-makes-it",
     "headline": "Microsoft’s new AI chip makes it less reliant on Nvidia’s GPUs",
