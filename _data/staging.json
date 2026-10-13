@@ -1,100 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Character.AI files for bankruptcy",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
-    "score": 92,
-    "reason": "Major company failure; concrete outcome; significant AI industry impact"
+    "headline": "Amazon has over 1 million robot workers. What’s next for human employees?",
+    "link": "https://arstechnica.com/ai/2026/10/inside-amazons-robotic-arms-race-and-what-it-means-for-the-future-of-human-work/",
+    "score": 94,
+    "reason": "Big number (1M robots), major deployment scale, workforce impact"
   },
   {
     "rank": 2,
-    "headline": "Meta Launches Muse Wonder AI Models to Play Catch-Up With Rivals",
-    "link": "https://www.cnet.com/tech/services-and-software/meta-muse-and-wonder-ai-models/",
-    "score": 88,
-    "reason": "Major product launch from top company; frontier AI models; addresses competitive positioning"
+    "headline": "You Can Use Gemini 4 Argon Now: Google’s New AI Is Built for Coding, Math and Robotics",
+    "link": "https://www.cnet.com/tech/services-and-software/gemini-4-argon-general-release-google-ai-news/",
+    "score": 92,
+    "reason": "Major model launch with specific capabilities"
   },
   {
     "rank": 3,
-    "headline": "Anthropic warns AI models could soon copy themselves across home devices",
-    "link": "https://www.cnbc.com/2026/10/13/anthropic-ai-models-self-replication-smart-devices.html",
-    "score": 85,
-    "reason": "Significant security/safety concern; concrete technical warning; major controversy potential"
+    "headline": "Shopify opens its catalog up to more AI agents",
+    "link": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
+    "score": 88,
+    "reason": "Significant product launch enabling AI agent ecosystem"
   },
   {
     "rank": 4,
-    "headline": "Every major Nvidia customer is now a competitor as Microsoft reveals new Maia chip",
-    "link": "https://www.axios.com/2026/10/13/big-tech-ai-chips-nvidia-rivals",
-    "score": 84,
-    "reason": "Major competitive shift; Nvidia/Microsoft rivalry; big industry implications"
+    "headline": "Muse Wonder Puts Meta Back at the AI Frontier",
+    "link": "https://www.wired.com/story/muse-wonder-puts-meta-back-at-the-ai-frontier/",
+    "score": 87,
+    "reason": "Major capability advancement, competitive positioning"
   },
   {
     "rank": 5,
-    "headline": "The Biggest Pro-AI Super PAC Network Has Poured Millions Into Nevada Shell Companies",
-    "link": "https://www.wired.com/story/the-biggest-pro-ai-super-pac-network-has-poured-millions-into-nevada-shell-companies/",
-    "score": 82,
-    "reason": "Major funding controversy; specific large numbers; political influence story"
+    "headline": "AI companion startup Character.ai files for Chapter 11 bankruptcy, citing costs and litigation",
+    "link": "https://www.cnbc.com/2026/10/13/character-ai-chapter-11-disney-bid.html",
+    "score": 86,
+    "reason": "Major controversy/failure, concrete business impact"
   },
   {
     "rank": 6,
-    "headline": "Microsoft President Says AI Has Fewer Regulations Than Milk. So Now What?",
-    "link": "https://www.cnet.com/tech/services-and-software/microsoft-president-ai-has-fewer-regulations-than-milk/",
-    "score": 79,
-    "reason": "Regulatory controversy; major company statement; policy implications"
+    "headline": "OpenAI employee arrested for allegedly planting a bug in a conference room",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+    "score": 85,
+    "reason": "Significant controversy, concrete incident with legal implications"
   },
   {
     "rank": 7,
-    "headline": "AI labs are buying data from dead startups to train their models",
-    "link": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
-    "score": 76,
-    "reason": "Unique practice revelation; multiple companies involved; ethical concerns"
+    "headline": "Claude sent a false homicide tip to police – and it’s part of a troubling AI pattern",
+    "link": "https://www.zdnet.com/innovation/claude-false-homicide-tip/",
+    "score": 84,
+    "reason": "Safety controversy with real-world consequences"
   },
   {
     "rank": 8,
-    "headline": "World Bank jobs council urges &apos;crisis-era&apos; employment support measures as IMF warns of AI ‘tsunami’",
-    "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html",
-    "score": 75,
-    "reason": "Major institutional warning; large-scale impact prediction; employment crisis framing"
+    "headline": "YouTube's contextual AI search rolls out to all users on Android and iOS in US",
+    "link": "https://9to5google.com/2026/10/13/ask-youtube-rolls-out-on-mobile/",
+    "score": 82,
+    "reason": "Major product rollout to all users"
   },
   {
     "rank": 9,
-    "headline": "Startup Causa Prima raises $20 million to tackle billing disputes with AI agents",
-    "link": "https://fortune.com/2026/10/13/startup-causa-prima-20-million-billing-disputes-ai-agents/",
-    "score": 72,
-    "reason": "Significant funding round; concrete AI application; specific large number"
+    "headline": "Google lets you make personal Android apps for free now – with just prompts",
+    "link": "https://www.zdnet.com/tech/custom-android-apps-google-ai-studio/",
+    "score": 81,
+    "reason": "Significant capability launch, democratization angle"
   },
   {
     "rank": 10,
-    "headline": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
-    "score": 70,
-    "reason": "Political controversy; industry-wide trend; Trump administration angle"
+    "headline": "Xbox is officially embracing the chaos of AI-powered game ports",
+    "link": "https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration",
+    "score": 80,
+    "reason": "Major platform commitment to AI feature"
   },
   {
     "rank": 11,
-    "headline": "How Red Bull&apos;s F1 team is using AI to make split-second decisions for Max Verstappen",
-    "link": "https://www.cnbc.com/2026/10/13/red-bull-f1-ai-max-verstappen.html",
-    "score": 68,
-    "reason": "Concrete real-world application; major brand; high-stakes use case"
+    "headline": "OpenAI and Anthropic Tell British Lawmakers: Regulate Us",
+    "link": "https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us/",
+    "score": 79,
+    "reason": "Major regulatory positioning by leading companies"
   },
   {
     "rank": 12,
-    "headline": "Wikipedians Believed AI Would Come and Go. They Were Wrong",
-    "link": "https://www.wired.com/story/book-excerpt-the-last-best-place-on-the-internet-wikipedia-artificial-intelligence/",
-    "score": 67,
-    "reason": "Cultural impact story; major platform adoption; shift in institutional thinking"
+    "headline": "Linus Torvalds is using AI to develop Linux kernel code now",
+    "link": "https://www.zdnet.com/innovation/linus-torvalds-uses-ai-to-write-linux-kernel-patch/",
+    "score": 78,
+    "reason": "Significant adoption in critical infrastructure"
   },
   {
     "rank": 13,
-    "headline": "The Turing Trap is turning into a Talent Trap: The wrong AI strategy could strand millions of skilled workers",
-    "link": "https://fortune.com/2026/10/13/turing-trap-talent-ai-workers-hiring/",
-    "score": 65,
-    "reason": "Large-scale employment impact; systemic risk framing; millions affected"
+    "headline": "Facebook will let you customize your feed algorithm using AI",
+    "link": "https://www.theverge.com/tech/1010344/meta-facebook-your-algorithm-ai",
+    "score": 77,
+    "reason": "Major platform feature launch"
   },
   {
     "rank": 14,
-    "headline": "Alphabet President Ruth Porat on how Google is funding AI to win long term, and the biggest risks ahead",
-    "link": "https://fortune.com/2026/10/12/google-ruth-porat-ai-spending-risks/",
-    "score": 62,
-    "reason": "Top executive strategy statement; major company perspective; risk disclosure"
+    "headline": "Anthropic to disclose new revenue numbers as AI lab financials become central to tech trade",
+    "link": "https://www.cnbc.com/2026/10/13/anthropic-q3-financials-ipo.html",
+    "score": 76,
+    "reason": "Financial milestone/transparency move"
+  },
+  {
+    "rank": 15,
+    "headline": "Dutch tax authorities cancel Microsoft 365 cloud rollout – and turn toward open source",
+    "link": "https://www.zdnet.com/business/dutch-tax-authorities-cancel-microsoft-365-cloud-rollout/",
+    "score": 75,
+    "reason": "Significant regulatory/business decision impact"
+  },
+  {
+    "rank": 16,
+    "headline": "Strict liability is gaining traction as a solution to force AI companies to institute better safety controls. But it has some big downsides too",
+    "link": "https://fortune.com/2026/10/13/strict-liability-is-gaining-traction-as-a-solution-to-force-ai-companies-to-institute-better-safety-controls-but-it-has-some-big-downsides-too/",
+    "score": 74,
+    "reason": "Regulatory trend with concrete policy implications"
+  },
+  {
+    "rank": 17,
+    "headline": "Actress Mia Goth says it’s ‘incomprehensible’ that Instagram allowed an AI image of her to spread",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1010277/mia-goth-instagram-ai-shirt-deepfake-divorce",
+    "score": 72,
+    "reason": "High-profile controversy, platform policy failure"
+  },
+  {
+    "rank": 18,
+    "headline": "Companies are building with AI — and exposing new security risks",
+    "link": "https://www.axios.com/2026/10/13/censys-ai-vibe-coding-exposures",
+    "score": 71,
+    "reason": "Concrete security trend emerging"
+  },
+  {
+    "rank": 19,
+    "headline": "You Can Turn Off AI on Your Google Account, but at a Cost. Here’s What You Lose",
+    "link": "https://www.cnet.com/tech/services-and-software/what-other-features-do-you-lose-when-you-turn-off-ai-in-your-google-account/",
+    "score": 70,
+    "reason": "Significant user control/tradeoff analysis"
+  },
+  {
+    "rank": 20,
+    "headline": "Epic shifts to 'AI-accelerated development' for upcoming Disney game",
+    "link": "https://www.theverge.com/games/1010097/epic-games-disney-project-ai-coding-art",
+    "score": 68,
+    "reason": "Major studio adoption of AI development tools"
   }
 ]
