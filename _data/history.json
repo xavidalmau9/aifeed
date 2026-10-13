@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-13T12:17:11.515Z",
+      "date": "2026-10-13",
+      "slot": 1,
+      "headline": "Microsoft’s new AI chip makes it less reliant on Nvidia’s GPUs",
+      "canonUrl": "theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+      "url": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+      "slug": "microsofts-new-ai-chip-makes-it",
+      "image": "aifeed_microsofts-new-ai-chip-makes-it_20261013_am.png",
+      "photo": {
+        "dhash": "7921614e25a48f9f",
+        "phash": "660976f9023d7663",
+        "hist": [
+          473,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          29,
+          0,
+          0,
+          0,
+          44,
+          46,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          14,
+          0,
+          0,
+          0,
+          82,
+          139,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          133,
+          0,
+          0,
+          0,
+          37,
+          0
+        ],
+        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Maia-300-prototype-chip-03.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-12T21:22:11.485Z",
       "date": "2026-10-12",
       "slot": 2,
@@ -1175,6 +1257,68 @@
         "rank": 8,
         "title": "OpenAI Dot vs. Meta Muse: How do these AI agents compare?",
         "canonUrl": "engadget.com/2281289/openai-dot-vs-meta-muse-ai-agents-comparison"
+      }
+    ],
+    "2026-10-13": [
+      {
+        "rank": 1,
+        "title": "Character.AI files for bankruptcy",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney"
+      },
+      {
+        "rank": 2,
+        "title": "Microsoft’s new AI chip makes it less reliant on Nvidia’s GPUs",
+        "canonUrl": "theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout"
+      },
+      {
+        "rank": 3,
+        "title": "AI labs are buying data from dead startups to train their models",
+        "canonUrl": "technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models"
+      },
+      {
+        "rank": 4,
+        "title": "Anthropic warns AI models could soon copy themselves across home devices",
+        "canonUrl": "cnbc.com/2026/10/13/anthropic-ai-models-self-replication-smart-devices.html"
+      },
+      {
+        "rank": 5,
+        "title": "The Biggest Pro-AI Super PAC Network Has Poured Millions Into Nevada Shell Companies",
+        "canonUrl": "wired.com/story/the-biggest-pro-ai-super-pac-network-has-poured-millions-into-nevada-shell-companies"
+      },
+      {
+        "rank": 6,
+        "title": "How Red Bull's F1 team is using AI to make split-second decisions for Max Verstappen",
+        "canonUrl": "cnbc.com/2026/10/13/red-bull-f1-ai-max-verstappen.html"
+      },
+      {
+        "rank": 7,
+        "title": "Epic Games reportedly pivoting to \"AI first\" game development model",
+        "canonUrl": "arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration"
+      },
+      {
+        "rank": 8,
+        "title": "Wikipedians Believed AI Would Come and Go. They Were Wrong",
+        "canonUrl": "wired.com/story/book-excerpt-the-last-best-place-on-the-internet-wikipedia-artificial-intelligence"
+      },
+      {
+        "rank": 9,
+        "title": "Microsoft President Says AI Has Fewer Regulations Than Milk. So Now What?",
+        "canonUrl": "cnet.com/tech/services-and-software/microsoft-president-ai-has-fewer-regulations-than-milk"
+      },
+      {
+        "rank": 10,
+        "title": "Amazon has over 1 million robot workers. What’s next for human employees?",
+        "canonUrl": "arstechnica.com/ai/2026/10/inside-amazons-robotic-arms-race-and-what-it-means-for-the-future-of-human-work"
+      },
+      {
+        "rank": 11,
+        "title": "X bundles Premium, Grok and Cursor under a single monthly subscription",
+        "canonUrl": "engadget.com/2284943/x-subscription-bundles-premium-grok-cursor"
+      },
+      {
+        "rank": 12,
+        "title": "Epic reportedly delays its Disney video game so it can be made using more AI",
+        "canonUrl": "engadget.com/2284680/epic-reportedly-delays-its-disney-video-game-so-it-can-be-made-using-more-ai"
       }
     ]
   }

@@ -1,5 +1,25 @@
 [
   {
+    "id": "microsofts-new-ai-chip-makes-it-20261013",
+    "slug": "microsofts-new-ai-chip-makes-it",
+    "headline": "Microsoft’s new AI chip makes it less reliant on Nvidia’s GPUs",
+    "summary": "Microsoft's Maia 300 chip starting production in 2027 will reduce its Nvidia GPU dependency.",
+    "body": "<p>Microsoft's Maia 300 chip to reduce Nvidia GPU reliance starting 2027.</p>\n<p>Microsoft announced its third-generation Maia in-house AI chip, designed to be the primary AI inference system for Microsoft's products and services. Maia 300 improves both cost and efficiency of running AI workloads in the cloud and handles latest reasoning models and agentic tasks.</p>\n<p>The chip will start rolling out to production in 2027. Microsoft expects Maia 300 to deliver 40 percent more tokens per megawatt compared to leading GPU-based systems. In a full 96-accelerator configuration, it delivers up to 7x the rack-scale token throughput of its predecessor, Maia 200.</p>\n<p>These efficiency improvements allow Microsoft to rely mainly on its in-house AI chips soon instead of ones from Nvidia and AMD. Microsoft plans to scale its Azure Maia family to multi-gigawatt deployments starting 2027, making Maia the primary AI inference system for Microsoft products and services.</p>\n<p>Maia 300 uses a new chiplet architecture built on TSMC's N2P process node, separating compute, memory controller, and I/O functions. This increases silicon dedicated to compute performance and lets each function use the technology best suited to its role.</p>\n<p>Microsoft says it needs a platform it owns and co-designs with its models for this scale of operation.</p>\n<p>Microsoft's in-house Maia 300 chip arriving in 2027 will reduce its reliance on Nvidia GPUs for AI inference.</p>",
+    "category": "Hardware",
+    "imageUrl": "https://aifeed.run/images/aifeed_microsofts-new-ai-chip-makes-it_20261013_am.png",
+    "image": "images/aifeed_microsofts-new-ai-chip-makes-it_20261013_am.png",
+    "sourceUrl": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+    "publishedAt": "2026-10-13T12:17:11.515Z",
+    "hashtags": [
+      "Microsoft",
+      "Maia",
+      "AIChips",
+      "Nvidia",
+      "Azure"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "world-bank-jobs-council-urges-crisisera-20261012",
     "slug": "world-bank-jobs-council-urges-crisisera",
     "headline": "World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI ‘tsunami’",
