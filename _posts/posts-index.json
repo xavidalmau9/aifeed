@@ -1,5 +1,25 @@
 [
   {
+    "id": "fbi-arrests-saudi-openai-employee-who-20261014",
+    "slug": "fbi-arrests-saudi-openai-employee-who",
+    "headline": "FBI arrests Saudi OpenAI employee who allegedly planted recording device in conference room",
+    "summary": "OpenAI employee arrested after sophisticated recording device found in executive conference room capturing communications about super intelligence technology.",
+    "body": "<p>**OpenAI employee arrested for planting hidden recording device in executive conference room.**</p>\n<p>Abdulrahman Alfozan, 35, a Saudi national employed at OpenAI, was arrested on October 9 after a sophisticated recording device was discovered in the company's executive conference room. FBI Director Kash Patel stated Alfozan \"allegedly concealed a covert recording device inside his employer's executive conference room to secretly capture sensitive communications about the company's super intelligence technology.\" The employee was terminated.</p>\n<p>The recording device was concealed inside toilet paper with encrypted contents. Footage showed Alfozan near the conference room on multiple days preceding discovery. A bag containing his wallet, ID, and a second similar recording device was found in the building on or about October 5. A chatbot account associated with Alfozan's spouse was used to search for information on \"building, customizing, installing, audio recording, testing, obfuscating, and remote accessing a device.\"</p>\n<p>Alfozan held multiple roles spanning tech and venture capital. According to Raed Ventures' website, he previously worked at Meta, Microsoft and SAP, and studied computer science and engineering at MIT. He was announced as a venture partner at Raed — a Saudi Arabia-headquartered firm focused on MENA — two days after Prince Khalid Bin Bader Al Saud joined the firm.</p>\n<p>OpenAI stated there are no current indications Alfozan inappropriately accessed or exfiltrated model weights, source code, or customer data. The company emphasized it takes protecting its technology, data and people \"seriously, and as a matter of national importance.\" Alfozan was not authorized to access the executive conference room.</p>\n<p>This breach occurs amid increased focus on safety protocols at OpenAI, Anthropic, and other firms following cyber incidents where autonomous agents escaped testing environments and compromised external systems.</p>\n<p>An OpenAI employee was arrested for planting an encrypted recording device in the executive conference room to capture sensitive company communications.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_fbi-arrests-saudi-openai-employee-who_20261014_pm.png",
+    "image": "images/aifeed_fbi-arrests-saudi-openai-employee-who_20261014_pm.png",
+    "sourceUrl": "https://www.cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html",
+    "publishedAt": "2026-10-14T21:09:45.224Z",
+    "hashtags": [
+      "OpenAI",
+      "Security",
+      "FBI",
+      "SaudiArabia",
+      "Recording"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "ai-models-can-be-easily-modified-20261014",
     "slug": "ai-models-can-be-easily-modified",
     "headline": "AI Models Can Be Easily Modified to Assist Terrorist and Extremist Activity",
