@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "FBI arrests Saudi OpenAI employee who allegedly planted recording device in conference room",
-    "link": "https://www.cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html",
-    "score": 94,
-    "reason": "Major controversy: criminal arrest at leading AI company, concrete incident not speculation"
+    "headline": "FBI Arrests OpenAI Employee Suspected of Planting a Surveillance Bug",
+    "link": "https://www.cnet.com/tech/services-and-software/openai-employee-fbi-arrest-recording-device-news/",
+    "score": 96,
+    "reason": "Major controversy: criminal arrest at leading AI company, surveillance plot"
   },
   {
     "rank": 2,
-    "headline": "OpenAI says it found a 'sophisticated recording device' hidden in its offices",
-    "link": "https://www.engadget.com/2286084/openai-says-it-found-a-sophisticated-recording-device-hidden-in-its-offices/",
-    "score": 92,
-    "reason": "High-profile security breach at major AI lab, substantiated incident"
+    "headline": "Now that Character.AI is going bankrupt, what happens to all of its users' data?",
+    "link": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
+    "score": 94,
+    "reason": "Company failure with major data privacy implications for users"
   },
   {
     "rank": 3,
-    "headline": "Meta Launches Muse Wonder AI Models to Play Catch-Up With Rivals",
-    "link": "https://www.cnet.com/tech/services-and-software/meta-muse-and-wonder-ai-models/",
-    "score": 88,
-    "reason": "Major product launch from top company, competitive development"
+    "headline": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
+    "score": 92,
+    "reason": "IP theft allegation between major AI players, competitive conflict"
   },
   {
     "rank": 4,
-    "headline": "AI Models Can Be Easily Modified to Assist Terrorist and Extremist Activity",
-    "link": "https://www.wired.com/story/ai-models-can-be-easily-modified-to-assist-terrorist-and-extremist-activity/",
-    "score": 85,
-    "reason": "Significant security/safety finding, concrete research result"
+    "headline": "Alibaba AI models cleared for use in Apple Intelligence in China just in time for the iPhone Duo launch",
+    "link": "https://www.engadget.com/2286617/alibaba-ai-models-cleared-for-use-in-apple-intelligence-in-china-just-in-time-for-the-iphone-duo-launch/",
+    "score": 88,
+    "reason": "Major product launch: Apple Intelligence expansion into China market"
   },
   {
     "rank": 5,
-    "headline": "It’s ‘incomprehensible’ that Instagram allowed an AI image of Mia Goth to spread, say her reps",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1010277/mia-goth-instagram-ai-shirt-deepfake-divorce",
-    "score": 83,
-    "reason": "Major controversy: deepfake/misinformation at scale on major platform"
+    "headline": "AI Came for Math. Now It’s Chasing the Rest of Science",
+    "link": "https://www.wired.com/story/ai-is-coming-for-science-next-watch-out/",
+    "score": 86,
+    "reason": "Significant impact: AI expanding across scientific domains beyond mathematics"
   },
   {
     "rank": 6,
-    "headline": "Every major Nvidia customer is now a competitor as Microsoft reveals new Maia chip",
-    "link": "https://www.axios.com/2026/10/13/big-tech-ai-chips-nvidia-rivals",
-    "score": 82,
-    "reason": "Massive market shift: trillion-dollar implications, concrete product reveal"
+    "headline": "You Can Use Gemini 4 Argon Now: Google’s New AI Is Built for Coding, Math and Robotics",
+    "link": "https://www.cnet.com/tech/services-and-software/gemini-4-argon-general-release-google-ai-news/",
+    "score": 84,
+    "reason": "Google product launch: new specialized AI model with big numbers on capabilities"
   },
   {
     "rank": 7,
-    "headline": "The Biggest Pro-AI Super PAC Network Has Poured Millions Into Nevada Shell Companies",
-    "link": "https://www.wired.com/story/the-biggest-pro-ai-super-pac-network-has-poured-millions-into-nevada-shell-companies/",
-    "score": 80,
-    "reason": "Big numbers: millions in political spending, substantiated investigation"
+    "headline": "OpenAI and Anthropic Tell British Lawmakers: Regulate Us",
+    "link": "https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us/",
+    "score": 82,
+    "reason": "Regulatory milestone: major AI companies requesting government oversight"
   },
   {
     "rank": 8,
-    "headline": "Microsoft President Says AI Has Fewer Regulations Than Milk. So Now What?",
-    "link": "https://www.cnet.com/tech/services-and-software/microsoft-president-ai-has-fewer-regulations-than-milk/",
-    "score": 78,
-    "reason": "Major regulatory statement from top executive, high-profile position"
+    "headline": "You Can Turn Off AI on Your Google Account, but at a Cost. Here’s What You Lose",
+    "link": "https://www.cnet.com/tech/services-and-software/what-other-features-do-you-lose-when-you-turn-off-ai-in-your-google-account/",
+    "score": 80,
+    "reason": "Controversy: Google restricts features if users disable AI integration"
   },
   {
     "rank": 9,
-    "headline": "Russia was not ready for the data center war it started with Ukraine",
-    "link": "https://arstechnica.com/gadgets/2026/10/russia-was-not-ready-for-the-data-center-war-it-started-with-ukraine/",
-    "score": 76,
-    "reason": "Concrete geopolitical impact of AI infrastructure war"
+    "headline": "Android is using AI to suss out scammers in Google Messages",
+    "link": "https://www.theverge.com/tech/1010928/android-scam-protection-enhanced-protection-google-messages",
+    "score": 78,
+    "reason": "Google product launch: AI deployed for scam detection across large user base"
   },
   {
     "rank": 10,
-    "headline": "AI's extreme heat challenge is moving from prediction to protection",
-    "link": "https://www.axios.com/2026/10/14/ai-extreme-heat-weather-forecast-protection",
-    "score": 74,
-    "reason": "Major infrastructure challenge with big numbers, concrete problem"
+    "headline": "AI tools are aiding would-be spies",
+    "link": "https://www.axios.com/2026/10/14/ai-tools-are-aiding-would-be-spies",
+    "score": 76,
+    "reason": "Security controversy: AI misuse for espionage purposes"
   },
   {
     "rank": 11,
-    "headline": "Wikipedians Believed AI Would Come and Go. They Were Wrong",
-    "link": "https://www.wired.com/story/book-excerpt-the-last-best-place-on-the-internet-wikipedia-artificial-intelligence/",
-    "score": 72,
-    "reason": "Significant cultural/institutional impact from major knowledge platform"
+    "headline": "Companies are building with AI — and exposing new security risks",
+    "link": "https://www.axios.com/2026/10/13/censys-ai-vibe-coding-exposures",
+    "score": 74,
+    "reason": "Widespread security controversy: vulnerabilities emerging from AI implementation"
   },
   {
     "rank": 12,
-    "headline": "No forms, no fuss: Abu Dhabi wants AI to eliminate government paperwork",
-    "link": "https://fortune.com/2026/10/14/no-forms-no-fuss-abu-dhabi-wants-ai-to-eliminate-government-paperwork/",
-    "score": 70,
-    "reason": "Large-scale government AI deployment, concrete initiative"
+    "headline": "Deezer will let listeners completely filter out AI music",
+    "link": "https://www.engadget.com/2286898/deezer-will-let-listeners-completely-filter-out-ai-music/",
+    "score": 72,
+    "reason": "Deezer product feature: user control over AI-generated content"
   },
   {
     "rank": 13,
-    "headline": "DLSS 5 gets toned down for its Hogwarts Legacy debut next month",
-    "link": "https://www.theverge.com/news/1009904/dlss-5-hogwarts-legacy-changes-improvements",
-    "score": 68,
-    "reason": "Major GPU/gaming company product launch with concrete release date"
+    "headline": "‘So perfect, they are literally identical’ – Your AI-polished resumes are recruiters’ new top stressor",
+    "link": "https://www.zdnet.com/education/employ-report-ai-hr-hiring/",
+    "score": 70,
+    "reason": "Controversy: AI resume tools creating widespread hiring market disruption"
   },
   {
     "rank": 14,
-    "headline": "Google’s new Fitbit Edge solves my biggest gripe with the Pixel Watch",
-    "link": "https://www.zdnet.com/tech/googles-new-fitbit-edge-solves-my-biggest-gripe-with-the-pixel-watch/",
-    "score": 65,
-    "reason": "Major tech company hardware launch with specific product"
+    "headline": "Linus Torvalds is using AI to develop Linux kernel code now",
+    "link": "https://www.zdnet.com/innovation/linus-torvalds-uses-ai-to-write-linux-kernel-patch/",
+    "score": 68,
+    "reason": "Major adoption milestone: Linux creator integrating AI into core OS development"
   },
   {
     "rank": 15,
-    "headline": "Qualcomm wins lawsuit against Arm but will only receive two bucks",
-    "link": "https://www.engadget.com/2286281/arm-must-pay-qualcomm-2-license-breach-lawsuit/",
-    "score": 62,
-    "reason": "Major legal outcome in chip industry, concrete judgment"
+    "headline": "Square’s new kiosk lets you talk to AI for help with your order",
+    "link": "https://www.theverge.com/tech/1009086/square-kiosk",
+    "score": 66,
+    "reason": "Square product launch: AI deployed in retail payment systems"
   },
   {
     "rank": 16,
-    "headline": "Ukraine warns Starlink limits are disrupting military operations as Russia pounds its energy infrastructure",
-    "link": "https://www.cnbc.com/2026/10/14/russia-ukraine-energy-ceasefire-power-outages.html",
-    "score": 60,
-    "reason": "Significant geopolitical impact, concrete military consequence"
+    "headline": "Microsoft has a new machine learning tool to improve weather forecasts",
+    "link": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
+    "score": 64,
+    "reason": "Microsoft product: AI application in weather prediction"
   },
   {
     "rank": 17,
-    "headline": "Exclusive: AI safety money floods into political races",
-    "link": "https://www.axios.com/2026/10/14/ai-safety-regulation-election-spending-50-million",
-    "score": 58,
-    "reason": "Big money story: political spending on AI issues, substantiated"
+    "headline": "Google lets you make personal Android apps for free now – with just prompts",
+    "link": "https://www.zdnet.com/tech/custom-android-apps-google-ai-studio/",
+    "score": 62,
+    "reason": "Google product launch: democratizing app development via AI"
   },
   {
     "rank": 18,
-    "headline": "The AI trade is cracking. Here&apos;s how to profit",
-    "link": "https://www.cnbc.com/2026/10/13/the-ai-trade-is-cracking-heres-how-to-profit.html",
-    "score": 55,
-    "reason": "Major market analysis: concrete assessment of AI boom softening"
+    "headline": "YouTube sticks new labels on AI-generated songs",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label",
+    "score": 60,
+    "reason": "YouTube product launch: AI content labeling at scale"
   },
   {
     "rank": 19,
-    "headline": "Apple’s smart home event: All 7 devices, prices, and release dates",
-    "link": "https://www.zdnet.com/uncategorized/apple-smart-home-event-homeview-homepod-mini-new-apple-tv/",
-    "score": 52,
-    "reason": "Major product launch event with specific devices and dates"
+    "headline": "Google Deepmind’s New Resident Philosopher Tackles AI Ethics",
+    "link": "https://spectrum.ieee.org/ai-ethics-deepmind-philosopher-shevlin",
+    "score": 58,
+    "reason": "DeepMind leadership: formal AI ethics role establishment"
   },
   {
     "rank": 20,
-    "headline": "I don’t miss the camera on the Ray-Ban Meta Audio glasses",
-    "link": "https://www.theverge.com/tech/1009128/ray-ban-meta-audio-glasses-review-smart-glasses-headphones-wearables",
-    "score": 48,
-    "reason": "Major consumer product from Meta/Ray-Ban, concrete hardware assessment"
+    "headline": "Anthropic’s self-replicating AI warning is alarming deja vu",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1011108/anthropic-self-replicating-ai-smart-devices-risk",
+    "score": 56,
+    "reason": "Anthropic safety concern: self-replication risks in AI systems"
   }
 ]
