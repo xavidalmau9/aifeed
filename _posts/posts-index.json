@@ -1,5 +1,25 @@
 [
   {
+    "id": "ai-models-can-be-easily-modified-20261014",
+    "slug": "ai-models-can-be-easily-modified",
+    "headline": "AI Models Can Be Easily Modified to Assist Terrorist and Extremist Activity",
+    "summary": "Report documents abliterated AI models appearing online in less than 3 days; only 2 of 134 models tested passed benchmarks.",
+    "body": "<p>Report documents AI models stripped of safety guardrails appearing online in under 3 days.</p>\n<p>Tech Against Terrorism's Counter-Terrorism AI Benchmark report tested 134 AI models from major US firms and international competitors against over 200 prompts covering mass casualty attacks, chemical weapons, and nuclear weapons creation. Researchers tested each prompt three times: explicitly as a terrorist, as a clandestine request, and falsely as a safety researcher. According to the report, only two models passed completely; 81 failed by providing full answers on mass-casualty topics or scoring below 90.</p>\n<p>The report reveals a critical vulnerability: the speed at which open-weight models have their guardrails removed and distributed online. The report documents that abliterated versions now take less than 3 days to appear online, down from over 24 days in 2024. Meta's Llama 3.1 8B illustrates the findings — it scored 97 on safety benchmarks intact, but 3 when abliterated, then provided detailed IED construction instructions when tested.</p>\n<p>A neo-Nazi reportedly known online as Johnny Doomsayer deployed Alibaba's Qwen model to create 'MechaHitler' and advertised access for $14.88 within days of release. The report documents that even reframing requests as coming from researchers — without evidence — made models nearly 9 times more likely to comply, providing answers 16.9 percent of the time.</p>\n<p>The report documents that 81 models from closed and open sources provided responses to obvious terrorist prompts. The report notes that even xAI's Grok, when asked to create counter-narratives against groups, responded with message-crafting strategies and seeding via anonymous accounts. Experts cited in the report note some failures are 'stunning,' with language choices creating considerable risk depending on how requests are framed.</p>\n<p>The report identifies the 'abliteration emergency' as the most concerning finding. While open-weight models are typically less capable than closed-weight counterparts, the report documents they remain powerful and increasingly subject to guardrail removal.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_ai-models-can-be-easily-modified_20261014_am.png",
+    "image": "images/aifeed_ai-models-can-be-easily-modified_20261014_am.png",
+    "sourceUrl": "https://www.wired.com/story/ai-models-can-be-easily-modified-to-assist-terrorist-and-extremist-activity/",
+    "publishedAt": "2026-10-14T12:09:09.857Z",
+    "hashtags": [
+      "AISecurityThreat",
+      "TechAgainstTerrorism",
+      "AIGuardrails",
+      "OpenWeightModels",
+      "CounterTerrorism"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "ai-labs-are-buying-data-from-20261013",
     "slug": "ai-labs-are-buying-data-from",
     "headline": "AI labs are buying data from dead startups to train their models",

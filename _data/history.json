@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-14T12:09:09.857Z",
+      "date": "2026-10-14",
+      "slot": 1,
+      "headline": "AI Models Can Be Easily Modified to Assist Terrorist and Extremist Activity",
+      "canonUrl": "wired.com/story/ai-models-can-be-easily-modified-to-assist-terrorist-and-extremist-activity",
+      "url": "https://www.wired.com/story/ai-models-can-be-easily-modified-to-assist-terrorist-and-extremist-activity/",
+      "slug": "ai-models-can-be-easily-modified",
+      "image": "aifeed_ai-models-can-be-easily-modified_20261014_am.png",
+      "photo": {
+        "dhash": "332322b296949c8c",
+        "phash": "c7acc7145cb330ab",
+        "hist": [
+          154,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          19,
+          0,
+          0,
+          0,
+          0,
+          70,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          106,
+          0,
+          0,
+          0,
+          0,
+          24,
+          0,
+          0,
+          0,
+          1,
+          121,
+          0,
+          0,
+          0,
+          0,
+          3,
+          405,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          88
+        ],
+        "url": "https://media.wired.com/photos/6aceaa51eba493f958015701/1:1/w_1600,c_limit/politics_ai_guardrails_removed_terrorist.jpg",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-13T21:13:38.665Z",
       "date": "2026-10-13",
       "slot": 2,
@@ -1401,6 +1483,68 @@
         "rank": 12,
         "title": "Epic reportedly delays its Disney video game so it can be made using more AI",
         "canonUrl": "engadget.com/2284680/epic-reportedly-delays-its-disney-video-game-so-it-can-be-made-using-more-ai"
+      }
+    ],
+    "2026-10-14": [
+      {
+        "rank": 1,
+        "title": "AI Models Can Be Easily Modified to Assist Terrorist and Extremist Activity",
+        "canonUrl": "wired.com/story/ai-models-can-be-easily-modified-to-assist-terrorist-and-extremist-activity"
+      },
+      {
+        "rank": 2,
+        "title": "OpenAI and Anthropic Tell British Lawmakers: Regulate Us",
+        "canonUrl": "wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us"
+      },
+      {
+        "rank": 3,
+        "title": "FBI arrests Saudi OpenAI employee who allegedly planted recording device in conference room",
+        "canonUrl": "cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html"
+      },
+      {
+        "rank": 4,
+        "title": "You Can Use Gemini 4 Argon Now: Google’s New AI Is Built for Coding, Math and Robotics",
+        "canonUrl": "cnet.com/tech/services-and-software/gemini-4-argon-general-release-google-ai-news"
+      },
+      {
+        "rank": 5,
+        "title": "Epic shifts to ‘AI-accelerated development’ for upcoming Disney game",
+        "canonUrl": "theverge.com/games/1010097/epic-games-disney-project-ai-coding-art"
+      },
+      {
+        "rank": 6,
+        "title": "Wikipedians Believed AI Would Come and Go. They Were Wrong",
+        "canonUrl": "wired.com/story/book-excerpt-the-last-best-place-on-the-internet-wikipedia-artificial-intelligence"
+      },
+      {
+        "rank": 7,
+        "title": "Shopify opens its catalog up to more AI agents",
+        "canonUrl": "theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents"
+      },
+      {
+        "rank": 8,
+        "title": "You Can Turn Off AI on Your Google Account, but at a Cost. Here’s What You Lose",
+        "canonUrl": "cnet.com/tech/services-and-software/what-other-features-do-you-lose-when-you-turn-off-ai-in-your-google-account"
+      },
+      {
+        "rank": 9,
+        "title": "Facebook will let you customize your feed algorithm using AI",
+        "canonUrl": "theverge.com/tech/1010344/meta-facebook-your-algorithm-ai"
+      },
+      {
+        "rank": 10,
+        "title": "It’s ‘incomprehensible’ that Instagram allowed an AI image of Mia Goth to spread, say her reps",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1010277/mia-goth-instagram-ai-shirt-deepfake-divorce"
+      },
+      {
+        "rank": 11,
+        "title": "Linus Torvalds is using AI to develop Linux kernel code now",
+        "canonUrl": "zdnet.com/innovation/linus-torvalds-uses-ai-to-write-linux-kernel-patch"
+      },
+      {
+        "rank": 12,
+        "title": "Xbox is officially embracing the chaos of AI-powered game ports",
+        "canonUrl": "theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration"
       }
     ]
   }
