@@ -1,5 +1,25 @@
 [
   {
+    "id": "nvidia-must-work-with-chinese-ai-20261015",
+    "slug": "nvidia-must-work-with-chinese-ai",
+    "headline": "Nvidia must work with Chinese AI companies on safety, Jensen Huang tells CNBC",
+    "summary": "Nvidia CEO Jensen Huang says chipmaker must work with Chinese AI companies through dialogue to advance safely.",
+    "body": "<p>Nvidia CEO Jensen Huang says chipmaker must work with Chinese AI companies on safety through dialogue.</p>\n<p>Nvidia CEO Jensen Huang stated during a media briefing in London on Wednesday that the chipmaker absolutely must work with Chinese AI companies to monitor risks and advance the potentially dangerous technology safely. He told CNBC that dialogue is the appropriate mechanism, noting he maintains ongoing discussions with many researchers in China and advocating for enhanced dialogue efforts.</p>\n<p>Huang has positioned himself as a prominent voice opposing greater AI regulation, contrasting with OpenAI's Sam Altman and Anthropic's Dario Amodei, who have called for slowdowns and stronger oversight.</p>\n<p>AI safety has emerged as a key topic in U.S.-China government discussions, with both nations addressing risks posed by rapidly advancing technology. Prior to President Donald Trump's meeting with Chinese President Xi Jinping, U.S. Treasury Secretary Scott Bessent discussed a U.S.-China AI dialogue with Chinese counterpart He Lifeng in September, including a channel for incidents up to a national security level.</p>\n<p>Chinese President Xi Jinping stated that while China and the U.S. have competition, they may cooperate even more on AI, with both sides continuing dialogue to exchange views on risks and benefits. Xi emphasized joint efforts to prevent the misuse and abuse of AI technology.</p>\n<p>Huang suggested the U.K. is positioned to serve as a convener of multiple AI-related dialogues globally, citing the country's intellectual capital as an asset for bridging international discussions on AI governance and safety.</p>\n<p>Nvidia CEO Huang advocates dialogue with Chinese AI companies and between governments to advance AI safely.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_nvidia-must-work-with-chinese-ai_20261015_am.png",
+    "image": "images/aifeed_nvidia-must-work-with-chinese-ai_20261015_am.png",
+    "sourceUrl": "https://www.cnbc.com/2026/10/15/jensen-huang-nvidia-china-ai.html",
+    "publishedAt": "2026-10-15T12:16:33.037Z",
+    "hashtags": [
+      "Nvidia",
+      "AI",
+      "China",
+      "AISafety",
+      "JensenHuang"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "fbi-arrests-saudi-openai-employee-who-20261014",
     "slug": "fbi-arrests-saudi-openai-employee-who",
     "headline": "FBI arrests Saudi OpenAI employee who allegedly planted recording device in conference room",
