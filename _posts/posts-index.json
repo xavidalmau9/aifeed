@@ -1,5 +1,25 @@
 [
   {
+    "id": "ai-came-for-math-now-its-20261015",
+    "slug": "ai-came-for-math-now-its",
+    "headline": "AI Came for Math. Now It’s Chasing the Rest of Science",
+    "summary": "MIT researchers find AI models may soon become default for solving theoretical problems in physics, economics, and other math-heavy fields.",
+    "body": "<p>AI models jumped from solving 2% to 35% of theoretical physics and economics problems in 18 months.</p>\n<p>Researchers at MIT conducted a study testing OpenAI's latest models on theoretical problems from December 2025 to May 2026, discovering a dramatic acceleration in AI's ability to solve complex issues across multiple fields. The models achieved this without access to training data for these problems or the internet, demonstrating genuine problem-solving capability.</p>\n<p>The work focused on theory-heavy fields like high-energy physics, probability, statistics, quantum physics, gravitation, cosmology, and economic theory — areas where AI doesn't need to run physical simulations. MIT researcher Neil Thompson expects within years that many theory questions will be transformed by AI's ability to tackle them.</p>\n<p>The breakthrough mirrors shock waves already rippling through mathematics after OpenAI announced solving the long-standing Navier-Stokes problem in September. This sparked concerns among mathematicians about whether the problem-solving process remains as valuable as the final answer.</p>\n<p>Some researchers founded new labs dedicated to AI for science, signaling broad industry commitment to this frontier.</p>\n<p>While AI may reduce demand for theorists to solve key problems, experts emphasize that skilled researchers remain essential for verifying solutions, catching mistakes, and connecting insights — roles that pure automation cannot replace.</p>\n<p>AI's theoretical problem-solving ability is accelerating across multiple scientific fields, but human expertise remains critical for verification and insight.</p>",
+    "category": "Research",
+    "imageUrl": "https://aifeed.run/images/aifeed_ai-came-for-math-now-its_20261015_pm.png",
+    "image": "images/aifeed_ai-came-for-math-now-its_20261015_pm.png",
+    "sourceUrl": "https://www.wired.com/story/ai-is-coming-for-science-next-watch-out/",
+    "publishedAt": "2026-10-15T21:07:58.831Z",
+    "hashtags": [
+      "AI",
+      "Science",
+      "MIT",
+      "Physics",
+      "Automation"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "nvidia-must-work-with-chinese-ai-20261015",
     "slug": "nvidia-must-work-with-chinese-ai",
     "headline": "Nvidia must work with Chinese AI companies on safety, Jensen Huang tells CNBC",
