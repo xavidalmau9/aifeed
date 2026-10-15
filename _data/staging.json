@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "FBI Arrests OpenAI Employee Suspected of Planting a Surveillance Bug",
-    "link": "https://www.cnet.com/tech/services-and-software/openai-employee-fbi-arrest-recording-device-news/",
-    "score": 96,
-    "reason": "Major controversy: criminal arrest at leading AI company, surveillance plot"
+    "headline": "Eight states sue OpenAI, saying ChatGPT isn't safe for kids",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+    "score": 92,
+    "reason": "Major litigation against leading AI company with concrete legal action and child safety angle"
   },
   {
     "rank": 2,
-    "headline": "Now that Character.AI is going bankrupt, what happens to all of its users' data?",
-    "link": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
-    "score": 94,
-    "reason": "Company failure with major data privacy implications for users"
+    "headline": "Your secrets aren’t safe with this cute robot toy — they’re on Chinese servers ready to be hacked",
+    "link": "https://www.theverge.com/tech/1010727/eiliko-robot-hack-energize-lab",
+    "score": 88,
+    "reason": "Concrete security breach with real data exposure risk"
   },
   {
     "rank": 3,
-    "headline": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
-    "score": 92,
-    "reason": "IP theft allegation between major AI players, competitive conflict"
+    "headline": "An OpenAI Employee Allegedly Used a Chatbot to Help Plant a Recording Device at the Office",
+    "link": "https://www.wired.com/story/an-openai-employee-allegedly-used-a-chatbot-to-help-plant-a-recording-device-at-the-office/",
+    "score": 85,
+    "reason": "Significant internal security incident at major AI company"
   },
   {
     "rank": 4,
-    "headline": "Alibaba AI models cleared for use in Apple Intelligence in China just in time for the iPhone Duo launch",
-    "link": "https://www.engadget.com/2286617/alibaba-ai-models-cleared-for-use-in-apple-intelligence-in-china-just-in-time-for-the-iphone-duo-launch/",
-    "score": 88,
-    "reason": "Major product launch: Apple Intelligence expansion into China market"
+    "headline": "OpenAI Sued Over Children’s Data Used to Train ChatGPT",
+    "link": "https://www.cnet.com/tech/services-and-software/chatgpt-accused-using-childrens-data/",
+    "score": 84,
+    "reason": "Major lawsuit over training data practices affecting children"
   },
   {
     "rank": 5,
-    "headline": "AI Came for Math. Now It’s Chasing the Rest of Science",
-    "link": "https://www.wired.com/story/ai-is-coming-for-science-next-watch-out/",
-    "score": 86,
-    "reason": "Significant impact: AI expanding across scientific domains beyond mathematics"
+    "headline": "Anthropic&apos;s third-quarter revenue is said to hit $16.8 billion ahead of IPO",
+    "link": "https://www.cnbc.com/2026/10/15/anthropics-third-quarter-revenue-hits-16point8-billion-ipo.html",
+    "score": 82,
+    "reason": "Big financial number and major company milestone"
   },
   {
     "rank": 6,
-    "headline": "You Can Use Gemini 4 Argon Now: Google’s New AI Is Built for Coding, Math and Robotics",
-    "link": "https://www.cnet.com/tech/services-and-software/gemini-4-argon-general-release-google-ai-news/",
-    "score": 84,
-    "reason": "Google product launch: new specialized AI model with big numbers on capabilities"
+    "headline": "YouTube Music adds new labels for AI-generated content",
+    "link": "https://www.engadget.com/2286764/youtube-music-adds-new-labels-for-ai-generated-content/",
+    "score": 76,
+    "reason": "Major platform implementing AI transparency requirement"
   },
   {
     "rank": 7,
-    "headline": "OpenAI and Anthropic Tell British Lawmakers: Regulate Us",
-    "link": "https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us/",
-    "score": 82,
-    "reason": "Regulatory milestone: major AI companies requesting government oversight"
+    "headline": "McKinsey is making job applicants spar with a fake AI client",
+    "link": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
+    "score": 74,
+    "reason": "Established firm deploying AI in hiring at scale"
   },
   {
     "rank": 8,
-    "headline": "You Can Turn Off AI on Your Google Account, but at a Cost. Here’s What You Lose",
-    "link": "https://www.cnet.com/tech/services-and-software/what-other-features-do-you-lose-when-you-turn-off-ai-in-your-google-account/",
-    "score": 80,
-    "reason": "Controversy: Google restricts features if users disable AI integration"
+    "headline": "I Let Meta Muse Do My Shopping. The AI Agent Tried to Upcharge Me",
+    "link": "https://www.cnet.com/tech/services-and-software/meta-muse-my-personal-shopper-upcharged-me/",
+    "score": 72,
+    "reason": "Real-world failure of Meta's AI agent with financial consequences"
   },
   {
     "rank": 9,
-    "headline": "Android is using AI to suss out scammers in Google Messages",
-    "link": "https://www.theverge.com/tech/1010928/android-scam-protection-enhanced-protection-google-messages",
-    "score": 78,
-    "reason": "Google product launch: AI deployed for scam detection across large user base"
+    "headline": "Android will use Gemini to warn you about scammy messages",
+    "link": "https://www.engadget.com/2286355/android-will-use-gemini-to-warn-you-about-scammy-messages/",
+    "score": 70,
+    "reason": "Major OS integration of AI safety feature"
   },
   {
     "rank": 10,
-    "headline": "AI tools are aiding would-be spies",
-    "link": "https://www.axios.com/2026/10/14/ai-tools-are-aiding-would-be-spies",
-    "score": 76,
-    "reason": "Security controversy: AI misuse for espionage purposes"
-  },
-  {
-    "rank": 11,
-    "headline": "Companies are building with AI — and exposing new security risks",
-    "link": "https://www.axios.com/2026/10/13/censys-ai-vibe-coding-exposures",
-    "score": 74,
-    "reason": "Widespread security controversy: vulnerabilities emerging from AI implementation"
-  },
-  {
-    "rank": 12,
-    "headline": "Deezer will let listeners completely filter out AI music",
-    "link": "https://www.engadget.com/2286898/deezer-will-let-listeners-completely-filter-out-ai-music/",
-    "score": 72,
-    "reason": "Deezer product feature: user control over AI-generated content"
-  },
-  {
-    "rank": 13,
-    "headline": "‘So perfect, they are literally identical’ – Your AI-polished resumes are recruiters’ new top stressor",
-    "link": "https://www.zdnet.com/education/employ-report-ai-hr-hiring/",
-    "score": 70,
-    "reason": "Controversy: AI resume tools creating widespread hiring market disruption"
-  },
-  {
-    "rank": 14,
-    "headline": "Linus Torvalds is using AI to develop Linux kernel code now",
-    "link": "https://www.zdnet.com/innovation/linus-torvalds-uses-ai-to-write-linux-kernel-patch/",
+    "headline": "Windows update patches a whopping 1,400 security bugs –  including 2 zero days",
+    "link": "https://www.zdnet.com/tech/windows-october-update-patches-file-explorer-bluetooth/",
     "score": 68,
-    "reason": "Major adoption milestone: Linux creator integrating AI into core OS development"
-  },
-  {
-    "rank": 15,
-    "headline": "Square’s new kiosk lets you talk to AI for help with your order",
-    "link": "https://www.theverge.com/tech/1009086/square-kiosk",
-    "score": 66,
-    "reason": "Square product launch: AI deployed in retail payment systems"
-  },
-  {
-    "rank": 16,
-    "headline": "Microsoft has a new machine learning tool to improve weather forecasts",
-    "link": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
-    "score": 64,
-    "reason": "Microsoft product: AI application in weather prediction"
-  },
-  {
-    "rank": 17,
-    "headline": "Google lets you make personal Android apps for free now – with just prompts",
-    "link": "https://www.zdnet.com/tech/custom-android-apps-google-ai-studio/",
-    "score": 62,
-    "reason": "Google product launch: democratizing app development via AI"
-  },
-  {
-    "rank": 18,
-    "headline": "YouTube sticks new labels on AI-generated songs",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label",
-    "score": 60,
-    "reason": "YouTube product launch: AI content labeling at scale"
-  },
-  {
-    "rank": 19,
-    "headline": "Google Deepmind’s New Resident Philosopher Tackles AI Ethics",
-    "link": "https://spectrum.ieee.org/ai-ethics-deepmind-philosopher-shevlin",
-    "score": 58,
-    "reason": "DeepMind leadership: formal AI ethics role establishment"
-  },
-  {
-    "rank": 20,
-    "headline": "Anthropic’s self-replicating AI warning is alarming deja vu",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1011108/anthropic-self-replicating-ai-smart-devices-risk",
-    "score": 56,
-    "reason": "Anthropic safety concern: self-replication risks in AI systems"
+    "reason": "Massive security update with specific vulnerability counts"
   }
 ]
