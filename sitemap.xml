@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<url><loc>https://aifeed.run/</loc><lastmod>2026-10-14</lastmod><changefreq>hourly</changefreq></url>
+<url><loc>https://aifeed.run/</loc><lastmod>2026-10-15</lastmod><changefreq>hourly</changefreq></url>
+<url><loc>https://aifeed.run/news/nvidia-must-work-with-chinese-ai/</loc><lastmod>2026-10-15</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_nvidia-must-work-with-chinese-ai_20261015_am.png</image:loc></image:image></url>
 <url><loc>https://aifeed.run/news/fbi-arrests-saudi-openai-employee-who/</loc><lastmod>2026-10-14</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_fbi-arrests-saudi-openai-employee-who_20261014_pm.png</image:loc></image:image></url>
 <url><loc>https://aifeed.run/news/ai-models-can-be-easily-modified/</loc><lastmod>2026-10-14</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_ai-models-can-be-easily-modified_20261014_am.png</image:loc></image:image></url>
 <url><loc>https://aifeed.run/news/ai-labs-are-buying-data-from/</loc><lastmod>2026-10-13</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_ai-labs-are-buying-data-from_20261013_pm.png</image:loc></image:image></url>
