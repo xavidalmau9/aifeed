@@ -64,7 +64,7 @@ async function runRepost(cfg, env, P) {
     const oldFb = fbList.find(m => m.id === req.old.fbPostId);
     if (!oldFb) throw new Error('old Facebook post ' + req.old.fbPostId + ' is not in published_posts - stop, nothing posted');
     fbMessage = String(oldFb.message || '');
-    if (fbList.some(m => m.id !== oldFb.id && String(m.message || '') === fbMessage)) throw new Error('a Facebook post with the same message already exists - stop');
+    if (fbList.some(m => m.id !== oldFb.id && !(req.ignoreFbDuplicates || []).includes(m.id) && String(m.message || '') === fbMessage)) throw new Error('a Facebook post with the same message already exists - stop');
     out.oldFbPermalink = oldFb.permalink_url;
     const fbErr = checkFb(fbMessage, req.sourceUrl);
     console.log('Old FB message read (' + fbMessage.length + ' chars), layout check: ' + (fbErr.length ? fbErr.join('; ') : 'ok'));
