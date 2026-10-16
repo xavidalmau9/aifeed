@@ -25,7 +25,7 @@ const fontPx = String(g.graphicHeadline).length > 40 ? 84 : String(g.graphicHead
 // No usable story photo -> branded AIFeed.run card background (Oct 16), never a random stock image.
 const BRAND_BG = 'radial-gradient(circle at 78% 22%,rgba(192,64,255,.55) 0,rgba(192,64,255,0) 46%),radial-gradient(circle at 18% 70%,rgba(255,138,0,.35) 0,rgba(255,138,0,0) 42%),linear-gradient(160deg,#221a4a 0%,#14102b 60%,#0d0b14 100%)';
 const photo = c.ogImage || '';
-const photoBg = photo ? '#000 url("' + esc(photo) + '") center 18%/cover no-repeat' : BRAND_BG;
+const brandCss = photo ? '' : '.wrap .photo{background:' + BRAND_BG + '}';
 const domain = c.source;
 const html = `<!doctype html><html><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800;900&family=Inter:wght@400;500&display=block" rel="stylesheet">
@@ -34,7 +34,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8">
 html,body{width:1080px;height:1350px;overflow:hidden;background:#0d0b14}
 .wrap{position:relative;width:1080px;height:1350px;font-family:Inter,sans-serif;color:#fff}
 /* photo box = the area above the text block, so the subject is not centred behind the headline (Oct 10) */
-.photo{position:absolute;left:0;right:0;top:0;height:1000px;background:${photoBg}}
+.photo{position:absolute;left:0;right:0;top:0;height:1000px;background:#000 url("${esc(photo)}") center 18%/cover no-repeat}
 .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,11,20,0) 0%,rgba(13,11,20,.05) 38%,rgba(13,11,20,.82) 58%,#0d0b14 72%,#0d0b14 100%)}
 .badge{position:absolute;top:44px;left:44px;padding:14px 26px;border-radius:40px;font:800 26px Poppins;letter-spacing:.5px;background:linear-gradient(90deg,#ff8a00,#c040ff)}
 .content{position:absolute;left:56px;right:56px;bottom:120px}
@@ -48,7 +48,7 @@ p{font:400 32px/1.42 Inter;color:#d9d6e3;text-wrap:pretty}
 .src{font:400 24px Inter;color:#77738a}
 .logo{font:800 36px Poppins;background:linear-gradient(90deg,#ff8a00,#c040ff);-webkit-background-clip:text;color:transparent}
 .logo b{color:#fff;-webkit-text-fill-color:#fff}
-</style></head><body><div class="wrap">
+${brandCss}</style></head><body><div class="wrap">
 <div class="photo"></div><div class="shade"></div>
 <div class="badge">AIFEED.RUN • AI NEWS</div>
 <div class="content"><div class="cat">${cat}</div><h1>${hlHtml}</h1><div class="rule"></div><p>${sumHtml}</p></div>
@@ -93,7 +93,7 @@ const storyHtml = `<!doctype html><html><head><meta charset="utf-8">
 html,body{width:1080px;height:1920px;overflow:hidden;background:#0d0b14}
 .wrap{position:relative;width:1080px;height:1920px;font-family:Inter,sans-serif;color:#fff}
 /* story: photo starts below Instagram's top bar (profile name, progress line) and fades in, so heads are not hidden under it */
-.photo{position:absolute;left:0;right:0;top:80px;height:1170px;background:${photoBg};-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 90px);mask-image:linear-gradient(180deg,transparent 0,#000 90px)}
+.photo{position:absolute;left:0;right:0;top:80px;height:1170px;background:#000 url("${esc(photo)}") center 18%/cover no-repeat;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 90px);mask-image:linear-gradient(180deg,transparent 0,#000 90px)}
 .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,11,20,.55) 0%,rgba(13,11,20,0) 16%,rgba(13,11,20,0) 38%,rgba(13,11,20,.85) 50%,#0d0b14 64%,#0d0b14 100%)}
 .top{position:absolute;top:260px;left:64px;right:64px;display:flex;justify-content:space-between;align-items:center}
 .badge{padding:16px 30px;border-radius:44px;font:800 30px Poppins;background:linear-gradient(90deg,#ff8a00,#c040ff)}
@@ -109,7 +109,7 @@ p{font:400 36px/1.42 Inter;color:#d9d6e3;text-wrap:pretty}
 .cta{font:600 32px Poppins;color:#bdb8cc;margin-bottom:14px}
 .logo{font:800 56px Poppins;background:linear-gradient(90deg,#ff8a00,#c040ff);-webkit-background-clip:text;color:transparent}
 .logo b{-webkit-text-fill-color:#fff}
-</style></head><body><div class="wrap">
+${brandCss}</style></head><body><div class="wrap">
 <div class="photo"></div><div class="shade"></div>
 <div class="top"><div class="badge">AIFEED.RUN • AI NEWS</div><div class="new">NEW POST ↓</div></div>
 <div class="content"><div class="cat">${cat}</div><h1>${hlHtml}</h1><div class="rule"></div><p>${sumHtml}</p></div>
