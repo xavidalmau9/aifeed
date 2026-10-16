@@ -474,7 +474,8 @@ async function main() {
       try {
         const tmpPng = path.join(require('os').tmpdir(), published.pngName);
         fs.writeFileSync(tmpPng, feed.png);
-        const mp4 = renderReel(env.REPO, published.post, tmpPng);
+        // Pass the story's own photo (og:image picked by refinePhotos) so the Reel is photo-first, not a Commons stand-in.
+        const mp4 = renderReel(env.REPO, Object.assign({}, published.post, { photoUrl: published.post.photoUrl || qc.story.ogImage || '' }), tmpPng);
         const rel = 'videos/reels/' + published.slug + '.mp4';
         commitApply(env.REPO, 'AIFeed reel: ' + published.slug, () => {
           fs.mkdirSync(path.join(env.REPO, 'videos/reels'), { recursive: true });

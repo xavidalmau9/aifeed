@@ -44,7 +44,11 @@ def clean(s):
 
 
 def sentences(text):
-    return [x.strip() for x in re.split(r'(?<=[.!?])\s+(?=[A-Z"\u201c])', text) if len(x.strip()) > 25]
+    # split on sentence ends, but not after abbreviations like U.S., U.K., Mr., Dr., Inc.
+    text = re.sub(r'\b([A-Z])\.(?=[A-Z]\.)', r'\1<DOT>', text)
+    text = re.sub(r'\b(U\.S|U\.K|U\.N|E\.U|Mr|Ms|Mrs|Dr|Inc|Corp|Jr|Sr|St|vs)\.', lambda m: m.group(1).replace('.', '<DOT>') + '<DOT>', text)
+    parts = re.split(r'(?<=[.!?])\s+(?=[A-Z"\u201c])', text)
+    return [x.replace('<DOT>', '.').strip() for x in parts if len(x.strip()) > 25]
 
 
 LEADS = re.compile(r'^(however|meanwhile|additionally|also|still|instead|in addition|notably|moreover|for example),?\s+', re.I)
@@ -74,6 +78,9 @@ def key_points(post):
     head = set(re.findall(r'[a-z0-9]{4,}', clean(post.get('headline', '')).lower()))
     cands = sentences(clean(post.get('summary', ''))) + [s for p in paras for s in sentences(p)]
     pool, seen = [], [head] if head else []
+    # sentences that open with a bare pronoun lack a referent on screen; use them only as a last resort
+    pron = re.compile(r'^(he|she|it|they|this|that|these|those|his|her|its|their)\b', re.I)
+    cands = [c for c in cands if not pron.match(c)] + [c for c in cands if pron.match(c)]
     for s in cands:
         if BANNED.search(s):
             continue
@@ -176,20 +183,53 @@ def shade(img, stops, color=BG):
     return Image.fromarray(arr.clip(0, 255).astype('uint8'))
 
 
+def trim_bars(img, thr=18, frac=.97):
+    """Remove baked-in letterbox/pillarbox bars (near-black or near-white rows/cols) so the scene is truly full-bleed."""
+    a = np.asarray(img.convert('L')).astype(np.int16)
+    def keep(m):
+        return ~(((m < thr).mean(1) > frac) | ((m > 255 - thr).mean(1) > frac))
+    r, c = np.where(keep(a))[0], np.where(keep(a.T))[0]
+    if len(r) < a.shape[0] * .5 or len(c) < a.shape[1] * .5:
+        return img
+    return img.crop((int(c[0]), int(r[0]), int(c[-1]) + 1, int(r[-1]) + 1))
+
+
+def is_photo(img):
+    """Reject flat gradients / text cards: a real photo has fine detail (edge energy) across the frame."""
+    g = np.asarray(img.convert('L').resize((270, 480))).astype(np.float32)
+    return float(np.abs(np.diff(g, axis=1)).mean() + np.abs(np.diff(g, axis=0)).mean()) > 4.0
+
+
+def vignette(img, strength=.55):
+    yy, xx = np.mgrid[0:img.height, 0:img.width].astype(np.float32)
+    r = np.sqrt(((xx - img.width / 2) / (img.width / 2)) ** 2 + ((yy - img.height / 2) / (img.height / 2)) ** 2) / 1.42
+    k = 1 - strength * np.clip(r, 0, 1) ** 2.2
+    arr = np.asarray(img.convert('RGB')).astype(np.float32) * k[..., None]
+    return Image.fromarray(arr.clip(0, 255).astype('uint8'))
+
+
+def grade(img):
+    """Newsroom grade: slight desaturation + contrast so any source photo reads cinematic under white/pink type."""
+    from PIL import ImageEnhance
+    img = ImageEnhance.Color(img).enhance(.82)
+    return ImageEnhance.Contrast(img).enhance(1.12)
+
+
 # ---------- scenes ----------
 class Reel:
-    def __init__(self, post, feed, photo, src):
+    def __init__(self, post, feed, photo, src, credit=''):
         self.post, self.src = post, src
+        self.credit = text_sprite(re.sub(r'\s*\(https?://\S+\)$', '', credit), FONT('Regular', 24), MUTED, shadow=True) if credit else None
         self.points = key_points(post)
         self.headline = clean(post['headline'])
         text_all = ' '.join([self.headline] + self.points)
         if BANNED.search(text_all):
             raise SystemExit('banned wording in reel text')
-        ph = photo.convert('RGB')
+        ph = grade(trim_bars(photo.convert('RGB')))
         big = cover(ph, int(W * 1.22), int(H * 1.22))
-        dark = Image.blend(big, Image.new('RGB', big.size, (0, 0, 0)), .35)  # heavy overlay
-        self.hook_bg = shade(dark, [(0, .55), (.16, .2), (.4, .25), (.58, .8), (.75, .92), (1, .95)], (0, 0, 0))
-        self.pt_bg = shade(Image.blend(big, Image.new('RGB', big.size, (0, 0, 0)), .55), [(0, .5), (.3, .45), (.7, .55), (1, .7)], (0, 0, 0))
+        dark = vignette(Image.blend(big, Image.new('RGB', big.size, (0, 0, 0)), .42))  # heavy overlay
+        self.hook_bg = shade(dark, [(0, .6), (.18, .35), (.38, .4), (.55, .82), (.72, .93), (1, .97)], (0, 0, 0))
+        self.pt_bg = shade(vignette(Image.blend(big, Image.new('RGB', big.size, (0, 0, 0)), .6)), [(0, .5), (.3, .45), (.7, .55), (1, .7)], (0, 0, 0))
         # category pill
         cat = (post.get('category') or 'AI News').upper()
         f = FONT('Bold', 34); tw = int(ImageDraw.Draw(Image.new('L', (1, 1))).textlength(cat, font=f))
@@ -216,12 +256,12 @@ class Reel:
             self.p_words.append(items)
         self.num = [text_sprite(f'0{i + 1}', FONT('Bold', 190), PINK, shadow=False) for i in range(3)]
         self.src_spr = text_sprite(('Source: ' + src) if src else 'aifeed.run', FONT('SemiBold', 38), MUTED, shadow=False)
-        self.brand = self._brand(44, shadow=True)
+        self.brand = self._brand(54, shadow=True)
         self.end_logo = self._brand(150, shadow=True)
         self.tag = text_sprite('The AI news that matters.', FONT('Regular', 56), WHITE, shadow=False)
         self.cta = self._cta()
         self.web = text_sprite('Free newsletter at aifeed.run', FONT('Regular', 40), MUTED, shadow=False)
-        self.end_bg = self._end_bg()
+        self.end_bg = self._end_bg(big)
 
     def _brand(self, size, shadow=False):
         f = FONT('Bold', size)
@@ -237,13 +277,16 @@ class Reel:
         d.text((320, 57), 'Follow @aifeed.run', font=FONT('Bold', 46), fill=WHITE, anchor='mm')
         return im
 
-    def _end_bg(self):
+    def _end_bg(self, big):
+        """End card stays photo-first: the story photo, blurred and crushed dark, with a faint brand glow."""
+        ph = cover(big, W, H).filter(ImageFilter.GaussianBlur(28))
+        ph = vignette(Image.blend(ph, Image.new('RGB', (W, H), (0, 0, 0)), .72), .6)
         yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
         r1 = np.sqrt((xx - W * .5) ** 2 + (yy - 760) ** 2) / 900
         r2 = np.sqrt((xx - W * .85) ** 2 + (yy - 1300) ** 2) / 700
         g = np.clip(1 - r1, 0, 1)[..., None] ** 2 * np.array(PURPLE, np.float32) * .55
         g += np.clip(1 - r2, 0, 1)[..., None] ** 2 * np.array(ORANGE, np.float32) * .25
-        return Image.fromarray((np.array(BG, np.float32) + g).clip(0, 255).astype('uint8'))
+        return Image.fromarray((np.asarray(ph).astype(np.float32) + g * .6).clip(0, 255).astype('uint8'))
 
     def progress(self, fr, t):
         d = ImageDraw.Draw(fr)
@@ -273,6 +316,8 @@ class Reel:
             y = self.h_y0 + len(self.h_lines) * self.h_lh + 26
             ImageDraw.Draw(fr).rectangle((SAFE_X0, y, SAFE_X0 + 220 * sw, y + 10), fill=PINK)
         self.logo(fr, ease_out((lt - .3) / .3))
+        if self.credit:  # CC BY / BY-SA attribution on the frames that show the photo full-bleed
+            spr, ox, oy = self.credit; paste_alpha(fr, spr, SAFE_X0 - ox, SAFE_BOTTOM + 90 - oy, .85)
 
     def cover(self):
         """IG grid cover (cover_url): the fully revealed opening frame, no progress bar."""
@@ -299,7 +344,7 @@ class Reel:
                 if wt <= 0: continue
                 paste_alpha(fr, s[0], x - s[1], y - s[2] + 22 * (1 - ease_out(wt)), ease_out(wt), .92 + .08 * ease_back(wt))
             s, ox, oy = self.src_spr
-            paste_alpha(fr, s, SAFE_X0 - ox, SAFE_BOTTOM + 14 - oy, ease_out((lt - .6) / .3))
+            paste_alpha(fr, s, SAFE_X0 - ox, SAFE_BOTTOM - 70 - oy, ease_out((lt - .6) / .3))
         else:
             fr = self.end_bg.copy().convert('RGBA')  # end card: logo is the hero, no corner mark
             p = ease_back(lt / .45)
@@ -390,21 +435,29 @@ def load_photo(photo, feed, category=''):
         try:
             if re.match(r'https?://', photo):
                 req = urllib.request.Request(photo, headers={'User-Agent': 'Mozilla/5.0 (aifeed.run reels)'})
-                return Image.open(io.BytesIO(urllib.request.urlopen(req, timeout=30).read())), ''
-            return Image.open(photo), ''
+                img = Image.open(io.BytesIO(urllib.request.urlopen(req, timeout=30).read()))
+            else:
+                img = Image.open(photo)
+            img.load()
+            if min(img.size) >= 400 and is_photo(img):
+                return img, ''
+            print('photo too small or not photographic, trying Commons fallback', file=sys.stderr)
         except Exception as e:
             print('photo load failed, trying Commons fallback:', e, file=sys.stderr)
     img, credit = commons_photo(category)
     if img is not None:
         return img, credit
-    return feed.convert('RGB').crop((0, 130, feed.width, int(feed.height * .53))), ''  # last resort: photo area of the feed graphic
+    crop = feed.convert('RGB').crop((0, 130, feed.width, int(feed.height * .53)))  # photo area of the feed graphic
+    if is_photo(crop):
+        return crop, ''
+    raise SystemExit('no real photo for this story (feed graphic is a text/gradient card); refusing a text-only Reel')
 
 
 def build(post, feed_path, out, seed=0, photo=None):
     feed = Image.open(feed_path)
     src = clean(post.get('source') or post.get('outlet') or '') or outlet_from_url(post.get('sourceUrl', ''))
     img, credit = load_photo(photo or post.get('photoUrl'), feed, post.get('category', ''))
-    r = Reel(post, feed, img, src)
+    r = Reel(post, feed, img, src, credit)
     cover_path = os.path.splitext(out)[0] + '_cover.jpg'
     r.cover().save(cover_path, quality=92)
     tmp = tempfile.mkdtemp(prefix='reel-'); wav = os.path.join(tmp, 'music.wav'); music(wav, TOTAL, seed)
