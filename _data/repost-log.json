@@ -19,5 +19,26 @@
     "storyId": "18017073977745517",
     "fbId": "1434982969687864_122109307881495604",
     "fbPermalink": "https://www.facebook.com/122107110429495604/posts/122109307881495604"
+  },
+  {
+    "slug": "coreweave-credit-default-swaps-hit-distress",
+    "at": "2026-10-16T22:28:58.732Z",
+    "old": {
+      "igMediaId": "17939252298390494",
+      "igStoryId": "18130112980703990",
+      "fbPostId": "1434982969687864_122112351753495604"
+    },
+    "deleted": {
+      "igMediaId": "already deleted by hand",
+      "igStoryId": "FAILED: Graph HTTP 400 {\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AxuOUAMM0i3SPv_Db4kIKyN\"}",
+      "fbPostId": "deleted"
+    },
+    "oldIgPermalink": "(deleted by hand)",
+    "oldFbPermalink": "https://www.facebook.com/122107110429495604/posts/122112351753495604",
+    "igId": "17894559138613881",
+    "igPermalink": "https://www.instagram.com/p/Dekm594GD2W/",
+    "storyId": "18118521815004212",
+    "fbId": "1434982969687864_122112358383495604",
+    "fbPermalink": "https://www.facebook.com/122107110429495604/posts/122112358383495604"
   }
 ]
