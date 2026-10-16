@@ -303,7 +303,8 @@ def trim_bars(img, thr=18, frac=.97):
 def is_photo(img):
     """Reject flat gradients / text cards: a real photo has fine detail (edge energy) across the frame."""
     g = np.asarray(img.convert('L').resize((270, 480))).astype(np.float32)
-    return float(np.abs(np.diff(g, axis=1)).mean() + np.abs(np.diff(g, axis=0)).mean()) > 4.0
+    # calibrated: flat gradient feed cards score ~0.9; low-key (dark, moody) real or photoreal scenes score ~3; bright photos 4-14
+    return float(np.abs(np.diff(g, axis=1)).mean() + np.abs(np.diff(g, axis=0)).mean()) > 2.0
 
 
 def vignette(img, strength=.55):
@@ -333,8 +334,10 @@ class Reel:
             raise SystemExit('banned wording in reel text')
         ph = grade(trim_bars(photo.convert('RGB')))
         big = cover(ph, int(W * 1.22), int(H * 1.22))
-        dark = vignette(Image.blend(big, Image.new('RGB', big.size, (0, 0, 0)), .42))  # heavy overlay
-        self.hook_bg = shade(dark, [(0, .55), (.16, .3), (.36, .38), (.5, .78), (.66, .93), (1, .97)], (0, 0, 0))
+        # heavy overlay, scaled down for photos that are already low-key so the scene doesn't crush to black
+        lk = min(1.0, max(.2, float(np.asarray(ph.convert('L')).mean()) / 95))
+        dark = vignette(Image.blend(big, Image.new('RGB', big.size, (0, 0, 0)), .42 * lk), .55 * lk)
+        self.hook_bg = shade(dark, [(0, .55 * lk), (.16, .3 * lk), (.36, .38 * lk), (.5, .78), (.66, .93), (1, .97)], (0, 0, 0))
         self.pt_bg = shade(vignette(Image.blend(big, Image.new('RGB', big.size, (0, 0, 0)), .6)), [(0, .5), (.3, .45), (.7, .55), (1, .7)], (0, 0, 0))
         # category pill
         cat = (post.get('category') or 'AI News').upper()
@@ -509,6 +512,10 @@ def music(path, dur, seed=0):
         w.setnchannels(2); w.setsampwidth(2); w.setframerate(sr); w.writeframes((st * 32767).astype('<i2').tobytes())
 
 
+# TODO(scenes): the scene must match the story's theme, not just its category. Credit stress / market stories want a
+# stressed trader + red crashing charts; infra stories a dark server corridor; policy a Capitol/courtroom; never a
+# generic or off-topic stock photo. Prefer the story photo, then a theme-matched photoreal scene (no identifiable real
+# people in generated scenes), then these Commons queries as a last resort. AI-generated scenes carry no photo credit.
 FALLBACK_QUERIES = {
     'business': ['stock exchange trading floor', 'datacenter servers'], 'finance': ['stock exchange trading floor'],
     'policy': ['United States Capitol night'], 'research': ['laboratory scientist computer'], 'tools': ['laptop code screen dark'],
