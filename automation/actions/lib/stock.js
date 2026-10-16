@@ -21,7 +21,20 @@ function stockQueries(title) {
   if (names.length) q.push(names.slice(0, 2).join(' '));
   if (names.length) q.push(names[0]);
   if (keywords.length) q.push(keywords.slice(0, 3).join(' '));
-  return [...new Set(q.filter(Boolean))].slice(0, 3);
+  // topical scene query so there is always a strong, relevant photo to try (vision still decides)
+  const low = String(title || '').toLowerCase();
+  const TOPICS = [
+    [/coreweave|data ?cent|compute|cloud|server|lambda|stargate/, 'data center server racks'],
+    [/chip|gpu|nvidia|amd|tsmc|semiconductor|nemotron/, 'computer chip semiconductor'],
+    [/robot|humanoid|tesla optimus|figure/, 'humanoid robot'],
+    [/debt|bond|credit|stock|investor|ipo|valuation|funding|raises|shares/, 'stock market trading screen'],
+    [/chatgpt|openai|chatbot|claude|gemini|copilot|app\b|browser|chrome/, 'person using laptop smartphone'],
+    [/law|court|lawsuit|regulat|senate|congress|eu\b|policy|ban/, 'courthouse government building'],
+    [/car|autonomous|waymo|self-driving/, 'self-driving car street']
+  ];
+  const topic = (TOPICS.find(([re]) => re.test(low)) || [null, 'artificial intelligence computer'])[1];
+  q.push(topic);
+  return [...new Set(q.filter(Boolean))].slice(0, 4);
 }
 
 async function getJson(fetchImpl, url, headers = {}) {
