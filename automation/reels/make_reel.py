@@ -21,7 +21,8 @@ _fc = {}
 def FONT(name, size):
     k = (name, size)
     if k not in _fc:
-        _fc[k] = ImageFont.truetype(os.path.join(HERE, 'fonts', f'Poppins-{name}.ttf'), size)
+        fn = 'Anton-Regular.ttf' if name == 'Anton' else f'Poppins-{name}.ttf'  # Anton: free Google Font (OFL), condensed poster headline
+        _fc[k] = ImageFont.truetype(os.path.join(HERE, 'fonts', fn), size)
     return _fc[k]
 
 # aifeed.run site palette (index.html :root)
@@ -50,6 +51,29 @@ PILL_DEFAULT = ('#FF2E88', '#FFFFFF')          # hot pink (brand)
 
 def _hex(c):
     c = c.lstrip('#'); return tuple(int(c[i:i + 2], 16) for i in (0, 2, 4))
+
+
+def _lum(c):
+    def ch(v):
+        v /= 255; return v / 12.92 if v <= .03928 else ((v + .055) / 1.055) ** 2.4
+    return .2126 * ch(c[0]) + .7152 * ch(c[1]) + .0722 * ch(c[2])
+
+
+def contrast(a, b):
+    la, lb = sorted((_lum(a), _lum(b)), reverse=True); return (la + .05) / (lb + .05)
+
+
+def readable(c, on=(12, 12, 16), ratio=4.5):
+    """Same hue, lightened toward white until WCAG contrast vs the dark overlay is >= ratio (text use)."""
+    c = tuple(c); k = 0.0
+    while contrast(c, on) < ratio and k < 1:
+        k += .05; c = tuple(int(round(v + (255 - v) * .05)) for v in c)
+    return c
+
+
+def accent_color(category):
+    """Story accent = the category pill color (hot pink fallback), made readable as text on dark photos."""
+    return readable(pill_colors(category)[0])
 
 
 def pill_colors(category):
@@ -145,6 +169,53 @@ def outlet_from_url(u):
         return ''
     host = m.group(1)
     return next((v for k, v in OUTLETS.items() if host == k or host.endswith('.' + k)), host)
+
+
+# ---------- punch headline ----------
+COVER_X0, COVER_X1 = 80, 1000           # cover text column (IG 3:4 grid crop is x 0-1080, y 240-1680)
+GRID_TOP, GRID_BOTTOM = 240, 1680       # everything on the cover must sit inside this band
+PUNCH_TOP, PUNCH_BOTTOM = 900, 1520     # headline block: roughly the bottom half of the 3:4 tile
+
+
+def punch_lines(post, headline):
+    """Short poster headline as 3-4 lines. post['punch'] = 'COREWEAVE / CREDIT STRESS / HITS DISTRESS LEVELS';
+    prefix one line with '*' to make it the pink line. Otherwise split the headline into balanced lines."""
+    raw = clean(post.get('punch') or post.get('punchHeadline') or '')
+    if raw:
+        lines = [l.strip() for l in raw.split('/') if l.strip()]
+    else:
+        words = headline.split(); n = 3 if len(headline) <= 42 else 4 if len(headline) <= 64 else 5
+        target = len(headline) / n; lines, cur = [], ''
+        for w in words:
+            if cur and len(cur) + 1 + len(w) > target * 1.25 and len(lines) < n - 1:
+                lines.append(cur); cur = w
+            else:
+                cur = (cur + ' ' + w).strip()
+        lines.append(cur)
+    pink = next((i for i, l in enumerate(lines) if l.startswith('*')), None)
+    lines = [l.lstrip('*').strip().upper() for l in lines]
+    if pink is None:
+        pink = 1 if len(lines) <= 3 else len(lines) - 2
+    return lines, (pink if len(lines) > 1 else -1)
+
+
+def punch_sprites(lines, pink, accent=None, x0=COVER_X0, x1=COVER_X1, top=PUNCH_TOP, bottom=PUNCH_BOTTOM, gap=10, cap=250, floor=84):
+    """Each line sized to fill the column width (poster look), then the stack is scaled to fit the band, bottom-aligned."""
+    d = ImageDraw.Draw(Image.new('L', (1, 1))); maxw = x1 - x0
+    sizes = []
+    for l in lines:
+        f = FONT('Anton', 200); w = d.textlength(l, font=f)
+        sizes.append(max(floor, min(cap, int(200 * maxw / max(1, w)))))
+    def heights(sz):
+        return [d.textbbox((0, 0), l, font=FONT('Anton', s))[3] - d.textbbox((0, 0), l, font=FONT('Anton', s))[1] for l, s in zip(lines, sz)]
+    total = sum(heights(sizes)) + gap * (len(lines) - 1)
+    if total > bottom - top:
+        k = (bottom - top) / total; sizes = [max(40, int(s * k)) for s in sizes]
+    hs = heights(sizes); y = bottom - (sum(hs) + gap * (len(lines) - 1)); out = []
+    for i, (l, s, h) in enumerate(zip(lines, sizes, hs)):
+        f = FONT('Anton', s); spr = text_sprite(l, f, (accent or PINK) if i == pink else WHITE)
+        out.append((spr, x0, y - d.textbbox((0, 0), l, font=f)[1])); y += h + gap  # y = glyph top, not text origin
+    return out
 
 
 # ---------- drawing helpers ----------
@@ -263,20 +334,24 @@ class Reel:
         ph = grade(trim_bars(photo.convert('RGB')))
         big = cover(ph, int(W * 1.22), int(H * 1.22))
         dark = vignette(Image.blend(big, Image.new('RGB', big.size, (0, 0, 0)), .42))  # heavy overlay
-        self.hook_bg = shade(dark, [(0, .6), (.18, .35), (.38, .4), (.55, .82), (.72, .93), (1, .97)], (0, 0, 0))
+        self.hook_bg = shade(dark, [(0, .55), (.16, .3), (.36, .38), (.5, .78), (.66, .93), (1, .97)], (0, 0, 0))
         self.pt_bg = shade(vignette(Image.blend(big, Image.new('RGB', big.size, (0, 0, 0)), .6)), [(0, .5), (.3, .45), (.7, .55), (1, .7)], (0, 0, 0))
         # category pill
         cat = (post.get('category') or 'AI News').upper()
         f = FONT('Bold', 34); tw = int(ImageDraw.Draw(Image.new('L', (1, 1))).textlength(cat, font=f))
         self.pill = Image.new('RGBA', (tw + 56, 64), (0, 0, 0, 0))
         dp = ImageDraw.Draw(self.pill); pbg, pfg = pill_colors(post.get('category'))
-        dp.rounded_rectangle((0, 0, tw + 55, 63), 32, fill=pbg + (255,))
-        dp.text(((tw + 56) / 2, 33), cat, font=f, fill=pfg, anchor='mm')
+        self.accent = accent_color(post.get('category'))
+        # outlined pill (poster style): category color outline + text on a dark glass fill; lift very dark colors for contrast
+        lum = (.2126 * pbg[0] + .7152 * pbg[1] + .0722 * pbg[2]) / 255
+        ink = self.accent
+        dp.rounded_rectangle((0, 0, tw + 55, 63), 10, fill=(0, 0, 0, 150), outline=ink + (255,), width=4)
+        dp.text(((tw + 56) / 2, 33), cat, font=f, fill=ink, anchor='mm')
         # headline lines
-        hf, hl, hlh = fit(self.headline.upper(), 'Bold', SAFE_X1 - SAFE_X0, 560, 112, 64, 1.04)
-        npink = max(1, round(len(hl) * .4)) if len(hl) > 1 else 0
-        self.h_lines = [text_sprite(l, hf, PINK if i >= len(hl) - npink else WHITE) for i, l in enumerate(hl)]; self.h_lh = hlh
-        self.h_y0 = SAFE_BOTTOM - 110 - hlh * len(hl)
+        self.punch, self.punch_pink = punch_lines(post, self.headline)
+        if BANNED.search(' '.join(self.punch)):
+            raise SystemExit('banned wording in punch headline')
+        self.h_lines = punch_sprites(self.punch, self.punch_pink, self.accent)
         # points
         self.p_words = []
         for p in self.points:
@@ -290,7 +365,7 @@ class Reel:
                     items.append((spr, x, y0 + li * plh, k)); k += 1
                     x += ImageDraw.Draw(Image.new('L', (1, 1))).textlength(w + ' ', font=pf)
             self.p_words.append(items)
-        self.num = [text_sprite(f'0{i + 1}', FONT('Bold', 190), PINK, shadow=False) for i in range(3)]
+        self.num = [text_sprite(f'0{i + 1}', FONT('Bold', 190), self.accent, shadow=False) for i in range(3)]
         self.src_spr = text_sprite(('Source: ' + src) if src else 'aifeed.run', FONT('SemiBold', 38), MUTED, shadow=False)
         self.brand = self._brand(54, shadow=True)
         self.end_logo = self._brand(150, shadow=True)
@@ -309,8 +384,9 @@ class Reel:
 
     def _cta(self):
         im = Image.new('RGBA', (640, 112), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
-        d.rounded_rectangle((0, 0, 639, 111), 56, fill=PURPLE + (255,))
-        d.text((320, 57), 'Follow @aifeed.run', font=FONT('Bold', 46), fill=WHITE, anchor='mm')
+        acc = self.accent; txt = WHITE if contrast(acc, WHITE) >= contrast(acc, (17, 17, 17)) else (17, 17, 17)  # end-card CTA in the story accent
+        d.rounded_rectangle((0, 0, 639, 111), 56, fill=acc + (255,))
+        d.text((320, 57), 'Follow @aifeed.run', font=FONT('Bold', 46), fill=txt, anchor='mm')
         return im
 
     def _end_bg(self, big):
@@ -339,21 +415,21 @@ class Reel:
         x0 = (img.width - cw) * cx; y0 = (img.height - ch) * cy
         return img.crop((int(x0), int(y0), int(x0 + cw), int(y0 + ch))).resize((W, H), Image.BILINEAR)
 
-    def logo(self, fr, a=1.0):
-        paste_alpha(fr, self.brand, SAFE_X1 + 20 - self.brand.width, SAFE_BOTTOM + 8, a)  # bottom-right, inside safe zone
+    def logo(self, fr, a=1.0, y=SAFE_BOTTOM + 8):
+        paste_alpha(fr, self.brand, SAFE_X1 + 20 - self.brand.width, y, a)  # bottom-right, inside safe zone
 
     def draw_cover_text(self, fr, lt):
-        pt = ease_out((lt - .05) / .25); paste_alpha(fr, self.pill, SAFE_X0 - 30 * (1 - pt), SAFE_TOP + 40, pt)
-        for i, (spr, ox, oy) in enumerate(self.h_lines):
+        # all cover elements inside the 3:4 grid band (y 240-1680): pill y 290, punch 900-1520, logo ~1548, credit ~1640
+        pt = ease_out((lt - .05) / .25); paste_alpha(fr, self.pill, COVER_X0 - 30 * (1 - pt), SAFE_TOP + 40, pt)
+        for i, ((spr, ox, oy), x, y) in enumerate(self.h_lines):
             p = ease_out((lt - .1 - i * .1) / .32)
-            paste_alpha(fr, spr, SAFE_X0 - ox, self.h_y0 + i * self.h_lh - oy + 60 * (1 - p), p)
-        sw = ease_out((lt - .5) / .5)
+            paste_alpha(fr, spr, x - ox, y - oy + 60 * (1 - p), p)
+        sw = ease_out((lt - .5) / .5)  # accent underline (category color), left of the logo row
         if sw > 0:
-            y = self.h_y0 + len(self.h_lines) * self.h_lh + 26
-            ImageDraw.Draw(fr).rectangle((SAFE_X0, y, SAFE_X0 + 220 * sw, y + 10), fill=PINK)
-        self.logo(fr, ease_out((lt - .3) / .3))
+            ImageDraw.Draw(fr).rectangle((COVER_X0, PUNCH_BOTTOM + 34, COVER_X0 + 200 * sw, PUNCH_BOTTOM + 44), fill=self.accent)
+        self.logo(fr, ease_out((lt - .3) / .3), PUNCH_BOTTOM + 28)
         if self.credit:  # CC BY / BY-SA attribution on the frames that show the photo full-bleed
-            spr, ox, oy = self.credit; paste_alpha(fr, spr, SAFE_X0 - ox, SAFE_BOTTOM + 90 - oy, .85)
+            spr, ox, oy = self.credit; paste_alpha(fr, spr, COVER_X0 - ox, GRID_BOTTOM - 44 - oy, .85)
 
     def cover(self):
         """IG grid cover (cover_url): the fully revealed opening frame, no progress bar."""
@@ -373,7 +449,7 @@ class Reel:
             self.logo(fr)
             spr, ox, oy = self.num[k]; p = ease_back(lt / .35)
             paste_alpha(fr, spr, SAFE_X0 - ox, 340 - oy, min(1, lt / .2), .6 + .4 * p)
-            ImageDraw.Draw(fr).rectangle((SAFE_X0, 572, SAFE_X0 + 160 * ease_out(lt / .4), 582), fill=PINK)
+            ImageDraw.Draw(fr).rectangle((SAFE_X0, 572, SAFE_X0 + 160 * ease_out(lt / .4), 582), fill=self.accent)
             words = self.p_words[k]; per = min(.09, 1.5 / max(1, len(words)))
             for (s, x, y, i) in words:
                 wt = (lt - .25 - i * per) / .18
@@ -493,6 +569,7 @@ def build(post, feed_path, out, seed=0, photo=None):
     feed = Image.open(feed_path)
     src = clean(post.get('source') or post.get('outlet') or '') or outlet_from_url(post.get('sourceUrl', ''))
     img, credit = load_photo(photo or post.get('photoUrl'), feed, post.get('category', ''))
+    credit = credit or clean(post.get('photoCredit') or '')  # caller-supplied attribution for a licensed local photo
     r = Reel(post, feed, img, src, credit)
     cover_path = os.path.splitext(out)[0] + '_cover.jpg'
     r.cover().save(cover_path, quality=92)
@@ -511,6 +588,9 @@ def build(post, feed_path, out, seed=0, photo=None):
 if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('--post', required=True); ap.add_argument('--image', required=True); ap.add_argument('--out', required=True)
-    ap.add_argument('--photo', default=''); ap.add_argument('--seed', type=int, default=0)
+    ap.add_argument('--photo', default=''); ap.add_argument('--punch', default='', help="'LINE / *PINK LINE / LINE'"); ap.add_argument('--seed', type=int, default=0)
     a = ap.parse_args()
-    print(json.dumps(build(json.load(open(a.post)), a.image, a.out, a.seed, a.photo or None)))
+    post = json.load(open(a.post))
+    if a.punch:
+        post['punch'] = a.punch
+    print(json.dumps(build(post, a.image, a.out, a.seed, a.photo or None)))
