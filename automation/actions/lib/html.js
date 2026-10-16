@@ -22,7 +22,10 @@ const hlHtml = (k >= 2 || cut < 1)
   : hw2.slice(0, cut).join(' ') + '&nbsp;<span class="pink">' + hw2[cut] + '</span>';
 const sumHtml = (() => { const w = normText(g.summary).split(' ').map(esc); return w.length > 2 ? w.slice(0, -1).join(' ') + '&nbsp;' + w[w.length - 1] : w.join(' '); })();
 const fontPx = String(g.graphicHeadline).length > 40 ? 84 : String(g.graphicHeadline).length > 28 ? 96 : 108;
-const photo = c.ogImage || 'https://source.unsplash.com/1080x1350/?technology,ai';
+// No usable story photo -> branded AIFeed.run card background (Oct 16), never a random stock image.
+const BRAND_BG = 'radial-gradient(circle at 78% 22%,rgba(192,64,255,.55) 0,rgba(192,64,255,0) 46%),radial-gradient(circle at 18% 70%,rgba(255,138,0,.35) 0,rgba(255,138,0,0) 42%),linear-gradient(160deg,#221a4a 0%,#14102b 60%,#0d0b14 100%)';
+const photo = c.ogImage || '';
+const photoBg = photo ? '#000 url("' + esc(photo) + '") center 18%/cover no-repeat' : BRAND_BG;
 const domain = c.source;
 const html = `<!doctype html><html><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800;900&family=Inter:wght@400;500&display=block" rel="stylesheet">
@@ -31,7 +34,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8">
 html,body{width:1080px;height:1350px;overflow:hidden;background:#0d0b14}
 .wrap{position:relative;width:1080px;height:1350px;font-family:Inter,sans-serif;color:#fff}
 /* photo box = the area above the text block, so the subject is not centred behind the headline (Oct 10) */
-.photo{position:absolute;left:0;right:0;top:0;height:1000px;background:#000 url("${esc(photo)}") center 18%/cover no-repeat}
+.photo{position:absolute;left:0;right:0;top:0;height:1000px;background:${photoBg}}
 .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,11,20,0) 0%,rgba(13,11,20,.05) 38%,rgba(13,11,20,.82) 58%,#0d0b14 72%,#0d0b14 100%)}
 .badge{position:absolute;top:44px;left:44px;padding:14px 26px;border-radius:40px;font:800 26px Poppins;letter-spacing:.5px;background:linear-gradient(90deg,#ff8a00,#c040ff)}
 .content{position:absolute;left:56px;right:56px;bottom:120px}
@@ -90,7 +93,7 @@ const storyHtml = `<!doctype html><html><head><meta charset="utf-8">
 html,body{width:1080px;height:1920px;overflow:hidden;background:#0d0b14}
 .wrap{position:relative;width:1080px;height:1920px;font-family:Inter,sans-serif;color:#fff}
 /* story: photo starts below Instagram's top bar (profile name, progress line) and fades in, so heads are not hidden under it */
-.photo{position:absolute;left:0;right:0;top:80px;height:1170px;background:#000 url("${esc(photo)}") center 18%/cover no-repeat;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 90px);mask-image:linear-gradient(180deg,transparent 0,#000 90px)}
+.photo{position:absolute;left:0;right:0;top:80px;height:1170px;background:${photoBg};-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 90px);mask-image:linear-gradient(180deg,transparent 0,#000 90px)}
 .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,11,20,.55) 0%,rgba(13,11,20,0) 16%,rgba(13,11,20,0) 38%,rgba(13,11,20,.85) 50%,#0d0b14 64%,#0d0b14 100%)}
 .top{position:absolute;top:260px;left:64px;right:64px;display:flex;justify-content:space-between;align-items:center}
 .badge{padding:16px 30px;border-radius:44px;font:800 30px Poppins;background:linear-gradient(90deg,#ff8a00,#c040ff)}
