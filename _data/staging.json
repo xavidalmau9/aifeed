@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI Sued Over Children’s Data Used to Train ChatGPT",
-    "link": "https://www.cnet.com/tech/services-and-software/chatgpt-accused-using-childrens-data/",
+    "headline": "FTC subpoenas OpenAI and Anthropic following safety failures",
+    "link": "https://www.engadget.com/2288104/ftc-subpoenas-open-ai-and-anthropic-following-safety-failures/",
     "score": 94,
-    "reason": "Major lawsuit, concrete violation allegation, significant legal/ethical implications"
+    "reason": "Major regulatory action with concrete enforcement; controversy + big players"
   },
   {
     "rank": 2,
-    "headline": "Scoop: The FTC demanded documents from AI giants over recent safety incidents",
-    "link": "https://www.axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation",
+    "headline": "A rogue OpenAI agent robbed a crypto wallet to obtain funds to carry out a task",
+    "link": "https://fortune.com/2026/10/16/rogue-openai-agent-crypto-wallet-funds-task/",
     "score": 92,
-    "reason": "Regulatory action against multiple companies, concrete investigation, high-stakes safety issues"
+    "reason": "Significant AI safety failure with measurable incident; major controversy"
   },
   {
     "rank": 3,
-    "headline": "ChatGPT can peek at your Chrome tabs now",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
-    "score": 88,
-    "reason": "Major privacy capability launch, user-facing feature, potential controversy"
+    "headline": "Claude sent a false homicide tip to police – and it’s part of a troubling AI pattern",
+    "link": "https://www.zdnet.com/innovation/claude-false-homicide-tip/",
+    "score": 90,
+    "reason": "Real-world harm from AI system; demonstrates pattern of safety issues"
   },
   {
     "rank": 4,
-    "headline": "Windows update patches a whopping 1,400 security bugs –  including 2 zero days",
-    "link": "https://www.zdnet.com/tech/windows-october-update-patches-file-explorer-bluetooth/",
-    "score": 86,
-    "reason": "Massive scale (1,400), critical zero-day vulnerabilities, immediate impact"
+    "headline": "Meta’s new terms may allow it to train AI on news sites for free",
+    "link": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
+    "score": 88,
+    "reason": "Major policy controversy affecting entire publishing industry; billion-user implications"
   },
   {
     "rank": 5,
-    "headline": "Google rolling out Universal Cart that lets you shop the web and find deals with Gemini, Search",
-    "link": "https://9to5google.com/2026/10/15/google-rolling-out-universal-cart-that-lets-you-shop-the-web-and-find-deals-with-gemini-search/",
-    "score": 82,
-    "reason": "Significant product launch, major commerce integration, multi-product initiative"
+    "headline": "Anthropic gives third-party auditors ’employee-like access’ in AI industry first",
+    "link": "https://www.zdnet.com/uncategorized/anthropic-embed-third-party-ai-auditors-safety/",
+    "score": 85,
+    "reason": "First-of-its-kind AI transparency initiative; structural industry precedent"
   },
   {
     "rank": 6,
-    "headline": "AI Hacks Leave a Mess That AI Companies Aren’t Paying For",
-    "link": "https://www.wired.com/story/ai-hacks-leave-a-mess-that-ai-companies-arent-cleaning-up/",
-    "score": 80,
-    "reason": "Concrete accountability issue, financial liability, industry-wide problem"
+    "headline": "An OpenAI research agent 'stole' test Ethereum to finish a coding task",
+    "link": "https://www.engadget.com/2288645/an-openai-test-agent-stole-test-ethereum-to-finish-a-coding-task/",
+    "score": 84,
+    "reason": "Autonomous AI crossing ethical boundaries; significant behavior concern"
   },
   {
     "rank": 7,
-    "headline": "Ukraine blindsided by Starlink throttling restrictions and intelligence gaps",
-    "link": "https://arstechnica.com/gadgets/2026/10/ukraine-blindsided-by-starlink-throttling-restrictions-and-intelligence-gaps/",
-    "score": 78,
-    "reason": "Major geopolitical impact, documented throttling, real-world consequences"
+    "headline": "ChatGPT gets deeper Google Chrome integration including control over tabs",
+    "link": "https://9to5google.com/2026/10/16/chatgpt-gets-deeper-google-chrome-integration-including-control-over-tabs/",
+    "score": 82,
+    "reason": "Major product capability expansion; significant user data/privacy implications"
   },
   {
     "rank": 8,
-    "headline": "I Let Meta Muse Do My Shopping. The AI Agent Tried to Upcharge Me",
-    "link": "https://www.cnet.com/tech/services-and-software/meta-muse-my-personal-shopper-upcharged-me/",
-    "score": 76,
-    "reason": "Concrete malfunction with financial impact, agent behavior concern"
+    "headline": "Nvidia’s new Nemotron 3.5 Super VL is another step forward for US open-weight AI",
+    "link": "https://www.zdnet.com/innovation/nvidia-nemotron-3-5-super-vl-model-us-open-weight-ai/",
+    "score": 80,
+    "reason": "Major AI model launch from dominant hardware player; open-weight significance"
   },
   {
     "rank": 9,
-    "headline": "This implant can restore sight for patients with macular degeneration",
-    "link": "https://www.technologyreview.com/2026/10/16/1145840/prima-implant-restores-sight-macular-degeneration-patients/",
-    "score": 74,
-    "reason": "Major medical breakthrough with quantifiable human impact"
+    "headline": "Apple and Meta team up to make Muse AI model run on Mac computers",
+    "link": "https://www.cnbc.com/2026/10/15/apple-meta-partner-ai.html",
+    "score": 78,
+    "reason": "Major competitor collaboration; significant on-device AI deployment"
   },
   {
     "rank": 10,
-    "headline": "Apple’s first touchscreen MacBook is days away – with another OLED surprise",
-    "link": "https://www.zdnet.com/tech/apple-touchscreen-macbook-oled-ipad-mini-october-event/",
-    "score": 72,
-    "reason": "Significant hardware launch, major product category first"
+    "headline": "Bluesky's AI tool now lets you make games and apps to share on social",
+    "link": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
+    "score": 76,
+    "reason": "Significant platform AI feature launch; generative capability expansion"
   },
   {
     "rank": 11,
-    "headline": "Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch",
-    "link": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled",
-    "score": 70,
-    "reason": "Major product withdrawal, documented failure, public accountability"
+    "headline": "Banks are pulling back as AI's massive debt pile disconnects from economic reality",
+    "link": "https://www.axios.com/2026/10/16/wall-street-limit-ai-spending-debt",
+    "score": 75,
+    "reason": "Major financial market signal; AI funding/valuation controversy"
   },
   {
     "rank": 12,
-    "headline": "Trump posts AI-edited photo to brag about White House restoration work",
-    "link": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
-    "score": 68,
-    "reason": "High-profile political use, verified AI-generated content, major figure"
+    "headline": "TSMC chip capacity is ‘fierce’ battleground for AI customers, amid record quarter",
+    "link": "https://www.cnbc.com/2026/10/15/nvidia-apple-broadcom-in-fierce-battle-to-make-chips-at-tsmc.html",
+    "score": 74,
+    "reason": "Concrete financial distress signal; AI infrastructure company risk"
   },
   {
     "rank": 13,
-    "headline": "Pig kidneys that were “frozen” for a year have been brought back to life",
-    "link": "https://www.technologyreview.com/2026/10/15/1146091/pig-kidneys-that-were-frozen-for-a-year-have-been-brought-back-to-life/",
-    "score": 66,
-    "reason": "Scientific breakthrough, quantifiable result (1 year preservation)"
+    "headline": "How Windows is being optimized for Nvidia’s RTX Spark laptops",
+    "link": "https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad",
+    "score": 72,
+    "reason": "Major OS-level AI optimization; significant product category launch"
   },
   {
     "rank": 14,
-    "headline": "AI-Generated Hot Girls Are Ripping Off Comedians to Boost Their Horny Content",
-    "link": "https://www.wired.com/story/ai-generated-hot-girls-are-ripping-off-comedians-to-boost-their-horny-content/",
-    "score": 64,
-    "reason": "Documented copyright/IP violation, specific harm case"
+    "headline": "ChatGPT can now look at your Chrome tabs to do tasks for you",
+    "link": "https://www.engadget.com/2288580/open-ai-updates-chatgpt-extension-for-chrome/",
+    "score": 71,
+    "reason": "Major capability escalation; significant browser access permissions"
   },
   {
     "rank": 15,
-    "headline": "‘So perfect, they are literally identical’ – Your AI-polished resumes are recruiters’ new top stressor",
-    "link": "https://www.zdnet.com/education/employ-report-ai-hr-hiring/",
-    "score": 62,
-    "reason": "Workplace impact, documented recruiter complaints, measurable problem"
+    "headline": "Have a Meta business account? You’re consenting to AI scraping now, legal experts say",
+    "link": "https://www.zdnet.com/uncategorized/meta-business-account-data-ai-scraping-terms/",
+    "score": 70,
+    "reason": "Major user impact; legal controversy over consent mechanisms"
   },
   {
     "rank": 16,
-    "headline": "Scoop: \"OG\" Bill Gates returns to wage war on AI risks",
-    "link": "https://www.axios.com/2026/10/15/bill-gates-ai-safety-push",
-    "score": 60,
-    "reason": "Major figure re-engagement, concrete AI safety focus"
+    "headline": "How many jobs is your state losing to AI? This dashboard tracks the cuts – and the cost",
+    "link": "https://www.zdnet.com/innovation/ai-job-cuts-wage-loss-by-state-tracker/",
+    "score": 68,
+    "reason": "Quantified job displacement impact; economic measurement tool"
   },
   {
     "rank": 17,
-    "headline": "Meta and Apple team up to make Muse AI models run better on Macs",
-    "link": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
-    "score": 58,
-    "reason": "Strategic partnership launch, specific technical capability"
+    "headline": "‘Close to zero’: AI chiefs reckon with 'politics projects' and the level of true change in response to AI",
+    "link": "https://fortune.com/2026/10/15/close-to-zero-ai-transformation-politics-projects/",
+    "score": 65,
+    "reason": "Senior leadership acknowledgment of limited AI regulation; industry skepticism"
   },
   {
     "rank": 18,
-    "headline": "Europe’s Largest Airline Wants Predictive AI Models to Nip Airport Meltdowns in the Bud",
-    "link": "https://www.cnet.com/tech/services-and-software/international-ai-summit-ryanair-airline/",
-    "score": 56,
-    "reason": "Enterprise AI deployment, quantifiable operational goal"
+    "headline": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
+    "link": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
+    "score": 63,
+    "reason": "Major Nvidia hardware launch review; AI laptop category launch"
   },
   {
     "rank": 19,
-    "headline": "Google’s new Fitbit Edge solves my biggest gripe with the Pixel Watch",
-    "link": "https://www.zdnet.com/tech/googles-new-fitbit-edge-solves-my-biggest-gripe-with-the-pixel-watch/",
-    "score": 54,
-    "reason": "Specific product improvement, consumer device launch"
+    "headline": "Block, Amazon, Synopsys and Cloudflare are rethinking how work gets done with AI",
+    "link": "https://fortune.com/2026/10/15/block-amazon-synopsys-cloudflare-rethinking-how-work-gets-done-with-ai/",
+    "score": 61,
+    "reason": "Multiple enterprise companies shifting workflows; workflow transformation signal"
   },
   {
     "rank": 20,
-    "headline": "Jensen Huang on agents gone rogue and AI doomers",
-    "link": "https://fortune.com/2026/10/16/jensen-huang-on-agents-gone-rogue-ai-doomers/",
-    "score": 52,
-    "reason": "Major AI figure addressing safety concerns, agent reliability discussion"
+    "headline": "We Got Hot and Heavy With Meta’s Muse—and Baffled by Apple’s HomeView",
+    "link": "https://www.wired.com/story/uncanny-valley-podcast-we-got-hot-and-heavy-with-metas-muse-and-underwhelmed-by-apples-homeview/",
+    "score": 59,
+    "reason": "Major AI product launch comparison; home automation AI capabilities"
   }
 ]
