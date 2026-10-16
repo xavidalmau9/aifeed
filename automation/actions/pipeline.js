@@ -266,6 +266,7 @@ async function main() {
       + ' (' + recentPhotos.backfill.length + ' read from images/)');
     const photoPick = await refinePhotos(articles.usable, {
       recent: recentPhotos.prints,
+      stockKeys: { unsplash: process.env.UNSPLASH_ACCESS_KEY || '', pexels: process.env.PEXELS_API_KEY || '' },
       judge: async (jpeg, meta) => {
         const text = await claudeVision(env.ANTHROPIC_API_KEY, {
           model: cfg.anthropicModel,

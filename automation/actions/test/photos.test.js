@@ -241,3 +241,18 @@ test('same-story outlets stay attached when a duplicate headline is collapsed', 
   assert.equal(fresh[0].alts[0].source, 'wired.com');
   assert.equal(fs.existsSync(IMAGES), true);
 });
+
+test('wider search: a press/stock photo is used only when vision calls it a story photo', async () => {
+  const story = { linkOk: true, title: 'CoreWeave debt worries grow', ogImage: 'https://cdn.example.com/logo.jpg', inlineImages: [], alts: [] };
+  const load = async url => url.endsWith('logo.jpg')
+    ? loaded('8888888888888888', { generic: true, genericReason: 'flat brand graphic' })
+    : loaded(url.endsWith('dc.jpg') ? '1234567812345678' : '0f0f0f0f0f0f0f0f');
+  const judge = async (_j, meta) => meta.url.endsWith('dc.jpg') ? { kind: 'story-photo', matches: false, reason: 'data center' } : { kind: 'unrelated', matches: false, reason: 'movie still' };
+  await refinePhotos([story], { recent: [], loadImage: load, judge,
+    stockSearch: async () => [{ url: 'https://upload.wikimedia.org/x/movie.jpg', via: 'Wikimedia Commons photo' }, { url: 'https://images.unsplash.com/dc.jpg', via: 'Unsplash photo' }] });
+  assert.equal(story.photoOk, true);
+  assert.match(story.ogImage, /dc\.jpg/);
+  const none = { linkOk: true, title: 'Nothing fits', ogImage: 'https://cdn.example.com/logo.jpg', inlineImages: [], alts: [] };
+  await refinePhotos([none], { recent: [], loadImage: load, stockSearch: async () => [{ url: 'https://images.unsplash.com/dc.jpg', via: 'Unsplash photo' }] });
+  assert.equal(none.photoOk, false);
+});

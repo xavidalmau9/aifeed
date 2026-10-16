@@ -82,26 +82,10 @@ function runQuality({ usable, captionText, gen: genIn, fixPass = false, fixText 
     pick = { c, g };
     break;
   }
-  // Fallback (Oct 16): if every story failed ONLY because no photo passed the photo judge, post the first
-  // such story on a branded AIFeed.run card instead of a photo. All fact-check, safety, layout and accuracy
-  // rules still apply in full; only the photo requirement is relaxed.
-  if (!pick) {
-    for (const g of gen) {
-      const c = usable[g.candidate];
-      if (!c || c.photoOk !== false || !g.supported || !g.safe || !g.igCaption) continue;
-      if (checkIg(g.igCaption, c.link).length) continue;
-      if (checkAccuracy(g, c).length) continue;
-      const hw = words(g.graphicHeadline);
-      if (hw < 3 || hw > 9 || String(g.graphicHeadline).length > 60 || words(g.summary) > 30) continue;
-      c.ogImage = '';
-      c.photoFingerprint = null;
-      c.photoSource = 'branded card (no story photo passed)';
-      pick = { c, g };
-      break;
-    }
-  }
+  // No photo = no post (Oct 16): a story without a strong photo is never posted on a text-only card.
   if (!pick) throw new Error('No candidate passed quality checks → ' + failures.join(' | '));
   const { c, g } = pick;
+  if (!c.ogImage) throw new Error('No candidate passed quality checks → refusing a text-only cover for ' + c.title.slice(0, 60));
   g.summary = normText(g.summary);
   g.graphicHeadline = normText(g.graphicHeadline).toUpperCase();
   const category = CATS.includes(String(g.category).toUpperCase()) ? String(g.category).toUpperCase() : 'INDUSTRY';

@@ -354,7 +354,7 @@ async function refinePhotos(candidates, opts = {}) {
   const recent = opts.recent || [];
   const limits = opts.limits || PHOTO_LIMITS;
   const lines = [];
-  let visionLeft = opts.visionBudget == null ? 12 : opts.visionBudget;
+  let visionLeft = opts.visionBudget == null ? 20 : opts.visionBudget;
   const log = line => lines.push(line);
 
   for (const c of candidates || []) {
@@ -419,6 +419,7 @@ async function refinePhotos(candidates, opts = {}) {
         }
       }
       if (loaded.generic) return reject(item, item.via + ' rejected: generic brand/logo art — ' + loaded.genericReason);
+      if (item.stock && !(opts.judge && visionLeft > 0)) return reject(item, item.via + ' rejected: stock photo needs a vision check');
       if (opts.judge && visionLeft > 0) {
         visionLeft -= 1;
         let verdict = null;
@@ -429,10 +430,14 @@ async function refinePhotos(candidates, opts = {}) {
             url: item.url
           });
         } catch (e) {
+          if (item.stock) return reject(item, item.via + ' rejected: vision check failed');
           note('  photo vision failed: ' + title + ' — ' + String(e && e.message || e).slice(0, 160) + '; using the local check');
         }
         if (verdict && verdict.kind === 'logo-card') {
           return reject(item, item.via + ' rejected: vision says generic logo/brand card — ' + (verdict.reason || 'logo'));
+        }
+        if (item.stock && verdict && verdict.kind === 'story-photo') {
+          return accept(await upgrade(item), loaded, 'press/stock photo — ' + (verdict.reason || 'fits the story'));
         }
         if (verdict && (verdict.kind === 'unrelated' || verdict.matches === false)) {
           return reject(item, item.via + ' rejected: does not match the story — ' + (verdict.reason || 'unrelated'));
@@ -473,6 +478,17 @@ async function refinePhotos(candidates, opts = {}) {
         for (const item of altTries) {
           if (await tryOne(item)) break;
         }
+      }
+    }
+    // Wider search (Oct 16): press/stock photos from Wikimedia, Openverse, Unsplash, Pexels. Same checks apply,
+    // except a topical stock photo may pass when vision calls it a story photo even if not THIS exact event.
+    if (!accepted && opts.stock !== false) {
+      let extras = [];
+      try { extras = await (opts.stockSearch || (t => require('./stock').stockCandidates(t, { fetchImpl, keys: opts.stockKeys || {} })))(c.title); }
+      catch (e) { extras = []; }
+      if (!extras.length) failures.push('no press/stock photo found');
+      for (const item of extras) {
+        if (await tryOne(Object.assign({ stock: true }, item))) break;
       }
     }
     if (!accepted) {

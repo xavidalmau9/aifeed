@@ -22,10 +22,7 @@ const hlHtml = (k >= 2 || cut < 1)
   : hw2.slice(0, cut).join(' ') + '&nbsp;<span class="pink">' + hw2[cut] + '</span>';
 const sumHtml = (() => { const w = normText(g.summary).split(' ').map(esc); return w.length > 2 ? w.slice(0, -1).join(' ') + '&nbsp;' + w[w.length - 1] : w.join(' '); })();
 const fontPx = String(g.graphicHeadline).length > 40 ? 84 : String(g.graphicHeadline).length > 28 ? 96 : 108;
-// No usable story photo -> branded AIFeed.run card background (Oct 16), never a random stock image.
-const BRAND_BG = 'radial-gradient(circle at 78% 22%,rgba(192,64,255,.55) 0,rgba(192,64,255,0) 46%),radial-gradient(circle at 18% 70%,rgba(255,138,0,.35) 0,rgba(255,138,0,0) 42%),linear-gradient(160deg,#221a4a 0%,#14102b 60%,#0d0b14 100%)';
 const photo = c.ogImage || '';
-const brandCss = photo ? '' : '.wrap .photo{background:' + BRAND_BG + '}';
 const domain = c.source;
 const html = `<!doctype html><html><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800;900&family=Inter:wght@400;500&display=block" rel="stylesheet">
@@ -48,7 +45,7 @@ p{font:400 32px/1.42 Inter;color:#d9d6e3;text-wrap:pretty}
 .src{font:400 24px Inter;color:#77738a}
 .logo{font:800 36px Poppins;background:linear-gradient(90deg,#ff8a00,#c040ff);-webkit-background-clip:text;color:transparent}
 .logo b{color:#fff;-webkit-text-fill-color:#fff}
-${brandCss}</style></head><body><div class="wrap">
+</style></head><body><div class="wrap">
 <div class="photo"></div><div class="shade"></div>
 <div class="badge">AIFEED.RUN • AI NEWS</div>
 <div class="content"><div class="cat">${cat}</div><h1>${hlHtml}</h1><div class="rule"></div><p>${sumHtml}</p></div>
@@ -109,7 +106,7 @@ p{font:400 36px/1.42 Inter;color:#d9d6e3;text-wrap:pretty}
 .cta{font:600 32px Poppins;color:#bdb8cc;margin-bottom:14px}
 .logo{font:800 56px Poppins;background:linear-gradient(90deg,#ff8a00,#c040ff);-webkit-background-clip:text;color:transparent}
 .logo b{-webkit-text-fill-color:#fff}
-${brandCss}</style></head><body><div class="wrap">
+</style></head><body><div class="wrap">
 <div class="photo"></div><div class="shade"></div>
 <div class="top"><div class="badge">AIFEED.RUN • AI NEWS</div><div class="new">NEW POST ↓</div></div>
 <div class="content"><div class="cat">${cat}</div><h1>${hlHtml}</h1><div class="rule"></div><p>${sumHtml}</p></div>
