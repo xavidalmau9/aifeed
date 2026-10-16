@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-16T12:16:47.240Z",
+      "date": "2026-10-16",
+      "slot": 1,
+      "headline": "Singer or clanker? YouTube Music will tell you with new gen AI labeling.",
+      "canonUrl": "arstechnica.com/ai/2026/10/youtube-music-begins-labeling-ai-songs",
+      "url": "https://arstechnica.com/ai/2026/10/youtube-music-begins-labeling-ai-songs/",
+      "slug": "singer-or-clanker-youtube-music-will",
+      "image": "aifeed_singer-or-clanker-youtube-music-will_20261016_am.png",
+      "photo": {
+        "dhash": "bfbcbc3c3c3c7333",
+        "phash": "fc70310f8ef07171",
+        "hist": [
+          581,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          42,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          12,
+          133,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          119,
+          0,
+          0,
+          0,
+          52,
+          47
+        ],
+        "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/youtube-music-gen-ai-labels-fill2-1152x648.png",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-15T21:07:58.831Z",
       "date": "2026-10-15",
       "slot": 2,
@@ -1853,6 +1935,58 @@
         "rank": 12,
         "title": "BlackRock's Larry Fink warns a data center moratorium could trigger a recession",
         "canonUrl": "cnbc.com/2026/10/14/blackrocks-fink-warns-data-center-moratorium-could-spark-a-recession.html"
+      }
+    ],
+    "2026-10-16": [
+      {
+        "rank": 1,
+        "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
+        "canonUrl": "arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says"
+      },
+      {
+        "rank": 2,
+        "title": "CoreWeave credit default swaps hit distress levels as investors sour on AI debt",
+        "canonUrl": "cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html"
+      },
+      {
+        "rank": 3,
+        "title": "Nvidia’s new Nemotron 3.5 Super VL is another step forward for US open-weight AI",
+        "canonUrl": "zdnet.com/innovation/nvidia-nemotron-3-5-super-vl-model-us-open-weight-ai"
+      },
+      {
+        "rank": 4,
+        "title": "Europe’s Largest Airline Wants Predictive AI Models to Nip Airport Meltdowns in the Bud",
+        "canonUrl": "cnet.com/tech/services-and-software/international-ai-summit-ryanair-airline"
+      },
+      {
+        "rank": 5,
+        "title": "Singer or clanker? YouTube Music will tell you with new gen AI labeling.",
+        "canonUrl": "arstechnica.com/ai/2026/10/youtube-music-begins-labeling-ai-songs"
+      },
+      {
+        "rank": 6,
+        "title": "ChatGPT can peek at your Chrome tabs now",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs"
+      },
+      {
+        "rank": 7,
+        "title": "Meta and Apple team up to make Muse AI models run better on Macs",
+        "canonUrl": "theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx"
+      },
+      {
+        "rank": 8,
+        "title": "I Let Meta Muse Do My Shopping. The AI Agent Tried to Upcharge Me",
+        "canonUrl": "cnet.com/tech/services-and-software/meta-muse-my-personal-shopper-upcharged-me"
+      },
+      {
+        "rank": 9,
+        "title": "AI Hacks Leave a Mess That AI Companies Aren’t Paying For",
+        "canonUrl": "wired.com/story/ai-hacks-leave-a-mess-that-ai-companies-arent-cleaning-up"
+      },
+      {
+        "rank": 10,
+        "title": "How many jobs is your state losing to AI? This dashboard tracks the cuts – and the cost",
+        "canonUrl": "zdnet.com/innovation/ai-job-cuts-wage-loss-by-state-tracker"
       }
     ]
   }

@@ -1,5 +1,25 @@
 [
   {
+    "id": "singer-or-clanker-youtube-music-will-20261016",
+    "slug": "singer-or-clanker-youtube-music-will",
+    "headline": "Singer or clanker? YouTube Music will tell you with new gen AI labeling.",
+    "summary": "YouTube Music rolls out AI labels to identify songs created or altered with generative AI tools.",
+    "body": "<p>YouTube Music rolls out AI labels to help listeners identify generative AI-created or altered songs.</p>\n<p>Google is rolling out labels in YouTube Music to identify songs created entirely or altered significantly with generative AI tools. A new AI label is now rolling out in the app and on the website, similar to labels Google added to AI-generated videos on YouTube earlier this year. The label will be visible on the player page, and tapping it opens a menu with more information.</p>\n<p>When publishers upload content, they can specify how much generative AI was used through three tiers: fully gen AI, partially gen AI, and no gen AI. However, this disclosure is optional. Google may also detect AI usage without voluntary disclosure using its own detection tools and partnerships.</p>\n<p>Google acknowledges that generative AI is opening up new ways for artists to create, experiment, and share music, but also recognizes that people want to know if a song was created with generative AI tools. For tracks created with Google's own AI, SynthID watermarking indicates whether something was generated or edited with AI. Google may also use C2PA metadata, which many other AI music makers employ.</p>\n<p>The labeling process relies on detection tools and voluntary disclosure, but has limitations. Many ways to utilize AI tools leave no identifying mark in the resulting file, so the absence of a label should not be taken as proof that something is human-made. This limitation applies to all types of AI content labeling.</p>\n<p>AI music labeling is rolling out now in YouTube Music, and Google notes that AI music uploaded as YouTube videos will get the same treatment soon. Unlike video, where listeners see the AI label on screen, music listeners will have to suspect something is amiss and check their phone to find out if what they're hearing is AI-generated, and there is no option to block labeled AI tracks from playlists.</p>\n<p>YouTube Music introduces AI labels to disclose generative AI-created or altered songs, though detection gaps remain.</p>",
+    "category": "Tools",
+    "imageUrl": "https://aifeed.run/images/aifeed_singer-or-clanker-youtube-music-will_20261016_am.png",
+    "image": "images/aifeed_singer-or-clanker-youtube-music-will_20261016_am.png",
+    "sourceUrl": "https://arstechnica.com/ai/2026/10/youtube-music-begins-labeling-ai-songs/",
+    "publishedAt": "2026-10-16T12:16:47.240Z",
+    "hashtags": [
+      "YouTubeMusic",
+      "AILabels",
+      "MusicGeneration",
+      "TransparencyAI",
+      "GenerativeAI"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "ai-came-for-math-now-its-20261015",
     "slug": "ai-came-for-math-now-its",
     "headline": "AI Came for Math. Now It’s Chasing the Rest of Science",
