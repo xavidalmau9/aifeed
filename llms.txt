@@ -1,0 +1,13 @@
+# AIFeed.run
+
+> The AI news that matters. Top AI stories from OpenAI, Google, Anthropic, Nvidia and more, explained in 60 seconds.
+
+## Key pages
+- [Home: latest AI stories](https://aifeed.run/)
+- [All stories (sitemap)](https://aifeed.run/sitemap.xml)
+- [RSS feed](https://aifeed.run/feed.xml)
+- [Free weekly AI brief](https://aifeed.run/subscribe/)
+- [Newsletter](https://aifeed.run/newsletter/)
+
+## Social
+- Instagram: https://www.instagram.com/aifeed.run/
