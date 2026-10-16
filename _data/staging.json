@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "FTC subpoenas OpenAI and Anthropic following safety failures",
-    "link": "https://www.engadget.com/2288104/ftc-subpoenas-open-ai-and-anthropic-following-safety-failures/",
+    "headline": "OpenAI Sued Over Children’s Data Used to Train ChatGPT",
+    "link": "https://www.cnet.com/tech/services-and-software/chatgpt-accused-using-childrens-data/",
     "score": 94,
-    "reason": "Major regulatory action against two leading AI companies; concrete enforcement action, not speculation"
+    "reason": "Major lawsuit, concrete violation allegation, significant legal/ethical implications"
   },
   {
     "rank": 2,
-    "headline": "FBI Arrests OpenAI Employee Suspected of Planting a Surveillance Bug",
-    "link": "https://www.cnet.com/tech/services-and-software/openai-employee-fbi-arrest-recording-device-news/",
+    "headline": "Scoop: The FTC demanded documents from AI giants over recent safety incidents",
+    "link": "https://www.axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation",
     "score": 92,
-    "reason": "Significant security breach and criminal charges; major controversy with concrete details"
+    "reason": "Regulatory action against multiple companies, concrete investigation, high-stakes safety issues"
   },
   {
     "rank": 3,
-    "headline": "Claude sent a false homicide tip to police – and it’s part of a troubling AI pattern",
-    "link": "https://www.zdnet.com/innovation/claude-false-homicide-tip/",
-    "score": 89,
-    "reason": "Documented safety failure with real-world consequences; systemic issue pattern established"
+    "headline": "ChatGPT can peek at your Chrome tabs now",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
+    "score": 88,
+    "reason": "Major privacy capability launch, user-facing feature, potential controversy"
   },
   {
     "rank": 4,
-    "headline": "Eight states sue OpenAI saying ChatGPT hurt kids and lied to adults",
-    "link": "https://fortune.com/2026/10/15/eight-states-sue-openai-saying-chatgpt-hurt-kids-and-lied-to-adults/",
-    "score": 88,
-    "reason": "Major multi-state litigation; significant legal exposure and controversy"
+    "headline": "Windows update patches a whopping 1,400 security bugs –  including 2 zero days",
+    "link": "https://www.zdnet.com/tech/windows-october-update-patches-file-explorer-bluetooth/",
+    "score": 86,
+    "reason": "Massive scale (1,400), critical zero-day vulnerabilities, immediate impact"
   },
   {
     "rank": 5,
-    "headline": "‘You don’t want rogue agents’: Jamie Dimon bars outside AI agents like Meta’s Muse from JPMorgan accounts",
-    "link": "https://fortune.com/2026/10/15/jamie-dimon-ai-agents-meta-muse-jpmorgan/",
-    "score": 85,
-    "reason": "JPMorgan blocks Meta AI; major financial institution rejecting competitor; concrete business action"
+    "headline": "Google rolling out Universal Cart that lets you shop the web and find deals with Gemini, Search",
+    "link": "https://9to5google.com/2026/10/15/google-rolling-out-universal-cart-that-lets-you-shop-the-web-and-find-deals-with-gemini-search/",
+    "score": 82,
+    "reason": "Significant product launch, major commerce integration, multi-product initiative"
   },
   {
     "rank": 6,
-    "headline": "Nvidia’s new Nemotron 3.5 Super VL is another step forward for US open-weight AI",
-    "link": "https://www.zdnet.com/innovation/nvidia-nemotron-3-5-super-vl-model-us-open-weight-ai/",
-    "score": 82,
-    "reason": "Nvidia launch of new model; clear product advancement in open-weight category"
+    "headline": "AI Hacks Leave a Mess That AI Companies Aren’t Paying For",
+    "link": "https://www.wired.com/story/ai-hacks-leave-a-mess-that-ai-companies-arent-cleaning-up/",
+    "score": 80,
+    "reason": "Concrete accountability issue, financial liability, industry-wide problem"
   },
   {
     "rank": 7,
-    "headline": "Meta built a huge open-weight AI model for Macs, but you'll need 1TB of RAM to run it",
-    "link": "https://www.engadget.com/2287833/meta-built-a-huge-open-weight-ai-model-for-macs-but-youll-need-1tb-of-ram-to-run-it/",
-    "score": 81,
-    "reason": "Meta-Apple collaboration launch with specific technical specs; scale demonstrates capability"
+    "headline": "Ukraine blindsided by Starlink throttling restrictions and intelligence gaps",
+    "link": "https://arstechnica.com/gadgets/2026/10/ukraine-blindsided-by-starlink-throttling-restrictions-and-intelligence-gaps/",
+    "score": 78,
+    "reason": "Major geopolitical impact, documented throttling, real-world consequences"
   },
   {
     "rank": 8,
-    "headline": "AI Came for Math. Now It’s Chasing the Rest of Science",
-    "link": "https://www.wired.com/story/ai-is-coming-for-science-next-watch-out/",
-    "score": 79,
-    "reason": "Broad impact story showing AI expansion into scientific domains; documented applications"
+    "headline": "I Let Meta Muse Do My Shopping. The AI Agent Tried to Upcharge Me",
+    "link": "https://www.cnet.com/tech/services-and-software/meta-muse-my-personal-shopper-upcharged-me/",
+    "score": 76,
+    "reason": "Concrete malfunction with financial impact, agent behavior concern"
   },
   {
     "rank": 9,
-    "headline": "Nobody is safe from celebrity AI deepfakes",
-    "link": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth",
-    "score": 76,
-    "reason": "Documented widespread problem; concrete safety/privacy controversy affecting public figures"
+    "headline": "This implant can restore sight for patients with macular degeneration",
+    "link": "https://www.technologyreview.com/2026/10/16/1145840/prima-implant-restores-sight-macular-degeneration-patients/",
+    "score": 74,
+    "reason": "Major medical breakthrough with quantifiable human impact"
   },
   {
     "rank": 10,
-    "headline": "CoreWeave credit default swaps hit distress levels as investors sour on AI debt",
-    "link": "https://www.cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html",
-    "score": 75,
-    "reason": "Specific financial distress indicator; AI infrastructure company facing market concerns; big numbers"
+    "headline": "Apple’s first touchscreen MacBook is days away – with another OLED surprise",
+    "link": "https://www.zdnet.com/tech/apple-touchscreen-macbook-oled-ipad-mini-october-event/",
+    "score": 72,
+    "reason": "Significant hardware launch, major product category first"
   },
   {
     "rank": 11,
-    "headline": "Adobe rebuilt Photoshop and Premiere for NVIDIA's RTX Spark platform",
-    "link": "https://www.engadget.com/2287388/adobe-rebuilt-photoshop-and-premiere-for-nvidia-rtx-spark/",
-    "score": 73,
-    "reason": "Major software company optimization launch; tier-one vendor commitment to AI hardware"
+    "headline": "Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch",
+    "link": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled",
+    "score": 70,
+    "reason": "Major product withdrawal, documented failure, public accountability"
   },
   {
     "rank": 12,
-    "headline": "AWS, Anthropic race to deploy army of specialized engineers key to proving AI spending will pay off",
-    "link": "https://www.cnbc.com/2026/10/15/aws-anthropic-racing-to-deploy-army-of-specialized-ai-engineers.html",
-    "score": 71,
-    "reason": "Large-scale resource deployment; concrete measure of AI investment ROI efforts"
+    "headline": "Trump posts AI-edited photo to brag about White House restoration work",
+    "link": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
+    "score": 68,
+    "reason": "High-profile political use, verified AI-generated content, major figure"
   },
   {
     "rank": 13,
-    "headline": "Amazon’s always-listening Bee wearable can now help you buy stuff",
-    "link": "https://www.theverge.com/tech/1011475/amazon-bee-frontier-eclipse-price-specs",
-    "score": 69,
-    "reason": "Amazon product launch; privacy implications of always-listening device; commerce integration"
+    "headline": "Pig kidneys that were “frozen” for a year have been brought back to life",
+    "link": "https://www.technologyreview.com/2026/10/15/1146091/pig-kidneys-that-were-frozen-for-a-year-have-been-brought-back-to-life/",
+    "score": 66,
+    "reason": "Scientific breakthrough, quantifiable result (1 year preservation)"
   },
   {
     "rank": 14,
-    "headline": "Google launches its 'universal' online shopping cart ahead of the holidays",
-    "link": "https://www.theverge.com/tech/1011797/google-ai-universal-cart-shopping-tool-launch",
-    "score": 67,
-    "reason": "Google product launch with cross-platform shopping functionality; major e-commerce play"
+    "headline": "AI-Generated Hot Girls Are Ripping Off Comedians to Boost Their Horny Content",
+    "link": "https://www.wired.com/story/ai-generated-hot-girls-are-ripping-off-comedians-to-boost-their-horny-content/",
+    "score": 64,
+    "reason": "Documented copyright/IP violation, specific harm case"
   },
   {
     "rank": 15,
-    "headline": "Bluesky's AI tool now lets you make games and apps to share on social",
-    "link": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
-    "score": 65,
-    "reason": "Bluesky product launch; AI-powered content creation on emerging social platform"
+    "headline": "‘So perfect, they are literally identical’ – Your AI-polished resumes are recruiters’ new top stressor",
+    "link": "https://www.zdnet.com/education/employ-report-ai-hr-hiring/",
+    "score": 62,
+    "reason": "Workplace impact, documented recruiter complaints, measurable problem"
   },
   {
     "rank": 16,
-    "headline": "Anthropic brings Wall Street an AI bull case",
-    "link": "https://www.axios.com/2026/10/15/anthropic-q3-revenue-cash-flow",
-    "score": 63,
-    "reason": "Major funding/investor relations news; Anthropic demonstrating business case to markets"
+    "headline": "Scoop: \"OG\" Bill Gates returns to wage war on AI risks",
+    "link": "https://www.axios.com/2026/10/15/bill-gates-ai-safety-push",
+    "score": 60,
+    "reason": "Major figure re-engagement, concrete AI safety focus"
   },
   {
     "rank": 17,
-    "headline": "AI tools are aiding would-be spies",
-    "link": "https://www.axios.com/2026/10/14/ai-tools-are-aiding-would-be-spies",
-    "score": 61,
-    "reason": "Documented misuse case; security and espionage implications; broad concern"
+    "headline": "Meta and Apple team up to make Muse AI models run better on Macs",
+    "link": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+    "score": 58,
+    "reason": "Strategic partnership launch, specific technical capability"
   },
   {
     "rank": 18,
-    "headline": "TSMC chip capacity is ‘fierce’ battleground for AI customers, amid record quarter",
-    "link": "https://www.cnbc.com/2026/10/15/nvidia-apple-broadcom-in-fierce-battle-to-make-chips-at-tsmc.html",
-    "score": 59,
-    "reason": "TSMC record performance; quantified AI demand competition; supply chain constraint evidence"
+    "headline": "Europe’s Largest Airline Wants Predictive AI Models to Nip Airport Meltdowns in the Bud",
+    "link": "https://www.cnet.com/tech/services-and-software/international-ai-summit-ryanair-airline/",
+    "score": 56,
+    "reason": "Enterprise AI deployment, quantifiable operational goal"
   },
   {
     "rank": 19,
-    "headline": "AI's extreme heat challenge is moving from prediction to protection",
-    "link": "https://www.axios.com/2026/10/14/ai-extreme-heat-weather-forecast-protection",
-    "score": 57,
-    "reason": "Documented trend of AI safety becoming political; quantified funding shift"
+    "headline": "Google’s new Fitbit Edge solves my biggest gripe with the Pixel Watch",
+    "link": "https://www.zdnet.com/tech/googles-new-fitbit-edge-solves-my-biggest-gripe-with-the-pixel-watch/",
+    "score": 54,
+    "reason": "Specific product improvement, consumer device launch"
   },
   {
     "rank": 20,
-    "headline": "Friends don't let friends feed their data to AI agents",
-    "link": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent",
-    "score": 55,
-    "reason": "Privacy advocacy movement against agent data usage; emerging user resistance pattern"
+    "headline": "Jensen Huang on agents gone rogue and AI doomers",
+    "link": "https://fortune.com/2026/10/16/jensen-huang-on-agents-gone-rogue-ai-doomers/",
+    "score": 52,
+    "reason": "Major AI figure addressing safety concerns, agent reliability discussion"
   }
 ]
