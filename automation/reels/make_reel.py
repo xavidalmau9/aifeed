@@ -28,6 +28,40 @@ def FONT(name, size):
 BG = (9, 8, 26); PURPLE = (124, 58, 237); ORANGE = (249, 115, 22); GREEN = (34, 197, 94)
 WHITE = (255, 255, 255); MUTED = (190, 188, 215); PINK = (255, 46, 136)  # hot pink headline accent
 SAFE_X0, SAFE_X1, SAFE_TOP, SAFE_BOTTOM = 80, 940, 250, 1480  # IG Reels UI: keep top 250px, bottom 440px, right 140px clear
+# Category pill colors: (background, text). Keys are lower-case categories. Hot pink is the fallback / general (Industry, AI News).
+# Override without code changes: AIFEED_PILL_COLORS='{"business": ["#1D4ED8", "#FFFFFF"]}' (JSON, merged over these).
+PILL_COLORS = {
+    'business': ('#2563EB', '#FFFFFF'),        # blue
+    'research': ('#16A34A', '#FFFFFF'),        # green
+    'policy': ('#7C3AED', '#FFFFFF'),          # purple
+    'products': ('#F59E0B', '#111111'),        # amber
+    'product': ('#F59E0B', '#111111'), 'launch': ('#F59E0B', '#111111'),
+    'funding': ('#0D9488', '#FFFFFF'),         # teal
+    'safety': ('#DC2626', '#FFFFFF'),          # red
+    'tools': ('#06B6D4', '#0B1120'),           # cyan
+    'models': ('#A3E635', '#111111'),          # lime
+    'hardware': ('#475569', '#FFFFFF'),        # steel
+    'infrastructure': ('#EA580C', '#FFFFFF'),  # orange
+    'health': ('#34D399', '#0B1120'),          # mint
+    'security': ('#991B1B', '#FFFFFF'),        # deep crimson
+}
+PILL_DEFAULT = ('#FF2E88', '#FFFFFF')          # hot pink (brand)
+
+
+def _hex(c):
+    c = c.lstrip('#'); return tuple(int(c[i:i + 2], 16) for i in (0, 2, 4))
+
+
+def pill_colors(category):
+    m = dict(PILL_COLORS)
+    try:
+        m.update({k.lower(): tuple(v) for k, v in json.loads(os.environ.get('AIFEED_PILL_COLORS') or '{}').items()})
+    except ValueError:
+        print('AIFEED_PILL_COLORS is not valid JSON; using defaults', file=sys.stderr)
+    bg, fg = m.get((category or '').strip().lower(), PILL_DEFAULT)
+    return _hex(bg), _hex(fg)
+
+
 BANNED = re.compile(r'\b(daily|hand[- ]?edited|human[- ]?edited|edited by (a )?human|our editors?)\b', re.I)
 
 BEAT = 0.5
@@ -235,8 +269,9 @@ class Reel:
         cat = (post.get('category') or 'AI News').upper()
         f = FONT('Bold', 34); tw = int(ImageDraw.Draw(Image.new('L', (1, 1))).textlength(cat, font=f))
         self.pill = Image.new('RGBA', (tw + 56, 64), (0, 0, 0, 0))
-        dp = ImageDraw.Draw(self.pill); dp.rounded_rectangle((0, 0, tw + 55, 63), 32, fill=PINK + (255,))
-        dp.text(((tw + 56) / 2, 33), cat, font=f, fill=WHITE, anchor='mm')
+        dp = ImageDraw.Draw(self.pill); pbg, pfg = pill_colors(post.get('category'))
+        dp.rounded_rectangle((0, 0, tw + 55, 63), 32, fill=pbg + (255,))
+        dp.text(((tw + 56) / 2, 33), cat, font=f, fill=pfg, anchor='mm')
         # headline lines
         hf, hl, hlh = fit(self.headline.upper(), 'Bold', SAFE_X1 - SAFE_X0, 560, 112, 64, 1.04)
         npink = max(1, round(len(hl) * .4)) if len(hl) > 1 else 0
