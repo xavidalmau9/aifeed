@@ -46,6 +46,7 @@ def clean(s):
 def sentences(text):
     # split on sentence ends, but not after abbreviations like U.S., U.K., Mr., Dr., Inc.
     text = re.sub(r'\b([A-Z])\.(?=[A-Z]\.)', r'\1<DOT>', text)
+    text = re.sub(r'(<DOT>[A-Z])\.', r'\1<DOT>', text)
     text = re.sub(r'\b(U\.S|U\.K|U\.N|E\.U|Mr|Ms|Mrs|Dr|Inc|Corp|Jr|Sr|St|vs)\.', lambda m: m.group(1).replace('.', '<DOT>') + '<DOT>', text)
     parts = re.split(r'(?<=[.!?])\s+(?=[A-Z"\u201c])', text)
     return [x.replace('<DOT>', '.').strip() for x in parts if len(x.strip()) > 25]
