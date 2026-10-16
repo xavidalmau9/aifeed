@@ -17,6 +17,6 @@
   "photoRecent": 14,
   "bufferLinkedinEnabled": true,
   "bufferLinkedinChannelId": "6ace69ec778b240e2ffa52a9",
-  "reelsEnabled": false,
+  "reelsEnabled": true,
   "reelsPublishEnabled": false
 }
