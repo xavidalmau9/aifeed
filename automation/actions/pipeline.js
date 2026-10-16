@@ -21,6 +21,7 @@ const {
 const { sendAlert } = require('./alert');
 const { buildFb, checkFb } = require('./lib/captions');
 const { renderReel, publishIgReel, publishFbVideo } = require('./lib/reels');
+const { isReelsOnly, carouselUpfront, carouselFallback, fbPhotoNeeded } = require('./lib/reelsplan');
 
 function loadConfig() {
   return JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json'), 'utf8'));
@@ -434,9 +435,19 @@ async function main() {
 
     console.log('Waiting for ' + published.post.imageUrl);
     await pollPublic(published.post.imageUrl);
-    await publishInstagram(cfg, env, published.post.imageUrl, published.igCaption);
-    try { writeClaim(env, decision, 'posted', { extra: { slug: published.slug, image: published.pngName } }); }
-    catch (e) { console.log('Could not mark claim posted: ' + redact(e.message)); }
+    // igCarouselEnabled false = Reels-only feed: the carousel only runs as a fallback when the Reel does not publish.
+    const reelsOnly = isReelsOnly(cfg);
+    const markPosted = () => {
+      try { writeClaim(env, decision, 'posted', { extra: { slug: published.slug, image: published.pngName } }); }
+      catch (e) { console.log('Could not mark claim posted: ' + redact(e.message)); }
+    };
+    let reelPublished = false, fbVideoDone = false;
+    if (carouselUpfront(cfg)) {
+      await publishInstagram(cfg, env, published.post.imageUrl, published.igCaption);
+      markPosted();
+    } else {
+      console.log('Instagram carousel skipped (igCarouselEnabled false); the Reel is the feed post');
+    }
 
     try {
       console.log('Rendering Instagram story');
@@ -475,23 +486,34 @@ async function main() {
         if (cfg.reelsPublishEnabled) {
           const r = await publishIgReel(cfg, env, { graphForm, pollContainer }, videoUrl, published.igCaption);
           console.log('Instagram Reel published ' + (r.id || ''));
+          reelPublished = true;
+          if (reelsOnly) markPosted();
           if (cfg.fbEnabled) {
             try {
               const v = await publishFbVideo(cfg, env, { graphForm }, videoUrl, facebookMessage(published.igCaption, qc.story.link), published.post.headline);
               console.log('Facebook video published ' + (v.id || ''));
+              fbVideoDone = Boolean(v && v.id);
             } catch (e) { await sendAlert('AIFeed: Facebook Reel video failed\n' + redact(e.message)); }
           }
         } else {
           console.log('Reel rendered + committed; publishing off (reelsPublishEnabled false)');
         }
       } catch (e) {
-        const msg = 'AIFeed: Reel failed (carousel, Story, FB + LinkedIn unaffected)\n' + redact(e.message);
+        const msg = 'AIFeed: Reel failed (' + (reelsOnly ? 'falling back to the carousel' : 'carousel, Story, FB + LinkedIn unaffected') + ')\n' + redact(e.message);
         console.log(msg);
         await sendAlert(msg);
       }
     }
 
-    if (cfg.fbEnabled) {
+    if (carouselFallback(cfg, reelPublished)) {
+      console.log('Reel did not publish: posting the carousel as fallback so the slot is not empty');
+      await publishInstagram(cfg, env, published.post.imageUrl, published.igCaption);
+      markPosted();
+    }
+
+    if (cfg.fbEnabled && !fbPhotoNeeded(cfg, fbVideoDone)) {
+      console.log('Facebook photo post skipped (the Reel video was posted to the Page)');
+    } else if (fbPhotoNeeded(cfg, fbVideoDone)) {
       try {
         await publishFacebook(cfg, env, published.post.imageUrl, published.igCaption, qc.story.link);
       } catch (e) {
