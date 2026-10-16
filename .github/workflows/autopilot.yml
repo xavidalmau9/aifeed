@@ -104,6 +104,10 @@ jobs:
             sudo apt-get update
             sudo apt-get install -y /tmp/chrome.deb
           fi
+      - name: Install Reels tools (ffmpeg, Pillow, numpy)
+        run: |
+          command -v ffmpeg >/dev/null 2>&1 || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+          python3 -m pip install --quiet --break-system-packages pillow numpy || python3 -m pip install --quiet pillow numpy
       - name: Install pipeline
         working-directory: automation/actions
         run: npm ci

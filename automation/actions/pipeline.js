@@ -20,6 +20,7 @@ const {
 } = require('./lib/net');
 const { sendAlert } = require('./alert');
 const { buildFb, checkFb } = require('./lib/captions');
+const { renderReel, publishIgReel, publishFbVideo } = require('./lib/reels');
 
 function loadConfig() {
   return JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json'), 'utf8'));
@@ -401,6 +402,13 @@ async function main() {
       } else {
         console.log('Facebook plan: disabled (fbEnabled false)');
       }
+      if (cfg.reelsEnabled) {
+        try {
+          const fp = path.join(env.OUT, published.pngName);
+          fs.copyFileSync(renderReel(env.REPO, published.post, fp), path.join(env.OUT, published.slug + '.mp4'));
+          console.log('Reel rendered for dry-run artifacts');
+        } catch (e) { console.log('Reel render FAILED: ' + redact(e.message)); }
+      }
       console.log('DRY RUN complete. Nothing was posted or committed. Artifacts: ' + env.OUT);
       return 0;
     }
@@ -447,6 +455,40 @@ async function main() {
       const msg = 'AIFeed: Instagram Story failed (feed post unaffected)\n' + redact(e.message);
       console.log(msg);
       await sendAlert(msg);
+    }
+
+    // Reel: render + commit videos/reels/<slug>.mp4, then IG Reel + FB video. Sets post.videoUrl so LinkedIn (Buffer) posts the video.
+    if (cfg.reelsEnabled) {
+      try {
+        const tmpPng = path.join(require('os').tmpdir(), published.pngName);
+        fs.writeFileSync(tmpPng, feed.png);
+        const mp4 = renderReel(env.REPO, published.post, tmpPng);
+        const rel = 'videos/reels/' + published.slug + '.mp4';
+        commitApply(env.REPO, 'AIFeed reel: ' + published.slug, () => {
+          fs.mkdirSync(path.join(env.REPO, 'videos/reels'), { recursive: true });
+          fs.copyFileSync(mp4, path.join(env.REPO, rel));
+          return [rel];
+        });
+        const videoUrl = cfg.siteUrl + '/' + rel;
+        await pollPublic(videoUrl);
+        published.post.videoUrl = videoUrl;
+        if (cfg.reelsPublishEnabled) {
+          const r = await publishIgReel(cfg, env, { graphForm, pollContainer }, videoUrl, published.igCaption);
+          console.log('Instagram Reel published ' + (r.id || ''));
+          if (cfg.fbEnabled) {
+            try {
+              const v = await publishFbVideo(cfg, env, { graphForm }, videoUrl, facebookMessage(published.igCaption, qc.story.link), published.post.headline);
+              console.log('Facebook video published ' + (v.id || ''));
+            } catch (e) { await sendAlert('AIFeed: Facebook Reel video failed\n' + redact(e.message)); }
+          }
+        } else {
+          console.log('Reel rendered + committed; publishing off (reelsPublishEnabled false)');
+        }
+      } catch (e) {
+        const msg = 'AIFeed: Reel failed (carousel, Story, FB + LinkedIn unaffected)\n' + redact(e.message);
+        console.log(msg);
+        await sendAlert(msg);
+      }
     }
 
     if (cfg.fbEnabled) {
