@@ -40,7 +40,16 @@ async function runRepost(cfg, env, P) {
   console.log('STATE IG media: ' + JSON.stringify(igList.map(m => [m.id, m.timestamp, m.media_type, m.permalink, String(m.caption || '').slice(0, 50)])));
   console.log('STATE FB posts: ' + JSON.stringify(fbList.map(m => [m.id, m.created_time, m.permalink_url, String(m.message || '').slice(0, 50)])));
   console.log('STATE IG stories: ' + JSON.stringify(storyList.map(m => [m.id, m.timestamp])));
-  const oldIg = igList.find(m => m.id === req.old.igMediaId);
+  let oldIg = igList.find(m => m.id === req.old.igMediaId);
+  if (!oldIg && req.igAlreadyDeleted && req.old.fbPostId) {
+    // Old IG post was removed by hand (Oct 16): rebuild the IG caption from the live FB message (FB = IG with the FB CTA).
+    const { IG_CTA, FB_CTA, SPACER } = require('./lib/captions');
+    const fbOld = fbList.find(m => m.id === req.old.fbPostId);
+    if (!fbOld) throw new Error('old Facebook post ' + req.old.fbPostId + ' not found to rebuild the IG caption - stop');
+    const rebuilt = String(fbOld.message || '').split('\n' + SPACER + '\n').map(b => (b === FB_CTA ? IG_CTA : b)).join('\n' + SPACER + '\n');
+    oldIg = { id: null, caption: rebuilt, permalink: '(deleted by hand)' };
+    console.log('Old IG post already deleted; IG caption rebuilt from the Facebook message');
+  }
   if (!oldIg) throw new Error('old Instagram post ' + req.old.igMediaId + ' is not in the recent media list (already deleted?) - stop, nothing posted');
   const caption = String(oldIg.caption || '');
   if (!caption) throw new Error('old Instagram caption is empty - stop');
@@ -92,6 +101,7 @@ async function runRepost(cfg, env, P) {
   for (const [k, replaced] of targets) {
     const id = req.old[k];
     if (!id) continue;
+    if (k === 'igMediaId' && req.igAlreadyDeleted) { out.deleted[k] = 'already deleted by hand'; continue; }
     if (!replaced) { out.deleted[k] = 'kept (replacement not published)'; continue; }
     try { await graphDelete(G + id, auth); out.deleted[k] = 'deleted'; } catch (e) { out.deleted[k] = 'FAILED: ' + redact(e.message).slice(0, 200); }
     console.log('delete ' + k + ' ' + id + ': ' + out.deleted[k]);

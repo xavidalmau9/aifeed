@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "pending",
   "requestedAt": "2026-10-16T22:40:00Z",
   "reason": "Javier: text-only branded-card cover on the Oct 16 5pm CoreWeave post looks bad in the grid - redo with a real photo cover",
   "slug": "coreweave-credit-default-swaps-hit-distress",
@@ -11,5 +11,6 @@
     "igStoryId": "18130112980703990",
     "fbPostId": "1434982969687864_122112351753495604"
   },
-  "startedAt": "2026-10-16T22:22:47.833Z"
+  "igAlreadyDeleted": true,
+  "note": "IG carousel 17939252298390494 and Reel 17897857503415319 were already removed from Instagram before this run"
 }
