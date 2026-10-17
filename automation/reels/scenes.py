@@ -278,6 +278,11 @@ POSED = re.compile(r'\b(visit(s|ed|ing)?|meets?|meeting|secretary|minister|presi
                    r'summit|official photo|greets?|tours?|toured|welcomes?|delivers? remarks|keynote|panel)\b', re.I)
 
 
+# photos that are really charts, documents, scans or graphics (they carry text/numbers)
+GRAPHIC = re.compile(r'\b(chart|graph|diagram|plot|map|screenshot|screen ?shot|infographic|logo|poster|document|scan|'
+                     r'microscop\w*|afm|sem image|texture|pattern|wallpaper|render(ing)?|illustration|vector|icon|sign)s?\b', re.I)
+
+
 def skin_fraction(img):
     """Share of solid skin-tone area (YCbCr rule, 3x3 eroded). Posed press photos / portraits ~0.02-0.17; scenes ~0-0.01."""
     im = img.convert('RGB'); im.thumbnail((256, 256))
@@ -288,12 +293,26 @@ def skin_fraction(img):
     return float(m.mean())
 
 
+def saturation(img):
+    im = img.convert('RGB'); im.thumbnail((256, 256)); a = np.asarray(im).astype(np.float32) / 255
+    mx, mn = a.max(2), a.min(2)
+    return float(np.where(mx > 0, (mx - mn) / np.maximum(mx, 1e-3), 0).mean())
+
+
 def posed_reason(img, title=''):
     """'' if the photo is not posed people. title = file name / title / tags of the photo when known."""
-    m = POSED.search(re.sub(r'[_\-]+', ' ', title or ''))
+    t = re.sub(r'[_\-]+', ' ', title or '')
+    m = POSED.search(t)
     if m:
         return f'posed/people photo ("{m.group(0)}" in title)'
-    sf = skin_fraction(img) if img is not None else 0
+    m = GRAPHIC.search(t)
+    if m:
+        return f'graphic, not a scene ("{m.group(0)}" in title)'
+    if img is None:
+        return ''
+    if saturation(img) < .15:  # black & white / desaturated: the skin check can't see people, so don't trust it
+        return 'near-greyscale photo (people check not possible)'
+    sf = skin_fraction(img)
     return 'people in frame (skin %.3f)' % sf if sf > .02 else ''
 
 
@@ -469,20 +488,33 @@ def library(post):
     return img.convert('RGB'), ''
 
 
+QSTOP = {'a', 'an', 'the', 'of', 'in', 'on', 'and', 'or', 'with', 'for', 'to', 'at', 'by', 'from', 'abstract', 'digital',
+         'visualization', 'technology', 'concept', 'photo', 'image', 'dark', 'night', 'red', 'blue', 'light', 'lights'}
+
+
+def relevant(query, text):
+    """A photo must actually show the scene: enough of the query's content words appear in its title/tags/description."""
+    words = [w for w in re.findall(r'[a-z]+', query.lower()) if w not in QSTOP and len(w) > 2]
+    t = ' ' + ' '.join(word_root(w) for w in re.findall(r'[a-z]+', (text or '').lower())) + ' '
+    hits = sum(1 for w in words if ' ' + word_root(w) + ' ' in t)
+    return hits >= min(2, len(words)) if words else False
+
+
 OV_LICENSES = {'cc0': 'CC0', 'pdm': 'Public domain', 'by': 'CC BY', 'by-sa': 'CC BY-SA'}
 
 
 def openverse(queries, used=()):
     """Openverse (anonymous API) scene search; only CC0 / public domain / CC BY / CC BY-SA, no posed people."""
     for q in queries:
-        u = ('https://api.openverse.org/v1/images/?page_size=12&license=cc0,pdm,by,by-sa&mature=false&q=' + urllib.parse.quote(q))
+        u = ('https://api.openverse.org/v1/images/?page_size=12&license=cc0,pdm,by,by-sa&category=photograph&mature=false&q=' + urllib.parse.quote(q))
         try:
             res = json.load(urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=20)).get('results', [])
         except Exception as e:
             print('openverse search failed:', str(e)[:80], file=sys.stderr); continue
         for r in res:
             title = ' '.join([r.get('title') or '', ' '.join(t.get('name', '') for t in (r.get('tags') or [])[:12]), r.get('url') or ''])
-            if (r.get('width') or 0) < 1000 or r.get('url') in used or POSED.search(re.sub(r'[_\-]+', ' ', title)):
+            if (r.get('width') or 0) < 1000 or r.get('url') in used or posed_reason(None, title) \
+                    or not relevant(q, title):
                 continue
             try:
                 img = Image.open(io.BytesIO(urllib.request.urlopen(urllib.request.Request(r['url'], headers=UA), timeout=30).read()))
@@ -536,7 +568,8 @@ def commons(queries, used=()):
             except Exception:
                 continue
             desc = clean(m.get('ImageDescription', {}).get('value', ''))[:300]
-            if POSED.search(re.sub(r'[_\-]+', ' ', pg['title'] + ' ' + desc)) or photo_gate(img.convert('RGB')):
+            if posed_reason(None, pg['title'] + ' ' + desc) or not relevant(q, pg['title'] + ' ' + desc) \
+                    or photo_gate(img.convert('RGB')):
                 continue
             artist = clean(m.get('Artist', {}).get('value', '')) or 'Wikimedia Commons'
             return img.convert('RGB'), f"Photo: {artist[:60]} / {lic} via Wikimedia Commons ({ii.get('descriptionurl', '')})"

@@ -16,6 +16,7 @@ def textured(w, h, mean=90, seed=0):
     rng = np.random.default_rng(seed)
     coarse = np.asarray(Image.fromarray(rng.normal(128, 25, (h // 16, w // 16)).clip(0, 255).astype('uint8')).resize((w, h), Image.BICUBIC)).astype(np.float32) - 128
     a = np.asarray(photo_like(w, h, mean, seed)).astype(np.float32) + coarse[:, :, None]
+    a *= np.array([.75, .95, 1.25], np.float32)  # a cool colour cast, like a real low-key scene (not greyscale)
     return Image.fromarray(a.clip(0, 255).astype('uint8'))
 
 
@@ -319,6 +320,20 @@ class PosedPhotos(unittest.TestCase):
         finally:
             shutil.rmtree(d)
 
+    def test_graphics_charts_and_scans_are_not_scenes(self):
+        for t in ('AFM height map of a silicon wafer', 'Stock chart 2024', 'Neural network texture pattern', 'Data center diagram'):
+            self.assertIn('graphic', scenes.posed_reason(None, t), t)
+
+    def test_greyscale_photos_are_not_trusted(self):
+        grey = textured(1200, 800).convert('L').convert('RGB')
+        self.assertIn('greyscale', scenes.photo_gate(grey))
+
+    def test_photo_search_results_must_match_the_scene(self):
+        self.assertTrue(scenes.relevant('data center server racks', 'Racks in the Amravati data center'))
+        self.assertTrue(scenes.relevant('hidden microphone conference room', 'microphone on a conference table'))
+        self.assertFalse(scenes.relevant('financial distress trader charts red', 'Office at night, Pittsburgh'))
+        self.assertFalse(scenes.relevant('DNA helix glitch digital', 'Monopoly with real money'))
+
     def test_skin_heuristic_rejects_people_but_not_scenes(self):
         self.assertGreater(scenes.skin_fraction(skin_photo()), .02)
         self.assertLess(scenes.skin_fraction(textured(1200, 800)), .02)
@@ -336,7 +351,7 @@ class PosedPhotos(unittest.TestCase):
         good = io.BytesIO(); textured(1400, 900).save(good, 'JPEG')
         api = {'results': [
             {'title': 'Secretary visits the lab', 'url': 'https://x/posed.jpg', 'width': 2000, 'license': 'by', 'license_version': '2.0', 'creator': 'A'},
-            {'title': 'server room', 'url': 'https://x/ok.jpg', 'width': 2000, 'license': 'by-sa', 'license_version': '2.0',
+            {'title': 'server room racks', 'url': 'https://x/ok.jpg', 'width': 2000, 'license': 'by-sa', 'license_version': '2.0',
              'creator': 'Jane Doe', 'foreign_landing_url': 'https://flickr.com/p/1', 'tags': [{'name': 'datacenter'}]}]}
         fetched = []
         class R:
