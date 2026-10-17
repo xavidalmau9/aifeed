@@ -10,14 +10,14 @@ Cascade (first one that passes the quality gate wins):
 Quality gate: real photographic detail (is_photo), not too dark, not too busy, big enough.
 Every accepted scene is fitted to 9:16 with the subject kept in the upper half (above the headline band).
 """
-import hashlib, io, json, os, re, sys, urllib.error, urllib.parse, urllib.request
+import hashlib, io, json, math, os, re, sys, urllib.error, urllib.parse, urllib.request
 import numpy as np
 from PIL import Image, ImageFilter
 
 UA = {'User-Agent': 'aifeed-reels/1.0 (https://aifeed.run)'}
 FREE_LICENSES = re.compile(r'^(CC0|Public domain|CC BY(-SA)? [0-9.]+|No restrictions)$', re.I)
 STYLE = ('photorealistic cinematic editorial news photograph, dramatic low-key lighting, deep shadows, rim light, '
-         'shallow depth of field, the main subject centered horizontally in the upper half of the frame, '
+         'shallow depth of field, moody but well exposed, the main subject clearly lit and readable, centered horizontally in the upper half of the frame, '
          'the lower part of the frame falls off into dark shadow, any screens or displays are out of focus and show only '
          'abstract glowing lines and shapes with no numbers or writing, no text, no letters, no captions, no logos, '
          'no watermark, no recognizable real person, people only as silhouettes or seen from behind, 35mm film grain')
@@ -160,6 +160,18 @@ def gate(img):
     return ''
 
 
+def lift(img, target=42.0):
+    """Generated low-key scenes often come back nearly black; gamma-lift the subject region to a readable exposure
+    (highlights are preserved, so red charts / glowing helixes stay punchy)."""
+    g = np.asarray(img.convert('L')).astype(np.float32)
+    m = float(g[: int(g.shape[0] * .6)].mean())
+    if m >= target or m <= 1:
+        return img
+    gamma = max(.45, min(1.0, math.log(target / 255) / math.log(m / 255)))
+    a = np.asarray(img.convert('RGB')).astype(np.float32) / 255
+    return Image.fromarray((np.power(a, gamma) * 255).clip(0, 255).astype('uint8'))
+
+
 # ---------- 9:16 fitting ----------
 def fit_portrait(img, W=1080, H=1920, top_frac=.03):
     """Landscape scene -> 9:16 keeping the most detailed vertical band (the subject), extended top/bottom with the
@@ -296,8 +308,10 @@ def pick_scene(post, photo=None, feed=None, log=None):
         credit = ''
         if src == 'cloudflare':
             img, why = cloudflare(post)
+            img = lift(img) if img is not None else img
         elif src == 'generated':
             img, why = generated(post)
+            img = lift(img) if img is not None else img
         elif src == 'story':
             img, why = story_photo(photo or post.get('photoUrl'))
         elif src == 'commons':

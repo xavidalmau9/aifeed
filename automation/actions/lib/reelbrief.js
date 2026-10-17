@@ -12,8 +12,11 @@ Summary: ${body}
 
 Return ONLY JSON: {"punch": "...", "scene": "...", "keywords": ["...", "..."]}
 - punch: a short, punchy ALL-CAPS headline for the cover, 3 or 4 lines separated by " / ", each line at most 16 characters.
-  Prefix exactly ONE line with "*" (the accent line, usually the key fact or verb phrase). Use only facts from the headline
-  and summary; keep company names; no clickbait, no question unless the headline is one; never use the word "daily".
+  Prefix exactly ONE line with "*" (the accent line, usually the key fact or verb phrase). The lines must read top to bottom
+  as ONE natural, grammatical sentence that keeps the headline's subject and main verb (a compressed headline, not a list
+  of keywords). Use only facts stated in the headline and summary: never add a claim or a loaded word that the story does
+  not state (e.g. do not say "breach" or "hack" unless the story does). Keep company names; no clickbait; no question unless
+  the headline is one; never use the word "daily".
   Example: "COREWEAVE / CREDIT STRESS / *HITS DISTRESS / LEVELS"
 - scene: one sentence describing a dramatic, photorealistic scene that matches the story's THEME (not just its category),
   as a visual metaphor a top US news outlet would use. Examples: credit/debt stress -> "a stressed trader in shadow, head in hand,
