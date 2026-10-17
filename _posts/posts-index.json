@@ -1,5 +1,25 @@
 [
   {
+    "id": "why-ai-isnt-ready-to-tackle-20261017",
+    "slug": "why-ai-isnt-ready-to-tackle",
+    "headline": "Why AI Isn’t Ready to Tackle Our Convoluted Genomes",
+    "summary": "AI models lack sufficient data to understand gene regulation complexity in the human genome.",
+    "body": "<p>AI models lack sufficient data to fully understand human genome complexity and gene regulation.</p>\n<p>Genomic foundation models such as Evo 2, Genos, and Google DeepMind's AlphaGenome are trained on vast quantities of genomic data to make predictions about how DNA sequence differences affect biological processes and disease risk. However, biologists question whether these AI approaches can truly understand how genomes function, particularly the intricate regulatory mechanisms that remain poorly characterized.</p>\n<p>The human genome is far more complex than scientists initially believed. While the 3 billion chemical building blocks were nearly fully sequenced by 2003, only 2 percent consists of actual genes that code for proteins. The remaining 98 percent involves gene regulation — how genes are turned on and off — a process so complex that some biologists wonder if full understanding is possible.</p>\n<p>Gene regulation in complex organisms like humans differs fundamentally from simpler organisms like bacteria. Transcription factors, which control gene expression, do not show strong preferences for particular DNA binding sites and typically work in pairs or groups. A single transcription factor can activate genes in one cell type while suppressing them in another, depending on context, creating logic far more intricate than simple on-off switches.</p>\n<p>Genomic AI models typically treat the genome as a straightforward input-output system, deducing correlations from existing data without necessarily understanding the underlying mechanisms. This black-box approach sidesteps the regulatory complexity, assuming the algorithm captures it through training on historical cases.</p>\n<p>For researchers seeking genuine understanding of how genomes and life itself function, computational models that do not illuminate regulatory mechanisms may prove insufficient. The genome is the product of approximately 4 billion years of evolution, which may explain its complications — complications that AI models trained on current datasets may not fully capture.</p>",
+    "category": "Research",
+    "imageUrl": "https://aifeed.run/images/aifeed_why-ai-isnt-ready-to-tackle_20261017_am.png",
+    "image": "images/aifeed_why-ai-isnt-ready-to-tackle_20261017_am.png",
+    "sourceUrl": "https://www.wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes/",
+    "publishedAt": "2026-10-17T12:08:00.027Z",
+    "hashtags": [
+      "Genomics",
+      "AILimitations",
+      "GeneRegulation",
+      "BiologicalAI",
+      "DNAResearch"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "coreweave-credit-default-swaps-hit-distress-20261016",
     "slug": "coreweave-credit-default-swaps-hit-distress",
     "headline": "CoreWeave credit default swaps hit distress levels as investors sour on AI debt",

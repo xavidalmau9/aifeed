@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-17T12:08:00.027Z",
+      "date": "2026-10-17",
+      "slot": 1,
+      "headline": "Why AI Isn’t Ready to Tackle Our Convoluted Genomes",
+      "canonUrl": "wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes",
+      "url": "https://www.wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes/",
+      "slug": "why-ai-isnt-ready-to-tackle",
+      "image": "aifeed_why-ai-isnt-ready-to-tackle_20261017_am.png",
+      "photo": {
+        "dhash": "8e9e2c6e5d5c3e1c",
+        "phash": "dcfa3686f011b1a3",
+        "hist": [
+          2,
+          12,
+          4,
+          0,
+          1,
+          15,
+          38,
+          11,
+          0,
+          2,
+          12,
+          10,
+          0,
+          0,
+          0,
+          13,
+          6,
+          2,
+          1,
+          0,
+          4,
+          49,
+          46,
+          4,
+          0,
+          1,
+          31,
+          11,
+          0,
+          0,
+          0,
+          24,
+          36,
+          0,
+          0,
+          0,
+          22,
+          29,
+          1,
+          0,
+          3,
+          17,
+          90,
+          5,
+          0,
+          0,
+          5,
+          12,
+          5,
+          0,
+          0,
+          0,
+          14,
+          5,
+          0,
+          0,
+          26,
+          16,
+          36,
+          1,
+          5,
+          1,
+          109,
+          266
+        ],
+        "url": "https://media.wired.com/photos/6acf63d6b06331734b2e70d7/1:1/w_1600,c_limit/Physical%20Genome%20cr-Samuel%20Velasco%20and%20Hannah%20Waters_Quanta%20Magazine-Lede.jpg",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-16T21:37:44.024Z",
       "date": "2026-10-16",
       "slot": 2,
@@ -8,7 +90,78 @@
       "canonUrl": "cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html",
       "url": "https://www.cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html",
       "slug": "coreweave-credit-default-swaps-hit-distress",
-      "image": "aifeed_coreweave-credit-default-swaps-hit-distress_20261016_pm.png"
+      "image": "aifeed_coreweave-credit-default-swaps-hit-distress_20261016_pm.png",
+      "photo": {
+        "dhash": "9e8e868282838182",
+        "phash": "33180306a3fdfcab",
+        "hist": [
+          305,
+          288,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          51,
+          205,
+          151,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "via": "backfill"
+      }
     },
     {
       "postedAt": "2026-10-16T12:16:47.240Z",
@@ -1997,6 +2150,58 @@
         "rank": 10,
         "title": "How many jobs is your state losing to AI? This dashboard tracks the cuts – and the cost",
         "canonUrl": "zdnet.com/innovation/ai-job-cuts-wage-loss-by-state-tracker"
+      }
+    ],
+    "2026-10-17": [
+      {
+        "rank": 1,
+        "title": "Meta’s new terms may allow it to train AI on news sites for free",
+        "canonUrl": "theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers"
+      },
+      {
+        "rank": 2,
+        "title": "Anthropic gives third-party auditors ’employee-like access’ in AI industry first",
+        "canonUrl": "zdnet.com/uncategorized/anthropic-embed-third-party-ai-auditors-safety"
+      },
+      {
+        "rank": 3,
+        "title": "OpenAI models hacked a crypto wallet and breached more websites",
+        "canonUrl": "arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites"
+      },
+      {
+        "rank": 4,
+        "title": "Why AI Isn’t Ready to Tackle Our Convoluted Genomes",
+        "canonUrl": "wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes"
+      },
+      {
+        "rank": 5,
+        "title": "Apple’s new App Store rules crack down on AI nudification and ‘bait-and-switch’ apps",
+        "canonUrl": "9to5mac.com/2026/10/16/apples-new-app-store-rules-crack-down-on-ai-nudification-and-bait-and-switch-apps"
+      },
+      {
+        "rank": 6,
+        "title": "ChatGPT gets deeper Google Chrome integration including control over tabs",
+        "canonUrl": "9to5google.com/2026/10/16/chatgpt-gets-deeper-google-chrome-integration-including-control-over-tabs"
+      },
+      {
+        "rank": 7,
+        "title": "How many jobs is your state losing to AI? This dashboard tracks the cuts – and the cost",
+        "canonUrl": "zdnet.com/innovation/ai-job-cuts-wage-loss-by-state-tracker"
+      },
+      {
+        "rank": 8,
+        "title": "Katie Zacharia Was Linked to an AI Rare-Earths Startup. It’s Even Weirder Than It Sounds",
+        "canonUrl": "wired.com/story/katie-zacharia-was-linked-to-an-ai-rare-earths-startup-its-even-weirder-than-it-sounds"
+      },
+      {
+        "rank": 9,
+        "title": "Some companies give AI to everyone. This CEO is doing the opposite",
+        "canonUrl": "cnbc.com/2026/10/17/ai-workplace-tokenmaxxing-paysend.html"
+      },
+      {
+        "rank": 10,
+        "title": "Simulation App Speeds Up Electric Truck Battery Design",
+        "canonUrl": "spectrum.ieee.org/electric-truck-battery-design-simulation"
       }
     ]
   }
