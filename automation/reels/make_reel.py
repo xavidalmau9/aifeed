@@ -512,10 +512,8 @@ def music(path, dur, seed=0):
         w.setnchannels(2); w.setsampwidth(2); w.setframerate(sr); w.writeframes((st * 32767).astype('<i2').tobytes())
 
 
-# TODO(scenes): the scene must match the story's theme, not just its category. Credit stress / market stories want a
-# stressed trader + red crashing charts; infra stories a dark server corridor; policy a Capitol/courtroom; never a
-# generic or off-topic stock photo. Prefer the story photo, then a theme-matched photoreal scene (no identifiable real
-# people in generated scenes), then these Commons queries as a last resort. AI-generated scenes carry no photo credit.
+# Scenes: build() now uses scenes.pick_scene (story-themed generated scene -> story photo -> theme-keyword Commons ->
+# feed photo, with a quality gate). The category queries below are legacy (load_photo only) and not used by build().
 FALLBACK_QUERIES = {
     'business': ['stock exchange trading floor', 'datacenter servers'], 'finance': ['stock exchange trading floor'],
     'policy': ['United States Capitol night'], 'research': ['laboratory scientist computer'], 'tools': ['laptop code screen dark'],
@@ -575,8 +573,13 @@ def load_photo(photo, feed, category=''):
 def build(post, feed_path, out, seed=0, photo=None):
     feed = Image.open(feed_path)
     src = clean(post.get('source') or post.get('outlet') or '') or outlet_from_url(post.get('sourceUrl', ''))
-    img, credit = load_photo(photo or post.get('photoUrl'), feed, post.get('category', ''))
-    credit = credit or clean(post.get('photoCredit') or '')  # caller-supplied attribution for a licensed local photo
+    sys.path.insert(0, HERE); import scenes
+    if not post.get('punch') or not scenes.valid_punch(post.get('punch')):
+        post = dict(post, punch=scenes.rule_punch(post.get('headline', '')))  # LLM punch missing/invalid -> rule-based
+    scene_log = []
+    img, credit, scene_src = scenes.pick_scene(post, photo, feed, scene_log)
+    if scene_src == 'story':
+        credit = clean(post.get('photoCredit') or '')  # caller-supplied attribution for a licensed local photo
     r = Reel(post, feed, img, src, credit)
     cover_path = os.path.splitext(out)[0] + '_cover.jpg'
     r.cover().save(cover_path, quality=92)
@@ -589,15 +592,21 @@ def build(post, feed_path, out, seed=0, photo=None):
     p.stdin.close()
     if p.wait() != 0:
         raise SystemExit('ffmpeg failed')
-    return {'out': out, 'cover': cover_path, 'seconds': TOTAL, 'points': r.points, 'photoCredit': credit}
+    return {'out': out, 'cover': cover_path, 'seconds': TOTAL, 'points': r.points, 'photoCredit': credit,
+            'punch': post.get('punch'), 'sceneSource': scene_src, 'sceneLog': scene_log}
 
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('--post', required=True); ap.add_argument('--image', required=True); ap.add_argument('--out', required=True)
     ap.add_argument('--photo', default=''); ap.add_argument('--punch', default='', help="'LINE / *PINK LINE / LINE'"); ap.add_argument('--seed', type=int, default=0)
+    ap.add_argument('--scene-prompt', default=''); ap.add_argument('--scene-keywords', default='', help='comma separated')
     a = ap.parse_args()
     post = json.load(open(a.post))
     if a.punch:
         post['punch'] = a.punch
+    if a.scene_prompt:
+        post['scenePrompt'] = a.scene_prompt
+    if a.scene_keywords:
+        post['sceneKeywords'] = [k.strip() for k in a.scene_keywords.split(',') if k.strip()]
     print(json.dumps(build(post, a.image, a.out, a.seed, a.photo or None)))

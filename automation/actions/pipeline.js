@@ -21,6 +21,7 @@ const {
 const { sendAlert } = require('./alert');
 const { buildFb, checkFb } = require('./lib/captions');
 const { renderReel, withPhotoCredit, publishIgReel, publishFbVideo } = require('./lib/reels');
+const { reelBrief } = require('./lib/reelbrief');
 const { isReelsOnly, carouselUpfront, carouselFallback, fbPhotoNeeded } = require('./lib/reelsplan');
 
 function loadConfig() {
@@ -407,7 +408,10 @@ async function main() {
       if (cfg.reelsEnabled) {
         try {
           const fp = path.join(env.OUT, published.pngName);
-          const rr = renderReel(env.REPO, published.post, fp, published.post.photoUrl || qc.story.ogImage || '');
+          const brief = await reelBrief(published.post, prompt => claudeMessage(env.ANTHROPIC_API_KEY, { model: cfg.anthropicModel, prompt, maxTokens: 400, temperature: 0.4, tries: 2 }));
+          console.log('Reel brief: ' + JSON.stringify(brief));
+          const rr = renderReel(env.REPO, Object.assign({}, published.post, brief), fp, published.post.photoUrl || qc.story.ogImage || '');
+          console.log('Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch);
           fs.copyFileSync(rr.mp4, path.join(env.OUT, published.slug + '.mp4'));
           if (rr.cover) fs.copyFileSync(rr.cover, path.join(env.OUT, published.slug + '_cover.jpg'));
           if (rr.credit) console.log('Reel caption would carry: ' + withPhotoCredit('', rr.credit).trim());
@@ -478,7 +482,11 @@ async function main() {
         const tmpPng = path.join(require('os').tmpdir(), published.pngName);
         fs.writeFileSync(tmpPng, feed.png);
         // Pass the story's own photo (og:image picked by refinePhotos) so the Reel is photo-first, not a Commons stand-in.
-        const rr = renderReel(env.REPO, published.post, tmpPng, published.post.photoUrl || qc.story.ogImage || '');
+        // Punch headline + story-themed scene prompt (one short call on the existing model; make_reel falls back to rules).
+        const brief = await reelBrief(published.post, prompt => claudeMessage(env.ANTHROPIC_API_KEY, { model: cfg.anthropicModel, prompt, maxTokens: 400, temperature: 0.4, tries: 2 }));
+        console.log('Reel brief: ' + JSON.stringify(brief));
+        const rr = renderReel(env.REPO, Object.assign({}, published.post, brief), tmpPng, published.post.photoUrl || qc.story.ogImage || '');
+        console.log('Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch);
         const rel = 'videos/reels/' + published.slug + '.mp4';
         const coverRel = rr.cover ? 'videos/reels/' + published.slug + '_cover.jpg' : '';
         commitApply(env.REPO, 'AIFeed reel: ' + published.slug, () => {
