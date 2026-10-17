@@ -1,0 +1,51 @@
+name: Reels samples (render only, never posts)
+
+# Manual only: no schedule, no push/PR triggers. Renders sample Reels through the automatic path and uploads them as an
+# artifact. It gets NO Meta / LinkedIn / Buffer / Telegram secrets and read-only repo access, so it cannot post or commit.
+on:
+  workflow_dispatch:
+    inputs:
+      slugs:
+        description: 'Comma-separated post slugs (empty = 4 most recent)'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+
+concurrency:
+  group: reels-samples
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: automation/actions/package-lock.json
+      - name: Install render deps
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          python3 -m pip install --quiet --break-system-packages pillow numpy || python3 -m pip install --quiet pillow numpy
+      - name: Install pipeline libs
+        working-directory: automation/actions
+        run: npm ci
+      - name: Render samples
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SAMPLE_SLUGS: ${{ inputs.slugs }}
+          SAMPLES_OUT: ${{ runner.temp }}/reel-samples
+        run: node automation/reels/render_samples.js
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reel-samples
+          path: ${{ runner.temp }}/reel-samples
+          retention-days: 7
