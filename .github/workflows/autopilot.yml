@@ -121,6 +121,8 @@ jobs:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           AIFEED_AUTOPILOT_COMMIT: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '0' || '1' }}
           DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '1' || '0' }}
           SLOT: ${{ (github.event_name == 'workflow_dispatch' && inputs.slot) || 'auto' }}

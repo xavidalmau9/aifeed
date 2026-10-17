@@ -10,23 +10,25 @@ Cascade (first one that passes the quality gate wins):
 Quality gate: real photographic detail (is_photo), not too dark, not too busy, big enough.
 Every accepted scene is fitted to 9:16 with the subject kept in the upper half (above the headline band).
 """
-import hashlib, io, json, os, re, sys, urllib.parse, urllib.request
+import hashlib, io, json, os, re, sys, urllib.error, urllib.parse, urllib.request
 import numpy as np
 from PIL import Image, ImageFilter
 
 UA = {'User-Agent': 'aifeed-reels/1.0 (https://aifeed.run)'}
 FREE_LICENSES = re.compile(r'^(CC0|Public domain|CC BY(-SA)? [0-9.]+|No restrictions)$', re.I)
-STYLE = ('photorealistic cinematic news photograph, dramatic low-key lighting, deep shadows, shallow depth of field, '
-         'subject in the upper half of the frame, bottom 45 percent dark and empty, vertical 9:16, '
-         'no text, no letters, no logos, no watermark, no recognizable real person, faces hidden or in silhouette')
+STYLE = ('photorealistic cinematic editorial news photograph, dramatic low-key lighting, deep shadows, rim light, '
+         'shallow depth of field, the main subject centered horizontally in the upper half of the frame, '
+         'the lower part of the frame falls off into dark shadow, any screens or displays are out of focus and show only '
+         'abstract glowing lines and shapes with no numbers or writing, no text, no letters, no captions, no logos, '
+         'no watermark, no recognizable real person, people only as silhouettes or seen from behind, 35mm film grain')
 
 # theme rules: (regex on headline+summary, scene subject for generation, Commons keyword queries)
 THEMES = [
     (r'credit default|cds|\bdebt\b|bond|default|distress|selloff|sell-off|plunge|crash|bubble|losses?\b',
-     'a stressed trader in shadow, head in hand, in front of monitors showing red crashing stock charts',
+     'a stressed trader, head in hand, his face profile rim-lit by red light, in front of a wall of out-of-focus monitors glowing with red downward-crashing chart lines, the trader centered in the frame',
      ['stock market crash screen red', 'trading floor screens']),
     (r'genom|\bdna\b|gene\b|genes\b|protein|biolog|cell\b|drug discovery|alphafold',
-     'a glowing DNA double helix hologram, tangled and glitching red, in a dark lab, a scientist silhouette seen from behind',
+     'a huge glowing cyan DNA double helix hologram, tangled, broken and glitching into red fragments, floating in the middle of a dark lab, a scientist silhouette seen from behind standing just below it, looking up',
      ['DNA gel electrophoresis UV', 'DNA sequencing laboratory']),
     (r'data ?cent|datacenter|server|compute|gpu cluster|coreweave|stargate|power grid|electricity',
      'a long dark data center corridor of server racks with blue status lights, a lone silhouette walking',
@@ -35,7 +37,7 @@ THEMES = [
      'a macro shot of a glowing processor chip on a circuit board with red and blue light trails',
      ['silicon wafer', 'computer chip macro']),
     (r'fbi|arrest|spy|espionage|lawsuit|court|judge|sued|indict|police|charges',
-     'a dim interrogation room or courtroom, a silhouetted figure under a single hard light, evidence on a table',
+     'a dark empty conference room at night, a single hard spotlight on a small hidden microphone under the table, red and blue light through the blinds',
      ['courtroom', 'police tape night']),
     (r'congress|senate|white house|regulat|law\b|bill\b|policy|government|ban\b|eu ai act',
      'the US Capitol dome at night under storm clouds, red and blue light',
@@ -44,7 +46,7 @@ THEMES = [
      'a humanoid robot in a dark factory, rim-lit, looking at its own hand',
      ['humanoid robot', 'industrial robot arm']),
     (r'music|song|singer|artist|youtube|spotify|film|hollywood|actor|voice clone',
-     'a dark recording studio, a microphone in a single beam of light, a waveform glowing on a screen',
+     'a vintage studio microphone in a single beam of light in a dark recording studio, a glowing golden audio waveform floating in the air beside it, no people',
      ['recording studio microphone', 'concert stage lights']),
     (r'phone|smartphone|iphone|pixel|call|assistant|voice',
      'a hand holding a smartphone in a dark room, the screen glowing, light on the fingers',
@@ -144,7 +146,9 @@ def gate(img):
         return 'missing'
     if min(img.size) < 450:
         return 'too small %dx%d' % img.size
-    d = detail(img); lum = float(np.asarray(img.convert('L')).mean())
+    d = detail(img)
+    g = np.asarray(img.convert('L')).astype(np.float32)
+    lum = float(g[: int(g.shape[0] * .6)].mean())  # subject region; a dark bottom is wanted (headline band)
     if d <= 2.0:
         return 'not photographic (detail %.1f)' % d
     if d > 26:
@@ -161,6 +165,19 @@ def fit_portrait(img, W=1080, H=1920, top_frac=.03):
     """Landscape scene -> 9:16 keeping the most detailed vertical band (the subject), extended top/bottom with the
     image's own edge tones, subject in the upper half. Portrait images are just cover-cropped."""
     img = img.convert('RGB'); w, h = img.size
+    if 0.75 < w / h <= 1.25:
+        # square-ish (Workers AI flux-1-schnell returns 1024x1024): keep the full frame at full width, high in the canvas,
+        # so the subject sits above the headline band; extend above/below with the image's own edge tones
+        s = W / w; im = img.resize((W, int(h * s + .5)), Image.LANCZOS); a = np.asarray(im).astype(np.float32)
+        top = int(H * .07); c = np.zeros((H, W, 3), np.float32); hh = a.shape[0]
+        tb, bb = a[:20].mean((0, 1)), a[-40:].mean((0, 1))
+        c[:top] = tb; c[top:top + hh] = a[:H - top]; c[top + hh:] = bb
+        f = 90
+        for i in range(f):
+            t = i / f; c[top + i] = tb * (1 - t) + a[i] * t
+            if top + hh <= H: c[top + hh - f + i] = a[hh - f + i] * (1 - t) + bb * t
+        c += np.random.default_rng(1).normal(0, 2.5, c.shape)
+        return Image.fromarray(c.clip(0, 255).astype('uint8')).filter(ImageFilter.UnsharpMask(2, 50, 2))
     if w / h <= 0.75:
         s = max(W / w, H / h); im = img.resize((int(w * s + .5), int(h * s + .5)), Image.LANCZOS)
         l, t = (im.width - W) // 2, int((im.height - H) * .35)
@@ -216,7 +233,10 @@ def cloudflare(post, timeout=90):
     req = urllib.request.Request(f'https://api.cloudflare.com/client/v4/accounts/{acct}/ai/run/@cf/black-forest-labs/flux-1-schnell',
                                  data=body, headers={'Authorization': 'Bearer ' + tok, 'Content-Type': 'application/json'})
     try:
-        j = json.load(urllib.request.urlopen(req, timeout=timeout))
+        try:
+            j = json.load(urllib.request.urlopen(req, timeout=timeout))
+        except urllib.error.HTTPError as e:  # 400 = prompt flagged / bad input: log Cloudflare's reason, never retry paid
+            return None, f'HTTP {e.code} ' + e.read()[:160].decode('utf8', 'ignore')
         import base64
         img = Image.open(io.BytesIO(base64.b64decode(j['result']['image']))); img.load()
         return img.convert('RGB'), ''
@@ -286,6 +306,9 @@ def pick_scene(post, photo=None, feed=None, log=None):
             img = feed.convert('RGB').crop((0, 130, feed.width, int(feed.height * .53))); why = ''
         else:
             continue
+        dbg = os.environ.get('AIFEED_SCENE_DEBUG')
+        if dbg and img is not None:
+            os.makedirs(dbg, exist_ok=True); img.save(os.path.join(dbg, f"{post.get('slug', 'scene')}_{src}.jpg"), quality=90)
         reason = why or gate(img)
         if not reason:
             fitted = fit_portrait(img)
