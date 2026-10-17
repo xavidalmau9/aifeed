@@ -180,13 +180,17 @@ def fit_portrait(img, W=1080, H=1920, top_frac=.03):
     if 0.75 < w / h <= 1.25:
         # square-ish (Workers AI flux-1-schnell returns 1024x1024): keep the full frame at full width, high in the canvas,
         # so the subject sits above the headline band; extend above/below with the image's own edge tones
-        s = W / w; im = img.resize((W, int(h * s + .5)), Image.LANCZOS); a = np.asarray(im).astype(np.float32)
-        top = int(H * .07); c = np.zeros((H, W, 3), np.float32); hh = a.shape[0]
+        # slight push-in (1.12x, centered crop) and the image's center (where flux puts the subject) at ~30% of the
+        # frame height, so the subject sits in the upper half, clear of the headline band (y 900-1520)
+        s = 1.12 * W / w; im = img.resize((int(w * s + .5), int(h * s + .5)), Image.LANCZOS)
+        l = (im.width - W) // 2; im = im.crop((l, 0, l + W, im.height)); a = np.asarray(im).astype(np.float32)
+        hh = a.shape[0]; top = max(0, int(H * .30 - hh / 2)); c = np.zeros((H, W, 3), np.float32)
         tb, bb = a[:20].mean((0, 1)), a[-40:].mean((0, 1))
         c[:top] = tb; c[top:top + hh] = a[:H - top]; c[top + hh:] = bb
         f = 90
         for i in range(f):
-            t = i / f; c[top + i] = tb * (1 - t) + a[i] * t
+            t = i / f
+            if top: c[top + i] = tb * (1 - t) + a[i] * t
             if top + hh <= H: c[top + hh - f + i] = a[hh - f + i] * (1 - t) + bb * t
         c += np.random.default_rng(1).normal(0, 2.5, c.shape)
         return Image.fromarray(c.clip(0, 255).astype('uint8')).filter(ImageFilter.UnsharpMask(2, 50, 2))
