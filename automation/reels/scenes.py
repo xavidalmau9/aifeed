@@ -36,28 +36,28 @@ TEXT_PRONE = re.compile(r'\b(signs?|signage|lecterns?|podiums?|name ?plates?|lap
 # theme rules: (regex on headline+summary, scene subject for generation, Commons keyword queries)
 THEMES = [
     (r'credit default|cds|\bdebt\b|bond|default|distress|selloff|sell-off|plunge|crash|bubble|losses?\b',
-     'a stressed trader seen in profile silhouette, head in hand, rim-lit by red light, in front of a wall of blurred monitors that show only thick glowing red downward-crashing lines on pure black, the trader centered in the frame',
+     'a stressed trader seen in profile silhouette in the upper half of the frame, head in hand, rim-lit by red light, in front of a wall of blurred monitors that show only thick glowing red downward-crashing lines on pure black, the trader centered in the frame',
      ['stock market crash screen red', 'trading floor screens']),
     (r'genom|\bdna\b|gene\b|genes\b|protein|biolog|cell\b|drug discovery|alphafold',
-     'a huge glowing cyan DNA double helix hologram, tangled, broken and glitching into red fragments, floating in the middle of a dark lab, a scientist silhouette seen from behind standing just below it, looking up',
+     'a colossal glowing cyan DNA double helix hologram filling the whole upper half of the frame from edge to edge, twisting diagonally, violently glitching and fragmenting into hundreds of red and cyan shards and particles, in a vast pitch-black space, a tiny lone silhouette seen from behind far below it looking up',
      ['DNA gel electrophoresis UV', 'DNA sequencing laboratory']),
     (r'data ?cent|datacenter|server|compute|gpu cluster|coreweave|stargate|power grid|electricity',
-     'a long dark data center corridor of server racks with blue status lights, a lone silhouette walking',
+     'a long dark data center corridor of server racks with blue status lights vanishing into the distance, a lone silhouette walking away in hard backlight',
      ['data center server racks', 'server room']),
     (r'chip|semiconductor|nvidia|tsmc|\bamd\b|wafer|export control',
-     'a macro shot of a glowing processor chip on a circuit board with red and blue light trails',
+     'a dramatic macro shot of a glowing processor chip on a circuit board, blank unmarked surface, red and blue light trails, filling the upper half of the frame',
      ['silicon wafer', 'computer chip macro']),
     (r'fbi|arrest|spy|espionage|lawsuit|court|judge|sued|indict|police|charges',
-     'a dark empty conference room at night, a single hard spotlight on a small hidden microphone taped under a bare wooden table, red and blue light through window blinds',
+     'a lone man silhouette standing in a vast dark empty room, seen from behind, caught in a single hard white spotlight from above, red and blue police light streaming through window blinds behind him, long dramatic shadow, bare empty floor, no furniture',
      ['courtroom', 'police tape night']),
     (r'congress|senate|white house|regulat|law\b|bill\b|policy|government|ban\b|eu ai act',
-     'the US Capitol dome at night under storm clouds, red and blue light',
+     'the US Capitol dome at night under dramatic storm clouds and lightning, red and blue light, the dome in the upper half of the frame',
      ['United States Capitol night']),
     (r'robot|humanoid|optimus|autonomous|self-driving|waymo|drone',
-     'a humanoid robot in a dark factory, rim-lit, looking at its own hand',
+     'a humanoid robot head and shoulders in a dark factory, hard rim light, looking at its own raised hand, in the upper half of the frame',
      ['humanoid robot', 'industrial robot arm']),
     (r'music|song|singer|artist|youtube|spotify|film|hollywood|actor|voice clone',
-     'a large vintage chrome studio microphone, brightly lit by a single warm golden spotlight, filling the upper middle of the frame, a glowing golden audio waveform floating in the dark air beside it, empty dark background, no equipment, no people',
+     'a large vintage chrome studio microphone, brightly lit by a single warm golden spotlight, large in the upper half of the frame, a glowing golden audio waveform floating in the dark air beside it, empty dark background, no equipment, no people',
      ['recording studio microphone', 'concert stage lights']),
     (r'phone|smartphone|iphone|pixel|call|assistant|voice',
      'a hand silhouette lit by a soft glow from below in a dark room, abstract light trails',
@@ -66,10 +66,10 @@ THEMES = [
      'a dark room washed in pulsing red alert light, a silhouette seen from behind facing a wall of abstract red light',
      ['security operations center', 'server room red light']),
     (r'funding|raises|valuation|ipo|investor|billion|acquisition|acquire|deal',
-     'a glass skyscraper boardroom at night overlooking a city, silhouettes around a table',
+     'a lone silhouette at the floor-to-ceiling window of a dark glass skyscraper at night overlooking a glowing city',
      ['skyscraper boardroom night', 'stock exchange']),
     (r'model|llm|chatbot|gpt|gemini|claude|grok|openai|anthropic|agent',
-     'a dark room lit only by a giant screen of flowing neural network light, a silhouette facing it',
+     'a lone silhouette seen from behind facing a towering wall of flowing neural network light, glowing threads and nodes, dark room',
      ['neural network visualization', 'computer screen code dark']),
 ]
 DEFAULT_THEME = ('a silhouette at a dark window overlooking glowing city lights at night',
@@ -85,9 +85,12 @@ def theme_for(post):
 
 
 def scene_prompt(post, bright=False):
+    # a curated theme scene (tuned for drama, text-free, subject high in the frame) wins; the LLM scene is used only for
+    # stories no theme covers, and never when it asks for things that carry writing
+    subject = theme_for(post)[0]
     p = (post.get('scenePrompt') or '').strip()
-    if not p or TEXT_PRONE.search(p):  # LLM scene asks for things that carry writing -> use the curated theme scene
-        p = theme_for(post)[0]
+    if subject != DEFAULT_THEME[0] or not p or TEXT_PRONE.search(p):
+        p = subject
     return p + ', ' + (BRIGHT_STYLE if bright else STYLE)
 
 
@@ -214,20 +217,23 @@ def gate(img):
     return ''
 
 
+MAX_STRETCH, MIN_GAMMA, NEAR_BLACK = 1.5, .6, 9.0
+
+
 def lift(img, target=42.0):
-    """Generated low-key scenes often come back nearly black. First stretch dim highlights up (levels), then gamma-lift
-    the subject region (top 60%) to a readable exposure; highlights are preserved, so red charts / helixes stay punchy."""
+    """Gently lift a dark generated scene: a capped highlight stretch (<= 1.5x) and a capped gamma (>= 0.6), so noise and
+    JPEG blocks are never amplified into blotches. Near-black scenes (subject-region mean < 9) are returned unchanged:
+    the gate rejects them and pick_scene asks Cloudflare again with the brighter prompt instead of over-lifting."""
     a = np.asarray(img.convert('RGB')).astype(np.float32) / 255
-    top = a[: int(a.shape[0] * .6)].mean(2)
-    m = float(top.mean()) * 255
-    if m >= target or m <= .5:
+    m = float(a[: int(a.shape[0] * .6)].mean()) * 255
+    if m >= target or m < NEAR_BLACK:
         return img
     hi = float(np.percentile(a.max(2), 99.5))
-    if hi < .85:  # dim highlights: stretch so the brightest light reaches ~90%
-        a = (a * (.9 / max(hi, .05))).clip(0, 1)
+    if hi < .85:
+        a = (a * min(MAX_STRETCH, .9 / max(hi, .05))).clip(0, 1)
         m = float(a[: int(a.shape[0] * .6)].mean()) * 255
     if m < target:
-        gamma = max(.35, min(1.0, math.log(target / 255) / math.log(max(m, .5) / 255)))
+        gamma = max(MIN_GAMMA, min(1.0, math.log(target / 255) / math.log(max(m, .5) / 255)))
         a = np.power(a, gamma)
     return Image.fromarray((a * 255).clip(0, 255).astype('uint8'))
 
@@ -264,8 +270,9 @@ def fit_portrait(img, W=1080, H=1920, top_frac=.03):
         # slight push-in (1.12x, centered crop) and the image's center (where flux puts the subject) at ~30% of the
         # frame height, so the subject sits in the upper half, clear of the headline band (y 900-1520)
         s = 1.12 * W / w; im = img.resize((int(w * s + .5), int(h * s + .5)), Image.LANCZOS)
-        l = (im.width - W) // 2; im = im.crop((l, 0, l + W, im.height)); a = np.asarray(im).astype(np.float32)
-        hh = a.shape[0]; top = max(0, int(H * .30 - hh / 2)); c = np.zeros((H, W, 3), np.float32)
+        l = (im.width - W) // 2; up = max(0, int(im.height / 2 - H * .27))  # image center at ~27% of the frame height
+        im = im.crop((l, up, l + W, im.height)); a = np.asarray(im).astype(np.float32)
+        hh = a.shape[0]; top = 0; c = np.zeros((H, W, 3), np.float32)
         tb, bb = a[:20].mean((0, 1)), a[-40:].mean((0, 1))
         c[:top] = tb; c[top:top + hh] = a[:H - top]; c[top + hh:] = bb
         f = 90

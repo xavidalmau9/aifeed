@@ -60,6 +60,12 @@ class Theme(unittest.TestCase):
         self.assertIn('DNA', scenes.theme_for({'headline': 'Why AI isn\u2019t ready to tackle our genomes'})[0])
         self.assertIn('microphone', scenes.theme_for({'headline': 'YouTube Music will label AI singers'})[0])
 
+    def test_curated_theme_wins_over_llm_scene(self):
+        p = scenes.scene_prompt({'headline': 'Why AI isn\u2019t ready to tackle our genomes', 'scenePrompt': 'a small DNA model on a shelf'})
+        self.assertTrue(p.startswith('a colossal glowing cyan DNA'))
+        f = scenes.scene_prompt({'headline': 'FBI arrests OpenAI employee', 'scenePrompt': 'a conference room table'})
+        self.assertIn('lone man silhouette', f); self.assertIn('no furniture', f)
+
     def test_llm_prompt_and_keywords_take_priority(self):
         post = {'headline': 'x', 'scenePrompt': 'a lighthouse in a storm', 'sceneKeywords': ['lighthouse storm']}
         self.assertTrue(scenes.scene_prompt(post).startswith('a lighthouse in a storm'))
@@ -83,7 +89,7 @@ class Theme(unittest.TestCase):
     def test_bright_variant_keeps_subject_and_negatives(self):
         post = {'headline': 'Why AI isn\u2019t ready to tackle our genomes'}
         b = scenes.scene_prompt(post, bright=True)
-        self.assertIn('DNA', b); self.assertIn('bright', b); self.assertNotIn('low-key', b); self.assertIn('no text', b)
+        self.assertIn('DNA', b); self.assertIn('fragmenting', b); self.assertIn('bright', b); self.assertNotIn('low-key', b); self.assertIn('no text', b)
 
     def test_no_category_generic_queries(self):
         for _, _, q in scenes.THEMES:
@@ -100,12 +106,32 @@ class Gate(unittest.TestCase):
         busy = Image.fromarray(np.random.default_rng(1).integers(0, 255, (800, 1200, 3)).astype('uint8'))
         self.assertIn('too busy', scenes.gate(busy))
 
+    def dark(self, k):
+        return Image.fromarray((np.asarray(textured(1024, 1024, mean=110)).astype(np.float32) * k).astype('uint8'))
+
     def test_lift_rescues_a_dark_generated_scene(self):
-        dark = Image.fromarray((np.asarray(textured(1024, 1024, mean=110)).astype(np.float32) * .08).astype('uint8'))
-        self.assertTrue(scenes.gate(dark))  # rejected as-is (too dark / no visible detail)
-        lifted = scenes.lift(dark)
-        self.assertEqual(scenes.gate(lifted), '')
-        self.assertGreater(np.asarray(lifted.convert('L'))[:600].mean(), 30)
+        dark = self.dark(.12)
+        self.assertTrue(scenes.gate(dark))  # rejected as-is
+        self.assertEqual(scenes.gate(scenes.lift(dark)), '')
+
+    def test_lift_gain_is_capped(self):
+        dark = self.dark(.12); a = np.asarray(dark).astype(np.float32) / 255
+        out = np.asarray(scenes.lift(dark)).astype(np.float32) / 255
+        bound = np.power(np.minimum(1, a * scenes.MAX_STRETCH), scenes.MIN_GAMMA) + 2 / 255
+        self.assertTrue((out <= bound).all())
+        self.assertGreaterEqual(scenes.MIN_GAMMA, .6); self.assertLessEqual(scenes.MAX_STRETCH, 1.5)
+
+    def test_near_black_is_not_lifted(self):
+        nb = self.dark(.05)
+        self.assertIs(scenes.lift(nb), nb)
+        self.assertTrue(scenes.gate(scenes.lift(nb)))
+
+    def test_square_scene_subject_sits_above_headline(self):
+        sq = np.zeros((1024, 1024, 3), np.uint8); sq[462:562, 462:562] = 255  # bright subject at the image center
+        out = np.asarray(scenes.fit_portrait(Image.fromarray(sq)).convert('L')).astype(np.float32)
+        ys = np.where(out[:, 540] > 200)[0]
+        self.assertLess(ys.max(), 880)  # headline band starts at y 900
+        self.assertLess(abs(ys.mean() - 1920 * .27), 40)
 
     def test_photo_gate_rejects_screenshots(self):
         shot = np.full((900, 1200, 3), 120, np.uint8); shot[100:160, 100:1100] = 30; shot[400:420, 200:900] = 240
