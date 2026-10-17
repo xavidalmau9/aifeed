@@ -8,10 +8,12 @@ Cascade (first one that passes its quality gate wins):
   2. ovh         - OVHcloud AI Endpoints SDXL, anonymous (no account, no key, no card; 2 requests/min per IP) with a
                    negative prompt against text/people. Disable with AIFEED_SCENE_OVH=off.
   3. generated   - Pollinations' keyless endpoint (unreliable: 402 when busy; disable with AIFEED_SCENE_GEN=off)
-  4. story       - the story's own photo, only if it is a real photo, not a screenshot, and not posed people
-  5. openverse   - Openverse scene search on the AI's scene keywords + theme keywords (CC0/PDM/CC BY/CC BY-SA)
-  6. commons     - Wikimedia Commons scene search on the same keywords
-  7. library     - a bundled pre-made dramatic scene for the story's theme (automation/reels/library), always available
+  4. library     - a bundled pre-made dramatic scene for the story's theme (automation/reels/library); always available,
+                   so it comes BEFORE the photo tiers (Javier's call: a ready-made dramatic scene beats a weak photo)
+  5. story       - the story's own photo, only if it is a real photo, not a screenshot, and not posed people
+  6. openverse   - Openverse scene search on the AI's scene keywords + theme keywords (CC0/PDM/CC BY/CC BY-SA)
+  7. commons     - Wikimedia Commons scene search on the same keywords
+                   (5-7 are only reached if the library is missing; set AIFEED_SCENE_ORDER to put photos earlier)
 Photo sources (story/openverse/commons/feed) also reject posed people: titles like 'visits', 'meets', 'Secretary',
 'portrait', 'handshake' and a cheap skin-area heuristic.
 Every accepted scene is fitted to 9:16 with the subject kept in the upper half (above the headline band).
@@ -576,7 +578,7 @@ def commons(queries, used=()):
     return None, ''
 
 
-DEFAULT_ORDER = 'cache,cloudflare,ovh,generated,story,openverse,commons,library'
+DEFAULT_ORDER = 'cache,cloudflare,ovh,generated,library,story,openverse,commons'  # ready-made library before photos
 GENERATED = ('cloudflare', 'cloudflare-bright', 'ovh', 'generated', 'cache')
 
 

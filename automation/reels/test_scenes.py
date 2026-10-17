@@ -249,11 +249,12 @@ class CloudflareQuota(unittest.TestCase):
         self.assertEqual(src, 'ovh'); self.assertEqual(calls, [('cf', False), ('ovh',)])
         self.assertTrue(log[0].startswith('cloudflare: HTTP 429'))
 
-    def test_default_order_generators_before_photos_library_last(self):
+    def test_default_order_generators_then_library_then_photos(self):
         o = scenes.DEFAULT_ORDER.split(',')
         self.assertLess(o.index('cloudflare'), o.index('ovh')); self.assertLess(o.index('ovh'), o.index('generated'))
-        self.assertLess(o.index('generated'), o.index('story')); self.assertEqual(o[-1], 'library')
-        self.assertLess(o.index('openverse'), o.index('commons')); self.assertNotIn('feed', o)
+        self.assertEqual(o, ['cache', 'cloudflare', 'ovh', 'generated', 'library', 'story', 'openverse', 'commons'])
+        self.assertLess(o.index('library'), min(o.index('story'), o.index('openverse'), o.index('commons')))
+        self.assertNotIn('feed', o)
 
     def test_cache_is_used_only_when_set(self):
         d = tempfile.mkdtemp()
@@ -390,6 +391,27 @@ class Library(unittest.TestCase):
         self.assertEqual(scenes.theme_key({'headline': 'Weather is nice'}), 'default')
         img, why = scenes.library({'headline': 'CoreWeave credit default swaps hit distress levels', 'slug': 'a'})
         self.assertEqual(why, ''); self.assertIsNotNone(img)
+
+    def test_library_is_used_before_any_photo_by_default(self):
+        boom = lambda *a, **k: (_ for _ in ()).throw(AssertionError('photo tier must not be reached'))
+        off = lambda *a, **k: (None, 'HTTP 429')
+        textured(1400, 900).save('/tmp/_good_story.jpg')
+        with Patch(cloudflare=off, ovh=off, generated=off, story_photo=boom, openverse=boom, commons=boom), \
+                Env(AIFEED_SCENE_ORDER=None, AIFEED_SCENE_CACHE=None, AIFEED_SCENE_CF='on'):
+            log = []
+            img, credit, src = scenes.pick_scene({'headline': 'Why AI isn\u2019t ready to tackle our genomes', 'slug': 'g'}, '/tmp/_good_story.jpg', None, log)
+        self.assertEqual(src, 'library'); self.assertEqual(credit, '')
+
+    def test_photo_tiers_still_work_when_the_library_is_missing(self):
+        real = scenes.LIB_DIR; scenes.LIB_DIR = '/nonexistent'
+        try:
+            with Patch(cloudflare=lambda *a, **k: (None, 'HTTP 429'), ovh=lambda *a, **k: (None, 'x'), generated=lambda *a, **k: (None, 'x')), \
+                    Env(AIFEED_SCENE_ORDER=None, AIFEED_SCENE_CACHE=None):
+                textured(1400, 900).save('/tmp/_good_story.jpg')
+                img, credit, src = scenes.pick_scene({'headline': 'x', 'slug': 'g'}, '/tmp/_good_story.jpg', None, [])
+            self.assertEqual(src, 'story')
+        finally:
+            scenes.LIB_DIR = real
 
     def test_whole_chain_offline_ends_in_the_library(self):
         off = lambda *a, **k: (None, 'HTTP 503')
