@@ -5,3 +5,5 @@ node_modules/
 /package.json
 /tmp/
 automation/actions/out/
+__pycache__/
+*.pyc

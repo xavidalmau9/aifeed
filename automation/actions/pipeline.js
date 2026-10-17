@@ -20,7 +20,7 @@ const {
 } = require('./lib/net');
 const { sendAlert } = require('./alert');
 const { buildFb, checkFb } = require('./lib/captions');
-const { renderReel, publishIgReel, publishFbVideo } = require('./lib/reels');
+const { renderReel, withPhotoCredit, publishIgReel, publishFbVideo } = require('./lib/reels');
 const { isReelsOnly, carouselUpfront, carouselFallback, fbPhotoNeeded } = require('./lib/reelsplan');
 
 function loadConfig() {
@@ -407,7 +407,10 @@ async function main() {
       if (cfg.reelsEnabled) {
         try {
           const fp = path.join(env.OUT, published.pngName);
-          fs.copyFileSync(renderReel(env.REPO, published.post, fp), path.join(env.OUT, published.slug + '.mp4'));
+          const rr = renderReel(env.REPO, published.post, fp, published.post.photoUrl || qc.story.ogImage || '');
+          fs.copyFileSync(rr.mp4, path.join(env.OUT, published.slug + '.mp4'));
+          if (rr.cover) fs.copyFileSync(rr.cover, path.join(env.OUT, published.slug + '_cover.jpg'));
+          if (rr.credit) console.log('Reel caption would carry: ' + withPhotoCredit('', rr.credit).trim());
           console.log('Reel rendered for dry-run artifacts');
         } catch (e) { console.log('Reel render FAILED: ' + redact(e.message)); }
       }
@@ -474,24 +477,30 @@ async function main() {
       try {
         const tmpPng = path.join(require('os').tmpdir(), published.pngName);
         fs.writeFileSync(tmpPng, feed.png);
-        const mp4 = renderReel(env.REPO, published.post, tmpPng);
+        // Pass the story's own photo (og:image picked by refinePhotos) so the Reel is photo-first, not a Commons stand-in.
+        const rr = renderReel(env.REPO, published.post, tmpPng, published.post.photoUrl || qc.story.ogImage || '');
         const rel = 'videos/reels/' + published.slug + '.mp4';
+        const coverRel = rr.cover ? 'videos/reels/' + published.slug + '_cover.jpg' : '';
         commitApply(env.REPO, 'AIFeed reel: ' + published.slug, () => {
           fs.mkdirSync(path.join(env.REPO, 'videos/reels'), { recursive: true });
-          fs.copyFileSync(mp4, path.join(env.REPO, rel));
-          return [rel];
+          fs.copyFileSync(rr.mp4, path.join(env.REPO, rel));
+          if (coverRel) fs.copyFileSync(rr.cover, path.join(env.REPO, coverRel));
+          return coverRel ? [rel, coverRel] : [rel];
         });
         const videoUrl = cfg.siteUrl + '/' + rel;
+        const coverUrl = coverRel ? cfg.siteUrl + '/' + coverRel : '';
         await pollPublic(videoUrl);
+        if (coverUrl) await pollPublic(coverUrl);
+        const reelCaption = withPhotoCredit(published.igCaption, rr.credit);
         published.post.videoUrl = videoUrl;
         if (cfg.reelsPublishEnabled) {
-          const r = await publishIgReel(cfg, env, { graphForm, pollContainer }, videoUrl, published.igCaption);
+          const r = await publishIgReel(cfg, env, { graphForm, pollContainer }, videoUrl, reelCaption, coverUrl);
           console.log('Instagram Reel published ' + (r.id || ''));
           reelPublished = true;
           if (reelsOnly) markPosted();
           if (cfg.fbEnabled) {
             try {
-              const v = await publishFbVideo(cfg, env, { graphForm }, videoUrl, facebookMessage(published.igCaption, qc.story.link), published.post.headline);
+              const v = await publishFbVideo(cfg, env, { graphForm }, videoUrl, facebookMessage(reelCaption, qc.story.link), published.post.headline);
               console.log('Facebook video published ' + (v.id || ''));
               fbVideoDone = Boolean(v && v.id);
             } catch (e) { await sendAlert('AIFeed: Facebook Reel video failed\n' + redact(e.message)); }
