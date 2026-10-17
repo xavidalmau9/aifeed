@@ -1,5 +1,25 @@
 [
   {
+    "id": "anthropic-gives-thirdparty-auditors-employeelike-access-20261017",
+    "slug": "anthropic-gives-thirdparty-auditors-employeelike-access",
+    "headline": "Anthropic gives third-party auditors ’employee-like access’ in AI industry first",
+    "summary": "Anthropic grants third-party nonprofit evaluators employee-level access to AI systems and offices.",
+    "body": "<p>Anthropic embeds third-party auditors with employee-level access to AI safety systems.</p>\n<p>Anthropic announced Thursday it will grant six evaluators from METR, a third-party nonprofit testing frontier models, employee-like access to its systems. The auditors receive Anthropic hardware, office space, and access to internal tools and systems roughly equivalent to what Anthropic's own risk assessment teams access.</p>\n<p>Outside narrow categories — customer data, attorney-client privileged information, and model architecture details — Anthropic employees are encouraged to share information with METR as they would with fellow colleagues.</p>\n<p>Anthropic CEO Dario Amodei proposed this embedded evaluator model in a September blog post as one of three suggestions for responsibly pacing frontier development. The arrangement aims to close the gap between what external evaluators understand about frontier AI systems and what the company itself knows.</p>\n<p>METR's independence is central to the value of this arrangement. The evaluators don't hold equity in Anthropic, nor are they financially or operationally dependent on the company, addressing concerns about capture in industry self-regulation.</p>\n<p>This move comes as federal regulation remains limited and voluntary. The bipartisan FRONTIER Act would require certain AI companies to allow independent verification organizations to review safety processes. OpenAI backed the bill in mid-September, marking its first support for proposed federal AI regulation.</p>\n<p>Anthropic embeds independent nonprofit auditors with employee-level access to strengthen third-party safety oversight.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_anthropic-gives-thirdparty-auditors-employeelike-access_20261017_pm.png",
+    "image": "images/aifeed_anthropic-gives-thirdparty-auditors-employeelike-access_20261017_pm.png",
+    "sourceUrl": "https://www.zdnet.com/uncategorized/anthropic-embed-third-party-ai-auditors-safety/",
+    "publishedAt": "2026-10-17T21:12:03.712Z",
+    "hashtags": [
+      "Anthropic",
+      "AISafety",
+      "ThirdPartyAudit",
+      "METR",
+      "Accountability"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "why-ai-isnt-ready-to-tackle-20261017",
     "slug": "why-ai-isnt-ready-to-tackle",
     "headline": "Why AI Isn’t Ready to Tackle Our Convoluted Genomes",
