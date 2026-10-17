@@ -17,19 +17,53 @@ Return ONLY JSON: {"punch": "...", "scene": "...", "keywords": ["...", "..."]}
   of keywords). Use only facts stated in the headline and summary: never add a claim or a loaded word that the story does
   not state (e.g. do not say "breach" or "hack" unless the story does). Keep company names; no clickbait; no question unless
   the headline is one; never use the word "daily".
-  Example: "COREWEAVE / CREDIT STRESS / *HITS DISTRESS / LEVELS"
+  Never repeat a word or its root across the lines (bad: "CREDIT STRESS / HITS DISTRESS", "AI ... / AI ..."; each word once).
+  Example: "COREWEAVE / *CREDIT SWAPS / HIT DISTRESS / OVER DEBT"
 - scene: one sentence describing a dramatic, photorealistic scene that matches the story's THEME (not just its category),
   as a visual metaphor a top US news outlet would use. Examples: credit/debt stress -> "a stressed trader in shadow, head in hand,
   before monitors of red crashing charts"; genomics limits -> "a tangled, glitching DNA helix hologram in a dark lab, a scientist
   silhouette from behind". No text, no logos, no real identifiable people (silhouettes or faces hidden only), no brand names.
+  Never include objects that usually carry writing: no signs, signage, lecterns, podiums, name plates, laptops, phones,
+  documents, newspapers, books, posters, banners, billboards, storefronts, labels, dashboards or screens with words or numbers.
+  Prefer one bold physical subject or abstract light (a helix, a microphone, chart lines, a silhouette) in a dark space.
 - keywords: 2 short photo-search phrases for a real photo of the same theme (e.g. "stock market crash screen").`;
+}
+
+// Root of a word for repetition checks: "distress" -> "stress", "tags"/"tagged" -> "tag", "AI" -> "ai".
+const STOP = new Set(['a', 'an', 'the', 'of', 'to', 'for', 'in', 'on', 'at', 'by', 'and', 'or', 'with', 'as', 'is', 'are', 'its', 'from', 'over', 'into']);
+function wordRoot(w) {
+  let r = String(w).toLowerCase().replace(/[^a-z0-9]/g, '');
+  const pre = r.match(/^(dis|un|re|non|over|under|mis)(.{4,})$/);
+  if (pre) r = pre[2];
+  for (const suf of ['ings', 'ing', 'ed', 'es', 's', 'ly', 'er']) {
+    if (r.length - suf.length >= 3 && r.endsWith(suf)) { r = r.slice(0, -suf.length); break; }
+  }
+  return r.replace(/(.)\1$/, '$1');
+}
+// Same root: identical, or one contains the other as a prefix/suffix (stress/distress, label/relabel), ignoring short roots.
+function sameRoot(a, b) {
+  if (a === b) return true;
+  const [s, l] = a.length <= b.length ? [a, b] : [b, a];
+  if (s.length < 4 || !(l.startsWith(s) || l.endsWith(s))) return false;
+  return s.length >= 5 || l.length - s.length <= 3;
+}
+// Words of a punch whose root already appeared earlier (e.g. ['DISTRESS'] for "CREDIT STRESS / HITS DISTRESS").
+function repeatedRoots(p) {
+  const seen = new Set(); const rep = [];
+  for (const w of String(p || '').replace(/[*/]/g, ' ').split(/[\s-]+/).filter(Boolean)) {
+    const raw = w.toLowerCase().replace(/[^a-z0-9]/g, '');
+    if (!raw || STOP.has(raw)) continue;
+    const r = wordRoot(w);
+    if ([...seen].some(x => sameRoot(x, r))) rep.push(w); else seen.add(r);
+  }
+  return rep;
 }
 
 function validPunch(p) {
   if (typeof p !== 'string') return false;
   const lines = p.split('/').map(s => s.trim()).filter(Boolean);
   return lines.length >= 2 && lines.length <= 4 && lines.filter(l => l.startsWith('*')).length === 1
-    && lines.every(l => l.replace(/^\*/, '').length <= 22) && !BANNED.test(p);
+    && lines.every(l => l.replace(/^\*/, '').length <= 22) && !BANNED.test(p) && repeatedRoots(p).length === 0;
 }
 
 function parseReelBrief(text) {
@@ -44,12 +78,22 @@ function parseReelBrief(text) {
   return out;
 }
 
+// One retry when the punch is missing/invalid (e.g. a repeated root word); if the retry fails too, the brief carries no
+// punch and make_reel.py uses its rule-based punch. The scene from the first answer is kept if the retry has none.
 async function reelBrief(post, ask) {
+  let out = {};
   try {
-    return parseReelBrief(await ask(buildReelBriefPrompt(post)));
+    const first = await ask(buildReelBriefPrompt(post));
+    out = parseReelBrief(first);
+    if (out.punch) return out;
+    const m = String(first || '').match(/"punch"\s*:\s*"([^"]*)"/);
+    const why = m && repeatedRoots(m[1]).length ? `it repeated the root word(s) ${repeatedRoots(m[1]).join(', ')}` : 'it broke the format rules';
+    const retry = parseReelBrief(await ask(buildReelBriefPrompt(post) +
+      `\n\nYour previous punch ${m ? JSON.stringify(m[1]) + ' ' : ''}was rejected because ${why}. Write a new one that follows every rule.`));
+    return { ...out, ...retry };
   } catch (e) {
-    return {};
+    return out;
   }
 }
 
-module.exports = { buildReelBriefPrompt, parseReelBrief, validPunch, reelBrief };
+module.exports = { buildReelBriefPrompt, parseReelBrief, validPunch, repeatedRoots, wordRoot, reelBrief };

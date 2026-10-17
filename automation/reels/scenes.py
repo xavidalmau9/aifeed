@@ -1,11 +1,11 @@
 """Story-themed scene picker for AIFeed Reels (free sources only, no keys).
 
 Cascade (first one that passes the quality gate wins):
-  0. cloudflare - Workers AI flux-1-schnell, only if CF_ACCOUNT_ID + CF_API_TOKEN secrets exist (free 10k neurons/day)
-  1. generated  - photoreal scene from a story-specific prompt via Pollinations' free keyless endpoint
-                  (best effort, rate-limited per IP; disable with AIFEED_SCENE_GEN=off)
-  2. story      - the story's own photo (og:image picked by the pipeline)
-  3. commons    - Wikimedia Commons search on THEME keywords from the story (never a category-generic query)
+  0. cloudflare - Workers AI flux-1-schnell, only if CF_ACCOUNT_ID + CF_API_TOKEN secrets exist (free 10k neurons/day);
+                  a dark scene is lifted before the gate, and a rejected one is retried once with a brighter prompt
+  1. story      - the story's own photo (og:image picked by the pipeline), only if it is a real photo (no screenshots)
+  2. commons    - Wikimedia Commons search on THEME keywords from the story (never a category-generic query)
+  3. generated  - Pollinations' free keyless endpoint (low quality, last resort; disable with AIFEED_SCENE_GEN=off)
   4. feed       - photo area of the feed graphic, only if it is a real photo
 Quality gate: real photographic detail (is_photo), not too dark, not too busy, big enough.
 Every accepted scene is fitted to 9:16 with the subject kept in the upper half (above the headline band).
@@ -17,15 +17,26 @@ from PIL import Image, ImageFilter
 UA = {'User-Agent': 'aifeed-reels/1.0 (https://aifeed.run)'}
 FREE_LICENSES = re.compile(r'^(CC0|Public domain|CC BY(-SA)? [0-9.]+|No restrictions)$', re.I)
 STYLE = ('photorealistic cinematic editorial news photograph, dramatic low-key lighting, deep shadows, rim light, '
-         'shallow depth of field, moody but well exposed, the main subject clearly lit and readable, centered horizontally in the upper half of the frame, '
-         'the lower part of the frame falls off into dark shadow, any screens or displays are out of focus and show only '
-         'abstract glowing lines and shapes with no numbers or writing, no text, no letters, no captions, no logos, '
-         'no watermark, no recognizable real person, people only as silhouettes or seen from behind, 35mm film grain')
+         'shallow depth of field, the main subject clearly lit and readable, centered horizontally in the upper half of the frame, '
+         'the lower part of the frame falls off into dark shadow, completely text-free image: no text, no letters, no numbers, '
+         'no digits, no words, no signage, no signs, no labels, no name plates, no lecterns or podiums, no laptops, no posters, '
+         'no logos, no brand marks, no watermark, any screen shows only abstract glowing lines on black with nothing written on it, '
+         'no recognizable real person, people only as silhouettes or seen from behind, 35mm film grain')
+# retry variant when the first Cloudflare scene is too dark: same subject, brighter key light (still moody, still text-free)
+BRIGHT_STYLE = STYLE.replace('dramatic low-key lighting, deep shadows, rim light',
+                             'dramatic but bright lighting, a strong warm key light fully illuminating the subject, glowing highlights, '
+                             'medium exposure, rim light').replace('the lower part of the frame falls off into dark shadow',
+                             'the lower third of the frame is darker')
+# scene descriptions that invite fake writing; such LLM scene prompts are replaced by the theme scene
+TEXT_PRONE = re.compile(r'\b(signs?|signage|lecterns?|podiums?|name ?plates?|laptops?|phones?|smartphones?|documents?|papers?|'
+                        r'newspapers?|headlines?|books?|posters?|banners?|billboards?|storefronts?|labels?|dashboards?|'
+                        r'keyboards?|notebooks?|whiteboards?|placards?|letters?|words?|text|caption|logo|brand|ticker|'
+                        r'numbers?|digits?|charts? with|spreadsheets?|tablets?|monitors? showing|screens? showing|mixing (desk|console)|consoles?)\b', re.I)
 
 # theme rules: (regex on headline+summary, scene subject for generation, Commons keyword queries)
 THEMES = [
     (r'credit default|cds|\bdebt\b|bond|default|distress|selloff|sell-off|plunge|crash|bubble|losses?\b',
-     'a stressed trader, head in hand, his face profile rim-lit by red light, in front of a wall of out-of-focus monitors glowing with red downward-crashing chart lines, the trader centered in the frame',
+     'a stressed trader seen in profile silhouette, head in hand, rim-lit by red light, in front of a wall of blurred monitors that show only thick glowing red downward-crashing lines on pure black, the trader centered in the frame',
      ['stock market crash screen red', 'trading floor screens']),
     (r'genom|\bdna\b|gene\b|genes\b|protein|biolog|cell\b|drug discovery|alphafold',
      'a huge glowing cyan DNA double helix hologram, tangled, broken and glitching into red fragments, floating in the middle of a dark lab, a scientist silhouette seen from behind standing just below it, looking up',
@@ -37,7 +48,7 @@ THEMES = [
      'a macro shot of a glowing processor chip on a circuit board with red and blue light trails',
      ['silicon wafer', 'computer chip macro']),
     (r'fbi|arrest|spy|espionage|lawsuit|court|judge|sued|indict|police|charges',
-     'a dark empty conference room at night, a single hard spotlight on a small hidden microphone under the table, red and blue light through the blinds',
+     'a dark empty conference room at night, a single hard spotlight on a small hidden microphone taped under a bare wooden table, red and blue light through window blinds',
      ['courtroom', 'police tape night']),
     (r'congress|senate|white house|regulat|law\b|bill\b|policy|government|ban\b|eu ai act',
      'the US Capitol dome at night under storm clouds, red and blue light',
@@ -46,13 +57,13 @@ THEMES = [
      'a humanoid robot in a dark factory, rim-lit, looking at its own hand',
      ['humanoid robot', 'industrial robot arm']),
     (r'music|song|singer|artist|youtube|spotify|film|hollywood|actor|voice clone',
-     'a vintage studio microphone in a single beam of light in a dark recording studio, a glowing golden audio waveform floating in the air beside it, no people',
+     'a large vintage chrome studio microphone, brightly lit by a single warm golden spotlight, filling the upper middle of the frame, a glowing golden audio waveform floating in the dark air beside it, empty dark background, no equipment, no people',
      ['recording studio microphone', 'concert stage lights']),
     (r'phone|smartphone|iphone|pixel|call|assistant|voice',
-     'a hand holding a smartphone in a dark room, the screen glowing, light on the fingers',
+     'a hand silhouette lit by a soft glow from below in a dark room, abstract light trails',
      ['smartphone in hand dark']),
     (r'safety|risk|danger|harm|security|hack|breach|leak|vulnerab|malware',
-     'a dark security operations room, red alert lights reflecting on screens, a silhouette watching',
+     'a dark room washed in pulsing red alert light, a silhouette seen from behind facing a wall of abstract red light',
      ['security operations center', 'server room red light']),
     (r'funding|raises|valuation|ipo|investor|billion|acquisition|acquire|deal',
      'a glass skyscraper boardroom at night overlooking a city, silhouettes around a table',
@@ -61,7 +72,7 @@ THEMES = [
      'a dark room lit only by a giant screen of flowing neural network light, a silhouette facing it',
      ['neural network visualization', 'computer screen code dark']),
 ]
-DEFAULT_THEME = ('a dark newsroom-style tech scene, glowing screens and city lights through a window, silhouette',
+DEFAULT_THEME = ('a silhouette at a dark window overlooking glowing city lights at night',
                  ['computer screen code dark'])
 
 
@@ -73,11 +84,11 @@ def theme_for(post):
     return DEFAULT_THEME
 
 
-def scene_prompt(post):
+def scene_prompt(post, bright=False):
     p = (post.get('scenePrompt') or '').strip()
-    if not p:
+    if not p or TEXT_PRONE.search(p):  # LLM scene asks for things that carry writing -> use the curated theme scene
         p = theme_for(post)[0]
-    return p + ', ' + STYLE
+    return p + ', ' + (BRIGHT_STYLE if bright else STYLE)
 
 
 def scene_keywords(post):
@@ -113,6 +124,11 @@ def rule_punch(headline):
     m = next((x for x in CUT.finditer(h) if x.start() >= 24), None)  # keep at least a real subject + verb + object
     core = h[:m.start()].strip() if m else h
     words = [w for i, w in enumerate(core.split()) if i == 0 or w.lower() not in FILLER]
+    kept = []
+    for w in words:  # never repeat a root word on the cover (e.g. "AI ... AI", "stress ... distress")
+        if not repeated_roots(' '.join(kept + [w])):
+            kept.append(w)
+    words = kept
     while len(' '.join(words)) > MAXCH and len(words) > 3:
         words.pop()
     while len(words) > 3 and words[-1].lower() in TAIL_STOP:
@@ -125,12 +141,50 @@ def rule_punch(headline):
     return ' / '.join(('*' if i == acc and len(lines) > 1 else '') + l.upper() for i, l in enumerate(lines))
 
 
+STOPW = {'a', 'an', 'the', 'of', 'to', 'for', 'in', 'on', 'at', 'by', 'and', 'or', 'with', 'as', 'is', 'are', 'its', 'from', 'over', 'into'}
+
+
+def word_root(w):
+    """'distress' and 'stress' share a root; 'tags'/'tagged' -> 'tag'; 'AI' -> 'ai' (mirrors reelbrief.js)."""
+    r = re.sub(r'[^a-z0-9]', '', str(w).lower())
+    m = re.match(r'^(dis|un|re|non|over|under|mis)(.{4,})$', r)
+    if m:
+        r = m.group(2)
+    for suf in ('ings', 'ing', 'ed', 'es', 's', 'ly', 'er'):
+        if len(r) - len(suf) >= 3 and r.endswith(suf):
+            r = r[:-len(suf)]; break
+    return re.sub(r'(.)\1$', r'\1', r)
+
+
+def same_root(a, b):
+    if a == b:
+        return True
+    s, l = sorted((a, b), key=len)
+    if len(s) < 4 or not (l.startswith(s) or l.endswith(s)):
+        return False
+    return len(s) >= 5 or len(l) - len(s) <= 3
+
+
+def repeated_roots(p):
+    seen, rep = [], []
+    for w in re.split(r'[\s\-]+', re.sub(r'[*/]', ' ', str(p or ''))):
+        raw = re.sub(r'[^a-z0-9]', '', w.lower())
+        if not raw or raw in STOPW:
+            continue
+        r = word_root(w)
+        if any(same_root(x, r) for x in seen):
+            rep.append(w)
+        else:
+            seen.append(r)
+    return rep
+
+
 def valid_punch(p):
     if not isinstance(p, str):
         return False
     lines = [l.strip() for l in p.split('/') if l.strip()]
     return 2 <= len(lines) <= 4 and sum(l.startswith('*') for l in lines) == 1 and all(len(l.lstrip('*')) <= 22 for l in lines) \
-        and not re.search(r'\bdaily\b|edited', p, re.I)
+        and not re.search(r'\bdaily\b|edited', p, re.I) and not repeated_roots(p)
 
 
 # ---------- quality gate ----------
@@ -161,15 +215,42 @@ def gate(img):
 
 
 def lift(img, target=42.0):
-    """Generated low-key scenes often come back nearly black; gamma-lift the subject region to a readable exposure
-    (highlights are preserved, so red charts / glowing helixes stay punchy)."""
-    g = np.asarray(img.convert('L')).astype(np.float32)
-    m = float(g[: int(g.shape[0] * .6)].mean())
-    if m >= target or m <= 1:
-        return img
-    gamma = max(.45, min(1.0, math.log(target / 255) / math.log(m / 255)))
+    """Generated low-key scenes often come back nearly black. First stretch dim highlights up (levels), then gamma-lift
+    the subject region (top 60%) to a readable exposure; highlights are preserved, so red charts / helixes stay punchy."""
     a = np.asarray(img.convert('RGB')).astype(np.float32) / 255
-    return Image.fromarray((np.power(a, gamma) * 255).clip(0, 255).astype('uint8'))
+    top = a[: int(a.shape[0] * .6)].mean(2)
+    m = float(top.mean()) * 255
+    if m >= target or m <= .5:
+        return img
+    hi = float(np.percentile(a.max(2), 99.5))
+    if hi < .85:  # dim highlights: stretch so the brightest light reaches ~90%
+        a = (a * (.9 / max(hi, .05))).clip(0, 1)
+        m = float(a[: int(a.shape[0] * .6)].mean()) * 255
+    if m < target:
+        gamma = max(.35, min(1.0, math.log(target / 255) / math.log(max(m, .5) / 255)))
+        a = np.power(a, gamma)
+    return Image.fromarray((a * 255).clip(0, 255).astype('uint8'))
+
+
+def flat_fraction(img):
+    """Share of mid-tone blocks with no texture (UI screenshots, phone mockups, graphic cards). Real photos ~0-0.3."""
+    g = np.asarray(img.convert('L').resize((512, max(16, int(512 * img.height / img.width))))).astype(np.float32)
+    g = g[: int(g.shape[0] * .8)]
+    C = 16; n = f = 0
+    for i in range(0, g.shape[0] - C + 1, C):
+        for j in range(0, 512 - C + 1, C):
+            b = g[i:i + C, j:j + C]; n += 1
+            f += b.std() < 2.5 and b.mean() > 35
+    return f / max(n, 1)
+
+
+def photo_gate(img):
+    """Stricter gate for non-generated photos (story og:image, Commons, feed crop): also rejects screenshots/mockups."""
+    reason = gate(img)
+    if reason:
+        return reason
+    ff = flat_fraction(img)
+    return 'flat / screenshot-like (%.2f flat)' % ff if ff > .4 else ''
 
 
 # ---------- 9:16 fitting ----------
@@ -239,13 +320,13 @@ def generated(post, timeout=120):
     return img.crop((0, 0, img.width, int(img.height * .95))), ''  # drop the free-tier watermark strip at the bottom
 
 
-def cloudflare(post, timeout=90):
+def cloudflare(post, timeout=90, bright=False):
     """Cloudflare Workers AI flux-1-schnell. Only runs when CF_ACCOUNT_ID + CF_API_TOKEN are set (not set today).
     On the Workers Free plan the 10k neurons/day allowance (~170 images) simply errors when used up: it cannot bill."""
     acct, tok = os.environ.get('CF_ACCOUNT_ID'), os.environ.get('CF_API_TOKEN')
     if not acct or not tok:
         return None, 'no CF_ACCOUNT_ID/CF_API_TOKEN'
-    body = json.dumps({'prompt': scene_prompt(post)[:2000], 'steps': 8}).encode()
+    body = json.dumps({'prompt': scene_prompt(post, bright)[:2000], 'steps': 8}).encode()
     req = urllib.request.Request(f'https://api.cloudflare.com/client/v4/accounts/{acct}/ai/run/@cf/black-forest-labs/flux-1-schnell',
                                  data=body, headers={'Authorization': 'Bearer ' + tok, 'Content-Type': 'application/json'})
     try:
@@ -305,13 +386,27 @@ def commons(queries, used=()):
 
 
 def pick_scene(post, photo=None, feed=None, log=None):
-    """Returns (9:16 PIL image, credit, source). Raises SystemExit if nothing real is usable (never a text-only Reel)."""
+    """Returns (9:16 PIL image, credit, source). Raises SystemExit if nothing real is usable (never a text-only Reel).
+    Cloudflare scenes are lifted before the gate; a rejected one is retried once with a brighter prompt variant before
+    any fallback. Real photos (story/commons/feed) must also pass photo_gate (no screenshots/mockups)."""
     log = log if log is not None else []
-    order = [s.strip() for s in os.environ.get('AIFEED_SCENE_ORDER', 'cloudflare,generated,story,commons,feed').split(',') if s.strip()]
+    order = [s.strip() for s in os.environ.get('AIFEED_SCENE_ORDER', 'cloudflare,story,commons,generated,feed').split(',') if s.strip()]
+    dbg = os.environ.get('AIFEED_SCENE_DEBUG')
+    attempts = []
     for src in order:
-        credit = ''
         if src == 'cloudflare':
-            img, why = cloudflare(post)
+            attempts += [('cloudflare', False), ('cloudflare-bright', True)]
+        else:
+            attempts.append((src, None))
+    cf_ok = False
+    for src, bright in attempts:
+        credit = ''
+        if src.startswith('cloudflare'):
+            if bright and cf_ok is None:  # no keys / not configured: no point retrying
+                continue
+            img, why = cloudflare(post, bright=bright)
+            if why.startswith('no CF_'):
+                cf_ok = None
             img = lift(img) if img is not None else img
         elif src == 'generated':
             img, why = generated(post)
@@ -324,10 +419,10 @@ def pick_scene(post, photo=None, feed=None, log=None):
             img = feed.convert('RGB').crop((0, 130, feed.width, int(feed.height * .53))); why = ''
         else:
             continue
-        dbg = os.environ.get('AIFEED_SCENE_DEBUG')
         if dbg and img is not None:
             os.makedirs(dbg, exist_ok=True); img.save(os.path.join(dbg, f"{post.get('slug', 'scene')}_{src}.jpg"), quality=90)
-        reason = why or gate(img)
+        check = photo_gate if src in ('story', 'commons', 'feed') else gate
+        reason = why or check(img)
         if not reason:
             fitted = fit_portrait(img)
             reason = gate(fitted)
