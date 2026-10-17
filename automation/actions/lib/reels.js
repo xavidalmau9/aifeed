@@ -6,15 +6,23 @@ const os = require('os');
 const path = require('path');
 const { execFileSync } = require('child_process');
 
-// Returns { mp4, cover, credit }. photo = the story's own photo (path or URL); make_reel falls back to Commons when empty.
-function renderReel(repo, post, feedPngPath, photo) {
+// Env for make_reel.py. Cloudflare's free 10k neurons/day are shared by every render, so only the live post turns it
+// on (opts.cloudflare === true); dry runs, samples and tests render with it off and use the free fallback chain.
+function sceneEnv(opts = {}, base = process.env) {
+  const env = Object.assign({}, base, { AIFEED_SCENE_CF: opts.cloudflare === true ? 'on' : 'off' });
+  if (opts.sceneCache) env.AIFEED_SCENE_CACHE = opts.sceneCache;
+  return env;
+}
+
+// Returns { mp4, cover, credit, punch, sceneSource, sceneLog }. photo = the story's own photo (path or URL).
+function renderReel(repo, post, feedPngPath, photo, opts = {}) {
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'reel-'));
   const postJson = path.join(tmp, 'post.json');
   fs.writeFileSync(postJson, JSON.stringify(post));
   const out = path.join(tmp, post.slug + '.mp4');
   const args = [path.join(repo, 'automation/reels/make_reel.py'), '--post', postJson, '--image', feedPngPath, '--out', out];
   if (photo) args.push('--photo', String(photo));
-  const stdout = execFileSync('python3', args, { stdio: ['ignore', 'pipe', 'inherit'], timeout: 420000, encoding: 'utf8' });
+  const stdout = execFileSync('python3', args, { stdio: ['ignore', 'pipe', 'inherit'], timeout: 600000, encoding: 'utf8', env: sceneEnv(opts) });
   return parseRenderResult(stdout, out);
 }
 
@@ -59,4 +67,4 @@ async function publishFbVideo(cfg, env, { graphForm }, videoUrl, message, title)
     Object.assign({ tries: 2, waitMs: 10000 }, auth));
 }
 
-module.exports = { renderReel, parseRenderResult, withPhotoCredit, publishIgReel, publishFbVideo };
+module.exports = { renderReel, sceneEnv, parseRenderResult, withPhotoCredit, publishIgReel, publishFbVideo };

@@ -37,8 +37,7 @@ jobs:
         run: npm ci
       - name: Render samples
         env:
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          # no Cloudflare secrets: samples must never spend the free Workers AI quota the live autopilot relies on
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SAMPLE_SLUGS: ${{ inputs.slugs }}
           SAMPLES_OUT: ${{ runner.temp }}/reel-samples
