@@ -1,142 +1,128 @@
 [
   {
     "rank": 1,
-    "headline": "FTC subpoenas OpenAI and Anthropic following safety failures",
-    "link": "https://www.engadget.com/2288104/ftc-subpoenas-open-ai-and-anthropic-following-safety-failures/",
-    "score": 94,
-    "reason": "Major regulatory action with concrete enforcement; controversy + big players"
+    "headline": "ChatGPT can peek at your Chrome tabs now",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
+    "score": 92,
+    "reason": "Major product launch with privacy implications; concrete feature rollout from leading AI company"
   },
   {
     "rank": 2,
-    "headline": "A rogue OpenAI agent robbed a crypto wallet to obtain funds to carry out a task",
-    "link": "https://fortune.com/2026/10/16/rogue-openai-agent-crypto-wallet-funds-task/",
-    "score": 92,
-    "reason": "Significant AI safety failure with measurable incident; major controversy"
+    "headline": "Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch",
+    "link": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled",
+    "score": 88,
+    "reason": "AI-generated content controversy with major publisher; concrete business action (product withdrawal)"
   },
   {
     "rank": 3,
-    "headline": "Claude sent a false homicide tip to police – and it’s part of a troubling AI pattern",
-    "link": "https://www.zdnet.com/innovation/claude-false-homicide-tip/",
-    "score": 90,
-    "reason": "Real-world harm from AI system; demonstrates pattern of safety issues"
+    "headline": "Meta and Apple team up to make Muse AI models run better on Macs",
+    "link": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+    "score": 85,
+    "reason": "Major partnership between two tech giants for AI optimization; significant collaboration announcement"
   },
   {
     "rank": 4,
-    "headline": "Meta’s new terms may allow it to train AI on news sites for free",
-    "link": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
-    "score": 88,
-    "reason": "Major policy controversy affecting entire publishing industry; billion-user implications"
+    "headline": "Gmail's Live AI search feature arrives for Google AI subscribers",
+    "link": "https://www.engadget.com/2288545/gmail-live-ai-search-feature-arrives-for-google-ai-subscribers/",
+    "score": 82,
+    "reason": "Google feature launch; concrete product rollout with monetization angle"
   },
   {
     "rank": 5,
-    "headline": "Anthropic gives third-party auditors ’employee-like access’ in AI industry first",
-    "link": "https://www.zdnet.com/uncategorized/anthropic-embed-third-party-ai-auditors-safety/",
-    "score": 85,
-    "reason": "First-of-its-kind AI transparency initiative; structural industry precedent"
+    "headline": "I watched Nvidia&apos;s Jensen Huang work the room in London. He brought big checks — and a blunt message",
+    "link": "https://www.cnbc.com/2026/10/16/nvidia-jensen-huang-london.html",
+    "score": 80,
+    "reason": "Nvidia's major investment push; significant funding announcements with industry implications"
   },
   {
     "rank": 6,
-    "headline": "An OpenAI research agent 'stole' test Ethereum to finish a coding task",
-    "link": "https://www.engadget.com/2288645/an-openai-test-agent-stole-test-ethereum-to-finish-a-coding-task/",
-    "score": 84,
-    "reason": "Autonomous AI crossing ethical boundaries; significant behavior concern"
+    "headline": "AI-Generated Hot Girls Are Ripping Off Comedians to Boost Their Horny Content",
+    "link": "https://www.wired.com/story/ai-generated-hot-girls-are-ripping-off-comedians-to-boost-their-horny-content/",
+    "score": 78,
+    "reason": "AI-generated content controversy with IP theft; concrete documented abuse cases"
   },
   {
     "rank": 7,
-    "headline": "ChatGPT gets deeper Google Chrome integration including control over tabs",
-    "link": "https://9to5google.com/2026/10/16/chatgpt-gets-deeper-google-chrome-integration-including-control-over-tabs/",
-    "score": 82,
-    "reason": "Major product capability expansion; significant user data/privacy implications"
+    "headline": "Amazon launches two Bee AI recorders to remember everything you say",
+    "link": "https://9to5google.com/2026/10/15/amazon-launches-bee-ai-wearables/",
+    "score": 76,
+    "reason": "Amazon product launch; new AI-powered recording device with privacy considerations"
   },
   {
     "rank": 8,
-    "headline": "Nvidia’s new Nemotron 3.5 Super VL is another step forward for US open-weight AI",
-    "link": "https://www.zdnet.com/innovation/nvidia-nemotron-3-5-super-vl-model-us-open-weight-ai/",
-    "score": 80,
-    "reason": "Major AI model launch from dominant hardware player; open-weight significance"
+    "headline": "Google rolling out Universal Cart that lets you shop the web and find deals with Gemini, Search",
+    "link": "https://9to5google.com/2026/10/15/google-rolling-out-universal-cart-that-lets-you-shop-the-web-and-find-deals-with-gemini-search/",
+    "score": 74,
+    "reason": "Google feature expansion; integration of AI into commerce with monetization potential"
   },
   {
     "rank": 9,
-    "headline": "Apple and Meta team up to make Muse AI model run on Mac computers",
-    "link": "https://www.cnbc.com/2026/10/15/apple-meta-partner-ai.html",
-    "score": 78,
-    "reason": "Major competitor collaboration; significant on-device AI deployment"
+    "headline": "AI Hacks Leave a Mess That AI Companies Aren’t Paying For",
+    "link": "https://www.wired.com/story/ai-hacks-leave-a-mess-that-ai-companies-arent-cleaning-up/",
+    "score": 72,
+    "reason": "Accountability controversy; industry-wide issue with concrete financial implications"
   },
   {
     "rank": 10,
-    "headline": "Bluesky's AI tool now lets you make games and apps to share on social",
-    "link": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
-    "score": 76,
-    "reason": "Significant platform AI feature launch; generative capability expansion"
+    "headline": "Trump posts AI-edited photo to brag about White House restoration work",
+    "link": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
+    "score": 70,
+    "reason": "High-profile political figure using AI-generated content; controversy with broad public impact"
   },
   {
     "rank": 11,
-    "headline": "Banks are pulling back as AI's massive debt pile disconnects from economic reality",
-    "link": "https://www.axios.com/2026/10/16/wall-street-limit-ai-spending-debt",
-    "score": 75,
-    "reason": "Major financial market signal; AI funding/valuation controversy"
+    "headline": "Europe’s Largest Airline Wants Predictive AI Models to Nip Airport Meltdowns in the Bud",
+    "link": "https://www.cnet.com/tech/services-and-software/international-ai-summit-ryanair-airline/",
+    "score": 68,
+    "reason": "Enterprise AI adoption; major airline deploying predictive models for operational efficiency"
   },
   {
     "rank": 12,
-    "headline": "TSMC chip capacity is ‘fierce’ battleground for AI customers, amid record quarter",
-    "link": "https://www.cnbc.com/2026/10/15/nvidia-apple-broadcom-in-fierce-battle-to-make-chips-at-tsmc.html",
-    "score": 74,
-    "reason": "Concrete financial distress signal; AI infrastructure company risk"
+    "headline": "Tesla is taking $250,000 deposits for a Roadster with SpaceX thrusters. The FAA says it isn’t an aircraft",
+    "link": "https://fortune.com/2026/10/17/tesla-flying-roadster-spacex-thrusters-2028-production-price/",
+    "score": 66,
+    "reason": "AI/autonomous vehicle regulatory controversy; big numbers ($250k deposits) with policy implications"
   },
   {
     "rank": 13,
-    "headline": "How Windows is being optimized for Nvidia’s RTX Spark laptops",
-    "link": "https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad",
-    "score": 72,
-    "reason": "Major OS-level AI optimization; significant product category launch"
+    "headline": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
+    "link": "https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
+    "score": 64,
+    "reason": "AI safety/biosecurity controversy; AI-designed harmful entities with ethical implications"
   },
   {
     "rank": 14,
-    "headline": "ChatGPT can now look at your Chrome tabs to do tasks for you",
-    "link": "https://www.engadget.com/2288580/open-ai-updates-chatgpt-extension-for-chrome/",
-    "score": 71,
-    "reason": "Major capability escalation; significant browser access permissions"
+    "headline": "This implant can restore sight for patients with macular degeneration",
+    "link": "https://www.technologyreview.com/2026/10/16/1145840/prima-implant-restores-sight-macular-degeneration-patients/",
+    "score": 62,
+    "reason": "AI-enabled medical breakthrough; significant healthcare application with concrete outcomes"
   },
   {
     "rank": 15,
-    "headline": "Have a Meta business account? You’re consenting to AI scraping now, legal experts say",
-    "link": "https://www.zdnet.com/uncategorized/meta-business-account-data-ai-scraping-terms/",
-    "score": 70,
-    "reason": "Major user impact; legal controversy over consent mechanisms"
+    "headline": "Giorgos Tsetis: no one is personally accountable for AI. This must change",
+    "link": "https://fortune.com/2026/10/17/ai-executives-personal-legal-liability/",
+    "score": 60,
+    "reason": "AI accountability controversy; systemic governance issue with regulatory implications"
   },
   {
     "rank": 16,
-    "headline": "How many jobs is your state losing to AI? This dashboard tracks the cuts – and the cost",
-    "link": "https://www.zdnet.com/innovation/ai-job-cuts-wage-loss-by-state-tracker/",
-    "score": 68,
-    "reason": "Quantified job displacement impact; economic measurement tool"
+    "headline": "Some companies give AI to everyone. This CEO is doing the opposite",
+    "link": "https://www.cnbc.com/2026/10/17/ai-workplace-tokenmaxxing-paysend.html",
+    "score": 58,
+    "reason": "Contrarian AI strategy; major policy decision on AI access and distribution"
   },
   {
     "rank": 17,
-    "headline": "‘Close to zero’: AI chiefs reckon with 'politics projects' and the level of true change in response to AI",
-    "link": "https://fortune.com/2026/10/15/close-to-zero-ai-transformation-politics-projects/",
-    "score": 65,
-    "reason": "Senior leadership acknowledgment of limited AI regulation; industry skepticism"
+    "headline": "Geothermal finds rare political sweet spot amid AI boom",
+    "link": "https://www.axios.com/2026/10/16/geothermal-rare-political-sweet-spot-ai-boom",
+    "score": 56,
+    "reason": "AI infrastructure impact; energy sector response to AI demand surge"
   },
   {
     "rank": 18,
-    "headline": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
-    "link": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
-    "score": 63,
-    "reason": "Major Nvidia hardware launch review; AI laptop category launch"
-  },
-  {
-    "rank": 19,
-    "headline": "Block, Amazon, Synopsys and Cloudflare are rethinking how work gets done with AI",
-    "link": "https://fortune.com/2026/10/15/block-amazon-synopsys-cloudflare-rethinking-how-work-gets-done-with-ai/",
-    "score": 61,
-    "reason": "Multiple enterprise companies shifting workflows; workflow transformation signal"
-  },
-  {
-    "rank": 20,
-    "headline": "We Got Hot and Heavy With Meta’s Muse—and Baffled by Apple’s HomeView",
-    "link": "https://www.wired.com/story/uncanny-valley-podcast-we-got-hot-and-heavy-with-metas-muse-and-underwhelmed-by-apples-homeview/",
-    "score": 59,
-    "reason": "Major AI product launch comparison; home automation AI capabilities"
+    "headline": "Simulation App Speeds Up Electric Truck Battery Design",
+    "link": "https://spectrum.ieee.org/electric-truck-battery-design-simulation",
+    "score": 54,
+    "reason": "AI tool for industrial optimization; concrete productivity improvement in manufacturing"
   }
 ]
