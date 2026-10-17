@@ -1,5 +1,5 @@
 """Offline tests for scenes.py (no network): python3 -m unittest test_scenes"""
-import os, unittest
+import io, json, os, shutil, tempfile, unittest
 import numpy as np
 from PIL import Image
 import scenes
@@ -180,7 +180,8 @@ class Cascade(unittest.TestCase):
         try:
             with self.assertRaises(SystemExit) as e:
                 scenes.pick_scene({'headline': 'x'}, '/tmp/_shot.png', None, [])
-            self.assertIn('cloudflare-bright', str(e.exception))
+            self.assertIn('story: ', str(e.exception))
+            self.assertNotIn('cloudflare-bright', str(e.exception))  # no bright retry after an HTTP error
         finally:
             scenes.cloudflare = real; del os.environ['AIFEED_SCENE_ORDER']
 
@@ -191,6 +192,197 @@ class Cascade(unittest.TestCase):
                 scenes.pick_scene({'headline': 'x'}, None, None, [])
         finally:
             del os.environ['AIFEED_SCENE_ORDER']
+
+
+def skin_photo(w=1200, h=800):
+    """A textured photo with a large skin-tone area (a posed person/portrait stand-in)."""
+    a = np.asarray(textured(w, h)).astype(np.float32)
+    a[150:650, 400:800] = (205, 150, 120)
+    a += np.random.default_rng(3).normal(0, 4, a.shape)
+    return Image.fromarray(a.clip(0, 255).astype('uint8'))
+
+
+class Env:
+    """Set/clear env vars for one test."""
+    def __init__(self, **kv): self.kv, self.old = kv, {}
+    def __enter__(self):
+        for k, v in self.kv.items():
+            self.old[k] = os.environ.get(k)
+            if v is None: os.environ.pop(k, None)
+            else: os.environ[k] = v
+    def __exit__(self, *a):
+        for k, v in self.old.items():
+            if v is None: os.environ.pop(k, None)
+            else: os.environ[k] = v
+
+
+class Patch:
+    def __init__(self, **fns): self.fns, self.old = fns, {}
+    def __enter__(self):
+        for k, f in self.fns.items(): self.old[k] = getattr(scenes, k); setattr(scenes, k, f)
+    def __exit__(self, *a):
+        for k, f in self.old.items(): setattr(scenes, k, f)
+
+
+class CloudflareQuota(unittest.TestCase):
+    def test_cloudflare_is_off_unless_the_flag_is_on(self):
+        with Env(AIFEED_SCENE_CF=None, CF_ACCOUNT_ID='x', CF_API_TOKEN='y'):
+            img, why = scenes.cloudflare({'headline': 'x'})
+            self.assertIsNone(img); self.assertIn('off', why)
+        for v in ('off', '0', '', 'false'):
+            with Env(AIFEED_SCENE_CF=v):
+                self.assertFalse(scenes.cf_enabled())
+        with Env(AIFEED_SCENE_CF='on', CF_ACCOUNT_ID=None, CF_API_TOKEN=None):
+            self.assertTrue(scenes.cf_enabled())
+            self.assertIn('no CF_', scenes.cloudflare({'headline': 'x'})[1])
+
+    def test_on_429_no_bright_retry_and_the_second_generator_is_next(self):
+        calls = []
+        def cf(post, timeout=90, bright=False):
+            calls.append(('cf', bright)); return None, 'HTTP 429 daily free allocation used up'
+        def ov(post, **k):
+            calls.append(('ovh',)); return textured(1024, 1024, mean=80), ''
+        with Patch(cloudflare=cf, ovh=ov), Env(AIFEED_SCENE_ORDER=None, AIFEED_SCENE_CACHE=None, AIFEED_SCENE_CF='on'):
+            log = []
+            img, credit, src = scenes.pick_scene({'headline': 'x', 'slug': 's'}, None, None, log)
+        self.assertEqual(src, 'ovh'); self.assertEqual(calls, [('cf', False), ('ovh',)])
+        self.assertTrue(log[0].startswith('cloudflare: HTTP 429'))
+
+    def test_default_order_generators_before_photos_library_last(self):
+        o = scenes.DEFAULT_ORDER.split(',')
+        self.assertLess(o.index('cloudflare'), o.index('ovh')); self.assertLess(o.index('ovh'), o.index('generated'))
+        self.assertLess(o.index('generated'), o.index('story')); self.assertEqual(o[-1], 'library')
+        self.assertLess(o.index('openverse'), o.index('commons')); self.assertNotIn('feed', o)
+
+    def test_cache_is_used_only_when_set(self):
+        d = tempfile.mkdtemp()
+        try:
+            textured(1024, 1024).save(os.path.join(d, 'my-slug_cloudflare.jpg'))
+            boom = lambda *a, **k: (_ for _ in ()).throw(AssertionError('must not generate'))
+            with Patch(cloudflare=boom, ovh=boom, generated=boom), Env(AIFEED_SCENE_CACHE=d, AIFEED_SCENE_ORDER=None):
+                img, credit, src = scenes.pick_scene({'headline': 'x', 'slug': 'my-slug'}, None, None, [])
+            self.assertEqual(src, 'cache')
+            with Env(AIFEED_SCENE_CACHE=None, AIFEED_SCENE_ORDER='cache,library'):
+                img, credit, src = scenes.pick_scene({'headline': 'x', 'slug': 'my-slug'}, None, None, [])
+            self.assertEqual(src, 'library')
+        finally:
+            shutil.rmtree(d)
+
+
+class SecondGenerator(unittest.TestCase):
+    def test_ovh_retries_dropped_connections_then_returns_the_image(self):
+        buf = io.BytesIO(); textured(1024, 1024).save(buf, 'PNG')
+        n = {'i': 0}
+        class R:
+            def read(self): return buf.getvalue()
+        def urlopen(req, timeout=0):
+            n['i'] += 1
+            if n['i'] < 3: raise ConnectionResetError('Remote end closed connection without response')
+            body = json.loads(req.data)
+            assert 'text' in body['negative_prompt'] and 'photorealistic' in body['prompt']
+            return R()
+        real = scenes.urllib.request.urlopen; scenes.urllib.request.urlopen = urlopen
+        try:
+            img, why = scenes.ovh({'headline': 'Why AI isn\u2019t ready to tackle our genomes'}, wait=0)
+        finally:
+            scenes.urllib.request.urlopen = real
+        self.assertEqual(why, ''); self.assertEqual(img.size, (1024, 1024)); self.assertEqual(n['i'], 3)
+
+    def test_ovh_can_be_disabled(self):
+        with Env(AIFEED_SCENE_OVH='off'):
+            self.assertEqual(scenes.ovh({'headline': 'x'})[1], 'disabled')
+
+    def test_sdxl_prompt_is_the_theme_scene_plus_short_style(self):
+        p = scenes.sdxl_prompt({'headline': 'FBI arrests OpenAI employee'})
+        self.assertIn('lone man silhouette', p); self.assertIn('photorealistic', p); self.assertNotIn('no text', p)
+        for k in ('text', 'letters', 'watermark', 'logo', 'face', 'portrait'):
+            self.assertIn(k, scenes.SDXL_NEG)
+
+
+class PosedPhotos(unittest.TestCase):
+    def test_posed_titles_are_rejected(self):
+        for t in ('File:Secretary_Perdue_Visits_APHIS_20170505.jpg', 'Minister meets CEO at summit', 'Official portrait of the CEO',
+                  'Handshake at the signing ceremony', 'Governor tours the new data center', 'Founder speaks at keynote'):
+            self.assertTrue(scenes.posed_reason(None, t), t)
+        for t in ('Data center server racks.jpg', 'DNA gel electrophoresis under UV light', 'Stock exchange screens at night'):
+            self.assertEqual(scenes.posed_reason(None, t), '', t)
+
+    def test_story_photo_with_a_posed_file_name_is_rejected(self):
+        d = tempfile.mkdtemp()
+        try:
+            f = os.path.join(d, 'Secretary_of_State_Peter_Kyle_visits_Anthropic_in_San_Francisco._%2854098999333%29.jpg')
+            textured(1400, 900).save(f)
+            with Env(AIFEED_SCENE_ORDER='story,library'):
+                log = []
+                img, credit, src = scenes.pick_scene({'headline': 'Anthropic gives third-party auditors access', 'slug': 'a'}, f, None, log)
+            self.assertEqual(src, 'library'); self.assertIn('posed/people photo', log[0])
+        finally:
+            shutil.rmtree(d)
+
+    def test_skin_heuristic_rejects_people_but_not_scenes(self):
+        self.assertGreater(scenes.skin_fraction(skin_photo()), .02)
+        self.assertLess(scenes.skin_fraction(textured(1200, 800)), .02)
+        self.assertIn('people in frame', scenes.photo_gate(skin_photo()))
+        self.assertEqual(scenes.photo_gate(textured(1200, 800)), '')
+
+    def test_posed_story_photo_falls_through_to_the_library(self):
+        skin_photo().save('/tmp/_story_photo.jpg')
+        with Env(AIFEED_SCENE_ORDER='story,library'):
+            log = []
+            img, credit, src = scenes.pick_scene({'headline': 'FBI arrests OpenAI employee', 'slug': 'x'}, '/tmp/_story_photo.jpg', None, log)
+        self.assertEqual(src, 'library'); self.assertIn('people in frame', log[0]); self.assertEqual(credit, '')
+
+    def test_openverse_skips_posed_results_and_builds_a_credit(self):
+        good = io.BytesIO(); textured(1400, 900).save(good, 'JPEG')
+        api = {'results': [
+            {'title': 'Secretary visits the lab', 'url': 'https://x/posed.jpg', 'width': 2000, 'license': 'by', 'license_version': '2.0', 'creator': 'A'},
+            {'title': 'server room', 'url': 'https://x/ok.jpg', 'width': 2000, 'license': 'by-sa', 'license_version': '2.0',
+             'creator': 'Jane Doe', 'foreign_landing_url': 'https://flickr.com/p/1', 'tags': [{'name': 'datacenter'}]}]}
+        fetched = []
+        class R:
+            def __init__(self, b): self.b = b
+            def read(self): return self.b
+        def urlopen(req, timeout=0):
+            u = req.full_url
+            if 'api.openverse.org' in u:
+                return io.BytesIO(json.dumps(api).encode())
+            fetched.append(u); return R(good.getvalue())
+        real = scenes.urllib.request.urlopen; scenes.urllib.request.urlopen = urlopen
+        try:
+            img, credit = scenes.openverse(['server room'])
+        finally:
+            scenes.urllib.request.urlopen = real
+        self.assertEqual(fetched, ['https://x/ok.jpg'])
+        self.assertEqual(credit, 'Photo: Jane Doe / CC BY-SA 2.0 via Openverse (https://flickr.com/p/1)')
+
+
+class Library(unittest.TestCase):
+    def test_every_theme_and_default_has_a_bundled_scene_that_passes_the_gate(self):
+        man = json.load(open(os.path.join(scenes.LIB_DIR, 'library.json')))
+        keys = {e['key'] for e in man['scenes']}
+        self.assertEqual(len(scenes.THEME_KEYS), len(scenes.THEMES))
+        for k in scenes.THEME_KEYS + ['default']:
+            self.assertIn(k, keys)
+        self.assertGreaterEqual(len(man['scenes']), 12)
+        for e in man['scenes']:
+            img = Image.open(os.path.join(scenes.LIB_DIR, e['file'])).convert('RGB')
+            self.assertEqual(scenes.gate(img), '', e['file'])
+            self.assertEqual(scenes.gate(scenes.fit_portrait(img)), '', e['file'])
+            self.assertTrue(e.get('prompt'), e['file'])
+
+    def test_library_matches_the_story_theme(self):
+        self.assertEqual(scenes.theme_key({'headline': 'Why AI isn\u2019t ready to tackle our genomes'}), 'genome')
+        self.assertEqual(scenes.theme_key({'headline': 'Weather is nice'}), 'default')
+        img, why = scenes.library({'headline': 'CoreWeave credit default swaps hit distress levels', 'slug': 'a'})
+        self.assertEqual(why, ''); self.assertIsNotNone(img)
+
+    def test_whole_chain_offline_ends_in_the_library(self):
+        off = lambda *a, **k: (None, 'HTTP 503')
+        with Patch(cloudflare=off, ovh=off, generated=off, openverse=lambda q: (None, ''), commons=lambda q: (None, '')), \
+                Env(AIFEED_SCENE_ORDER=None, AIFEED_SCENE_CACHE=None, AIFEED_SCENE_CF='off'):
+            log = []
+            img, credit, src = scenes.pick_scene({'headline': 'FBI arrests OpenAI employee', 'slug': 'x'}, None, None, log)
+        self.assertEqual(src, 'library'); self.assertEqual(img.size, (1080, 1920)); self.assertEqual(credit, '')
 
 
 if __name__ == '__main__':

@@ -1,13 +1,19 @@
-"""Story-themed scene picker for AIFeed Reels (free sources only, no keys).
+"""Story-themed scene picker for AIFeed Reels (free sources only, never anything that can bill).
 
-Cascade (first one that passes the quality gate wins):
-  0. cloudflare - Workers AI flux-1-schnell, only if CF_ACCOUNT_ID + CF_API_TOKEN secrets exist (free 10k neurons/day);
-                  a dark scene is lifted before the gate, and a rejected one is retried once with a brighter prompt
-  1. story      - the story's own photo (og:image picked by the pipeline), only if it is a real photo (no screenshots)
-  2. commons    - Wikimedia Commons search on THEME keywords from the story (never a category-generic query)
-  3. generated  - Pollinations' free keyless endpoint (low quality, last resort; disable with AIFEED_SCENE_GEN=off)
-  4. feed       - photo area of the feed graphic, only if it is a real photo
-Quality gate: real photographic detail (is_photo), not too dark, not too busy, big enough.
+Cascade (first one that passes its quality gate wins):
+  0. cache       - a raw scene already rendered for this slug (AIFEED_SCENE_CACHE dir; samples/tests only)
+  1. cloudflare  - Workers AI flux-1-schnell; ONLY when AIFEED_SCENE_CF=on (the live autopilot sets it; samples, dry runs
+                   and manual renders never do, so they cannot drain the free 10k neurons/day). A dark scene is lifted; a
+                   scene that came back but failed the gate is retried once with a brighter prompt (not on 429/errors).
+  2. ovh         - OVHcloud AI Endpoints SDXL, anonymous (no account, no key, no card; 2 requests/min per IP) with a
+                   negative prompt against text/people. Disable with AIFEED_SCENE_OVH=off.
+  3. generated   - Pollinations' keyless endpoint (unreliable: 402 when busy; disable with AIFEED_SCENE_GEN=off)
+  4. story       - the story's own photo, only if it is a real photo, not a screenshot, and not posed people
+  5. openverse   - Openverse scene search on the AI's scene keywords + theme keywords (CC0/PDM/CC BY/CC BY-SA)
+  6. commons     - Wikimedia Commons scene search on the same keywords
+  7. library     - a bundled pre-made dramatic scene for the story's theme (automation/reels/library), always available
+Photo sources (story/openverse/commons/feed) also reject posed people: titles like 'visits', 'meets', 'Secretary',
+'portrait', 'handshake' and a cheap skin-area heuristic.
 Every accepted scene is fitted to 9:16 with the subject kept in the upper half (above the headline band).
 """
 import hashlib, io, json, math, os, re, sys, urllib.error, urllib.parse, urllib.request
@@ -15,6 +21,8 @@ import numpy as np
 from PIL import Image, ImageFilter
 
 UA = {'User-Agent': 'aifeed-reels/1.0 (https://aifeed.run)'}
+HERE = os.path.dirname(os.path.abspath(__file__))
+LIB_DIR = os.path.join(HERE, 'library')
 FREE_LICENSES = re.compile(r'^(CC0|Public domain|CC BY(-SA)? [0-9.]+|No restrictions)$', re.I)
 STYLE = ('photorealistic cinematic editorial news photograph, dramatic low-key lighting, deep shadows, rim light, '
          'shallow depth of field, the main subject clearly lit and readable, centered horizontally in the upper half of the frame, '
@@ -68,10 +76,16 @@ THEMES = [
     (r'funding|raises|valuation|ipo|investor|billion|acquisition|acquire|deal',
      'a lone silhouette at the floor-to-ceiling window of a dark glass skyscraper at night overlooking a glowing city',
      ['skyscraper boardroom night', 'stock exchange']),
+    (r'health|medical|hospital|doctor|patient|clinic|\bfda\b|cancer|diagnos',
+     'a dark hospital corridor at night, a single gurney silhouette under a hard cold overhead light, teal and red glow, long shadows, no people',
+     ['hospital corridor night', 'operating room lights']),
     (r'model|llm|chatbot|gpt|gemini|claude|grok|openai|anthropic|agent',
      'a lone silhouette seen from behind facing a towering wall of flowing neural network light, glowing threads and nodes, dark room',
      ['neural network visualization', 'computer screen code dark']),
 ]
+# library keys, parallel to THEMES (+ 'default'); automation/reels/library/library.json maps each key to bundled scenes
+THEME_KEYS = ['markets', 'genome', 'datacenter', 'chip', 'legal', 'policy', 'robot', 'music', 'device', 'security',
+              'funding', 'medical', 'ai-model']
 DEFAULT_THEME = ('a silhouette at a dark window overlooking glowing city lights at night',
                  ['computer screen code dark'])
 
@@ -82,6 +96,14 @@ def theme_for(post):
         if re.search(rx, text):
             return subject, queries
     return DEFAULT_THEME
+
+
+def theme_key(post):
+    text = ' '.join(str(post.get(k) or '') for k in ('headline', 'summary', 'title')).lower()
+    for (rx, _, _), key in zip(THEMES, THEME_KEYS):
+        if re.search(rx, text):
+            return key
+    return 'default'
 
 
 def scene_prompt(post, bright=False):
@@ -250,13 +272,38 @@ def flat_fraction(img):
     return f / max(n, 1)
 
 
+POSED = re.compile(r'\b(visit(s|ed|ing)?|meets?|meeting|secretary|minister|president|governor|senator|congress(man|woman)|mayor|'
+                   r'ambassador|chairman|chairwoman|ceo|founder|portrait|headshot|head shot|handshake|shak(es|ing) hands|'
+                   r'pose[sd]?|posing|ceremony|signing|delegation|press conference|speaks?|speaking|speech|interview|award|'
+                   r'summit|official photo|greets?|tours?|toured|welcomes?|delivers? remarks|keynote|panel)\b', re.I)
+
+
+def skin_fraction(img):
+    """Share of solid skin-tone area (YCbCr rule, 3x3 eroded). Posed press photos / portraits ~0.02-0.17; scenes ~0-0.01."""
+    im = img.convert('RGB'); im.thumbnail((256, 256))
+    y, cb, cr = [np.asarray(c).astype(np.float32) for c in im.convert('YCbCr').split()]
+    r, g, b = [np.asarray(c).astype(np.float32) for c in im.split()]
+    m = (cb >= 80) & (cb <= 125) & (cr >= 138) & (cr <= 170) & (y > 70) & (r > g) & (r > b) & ((r - g) > 12)
+    m = np.asarray(Image.fromarray((m * 255).astype('uint8')).filter(ImageFilter.MinFilter(3))) > 0
+    return float(m.mean())
+
+
+def posed_reason(img, title=''):
+    """'' if the photo is not posed people. title = file name / title / tags of the photo when known."""
+    m = POSED.search(re.sub(r'[_\-]+', ' ', title or ''))
+    if m:
+        return f'posed/people photo ("{m.group(0)}" in title)'
+    sf = skin_fraction(img) if img is not None else 0
+    return 'people in frame (skin %.3f)' % sf if sf > .02 else ''
+
+
 def photo_gate(img):
     """Stricter gate for non-generated photos (story og:image, Commons, feed crop): also rejects screenshots/mockups."""
     reason = gate(img)
     if reason:
         return reason
     ff = flat_fraction(img)
-    return 'flat / screenshot-like (%.2f flat)' % ff if ff > .4 else ''
+    return 'flat / screenshot-like (%.2f flat)' % ff if ff > .4 else posed_reason(img)
 
 
 # ---------- 9:16 fitting ----------
@@ -309,7 +356,7 @@ def fit_portrait(img, W=1080, H=1920, top_frac=.03):
 
 
 # ---------- sources ----------
-def generated(post, timeout=120):
+def generated(post, timeout=60):
     if os.environ.get('AIFEED_SCENE_GEN', 'on').lower() in ('off', '0', 'false'):
         return None, 'disabled'
     prompt = scene_prompt(post)
@@ -327,9 +374,16 @@ def generated(post, timeout=120):
     return img.crop((0, 0, img.width, int(img.height * .95))), ''  # drop the free-tier watermark strip at the bottom
 
 
+def cf_enabled():
+    """Cloudflare's free daily allowance is shared by everything; only the live autopilot turns it on."""
+    return os.environ.get('AIFEED_SCENE_CF', 'off').strip().lower() in ('on', '1', 'true', 'yes')
+
+
 def cloudflare(post, timeout=90, bright=False):
-    """Cloudflare Workers AI flux-1-schnell. Only runs when CF_ACCOUNT_ID + CF_API_TOKEN are set (not set today).
+    """Cloudflare Workers AI flux-1-schnell. Only runs when AIFEED_SCENE_CF=on and CF_ACCOUNT_ID + CF_API_TOKEN are set.
     On the Workers Free plan the 10k neurons/day allowance (~170 images) simply errors when used up: it cannot bill."""
+    if not cf_enabled():
+        return None, 'off (AIFEED_SCENE_CF is not on)'
     acct, tok = os.environ.get('CF_ACCOUNT_ID'), os.environ.get('CF_API_TOKEN')
     if not acct or not tok:
         return None, 'no CF_ACCOUNT_ID/CF_API_TOKEN'
@@ -346,6 +400,102 @@ def cloudflare(post, timeout=90, bright=False):
         return img.convert('RGB'), ''
     except Exception as e:
         return None, str(e)[:120]
+
+
+SDXL_STYLE = ('photorealistic cinematic editorial news photograph, dramatic low-key lighting, rim light, deep shadows, '
+              'subject in the upper half of the frame, dark lower third, 35mm film grain, highly detailed')
+SDXL_NEG = ('text, letters, words, numbers, digits, writing, signage, sign, label, caption, logo, watermark, signature, '
+            'face, portrait, close-up of a person, crowd, cartoon, illustration, drawing, graphic, 3d render, lowres, blurry, deformed, '
+            'frame, border, white border, polaroid, vignette frame, bright overexposed')
+OVH_URL = 'https://stable-diffusion-xl.endpoints.kepler.ai.cloud.ovh.net/api/text2image'
+
+
+def sdxl_prompt(post):
+    subject = scene_prompt(post).split(', photorealistic')[0]
+    return subject + ', ' + SDXL_STYLE
+
+
+def ovh(post, timeout=60, tries=3, wait=31):
+    """OVHcloud AI Endpoints SDXL, anonymous: no account, no key, no card (2 requests/min per IP; 429 when exceeded).
+    The anonymous endpoint sometimes drops the connection, so try up to 3 times (waiting out the per-minute limit)."""
+    if os.environ.get('AIFEED_SCENE_OVH', 'on').lower() in ('off', '0', 'false'):
+        return None, 'disabled'
+    import time
+    body = json.dumps({'prompt': sdxl_prompt(post), 'negative_prompt': SDXL_NEG}).encode()
+    why = ''
+    for i in range(tries):
+        req = urllib.request.Request(OVH_URL, data=body, headers=dict(UA, **{'Content-Type': 'application/json', 'accept': 'application/octet-stream'}))
+        try:
+            img = Image.open(io.BytesIO(urllib.request.urlopen(req, timeout=timeout).read())); img.load()
+            return img.convert('RGB'), ''
+        except urllib.error.HTTPError as e:
+            why = f'HTTP {e.code} ' + e.read()[:120].decode('utf8', 'ignore')
+            if e.code not in (429, 500, 502, 503, 504):
+                break
+        except Exception as e:
+            why = str(e)[:120]
+        if i < tries - 1:
+            time.sleep(wait if '429' in why else min(5, wait))
+    return None, why
+
+
+def cached(post):
+    """Samples/tests: reuse a raw scene already rendered for this slug instead of generating (never touches a quota)."""
+    d = os.environ.get('AIFEED_SCENE_CACHE')
+    if not d or not os.path.isdir(d):
+        return None, 'no cache'
+    slug = post.get('slug') or ''
+    names = sorted(f for f in os.listdir(d) if f.startswith(slug + '_') and f.lower().endswith(('.jpg', '.jpeg', '.png')))
+    pref = [f for f in names if 'cloudflare' in f or 'ovh' in f] or [f for f in names if 'library' not in f]
+    if not pref:
+        return None, 'no cached scene for ' + slug
+    img = Image.open(os.path.join(d, pref[0])); img.load()
+    return img.convert('RGB'), ''
+
+
+def library(post):
+    """Bundled pre-made dramatic scenes (automation/reels/library), chosen by the story's theme; always available."""
+    try:
+        man = json.load(open(os.path.join(LIB_DIR, 'library.json')))
+    except Exception as e:
+        return None, 'no library (%s)' % str(e)[:60]
+    key = theme_key(post)
+    files = [e['file'] for e in man.get('scenes', []) if e.get('key') == key] or \
+            [e['file'] for e in man.get('scenes', []) if e.get('key') == 'default']
+    if not files:
+        return None, 'no library scene for ' + key
+    f = files[int(hashlib.sha1((post.get('slug') or key).encode()).hexdigest()[:6], 16) % len(files)]
+    img = Image.open(os.path.join(LIB_DIR, f)); img.load()
+    return img.convert('RGB'), ''
+
+
+OV_LICENSES = {'cc0': 'CC0', 'pdm': 'Public domain', 'by': 'CC BY', 'by-sa': 'CC BY-SA'}
+
+
+def openverse(queries, used=()):
+    """Openverse (anonymous API) scene search; only CC0 / public domain / CC BY / CC BY-SA, no posed people."""
+    for q in queries:
+        u = ('https://api.openverse.org/v1/images/?page_size=12&license=cc0,pdm,by,by-sa&mature=false&q=' + urllib.parse.quote(q))
+        try:
+            res = json.load(urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=20)).get('results', [])
+        except Exception as e:
+            print('openverse search failed:', str(e)[:80], file=sys.stderr); continue
+        for r in res:
+            title = ' '.join([r.get('title') or '', ' '.join(t.get('name', '') for t in (r.get('tags') or [])[:12]), r.get('url') or ''])
+            if (r.get('width') or 0) < 1000 or r.get('url') in used or POSED.search(re.sub(r'[_\-]+', ' ', title)):
+                continue
+            try:
+                img = Image.open(io.BytesIO(urllib.request.urlopen(urllib.request.Request(r['url'], headers=UA), timeout=30).read()))
+                img.load(); img = img.convert('RGB')
+            except Exception:
+                continue
+            if photo_gate(img):
+                continue
+            lic = OV_LICENSES.get(r.get('license', ''), '')
+            lic = (lic + ' ' + (r.get('license_version') or '')).strip() if lic.startswith('CC BY') else lic
+            who = clean(r.get('creator') or '') or 'Openverse'
+            return img, f"Photo: {who[:60]} / {lic} via Openverse ({r.get('foreign_landing_url', '')})"
+    return None, ''
 
 
 def story_photo(photo):
@@ -385,50 +535,65 @@ def commons(queries, used=()):
                 img.load()
             except Exception:
                 continue
-            if gate(img.convert('RGB')):
+            desc = clean(m.get('ImageDescription', {}).get('value', ''))[:300]
+            if POSED.search(re.sub(r'[_\-]+', ' ', pg['title'] + ' ' + desc)) or photo_gate(img.convert('RGB')):
                 continue
             artist = clean(m.get('Artist', {}).get('value', '')) or 'Wikimedia Commons'
             return img.convert('RGB'), f"Photo: {artist[:60]} / {lic} via Wikimedia Commons ({ii.get('descriptionurl', '')})"
     return None, ''
 
 
+DEFAULT_ORDER = 'cache,cloudflare,ovh,generated,story,openverse,commons,library'
+GENERATED = ('cloudflare', 'cloudflare-bright', 'ovh', 'generated', 'cache')
+
+
 def pick_scene(post, photo=None, feed=None, log=None):
-    """Returns (9:16 PIL image, credit, source). Raises SystemExit if nothing real is usable (never a text-only Reel).
-    Cloudflare scenes are lifted before the gate; a rejected one is retried once with a brighter prompt variant before
-    any fallback. Real photos (story/commons/feed) must also pass photo_gate (no screenshots/mockups)."""
+    """Returns (9:16 PIL image, credit, source). The bundled library makes this always succeed; raises SystemExit only
+    if even the library is missing (never a text-only Reel)."""
     log = log if log is not None else []
-    order = [s.strip() for s in os.environ.get('AIFEED_SCENE_ORDER', 'cloudflare,story,commons,generated,feed').split(',') if s.strip()]
+    order = [s.strip() for s in os.environ.get('AIFEED_SCENE_ORDER', DEFAULT_ORDER).split(',') if s.strip()]
     dbg = os.environ.get('AIFEED_SCENE_DEBUG')
     attempts = []
     for src in order:
-        if src == 'cloudflare':
-            attempts += [('cloudflare', False), ('cloudflare-bright', True)]
-        else:
-            attempts.append((src, None))
-    cf_ok = False
+        attempts += [('cloudflare', False), ('cloudflare-bright', True)] if src == 'cloudflare' else [(src, None)]
+    cf_image = False  # the bright retry only makes sense when Cloudflare returned an image that failed the gate
     for src, bright in attempts:
         credit = ''
-        if src.startswith('cloudflare'):
-            if bright and cf_ok is None:  # no keys / not configured: no point retrying
+        if src == 'cache':
+            if not os.environ.get('AIFEED_SCENE_CACHE'):
+                continue
+            img, why = cached(post)
+        elif src.startswith('cloudflare'):
+            if bright and not cf_image:
                 continue
             img, why = cloudflare(post, bright=bright)
-            if why.startswith('no CF_'):
-                cf_ok = None
+            cf_image = img is not None
+            img = lift(img) if img is not None else img
+        elif src == 'ovh':
+            img, why = ovh(post)
             img = lift(img) if img is not None else img
         elif src == 'generated':
             img, why = generated(post)
             img = lift(img) if img is not None else img
         elif src == 'story':
-            img, why = story_photo(photo or post.get('photoUrl'))
+            ref = photo or post.get('photoUrl') or ''
+            img, why = story_photo(ref)
+            if img is not None and not why:  # e.g. 'Secretary_of_State_..._visits_Anthropic.jpg' picked as the story photo
+                why = posed_reason(None, urllib.parse.unquote(os.path.basename(urllib.parse.urlparse(str(ref)).path)) + ' ' +
+                                   str(post.get('photoTitle') or ''))
+        elif src == 'openverse':
+            img, credit = openverse(scene_keywords(post)); why = '' if img is not None else 'no scene match'
         elif src == 'commons':
-            img, credit = commons(scene_keywords(post)); why = '' if img is not None else 'no theme match'
+            img, credit = commons(scene_keywords(post)); why = '' if img is not None else 'no scene match'
+        elif src == 'library':
+            img, why = library(post)
         elif src == 'feed' and feed is not None:
             img = feed.convert('RGB').crop((0, 130, feed.width, int(feed.height * .53))); why = ''
         else:
             continue
         if dbg and img is not None:
             os.makedirs(dbg, exist_ok=True); img.save(os.path.join(dbg, f"{post.get('slug', 'scene')}_{src}.jpg"), quality=90)
-        check = photo_gate if src in ('story', 'commons', 'feed') else gate
+        check = gate if src in GENERATED or src == 'library' else photo_gate
         reason = why or check(img)
         if not reason:
             fitted = fit_portrait(img)

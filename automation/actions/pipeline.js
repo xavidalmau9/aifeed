@@ -410,7 +410,7 @@ async function main() {
           const fp = path.join(env.OUT, published.pngName);
           const brief = await reelBrief(published.post, prompt => claudeMessage(env.ANTHROPIC_API_KEY, { model: cfg.anthropicModel, prompt, maxTokens: 400, temperature: 0.4, tries: 2 }));
           console.log('Reel brief: ' + JSON.stringify(brief));
-          const rr = renderReel(env.REPO, Object.assign({}, published.post, brief), fp, published.post.photoUrl || qc.story.ogImage || '');
+          const rr = renderReel(env.REPO, Object.assign({}, published.post, brief), fp, published.post.photoUrl || qc.story.ogImage || '', { cloudflare: false }); // dry run: never spend the Cloudflare quota
           console.log('Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch);
           fs.copyFileSync(rr.mp4, path.join(env.OUT, published.slug + '.mp4'));
           if (rr.cover) fs.copyFileSync(rr.cover, path.join(env.OUT, published.slug + '_cover.jpg'));
@@ -485,7 +485,7 @@ async function main() {
         // Punch headline + story-themed scene prompt (one short call on the existing model; make_reel falls back to rules).
         const brief = await reelBrief(published.post, prompt => claudeMessage(env.ANTHROPIC_API_KEY, { model: cfg.anthropicModel, prompt, maxTokens: 400, temperature: 0.4, tries: 2 }));
         console.log('Reel brief: ' + JSON.stringify(brief));
-        const rr = renderReel(env.REPO, Object.assign({}, published.post, brief), tmpPng, published.post.photoUrl || qc.story.ogImage || '');
+        const rr = renderReel(env.REPO, Object.assign({}, published.post, brief), tmpPng, published.post.photoUrl || qc.story.ogImage || '', { cloudflare: true }); // live post: the only Cloudflare user
         console.log('Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch);
         const rel = 'videos/reels/' + published.slug + '.mp4';
         const coverRel = rr.cover ? 'videos/reels/' + published.slug + '_cover.jpg' : '';

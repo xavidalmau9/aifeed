@@ -1,0 +1,95 @@
+{
+ "about": "Bundled last-resort Reel scenes, one or more per theme key in scenes.THEME_KEYS (+ default). All AI-generated, no text, no real people. SDXL ones were made with the free anonymous OVHcloud AI Endpoints SDXL model; the two \"approved\" ones are the scenes of the 5pm CoreWeave and 8am genome Reels Javier signed off on.",
+ "scenes": [
+  {
+   "key": "markets",
+   "file": "approved-markets.jpg",
+   "generator": "GenerateImage (approved Reel scene)",
+   "prompt": "approved 5pm CoreWeave scene (GenerateImage), lifted"
+  },
+  {
+   "key": "genome",
+   "file": "approved-genome.jpg",
+   "generator": "GenerateImage (approved Reel scene)",
+   "prompt": "approved 8am genome scene (GenerateImage)"
+  },
+  {
+   "key": "genome",
+   "file": "genome.jpg",
+   "generator": "OVHcloud AI Endpoints SDXL (anonymous, free)",
+   "prompt": "a colossal glowing cyan DNA double helix hologram filling the whole upper half of the frame from edge to edge, twisting diagonally, violently glitching and fragmenting into hundreds of red and cyan shards and particles, in a vast pitch-black space, a tiny lone silhouette seen from behind far below it looking up"
+  },
+  {
+   "key": "datacenter",
+   "file": "datacenter.jpg",
+   "generator": "OVHcloud AI Endpoints SDXL (anonymous, free)",
+   "prompt": "a long dark data center corridor of server racks with blue status lights vanishing into the distance, a lone silhouette walking away in hard backlight"
+  },
+  {
+   "key": "chip",
+   "file": "chip.jpg",
+   "generator": "OVHcloud AI Endpoints SDXL (anonymous, free)",
+   "prompt": "a dramatic macro shot of a glowing processor chip on a circuit board, blank unmarked surface, red and blue light trails, filling the upper half of the frame"
+  },
+  {
+   "key": "legal",
+   "file": "legal.jpg",
+   "generator": "OVHcloud AI Endpoints SDXL (anonymous, free)",
+   "prompt": "a lone man silhouette seen from behind in a pitch-dark empty interrogation room, one hard white spotlight cone from above, red and blue police lights flashing through window blinds, deep black shadows, long shadow on a bare concrete floor"
+  },
+  {
+   "key": "policy",
+   "file": "policy.jpg",
+   "generator": "OVHcloud AI Endpoints SDXL (anonymous, free)",
+   "prompt": "the US Capitol dome at night under dramatic storm clouds and lightning, red and blue light, the dome in the upper half of the frame"
+  },
+  {
+   "key": "robot",
+   "file": "robot.jpg",
+   "generator": "OVHcloud AI Endpoints SDXL (anonymous, free)",
+   "prompt": "a humanoid robot head and shoulders in a dark factory, hard rim light, looking at its own raised hand, in the upper half of the frame"
+  },
+  {
+   "key": "music",
+   "file": "music.jpg",
+   "generator": "OVHcloud AI Endpoints SDXL (anonymous, free)",
+   "prompt": "a large vintage chrome studio microphone, brightly lit by a single warm golden spotlight, large in the upper half of the frame, a glowing golden audio waveform floating in the dark air beside it, empty dark background, no equipment, no people"
+  },
+  {
+   "key": "device",
+   "file": "device.jpg",
+   "generator": "OVHcloud AI Endpoints SDXL (anonymous, free)",
+   "prompt": "a human hand silhouette reaching toward a floating sphere of glowing blue light in a pitch dark room, light trails swirling around the fingers, full bleed photograph"
+  },
+  {
+   "key": "security",
+   "file": "security.jpg",
+   "generator": "OVHcloud AI Endpoints SDXL (anonymous, free)",
+   "prompt": "a lone silhouette seen from behind in a dark server room bathed in pulsing red alert light, rows of racks with red status lights, haze and light beams, gritty textured photograph"
+  },
+  {
+   "key": "funding",
+   "file": "funding.jpg",
+   "generator": "OVHcloud AI Endpoints SDXL (anonymous, free)",
+   "prompt": "a lone silhouette at the floor-to-ceiling window of a dark glass skyscraper at night overlooking a glowing city"
+  },
+  {
+   "key": "medical",
+   "file": "medical.jpg",
+   "generator": "OVHcloud AI Endpoints SDXL (anonymous, free)",
+   "prompt": "a dark empty hospital corridor at night, a single gurney under a hard cold overhead light, teal and red glow, long shadows, no people, full bleed photograph"
+  },
+  {
+   "key": "ai-model",
+   "file": "ai-model.jpg",
+   "generator": "OVHcloud AI Endpoints SDXL (anonymous, free)",
+   "prompt": "a lone human silhouette seen from behind facing a colossal glowing wall of flowing neural network light, thousands of luminous cyan and violet threads and nodes, vast dark hall"
+  },
+  {
+   "key": "default",
+   "file": "default.jpg",
+   "generator": "OVHcloud AI Endpoints SDXL (anonymous, free)",
+   "prompt": "a silhouette at a dark window overlooking glowing city lights at night"
+  }
+ ]
+}
