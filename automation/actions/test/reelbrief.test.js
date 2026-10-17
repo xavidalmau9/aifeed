@@ -82,7 +82,10 @@ test('LLM failure never blocks the Reel (empty brief)', async () => {
   assert.deepEqual(await reelBrief(post, async () => { throw new Error('HTTP 529'); }), {});
 });
 
-test('python scene/punch rules (make_reel scenes.py) pass their offline unit tests', { timeout: 60000 }, () => {
+// The autopilot "test" job has no numpy/Pillow (they are installed later, in the Reels step), so skip there instead of
+// failing the job (a failed test job would skip posting). Locally and in reels-samples.yml these run.
+const hasPyDeps = (() => { try { execFileSync('python3', ['-c', 'import numpy, PIL'], { stdio: 'ignore' }); return true; } catch (e) { return false; } })();
+test('python scene/punch rules (make_reel scenes.py) pass their offline unit tests', { timeout: 60000, skip: hasPyDeps ? false : 'python3 numpy/Pillow not installed' }, () => {
   const out = execFileSync('python3', ['-m', 'unittest', '-q', 'test_scenes'], { cwd: path.join(__dirname, '../../reels'), encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
   assert.ok(true, out);
 });
