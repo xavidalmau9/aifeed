@@ -1,72 +1,37 @@
 [
   {
     "rank": 1,
-    "headline": "Have a Meta business account? You’re consenting to AI scraping now, legal experts say",
-    "link": "https://www.zdnet.com/uncategorized/meta-business-account-data-ai-scraping-terms/",
-    "score": 94,
-    "reason": "Meta scraping controversy with legal implications; concrete policy change affecting millions"
+    "headline": "Websites are closing their doors to AI agents",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+    "score": 88,
+    "reason": "Major industry shift with concrete business impact; multiple companies taking coordinated action against AI scraping"
   },
   {
     "rank": 2,
-    "headline": "OpenAI is building a humanoid robot, but the body isn't the real challenge",
-    "link": "https://www.engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge/",
-    "score": 92,
-    "reason": "Major product launch from OpenAI; significant expansion beyond language models"
+    "headline": "Meta removes language that may have allowed it to scrape news sites",
+    "link": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+    "score": 85,
+    "reason": "High-stakes controversy involving major tech company and news industry; significant policy reversal"
   },
   {
     "rank": 3,
-    "headline": "OnlyFans Creators Are Pissed That Meta Lets Muse Talk Dirty",
-    "link": "https://www.wired.com/story/onlyfans-creators-are-pissed-that-meta-lets-muse-talk-dirty/",
-    "score": 88,
-    "reason": "Direct controversy between platforms; creator backlash over AI tool capabilities"
+    "headline": "A woman was arrested in Philly for blocking a delivery robot",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+    "score": 72,
+    "reason": "First known arrest related to autonomous delivery; establishes legal precedent for AI robot conflicts"
   },
   {
     "rank": 4,
-    "headline": "Simulation App Speeds Up Electric Truck Battery Design",
-    "link": "https://spectrum.ieee.org/electric-truck-battery-design-simulation",
-    "score": 82,
-    "reason": "Concrete AI application with measurable business impact; practical innovation"
+    "headline": "Zelensky says Musk-owned satellite system still restricted in Ukraine",
+    "link": "https://www.axios.com/2026/10/17/zelensky-starlink-elon-musk-trump",
+    "score": 68,
+    "reason": "Geopolitical controversy involving Starlink; demonstrates real-world AI infrastructure restrictions in war"
   },
   {
     "rank": 5,
-    "headline": "Google restricts every free AI Pro trial from Pixel & more compared to paid subscribers",
-    "link": "https://9to5google.com/2026/10/16/google-restricts-every-free-ai-pro-trial-from-pixel-more-compared-to-paid-subscribers/",
-    "score": 80,
-    "reason": "Google AI monetization policy change; affects product access for millions of users"
-  },
-  {
-    "rank": 6,
-    "headline": "Some companies give AI to everyone. This CEO is doing the opposite",
-    "link": "https://www.cnbc.com/2026/10/17/ai-workplace-tokenmaxxing-paysend.html",
-    "score": 76,
-    "reason": "Contrarian business strategy on AI distribution; notable strategic divergence"
-  },
-  {
-    "rank": 7,
-    "headline": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
-    "link": "https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
-    "score": 74,
-    "reason": "Biosecurity controversy; AI used for potentially dangerous biological applications"
-  },
-  {
-    "rank": 8,
-    "headline": "Data Centers Have a New PR Plan: Your Kid’s Field Trip",
-    "link": "https://www.wired.com/story/data-center-industry-is-trying-to-woo-kids/",
-    "score": 70,
-    "reason": "AI infrastructure PR strategy; shows industry response to public concerns"
-  },
-  {
-    "rank": 9,
-    "headline": "Maybe Chatbots Shouldn’t Get to Say ‘I’ or ‘Me’",
-    "link": "https://www.wired.com/story/maybe-chatbots-shouldnt-get-to-say-i-or-me/",
-    "score": 68,
-    "reason": "Policy debate on AI anthropomorphization; regulatory/ethical discussion"
-  },
-  {
-    "rank": 10,
-    "headline": "Exclusive: Musk tells Isaacson \"AI and robots\" will need to fix deficit",
-    "link": "https://www.axios.com/2026/10/17/elon-musk-doge-walter-isaacson-podcast",
-    "score": 66,
-    "reason": "Musk's AI ambitions for macro impact; exclusive statement on major topic"
+    "headline": "Semiconductor market to remain solid ‘at least through next year,’ South Korea finance minister says",
+    "link": "https://www.cnbc.com/2026/10/17/south-korea-semiconductor-outlook-lee-hyoung-il.html",
+    "score": 65,
+    "reason": "Big market forecast from authoritative source; AI infrastructure dependent on semiconductor supply"
   }
 ]
