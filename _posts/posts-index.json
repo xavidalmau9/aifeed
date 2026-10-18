@@ -1,5 +1,25 @@
 [
   {
+    "id": "openai-is-building-humanoid-robot-but-20261018",
+    "slug": "openai-is-building-humanoid-robot-but",
+    "headline": "OpenAI is building a humanoid robot, but the body isn't the real challenge",
+    "summary": "OpenAI is building a humanoid robot, targeting a 2027 demo with focus on AI cognition over hardware design.",
+    "body": "<p>OpenAI plans to build a humanoid robot, with a 2027 demo target and focus on AI cognition.</p>\n<p>OpenAI is developing a humanoid robot, with CEO Sam Altman confirming the company will build one. On the Sources podcast, Altman explained the humanoid form is logical because the world is designed for people — doors, keyboards, and tools all match human proportions, making a similar body shape advantageous for operating in human spaces.</p>\n<p>However, Altman downplayed the importance of hardware design itself, emphasizing instead that developing the robot's 'brain' is the real engineering challenge. A capable humanoid must understand what its sensors see, interpret instructions, decide how to execute them, coordinate its body, and self-correct when reality intervenes — like estimating grip force when picking up a mug.</p>\n<p>OpenAI's timeline is measured: Altman told Fortune the company expects a cool demo in 2027 but doesn't anticipate robots walking streets for several years longer. The company hasn't disclosed what the demo will showcase, what the robot will look like, or when outsiders will encounter one.</p>\n<p>To solve these challenges, OpenAI is recruiting heavily for robotics roles including motion control, state estimation, actuator control, whole-robot behavior, and machine-learning infrastructure for training physical AI systems. The company is also developing custom electromechanical actuators including motors, transmissions, sensing, and thermal systems.</p>\n<p>OpenAI's robotics objectives span near and long term: short-term goals target general-purpose robots assisting skilled workers in infrastructure building, while long-term ambitions aim at personal robots handling diverse household tasks. The company currently lists 27 robotics openings.</p>\n<p>OpenAI is building a humanoid robot with a planned 2027 demo, viewing AI cognition as the primary engineering challenge.</p>",
+    "category": "Hardware",
+    "imageUrl": "https://aifeed.run/images/aifeed_openai-is-building-humanoid-robot-but_20261018_am.png",
+    "image": "images/aifeed_openai-is-building-humanoid-robot-but_20261018_am.png",
+    "sourceUrl": "https://www.engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge/",
+    "publishedAt": "2026-10-18T12:09:36.839Z",
+    "hashtags": [
+      "OpenAI",
+      "Robotics",
+      "Humanoid",
+      "AI",
+      "Demo2027"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "anthropic-gives-thirdparty-auditors-employeelike-access-20261017",
     "slug": "anthropic-gives-thirdparty-auditors-employeelike-access",
     "headline": "Anthropic gives third-party auditors ’employee-like access’ in AI industry first",

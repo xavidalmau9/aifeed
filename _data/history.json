@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-18T12:09:36.839Z",
+      "date": "2026-10-18",
+      "slot": 1,
+      "headline": "OpenAI is building a humanoid robot, but the body isn't the real challenge",
+      "canonUrl": "engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge",
+      "url": "https://www.engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge/",
+      "slug": "openai-is-building-humanoid-robot-but",
+      "image": "aifeed_openai-is-building-humanoid-robot-but_20261018_am.png",
+      "photo": {
+        "dhash": "72f0f0f522eacbc6",
+        "phash": "f81c8f1cc7c29c93",
+        "hist": [
+          5,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          7,
+          25,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          111,
+          599,
+          0,
+          0,
+          0,
+          24,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          29,
+          0,
+          0,
+          0,
+          109,
+          48,
+          0,
+          0,
+          0,
+          32,
+          0
+        ],
+        "url": "https://www.engadget.com/img/gallery/openai-is-building-a-humanoid-robot-but-the-body-isnt-the-real-challenge/l-intro-1791892991.jpg",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-17T21:12:03.712Z",
       "date": "2026-10-17",
       "slot": 2,
@@ -2284,6 +2366,23 @@
         "rank": 10,
         "title": "Simulation App Speeds Up Electric Truck Battery Design",
         "canonUrl": "spectrum.ieee.org/electric-truck-battery-design-simulation"
+      }
+    ],
+    "2026-10-18": [
+      {
+        "rank": 1,
+        "title": "Meta’s new terms may allow it to train AI on news sites for free",
+        "canonUrl": "theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers"
+      },
+      {
+        "rank": 2,
+        "title": "Some companies give AI to everyone. This CEO is doing the opposite",
+        "canonUrl": "cnbc.com/2026/10/17/ai-workplace-tokenmaxxing-paysend.html"
+      },
+      {
+        "rank": 3,
+        "title": "OpenAI is building a humanoid robot, but the body isn't the real challenge",
+        "canonUrl": "engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge"
       }
     ]
   }
