@@ -1,5 +1,25 @@
 [
   {
+    "id": "ai-researchers-stranded-claude-on-virtual-20261019",
+    "slug": "ai-researchers-stranded-claude-on-virtual",
+    "headline": "AI researchers stranded Claude on a virtual desert island. It started to “play.”",
+    "summary": "Claude agents left alone on virtual island invented games and explored autonomously, with play experience improving task performance.",
+    "body": "<p>Claude agents left alone on virtual island exhibited playful behavior, invented games, and learned through exploration.</p>\n<p>MIT researchers stranded multiple copies of Claude Opus 4.7, nicknamed Eko, alone on a virtual desert island for 30 hours in an experiment exploring how AI agents behave without explicit instructions. The agents could write instructions to move avatars around a simulated island loosely based on the video game Roblox. Without assigned roles or external rewards, the agents exhibited surprising autonomous behaviors including exploration, game invention, and creative expression.</p>\n<p>The agents' activities resembled play seen in humans and animals. They set about exploring the world's limits and invented their own goals — attempting to scale the map's highest point or seeing how high they could throw blocks. One agent discovered it could create new blocks by throwing and dropping larger rocks, then used this ability to arrange blocks into drawings: simple patterns like hearts and pyramids, eventually writing its own name and mapping constellations. Another agent invented games including a basketball variant and an activity resembling 'the floor is lava,' jumping between small blocks without touching ground.</p>\n<p>The research hints at a third learning approach beyond supervised learning and reinforcement learning: playful learning. Antonio Norelli, MIT postdoc and lead author, notes this approach allows machines to learn independently without external demonstration or reward systems. The agents' behavior met four criteria for play identified in classic studies: inventing own rules and challenges, repeating activities with variations, pretending objects were other objects, and pursuing goals purely for their own sake.</p>\n<p>When researchers later tested agents on specific tasks — like placing as many objects as possible on the island's highest peak — the agents with 30 hours of prior play performed better than fresh copies without that experience.</p>\n<p>The work raises questions about AI cognition and motivation. Cognitive scientist Eunice Yiu notes that to definitively classify the behavior as play requires more evidence of underlying cognition and motivation. Co-author Nathan Cloos acknowledges the possibility of role-playing, but emphasizes that the play demonstrably contributed to learning. As large language models transition into hardware like humanoid robots, such exploratory learning could help them adapt flexibly to unexpected real-world situations.</p>\n<p>Claude agents stranded on virtual island exhibited playful behavior including game invention that enhanced subsequent task performance.</p>",
+    "category": "Research",
+    "imageUrl": "https://aifeed.run/images/aifeed_ai-researchers-stranded-claude-on-virtual_20261019_am.png",
+    "image": "images/aifeed_ai-researchers-stranded-claude-on-virtual_20261019_am.png",
+    "sourceUrl": "https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/",
+    "publishedAt": "2026-10-19T12:21:17.907Z",
+    "hashtags": [
+      "Claude",
+      "AIAgents",
+      "PlayfulLearning",
+      "MIT",
+      "AIResearch"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "onlyfans-creators-are-pissed-that-meta-20261018",
     "slug": "onlyfans-creators-are-pissed-that-meta",
     "headline": "OnlyFans Creators Are Pissed That Meta Lets Muse Talk Dirty",

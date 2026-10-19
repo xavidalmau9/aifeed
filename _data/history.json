@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-19T12:21:17.907Z",
+      "date": "2026-10-19",
+      "slot": 1,
+      "headline": "AI researchers stranded Claude on a virtual desert island. It started to “play.”",
+      "canonUrl": "technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play",
+      "url": "https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/",
+      "slug": "ai-researchers-stranded-claude-on-virtual",
+      "image": "aifeed_ai-researchers-stranded-claude-on-virtual_20261019_am.png",
+      "photo": {
+        "dhash": "47474fee6f737f5f",
+        "phash": "d0036e278d9d437d",
+        "hist": [
+          49,
+          3,
+          0,
+          0,
+          52,
+          41,
+          1,
+          0,
+          9,
+          6,
+          10,
+          46,
+          0,
+          0,
+          0,
+          21,
+          0,
+          0,
+          0,
+          0,
+          26,
+          7,
+          3,
+          0,
+          67,
+          43,
+          36,
+          111,
+          0,
+          2,
+          11,
+          98,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          39,
+          3,
+          1,
+          21,
+          45,
+          21,
+          13,
+          154,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          1,
+          0,
+          58
+        ],
+        "url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/261016_AgentsonIsland.jpg?resize=1200,600",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-18T21:13:08.976Z",
       "date": "2026-10-18",
       "slot": 2,
@@ -2465,6 +2547,58 @@
         "rank": 3,
         "title": "OpenAI is building a humanoid robot, but the body isn't the real challenge",
         "canonUrl": "engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge"
+      }
+    ],
+    "2026-10-19": [
+      {
+        "rank": 1,
+        "title": "Disney Asked Character.AI to Go Bankrupt for a Get-Out-of-Lawsuits Card",
+        "canonUrl": "wired.com/story/disney-asked-characterai-to-go-bankrupt-for-a-get-out-of-lawsuits-card"
+      },
+      {
+        "rank": 2,
+        "title": "Anthropic commits 5% of shares to new public benefit fund that could address AI job disruption",
+        "canonUrl": "cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html"
+      },
+      {
+        "rank": 3,
+        "title": "Women may be at greater risk of AI job losses. Telephone switch operators and PCs show why.",
+        "canonUrl": "cnbc.com/2026/10/19/ai-job-losses-women-automation-risk.html"
+      },
+      {
+        "rank": 4,
+        "title": "Google Gemini 4 agents just beat Minecraft with no human intervention",
+        "canonUrl": "engadget.com/2289944/google-gemini-4-agents-just-beat-minecraft-with-no-human-intervention"
+      },
+      {
+        "rank": 5,
+        "title": "AI researchers stranded Claude on a virtual desert island. It started to “play.”",
+        "canonUrl": "technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play"
+      },
+      {
+        "rank": 6,
+        "title": "OpenAI bugging suspect WhatsApp'ed Saudi royal days before arrest, feds reveal",
+        "canonUrl": "cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html"
+      },
+      {
+        "rank": 7,
+        "title": "Inside the quest to combat Arctic fires and save the planet’s frozen carbon",
+        "canonUrl": "technologyreview.com/2026/10/19/1146832/inside-the-quest-to-combat-arctic-fires-and-save-the-planets-frozen-carbon"
+      },
+      {
+        "rank": 8,
+        "title": "A woman was arrested in Philly for blocking a delivery robot",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot"
+      },
+      {
+        "rank": 9,
+        "title": "Data Centers Have a New PR Plan: Your Kid’s Field Trip",
+        "canonUrl": "wired.com/story/data-center-industry-is-trying-to-woo-kids"
+      },
+      {
+        "rank": 10,
+        "title": "How to use Google's SynthID AI detection website",
+        "canonUrl": "engadget.com/2286802/how-to-use-google-ai-detection-website-synthid"
       }
     ]
   }
