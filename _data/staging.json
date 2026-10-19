@@ -1,86 +1,107 @@
 [
   {
     "rank": 1,
-    "headline": "Meta’s new terms may allow it to train AI on news sites for free",
-    "link": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
+    "headline": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
     "score": 94,
-    "reason": "Major company policy change with direct financial impact on news industry; involves AI training at scale"
+    "reason": "Major security breach using AI agents against Fortune 500 companies; demonstrates real-world AI threat with concrete impact"
   },
   {
     "rank": 2,
-    "headline": "Disney Asked Character.AI to Go Bankrupt for a Get-Out-of-Lawsuits Card",
-    "link": "https://www.wired.com/story/disney-asked-characterai-to-go-bankrupt-for-a-get-out-of-lawsuits-card/",
+    "headline": "OpenAI Engineer Accused of Spying on Executives Ordered to Remain in Custody",
+    "link": "https://www.wired.com/story/openai-engineer-accused-of-spying-on-executives-ordered-to-remain-in-custody/",
     "score": 92,
-    "reason": "High-stakes legal controversy between major entertainment company and AI startup; raises accountability questions"
+    "reason": "High-profile espionage scandal at leading AI company; serious legal controversy with custody determination"
   },
   {
     "rank": 3,
-    "headline": "Google Gemini 4 agents just beat Minecraft with no human intervention",
-    "link": "https://www.engadget.com/2289944/google-gemini-4-agents-just-beat-minecraft-with-no-human-intervention/",
+    "headline": "An AI agent sent a stranger to a man’s house without telling him—and exposed the privacy risks of AI assistants",
+    "link": "https://fortune.com/2026/10/19/meta-muse-ai-agent-facebook-marketplace-home-address-privacy/",
     "score": 88,
-    "reason": "Major AI capability milestone; demonstrates autonomous AI agents achieving complex multi-step goals"
+    "reason": "Concrete privacy violation by AI system; demonstrates real safety failure with direct consumer impact"
   },
   {
     "rank": 4,
-    "headline": "Anthropic commits 5% of shares to new public benefit fund that could address AI job disruption",
-    "link": "https://www.cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html",
-    "score": 86,
-    "reason": "Significant capital commitment ($billions implied) by major AI lab to address employment impact"
+    "headline": "‘An army of Claudes, with every one asking for my attention’: Anthropic calls human attention the bottleneck in the botsitting world to come",
+    "link": "https://fortune.com/2026/10/19/work-botsitting-meetings-army-of-claudes-anthropic/",
+    "score": 85,
+    "reason": "Anthropic acknowledges major limitation of multi-agent AI systems; significant product/strategy insight from major AI lab"
   },
   {
     "rank": 5,
-    "headline": "Women may be at greater risk of AI job losses. Telephone switch operators and PCs show why.",
-    "link": "https://www.cnbc.com/2026/10/19/ai-job-losses-women-automation-risk.html",
-    "score": 84,
-    "reason": "Data-driven analysis of AI displacement with historical precedent; societal impact"
+    "headline": "WhatsApp Help Pages Leaked Hidden Instructions for a Meta Chatbot",
+    "link": "https://www.wired.com/story/whatsapp-help-pages-leaked-hidden-instructions-for-a-meta-chatbot/",
+    "score": 83,
+    "reason": "Meta AI system information disclosure; unintended leak reveals hidden functionality at major tech company"
   },
   {
     "rank": 6,
-    "headline": "The biggest gaming deals of 2026 are really AI deals",
-    "link": "https://fortune.com/2026/10/19/the-biggest-gaming-deals-of-2026-are-really-ai-deals/",
-    "score": 82,
-    "reason": "Major industry shift; highlights AI becoming central to major market transactions"
+    "headline": "Google support pages start defaulting to AI chatbots – it might be for the best",
+    "link": "https://9to5google.com/2026/10/19/google-support-ai-summary-chatbot-update/",
+    "score": 81,
+    "reason": "Major deployment: Google replacing human support with AI at scale; significant operational change"
   },
   {
     "rank": 7,
-    "headline": "The AI attack-ad nightmare is coming true",
-    "link": "https://www.axios.com/2026/10/19/ai-attack-ads-campaigns-elections-deepfakes",
-    "score": 80,
-    "reason": "Concrete controversy around AI misuse; predicted problem now manifesting in real campaigns"
+    "headline": "Anthropic is AI trade&apos;s last big hope for a major IPO this year",
+    "link": "https://www.cnbc.com/2026/10/19/anthropic-ipo-ai-trade.html",
+    "score": 79,
+    "reason": "Major funding/valuation milestone for leading AI company; significant market development"
   },
   {
     "rank": 8,
-    "headline": "AI researchers stranded Claude on a virtual desert island. It started to “play.”",
-    "link": "https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/",
+    "headline": "JB Pritzker thinks AI could help us live to 100 — or threaten us like nukes",
+    "link": "https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws",
     "score": 76,
-    "reason": "Novel AI behavior discovery; demonstrates unexpected emergent properties in reasoning model"
+    "reason": "Government official's explicit AI risk comparison; policy-level concern about existential AI threats"
   },
   {
     "rank": 9,
-    "headline": "Atlassian’s Mike Cannon-Brookes: AI agents need a name tag—and a human to be accountable for their mistakes",
-    "link": "https://fortune.com/2026/10/19/atlassian-amp-ai-agents-accountability/",
+    "headline": "Robot factories and hypersonic missiles: JPMorgan Chase&apos;s first $5 billion of defense investments",
+    "link": "https://www.cnbc.com/2026/10/19/jpmorgan-security-defense-investments.html",
     "score": 74,
-    "reason": "Critical industry perspective on AI governance and accountability from major enterprise software leader"
+    "reason": "Major capital deployment ($5B) into AI-enabled defense/robotics; significant institutional commitment"
   },
   {
     "rank": 10,
-    "headline": "Bill Gross bets AI can help mass-produce 1 million new startups and 100 million new jobs",
-    "link": "https://fortune.com/2026/10/19/bill-gross-idealab-ai-million-startups-jobs/",
+    "headline": "Making the internet better for AI agents might make it worse for everyone else",
+    "link": "https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/",
     "score": 72,
-    "reason": "Major venture capitalist thesis with specific large-number predictions on AI's economic impact"
+    "reason": "Systemic tension: AI optimization creating consumer harm; important infrastructure concern"
   },
   {
     "rank": 11,
-    "headline": "How AI giants will reshape global philanthropy",
-    "link": "https://www.axios.com/2026/10/19/silicon-valley-ai-philanthropy-anthropic-fund",
-    "score": 68,
-    "reason": "Sector-wide transformation story; major companies directing capital toward AI-informed charitable giving"
+    "headline": "Morgan Stanley’s favorite AI stock is 92% exposed to the $1.6 trillion build-out it’s bullish on",
+    "link": "https://fortune.com/2026/10/19/nvidia-concentration-hyperscaler-1-6-trillion-92-percent-exposure/",
+    "score": 70,
+    "reason": "Major market analysis: $1.6T AI infrastructure investment identified; big number with investment thesis"
   },
   {
     "rank": 12,
-    "headline": "How to use Google's SynthID AI detection website",
-    "link": "https://www.engadget.com/2286802/how-to-use-google-ai-detection-website-synthid/",
-    "score": 64,
-    "reason": "Google launches consumer-facing AI detection tool; important verification technology for general public"
+    "headline": "A woman was arrested in Philly for blocking a delivery robot",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+    "score": 68,
+    "reason": "First known arrest related to blocking AI robot; novel legal/social controversy"
+  },
+  {
+    "rank": 13,
+    "headline": "Data Centers Have a New PR Plan: Your Kid’s Field Trip",
+    "link": "https://www.wired.com/story/data-center-industry-is-trying-to-woo-kids/",
+    "score": 65,
+    "reason": "AI infrastructure PR strategy; reveals industry messaging approach to public relations"
+  },
+  {
+    "rank": 14,
+    "headline": "Democrats think cracking down on AI could give them an edge",
+    "link": "https://www.theverge.com/policy/1013113/democrats-ai-midterms",
+    "score": 63,
+    "reason": "Political controversy: AI regulation as election strategy; partisan AI policy conflict"
+  },
+  {
+    "rank": 15,
+    "headline": "How to find Flock cameras near you with MapQuest’s new ‘surveillance layer’",
+    "link": "https://www.zdnet.com/tech/how-to-find-flock-cameras-nearby-mapquest-surveillance-layer/",
+    "score": 61,
+    "reason": "New AI surveillance tool launch; privacy concern with broad consumer access to tracking data"
   }
 ]
