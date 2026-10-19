@@ -1,4 +1,4 @@
-"""Offline tests for the hook-first + voiceover Reel (python3 -m unittest test_voice). Piper-only tests skip without it."""
+"""Offline tests for the hook-first + voiceover Reel (python3 -m unittest test_voice). Kokoro tests skip without the model."""
 import os, unittest
 import numpy as np
 from PIL import Image
@@ -13,16 +13,14 @@ POST = {'slug': 'test-story', 'headline': 'Microsoft\u2019s new AI chip makes it
 
 
 def fake_vo(texts, wps=2.6, gap=.32):
-    """voice.synth()-shaped result without Piper: words evenly timed at `wps` words/second."""
+    """voice.synth()-shaped result without the TTS model: words evenly timed at `wps` words/second."""
     t, segs = 0.0, []
     for name, text in texts:
         ws = voice.words_of(text); words = []
         for w in ws:
             words.append((w, t, t + .8 / wps)); t += 1 / wps
-        segs.append({'name': name, 'text': text, 'start': segs and words[0][1] or 0.0, 'end': t, 'words': words}); t += gap
-    for sg in segs:
-        sg['start'] = sg['words'][0][1]
-    return {'audio': np.zeros(int(t * voice.SR), np.float32), 'segments': segs, 'seconds': t}
+        segs.append({'name': name, 'text': text, 'start': words[0][1], 'end': words[-1][2], 'words': words}); t += gap
+    return {'audio': np.zeros(int(t * voice.SR), np.float32), 'segments': segs, 'seconds': t, 'voice': 'fake', 'speed': 1.0}
 
 
 def reel(vo=None, total=None):
@@ -72,6 +70,25 @@ class HookFirst(unittest.TestCase):
         band = fr[M.CAP_TOP:M.CAP_TOP + 220, M.CAP_X0:M.CAP_X1]
         self.assertGreater((np.abs(band - acc).sum(2) < 40).sum(), 200, 'spoken word not drawn in the accent')
 
+    def test_sections_change_exactly_at_spoken_boundaries(self):
+        sg = {x['name']: x for x in self.vo['segments']}
+        self.assertAlmostEqual(self.r.cuts[1], sg['p1']['start'], places=6)            # points start on the first word's onset
+        self.assertAlmostEqual(self.r.cuts[-1] + M.END_FADE, sg['end']['start'], places=6)  # end card lands on the outro onset
+        hook_end, p1 = sg['hook']['end'], sg['p1']['start']
+        big = np.asarray(self.r.frame(hook_end - 1 / M.FPS).convert('L'))[1400:1480, 80:700]
+        docked = np.asarray(self.r.frame(p1).convert('L'))[1400:1480, 80:700]
+        self.assertGreater((big > 235).mean(), .02)   # still the big headline until the hook's last word ends
+        self.assertLess((docked > 235).mean(), .01)   # fully docked by the first point's first word
+
+    def test_caption_onset_rounds_to_the_nearest_frame(self):
+        sg = self.vo['segments'][1]; _, ta, _ = sg['words'][2]
+        acc = np.array(self.r.accent)
+        def lit(t):
+            fr = np.asarray(self.r.frame(t)).astype(np.int16)[M.CAP_TOP:M.CAP_TOP + 260, M.CAP_X0:M.CAP_X1]
+            return (np.abs(fr - acc).sum(2) < 40).sum()
+        f = round(ta * M.FPS)  # the frame nearest the onset already shows the word lit, the one before shows the previous word
+        self.assertGreater(lit(f / M.FPS), 200)
+
     def test_end_card_last(self):
         fr = self.r.frame(self.r.total - .05)
         self.assertEqual(fr.size, (1080, 1920))
@@ -88,8 +105,23 @@ class Script(unittest.TestCase):
             voice.script('Headline', ['Hand-edited by our editors.'])
         self.assertNotRegex(voice.OUTRO, voice.BANNED)
 
-    def test_spoken_normalization(self):
-        self.assertEqual(voice.spoken('AI firm raises $5B, up 40% \u2014 fast'), 'A.I. firm raises 5 billion dollars, up 40 percent , fast')
+    def test_spoken_text(self):
+        self.assertEqual(voice.spoken('BREAKING: METR\u2019s \u201cAI\u201d deal \u2014 up 40% & more'), "Breaking: meter's AI deal, up 40 percent and more")
+        self.assertEqual(voice.say_word('GPT-5'), 'GPT-5'); self.assertEqual(voice.say_word('NASA'), 'NASA')
+        self.assertEqual(voice.hook_text('Why AI Isn\u2019t Ready to Tackle Our Genomes'), "Here's why AI Isn\u2019t Ready to Tackle Our Genomes.")
+        self.assertEqual(voice.hook_text('It started to \u201cplay.\u201d'), 'It started to \u201cplay.\u201d')
+
+    def test_voice_points_skip_dangling_and_duplicates(self):
+        post = {'headline': 'OpenAI is building a humanoid robot, but the body is not the real challenge', 'summary': '',
+                'body': '<p>OpenAI is developing a humanoid robot, with CEO Sam Altman confirming the company will build one. '
+                        'To solve these challenges, OpenAI is recruiting heavily for robotics roles. '
+                        'Altman said the humanoid form makes sense because the world is designed for people. '
+                        'The bill would require independent audits of every frontier lab in the country. '
+                        'OpenAI wants a working demo of its robot by 2027, with cognition as the focus. '
+                        'OpenAI wants a working robot demo by 2027 and cognition is its main focus.</p>'}
+        pts = M.voice_points(post)
+        self.assertEqual(pts, ['Altman said the humanoid form makes sense because the world is designed for people.',
+                               'OpenAI wants a working demo of its robot by 2027, with cognition as the focus.'])
 
     def test_phrases_are_short_and_ordered(self):
         ws = [(w, i * .4, i * .4 + .3) for i, w in enumerate('The chip targets inference workloads that now run on Nvidia hardware.'.split())]
@@ -99,22 +131,22 @@ class Script(unittest.TestCase):
         self.assertTrue(all(a[2] <= b[1] + 1e-9 for a, b in zip(ph, ph[1:])))
         self.assertNotIn(ph[0][0][-1][0].lower(), voice.DANGLE)
 
-    def test_fit_duration_clamps_12_to_18(self):
+    def test_fit_duration_prefers_most_points_that_fit(self):
         real = voice.synth
         H = 'A long headline about a chip that matters a lot to everyone'
-        P = ['Point number one is here and it is long enough to matter.', 'Point two has a fair amount of detail too.', 'Point three closes it out.']
-        S = ['Short one.', 'Short two.']
+        P = ['Point number one is here and it is long enough to matter a great deal to people.', 'Point two has a fair amount of detail too.',
+             'Point three closes it out with a very long sentence that keeps on going and going.', 'Short four.']
         try:
-            voice.synth = lambda segs, path=None, ls=1.0, gap=.32: fake_vo(segs, 6.0 / ls, gap)  # fast talker: all 3, padded
+            voice.synth = lambda segs, path=None, sp=1.0, gap=.3, voice=None: fake_vo(segs, 6.0 * sp, gap)  # fast: 3 points, padded
             vo, segs, total = voice.fit_duration(H, P, path='x')
-            self.assertEqual(len(segs), 5); self.assertEqual(total, 12.0)
-            voice.synth = lambda segs, path=None, ls=1.0, gap=.32: fake_vo(segs, 2.4 / ls, gap)  # normal pace
-            vo, segs, total = voice.fit_duration(H, P, path='x', short_points=S)
-            self.assertGreaterEqual(total, 12); self.assertLessEqual(total, 18)
-            self.assertGreaterEqual(len(segs) - 2, 2)
-            voice.synth = lambda segs, path=None, ls=1.0, gap=.32: fake_vo(segs, 1.9 / ls, gap)  # slow: shorter points first
-            vo, segs, total = voice.fit_duration(H, P, path='x', short_points=S)
-            self.assertLessEqual(total, 18); self.assertEqual([t for _, t in segs[1:-1]], S)
+            self.assertEqual([t for _, t in segs[1:-1]], P[:3]); self.assertEqual(total, 12.0)
+            voice.synth = lambda segs, path=None, sp=1.0, gap=.3, voice=None: fake_vo(segs, 2.6 * sp, gap)  # normal pace
+            vo, segs, total = voice.fit_duration(H, P, path='x')
+            self.assertGreaterEqual(total, 12); self.assertLessEqual(total, 18); self.assertGreaterEqual(len(segs) - 2, 2)
+            self.assertEqual(segs[1][1], P[0])  # keeps the lead point when it can
+            voice.synth = lambda segs, path=None, sp=1.0, gap=.3, voice=None: fake_vo(segs, 1.7 * sp, gap)  # slow: shorter combo
+            vo, segs, total = voice.fit_duration(H, P, path='x')
+            self.assertLessEqual(total, 18); self.assertGreaterEqual(len(segs) - 2, 1)
         finally:
             voice.synth = real
 
@@ -133,26 +165,29 @@ class Brand(unittest.TestCase):
         self.assertGreater((fr[M.PUNCH_TOP:M.PUNCH_BOTTOM] > 235).mean(), .05)  # hook-first in the fallback too
 
 
-def _piper_voice():
+def _kokoro():
     try:
-        import piper  # noqa
+        import misaki, onnxruntime  # noqa
     except Exception:
         return ''
-    p = os.environ.get('AIFEED_PIPER_VOICE') or os.path.join(voice.CACHE, voice.VOICE + '.onnx')
-    return p if os.path.exists(p) and os.path.exists(p + '.json') else ''
+    os.environ.setdefault('AIFEED_KOKORO_DOWNLOAD', 'off')  # tests never download the model
+    return voice.voice_path()
 
 
-@unittest.skipUnless(_piper_voice(), 'piper-tts or the cached voice not available')
-class PiperSynth(unittest.TestCase):
-    def test_word_timings_from_alignments(self):
-        vo = voice.synth([('hook', 'Microsoft builds its own chip.'), ('end', voice.OUTRO)], _piper_voice())
-        self.assertGreater(vo['seconds'], 1.5)
-        ws = vo['segments'][0]['words']
-        self.assertEqual([w for w, _, _ in ws], ['Microsoft', 'builds', 'its', 'own', 'chip.'])
-        self.assertTrue(all(a < b for _, a, b in ws))
-        self.assertTrue(all(p[2] <= q[1] + 1e-6 for p, q in zip(ws, ws[1:])))
-        self.assertLessEqual(ws[-1][2], vo['segments'][0]['end'] + 1e-6)
-        self.assertGreater(np.abs(vo['audio']).max(), .05)
+@unittest.skipUnless(_kokoro(), 'Kokoro (misaki/onnxruntime) or the cached model not available')
+class KokoroSynth(unittest.TestCase):
+    def test_word_timings_come_from_model_durations(self):
+        vo = voice.synth([('hook', 'Microsoft builds its own AI chip.'), ('p1', 'It ships in 2027, at $5 billion.'), ('end', voice.OUTRO)], _kokoro())
+        a = vo['audio']; sg = vo['segments']
+        self.assertEqual([w for w, _, _ in sg[0]['words']], ['Microsoft', 'builds', 'its', 'own', 'AI', 'chip.'])
+        self.assertEqual([w for w, _, _ in sg[1]['words']], ['It', 'ships', 'in', '2027,', 'at', '$5', 'billion.'])
+        for s in sg:
+            ws = s['words']
+            self.assertTrue(all(x[1] < x[2] for x in ws)); self.assertTrue(all(p[2] <= q[1] + 1e-6 for p, q in zip(ws, ws[1:])))
+            self.assertAlmostEqual(s['start'], ws[0][1]); self.assertAlmostEqual(s['end'], ws[-1][2])
+            i0 = int(s['start'] * voice.SR)  # the audio is (near) silent before each section's first word and voiced right after
+            self.assertLess(np.abs(a[max(0, i0 - 1200):i0 - 240]).max(initial=0), .05)
+            self.assertGreater(np.abs(a[i0:i0 + 2400]).max(), .05)
 
 
 if __name__ == '__main__':

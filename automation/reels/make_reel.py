@@ -160,6 +160,49 @@ def key_points(post, n=MAXPT):
     return pool
 
 
+STOP = set('the a an and or but of to in on for with by at from as is are was were be been being it its this that these those their '
+           'they he she his her we our you your will would can could has have had not new into over than then also more most about '
+           'after before while says said say company firm'.split())
+# a point that leans on something the viewer never heard ("these challenges", "the move", a bare pronoun) is skipped
+DANGLING = re.compile(r'^(?:it|they|this|that|these|those|he|she|his|her|its|their|such|the move|the deal|the decision|the company|the firm|'
+                      r'the report|the study|the effort|the plan|the change|the news)\b'
+                      r'|\b(?:these|those|such|this|that)\s+(?:challenges?|issues?|problems?|moves?|efforts?|changes?|plans?|concerns?|'
+                      r'developments?|steps?|findings?|claims?|questions?|risks?|measures?|limits?|arrangements?)\b'
+                      r'|^(?:when|while|if|as|because|although|though|but|and|so)\b', re.I)
+
+
+def _stems(t):
+    return {w[:5] for w in re.findall(r"[a-z0-9]+", t.lower().replace("\u2019", "'")) if w not in STOP and len(w) > 2}
+
+
+def voice_points(post, n=150, max_points=6):
+    """Points for the voiceover: self-contained sentences, each adding something the headline and earlier points didn't."""
+    paras = [clean(p) for p in re.findall(r'<p>(.*?)</p>', post.get('body', ''), re.S)] or [clean(post.get('body', ''))]
+    head = clean(post.get('headline', '')); hs = _stems(head)
+    seen, out = [], []
+    for c in sentences(clean(post.get('summary', ''))) + [x for p in paras for x in sentences(p)]:
+        if BANNED.search(c):
+            continue
+        t = tighten(c, n)
+        if not t or DANGLING.search(t) or len(t.split()) < 6:
+            continue
+        m = re.search(DEFINITE, t, re.I)
+        if m and m.group(1).lower() not in head.lower():
+            continue  # "the bill" / "the deal" the viewer was never told about
+        st = _stems(t)
+        if not st or len(st & hs) >= 3 or len(st & hs) / len(st) > .4:
+            continue  # restates the headline (the voice just said it)
+        if any(len(st & o) >= 3 or len(st & o) / max(1, min(len(st), len(o))) > .4 for o in seen):
+            continue  # near-duplicate of an earlier point
+        seen.append(st); out.append(t)
+        if len(out) == max_points:
+            break
+    return out
+
+
+DEFINITE = r'\bthe (bill|deal|move|plan|agreement|proposal|report|study|decision|lawsuit|case|ruling|policy|program|update)\b'
+
+
 OUTLETS = {'arstechnica.com': 'Ars Technica', 'wired.com': 'WIRED', 'theverge.com': 'The Verge', 'techcrunch.com': 'TechCrunch',
            'reuters.com': 'Reuters', 'bloomberg.com': 'Bloomberg', 'cnbc.com': 'CNBC', 'nytimes.com': 'The New York Times',
            'wsj.com': 'The Wall Street Journal', 'ft.com': 'Financial Times', 'technologyreview.com': 'MIT Technology Review',
@@ -180,7 +223,7 @@ GRID_TOP, GRID_BOTTOM = 240, 1680       # everything on the cover must sit insid
 PUNCH_TOP, PUNCH_BOTTOM = 900, 1520     # headline block: roughly the bottom half of the 3:4 tile
 DOCK_TOP, DOCK_BOTTOM = 820, 1110       # docked (smaller) headline while the voiceover reads the points
 CAP_X0, CAP_X1, CAP_TOP, CAP_SIZE = 80, 940, 1170, 86  # captions: below the docked headline, above the logo, clear of IG's right rail
-DOCK_T, PUSH = .3, .09                  # headline dock transition (s); total slow push-in over the scene frames
+END_FADE, PUSH = .18, .09               # end-card dissolve (s, lands on the outro's first word); total slow push-in
 
 
 def punch_lines(post, headline):
@@ -335,10 +378,17 @@ class Reel:
         Without it, the fixed 17.5s music-only timeline (SCENES) is used."""
         self.post, self.src, self.vo = post, src, vo
         if vo:
-            seg = {x['name']: x for x in vo['segments']}
+            seg = {x['name']: dict(x) for x in vo['segments']}
             names = [x['name'] for x in vo['segments']]
-            starts = [0.0] + [seg[n]['start'] for n in names[1:]]
-            self.total = float(total or vo['seconds'] + 1.2)
+            if 'end' not in seg:  # outro not spoken (it didn't fit): the end card follows the last point's last word
+                last = seg[names[-1]]['end']
+                seg['end'] = {'name': 'end', 'start': last + .3, 'end': last + .3, 'words': []}; names.append('end')
+            # scene cuts sit exactly on the spoken boundaries: each section starts at its first word's onset; the end card's
+            # short dissolve finishes on the outro's first word
+            starts = [0.0] + [seg[n]['start'] - (END_FADE if n == 'end' else 0) for n in names[1:]]
+            self.hook_end, self.p1_on = seg['hook']['end'], seg[names[1]]['start']
+            self.outro_on = seg['end']['start'] if 'end' in seg else None
+            self.total = float(total or vo['seconds'] + .5)
             self.scenes = [(n, (starts[i + 1] if i + 1 < len(names) else self.total) - starts[i]) for i, n in enumerate(names)]
         else:
             self.scenes, self.total = list(SCENES), TOTAL
@@ -422,14 +472,20 @@ class Reel:
         return out
 
     def draw_captions(self, fr, t):
+        """Frame at time t shows a word as spoken from the frame nearest its audio onset (half-frame rounding), until the
+        next word starts; the phrase appears on its first word's onset. Timings are the TTS model's own phoneme durations."""
+        h = .5 / FPS
         for t0, t1, items in self.captions:
-            if not (t0 - 1e-6 <= t < t1):
+            if not (t0 - h <= t < t1 - h):
                 continue
-            pop = ease_out((t - t0) / .08)  # instant-feel pop, no slow fade
-            for (w, ox, oy), (a, ax, ay), x, y, ta, tb in items:
-                on = ta - .03 <= t < max(tb, ta + .12)
-                spr, sx, sy = (a, ax, ay) if on else (w, ox, oy)
-                paste_alpha(fr, spr, x - sx, y - sy + 14 * (1 - pop), .4 + .6 * pop if t >= ta - .03 else .78 * pop)
+            pop = ease_out((t - t0 + h) / .06)
+            for j, ((w, ox, oy), (a, ax, ay), x, y, ta, tb) in enumerate(items):
+                nxt = items[j + 1][4] if j + 1 < len(items) else max(tb + .15, t1)
+                on = ta - h <= t < nxt - h
+                if on:
+                    paste_alpha(fr, a, x - ax, y - ay)  # the spoken word: accent, full opacity, no offset
+                else:
+                    paste_alpha(fr, w, x - ox, y - oy + 10 * (1 - pop), (1.0 if t >= ta - h else .72) * (.5 + .5 * pop))
             return
 
     def _brand(self, size, shadow=False):
@@ -538,18 +594,20 @@ class Reel:
         """Voiceover timeline: one continuous push-in on the scene; hook = the cover; then the headline docks smaller
         above the synced captions; end card last."""
         if name == 'end':
-            fr = self.end_bg.copy().convert('RGBA'); p = ease_back(lt / .3)
+            fr = self.end_bg.copy().convert('RGBA'); lt = max(0.0, t - self.outro_on) if self.outro_on is not None else lt
+            p = ease_back(lt / .3)
             lg = self.end_logo; paste_alpha(fr, lg, (W - lg.width) / 2, 640, min(1, lt / .12), .75 + .25 * p)
             s, ox, oy = self.tag; tp = ease_out((lt - .15) / .3); paste_alpha(fr, s, (W - s.width) / 2, 860 + 30 * (1 - tp), tp)
             cp = ease_back((lt - .3) / .35); paste_alpha(fr, self.cta, (W - 640) / 2, 1010 + 40 * (1 - min(cp, 1)), ease_out((lt - .3) / .2))
             s, ox, oy = self.web; paste_alpha(fr, s, (W - s.width) / 2, 1160, ease_out((lt - .55) / .3))
             self.progress(fr, t)
-            fade = ease_out(lt / .18)  # quick dissolve from the scene into the end card
+            fade = ease_out((t - self.cuts[-1]) / END_FADE)  # dissolve that lands on the outro's first word
             if fade < 1:
                 prev = self.scene_frame(t, 1.0)
                 fr = Image.blend(prev, fr, fade)
             return fr.convert('RGB')
-        k = ease_out((t - (self.cuts[1] - DOCK_T - .04)) / DOCK_T)  # docked by the time the first point is spoken
+        # the headline docks in the pause between the hook's last word and the first point's first word (spoken boundary)
+        k = ease_out((t - self.hook_end) / max(1 / FPS, self.p1_on - self.hook_end))
         fr = self.scene_frame(t, k)
         self.progress(fr, t)
         return fr.convert('RGB')
@@ -713,13 +771,12 @@ def build(post, feed_path, out, seed=0, photo=None):
     if os.environ.get('AIFEED_REEL_VOICE', 'on').lower() not in ('off', '0', 'false'):
         try:
             import voice
-            vp = voice.voice_path(timeout=45)  # the workflow normally pre-caches it; don't stall a live slot
+            vp = voice.voice_path(timeout=90)  # the workflow normally pre-caches it; don't stall a live slot
             if not vp:
-                raise RuntimeError('Piper voice not available')
-            pts = key_points(post); pts = [x for x in pts if x != 'Full story at aifeed.run.'] or pts[:1]
-            short = [x for x in key_points(post, 84) if x != 'Full story at aifeed.run.']
-            vo, segs, total = voice.fit_duration(clean(post['headline']), pts, path=vp, lo=MIN_S, hi=MAX_S, short_points=short)
-            voice_name = os.path.basename(vp).replace('.onnx', '')
+                raise RuntimeError('Kokoro model not available')
+            cands = voice_points(post) or [x for x in key_points(post) if x != 'Full story at aifeed.run.'][:1]
+            vo, segs, total = voice.fit_duration(clean(post['headline']), cands, path=vp, lo=MIN_S, hi=MAX_S)
+            voice_name = f"kokoro:{vo['voice']}@{vo['speed']:.2f}"
         except Exception as e:  # never lose the slot over TTS: fall back to the music-only timeline
             vo_err = str(e)[:200]; vo = None
             print('voiceover unavailable, rendering music-only:', vo_err, file=sys.stderr)
@@ -727,6 +784,8 @@ def build(post, feed_path, out, seed=0, photo=None):
     cover_path = os.path.splitext(out)[0] + '_cover.jpg'
     r.cover().save(cover_path, quality=92)
     tmp = tempfile.mkdtemp(prefix='reel-'); wav = os.path.join(tmp, 'audio.wav')
+    if vo and os.environ.get('AIFEED_REEL_DEBUG'):  # the voice track alone, for the sync checker
+        write_wav(os.path.splitext(out)[0] + '_voice.wav', np.stack([vo['audio'], vo['audio']], 1), voice.SR)
     if vo:
         mix_voice(wav, vo, r.total, seed, r.cuts, os.environ.get('AIFEED_REEL_MUSIC', 'on').lower() not in ('off', '0', 'false'))
     else:
@@ -746,7 +805,11 @@ def build(post, feed_path, out, seed=0, photo=None):
     if vo_err:
         res['voiceError'] = vo_err
     if vo:
-        res['captions'] = [[w, round(a, 2), round(b, 2)] for sg in vo['segments'] for w, a, b in sg['words']]
+        res['captions'] = [[w, round(a, 3), round(b, 3)] for sg in vo['segments'] for w, a, b in sg['words']]
+        res['timeline'] = {'cuts': [round(c, 3) for c in r.cuts], 'scenes': [n for n, _ in r.scenes], 'hookEnd': round(r.hook_end, 3),
+                           'firstPointOnset': round(r.p1_on, 3), 'outroOnset': r.outro_on and round(r.outro_on, 3)}
+        if os.environ.get('AIFEED_REEL_DEBUG'):  # caption word boxes, for the sync checker
+            res['captionBoxes'] = [[w[0].width - 48, w[0].height - 48, x, y, ta, tb] for _, _, items in r.captions for w, _, x, y, ta, tb in items]
     return res
 
 

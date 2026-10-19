@@ -1,78 +1,107 @@
-"""Voiceover for AIFeed Reels: free neural TTS (Piper, runs offline on CPU, no API, no key) + word timings for captions.
+"""Voiceover for AIFeed Reels: Kokoro-82M (Apache-2.0) neural TTS on CPU via ONNX Runtime. Free, no API, no key.
 
-Voice: AIFEED_PIPER_VOICE (path to a .onnx Piper voice; default en_US-ryan-high in ~/.cache/aifeed-piper, downloaded once
-from the rhasspy/piper-voices Hugging Face repo if missing; the workflow caches that folder). If Piper or the voice is
-unavailable, make_reel renders the silent-voice (music-only) version instead of failing.
-Word timings come from Piper's phoneme alignments (pip install 'piper-tts[alignment]'); without them, words are timed
-proportionally to their length inside each sentence's audio.
+Model: the timestamped ONNX export (onnx-community/Kokoro-82M-v1.0-ONNX-timestamped, Apache-2.0), which outputs the
+duration of every phoneme together with the waveform. Caption timings therefore come from the exact durations the audio
+was generated from, not estimates. G2P: misaki (Kokoro's own G2P, Apache-2.0) with the espeak-ng fallback bundled by
+espeakng-loader; every word token keeps its phonemes, so phoneme durations map straight to caption words.
+
+Files live in AIFEED_KOKORO_DIR (default ~/.cache/aifeed-kokoro; the workflows cache it) and are downloaded once from
+Hugging Face if missing. Voice: AIFEED_KOKORO_VOICE (default af_heart), speed AIFEED_KOKORO_SPEED (default 1.05).
+If anything is unavailable, make_reel renders the music-only Reel instead of failing.
 """
 import os, re, shutil, sys, time, urllib.request
 import numpy as np
 
-VOICE = os.environ.get('AIFEED_PIPER_VOICE_NAME', 'en_US-ryan-high')
-VOICE_URL = 'https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/en/{lang}/{spk}/{q}/{name}.onnx'
-CACHE = os.environ.get('AIFEED_PIPER_DIR') or os.path.join(os.path.expanduser('~'), '.cache', 'aifeed-piper')
-SR = 22050
+REPO = 'https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX-timestamped/resolve/main/'
+MODEL_FILE = os.environ.get('AIFEED_KOKORO_MODEL', 'model.onnx')  # fp32; 'model_quantized.onnx' is ~4x smaller
+VOICE = os.environ.get('AIFEED_KOKORO_VOICE', 'af_heart')
+SPEED = float(os.environ.get('AIFEED_KOKORO_SPEED', '1.05'))
+CACHE = os.environ.get('AIFEED_KOKORO_DIR') or os.path.join(os.path.expanduser('~'), '.cache', 'aifeed-kokoro')
+SR = 24000
+LEAD, TAIL = .08, .08  # seconds kept before the first / after the last phoneme of each segment
 BANNED = re.compile(r'\b(daily|hand[- ]?edited|human[- ]?edited|edited by (a )?human|our editors?|curated by (our )?(team|editors|humans?))\b', re.I)
 OUTRO = 'Follow AIFeed dot run.'
 
 
-def voice_path(timeout=180):
-    p = os.environ.get('AIFEED_PIPER_VOICE')
-    if p:
-        return p if os.path.exists(p) else ''
-    p = os.path.join(CACHE, VOICE + '.onnx')
-    if os.path.exists(p) and os.path.exists(p + '.json'):
-        return p
-    if os.environ.get('AIFEED_PIPER_DOWNLOAD', 'on').lower() in ('off', '0', 'false'):
+def _get(url, dst, timeout):
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'aifeed-reels/1.0'}), timeout=timeout) as r, \
+                    open(dst + '.part', 'wb') as f:
+                shutil.copyfileobj(r, f, 1 << 20)
+            os.replace(dst + '.part', dst)
+            return True
+        except Exception as e:
+            print(f'kokoro download failed (try {attempt + 1}/4) {os.path.basename(dst)}:', str(e)[:120], file=sys.stderr)
+            time.sleep(2 + 3 * attempt)
+    return False
+
+
+def voice_path(timeout=180, voice=None):
+    """The model folder, with tokenizer.json, the ONNX model and the voice; '' if it can't be had."""
+    voice = voice or VOICE
+    need = [('tokenizer.json', 'tokenizer.json'), (f'voices/{voice}.bin', f'{voice}.bin'), (f'onnx/{MODEL_FILE}', MODEL_FILE)]
+    if all(os.path.exists(os.path.join(CACHE, n)) for _, n in need):
+        return CACHE
+    if os.environ.get('AIFEED_KOKORO_DOWNLOAD', 'on').lower() in ('off', '0', 'false'):
         return ''
-    lang, spk, q = VOICE.split('-', 2)
-    u = VOICE_URL.format(lang=lang, spk=spk, q=q, name=VOICE)
     os.makedirs(CACHE, exist_ok=True)
-    for ext in ('.json', ''):  # config first; the model file's presence marks a complete download
-        for attempt in range(4):
-            try:
-                with urllib.request.urlopen(urllib.request.Request(u + ext, headers={'User-Agent': 'aifeed-reels/1.0'}), timeout=timeout) as r, \
-                        open(p + ext + '.part', 'wb') as f:
-                    shutil.copyfileobj(r, f, 1 << 20)
-                os.replace(p + ext + '.part', p + ext)
-                break
-            except Exception as e:
-                print(f'piper voice download failed (try {attempt + 1}/4):', str(e)[:120], file=sys.stderr)
-                time.sleep(2 + 3 * attempt)
-        else:
+    for src, n in need:
+        if not os.path.exists(os.path.join(CACHE, n)) and not _get(REPO + src, os.path.join(CACHE, n), timeout):
             return ''
-    return p
+    return CACHE
 
 
-# ---------- script ----------
+# ---------- script text (what is SAID; captions keep the original words) ----------
+SAY = {'METR': 'meter', "METR's": "meter's", 'AIFeed': 'A.I. Feed', 'aifeed.run': 'A.I. Feed dot run', 'vs': 'versus', 'vs.': 'versus',
+       'LLM': 'L.L.M.', 'LLMs': 'L.L.M.s', 'GenAI': 'gen A.I.', 'xAI': 'x A.I.', 'U.S.': 'U.S.'}
+KEEP_CAPS = re.compile(r'^(?:[A-Z]{2,4}s?|[A-Z]+-?\d+[A-Z]*)$')  # acronyms (spelled out by the G2P), model names like GPT-5
+
+
+def say_word(w):
+    """Speech form of one caption word: fixes the G2P can't know, and no ALL-CAPS shouting for ordinary words."""
+    core = re.sub(r'^[\u2018\u2019\u201c\u201d"\'(]+|[\u2018\u2019\u201c\u201d"\'),.!?;:]+$', '', w)
+    pre, post = w[:w.find(core)] if core else '', w[w.find(core) + len(core):] if core else ''
+    pre = re.sub(r'[\u2018\u2019\u201c\u201d"\'(]', '', pre); post = re.sub(r'[\u2018\u2019\u201c\u201d"\')]', '', post)
+    c = core.replace('\u2019', "'")
+    if c in SAY:
+        c = SAY[c]
+    elif c.isupper() and len(re.sub(r'[^A-Z]', '', c)) >= 5 and not KEEP_CAPS.match(c):
+        c = c.capitalize()  # BREAKING -> Breaking (a word, not an acronym)
+    c = c.replace('&', 'and').replace('%', ' percent')
+    return pre + c + post
+
+
+def say_sym(w):
+    """Speech form of a caption token without letters/digits: '&' is said, dashes become a pause, the rest is dropped."""
+    return 'and' if w == '&' else '' if w in '\u2014\u2013-' else w if re.fullmatch(r'[,.;:!?]+', w) else ''
+
+
+def words_of(text):
+    return [w for w in text.split() if re.search(r'\w', w)]
+
+
 def spoken(text):
-    """Text as it should be SAID (the caption keeps the original text)."""
-    s = ' ' + text + ' '
-    s = re.sub(r'\bAI\b', 'A.I.', s)
-    s = re.sub(r'\bLLMs\b', 'L.L.M.s', s); s = re.sub(r'\bLLM\b', 'L.L.M.', s)
-    s = re.sub(r'\$(\d+(?:\.\d+)?)\s*(billion|million|trillion)\b', r'\1 \2 dollars', s, flags=re.I)
-    s = re.sub(r'\$(\d+(?:\.\d+)?)([BMK])\b', lambda m: m.group(1) + {'B': ' billion', 'M': ' million', 'K': ' thousand'}[m.group(2)] + ' dollars', s)
-    s = re.sub(r'(?<!\w)[\u2018\u2019\u201c\u201d"\']|[\u2018\u2019\u201c\u201d"\'](?!\w)', '', s)  # quote marks, not apostrophes
-    s = s.replace('%', ' percent').replace('&', ' and ').replace('\u2014', ', ').replace('\u2013', ', ')
-    s = re.sub(r'\s+', ' ', s).strip()
-    return s
+    return re.sub(r'\s+', ' ', ' '.join(say_word(w) if re.search(r'\w', w) else say_sym(w)
+                                       for w in text.replace('\u2014', ' , ').replace('\u2013', ' , ').split())).replace(' ,', ',').strip()
 
 
-def hook_text(headline, punch_sentence=''):
-    """The hook: the headline, said plainly (a question only when the headline is one)."""
-    h = re.sub(r'\s+', ' ', headline or '').strip().rstrip('.')
-    if len(h) > 110 and punch_sentence:
-        h = punch_sentence
-    return h if re.search(r'[.?!][\u201d"\u2019\']?$', h) else h + '.'
+def hook_text(headline):
+    """The headline as a spoken opener: 'Why X' / 'How X' become "Here's why X." so it doesn't sound like a misread title."""
+    h = re.sub(r'\s+', ' ', headline or '').strip()
+    m = re.match(r'^(Why|How)\s+(.+)$', h)
+    if m and not h.endswith('?'):
+        h = f"Here's {m.group(1).lower()} {m.group(2)}"
+    return h if re.search(r'[.?!][\u201d"\u2019\']?$', h) else h.rstrip(' .') + '.'
 
 
-def script(headline, points, punch_sentence='', max_points=3):
-    segs = [('hook', hook_text(headline, punch_sentence))]
+def script(headline, points, max_points=3, outro=True):
+    segs = [('hook', hook_text(headline))]
     for i, p in enumerate(points[:max_points]):
         p = re.sub(r'\s+', ' ', p).strip()
         segs.append((f'p{i + 1}', p if re.search(r'[.?!][\u201d"\u2019\']?$', p) else p + '.'))
-    segs.append(('end', OUTRO))
+    if outro:
+        segs.append(('end', OUTRO))
     for _, t in segs:
         if BANNED.search(t):
             raise ValueError('banned wording in voiceover: ' + t)
@@ -80,110 +109,154 @@ def script(headline, points, punch_sentence='', max_points=3):
 
 
 # ---------- synthesis ----------
-_voice = {}
+_eng = {}
 
 
-def load(path):
-    if path not in _voice:
-        from piper import PiperVoice
-        try:
-            _voice[path] = (PiperVoice.load(path, include_alignments=True), True)
-        except Exception:
-            _voice[path] = (PiperVoice.load(path), False)
-    return _voice[path]
+class Engine:
+    def __init__(self, folder):
+        import json, onnxruntime as ort
+        import espeakng_loader
+        from phonemizer.backend.espeak.wrapper import EspeakWrapper
+        EspeakWrapper.set_library(espeakng_loader.get_library_path()); EspeakWrapper.set_data_path(espeakng_loader.get_data_path())
+        from misaki import en, espeak
+        self.g2p = en.G2P(trf=False, british=False, fallback=espeak.EspeakFallback(british=False))
+        self.vocab = json.load(open(os.path.join(folder, 'tokenizer.json')))['model']['vocab']
+        so = ort.SessionOptions(); so.intra_op_num_threads = max(1, min(4, os.cpu_count() or 1))
+        self.sess = ort.InferenceSession(os.path.join(folder, MODEL_FILE), so, providers=['CPUExecutionProvider'])
+        self.folder, self.voices = folder, {}
+
+    def style(self, voice, n):
+        if voice not in self.voices:
+            p = os.path.join(self.folder, voice + '.bin')
+            if not os.path.exists(p):
+                voice_path(voice=voice)
+            self.voices[voice] = np.fromfile(p, dtype=np.float32).reshape(-1, 1, 256)
+        v = self.voices[voice]
+        return v[min(n, len(v)) - 1]
+
+    def say(self, text, voice=VOICE, speed=SPEED):
+        """-> (audio float32 @24k, [(caption word, t0, t1)]) for one segment; t relative to the returned audio."""
+        cap = words_of(text)
+        spans, sp = [], []  # char span of each caption word inside the spoken string
+        pos = 0
+        for w in text.split():
+            s = say_word(w) if re.search(r'\w', w) else say_sym(w)
+            if not s:
+                continue
+            if sp:
+                pos += 1
+            if re.search(r'\w', w):
+                spans.append((pos, pos + len(s)))
+            sp.append(s); pos += len(s)
+        said = ' '.join(sp)
+        _, toks = self.g2p(said)
+        ph, owner, cur = [], [], 0  # phoneme chars, and which caption word each belongs to (-1 = space/punctuation)
+        for tk in toks:
+            i = said.find(tk.text, cur) if tk.text else -1
+            if i >= 0:
+                cur = i + len(tk.text)
+            wi = next((k for k, (a, b) in enumerate(spans) if i >= 0 and a <= i < b), -1)
+            for c in (tk.phonemes or ''):
+                if c in self.vocab:
+                    ph.append(self.vocab[c]); owner.append(wi if re.match(r'\w', tk.text or '') or tk.text[:1] in '$' else -1)
+            if tk.whitespace:
+                ph.append(self.vocab[' ']); owner.append(-1)
+        ph = ph[:510]; owner = owner[:510]
+        wav, dur = self.sess.run(None, {'input_ids': np.array([[0, *ph, 0]], np.int64),
+                                        'style': self.style(voice, len(ph)).astype(np.float32),
+                                        'speed': np.array([speed], np.float32)})
+        wav = np.asarray(wav, np.float32).ravel(); dur = np.asarray(dur, np.float64).ravel()
+        edges = np.concatenate([[0], np.cumsum(dur)]) * (len(wav) / dur.sum())  # sample offset of every token boundary
+        e = edges[1:]  # e[i] = start of phoneme i (index 0 = after the leading pad)
+        words = []
+        for k, w in enumerate(cap):
+            idx = [i for i, o in enumerate(owner) if o == k]
+            if idx:
+                words.append([w, e[idx[0]], e[idx[-1] + 1]])
+            else:  # a caption word with no phonemes of its own (e.g. a lone symbol): hang it on the previous word
+                t = words[-1][2] if words else e[0]
+                words.append([w, t, t])
+        voiced0, voiced1 = e[0], e[len(ph)]
+        a0 = max(0, int(voiced0 - LEAD * SR)); a1 = min(len(wav), int(voiced1 + TAIL * SR))
+        wav = wav[a0:a1]
+        out = [[w, (s - a0) / SR, (t - a0) / SR] for w, s, t in words]
+        # words that follow a pause (the first word, and after , . ? etc.): take the onset from the waveform itself, since the
+        # model starts sounding a little before its first phoneme's nominal start (measured 5-55 ms)
+        env = np.sqrt(np.convolve(wav.astype(np.float64) ** 2, np.ones(120) / 120, 'same'))  # 5 ms RMS
+        for k, wd in enumerate(out):
+            if k and not re.search(r'[,.;:!?\u2014]$', out[k - 1][0]):
+                continue
+            i = int(wd[1] * SR); lo_ = max(0, i - int(.15 * SR)); seg = env[lo_:i + int(.05 * SR)]
+            quiet = np.where(seg < .004)[0]
+            if not len(quiet):
+                continue
+            q = quiet[quiet <= (i - lo_)]
+            start = (q[-1] + 1) if len(q) else 0
+            loud = np.where(seg[start:] > .01)[0]
+            if len(loud):
+                t0 = (lo_ + start + loud[0]) / SR
+                if abs(t0 - wd[1]) < .15:
+                    wd[1] = min(t0, wd[2] - .02)
+        return wav, [tuple(x) for x in out]
 
 
-def words_of(text):
-    return [w for w in text.split() if re.search(r'\w', w)]
-
-
-def time_words(text, chunks, align_ok):
-    """[(word, t0, t1)] for the caption words of `text` (seconds, relative to the segment audio start)."""
-    words = words_of(text)
-    spans, t, groups = [], 0.0, []
-    for c in chunks:
-        dur = len(c.audio_int16_bytes) / 2 / c.sample_rate
-        al = getattr(c, 'phoneme_alignments', None) if align_ok else None
-        if al:
-            cur, pos = None, t
-            for a in al:
-                d = float(a.num_samples) / c.sample_rate
-                if a.phoneme == ' ' or a.phoneme in ('^', '$', '_'):
-                    if cur: groups.append(cur); cur = None
-                elif re.match(r'^[.,!?;:\u2026"]$', a.phoneme):
-                    pass
-                else:
-                    cur = [pos, pos + d] if cur is None else [cur[0], pos + d]
-                pos += d
-            if cur: groups.append(cur)
-        spans.append((t, t + dur)); t += dur
-    if groups and len(groups) == len(words):
-        return [(w, g[0], g[1]) for w, g in zip(words, groups)]
-    # fallback: proportional to word length over the voiced span of all chunks (trim ~0.12s lead/tail silence)
-    t0, t1 = (spans[0][0] + .12, spans[-1][1] - .15) if spans else (0, 0)
-    if groups:
-        t0, t1 = groups[0][0], groups[-1][1]
-    wts = np.array([len(re.sub(r'\W', '', w)) + 2 for w in words], np.float32)
-    edges = t0 + np.concatenate([[0], np.cumsum(wts)]) / wts.sum() * max(.1, t1 - t0)
-    return [(w, float(edges[i]), float(edges[i + 1])) for i, w in enumerate(words)]
+def engine(folder):
+    if folder not in _eng:
+        _eng[folder] = Engine(folder)
+    return _eng[folder]
 
 
 _memo = {}
 
 
-def _segment(v, align_ok, text, length_scale, path):
-    """(audio float32 @22050, [(word, t0, t1)] relative) for one segment; memoized so fit_duration retries are cheap."""
-    key = (path, text, length_scale)
-    if key not in _memo:
-        from piper import SynthesisConfig
-        cfg = SynthesisConfig(length_scale=length_scale)
-        chunks = list(v.synthesize(spoken(text), syn_config=cfg, include_alignments=True) if align_ok else v.synthesize(spoken(text), syn_config=cfg))
-        audio = np.concatenate([c.audio_float_array for c in chunks]) if chunks else np.zeros(1, np.float32)
-        sr = chunks[0].sample_rate if chunks else SR
-        if sr != SR:  # alignments are in samples of the voice rate; time_words converts with each chunk's own rate
-            audio = np.interp(np.arange(int(len(audio) * SR / sr)) * sr / SR, np.arange(len(audio)), audio).astype(np.float32)
-        _memo[key] = (audio.astype(np.float32), time_words(text, chunks, align_ok))
-    return _memo[key]
-
-
-def synth(segs, path=None, length_scale=1.0, gap=.32):
-    """Returns {'audio': float32 mono @22050, 'segments': [{name, text, start, end, words: [(w, t0, t1)]}], 'seconds'}.
-    Timings are absolute (seconds from the start of the voiceover). Each segment is followed by `gap` of silence."""
+def synth(segs, path=None, speed=SPEED, gap=.25, voice=None):
+    """{'audio': float32 mono @24k, 'segments': [{name, text, start, end, words: [(w, t0, t1)]}], 'seconds'}.
+    start/end are the first word's onset and the last word's offset (absolute seconds): the spoken section boundaries."""
     path = path or voice_path()
     if not path:
-        raise RuntimeError('no Piper voice')
-    v, align_ok = load(path)
+        raise RuntimeError('no Kokoro model')
+    voice = voice or VOICE
+    eng = engine(path)
     out, t, res = [], 0.0, []
     for name, text in segs:
-        audio, rel = _segment(v, align_ok, text, length_scale, path)
-        dur = len(audio) / SR
-        res.append({'name': name, 'text': text, 'start': t, 'end': t + dur, 'words': [(w, t + a, t + b) for w, a, b in rel]})
-        out += [audio, np.zeros(int(gap * SR), np.float32)]; t += dur + gap
+        key = (path, voice, text, speed)
+        if key not in _memo:
+            _memo[key] = eng.say(text, voice, speed)
+        audio, rel = _memo[key]
+        words = [(w, t + a, t + b) for w, a, b in rel]
+        res.append({'name': name, 'text': text, 'start': words[0][1] if words else t, 'end': words[-1][2] if words else t + len(audio) / SR,
+                    'words': words})
+        out += [audio, np.zeros(int(gap * SR), np.float32)]; t += len(audio) / SR + gap
     a = np.concatenate(out).astype(np.float32)
-    return {'audio': a, 'segments': res, 'seconds': len(a) / SR}
+    return {'audio': a, 'segments': res, 'seconds': len(a) / SR, 'voice': voice, 'speed': speed}
 
 
-def fit_duration(headline, points, punch_sentence='', path=None, lo=12.0, hi=18.0, end_hold=1.2, short_points=None):
-    """Voiceover-driven length. Tries, in order, until VO + end hold <= hi: 3 points, 2 points, 2 shortened points
-    (short_points: the same points cut at a clause boundary), 1 point, each at normal pace then slightly faster.
-    Too short is padded on the end card (total = max(lo, VO + end hold))."""
-    plans = [points[:3], points[:2]]
-    if short_points:
-        plans.append(short_points[:2])
-    plans.append(points[:1])
+END_CARD = 1.9  # seconds of end card after the last point when the outro isn't spoken
+
+
+def fit_duration(headline, candidates, path=None, lo=12.0, hi=18.0, end_hold=.5, voice=None, max_points=3):
+    """Voiceover-driven length. candidates: self-contained points in story order. Every candidate is synthesized once
+    (memoized), then the script with the MOST points that fits in hi wins (3, else 2, else 1), preferring the lead point and
+    story order, at the normal pace and then a touch faster; a spoken outro is dropped (the end card still shows) before a
+    point is. Too short pads the end card to lo. -> (vo, segs, total seconds)"""
+    from itertools import combinations
+    cands = [c for c in candidates if c][:6]
     best = None
-    for pts in plans:
-        if not pts:
-            continue
-        for ls in (1.0, .93, .87):
-            segs = script(headline, pts, punch_sentence, len(pts))
-            vo = synth(segs, path, ls)
-            total = vo['seconds'] + end_hold
-            if best is None or total < best[2]:
-                best = (vo, segs, total)
-            if total <= hi:
-                return vo, segs, max(lo, total)
-    return best  # still long (very long headline): the caller renders it as is and reports the length
+    for n in range(min(max_points, len(cands)), 0, -1):
+        combos = sorted(combinations(range(len(cands)), n), key=lambda ix: (0 not in ix, ix))
+        for outro in (True, False):
+            for ix in combos:
+                for sp in (SPEED, SPEED * 1.06):
+                    segs = script(headline, [cands[i] for i in ix], n, outro)
+                    vo = synth(segs, path, sp, voice=voice)
+                    total = vo['seconds'] + (end_hold if outro else END_CARD)
+                    if best is None or total < best[2]:
+                        best = (vo, segs, total)
+                    if total <= hi:
+                        return vo, segs, max(lo, total)
+    if best is None:
+        segs = script(headline, [], 0); vo = synth(segs, path, SPEED, voice=voice); best = (vo, segs, vo['seconds'] + end_hold)
+    return best
 
 
 # ---------- captions ----------
