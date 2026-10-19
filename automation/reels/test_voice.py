@@ -152,6 +152,10 @@ class Script(unittest.TestCase):
 
 
 class Brand(unittest.TestCase):
+    def test_default_voice_is_am_michael(self):
+        if 'AIFEED_KOKORO_VOICE' not in os.environ:
+            self.assertEqual(voice.VOICE, 'am_michael')
+
     def test_hardware_accent_is_bright(self):
         bg, fg = M.pill_colors('Hardware')
         self.assertNotEqual(bg, M._hex('#475569'))

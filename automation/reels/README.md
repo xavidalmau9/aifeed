@@ -26,7 +26,7 @@ Photo sources reject posed people. That covers titles or file names like "visits
 - **Frame 0 is the cover**: full-bleed scene, pill top-left, the full Anton punch headline, logo bottom-right. No fade-in or
   build; only a slow push-in runs across the whole Reel.
 - **Voiceover**: Kokoro-82M (Apache-2.0) neural TTS on CPU via ONNX Runtime, free, no API or key. Timestamped ONNX export
-  (onnx-community/Kokoro-82M-v1.0-ONNX-timestamped) + misaki G2P (Kokoro's own). Default voice `af_heart` at speed 1.05
+  (onnx-community/Kokoro-82M-v1.0-ONNX-timestamped) + misaki G2P (Kokoro's own). Default voice `am_michael` at speed 1.05
   (`AIFEED_KOKORO_VOICE`, `AIFEED_KOKORO_SPEED`); files cached in `~/.cache/aifeed-kokoro` by the workflows.
   Script: the headline ("Why X" -> "Here's why X."), then 2-3 self-contained points (no dangling "these challenges",
   no repeats of the headline or each other), then "Follow AIFeed dot run." (dropped first if time is short).

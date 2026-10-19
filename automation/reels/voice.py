@@ -6,7 +6,7 @@ was generated from, not estimates. G2P: misaki (Kokoro's own G2P, Apache-2.0) wi
 espeakng-loader; every word token keeps its phonemes, so phoneme durations map straight to caption words.
 
 Files live in AIFEED_KOKORO_DIR (default ~/.cache/aifeed-kokoro; the workflows cache it) and are downloaded once from
-Hugging Face if missing. Voice: AIFEED_KOKORO_VOICE (default af_heart), speed AIFEED_KOKORO_SPEED (default 1.05).
+Hugging Face if missing. Voice: AIFEED_KOKORO_VOICE (default am_michael, approved by Javier), speed AIFEED_KOKORO_SPEED (default 1.05).
 If anything is unavailable, make_reel renders the music-only Reel instead of failing.
 """
 import os, re, shutil, sys, time, urllib.request
@@ -14,11 +14,11 @@ import numpy as np
 
 REPO = 'https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX-timestamped/resolve/main/'
 MODEL_FILE = os.environ.get('AIFEED_KOKORO_MODEL', 'model.onnx')  # fp32; 'model_quantized.onnx' is ~4x smaller
-VOICE = os.environ.get('AIFEED_KOKORO_VOICE', 'af_heart')
+VOICE = os.environ.get('AIFEED_KOKORO_VOICE', 'am_michael')
 SPEED = float(os.environ.get('AIFEED_KOKORO_SPEED', '1.05'))
 CACHE = os.environ.get('AIFEED_KOKORO_DIR') or os.path.join(os.path.expanduser('~'), '.cache', 'aifeed-kokoro')
 SR = 24000
-LEAD, TAIL = .08, .08  # seconds kept before the first / after the last phoneme of each segment
+LEAD, TAIL = .15, .08  # seconds kept before the first / after the last phoneme of each segment
 BANNED = re.compile(r'\b(daily|hand[- ]?edited|human[- ]?edited|edited by (a )?human|our editors?|curated by (our )?(team|editors|humans?))\b', re.I)
 OUTRO = 'Follow AIFeed dot run.'
 

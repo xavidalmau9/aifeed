@@ -36,7 +36,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/aifeed-kokoro
-          key: kokoro-82m-v1.0-timestamped-fp32-af_heart-v1
+          key: kokoro-82m-v1.0-timestamped-fp32-am_michael-v1
       - name: Install Reels voiceover (Kokoro-82M TTS, free and offline)
         # Kokoro-82M (Apache-2.0) on the runner CPU via ONNX Runtime: no API, no key. The timestamped ONNX export (~325 MB)
         # and the voice are downloaded once from Hugging Face and cached above. misaki = Kokoro's own G2P (Apache-2.0).
