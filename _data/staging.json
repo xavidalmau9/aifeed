@@ -1,37 +1,86 @@
 [
   {
     "rank": 1,
-    "headline": "Websites are closing their doors to AI agents",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-    "score": 88,
-    "reason": "Major industry shift with concrete business impact; multiple companies taking coordinated action against AI scraping"
+    "headline": "Meta’s new terms may allow it to train AI on news sites for free",
+    "link": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
+    "score": 94,
+    "reason": "Major company policy change with direct financial impact on news industry; involves AI training at scale"
   },
   {
     "rank": 2,
-    "headline": "Meta removes language that may have allowed it to scrape news sites",
-    "link": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
-    "score": 85,
-    "reason": "High-stakes controversy involving major tech company and news industry; significant policy reversal"
+    "headline": "Disney Asked Character.AI to Go Bankrupt for a Get-Out-of-Lawsuits Card",
+    "link": "https://www.wired.com/story/disney-asked-characterai-to-go-bankrupt-for-a-get-out-of-lawsuits-card/",
+    "score": 92,
+    "reason": "High-stakes legal controversy between major entertainment company and AI startup; raises accountability questions"
   },
   {
     "rank": 3,
-    "headline": "A woman was arrested in Philly for blocking a delivery robot",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
-    "score": 72,
-    "reason": "First known arrest related to autonomous delivery; establishes legal precedent for AI robot conflicts"
+    "headline": "Google Gemini 4 agents just beat Minecraft with no human intervention",
+    "link": "https://www.engadget.com/2289944/google-gemini-4-agents-just-beat-minecraft-with-no-human-intervention/",
+    "score": 88,
+    "reason": "Major AI capability milestone; demonstrates autonomous AI agents achieving complex multi-step goals"
   },
   {
     "rank": 4,
-    "headline": "Zelensky says Musk-owned satellite system still restricted in Ukraine",
-    "link": "https://www.axios.com/2026/10/17/zelensky-starlink-elon-musk-trump",
-    "score": 68,
-    "reason": "Geopolitical controversy involving Starlink; demonstrates real-world AI infrastructure restrictions in war"
+    "headline": "Anthropic commits 5% of shares to new public benefit fund that could address AI job disruption",
+    "link": "https://www.cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html",
+    "score": 86,
+    "reason": "Significant capital commitment ($billions implied) by major AI lab to address employment impact"
   },
   {
     "rank": 5,
-    "headline": "Semiconductor market to remain solid ‘at least through next year,’ South Korea finance minister says",
-    "link": "https://www.cnbc.com/2026/10/17/south-korea-semiconductor-outlook-lee-hyoung-il.html",
-    "score": 65,
-    "reason": "Big market forecast from authoritative source; AI infrastructure dependent on semiconductor supply"
+    "headline": "Women may be at greater risk of AI job losses. Telephone switch operators and PCs show why.",
+    "link": "https://www.cnbc.com/2026/10/19/ai-job-losses-women-automation-risk.html",
+    "score": 84,
+    "reason": "Data-driven analysis of AI displacement with historical precedent; societal impact"
+  },
+  {
+    "rank": 6,
+    "headline": "The biggest gaming deals of 2026 are really AI deals",
+    "link": "https://fortune.com/2026/10/19/the-biggest-gaming-deals-of-2026-are-really-ai-deals/",
+    "score": 82,
+    "reason": "Major industry shift; highlights AI becoming central to major market transactions"
+  },
+  {
+    "rank": 7,
+    "headline": "The AI attack-ad nightmare is coming true",
+    "link": "https://www.axios.com/2026/10/19/ai-attack-ads-campaigns-elections-deepfakes",
+    "score": 80,
+    "reason": "Concrete controversy around AI misuse; predicted problem now manifesting in real campaigns"
+  },
+  {
+    "rank": 8,
+    "headline": "AI researchers stranded Claude on a virtual desert island. It started to “play.”",
+    "link": "https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/",
+    "score": 76,
+    "reason": "Novel AI behavior discovery; demonstrates unexpected emergent properties in reasoning model"
+  },
+  {
+    "rank": 9,
+    "headline": "Atlassian’s Mike Cannon-Brookes: AI agents need a name tag—and a human to be accountable for their mistakes",
+    "link": "https://fortune.com/2026/10/19/atlassian-amp-ai-agents-accountability/",
+    "score": 74,
+    "reason": "Critical industry perspective on AI governance and accountability from major enterprise software leader"
+  },
+  {
+    "rank": 10,
+    "headline": "Bill Gross bets AI can help mass-produce 1 million new startups and 100 million new jobs",
+    "link": "https://fortune.com/2026/10/19/bill-gross-idealab-ai-million-startups-jobs/",
+    "score": 72,
+    "reason": "Major venture capitalist thesis with specific large-number predictions on AI's economic impact"
+  },
+  {
+    "rank": 11,
+    "headline": "How AI giants will reshape global philanthropy",
+    "link": "https://www.axios.com/2026/10/19/silicon-valley-ai-philanthropy-anthropic-fund",
+    "score": 68,
+    "reason": "Sector-wide transformation story; major companies directing capital toward AI-informed charitable giving"
+  },
+  {
+    "rank": 12,
+    "headline": "How to use Google's SynthID AI detection website",
+    "link": "https://www.engadget.com/2286802/how-to-use-google-ai-detection-website-synthid/",
+    "score": 64,
+    "reason": "Google launches consumer-facing AI detection tool; important verification technology for general public"
   }
 ]
