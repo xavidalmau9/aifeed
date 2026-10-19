@@ -502,10 +502,18 @@ async function main() {
         const reelCaption = withPhotoCredit(published.igCaption, rr.credit);
         published.post.videoUrl = videoUrl;
         if (cfg.reelsPublishEnabled) {
-          const r = await publishIgReel(cfg, env, { graphForm, pollContainer }, videoUrl, reelCaption, coverUrl);
-          console.log('Instagram Reel published ' + (r.id || ''));
-          reelPublished = true;
-          if (reelsOnly) markPosted();
+          // IG Reel and FB video are independent: an IG Reel failure only alerts (or triggers the carousel fallback in
+          // Reels-only mode) and the FB Page still gets the video.
+          try {
+            const r = await publishIgReel(cfg, env, { graphForm, pollContainer }, videoUrl, reelCaption, coverUrl);
+            console.log('Instagram Reel published ' + (r.id || '') + (cfg.reelsShareToFeed === false ? ' (Reels tab only, not in feed)' : ''));
+            reelPublished = true;
+            if (reelsOnly) markPosted();
+          } catch (e) {
+            const msg = 'AIFeed: Instagram Reel failed (' + (reelsOnly ? 'falling back to the carousel' : 'carousel, Story, FB + LinkedIn unaffected') + ')\n' + redact(e.message);
+            console.log(msg);
+            await sendAlert(msg);
+          }
           if (cfg.fbEnabled) {
             try {
               const v = await publishFbVideo(cfg, env, { graphForm }, videoUrl, facebookMessage(reelCaption, qc.story.link), published.post.headline);

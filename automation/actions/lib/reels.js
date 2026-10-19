@@ -47,11 +47,17 @@ function withPhotoCredit(caption, credit) {
   return head + '\n\n' + c + '\n\n' + lines.slice(i).join('\n');
 }
 
+// IG Reels container fields. reelsShareToFeed false = Reels tab only (not in the feed grid); default true.
+function reelFields(cfg, videoUrl, caption, coverUrl) {
+  const fields = { media_type: 'REELS', video_url: videoUrl, caption, share_to_feed: cfg.reelsShareToFeed === false ? 'false' : 'true' };
+  if (coverUrl) fields.cover_url = coverUrl; // our designed cover becomes the Reel thumbnail instead of a random frame
+  return fields;
+}
+
 async function publishIgReel(cfg, env, { graphForm, pollContainer }, videoUrl, caption, coverUrl) {
   const auth = { token: env.META_PAGE_TOKEN, appSecret: env.META_APP_SECRET };
   const base = `https://graph.facebook.com/${cfg.graphVersion}/${cfg.igUserId}`;
-  const fields = { media_type: 'REELS', video_url: videoUrl, caption, share_to_feed: 'true' };
-  if (coverUrl) fields.cover_url = coverUrl; // our designed cover becomes the grid/feed thumbnail instead of a random frame
+  const fields = reelFields(cfg, videoUrl, caption, coverUrl);
   const c = await graphForm(base + '/media', fields,
     Object.assign({ tries: 3, waitMs: 15000 }, auth));
   if (!c.id) throw new Error('Instagram did not return a Reel container id');
@@ -67,4 +73,4 @@ async function publishFbVideo(cfg, env, { graphForm }, videoUrl, message, title)
     Object.assign({ tries: 2, waitMs: 10000 }, auth));
 }
 
-module.exports = { renderReel, sceneEnv, parseRenderResult, withPhotoCredit, publishIgReel, publishFbVideo };
+module.exports = { reelFields, renderReel, sceneEnv, parseRenderResult, withPhotoCredit, publishIgReel, publishFbVideo };

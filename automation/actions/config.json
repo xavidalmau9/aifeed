@@ -19,5 +19,6 @@
   "bufferLinkedinChannelId": "6ace69ec778b240e2ffa52a9",
   "reelsEnabled": true,
   "reelsPublishEnabled": true,
-  "igCarouselEnabled": false
+  "igCarouselEnabled": true,
+  "reelsShareToFeed": false
 }
