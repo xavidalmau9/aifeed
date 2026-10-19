@@ -1,5 +1,25 @@
 [
   {
+    "id": "disney-asked-characterai-to-go-bankrupt-20261019",
+    "slug": "disney-asked-characterai-to-go-bankrupt",
+    "headline": "Disney Asked Character.AI to Go Bankrupt for a Get-Out-of-Lawsuits Card",
+    "summary": "Disney hopes to acquire Character.AI technology and hire staff through a bankruptcy deal structured so the startup retains legal liabilities.",
+    "body": "<p>Disney hopes to acquire Character.AI technology and hire staff through a bankruptcy deal structured so the startup retains legal liability.</p>\n<p>Character.AI filed for chapter 11 bankruptcy on October 12 as part of an integrated deal with Disney. Court filings show Disney paid $5.5 million upfront with a $2 million refundable deposit, hired the majority of Character.AI's employees including CEO Karandeep Anand, and agreed to let some Disney-hired employees keep Character.AI operational for five months.</p>\n<p>Character.AI faced multiple private lawsuits over chatbot safety and investigations from regulators worldwide. The bankruptcy was designed to reach a consensual resolution with personal injury claimants and investigating states while maximizing asset value for shareholders.</p>\n<p>Through bankruptcy proceedings, Disney hopes to secure a perpetual, worldwide, nonexclusive license for Character.AI's code, documentation, frameworks, trust and safety moderation stack, training infrastructure, and age-prediction technology. This license will be auctioned in coming months.</p>\n<p>The deal is structured as a 'reverse acquihire,' a process where a buyer carefully orchestrates transactions to hire key employees and obtain technology licenses. A motion filed by Character.AI's legal counsel says Disney required the deal be 'fully consummated' through bankruptcy because of the startup's 'diminishing cash reserve and significant litigation and regulatory risks.'</p>\n<p>If Disney wins the IP auction and courts approve the deal, it will pay $12.5 million as a closing payment. Character.AI will retain responsibility for all legal liabilities and ongoing lawsuits through the '363 Free and Clear Order' approved by the court.</p>\n<p>Disney hopes to acquire Character.AI technology and hire staff through a bankruptcy deal structured so the startup retains legal liability.</p>",
+    "category": "Business",
+    "imageUrl": "https://aifeed.run/images/aifeed_disney-asked-characterai-to-go-bankrupt_20261019_pm.png",
+    "image": "images/aifeed_disney-asked-characterai-to-go-bankrupt_20261019_pm.png",
+    "sourceUrl": "https://www.wired.com/story/disney-asked-characterai-to-go-bankrupt-for-a-get-out-of-lawsuits-card/",
+    "publishedAt": "2026-10-19T21:17:46.079Z",
+    "hashtags": [
+      "CharacterAI",
+      "Disney",
+      "Bankruptcy",
+      "ReverseAcquihire",
+      "AILawsuits"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "ai-researchers-stranded-claude-on-virtual-20261019",
     "slug": "ai-researchers-stranded-claude-on-virtual",
     "headline": "AI researchers stranded Claude on a virtual desert island. It started to “play.”",
