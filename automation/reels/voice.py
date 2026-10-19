@@ -64,8 +64,11 @@ def say_word(w):
     pre, post = w[:w.find(core)] if core else '', w[w.find(core) + len(core):] if core else ''
     pre = re.sub(r'[\u2018\u2019\u201c\u201d"\'(]', '', pre); post = re.sub(r'[\u2018\u2019\u201c\u201d"\')]', '', post)
     c = core.replace('\u2019', "'")
+    m = re.match(r'^([A-Za-z]+)\.([A-Z]{2,4})$', c)  # Character.AI -> Character A.I. (brand with a dotted acronym)
     if c in SAY:
         c = SAY[c]
+    elif m:
+        c = m.group(1) + ' ' + ''.join(ch + '.' for ch in m.group(2))
     elif c.isupper() and len(re.sub(r'[^A-Z]', '', c)) >= 5 and not KEEP_CAPS.match(c):
         c = c.capitalize()  # BREAKING -> Breaking (a word, not an acronym)
     c = c.replace('&', 'and').replace('%', ' percent')
@@ -95,10 +98,43 @@ def hook_text(headline):
     return h if re.search(r'[.?!][\u201d"\u2019\']?$', h) else h.rstrip(' .') + '.'
 
 
-def script(headline, points, max_points=3, outro=True):
-    segs = [('hook', hook_text(headline))]
+ACRONYMS = {'AI', 'US', 'UK', 'EU', 'UN', 'FBI', 'CIA', 'FTC', 'SEC', 'DOJ', 'CEO', 'CFO', 'CTO', 'GPU', 'GPUS', 'CPU', 'LLM', 'LLMS',
+            'IPO', 'API', 'NASA', 'IBM', 'AMD', 'TSMC', 'AWS', 'GPT', 'AGI', 'VR', 'AR', 'EV', 'EVS', 'NYT', 'BBC', 'CNBC', 'META'}
+
+
+def punch_speech(lines, headline=''):
+    """The on-screen punch headline as the spoken hook: EXACTLY the displayed words, in order (the '/' and '*' markers are
+    already gone), in natural casing so the TTS doesn't shout: each word takes its casing from the original headline when
+    it appears there (Disney, Character.AI), known acronyms stay upper-case (spelled out by the G2P), the rest is lower."""
+    words = ' '.join(l.strip() for l in lines).split()
+    def key(w): return re.sub(r'[^0-9a-z]', '', w.lower())
+    src = {}
+    for hw in (headline or '').split():
+        core = re.sub(r'^[^\w$]+|[^\w%]+$', '', hw.replace('\u2019', "'"))
+        if core and key(core) not in src and not core.islower():
+            src[key(core)] = core
+    out = []
+    for i, w in enumerate(words):
+        m = re.match(r'^([^\w$]*)(.*?)([^\w%]*)$', w)
+        pre, core, post = m.group(1), m.group(2), m.group(3)
+        if key(core) in src:
+            c = src[key(core)]
+        elif re.sub(r'[^A-Z]', '', core.upper()) in ACRONYMS and core.isupper():
+            c = core
+        else:
+            c = core.lower()
+        if i == 0 and c[:1].islower():
+            c = c[:1].upper() + c[1:]
+        out.append(pre + c + post)
+    t = ' '.join(out)
+    return t if re.search(r'[.?!][\u201d"\u2019\']?$', t) else t + '.'
+
+
+def script(headline, points, max_points=3, outro=True, exact_hook=False):
+    """exact_hook: the hook text is spoken as given (the on-screen punch headline), only a final period is ensured."""
+    segs = [] if headline is None else [('hook', (headline if re.search(r'[.?!][\u201d"\u2019\']?$', headline) else headline + '.') if exact_hook else hook_text(headline))]
     for i, p in enumerate(points[:max_points]):
-        p = re.sub(r'\s+', ' ', p).strip()
+        p = re.sub(r'\s+', ' ', p.replace('**', '').replace('__', '')).strip()
         segs.append((f'p{i + 1}', p if re.search(r'[.?!][\u201d"\u2019\']?$', p) else p + '.'))
     if outro:
         segs.append(('end', OUTRO))
@@ -179,7 +215,14 @@ class Engine:
         voiced0, voiced1 = e[0], e[len(ph)]
         a0 = max(0, int(voiced0 - LEAD * SR)); a1 = min(len(wav), int(voiced1 + TAIL * SR))
         wav = wav[a0:a1]
-        out = [[w, (s - a0) / SR, (t - a0) / SR] for w, s, t in words]
+        # trim to the audible speech: the model books silence into the final punctuation token, which left up to ~2 s of
+        # dead air before the next section. Keep 0.1 s before the first sound and 0.06 s after the last.
+        env0 = np.sqrt(np.convolve(wav.astype(np.float64) ** 2, np.ones(120) / 120, 'same'))
+        loud = np.where(env0 > .01)[0]
+        if len(loud):
+            b0 = max(0, loud[0] - int(.10 * SR)); b1 = min(len(wav), loud[-1] + int(.06 * SR))
+            wav = wav[b0:b1]; a0 += b0
+        out = [[w, max(0.0, (s - a0) / SR), max(0.0, min(len(wav) / SR, (t - a0) / SR))] for w, s, t in words]
         # words that follow a pause (the first word, and after , . ? etc.): take the onset from the waveform itself, since the
         # model starts sounding a little before its first phoneme's nominal start (measured 5-55 ms)
         env = np.sqrt(np.convolve(wav.astype(np.float64) ** 2, np.ones(120) / 120, 'same'))  # 5 ms RMS
@@ -241,7 +284,7 @@ def synth(segs, path=None, speed=SPEED, gap=.25, voice=None):
 END_CARD = 1.9  # seconds of end card after the last point when the outro isn't spoken
 
 
-def fit_duration(headline, candidates, path=None, lo=12.0, hi=18.0, end_hold=.5, voice=None, max_points=3):
+def fit_duration(headline, candidates, path=None, lo=12.0, hi=18.0, end_hold=.5, voice=None, max_points=3, exact_hook=False):
     """Voiceover-driven length. candidates: self-contained points in story order. Every candidate is synthesized once
     (memoized), then the script with the MOST points that fits in hi wins (3, else 2, else 1), preferring the lead point and
     story order, at the normal pace and then a touch faster; a spoken outro is dropped (the end card still shows) before a
@@ -249,12 +292,16 @@ def fit_duration(headline, candidates, path=None, lo=12.0, hi=18.0, end_hold=.5,
     from itertools import combinations
     cands = [c for c in candidates if c][:6]
     best = None
-    for n in range(min(max_points, len(cands)), 0, -1):
-        combos = sorted(combinations(range(len(cands)), n), key=lambda ix: (0 not in ix, ix))
+    # story mode (no spoken headline): the lead point ("what happened") must open the voice, so every combination with it
+    # is tried (most points first) before any without it
+    passes = [(n, True) for n in range(min(max_points, len(cands)), 0, -1)] if headline is None else []
+    passes += [(n, False) for n in range(min(max_points, len(cands)), 0, -1)]
+    for n, lead_only in passes:
+        combos = sorted((ix for ix in combinations(range(len(cands)), n) if 0 in ix or not lead_only), key=lambda ix: (0 not in ix, ix))
         for outro in (True, False):
             for ix in combos:
                 for sp in (SPEED, SPEED * 1.06):
-                    segs = script(headline, [cands[i] for i in ix], n, outro)
+                    segs = script(headline, [cands[i] for i in ix], n, outro, exact_hook)
                     vo = synth(segs, path, sp, voice=voice)
                     total = vo['seconds'] + (end_hold if outro else END_CARD)
                     if best is None or total < best[2]:
@@ -262,7 +309,7 @@ def fit_duration(headline, candidates, path=None, lo=12.0, hi=18.0, end_hold=.5,
                     if total <= hi:
                         return vo, segs, max(lo, total)
     if best is None:
-        segs = script(headline, [], 0); vo = synth(segs, path, SPEED, voice=voice); best = (vo, segs, vo['seconds'] + end_hold)
+        segs = script(headline, cands[:1] if headline is None else [], 1 if headline is None else 0, True, exact_hook); vo = synth(segs, path, SPEED, voice=voice); best = (vo, segs, vo['seconds'] + end_hold)
     return best
 
 

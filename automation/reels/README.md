@@ -36,5 +36,10 @@ Photo sources reject posed people. That covers titles or file names like "visits
   the outro's first word. Captions sit below the docked headline (y 1170-1470), inside the 3:4 band.
 - **Length**: driven by the voiceover, 12-18 s (drops the 3rd point, then uses shorter points or a slightly faster pace).
 - **Audio**: the voice over the bundled, code-synthesized music bed (royalty-free), ducked under speech.
-  `AIFEED_REEL_MUSIC=off` drops the bed; `AIFEED_REEL_VOICE=off` (or Piper missing) renders the old music-only timeline.
+  `AIFEED_REEL_MUSIC=off` drops the bed; `AIFEED_REEL_VOICE=off` (or the Kokoro model missing) renders the old music-only timeline.
+- `AIFEED_VOICE_HOOK`: `story` (default) - the voice does not read the headline; it starts right away with the story (lead
+  sentence first, up to 4 points, then the outro) while the big headline stays on screen with captions above it, and the
+  headline docks after the first sentence. `headline` - the voice first reads EXACTLY the on-screen punch headline
+  (markers stripped, natural casing, acronyms spelled, e.g. Character A.I.) with each spoken word lit on the headline.
+  Section clips are trimmed to audible speech, so pauses between sections (and before the outro) are ~0.3-0.4s.
 - Tests: `python3 -m unittest test_voice` (Piper tests skip without the voice).
