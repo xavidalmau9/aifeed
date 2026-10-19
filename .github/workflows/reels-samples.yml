@@ -32,6 +32,18 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           python3 -m pip install --quiet --break-system-packages pillow numpy || python3 -m pip install --quiet pillow numpy
+      - name: Cache Piper voice (Reels voiceover)
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/aifeed-piper
+          key: piper-voice-en_US-ryan-high-v1
+      - name: Install Reels voiceover (Piper TTS, free and offline)
+        # Free neural TTS that runs on the runner CPU: no API, no key. The voice (~115 MB) is downloaded once from the
+        # rhasspy/piper-voices Hugging Face repo and cached above. If any of this fails the Reel renders music-only.
+        continue-on-error: true
+        run: |
+          python3 -m pip install --quiet --break-system-packages "piper-tts[alignment]==1.8.0" || python3 -m pip install --quiet "piper-tts[alignment]==1.8.0"
+          python3 -c "import sys; sys.path.insert(0, 'automation/reels'); import voice; p = voice.voice_path(); print('piper voice:', p or 'MISSING'); sys.exit(0 if p else 1)"
       - name: Install pipeline libs
         working-directory: automation/actions
         run: npm ci

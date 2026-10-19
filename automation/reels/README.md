@@ -20,3 +20,19 @@ Every Reel needs a dramatic, story-themed, text-free scene. `scenes.pick_scene` 
 8. **commons**: a Wikimedia Commons scene search on the same keywords. The photo tiers are only reached if the library is missing (or if `AIFEED_SCENE_ORDER` puts them earlier).
 
 Photo sources reject posed people. That covers titles or file names like "visits", "meets", "Secretary", "portrait" and "handshake", plus a cheap skin-area heuristic.
+
+## Hook-first + voiceover (make_reel.py, voice.py)
+
+- **Frame 0 is the cover**: full-bleed scene, pill top-left, the full Anton punch headline, logo bottom-right. No fade-in or
+  build; only a slow push-in runs across the whole Reel.
+- **Voiceover**: Piper neural TTS (free, offline on the runner CPU, no API or key). Default voice `en_US-ryan-high`, cached
+  in `~/.cache/aifeed-piper` by the workflows (`actions/cache`). Override with `AIFEED_PIPER_VOICE=/path/voice.onnx` or
+  `AIFEED_PIPER_VOICE_NAME=en_US-lessac-medium`. Script: the headline, then 2-3 key points, then "Follow AIFeed dot run."
+  (checked against the banned-words list).
+- **Captions**: phrase-wise (3-4 words), timed per word from Piper's phoneme alignments; the spoken word is drawn in the
+  category accent. During the points the headline docks smaller (y 820-1110) and captions sit below it (y 1170-1470),
+  inside the 3:4 band and clear of the logo and IG's right rail.
+- **Length**: driven by the voiceover, 12-18 s (drops the 3rd point, then uses shorter points or a slightly faster pace).
+- **Audio**: the voice over the bundled, code-synthesized music bed (royalty-free), ducked under speech.
+  `AIFEED_REEL_MUSIC=off` drops the bed; `AIFEED_REEL_VOICE=off` (or Piper missing) renders the old music-only timeline.
+- Tests: `python3 -m unittest test_voice` (Piper tests skip without the voice).
