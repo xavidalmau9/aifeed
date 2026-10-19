@@ -89,3 +89,7 @@ test('python scene/punch rules (make_reel scenes.py) pass their offline unit tes
   const out = execFileSync('python3', ['-m', 'unittest', '-q', 'test_scenes'], { cwd: path.join(__dirname, '../../reels'), encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
   assert.ok(true, out);
 });
+test('python hook-first + voiceover reel (make_reel.py, voice.py) pass their offline unit tests', { timeout: 240000, skip: hasPyDeps ? false : 'python3 numpy/Pillow not installed' }, () => {
+  const out = execFileSync('python3', ['-m', 'unittest', '-q', 'test_voice'], { cwd: path.join(__dirname, '../../reels'), encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+  assert.ok(true, out);
+});

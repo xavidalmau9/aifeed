@@ -32,6 +32,20 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           python3 -m pip install --quiet --break-system-packages pillow numpy || python3 -m pip install --quiet pillow numpy
+      - name: Cache Kokoro TTS model (Reels voiceover)
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/aifeed-kokoro
+          key: kokoro-82m-v1.0-timestamped-fp32-am_michael-v1
+      - name: Install Reels voiceover (Kokoro-82M TTS, free and offline)
+        # Kokoro-82M (Apache-2.0) on the runner CPU via ONNX Runtime: no API, no key. The timestamped ONNX export (~325 MB)
+        # and the voice are downloaded once from Hugging Face and cached above. misaki = Kokoro's own G2P (Apache-2.0).
+        # If any of this fails the Reel renders music-only.
+        continue-on-error: true
+        run: |
+          PKGS='kokoro-onnx==0.6.1 misaki==0.7.4 num2words spacy en_core_web_sm@https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl'
+          python3 -m pip install --quiet --break-system-packages $PKGS || python3 -m pip install --quiet $PKGS
+          python3 -c "import sys; sys.path.insert(0, 'automation/reels'); import voice; p = voice.voice_path(); print('kokoro model:', p or 'MISSING'); sys.exit(0 if p else 1)"
       - name: Install pipeline libs
         working-directory: automation/actions
         run: npm ci

@@ -20,3 +20,21 @@ Every Reel needs a dramatic, story-themed, text-free scene. `scenes.pick_scene` 
 8. **commons**: a Wikimedia Commons scene search on the same keywords. The photo tiers are only reached if the library is missing (or if `AIFEED_SCENE_ORDER` puts them earlier).
 
 Photo sources reject posed people. That covers titles or file names like "visits", "meets", "Secretary", "portrait" and "handshake", plus a cheap skin-area heuristic.
+
+## Hook-first + voiceover (make_reel.py, voice.py)
+
+- **Frame 0 is the cover**: full-bleed scene, pill top-left, the full Anton punch headline, logo bottom-right. No fade-in or
+  build; only a slow push-in runs across the whole Reel.
+- **Voiceover**: Kokoro-82M (Apache-2.0) neural TTS on CPU via ONNX Runtime, free, no API or key. Timestamped ONNX export
+  (onnx-community/Kokoro-82M-v1.0-ONNX-timestamped) + misaki G2P (Kokoro's own). Default voice `am_michael` at speed 1.05
+  (`AIFEED_KOKORO_VOICE`, `AIFEED_KOKORO_SPEED`); files cached in `~/.cache/aifeed-kokoro` by the workflows.
+  Script: the headline ("Why X" -> "Here's why X."), then 2-3 self-contained points (no dangling "these challenges",
+  no repeats of the headline or each other), then "Follow AIFeed dot run." (dropped first if time is short).
+- **Captions**: phrase-wise (3-4 words); word times come from the TTS model's own phoneme durations, with onsets after a
+  pause re-measured on the waveform. Frames round to the nearest frame. Scene changes sit on spoken boundaries: the
+  headline docks in the pause after the hook and is fully docked on the first point's first word; the end card lands on
+  the outro's first word. Captions sit below the docked headline (y 1170-1470), inside the 3:4 band.
+- **Length**: driven by the voiceover, 12-18 s (drops the 3rd point, then uses shorter points or a slightly faster pace).
+- **Audio**: the voice over the bundled, code-synthesized music bed (royalty-free), ducked under speech.
+  `AIFEED_REEL_MUSIC=off` drops the bed; `AIFEED_REEL_VOICE=off` (or Piper missing) renders the old music-only timeline.
+- Tests: `python3 -m unittest test_voice` (Piper tests skip without the voice).
