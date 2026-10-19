@@ -25,13 +25,15 @@ Photo sources reject posed people. That covers titles or file names like "visits
 
 - **Frame 0 is the cover**: full-bleed scene, pill top-left, the full Anton punch headline, logo bottom-right. No fade-in or
   build; only a slow push-in runs across the whole Reel.
-- **Voiceover**: Piper neural TTS (free, offline on the runner CPU, no API or key). Default voice `en_US-ryan-high`, cached
-  in `~/.cache/aifeed-piper` by the workflows (`actions/cache`). Override with `AIFEED_PIPER_VOICE=/path/voice.onnx` or
-  `AIFEED_PIPER_VOICE_NAME=en_US-lessac-medium`. Script: the headline, then 2-3 key points, then "Follow AIFeed dot run."
-  (checked against the banned-words list).
-- **Captions**: phrase-wise (3-4 words), timed per word from Piper's phoneme alignments; the spoken word is drawn in the
-  category accent. During the points the headline docks smaller (y 820-1110) and captions sit below it (y 1170-1470),
-  inside the 3:4 band and clear of the logo and IG's right rail.
+- **Voiceover**: Kokoro-82M (Apache-2.0) neural TTS on CPU via ONNX Runtime, free, no API or key. Timestamped ONNX export
+  (onnx-community/Kokoro-82M-v1.0-ONNX-timestamped) + misaki G2P (Kokoro's own). Default voice `af_heart` at speed 1.05
+  (`AIFEED_KOKORO_VOICE`, `AIFEED_KOKORO_SPEED`); files cached in `~/.cache/aifeed-kokoro` by the workflows.
+  Script: the headline ("Why X" -> "Here's why X."), then 2-3 self-contained points (no dangling "these challenges",
+  no repeats of the headline or each other), then "Follow AIFeed dot run." (dropped first if time is short).
+- **Captions**: phrase-wise (3-4 words); word times come from the TTS model's own phoneme durations, with onsets after a
+  pause re-measured on the waveform. Frames round to the nearest frame. Scene changes sit on spoken boundaries: the
+  headline docks in the pause after the hook and is fully docked on the first point's first word; the end card lands on
+  the outro's first word. Captions sit below the docked headline (y 1170-1470), inside the 3:4 band.
 - **Length**: driven by the voiceover, 12-18 s (drops the 3rd point, then uses shorter points or a slightly faster pace).
 - **Audio**: the voice over the bundled, code-synthesized music bed (royalty-free), ducked under speech.
   `AIFEED_REEL_MUSIC=off` drops the bed; `AIFEED_REEL_VOICE=off` (or Piper missing) renders the old music-only timeline.

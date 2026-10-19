@@ -183,20 +183,27 @@ class Engine:
         # words that follow a pause (the first word, and after , . ? etc.): take the onset from the waveform itself, since the
         # model starts sounding a little before its first phoneme's nominal start (measured 5-55 ms)
         env = np.sqrt(np.convolve(wav.astype(np.float64) ** 2, np.ones(120) / 120, 'same'))  # 5 ms RMS
+        # Any word preceded by a real pause (>= 35 ms of near-silence): the model sometimes books part of a pause onto the
+        # next word, so the onset is re-measured on the waveform (where speech resumes). Measured: fixes 100+ ms errors.
+        q_ = env < .004
         for k, wd in enumerate(out):
-            if k and not re.search(r'[,.;:!?\u2014]$', out[k - 1][0]):
+            i = int(wd[1] * SR); lo_ = max(0, i - int(.18 * SR), int(out[k - 1][1] * SR) if k else 0)
+            seg = q_[lo_:i + int(.04 * SR)]
+            if not seg.any():
                 continue
-            i = int(wd[1] * SR); lo_ = max(0, i - int(.15 * SR)); seg = env[lo_:i + int(.05 * SR)]
-            quiet = np.where(seg < .004)[0]
-            if not len(quiet):
+            # the last quiet run that ends before speech resumes near the nominal onset
+            runs, start = [], None
+            for j, v in enumerate(seg):
+                if v and start is None: start = j
+                if not v and start is not None: runs.append((start, j)); start = None
+            runs = [r for r in runs if r[1] - r[0] >= int(.035 * SR)]
+            if not runs:
                 continue
-            q = quiet[quiet <= (i - lo_)]
-            start = (q[-1] + 1) if len(q) else 0
-            loud = np.where(seg[start:] > .01)[0]
-            if len(loud):
-                t0 = (lo_ + start + loud[0]) / SR
-                if abs(t0 - wd[1]) < .15:
-                    wd[1] = min(t0, wd[2] - .02)
+            t0 = (lo_ + runs[-1][1]) / SR
+            if -.15 < t0 - wd[1] < .04:
+                wd[1] = min(t0, wd[2] - .02)
+                if k and out[k - 1][2] > wd[1]:
+                    out[k - 1][2] = wd[1]
         return wav, [tuple(x) for x in out]
 
 
