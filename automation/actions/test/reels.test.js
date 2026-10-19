@@ -36,13 +36,16 @@ test('sceneEnv: Cloudflare is off unless the caller is the live post', () => {
   assert.equal(sceneEnv({}, { PATH: '/bin' }).PATH, '/bin');
 });
 
-test('pipeline: the live Reel is the only Cloudflare user; the dry run renders with it off', () => {
+test('pipeline: one scene pick per post; Cloudflare only on the live path, the Reel reuses the carousel scene', () => {
   const src = require('fs').readFileSync(require('path').join(__dirname, '../pipeline.js'), 'utf8');
-  const calls = src.match(/renderReel\([^;]*;/g) || [];
-  assert.equal(calls.length, 2);
-  assert.equal(calls.filter(c => /\{ cloudflare: true \}/.test(c)).length, 1);
-  assert.equal(calls.filter(c => /\{ cloudflare: false \}/.test(c)).length, 1);
-  assert.match(calls.find(c => /cloudflare: true/.test(c)), /tmpPng/); // the live path (dry run uses fp)
+  const reels = src.match(/renderReel\([^;]*;/g) || [];
+  assert.equal(reels.length, 2);
+  assert.ok(reels.every(c => /reelSceneOpts/.test(c))); // both Reel renders reuse the carousel's scene when there is one
+  assert.equal(reels.filter(c => /\{ cloudflare: false \}/.test(c)).length, 1); // dry run: never
+  assert.equal(reels.filter(c => /\{ cloudflare: !slides \}/.test(c)).length, 1); // live: only if the slides failed
+  const slides = src.match(/renderSlides\([^;]*;/g) || [];
+  assert.equal(slides.length, 1);
+  assert.match(slides[0], /cloudflare: !env\.DRY_RUN/);
 });
 
 test('samples never get Cloudflare: no CF secrets in reels-samples.yml, no schedule, flag off by default', () => {
@@ -62,4 +65,21 @@ test('CI numpy guard: every node test that shells out to python3 skips when nump
     const pyTests = src.split(/\ntest\(/).slice(1).filter(t => /execFileSync\('python3', \['-m', 'unittest'/.test(t));
     for (const t of pyTests) assert.match(t.split('\n')[0], /skip: hasPyDeps \? false :/, f);
   }
+});
+
+test('carousel v2: make_slides renders 4:5 slides + a 9:16 Story from one shared scene', { skip: (() => { try { require('child_process').execFileSync('python3', ['-c', 'import numpy, PIL']); return false; } catch (e) { return 'numpy/Pillow missing'; } })() }, () => {
+  const fs = require('fs'); const os = require('os'); const p = require('path'); const cp = require('child_process');
+  const repo = p.join(__dirname, '../../..'); const tmp = fs.mkdtempSync(p.join(os.tmpdir(), 'slides-t-'));
+  const scene = p.join(tmp, 'in.jpg');
+  cp.execFileSync('python3', ['-c', `import numpy as np;from PIL import Image;a=(np.random.default_rng(3).random((1920,1080,3))*120).astype('uint8');Image.fromarray(a).save('${scene}')`]);
+  const post = { slug: 't', category: 'Business', headline: 'Disney asked Character.AI to go bankrupt', punch: 'DISNEY SEEKS / *CHARACTER.AI / BANKRUPTCY',
+    summary: 'Court filings show Disney paid $5.5 million upfront to hire most of the startup staff. The startup faced multiple lawsuits over chatbot safety from regulators worldwide.', body: '' };
+  fs.writeFileSync(p.join(tmp, 'post.json'), JSON.stringify(post));
+  const out = cp.execFileSync('python3', [p.join(repo, 'automation/reels/make_slides.py'), '--post', p.join(tmp, 'post.json'), '--out-dir', tmp, '--scene', scene, '--scene-source', 'library'], { encoding: 'utf8', env: Object.assign({}, process.env, { AIFEED_SCENE_CF: 'off' }) });
+  const r = JSON.parse(out.trim().split('\n').pop());
+  const { pngSize } = require('../lib/png');
+  assert.ok(r.slides.length >= 3);
+  r.slides.forEach(s => assert.deepEqual(pngSize(fs.readFileSync(s)), { width: 1080, height: 1350 }));
+  assert.deepEqual(pngSize(fs.readFileSync(r.story)), { width: 1080, height: 1920 });
+  assert.equal(r.sceneSource, 'library');
 });
