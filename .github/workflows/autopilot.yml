@@ -33,6 +33,7 @@ on:
       - 'automation/actions/**'
       - '.github/workflows/autopilot.yml'
       - 'automation/n8n/**'
+      - 'automation/reels/**'
 
 # Scheduled and manual runs share one group so two posts never overlap.
 # Pull-request test runs use their own group and do not block a post.
