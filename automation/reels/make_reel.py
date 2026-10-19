@@ -175,8 +175,10 @@ def _stems(t):
     return {w[:5] for w in re.findall(r"[a-z0-9]+", t.lower().replace("\u2019", "'")) if w not in STOP and len(w) > 2}
 
 
-def voice_points(post, n=150, max_points=6):
-    """Points for the voiceover: self-contained sentences, each adding something the headline and earlier points didn't."""
+def voice_points(post, n=150, max_points=6, story=False):
+    """Points for the voiceover: self-contained sentences, each adding something the headline and earlier points didn't.
+    story=True (story-only voice, headline not spoken): the lead sentence that restates the headline is kept - it's the
+    'what happened' opener."""
     paras = [clean(p) for p in re.findall(r'<p>(.*?)</p>', post.get('body', ''), re.S)] or [clean(post.get('body', ''))]
     head = clean(post.get('headline', '')); hs = _stems(head)
     seen, out = [], []
@@ -190,7 +192,7 @@ def voice_points(post, n=150, max_points=6):
         if m and m.group(1).lower() not in head.lower():
             continue  # "the bill" / "the deal" the viewer was never told about
         st = _stems(t)
-        if not st or len(st & hs) >= 3 or len(st & hs) / len(st) > .4:
+        if not st or (not story and (len(st & hs) >= 3 or len(st & hs) / len(st) > .4)):
             continue  # restates the headline (the voice just said it)
         if any(len(st & o) >= 3 or len(st & o) / max(1, min(len(st), len(o))) > .4 for o in seen):
             continue  # near-duplicate of an earlier point
@@ -222,6 +224,7 @@ COVER_X0, COVER_X1 = 80, 1000           # cover text column (IG 3:4 grid crop is
 GRID_TOP, GRID_BOTTOM = 240, 1680       # everything on the cover must sit inside this band
 PUNCH_TOP, PUNCH_BOTTOM = 900, 1520     # headline block: roughly the bottom half of the 3:4 tile
 DOCK_TOP, DOCK_BOTTOM = 820, 1110       # docked (smaller) headline while the voiceover reads the points
+HOOK_CAP_TOP = 560  # story mode: captions above the big opening headline (below the pill, inside the 3:4 band)
 CAP_X0, CAP_X1, CAP_TOP, CAP_SIZE = 80, 940, 1170, 86  # captions: below the docked headline, above the logo, clear of IG's right rail
 END_FADE, PUSH = .18, .09               # end-card dissolve (s, lands on the outro's first word); total slow push-in
 
@@ -249,6 +252,29 @@ def punch_lines(post, headline):
 
 
 def punch_sprites(lines, pink, accent=None, x0=COVER_X0, x1=COVER_X1, top=PUNCH_TOP, bottom=PUNCH_BOTTOM, gap=10, cap=250, floor=84):
+    return [(text_sprite(l, f, c), x, y) for l, f, c, x, y in punch_layout(lines, pink, accent, x0, x1, top, bottom, gap, cap, floor)]
+
+
+def spoken_hook(post):
+    """The voiceover hook: exactly the words of the on-screen punch headline (see voice.punch_speech)."""
+    import voice
+    return voice.punch_speech(punch_lines(post, clean(post['headline']))[0], clean(post['headline']))
+
+
+def punch_word_sprites(lines, pink, accent=None):
+    """Per-word highlight sprites for the big hook headline, in the colour that contrasts with the word's line (white words
+    light up in the accent, the accent line lights up white). Same font/origin as the line, so it overlays glyph-exact.
+    Returns [(word, (sprite, ox, oy), x_origin, y_origin)] in reading order."""
+    d = ImageDraw.Draw(Image.new('L', (1, 1))); out = []
+    for l, f, c, x, y in punch_layout(lines, pink, accent):
+        ws = l.split(' ')
+        for j, w in enumerate(ws):
+            dx = d.textlength(' '.join(ws[:j]) + ' ', font=f) if j else 0
+            out.append((w, text_sprite(w, f, WHITE if c != WHITE else (accent or PINK), shadow=False), x + dx, y))
+    return out
+
+
+def punch_layout(lines, pink, accent=None, x0=COVER_X0, x1=COVER_X1, top=PUNCH_TOP, bottom=PUNCH_BOTTOM, gap=10, cap=250, floor=84):
     """Each line sized to fill the column width (poster look), then the stack is scaled to fit the band, bottom-aligned."""
     d = ImageDraw.Draw(Image.new('L', (1, 1))); maxw = x1 - x0
     sizes = []
@@ -262,8 +288,8 @@ def punch_sprites(lines, pink, accent=None, x0=COVER_X0, x1=COVER_X1, top=PUNCH_
         k = (bottom - top) / total; sizes = [max(40, int(s * k)) for s in sizes]
     hs = heights(sizes); y = bottom - (sum(hs) + gap * (len(lines) - 1)); out = []
     for i, (l, s, h) in enumerate(zip(lines, sizes, hs)):
-        f = FONT('Anton', s); spr = text_sprite(l, f, (accent or PINK) if i == pink else WHITE)
-        out.append((spr, x0, y - d.textbbox((0, 0), l, font=f)[1])); y += h + gap  # y = glyph top, not text origin
+        f = FONT('Anton', s)
+        out.append((l, f, (accent or PINK) if i == pink else WHITE, x0, y - d.textbbox((0, 0), l, font=f)[1])); y += h + gap  # y = glyph top, not text origin
     return out
 
 
@@ -385,6 +411,11 @@ class Reel:
                 seg['end'] = {'name': 'end', 'start': last + .3, 'end': last + .3, 'words': []}; names.append('end')
             # scene cuts sit exactly on the spoken boundaries: each section starts at its first word's onset; the end card's
             # short dissolve finishes on the outro's first word
+            # story mode (default, AIFEED_VOICE_HOOK != headline): no spoken headline; the first point plays over the big
+            # opening headline (captions above it) and the headline docks in the pause after that first sentence
+            self.story_mode = 'hook' not in seg
+            if self.story_mode:
+                seg['hook'] = seg[names[0]]; names = ['hook'] + names[1:]
             starts = [0.0] + [seg[n]['start'] - (END_FADE if n == 'end' else 0) for n in names[1:]]
             self.hook_end, self.p1_on = seg['hook']['end'], seg[names[1]]['start']
             self.outro_on = seg['end']['start'] if 'end' in seg else None
@@ -422,6 +453,12 @@ class Reel:
         if BANNED.search(' '.join(self.punch)):
             raise SystemExit('banned wording in punch headline')
         self.h_lines = punch_sprites(self.punch, self.punch_pink, self.accent)
+        # the spoken hook is exactly these words (voice.punch_speech), so each spoken hook word lights up its on-screen word
+        self.h_words, self.hook_times = punch_word_sprites(self.punch, self.punch_pink, self.accent), []
+        if vo:
+            hw = next((sg['words'] for sg in vo['segments'] if sg['name'] == 'hook'), [])
+            if len(hw) == len(self.h_words):
+                self.hook_times = [(w[1], w[2]) for w in hw]
         # docked headline for the voiceover/caption scenes: same single headline, smaller, still in the 3:4 band
         self.d_lines = punch_sprites(self.punch, self.punch_pink, self.accent, top=DOCK_TOP, bottom=DOCK_BOTTOM, gap=8, cap=130, floor=44)
         self.captions = self._captions() if vo else []
@@ -471,7 +508,7 @@ class Reel:
                 out.append((t0, t1, items))
         return out
 
-    def draw_captions(self, fr, t):
+    def draw_captions(self, fr, t, dy=0):
         """Frame at time t shows a word as spoken from the frame nearest its audio onset (half-frame rounding), until the
         next word starts; the phrase appears on its first word's onset. Timings are the TTS model's own phoneme durations."""
         h = .5 / FPS
@@ -483,9 +520,9 @@ class Reel:
                 nxt = items[j + 1][4] if j + 1 < len(items) else max(tb + .15, t1)
                 on = ta - h <= t < nxt - h
                 if on:
-                    paste_alpha(fr, a, x - ax, y - ay)  # the spoken word: accent, full opacity, no offset
+                    paste_alpha(fr, a, x - ax, y + dy - ay)  # the spoken word: accent, full opacity, no offset
                 else:
-                    paste_alpha(fr, w, x - ox, y - oy + 10 * (1 - pop), (1.0 if t >= ta - h else .72) * (.5 + .5 * pop))
+                    paste_alpha(fr, w, x - ox, y + dy - oy + 10 * (1 - pop), (1.0 if t >= ta - h else .72) * (.5 + .5 * pop))
             return
 
     def _brand(self, size, shadow=False):
@@ -612,6 +649,15 @@ class Reel:
         self.progress(fr, t)
         return fr.convert('RGB')
 
+    def hook_word(self, t):
+        """Index of the on-screen hook word being spoken at t (same lead as the captions), else None."""
+        lead = .5 / FPS  # half-frame rounding, as draw_captions
+        for i, (a, b) in enumerate(self.hook_times):
+            nxt = self.hook_times[i + 1][0] if i + 1 < len(self.hook_times) else b + .15
+            if a - lead <= t < max(b, nxt) - lead:
+                return i
+        return None
+
     def scene_frame(self, t, k):
         """k: 0 = hook layout (cover), 1 = docked headline + captions."""
         scene_end = self.cuts[-1] if self.scenes[-1][0] == 'end' else self.total
@@ -621,6 +667,11 @@ class Reel:
         if k <= 0:
             for (spr, ox, oy), x, y in self.h_lines:
                 paste_alpha(fr, spr, x - ox, y - oy)
+            a = self.hook_word(t)
+            if a is not None:
+                _, (spr, ox, oy), x, y = self.h_words[a]; paste_alpha(fr, spr, x - ox, y - oy)
+            if self.vo and self.story_mode:
+                self.draw_captions(fr, t, HOOK_CAP_TOP - CAP_TOP)
             dr.rectangle((COVER_X0, PUNCH_BOTTOM + 34, COVER_X0 + 200, PUNCH_BOTTOM + 44), fill=self.accent)
             self.logo(fr, 1, PUNCH_BOTTOM + 28)
         else:
@@ -774,8 +825,14 @@ def build(post, feed_path, out, seed=0, photo=None):
             vp = voice.voice_path(timeout=90)  # the workflow normally pre-caches it; don't stall a live slot
             if not vp:
                 raise RuntimeError('Kokoro model not available')
-            cands = voice_points(post) or [x for x in key_points(post) if x != 'Full story at aifeed.run.'][:1]
-            vo, segs, total = voice.fit_duration(clean(post['headline']), cands, path=vp, lo=MIN_S, hi=MAX_S)
+            story = os.environ.get('AIFEED_VOICE_HOOK', 'story').lower() != 'headline'
+            cands = voice_points(post, story=story) or [x for x in key_points(post) if x != 'Full story at aifeed.run.'][:1]
+            # the hook is spoken as EXACTLY the on-screen punch headline words (not the source title)
+            # AIFEED_VOICE_HOOK=headline: the voice first reads EXACTLY the on-screen punch headline; default 'story': the
+            # voice skips the headline and tells the story from the first word (up to 4 points)
+            hook = None if story else spoken_hook(post)
+            vo, segs, total = voice.fit_duration(hook, cands, path=vp, lo=MIN_S, hi=MAX_S, exact_hook=True,
+                                                 max_points=3 if hook else 4)
             voice_name = f"kokoro:{vo['voice']}@{vo['speed']:.2f}"
         except Exception as e:  # never lose the slot over TTS: fall back to the music-only timeline
             vo_err = str(e)[:200]; vo = None

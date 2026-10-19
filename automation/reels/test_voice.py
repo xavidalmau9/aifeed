@@ -1,5 +1,5 @@
 """Offline tests for the hook-first + voiceover Reel (python3 -m unittest test_voice). Kokoro tests skip without the model."""
-import os, unittest
+import os, re, unittest
 import numpy as np
 from PIL import Image
 import make_reel as M
@@ -92,6 +92,62 @@ class HookFirst(unittest.TestCase):
     def test_end_card_last(self):
         fr = self.r.frame(self.r.total - .05)
         self.assertEqual(fr.size, (1080, 1920))
+
+
+def _norm_words(text):
+    return [re.sub(r'[^0-9a-z]', '', w.lower()) for w in text.replace('/', ' ').replace('*', ' ').split() if re.search(r'\w', w)]
+
+
+class HookMatchesScreen(unittest.TestCase):
+    DISNEY = {'slug': 'disney', 'headline': 'Disney Asked Character.AI to Go Bankrupt for a Get-Out-of-Lawsuits Card', 'category': 'Business',
+              'punch': 'DISNEY SEEKS / CHARACTER.AI / *BANKRUPTCY / DEAL', 'summary': 'x.', 'body': ''}
+
+    def test_spoken_hook_equals_displayed_headline_words(self):
+        for post in (self.DISNEY, POST, dict(POST, punch='WHY AI / *ISN\u2019T READY / FOR GENOMES'), dict(POST, punch=''),
+                     dict(POST, headline='How OpenAI plans to ship GPT-6 in 2027', punch='')):
+            shown = ' '.join(M.punch_lines(post, M.clean(post['headline']))[0])
+            hook = M.spoken_hook(post)
+            self.assertEqual(_norm_words(hook), _norm_words(shown), (hook, shown))
+            seg = voice.script(hook, ['A point.'], exact_hook=True)[0]
+            self.assertEqual(seg, ('hook', hook))  # spoken as-is (no "Here's why" rewrite of the screen text)
+            self.assertFalse(re.search(r'\b[A-Z]{5,}\b', hook), hook)  # no ALL-CAPS shouting (short acronyms are fine)
+
+    def test_disney_hook_casing_and_acronym(self):
+        hook = M.spoken_hook(self.DISNEY)
+        self.assertEqual(hook, 'Disney seeks Character.AI bankruptcy deal.')
+        self.assertEqual(voice.spoken(hook), 'Disney seeks Character A.I. bankruptcy deal.')
+        self.assertEqual(len(voice.words_of(hook)), 5)  # one caption/highlight word per on-screen word
+
+    def test_hook_highlight_follows_the_on_screen_words(self):
+        post = self.DISNEY; hook = M.spoken_hook(post)
+        vo = fake_vo(voice.script(hook, ['Point one here.'], exact_hook=True))
+        r = M.Reel(post, Image.new('RGB', (1080, 1350)), textured(1600, 1000, 80), 'WIRED', '', vo, vo['seconds'] + .5)
+        self.assertEqual([w for w, *_ in r.h_words], ['DISNEY', 'SEEKS', 'CHARACTER.AI', 'BANKRUPTCY', 'DEAL'])
+        hw = vo['segments'][0]['words']
+        for i, (w, a, b) in enumerate(hw):
+            self.assertEqual(r.hook_word((a + b) / 2), i)
+        self.assertIsNone(r.hook_word(0.0 - .1))
+        # the lit word changes the frame only around that word
+        tm = (hw[2][1] + hw[2][2]) / 2; f1 = np.asarray(r.frame(tm)).astype(np.int16)
+        times, r.hook_times = r.hook_times, []; f0 = np.asarray(r.frame(tm)).astype(np.int16); r.hook_times = times
+        _, (spr, ox, oy), x, y = r.h_words[2]
+        diff = np.abs(f1 - f0).sum(2) > 60; ys, xs = np.where(diff[M.PUNCH_TOP:M.PUNCH_BOTTOM]); ys = ys + M.PUNCH_TOP
+        self.assertTrue(len(ys))
+        self.assertGreaterEqual(ys.min(), y - oy - 2); self.assertLessEqual(ys.max(), y - oy + spr.height + 2)
+
+
+class StoryMode(unittest.TestCase):
+    def test_default_story_mode_starts_with_the_story(self):
+        segs = voice.script(None, ['Disney asked Character A.I. to file for bankruptcy.', 'It wants out of the lawsuits.'])
+        self.assertEqual([n for n, _ in segs], ['p1', 'p2', 'end'])
+        vo = fake_vo(segs); r = reel(vo, vo['seconds'] + .5)
+        self.assertTrue(r.story_mode); self.assertEqual(r.scenes[0][0], 'hook')
+        self.assertAlmostEqual(r.hook_end, vo['segments'][0]['end']); self.assertAlmostEqual(r.p1_on, vo['segments'][1]['start'])
+        # frame 0 still the cover; the first story words are captioned above the big headline, not over it
+        cov = np.asarray(r.cover()).astype(np.int16); w0 = vo['segments'][0]['words'][0]
+        fr = np.asarray(r.frame((w0[1] + w0[2]) / 2)).astype(np.int16)
+        self.assertLess(np.abs(fr[M.PUNCH_TOP:M.PUNCH_BOTTOM] - cov[M.PUNCH_TOP:M.PUNCH_BOTTOM]).mean(), 6)
+        self.assertGreater((np.abs(fr[M.HOOK_CAP_TOP:M.PUNCH_TOP - 20] - cov[M.HOOK_CAP_TOP:M.PUNCH_TOP - 20]).sum(2) > 150).mean(), .01)
 
 
 class Script(unittest.TestCase):
