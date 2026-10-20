@@ -405,7 +405,7 @@ async function main() {
       assertStoryPng(story.png);
       fs.mkdirSync(env.OUT, { recursive: true });
       if (slides) slides.names.forEach((n, i) => fs.writeFileSync(path.join(env.OUT, n), slides.pngs[i]));
-      fs.writeFileSync(path.join(env.OUT, published.pngName), feed.png);
+      fs.writeFileSync(path.join(env.OUT, published.pngName), slides ? slides.pngs[0] : feed.png); // same file the live run commits
       fs.writeFileSync(path.join(env.OUT, published.storyName), story.png);
       fs.writeFileSync(path.join(env.OUT, 'instagram-caption.txt'), published.igCaption + '\n');
       fs.writeFileSync(path.join(env.OUT, 'linkedin-caption.txt'), published.liCaption + '\n');
