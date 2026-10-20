@@ -108,6 +108,12 @@ async function publishInstagram(cfg, env, imageUrls, caption) {
   return published;
 }
 
+// Story public-URL waits: first pass ~2 min (image already in the Publish commit), end-of-run retry ~11 min more.
+const STORY_WAIT = {
+  first: { firstWaitMs: 0, retryWaitMs: 30000, maxAttempts: 5 },
+  retry: { firstWaitMs: 30000, retryWaitMs: 30000, maxAttempts: 22 }
+};
+
 async function publishStory(cfg, env, storyUrl) {
   const auth = { token: env.META_PAGE_TOKEN, appSecret: env.META_APP_SECRET };
   const base = `https://graph.facebook.com/${cfg.graphVersion}/${cfg.igUserId}`;
@@ -407,6 +413,11 @@ async function main() {
       if (slides) slides.names.forEach((n, i) => fs.writeFileSync(path.join(env.OUT, n), slides.pngs[i]));
       fs.writeFileSync(path.join(env.OUT, published.pngName), slides ? slides.pngs[0] : feed.png); // same file the live run commits
       fs.writeFileSync(path.join(env.OUT, published.storyName), story.png);
+      console.log('Live Publish commit would contain: ' + JSON.stringify(['images/' + published.pngName,
+        ...(slides ? slides.names.slice(1).map(n => 'images/' + n) : []), 'images/' + published.storyName,
+        '_posts/posts-index.json', '_data/history.json']));
+      console.log('Story wait plan: first ~' + Math.round(STORY_WAIT.first.retryWaitMs * (STORY_WAIT.first.maxAttempts - 1) / 60000)
+        + ' min before the Reel, then end-of-run retry ~' + Math.round((STORY_WAIT.retry.firstWaitMs + STORY_WAIT.retry.retryWaitMs * (STORY_WAIT.retry.maxAttempts - 1)) / 60000) + ' min');
       fs.writeFileSync(path.join(env.OUT, 'instagram-caption.txt'), published.igCaption + '\n');
       fs.writeFileSync(path.join(env.OUT, 'linkedin-caption.txt'), published.liCaption + '\n');
       fs.writeFileSync(path.join(env.OUT, 'story.json'), JSON.stringify({
@@ -457,6 +468,17 @@ async function main() {
       return 0;
     }
 
+    // Story image ships in the SAME commit as the carousel slides (one Pages build), so it is already public when the
+    // Story posts. Oct 20 PM: a separate later commit got its Pages build cancelled and the Story timed out.
+    let storyPng = null;
+    try {
+      storyPng = slides ? slides.storyPng : (await renderHtml(qc.storyHtml, { width: 1080, height: 1920, waitMs: 3000 })).png;
+      assertStoryPng(storyPng);
+    } catch (e) {
+      storyPng = null;
+      console.log('Story image render failed (feed post unaffected): ' + redact(e.message));
+    }
+
     contentCommitted = true;
     const headline = published.post.headline;
     commitApply(env.REPO, 'Publish: ' + headline.substring(0, 60), () => {
@@ -475,9 +497,11 @@ async function main() {
         entry: published.historyEntry,
         rankings: ordered.rankings
       }));
-      return [imageRel, ...extra, '_posts/posts-index.json', '_data/history.json'];
+      const storyRel = storyPng ? ['images/' + published.storyName] : [];
+      if (storyPng) fs.writeFileSync(path.join(env.REPO, storyRel[0]), storyPng);
+      return [imageRel, ...extra, ...storyRel, '_posts/posts-index.json', '_data/history.json'];
     });
-    console.log('Committed feed image, posts index, and history');
+    console.log('Committed feed image' + (storyPng ? ', story image' : '') + ', posts index, and history');
 
     console.log('Waiting for ' + published.post.imageUrl);
     await pollPublic(published.post.imageUrl);
@@ -496,23 +520,23 @@ async function main() {
       console.log('Instagram carousel skipped (igCarouselEnabled false); the Reel is the feed post');
     }
 
-    try {
-      console.log('Rendering Instagram story');
-      const story = slides ? { png: slides.storyPng } : await renderHtml(qc.storyHtml, { width: 1080, height: 1920, waitMs: 3000 });
-      assertStoryPng(story.png);
-      commitApply(env.REPO, 'AIFeed story image: ' + published.storyName, () => {
-        const rel = 'images/' + published.storyName;
-        fs.mkdirSync(path.join(env.REPO, 'images'), { recursive: true });
-        fs.writeFileSync(path.join(env.REPO, rel), story.png);
-        return [rel];
-      });
+    // Story: image is already in the Publish commit, so a short check normally passes at once. If it is not public yet,
+    // the Story is deferred to the end of the run (long wait + one retry) so the Reel's publish time does not slip.
+    let storyPending = false;
+    const tryStory = async waitOpts => {
       console.log('Waiting for ' + published.storyUrl);
-      await pollPublic(published.storyUrl);
+      await pollPublic(published.storyUrl, waitOpts);
       await publishStory(cfg, env, published.storyUrl);
-    } catch (e) {
-      const msg = 'AIFeed: Instagram Story failed (feed post unaffected)\n' + redact(e.message);
-      console.log(msg);
-      await sendAlert(msg);
+    };
+    if (!storyPng) {
+      await sendAlert('AIFeed: Instagram Story skipped: image render failed (feed post unaffected)');
+    } else {
+      try {
+        await tryStory(STORY_WAIT.first);
+      } catch (e) {
+        storyPending = true;
+        console.log('Instagram Story deferred to the end of the run: ' + redact(e.message));
+      }
     }
 
     // Reel: render + commit videos/reels/<slug>.mp4, then IG Reel + FB video. Sets post.videoUrl so LinkedIn (Buffer) posts the video.
@@ -625,6 +649,16 @@ async function main() {
       console.log('LinkedIn disabled: set the BUFFER_API_KEY secret (bufferLinkedinEnabled + channel id are in config.json)');
     }
 
+    if (storyPending) {
+      try {
+        await tryStory(STORY_WAIT.retry);
+      } catch (e) {
+        const msg = 'AIFeed: Instagram Story failed after retry (feed post + Reel unaffected)\n' + redact(e.message);
+        console.log(msg);
+        await sendAlert(msg);
+      }
+    }
+
     console.log('Autopilot finished slot ' + decision.slot + ' ' + published.slug);
     return 0;
   } catch (e) {
@@ -644,4 +678,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { main, runtimeEnv, facebookMessage };
+module.exports = { main, runtimeEnv, facebookMessage, STORY_WAIT };

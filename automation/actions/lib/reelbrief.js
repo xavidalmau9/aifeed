@@ -18,6 +18,10 @@ Return ONLY JSON: {"punch": "...", "scene": "...", "keywords": ["...", "..."]}
   not state (e.g. do not say "breach" or "hack" unless the story does). Keep company names; no clickbait; no question unless
   the headline is one; never use the word "daily".
   Never repeat a word or its root across the lines (bad: "CREDIT STRESS / HITS DISTRESS", "AI ... / AI ..."; each word once).
+  ONE clause only: never stack two fragments (bad: "WE WERE WRONG / *LLMS EASIER / TO UNDERSTAND / THAN THOUGHT" = a quote
+  plus a verbless fragment; good: "*LLMS ARE / EASIER TO READ / THAN WE / THOUGHT" or "RESEARCHERS / *FIND LLMS / EASIER TO / DECODE").
+  Write in third person: never open with a quote or with WE / I / YOU / OUR. Keep the verb ("ARE", "IS", "HITS");
+  do not drop it to save space. The accent line carries the news (the key fact or verb phrase), not a filler word.
   Example: "COREWEAVE / *CREDIT SWAPS / HIT DISTRESS / OVER DEBT"
 - scene: one sentence describing a dramatic, photorealistic scene that matches the story's THEME (not just its category),
   as a visual metaphor a top US news outlet would use. Examples: credit/debt stress -> "a stressed trader in shadow, head in hand,
@@ -59,11 +63,17 @@ function repeatedRoots(p) {
   return rep;
 }
 
+// Choppy-punch guard: a first-person/quote opener ("WE WERE WRONG / ...") reads as two fragments on the cover.
+const QUOTE_OPENER = /^\s*\*?\s*["'‘’“”]|^\s*\*?\s*(WE|I|YOU|OUR|MY|US)\b/i;
+function choppyPunch(p) {
+  return QUOTE_OPENER.test(String(p || ''));
+}
+
 function validPunch(p) {
   if (typeof p !== 'string') return false;
   const lines = p.split('/').map(s => s.trim()).filter(Boolean);
   return lines.length >= 2 && lines.length <= 4 && lines.filter(l => l.startsWith('*')).length === 1
-    && lines.every(l => l.replace(/^\*/, '').length <= 22) && !BANNED.test(p) && repeatedRoots(p).length === 0;
+    && lines.every(l => l.replace(/^\*/, '').length <= 22) && !BANNED.test(p) && repeatedRoots(p).length === 0 && !choppyPunch(p);
 }
 
 function parseReelBrief(text) {
@@ -87,7 +97,9 @@ async function reelBrief(post, ask) {
     out = parseReelBrief(first);
     if (out.punch) return out;
     const m = String(first || '').match(/"punch"\s*:\s*"([^"]*)"/);
-    const why = m && repeatedRoots(m[1]).length ? `it repeated the root word(s) ${repeatedRoots(m[1]).join(', ')}` : 'it broke the format rules';
+    const why = m && repeatedRoots(m[1]).length ? `it repeated the root word(s) ${repeatedRoots(m[1]).join(', ')}`
+      : m && choppyPunch(m[1]) ? 'it opens with a quote or first-person words (WE/I/YOU) and reads as two fragments; write ONE third-person clause'
+      : 'it broke the format rules';
     const retry = parseReelBrief(await ask(buildReelBriefPrompt(post) +
       `\n\nYour previous punch ${m ? JSON.stringify(m[1]) + ' ' : ''}was rejected because ${why}. Write a new one that follows every rule.`));
     return { ...out, ...retry };
@@ -96,4 +108,4 @@ async function reelBrief(post, ask) {
   }
 }
 
-module.exports = { buildReelBriefPrompt, parseReelBrief, validPunch, repeatedRoots, wordRoot, reelBrief };
+module.exports = { buildReelBriefPrompt, parseReelBrief, validPunch, choppyPunch, repeatedRoots, wordRoot, reelBrief };
