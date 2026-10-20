@@ -20,7 +20,7 @@ const {
 } = require('./lib/net');
 const { sendAlert } = require('./alert');
 const { buildFb, checkFb } = require('./lib/captions');
-const { renderReel, withPhotoCredit, publishIgReel, publishFbVideo } = require('./lib/reels');
+const { renderReel, renderSlides, withPhotoCredit, publishIgReel, publishFbVideo } = require('./lib/reels');
 const { reelBrief } = require('./lib/reelbrief');
 const { isReelsOnly, carouselUpfront, carouselFallback, fbPhotoNeeded } = require('./lib/reelsplan');
 
@@ -85,15 +85,20 @@ function writeClaim(env, decision, status, { takeOver = false, extra } = {}) {
   });
 }
 
-async function publishInstagram(cfg, env, imageUrl, caption) {
+// imageUrls: the v2 slide URLs (cover, key points, CTA), or a single feed-graphic URL (legacy: + the static end card).
+async function publishInstagram(cfg, env, imageUrls, caption) {
   const auth = { token: env.META_PAGE_TOKEN, appSecret: env.META_APP_SECRET };
   const base = `https://graph.facebook.com/${cfg.graphVersion}/${cfg.igUserId}`;
-  const child1 = await graphForm(base + '/media', { image_url: imageUrl, is_carousel_item: 'true' }, Object.assign({ tries: 3, waitMs: 15000 }, auth));
-  const child2 = await graphForm(base + '/media', { image_url: cfg.endCardUrl, is_carousel_item: 'true' }, Object.assign({ tries: 3, waitMs: 15000 }, auth));
-  if (!child1.id || !child2.id) throw new Error('Instagram did not return carousel child ids');
+  const urls = Array.isArray(imageUrls) ? imageUrls.slice(0, 10) : [imageUrls, cfg.endCardUrl];
+  const ids = [];
+  for (const u of urls) {
+    const child = await graphForm(base + '/media', { image_url: u, is_carousel_item: 'true' }, Object.assign({ tries: 3, waitMs: 15000 }, auth));
+    if (!child.id) throw new Error('Instagram did not return carousel child ids');
+    ids.push(child.id);
+  }
   const carousel = await graphForm(base + '/media', {
     media_type: 'CAROUSEL',
-    children: child1.id + ',' + child2.id,
+    children: ids.join(','),
     caption
   }, auth);
   if (!carousel.id) throw new Error('Instagram did not return a carousel id');
@@ -168,7 +173,9 @@ async function main() {
   console.log(decision.reason);
   if (!decision.run) return 0;
 
-  if (process.env.GITHUB_ACTIONS === 'true') syncMain(env.REPO);
+  // AIFEED_NO_RESET=1 (dry runs only; set by no workflow that posts) keeps a branch checkout so a dry run tests the
+  // branch's own Python renderers instead of main's. Live runs always reset to main.
+  if (process.env.GITHUB_ACTIONS === 'true' && !(env.DRY_RUN && process.env.AIFEED_NO_RESET === '1')) syncMain(env.REPO);
 
   const posts = readJson(env.REPO, '_posts/posts-index.json', null);
   const history = readJson(env.REPO, '_data/history.json', { posted: [], rankings: {} });
@@ -365,12 +372,40 @@ async function main() {
     console.log('Photo: ' + (qc.story.photoSource || 'og:image') + ' — ' + (qc.story.photoWhy || '') + ' — ' + (qc.story.ogImage || ''));
     console.log('Image: ' + published.pngName);
 
+    // v2 carousel + Story (Reel design): one Reel brief (punch headline + scene idea) and ONE scene pick, shared with the
+    // Reel below. Live posts may use Cloudflare here (this is then the only Cloudflare call; the Reel reuses the scene);
+    // dry runs never do. Any failure falls back to the legacy feed graphic + end card and the HTML Story.
+    let brief = null, slides = null;
+    const feedTmp = path.join(require('os').tmpdir(), published.pngName);
+    fs.writeFileSync(feedTmp, feed.png);
+    const getBrief = async () => {
+      if (!brief) brief = await reelBrief(published.post, prompt => claudeMessage(env.ANTHROPIC_API_KEY, { model: cfg.anthropicModel, prompt, maxTokens: 400, temperature: 0.4, tries: 2 }));
+      return brief;
+    };
+    try {
+      await getBrief();
+      slides = renderSlides(env.REPO, Object.assign({}, published.post, brief), feedTmp, published.post.photoUrl || qc.story.ogImage || '', { cloudflare: !env.DRY_RUN });
+      slides.pngs = slides.slides.map(p => fs.readFileSync(p));
+      slides.pngs.forEach(assertFeedPng);
+      slides.storyPng = fs.readFileSync(slides.story);
+      assertStoryPng(slides.storyPng);
+      slides.names = slides.pngs.map((_, i) => i === 0 ? published.pngName : published.pngName.replace(/\.png$/, '_s' + (i + 1) + '.png'));
+      console.log('Carousel v2: ' + slides.pngs.length + ' slides, scene ' + slides.sceneSource + ' (' + (slides.sceneLog || []).join('; ') + ')');
+    } catch (e) {
+      slides = null;
+      console.log('Carousel v2 FAILED, using the legacy feed graphic + end card: ' + redact(e.message));
+      if (!env.DRY_RUN) await sendAlert('AIFeed: carousel v2 render failed (legacy graphic used)\n' + redact(e.message));
+    }
+    const reelSceneOpts = slides ? { scene: slides.scene, sceneSource: slides.sceneSource, sceneCredit: slides.credit } : {};
+    const slideUrls = () => slides ? slides.names.map(n => cfg.siteUrl + '/images/' + n) : published.post.imageUrl;
+
     if (env.DRY_RUN) {
       console.log('Rendering story graphic for dry-run artifacts');
-      const story = await renderHtml(qc.storyHtml, { width: 1080, height: 1920, waitMs: 3000 });
+      const story = slides ? { png: slides.storyPng, fit: 'v2' } : await renderHtml(qc.storyHtml, { width: 1080, height: 1920, waitMs: 3000 });
       assertStoryPng(story.png);
       fs.mkdirSync(env.OUT, { recursive: true });
-      fs.writeFileSync(path.join(env.OUT, published.pngName), feed.png);
+      if (slides) slides.names.forEach((n, i) => fs.writeFileSync(path.join(env.OUT, n), slides.pngs[i]));
+      fs.writeFileSync(path.join(env.OUT, published.pngName), slides ? slides.pngs[0] : feed.png); // same file the live run commits
       fs.writeFileSync(path.join(env.OUT, published.storyName), story.png);
       fs.writeFileSync(path.join(env.OUT, 'instagram-caption.txt'), published.igCaption + '\n');
       fs.writeFileSync(path.join(env.OUT, 'linkedin-caption.txt'), published.liCaption + '\n');
@@ -408,10 +443,10 @@ async function main() {
       if (cfg.reelsEnabled) {
         try {
           const fp = path.join(env.OUT, published.pngName);
-          const brief = await reelBrief(published.post, prompt => claudeMessage(env.ANTHROPIC_API_KEY, { model: cfg.anthropicModel, prompt, maxTokens: 400, temperature: 0.4, tries: 2 }));
+          await getBrief();
           console.log('Reel brief: ' + JSON.stringify(brief));
-          const rr = renderReel(env.REPO, Object.assign({}, published.post, brief), fp, published.post.photoUrl || qc.story.ogImage || '', { cloudflare: false }); // dry run: never spend the Cloudflare quota
-          console.log('Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch);
+          const rr = renderReel(env.REPO, Object.assign({}, published.post, brief), fp, published.post.photoUrl || qc.story.ogImage || '', Object.assign({ cloudflare: false }, reelSceneOpts)); // dry run: never spend the Cloudflare quota
+          console.log('Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch + ' voice: ' + (rr.voice || 'none (music-only' + (rr.voiceError ? ': ' + rr.voiceError : '') + ')'));
           fs.copyFileSync(rr.mp4, path.join(env.OUT, published.slug + '.mp4'));
           if (rr.cover) fs.copyFileSync(rr.cover, path.join(env.OUT, published.slug + '_cover.jpg'));
           if (rr.credit) console.log('Reel caption would carry: ' + withPhotoCredit('', rr.credit).trim());
@@ -430,19 +465,23 @@ async function main() {
       applyPhotoBackfill(freshHist, recentPhotos.backfill);
       const imageRel = 'images/' + published.pngName;
       fs.mkdirSync(path.join(env.REPO, 'images'), { recursive: true });
-      fs.writeFileSync(path.join(env.REPO, imageRel), feed.png);
+      fs.writeFileSync(path.join(env.REPO, imageRel), slides ? slides.pngs[0] : feed.png);
+      const extra = slides ? slides.names.slice(1).map((n, i) => {
+        fs.writeFileSync(path.join(env.REPO, 'images', n), slides.pngs[i + 1]); return 'images/' + n;
+      }) : [];
       const nextPosts = freshPosts.some(p => p && p.id === published.post.id) ? freshPosts : [published.post, ...freshPosts];
       writeJson(env.REPO, '_posts/posts-index.json', nextPosts);
       writeJson(env.REPO, '_data/history.json', mergeHistory(freshHist, {
         entry: published.historyEntry,
         rankings: ordered.rankings
       }));
-      return [imageRel, '_posts/posts-index.json', '_data/history.json'];
+      return [imageRel, ...extra, '_posts/posts-index.json', '_data/history.json'];
     });
     console.log('Committed feed image, posts index, and history');
 
     console.log('Waiting for ' + published.post.imageUrl);
     await pollPublic(published.post.imageUrl);
+    if (slides) for (const u of slideUrls().slice(1)) await pollPublic(u);
     // igCarouselEnabled false = Reels-only feed: the carousel only runs as a fallback when the Reel does not publish.
     const reelsOnly = isReelsOnly(cfg);
     const markPosted = () => {
@@ -451,7 +490,7 @@ async function main() {
     };
     let reelPublished = false, fbVideoDone = false;
     if (carouselUpfront(cfg)) {
-      await publishInstagram(cfg, env, published.post.imageUrl, published.igCaption);
+      await publishInstagram(cfg, env, slideUrls(), published.igCaption);
       markPosted();
     } else {
       console.log('Instagram carousel skipped (igCarouselEnabled false); the Reel is the feed post');
@@ -459,7 +498,7 @@ async function main() {
 
     try {
       console.log('Rendering Instagram story');
-      const story = await renderHtml(qc.storyHtml, { width: 1080, height: 1920, waitMs: 3000 });
+      const story = slides ? { png: slides.storyPng } : await renderHtml(qc.storyHtml, { width: 1080, height: 1920, waitMs: 3000 });
       assertStoryPng(story.png);
       commitApply(env.REPO, 'AIFeed story image: ' + published.storyName, () => {
         const rel = 'images/' + published.storyName;
@@ -479,14 +518,14 @@ async function main() {
     // Reel: render + commit videos/reels/<slug>.mp4, then IG Reel + FB video. Sets post.videoUrl so LinkedIn (Buffer) posts the video.
     if (cfg.reelsEnabled) {
       try {
-        const tmpPng = path.join(require('os').tmpdir(), published.pngName);
-        fs.writeFileSync(tmpPng, feed.png);
+        const tmpPng = feedTmp;
         // Pass the story's own photo (og:image picked by refinePhotos) so the Reel is photo-first, not a Commons stand-in.
         // Punch headline + story-themed scene prompt (one short call on the existing model; make_reel falls back to rules).
-        const brief = await reelBrief(published.post, prompt => claudeMessage(env.ANTHROPIC_API_KEY, { model: cfg.anthropicModel, prompt, maxTokens: 400, temperature: 0.4, tries: 2 }));
+        await getBrief();
         console.log('Reel brief: ' + JSON.stringify(brief));
-        const rr = renderReel(env.REPO, Object.assign({}, published.post, brief), tmpPng, published.post.photoUrl || qc.story.ogImage || '', { cloudflare: true }); // live post: the only Cloudflare user
-        console.log('Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch);
+        // live post: reuses the carousel's scene (no second Cloudflare call); Cloudflare only if the slides failed
+        const rr = renderReel(env.REPO, Object.assign({}, published.post, brief), tmpPng, published.post.photoUrl || qc.story.ogImage || '', Object.assign({ cloudflare: !slides }, reelSceneOpts));
+        console.log('Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch + ' voice: ' + (rr.voice || 'none (music-only' + (rr.voiceError ? ': ' + rr.voiceError : '') + ')'));
         const rel = 'videos/reels/' + published.slug + '.mp4';
         const coverRel = rr.cover ? 'videos/reels/' + published.slug + '_cover.jpg' : '';
         commitApply(env.REPO, 'AIFeed reel: ' + published.slug, () => {
@@ -533,7 +572,7 @@ async function main() {
 
     if (carouselFallback(cfg, reelPublished)) {
       console.log('Reel did not publish: posting the carousel as fallback so the slot is not empty');
-      await publishInstagram(cfg, env, published.post.imageUrl, published.igCaption);
+      await publishInstagram(cfg, env, slideUrls(), published.igCaption);
       markPosted();
     }
 

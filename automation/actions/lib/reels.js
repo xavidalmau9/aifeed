@@ -22,8 +22,27 @@ function renderReel(repo, post, feedPngPath, photo, opts = {}) {
   const out = path.join(tmp, post.slug + '.mp4');
   const args = [path.join(repo, 'automation/reels/make_reel.py'), '--post', postJson, '--image', feedPngPath, '--out', out];
   if (photo) args.push('--photo', String(photo));
+  if (opts.scene && fs.existsSync(opts.scene)) args.push('--scene', opts.scene, '--scene-source', opts.sceneSource || 'shared', '--scene-credit', opts.sceneCredit || '');
   const stdout = execFileSync('python3', args, { stdio: ['ignore', 'pipe', 'inherit'], timeout: 600000, encoding: 'utf8', env: sceneEnv(opts) });
   return parseRenderResult(stdout, out);
+}
+
+// Carousel slides (4:5) + Story (9:16) in the Reel design (automation/reels/make_slides.py). Picks the scene once and
+// saves it; pass the result's scene/sceneSource/credit to renderReel (opts.scene) so the Reel reuses the same image.
+// Returns { slides: [png paths], story, scene, sceneSource, sceneLog, credit, punch, points }.
+function renderSlides(repo, post, feedPngPath, photo, opts = {}) {
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'slides-'));
+  const postJson = path.join(tmp, 'post.json');
+  fs.writeFileSync(postJson, JSON.stringify(post));
+  const args = [path.join(repo, 'automation/reels/make_slides.py'), '--post', postJson, '--image', feedPngPath, '--out-dir', tmp];
+  if (photo) args.push('--photo', String(photo));
+  const stdout = execFileSync('python3', args, { stdio: ['ignore', 'pipe', 'inherit'], timeout: 600000, encoding: 'utf8', env: sceneEnv(opts) });
+  const line = String(stdout || '').trim().split('\n').filter(l => l.trim().startsWith('{')).pop();
+  const r = JSON.parse(line);
+  if (!Array.isArray(r.slides) || r.slides.length < 2 || !r.slides.every(p => fs.existsSync(p)) || !fs.existsSync(r.story)) {
+    throw new Error('make_slides returned no slides');
+  }
+  return r;
 }
 
 function parseRenderResult(stdout, out) {
@@ -32,7 +51,7 @@ function parseRenderResult(stdout, out) {
   try { r = line ? JSON.parse(line) : {}; } catch (e) { r = {}; }
   const cover = r.cover || out.replace(/\.mp4$/, '_cover.jpg');
   return { mp4: r.out || out, cover: fs.existsSync(cover) ? cover : '', credit: r.photoCredit || '',
-    punch: r.punch || '', sceneSource: r.sceneSource || '', sceneLog: r.sceneLog || [] };
+    punch: r.punch || '', sceneSource: r.sceneSource || '', sceneLog: r.sceneLog || [], voice: r.voice || '', voiceError: r.voiceError || '' };
 }
 
 // CC BY / BY-SA photos need attribution: append the Commons credit (without the long URL) once, before the hashtags.
@@ -73,4 +92,4 @@ async function publishFbVideo(cfg, env, { graphForm }, videoUrl, message, title)
     Object.assign({ tries: 2, waitMs: 10000 }, auth));
 }
 
-module.exports = { reelFields, renderReel, sceneEnv, parseRenderResult, withPhotoCredit, publishIgReel, publishFbVideo };
+module.exports = { reelFields, renderReel, renderSlides, sceneEnv, parseRenderResult, withPhotoCredit, publishIgReel, publishFbVideo };

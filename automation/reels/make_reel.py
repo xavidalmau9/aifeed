@@ -808,15 +808,19 @@ def load_photo(photo, feed, category=''):
     raise SystemExit('no real photo for this story (feed graphic is a text/gradient card); refusing a text-only Reel')
 
 
-def build(post, feed_path, out, seed=0, photo=None):
+def build(post, feed_path, out, seed=0, photo=None, scene_path=None, scene_source='', scene_credit=''):
     feed = Image.open(feed_path)
     src = clean(post.get('source') or post.get('outlet') or '') or outlet_from_url(post.get('sourceUrl', ''))
     sys.path.insert(0, HERE); import scenes
     if not post.get('punch') or not scenes.valid_punch(post.get('punch')):
         post = dict(post, punch=scenes.rule_punch(post.get('headline', '')))  # LLM punch missing/invalid -> rule-based
     scene_log = []
-    img, credit, scene_src = scenes.pick_scene(post, photo, feed, scene_log)
-    if scene_src == 'story':
+    if scene_path:  # the scene make_slides.py already picked for the carousel + Story: one image, no second generation
+        img = Image.open(scene_path).convert('RGB'); credit, scene_src = clean(scene_credit), scene_source or 'shared'
+        scene_log.append(f'{scene_src}: shared with carousel')
+    else:
+        img, credit, scene_src = scenes.pick_scene(post, photo, feed, scene_log)
+    if scene_src == 'story' and not scene_path:
         credit = clean(post.get('photoCredit') or '')  # caller-supplied attribution for a licensed local photo
     vo, segs, total, voice_name, vo_err = None, None, None, '', ''
     if os.environ.get('AIFEED_REEL_VOICE', 'on').lower() not in ('off', '0', 'false'):
@@ -874,6 +878,7 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('--post', required=True); ap.add_argument('--image', required=True); ap.add_argument('--out', required=True)
     ap.add_argument('--photo', default=''); ap.add_argument('--punch', default='', help="'LINE / *PINK LINE / LINE'"); ap.add_argument('--seed', type=int, default=0)
+    ap.add_argument('--scene', default=''); ap.add_argument('--scene-source', default=''); ap.add_argument('--scene-credit', default='')
     ap.add_argument('--scene-prompt', default=''); ap.add_argument('--scene-keywords', default='', help='comma separated')
     a = ap.parse_args()
     post = json.load(open(a.post))
@@ -883,4 +888,4 @@ if __name__ == '__main__':
         post['scenePrompt'] = a.scene_prompt
     if a.scene_keywords:
         post['sceneKeywords'] = [k.strip() for k in a.scene_keywords.split(',') if k.strip()]
-    print(json.dumps(build(post, a.image, a.out, a.seed, a.photo or None)))
+    print(json.dumps(build(post, a.image, a.out, a.seed, a.photo or None, a.scene or None, a.scene_source, a.scene_credit)))
