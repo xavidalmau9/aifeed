@@ -173,7 +173,9 @@ async function main() {
   console.log(decision.reason);
   if (!decision.run) return 0;
 
-  if (process.env.GITHUB_ACTIONS === 'true') syncMain(env.REPO);
+  // AIFEED_NO_RESET=1 (dry runs only; set by no workflow that posts) keeps a branch checkout so a dry run tests the
+  // branch's own Python renderers instead of main's. Live runs always reset to main.
+  if (process.env.GITHUB_ACTIONS === 'true' && !(env.DRY_RUN && process.env.AIFEED_NO_RESET === '1')) syncMain(env.REPO);
 
   const posts = readJson(env.REPO, '_posts/posts-index.json', null);
   const history = readJson(env.REPO, '_data/history.json', { posted: [], rankings: {} });
