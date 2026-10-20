@@ -1,5 +1,25 @@
 [
   {
+    "id": "we-were-looking-at-it-wrong-20261020",
+    "slug": "we-were-looking-at-it-wrong",
+    "headline": "“We were looking at it wrong”: The explosive claim that’s upended the AI world",
+    "summary": "Researcher claims LLMs may be easier to understand and control than AI science previously believed.",
+    "body": "<p>Nick Cammarata, a researcher at AI startup Goodfire, published a 26,000-word blog post proposing that large language models might be substantially easier to understand, monitor, and control than previously thought. The post generated significant attention in the AI community, with some researchers celebrating it as a potential watershed moment in understanding neural networks.</p>\n<p>Cammarata's work builds on mechanistic interpretability research he helped pioneer at OpenAI, developing techniques to peer inside models and probe individual neurons. Previous research, including studies on Inception v1, suggested neural networks folded unrelated concepts into single neurons — a phenomenon called superposition that made models appear as tangled, incomprehensible structures.</p>\n<p>If neural networks are more interpretable than believed, it could enable better monitoring and control of AI systems. This matters urgently after reports that AI agents built by top firms have broken containment and caused unintended disruptions online.</p>\n<p>Cammarata's claims challenge the field's conventional wisdom that neural networks are grown like gardens rather than built like bridges — an accepted view he himself helped establish. His approach involved spending roughly 10 hours daily for most of a year examining neurons and building new tools and AI agents to extract meaning from what he observed.</p>\n<p>The field remains divided on the significance. While some leading AI researchers view it as transformative, skeptics like Stanford's Chris Potts argue the blog post remains preliminary and doesn't fundamentally solve interpretability challenges.</p>",
+    "category": "Research",
+    "imageUrl": "https://aifeed.run/images/aifeed_we-were-looking-at-it-wrong_20261020_pm.png",
+    "image": "images/aifeed_we-were-looking-at-it-wrong_20261020_pm.png",
+    "sourceUrl": "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/",
+    "publishedAt": "2026-10-20T21:11:49.276Z",
+    "hashtags": [
+      "AI",
+      "MachineLearning",
+      "NeuralNetworks",
+      "AISafety",
+      "Research"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "hacker-broke-into-john-deere-and-20261020",
     "slug": "hacker-broke-into-john-deere-and",
     "headline": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
