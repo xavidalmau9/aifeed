@@ -93,3 +93,18 @@ test('python hook-first + voiceover reel (make_reel.py, voice.py) pass their off
   const out = execFileSync('python3', ['-m', 'unittest', '-q', 'test_voice'], { cwd: path.join(__dirname, '../../reels'), encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
   assert.ok(true, out);
 });
+
+test('choppy quote/first-person punches are rejected', () => {
+  const { validPunch, choppyPunch } = require('../lib/reelbrief');
+  assert.equal(validPunch('WE WERE WRONG / *LLMS EASIER / TO UNDERSTAND / THAN THOUGHT'), false);
+  assert.equal(choppyPunch('"OPEN UP" / *GERMANY / URGES AI'), true);
+  assert.equal(validPunch('*LLMS ARE / EASIER TO READ / THAN WE / THOUGHT'), true);
+  assert.equal(validPunch('COREWEAVE / *CREDIT SWAPS / HIT DISTRESS / OVER DEBT'), true);
+});
+
+test('story waits: first pass short, end-of-run retry ~10-12 min', () => {
+  const { STORY_WAIT } = require('../pipeline');
+  const mins = w => (w.firstWaitMs + w.retryWaitMs * (w.maxAttempts - 1)) / 60000;
+  assert.ok(mins(STORY_WAIT.first) <= 3);
+  assert.ok(mins(STORY_WAIT.retry) >= 10 && mins(STORY_WAIT.retry) <= 12);
+});

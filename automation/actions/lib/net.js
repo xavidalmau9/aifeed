@@ -155,7 +155,8 @@ async function pollContainer(cfg, env, creationId, { waitMs, maxAttempts, label 
 }
 
 async function pollPublic(url, { firstWaitMs = 60000, retryWaitMs = 30000, maxAttempts = 9, sleepFn = sleep } = {}) {
-  await sleepFn(firstWaitMs);
+  const mins = Math.round((firstWaitMs + retryWaitMs * (maxAttempts - 1)) / 60000);
+  if (firstWaitMs > 0) await sleepFn(firstWaitMs);
   let last = 0;
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     if (attempt > 1) await sleepFn(retryWaitMs);
@@ -174,9 +175,9 @@ async function pollPublic(url, { firstWaitMs = 60000, retryWaitMs = 30000, maxAt
     }
     last = status;
     if (status === 200) return;
-    if (attempt >= maxAttempts) throw new Error('Image URL still not public after ~5 min (HTTP ' + status + ')');
+    if (attempt >= maxAttempts) throw new Error('Image URL still not public after ~' + mins + ' min (HTTP ' + status + ')');
   }
-  throw new Error('Image URL still not public after ~5 min (HTTP ' + last + ')');
+  throw new Error('Image URL still not public after ~' + mins + ' min (HTTP ' + last + ')');
 }
 
 function escapeLinkedIn(text) {
