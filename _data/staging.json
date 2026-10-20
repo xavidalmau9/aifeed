@@ -1,107 +1,107 @@
 [
   {
     "rank": 1,
-    "headline": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
-    "score": 94,
-    "reason": "Major security breach using AI agents against Fortune 500 companies; demonstrates real-world AI threat with concrete impact"
+    "headline": "CoreWeave's debt is becoming the whole AI industry's problem",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
+    "score": 92,
+    "reason": "Specific financial crisis affecting infrastructure; big numbers implied; controversy"
   },
   {
     "rank": 2,
-    "headline": "OpenAI Engineer Accused of Spying on Executives Ordered to Remain in Custody",
-    "link": "https://www.wired.com/story/openai-engineer-accused-of-spying-on-executives-ordered-to-remain-in-custody/",
-    "score": 92,
-    "reason": "High-profile espionage scandal at leading AI company; serious legal controversy with custody determination"
+    "headline": "U.S. bans DeepSeek from government agency systems amid AI rift with China",
+    "link": "https://www.cnbc.com/2026/10/20/us-deepseek-federal-agency-ban.html",
+    "score": 90,
+    "reason": "Major geopolitical action with concrete policy impact; DeepSeek controversy"
   },
   {
     "rank": 3,
-    "headline": "An AI agent sent a stranger to a man’s house without telling him—and exposed the privacy risks of AI assistants",
-    "link": "https://fortune.com/2026/10/19/meta-muse-ai-agent-facebook-marketplace-home-address-privacy/",
-    "score": 88,
-    "reason": "Concrete privacy violation by AI system; demonstrates real safety failure with direct consumer impact"
+    "headline": "“We were looking at it wrong”: The explosive claim that’s upended the AI world",
+    "link": "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/",
+    "score": 87,
+    "reason": "Described as 'explosive' controversy with industry-wide implications"
   },
   {
     "rank": 4,
-    "headline": "‘An army of Claudes, with every one asking for my attention’: Anthropic calls human attention the bottleneck in the botsitting world to come",
-    "link": "https://fortune.com/2026/10/19/work-botsitting-meetings-army-of-claudes-anthropic/",
+    "headline": "‘Open your doors for AI’: German chancellor urges businesses to embrace AI as Nvidia announces new investments",
+    "link": "https://www.cnbc.com/2026/10/20/german-chancellor-urges-businesses-to-embrace-ai.html",
     "score": 85,
-    "reason": "Anthropic acknowledges major limitation of multi-agent AI systems; significant product/strategy insight from major AI lab"
+    "reason": "Major government policy shift + Nvidia investment launch"
   },
   {
     "rank": 5,
-    "headline": "WhatsApp Help Pages Leaked Hidden Instructions for a Meta Chatbot",
-    "link": "https://www.wired.com/story/whatsapp-help-pages-leaked-hidden-instructions-for-a-meta-chatbot/",
-    "score": 83,
-    "reason": "Meta AI system information disclosure; unintended leak reveals hidden functionality at major tech company"
+    "headline": "\"Power is probably the forever bottleneck\": Grid delays threaten the AI race.",
+    "link": "https://www.axios.com/2026/10/20/goldman-ai-energy-infrastructure-bottleneck",
+    "score": 84,
+    "reason": "Critical infrastructure constraint; big implications for AI scaling"
   },
   {
     "rank": 6,
-    "headline": "Google support pages start defaulting to AI chatbots – it might be for the best",
-    "link": "https://9to5google.com/2026/10/19/google-support-ai-summary-chatbot-update/",
-    "score": 81,
-    "reason": "Major deployment: Google replacing human support with AI at scale; significant operational change"
+    "headline": "Meta tweaks its new terms of service after backlash against scraping",
+    "link": "https://www.engadget.com/2291188/meta-tweaks-its-new-terms-of-service-after-backlash-against-scraping/",
+    "score": 82,
+    "reason": "Major company policy reversal due to controversy; affects millions"
   },
   {
     "rank": 7,
-    "headline": "Anthropic is AI trade&apos;s last big hope for a major IPO this year",
-    "link": "https://www.cnbc.com/2026/10/19/anthropic-ipo-ai-trade.html",
-    "score": 79,
-    "reason": "Major funding/valuation milestone for leading AI company; significant market development"
+    "headline": "Zuckerberg spent years building on Apple’s terms. His $100 billion-plus AI bet is about owning everything",
+    "link": "https://fortune.com/2026/10/20/zuckerberg-apple-lesson-meta-100-billion-ai-bet/",
+    "score": 81,
+    "reason": "Massive financial commitment ($100B+); major strategic shift"
   },
   {
     "rank": 8,
-    "headline": "JB Pritzker thinks AI could help us live to 100 — or threaten us like nukes",
-    "link": "https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws",
-    "score": 76,
-    "reason": "Government official's explicit AI risk comparison; policy-level concern about existential AI threats"
+    "headline": "Inside the 33-hour failed boardroom coup to overthrow WordPress founder Matt Mullenweg",
+    "link": "https://fortune.com/2026/10/19/inside-the-33-hour-failed-boardroom-coup-to-overthrow-wordpress-founder-matt-mullenweg/",
+    "score": 79,
+    "reason": "High-drama corporate controversy with specific timeline"
   },
   {
     "rank": 9,
-    "headline": "Robot factories and hypersonic missiles: JPMorgan Chase&apos;s first $5 billion of defense investments",
-    "link": "https://www.cnbc.com/2026/10/19/jpmorgan-security-defense-investments.html",
-    "score": 74,
-    "reason": "Major capital deployment ($5B) into AI-enabled defense/robotics; significant institutional commitment"
+    "headline": "HSBC CEO warns the AI boom won’t make every data center a good bet",
+    "link": "https://www.cnbc.com/2026/10/20/data-center-financing-ai-debt-hsbc.html",
+    "score": 77,
+    "reason": "Financial sector skepticism; challenges industry assumptions"
   },
   {
     "rank": 10,
-    "headline": "Making the internet better for AI agents might make it worse for everyone else",
-    "link": "https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/",
-    "score": 72,
-    "reason": "Systemic tension: AI optimization creating consumer harm; important infrastructure concern"
+    "headline": "A visit to Samsung’s massive new semiconductor hub",
+    "link": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/",
+    "score": 75,
+    "reason": "Major infrastructure launch by major company"
   },
   {
     "rank": 11,
-    "headline": "Morgan Stanley’s favorite AI stock is 92% exposed to the $1.6 trillion build-out it’s bullish on",
-    "link": "https://fortune.com/2026/10/19/nvidia-concentration-hyperscaler-1-6-trillion-92-percent-exposure/",
-    "score": 70,
-    "reason": "Major market analysis: $1.6T AI infrastructure investment identified; big number with investment thesis"
+    "headline": "Stratospheric airship flew from US to Japan to test sky cell tower concept",
+    "link": "https://arstechnica.com/gadgets/2026/10/trans-pacific-journey-tested-stratospheric-cell-tower-concept-in-japan/",
+    "score": 74,
+    "reason": "Completed test launch with specific geographic scope"
   },
   {
     "rank": 12,
-    "headline": "A woman was arrested in Philly for blocking a delivery robot",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
-    "score": 68,
-    "reason": "First known arrest related to blocking AI robot; novel legal/social controversy"
+    "headline": "Robot vacuums have a major privacy problem you should be aware of",
+    "link": "https://www.engadget.com/2288133/robot-vacuum-major-privacy-problem-you-should-know/",
+    "score": 72,
+    "reason": "Privacy controversy affecting consumer devices"
   },
   {
     "rank": 13,
-    "headline": "Data Centers Have a New PR Plan: Your Kid’s Field Trip",
-    "link": "https://www.wired.com/story/data-center-industry-is-trying-to-woo-kids/",
-    "score": 65,
-    "reason": "AI infrastructure PR strategy; reveals industry messaging approach to public relations"
+    "headline": "AI rally fades away from Wall Street as a tiny IPO makes big waves",
+    "link": "https://www.cnbc.com/2026/10/20/ai-rally-fades-elice-ipo-dives.html",
+    "score": 70,
+    "reason": "Market movement with paradoxical impact"
   },
   {
     "rank": 14,
-    "headline": "Democrats think cracking down on AI could give them an edge",
-    "link": "https://www.theverge.com/policy/1013113/democrats-ai-midterms",
-    "score": 63,
-    "reason": "Political controversy: AI regulation as election strategy; partisan AI policy conflict"
+    "headline": "Stock investors are ready to move on from the AI rout. Credit investors are not",
+    "link": "https://www.cnbc.com/2026/10/19/coreweave-oracle-ai-credit-stress.html",
+    "score": 68,
+    "reason": "Market divergence showing significant concern"
   },
   {
     "rank": 15,
-    "headline": "How to find Flock cameras near you with MapQuest’s new ‘surveillance layer’",
-    "link": "https://www.zdnet.com/tech/how-to-find-flock-cameras-nearby-mapquest-surveillance-layer/",
-    "score": 61,
-    "reason": "New AI surveillance tool launch; privacy concern with broad consumer access to tracking data"
+    "headline": "The AI attack-ad nightmare is coming true",
+    "link": "https://www.axios.com/2026/10/19/ai-attack-ads-campaigns-elections-deepfakes",
+    "score": 65,
+    "reason": "Controversial AI application impact"
   }
 ]
