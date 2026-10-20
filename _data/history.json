@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-20T12:16:22.984Z",
+      "date": "2026-10-20",
+      "slot": 1,
+      "headline": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+      "canonUrl": "theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+      "slug": "hacker-broke-into-john-deere-and",
+      "image": "aifeed_hacker-broke-into-john-deere-and_20261020_am.png",
+      "photo": {
+        "dhash": "d6559a9a9d1d1b9b",
+        "phash": "77a2cb2a5443a759",
+        "hist": [
+          154,
+          1,
+          8,
+          80,
+          12,
+          0,
+          2,
+          4,
+          7,
+          0,
+          0,
+          0,
+          229,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          27,
+          5,
+          6,
+          1,
+          4,
+          2,
+          3,
+          227,
+          113,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          23,
+          4,
+          0,
+          2,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          77
+        ],
+        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_A-1.png?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-19T21:17:46.079Z",
       "date": "2026-10-19",
       "slot": 2,
@@ -2681,6 +2763,58 @@
         "rank": 10,
         "title": "How to use Google's SynthID AI detection website",
         "canonUrl": "engadget.com/2286802/how-to-use-google-ai-detection-website-synthid"
+      }
+    ],
+    "2026-10-20": [
+      {
+        "rank": 1,
+        "title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins"
+      },
+      {
+        "rank": 2,
+        "title": "U.S. bans DeepSeek from government agency systems amid AI rift with China",
+        "canonUrl": "cnbc.com/2026/10/20/us-deepseek-federal-agency-ban.html"
+      },
+      {
+        "rank": 3,
+        "title": "“We were looking at it wrong”: The explosive claim that’s upended the AI world",
+        "canonUrl": "technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world"
+      },
+      {
+        "rank": 4,
+        "title": "‘Open your doors for AI’: German chancellor urges businesses to embrace AI as Nvidia announces new investments",
+        "canonUrl": "cnbc.com/2026/10/20/german-chancellor-urges-businesses-to-embrace-ai.html"
+      },
+      {
+        "rank": 5,
+        "title": "Making the internet better for AI agents might make it worse for everyone else",
+        "canonUrl": "technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else"
+      },
+      {
+        "rank": 6,
+        "title": "CoreWeave’s debt is becoming the whole AI industry’s problem",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai"
+      },
+      {
+        "rank": 7,
+        "title": "OpenAI bugging suspect Alfozan held without bail after Saudi government offers to pay",
+        "canonUrl": "cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html"
+      },
+      {
+        "rank": 8,
+        "title": "Yelp’s AI Assistant Can Call a Restaurant and Join the Waitlist for You",
+        "canonUrl": "cnet.com/tech/services-and-software/yelps-ai-assistant-can-call-a-restaurant-and-join-the-waitlist-for-you"
+      },
+      {
+        "rank": 9,
+        "title": "Apple strikes deal with AI startup that lets musicians rework recorded music",
+        "canonUrl": "9to5mac.com/2026/10/19/apple-strikes-deal-with-ai-startup-that-lets-musicians-rework-recorded-music"
+      },
+      {
+        "rank": 10,
+        "title": "Anthropic is AI trade's last big hope for a major IPO this year",
+        "canonUrl": "cnbc.com/2026/10/19/anthropic-ipo-ai-trade.html"
       }
     ]
   }

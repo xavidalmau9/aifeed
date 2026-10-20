@@ -1,5 +1,25 @@
 [
   {
+    "id": "hacker-broke-into-john-deere-and-20261020",
+    "slug": "hacker-broke-into-john-deere-and",
+    "headline": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+    "summary": "According to Norforge findings, a hacker reportedly used AI agents to breach over 100 websites; Reuters reports victims included John Deere, SharkNinja, and Cummins.",
+    "body": "<p>Hacker reportedly deployed AI agents to breach 100+ websites with minimal human involvement, according to Norforge findings.</p>\n<p>A hacker reportedly broke into more than 100 websites using an army of AI agents that mostly operated on their own, according to findings from AI security firm Norforge. Though Norforge doesn't name the targets, Reuters reports that victims included John Deere, SharkNinja, and Cummins.</p>\n<p>The attacks were discovered through exposed work on Cairn, an open-source AI platform described as a general-purpose problem-solving engine. Hackers can use Cairn to orchestrate cyberattacks by setting start and end points for AI agents, which document their progress. The attacker used fewer than 100 Chinese characters to describe preferred intrusion tactics, with successful breaches reportedly taking about 23 hours.</p>\n<p>Norforge found more than 20 exposed Cairn instances that are likely malicious. The hacker who broke into more than 100 sites was reportedly the most active among exposed instances, waging attacks on companies based in the US, Canada, Australia, and Japan.</p>\n<p>John Deere stated there's no indication sensitive information was accessed. SharkNinja said the breach impacted a standalone product support site and has been contained. Cummins said it is investigating the report of a potential cyber-attack on a website operated by one of its third-party vendors.</p>\n<p>Cairn's creator stated the platform was never designed as a hacking tool, adding that misuse is a human decision, not a feature of the engine. Norforge says it's working to get the malicious Cairn instances taken down.</p>\n<p>According to Norforge, AI agents reportedly enabled a hacker to breach 100+ websites at scale, prompting security firms and companies to contain the exposed malicious instances.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_hacker-broke-into-john-deere-and_20261020_am.png",
+    "image": "images/aifeed_hacker-broke-into-john-deere-and_20261020_am.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+    "publishedAt": "2026-10-20T12:16:22.984Z",
+    "hashtags": [
+      "AIagents",
+      "cybersecurity",
+      "hacking",
+      "JohnDeere",
+      "SharkNinja"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "disney-asked-characterai-to-go-bankrupt-20261019",
     "slug": "disney-asked-characterai-to-go-bankrupt",
     "headline": "Disney Asked Character.AI to Go Bankrupt for a Get-Out-of-Lawsuits Card",
