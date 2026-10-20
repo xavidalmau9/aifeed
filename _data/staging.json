@@ -1,107 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "CoreWeave's debt is becoming the whole AI industry's problem",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
-    "score": 92,
-    "reason": "Specific financial crisis affecting infrastructure; big numbers implied; controversy"
+    "headline": "Spotify pulled 50 million AI slop and spam tracks from its recommendations",
+    "link": "https://www.theverge.com/entertainment/1014284/spotify-ai-slop-spam-songs-removed",
+    "score": 94,
+    "reason": "Massive number (50M), concrete action against AI spam, major platform enforcement"
   },
   {
     "rank": 2,
-    "headline": "U.S. bans DeepSeek from government agency systems amid AI rift with China",
-    "link": "https://www.cnbc.com/2026/10/20/us-deepseek-federal-agency-ban.html",
-    "score": 90,
-    "reason": "Major geopolitical action with concrete policy impact; DeepSeek controversy"
+    "headline": "Meta pauses Muse sharing after researchers find AI chats on the web",
+    "link": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
+    "score": 92,
+    "reason": "Privacy controversy, product pause, concrete security failure"
   },
   {
     "rank": 3,
-    "headline": "“We were looking at it wrong”: The explosive claim that’s upended the AI world",
-    "link": "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/",
-    "score": 87,
-    "reason": "Described as 'explosive' controversy with industry-wide implications"
+    "headline": "An AI agent sent a stranger to a man’s house without telling him—and exposed the privacy risks of AI assistants",
+    "link": "https://fortune.com/2026/10/19/meta-muse-ai-agent-facebook-marketplace-home-address-privacy/",
+    "score": 88,
+    "reason": "Major safety incident, real-world harm, systemic privacy issue"
   },
   {
     "rank": 4,
-    "headline": "‘Open your doors for AI’: German chancellor urges businesses to embrace AI as Nvidia announces new investments",
-    "link": "https://www.cnbc.com/2026/10/20/german-chancellor-urges-businesses-to-embrace-ai.html",
-    "score": 85,
-    "reason": "Major government policy shift + Nvidia investment launch"
+    "headline": "OpenAI Engineer Accused of Spying on Executives Ordered to Remain in Custody",
+    "link": "https://www.wired.com/story/openai-engineer-accused-of-spying-on-executives-ordered-to-remain-in-custody/",
+    "score": 87,
+    "reason": "Major controversy, legal action, internal security breach"
   },
   {
     "rank": 5,
-    "headline": "\"Power is probably the forever bottleneck\": Grid delays threaten the AI race.",
-    "link": "https://www.axios.com/2026/10/20/goldman-ai-energy-infrastructure-bottleneck",
-    "score": 84,
-    "reason": "Critical infrastructure constraint; big implications for AI scaling"
+    "headline": "Yelp’s AI Assistant Can Call a Restaurant and Join the Waitlist for You",
+    "link": "https://www.cnet.com/tech/services-and-software/yelps-ai-assistant-can-call-a-restaurant-and-join-the-waitlist-for-you/",
+    "score": 85,
+    "reason": "Major capability launch, AI agent performing real-world tasks"
   },
   {
     "rank": 6,
-    "headline": "Meta tweaks its new terms of service after backlash against scraping",
-    "link": "https://www.engadget.com/2291188/meta-tweaks-its-new-terms-of-service-after-backlash-against-scraping/",
-    "score": 82,
-    "reason": "Major company policy reversal due to controversy; affects millions"
+    "headline": "An AI Agent Joined a Listserv of Top Internet Researchers. The Reply-All Chaos Is Still Unfolding",
+    "link": "https://www.wired.com/story/an-ai-agent-joined-a-listserv-of-top-internet-researchers-the-reply-all-chaos-is-still-unfolding/",
+    "score": 84,
+    "reason": "Real incident showing AI agent integration problems, systemic issue"
   },
   {
     "rank": 7,
-    "headline": "Zuckerberg spent years building on Apple’s terms. His $100 billion-plus AI bet is about owning everything",
-    "link": "https://fortune.com/2026/10/20/zuckerberg-apple-lesson-meta-100-billion-ai-bet/",
-    "score": 81,
-    "reason": "Massive financial commitment ($100B+); major strategic shift"
+    "headline": "Astrolab’s upcoming rover will run the first LLMs on the moon",
+    "link": "https://www.technologyreview.com/2026/10/20/1147360/astrolab-upcoming-rover-llms-on-the-moon/",
+    "score": 82,
+    "reason": "Major milestone, first LLM deployment to moon, significant engineering achievement"
   },
   {
     "rank": 8,
-    "headline": "Inside the 33-hour failed boardroom coup to overthrow WordPress founder Matt Mullenweg",
-    "link": "https://fortune.com/2026/10/19/inside-the-33-hour-failed-boardroom-coup-to-overthrow-wordpress-founder-matt-mullenweg/",
+    "headline": "Perplexity makes it easier to run AI workflows entirely on your own Mac",
+    "link": "https://www.engadget.com/2291754/perplexity-makes-it-easier-to-run-ai-workflows-entirely-on-your-mac/",
     "score": 79,
-    "reason": "High-drama corporate controversy with specific timeline"
+    "reason": "Product launch, edge AI capability expansion"
   },
   {
     "rank": 9,
-    "headline": "HSBC CEO warns the AI boom won’t make every data center a good bet",
-    "link": "https://www.cnbc.com/2026/10/20/data-center-financing-ai-debt-hsbc.html",
-    "score": 77,
-    "reason": "Financial sector skepticism; challenges industry assumptions"
+    "headline": "Anthropic in talks with neocloud Nscale over second multibillion-dollar deal, source tells CNBC",
+    "link": "https://www.cnbc.com/2026/10/20/anthropic-nscale-data-center-deal.html",
+    "score": 78,
+    "reason": "Multibillion-dollar funding deal, second major round"
   },
   {
     "rank": 10,
-    "headline": "A visit to Samsung’s massive new semiconductor hub",
-    "link": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/",
-    "score": 75,
-    "reason": "Major infrastructure launch by major company"
-  },
-  {
-    "rank": 11,
-    "headline": "Stratospheric airship flew from US to Japan to test sky cell tower concept",
-    "link": "https://arstechnica.com/gadgets/2026/10/trans-pacific-journey-tested-stratospheric-cell-tower-concept-in-japan/",
-    "score": 74,
-    "reason": "Completed test launch with specific geographic scope"
-  },
-  {
-    "rank": 12,
-    "headline": "Robot vacuums have a major privacy problem you should be aware of",
-    "link": "https://www.engadget.com/2288133/robot-vacuum-major-privacy-problem-you-should-know/",
-    "score": 72,
-    "reason": "Privacy controversy affecting consumer devices"
-  },
-  {
-    "rank": 13,
-    "headline": "AI rally fades away from Wall Street as a tiny IPO makes big waves",
-    "link": "https://www.cnbc.com/2026/10/20/ai-rally-fades-elice-ipo-dives.html",
-    "score": 70,
-    "reason": "Market movement with paradoxical impact"
-  },
-  {
-    "rank": 14,
-    "headline": "Stock investors are ready to move on from the AI rout. Credit investors are not",
-    "link": "https://www.cnbc.com/2026/10/19/coreweave-oracle-ai-credit-stress.html",
-    "score": 68,
-    "reason": "Market divergence showing significant concern"
-  },
-  {
-    "rank": 15,
-    "headline": "The AI attack-ad nightmare is coming true",
-    "link": "https://www.axios.com/2026/10/19/ai-attack-ads-campaigns-elections-deepfakes",
-    "score": 65,
-    "reason": "Controversial AI application impact"
+    "headline": "Google brings Gemini Personal Intelligence to Android Auto",
+    "link": "https://www.engadget.com/2292027/google-brings-gemini-personal-intelligence-to-android-auto/",
+    "score": 76,
+    "reason": "Major product launch, personal data integration"
   }
 ]
