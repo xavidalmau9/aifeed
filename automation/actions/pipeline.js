@@ -446,7 +446,7 @@ async function main() {
           await getBrief();
           console.log('Reel brief: ' + JSON.stringify(brief));
           const rr = renderReel(env.REPO, Object.assign({}, published.post, brief), fp, published.post.photoUrl || qc.story.ogImage || '', Object.assign({ cloudflare: false }, reelSceneOpts)); // dry run: never spend the Cloudflare quota
-          console.log('Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch);
+          console.log('Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch + ' voice: ' + (rr.voice || 'none (music-only' + (rr.voiceError ? ': ' + rr.voiceError : '') + ')'));
           fs.copyFileSync(rr.mp4, path.join(env.OUT, published.slug + '.mp4'));
           if (rr.cover) fs.copyFileSync(rr.cover, path.join(env.OUT, published.slug + '_cover.jpg'));
           if (rr.credit) console.log('Reel caption would carry: ' + withPhotoCredit('', rr.credit).trim());
@@ -525,7 +525,7 @@ async function main() {
         console.log('Reel brief: ' + JSON.stringify(brief));
         // live post: reuses the carousel's scene (no second Cloudflare call); Cloudflare only if the slides failed
         const rr = renderReel(env.REPO, Object.assign({}, published.post, brief), tmpPng, published.post.photoUrl || qc.story.ogImage || '', Object.assign({ cloudflare: !slides }, reelSceneOpts));
-        console.log('Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch);
+        console.log('Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch + ' voice: ' + (rr.voice || 'none (music-only' + (rr.voiceError ? ': ' + rr.voiceError : '') + ')'));
         const rel = 'videos/reels/' + published.slug + '.mp4';
         const coverRel = rr.cover ? 'videos/reels/' + published.slug + '_cover.jpg' : '';
         commitApply(env.REPO, 'AIFeed reel: ' + published.slug, () => {
