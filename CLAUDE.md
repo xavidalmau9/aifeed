@@ -14,7 +14,7 @@ AIFeed.run is an automated AI news brand. Daily: scrapes headlines → user pick
 - **Key files:** `index.html`, `post.html`, `_posts/posts-index.json`, `images/`, `graphics/`
 - **n8n workflows:** `/Users/305partners/Desktop/n8n Workflows/` (cloud-hosted, not local)
 - **Google Sheet:** `1BCTHLe5ExoFwLMnQuayVWsVI8hBKfD7u54FiHGv_7rs` ("AIFeed Posted Headlines")
-- **Telegram bot token:** `8738655145:AAE1jUkC4n_Gq2jmyAsNQU_cQpJGDJFLuWA`
+- **Telegram bot token:** stored in GitHub secret `TELEGRAM_BOT_TOKEN` (never commit it)
 - **Telegram chat ID:** `7748417469`
 
 ---
