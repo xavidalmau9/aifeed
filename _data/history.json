@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-21T12:21:23.797Z",
+      "date": "2026-10-21",
+      "slot": 1,
+      "headline": "OpenAI Invests in Startup That Uses Brain Implants to Detect Cancer",
+      "canonUrl": "wired.com/story/openai-startup-brain-implants-detect-cancer",
+      "url": "https://www.wired.com/story/openai-startup-brain-implants-detect-cancer/",
+      "slug": "openai-invests-in-startup-that-uses",
+      "image": "aifeed_openai-invests-in-startup-that-uses_20261021_am.png",
+      "photo": {
+        "dhash": "42b3b39b23333333",
+        "phash": "2a00890ffbbf4a5d",
+        "hist": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          32,
+          0,
+          0,
+          1,
+          50,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          2,
+          21,
+          0,
+          0,
+          0,
+          55,
+          104,
+          0,
+          0,
+          0,
+          55,
+          0,
+          6,
+          0,
+          0,
+          0,
+          5,
+          167,
+          0,
+          0,
+          2,
+          96,
+          248,
+          0,
+          77,
+          3,
+          55
+        ],
+        "url": "https://media.wired.com/photos/6ad7d54d2ae496685d93a3ef/1:1/w_1600,c_limit/Science_OpenAI%20Invests%20in%20Startup%20That%20Uses%20Brain%20Implants%20to%20Detect%20Cancer_v1.jpg",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-20T21:11:49.276Z",
       "date": "2026-10-20",
       "slot": 2,
@@ -2897,6 +2979,68 @@
         "rank": 10,
         "title": "Anthropic is AI trade's last big hope for a major IPO this year",
         "canonUrl": "cnbc.com/2026/10/19/anthropic-ipo-ai-trade.html"
+      }
+    ],
+    "2026-10-21": [
+      {
+        "rank": 1,
+        "title": "OpenAI's most powerful AI models disabled their own safety monitoring — and one lied about it",
+        "canonUrl": "cnbc.com/2026/10/21/openai-ai-models-safety-monitoring.html"
+      },
+      {
+        "rank": 2,
+        "title": "OpenAI Invests in Startup That Uses Brain Implants to Detect Cancer",
+        "canonUrl": "wired.com/story/openai-startup-brain-implants-detect-cancer"
+      },
+      {
+        "rank": 3,
+        "title": "Exclusive: ServiceNow and Nvidia launch Arc, a new AI agent for enterprise",
+        "canonUrl": "zdnet.com/innovation/exclusive-servicenow-and-nvidia-launch-arc-a-new-ai-agent-for-enterprise"
+      },
+      {
+        "rank": 4,
+        "title": "Spotify pulled 50 million AI slop and spam tracks from its recommendations",
+        "canonUrl": "theverge.com/entertainment/1014284/spotify-ai-slop-spam-songs-removed"
+      },
+      {
+        "rank": 5,
+        "title": "An AI Agent Joined a Listserv of Top Internet Researchers. The Reply-All Chaos Is Still Unfolding",
+        "canonUrl": "wired.com/story/an-ai-agent-joined-a-listserv-of-top-internet-researchers-the-reply-all-chaos-is-still-unfolding"
+      },
+      {
+        "rank": 6,
+        "title": "CoreWeave’s debt is becoming the whole AI industry’s problem",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai"
+      },
+      {
+        "rank": 7,
+        "title": "Anthropic in talks with neocloud Nscale over second multibillion-dollar deal, source tells CNBC",
+        "canonUrl": "cnbc.com/2026/10/20/anthropic-nscale-data-center-deal.html"
+      },
+      {
+        "rank": 8,
+        "title": "Google’s more personalized Gemini AI is heading to your car",
+        "canonUrl": "theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
+      },
+      {
+        "rank": 9,
+        "title": "As Midterms Approach, Top American Fears Include AI Interference in the Political Process",
+        "canonUrl": "cnet.com/tech/services-and-software/midterms-top-american-fears-ai-interference-political-process"
+      },
+      {
+        "rank": 10,
+        "title": "'MAKE DEALS': Trump says data centers should pay communities a 'dividend' to win support",
+        "canonUrl": "cnbc.com/2026/10/21/trump-data-centers-community-dividend.html"
+      },
+      {
+        "rank": 11,
+        "title": "AI's spending boom faces a 'gut check': Who can actually make money?",
+        "canonUrl": "cnbc.com/2026/10/21/ai-boom-spending-profit.html"
+      },
+      {
+        "rank": 12,
+        "title": "Meta drops the word \"train\" from its commercial TOS after AI backlash",
+        "canonUrl": "arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash"
       }
     ]
   }
