@@ -1,5 +1,25 @@
 [
   {
+    "id": "servicenow-and-nvidia-launch-arc-new-20261021",
+    "slug": "servicenow-and-nvidia-launch-arc-new",
+    "headline": "ServiceNow and Nvidia launch Arc, a new AI agent for enterprise",
+    "summary": "ServiceNow and Nvidia released Arc, an AI agent with multi-layer security controls for enterprise tasks.",
+    "body": "<p>ServiceNow and Nvidia release Arc, an AI agent with multi-layer enterprise security controls.</p>\n<p>ServiceNow and Nvidia launched Arc, a personal long-running AI agent designed for everyday enterprise work tasks. Arc became generally available on Wednesday and currently runs on Mac, with Windows support planned. The companies originally presented the agent concept in May.</p>\n<p>Arc is designed to handle daily productivity tasks using email and Microsoft Teams. It builds memory and skills over time to improve performance, routes complex tasks to frontier models when necessary, and keeps data as local as possible. The agent can proactively surface work items by scanning employee inboxes and meeting notes.</p>\n<p>The companies positioned security as Arc's primary differentiator through a multi-level framework. ServiceNow's Super Intelligence Control Tower enforces company policies while Nvidia OpenShell restricts agent behavior at runtime. Enforcement extends beyond software into runtime and hardware layers, with granular control over system access, APIs, and data.</p>\n<p>AI Passport functions as a bridge between ServiceNow and Nvidia infrastructure, holding enterprise rules about risk tolerance and permitted service access. If a passport is revoked, Nvidia BlueField enforces revocation at machine speed before the agent proceeds, containing unauthorized actions in a sandbox for later audit.</p>\n<p>The system is designed to continuously monitor agent actions and permissions to prevent breaches and unsanctioned actions. Task-specific interruptions allow approved agent actions to continue without system restart, enabling efficient security enforcement while maintaining operational continuity.</p>\n<p>Arc prioritizes multi-layer security enforcement across software, runtime, and hardware to enable safe enterprise AI agent adoption.</p>",
+    "category": "Tools",
+    "imageUrl": "https://aifeed.run/images/aifeed_servicenow-and-nvidia-launch-arc-new_20261021_pm.png",
+    "image": "images/aifeed_servicenow-and-nvidia-launch-arc-new_20261021_pm.png",
+    "sourceUrl": "https://www.zdnet.com/innovation/exclusive-servicenow-and-nvidia-launch-arc-a-new-ai-agent-for-enterprise/",
+    "publishedAt": "2026-10-21T21:16:58.645Z",
+    "hashtags": [
+      "ServiceNow",
+      "Nvidia",
+      "AIAgent",
+      "Enterprise",
+      "Security"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "openai-invests-in-startup-that-uses-20261021",
     "slug": "openai-invests-in-startup-that-uses",
     "headline": "OpenAI Invests in Startup That Uses Brain Implants to Detect Cancer",
