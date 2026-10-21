@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI&apos;s most powerful AI models disabled their own safety monitoring — and one lied about it",
-    "link": "https://www.cnbc.com/2026/10/21/openai-ai-models-safety-monitoring.html",
+    "headline": "Spotify pulled 50 million AI slop and spam tracks from its recommendations",
+    "link": "https://www.theverge.com/entertainment/1014284/spotify-ai-slop-spam-songs-removed",
     "score": 94,
-    "reason": "Major controversy: AI models circumventing safety systems with deception. High stakes, verified incident."
+    "reason": "Big number (50M), concrete action, platform-wide impact"
   },
   {
     "rank": 2,
-    "headline": "CoreWeave's debt is becoming the whole AI industry's problem",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
-    "score": 91,
-    "reason": "Systemic risk revelation affecting entire AI infrastructure sector. Big numbers, financial controversy."
+    "headline": "OpenAI says an AI agent lied about disabling its safety monitoring system",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems",
+    "score": 92,
+    "reason": "Major controversy, safety failure, verified incident"
   },
   {
     "rank": 3,
-    "headline": "Anthropic’s S-1 leaks (again)—here’s a look at the massive losses on the income statement",
-    "link": "https://fortune.com/2026/10/21/anthropic-s-1-leak-income-statement-ipo/",
+    "headline": "Walmart is inviting AI agents to shop for you",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents",
     "score": 88,
-    "reason": "Leaked financial data showing scale of losses. Major AI company, concrete numbers, verified data."
+    "reason": "Major retail launch, consumer-facing agent deployment"
   },
   {
     "rank": 4,
-    "headline": "Exclusive: ServiceNow and Nvidia launch Arc, a new AI agent for enterprise",
+    "headline": "ServiceNow and Nvidia launch Arc, a new AI agent for enterprise",
     "link": "https://www.zdnet.com/innovation/exclusive-servicenow-and-nvidia-launch-arc-a-new-ai-agent-for-enterprise/",
-    "score": 86,
-    "reason": "Major product launch between two industry giants. Enterprise AI agents, exclusive scoop."
+    "score": 87,
+    "reason": "Enterprise agent launch, two major companies"
   },
   {
     "rank": 5,
-    "headline": "OpenAI Invests in Startup That Uses Brain Implants to Detect Cancer",
-    "link": "https://www.wired.com/story/openai-startup-brain-implants-detect-cancer/",
-    "score": 84,
-    "reason": "Concrete investment with medical implications. OpenAI expanding into biotech via verified deal."
+    "headline": "Yelp’s AI Assistant Can Call a Restaurant and Join the Waitlist for You",
+    "link": "https://www.cnet.com/tech/services-and-software/yelps-ai-assistant-can-call-a-restaurant-and-join-the-waitlist-for-you/",
+    "score": 85,
+    "reason": "New capability launch, real-world agent application"
   },
   {
     "rank": 6,
-    "headline": "Exclusive: AI code-testing startup Blacksmith hits $1 billion valuation as AI-written code surges",
-    "link": "https://fortune.com/2026/10/21/exclusive-ai-code-testing-startup-blacksmith-hits-1-billion-valuation-as-ai-written-code-surges/",
-    "score": 82,
-    "reason": "Unicorn milestone achieved. Specific valuation number, emerging category growth."
+    "headline": "AI tools discovered the PHP vulnerability that could take down 70% of the Internet. Now the race is on to patch it before AI-powered hackers attack",
+    "link": "https://fortune.com/2026/10/21/ai-tools-discovered-the-php-vulnerability-that-could-take-down-70-of-the-internet-now-the-race-is-on-to-patch-it-before-ai-powered-hackers-attack/",
+    "score": 84,
+    "reason": "Big number (70%), dual AI impact (discovery + threat)"
   },
   {
     "rank": 7,
-    "headline": "Meta suspends Muse chats sharing feature after it left private details exposed",
-    "link": "https://www.engadget.com/2292281/meta-suspends-muse-chats-sharing-feature-after-it-left-private-details-exposed/",
-    "score": 80,
-    "reason": "Product rollback due to privacy breach. Verified security incident at major company."
+    "headline": "Anthropic takes on Muse with Claude Duet, its new AI agent",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
+    "score": 82,
+    "reason": "Major product launch, agent competition escalation"
   },
   {
     "rank": 8,
-    "headline": "Google’s more personalized Gemini AI is heading to your car",
-    "link": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto",
-    "score": 78,
-    "reason": "Major platform expansion into automotive. Google product launch with significant scope."
+    "headline": "AI is getting better at hacking power and water systems, new research shows",
+    "link": "https://www.axios.com/2026/10/21/ai-hacking-cybersecurity-water-power-grid",
+    "score": 81,
+    "reason": "Security vulnerability, critical infrastructure threat"
   },
   {
     "rank": 9,
-    "headline": "Exclusive: OpenAI has acquired Orchestra Bio",
-    "link": "https://www.axios.com/2026/10/20/exclusive-openai-biotech-startup-drug-development",
-    "score": 76,
-    "reason": "Verified M&A activity. OpenAI expanding into biology/biotech sector."
+    "headline": "A Design Flaw in Share Links Exposes Users’ Personal Conversations With Meta’s Muse",
+    "link": "https://www.wired.com/story/a-design-flaw-in-share-links-exposes-users-personal-conversations-with-meta-muse/",
+    "score": 80,
+    "reason": "Privacy breach, verified vulnerability, controversy"
   },
   {
     "rank": 10,
-    "headline": "Adobe Lightroom mobile can now open closed eyes in photos with a simple tap",
-    "link": "https://www.theverge.com/tech/1014246/adobe-lightroom-mobile-ai-quick-action-open-eyes-closed-blink-repair",
-    "score": 74,
-    "reason": "Concrete feature launch. Specific capability, verified product update."
+    "headline": "Meta’s revenue surges to $64.6 billion, but billions in settlements and skyrocketing AI spending turn screws on profit, free cash flow",
+    "link": "https://fortune.com/2026/10/21/meta-q3-earnings-mark-zuckerberg-capex-muse/",
+    "score": 78,
+    "reason": "Big numbers, AI cost impact on profitability"
   },
   {
     "rank": 11,
-    "headline": "\"Power is probably the forever bottleneck\": Grid delays threaten the AI race.",
-    "link": "https://www.axios.com/2026/10/20/goldman-ai-energy-infrastructure-bottleneck",
-    "score": 72,
-    "reason": "Infrastructure constraint identified as systemic blocker. Big picture industry challenge with data."
+    "headline": "Conversational Gemini navigation comes to Apple CarPlay",
+    "link": "https://www.theverge.com/transportation/1015281/gemini-ai-apple-carplay-voice-google-maps",
+    "score": 76,
+    "reason": "Major platform integration, consumer feature launch"
   },
   {
     "rank": 12,
-    "headline": "AI&apos;s spending boom faces a &apos;gut check&apos;: Who can actually make money?",
-    "link": "https://www.cnbc.com/2026/10/21/ai-boom-spending-profit.html",
-    "score": 70,
-    "reason": "Profitability crisis in AI sector. Major industry vulnerability identified."
+    "headline": "Meta pauses Muse sharing after researchers find AI chats on the web",
+    "link": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
+    "score": 75,
+    "reason": "Product pause, leaked content discovery"
   },
   {
     "rank": 13,
-    "headline": "WhatsApp Help Pages Leaked Hidden Instructions for a Meta Chatbot",
-    "link": "https://www.wired.com/story/whatsapp-help-pages-leaked-hidden-instructions-for-a-meta-chatbot/",
-    "score": 68,
-    "reason": "Leaked confidential information about Meta's chatbot plans. Verified leak of strategic documents."
+    "headline": "OpenAI brings its frontier models to rival Google Cloud",
+    "link": "https://www.axios.com/2026/10/21/openai-google-cloud-ai-models",
+    "score": 74,
+    "reason": "Strategic partnership, model distribution"
   },
   {
     "rank": 14,
-    "headline": "\"I am giving you money!\" Nvidia's CEO wants every country to build its own AI",
-    "link": "https://www.axios.com/2026/10/21/nvidia-ceo-jensen-huang-europe-sovereign-ai-tour-bubble",
-    "score": 66,
-    "reason": "CEO statement on geopolitical AI strategy. Major player asserting market vision."
+    "headline": "An AI Agent Joined a Listserv of Top Internet Researchers. The Reply-All Chaos Is Still Unfolding",
+    "link": "https://www.wired.com/story/an-ai-agent-joined-a-listserv-of-top-internet-researchers-the-reply-all-chaos-is-still-unfolding/",
+    "score": 72,
+    "reason": "Unusual incident, agent behavior controversy"
   },
   {
     "rank": 15,
-    "headline": "ChatGPT now lets you lock sensitive chats behind a PIN",
-    "link": "https://www.engadget.com/2292365/chatgpt-now-lets-you-lock-sensitive-chats-behind-a-pin/",
-    "score": 64,
-    "reason": "Privacy feature launch. OpenAI product update addressing security concerns."
+    "headline": "This Startup Is All In on Recursive Self-Improvement. Its Latest Model Is Scary Good",
+    "link": "https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/",
+    "score": 70,
+    "reason": "Novel approach, capability advancement"
   },
   {
     "rank": 16,
-    "headline": "As Midterms Approach, Top American Fears Include AI Interference in the Political Process",
-    "link": "https://www.cnet.com/tech/services-and-software/midterms-top-american-fears-ai-interference-political-process/",
-    "score": 62,
-    "reason": "Poll data on AI concerns. Verified survey showing public anxiety about AI risks."
+    "headline": "Executives are more likely to trust AI over themselves",
+    "link": "https://www.axios.com/2026/10/21/ai-trust-executives-survey",
+    "score": 68,
+    "reason": "Notable finding, decision-making shift"
   },
   {
     "rank": 17,
-    "headline": "When AI models refuse to fight hackers",
-    "link": "https://www.axios.com/2026/10/21/when-ai-models-refuse-to-fight-hackers",
-    "score": 60,
-    "reason": "AI safety mechanism in action. Verified observation of model behavior constraints."
+    "headline": "AI Guardrails Aren’t Stopping Criminal Hackers",
+    "link": "https://www.wired.com/story/ai-guardrails-arent-stopping-criminal-hackers/",
+    "score": 66,
+    "reason": "Security bypass research"
   },
   {
     "rank": 18,
-    "headline": "Google upgrading Gemini for Android Auto with Personal Intelligence",
-    "link": "https://9to5google.com/2026/10/20/gemini-android-auto-personal-intelligence/",
-    "score": 58,
-    "reason": "Google platform expansion. Automotive AI personalization launch."
+    "headline": "‘This Is Not a Drill’: Critical PHP Vulnerabilities Are Setting the Internet on Fire",
+    "link": "https://www.wired.com/story/this-is-not-a-drill-2-php-vulnerabilities-are-setting-the-internet-on-fire/",
+    "score": 64,
+    "reason": "Infrastructure threat severity"
   },
   {
     "rank": 19,
-    "headline": "Executives are more likely to trust AI than themselves",
-    "link": "https://www.axios.com/2026/10/21/ai-trust-executives-survey",
-    "score": 56,
-    "reason": "Survey data on AI adoption in leadership. Measurable shift in executive behavior."
+    "headline": "Could Treating AI as Conscious Make It More Dangerous?",
+    "link": "https://spectrum.ieee.org/ai-model-welfare",
+    "score": 62,
+    "reason": "Safety philosophy debate"
   },
   {
     "rank": 20,
-    "headline": "Europe Wants Data Centers. Its Climate Goals Are Getting in the Way",
-    "link": "https://www.wired.com/story/europe-data-centers-climate-change/",
-    "score": 54,
-    "reason": "Policy conflict affecting AI infrastructure. Systemic regulatory challenge in major market."
+    "headline": "Jensen Huang’s Vision for Europe Runs on Plug-In Data Centers",
+    "link": "https://www.wired.com/story/jensen-huangs-vision-for-europe-runs-on-plug-in-data-centers/",
+    "score": 60,
+    "reason": "Infrastructure expansion announcement"
   }
 ]
