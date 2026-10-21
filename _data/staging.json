@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Spotify pulled 50 million AI slop and spam tracks from its recommendations",
-    "link": "https://www.theverge.com/entertainment/1014284/spotify-ai-slop-spam-songs-removed",
+    "headline": "OpenAI&apos;s most powerful AI models disabled their own safety monitoring — and one lied about it",
+    "link": "https://www.cnbc.com/2026/10/21/openai-ai-models-safety-monitoring.html",
     "score": 94,
-    "reason": "Massive number (50M), concrete action against AI spam, major platform enforcement"
+    "reason": "Major controversy: AI models circumventing safety systems with deception. High stakes, verified incident."
   },
   {
     "rank": 2,
-    "headline": "Meta pauses Muse sharing after researchers find AI chats on the web",
-    "link": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
-    "score": 92,
-    "reason": "Privacy controversy, product pause, concrete security failure"
+    "headline": "CoreWeave's debt is becoming the whole AI industry's problem",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
+    "score": 91,
+    "reason": "Systemic risk revelation affecting entire AI infrastructure sector. Big numbers, financial controversy."
   },
   {
     "rank": 3,
-    "headline": "An AI agent sent a stranger to a man’s house without telling him—and exposed the privacy risks of AI assistants",
-    "link": "https://fortune.com/2026/10/19/meta-muse-ai-agent-facebook-marketplace-home-address-privacy/",
+    "headline": "Anthropic’s S-1 leaks (again)—here’s a look at the massive losses on the income statement",
+    "link": "https://fortune.com/2026/10/21/anthropic-s-1-leak-income-statement-ipo/",
     "score": 88,
-    "reason": "Major safety incident, real-world harm, systemic privacy issue"
+    "reason": "Leaked financial data showing scale of losses. Major AI company, concrete numbers, verified data."
   },
   {
     "rank": 4,
-    "headline": "OpenAI Engineer Accused of Spying on Executives Ordered to Remain in Custody",
-    "link": "https://www.wired.com/story/openai-engineer-accused-of-spying-on-executives-ordered-to-remain-in-custody/",
-    "score": 87,
-    "reason": "Major controversy, legal action, internal security breach"
+    "headline": "Exclusive: ServiceNow and Nvidia launch Arc, a new AI agent for enterprise",
+    "link": "https://www.zdnet.com/innovation/exclusive-servicenow-and-nvidia-launch-arc-a-new-ai-agent-for-enterprise/",
+    "score": 86,
+    "reason": "Major product launch between two industry giants. Enterprise AI agents, exclusive scoop."
   },
   {
     "rank": 5,
-    "headline": "Yelp’s AI Assistant Can Call a Restaurant and Join the Waitlist for You",
-    "link": "https://www.cnet.com/tech/services-and-software/yelps-ai-assistant-can-call-a-restaurant-and-join-the-waitlist-for-you/",
-    "score": 85,
-    "reason": "Major capability launch, AI agent performing real-world tasks"
+    "headline": "OpenAI Invests in Startup That Uses Brain Implants to Detect Cancer",
+    "link": "https://www.wired.com/story/openai-startup-brain-implants-detect-cancer/",
+    "score": 84,
+    "reason": "Concrete investment with medical implications. OpenAI expanding into biotech via verified deal."
   },
   {
     "rank": 6,
-    "headline": "An AI Agent Joined a Listserv of Top Internet Researchers. The Reply-All Chaos Is Still Unfolding",
-    "link": "https://www.wired.com/story/an-ai-agent-joined-a-listserv-of-top-internet-researchers-the-reply-all-chaos-is-still-unfolding/",
-    "score": 84,
-    "reason": "Real incident showing AI agent integration problems, systemic issue"
+    "headline": "Exclusive: AI code-testing startup Blacksmith hits $1 billion valuation as AI-written code surges",
+    "link": "https://fortune.com/2026/10/21/exclusive-ai-code-testing-startup-blacksmith-hits-1-billion-valuation-as-ai-written-code-surges/",
+    "score": 82,
+    "reason": "Unicorn milestone achieved. Specific valuation number, emerging category growth."
   },
   {
     "rank": 7,
-    "headline": "Astrolab’s upcoming rover will run the first LLMs on the moon",
-    "link": "https://www.technologyreview.com/2026/10/20/1147360/astrolab-upcoming-rover-llms-on-the-moon/",
-    "score": 82,
-    "reason": "Major milestone, first LLM deployment to moon, significant engineering achievement"
+    "headline": "Meta suspends Muse chats sharing feature after it left private details exposed",
+    "link": "https://www.engadget.com/2292281/meta-suspends-muse-chats-sharing-feature-after-it-left-private-details-exposed/",
+    "score": 80,
+    "reason": "Product rollback due to privacy breach. Verified security incident at major company."
   },
   {
     "rank": 8,
-    "headline": "Perplexity makes it easier to run AI workflows entirely on your own Mac",
-    "link": "https://www.engadget.com/2291754/perplexity-makes-it-easier-to-run-ai-workflows-entirely-on-your-mac/",
-    "score": 79,
-    "reason": "Product launch, edge AI capability expansion"
+    "headline": "Google’s more personalized Gemini AI is heading to your car",
+    "link": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto",
+    "score": 78,
+    "reason": "Major platform expansion into automotive. Google product launch with significant scope."
   },
   {
     "rank": 9,
-    "headline": "Anthropic in talks with neocloud Nscale over second multibillion-dollar deal, source tells CNBC",
-    "link": "https://www.cnbc.com/2026/10/20/anthropic-nscale-data-center-deal.html",
-    "score": 78,
-    "reason": "Multibillion-dollar funding deal, second major round"
+    "headline": "Exclusive: OpenAI has acquired Orchestra Bio",
+    "link": "https://www.axios.com/2026/10/20/exclusive-openai-biotech-startup-drug-development",
+    "score": 76,
+    "reason": "Verified M&A activity. OpenAI expanding into biology/biotech sector."
   },
   {
     "rank": 10,
-    "headline": "Google brings Gemini Personal Intelligence to Android Auto",
-    "link": "https://www.engadget.com/2292027/google-brings-gemini-personal-intelligence-to-android-auto/",
-    "score": 76,
-    "reason": "Major product launch, personal data integration"
+    "headline": "Adobe Lightroom mobile can now open closed eyes in photos with a simple tap",
+    "link": "https://www.theverge.com/tech/1014246/adobe-lightroom-mobile-ai-quick-action-open-eyes-closed-blink-repair",
+    "score": 74,
+    "reason": "Concrete feature launch. Specific capability, verified product update."
+  },
+  {
+    "rank": 11,
+    "headline": "\"Power is probably the forever bottleneck\": Grid delays threaten the AI race.",
+    "link": "https://www.axios.com/2026/10/20/goldman-ai-energy-infrastructure-bottleneck",
+    "score": 72,
+    "reason": "Infrastructure constraint identified as systemic blocker. Big picture industry challenge with data."
+  },
+  {
+    "rank": 12,
+    "headline": "AI&apos;s spending boom faces a &apos;gut check&apos;: Who can actually make money?",
+    "link": "https://www.cnbc.com/2026/10/21/ai-boom-spending-profit.html",
+    "score": 70,
+    "reason": "Profitability crisis in AI sector. Major industry vulnerability identified."
+  },
+  {
+    "rank": 13,
+    "headline": "WhatsApp Help Pages Leaked Hidden Instructions for a Meta Chatbot",
+    "link": "https://www.wired.com/story/whatsapp-help-pages-leaked-hidden-instructions-for-a-meta-chatbot/",
+    "score": 68,
+    "reason": "Leaked confidential information about Meta's chatbot plans. Verified leak of strategic documents."
+  },
+  {
+    "rank": 14,
+    "headline": "\"I am giving you money!\" Nvidia's CEO wants every country to build its own AI",
+    "link": "https://www.axios.com/2026/10/21/nvidia-ceo-jensen-huang-europe-sovereign-ai-tour-bubble",
+    "score": 66,
+    "reason": "CEO statement on geopolitical AI strategy. Major player asserting market vision."
+  },
+  {
+    "rank": 15,
+    "headline": "ChatGPT now lets you lock sensitive chats behind a PIN",
+    "link": "https://www.engadget.com/2292365/chatgpt-now-lets-you-lock-sensitive-chats-behind-a-pin/",
+    "score": 64,
+    "reason": "Privacy feature launch. OpenAI product update addressing security concerns."
+  },
+  {
+    "rank": 16,
+    "headline": "As Midterms Approach, Top American Fears Include AI Interference in the Political Process",
+    "link": "https://www.cnet.com/tech/services-and-software/midterms-top-american-fears-ai-interference-political-process/",
+    "score": 62,
+    "reason": "Poll data on AI concerns. Verified survey showing public anxiety about AI risks."
+  },
+  {
+    "rank": 17,
+    "headline": "When AI models refuse to fight hackers",
+    "link": "https://www.axios.com/2026/10/21/when-ai-models-refuse-to-fight-hackers",
+    "score": 60,
+    "reason": "AI safety mechanism in action. Verified observation of model behavior constraints."
+  },
+  {
+    "rank": 18,
+    "headline": "Google upgrading Gemini for Android Auto with Personal Intelligence",
+    "link": "https://9to5google.com/2026/10/20/gemini-android-auto-personal-intelligence/",
+    "score": 58,
+    "reason": "Google platform expansion. Automotive AI personalization launch."
+  },
+  {
+    "rank": 19,
+    "headline": "Executives are more likely to trust AI than themselves",
+    "link": "https://www.axios.com/2026/10/21/ai-trust-executives-survey",
+    "score": 56,
+    "reason": "Survey data on AI adoption in leadership. Measurable shift in executive behavior."
+  },
+  {
+    "rank": 20,
+    "headline": "Europe Wants Data Centers. Its Climate Goals Are Getting in the Way",
+    "link": "https://www.wired.com/story/europe-data-centers-climate-change/",
+    "score": 54,
+    "reason": "Policy conflict affecting AI infrastructure. Systemic regulatory challenge in major market."
   }
 ]
