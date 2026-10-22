@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<url><loc>https://aifeed.run/</loc><lastmod>2026-10-21</lastmod><changefreq>hourly</changefreq></url>
+<url><loc>https://aifeed.run/</loc><lastmod>2026-10-22</lastmod><changefreq>hourly</changefreq></url>
+<url><loc>https://aifeed.run/news/anthropic-takes-on-muse-with-claude/</loc><lastmod>2026-10-22</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_anthropic-takes-on-muse-with-claude_20261022_am.png</image:loc></image:image></url>
 <url><loc>https://aifeed.run/news/servicenow-and-nvidia-launch-arc-new/</loc><lastmod>2026-10-21</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_servicenow-and-nvidia-launch-arc-new_20261021_pm.png</image:loc></image:image></url>
 <url><loc>https://aifeed.run/news/openai-invests-in-startup-that-uses/</loc><lastmod>2026-10-21</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_openai-invests-in-startup-that-uses_20261021_am.png</image:loc></image:image></url>
 <url><loc>https://aifeed.run/news/we-were-looking-at-it-wrong/</loc><lastmod>2026-10-20</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_we-were-looking-at-it-wrong_20261020_pm.png</image:loc></image:image></url>
