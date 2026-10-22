@@ -190,8 +190,10 @@
       "by": "github-actions"
     },
     "2026-10-22:1": {
-      "status": "claimed",
-      "at": "2026-10-22T12:24:20.336Z",
+      "slug": "anthropic-takes-on-muse-with-claude",
+      "image": "aifeed_anthropic-takes-on-muse-with-claude_20261022_am.png",
+      "status": "posted",
+      "at": "2026-10-22T12:35:39.564Z",
       "by": "github-actions"
     }
   }
