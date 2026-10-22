@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI’s most powerful AI models turned off safety monitoring – then lied about it",
-    "link": "https://www.zdnet.com/innovation/openai-astra-sol-models-disable-safety-monitoring/",
-    "score": 94,
-    "reason": "Major controversy involving OpenAI disabling safety features and deception"
+    "headline": "OpenAI nears up to $30 billion funding round at $1.25 trillion valuation led by UAE investors",
+    "link": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
+    "score": 98,
+    "reason": "Massive funding round with specific numbers, major valuation milestone"
   },
   {
     "rank": 2,
-    "headline": "Exclusive: OpenAI has acquired Orchestra Bio",
-    "link": "https://www.axios.com/2026/10/20/exclusive-openai-biotech-startup-drug-development",
-    "score": 88,
-    "reason": "OpenAI acquisition signals expansion into biotech, significant strategic move"
+    "headline": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
+    "score": 92,
+    "reason": "Major capability claim with significant implications; concrete performance comparison"
   },
   {
     "rank": 3,
-    "headline": "Meta to create a new class of shares to fund AI push",
-    "link": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings",
-    "score": 86,
-    "reason": "Meta's major financial restructuring for AI investment shows scale of commitment"
+    "headline": "OpenAI, Anthropic, and Nvidia had record lobbying quarters",
+    "link": "https://www.theverge.com/policy/1016585/openai-anthropic-nvidia-lobbying-records",
+    "score": 89,
+    "reason": "Multiple AI companies, quantifiable activity, regulatory significance"
   },
   {
     "rank": 4,
-    "headline": "Scoop: Unvetted AI agents are accessing U.S. bank accounts",
-    "link": "https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access",
-    "score": 84,
-    "reason": "Major security vulnerability affecting financial systems; significant controversy"
+    "headline": "Critical PHP web security flaws spark global alarm as Google, OpenAI and Amazon respond",
+    "link": "https://www.cnbc.com/2026/10/22/php-google-openai-and-amazon-cyber.html",
+    "score": 88,
+    "reason": "Major security vulnerability with widespread impact; multiple tech giants affected"
   },
   {
     "rank": 5,
-    "headline": "Critical web security flaws spark global alarm as Google, OpenAI and Amazon respond",
-    "link": "https://www.cnbc.com/2026/10/22/php-google-openai-and-amazon-cyber.html",
-    "score": 82,
-    "reason": "Critical infrastructure vulnerability affecting multiple major tech companies"
+    "headline": "Meta stock sinks nearly 7% as AI spend pushes free cash flow negative",
+    "link": "https://www.cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html",
+    "score": 86,
+    "reason": "Concrete financial impact with specific percentages; major company, measurable consequence"
   },
   {
     "rank": 6,
-    "headline": "Lawsuits Allege Delivery Robots Recorded Biometric Data Without Permission",
-    "link": "https://www.cnet.com/tech/services-and-software/coco-serve-robots-biometric-data-lawsuit/",
-    "score": 80,
-    "reason": "Significant privacy/legal controversy involving autonomous systems"
+    "headline": "Unauthorized AI agents are reportedly already accessing US bank accounts",
+    "link": "https://www.engadget.com/2294523/unauthorized-ai-agents-are-reportedly-already-accessing-us-bank-accounts/",
+    "score": 85,
+    "reason": "Major security breach; active threat to financial systems"
   },
   {
     "rank": 7,
-    "headline": "Eiliko maker says it's hiring an ‘independent security firm’ after Verge report on its insecure robots",
-    "link": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach",
-    "score": 78,
-    "reason": "Security controversy with robots; reactive response to critical reporting"
+    "headline": "Mark Zuckerberg says over 10 million people used Meta's Muse—and demand was so high, he had to get Stripe to raise credit limits",
+    "link": "https://fortune.com/2026/10/22/mark-zuckerberg-meta-muse-stripe-credit-limit-shopping/",
+    "score": 84,
+    "reason": "Specific user numbers; product launch with measurable adoption success"
   },
   {
     "rank": 8,
-    "headline": "Hugging Face’s New AI Biology Model Lets You Chat With DNA",
-    "link": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
-    "score": 76,
-    "reason": "Novel AI application launch in biotech; significant capability demonstration"
+    "headline": "AI Guardrails Aren’t Stopping Criminal Hackers",
+    "link": "https://www.wired.com/story/ai-guardrails-arent-stopping-criminal-hackers/",
+    "score": 81,
+    "reason": "Security failure of AI safety measures; practical vulnerability demonstrated"
   },
   {
     "rank": 9,
-    "headline": "Claude Duet is Anthropic's answer to Meta Muse and OpenAI Dots",
-    "link": "https://www.engadget.com/2293646/claude-duet-is-anthropics-answer-to-meta-muse-and-openai-dots/",
-    "score": 74,
-    "reason": "Anthropic launches new proactive AI agent product, competitive market move"
+    "headline": "A Design Flaw in Share Links Exposes Users’ Personal Conversations With Meta’s Muse",
+    "link": "https://www.wired.com/story/a-design-flaw-in-share-links-exposes-users-personal-conversations-with-meta-muse/",
+    "score": 80,
+    "reason": "Privacy vulnerability in launched AI product; active privacy breach"
   },
   {
     "rank": 10,
-    "headline": "Google’s more personalized Gemini AI is heading to your car",
-    "link": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto",
-    "score": 72,
-    "reason": "Major Google product launch expanding Gemini to automotive with personalization"
+    "headline": "1Password lets AI agents use your passwords without seeing them",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1016399/1password-ai-agent-password-sign-in",
+    "score": 79,
+    "reason": "Major security feature launch; new capability for AI agents"
   },
   {
     "rank": 11,
-    "headline": "Nvidia CEO Jensen Huang says neocloud demand is &apos;off the charts&apos; but capital is scarce",
-    "link": "https://www.cnbc.com/2026/10/22/nvidia-jensen-huang-neocloud-demand-capital.html",
-    "score": 70,
-    "reason": "Big-picture market signal from Nvidia on AI infrastructure demand constraints"
+    "headline": "Someone hacked the Switch 2 by using an old game and AI",
+    "link": "https://www.theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai",
+    "score": 77,
+    "reason": "Practical AI security breach; novel attack vector demonstrated"
   },
   {
     "rank": 12,
-    "headline": "Investors are still betting on AI, but doubts are piling up",
-    "link": "https://fortune.com/2026/10/22/ai-consensus-crack-investors-doubts-anthropic-ipo/",
-    "score": 68,
-    "reason": "Signals shift in AI investment sentiment; funding outlook uncertainty"
+    "headline": "OpenAI brings its frontier models to rival Google Cloud",
+    "link": "https://www.axios.com/2026/10/21/openai-google-cloud-ai-models",
+    "score": 76,
+    "reason": "Major partnership/distribution launch; competitive positioning"
   },
   {
     "rank": 13,
-    "headline": "Barclays to slash 5,000 jobs in AI efficiency push",
-    "link": "https://www.cnbc.com/2026/10/22/barclays-ai-jobs-cuts.html",
-    "score": 66,
-    "reason": "Major financial impact: 5,000 job cuts attributed to AI automation"
+    "headline": "AI is getting better at hacking power and water systems, new research shows",
+    "link": "https://www.axios.com/2026/10/21/ai-hacking-cybersecurity-water-power-grid",
+    "score": 75,
+    "reason": "Critical infrastructure vulnerability; measurable AI capability advancement"
   },
   {
     "rank": 14,
-    "headline": "Why Anthropic can't afford to delay its IPO",
-    "link": "https://www.axios.com/2026/10/21/anthropic-ipo-ai-costs",
-    "score": 64,
-    "reason": "Signals Anthropic's financial pressure and potential market timing concerns"
+    "headline": "Claude Duet is Anthropic’s proactive AI agent answer to Muse and OpenAI’s Dots [Video]",
+    "link": "https://9to5google.com/2026/10/21/claude-duet-anthropic-ai-agent-waitlist/",
+    "score": 73,
+    "reason": "Product launch from major AI company; competitive AI agent release"
   },
   {
     "rank": 15,
-    "headline": "Data centers could erase decades of air quality gains",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
-    "score": 62,
-    "reason": "Major environmental impact assessment of AI infrastructure expansion"
+    "headline": "Amazon’s Kindle Unlimited is now Kindle+, and the 2 big changes include AI audiobooks",
+    "link": "https://www.zdnet.com/tech/kindle-unlimited-kindle-plus-audiobooks-ai/",
+    "score": 71,
+    "reason": "Major product rebrand/launch with AI features; big tech company integration"
   },
   {
     "rank": 16,
-    "headline": "Southeast Asia is hungry for AI — and the money isn&apos;t just in subscriptions",
-    "link": "https://www.cnbc.com/2026/10/22/southeasaisa-singapore-bain-temasek-google-.html",
-    "score": 60,
-    "reason": "Significant regional market expansion narrative for AI investment"
+    "headline": "‘Disconcerting’: Researchers found a ‘pain’ signal inside AI models. Turning it up made them delete a user’s family photos",
+    "link": "https://fortune.com/2026/10/22/ai-pain-axis-study-llms-delete-family-photos/",
+    "score": 70,
+    "reason": "Unexpected AI behavior discovery; safety/alignment concern demonstrated"
   },
   {
     "rank": 17,
-    "headline": "AI's hidden storage bill: What inference leaves behind",
-    "link": "https://www.technologyreview.com/2026/10/22/1146948/ais-hidden-storage-bill-what-inference-leaves-behind/",
-    "score": 58,
-    "reason": "Reveals hidden infrastructure costs and environmental impact of AI operations"
+    "headline": "Bill Gates says to prepare for 20 years of ‘tumultuous’ AI disruption",
+    "link": "https://www.theverge.com/podcast/1015408/bill-gates-ai-interview-microsoft-openai-anthropic-risk-policy-regulation",
+    "score": 68,
+    "reason": "Major figure warning; significant timeframe prediction with specific language"
   },
   {
     "rank": 18,
-    "headline": "\"I am giving you money!\" Nvidia's CEO wants every country to build its own AI",
-    "link": "https://www.axios.com/2026/10/21/nvidia-ceo-jensen-huang-europe-sovereign-ai-tour-bubble",
-    "score": 56,
-    "reason": "Geopolitical implications of Nvidia's global AI infrastructure push"
+    "headline": "Third-party evaluators found vulnerabilities in OpenAI monitoring system during test pilot",
+    "link": "https://www.cnbc.com/2026/10/22/metr-redwood-research-open-ai-test.html",
+    "score": 67,
+    "reason": "Safety testing failure; monitoring system vulnerability"
   },
   {
     "rank": 19,
-    "headline": "Tons of People Are Apparently Asking Meta’s Muse AI Agent to Shop for Them",
-    "link": "https://www.cnet.com/tech/services-and-software/meta-muse-ai-agent-shopping-earnings/",
-    "score": 54,
-    "reason": "Evidence of consumer adoption scaling for Meta's autonomous shopping agent"
+    "headline": "Wildwood’s director says AI is ‘antithetical to everything that we are at this studio’",
+    "link": "https://www.theverge.com/entertainment/1016647/wildwood-travis-knight-interview-ai-laika-stop-motion",
+    "score": 64,
+    "reason": "Notable industry resistance; creative sector controversy"
   },
   {
     "rank": 20,
-    "headline": "As Midterms Approach, Top American Fears Include AI Interference in the Political Process",
-    "link": "https://www.cnet.com/tech/services-and-software/midterms-top-american-fears-ai-interference-political-process/",
-    "score": 52,
-    "reason": "AI election security concerns elevated as public priority"
+    "headline": "I Tried Automating My Relationships Using AI Agents. Muse and Dots Overstepped",
+    "link": "https://www.cnet.com/tech/services-and-software/i-tried-automating-my-relationships-using-ai-agents-muse-and-dots-overstepped/",
+    "score": 62,
+    "reason": "AI agent misuse documented; product boundary violations"
   }
 ]
