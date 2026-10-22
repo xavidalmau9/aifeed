@@ -5,7 +5,9 @@ const fs = require('fs');
 const path = require('path');
 const { bufferLinkedinEnabled, bufferLinkedinText, bufferLinkedinPost } = require('./lib/buffer');
 const { decideRun } = require('./lib/schedule');
-const { CLAIM_PATH, evaluateClaim, updateClaimDoc, SlotTaken } = require('./lib/claim');
+const { CLAIM_PATH, evaluateClaim, SlotTaken } = require('./lib/claim');
+const { writeClaim } = require('./lib/slotcommit');
+const { assertReelsTools } = require('./lib/tools');
 const { fetchFeeds, assembleCandidates } = require('./lib/rss');
 const { orderPool, buildSameEventPrompt, classifySameEvent, finalizeSameEvent } = require('./lib/pick');
 const { fetchArticles } = require('./lib/articles');
@@ -43,6 +45,7 @@ function runtimeEnv() {
     SLOT: process.env.SLOT || 'auto',
     EVENT_NAME: process.env.EVENT_NAME || 'schedule',
     TAKE_OVER: truthy(process.env.TAKE_OVER),
+    FINISH_SLUG: String(process.env.FINISH_SLUG || '').trim(),
     REPO: process.env.REPO_ROOT || path.resolve(__dirname, '..', '..'),
     OUT: process.env.OUT_DIR || path.join(__dirname, 'out')
   };
@@ -52,37 +55,6 @@ function syncMain(repo) {
   git(repo, ['fetch', 'origin', 'main']);
   git(repo, ['checkout', 'main']);
   git(repo, ['reset', '--hard', 'origin/main']);
-}
-
-function writeClaim(env, decision, status, { takeOver = false, extra } = {}) {
-  const label = Number(decision.slot) === 1 ? 'am' : 'pm';
-  const message = status === 'claimed'
-    ? `Claim slot ${decision.date} ${label}`
-    : status === 'posted'
-      ? `Posted slot ${decision.date} ${label}`
-      : `Release slot ${decision.date} ${label}`;
-  commitApply(env.REPO, message, () => {
-    const freshHist = readJson(env.REPO, '_data/history.json', { posted: [], rankings: {} });
-    const freshClaims = readJson(env.REPO, CLAIM_PATH, { claims: {} });
-    if (status === 'claimed') {
-      const gate = evaluateClaim({
-        claimsDoc: freshClaims, history: freshHist, date: decision.date, slot: decision.slot, takeOver
-      });
-      if (!gate.ok) throw new SlotTaken(gate.reason);
-    }
-    const next = updateClaimDoc(freshClaims, {
-      date: decision.date,
-      slot: decision.slot,
-      status,
-      at: new Date().toISOString(),
-      by: 'github-actions',
-      extra,
-      takeOver: status === 'claimed' && takeOver
-    });
-    if (!next.ok) throw new SlotTaken(next.reason);
-    writeJson(env.REPO, CLAIM_PATH, next.doc);
-    return [CLAIM_PATH];
-  });
 }
 
 // imageUrls: the v2 slide URLs (cover, key points, CTA), or a single feed-graphic URL (legacy: + the static end card).
@@ -167,6 +139,18 @@ async function facebookPreflight(cfg, env) {
 async function main() {
   const cfg = loadConfig();
   const env = runtimeEnv();
+  // Explicit finish_slug posts social for a story already on the site. It must win over a
+  // pending repost and over the normal slot picker, and a schedule can never set it.
+  if (env.FINISH_SLUG) {
+    if (env.EVENT_NAME !== 'workflow_dispatch') {
+      console.log('FINISH_SLUG is ignored unless the run is workflow_dispatch');
+    } else {
+      if (!env.META_PAGE_TOKEN) throw new Error('META_PAGE_TOKEN is not set. Finish did not post.');
+      if (process.env.GITHUB_ACTIONS === 'true' && !(env.DRY_RUN && process.env.AIFEED_NO_RESET === '1')) syncMain(env.REPO);
+      console.log('Finish path for ' + env.FINISH_SLUG + ' (no new story)');
+      return require('./finish').runFinish(cfg, env);
+    }
+  }
   if (!env.ANTHROPIC_API_KEY || !env.META_PAGE_TOKEN) {
     console.log('ANTHROPIC_API_KEY or META_PAGE_TOKEN is not set. Nothing will be posted.');
     return 0;
@@ -214,6 +198,9 @@ async function main() {
 
   try {
     if (!env.DRY_RUN) {
+      // Tools are installed in the workflow before this process. Checking again here means a
+      // cancelled install cannot claim the slot: the claim is the next line, and only if ffmpeg runs.
+      assertReelsTools();
       try {
         writeClaim(env, decision, 'claimed', { takeOver: env.TAKE_OVER });
         claimed = true;

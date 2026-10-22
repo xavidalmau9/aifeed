@@ -28,6 +28,11 @@ on:
         description: 'Reclaim a slot stuck in status claimed. Posted slots and history entries are still skipped.'
         type: boolean
         default: false
+      finish_slug:
+        description: 'Story slug already on the site with no Instagram post. Posts the Reel (Reels tab only, real photo cover), Story and Facebook, then marks that slot posted. Empty runs the normal autopilot.'
+        type: string
+        required: false
+        default: ''
   pull_request:
     paths:
       - 'automation/actions/**'
@@ -84,7 +89,10 @@ jobs:
     needs: test
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    # 75 covers Reel render, public-URL waits and the end-of-run Story retry. Installs no longer
+    # share that budget with apt: ffmpeg is a cached static build, and it finishes before the
+    # pipeline is allowed to claim a slot.
+    timeout-minutes: 75
     permissions:
       contents: write
     steps:
@@ -98,22 +106,20 @@ jobs:
           node-version: '20'
           cache: npm
           cache-dependency-path: automation/actions/package-lock.json
-      - name: Install Chrome
-        run: |
-          if ! command -v google-chrome >/dev/null 2>&1; then
-            wget -q -O /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-            sudo apt-get update
-            sudo apt-get install -y /tmp/chrome.deb
-          fi
-      - name: Install Reels tools (ffmpeg, Pillow, numpy)
-        run: |
-          command -v ffmpeg >/dev/null 2>&1 || (sudo apt-get update && sudo apt-get install -y ffmpeg)
-          python3 -m pip install --quiet --break-system-packages pillow numpy || python3 -m pip install --quiet pillow numpy
       - name: Cache Kokoro TTS model (Reels voiceover)
         uses: actions/cache@v4
         with:
           path: ~/.cache/aifeed-kokoro
           key: kokoro-82m-v1.0-timestamped-fp32-am_michael-v1
+      - name: Cache static ffmpeg
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/aifeed-ffmpeg
+          key: ffmpeg-johnvansickle-7.0.2-amd64-abda8d77
+      - name: Install static ffmpeg
+        run: bash automation/actions/install-ffmpeg.sh
+      - name: Install Pillow and numpy
+        run: python3 -m pip install --quiet --break-system-packages pillow numpy || python3 -m pip install --quiet pillow numpy
       - name: Install Reels voiceover (Kokoro-82M TTS, free and offline)
         # Kokoro-82M (Apache-2.0) on the runner CPU via ONNX Runtime: no API, no key. The timestamped ONNX export (~325 MB)
         # and the voice are downloaded once from Hugging Face and cached above. misaki = Kokoro's own G2P (Apache-2.0).
@@ -123,9 +129,25 @@ jobs:
           PKGS='kokoro-onnx==0.6.1 misaki==0.7.4 num2words spacy en_core_web_sm@https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl'
           python3 -m pip install --quiet --break-system-packages $PKGS || python3 -m pip install --quiet $PKGS
           python3 -c "import sys; sys.path.insert(0, 'automation/reels'); import voice; p = voice.voice_path(); print('kokoro model:', p or 'MISSING'); sys.exit(0 if p else 1)"
+      - name: Install Chrome
+        run: |
+          if ! command -v google-chrome >/dev/null 2>&1; then
+            wget -q -O /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt-get update
+            sudo apt-get install -y /tmp/chrome.deb
+          fi
       - name: Install pipeline
         working-directory: automation/actions
         run: npm ci
+      - name: Verify Reels tools before a slot can be claimed
+        run: |
+          line="$(ffmpeg -version | head -n 1)"
+          echo "$line"
+          case "$line" in
+            *7.0.2-static*) ;;
+            *) echo "pinned static ffmpeg is not first on PATH" >&2; exit 1 ;;
+          esac
+          python3 -c "import PIL, numpy; print('pillow numpy ok')"
       - name: Run autopilot
         working-directory: automation/actions
         env:
@@ -143,6 +165,7 @@ jobs:
           SLOT: ${{ (github.event_name == 'workflow_dispatch' && inputs.slot) || 'auto' }}
           EVENT_NAME: ${{ github.event_name }}
           TAKE_OVER: ${{ (github.event_name == 'workflow_dispatch' && inputs.take_over) && '1' || '0' }}
+          FINISH_SLUG: ${{ github.event_name == 'workflow_dispatch' && inputs.finish_slug || '' }}
           REPO_ROOT: ${{ github.workspace }}
           CHROME_PATH: /usr/bin/google-chrome
         run: node pipeline.js
