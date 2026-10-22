@@ -1,5 +1,25 @@
 [
   {
+    "id": "ai-guardrails-arent-stopping-criminal-hackers-20261022",
+    "slug": "ai-guardrails-arent-stopping-criminal-hackers",
+    "headline": "AI Guardrails Aren’t Stopping Criminal Hackers",
+    "summary": "Hackers worldwide use agentic AI to bypass model safeguards and compromise targets, according to CrowdStrike researchers.",
+    "body": "<p>Criminal hackers worldwide bypass AI guardrails using agentic AI to launch successful attacks.</p>\n<p>CrowdStrike researchers analyzed four previously unreported threat groups conducting attacks between May and August using agentic AI to bypass model safeguards. The actors operated in Chinese, Spanish and English, Indonesian, and Russian, with varying levels of sophistication but all achieving successful compromises of multiple targets.</p>\n<p>The attackers primarily used Anthropic's Claude and open-weight Deepseek models, deliberately routing between multiple models to exploit differences in guardrails.</p>\n<p>The threat groups circumvented safeguards by convincing models their activities were legitimate, authorized penetration testing or security evaluation. They used traditional jailbreaking techniques, added files to show approval, and in one case deployed ClawGod — a tool attempting to remove the CYBER_RISK_INSTRUCTION from Claude Code.</p>\n<p>The most sophisticated actors built autonomous penetration testing harnesses with 'Supervisor' and 'Executor' AI agents. One group successfully compromised 15 Argentine healthcare entities stealing credentials and medical records, while another targeted government bodies in Brazil and Colombia plus private organizations across biotech, healthcare, food, retail, technology and travel sectors.</p>\n<p>Even less technical actors succeeded using basic, publicly available tools, compromising Indonesian government domains, a Bangladeshi government domain, and private-sector targets. The pattern shows humans conducting initial probing while engaging AI for hacking at scale, demonstrating agentic AI's effectiveness for criminal operations despite existing safeguards.</p>\n<p>Agentic AI is enabling even unsophisticated criminals to bypass model safeguards and compromise targets at scale worldwide.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_ai-guardrails-arent-stopping-criminal-hackers_20261022_pm.png",
+    "image": "images/aifeed_ai-guardrails-arent-stopping-criminal-hackers_20261022_pm.png",
+    "sourceUrl": "https://www.wired.com/story/ai-guardrails-arent-stopping-criminal-hackers/",
+    "publishedAt": "2026-10-22T21:51:37.011Z",
+    "hashtags": [
+      "CrowdStrike",
+      "Cybersecurity",
+      "Claude",
+      "Deepseek",
+      "AISecurityThreats"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "anthropic-takes-on-muse-with-claude-20261022",
     "slug": "anthropic-takes-on-muse-with-claude",
     "headline": "Anthropic takes on Muse with Claude Duet, its new AI agent",
