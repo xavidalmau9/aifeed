@@ -1,5 +1,25 @@
 [
   {
+    "id": "anthropic-takes-on-muse-with-claude-20261022",
+    "slug": "anthropic-takes-on-muse-with-claude",
+    "headline": "Anthropic takes on Muse with Claude Duet, its new AI agent",
+    "summary": "Anthropic launched Claude Duet, an AI agent for professionals, as a research preview.",
+    "body": "<p>Anthropic launches Claude Duet, an AI agent for professionals, in research preview.</p>\n<p>Anthropic announced Claude Duet, a new AI agent competitor to Meta's Muse and OpenAI's Dots, designed for professionals and small business owners. The agent is launching as a research preview and is available as a standalone app on iOS and Android and through Claude on the web, built around Claude Opus 5.5.</p>\n<p>Users can delegate tasks ranging from simple administrative work like scheduling meetings to complex projects such as building dashboards, creating financial forecasts, and prototyping web applications.</p>\n<p>The agent has a virtual machine with a browser and pulls in memory, skills, and connected apps from Claude. Before major actions like sending payments or deleting data, Claude Duet requests user approval to ensure control over sensitive operations.</p>\n<p>Anthropic implemented a new dedicated classifier and safety system prompt designed to reject requests for the strictest tiers of information, such as credit card numbers.</p>\n<p>Anthropic notes that Claude Duet is currently an early version that may still misread threads or miscalibrate what is urgent, and it is not as strong at personal errands like booking tickets. Pro and Max subscribers in the US can join the waitlist to try the agent.</p>\n<p>Anthropic launched Claude Duet, an AI agent for professionals, as a research preview across web and mobile.</p>",
+    "category": "Tools",
+    "imageUrl": "https://aifeed.run/images/aifeed_anthropic-takes-on-muse-with-claude_20261022_am.png",
+    "image": "images/aifeed_anthropic-takes-on-muse-with-claude_20261022_am.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
+    "publishedAt": "2026-10-22T12:26:29.359Z",
+    "hashtags": [
+      "Anthropic",
+      "ClaudeDuet",
+      "AIagent",
+      "research",
+      "preview"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "servicenow-and-nvidia-launch-arc-new-20261021",
     "slug": "servicenow-and-nvidia-launch-arc-new",
     "headline": "ServiceNow and Nvidia launch Arc, a new AI agent for enterprise",

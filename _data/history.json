@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-22T12:26:29.359Z",
+      "date": "2026-10-22",
+      "slot": 1,
+      "headline": "Anthropic takes on Muse with Claude Duet, its new AI agent",
+      "canonUrl": "theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
+      "slug": "anthropic-takes-on-muse-with-claude",
+      "image": "aifeed_anthropic-takes-on-muse-with-claude_20261022_am.png",
+      "photo": {
+        "dhash": "191bceccccec0c8c",
+        "phash": "d35b29a45a8d49b5",
+        "hist": [
+          201,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          63,
+          0,
+          0,
+          0,
+          45,
+          252,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          27,
+          0,
+          0,
+          0,
+          15,
+          378,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          9
+        ],
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Person_works_on_laptop_while_holding_smartphone_in_living_room.jpg/1920px-Person_works_on_laptop_while_holding_smartphone_in_living_room.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "via": "Wikimedia Commons photo"
+      }
+    },
+    {
       "postedAt": "2026-10-21T21:16:58.645Z",
       "date": "2026-10-21",
       "slot": 2,
@@ -2372,68 +2454,6 @@
     }
   ],
   "rankings": {
-    "2026-10-08": [
-      {
-        "rank": 1,
-        "title": "Microsoft is giving Copilot more control over Windows and your files",
-        "canonUrl": "theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence"
-      },
-      {
-        "rank": 2,
-        "title": "Google Cloud announces ‘Gemini agent’ as ‘universal agent for work’",
-        "canonUrl": "9to5google.com/2026/10/08/gemini-agent-google-cloud"
-      },
-      {
-        "rank": 3,
-        "title": "The Pentagon Hopes to Speed Up ‘Kill Chain’ AI Buys With 5-Minute Videos",
-        "canonUrl": "wired.com/story/the-pentagon-hopes-to-speed-up-kill-chain-ai-buys-with-5-minute-videos"
-      },
-      {
-        "rank": 4,
-        "title": "ChatGPT’s ‘Intelligent UI’ update fills its responses with pictures, charts, and buttons",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6"
-      },
-      {
-        "rank": 5,
-        "title": "AI startup Manus raises $500 million in first funding round since Meta breakup",
-        "canonUrl": "cnbc.com/2026/10/08/manus-fund-raise-meta-muse-tencent.html"
-      },
-      {
-        "rank": 6,
-        "title": "Utah Now Allows AI to Scan Your Face and Prescribe Acne Medication",
-        "canonUrl": "cnet.com/tech/services-and-software/an-ai-doctor-in-utah-can-prescribe-medicine"
-      },
-      {
-        "rank": 7,
-        "title": "Google rolls out improved SynthID AI content detector, now available globally",
-        "canonUrl": "arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally"
-      },
-      {
-        "rank": 8,
-        "title": "These Researchers Made AI Drive a Toyota Corolla to Get In-N-Out",
-        "canonUrl": "wired.com/story/ai-is-driving-cars-now-oh-boy"
-      },
-      {
-        "rank": 9,
-        "title": "Anthropic upgrades Claude with new Haiku 5.5 model, details here",
-        "canonUrl": "9to5mac.com/2026/10/07/anthropic-upgrades-claude-with-new-haiku-5-5-model-details-here"
-      },
-      {
-        "rank": 10,
-        "title": "Samsung forecasts record third-quarter profit of $80 billion as AI boom fuels chip demand",
-        "canonUrl": "cnbc.com/2026/10/08/samsung-q3-earnings.html"
-      },
-      {
-        "rank": 11,
-        "title": "Microsoft to sell $2,599 Surface Laptop Ultra containing Nvidia AI chip",
-        "canonUrl": "cnbc.com/2026/10/07/microsoft-starts-taking-preorders-for-2599-surface-laptop-ultra.html"
-      },
-      {
-        "rank": 12,
-        "title": "Mistral says \"Le Chonk\" can challenge the best AI models",
-        "canonUrl": "arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models"
-      }
-    ],
     "2026-10-09": [
       {
         "rank": 1,
@@ -3123,6 +3143,68 @@
         "rank": 12,
         "title": "Meta drops the word \"train\" from its commercial TOS after AI backlash",
         "canonUrl": "arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash"
+      }
+    ],
+    "2026-10-22": [
+      {
+        "rank": 1,
+        "title": "OpenAI says an AI agent lied about disabling its safety monitoring system",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems"
+      },
+      {
+        "rank": 2,
+        "title": "Anthropic takes on Muse with Claude Duet, its new AI agent",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent"
+      },
+      {
+        "rank": 3,
+        "title": "AI Guardrails Aren’t Stopping Criminal Hackers",
+        "canonUrl": "wired.com/story/ai-guardrails-arent-stopping-criminal-hackers"
+      },
+      {
+        "rank": 4,
+        "title": "This Startup Is All In on Recursive Self-Improvement. Its Latest Model Is Scary Good",
+        "canonUrl": "wired.com/story/recursive-self-improvement-flint-latest-model-scary-good"
+      },
+      {
+        "rank": 5,
+        "title": "Hugging Face’s New AI Biology Model Lets You Chat With DNA",
+        "canonUrl": "wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna"
+      },
+      {
+        "rank": 6,
+        "title": "Walmart is inviting AI agents to shop for you",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents"
+      },
+      {
+        "rank": 7,
+        "title": "A Design Flaw in Share Links Exposes Users’ Personal Conversations With Meta’s Muse",
+        "canonUrl": "wired.com/story/a-design-flaw-in-share-links-exposes-users-personal-conversations-with-meta-muse"
+      },
+      {
+        "rank": 8,
+        "title": "Meta to create a new class of shares to fund AI push",
+        "canonUrl": "theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings"
+      },
+      {
+        "rank": 9,
+        "title": "Data centers could erase decades of air quality gains",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report"
+      },
+      {
+        "rank": 10,
+        "title": "Lawsuits Allege Delivery Robots Recorded Biometric Data Without Permission",
+        "canonUrl": "cnet.com/tech/services-and-software/coco-serve-robots-biometric-data-lawsuit"
+      },
+      {
+        "rank": 11,
+        "title": "Eiliko maker says it’s hiring an ‘independent security firm’ after Verge report on its insecure robots",
+        "canonUrl": "theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach"
+      },
+      {
+        "rank": 12,
+        "title": "Jensen Huang’s Vision for Europe Runs on Plug-In Data Centers",
+        "canonUrl": "wired.com/story/jensen-huangs-vision-for-europe-runs-on-plug-in-data-centers"
       }
     ]
   }
