@@ -214,8 +214,10 @@
       "by": "github-actions"
     },
     "2026-10-23:2": {
-      "status": "claimed",
-      "at": "2026-10-23T21:11:21.567Z",
+      "slug": "hugging-faces-new-ai-biology-model",
+      "image": "aifeed_hugging-faces-new-ai-biology-model_20261023_pm.png",
+      "status": "posted",
+      "at": "2026-10-23T21:22:24.907Z",
       "by": "github-actions"
     }
   }
