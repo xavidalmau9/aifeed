@@ -1,5 +1,25 @@
 [
   {
+    "id": "hugging-faces-new-ai-biology-model-20261023",
+    "slug": "hugging-faces-new-ai-biology-model",
+    "headline": "Hugging Face’s New AI Biology Model Lets You Chat With DNA",
+    "summary": "Hugging Face released Carbon-X, an open-source AI model enabling conversational queries about DNA effects on gene activity and health.",
+    "body": "<p>Hugging Face releases Carbon-X, an open-source AI model enabling conversational queries about DNA sequences and genetic effects.</p>\n<p>Hugging Face released Carbon-X on Thursday, an open-source AI model developed with researchers from Zhongguancun Academy in China and the University of Naples Federico II in Italy. The model integrates DNA sequences with natural language, allowing users to ask conversational questions about genetic effects on gene activity and health. It runs locally on a laptop without sending data to external servers.</p>\n<p>Carbon-X was trained on 300 billion tokens combining DNA sequences, English text, and biological descriptions from mammals, vertebrates, invertebrates, plants, fungi, and protozoa. The team expanded an existing language model's vocabulary to read DNA in groups of six letters. The model has 14 billion parameters, enabling it to run on user hardware rather than cloud infrastructure.</p>\n<p>The tool could help researchers design new drugs and genetic therapies by identifying whether mutations are benign or disease-causing. It allows nontechnical users to access DNA analysis that wouldn't be possible through other tools. The model can ingest sequences up to roughly 50,000 base pairs, preventing users from uploading full human genomes.</p>\n<p>Carbon-X represents a shift in AI capabilities for biology, following Google DeepMind's AlphaGenome and Arc Institute's Evo 2. Unlike AlphaGenome's numeric output, Carbon-X offers a conversational ChatGPT-like interface. The platform reflects broader trends in AI infrastructure, as Nvidia agreed to acquire Hugging Face for nearly $13 billion in September.</p>\n<p>The developers caution they haven't validated the model's predictions with wet lab experiments yet, so accuracy remains unconfirmed. The tool's conversational interface and local-first design position it as an accessible entry point for researchers exploring genetic analysis, though its practical effectiveness awaits empirical testing.</p>\n<p>Carbon-X enables researchers to query DNA conversationally without uploading sensitive data to external servers, though validation is pending.</p>",
+    "category": "Models",
+    "imageUrl": "https://aifeed.run/images/aifeed_hugging-faces-new-ai-biology-model_20261023_pm.png",
+    "image": "images/aifeed_hugging-faces-new-ai-biology-model_20261023_pm.png",
+    "sourceUrl": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
+    "publishedAt": "2026-10-23T21:14:45.612Z",
+    "hashtags": [
+      "HuggingFace",
+      "DNA",
+      "BiologyAI",
+      "OpenSource",
+      "GeneticResearch"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "microsoft-says-its-ai-tool-is-20261023",
     "slug": "microsoft-says-its-ai-tool-is",
     "headline": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
