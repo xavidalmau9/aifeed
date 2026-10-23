@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-23T12:11:09.182Z",
+      "date": "2026-10-23",
+      "slot": 1,
+      "headline": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
+      "canonUrl": "theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
+      "slug": "microsoft-says-its-ai-tool-is",
+      "image": "aifeed_microsoft-says-its-ai-tool-is_20261023_am.png",
+      "photo": {
+        "dhash": "cc6939b1b9b8f0f0",
+        "phash": "432d53eb9c5825d5",
+        "hist": [
+          530,
+          10,
+          0,
+          0,
+          0,
+          37,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          19,
+          0,
+          0,
+          0,
+          27,
+          86,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          153,
+          0,
+          0,
+          0,
+          44,
+          81,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          8,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/gettyimages-2207866106.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-22T21:51:37.011Z",
       "date": "2026-10-22",
       "slot": 2,
@@ -2536,68 +2618,6 @@
     }
   ],
   "rankings": {
-    "2026-10-09": [
-      {
-        "rank": 1,
-        "title": "OpenAI doubles down on decision to fire three AI safety researchers",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers"
-      },
-      {
-        "rank": 2,
-        "title": "USA Today becomes the latest publisher to sue OpenAI",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit"
-      },
-      {
-        "rank": 3,
-        "title": "Anthropic launches free AI security scans for open-source projects",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner"
-      },
-      {
-        "rank": 4,
-        "title": "Regulators are trying to protect you from being fired by AI – here’s how",
-        "canonUrl": "zdnet.com/innovation/how-state-regulators-protect-you-fired-by-ai"
-      },
-      {
-        "rank": 5,
-        "title": "The U.S. Nuclear Plant Fleet Is Leaning Into AI",
-        "canonUrl": "spectrum.ieee.org/ai-assistants-nuclear-power-plant"
-      },
-      {
-        "rank": 6,
-        "title": "Utah Now Allows AI to Scan Your Face and Prescribe Acne Medication",
-        "canonUrl": "cnet.com/tech/services-and-software/an-ai-doctor-in-utah-can-prescribe-medicine"
-      },
-      {
-        "rank": 7,
-        "title": "Is That Picture AI? Google’s SynthID Detector Launches to Identify AI-Generated Media",
-        "canonUrl": "cnet.com/tech/services-and-software/google-synthid-detector-launches"
-      },
-      {
-        "rank": 8,
-        "title": "This ‘Mind-Reading’ AI Is a Wiz at Figuring Out What You See",
-        "canonUrl": "cnet.com/tech/services-and-software/brain-it-ai-model-image-decoding-mind-reading-weizmann-institute"
-      },
-      {
-        "rank": 9,
-        "title": "Nvidia-backed Aussie AI firm Firmus withdraws historic IPO, citing market volatility",
-        "canonUrl": "cnbc.com/2026/10/09/nvidia-ai-firmus-ipo-.html"
-      },
-      {
-        "rank": 10,
-        "title": "U.S. suspends Microsoft, Adobe from green card labor program in foreign worker crackdown",
-        "canonUrl": "cnbc.com/2026/10/08/microsoft-adobe-green-card-labor-suspension.html"
-      },
-      {
-        "rank": 11,
-        "title": "Google’s AI note-taking app transcribes your meetings completely offline",
-        "canonUrl": "theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
-      },
-      {
-        "rank": 12,
-        "title": "Fired OpenAI safety researchers dispute their dismissals in open letter",
-        "canonUrl": "engadget.com/2281966/fired-openai-safety-researchers-dispute-their-dismissals-in-open-letter"
-      }
-    ],
     "2026-10-10": [
       {
         "rank": 1,
@@ -3287,6 +3307,58 @@
         "rank": 12,
         "title": "Jensen Huang’s Vision for Europe Runs on Plug-In Data Centers",
         "canonUrl": "wired.com/story/jensen-huangs-vision-for-europe-runs-on-plug-in-data-centers"
+      }
+    ],
+    "2026-10-23": [
+      {
+        "rank": 1,
+        "title": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence"
+      },
+      {
+        "rank": 2,
+        "title": "Etsy bans AI-generated recipes and patterns from its online marketplace",
+        "canonUrl": "cnbc.com/2026/10/22/etsy-bans-ai-generated-recipes-patterns-from-its-online-marketplace.html"
+      },
+      {
+        "rank": 3,
+        "title": "Hugging Face’s New AI Biology Model Lets You Chat With DNA",
+        "canonUrl": "wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna"
+      },
+      {
+        "rank": 4,
+        "title": "Canva’s first AI image model plans designs before generating them",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model"
+      },
+      {
+        "rank": 5,
+        "title": "Meta’s AI could still scrape news sites, legal experts say",
+        "canonUrl": "theverge.com/tech/1017082/meta-terms-update-ai-training-concerns"
+      },
+      {
+        "rank": 6,
+        "title": "Nvidia CEO Jensen Huang says neocloud demand is 'off the charts' but capital is scarce",
+        "canonUrl": "cnbc.com/2026/10/22/nvidia-jensen-huang-neocloud-demand-capital.html"
+      },
+      {
+        "rank": 7,
+        "title": "Retro gaming is being overrun with AI",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port"
+      },
+      {
+        "rank": 8,
+        "title": "1Password will let AI agents use your passwords without seeing them",
+        "canonUrl": "9to5google.com/2026/10/22/1password-will-let-ai-agents-use-your-passwords-without-seeing-them"
+      },
+      {
+        "rank": 9,
+        "title": "Southeast Asia is hungry for AI — and the money isn't just in subscriptions",
+        "canonUrl": "cnbc.com/2026/10/22/southeasaisa-singapore-bain-temasek-google-.html"
+      },
+      {
+        "rank": 10,
+        "title": "Meta stock sinks nearly 7% as AI spend pushes free cash flow negative",
+        "canonUrl": "cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html"
       }
     ]
   }

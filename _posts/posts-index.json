@@ -1,5 +1,25 @@
 [
   {
+    "id": "microsoft-says-its-ai-tool-is-20261023",
+    "slug": "microsoft-says-its-ai-tool-is",
+    "headline": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
+    "summary": "Microsoft's Diagnostic Orchestrator achieved 83% accuracy diagnosing rare cases versus 36% for human doctors, pending clinical validation.",
+    "body": "<p>Microsoft's AI system diagnosed complex cases with 83% accuracy versus 36% for human doctors.</p>\n<p>Microsoft released research Thursday showing its Diagnostic Orchestrator AI achieved significantly higher accuracy than human physicians on diagnostic tasks. On rare medical cases from The New England Journal of Medicine, the system scored 83% accuracy compared with roughly 36% for generalist physicians using references and 22% without them. The AI also outperformed doctors on emergency cases, scoring 80% versus an average of 47% for human physicians.</p>\n<p>The Diagnostic Orchestrator uses multiple AI agents that reason through symptoms and medical histories, decide what tests to order, and arrive at diagnoses, mimicking how doctors investigate cases. Powered by OpenAI's GPT-5, the system also tended to reach diagnoses at lower estimated costs than human counterparts. The research was published in Science, one of the world's most prestigious journals.</p>\n<p>Microsoft acknowledges a long road remains before widespread deployment. While the tests more closely mirror real diagnostic processes, the system has only been tested on past medical cases and remains unclear how it would perform in actual clinical settings. Company leaders emphasized it needs clinical validation before broader rollout.</p>\n<p>Microsoft plans to begin testing the system in hospital settings with Beth Israel Deaconess Medical Center, with testing expected to begin in the next couple months. The company has not committed to a firm timeline for commercialization, though Dr. Dominic King noted regulatory and compliance requirements in medicine must be followed.</p>\n<p>AI health lead Dr. Dominic King emphasized the need for responsible rollout while Microsoft CEO Mustafa Suleyman predicted the technology will change care delivery significantly. Suleyman insisted human clinicians should and will always have a central role in patient care, hoping AI frees up doctors from 'drudgery' to spend more time with patients.</p>\n<p>Microsoft's diagnostic AI showed significantly higher accuracy than physicians on rare cases, but needs clinical validation before hospital deployment.</p>",
+    "category": "Models",
+    "imageUrl": "https://aifeed.run/images/aifeed_microsoft-says-its-ai-tool-is_20261023_am.png",
+    "image": "images/aifeed_microsoft-says-its-ai-tool-is_20261023_am.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
+    "publishedAt": "2026-10-23T12:11:09.182Z",
+    "hashtags": [
+      "MicrosoftAI",
+      "MedicalAI",
+      "Healthcare",
+      "DiagnosticAI",
+      "GPT5"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "ai-guardrails-arent-stopping-criminal-hackers-20261022",
     "slug": "ai-guardrails-arent-stopping-criminal-hackers",
     "headline": "AI Guardrails Aren’t Stopping Criminal Hackers",
