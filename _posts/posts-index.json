@@ -1,5 +1,25 @@
 [
   {
+    "id": "american-express-is-cutting-of-its-20261024",
+    "slug": "american-express-is-cutting-of-its",
+    "headline": "American Express is cutting 5% of its workforce to 'prepare for AI'",
+    "summary": "American Express is cutting 5% of its 77,000-person workforce and taking a $336 million charge to prepare for AI automation.",
+    "body": "<p>American Express is eliminating 5% of its global workforce, representing thousands of employees from a base of approximately 77,000 staff at year-end 2025. The company is taking a $336 million restructuring charge in the third quarter, with CEO Stephen Squeri confirming the decision on the company's earnings call Friday.</p>\n<p>The restructuring is designed to prepare American Express for deploying artificial intelligence across internal processes. CFO Christophe Le Caillec explained that the company is reducing organizational layers and increasing spans of control to optimize workflows before automation begins, reasoning that poorly structured processes should not be automated.</p>\n<p>Squeri devoted significant remarks to artificial intelligence strategy, focusing on using AI to personalize customer experiences and offers for cardholders. The CEO emphasized implementing controls to prevent AI agents from operating unsupervised, stating the company will only allow agents to access systems through approved API or MCP channels.</p>\n<p>American Express's move aligns with a sector-wide trend in financial services as banks seek to replace repetitive roles with AI automation. Barclays confirmed plans this week to trim 5,000 jobs — also roughly 5% of its workforce — in another tech-driven cost initiative, indicating widespread industry restructuring.</p>\n<p>Despite job cuts, American Express posted third-quarter results exceeding Wall Street profit expectations, with adjusted earnings per share of $4.68 against a $4.48 estimate. The company raised full-year earnings guidance and reported 9% revenue growth to $20.06 billion, suggesting profitable operations alongside workforce reduction.</p>\n<p>American Express is cutting 5% of workforce to restructure operations and prepare for AI automation deployment.</p>",
+    "category": "Business",
+    "imageUrl": "https://aifeed.run/images/aifeed_american-express-is-cutting-of-its_20261024_pm.png",
+    "image": "images/aifeed_american-express-is-cutting-of-its_20261024_pm.png",
+    "sourceUrl": "https://www.cnbc.com/2026/10/23/american-express-job-cuts.html",
+    "publishedAt": "2026-10-24T21:11:38.720Z",
+    "hashtags": [
+      "AmericanExpress",
+      "Amex",
+      "AIautomation",
+      "jobcuts",
+      "fintech"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "ais-black-october-critical-php-flaws-20261024",
     "slug": "ais-black-october-critical-php-flaws",
     "headline": "AI's 'Black October': Critical PHP flaws set off global security scramble",
