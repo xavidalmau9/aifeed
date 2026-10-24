@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-24T12:10:12.765Z",
+      "date": "2026-10-24",
+      "slot": 1,
+      "headline": "AI's 'Black October': Critical PHP flaws set off global security scramble",
+      "canonUrl": "cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html",
+      "url": "https://www.cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html",
+      "slug": "ais-black-october-critical-php-flaws",
+      "image": "aifeed_ais-black-october-critical-php-flaws_20261024_am.png",
+      "photo": {
+        "dhash": "fc4ad9dca66468f8",
+        "phash": "e3cf1c38a838474f",
+        "hist": [
+          4,
+          496,
+          0,
+          0,
+          0,
+          64,
+          32,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          19,
+          40,
+          0,
+          0,
+          0,
+          86,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          0,
+          0,
+          0,
+          2,
+          7,
+          52,
+          0,
+          0,
+          0,
+          55,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          5,
+          0,
+          0,
+          0,
+          0,
+          118
+        ],
+        "url": "https://image.cnbcfm.com/api/v1/image/108446583-1792673740106-gettyimages-2300859671-86268678.jpeg?v=1792673757&w=1920&h=1080",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-23T21:14:45.612Z",
       "date": "2026-10-23",
       "slot": 2,
@@ -2700,68 +2782,6 @@
     }
   ],
   "rankings": {
-    "2026-10-10": [
-      {
-        "rank": 1,
-        "title": "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip"
-      },
-      {
-        "rank": 2,
-        "title": "Book Publishers Are Quietly Using More AI. Staff Are Revolting",
-        "canonUrl": "wired.com/story/book-publishers-are-quietly-using-more-ai-staff-are-revolting"
-      },
-      {
-        "rank": 3,
-        "title": "AI is changing how lawyers work — and putting the billable hour under pressure",
-        "canonUrl": "cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html"
-      },
-      {
-        "rank": 4,
-        "title": "AI coding agents generate more code, but not more software",
-        "canonUrl": "arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software"
-      },
-      {
-        "rank": 5,
-        "title": "AI Is Getting Really Good at Messing With Cybercriminals",
-        "canonUrl": "wired.com/story/ai-is-getting-really-good-at-messing-with-cybercriminals"
-      },
-      {
-        "rank": 6,
-        "title": "AI’s Problem Solving Is a ‘Profound Disruption’ for the Math Community",
-        "canonUrl": "cnet.com/tech/services-and-software/ai-causing-profound-disruption-math-research"
-      },
-      {
-        "rank": 7,
-        "title": "Anthropic now offers a free vulnerability-finding service for open-source software",
-        "canonUrl": "engadget.com/2282005/anthropic-offers-open-source-software-free-ai-security-checks"
-      },
-      {
-        "rank": 8,
-        "title": "Nvidia-backed Aussie AI firm Firmus withdraws historic IPO, citing market volatility",
-        "canonUrl": "cnbc.com/2026/10/09/nvidia-ai-firmus-ipo-.html"
-      },
-      {
-        "rank": 9,
-        "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
-        "canonUrl": "arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google"
-      },
-      {
-        "rank": 10,
-        "title": "Don’t Be Cruel to Claude: Anthropic’s New Abuse Policy Tests AI Personhood",
-        "canonUrl": "cnet.com/tech/services-and-software/anthropic-cruel-claude-ai-model-abuse"
-      },
-      {
-        "rank": 11,
-        "title": "‘Pure insanity’: Mathematicians will need years to make sense of OpenAI’s latest drop",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos"
-      },
-      {
-        "rank": 12,
-        "title": "Fired OpenAI safety researchers dispute their dismissals in open letter",
-        "canonUrl": "engadget.com/2281966/fired-openai-safety-researchers-dispute-their-dismissals-in-open-letter"
-      }
-    ],
     "2026-10-11": [
       {
         "rank": 1,
@@ -3441,6 +3461,53 @@
         "rank": 10,
         "title": "Meta stock sinks nearly 7% as AI spend pushes free cash flow negative",
         "canonUrl": "cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html"
+      }
+    ],
+    "2026-10-24": [
+      {
+        "rank": 1,
+        "title": "OpenAI now trains its frontier AI models with no internet access",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
+      },
+      {
+        "rank": 2,
+        "title": "AI's 'Black October': Critical PHP flaws set off global security scramble",
+        "canonUrl": "cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html"
+      },
+      {
+        "rank": 3,
+        "title": "The PHP Meltdown Shows How AI Makes Bugs More Exploitable",
+        "canonUrl": "wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable"
+      },
+      {
+        "rank": 4,
+        "title": "Meta delays new business terms after publisher pushback on AI scraping",
+        "canonUrl": "theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping"
+      },
+      {
+        "rank": 5,
+        "title": "American Express is cutting 5% of its workforce to 'prepare for AI'",
+        "canonUrl": "cnbc.com/2026/10/23/american-express-job-cuts.html"
+      },
+      {
+        "rank": 6,
+        "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
+      },
+      {
+        "rank": 7,
+        "title": "What a day in customer service looks like — as AI changes everything",
+        "canonUrl": "cnbc.com/2026/10/24/ai-customer-service-jobs-work.html"
+      },
+      {
+        "rank": 8,
+        "title": "TikTok U.S. hunts for multiple gigawatts of computing capacity, sources tell CNBC",
+        "canonUrl": "cnbc.com/2026/10/23/tiktok-us-compute-capacity.html"
+      },
+      {
+        "rank": 9,
+        "title": "Nvidia's Huang heads to Kazakhstan for the first time — and he's not the only one with big plans",
+        "canonUrl": "cnbc.com/2026/10/23/nvidia-huang-investment-kazakhstan-.html"
       }
     ]
   }

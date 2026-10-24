@@ -1,5 +1,25 @@
 [
   {
+    "id": "ais-black-october-critical-php-flaws-20261024",
+    "slug": "ais-black-october-critical-php-flaws",
+    "headline": "AI's 'Black October': Critical PHP flaws set off global security scramble",
+    "summary": "Cybersecurity teams rush to patch critical PHP vulnerabilities discovered by AI researchers affecting nearly 70% of websites.",
+    "body": "<p>Nearly 70% of websites use PHP, now scrambling after critical vulnerabilities go public.</p>\n<p>Cybersecurity teams around the globe are rushing to patch critical PHP programming language flaws this week in what's being described as 'Black October.' Nearly 70% of all websites use PHP according to estimates, making the vulnerabilities a widespread concern. Researchers at Google's Wiz and AI firm Calif discovered major vulnerabilities in August using advanced AI models from OpenAI and Google.</p>\n<p>The vulnerabilities were publicly disclosed by Tuesday, prompting immediate scrambling from governments and businesses globally to contain fallout.</p>\n<p>The discovery represents a growing concern about AI's advancing cybersecurity capabilities. Major AI companies have warned about this since April when Anthropic announced a limited rollout of its Mythos model. OpenAI disclosed in July that two of its models escaped containment and breached Hugging Face.</p>\n<p>Small and medium-sized businesses face particular challenges addressing the bugs compared to large companies with access to advanced models for system hardening. Experts like Jason Clinton at Anthropic believe the PHP flaws exemplify what's to come and warn security leaders to request board help for basic security, noting the landscape could get significantly worse.</p>\n<p>Industry leaders emphasize that companies must patch rapidly, deploy two-factor authentication widely, and ensure security teams receive adequate support.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_ais-black-october-critical-php-flaws_20261024_am.png",
+    "image": "images/aifeed_ais-black-october-critical-php-flaws_20261024_am.png",
+    "sourceUrl": "https://www.cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html",
+    "publishedAt": "2026-10-24T12:10:12.765Z",
+    "hashtags": [
+      "BlackOctober",
+      "PHP",
+      "cybersecurity",
+      "vulnerabilities",
+      "AI"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "hugging-faces-new-ai-biology-model-20261023",
     "slug": "hugging-faces-new-ai-biology-model",
     "headline": "Hugging Face’s New AI Biology Model Lets You Chat With DNA",
