@@ -221,8 +221,10 @@
       "by": "github-actions"
     },
     "2026-10-24:1": {
-      "status": "claimed",
-      "at": "2026-10-24T12:07:32.719Z",
+      "slug": "ais-black-october-critical-php-flaws",
+      "image": "aifeed_ais-black-october-critical-php-flaws_20261024_am.png",
+      "status": "posted",
+      "at": "2026-10-24T12:17:52.742Z",
       "by": "github-actions"
     }
   }
