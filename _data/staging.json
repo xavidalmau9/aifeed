@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Unauthorized AI agents are reportedly already accessing US bank accounts",
-    "link": "https://www.engadget.com/2294523/unauthorized-ai-agents-are-reportedly-already-accessing-us-bank-accounts/",
-    "score": 96,
-    "reason": "Major security breach with direct real-world harm; active unauthorized access to financial systems"
+    "headline": "OpenAI now trains its frontier AI models with no internet access",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
+    "score": 92,
+    "reason": "Major operational change by leading AI company, significant security/training shift, concrete policy launch"
   },
   {
     "rank": 2,
-    "headline": "AI&apos;s &apos;Black October&apos;: Critical PHP flaws set off global security scramble",
-    "link": "https://www.cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html",
-    "score": 94,
-    "reason": "Large-scale security incident affecting infrastructure; 'global scramble' indicates massive scope"
+    "headline": "Now Google says it might use your Gmail and Google Photos data to target ads",
+    "link": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+    "score": 88,
+    "reason": "Massive user base affected (billions), major privacy policy change, controversy confirmed"
   },
   {
     "rank": 3,
-    "headline": "American Express is cutting 5% of its workforce to &apos;prepare for AI&apos;",
-    "link": "https://www.cnbc.com/2026/10/23/american-express-job-cuts.html",
-    "score": 89,
-    "reason": "Major company, significant job cuts (5%), explicit AI-driven restructuring"
+    "headline": "Anthropic Introduces Claude Duet: A New Agentic AI App for Professionals",
+    "link": "https://www.cnet.com/tech/services-and-software/anthropic-claude-duet-ai-agent-app-professional/",
+    "score": 85,
+    "reason": "Major product launch from top-3 AI company, new agentic capability tier"
   },
   {
     "rank": 4,
-    "headline": "Meta delays new business terms after publisher pushback on AI scraping",
-    "link": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
-    "score": 87,
-    "reason": "Major tech company, controversy over AI training data, policy reversal"
+    "headline": "Canva’s first AI image model plans designs before generating them",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+    "score": 78,
+    "reason": "Significant product launch, novel technical approach, major design platform"
   },
   {
     "rank": 5,
-    "headline": "Google will target ads based on Gmail, Photos data if Personal Intelligence is enabled",
-    "link": "https://9to5google.com/2026/10/23/google-will-target-ads-based-on-gmail-photos-data-if-personal-intelligence-is-enabled/",
-    "score": 86,
-    "reason": "Major tech company, privacy controversy, affects billions of users, concrete policy change"
+    "headline": "Meta's AI could still scrape news sites, legal experts say",
+    "link": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
+    "score": 82,
+    "reason": "Ongoing controversy, major platform, legal implications for billions of data points"
   },
   {
     "rank": 6,
-    "headline": "Anthropic joins Meta and OpenAI’s personal AI assistant race with Claude Duet",
-    "link": "https://fortune.com/2026/10/23/anthropic-joins-meta-and-openais-personal-ai-assistant-race-with-duet/",
-    "score": 84,
-    "reason": "Major launch by leading AI company; competitive market milestone; concrete product release"
+    "headline": "I Tried Automating My Relationships Using AI Agents. Muse and Dots Overstepped",
+    "link": "https://www.cnet.com/tech/services-and-software/i-tried-automating-my-relationships-using-ai-agents-muse-and-dots-overstepped/",
+    "score": 75,
+    "reason": "Real-world controversy/incident with AI agents, documented harm case"
   },
   {
     "rank": 7,
-    "headline": "Amazon’s Kindle Unlimited is now Kindle+, and the 2 big changes include AI audiobooks",
-    "link": "https://www.zdnet.com/tech/kindle-unlimited-kindle-plus-audiobooks-ai/",
-    "score": 81,
-    "reason": "Major company product rebrand with AI integration; affects millions of subscribers"
+    "headline": "Scammers used AI to clone her daughter’s voice and fake a kidnapping. A voice expert says every family now needs a safe word",
+    "link": "https://fortune.com/2026/10/24/ai-voice-cloning-scam-fake-kidnapping-safe-word/",
+    "score": 84,
+    "reason": "Concrete AI misuse incident, voice cloning threat materialized, major security implication"
   },
   {
     "rank": 8,
-    "headline": "Intel gets waiver after worries fuzzy US ban on foreign-made robots may hit fabs",
-    "link": "https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs/",
+    "headline": "On the ground at Nvidia&apos;s AI showpiece: Jensen-mania, robot ducks and neocloud distress",
+    "link": "https://www.cnbc.com/2026/10/23/jensen-huang-gtc-robot-ducks-neocloud-distress.html",
     "score": 79,
-    "reason": "Major company, government policy impact, regulatory exemption granted"
+    "reason": "Major industry event coverage, largest AI chip company, market sentiment indicators"
   },
   {
     "rank": 9,
-    "headline": "Amazon cut 30,000 corporate jobs to focus on AI. Now it’s promising 30,000 entry-level roles in the UK by 2030",
-    "link": "https://fortune.com/2026/10/23/amazon-promising-30000-entry-level-roles-in-the-uk-by-2030-amazon-youth-promise/",
-    "score": 78,
-    "reason": "Major company, significant job numbers (30k cuts + 30k new roles), AI workforce shift"
+    "headline": "1Password will let AI agents use your passwords without seeing them",
+    "link": "https://9to5google.com/2026/10/22/1password-will-let-ai-agents-use-your-passwords-without-seeing-them/",
+    "score": 81,
+    "reason": "Major security product launch, novel AI capability, significant enterprise implications"
   },
   {
     "rank": 10,
-    "headline": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+    "headline": "What a day in customer service looks like — as AI changes everything",
+    "link": "https://www.cnbc.com/2026/10/24/ai-customer-service-jobs-work.html",
+    "score": 76,
+    "reason": "Documented large-scale AI workplace deployment, measured real-world impact"
+  },
+  {
+    "rank": 11,
+    "headline": "Gemini app expands Google Maps Personal Intelligence, replacing Deep Think",
+    "link": "https://9to5google.com/2026/10/22/gemini-personal-intelligence-maps/",
     "score": 74,
-    "reason": "Major company launch, new AI product release, unique positioning"
+    "reason": "Major feature expansion across Google's largest platforms, billions of users affected"
+  },
+  {
+    "rank": 12,
+    "headline": "Please Don’t Let an AI Bot Log Into Your Bank Account",
+    "link": "https://www.cnet.com/tech/services-and-software/please-dont-let-an-ai-bot-log-into-your-bank-account/",
+    "score": 77,
+    "reason": "Critical security warning, major financial sector AI risk scenario"
+  },
+  {
+    "rank": 13,
+    "headline": "Black October: why bugs discovered by OpenAI tech are creating a cyber emergency",
+    "link": "https://www.axios.com/2026/10/22/php-vulnerability-security-update-websites",
+    "score": 86,
+    "reason": "Major security incident, OpenAI technology, documented emergency-level impact"
+  },
+  {
+    "rank": 14,
+    "headline": "Wall Street prepares for AI's \"day after\"",
+    "link": "https://www.axios.com/2026/10/23/ai-catastrophe-wall-street",
+    "score": 73,
+    "reason": "Market-level AI impact assessment, financial sector preparation metrics"
+  },
+  {
+    "rank": 15,
+    "headline": "Retro gaming is being overrun with AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
+    "score": 68,
+    "reason": "Documented AI misuse at scale in specific industry, cultural impact"
+  },
+  {
+    "rank": 16,
+    "headline": "Gemini for Android rolls out side panel and settings redesign",
+    "link": "https://9to5google.com/2026/10/23/gemini-settings-redesign-android/",
+    "score": 66,
+    "reason": "Major platform update affecting billions of Android users"
+  },
+  {
+    "rank": 17,
+    "headline": "Washington's message to AI execs: please shut up",
+    "link": "https://www.axios.com/2026/10/24/ai-ceos-washington-political-liability",
+    "score": 72,
+    "reason": "Government regulatory stance, political pressure on AI industry documented"
+  },
+  {
+    "rank": 18,
+    "headline": "AI debt and French bonds face a stress test — why it may not be over",
+    "link": "https://www.cnbc.com/2026/10/22/ai-debt-and-french-bonds-stress-test.html",
+    "score": 70,
+    "reason": "Macroeconomic AI impact, financial system stress indicator"
+  },
+  {
+    "rank": 19,
+    "headline": "Google Messages rolling out Enhanced Protection mode against spam and scams",
+    "link": "https://9to5google.com/2026/10/23/google-messages-enhanced-protection/",
+    "score": 65,
+    "reason": "Security feature rollout to massive user base, AI-powered protection"
+  },
+  {
+    "rank": 20,
+    "headline": "Your AI Glossary: 65 Terms Everyone Should Know",
+    "link": "https://www.cnet.com/tech/services-and-software/artificial-intelligence-ai-terms-glossary/",
+    "score": 60,
+    "reason": "Educational resource; lowest rank but meets inclusion threshold as mainstream reference"
   }
 ]
