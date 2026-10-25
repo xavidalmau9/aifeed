@@ -1,5 +1,25 @@
 [
   {
+    "id": "the-uk-is-investing-134-million-20261025",
+    "slug": "the-uk-is-investing-134-million",
+    "headline": "The UK is investing $134 million into an AI Biosecurity Lab",
+    "summary": "UK government funds AI Biosecurity Lab with £100 million backed by OpenAI and Anthropic.",
+    "body": "<p>UK commits £100 million to AI Biosecurity Lab supported by OpenAI and Anthropic.</p>\n<p>The lab will operate as an independent nonprofit organization partnering with public-sector organizations and academic institutions.</p>\n<p>The initiative addresses dual concerns: AI systems are creating unprecedented opportunities for scientific discovery while simultaneously enabling new biological risks and lowering barriers to harmful activity. Recent examples, including a California lab's work creating a virus with AI for therapeutic purposes, demonstrate frontier AI's biotech applications.</p>\n<p>The lab's strategic intent is to detect biological threats and accelerate vaccine and medical treatment development by combining frontier AI with expert biosecurity and life sciences knowledge.</p>\n<p>Major AI developers are providing substantial resources: OpenAI committed £100 million in model credits, Anthropic provides £100 million in model credits, and DeepMind offers biosecurity expertise plus access to frontier Gemini models. Basecamp contributes AI-biology models and technical expertise on biosecurity challenges.</p>\n<p>Britain's AI Minister described the lab as a major new global institution that will protect people from emerging biological threats while establishing Britain's leadership in AI safety and security.</p>\n<p>UK establishes AI Biosecurity Lab with £100 million to detect threats and accelerate medical treatments using frontier AI.</p>",
+    "category": "Research",
+    "imageUrl": "https://aifeed.run/images/aifeed_the-uk-is-investing-134-million_20261025_am.png",
+    "image": "images/aifeed_the-uk-is-investing-134-million_20261025_am.png",
+    "sourceUrl": "https://www.engadget.com/2296211/the-uk-is-investing-134-million-into-an-ai-biosecurity-lab/",
+    "publishedAt": "2026-10-25T12:16:31.836Z",
+    "hashtags": [
+      "AIBiosecurity",
+      "UKTech",
+      "OpenAI",
+      "Anthropic",
+      "DeepMind"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "american-express-is-cutting-of-its-20261024",
     "slug": "american-express-is-cutting-of-its",
     "headline": "American Express is cutting 5% of its workforce to 'prepare for AI'",

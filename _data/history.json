@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-25T12:16:31.836Z",
+      "date": "2026-10-25",
+      "slot": 1,
+      "headline": "The UK is investing $134 million into an AI Biosecurity Lab",
+      "canonUrl": "engadget.com/2296211/the-uk-is-investing-134-million-into-an-ai-biosecurity-lab",
+      "url": "https://www.engadget.com/2296211/the-uk-is-investing-134-million-into-an-ai-biosecurity-lab/",
+      "slug": "the-uk-is-investing-134-million",
+      "image": "aifeed_the-uk-is-investing-134-million_20261025_am.png",
+      "photo": {
+        "dhash": "f6f8fcfcfefb5918",
+        "phash": "680a6f62d07e9be1",
+        "hist": [
+          4,
+          2,
+          0,
+          0,
+          0,
+          16,
+          10,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          0,
+          0,
+          0,
+          171,
+          21,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          71,
+          53,
+          0,
+          0,
+          0,
+          230,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          0,
+          0,
+          0,
+          2,
+          392
+        ],
+        "url": "https://www.engadget.com/img/gallery/the-uk-is-investing-134-million-into-an-ai-biosecurity-lab/l-intro-1792858052.jpg",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-24T21:11:38.720Z",
       "date": "2026-10-24",
       "slot": 2,
@@ -2864,58 +2946,6 @@
     }
   ],
   "rankings": {
-    "2026-10-11": [
-      {
-        "rank": 1,
-        "title": "Satya Nadella says we should assume all AI models are ‘compromised’",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised"
-      },
-      {
-        "rank": 2,
-        "title": "Anthropic says its AI agents tried to break into government websites",
-        "canonUrl": "engadget.com/2283091/anthropic-says-its-ai-agents-tried-to-break-into-government-websites"
-      },
-      {
-        "rank": 3,
-        "title": "Anthropic is cutting off its internal evaluations from the internet",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet"
-      },
-      {
-        "rank": 4,
-        "title": "AI Is Getting Really Good at Messing With Cybercriminals",
-        "canonUrl": "wired.com/story/ai-is-getting-really-good-at-messing-with-cybercriminals"
-      },
-      {
-        "rank": 5,
-        "title": "Hollywood takes on Zuckerberg, Musk and Altman amid widespread anxiety over AI",
-        "canonUrl": "cnbc.com/2026/10/10/ai-movies-tech-ceos-hollywood.html"
-      },
-      {
-        "rank": 6,
-        "title": "AI is changing how lawyers work — and putting the billable hour under pressure",
-        "canonUrl": "cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html"
-      },
-      {
-        "rank": 7,
-        "title": "AI may change the price of your Big Mac and groceries — what this means for shoppers",
-        "canonUrl": "cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html"
-      },
-      {
-        "rank": 8,
-        "title": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
-        "canonUrl": "theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"
-      },
-      {
-        "rank": 9,
-        "title": "Nvidia GPUs are everywhere. Here are the ways companies are accessing them",
-        "canonUrl": "cnbc.com/2026/10/10/nvidia-gpus-are-everywhere-heres-how-companies-access-them.html"
-      },
-      {
-        "rank": 10,
-        "title": "Microsoft's Nadella says AI needs an ‘emergency brake’ that humans control",
-        "canonUrl": "cnbc.com/2026/10/10/microsoft-satya-nadella-ai-emergency-brake-safety.html"
-      }
-    ],
     "2026-10-12": [
       {
         "rank": 1,
@@ -3590,6 +3620,33 @@
         "rank": 9,
         "title": "Nvidia's Huang heads to Kazakhstan for the first time — and he's not the only one with big plans",
         "canonUrl": "cnbc.com/2026/10/23/nvidia-huang-investment-kazakhstan-.html"
+      }
+    ],
+    "2026-10-25": [
+      {
+        "rank": 1,
+        "title": "Pennsylvania will require labels on AI-generated ads",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act"
+      },
+      {
+        "rank": 2,
+        "title": "The UK is investing $134 million into an AI Biosecurity Lab",
+        "canonUrl": "engadget.com/2296211/the-uk-is-investing-134-million-into-an-ai-biosecurity-lab"
+      },
+      {
+        "rank": 3,
+        "title": "The PHP Meltdown Shows How AI Makes Bugs More Exploitable",
+        "canonUrl": "wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable"
+      },
+      {
+        "rank": 4,
+        "title": "What a day in customer service looks like — as AI changes everything",
+        "canonUrl": "cnbc.com/2026/10/24/ai-customer-service-jobs-work.html"
+      },
+      {
+        "rank": 5,
+        "title": "Apple @ Work: The browser is the biggest gap in your AI governance strategy",
+        "canonUrl": "9to5mac.com/2026/10/24/apple-work-the-browser-is-the-biggest-gap-in-your-ai-governance-strategy"
       }
     ]
   }
