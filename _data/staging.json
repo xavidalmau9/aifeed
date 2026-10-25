@@ -1,72 +1,128 @@
 [
   {
     "rank": 1,
-    "headline": "AI&apos;s &apos;Black October&apos;: Critical PHP flaws set off global security scramble",
-    "link": "https://www.cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html",
+    "headline": "OpenAI now trains its frontier AI models with no internet access",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
     "score": 94,
-    "reason": "Major security vulnerability with widespread impact; concrete crisis, not speculation"
+    "reason": "Major operational shift by leading AI company with security implications; concrete launch detail"
   },
   {
     "rank": 2,
-    "headline": "Meta delays new business terms after publisher pushback on AI scraping",
-    "link": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
+    "headline": "Now Google says it might use your Gmail and Google Photos data to target ads",
+    "link": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
     "score": 92,
-    "reason": "Major controversy involving Meta, real business impact, publishers vs AI training tension"
+    "reason": "Major privacy policy change affecting billions of users; significant controversy and regulatory implications"
   },
   {
     "rank": 3,
-    "headline": "American Express is cutting 5% of its workforce to &apos;prepare for AI&apos;",
-    "link": "https://www.cnbc.com/2026/10/23/american-express-job-cuts.html",
-    "score": 88,
-    "reason": "Concrete layoff numbers tied to AI; major financial services company; real business action"
+    "headline": "Musk&apos;s SpaceX is still restricting Starlink in Ukraine and the toll is rising",
+    "link": "https://www.cnbc.com/2026/10/23/ukraine-says-starlink-restrictions-remain-despite-trump-assurances.html",
+    "score": 89,
+    "reason": "Major geopolitical controversy with real-world impact; high-profile ongoing dispute"
   },
   {
     "rank": 4,
-    "headline": "Pennsylvania will require labels on AI-generated ads",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+    "headline": "Intel gets waiver after worries fuzzy US ban on foreign-made robots may hit fabs",
+    "link": "https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs/",
     "score": 87,
-    "reason": "First regulatory action on AI-generated content labeling; substantive policy not speculation"
+    "reason": "Major regulatory/trade policy development affecting semiconductor industry; big financial implications"
   },
   {
     "rank": 5,
-    "headline": "The UK is investing $134 million into an AI Biosecurity Lab",
-    "link": "https://www.engadget.com/2296211/the-uk-is-investing-134-million-into-an-ai-biosecurity-lab/",
+    "headline": "On the ground at Nvidia&apos;s AI showpiece: Jensen-mania, robot ducks and neocloud distress",
+    "link": "https://www.cnbc.com/2026/10/23/jensen-huang-gtc-robot-ducks-neocloud-distress.html",
     "score": 85,
-    "reason": "Large government investment in AI biosecurity; concrete funding number; official policy"
+    "reason": "Major industry event coverage from leading AI chip company; concrete observations of market signals"
   },
   {
     "rank": 6,
-    "headline": "Google will target ads based on Gmail, Photos data if Personal Intelligence is enabled",
-    "link": "https://9to5google.com/2026/10/23/google-will-target-ads-based-on-gmail-photos-data-if-personal-intelligence-is-enabled/",
-    "score": 84,
-    "reason": "Major Google privacy policy change; controversial data usage expansion; concrete product action"
+    "headline": "Retro gaming is being overrun with AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
+    "score": 81,
+    "reason": "Significant trend impact on established industry; demonstrates AI disruption at scale"
   },
   {
     "rank": 7,
-    "headline": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
-    "score": 78,
-    "reason": "Concrete product launch from established company founder; tangible AI deliverable"
+    "headline": "What a day in customer service looks like — as AI changes everything",
+    "link": "https://www.cnbc.com/2026/10/24/ai-customer-service-jobs-work.html",
+    "score": 79,
+    "reason": "Real-world AI implementation impact; demonstrates workplace transformation with concrete details"
   },
   {
     "rank": 8,
-    "headline": "Every child will get AI. Not every child will get a teacher",
-    "link": "https://fortune.com/2026/10/24/every-child-will-get-ai-not-every-child-will-get-a-teacher/",
+    "headline": "Palantir CEO Alex Karp says neurodivergent workers will thrive in the AI era. An autistic psychologist says he has a point",
+    "link": "https://fortune.com/2026/10/25/palantir-ceo-alex-karp-neurodivergent-people-tech-ai-think-differently/",
     "score": 76,
-    "reason": "Significant societal impact statement; education/AI controversy; substantive issue"
+    "reason": "Major company perspective on AI labor market with credible counterpoint; significant employment implications"
   },
   {
     "rank": 9,
-    "headline": "The PHP Meltdown Shows How AI Makes Bugs More Exploitable",
-    "link": "https://www.wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable/",
-    "score": 74,
-    "reason": "Concrete analysis of AI's role in amplifying security vulnerabilities; real-world impact"
+    "headline": "Speed restrictions on Musk's Starlink lifted in Ukraine, defense ministry says",
+    "link": "https://www.axios.com/2026/10/24/musk-ukraine-starlink-starshield-speed",
+    "score": 75,
+    "reason": "Resolution to major geopolitical controversy; concrete policy reversal with defense implications"
   },
   {
     "rank": 10,
-    "headline": "Nvidia&apos;s Huang heads to Kazakhstan for the first time — and he&apos;s not the only one with big plans",
-    "link": "https://www.cnbc.com/2026/10/23/nvidia-huang-investment-kazakhstan-.html",
-    "score": 71,
-    "reason": "Nvidia executive international expansion move; AI chip industry strategy signal"
+    "headline": "Please Don’t Let an AI Bot Log Into Your Bank Account",
+    "link": "https://www.cnet.com/tech/services-and-software/please-dont-let-an-ai-bot-log-into-your-bank-account/",
+    "score": 72,
+    "reason": "Critical security vulnerability category affecting financial systems; actionable warning with broad impact"
+  },
+  {
+    "rank": 11,
+    "headline": "Washington's message to AI execs: please shut up",
+    "link": "https://www.axios.com/2026/10/24/ai-ceos-washington-political-liability",
+    "score": 70,
+    "reason": "Significant regulatory pressure from US government on AI industry; policy development indicator"
+  },
+  {
+    "rank": 12,
+    "headline": "Your iPhone can spot scams for you with iOS 27 – but you have to opt in",
+    "link": "https://www.zdnet.com/tech/ios-27-impersonation-risk-detection-security-feature/",
+    "score": 68,
+    "reason": "Major consumer AI feature launch from Apple; demonstrates AI integration in consumer products"
+  },
+  {
+    "rank": 13,
+    "headline": "In hunt for Starlink alternative, Ukraine partners with Nokia and satellite maker ICEYE",
+    "link": "https://www.cnbc.com/2026/10/23/ukraine-partners-with-nokia-and-iceye-for-starlink-alternative.html",
+    "score": 65,
+    "reason": "Major strategic partnership in response to geopolitical crisis; significant infrastructure development"
+  },
+  {
+    "rank": 14,
+    "headline": "PHP2Shell: Haven’t patched yet? Take these steps now to mitigate",
+    "link": "https://www.zdnet.com/tech/php2shell-php-patch-mitigation-critical-exploit/",
+    "score": 62,
+    "reason": "Critical security vulnerability affecting major software; widespread impact requiring immediate action"
+  },
+  {
+    "rank": 15,
+    "headline": "What the US Movement Against Data Centers Can Learn From Abroad",
+    "link": "https://www.wired.com/story/what-the-us-anti-data-center-movement-can-learn-from-everywhere-else/",
+    "score": 58,
+    "reason": "Major policy trend affecting AI infrastructure; demonstrates regulatory backlash at scale"
+  },
+  {
+    "rank": 16,
+    "headline": "Silicon Valley Democrats demand investigation into Starlink restrictions in Ukraine",
+    "link": "https://www.cnbc.com/2026/10/23/starlink-ukraine-musk-trump-congress.html",
+    "score": 55,
+    "reason": "US government official action on Starlink controversy; high-profile political response to tech policy"
+  },
+  {
+    "rank": 17,
+    "headline": "Android lets you ‘bubble’ apps for easy access now – how it works",
+    "link": "https://www.zdnet.com/tech/android-17-app-bubbles-how-to/",
+    "score": 48,
+    "reason": "Google product feature launch; incremental UI improvement with practical application benefits"
+  },
+  {
+    "rank": 18,
+    "headline": "Gemini Notebook now available as Connected App for deeper integration",
+    "link": "https://9to5google.com/2026/10/23/gemini-notebook-connected-app/",
+    "score": 45,
+    "reason": "Google Gemini product expansion; demonstrates deepening AI integration strategy"
   }
 ]
