@@ -1,5 +1,25 @@
 [
   {
+    "id": "apple-work-the-browser-is-the-20261025",
+    "slug": "apple-work-the-browser-is-the",
+    "headline": "Apple @ Work: The browser is the biggest gap in your AI governance strategy",
+    "summary": "IT teams lack visibility into corporate data uploads to personal AI accounts in browsers, prompting new governance tools.",
+    "body": "<p>Browser remains largest AI governance gap as employees upload corporate data to personal AI accounts.</p>\n<p>Most IT teams have reasonable visibility into AI apps installed across their Mac environment through device management vendors. Policies can block unapproved AI tools and detect local model inference engines. However, the actual point where corporate data moves to personal AI accounts occurs in the browser, where traditional Apple management tools were never designed to govern at the web application layer.</p>\n<p>The core governance challenge is straightforward: an employee opens Safari or Chrome, logs into a free personal ChatGPT or Claude account, and uploads a corporate document to ask the model a question. No app installation occurs and nothing appears in device inventory reports, leaving IT completely blind to the action.</p>\n<p>Jamf is addressing this directly with browser AI governance capabilities arriving in Q4 2026. The tool will enable admins to identify use of personal AI accounts across Safari, Chrome, Firefox, Edge and other browsers, and enforce policies including blocking specific actions at the point of use.</p>\n<p>An alternative approach is the enterprise browser model, exemplified by Island, which recently announced a $400 million Series F round at a $6.4 billion valuation. Instead of adding governance to existing browsers externally, enterprise browsers give IT ground-up control over which web AI tools employees can access and what data can be pasted into prompts or downloaded.</p>\n<p>The tradeoff with enterprise browsers is significant: asking employees to switch from Safari or Chrome as their primary browser presents adoption challenges. The tools to manage browser-based AI governance are either just arriving or in development, policy frameworks have not caught up with emerging technical capabilities, and use cases continue to evolve rapidly.</p>\n<p>Browser-based AI governance is arriving in Q4 2026 and enterprise browsers are emerging as organizations grapple with controlling corporate data flow to personal AI accounts.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_apple-work-the-browser-is-the_20261025_pm.png",
+    "image": "images/aifeed_apple-work-the-browser-is-the_20261025_pm.png",
+    "sourceUrl": "https://9to5mac.com/2026/10/24/apple-work-the-browser-is-the-biggest-gap-in-your-ai-governance-strategy/",
+    "publishedAt": "2026-10-25T21:13:44.186Z",
+    "hashtags": [
+      "AIGovernance",
+      "MacSecurity",
+      "EnterpriseIT",
+      "BrowserSecurity",
+      "DataProtection"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "the-uk-is-investing-134-million-20261025",
     "slug": "the-uk-is-investing-134-million",
     "headline": "The UK is investing $134 million into an AI Biosecurity Lab",
