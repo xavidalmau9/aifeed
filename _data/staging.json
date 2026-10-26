@@ -1,51 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "'Everyone is hedging.' As the U.S. and China divide the world into rival AI blocs, that lends power to 'swing countries' in between",
-    "link": "https://fortune.com/2026/10/25/us-china-rival-ai-blocs-swing-countries-hedging/",
-    "score": 92,
-    "reason": "Major geopolitical AI story with concrete implications for global power dynamics"
+    "headline": "SpaceX closes $40 billion debt deal for AI chips, Elon Musk says",
+    "link": "https://www.cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html",
+    "score": 94,
+    "reason": "Massive funding number, concrete deal closure, major AI infrastructure play"
   },
   {
     "rank": 2,
-    "headline": "Tech leaders want to use religion to teach AI right from wrong. But that can prioritize certain traditions and distort others, anthropologist warns",
-    "link": "https://fortune.com/2026/10/25/tech-leaders-religion-ai-morality-traditions-anthropic-openai/",
-    "score": 88,
-    "reason": "Significant controversy about AI ethics and cultural bias with expert criticism"
+    "headline": "SoftBank reportedly plans $50 billion tech investment in aspiring &apos;AI nation&apos; Malaysia",
+    "link": "https://www.cnbc.com/2026/10/26/softbank-masayoshi-son-malaysia-ai-billions.html",
+    "score": 92,
+    "reason": "Highest capital commitment, significant geopolitical AI infrastructure investment"
   },
   {
     "rank": 3,
-    "headline": "The PHP Meltdown Shows How AI Makes Bugs More Exploitable",
-    "link": "https://www.wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable/",
-    "score": 85,
-    "reason": "Concrete technical controversy demonstrating AI-enabled security risks"
+    "headline": "Meta's $42B in penalties is a warning to AI",
+    "link": "https://www.axios.com/2026/10/26/meta-litigation-ai-legal-risk",
+    "score": 89,
+    "reason": "Major regulatory enforcement action, significant financial penalty, AI-specific implications"
   },
   {
     "rank": 4,
-    "headline": "Pennsylvania will require labels on AI-generated ads",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
-    "score": 82,
-    "reason": "Regulatory launch with real legal/compliance impact"
+    "headline": "Elvis Presley's estate is suing Anthropic over copyright infringement",
+    "link": "https://www.engadget.com/2296535/elvis-presley-estate-suing-ai-company-for-copyright-infringement/",
+    "score": 85,
+    "reason": "High-profile copyright litigation against major AI company, emerging legal precedent"
   },
   {
     "rank": 5,
-    "headline": "r/opensource just banned AI, non-English speakers, and more",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
-    "score": 78,
-    "reason": "Major community controversy affecting significant open-source ecosystem"
+    "headline": "Anthropic's Claude bypassed a paywall to access Georgia voter data without authorization",
+    "link": "https://www.axios.com/2026/10/25/anthropic-claude-georgia-voter-data",
+    "score": 84,
+    "reason": "Concrete security breach, unauthorized data access, election-sensitive material"
   },
   {
     "rank": 6,
-    "headline": "Gemini for Android rolls out side panel and settings redesign",
-    "link": "https://9to5google.com/2026/10/23/gemini-settings-redesign-android/",
-    "score": 72,
-    "reason": "Google product launch with tangible feature updates (MAX 1 per company: Google)"
+    "headline": "Marc Lore’s Wonder bets on Texas, automation and user-built restaurants as it mulls IPO",
+    "link": "https://www.cnbc.com/2026/10/25/wonder-ipo-texas-automation.html",
+    "score": 78,
+    "reason": "Major company expansion, IPO milestone, automation-driven business model"
   },
   {
     "rank": 7,
-    "headline": "Blue Planet III is keeping the rough edges in the age of AI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+    "headline": "AI agents are shopping like never before—and tools like Mastercard's 'Pay for Machines' could turbocharge the trend",
+    "link": "https://fortune.com/2026/10/26/ai-agent-shopping-commerce-mastercard-pay-for-machines-agent-pay-x402-micropayments-jorn-lambert/",
+    "score": 76,
+    "reason": "Major tech launch, significant product innovation, commercial AI deployment"
+  },
+  {
+    "rank": 8,
+    "headline": "Meet the AI Agents Trying to Be Real-Life Journalists",
+    "link": "https://www.wired.com/story/ai-agents-are-trying-to-be-journalists-now/",
+    "score": 72,
+    "reason": "Emerging AI application trend, impacts major industry sector"
+  },
+  {
+    "rank": 9,
+    "headline": "This AI Radio Host Speaks Spanish and Backs Immigrants. It’s Winning Over Listeners",
+    "link": "https://www.wired.com/story/this-ai-radio-hosts-speaks-spanish-and-backs-immigrants-its-winning-over-listeners/",
     "score": 68,
-    "reason": "Content production approach contrasting with AI trends; significant media property"
+    "reason": "Deployed AI product with measurable adoption, media industry disruption"
+  },
+  {
+    "rank": 10,
+    "headline": "Your iPhone can spot scams for you with iOS 27 – but you have to opt in",
+    "link": "https://www.zdnet.com/tech/ios-27-impersonation-risk-detection-security-feature/",
+    "score": 65,
+    "reason": "Major consumer AI feature launch, billions of affected devices"
   }
 ]
