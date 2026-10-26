@@ -64,3 +64,25 @@ test('renderer env is always explicit, never inherited from the job env', () => 
   assert.strictEqual(v3.AIFEED_REEL_TEMPLATE, 'v3'); assert.strictEqual(v3.AIFEED_HOOK_STYLE, 'A');
   assert.strictEqual(v3.AIFEED_SCENE_CF, 'off');
 });
+
+test('v3 and v2 both failing: error names both templates and reasons, and the alert says carousel last resort', () => {
+  const { reelFailureAlert } = require('../lib/reelsplan');
+  const render = (r, p, f, ph, opts) => { throw new Error(opts.template + ' crashed'); };
+  let err;
+  try { renderReelSafe('/r', {}, 'p', '', { template: 'v3' }, { render, log: quiet }); } catch (e) { err = e; }
+  assert.deepStrictEqual(err.templatesFailed, ['v3', 'v2']);
+  assert.match(err.message, /v3: v3 crashed \| v2: v2 crashed/);
+  const msg = reelFailureAlert('render', true, err.templatesFailed, err.message);
+  assert.match(msg, /Reel render failed \(templates failed: v3 \+ v2\)/);
+  assert.match(msg, /carousel as LAST-RESORT fallback/);
+  assert.match(msg, /Reason: v3: v3 crashed \| v2: v2 crashed/);
+  assert.match(reelFailureAlert('publish', true, [], 'Graph 500'), /Instagram Reel publish failed, posting the carousel as LAST-RESORT fallback\nReason: Graph 500/);
+});
+
+test('pipeline: every path into the carousel fallback alerts', () => {
+  const src = fs.readFileSync(path.join(__dirname, '../pipeline.js'), 'utf8');
+  assert.equal((src.match(/reelFailureAlert\('render', reelsOnly, e\.templatesFailed/g) || []).length, 1);
+  assert.equal((src.match(/reelFailureAlert\('publish', reelsOnly/g) || []).length, 1);
+  const fb = src.slice(src.indexOf('if (carouselFallback(cfg, reelPublished))'));
+  assert.match(fb.slice(0, 400), /if \(!reelAlerted\) await sendAlert\(reelFailureAlert/);
+});

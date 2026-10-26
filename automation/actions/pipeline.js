@@ -24,7 +24,7 @@ const { sendAlert } = require('./alert');
 const { buildFb, checkFb } = require('./lib/captions');
 const { renderReelSafe, renderSlides, withPhotoCredit, publishIgReel, publishFbVideo } = require('./lib/reels');
 const { reelBrief } = require('./lib/reelbrief');
-const { isReelsOnly, carouselUpfront, carouselFallback, fbPhotoNeeded, reelTemplateOpts } = require('./lib/reelsplan');
+const { isReelsOnly, carouselUpfront, carouselFallback, fbPhotoNeeded, reelTemplateOpts, reelFailureAlert } = require('./lib/reelsplan');
 
 function loadConfig() {
   return JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json'), 'utf8'));
@@ -504,7 +504,7 @@ async function main() {
       try { writeClaim(env, decision, 'posted', { extra: { slug: published.slug, image: published.pngName } }); }
       catch (e) { console.log('Could not mark claim posted: ' + redact(e.message)); }
     };
-    let reelPublished = false, fbVideoDone = false;
+    let reelPublished = false, fbVideoDone = false, reelAlerted = false;
     if (carouselUpfront(cfg)) {
       await publishInstagram(cfg, env, slideUrls(), published.igCaption);
       markPosted();
@@ -566,7 +566,7 @@ async function main() {
             reelPublished = true;
             if (reelsOnly) markPosted();
           } catch (e) {
-            const msg = 'AIFeed: Instagram Reel failed (' + (reelsOnly ? 'falling back to the carousel' : 'carousel, Story, FB + LinkedIn unaffected') + ')\n' + redact(e.message);
+            const msg = reelFailureAlert('publish', reelsOnly, [], redact(e.message)); reelAlerted = true;
             console.log(msg);
             await sendAlert(msg);
           }
@@ -581,7 +581,7 @@ async function main() {
           console.log('Reel rendered + committed; publishing off (reelsPublishEnabled false)');
         }
       } catch (e) {
-        const msg = 'AIFeed: Reel failed (' + (reelsOnly ? 'falling back to the carousel' : 'carousel, Story, FB + LinkedIn unaffected') + ')\n' + redact(e.message);
+        const msg = reelFailureAlert('render', reelsOnly, e.templatesFailed || [], redact(e.message)); reelAlerted = true;
         console.log(msg);
         await sendAlert(msg);
       }
@@ -589,6 +589,7 @@ async function main() {
 
     if (carouselFallback(cfg, reelPublished)) {
       console.log('Reel did not publish: posting the carousel as fallback so the slot is not empty');
+      if (!reelAlerted) await sendAlert(reelFailureAlert('render', true, [], 'the Reel did not publish (no Reel error was raised)'));
       await publishInstagram(cfg, env, slideUrls(), published.igCaption);
       markPosted();
     }

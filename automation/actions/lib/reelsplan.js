@@ -16,4 +16,12 @@ function reelTemplateOpts(cfg = {}, env = {}) {
   const hs = String(env.AIFEED_HOOK_STYLE || cfg.reelHookStyle || '').trim().toUpperCase();
   return v3 ? { template: 'v3', hookStyle: hs } : { template: 'v2', hookStyle: '' };
 }
-module.exports = { isReelsOnly, carouselUpfront, carouselFallback, fbPhotoNeeded, reelTemplateOpts };
+// Alert text when the Reel didn't make it (stage 'render' = every Reel template failed, 'publish' = the IG Reel publish
+// failed). Names the reason and the templates that failed, and whether the carousel is being posted as last resort.
+function reelFailureAlert(stage, reelsOnly, templatesFailed, reason) {
+  const what = stage === 'publish' ? 'Instagram Reel publish failed' : 'Reel render failed' +
+    (templatesFailed && templatesFailed.length ? ' (templates failed: ' + templatesFailed.join(' + ') + ')' : '');
+  const next = reelsOnly ? 'posting the carousel as LAST-RESORT fallback' : 'carousel, Story, FB + LinkedIn unaffected';
+  return 'AIFeed: ' + what + ', ' + next + '\nReason: ' + String(reason || 'unknown');
+}
+module.exports = { isReelsOnly, carouselUpfront, carouselFallback, fbPhotoNeeded, reelTemplateOpts, reelFailureAlert };

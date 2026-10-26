@@ -44,10 +44,21 @@ function renderReelSafe(repo, post, feedPngPath, photo, opts = {}, deps = {}) {
     } catch (e) {
       const why = String((e && e.message) || e).slice(0, 300);
       log('Reel v3 render failed, retrying with the v2 Reel template: ' + why);
-      return Object.assign(render(repo, post, feedPngPath, photo, Object.assign({}, opts, { template: 'v2', hookStyle: '' })), { template: 'v2', v3Error: why });
+      try {
+        return Object.assign(render(repo, post, feedPngPath, photo, Object.assign({}, opts, { template: 'v2', hookStyle: '' })), { template: 'v2', v3Error: why });
+      } catch (e2) {
+        const err = new Error('v3: ' + why + ' | v2: ' + String((e2 && e2.message) || e2).slice(0, 300));
+        err.templatesFailed = ['v3', 'v2'];
+        throw err;
+      }
     }
   }
-  return Object.assign(render(repo, post, feedPngPath, photo, Object.assign({}, opts, { template: 'v2', hookStyle: '' })), { template: 'v2', v3Error: '' });
+  try {
+    return Object.assign(render(repo, post, feedPngPath, photo, Object.assign({}, opts, { template: 'v2', hookStyle: '' })), { template: 'v2', v3Error: '' });
+  } catch (e) {
+    if (e && typeof e === 'object') e.templatesFailed = ['v2'];
+    throw e;
+  }
 }
 
 // Carousel slides (4:5) + Story (9:16) in the Reel design (automation/reels/make_slides.py). Picks the scene once and
