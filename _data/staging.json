@@ -1,72 +1,107 @@
 [
   {
     "rank": 1,
-    "headline": "SpaceX closes $40 billion debt deal for AI chips, Elon Musk says",
-    "link": "https://www.cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html",
-    "score": 94,
-    "reason": "Massive funding number, concrete deal closure, major AI infrastructure play"
+    "headline": "Meta announces $95 billion stock offering to fund AI expansion",
+    "link": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html",
+    "score": 96,
+    "reason": "Largest number, major company capital commitment, concrete action"
   },
   {
     "rank": 2,
-    "headline": "SoftBank reportedly plans $50 billion tech investment in aspiring &apos;AI nation&apos; Malaysia",
-    "link": "https://www.cnbc.com/2026/10/26/softbank-masayoshi-son-malaysia-ai-billions.html",
-    "score": 92,
-    "reason": "Highest capital commitment, significant geopolitical AI infrastructure investment"
+    "headline": "Anthropic files to go public",
+    "link": "https://www.engadget.com/2296724/anthropic-files-to-go-public/",
+    "score": 94,
+    "reason": "Major IPO launch, significant AI company milestone"
   },
   {
     "rank": 3,
-    "headline": "Meta's $42B in penalties is a warning to AI",
-    "link": "https://www.axios.com/2026/10/26/meta-litigation-ai-legal-risk",
-    "score": 89,
-    "reason": "Major regulatory enforcement action, significant financial penalty, AI-specific implications"
+    "headline": "Microsoft offers buyouts to 60,000 employees",
+    "link": "https://www.theverge.com/tech/1018666/microsoft-expands-buyouts-60000-employees-eligible",
+    "score": 92,
+    "reason": "Large headcount impact, AI-driven efficiency push, concrete action"
   },
   {
     "rank": 4,
-    "headline": "Elvis Presley's estate is suing Anthropic over copyright infringement",
-    "link": "https://www.engadget.com/2296535/elvis-presley-estate-suing-ai-company-for-copyright-infringement/",
+    "headline": "Canva Chases AI Domination With a New AI Image Model for Designers",
+    "link": "https://www.cnet.com/tech/services-and-software/canva-craft-proprietary-ai-image-model/",
     "score": 85,
-    "reason": "High-profile copyright litigation against major AI company, emerging legal precedent"
+    "reason": "New product launch, major consumer AI company moving into content generation"
   },
   {
     "rank": 5,
-    "headline": "Anthropic's Claude bypassed a paywall to access Georgia voter data without authorization",
-    "link": "https://www.axios.com/2026/10/25/anthropic-claude-georgia-voter-data",
+    "headline": "Fanatics teams up with OpenAI for new AI-powered shopping suggestion feature",
+    "link": "https://www.cnbc.com/2026/10/26/fanatics-openai-codex-sports-merchandise-shopping.html",
     "score": 84,
-    "reason": "Concrete security breach, unauthorized data access, election-sensitive material"
+    "reason": "New product launch, major company partnership"
   },
   {
     "rank": 6,
-    "headline": "Marc Lore’s Wonder bets on Texas, automation and user-built restaurants as it mulls IPO",
-    "link": "https://www.cnbc.com/2026/10/25/wonder-ipo-texas-automation.html",
-    "score": 78,
-    "reason": "Major company expansion, IPO milestone, automation-driven business model"
+    "headline": "Dutch government to cut 16 percent of workforce as part of AI efficiency push",
+    "link": "https://www.engadget.com/2297180/dutch-government-to-cut-16-percent-of-workforce-as-part-of-ai-efficiency-push/",
+    "score": 83,
+    "reason": "Government-scale AI impact, large percentage workforce reduction"
   },
   {
     "rank": 7,
-    "headline": "AI agents are shopping like never before—and tools like Mastercard's 'Pay for Machines' could turbocharge the trend",
-    "link": "https://fortune.com/2026/10/26/ai-agent-shopping-commerce-mastercard-pay-for-machines-agent-pay-x402-micropayments-jorn-lambert/",
-    "score": 76,
-    "reason": "Major tech launch, significant product innovation, commercial AI deployment"
+    "headline": "Anthropic’s risk factors include the end of humanity, a feud with the Pentagon, and CEO Dario Amodei’s reputation",
+    "link": "https://fortune.com/2026/10/26/anthropic-s1-risk-factors-existential-risk-pentagon-dario-amodei/",
+    "score": 82,
+    "reason": "Controversy and unusual risk disclosure from IPO filing"
   },
   {
     "rank": 8,
-    "headline": "Meet the AI Agents Trying to Be Real-Life Journalists",
-    "link": "https://www.wired.com/story/ai-agents-are-trying-to-be-journalists-now/",
-    "score": 72,
-    "reason": "Emerging AI application trend, impacts major industry sector"
+    "headline": "Anthropic's S-1 makes clear it's on the hook for billions in compute. Its customers can walk at any time",
+    "link": "https://fortune.com/2026/10/26/anthropics-s-1-makes-clear-its-on-the-hook-for-billions-in-compute-its-customers-can-walk-at-any-time-2/",
+    "score": 80,
+    "reason": "Major financial vulnerability revealed in IPO filing"
   },
   {
     "rank": 9,
-    "headline": "This AI Radio Host Speaks Spanish and Backs Immigrants. It’s Winning Over Listeners",
-    "link": "https://www.wired.com/story/this-ai-radio-hosts-speaks-spanish-and-backs-immigrants-its-winning-over-listeners/",
-    "score": 68,
-    "reason": "Deployed AI product with measurable adoption, media industry disruption"
+    "headline": "The RealReal won’t let AI agents hog designer clothing",
+    "link": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
+    "score": 78,
+    "reason": "Platform policy against AI agents, novel AI-driven commerce controversy"
   },
   {
     "rank": 10,
-    "headline": "Your iPhone can spot scams for you with iOS 27 – but you have to opt in",
-    "link": "https://www.zdnet.com/tech/ios-27-impersonation-risk-detection-security-feature/",
+    "headline": "Github competitor Entire is live now – how the agent-first platform works",
+    "link": "https://www.zdnet.com/innovation/enitre-github-competitor-trail-git-forge/",
+    "score": 76,
+    "reason": "New product launch, AI-native developer tool"
+  },
+  {
+    "rank": 11,
+    "headline": "Gemini Live redesign makes it easier to add context to chats",
+    "link": "https://9to5google.com/2026/10/26/gemini-live-plus-redesign/",
+    "score": 72,
+    "reason": "Google product update, improved AI capabilities"
+  },
+  {
+    "rank": 12,
+    "headline": "Can AI help solve the COBOL code crisis?",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
+    "score": 70,
+    "reason": "Major infrastructure application of AI technology"
+  },
+  {
+    "rank": 13,
+    "headline": "r/opensource just banned AI, non-English speakers, and more",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+    "score": 68,
+    "reason": "Community backlash against AI, cultural controversy"
+  },
+  {
+    "rank": 14,
+    "headline": "The focus on AI safety disasters ignores everyday harms",
+    "link": "https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/",
     "score": 65,
-    "reason": "Major consumer AI feature launch, billions of affected devices"
+    "reason": "Systemic AI harms analysis, emerging concern narrative"
+  },
+  {
+    "rank": 15,
+    "headline": "Economic policy vets see risks in AI overreliance",
+    "link": "https://www.axios.com/2026/10/26/ai-economists-furman-policy",
+    "score": 63,
+    "reason": "Expert concern about economic vulnerability to AI"
   }
 ]
