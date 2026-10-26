@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-26T12:16:55.112Z",
+      "date": "2026-10-26",
+      "slot": 1,
+      "headline": "SpaceX closes $40 billion debt deal for AI chips, Elon Musk says",
+      "canonUrl": "cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html",
+      "url": "https://www.cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html",
+      "slug": "spacex-closes-40-billion-debt-deal",
+      "image": "aifeed_spacex-closes-40-billion-debt-deal_20261026_am.png",
+      "photo": {
+        "dhash": "727a7c76763c7d8d",
+        "phash": "5e2e2ec5fe5e0901",
+        "hist": [
+          292,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          25,
+          0,
+          0,
+          0,
+          36,
+          132,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          58,
+          0,
+          0,
+          0,
+          40,
+          121,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          180,
+          0,
+          0,
+          0,
+          61,
+          56
+        ],
+        "url": "https://image.cnbcfm.com/api/v1/image/108433898-1792439982335-gettyimages-2299248528-wm020115_ej7axcme.jpeg?v=1792440027&w=1920&h=1080",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-25T21:13:44.186Z",
       "date": "2026-10-25",
       "slot": 2,
@@ -3028,48 +3110,6 @@
     }
   ],
   "rankings": {
-    "2026-10-12": [
-      {
-        "rank": 1,
-        "title": "Intel, Broadcom CEOs warn capital crunch could become AI's biggest bottleneck",
-        "canonUrl": "cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
-      },
-      {
-        "rank": 2,
-        "title": "World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI ‘tsunami’",
-        "canonUrl": "cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html"
-      },
-      {
-        "rank": 3,
-        "title": "AI’s quiet safety gatekeepers are stepping into the spotlight",
-        "canonUrl": "cnbc.com/2026/10/11/ais-quiet-safety-gatekeepers-are-stepping-into-the-spotlight.html"
-      },
-      {
-        "rank": 4,
-        "title": "Microsoft's president says AI is less regulated than a carton of milk",
-        "canonUrl": "engadget.com/2283487/microsoft-president-ai-less-regulated-than-a-carton-of-milk"
-      },
-      {
-        "rank": 5,
-        "title": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai"
-      },
-      {
-        "rank": 6,
-        "title": "TikTok CEO sees major scientific breakthroughs from AI within three years",
-        "canonUrl": "cnbc.com/2026/10/12/tiktok-ceo-bytedance-ai-scientific-breakthroughs.html"
-      },
-      {
-        "rank": 7,
-        "title": "AI may change the price of your Big Mac and groceries — what this means for shoppers",
-        "canonUrl": "cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html"
-      },
-      {
-        "rank": 8,
-        "title": "OpenAI Dot vs. Meta Muse: How do these AI agents compare?",
-        "canonUrl": "engadget.com/2281289/openai-dot-vs-meta-muse-ai-agents-comparison"
-      }
-    ],
     "2026-10-13": [
       {
         "rank": 1,
@@ -3729,6 +3769,48 @@
         "rank": 5,
         "title": "Apple @ Work: The browser is the biggest gap in your AI governance strategy",
         "canonUrl": "9to5mac.com/2026/10/24/apple-work-the-browser-is-the-biggest-gap-in-your-ai-governance-strategy"
+      }
+    ],
+    "2026-10-26": [
+      {
+        "rank": 1,
+        "title": "SpaceX closes $40 billion debt deal for AI chips, Elon Musk says",
+        "canonUrl": "cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html"
+      },
+      {
+        "rank": 2,
+        "title": "SoftBank reportedly plans $50 billion tech investment in aspiring 'AI nation' Malaysia",
+        "canonUrl": "cnbc.com/2026/10/26/softbank-masayoshi-son-malaysia-ai-billions.html"
+      },
+      {
+        "rank": 3,
+        "title": "Meet the AI Agents Trying to Be Real-Life Journalists",
+        "canonUrl": "wired.com/story/ai-agents-are-trying-to-be-journalists-now"
+      },
+      {
+        "rank": 4,
+        "title": "Claude Code AI finds a cryptominer on a Mac; says it didn’t put it there",
+        "canonUrl": "9to5mac.com/2026/10/26/claude-code-ai-finds-a-cryptominer-on-a-mac-says-it-didnt-put-it-there"
+      },
+      {
+        "rank": 5,
+        "title": "This AI Radio Host Speaks Spanish and Backs Immigrants. It’s Winning Over Listeners",
+        "canonUrl": "wired.com/story/this-ai-radio-hosts-speaks-spanish-and-backs-immigrants-its-winning-over-listeners"
+      },
+      {
+        "rank": 6,
+        "title": "Elvis Presley's estate is suing Anthropic over copyright infringement",
+        "canonUrl": "engadget.com/2296535/elvis-presley-estate-suing-ai-company-for-copyright-infringement"
+      },
+      {
+        "rank": 7,
+        "title": "r/opensource just banned AI, non-English speakers, and more",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban"
+      },
+      {
+        "rank": 8,
+        "title": "What the US Movement Against Data Centers Can Learn From Abroad",
+        "canonUrl": "wired.com/story/what-the-us-anti-data-center-movement-can-learn-from-everywhere-else"
       }
     ]
   }

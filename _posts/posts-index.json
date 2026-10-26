@@ -1,5 +1,25 @@
 [
   {
+    "id": "spacex-closes-40-billion-debt-deal-20261026",
+    "slug": "spacex-closes-40-billion-debt-deal",
+    "headline": "SpaceX closes $40 billion debt deal for AI chips, Elon Musk says",
+    "summary": "SpaceX closes $40 billion debt deal to purchase GPUs; financing expected in Q1-Q2 2027.",
+    "body": "<p>SpaceX closes $40 billion debt financing to purchase GPUs for AI systems.</p>\n<p>Elon Musk confirmed that SpaceX has closed $40 billion in debt financing to purchase graphics processing units for artificial intelligence systems. The callable debt is expected to arrive in the first and second quarters of 2027, according to Musk's announcement on X.</p>\n<p>The financing underscores the enormous capital requirements of the AI boom as technology companies pour billions into advanced chips and data centers. SpaceX's Super Intelligence segment has become its largest business unit, with third-quarter revenue surging ninefold to $7.56 billion from $813 million a year earlier.</p>\n<p>The debt structure uses a special purpose vehicle to keep it off SpaceX's balance sheet and preserve the company's investment-grade credit ratings. Goldman Sachs led talks with investors including Apollo Global Management on the financing structure.</p>\n<p>Musk also stated that debt markets have largely shut off access to financing for companies without substantial revenue outside AI data centers, signaling tightening conditions in the sector.</p>\n<p>The deal reflects SpaceX's aggressive expansion into AI this year under its Super Intelligence business, which has rapidly become the company's dominant revenue driver and strategic focus.</p>\n<p>SpaceX closes $40 billion debt deal for AI chip purchases expected in 2027.</p>",
+    "category": "Business",
+    "imageUrl": "https://aifeed.run/images/aifeed_spacex-closes-40-billion-debt-deal_20261026_am.png",
+    "image": "images/aifeed_spacex-closes-40-billion-debt-deal_20261026_am.png",
+    "sourceUrl": "https://www.cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html",
+    "publishedAt": "2026-10-26T12:16:55.112Z",
+    "hashtags": [
+      "SpaceX",
+      "AI",
+      "GPUs",
+      "EsisFinancing",
+      "ElonMusk"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "apple-work-the-browser-is-the-20261025",
     "slug": "apple-work-the-browser-is-the",
     "headline": "Apple @ Work: The browser is the biggest gap in your AI governance strategy",
