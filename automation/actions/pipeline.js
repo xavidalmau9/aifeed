@@ -22,9 +22,9 @@ const {
 } = require('./lib/net');
 const { sendAlert } = require('./alert');
 const { buildFb, checkFb } = require('./lib/captions');
-const { renderReel, renderSlides, withPhotoCredit, publishIgReel, publishFbVideo } = require('./lib/reels');
+const { renderReelSafe, renderSlides, withPhotoCredit, publishIgReel, publishFbVideo } = require('./lib/reels');
 const { reelBrief } = require('./lib/reelbrief');
-const { isReelsOnly, carouselUpfront, carouselFallback, fbPhotoNeeded } = require('./lib/reelsplan');
+const { isReelsOnly, carouselUpfront, carouselFallback, fbPhotoNeeded, reelTemplateOpts } = require('./lib/reelsplan');
 
 function loadConfig() {
   return JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json'), 'utf8'));
@@ -369,9 +369,11 @@ async function main() {
     // Reel below. Live posts may use Cloudflare here (this is then the only Cloudflare call; the Reel reuses the scene);
     // dry runs never do. Any failure falls back to the legacy feed graphic + end card and the HTML Story.
     let brief = null, slides = null;
-    // v3 Reel template (opt-in): cfg.reelTemplate = "v3", cfg.reelHookStyle = "A" | "B" | "C" (unset = v2, unchanged)
-    const reelV3 = String(cfg.reelTemplate || '').toLowerCase() === 'v3';
-    const reelTpl = reelV3 ? { template: 'v3', hookStyle: String(cfg.reelHookStyle || '').toUpperCase() } : {};
+    // v3 Reel template (opt-in): ONE setting (cfg.reelTemplate = "v3", env AIFEED_REEL_TEMPLATE overrides) drives both the
+    // brief and the renderer; cfg.reelHookStyle = "A" | "B" | "C". Unset = v2, unchanged.
+    const reelTpl = reelTemplateOpts(cfg, process.env);
+    const reelV3 = reelTpl.template === 'v3';
+    console.log('Reel template: ' + reelTpl.template + (reelV3 && reelTpl.hookStyle ? ' (hook ' + reelTpl.hookStyle + ')' : ''));
     const feedTmp = path.join(require('os').tmpdir(), published.pngName);
     fs.writeFileSync(feedTmp, feed.png);
     const getBrief = async () => {
@@ -446,8 +448,8 @@ async function main() {
           const fp = path.join(env.OUT, published.pngName);
           await getBrief();
           console.log('Reel brief: ' + JSON.stringify(brief));
-          const rr = renderReel(env.REPO, Object.assign({}, published.post, brief), fp, published.post.photoUrl || qc.story.ogImage || '', Object.assign({ cloudflare: false }, reelSceneOpts, reelTpl)); // dry run: never spend the Cloudflare quota
-          console.log('Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch + ' voice: ' + (rr.voice || 'none (music-only' + (rr.voiceError ? ': ' + rr.voiceError : '') + ')'));
+          const rr = renderReelSafe(env.REPO, Object.assign({}, published.post, brief), fp, published.post.photoUrl || qc.story.ogImage || '', Object.assign({ cloudflare: false }, reelSceneOpts, reelTpl), { log: m => console.log(redact(m)) }); // dry run: never spend the Cloudflare quota
+          console.log('Reel template used: ' + rr.template + '. Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch + ' voice: ' + (rr.voice || 'none (music-only' + (rr.voiceError ? ': ' + rr.voiceError : '') + ')'));
           fs.copyFileSync(rr.mp4, path.join(env.OUT, published.slug + '.mp4'));
           if (rr.cover) fs.copyFileSync(rr.cover, path.join(env.OUT, published.slug + '_cover.jpg'));
           if (rr.credit) console.log('Reel caption would carry: ' + withPhotoCredit('', rr.credit).trim());
@@ -538,8 +540,9 @@ async function main() {
         await getBrief();
         console.log('Reel brief: ' + JSON.stringify(brief));
         // live post: reuses the carousel's scene (no second Cloudflare call); Cloudflare only if the slides failed
-        const rr = renderReel(env.REPO, Object.assign({}, published.post, brief), tmpPng, published.post.photoUrl || qc.story.ogImage || '', Object.assign({ cloudflare: !slides }, reelSceneOpts, reelTpl));
-        console.log('Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch + ' voice: ' + (rr.voice || 'none (music-only' + (rr.voiceError ? ': ' + rr.voiceError : '') + ')'));
+        const rr = renderReelSafe(env.REPO, Object.assign({}, published.post, brief), tmpPng, published.post.photoUrl || qc.story.ogImage || '', Object.assign({ cloudflare: !slides }, reelSceneOpts, reelTpl), { log: m => console.log(redact(m)) });
+        if (rr.v3Error) await sendAlert('AIFeed: Reel v3 render failed, posted with the v2 Reel template instead\n' + redact(rr.v3Error));
+        console.log('Reel template used: ' + rr.template + '. Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch + ' voice: ' + (rr.voice || 'none (music-only' + (rr.voiceError ? ': ' + rr.voiceError : '') + ')'));
         const rel = 'videos/reels/' + published.slug + '.mp4';
         const coverRel = rr.cover ? 'videos/reels/' + published.slug + '_cover.jpg' : '';
         commitApply(env.REPO, 'AIFeed reel: ' + published.slug, () => {

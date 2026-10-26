@@ -12,8 +12,10 @@ function sceneEnv(opts = {}, base = process.env) {
   const env = Object.assign({}, base, { AIFEED_SCENE_CF: opts.cloudflare === true ? 'on' : 'off' });
   if (opts.sceneCache) env.AIFEED_SCENE_CACHE = opts.sceneCache;
   // v3 Reel template + hook A/B test (opt-in config keys reelTemplate / reelHookStyle; unset = current v2 Reel)
-  if (opts.template) env.AIFEED_REEL_TEMPLATE = String(opts.template);
-  if (opts.hookStyle) env.AIFEED_HOOK_STYLE = String(opts.hookStyle);
+  // always explicit (never inherited from the job env), so the renderer uses exactly the template the brief was written for
+  env.AIFEED_REEL_TEMPLATE = String(opts.template || '').toLowerCase() === 'v3' ? 'v3' : 'v2';
+  if (env.AIFEED_REEL_TEMPLATE === 'v3' && opts.hookStyle) env.AIFEED_HOOK_STYLE = String(opts.hookStyle);
+  else delete env.AIFEED_HOOK_STYLE;
   return env;
 }
 
@@ -28,6 +30,24 @@ function renderReel(repo, post, feedPngPath, photo, opts = {}) {
   if (opts.scene && fs.existsSync(opts.scene)) args.push('--scene', opts.scene, '--scene-source', opts.sceneSource || 'shared', '--scene-credit', opts.sceneCredit || '');
   const stdout = execFileSync('python3', args, { stdio: ['ignore', 'pipe', 'inherit'], timeout: 600000, encoding: 'utf8', env: sceneEnv(opts) });
   return parseRenderResult(stdout, out);
+}
+
+// The Reel with the v3 template, and if that fails for ANY reason (crash, timeout, missing mp4) the same Reel again with the
+// current v2 template, so a v3 problem never costs the slot (or drops a Reels-only feed to a carousel). v2 runs as before.
+// Returns renderReel's result plus { template: 'v3' | 'v2', v3Error }.
+function renderReelSafe(repo, post, feedPngPath, photo, opts = {}, deps = {}) {
+  const render = deps.render || renderReel, log = deps.log || console.log;
+  const ok = rr => { if (!rr || !rr.mp4 || !fs.existsSync(rr.mp4) || !fs.statSync(rr.mp4).size) throw new Error('v3 render produced no mp4'); return rr; };
+  if (String(opts.template || '').toLowerCase() === 'v3') {
+    try {
+      return Object.assign(ok(render(repo, post, feedPngPath, photo, opts)), { template: 'v3', v3Error: '' });
+    } catch (e) {
+      const why = String((e && e.message) || e).slice(0, 300);
+      log('Reel v3 render failed, retrying with the v2 Reel template: ' + why);
+      return Object.assign(render(repo, post, feedPngPath, photo, Object.assign({}, opts, { template: 'v2', hookStyle: '' })), { template: 'v2', v3Error: why });
+    }
+  }
+  return Object.assign(render(repo, post, feedPngPath, photo, Object.assign({}, opts, { template: 'v2', hookStyle: '' })), { template: 'v2', v3Error: '' });
 }
 
 // Carousel slides (4:5) + Story (9:16) in the Reel design (automation/reels/make_slides.py). Picks the scene once and
@@ -95,4 +115,4 @@ async function publishFbVideo(cfg, env, { graphForm }, videoUrl, message, title)
     Object.assign({ tries: 2, waitMs: 10000 }, auth));
 }
 
-module.exports = { reelFields, renderReel, renderSlides, sceneEnv, parseRenderResult, withPhotoCredit, publishIgReel, publishFbVideo };
+module.exports = { reelFields, renderReel, renderReelSafe, renderSlides, sceneEnv, parseRenderResult, withPhotoCredit, publishIgReel, publishFbVideo };

@@ -91,7 +91,7 @@ def pill_colors(category):
 # ---------- v3 template (opt-in: AIFEED_REEL_TEMPLATE=v3) ----------
 # v3 = retention cut: payoff headline on screen at frame 0, voice starts on the hook, 7-10s, save/share/follow end card.
 # AIFEED_HOOK_STYLE (v3 only): A = bold claim, B = question, C = 'what this means for you'; unset/off = the normal punch.
-V3_MIN_S, V3_MAX_S, V3_END_HOLD = 7.0, 10.0, 2.3
+V3_MIN_S, V3_MAX_S, V3_END_HOLD = 7.0, 10.0, 3.5  # end card holds ~3.5 s (takeaway / share / follow)
 FOLLOW_LINE = 'Follow @aifeed.run for the AI news that matters'
 # Targeted share prompt per category (same keys as PILL_COLORS); SHARE_DEFAULT for anything else.
 SHARE_PROMPTS = {
@@ -919,6 +919,30 @@ def load_photo(photo, feed, category=''):
     raise SystemExit('no real photo for this story (feed graphic is a text/gradient card); refusing a text-only Reel')
 
 
+def voice_attempts(voice_mod):
+    """(voice, speed) tries for the voiceover: the chosen voice at its pace, the same voice at another pace, then the
+    fallback voice (AIFEED_KOKORO_FALLBACK_VOICE, default am_adam; 'off' disables it). Music-only only after all fail."""
+    v, sp = voice_mod.VOICE, voice_mod.SPEED
+    tries = [(v, sp), (v, 1.0 if abs(sp - 1.0) > .01 else .95)]
+    fb = os.environ.get('AIFEED_KOKORO_FALLBACK_VOICE', 'am_adam').strip()
+    if fb and fb.lower() not in ('off', '0', 'false', 'none') and fb != v:
+        tries.append((fb, sp))
+    return tries
+
+
+def voice_retry(voice_mod, fit):
+    """Run fit(voice=..., speed=..., budget=...) for each voice_attempts() entry until one works; every try has its own
+    capped budget (AIFEED_VOICE_MAX_SYNTH syntheses / AIFEED_VOICE_MAX_S seconds). Raises the joined errors if all fail."""
+    errs = []
+    for v, sp in voice_attempts(voice_mod):
+        try:
+            return fit(voice=v, speed=sp, budget=voice_mod.Budget())
+        except Exception as e:
+            errs.append(f'{v}@{sp:.2f}: {e}')
+            print(f'voiceover try failed ({v} @ {sp:.2f}): {e}', file=sys.stderr)
+    raise RuntimeError(' | '.join(errs))
+
+
 def build(post, feed_path, out, seed=0, photo=None, scene_path=None, scene_source='', scene_credit=''):
     feed = Image.open(feed_path)
     src = clean(post.get('source') or post.get('outlet') or '') or outlet_from_url(post.get('sourceUrl', ''))
@@ -947,10 +971,11 @@ def build(post, feed_path, out, seed=0, photo=None, scene_path=None, scene_sourc
             if not vp:
                 raise RuntimeError('Kokoro model not available')
             cands = voice_points(post, n=130, story=True) or [x for x in key_points(post) if x != 'Full story at aifeed.run.'][:1]
-            vo, segs, total = voice.fit_v3(spoken_hook(post), cands, path=vp, lo=V3_MIN_S, hi=V3_MAX_S, end_hold=V3_END_HOLD)
+            vo, segs, total = voice_retry(voice, lambda **kw: voice.fit_v3(spoken_hook(post), cands, path=vp, lo=V3_MIN_S, hi=V3_MAX_S,
+                                                                         end_hold=V3_END_HOLD, **kw))
             voice_name = f"kokoro:{vo['voice']}@{vo['speed']:.2f}"
         except Exception as e:
-            vo_err = str(e)[:200]; vo = None
+            vo_err = str(e)[:300]; vo = None
             print('voiceover unavailable, rendering music-only:', vo_err, file=sys.stderr)
     elif os.environ.get('AIFEED_REEL_VOICE', 'on').lower() not in ('off', '0', 'false'):
         try:
@@ -964,11 +989,11 @@ def build(post, feed_path, out, seed=0, photo=None, scene_path=None, scene_sourc
             # AIFEED_VOICE_HOOK=headline: the voice first reads EXACTLY the on-screen punch headline; default 'story': the
             # voice skips the headline and tells the story from the first word (up to 4 points)
             hook = None if story else spoken_hook(post)
-            vo, segs, total = voice.fit_duration(hook, cands, path=vp, lo=MIN_S, hi=MAX_S, exact_hook=True,
-                                                 max_points=3 if hook else 4)
+            vo, segs, total = voice_retry(voice, lambda **kw: voice.fit_duration(hook, cands, path=vp, lo=MIN_S, hi=MAX_S, exact_hook=True,
+                                                                               max_points=3 if hook else 4, **kw))
             voice_name = f"kokoro:{vo['voice']}@{vo['speed']:.2f}"
         except Exception as e:  # never lose the slot over TTS: fall back to the music-only timeline
-            vo_err = str(e)[:200]; vo = None
+            vo_err = str(e)[:300]; vo = None
             print('voiceover unavailable, rendering music-only:', vo_err, file=sys.stderr)
     r = Reel(post, feed, img, src, credit, vo, total, v3=v3 and vo is not None)
     cover_path = os.path.splitext(out)[0] + '_cover.jpg'
