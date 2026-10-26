@@ -65,8 +65,11 @@ def say_word(w):
     pre = re.sub(r'[\u2018\u2019\u201c\u201d"\'(]', '', pre); post = re.sub(r'[\u2018\u2019\u201c\u201d"\')]', '', post)
     c = core.replace('\u2019', "'")
     m = re.match(r'^([A-Za-z]+)\.([A-Z]{2,4})$', c)  # Character.AI -> Character A.I. (brand with a dotted acronym)
+    mm = re.match(r'^(\$?\d+(?:\.\d+)?)([MBT])$', c, re.I)  # $40B -> $40 billion
     if c in SAY:
         c = SAY[c]
+    elif mm:
+        c = mm.group(1) + ' ' + {'m': 'million', 'b': 'billion', 't': 'trillion'}[mm.group(2).lower()]
     elif m:
         c = m.group(1) + ' ' + ''.join(ch + '.' for ch in m.group(2))
     elif c.isupper() and len(re.sub(r'[^A-Z]', '', c)) >= 5 and not KEEP_CAPS.match(c):
@@ -117,7 +120,12 @@ def punch_speech(lines, headline=''):
     for i, w in enumerate(words):
         m = re.match(r'^([^\w$]*)(.*?)([^\w%]*)$', w)
         pre, core, post = m.group(1), m.group(2), m.group(3)
-        if key(core) in src:
+        poss = core.upper().endswith(("'S", "\u2019S")) and core[:-2].upper() in ACRONYMS
+        if poss and core.isupper():
+            c = core[:-2] + "'s"  # AI'S -> AI's (acronym possessive, not 'ai's')
+        elif re.search(r'\d', core):
+            c = core  # $40B, GPT-5: keep as shown (say_word expands $40B -> $40 billion)
+        elif key(core) in src:
             c = src[key(core)]
         elif re.sub(r'[^A-Z]', '', core.upper()) in ACRONYMS and core.isupper():
             c = core
@@ -332,3 +340,28 @@ def phrases(words, max_words=4, max_chars=22):
         end = out[i + 1][0][1] if i + 1 < len(out) else ph[-1][2] + .25
         res.append((ph, ph[0][1], end))
     return res
+
+
+def fit_v3(hook, candidates, path=None, lo=7.0, hi=10.0, end_hold=2.3, voice=None, gap=.2):
+    """v3 retention cut: the spoken hook (exactly the on-screen punch words) from the first frame, then ONE tight story
+    point, no spoken outro (the end card carries takeaway / share / follow). Tries each candidate point (story order) at
+    the normal pace, then a touch faster; if none fits in hi, the hook alone. Short scripts pad the end card to lo.
+    -> (vo, segs, total seconds)"""
+    cands, hw = [], {w for w in re.findall(r"[a-z0-9$%]+", hook.lower()) if len(w) > 3}
+    for c in [c for c in candidates if c][:6]:
+        if len(hw & {w for w in re.findall(r"[a-z0-9$%]+", c.lower()) if len(w) > 3}) >= 2:
+            continue  # restates the hook the viewer just heard
+        cands.append(c)
+        short = re.split(r'\s*(?:;|\u2014| - |,? (?:and|while|but|as|which|including) )\s*', c)[0].rstrip('.,') + '.'
+        if short != c and len(short.split()) >= 5:
+            cands.append(short)  # first clause of a long point - often fits when the full sentence can't
+    for sp in (SPEED, SPEED * 1.06):
+        for c in cands:
+            segs = script(hook, [c], 1, outro=False, exact_hook=True)
+            vo = synth(segs, path, sp, gap=gap, voice=voice)
+            total = vo['seconds'] + end_hold
+            if total <= hi:
+                return vo, segs, max(lo, total)
+    segs = script(hook, [], 0, outro=False, exact_hook=True)
+    vo = synth(segs, path, SPEED * 1.06, gap=gap, voice=voice)
+    return vo, segs, min(hi, max(lo, vo['seconds'] + end_hold))

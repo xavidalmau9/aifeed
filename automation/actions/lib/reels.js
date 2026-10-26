@@ -11,6 +11,9 @@ const { execFileSync } = require('child_process');
 function sceneEnv(opts = {}, base = process.env) {
   const env = Object.assign({}, base, { AIFEED_SCENE_CF: opts.cloudflare === true ? 'on' : 'off' });
   if (opts.sceneCache) env.AIFEED_SCENE_CACHE = opts.sceneCache;
+  // v3 Reel template + hook A/B test (opt-in config keys reelTemplate / reelHookStyle; unset = current v2 Reel)
+  if (opts.template) env.AIFEED_REEL_TEMPLATE = String(opts.template);
+  if (opts.hookStyle) env.AIFEED_HOOK_STYLE = String(opts.hookStyle);
   return env;
 }
 
