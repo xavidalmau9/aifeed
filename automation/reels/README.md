@@ -43,3 +43,18 @@ Photo sources reject posed people. That covers titles or file names like "visits
   (markers stripped, natural casing, acronyms spelled, e.g. Character A.I.) with each spoken word lit on the headline.
   Section clips are trimmed to audible speech, so pauses between sections (and before the outro) are ~0.3-0.4s.
 - Tests: `python3 -m unittest test_voice` (Piper tests skip without the voice).
+
+## v3 template (opt-in, off by default)
+
+Short retention cut: **7–10s**, no intro. The full headline is on screen at frame 0, and the voice (Kokoro `am_michael`, captions synced word by word) starts on the hook within ~0.1s. It reads the hook plus one tight story point. The end card shows:
+- a one-line save-worthy takeaway
+- a share prompt for the category (`SHARE_PROMPTS`, one per `PILL_COLORS` key)
+- "Follow @aifeed.run for the AI news that matters"
+
+- Enable: `AIFEED_REEL_TEMPLATE=v3` (env for `make_reel.py`), or in the pipeline add `"reelTemplate": "v3"` to `config.json`. If the key is missing you get v2, which is unchanged.
+- Hook A/B test (only for v3 Reels; the carousel and Story keep the normal punch): `AIFEED_HOOK_STYLE=A|B|C`, or `"reelHookStyle": "A"` in config.
+  - **A**: bold claim
+  - **B**: question (must end with `?`)
+  - **C**: what this means for you
+  The variants come from the Reel brief (`hooks`, `takeaway`). An invalid or missing variant falls back to the normal punch, and the result JSON reports `hookStyle: null` with `hookStyleRequested` set.
+- If voice synthesis fails, v3 falls back to the v2 music-only timeline.

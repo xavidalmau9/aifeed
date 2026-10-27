@@ -3,7 +3,19 @@
 // failed/invalid brief never blocks a Reel.
 const BANNED = /\b(daily|hand[- ]?edited|human[- ]?edited|edited by|our editors?)\b/i;
 
-function buildReelBriefPrompt(post) {
+// v3 (opt-in: config reelTemplate "v3"): the brief also writes three hook variants for the A/B test and a save-worthy
+// takeaway for the end card. Not requested for v2, so the live prompt/answer is unchanged until v3 is rolled out.
+const V3_PROMPT = `
+Also add to the same JSON object: "hooks": {"A": "...", "B": "...", "C": "..."}, "takeaway": "..."
+- hooks: three alternative cover headlines in the SAME punch format (2-4 lines split by " / ", each at most 16 characters,
+  exactly ONE line prefixed with "*", ALL-CAPS, facts only from the headline and summary, no word "daily"):
+  A = a bold claim stating the payoff (no question mark);
+  B = a question the story answers, ending with "?" (e.g. "IS COREWEAVE'S / *DEBT ABOUT / TO BITE?");
+  C = what this means for the viewer, may address "YOU"/"YOUR" (e.g. "YOUR AI BILL / *COULD RISE / AFTER THIS"), no question mark.
+- takeaway: ONE plain sentence (at most 90 characters) a viewer would save: the single most useful fact or implication,
+  stated only from the story's facts. No hashtags, no emoji.`;
+
+function buildReelBriefPrompt(post, opts = {}) {
   const body = String(post.summary || '').slice(0, 600);
   return `You design the cover of a vertical news Reel for @aifeed.run (US tech/AI news, poster style).
 Story headline: ${post.headline}
@@ -30,7 +42,18 @@ Return ONLY JSON: {"punch": "...", "scene": "...", "keywords": ["...", "..."]}
   Never include objects that usually carry writing: no signs, signage, lecterns, podiums, name plates, laptops, phones,
   documents, newspapers, books, posters, banners, billboards, storefronts, labels, dashboards or screens with words or numbers.
   Prefer one bold physical subject or abstract light (a helix, a microphone, chart lines, a silhouette) in a dark space.
-- keywords: 2 short photo-search phrases for a real photo of the same theme (e.g. "stock market crash screen").`;
+- keywords: 2 short photo-search phrases for a real photo of the same theme (e.g. "stock market crash screen").` + (opts.v3 ? V3_PROMPT : '');
+}
+
+// A v3 hook variant: punch format (one-line-per-'/' <= 22 chars, one '*' line), no banned words or repeated roots,
+// B must be a question and A/C must not. YOU/YOUR openers are allowed (C talks to the viewer).
+function validHook(p, style) {
+  if (typeof p !== 'string') return false;
+  const lines = p.split('/').map(s => s.trim()).filter(Boolean);
+  const q = /\?\s*$/.test(p);
+  return lines.length >= 2 && lines.length <= 4 && lines.filter(l => l.startsWith('*')).length === 1
+    && lines.every(l => l.replace(/^\*/, '').length <= 22) && !BANNED.test(p) && repeatedRoots(p).length === 0
+    && (style === 'B' ? q : !q);
 }
 
 // Root of a word for repetition checks: "distress" -> "stress", "tags"/"tagged" -> "tag", "AI" -> "ai".
@@ -84,23 +107,32 @@ function parseReelBrief(text) {
   const out = {};
   if (validPunch(j.punch)) out.punch = j.punch.split('/').map(s => s.trim()).filter(Boolean).map(s => s.toUpperCase()).join(' / ');
   if (typeof j.scene === 'string' && j.scene.trim().length >= 20 && !BANNED.test(j.scene)) out.scenePrompt = j.scene.trim().slice(0, 400);
+  if (j.hooks && typeof j.hooks === 'object') {
+    const hooks = {}, src = {};
+    for (const [k, v] of Object.entries(j.hooks)) src[String(k).trim().toUpperCase()] = v;
+    for (const k of ['A', 'B', 'C']) {
+      if (validHook(src[k], k)) hooks[k] = src[k].split('/').map(s => s.trim()).filter(Boolean).map(s => s.toUpperCase()).join(' / ');
+    }
+    if (Object.keys(hooks).length) out.hooks = hooks;
+  }
+  if (typeof j.takeaway === 'string' && j.takeaway.trim().length >= 15 && j.takeaway.trim().length <= 95 && !BANNED.test(j.takeaway)) out.takeaway = j.takeaway.trim();
   if (Array.isArray(j.keywords)) out.sceneKeywords = j.keywords.filter(k => typeof k === 'string' && k.trim()).map(k => k.trim().slice(0, 60)).slice(0, 3);
   return out;
 }
 
 // One retry when the punch is missing/invalid (e.g. a repeated root word); if the retry fails too, the brief carries no
 // punch and make_reel.py uses its rule-based punch. The scene from the first answer is kept if the retry has none.
-async function reelBrief(post, ask) {
+async function reelBrief(post, ask, opts = {}) {
   let out = {};
   try {
-    const first = await ask(buildReelBriefPrompt(post));
+    const first = await ask(buildReelBriefPrompt(post, opts));
     out = parseReelBrief(first);
     if (out.punch) return out;
     const m = String(first || '').match(/"punch"\s*:\s*"([^"]*)"/);
     const why = m && repeatedRoots(m[1]).length ? `it repeated the root word(s) ${repeatedRoots(m[1]).join(', ')}`
       : m && choppyPunch(m[1]) ? 'it opens with a quote or first-person words (WE/I/YOU) and reads as two fragments; write ONE third-person clause'
       : 'it broke the format rules';
-    const retry = parseReelBrief(await ask(buildReelBriefPrompt(post) +
+    const retry = parseReelBrief(await ask(buildReelBriefPrompt(post, opts) +
       `\n\nYour previous punch ${m ? JSON.stringify(m[1]) + ' ' : ''}was rejected because ${why}. Write a new one that follows every rule.`));
     return { ...out, ...retry };
   } catch (e) {
@@ -108,4 +140,4 @@ async function reelBrief(post, ask) {
   }
 }
 
-module.exports = { buildReelBriefPrompt, parseReelBrief, validPunch, choppyPunch, repeatedRoots, wordRoot, reelBrief };
+module.exports = { buildReelBriefPrompt, parseReelBrief, validPunch, validHook, choppyPunch, repeatedRoots, wordRoot, reelBrief };

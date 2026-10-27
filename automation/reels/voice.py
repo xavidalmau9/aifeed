@@ -58,6 +58,26 @@ SAY = {'METR': 'meter', "METR's": "meter's", 'AIFeed': 'A.I. Feed', 'aifeed.run'
 KEEP_CAPS = re.compile(r'^(?:[A-Z]{2,4}s?|[A-Z]+-?\d+[A-Z]*)$')  # acronyms (spelled out by the G2P), model names like GPT-5
 
 
+SCALE = {'k': 'thousand', 'm': 'million', 'b': 'billion', 't': 'trillion', 'bn': 'billion', 'mn': 'million', 'tn': 'trillion'}
+CURRENCY = {'$': 'dollars', '\u00a3': 'pounds', '\u20ac': 'euros'}
+MONEY = re.compile(r'^([$\u00a3\u20ac]?)(\d[\d,]*(?:\.\d+)?)(k|m|b|t|bn|mn|tn)$', re.I)  # $40B, $1.5B, $500K, 2T, \u00a3134M
+BARE_MONEY = re.compile(r'^([$\u00a3\u20ac])(\d[\d,]*(?:\.\d+)?)$')  # '$336' when the next word is 'million' etc.
+SCALE_WORD = re.compile(r'^(thousand|million|billion|trillion)([^\w]*)$', re.I)
+
+
+def say_words(tokens):
+    """Speech form of every caption token (same length as tokens; '' = not said). Like say_word, plus the two-token money
+    form: '$336 million' -> '336 million dollars' (the currency moves after the scale word)."""
+    out = [say_word(w) if re.search(r'\w', w) else say_sym(w) for w in tokens]
+    for i in range(len(tokens) - 1):
+        core = re.sub(r'^[\u2018\u2019\u201c\u201d"\'(]+|[\u2018\u2019\u201c\u201d"\'),.!?;:]+$', '', tokens[i])
+        m, n = BARE_MONEY.match(core), SCALE_WORD.match(tokens[i + 1])
+        if m and n and not re.search(r'[,.;:!?]$', tokens[i]):
+            out[i] = out[i].replace(m.group(1), '', 1)
+            out[i + 1] = n.group(1) + ' ' + CURRENCY[m.group(1)] + n.group(2)
+    return out
+
+
 def say_word(w):
     """Speech form of one caption word: fixes the G2P can't know, and no ALL-CAPS shouting for ordinary words."""
     core = re.sub(r'^[\u2018\u2019\u201c\u201d"\'(]+|[\u2018\u2019\u201c\u201d"\'),.!?;:]+$', '', w)
@@ -65,8 +85,11 @@ def say_word(w):
     pre = re.sub(r'[\u2018\u2019\u201c\u201d"\'(]', '', pre); post = re.sub(r'[\u2018\u2019\u201c\u201d"\')]', '', post)
     c = core.replace('\u2019', "'")
     m = re.match(r'^([A-Za-z]+)\.([A-Z]{2,4})$', c)  # Character.AI -> Character A.I. (brand with a dotted acronym)
+    mm = MONEY.match(c)  # $40B -> 40 billion dollars (never 'forty dollars billion')
     if c in SAY:
         c = SAY[c]
+    elif mm:
+        c = mm.group(2).replace(',', '') + ' ' + SCALE[mm.group(3).lower()] + (' ' + CURRENCY[mm.group(1)] if mm.group(1) else '')
     elif m:
         c = m.group(1) + ' ' + ''.join(ch + '.' for ch in m.group(2))
     elif c.isupper() and len(re.sub(r'[^A-Z]', '', c)) >= 5 and not KEEP_CAPS.match(c):
@@ -85,8 +108,7 @@ def words_of(text):
 
 
 def spoken(text):
-    return re.sub(r'\s+', ' ', ' '.join(say_word(w) if re.search(r'\w', w) else say_sym(w)
-                                       for w in text.replace('\u2014', ' , ').replace('\u2013', ' , ').split())).replace(' ,', ',').strip()
+    return re.sub(r'\s+', ' ', ' '.join(say_words(text.replace('\u2014', ' , ').replace('\u2013', ' , ').split()))).replace(' ,', ',').strip()
 
 
 def hook_text(headline):
@@ -117,7 +139,12 @@ def punch_speech(lines, headline=''):
     for i, w in enumerate(words):
         m = re.match(r'^([^\w$]*)(.*?)([^\w%]*)$', w)
         pre, core, post = m.group(1), m.group(2), m.group(3)
-        if key(core) in src:
+        poss = core.upper().endswith(("'S", "\u2019S")) and core[:-2].upper() in ACRONYMS
+        if poss and core.isupper():
+            c = core[:-2] + "'s"  # AI'S -> AI's (acronym possessive, not 'ai's')
+        elif re.search(r'\d', core):
+            c = core  # $40B, GPT-5: keep as shown (say_word expands $40B -> $40 billion)
+        elif key(core) in src:
             c = src[key(core)]
         elif re.sub(r'[^A-Z]', '', core.upper()) in ACRONYMS and core.isupper():
             c = core
@@ -175,8 +202,8 @@ class Engine:
         cap = words_of(text)
         spans, sp = [], []  # char span of each caption word inside the spoken string
         pos = 0
-        for w in text.split():
-            s = say_word(w) if re.search(r'\w', w) else say_sym(w)
+        toks_ = text.split()
+        for w, s in zip(toks_, say_words(toks_)):
             if not s:
                 continue
             if sp:
@@ -201,8 +228,12 @@ class Engine:
         wav, dur = self.sess.run(None, {'input_ids': np.array([[0, *ph, 0]], np.int64),
                                         'style': self.style(voice, len(ph)).astype(np.float32),
                                         'speed': np.array([speed], np.float32)})
-        wav = np.asarray(wav, np.float32).ravel(); dur = np.asarray(dur, np.float64).ravel()
+        wav = np.nan_to_num(np.asarray(wav, np.float32).ravel()); dur = np.asarray(dur, np.float64).ravel()
+        if not len(wav):
+            raise RuntimeError('Kokoro returned no audio')
+        dur = sane_durations(dur, len(ph) + 2)
         edges = np.concatenate([[0], np.cumsum(dur)]) * (len(wav) / dur.sum())  # sample offset of every token boundary
+        edges = np.clip(edges, 0, len(wav))  # every index below stays inside the clip (no huge ints from bad timings)
         e = edges[1:]  # e[i] = start of phoneme i (index 0 = after the leading pad)
         words = []
         for k, w in enumerate(cap):
@@ -213,7 +244,7 @@ class Engine:
                 t = words[-1][2] if words else e[0]
                 words.append([w, t, t])
         voiced0, voiced1 = e[0], e[len(ph)]
-        a0 = max(0, int(voiced0 - LEAD * SR)); a1 = min(len(wav), int(voiced1 + TAIL * SR))
+        a0 = max(0, int(voiced0 - LEAD * SR)); a1 = max(a0 + 1, min(len(wav), int(voiced1 + TAIL * SR)))
         wav = wav[a0:a1]
         # trim to the audible speech: the model books silence into the final punctuation token, which left up to ~2 s of
         # dead air before the next section. Keep 0.1 s before the first sound and 0.06 s after the last.
@@ -250,6 +281,34 @@ class Engine:
         return wav, [tuple(x) for x in out]
 
 
+def sane_durations(dur, n):
+    """The model's per-token durations, repaired if unusable (non-finite, negative, all-zero, wrong length): equal shares
+    instead, so a bad timing output can never turn into huge sample indices. Captions then fall back to even pacing."""
+    dur = np.asarray(dur, np.float64).ravel()
+    if len(dur) != n or not np.all(np.isfinite(dur)) or (dur < 0).any() or dur.sum() <= 0 or dur.max() > 1e4:
+        print(f'voice: unusable model durations (len {len(dur)}/{n}), using even pacing', file=sys.stderr)
+        return np.ones(n, np.float64)
+    return dur
+
+
+class Budget:
+    """Caps one voice fit: at most max_synth new syntheses and max_s seconds (AIFEED_VOICE_MAX_SYNTH / AIFEED_VOICE_MAX_S),
+    so fitting can never run long; when hit, the fit returns the best script found so far."""
+    def __init__(self, max_synth=None, max_s=None):
+        self.max_synth = int(max_synth if max_synth is not None else os.environ.get('AIFEED_VOICE_MAX_SYNTH', '24'))
+        self.max_s = float(max_s if max_s is not None else os.environ.get('AIFEED_VOICE_MAX_S', '120'))
+        self.t0, self.n0, self.tries = time.monotonic(), _synth_count[0], 0
+
+    def spent(self):
+        return _synth_count[0] - self.n0
+
+    def over(self):
+        return self.spent() >= self.max_synth or time.monotonic() - self.t0 >= self.max_s or self.tries >= 400
+
+
+_synth_count = [0]
+
+
 def engine(folder):
     if folder not in _eng:
         _eng[folder] = Engine(folder)
@@ -271,7 +330,14 @@ def synth(segs, path=None, speed=SPEED, gap=.25, voice=None):
     for name, text in segs:
         key = (path, voice, text, speed)
         if key not in _memo:
-            _memo[key] = eng.say(text, voice, speed)
+            _synth_count[0] += 1
+            try:
+                _memo[key] = eng.say(text, voice, speed)
+            except Exception as e:  # name the failing text + code line, so a rare runner-only error can be pinned down
+                import traceback
+                tb = traceback.extract_tb(e.__traceback__)[-1]
+                raise RuntimeError(f'{type(e).__name__}: {e} [at {os.path.basename(tb.filename)}:{tb.lineno} {tb.line}; '
+                                   f'voice {voice} speed {speed:.2f}; text {text[:80]!r}]') from e
         audio, rel = _memo[key]
         words = [(w, t + a, t + b) for w, a, b in rel]
         res.append({'name': name, 'text': text, 'start': words[0][1] if words else t, 'end': words[-1][2] if words else t + len(audio) / SR,
@@ -284,12 +350,14 @@ def synth(segs, path=None, speed=SPEED, gap=.25, voice=None):
 END_CARD = 1.9  # seconds of end card after the last point when the outro isn't spoken
 
 
-def fit_duration(headline, candidates, path=None, lo=12.0, hi=18.0, end_hold=.5, voice=None, max_points=3, exact_hook=False):
+def fit_duration(headline, candidates, path=None, lo=12.0, hi=18.0, end_hold=.5, voice=None, max_points=3, exact_hook=False,
+                 speed=None, budget=None):
     """Voiceover-driven length. candidates: self-contained points in story order. Every candidate is synthesized once
     (memoized), then the script with the MOST points that fits in hi wins (3, else 2, else 1), preferring the lead point and
     story order, at the normal pace and then a touch faster; a spoken outro is dropped (the end card still shows) before a
     point is. Too short pads the end card to lo. -> (vo, segs, total seconds)"""
     from itertools import combinations
+    speed, budget = speed or SPEED, budget or Budget()
     cands = [c for c in candidates if c][:6]
     best = None
     # story mode (no spoken headline): the lead point ("what happened") must open the voice, so every combination with it
@@ -300,7 +368,11 @@ def fit_duration(headline, candidates, path=None, lo=12.0, hi=18.0, end_hold=.5,
         combos = sorted((ix for ix in combinations(range(len(cands)), n) if 0 in ix or not lead_only), key=lambda ix: (0 not in ix, ix))
         for outro in (True, False):
             for ix in combos:
-                for sp in (SPEED, SPEED * 1.06):
+                for sp in (speed, speed * 1.06):
+                    if budget.over() and best is not None:
+                        print(f'voice: fit capped after {budget.spent()} syntheses, using the shortest script so far', file=sys.stderr)
+                        return best[0], best[1], max(lo, best[2])
+                    budget.tries += 1
                     segs = script(headline, [cands[i] for i in ix], n, outro, exact_hook)
                     vo = synth(segs, path, sp, voice=voice)
                     total = vo['seconds'] + (end_hold if outro else END_CARD)
@@ -309,7 +381,7 @@ def fit_duration(headline, candidates, path=None, lo=12.0, hi=18.0, end_hold=.5,
                     if total <= hi:
                         return vo, segs, max(lo, total)
     if best is None:
-        segs = script(headline, cands[:1] if headline is None else [], 1 if headline is None else 0, True, exact_hook); vo = synth(segs, path, SPEED, voice=voice); best = (vo, segs, vo['seconds'] + end_hold)
+        segs = script(headline, cands[:1] if headline is None else [], 1 if headline is None else 0, True, exact_hook); vo = synth(segs, path, speed, voice=voice); best = (vo, segs, vo['seconds'] + end_hold)
     return best
 
 
@@ -332,3 +404,33 @@ def phrases(words, max_words=4, max_chars=22):
         end = out[i + 1][0][1] if i + 1 < len(out) else ph[-1][2] + .25
         res.append((ph, ph[0][1], end))
     return res
+
+
+def fit_v3(hook, candidates, path=None, lo=7.0, hi=10.0, end_hold=3.5, voice=None, gap=.2, speed=None, budget=None):
+    """v3 retention cut: the spoken hook (exactly the on-screen punch words) from the first frame, then ONE tight story
+    point, no spoken outro (the end card carries takeaway / share / follow). Tries each candidate point (story order) at
+    the normal pace, then a touch faster; if none fits in hi, the hook alone. Short scripts pad the end card to lo.
+    -> (vo, segs, total seconds)"""
+    cands, hw = [], {w for w in re.findall(r"[a-z0-9$%]+", hook.lower()) if len(w) > 3}
+    for c in [c for c in candidates if c][:6]:
+        if len(hw & {w for w in re.findall(r"[a-z0-9$%]+", c.lower()) if len(w) > 3}) >= 2:
+            continue  # restates the hook the viewer just heard
+        cands.append(c)
+        short = re.split(r'\s*(?:;|\u2014| - |,? (?:and|while|but|as|which|including) )\s*', c)[0].rstrip('.,') + '.'
+        if short != c and len(short.split()) >= 5:
+            cands.append(short)  # first clause of a long point - often fits when the full sentence can't
+    speed, budget = speed or SPEED, budget or Budget()
+    for sp in (speed, speed * 1.06):
+        for c in cands:
+            if budget.over():
+                print(f'voice: v3 fit capped after {budget.spent()} syntheses, hook only', file=sys.stderr)
+                break
+            budget.tries += 1
+            segs = script(hook, [c], 1, outro=False, exact_hook=True)
+            vo = synth(segs, path, sp, gap=gap, voice=voice)
+            total = vo['seconds'] + end_hold
+            if total <= hi:
+                return vo, segs, max(lo, total)
+    segs = script(hook, [], 0, outro=False, exact_hook=True)
+    vo = synth(segs, path, speed * 1.06, gap=gap, voice=voice)
+    return vo, segs, min(hi, max(lo, vo['seconds'] + end_hold))

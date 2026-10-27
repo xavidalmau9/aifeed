@@ -38,7 +38,7 @@ test('sceneEnv: Cloudflare is off unless the caller is the live post', () => {
 
 test('pipeline: one scene pick per post; Cloudflare only on the live path, the Reel reuses the carousel scene', () => {
   const src = require('fs').readFileSync(require('path').join(__dirname, '../pipeline.js'), 'utf8');
-  const reels = src.match(/renderReel\([^;]*;/g) || [];
+  const reels = src.match(/renderReel(?:Safe)?\([^;]*;/g) || [];
   assert.equal(reels.length, 2);
   assert.ok(reels.every(c => /reelSceneOpts/.test(c))); // both Reel renders reuse the carousel's scene when there is one
   assert.equal(reels.filter(c => /\{ cloudflare: false \}/.test(c)).length, 1); // dry run: never

@@ -108,3 +108,28 @@ test('story waits: first pass short, end-of-run retry ~10-12 min', () => {
   assert.ok(mins(STORY_WAIT.first) <= 3);
   assert.ok(mins(STORY_WAIT.retry) >= 10 && mins(STORY_WAIT.retry) <= 12);
 });
+
+// ---- v3 template: hook A/B/C variants + takeaway (opt-in) ----
+{
+  const rb = require('../lib/reelbrief');
+  const t = require('node:test'); const a = require('node:assert');
+  t.test('v3 prompt only when opts.v3', () => {
+    const post = { headline: 'Amex cuts staff', summary: 'x', category: 'Business' };
+    a.ok(!/hooks/.test(rb.buildReelBriefPrompt(post)));
+    a.ok(/hooks/.test(rb.buildReelBriefPrompt(post, { v3: true })));
+  });
+  t.test('validHook: B must be a question, A/C must not', () => {
+    a.ok(rb.validHook('IS AI ALREADY / *COSTING / AMEX JOBS?', 'B'));
+    a.ok(!rb.validHook('IS AI ALREADY / *COSTING / AMEX JOBS', 'B'));
+    a.ok(!rb.validHook('AMEX CUTS / *5% OF STAFF / FOR AI?', 'A'));
+    a.ok(rb.validHook('AMEX CUTS / *5% OF STAFF / TO PREPARE FOR AI', 'A'));
+  });
+  t.test('parseReelBrief keeps valid hooks + takeaway, drops bad ones', () => {
+    const r = rb.parseReelBrief(JSON.stringify({
+      hooks: { a: 'AMEX CUTS / *5% OF STAFF / TO PREPARE FOR AI', B: 'not a question / *at all / here' },
+      takeaway: 'Big banks are now cutting jobs to fund AI automation.' }));
+    a.ok(r.hooks && r.hooks.A && !r.hooks.B);
+    a.ok(r.takeaway);
+    a.ok(!rb.parseReelBrief(JSON.stringify({ takeaway: 'Our daily pick.' })).takeaway);
+  });
+}
