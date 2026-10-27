@@ -1,128 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Nvidia to invest $3 billion in Meta as tech giants deepen AI partnership",
+    "headline": "Nvidia, AMD to invest $4 billion in Meta as tech giants deepen AI partnership",
     "link": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html",
-    "score": 94,
-    "reason": "Major funding announcement with specific big number; concrete partnership between two tech giants"
+    "score": 95,
+    "reason": "Major financial commitment, concrete partnership, big numbers ($4B)"
   },
   {
     "rank": 2,
-    "headline": "Anthropic IPO leads AI's $235 billion dealmaking blitz",
-    "link": "https://www.axios.com/2026/10/27/anthropic-ipo-meta-spacex-ai-deals",
-    "score": 92,
-    "reason": "Massive financial figure; major IPO launch; concrete market activity"
+    "headline": "Anthropic’s IPO Prospectus Reveals What’s Under the Hood",
+    "link": "https://www.wired.com/story/anthropic-ipo-filings-reveal-finances-risks-strategy/",
+    "score": 93,
+    "reason": "Major launch (IPO), detailed disclosure, significant market event"
   },
   {
     "rank": 3,
-    "headline": "OpenAI announces three big science discoveries and a new way to work with academics",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+    "headline": "UK Home Office May Face Investigation Over Use of OpenAI Tech",
+    "link": "https://www.wired.com/story/uk-home-office-may-face-investigation-over-use-of-openai-tools/",
     "score": 88,
-    "reason": "Concrete product launch; multiple discoveries in math, CS, physics; tangible research output"
+    "reason": "Regulatory controversy, government oversight, real consequences"
   },
   {
     "rank": 4,
-    "headline": "Meta's $42B in penalties is a warning to AI",
-    "link": "https://www.axios.com/2026/10/26/meta-litigation-ai-legal-risk",
-    "score": 86,
-    "reason": "Major regulatory consequence; specific dollar amount; direct AI industry impact"
+    "headline": "Canva Chases AI Domination With a New AI Image Model for Designers",
+    "link": "https://www.cnet.com/tech/services-and-software/canva-craft-proprietary-ai-image-model/",
+    "score": 82,
+    "reason": "New product launch, capability expansion, competitive positioning"
   },
   {
     "rank": 5,
-    "headline": "Anthropic's Claude bypassed a paywall to access Georgia voter data without authorization",
-    "link": "https://www.axios.com/2026/10/25/anthropic-claude-georgia-voter-data",
-    "score": 84,
-    "reason": "Major controversy; security/privacy breach; legal implications"
+    "headline": "Google’s next Genie AI model generates more realistic experiences",
+    "link": "https://www.theverge.com/tech/1019076/google-genie-4-ai-model",
+    "score": 80,
+    "reason": "Major model launch, performance improvement announcement"
   },
   {
     "rank": 6,
-    "headline": "OpenAI Has a Surprising Defense Against Election Deepfakes",
-    "link": "https://www.cnet.com/tech/services-and-software/openai-chatgpt-political-deepfakes-defense-midterm-elections/",
+    "headline": "Apple is adding an AI chatbot to Pages, Keynote, and Numbers",
+    "link": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
     "score": 79,
-    "reason": "Concrete policy launch; election-critical topic; verifiable technical approach"
+    "reason": "Major product feature launch across suite, consumer impact"
   },
   {
     "rank": 7,
-    "headline": "Data center backlash is uniting America",
-    "link": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections",
-    "score": 77,
-    "reason": "Major controversy; broad societal impact; substantive political movement"
+    "headline": "VisionQuest is what happens when AI really goes rogue",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
+    "score": 75,
+    "reason": "Controversy/misbehavior, concrete AI system failure example"
   },
   {
     "rank": 8,
-    "headline": "Microsoft offers voluntary buyouts to 60,000 employees as AI leads to efficiency push",
-    "link": "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html",
-    "score": 76,
-    "reason": "Large-scale layoff/restructuring; direct AI-driven workforce impact; specific numbers"
+    "headline": "Gemini Live redesign makes it easier to add context to chats",
+    "link": "https://9to5google.com/2026/10/26/gemini-live-plus-redesign/",
+    "score": 72,
+    "reason": "Google product launch, UX improvement announcement"
   },
   {
     "rank": 9,
-    "headline": "Anthropic is burning gas to feed the AI boom",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
-    "score": 75,
-    "reason": "Concrete environmental controversy; energy consumption impact; substantive criticism"
+    "headline": "Walmart says AI training is boosting confidence with the technology among its 2.1 million associates",
+    "link": "https://www.cnbc.com/2026/10/27/walmart-ai-training-workers.html",
+    "score": 70,
+    "reason": "Large-scale AI adoption, big numbers (2.1M employees)"
   },
   {
     "rank": 10,
-    "headline": "Why Anthropic’s IPO Prospectus Is Missing So Many Key Figures",
-    "link": "https://www.wired.com/story/anthropic-prospectus-leaves-out-some-numbers/",
-    "score": 73,
-    "reason": "IPO transparency controversy; financial disclosure issue; investor-relevant"
-  },
-  {
-    "rank": 11,
-    "headline": "Google says Gemini 4 Argon ranks well behind Claude and GPT-6 for Android coding",
-    "link": "https://9to5google.com/2026/10/26/android-bench-rankings-gemini-4-argon/",
-    "score": 72,
-    "reason": "Competitive benchmark disclosure; Google admits inferior performance; concrete comparison"
-  },
-  {
-    "rank": 12,
-    "headline": "AI Killed the Homework Era",
-    "link": "https://www.cnet.com/tech/services-and-software/ai-killed-the-homework-era/",
+    "headline": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
     "score": 68,
-    "reason": "Substantive societal impact; educational disruption; broad implications"
-  },
-  {
-    "rank": 13,
-    "headline": "Meet the AI Agents Trying to Be Real-Life Journalists",
-    "link": "https://www.wired.com/story/ai-agents-are-trying-to-be-journalists-now/",
-    "score": 66,
-    "reason": "AI agent deployment launch; media industry disruption; verified implementation"
-  },
-  {
-    "rank": 14,
-    "headline": "This AI Radio Host Speaks Spanish and Backs Immigrants. It’s Winning Over Listeners",
-    "link": "https://www.wired.com/story/this-ai-radio-hosts-speaks-spanish-and-backs-immigrants-its-winning-over-listeners/",
-    "score": 64,
-    "reason": "Concrete AI deployment; measurable audience adoption; new use case launch"
-  },
-  {
-    "rank": 15,
-    "headline": "How solid-state transformers could help power the AI boom",
-    "link": "https://www.technologyreview.com/2026/10/27/1147684/solid-state-transformers/",
-    "score": 61,
-    "reason": "Infrastructure innovation addressing AI power challenges; tangible technical advancement"
-  },
-  {
-    "rank": 16,
-    "headline": "Anthropic's IPO outlines AI's extraordinary risks",
-    "link": "https://www.axios.com/2026/10/26/anthropic-ipo-risk-factors-humanity",
-    "score": 59,
-    "reason": "IPO filing reveals material risk disclosures; regulatory/safety substantiation"
-  },
-  {
-    "rank": 17,
-    "headline": "I Tested Every Major AI Agent for a Day. Here’s the Best One",
-    "link": "https://www.wired.com/story/i-tested-every-major-ai-agent-for-a-day-heres-the-best-one/",
-    "score": 56,
-    "reason": "Comparative performance evaluation; multiple agent launches reviewed"
-  },
-  {
-    "rank": 18,
-    "headline": "Apple adds more Siri AI tools in its 27.2 system updates, out today",
-    "link": "https://www.engadget.com/2297577/apple-adds-more-siri-ai-tools-in-27-2-system-updates-out-today/",
-    "score": 54,
-    "reason": "Concrete product feature launch; Apple AI expansion; released today"
+    "reason": "Industry controversy, research transparency issue"
   }
 ]
