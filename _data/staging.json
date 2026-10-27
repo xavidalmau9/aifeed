@@ -1,107 +1,128 @@
 [
   {
     "rank": 1,
-    "headline": "Meta announces $95 billion stock offering to fund AI expansion",
-    "link": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html",
-    "score": 96,
-    "reason": "Largest number, major company capital commitment, concrete action"
+    "headline": "Nvidia to invest $3 billion in Meta as tech giants deepen AI partnership",
+    "link": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html",
+    "score": 94,
+    "reason": "Major funding announcement with specific big number; concrete partnership between two tech giants"
   },
   {
     "rank": 2,
-    "headline": "Anthropic files to go public",
-    "link": "https://www.engadget.com/2296724/anthropic-files-to-go-public/",
-    "score": 94,
-    "reason": "Major IPO launch, significant AI company milestone"
+    "headline": "Anthropic IPO leads AI's $235 billion dealmaking blitz",
+    "link": "https://www.axios.com/2026/10/27/anthropic-ipo-meta-spacex-ai-deals",
+    "score": 92,
+    "reason": "Massive financial figure; major IPO launch; concrete market activity"
   },
   {
     "rank": 3,
-    "headline": "Microsoft offers buyouts to 60,000 employees",
-    "link": "https://www.theverge.com/tech/1018666/microsoft-expands-buyouts-60000-employees-eligible",
-    "score": 92,
-    "reason": "Large headcount impact, AI-driven efficiency push, concrete action"
+    "headline": "OpenAI announces three big science discoveries and a new way to work with academics",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+    "score": 88,
+    "reason": "Concrete product launch; multiple discoveries in math, CS, physics; tangible research output"
   },
   {
     "rank": 4,
-    "headline": "Canva Chases AI Domination With a New AI Image Model for Designers",
-    "link": "https://www.cnet.com/tech/services-and-software/canva-craft-proprietary-ai-image-model/",
-    "score": 85,
-    "reason": "New product launch, major consumer AI company moving into content generation"
+    "headline": "Meta's $42B in penalties is a warning to AI",
+    "link": "https://www.axios.com/2026/10/26/meta-litigation-ai-legal-risk",
+    "score": 86,
+    "reason": "Major regulatory consequence; specific dollar amount; direct AI industry impact"
   },
   {
     "rank": 5,
-    "headline": "Fanatics teams up with OpenAI for new AI-powered shopping suggestion feature",
-    "link": "https://www.cnbc.com/2026/10/26/fanatics-openai-codex-sports-merchandise-shopping.html",
+    "headline": "Anthropic's Claude bypassed a paywall to access Georgia voter data without authorization",
+    "link": "https://www.axios.com/2026/10/25/anthropic-claude-georgia-voter-data",
     "score": 84,
-    "reason": "New product launch, major company partnership"
+    "reason": "Major controversy; security/privacy breach; legal implications"
   },
   {
     "rank": 6,
-    "headline": "Dutch government to cut 16 percent of workforce as part of AI efficiency push",
-    "link": "https://www.engadget.com/2297180/dutch-government-to-cut-16-percent-of-workforce-as-part-of-ai-efficiency-push/",
-    "score": 83,
-    "reason": "Government-scale AI impact, large percentage workforce reduction"
+    "headline": "OpenAI Has a Surprising Defense Against Election Deepfakes",
+    "link": "https://www.cnet.com/tech/services-and-software/openai-chatgpt-political-deepfakes-defense-midterm-elections/",
+    "score": 79,
+    "reason": "Concrete policy launch; election-critical topic; verifiable technical approach"
   },
   {
     "rank": 7,
-    "headline": "Anthropic’s risk factors include the end of humanity, a feud with the Pentagon, and CEO Dario Amodei’s reputation",
-    "link": "https://fortune.com/2026/10/26/anthropic-s1-risk-factors-existential-risk-pentagon-dario-amodei/",
-    "score": 82,
-    "reason": "Controversy and unusual risk disclosure from IPO filing"
+    "headline": "Data center backlash is uniting America",
+    "link": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections",
+    "score": 77,
+    "reason": "Major controversy; broad societal impact; substantive political movement"
   },
   {
     "rank": 8,
-    "headline": "Anthropic's S-1 makes clear it's on the hook for billions in compute. Its customers can walk at any time",
-    "link": "https://fortune.com/2026/10/26/anthropics-s-1-makes-clear-its-on-the-hook-for-billions-in-compute-its-customers-can-walk-at-any-time-2/",
-    "score": 80,
-    "reason": "Major financial vulnerability revealed in IPO filing"
+    "headline": "Microsoft offers voluntary buyouts to 60,000 employees as AI leads to efficiency push",
+    "link": "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html",
+    "score": 76,
+    "reason": "Large-scale layoff/restructuring; direct AI-driven workforce impact; specific numbers"
   },
   {
     "rank": 9,
-    "headline": "The RealReal won’t let AI agents hog designer clothing",
-    "link": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
-    "score": 78,
-    "reason": "Platform policy against AI agents, novel AI-driven commerce controversy"
+    "headline": "Anthropic is burning gas to feed the AI boom",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
+    "score": 75,
+    "reason": "Concrete environmental controversy; energy consumption impact; substantive criticism"
   },
   {
     "rank": 10,
-    "headline": "Github competitor Entire is live now – how the agent-first platform works",
-    "link": "https://www.zdnet.com/innovation/enitre-github-competitor-trail-git-forge/",
-    "score": 76,
-    "reason": "New product launch, AI-native developer tool"
+    "headline": "Why Anthropic’s IPO Prospectus Is Missing So Many Key Figures",
+    "link": "https://www.wired.com/story/anthropic-prospectus-leaves-out-some-numbers/",
+    "score": 73,
+    "reason": "IPO transparency controversy; financial disclosure issue; investor-relevant"
   },
   {
     "rank": 11,
-    "headline": "Gemini Live redesign makes it easier to add context to chats",
-    "link": "https://9to5google.com/2026/10/26/gemini-live-plus-redesign/",
+    "headline": "Google says Gemini 4 Argon ranks well behind Claude and GPT-6 for Android coding",
+    "link": "https://9to5google.com/2026/10/26/android-bench-rankings-gemini-4-argon/",
     "score": 72,
-    "reason": "Google product update, improved AI capabilities"
+    "reason": "Competitive benchmark disclosure; Google admits inferior performance; concrete comparison"
   },
   {
     "rank": 12,
-    "headline": "Can AI help solve the COBOL code crisis?",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
-    "score": 70,
-    "reason": "Major infrastructure application of AI technology"
+    "headline": "AI Killed the Homework Era",
+    "link": "https://www.cnet.com/tech/services-and-software/ai-killed-the-homework-era/",
+    "score": 68,
+    "reason": "Substantive societal impact; educational disruption; broad implications"
   },
   {
     "rank": 13,
-    "headline": "r/opensource just banned AI, non-English speakers, and more",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
-    "score": 68,
-    "reason": "Community backlash against AI, cultural controversy"
+    "headline": "Meet the AI Agents Trying to Be Real-Life Journalists",
+    "link": "https://www.wired.com/story/ai-agents-are-trying-to-be-journalists-now/",
+    "score": 66,
+    "reason": "AI agent deployment launch; media industry disruption; verified implementation"
   },
   {
     "rank": 14,
-    "headline": "The focus on AI safety disasters ignores everyday harms",
-    "link": "https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/",
-    "score": 65,
-    "reason": "Systemic AI harms analysis, emerging concern narrative"
+    "headline": "This AI Radio Host Speaks Spanish and Backs Immigrants. It’s Winning Over Listeners",
+    "link": "https://www.wired.com/story/this-ai-radio-hosts-speaks-spanish-and-backs-immigrants-its-winning-over-listeners/",
+    "score": 64,
+    "reason": "Concrete AI deployment; measurable audience adoption; new use case launch"
   },
   {
     "rank": 15,
-    "headline": "Economic policy vets see risks in AI overreliance",
-    "link": "https://www.axios.com/2026/10/26/ai-economists-furman-policy",
-    "score": 63,
-    "reason": "Expert concern about economic vulnerability to AI"
+    "headline": "How solid-state transformers could help power the AI boom",
+    "link": "https://www.technologyreview.com/2026/10/27/1147684/solid-state-transformers/",
+    "score": 61,
+    "reason": "Infrastructure innovation addressing AI power challenges; tangible technical advancement"
+  },
+  {
+    "rank": 16,
+    "headline": "Anthropic's IPO outlines AI's extraordinary risks",
+    "link": "https://www.axios.com/2026/10/26/anthropic-ipo-risk-factors-humanity",
+    "score": 59,
+    "reason": "IPO filing reveals material risk disclosures; regulatory/safety substantiation"
+  },
+  {
+    "rank": 17,
+    "headline": "I Tested Every Major AI Agent for a Day. Here’s the Best One",
+    "link": "https://www.wired.com/story/i-tested-every-major-ai-agent-for-a-day-heres-the-best-one/",
+    "score": 56,
+    "reason": "Comparative performance evaluation; multiple agent launches reviewed"
+  },
+  {
+    "rank": 18,
+    "headline": "Apple adds more Siri AI tools in its 27.2 system updates, out today",
+    "link": "https://www.engadget.com/2297577/apple-adds-more-siri-ai-tools-in-27-2-system-updates-out-today/",
+    "score": 54,
+    "reason": "Concrete product feature launch; Apple AI expansion; released today"
   }
 ]
