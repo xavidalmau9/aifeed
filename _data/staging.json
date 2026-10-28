@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic IPO leads AI's $235 billion dealmaking blitz",
-    "link": "https://www.axios.com/2026/10/27/anthropic-ipo-meta-spacex-ai-deals",
-    "score": 98,
-    "reason": "Major funding event with massive number ($235B), company IPO launch"
+    "headline": "Nvidia&apos;s $12.9 billion Hugging Face deal draws DOJ scrutiny",
+    "link": "https://www.cnbc.com/2026/10/28/doj-questions-nvidias-12point9-billion-hugging-face-deal.html",
+    "score": 94,
+    "reason": "Massive acquisition with regulatory controversy; concrete big number and legal conflict"
   },
   {
     "rank": 2,
-    "headline": "OpenAI announces three big science discoveries and a new way to work with academics",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
-    "score": 92,
-    "reason": "Concrete product launches and research breakthroughs from major AI company"
+    "headline": "Anthropic IPO filing warns some risks may be uninsurable. AI coverage will be issue for every company",
+    "link": "https://www.cnbc.com/2026/10/28/anthropic-ipo-ai-risks-insurance.html",
+    "score": 91,
+    "reason": "Major IPO launch with significant liability concerns; material business risk revealed"
   },
   {
     "rank": 3,
-    "headline": "Anthropic, Suno Sued for Unlawfully Using Songs by Madonna, Johnny Cash, Joni Mitchell",
-    "link": "https://www.cnet.com/tech/services-and-software/anthropic-suno-sued-using-songs-madonna-johnny-cash-joni-mitchell/",
+    "headline": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+    "link": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
     "score": 88,
-    "reason": "Major controversy involving prominent AI companies and high-profile artists"
+    "reason": "Major product launch from top AI company; concrete capability advancement"
   },
   {
     "rank": 4,
-    "headline": "Should AI Decide Your Court Case? This Judge Says Yes",
-    "link": "https://www.wired.com/story/geoffrey-vos-uk-judge-ai-legal-profession-challenges/",
-    "score": 85,
-    "reason": "Significant controversy about AI deployment in judiciary system"
+    "headline": "xAI is buying out homeowners who promise not to sue over data center noise",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit",
+    "score": 87,
+    "reason": "Unusual controversy; novel legal/financial strategy to contain liability; real-world conflict"
   },
   {
     "rank": 5,
-    "headline": "Chart: Anthropic&apos;s cash pile towers over nearly every U.S. company",
-    "link": "https://www.cnbc.com/2026/10/27/anthropic-cash-investments-ipo.html",
-    "score": 83,
-    "reason": "Big numbers showing Anthropic's financial dominance ahead of IPO"
+    "headline": "Meta says it'll probably delay its controversial new business terms again",
+    "link": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely",
+    "score": 85,
+    "reason": "Documented regulatory pressure on major company; concrete business impact and controversy"
   },
   {
     "rank": 6,
-    "headline": "Anthropic's IPO outlines AI's extraordinary risks",
-    "link": "https://www.axios.com/2026/10/26/anthropic-ipo-risk-factors-humanity",
+    "headline": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
     "score": 81,
-    "reason": "IPO filing reveals major risks and controversy in AI sector"
+    "reason": "Industry conflict with OpenAI; reflects broader tension in AI research community"
   },
   {
     "rank": 7,
-    "headline": "Macmillan Staff Say the Publisher Threw a Party for a Workplace AI Assistant That Was Later Killed",
-    "link": "https://www.wired.com/story/macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-assistant-that-was-later-killed/",
+    "headline": "New York governor signs AI chatbot child safety law",
+    "link": "https://www.engadget.com/2299823/new-york-governor-signs-ai-chatbot-child-safety-law/",
     "score": 79,
-    "reason": "Controversy about AI tool adoption and reversal at major publisher"
+    "reason": "Regulatory milestone; first major state-level AI regulation affecting industry"
   },
   {
     "rank": 8,
-    "headline": "AI Emergency Alerts Are Coming. Humans Might Not Be Ready",
-    "link": "https://www.wired.com/story/ai-emergency-alerts-coming-humans-not-ready/",
+    "headline": "Alphabet&apos;s free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade",
+    "link": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html",
     "score": 77,
-    "reason": "Significant controversy about AI deployment in emergency systems"
+    "reason": "Major financial impact; suggests AI investment ROI concerns at scale"
   },
   {
     "rank": 9,
-    "headline": "ChatGPT can work with your iCloud Mail and Calendar thanks to new plugin support",
-    "link": "https://www.engadget.com/2299026/chatgpt-can-work-with-your-icloud-mail-and-calendar-thanks-to-new-plugin-support/",
+    "headline": "Amazon warns against tokenmaxxing, telling engineers that using more AI doesn't necessarily mean they're doing better work",
+    "link": "https://fortune.com/2026/10/28/amazon-token-maxxing-ai-work/",
     "score": 75,
-    "reason": "OpenAI product launch integrating with Apple ecosystem"
+    "reason": "Internal controversy revealing AI inefficiency; corporate reality check on AI hype"
   },
   {
     "rank": 10,
-    "headline": "OpenAI Has a Surprising Defense Against Election Deepfakes",
-    "link": "https://www.cnet.com/tech/services-and-software/openai-chatgpt-political-deepfakes-defense-midterm-elections/",
+    "headline": "Voters in Texas agree: They hate data centers",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1018676/data-center-midterm-election-energy-water-texas",
     "score": 73,
-    "reason": "Concrete technology launch addressing major AI controversy"
+    "reason": "Public backlash against AI infrastructure; tangible political opposition"
   },
   {
     "rank": 11,
-    "headline": "Inside \"Black October\": AI's cyber scare delivers a Y2K lesson",
-    "link": "https://www.axios.com/2026/10/28/cybersecurity-black-october-ai-hacks",
-    "score": 71,
-    "reason": "Major AI security controversy with systemic implications"
+    "headline": "Chrome’s enhanced autofill can now pull info from Gmail to help you fill out forms",
+    "link": "https://www.theverge.com/tech/1020626/chrome-enhanced-autofill-gmail-forms-gemini-personal-intelligence",
+    "score": 70,
+    "reason": "Major Google product launch with privacy/data implications"
   },
   {
     "rank": 12,
-    "headline": "Apple’s iOS 27.2 update offers major Siri AI upgrades, dual camera support for FaceTime",
-    "link": "https://www.zdnet.com/tech/apple-ios-27-2-update-siri-ai-facetime-dual-cameras/",
+    "headline": "OpenAI now lets you text your Dot agent",
+    "link": "https://www.engadget.com/2300235/openai-now-lets-you-text-your-dot-agent/",
     "score": 68,
-    "reason": "Major product launch with significant AI feature upgrades"
+    "reason": "Feature launch expanding AI accessibility; OpenAI-Amazon integration"
   },
   {
     "rank": 13,
-    "headline": "Amazon&apos;s anti-tokenmaxxing memo says engineers should be pickier about using AI",
-    "link": "https://www.cnbc.com/2026/10/27/amazon-ai-coding-tokenmaxxing.html",
-    "score": 66,
-    "reason": "Major tech company policy shift on AI implementation"
+    "headline": "Microsoft is ending Copilot support on smart TVs",
+    "link": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending",
+    "score": 65,
+    "reason": "Product discontinuation; signals market reality check on AI ubiquity"
   },
   {
     "rank": 14,
-    "headline": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
+    "headline": "Your public Discord messages may soon appear in Google search results – how to opt out",
+    "link": "https://www.zdnet.com/tech/discord-servers-searchable-on-web/",
     "score": 63,
-    "reason": "Mozilla product launch with AI capabilities"
+    "reason": "Privacy controversy; affects millions of users; data indexing conflict"
   },
   {
     "rank": 15,
-    "headline": "Economic policy vets see risks in AI overreliance",
-    "link": "https://www.axios.com/2026/10/26/ai-economists-furman-policy",
+    "headline": "These Claude Enterprise features let you track AI ROI – what’s new",
+    "link": "https://www.zdnet.com/innovation/claude-enterprise-efficiency-cost-tracking/",
     "score": 61,
-    "reason": "Systemic risk controversy from major policy figures"
+    "reason": "Anthropic product launch; addresses enterprise demand for measurable AI value"
   },
   {
     "rank": 16,
-    "headline": "Gemini Notebook for Android, iOS adds built-in audio recorder",
-    "link": "https://9to5google.com/2026/10/27/gemini-notebook-recorder/",
-    "score": 58,
-    "reason": "Google product feature launch"
+    "headline": "Opera will run AI locally in your browser now – why that’s a gamechanger and how to try it",
+    "link": "https://www.zdnet.com/innovation/opera-webai-local-ai-browser/",
+    "score": 59,
+    "reason": "Browser AI feature launch; on-device computing shift"
   },
   {
     "rank": 17,
-    "headline": "Github competitor Entire is live now – how the agent-first platform works",
-    "link": "https://www.zdnet.com/innovation/enitre-github-competitor-trail-git-forge/",
-    "score": 56,
-    "reason": "New AI platform launch competing with major tech giant"
+    "headline": "Anthropic’s elaborate plan to keep Wall Street at bay",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
+    "score": 57,
+    "reason": "IPO strategy revealing company values; governance innovation"
   },
   {
     "rank": 18,
-    "headline": "Your Robot’s Safety Functions Already Work. What If the Input Lies?",
-    "link": "https://spectrum.ieee.org/ai-robot-safety-cybersecurity-vicone",
-    "score": 54,
-    "reason": "AI safety vulnerability research and controversy"
+    "headline": "China’s snooping around Pacific undersea cables raises risks for Big Tech",
+    "link": "https://arstechnica.com/gadgets/2026/10/google-and-meta-subsea-cables-among-most-at-risk-from-sabotage-in-pacific/",
+    "score": 55,
+    "reason": "Geopolitical threat to AI infrastructure; national security implications"
   },
   {
     "rank": 19,
-    "headline": "I Used AI to Fake a Scientific Paper. Here’s What Happened",
-    "link": "https://spectrum.ieee.org/ai-generated-scientific-papers",
-    "score": 52,
-    "reason": "Significant AI abuse case and controversy in academia"
+    "headline": "Google adding more Connected Apps to Gemini & Search with new dev platform",
+    "link": "https://9to5google.com/2026/10/28/gemini-google-connected-apps-platform/",
+    "score": 53,
+    "reason": "Platform expansion; ecosystem integration for AI"
   },
   {
     "rank": 20,
-    "headline": "How Dubai is using data and AI to build the city of the future",
-    "link": "https://fortune.com/2026/10/28/how-dubai-is-using-data-and-ai-to-build-the-city-of-the-future/",
-    "score": 50,
-    "reason": "Large-scale government AI deployment initiative"
+    "headline": "VisionQuest is what happens when AI really goes rogue",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
+    "score": 51,
+    "reason": "Concrete example of AI system failure/uncontrolled behavior"
   }
 ]
