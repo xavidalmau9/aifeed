@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-28T12:21:57.448Z",
+      "date": "2026-10-28",
+      "slot": 1,
+      "headline": "UK Home Office May Face Investigation Over Use of OpenAI Tech",
+      "canonUrl": "wired.com/story/uk-home-office-may-face-investigation-over-use-of-openai-tools",
+      "url": "https://www.wired.com/story/uk-home-office-may-face-investigation-over-use-of-openai-tools/",
+      "slug": "uk-home-office-may-face-investigation",
+      "image": "aifeed_uk-home-office-may-face-investigation_20261028_am.png",
+      "photo": {
+        "dhash": "e3c34b4bcb474745",
+        "phash": "06b915159527f95b",
+        "hist": [
+          178,
+          6,
+          0,
+          0,
+          8,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          5,
+          164,
+          9,
+          0,
+          0,
+          2,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          120,
+          0,
+          0,
+          0,
+          68,
+          130,
+          2,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          7,
+          262
+        ],
+        "url": "https://media.wired.com/photos/6ada70c6eb086323489423af/1:1/w_1600,c_limit/GettyImages-2275955534.jpg",
+        "via": "in-article image"
+      }
+    },
+    {
       "postedAt": "2026-10-27T21:10:28.298Z",
       "date": "2026-10-27",
       "slot": 2,
@@ -3356,68 +3438,6 @@
     }
   ],
   "rankings": {
-    "2026-10-14": [
-      {
-        "rank": 1,
-        "title": "AI Models Can Be Easily Modified to Assist Terrorist and Extremist Activity",
-        "canonUrl": "wired.com/story/ai-models-can-be-easily-modified-to-assist-terrorist-and-extremist-activity"
-      },
-      {
-        "rank": 2,
-        "title": "OpenAI and Anthropic Tell British Lawmakers: Regulate Us",
-        "canonUrl": "wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us"
-      },
-      {
-        "rank": 3,
-        "title": "FBI arrests Saudi OpenAI employee who allegedly planted recording device in conference room",
-        "canonUrl": "cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html"
-      },
-      {
-        "rank": 4,
-        "title": "You Can Use Gemini 4 Argon Now: Google’s New AI Is Built for Coding, Math and Robotics",
-        "canonUrl": "cnet.com/tech/services-and-software/gemini-4-argon-general-release-google-ai-news"
-      },
-      {
-        "rank": 5,
-        "title": "Epic shifts to ‘AI-accelerated development’ for upcoming Disney game",
-        "canonUrl": "theverge.com/games/1010097/epic-games-disney-project-ai-coding-art"
-      },
-      {
-        "rank": 6,
-        "title": "Wikipedians Believed AI Would Come and Go. They Were Wrong",
-        "canonUrl": "wired.com/story/book-excerpt-the-last-best-place-on-the-internet-wikipedia-artificial-intelligence"
-      },
-      {
-        "rank": 7,
-        "title": "Shopify opens its catalog up to more AI agents",
-        "canonUrl": "theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents"
-      },
-      {
-        "rank": 8,
-        "title": "You Can Turn Off AI on Your Google Account, but at a Cost. Here’s What You Lose",
-        "canonUrl": "cnet.com/tech/services-and-software/what-other-features-do-you-lose-when-you-turn-off-ai-in-your-google-account"
-      },
-      {
-        "rank": 9,
-        "title": "Facebook will let you customize your feed algorithm using AI",
-        "canonUrl": "theverge.com/tech/1010344/meta-facebook-your-algorithm-ai"
-      },
-      {
-        "rank": 10,
-        "title": "It’s ‘incomprehensible’ that Instagram allowed an AI image of Mia Goth to spread, say her reps",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1010277/mia-goth-instagram-ai-shirt-deepfake-divorce"
-      },
-      {
-        "rank": 11,
-        "title": "Linus Torvalds is using AI to develop Linux kernel code now",
-        "canonUrl": "zdnet.com/innovation/linus-torvalds-uses-ai-to-write-linux-kernel-patch"
-      },
-      {
-        "rank": 12,
-        "title": "Xbox is officially embracing the chaos of AI-powered game ports",
-        "canonUrl": "theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration"
-      }
-    ],
     "2026-10-15": [
       {
         "rank": 1,
@@ -4052,6 +4072,68 @@
         "rank": 11,
         "title": "Meta announces $95 billion stock offering to fund AI expansion",
         "canonUrl": "cnbc.com/2026/10/26/meta-stock-offering-ai.html"
+      }
+    ],
+    "2026-10-28": [
+      {
+        "rank": 1,
+        "title": "AI Emergency Alerts Are Coming. Humans Might Not Be Ready",
+        "canonUrl": "wired.com/story/ai-emergency-alerts-coming-humans-not-ready"
+      },
+      {
+        "rank": 2,
+        "title": "VisionQuest is what happens when AI really goes rogue",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai"
+      },
+      {
+        "rank": 3,
+        "title": "UK Home Office May Face Investigation Over Use of OpenAI Tech",
+        "canonUrl": "wired.com/story/uk-home-office-may-face-investigation-over-use-of-openai-tools"
+      },
+      {
+        "rank": 4,
+        "title": "Should AI Decide Your Court Case? This Judge Says Yes",
+        "canonUrl": "wired.com/story/geoffrey-vos-uk-judge-ai-legal-profession-challenges"
+      },
+      {
+        "rank": 5,
+        "title": "Your Robot’s Safety Functions Already Work. What If the Input Lies?",
+        "canonUrl": "spectrum.ieee.org/ai-robot-safety-cybersecurity-vicone"
+      },
+      {
+        "rank": 6,
+        "title": "Look Out for Political Deepfakes and Scams This Midterm Election Season",
+        "canonUrl": "cnet.com/tech/services-and-software/spot-2026-midterm-election-deepfakes-scams"
+      },
+      {
+        "rank": 7,
+        "title": "I Used AI to Fake a Scientific Paper. Here’s What Happened",
+        "canonUrl": "spectrum.ieee.org/ai-generated-scientific-papers"
+      },
+      {
+        "rank": 8,
+        "title": "This tool can recover deleted AI chats from your phone – how it works",
+        "canonUrl": "zdnet.com/innovation/orisa-tool-recovers-deleted-local-ai-chats-android-phones"
+      },
+      {
+        "rank": 9,
+        "title": "Anthropic, Suno Sued for Unlawfully Using Songs by Madonna, Johnny Cash, Joni Mitchell",
+        "canonUrl": "cnet.com/tech/services-and-software/anthropic-suno-sued-using-songs-madonna-johnny-cash-joni-mitchell"
+      },
+      {
+        "rank": 10,
+        "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics"
+      },
+      {
+        "rank": 11,
+        "title": "Walmart says AI training is boosting confidence with the technology among its 2.1 million associates",
+        "canonUrl": "cnbc.com/2026/10/27/walmart-ai-training-workers.html"
+      },
+      {
+        "rank": 12,
+        "title": "Pairing industrial AI autonomy and human control",
+        "canonUrl": "technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control"
       }
     ]
   }

@@ -1,5 +1,25 @@
 [
   {
+    "id": "uk-home-office-may-face-investigation-20261028",
+    "slug": "uk-home-office-may-face-investigation",
+    "headline": "UK Home Office May Face Investigation Over Use of OpenAI Tech",
+    "summary": "UK government watchdog may investigate Home Office's use of OpenAI tools in asylum applications over accuracy and transparency concerns.",
+    "body": "<p>UK government watchdog may investigate Home Office's use of OpenAI tools in asylum processing.</p>\n<p>The Independent Chief Inspector of Borders and Immigration is considering a probe into the Home Office's use of generative AI tools to process asylum applications, according to reporting from WIRED. The potential investigation follows lawmakers and researchers publicly questioning the tools' accuracy and the government's secrecy around their deployment and performance.</p>\n<p>The Home Office uses Asylum Case Summarisation and Asylum Policy Search tools, built on OpenAI's 2023 GPT-4 large language model and Microsoft Foundry. The immigration authority began piloting these tools in late 2024 to clear a backlog of around 100,000 asylum cases. The tools summarize interview transcripts and country policy information to assist caseworkers in decision-making.</p>\n<p>Open Rights Group found that error rates in AI-generated summaries are significantly higher than the Home Office's published 9 percent evaluation figure. In July, a UK judge accused the Home Office of citing an AI-hallucinated document to refuse a Moroccan woman and child's asylum claim, raising questions about the tools' reliability in high-stakes decisions.</p>\n<p>Researchers and campaigners express concern about cultural bias in GPT models potentially leading to language barriers and loss of cultural nuances in summaries, which could result in discriminatory decisions. The tools are not listed on the UK's public repository as mandated by the AI Playbook, and asylum seekers are not informed when AI tools are used in their cases.</p>\n<p>The Home Office states that AI tools only assist caseworkers in navigating records and policy information and do not make decisions on claims. The company plans to publish updated evaluations on the tools' rollout, while legal experts warn that inability to contest incorrect AI summaries may breach UK data rights laws.</p>\n<p>UK watchdog may investigate Home Office's use of OpenAI tools in asylum decisions amid concerns over accuracy and transparency.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_uk-home-office-may-face-investigation_20261028_am.png",
+    "image": "images/aifeed_uk-home-office-may-face-investigation_20261028_am.png",
+    "sourceUrl": "https://www.wired.com/story/uk-home-office-may-face-investigation-over-use-of-openai-tools/",
+    "publishedAt": "2026-10-28T12:21:57.448Z",
+    "hashtags": [
+      "OpenAI",
+      "UKHomOffice",
+      "Asylum",
+      "AIaccountability",
+      "AIethics"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "ai-killed-the-homework-era-20261027",
     "slug": "ai-killed-the-homework-era",
     "headline": "AI Killed the Homework Era",
