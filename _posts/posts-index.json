@@ -1,5 +1,25 @@
 [
   {
+    "id": "ai-emergency-alerts-are-coming-humans-20261028",
+    "slug": "ai-emergency-alerts-are-coming-humans",
+    "headline": "AI Emergency Alerts Are Coming. Humans Might Not Be Ready",
+    "summary": "Emergency managers may be using AI to draft disaster alerts despite official agency bans.",
+    "body": "<p>After Hurricane Isaias, an Alabama county emergency manager used an AI chatbot to generate graphics showing wind threats, but the graphic was not meteorologically accurate, illustrating the accuracy risks.</p>\n<p>The appeal is clear: emergency managers historically struggle with public communication. They tend to write in jargon, omit context, and include distracting details. Hundreds of companies now market AI tools for emergency management tasks including flood assessment, resource coordination, and public communication.</p>\n<p>AI could theoretically excel at alert drafting. Large language models can process hundreds of thousands of past alerts in minutes, digest research on effective messaging, and apply those insights to edit a human draft in seconds. This matters because many emergency managers only send alerts once every 15 years and may not recall their training in high-stress situations.</p>\n<p>The industry recognizes communication as critical to public trust. Poor alerts have had fatal consequences — in Montecito, California, in 2017, inadequate warning about post-fire mudslides killed 23 people and injured over 160. Adjacent California counties issued conflicting evacuation orders for the same wildfire in 2016, causing confusion.</p>\n<p>Emergency managers considering AI assistance want to retain final control over alerts.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_ai-emergency-alerts-are-coming-humans_20261028_pm.png",
+    "image": "images/aifeed_ai-emergency-alerts-are-coming-humans_20261028_pm.png",
+    "sourceUrl": "https://www.wired.com/story/ai-emergency-alerts-coming-humans-not-ready/",
+    "publishedAt": "2026-10-28T21:44:50.554Z",
+    "hashtags": [
+      "AI",
+      "EmergencyManagement",
+      "DisasterResponse",
+      "PublicSafety",
+      "ChatbotRisks"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "uk-home-office-may-face-investigation-20261028",
     "slug": "uk-home-office-may-face-investigation",
     "headline": "UK Home Office May Face Investigation Over Use of OpenAI Tech",
