@@ -1,5 +1,25 @@
 [
   {
+    "id": "macmillan-staff-say-the-publisher-threw-20261029",
+    "slug": "macmillan-staff-say-the-publisher-threw",
+    "headline": "Macmillan Staff Say the Publisher Threw a Party for a Workplace AI Assistant That Was Later Killed",
+    "summary": "Macmillan threw a workplace party for NOA, an AI assistant staff found unhelpful, which was discontinued in October 2025.",
+    "body": "<p>Macmillan celebrated a workplace AI assistant that staff deemed terrible and nobody used.</p>\n<p>Macmillan Publishers held a workplace celebration for NOA (No Ordinary Assistant) in January 2024, featuring purple balloons, marquee letters, and doughnuts spelling the AI's name. NOA was an AI chatbot developed by German software company Chaptr, backed by Holtzbrinck, Macmillan's parent company. Multiple employees told WIRED the acronym felt offensive.</p>\n<p>Staff were told NOA was a closed-loop enterprise tool that would not retain or share data for model training, allowing safe input of proprietary information. However, employees say they were warned NOA could hallucinate and required human fact-checking. They were encouraged to use it for composing emails, drafting copy, marketing research, and idea generation, but instructed to paste only a percentage of authors' manuscripts into the system.</p>\n<p>Multiple Macmillan employees characterized NOA as unhelpful and unreliable. One staffer summarized the sentiment: it was terrible, and no one used it. Despite poor initial reception, Macmillan later encouraged staff to use NOA to generate goals for performance reviews and other business tasks, creating disconnect between stated and actual usefulness.</p>\n<p>In October 2025, Macmillan announced via company-wide email that Chaptr would sunset NOA. Following the discontinuation, leadership began attempting to integrate Google Gemini into the publishing process. Some staffers experimented with using Gemini to evaluate submission letters from literary agents, but the Gemini-generated evaluations were deemed useless by one editor.</p>\n<p>When asked for comment, Macmillan's vice president of communications stated the publishing house uses Gemini for business purposes but denied any directive to use Gemini for publishing processes or submission evaluations. She noted the shared points do not accurately reflect NOA's rollout and communication but provided no elaboration on which aspects were inaccurate.</p>",
+    "category": "Business",
+    "imageUrl": "https://aifeed.run/images/aifeed_macmillan-staff-say-the-publisher-threw_20261029_pm.png",
+    "image": "images/aifeed_macmillan-staff-say-the-publisher-threw_20261029_pm.png",
+    "sourceUrl": "https://www.wired.com/story/macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-assistant-that-was-later-killed/",
+    "publishedAt": "2026-10-29T21:17:07.667Z",
+    "hashtags": [
+      "Macmillan",
+      "WorkplaceAI",
+      "Publishing",
+      "AIfail",
+      "EmployeeResistance"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "xai-is-buying-out-homeowners-who-20261029",
     "slug": "xai-is-buying-out-homeowners-who",
     "headline": "xAI is buying out homeowners who promise not to sue over data center noise",
