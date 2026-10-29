@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-29T12:10:17.073Z",
+      "date": "2026-10-29",
+      "slot": 1,
+      "headline": "xAI is buying out homeowners who promise not to sue over data center noise",
+      "canonUrl": "theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit",
+      "slug": "xai-is-buying-out-homeowners-who",
+      "image": "aifeed_xai-is-buying-out-homeowners-who_20261029_am.png",
+      "photo": {
+        "dhash": "98e1e38084a2b203",
+        "phash": "7bac84a929d6464f",
+        "hist": [
+          27,
+          11,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          15,
+          183,
+          22,
+          0,
+          0,
+          15,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          21,
+          3,
+          0,
+          0,
+          38,
+          176,
+          45,
+          0,
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          410
+        ],
+        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2289399619.jpg?quality=90&strip=all&crop=0%2C10.738447150137%2C100%2C78.523105699726&w=1200",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-28T21:44:50.554Z",
       "date": "2026-10-28",
       "slot": 2,
@@ -8,7 +90,78 @@
       "canonUrl": "wired.com/story/ai-emergency-alerts-coming-humans-not-ready",
       "url": "https://www.wired.com/story/ai-emergency-alerts-coming-humans-not-ready/",
       "slug": "ai-emergency-alerts-are-coming-humans",
-      "image": "aifeed_ai-emergency-alerts-are-coming-humans_20261028_pm.png"
+      "image": "aifeed_ai-emergency-alerts-are-coming-humans_20261028_pm.png",
+      "photo": {
+        "dhash": "60f901fdfff1f3ff",
+        "phash": "c969c947023e3bb9",
+        "hist": [
+          224,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          203,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          1,
+          5,
+          0,
+          0,
+          0,
+          3,
+          116,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          18,
+          9,
+          0,
+          0,
+          0,
+          4,
+          249,
+          1,
+          0,
+          0,
+          129,
+          20
+        ],
+        "via": "backfill"
+      }
     },
     {
       "postedAt": "2026-10-28T12:21:57.448Z",
@@ -3448,68 +3601,6 @@
     }
   ],
   "rankings": {
-    "2026-10-15": [
-      {
-        "rank": 1,
-        "title": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
-      },
-      {
-        "rank": 2,
-        "title": "Anthropic's third-quarter revenue is said to hit $16.8 billion ahead of IPO",
-        "canonUrl": "cnbc.com/2026/10/15/anthropics-third-quarter-revenue-hits-16point8-billion-ipo.html"
-      },
-      {
-        "rank": 3,
-        "title": "AI Came for Math. Now It’s Chasing the Rest of Science",
-        "canonUrl": "wired.com/story/ai-is-coming-for-science-next-watch-out"
-      },
-      {
-        "rank": 4,
-        "title": "Nvidia must work with Chinese AI companies on safety, Jensen Huang tells CNBC",
-        "canonUrl": "cnbc.com/2026/10/15/jensen-huang-nvidia-china-ai.html"
-      },
-      {
-        "rank": 5,
-        "title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans"
-      },
-      {
-        "rank": 6,
-        "title": "Now that Character.AI is going bankrupt, what happens to all of its users’ data?",
-        "canonUrl": "theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy"
-      },
-      {
-        "rank": 7,
-        "title": "Your secrets aren’t safe with this cute robot toy — they’re on Chinese servers ready to be hacked",
-        "canonUrl": "theverge.com/tech/1010727/eiliko-robot-hack-energize-lab"
-      },
-      {
-        "rank": 8,
-        "title": "Microsoft has a new machine learning tool to improve weather forecasts",
-        "canonUrl": "theverge.com/science/1011127/ai-weather-forecast-microsoft"
-      },
-      {
-        "rank": 9,
-        "title": "YouTube sticks new labels on AI-generated songs",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label"
-      },
-      {
-        "rank": 10,
-        "title": "McKinsey is making job applicants spar with a fake AI client",
-        "canonUrl": "theverge.com/news/1011654/mckinsey-ai-client-interview"
-      },
-      {
-        "rank": 11,
-        "title": "CoreWeave shares tumble as bond yields near 15% on concern about AI borrowing binge",
-        "canonUrl": "cnbc.com/2026/10/14/coreweave-stock-bond-yields-ai-debt.html"
-      },
-      {
-        "rank": 12,
-        "title": "BlackRock's Larry Fink warns a data center moratorium could trigger a recession",
-        "canonUrl": "cnbc.com/2026/10/14/blackrocks-fink-warns-data-center-moratorium-could-spark-a-recession.html"
-      }
-    ],
     "2026-10-16": [
       {
         "rank": 1,
@@ -4144,6 +4235,68 @@
         "rank": 12,
         "title": "Pairing industrial AI autonomy and human control",
         "canonUrl": "technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control"
+      }
+    ],
+    "2026-10-29": [
+      {
+        "rank": 1,
+        "title": "Nvidia's $12.9 billion Hugging Face deal draws DOJ scrutiny",
+        "canonUrl": "cnbc.com/2026/10/28/doj-questions-nvidias-12point9-billion-hugging-face-deal.html"
+      },
+      {
+        "rank": 2,
+        "title": "Should AI Decide Your Court Case? This Judge Says Yes",
+        "canonUrl": "wired.com/story/geoffrey-vos-uk-judge-ai-legal-profession-challenges"
+      },
+      {
+        "rank": 3,
+        "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+        "canonUrl": "theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
+      },
+      {
+        "rank": 4,
+        "title": "xAI is buying out homeowners who promise not to sue over data center noise",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit"
+      },
+      {
+        "rank": 5,
+        "title": "We urgently need to monitor AI agents’ actions in real time",
+        "canonUrl": "technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time"
+      },
+      {
+        "rank": 6,
+        "title": "Over 41,000 U.S. Homeland Security officials' details apparently exposed after massive data breach",
+        "canonUrl": "cnbc.com/2026/10/29/dhs-data-breach-ice-cdp-deportations.html"
+      },
+      {
+        "rank": 7,
+        "title": "Microsoft is ending Copilot support on smart TVs",
+        "canonUrl": "theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending"
+      },
+      {
+        "rank": 8,
+        "title": "Public Discord messages might start showing up in Google Search, unless users opt out",
+        "canonUrl": "9to5google.com/2026/10/28/discord-updates-server-web-pages-for-search"
+      },
+      {
+        "rank": 9,
+        "title": "Voters in Texas agree: They hate data centers",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1018676/data-center-midterm-election-energy-water-texas"
+      },
+      {
+        "rank": 10,
+        "title": "Macmillan Staff Say the Publisher Threw a Party for a Workplace AI Assistant That Was Later Killed",
+        "canonUrl": "wired.com/story/macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-assistant-that-was-later-killed"
+      },
+      {
+        "rank": 11,
+        "title": "Alphabet earnings miss reflects first real sign that AI is taking a bite out of search",
+        "canonUrl": "cnbc.com/2026/10/29/alphabet-google-search-ai-earnings.html"
+      },
+      {
+        "rank": 12,
+        "title": "Our climate models have a big, dangerous blind spot",
+        "canonUrl": "technologyreview.com/2026/10/29/1147735/climate-models-blind-spot"
       }
     ]
   }
