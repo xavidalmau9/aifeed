@@ -58,8 +58,8 @@ function authOf(env) {
 async function listSocial(cfg, env, graph) {
   const auth = authOf(env);
   const G = `https://graph.facebook.com/${cfg.graphVersion}/`;
-  const ig = await graph(G + cfg.igUserId + '/media?fields=id,caption,media_type,permalink,timestamp&limit=30', auth);
-  const fb = await graph(G + cfg.fbPageId + '/published_posts?fields=id,message,created_time,permalink_url&limit=25', auth);
+  const ig = await graph(G + cfg.igUserId + '/media?fields=id,caption,media_type,media_product_type,permalink,timestamp&limit=30', auth);
+  const fb = await graph(G + cfg.fbPageId + '/published_posts?fields=id,message,status_type,created_time,permalink_url&limit=25', auth);
   let videos = { data: [] };
   try {
     videos = await graph(G + cfg.fbPageId + '/videos?fields=id,description,title,created_time,permalink_url&limit=15', auth);
@@ -76,7 +76,7 @@ async function listSocial(cfg, env, graph) {
   }
   return {
     igMedia: ig.data || [],
-    fbPosts: [...(fb.data || []), ...(videos.data || [])],
+    fbPosts: [...(fb.data || []), ...(videos.data || []).map(v => ({ ...v, isVideo: true }))],
     igStories: stories.data || [],
     storiesKnown
   };
