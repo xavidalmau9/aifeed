@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic is asking Wall Street to believe in AGI",
-    "link": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview",
-    "score": 94,
-    "reason": "Major funding/valuation announcement with high stakes claims"
+    "headline": "Microsoft plans to raise $25 billion in debt as it pursues AI buildout",
+    "link": "https://www.cnbc.com/2026/10/29/microsoft-25-billion-debt-offering.html",
+    "score": 98,
+    "reason": "Major capital commitment ($25B), concrete action, industry-defining scale"
   },
   {
     "rank": 2,
-    "headline": "A Defense Contractor Gave Their Personal AI Agent Access to a Secure Pentagon System",
-    "link": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
-    "score": 92,
-    "reason": "Significant security breach with government/defense implications"
+    "headline": "Anthropic’s business plan: Build God or die trying",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1021476/anthropic-s-1-compute-recursive",
+    "score": 93,
+    "reason": "Launches strategic vision, high-stakes narrative, Anthropic company focus"
   },
   {
     "rank": 3,
-    "headline": "Microsoft’s AI future has fewer jobs",
-    "link": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
-    "score": 89,
-    "reason": "Major employment impact from AI at Fortune 500 company"
+    "headline": "Alphabet earnings miss reflects first real sign that AI is taking a bite out of search",
+    "link": "https://www.cnbc.com/2026/10/29/alphabet-google-search-ai-earnings.html",
+    "score": 91,
+    "reason": "Quantified business impact, major company (Alphabet), concrete consequences"
   },
   {
     "rank": 4,
-    "headline": "Google admits AI search makes less money, but it's fixing that with more ads",
-    "link": "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads/",
-    "score": 87,
-    "reason": "Concrete business impact and ad monetization strategy shift"
+    "headline": "Waymo and Toyota will soon start testing their robotaxis in Japan",
+    "link": "https://www.engadget.com/2301972/waymo-toyota-soon-start-testing-bz4x-robotaxis-japan/",
+    "score": 89,
+    "reason": "Major launch expansion, concrete deployment, industry milestone"
   },
   {
     "rank": 5,
-    "headline": "Mistral Says Its AI Model ‘Le Chonk’ Has Leapfrogged China in the Open-Weight Race",
-    "link": "https://www.wired.com/story/mistral-says-le-chonk-surpasses-chinese-models-cybersecurity/",
-    "score": 84,
-    "reason": "Major model release with geopolitical competition claims"
+    "headline": "Wikipedia’s operator says a bad AI copyright ruling could threaten the open web",
+    "link": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright",
+    "score": 87,
+    "reason": "Significant controversy, regulatory/legal impact, foundational web implications"
   },
   {
     "rank": 6,
-    "headline": "Stop sharing your passwords with AI agents, Bank of America warns customers",
-    "link": "https://www.zdnet.com/innovation/bank-of-america-customers-no-sharing-passwords-ai-agents/",
-    "score": 82,
-    "reason": "Major bank security warning about AI agent usage"
+    "headline": "Senators are looking into 'serious privacy risks' with Meta's AI glasses",
+    "link": "https://www.engadget.com/2301968/senators-looking-into-serious-privacy-risks-with-meta-ai-glasses/",
+    "score": 85,
+    "reason": "Regulatory investigation, privacy controversy, Meta focus"
   },
   {
     "rank": 7,
-    "headline": "Trump declares robot imports a national security threat",
-    "link": "https://arstechnica.com/gadgets/2026/10/trump-declares-robot-imports-a-national-security-threat/",
-    "score": 81,
-    "reason": "Major political/policy statement on AI robotics"
+    "headline": "Indian AI infrastructure firm reportedly seeks to raise $3 billion of debt to buy Nvidia&apos;s next-generation chips",
+    "link": "https://www.cnbc.com/2026/10/30/nvidia-india-ai-chips-computing.html",
+    "score": 83,
+    "reason": "Large capital amount ($3B), chip infrastructure significance, market expansion"
   },
   {
     "rank": 8,
-    "headline": "Financial AI startup Casap raises $56 million to help banks stop an explosion of customer fraud",
-    "link": "https://fortune.com/2026/10/28/dd/",
-    "score": 78,
-    "reason": "Significant funding round addressing major fraud problem"
+    "headline": "AI has come for Arizona’s water",
+    "link": "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc",
+    "score": 81,
+    "reason": "Concrete real-world impact, resource management controversy, specific application"
   },
   {
     "rank": 9,
-    "headline": "You can generate and edit Google Docs files directly in Gemini chats now",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
-    "score": 76,
-    "reason": "Major Gemini feature expansion and product integration"
+    "headline": "We urgently need to monitor AI agents’ actions in real time",
+    "link": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
+    "score": 79,
+    "reason": "Emerging agents governance issue, safety implications, timely concern"
   },
   {
     "rank": 10,
-    "headline": "These Claude Enterprise features let you track AI ROI – what’s new",
-    "link": "https://www.zdnet.com/innovation/claude-enterprise-efficiency-cost-tracking/",
-    "score": 74,
-    "reason": "Enterprise monetization feature launch for Claude"
+    "headline": "Mistral’s New ‘Le Chonk’ AI Model Is Big, Open and Now Available for Download",
+    "link": "https://www.cnet.com/tech/services-and-software/mistral-new-le-chonk-ai-model-open-source-available/",
+    "score": 77,
+    "reason": "Product launch, open-source competitor to proprietary models, concrete release"
   },
   {
     "rank": 11,
-    "headline": "Google announces Gemini 4 Carbon with ‘significant gains across coding and agentic tasks’",
-    "link": "https://9to5google.com/2026/10/28/gemini-4-carbon-announcement/",
-    "score": 73,
-    "reason": "Major model release with capabilities advancement"
+    "headline": "VRChat says it's not adding AI labels despite user survey showing people want that",
+    "link": "https://www.engadget.com/2301786/vrchat-says-its-not-adding-ai-labels-despite-user-survey-showing-people-want-that/",
+    "score": 75,
+    "reason": "User controversy, company decision against feedback, platform policy"
   },
   {
     "rank": 12,
-    "headline": "‘It was just a fight that we decided to pick’: Serval raises $150 million at a $3 billion valuation to take on ServiceNow",
-    "link": "https://fortune.com/2026/10/29/serval-servicenow-fight-series-c-3-billion-valuation-sequoia/",
-    "score": 71,
-    "reason": "Large funding round with direct enterprise competition claim"
+    "headline": "Consumer Appetite for Personal AI Goes Mainstream",
+    "link": "https://spectrum.ieee.org/ai-personal-assistant-intelligent-wearables",
+    "score": 73,
+    "reason": "Market trend, broad adoption indicator, consumer behavior shift"
   },
   {
     "rank": 13,
-    "headline": "NVIDIA CEO Jensen Huang may have been the target of a Chinese government spy",
-    "link": "https://www.engadget.com/2301447/nvidia-ceo-jensen-huang-may-have-been-the-target-of-a-chinese-government-spy/",
-    "score": 70,
-    "reason": "Major espionage allegation against AI hardware leader"
+    "headline": "Here’s Why You’re About to See More Ads in Google’s AI Overviews",
+    "link": "https://www.cnet.com/tech/services-and-software/google-expands-advertising-ai-mode-overviews/",
+    "score": 71,
+    "reason": "Monetization shift, user impact, Google business model change"
   },
   {
     "rank": 14,
-    "headline": "The NYT Cooking app is testing AI recipe modifications",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1022193/nyt-cooking-app-ai-recipe-modification-tool",
-    "score": 67,
-    "reason": "Major media company AI feature launch"
+    "headline": "Maine’s data center revolt will decide who controls the Senate",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers",
+    "score": 69,
+    "reason": "High-stakes political implications, infrastructure controversy, specific outcome"
   },
   {
     "rank": 15,
-    "headline": "Reddit will force users to log in as AI is killing search traffic",
-    "link": "https://www.engadget.com/2301687/reddit-will-move-to-logged-in-only-as-ai-eats-search-traffic/",
-    "score": 66,
-    "reason": "Concrete business impact of AI on search ecosystem"
+    "headline": "Foxconn hopes to own 50% of the global AI server market within a couple years",
+    "link": "https://www.cnbc.com/2026/10/30/hon-hai-technology-group-foxconn-ai-server-young-liu-.html",
+    "score": 67,
+    "reason": "Market ambition, manufacturing scale, competitive positioning"
   },
   {
     "rank": 16,
-    "headline": "Microsoft is ending Copilot support on smart TVs",
-    "link": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending",
-    "score": 64,
-    "reason": "Major product discontinuation from enterprise AI leader"
+    "headline": "Google stock drops amid AI fears; AI Mode has 'lower monetization,' getting more ads",
+    "link": "https://9to5google.com/2026/10/29/google-stock-drop-ai-mode-ad-expansion/",
+    "score": 65,
+    "reason": "Financial impact, market reaction, monetization challenge"
   },
   {
     "rank": 17,
-    "headline": "Opera will run AI locally in your browser now – why that’s a gamechanger and how to try it",
-    "link": "https://www.zdnet.com/innovation/opera-webai-local-ai-browser/",
-    "score": 61,
-    "reason": "Significant browser-based AI deployment shift"
+    "headline": "Latest Gemini design comes to all Android devices, app upgrades file generation",
+    "link": "https://9to5google.com/2026/10/29/gemini-design-file-generation/",
+    "score": 63,
+    "reason": "Product rollout, scale (all Android), Google deployment"
   },
   {
     "rank": 18,
-    "headline": "Your public Discord messages may soon appear in Google search results – how to opt out",
-    "link": "https://www.zdnet.com/tech/discord-servers-searchable-on-web/",
-    "score": 59,
-    "reason": "Major search indexing policy affecting social platforms"
+    "headline": "The humans burning out on AI's cyber frontlines",
+    "link": "https://www.axios.com/2026/10/30/cybersecurity-ai-burnout-human-workers",
+    "score": 61,
+    "reason": "Emerging workplace/health issue, human cost of AI adoption"
   },
   {
     "rank": 19,
-    "headline": "Anthropic CEO Dario Amodei charts a new direction for tech philanthropy",
-    "link": "https://www.cnbc.com/2026/10/29/anthropic-ceo-dario-amodei-charts-new-direction-for-tech-philanthropy.html",
-    "score": 57,
-    "reason": "Leadership strategy shift at major AI company"
+    "headline": "Google brings AI Mode advertisements to more countries",
+    "link": "https://www.engadget.com/2301660/google-brings-ai-mode-advertisements-to-more-countries/",
+    "score": 59,
+    "reason": "Global expansion, product deployment across markets"
   },
   {
     "rank": 20,
-    "headline": "Over 41,000 U.S. Homeland Security officials&apos; details apparently exposed after massive data breach",
-    "link": "https://www.cnbc.com/2026/10/29/dhs-data-breach-ice-cdp-deportations.html",
-    "score": 56,
-    "reason": "Large-scale government data breach affecting security personnel"
+    "headline": "Adam Mosseri says negativity around AI is ‘going to get worse’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
+    "score": 57,
+    "reason": "Meta executive insight, industry sentiment, controversy acknowledgment"
   }
 ]
