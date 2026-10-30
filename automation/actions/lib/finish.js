@@ -152,10 +152,23 @@ function matchingStory(progress, stories) {
   return { id: '', post: true };
 }
 
+// Only a video counts as the Reel / Facebook video. A feed photo or carousel with the
+// same source link (e.g. from the n8n fallback) must not block the real Reel.
+function isIgReel(m) {
+  if (!m || String(m.media_type || '').toUpperCase() !== 'VIDEO') return false;
+  return !m.media_product_type || String(m.media_product_type).toUpperCase() === 'REELS';
+}
+
+function isFbVideo(m) {
+  if (!m) return false;
+  if (m.isVideo === true) return true;
+  return /video/i.test(String(m.status_type || ''));
+}
+
 function planFinish({ sourceUrl, progress, igMedia, fbPosts, igStories, storiesKnown = true } = {}) {
   const row = progress || {};
-  const ig = (igMedia || []).find(m => textHasUrl(m && m.caption, sourceUrl));
-  const fb = (fbPosts || []).find(m => textHasUrl(m && m.message, sourceUrl) || textHasUrl(m && m.description, sourceUrl));
+  const ig = (igMedia || []).find(m => isIgReel(m) && textHasUrl(m.caption, sourceUrl));
+  const fb = (fbPosts || []).find(m => isFbVideo(m) && (textHasUrl(m.message, sourceUrl) || textHasUrl(m.description, sourceUrl)));
   const story = matchingStory(row, igStories);
   const igReelId = ig && ig.id ? String(ig.id) : (row.igReelId ? String(row.igReelId) : '');
   const fbPostId = fb && fb.id ? String(fb.id) : (row.fbPostId ? String(row.fbPostId) : '');
@@ -205,5 +218,5 @@ function assertPhotoFile(file, readFileSync) {
 
 module.exports = {
   PROGRESS_PATH, SLUG_RE, CAPTION_BANNED, outletFromUrl, igCaptionFromPost, photoUrlFromHtml,
-  textHasUrl, planFinish, pickEntry, storyImageName, assertPhotoFile, contentParagraphs
+  textHasUrl, planFinish, isIgReel, isFbVideo, pickEntry, storyImageName, assertPhotoFile, contentParagraphs
 };

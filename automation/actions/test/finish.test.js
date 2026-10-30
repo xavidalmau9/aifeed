@@ -64,8 +64,8 @@ test('planFinish posts only the channels that are not already live', () => {
   const ig = planFinish({
     sourceUrl,
     progress: {},
-    igMedia: [{ id: 'ig1', caption: 'Story\n\nSource: WIRED · ' + sourceUrl }],
-    fbPosts: [{ id: 'fb1', description: 'Source: WIRED · ' + sourceUrl.replace(/\/$/, '') }],
+    igMedia: [{ id: 'ig1', media_type: 'VIDEO', media_product_type: 'REELS', caption: 'Story\n\nSource: WIRED · ' + sourceUrl }],
+    fbPosts: [{ id: 'fb1', isVideo: true, description: 'Source: WIRED · ' + sourceUrl.replace(/\/$/, '') }],
     igStories: [],
     storiesKnown: true
   });
@@ -74,6 +74,34 @@ test('planFinish posts only the channels that are not already live', () => {
   assert.equal(ig.postFb, false);
   assert.equal(ig.fbPostId, 'fb1');
   assert.equal(ig.postStory, true);
+
+  const photoOnly = planFinish({
+    sourceUrl,
+    progress: {},
+    igMedia: [
+      { id: 'feed1', media_type: 'IMAGE', media_product_type: 'FEED', caption: 'Source: ' + sourceUrl },
+      { id: 'car1', media_type: 'CAROUSEL_ALBUM', caption: 'Source: ' + sourceUrl },
+      { id: 'vidfeed', media_type: 'VIDEO', media_product_type: 'FEED', caption: 'Source: ' + sourceUrl }
+    ],
+    fbPosts: [{ id: 'fbphoto', status_type: 'added_photos', message: 'Source: ' + sourceUrl }],
+    igStories: [],
+    storiesKnown: true
+  });
+  assert.equal(photoOnly.postReel, true);
+  assert.equal(photoOnly.igReelId, '');
+  assert.equal(photoOnly.postFb, true);
+  assert.equal(photoOnly.fbPostId, '');
+
+  const noProductType = planFinish({
+    sourceUrl,
+    progress: {},
+    igMedia: [{ id: 'v1', media_type: 'VIDEO', caption: 'Source: ' + sourceUrl }],
+    fbPosts: [{ id: 'fv1', status_type: 'added_video', message: 'Source: ' + sourceUrl }],
+    igStories: [],
+    storiesKnown: true
+  });
+  assert.equal(noProductType.igReelId, 'v1');
+  assert.equal(noProductType.fbPostId, 'fv1');
 
   const morning = planFinish({
     sourceUrl,
