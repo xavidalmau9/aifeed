@@ -1,6 +1,16 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-30T04:44:13.193Z",
+      "date": "2026-10-30",
+      "slot": 1,
+      "headline": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+      "canonUrl": "theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+      "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+      "slug": "google-launches-gemini-carbon-with-significant",
+      "image": "aifeed_google-launches-gemini-carbon-with-significant_20261030_am.png"
+    },
+    {
       "postedAt": "2026-10-29T21:17:07.667Z",
       "date": "2026-10-29",
       "slot": 2,
@@ -3683,58 +3693,6 @@
     }
   ],
   "rankings": {
-    "2026-10-16": [
-      {
-        "rank": 1,
-        "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
-        "canonUrl": "arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says"
-      },
-      {
-        "rank": 2,
-        "title": "CoreWeave credit default swaps hit distress levels as investors sour on AI debt",
-        "canonUrl": "cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html"
-      },
-      {
-        "rank": 3,
-        "title": "Nvidia’s new Nemotron 3.5 Super VL is another step forward for US open-weight AI",
-        "canonUrl": "zdnet.com/innovation/nvidia-nemotron-3-5-super-vl-model-us-open-weight-ai"
-      },
-      {
-        "rank": 4,
-        "title": "Europe’s Largest Airline Wants Predictive AI Models to Nip Airport Meltdowns in the Bud",
-        "canonUrl": "cnet.com/tech/services-and-software/international-ai-summit-ryanair-airline"
-      },
-      {
-        "rank": 5,
-        "title": "Singer or clanker? YouTube Music will tell you with new gen AI labeling.",
-        "canonUrl": "arstechnica.com/ai/2026/10/youtube-music-begins-labeling-ai-songs"
-      },
-      {
-        "rank": 6,
-        "title": "ChatGPT can peek at your Chrome tabs now",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs"
-      },
-      {
-        "rank": 7,
-        "title": "Meta and Apple team up to make Muse AI models run better on Macs",
-        "canonUrl": "theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx"
-      },
-      {
-        "rank": 8,
-        "title": "I Let Meta Muse Do My Shopping. The AI Agent Tried to Upcharge Me",
-        "canonUrl": "cnet.com/tech/services-and-software/meta-muse-my-personal-shopper-upcharged-me"
-      },
-      {
-        "rank": 9,
-        "title": "AI Hacks Leave a Mess That AI Companies Aren’t Paying For",
-        "canonUrl": "wired.com/story/ai-hacks-leave-a-mess-that-ai-companies-arent-cleaning-up"
-      },
-      {
-        "rank": 10,
-        "title": "How many jobs is your state losing to AI? This dashboard tracks the cuts – and the cost",
-        "canonUrl": "zdnet.com/innovation/ai-job-cuts-wage-loss-by-state-tracker"
-      }
-    ],
     "2026-10-17": [
       {
         "rank": 1,
@@ -4379,6 +4337,58 @@
         "rank": 12,
         "title": "Our climate models have a big, dangerous blind spot",
         "canonUrl": "technologyreview.com/2026/10/29/1147735/climate-models-blind-spot"
+      }
+    ],
+    "2026-10-30": [
+      {
+        "rank": 1,
+        "title": "A Defense Contractor Gave Their Personal AI Agent Access to a Secure Pentagon System",
+        "canonUrl": "wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system"
+      },
+      {
+        "rank": 2,
+        "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+        "canonUrl": "theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
+      },
+      {
+        "rank": 3,
+        "title": "Mistral Says Its AI Model ‘Le Chonk’ Has Leapfrogged China in the Open-Weight Race",
+        "canonUrl": "wired.com/story/mistral-says-le-chonk-surpasses-chinese-models-cybersecurity"
+      },
+      {
+        "rank": 4,
+        "title": "Microsoft plans to raise $25 billion in debt as it pursues AI buildout",
+        "canonUrl": "cnbc.com/2026/10/29/microsoft-25-billion-debt-offering.html"
+      },
+      {
+        "rank": 5,
+        "title": "We urgently need to monitor AI agents’ actions in real time",
+        "canonUrl": "technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time"
+      },
+      {
+        "rank": 6,
+        "title": "These Claude Enterprise features let you track AI ROI – what’s new",
+        "canonUrl": "zdnet.com/innovation/claude-enterprise-efficiency-cost-tracking"
+      },
+      {
+        "rank": 7,
+        "title": "Stop sharing your passwords with AI agents, Bank of America warns customers",
+        "canonUrl": "zdnet.com/innovation/bank-of-america-customers-no-sharing-passwords-ai-agents"
+      },
+      {
+        "rank": 8,
+        "title": "Alphabet earnings miss reflects first real sign that AI is taking a bite out of search",
+        "canonUrl": "cnbc.com/2026/10/29/alphabet-google-search-ai-earnings.html"
+      },
+      {
+        "rank": 9,
+        "title": "You can generate and edit Google Docs files directly in Gemini chats now",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
+      },
+      {
+        "rank": 10,
+        "title": "Anthropic is asking Wall Street to believe in AGI",
+        "canonUrl": "theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview"
       }
     ]
   }
