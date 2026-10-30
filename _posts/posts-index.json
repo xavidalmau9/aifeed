@@ -1,5 +1,25 @@
 [
   {
+    "id": "google-launches-gemini-carbon-with-significant-20261030",
+    "slug": "google-launches-gemini-carbon-with-significant",
+    "headline": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+    "summary": "Google released Gemini 4 Carbon, claiming top ranking on AI benchmarks for coding and cybersecurity.",
+    "body": "<p>**Google launches Gemini 4 Carbon, claiming top benchmark spot in coding and cybersecurity.**</p>\n<p>Google released Gemini 4 Carbon, its latest frontier model, announcing it offers significant gains in coding, agentic tasks, and cybersecurity. The company says Carbon ranks first on the Artificial Analysis Intelligence Index (v5.0) benchmark, with Claude Opus 5.5 and GPT-6 Astra trailing. Carbon represents improvements over Argon, released earlier this month.</p>\n<p>Google highlights Carbon's performance on specialized security benchmarks: SEC-bench Pro, which measures real-world bug discovery, and ExploitGym, which measures vulnerability-to-exploit conversion. The company claims Carbon delivers a significant leap in cyberdefense, improving vulnerability discovery and secure code generation capabilities.</p>\n<p>The model is designed for extended task execution, with Google's internal teams observing it run for days persisting through dead ends on complex multi-step engineering tasks. Carbon reportedly improves at avoiding shortcuts, resisting prompt injection attacks, and collaborating with users. It also cuts unsupported claims by two times versus Argon.</p>\n<p>Currently, Carbon is available only to a select group of cybersecurity defense companies, with planned expansion to other partners through Google's Fairwind Program. The model launches at competitive introductory pricing: $2 per million input tokens and $10 per million output tokens, matching Argon's rate.</p>\n<p>The release reflects Google's stated pace in pushing frontier AI capabilities forward.</p>\n<p>Google launched Gemini 4 Carbon claiming top benchmark performance in coding and cybersecurity, initially available to select defense companies.</p>",
+    "category": "Models",
+    "imageUrl": "https://aifeed.run/images/aifeed_google-launches-gemini-carbon-with-significant_20261030_am.png",
+    "image": "images/aifeed_google-launches-gemini-carbon-with-significant_20261030_am.png",
+    "sourceUrl": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+    "publishedAt": "2026-10-30T04:44:13.193Z",
+    "hashtags": [
+      "Gemini",
+      "Google",
+      "Cybersecurity",
+      "AIModels",
+      "FrontierAI"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "macmillan-staff-say-the-publisher-threw-20261029",
     "slug": "macmillan-staff-say-the-publisher-threw",
     "headline": "Macmillan Staff Say the Publisher Threw a Party for a Workplace AI Assistant That Was Later Killed",
