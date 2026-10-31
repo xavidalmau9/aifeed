@@ -1,5 +1,25 @@
 [
   {
+    "id": "spooky-new-infostealer-malware-uses-ai-20261031",
+    "slug": "spooky-new-infostealer-malware-uses-ai",
+    "headline": "Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims",
+    "summary": "Researchers found new infostealer malware using AI to auto-profile and rank victims by value.",
+    "body": "<p>Hackers embed AI into infostealer malware to auto-analyze and rank victims.</p>\n<p>Cisco Talos researchers uncovered Volta-Autodoxer, a new infostealer malware that combines traditional data theft with AI-powered victim profiling. The malware collects usernames, passwords, cookies, credit card data, payment information from services like UberEats and DoorDash, and active sessions on Discord, Telegram, Steam, and Roblox from infected machines.</p>\n<p>After gathering data, Volta sends it to large language models via OpenRouter, defaulting to Anthropic's Claude Opus 4.6 but with fallbacks to Moonshot AI Kimi K2 and Google's Gemini 2.5 Flash. The malware instructs these models to act as forensic intelligence analysts and produce prioritized assessments of victims, their value, and operational security weaknesses.</p>\n<p>The discovery reveals how attackers are using commercial LLMs to enhance established malware capabilities. By automating victim analysis, hackers can identify high-value targets faster and exploit stolen credentials before they expire or are changed.</p>\n<p>This trend foreshadows a broader shift: lower-sophistication attackers gaining access to advanced tools through AI integration. Security researchers at CrowdStrike have already identified four distinct hacking groups across multiple languages using AI to compromise government entities and businesses in healthcare, retail, and travel.</p>\n<p>While Talos did not track active Volta deployments in the wild, the malware's maturity and the inclusion of model fallbacks suggest it may have been designed for sale to multiple attacker groups, signaling a potential commodification of AI-enhanced cybercrime.</p>\n<p>Attackers are embedding AI into malware to automate victim prioritization, lowering the bar for sophisticated cyberattacks.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_spooky-new-infostealer-malware-uses-ai_20261031_am.png",
+    "image": "images/aifeed_spooky-new-infostealer-malware-uses-ai_20261031_am.png",
+    "sourceUrl": "https://www.wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware/",
+    "publishedAt": "2026-10-31T12:10:01.694Z",
+    "hashtags": [
+      "infostealermalware",
+      "cybersecurity",
+      "AI",
+      "malwareanalysis",
+      "datasecurity"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "defense-contractor-gave-their-personal-ai-20261030",
     "slug": "defense-contractor-gave-their-personal-ai",
     "headline": "A Defense Contractor Gave Their Personal AI Agent Access to a Secure Pentagon System",

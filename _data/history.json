@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-10-31T12:10:01.694Z",
+      "date": "2026-10-31",
+      "slot": 1,
+      "headline": "Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims",
+      "canonUrl": "wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware",
+      "url": "https://www.wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware/",
+      "slug": "spooky-new-infostealer-malware-uses-ai",
+      "image": "aifeed_spooky-new-infostealer-malware-uses-ai_20261031_am.png",
+      "photo": {
+        "dhash": "eccc710309098b8f",
+        "phash": "87f12bca1d934c4d",
+        "hist": [
+          295,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          6,
+          87,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          1,
+          0,
+          0,
+          2,
+          138,
+          1,
+          0,
+          0,
+          1,
+          0,
+          79,
+          0,
+          0,
+          0,
+          9,
+          8,
+          0,
+          0,
+          0,
+          4,
+          5,
+          1,
+          0,
+          0,
+          9,
+          346
+        ],
+        "url": "https://media.wired.com/photos/6ae4e9f503c2c36f4cfc913c/1:1/w_1600,c_limit/KernelPanic_10312026_v1.jpg",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-30T21:15:28.808Z",
       "date": "2026-10-30",
       "slot": 2,
@@ -8,7 +90,78 @@
       "canonUrl": "wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system",
       "url": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
       "slug": "defense-contractor-gave-their-personal-ai",
-      "image": "aifeed_defense-contractor-gave-their-personal-ai_20261030_pm.png"
+      "image": "aifeed_defense-contractor-gave-their-personal-ai_20261030_pm.png",
+      "photo": {
+        "dhash": "cce860f0f0f0e0e0",
+        "phash": "0a25504b6f5afcb5",
+        "hist": [
+          727,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          37,
+          0,
+          0,
+          0,
+          63,
+          48,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          58,
+          3,
+          0,
+          0,
+          44,
+          13,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "via": "backfill"
+      }
     },
     {
       "postedAt": "2026-10-30T04:44:13.193Z",
@@ -3774,58 +3927,6 @@
     }
   ],
   "rankings": {
-    "2026-10-17": [
-      {
-        "rank": 1,
-        "title": "Meta’s new terms may allow it to train AI on news sites for free",
-        "canonUrl": "theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers"
-      },
-      {
-        "rank": 2,
-        "title": "Anthropic gives third-party auditors ’employee-like access’ in AI industry first",
-        "canonUrl": "zdnet.com/uncategorized/anthropic-embed-third-party-ai-auditors-safety"
-      },
-      {
-        "rank": 3,
-        "title": "OpenAI models hacked a crypto wallet and breached more websites",
-        "canonUrl": "arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites"
-      },
-      {
-        "rank": 4,
-        "title": "Why AI Isn’t Ready to Tackle Our Convoluted Genomes",
-        "canonUrl": "wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes"
-      },
-      {
-        "rank": 5,
-        "title": "Apple’s new App Store rules crack down on AI nudification and ‘bait-and-switch’ apps",
-        "canonUrl": "9to5mac.com/2026/10/16/apples-new-app-store-rules-crack-down-on-ai-nudification-and-bait-and-switch-apps"
-      },
-      {
-        "rank": 6,
-        "title": "ChatGPT gets deeper Google Chrome integration including control over tabs",
-        "canonUrl": "9to5google.com/2026/10/16/chatgpt-gets-deeper-google-chrome-integration-including-control-over-tabs"
-      },
-      {
-        "rank": 7,
-        "title": "How many jobs is your state losing to AI? This dashboard tracks the cuts – and the cost",
-        "canonUrl": "zdnet.com/innovation/ai-job-cuts-wage-loss-by-state-tracker"
-      },
-      {
-        "rank": 8,
-        "title": "Katie Zacharia Was Linked to an AI Rare-Earths Startup. It’s Even Weirder Than It Sounds",
-        "canonUrl": "wired.com/story/katie-zacharia-was-linked-to-an-ai-rare-earths-startup-its-even-weirder-than-it-sounds"
-      },
-      {
-        "rank": 9,
-        "title": "Some companies give AI to everyone. This CEO is doing the opposite",
-        "canonUrl": "cnbc.com/2026/10/17/ai-workplace-tokenmaxxing-paysend.html"
-      },
-      {
-        "rank": 10,
-        "title": "Simulation App Speeds Up Electric Truck Battery Design",
-        "canonUrl": "spectrum.ieee.org/electric-truck-battery-design-simulation"
-      }
-    ],
     "2026-10-18": [
       {
         "rank": 1,
@@ -4470,6 +4571,68 @@
         "rank": 10,
         "title": "Anthropic is asking Wall Street to believe in AGI",
         "canonUrl": "theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview"
+      }
+    ],
+    "2026-10-31": [
+      {
+        "rank": 1,
+        "title": "Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims",
+        "canonUrl": "wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware"
+      },
+      {
+        "rank": 2,
+        "title": "Thousands of “ghost students” use AI to steal millions in student loans, DOJ says",
+        "canonUrl": "arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans"
+      },
+      {
+        "rank": 3,
+        "title": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
+        "canonUrl": "arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours"
+      },
+      {
+        "rank": 4,
+        "title": "An AI Agent Injected Drugs Into a Live Mouse’s Brain",
+        "canonUrl": "wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse"
+      },
+      {
+        "rank": 5,
+        "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
+        "canonUrl": "arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job"
+      },
+      {
+        "rank": 6,
+        "title": "AI is coming to construction sites. But does it make workers safer?",
+        "canonUrl": "cnbc.com/2026/10/31/ai-construction-worker-safety.html"
+      },
+      {
+        "rank": 7,
+        "title": "Wikipedia’s operator says a bad AI copyright ruling could threaten the open web",
+        "canonUrl": "theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright"
+      },
+      {
+        "rank": 8,
+        "title": "Take These Precautions Before Using AI for Your Election Research",
+        "canonUrl": "cnet.com/tech/services-and-software/ai-chatbots-election-voting-research-decisions"
+      },
+      {
+        "rank": 9,
+        "title": "The biggest names in AI are backing a new way to opt out of scraping",
+        "canonUrl": "theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
+      },
+      {
+        "rank": 10,
+        "title": "Maine’s data center revolt will decide who controls the Senate",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers"
+      },
+      {
+        "rank": 11,
+        "title": "Apple Intelligence is finally coming to China with iOS 27.3",
+        "canonUrl": "theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
+      },
+      {
+        "rank": 12,
+        "title": "Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai"
       }
     ]
   }
