@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "A Defense Contractor Gave Their Personal AI Agent Access to a Secure Pentagon System",
-    "link": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
-    "score": 98,
-    "reason": "Major security breach with concrete real-world impact on national defense infrastructure"
+    "headline": "Microsoft plans to raise $25 billion in debt as it pursues AI buildout",
+    "link": "https://www.cnbc.com/2026/10/29/microsoft-25-billion-debt-offering.html",
+    "score": 95,
+    "reason": "Concrete major capital commitment ($25B), specific action, significant market impact"
   },
   {
     "rank": 2,
-    "headline": "Google admits AI search makes less money, but it's fixing that with more ads",
-    "link": "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads/",
-    "score": 96,
-    "reason": "Significant business model revelation from major tech company with quantifiable impact"
+    "headline": "Indian AI infrastructure firm reportedly seeks to raise $3 billion of debt to buy Nvidia&apos;s next-generation chips",
+    "link": "https://www.cnbc.com/2026/10/30/nvidia-india-ai-chips-computing.html",
+    "score": 88,
+    "reason": "Large funding round ($3B), specific infrastructure play, big numbers"
   },
   {
     "rank": 3,
-    "headline": "Trump declares robot imports a national security threat",
-    "link": "https://arstechnica.com/gadgets/2026/10/trump-declares-robot-imports-a-national-security-threat/",
-    "score": 95,
-    "reason": "Major policy announcement with direct AI industry implications"
+    "headline": "How a Contractor’s Claude Agent Got Into the Pentagon",
+    "link": "https://www.wired.com/story/uncanny-valley-podcast-how-a-contractors-claude-agent-got-into-the-pentagon/",
+    "score": 87,
+    "reason": "Security/controversy, real incident, Anthropic involvement, policy implications"
   },
   {
     "rank": 4,
-    "headline": "Google's satellite AI server transmits its first response to Earth",
-    "link": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
-    "score": 94,
-    "reason": "Significant technical milestone demonstrating AI infrastructure innovation"
+    "headline": "An AI Agent Injected Drugs Into a Live Mouse’s Brain",
+    "link": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/",
+    "score": 84,
+    "reason": "Concrete capability demonstration, controversial, landmark AI autonomy milestone"
   },
   {
     "rank": 5,
-    "headline": "The biggest names in AI are backing a new way to opt out of scraping",
-    "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-    "score": 93,
-    "reason": "Industry-wide coalition addressing major AI training controversy"
+    "headline": "Senators are looking into 'serious privacy risks' with Meta's AI glasses",
+    "link": "https://www.engadget.com/2301968/senators-looking-into-serious-privacy-risks-with-meta-ai-glasses/",
+    "score": 82,
+    "reason": "Regulatory controversy, Congressional action, Meta privacy issues"
   },
   {
     "rank": 6,
-    "headline": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
-    "link": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
-    "score": 92,
-    "reason": "Concrete business impact with large scale increase (5x production)"
+    "headline": "Waymo and Toyota will soon start testing their robotaxis in Japan",
+    "link": "https://www.engadget.com/2301972/waymo-toyota-soon-start-testing-bz4x-robotaxis-japan/",
+    "score": 80,
+    "reason": "Major partnership announcement, geographic expansion, concrete launch plans"
   },
   {
     "rank": 7,
-    "headline": "Mistral Says Its AI Model ‘Le Chonk’ Has Leapfrogged China in the Open-Weight Race",
-    "link": "https://www.wired.com/story/mistral-says-le-chonk-surpasses-chinese-models-cybersecurity/",
-    "score": 91,
-    "reason": "Major competitive milestone in open-weight AI with geopolitical implications"
+    "headline": "Wikipedia’s operator says a bad AI copyright ruling could threaten the open web",
+    "link": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright",
+    "score": 78,
+    "reason": "Legal/policy controversy with broad implications, Wikimedia Foundation statement"
   },
   {
     "rank": 8,
-    "headline": "You can generate and edit Google Docs files directly in Gemini chats now",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
-    "score": 89,
-    "reason": "Major feature launch integrating AI across Google's core productivity suite"
+    "headline": "Google joins OpenAI and Anthropic in promising new scraping controls",
+    "link": "https://www.engadget.com/2303225/google-openai-anthropic-ai-crawling-controls/",
+    "score": 76,
+    "reason": "Major competitor alignment, Google concrete action on data ethics"
   },
   {
     "rank": 9,
-    "headline": "Reddit will force users to log in as AI is killing search traffic",
-    "link": "https://www.engadget.com/2301687/reddit-will-move-to-logged-in-only-as-ai-eats-search-traffic/",
-    "score": 88,
-    "reason": "Significant business model change driven by AI disruption"
+    "headline": "Apple Intelligence is finally coming to China with iOS 27.3",
+    "link": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+    "score": 74,
+    "reason": "Major market launch, China expansion, Apple AI availability milestone"
   },
   {
     "rank": 10,
-    "headline": "Meta quietly launches an AI fashion app for virtually trying on clothes",
-    "link": "https://www.engadget.com/2302003/meta-quietly-launches-an-ai-fashion-app-for-virtually-trying-on-clothes/",
-    "score": 87,
-    "reason": "Major new product launch from tech giant in emerging AI application"
+    "headline": "Foxconn hopes to own 50% of the global AI server market within a couple years",
+    "link": "https://www.cnbc.com/2026/10/30/hon-hai-technology-group-foxconn-ai-server-young-liu-.html",
+    "score": 72,
+    "reason": "Aggressive market targeting, specific goal (50%), infrastructure competition"
   },
   {
     "rank": 11,
-    "headline": "Stop sharing your passwords with AI agents, Bank of America warns customers",
-    "link": "https://www.zdnet.com/innovation/bank-of-america-customers-no-sharing-passwords-ai-agents/",
-    "score": 86,
-    "reason": "Major financial institution warning of real security risk with AI agents"
+    "headline": "Fears over $828 billion AI capex spending spree help erase $1 trillion in market value",
+    "link": "https://fortune.com/2026/10/31/big-tech-ai-capital-spending-spree/",
+    "score": 70,
+    "reason": "Massive market impact ($1T), big numbers, market controversy, concrete data"
   },
   {
     "rank": 12,
-    "headline": "The big questions remaining after Anthropic’s blockbuster IPO prospectus",
-    "link": "https://www.cnbc.com/2026/10/30/anthropic-ipo-s1-revenue-compute.html",
-    "score": 85,
-    "reason": "Major capital event from leading AI company"
+    "headline": "Google stock drops amid AI fears; AI Mode has 'lower monetization,' getting more ads",
+    "link": "https://9to5google.com/2026/10/29/google-stock-drop-ai-mode-ad-expansion/",
+    "score": 68,
+    "reason": "Business model controversy, Google financial impact, monetization concerns"
   },
   {
     "rank": 13,
-    "headline": "Sam Altman sympathizes with mathematicians, but says OpenAI’s math onslaught won’t stop",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
-    "score": 84,
-    "reason": "Leadership statement on major AI capability expansion with industry implications"
+    "headline": "Maine’s data center revolt will decide who controls the Senate",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers",
+    "score": 67,
+    "reason": "Political controversy, data center policy, election significance"
   },
   {
     "rank": 14,
-    "headline": "The Wikimedia Foundation weighs in on the NYT's case against OpenAI",
-    "link": "https://www.engadget.com/2302374/the-wikimedia-foundation-weighs-in-on-the-nyts-case-against-openai/",
-    "score": 83,
-    "reason": "Major stakeholder position in ongoing significant legal controversy"
+    "headline": "Mistral’s New ‘Le Chonk’ AI Model Is Big, Open and Now Available for Download",
+    "link": "https://www.cnet.com/tech/services-and-software/mistral-new-le-chonk-ai-model-open-source-available/",
+    "score": 65,
+    "reason": "Major model release, open-weight milestone, Mistral launch"
   },
   {
     "rank": 15,
-    "headline": "Nvidia responds to report Jensen Huang was target of Chinese asset, says diversion allegations were &apos;investigated and debunked&apos;",
-    "link": "https://www.cnbc.com/2026/10/29/nvidia-jensen-huang-chinese-intelligence-asset.html",
-    "score": 82,
-    "reason": "Response to major security/espionage allegation affecting AI chip leader"
+    "headline": "Data Centers, Flock Cameras and AI: Big Tech Is on Your Midterm Election Ballot",
+    "link": "https://www.cnet.com/tech/services-and-software/tech-issues-midterm-elections-2026-news/",
+    "score": 63,
+    "reason": "Policy/political controversy, regulatory implications, election significance"
   },
   {
     "rank": 16,
-    "headline": "Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
-    "score": 81,
-    "reason": "Major institutional voice addressing AI governance at scale"
+    "headline": "Our AI agent experience: we scrapped the multiple $60,000 salary marketing jobs and hired one person at a far higher salary",
+    "link": "https://fortune.com/2026/10/31/dont-ration-company-ai-token-budgets-caps-accenture/",
+    "score": 61,
+    "reason": "Concrete job displacement example, labor market impact demonstration"
   },
   {
     "rank": 17,
-    "headline": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
-    "score": 79,
-    "reason": "Major consumer brand deploying AI at scale across operations"
+    "headline": "VRChat says it's not adding AI labels despite user survey showing people want that",
+    "link": "https://www.engadget.com/2301786/vrchat-says-its-not-adding-ai-labels-despite-user-survey-showing-people-want-that/",
+    "score": 58,
+    "reason": "User controversy, AI governance pushback, platform decision"
   },
   {
     "rank": 18,
-    "headline": "Democrats see AI hate as winning issue heading into 2028",
-    "link": "https://www.axios.com/2026/10/30/2028-democrats-ai-hate-regulation-messaging",
-    "score": 78,
-    "reason": "Political strategy shift based on AI sentiment with electoral implications"
+    "headline": "Consumer Appetite for Personal AI Goes Mainstream",
+    "link": "https://spectrum.ieee.org/ai-personal-assistant-intelligent-wearables",
+    "score": 55,
+    "reason": "Market trend with adoption data, consumer behavior shift"
   },
   {
     "rank": 19,
-    "headline": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
-    "score": 77,
-    "reason": "Strategic vision statement on AI infrastructure architecture from OpenAI leader"
+    "headline": "AI is coming to construction sites. But does it make workers safer?",
+    "link": "https://www.cnbc.com/2026/10/31/ai-construction-worker-safety.html",
+    "score": 52,
+    "reason": "Industry implementation case, safety controversy, worker impact"
   },
   {
     "rank": 20,
-    "headline": "An AI slowdown that takes some air out of the exuberance could actually extend the boom, Wall Street veteran says",
-    "link": "https://fortune.com/2026/10/30/ai-boom-bust-tech-stock-selloff-hyperscalers-spending-capex/",
-    "score": 76,
-    "reason": "Significant market analysis with implications for AI investment cycle"
+    "headline": "Here’s Why You’re About to See More Ads in Google’s AI Overviews",
+    "link": "https://www.cnet.com/tech/services-and-software/google-expands-advertising-ai-mode-overviews/",
+    "score": 50,
+    "reason": "Google business model change, user experience controversy"
   }
 ]
