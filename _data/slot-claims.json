@@ -322,8 +322,10 @@
       "by": "github-actions"
     },
     "2026-10-31:2": {
-      "status": "claimed",
-      "at": "2026-10-31T21:10:00.232Z",
+      "slug": "dartmouths-provost-warned-us-about-ai",
+      "image": "aifeed_dartmouths-provost-warned-us-about-ai_20261031_pm.png",
+      "status": "posted",
+      "at": "2026-10-31T21:21:00.140Z",
       "by": "github-actions"
     }
   }
