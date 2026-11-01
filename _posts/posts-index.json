@@ -1,5 +1,25 @@
 [
   {
+    "id": "judge-says-xai-must-face-naacp-20261101",
+    "slug": "judge-says-xai-must-face-naacp",
+    "headline": "Judge says xAI must face NAACP lawsuit on data center pollution",
+    "summary": "A federal judge denied xAI's dismissal request, allowing the NAACP's lawsuit over unpermitted turbines at its Memphis data center to proceed.",
+    "body": "<p>Federal judge allows NAACP lawsuit against xAI over unpermitted turbines to proceed.</p>\n<p>A federal judge denied xAI's request to dismiss a lawsuit filed by the NAACP alleging its data center campus in Memphis, Tennessee is running turbines without proper permits and violating the Clean Air Act. US District Judge Debra M. Brown's decision allows the lawsuit to move forward. The NAACP filed its legal action against xAI in April, accusing the company of using unpermitted methane gas turbines to power data centers in the Memphis area.</p>\n<p>Judge Brown ruled in her decision that the power plant providing all turbines to xAI's data center was not mobile and therefore not exempt from the permitting process. xAI had argued the turbines were exempt from permitting requirements because they were mobile, but the judge rejected this claim.</p>\n<p>Despite the ongoing lawsuit claiming Clean Air Act violations, xAI continued adding gas turbines to another AI data center site in nearby Southhaven, Mississippi. The company requested dismissal of the NAACP lawsuit and received support from the Justice Department, which claimed xAI's operations are crucial to US military operations.</p>\n<p>As AI companies ramp up data center construction to fuel AI development, neighboring communities are becoming increasingly averse to these buildouts due to pollution and environmental impact concerns.</p>\n<p>A federal judge ruled xAI's Memphis data center must face NAACP allegations of operating unpermitted turbines violating the Clean Air Act.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_judge-says-xai-must-face-naacp_20261101_pm.png",
+    "image": "images/aifeed_judge-says-xai-must-face-naacp_20261101_pm.png",
+    "sourceUrl": "https://www.engadget.com/2303462/judge-says-xai-must-face-naacp-lawsuit-on-data-center-pollution/",
+    "publishedAt": "2026-11-01T22:13:53.688Z",
+    "hashtags": [
+      "xAI",
+      "DataCenter",
+      "Environment",
+      "CleanAirAct",
+      "NAACP"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "chatbots-are-leading-hikers-astray-with-20261101",
     "slug": "chatbots-are-leading-hikers-astray-with",
     "headline": "Chatbots Are Leading Hikers Astray, With Dangerous Consequences",
