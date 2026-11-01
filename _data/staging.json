@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Google's satellite AI server transmits its first response to Earth",
-    "link": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+    "headline": "How a Contractor’s Claude Agent Got Into the Pentagon",
+    "link": "https://www.wired.com/story/uncanny-valley-podcast-how-a-contractors-claude-agent-got-into-the-pentagon/",
     "score": 94,
-    "reason": "Major infrastructure launch with big technical achievement"
+    "reason": "Major security breach involving Anthropic's Claude at Pentagon; concrete incident with high stakes"
   },
   {
     "rank": 2,
-    "headline": "OpenAI pares fundraising goal, now seeking up to $20 billion in latest round",
-    "link": "https://www.cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html",
+    "headline": "An AI Agent Injected Drugs Into a Live Mouse’s Brain",
+    "link": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/",
     "score": 89,
-    "reason": "Significant funding pivot with concrete numbers showing market shift"
+    "reason": "Significant autonomous AI milestone in biomedical research; demonstrates real-world capability"
   },
   {
     "rank": 3,
-    "headline": "The biggest names in AI are backing a new way to opt out of scraping",
-    "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-    "score": 87,
-    "reason": "Major industry players launching coordinated initiative on controversial topic"
+    "headline": "Companies promised AI gains — here&apos;s how the payoff showed up in earnings",
+    "link": "https://www.cnbc.com/2026/11/01/ai-investments-company-earnings.html",
+    "score": 85,
+    "reason": "Quantified AI ROI data from major companies; addresses hype vs. reality"
   },
   {
     "rank": 4,
-    "headline": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
-    "link": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
-    "score": 85,
-    "reason": "Big number (5x) showing concrete AI impact on manufacturing"
+    "headline": "Chatbots Are Leading Hikers Astray, With Dangerous Consequences",
+    "link": "https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences/",
+    "score": 82,
+    "reason": "Documented harm from AI systems; concrete real-world controversy"
   },
   {
     "rank": 5,
-    "headline": "Sam Altman sympathizes with mathematicians, but says OpenAI’s math onslaught won’t stop",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
-    "score": 81,
-    "reason": "Executive statement on controversial capability expansion"
+    "headline": "Apple Intelligence is finally coming to China with iOS 27.3",
+    "link": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+    "score": 79,
+    "reason": "Apple's major market expansion for AI features; significant launch"
   },
   {
     "rank": 6,
-    "headline": "The big questions remaining after Anthropic’s blockbuster IPO prospectus",
-    "link": "https://www.cnbc.com/2026/10/30/anthropic-ipo-s1-revenue-compute.html",
-    "score": 78,
-    "reason": "Major company milestone with significant financial implications"
+    "headline": "Meta’s Muse Could Upend All Kinds of Businesses. It Hasn’t Yet",
+    "link": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/",
+    "score": 76,
+    "reason": "Meta's new AI product launch with market impact analysis"
   },
   {
     "rank": 7,
-    "headline": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
-    "score": 76,
-    "reason": "Major consumer brand launching AI feature"
+    "headline": "Maine’s data center revolt will decide who controls the Senate",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers",
+    "score": 74,
+    "reason": "AI infrastructure controversy with political consequences; high-stakes real issue"
   },
   {
     "rank": 8,
-    "headline": "The humans burning out on AI's cyber frontlines",
-    "link": "https://www.axios.com/2026/10/30/cybersecurity-ai-burnout-human-workers",
-    "score": 74,
-    "reason": "Controversy about AI implementation impact on workforce"
+    "headline": "AI is coming to construction sites. But does it make workers safer?",
+    "link": "https://www.cnbc.com/2026/10/31/ai-construction-worker-safety.html",
+    "score": 71,
+    "reason": "Emerging AI deployment in major industry sector; safety-related controversy"
   },
   {
     "rank": 9,
-    "headline": "AI boom hits a wall on Wall Street as OpenAI cuts fundraising target while Meta gets a credit warning over its cash flow, spending and monetization",
-    "link": "https://fortune.com/2026/10/31/ai-boom-bust-openai-fundraising-target-meta-credit-warning-cash-flow-capex/",
-    "score": 72,
-    "reason": "Multiple major companies facing concrete financial consequences"
+    "headline": "While Americans turn against data centers, Brazil offers tax breaks and cheap power, representing a potential ‘release valve’ for U.S. constraints",
+    "link": "https://fortune.com/2026/11/01/data-centers-brazil-lula-redata-amazon-google-microsoft-openai/",
+    "score": 68,
+    "reason": "Major geopolitical shift in AI infrastructure investment; quantified incentives"
   },
   {
     "rank": 10,
-    "headline": "Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
-    "score": 68,
-    "reason": "High-profile controversy statement from major institutional figure"
+    "headline": "Xbox manager says AI is already being used in game development",
+    "link": "https://www.engadget.com/2302431/brandon-stirrup-xbox-manager-says-ai-used-game-development/",
+    "score": 65,
+    "reason": "Major gaming company confirms AI integration; concrete implementation data"
   }
 ]
