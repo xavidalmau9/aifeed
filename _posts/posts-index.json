@@ -1,5 +1,25 @@
 [
   {
+    "id": "chatbots-are-leading-hikers-astray-with-20261101",
+    "slug": "chatbots-are-leading-hikers-astray-with",
+    "headline": "Chatbots Are Leading Hikers Astray, With Dangerous Consequences",
+    "summary": "AI chatbots reportedly contribute to risky backcountry decisions, with rescue teams documenting multiple incidents of poor planning.",
+    "body": "<p>**AI chatbots may contribute to risky backcountry decisions, with rescue teams documenting multiple incidents.**</p>\n<p>Three hikers on Mount Shasta in Northern California relied on Google's Gemini for trip planning. They summited at 7:30 pm and descended in the dark, with one hiker injuring his knee before rescue arrived. Forest Service officials said the hikers' lack of preparation and poor planning came partly from relying on the AI chatbot.</p>\n<p>Multiple incidents reportedly illustrate risks of AI-assisted outdoor planning. A 16-year-old in British Columbia used Anthropic's Claude to help plan a hiking trip and required helicopter rescue from a mountain ledge. Other cases include visitors pitching tents near no-camping signs because AI told them they could, and hikers carrying AI-generated maps with incorrect feature locations.</p>\n<p>Grand Teton National Park in Wyoming reported AI use for travel planning rose from zero to 26% of visitors in one year. Park officials said they're guessing the upward curve won't flatten. However, search and rescue calls in Wyoming actually declined in 2026 compared to 2025.</p>\n<p>Experts identify potential risks in relying on AI for backcountry decisions. Chatbots can hallucinate persuasively, presenting fabricated information as fact. AI use may trigger cognitive surrender, where people abandon critical thinking. Chatbots may source information from Reddit threads and outdated videos, then present unverified guidance with false authority.</p>\n<p>Safety experts recommend verifying AI-generated information against authoritative sources like public-land agency maps, trail associations, and guidebooks. Consulting with rangers, guides, or forest officials provides human expertise. As one Forest Service manager noted, people heading into life-threatening terrain should approach planning seriously rather than outsourcing decisions to algorithms.</p>\n<p>AI chatbots may present novel hazards for backcountry hikers by providing hallucinated information and potentially enabling cognitive surrender over critical thinking.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_chatbots-are-leading-hikers-astray-with_20261101_am.png",
+    "image": "images/aifeed_chatbots-are-leading-hikers-astray-with_20261101_am.png",
+    "sourceUrl": "https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences/",
+    "publishedAt": "2026-11-01T13:07:54.430Z",
+    "hashtags": [
+      "AIRisks",
+      "Hiking",
+      "Chatbots",
+      "Backcountry",
+      "Safety"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "dartmouths-provost-warned-us-about-ai-20261031",
     "slug": "dartmouths-provost-warned-us-about-ai",
     "headline": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",

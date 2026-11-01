@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-01T13:07:54.430Z",
+      "date": "2026-11-01",
+      "slot": 1,
+      "headline": "Chatbots Are Leading Hikers Astray, With Dangerous Consequences",
+      "canonUrl": "wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences",
+      "url": "https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences/",
+      "slug": "chatbots-are-leading-hikers-astray-with",
+      "image": "aifeed_chatbots-are-leading-hikers-astray-with_20261101_am.png",
+      "photo": {
+        "dhash": "869f9f9e1e0e9b9b",
+        "phash": "c0640f2eec8193ff",
+        "hist": [
+          52,
+          310,
+          0,
+          0,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          53,
+          12,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          36,
+          15,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          509
+        ],
+        "url": "https://media.wired.com/photos/6ae22d8856ee4dcb93f11713/1:1/w_1600,c_limit/HCN406-scaled.jpg",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-31T21:13:25.195Z",
       "date": "2026-10-31",
       "slot": 2,
@@ -4009,23 +4091,6 @@
     }
   ],
   "rankings": {
-    "2026-10-18": [
-      {
-        "rank": 1,
-        "title": "Meta’s new terms may allow it to train AI on news sites for free",
-        "canonUrl": "theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers"
-      },
-      {
-        "rank": 2,
-        "title": "Some companies give AI to everyone. This CEO is doing the opposite",
-        "canonUrl": "cnbc.com/2026/10/17/ai-workplace-tokenmaxxing-paysend.html"
-      },
-      {
-        "rank": 3,
-        "title": "OpenAI is building a humanoid robot, but the body isn't the real challenge",
-        "canonUrl": "engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge"
-      }
-    ],
     "2026-10-19": [
       {
         "rank": 1,
@@ -4715,6 +4780,33 @@
         "rank": 12,
         "title": "Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’",
         "canonUrl": "theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai"
+      }
+    ],
+    "2026-11-01": [
+      {
+        "rank": 1,
+        "title": "Chatbots Are Leading Hikers Astray, With Dangerous Consequences",
+        "canonUrl": "wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences"
+      },
+      {
+        "rank": 2,
+        "title": "An AI Agent Injected Drugs Into a Live Mouse’s Brain",
+        "canonUrl": "wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse"
+      },
+      {
+        "rank": 3,
+        "title": "AI is coming to construction sites. But does it make workers safer?",
+        "canonUrl": "cnbc.com/2026/10/31/ai-construction-worker-safety.html"
+      },
+      {
+        "rank": 4,
+        "title": "Binance resumes withdrawals following $6.3 billion hack, says 90% of stolen user assets are covered",
+        "canonUrl": "cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html"
+      },
+      {
+        "rank": 5,
+        "title": "Companies promised AI gains — here's how the payoff showed up in earnings",
+        "canonUrl": "cnbc.com/2026/11/01/ai-investments-company-earnings.html"
       }
     ]
   }
