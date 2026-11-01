@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "How a Contractor’s Claude Agent Got Into the Pentagon",
-    "link": "https://www.wired.com/story/uncanny-valley-podcast-how-a-contractors-claude-agent-got-into-the-pentagon/",
-    "score": 94,
-    "reason": "Major security breach involving Anthropic's Claude at Pentagon; concrete incident with high stakes"
+    "headline": "OpenAI pares fundraising goal, now seeking up to $20 billion in latest round",
+    "link": "https://www.cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html",
+    "score": 92,
+    "reason": "Major funding development with specific dollar amount; OpenAI adjusting strategy post-controversy"
   },
   {
     "rank": 2,
-    "headline": "An AI Agent Injected Drugs Into a Live Mouse’s Brain",
-    "link": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/",
-    "score": 89,
-    "reason": "Significant autonomous AI milestone in biomedical research; demonstrates real-world capability"
+    "headline": "The biggest names in AI are backing a new way to opt out of scraping",
+    "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+    "score": 88,
+    "reason": "Industry-wide initiative from multiple major AI companies; data scraping controversy resolution"
   },
   {
     "rank": 3,
-    "headline": "Companies promised AI gains — here&apos;s how the payoff showed up in earnings",
-    "link": "https://www.cnbc.com/2026/11/01/ai-investments-company-earnings.html",
+    "headline": "Judge says xAI must face NAACP lawsuit on data center pollution",
+    "link": "https://www.engadget.com/2303462/judge-says-xai-must-face-naacp-lawsuit-on-data-center-pollution/",
     "score": 85,
-    "reason": "Quantified AI ROI data from major companies; addresses hype vs. reality"
+    "reason": "Legal action with environmental impact; major AI company facing lawsuit"
   },
   {
     "rank": 4,
-    "headline": "Chatbots Are Leading Hikers Astray, With Dangerous Consequences",
-    "link": "https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences/",
+    "headline": "Anthropic updates Claude to stop it from recreating existing video games",
+    "link": "https://www.engadget.com/2303469/anthropic-updates-claude-to-stop-it-from-recreating-existing-video-games/",
     "score": 82,
-    "reason": "Documented harm from AI systems; concrete real-world controversy"
+    "reason": "IP/copyright controversy; Anthropic taking action on model capability limits"
   },
   {
     "rank": 5,
-    "headline": "Apple Intelligence is finally coming to China with iOS 27.3",
-    "link": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
-    "score": 79,
-    "reason": "Apple's major market expansion for AI features; significant launch"
+    "headline": "Why AI is boosting Meta&apos;s ad business while hurting Google search",
+    "link": "https://www.cnbc.com/2026/11/01/ai-meta-ads-google-search.html",
+    "score": 80,
+    "reason": "Major market impact; contrasting effects on two tech giants"
   },
   {
     "rank": 6,
-    "headline": "Meta’s Muse Could Upend All Kinds of Businesses. It Hasn’t Yet",
-    "link": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/",
-    "score": 76,
-    "reason": "Meta's new AI product launch with market impact analysis"
+    "headline": "OpenAI adds stricter limits for teens asking about firearms",
+    "link": "https://www.engadget.com/2303421/openai-adds-stricter-limits-for-teens-asking-about-firearms/",
+    "score": 78,
+    "reason": "Safety policy update; age-gated restrictions implementation"
   },
   {
     "rank": 7,
-    "headline": "Maine’s data center revolt will decide who controls the Senate",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers",
-    "score": 74,
-    "reason": "AI infrastructure controversy with political consequences; high-stakes real issue"
+    "headline": "Meta reportedly built a humanoid robot prototype that can do household chores",
+    "link": "https://www.engadget.com/2303434/meta-reportedly-built-a-humanoid-robot-prototype-that-can-do-household-chores/",
+    "score": 75,
+    "reason": "Hardware development milestone; Meta's robotics advancement"
   },
   {
     "rank": 8,
-    "headline": "AI is coming to construction sites. But does it make workers safer?",
-    "link": "https://www.cnbc.com/2026/10/31/ai-construction-worker-safety.html",
-    "score": 71,
-    "reason": "Emerging AI deployment in major industry sector; safety-related controversy"
+    "headline": "Anthropic’s potential $2 trillion IPO could turn staff into millionaires—but the AI firm is asking candidates what they’d do if stock fell to zero",
+    "link": "https://fortune.com/article/anthropic-ipo-could-create-millionaires-but-company-worried-about-money-over-mission-ai-firm-billionaire-ceo-dario-amodei/",
+    "score": 72,
+    "reason": "Massive valuation projection; IPO speculation with corporate culture insight"
   },
   {
     "rank": 9,
-    "headline": "While Americans turn against data centers, Brazil offers tax breaks and cheap power, representing a potential ‘release valve’ for U.S. constraints",
-    "link": "https://fortune.com/2026/11/01/data-centers-brazil-lula-redata-amazon-google-microsoft-openai/",
-    "score": 68,
-    "reason": "Major geopolitical shift in AI infrastructure investment; quantified incentives"
+    "headline": "Behind the Curtain: OpenAI's post-election power play",
+    "link": "https://www.axios.com/2026/11/01/scoop-openai-post-midterm-policy",
+    "score": 70,
+    "reason": "Political controversy; OpenAI's influence and strategy"
   },
   {
     "rank": 10,
-    "headline": "Xbox manager says AI is already being used in game development",
-    "link": "https://www.engadget.com/2302431/brandon-stirrup-xbox-manager-says-ai-used-game-development/",
-    "score": 65,
-    "reason": "Major gaming company confirms AI integration; concrete implementation data"
+    "headline": "‘The best thing that you can do for your career is to make yourself redundant’: Inside Stellantis’ AI push after the 'starting gun went off'",
+    "link": "https://fortune.com/2026/11/01/stellantis-detroit-ai-best-thing-make-yourself-redundant-chrysler/",
+    "score": 68,
+    "reason": "Workplace automation impact; major auto company's AI strategy"
   }
 ]
