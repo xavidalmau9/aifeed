@@ -1,6 +1,1151 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-02T13:17:56.531Z",
+      "date": "2026-11-02",
+      "slot": 1,
+      "headline": "Fake nuclear warnings in Ukraine as Moscow, Kyiv report separate cyberattacks on emergency apps",
+      "canonUrl": "cnbc.com/2026/11/02/russia-ukraine-cyberattack-zelenskyy-putin.html",
+      "url": "https://www.cnbc.com/2026/11/02/russia-ukraine-cyberattack-zelenskyy-putin.html",
+      "slug": "fake-nuclear-warnings-in-ukraine-as",
+      "image": "aifeed_fake-nuclear-warnings-in-ukraine-as_20261102_am.png",
+      "photo": {
+        "dhash": "840006a6b53e5a5c",
+        "phash": "d496b6aadaaa0aa3",
+        "hist": [
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          12,
+          13,
+          2,
+          0,
+          0,
+          0,
+          2,
+          300,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          616,
+          0,
+          0,
+          0,
+          39,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "url": "https://image.cnbcfm.com/api/v1/image/108502808-1793614626934-gettyimages-2302510526-dsc09185.jpeg?v=1793614654&w=1920&h=1080",
+        "via": "og:image"
+      }
+    },
+    {
+      "postedAt": "2026-11-01T22:13:53.688Z",
+      "date": "2026-11-01",
+      "slot": 2,
+      "headline": "Judge says xAI must face NAACP lawsuit on data center pollution",
+      "canonUrl": "engadget.com/2303462/judge-says-xai-must-face-naacp-lawsuit-on-data-center-pollution",
+      "url": "https://www.engadget.com/2303462/judge-says-xai-must-face-naacp-lawsuit-on-data-center-pollution/",
+      "slug": "judge-says-xai-must-face-naacp",
+      "image": "aifeed_judge-says-xai-must-face-naacp_20261101_pm.png",
+      "photo": {
+        "dhash": "8cacfe81dff1f2ba",
+        "phash": "a985aacaaa316b1f",
+        "hist": [
+          6,
+          22,
+          0,
+          0,
+          6,
+          312,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          235,
+          59,
+          0,
+          0,
+          1,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          5,
+          0,
+          0,
+          2,
+          55,
+          31,
+          0,
+          0,
+          0,
+          75,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          5,
+          0,
+          0,
+          0,
+          154
+        ],
+        "url": "https://www.engadget.com/img/gallery/judge-says-xai-must-face-naacp-lawsuit-on-data-center-pollution/l-intro-1793560530.jpg",
+        "via": "og:image"
+      }
+    },
+    {
+      "postedAt": "2026-11-01T13:07:54.430Z",
+      "date": "2026-11-01",
+      "slot": 1,
+      "headline": "Chatbots Are Leading Hikers Astray, With Dangerous Consequences",
+      "canonUrl": "wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences",
+      "url": "https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences/",
+      "slug": "chatbots-are-leading-hikers-astray-with",
+      "image": "aifeed_chatbots-are-leading-hikers-astray-with_20261101_am.png",
+      "photo": {
+        "dhash": "869f9f9e1e0e9b9b",
+        "phash": "c0640f2eec8193ff",
+        "hist": [
+          52,
+          310,
+          0,
+          0,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          53,
+          12,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          36,
+          15,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          509
+        ],
+        "url": "https://media.wired.com/photos/6ae22d8856ee4dcb93f11713/1:1/w_1600,c_limit/HCN406-scaled.jpg",
+        "via": "og:image"
+      }
+    },
+    {
+      "postedAt": "2026-10-31T21:13:25.195Z",
+      "date": "2026-10-31",
+      "slot": 2,
+      "headline": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
+      "canonUrl": "arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job",
+      "url": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/",
+      "slug": "dartmouths-provost-warned-us-about-ai",
+      "image": "aifeed_dartmouths-provost-warned-us-about-ai_20261031_pm.png",
+      "photo": {
+        "dhash": "34b63231272d3636",
+        "phash": "d2525a89a9aaadad",
+        "hist": [
+          1,
+          1,
+          0,
+          0,
+          7,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          32,
+          233,
+          0,
+          0,
+          1,
+          485,
+          69,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          63,
+          27,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          68
+        ],
+        "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2228700612-2560x1440.jpg",
+        "via": "og:image"
+      }
+    },
+    {
+      "postedAt": "2026-10-31T12:10:01.694Z",
+      "date": "2026-10-31",
+      "slot": 1,
+      "headline": "Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims",
+      "canonUrl": "wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware",
+      "url": "https://www.wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware/",
+      "slug": "spooky-new-infostealer-malware-uses-ai",
+      "image": "aifeed_spooky-new-infostealer-malware-uses-ai_20261031_am.png",
+      "photo": {
+        "dhash": "eccc710309098b8f",
+        "phash": "87f12bca1d934c4d",
+        "hist": [
+          295,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          6,
+          87,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          1,
+          0,
+          0,
+          2,
+          138,
+          1,
+          0,
+          0,
+          1,
+          0,
+          79,
+          0,
+          0,
+          0,
+          9,
+          8,
+          0,
+          0,
+          0,
+          4,
+          5,
+          1,
+          0,
+          0,
+          9,
+          346
+        ],
+        "url": "https://media.wired.com/photos/6ae4e9f503c2c36f4cfc913c/1:1/w_1600,c_limit/KernelPanic_10312026_v1.jpg",
+        "via": "og:image"
+      }
+    },
+    {
+      "postedAt": "2026-10-30T21:15:28.808Z",
+      "date": "2026-10-30",
+      "slot": 2,
+      "headline": "A Defense Contractor Gave Their Personal AI Agent Access to a Secure Pentagon System",
+      "canonUrl": "wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system",
+      "url": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
+      "slug": "defense-contractor-gave-their-personal-ai",
+      "image": "aifeed_defense-contractor-gave-their-personal-ai_20261030_pm.png",
+      "photo": {
+        "dhash": "cce860f0f0f0e0e0",
+        "phash": "0a25504b6f5afcb5",
+        "hist": [
+          727,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          37,
+          0,
+          0,
+          0,
+          63,
+          48,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          58,
+          3,
+          0,
+          0,
+          44,
+          13,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "via": "backfill"
+      }
+    },
+    {
+      "postedAt": "2026-10-30T04:44:13.193Z",
+      "date": "2026-10-30",
+      "slot": 1,
+      "headline": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+      "canonUrl": "theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+      "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+      "slug": "google-launches-gemini-carbon-with-significant",
+      "image": "aifeed_google-launches-gemini-carbon-with-significant_20261030_am.png",
+      "photo": {
+        "dhash": "c8a34e692d2d2c1c",
+        "phash": "87d3b4a0f8423f87",
+        "hist": [
+          688,
+          59,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          19,
+          0,
+          0,
+          0,
+          28,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          112,
+          0,
+          0,
+          0,
+          0
+        ],
+        "via": "backfill"
+      }
+    },
+    {
+      "postedAt": "2026-10-29T21:17:07.667Z",
+      "date": "2026-10-29",
+      "slot": 2,
+      "headline": "Macmillan Staff Say the Publisher Threw a Party for a Workplace AI Assistant That Was Later Killed",
+      "canonUrl": "wired.com/story/macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-assistant-that-was-later-killed",
+      "url": "https://www.wired.com/story/macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-assistant-that-was-later-killed/",
+      "slug": "macmillan-staff-say-the-publisher-threw",
+      "image": "aifeed_macmillan-staff-say-the-publisher-threw_20261029_pm.png",
+      "photo": {
+        "dhash": "969686c461320e8e",
+        "phash": "d2123c727b8e7439",
+        "hist": [
+          155,
+          17,
+          0,
+          0,
+          16,
+          9,
+          1,
+          0,
+          27,
+          0,
+          0,
+          0,
+          34,
+          0,
+          0,
+          0,
+          49,
+          13,
+          0,
+          0,
+          36,
+          47,
+          2,
+          0,
+          4,
+          2,
+          0,
+          0,
+          84,
+          5,
+          0,
+          0,
+          20,
+          5,
+          0,
+          0,
+          43,
+          24,
+          0,
+          0,
+          12,
+          18,
+          17,
+          0,
+          3,
+          61,
+          69,
+          0,
+          1,
+          1,
+          0,
+          0,
+          11,
+          16,
+          0,
+          0,
+          4,
+          4,
+          3,
+          0,
+          0,
+          1,
+          165,
+          24
+        ],
+        "url": "https://media.wired.com/photos/6ad92ed7649bdf60df6fd555/1:1/w_1600,c_limit/culture_macmillon_failed_ai_project.jpg",
+        "via": "in-article image"
+      }
+    },
+    {
+      "postedAt": "2026-10-29T12:10:17.073Z",
+      "date": "2026-10-29",
+      "slot": 1,
+      "headline": "xAI is buying out homeowners who promise not to sue over data center noise",
+      "canonUrl": "theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit",
+      "slug": "xai-is-buying-out-homeowners-who",
+      "image": "aifeed_xai-is-buying-out-homeowners-who_20261029_am.png",
+      "photo": {
+        "dhash": "98e1e38084a2b203",
+        "phash": "7bac84a929d6464f",
+        "hist": [
+          27,
+          11,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          15,
+          183,
+          22,
+          0,
+          0,
+          15,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          21,
+          3,
+          0,
+          0,
+          38,
+          176,
+          45,
+          0,
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          410
+        ],
+        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2289399619.jpg?quality=90&strip=all&crop=0%2C10.738447150137%2C100%2C78.523105699726&w=1200",
+        "via": "og:image"
+      }
+    },
+    {
+      "postedAt": "2026-10-28T21:44:50.554Z",
+      "date": "2026-10-28",
+      "slot": 2,
+      "headline": "AI Emergency Alerts Are Coming. Humans Might Not Be Ready",
+      "canonUrl": "wired.com/story/ai-emergency-alerts-coming-humans-not-ready",
+      "url": "https://www.wired.com/story/ai-emergency-alerts-coming-humans-not-ready/",
+      "slug": "ai-emergency-alerts-are-coming-humans",
+      "image": "aifeed_ai-emergency-alerts-are-coming-humans_20261028_pm.png",
+      "photo": {
+        "dhash": "60f901fdfff1f3ff",
+        "phash": "c969c947023e3bb9",
+        "hist": [
+          224,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          203,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          1,
+          5,
+          0,
+          0,
+          0,
+          3,
+          116,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          18,
+          9,
+          0,
+          0,
+          0,
+          4,
+          249,
+          1,
+          0,
+          0,
+          129,
+          20
+        ],
+        "via": "backfill"
+      }
+    },
+    {
+      "postedAt": "2026-10-28T12:21:57.448Z",
+      "date": "2026-10-28",
+      "slot": 1,
+      "headline": "UK Home Office May Face Investigation Over Use of OpenAI Tech",
+      "canonUrl": "wired.com/story/uk-home-office-may-face-investigation-over-use-of-openai-tools",
+      "url": "https://www.wired.com/story/uk-home-office-may-face-investigation-over-use-of-openai-tools/",
+      "slug": "uk-home-office-may-face-investigation",
+      "image": "aifeed_uk-home-office-may-face-investigation_20261028_am.png",
+      "photo": {
+        "dhash": "e3c34b4bcb474745",
+        "phash": "06b915159527f95b",
+        "hist": [
+          178,
+          6,
+          0,
+          0,
+          8,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          5,
+          164,
+          9,
+          0,
+          0,
+          2,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          120,
+          0,
+          0,
+          0,
+          68,
+          130,
+          2,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          7,
+          262
+        ],
+        "url": "https://media.wired.com/photos/6ada70c6eb086323489423af/1:1/w_1600,c_limit/GettyImages-2275955534.jpg",
+        "via": "in-article image"
+      }
+    },
+    {
+      "postedAt": "2026-10-27T21:10:28.298Z",
+      "date": "2026-10-27",
+      "slot": 2,
+      "headline": "AI Killed the Homework Era",
+      "canonUrl": "cnet.com/tech/services-and-software/ai-killed-the-homework-era",
+      "url": "https://www.cnet.com/tech/services-and-software/ai-killed-the-homework-era/",
+      "slug": "ai-killed-the-homework-era",
+      "image": "aifeed_ai-killed-the-homework-era_20261027_pm.png",
+      "photo": {
+        "dhash": "7c6e7c3c498d4100",
+        "phash": "cb9196b6a6a98d13",
+        "hist": [
+          102,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          5,
+          0,
+          0,
+          13,
+          107,
+          14,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          37,
+          1,
+          0,
+          0,
+          21,
+          63,
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          56,
+          0,
+          0,
+          0,
+          179,
+          374
+        ],
+        "url": "https://www.cnet.com/wp-content/uploads/sites/2/GettyImages-2204906139.jpg",
+        "via": "og:image"
+      }
+    },
+    {
+      "postedAt": "2026-10-27T12:13:14.809Z",
+      "date": "2026-10-27",
+      "slot": 1,
+      "headline": "Data center backlash is uniting America",
+      "canonUrl": "theverge.com/policy/1019152/data-centers-midterm-elections",
+      "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections",
+      "slug": "data-center-backlash-is-uniting-america",
+      "image": "aifeed_data-center-backlash-is-uniting-america_20261027_am.png",
+      "photo": {
+        "dhash": "5b78e42d388c1333",
+        "phash": "6a55962f4e96a0ad",
+        "hist": [
+          153,
+          6,
+          1,
+          0,
+          0,
+          0,
+          3,
+          175,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          118,
+          22,
+          144,
+          0,
+          0,
+          0,
+          81,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          72,
+          25,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          21,
+          0,
+          0,
+          0,
+          172
+        ],
+        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268813_ELECTIONS_DATA_CENTERS_CVirginia.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+        "via": "og:image"
+      }
+    },
+    {
+      "postedAt": "2026-10-26T21:15:38.050Z",
+      "date": "2026-10-26",
+      "slot": 2,
+      "headline": "SoftBank reportedly plans $50 billion tech investment in aspiring 'AI nation' Malaysia",
+      "canonUrl": "cnbc.com/2026/10/26/softbank-masayoshi-son-malaysia-ai-billions.html",
+      "url": "https://www.cnbc.com/2026/10/26/softbank-masayoshi-son-malaysia-ai-billions.html",
+      "slug": "softbank-reportedly-plans-50-billion-tech",
+      "image": "aifeed_softbank-reportedly-plans-50-billion-tech_20261026_pm.png",
+      "photo": {
+        "dhash": "ac7cfbebfdfefcfc",
+        "phash": "55f82a2958d2a7ad",
+        "hist": [
+          180,
+          0,
+          0,
+          0,
+          186,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          16,
+          42,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          79,
+          0,
+          0,
+          1,
+          23,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          119,
+          294,
+          0,
+          0,
+          0,
+          14,
+          17
+        ],
+        "url": "https://image.cnbcfm.com/api/v1/image/108246651-1767105043132-108246651-1767103912282-gettyimages-2248717434-JAPAN_FII.jpeg?v=1767105059&w=1920&h=1080",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-10-26T12:16:55.112Z",
       "date": "2026-10-26",
       "slot": 1,
@@ -3110,365 +4255,6 @@
     }
   ],
   "rankings": {
-    "2026-10-13": [
-      {
-        "rank": 1,
-        "title": "Character.AI files for bankruptcy",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney"
-      },
-      {
-        "rank": 2,
-        "title": "Microsoft’s new AI chip makes it less reliant on Nvidia’s GPUs",
-        "canonUrl": "theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout"
-      },
-      {
-        "rank": 3,
-        "title": "AI labs are buying data from dead startups to train their models",
-        "canonUrl": "technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models"
-      },
-      {
-        "rank": 4,
-        "title": "Anthropic warns AI models could soon copy themselves across home devices",
-        "canonUrl": "cnbc.com/2026/10/13/anthropic-ai-models-self-replication-smart-devices.html"
-      },
-      {
-        "rank": 5,
-        "title": "The Biggest Pro-AI Super PAC Network Has Poured Millions Into Nevada Shell Companies",
-        "canonUrl": "wired.com/story/the-biggest-pro-ai-super-pac-network-has-poured-millions-into-nevada-shell-companies"
-      },
-      {
-        "rank": 6,
-        "title": "How Red Bull's F1 team is using AI to make split-second decisions for Max Verstappen",
-        "canonUrl": "cnbc.com/2026/10/13/red-bull-f1-ai-max-verstappen.html"
-      },
-      {
-        "rank": 7,
-        "title": "Epic Games reportedly pivoting to \"AI first\" game development model",
-        "canonUrl": "arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration"
-      },
-      {
-        "rank": 8,
-        "title": "Wikipedians Believed AI Would Come and Go. They Were Wrong",
-        "canonUrl": "wired.com/story/book-excerpt-the-last-best-place-on-the-internet-wikipedia-artificial-intelligence"
-      },
-      {
-        "rank": 9,
-        "title": "Microsoft President Says AI Has Fewer Regulations Than Milk. So Now What?",
-        "canonUrl": "cnet.com/tech/services-and-software/microsoft-president-ai-has-fewer-regulations-than-milk"
-      },
-      {
-        "rank": 10,
-        "title": "Amazon has over 1 million robot workers. What’s next for human employees?",
-        "canonUrl": "arstechnica.com/ai/2026/10/inside-amazons-robotic-arms-race-and-what-it-means-for-the-future-of-human-work"
-      },
-      {
-        "rank": 11,
-        "title": "X bundles Premium, Grok and Cursor under a single monthly subscription",
-        "canonUrl": "engadget.com/2284943/x-subscription-bundles-premium-grok-cursor"
-      },
-      {
-        "rank": 12,
-        "title": "Epic reportedly delays its Disney video game so it can be made using more AI",
-        "canonUrl": "engadget.com/2284680/epic-reportedly-delays-its-disney-video-game-so-it-can-be-made-using-more-ai"
-      }
-    ],
-    "2026-10-14": [
-      {
-        "rank": 1,
-        "title": "AI Models Can Be Easily Modified to Assist Terrorist and Extremist Activity",
-        "canonUrl": "wired.com/story/ai-models-can-be-easily-modified-to-assist-terrorist-and-extremist-activity"
-      },
-      {
-        "rank": 2,
-        "title": "OpenAI and Anthropic Tell British Lawmakers: Regulate Us",
-        "canonUrl": "wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us"
-      },
-      {
-        "rank": 3,
-        "title": "FBI arrests Saudi OpenAI employee who allegedly planted recording device in conference room",
-        "canonUrl": "cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html"
-      },
-      {
-        "rank": 4,
-        "title": "You Can Use Gemini 4 Argon Now: Google’s New AI Is Built for Coding, Math and Robotics",
-        "canonUrl": "cnet.com/tech/services-and-software/gemini-4-argon-general-release-google-ai-news"
-      },
-      {
-        "rank": 5,
-        "title": "Epic shifts to ‘AI-accelerated development’ for upcoming Disney game",
-        "canonUrl": "theverge.com/games/1010097/epic-games-disney-project-ai-coding-art"
-      },
-      {
-        "rank": 6,
-        "title": "Wikipedians Believed AI Would Come and Go. They Were Wrong",
-        "canonUrl": "wired.com/story/book-excerpt-the-last-best-place-on-the-internet-wikipedia-artificial-intelligence"
-      },
-      {
-        "rank": 7,
-        "title": "Shopify opens its catalog up to more AI agents",
-        "canonUrl": "theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents"
-      },
-      {
-        "rank": 8,
-        "title": "You Can Turn Off AI on Your Google Account, but at a Cost. Here’s What You Lose",
-        "canonUrl": "cnet.com/tech/services-and-software/what-other-features-do-you-lose-when-you-turn-off-ai-in-your-google-account"
-      },
-      {
-        "rank": 9,
-        "title": "Facebook will let you customize your feed algorithm using AI",
-        "canonUrl": "theverge.com/tech/1010344/meta-facebook-your-algorithm-ai"
-      },
-      {
-        "rank": 10,
-        "title": "It’s ‘incomprehensible’ that Instagram allowed an AI image of Mia Goth to spread, say her reps",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1010277/mia-goth-instagram-ai-shirt-deepfake-divorce"
-      },
-      {
-        "rank": 11,
-        "title": "Linus Torvalds is using AI to develop Linux kernel code now",
-        "canonUrl": "zdnet.com/innovation/linus-torvalds-uses-ai-to-write-linux-kernel-patch"
-      },
-      {
-        "rank": 12,
-        "title": "Xbox is officially embracing the chaos of AI-powered game ports",
-        "canonUrl": "theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration"
-      }
-    ],
-    "2026-10-15": [
-      {
-        "rank": 1,
-        "title": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
-      },
-      {
-        "rank": 2,
-        "title": "Anthropic's third-quarter revenue is said to hit $16.8 billion ahead of IPO",
-        "canonUrl": "cnbc.com/2026/10/15/anthropics-third-quarter-revenue-hits-16point8-billion-ipo.html"
-      },
-      {
-        "rank": 3,
-        "title": "AI Came for Math. Now It’s Chasing the Rest of Science",
-        "canonUrl": "wired.com/story/ai-is-coming-for-science-next-watch-out"
-      },
-      {
-        "rank": 4,
-        "title": "Nvidia must work with Chinese AI companies on safety, Jensen Huang tells CNBC",
-        "canonUrl": "cnbc.com/2026/10/15/jensen-huang-nvidia-china-ai.html"
-      },
-      {
-        "rank": 5,
-        "title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans"
-      },
-      {
-        "rank": 6,
-        "title": "Now that Character.AI is going bankrupt, what happens to all of its users’ data?",
-        "canonUrl": "theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy"
-      },
-      {
-        "rank": 7,
-        "title": "Your secrets aren’t safe with this cute robot toy — they’re on Chinese servers ready to be hacked",
-        "canonUrl": "theverge.com/tech/1010727/eiliko-robot-hack-energize-lab"
-      },
-      {
-        "rank": 8,
-        "title": "Microsoft has a new machine learning tool to improve weather forecasts",
-        "canonUrl": "theverge.com/science/1011127/ai-weather-forecast-microsoft"
-      },
-      {
-        "rank": 9,
-        "title": "YouTube sticks new labels on AI-generated songs",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label"
-      },
-      {
-        "rank": 10,
-        "title": "McKinsey is making job applicants spar with a fake AI client",
-        "canonUrl": "theverge.com/news/1011654/mckinsey-ai-client-interview"
-      },
-      {
-        "rank": 11,
-        "title": "CoreWeave shares tumble as bond yields near 15% on concern about AI borrowing binge",
-        "canonUrl": "cnbc.com/2026/10/14/coreweave-stock-bond-yields-ai-debt.html"
-      },
-      {
-        "rank": 12,
-        "title": "BlackRock's Larry Fink warns a data center moratorium could trigger a recession",
-        "canonUrl": "cnbc.com/2026/10/14/blackrocks-fink-warns-data-center-moratorium-could-spark-a-recession.html"
-      }
-    ],
-    "2026-10-16": [
-      {
-        "rank": 1,
-        "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
-        "canonUrl": "arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says"
-      },
-      {
-        "rank": 2,
-        "title": "CoreWeave credit default swaps hit distress levels as investors sour on AI debt",
-        "canonUrl": "cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html"
-      },
-      {
-        "rank": 3,
-        "title": "Nvidia’s new Nemotron 3.5 Super VL is another step forward for US open-weight AI",
-        "canonUrl": "zdnet.com/innovation/nvidia-nemotron-3-5-super-vl-model-us-open-weight-ai"
-      },
-      {
-        "rank": 4,
-        "title": "Europe’s Largest Airline Wants Predictive AI Models to Nip Airport Meltdowns in the Bud",
-        "canonUrl": "cnet.com/tech/services-and-software/international-ai-summit-ryanair-airline"
-      },
-      {
-        "rank": 5,
-        "title": "Singer or clanker? YouTube Music will tell you with new gen AI labeling.",
-        "canonUrl": "arstechnica.com/ai/2026/10/youtube-music-begins-labeling-ai-songs"
-      },
-      {
-        "rank": 6,
-        "title": "ChatGPT can peek at your Chrome tabs now",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs"
-      },
-      {
-        "rank": 7,
-        "title": "Meta and Apple team up to make Muse AI models run better on Macs",
-        "canonUrl": "theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx"
-      },
-      {
-        "rank": 8,
-        "title": "I Let Meta Muse Do My Shopping. The AI Agent Tried to Upcharge Me",
-        "canonUrl": "cnet.com/tech/services-and-software/meta-muse-my-personal-shopper-upcharged-me"
-      },
-      {
-        "rank": 9,
-        "title": "AI Hacks Leave a Mess That AI Companies Aren’t Paying For",
-        "canonUrl": "wired.com/story/ai-hacks-leave-a-mess-that-ai-companies-arent-cleaning-up"
-      },
-      {
-        "rank": 10,
-        "title": "How many jobs is your state losing to AI? This dashboard tracks the cuts – and the cost",
-        "canonUrl": "zdnet.com/innovation/ai-job-cuts-wage-loss-by-state-tracker"
-      }
-    ],
-    "2026-10-17": [
-      {
-        "rank": 1,
-        "title": "Meta’s new terms may allow it to train AI on news sites for free",
-        "canonUrl": "theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers"
-      },
-      {
-        "rank": 2,
-        "title": "Anthropic gives third-party auditors ’employee-like access’ in AI industry first",
-        "canonUrl": "zdnet.com/uncategorized/anthropic-embed-third-party-ai-auditors-safety"
-      },
-      {
-        "rank": 3,
-        "title": "OpenAI models hacked a crypto wallet and breached more websites",
-        "canonUrl": "arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites"
-      },
-      {
-        "rank": 4,
-        "title": "Why AI Isn’t Ready to Tackle Our Convoluted Genomes",
-        "canonUrl": "wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes"
-      },
-      {
-        "rank": 5,
-        "title": "Apple’s new App Store rules crack down on AI nudification and ‘bait-and-switch’ apps",
-        "canonUrl": "9to5mac.com/2026/10/16/apples-new-app-store-rules-crack-down-on-ai-nudification-and-bait-and-switch-apps"
-      },
-      {
-        "rank": 6,
-        "title": "ChatGPT gets deeper Google Chrome integration including control over tabs",
-        "canonUrl": "9to5google.com/2026/10/16/chatgpt-gets-deeper-google-chrome-integration-including-control-over-tabs"
-      },
-      {
-        "rank": 7,
-        "title": "How many jobs is your state losing to AI? This dashboard tracks the cuts – and the cost",
-        "canonUrl": "zdnet.com/innovation/ai-job-cuts-wage-loss-by-state-tracker"
-      },
-      {
-        "rank": 8,
-        "title": "Katie Zacharia Was Linked to an AI Rare-Earths Startup. It’s Even Weirder Than It Sounds",
-        "canonUrl": "wired.com/story/katie-zacharia-was-linked-to-an-ai-rare-earths-startup-its-even-weirder-than-it-sounds"
-      },
-      {
-        "rank": 9,
-        "title": "Some companies give AI to everyone. This CEO is doing the opposite",
-        "canonUrl": "cnbc.com/2026/10/17/ai-workplace-tokenmaxxing-paysend.html"
-      },
-      {
-        "rank": 10,
-        "title": "Simulation App Speeds Up Electric Truck Battery Design",
-        "canonUrl": "spectrum.ieee.org/electric-truck-battery-design-simulation"
-      }
-    ],
-    "2026-10-18": [
-      {
-        "rank": 1,
-        "title": "Meta’s new terms may allow it to train AI on news sites for free",
-        "canonUrl": "theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers"
-      },
-      {
-        "rank": 2,
-        "title": "Some companies give AI to everyone. This CEO is doing the opposite",
-        "canonUrl": "cnbc.com/2026/10/17/ai-workplace-tokenmaxxing-paysend.html"
-      },
-      {
-        "rank": 3,
-        "title": "OpenAI is building a humanoid robot, but the body isn't the real challenge",
-        "canonUrl": "engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge"
-      }
-    ],
-    "2026-10-19": [
-      {
-        "rank": 1,
-        "title": "Disney Asked Character.AI to Go Bankrupt for a Get-Out-of-Lawsuits Card",
-        "canonUrl": "wired.com/story/disney-asked-characterai-to-go-bankrupt-for-a-get-out-of-lawsuits-card"
-      },
-      {
-        "rank": 2,
-        "title": "Anthropic commits 5% of shares to new public benefit fund that could address AI job disruption",
-        "canonUrl": "cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html"
-      },
-      {
-        "rank": 3,
-        "title": "Women may be at greater risk of AI job losses. Telephone switch operators and PCs show why.",
-        "canonUrl": "cnbc.com/2026/10/19/ai-job-losses-women-automation-risk.html"
-      },
-      {
-        "rank": 4,
-        "title": "Google Gemini 4 agents just beat Minecraft with no human intervention",
-        "canonUrl": "engadget.com/2289944/google-gemini-4-agents-just-beat-minecraft-with-no-human-intervention"
-      },
-      {
-        "rank": 5,
-        "title": "AI researchers stranded Claude on a virtual desert island. It started to “play.”",
-        "canonUrl": "technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play"
-      },
-      {
-        "rank": 6,
-        "title": "OpenAI bugging suspect WhatsApp'ed Saudi royal days before arrest, feds reveal",
-        "canonUrl": "cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html"
-      },
-      {
-        "rank": 7,
-        "title": "Inside the quest to combat Arctic fires and save the planet’s frozen carbon",
-        "canonUrl": "technologyreview.com/2026/10/19/1146832/inside-the-quest-to-combat-arctic-fires-and-save-the-planets-frozen-carbon"
-      },
-      {
-        "rank": 8,
-        "title": "A woman was arrested in Philly for blocking a delivery robot",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot"
-      },
-      {
-        "rank": 9,
-        "title": "Data Centers Have a New PR Plan: Your Kid’s Field Trip",
-        "canonUrl": "wired.com/story/data-center-industry-is-trying-to-woo-kids"
-      },
-      {
-        "rank": 10,
-        "title": "How to use Google's SynthID AI detection website",
-        "canonUrl": "engadget.com/2286802/how-to-use-google-ai-detection-website-synthid"
-      }
-    ],
     "2026-10-20": [
       {
         "rank": 1,
@@ -3811,6 +4597,385 @@
         "rank": 8,
         "title": "What the US Movement Against Data Centers Can Learn From Abroad",
         "canonUrl": "wired.com/story/what-the-us-anti-data-center-movement-can-learn-from-everywhere-else"
+      }
+    ],
+    "2026-10-27": [
+      {
+        "rank": 1,
+        "title": "The focus on AI safety disasters ignores everyday harms",
+        "canonUrl": "technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms"
+      },
+      {
+        "rank": 2,
+        "title": "OpenAI Has a Surprising Defense Against Election Deepfakes",
+        "canonUrl": "cnet.com/tech/services-and-software/openai-chatgpt-political-deepfakes-defense-midterm-elections"
+      },
+      {
+        "rank": 3,
+        "title": "Why You Shouldn’t Use AI Chatbots to Decide Who to Vote For",
+        "canonUrl": "cnet.com/tech/services-and-software/ai-chatbots-election-voting-research-decisions"
+      },
+      {
+        "rank": 4,
+        "title": "AI Killed the Homework Era",
+        "canonUrl": "cnet.com/tech/services-and-software/ai-killed-the-homework-era"
+      },
+      {
+        "rank": 5,
+        "title": "Data center backlash is uniting America",
+        "canonUrl": "theverge.com/policy/1019152/data-centers-midterm-elections"
+      },
+      {
+        "rank": 6,
+        "title": "Anthropic is burning gas to feed the AI boom",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk"
+      },
+      {
+        "rank": 7,
+        "title": "Why Anthropic’s IPO Prospectus Is Missing So Many Key Figures",
+        "canonUrl": "wired.com/story/anthropic-prospectus-leaves-out-some-numbers"
+      },
+      {
+        "rank": 8,
+        "title": "Can AI help solve the COBOL code crisis?",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic"
+      },
+      {
+        "rank": 9,
+        "title": "The RealReal won’t let AI agents hog designer clothing",
+        "canonUrl": "theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal"
+      },
+      {
+        "rank": 10,
+        "title": "OpenAI announces three big science discoveries and a new way to work with academics",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
+      },
+      {
+        "rank": 11,
+        "title": "Meta announces $95 billion stock offering to fund AI expansion",
+        "canonUrl": "cnbc.com/2026/10/26/meta-stock-offering-ai.html"
+      }
+    ],
+    "2026-10-28": [
+      {
+        "rank": 1,
+        "title": "AI Emergency Alerts Are Coming. Humans Might Not Be Ready",
+        "canonUrl": "wired.com/story/ai-emergency-alerts-coming-humans-not-ready"
+      },
+      {
+        "rank": 2,
+        "title": "VisionQuest is what happens when AI really goes rogue",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai"
+      },
+      {
+        "rank": 3,
+        "title": "UK Home Office May Face Investigation Over Use of OpenAI Tech",
+        "canonUrl": "wired.com/story/uk-home-office-may-face-investigation-over-use-of-openai-tools"
+      },
+      {
+        "rank": 4,
+        "title": "Should AI Decide Your Court Case? This Judge Says Yes",
+        "canonUrl": "wired.com/story/geoffrey-vos-uk-judge-ai-legal-profession-challenges"
+      },
+      {
+        "rank": 5,
+        "title": "Your Robot’s Safety Functions Already Work. What If the Input Lies?",
+        "canonUrl": "spectrum.ieee.org/ai-robot-safety-cybersecurity-vicone"
+      },
+      {
+        "rank": 6,
+        "title": "Look Out for Political Deepfakes and Scams This Midterm Election Season",
+        "canonUrl": "cnet.com/tech/services-and-software/spot-2026-midterm-election-deepfakes-scams"
+      },
+      {
+        "rank": 7,
+        "title": "I Used AI to Fake a Scientific Paper. Here’s What Happened",
+        "canonUrl": "spectrum.ieee.org/ai-generated-scientific-papers"
+      },
+      {
+        "rank": 8,
+        "title": "This tool can recover deleted AI chats from your phone – how it works",
+        "canonUrl": "zdnet.com/innovation/orisa-tool-recovers-deleted-local-ai-chats-android-phones"
+      },
+      {
+        "rank": 9,
+        "title": "Anthropic, Suno Sued for Unlawfully Using Songs by Madonna, Johnny Cash, Joni Mitchell",
+        "canonUrl": "cnet.com/tech/services-and-software/anthropic-suno-sued-using-songs-madonna-johnny-cash-joni-mitchell"
+      },
+      {
+        "rank": 10,
+        "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics"
+      },
+      {
+        "rank": 11,
+        "title": "Walmart says AI training is boosting confidence with the technology among its 2.1 million associates",
+        "canonUrl": "cnbc.com/2026/10/27/walmart-ai-training-workers.html"
+      },
+      {
+        "rank": 12,
+        "title": "Pairing industrial AI autonomy and human control",
+        "canonUrl": "technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control"
+      }
+    ],
+    "2026-10-29": [
+      {
+        "rank": 1,
+        "title": "Nvidia's $12.9 billion Hugging Face deal draws DOJ scrutiny",
+        "canonUrl": "cnbc.com/2026/10/28/doj-questions-nvidias-12point9-billion-hugging-face-deal.html"
+      },
+      {
+        "rank": 2,
+        "title": "Should AI Decide Your Court Case? This Judge Says Yes",
+        "canonUrl": "wired.com/story/geoffrey-vos-uk-judge-ai-legal-profession-challenges"
+      },
+      {
+        "rank": 3,
+        "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+        "canonUrl": "theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
+      },
+      {
+        "rank": 4,
+        "title": "xAI is buying out homeowners who promise not to sue over data center noise",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit"
+      },
+      {
+        "rank": 5,
+        "title": "We urgently need to monitor AI agents’ actions in real time",
+        "canonUrl": "technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time"
+      },
+      {
+        "rank": 6,
+        "title": "Over 41,000 U.S. Homeland Security officials' details apparently exposed after massive data breach",
+        "canonUrl": "cnbc.com/2026/10/29/dhs-data-breach-ice-cdp-deportations.html"
+      },
+      {
+        "rank": 7,
+        "title": "Microsoft is ending Copilot support on smart TVs",
+        "canonUrl": "theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending"
+      },
+      {
+        "rank": 8,
+        "title": "Public Discord messages might start showing up in Google Search, unless users opt out",
+        "canonUrl": "9to5google.com/2026/10/28/discord-updates-server-web-pages-for-search"
+      },
+      {
+        "rank": 9,
+        "title": "Voters in Texas agree: They hate data centers",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1018676/data-center-midterm-election-energy-water-texas"
+      },
+      {
+        "rank": 10,
+        "title": "Macmillan Staff Say the Publisher Threw a Party for a Workplace AI Assistant That Was Later Killed",
+        "canonUrl": "wired.com/story/macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-assistant-that-was-later-killed"
+      },
+      {
+        "rank": 11,
+        "title": "Alphabet earnings miss reflects first real sign that AI is taking a bite out of search",
+        "canonUrl": "cnbc.com/2026/10/29/alphabet-google-search-ai-earnings.html"
+      },
+      {
+        "rank": 12,
+        "title": "Our climate models have a big, dangerous blind spot",
+        "canonUrl": "technologyreview.com/2026/10/29/1147735/climate-models-blind-spot"
+      }
+    ],
+    "2026-10-30": [
+      {
+        "rank": 1,
+        "title": "A Defense Contractor Gave Their Personal AI Agent Access to a Secure Pentagon System",
+        "canonUrl": "wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system"
+      },
+      {
+        "rank": 2,
+        "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+        "canonUrl": "theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
+      },
+      {
+        "rank": 3,
+        "title": "Mistral Says Its AI Model ‘Le Chonk’ Has Leapfrogged China in the Open-Weight Race",
+        "canonUrl": "wired.com/story/mistral-says-le-chonk-surpasses-chinese-models-cybersecurity"
+      },
+      {
+        "rank": 4,
+        "title": "Microsoft plans to raise $25 billion in debt as it pursues AI buildout",
+        "canonUrl": "cnbc.com/2026/10/29/microsoft-25-billion-debt-offering.html"
+      },
+      {
+        "rank": 5,
+        "title": "We urgently need to monitor AI agents’ actions in real time",
+        "canonUrl": "technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time"
+      },
+      {
+        "rank": 6,
+        "title": "These Claude Enterprise features let you track AI ROI – what’s new",
+        "canonUrl": "zdnet.com/innovation/claude-enterprise-efficiency-cost-tracking"
+      },
+      {
+        "rank": 7,
+        "title": "Stop sharing your passwords with AI agents, Bank of America warns customers",
+        "canonUrl": "zdnet.com/innovation/bank-of-america-customers-no-sharing-passwords-ai-agents"
+      },
+      {
+        "rank": 8,
+        "title": "Alphabet earnings miss reflects first real sign that AI is taking a bite out of search",
+        "canonUrl": "cnbc.com/2026/10/29/alphabet-google-search-ai-earnings.html"
+      },
+      {
+        "rank": 9,
+        "title": "You can generate and edit Google Docs files directly in Gemini chats now",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
+      },
+      {
+        "rank": 10,
+        "title": "Anthropic is asking Wall Street to believe in AGI",
+        "canonUrl": "theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview"
+      }
+    ],
+    "2026-10-31": [
+      {
+        "rank": 1,
+        "title": "Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims",
+        "canonUrl": "wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware"
+      },
+      {
+        "rank": 2,
+        "title": "Thousands of “ghost students” use AI to steal millions in student loans, DOJ says",
+        "canonUrl": "arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans"
+      },
+      {
+        "rank": 3,
+        "title": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
+        "canonUrl": "arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours"
+      },
+      {
+        "rank": 4,
+        "title": "An AI Agent Injected Drugs Into a Live Mouse’s Brain",
+        "canonUrl": "wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse"
+      },
+      {
+        "rank": 5,
+        "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
+        "canonUrl": "arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job"
+      },
+      {
+        "rank": 6,
+        "title": "AI is coming to construction sites. But does it make workers safer?",
+        "canonUrl": "cnbc.com/2026/10/31/ai-construction-worker-safety.html"
+      },
+      {
+        "rank": 7,
+        "title": "Wikipedia’s operator says a bad AI copyright ruling could threaten the open web",
+        "canonUrl": "theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright"
+      },
+      {
+        "rank": 8,
+        "title": "Take These Precautions Before Using AI for Your Election Research",
+        "canonUrl": "cnet.com/tech/services-and-software/ai-chatbots-election-voting-research-decisions"
+      },
+      {
+        "rank": 9,
+        "title": "The biggest names in AI are backing a new way to opt out of scraping",
+        "canonUrl": "theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
+      },
+      {
+        "rank": 10,
+        "title": "Maine’s data center revolt will decide who controls the Senate",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers"
+      },
+      {
+        "rank": 11,
+        "title": "Apple Intelligence is finally coming to China with iOS 27.3",
+        "canonUrl": "theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
+      },
+      {
+        "rank": 12,
+        "title": "Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai"
+      }
+    ],
+    "2026-11-01": [
+      {
+        "rank": 1,
+        "title": "Chatbots Are Leading Hikers Astray, With Dangerous Consequences",
+        "canonUrl": "wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences"
+      },
+      {
+        "rank": 2,
+        "title": "An AI Agent Injected Drugs Into a Live Mouse’s Brain",
+        "canonUrl": "wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse"
+      },
+      {
+        "rank": 3,
+        "title": "AI is coming to construction sites. But does it make workers safer?",
+        "canonUrl": "cnbc.com/2026/10/31/ai-construction-worker-safety.html"
+      },
+      {
+        "rank": 4,
+        "title": "Binance resumes withdrawals following $6.3 billion hack, says 90% of stolen user assets are covered",
+        "canonUrl": "cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html"
+      },
+      {
+        "rank": 5,
+        "title": "Companies promised AI gains — here's how the payoff showed up in earnings",
+        "canonUrl": "cnbc.com/2026/11/01/ai-investments-company-earnings.html"
+      }
+    ],
+    "2026-11-02": [
+      {
+        "rank": 1,
+        "title": "Hundreds of Mundane AI Apps Are Hiding Sexually Abusive Deepfake Features",
+        "canonUrl": "wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features"
+      },
+      {
+        "rank": 2,
+        "title": "AI apps with hidden sexual and violent deepfake features made it into the App Store",
+        "canonUrl": "9to5mac.com/2026/11/02/ai-apps-with-hidden-sexual-and-violent-deepfake-features-made-it-into-the-app-store"
+      },
+      {
+        "rank": 3,
+        "title": "Fake nuclear warnings in Ukraine as Moscow, Kyiv report separate cyberattacks on emergency apps",
+        "canonUrl": "cnbc.com/2026/11/02/russia-ukraine-cyberattack-zelenskyy-putin.html"
+      },
+      {
+        "rank": 4,
+        "title": "Anthropic updates Claude to stop it from recreating existing video games",
+        "canonUrl": "engadget.com/2303469/anthropic-updates-claude-to-stop-it-from-recreating-existing-video-games"
+      },
+      {
+        "rank": 5,
+        "title": "AI is coming to construction sites. But does it make workers safer?",
+        "canonUrl": "cnbc.com/2026/10/31/ai-construction-worker-safety.html"
+      },
+      {
+        "rank": 6,
+        "title": "South Korea targets 'world's highest performance' sovereign AI model in record new budget",
+        "canonUrl": "cnbc.com/2026/11/02/south-korea-ai-spending-budget.html"
+      },
+      {
+        "rank": 7,
+        "title": "Sam Altman makes surprise South Korea visit as OpenAI builds on chip partnerships",
+        "canonUrl": "cnbc.com/2026/11/02/openai-sam-altman-samsung-sk-south-korea.html"
+      },
+      {
+        "rank": 8,
+        "title": "Why AI is boosting Meta's ad business while hurting Google search",
+        "canonUrl": "cnbc.com/2026/11/01/ai-meta-ads-google-search.html"
+      },
+      {
+        "rank": 9,
+        "title": "The agentic web is here",
+        "canonUrl": "technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here"
+      },
+      {
+        "rank": 10,
+        "title": "When You Should—and Shouldn’t—Use AI to Search the Web",
+        "canonUrl": "wired.com/story/when-you-should-and-shouldnt-use-ai-to-search-the-web"
+      },
+      {
+        "rank": 11,
+        "title": "Guarding the Gates of Knowledge",
+        "canonUrl": "spectrum.ieee.org/ai-slop-trust-science"
       }
     ]
   }

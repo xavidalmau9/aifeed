@@ -152,10 +152,23 @@ function matchingStory(progress, stories) {
   return { id: '', post: true };
 }
 
-function planFinish({ sourceUrl, progress, igMedia, fbPosts, igStories, storiesKnown = true } = {}) {
+// Only a video counts as the Reel / Facebook video. A feed photo or carousel with the
+// same source link (e.g. from the n8n fallback) must not block the real Reel.
+function isIgReel(m) {
+  if (!m || String(m.media_type || '').toUpperCase() !== 'VIDEO') return false;
+  return !m.media_product_type || String(m.media_product_type).toUpperCase() === 'REELS';
+}
+
+function isFbVideo(m) {
+  if (!m) return false;
+  if (m.isVideo === true) return true;
+  return /video/i.test(String(m.status_type || ''));
+}
+
+function planFinish({ sourceUrl, progress, igMedia, fbPosts, igStories, storiesKnown = true, reelOnly = false } = {}) {
   const row = progress || {};
-  const ig = (igMedia || []).find(m => textHasUrl(m && m.caption, sourceUrl));
-  const fb = (fbPosts || []).find(m => textHasUrl(m && m.message, sourceUrl) || textHasUrl(m && m.description, sourceUrl));
+  const ig = (igMedia || []).find(m => isIgReel(m) && textHasUrl(m.caption, sourceUrl));
+  const fb = (fbPosts || []).find(m => isFbVideo(m) && (textHasUrl(m.message, sourceUrl) || textHasUrl(m.description, sourceUrl)));
   const story = matchingStory(row, igStories);
   const igReelId = ig && ig.id ? String(ig.id) : (row.igReelId ? String(row.igReelId) : '');
   const fbPostId = fb && fb.id ? String(fb.id) : (row.fbPostId ? String(row.fbPostId) : '');
@@ -164,9 +177,13 @@ function planFinish({ sourceUrl, progress, igMedia, fbPosts, igStories, storiesK
     error = 'Instagram stories list failed after a previous attempt; refusing to post another Story';
   }
   const postReel = !igReelId;
-  const postFb = !fbPostId;
-  const postStory = !error && story.post && !story.id;
+  // reelOnly: the story's Story and Facebook post already went out with the normal run (often as a
+  // Facebook photo post, which is not a video), so only the missing Reel is posted.
+  const postFb = !reelOnly && !fbPostId;
+  const postStory = !reelOnly && !error && story.post && !story.id;
+  if (reelOnly) error = '';
   return {
+    reelOnly,
     igReelId,
     igStoryId: story.id,
     fbPostId,
@@ -203,7 +220,10 @@ function assertPhotoFile(file, readFileSync) {
   if (!jpeg && !png && !webp) throw new Error('story photo is not a real image (' + buf.length + ' bytes)');
 }
 
+// Reel mp4 / cover public-URL wait: GitHub Pages can take 20+ min to publish a new video.
+const REEL_WAIT = { firstWaitMs: 30000, retryWaitMs: 30000, maxAttempts: 60 };
+
 module.exports = {
-  PROGRESS_PATH, SLUG_RE, CAPTION_BANNED, outletFromUrl, igCaptionFromPost, photoUrlFromHtml,
-  textHasUrl, planFinish, pickEntry, storyImageName, assertPhotoFile, contentParagraphs
+  REEL_WAIT, PROGRESS_PATH, SLUG_RE, CAPTION_BANNED, outletFromUrl, igCaptionFromPost, photoUrlFromHtml,
+  textHasUrl, planFinish, isIgReel, isFbVideo, pickEntry, storyImageName, assertPhotoFile, contentParagraphs
 };

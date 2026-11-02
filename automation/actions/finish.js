@@ -13,7 +13,7 @@ const { assertReelsTools } = require('./lib/tools');
 const { graphGet, graphForm, pollContainer, pollPublic, redact } = require('./lib/net');
 const { renderReel, publishIgReel, publishFbVideo } = require('./lib/reels');
 const {
-  PROGRESS_PATH, SLUG_RE, igCaptionFromPost, photoUrlFromHtml, planFinish, pickEntry,
+  REEL_WAIT, PROGRESS_PATH, SLUG_RE, igCaptionFromPost, photoUrlFromHtml, planFinish, pickEntry,
   storyImageName, assertPhotoFile
 } = require('./lib/finish');
 
@@ -58,8 +58,8 @@ function authOf(env) {
 async function listSocial(cfg, env, graph) {
   const auth = authOf(env);
   const G = `https://graph.facebook.com/${cfg.graphVersion}/`;
-  const ig = await graph(G + cfg.igUserId + '/media?fields=id,caption,media_type,permalink,timestamp&limit=30', auth);
-  const fb = await graph(G + cfg.fbPageId + '/published_posts?fields=id,message,created_time,permalink_url&limit=25', auth);
+  const ig = await graph(G + cfg.igUserId + '/media?fields=id,caption,media_type,media_product_type,permalink,timestamp&limit=30', auth);
+  const fb = await graph(G + cfg.fbPageId + '/published_posts?fields=id,message,status_type,created_time,permalink_url&limit=25', auth);
   let videos = { data: [] };
   try {
     videos = await graph(G + cfg.fbPageId + '/videos?fields=id,description,title,created_time,permalink_url&limit=15', auth);
@@ -76,7 +76,7 @@ async function listSocial(cfg, env, graph) {
   }
   return {
     igMedia: ig.data || [],
-    fbPosts: [...(fb.data || []), ...(videos.data || [])],
+    fbPosts: [...(fb.data || []), ...(videos.data || []).map(v => ({ ...v, isVideo: true }))],
     igStories: stories.data || [],
     storiesKnown
   };
@@ -179,6 +179,7 @@ async function runFinish(cfg, env, deps = {}) {
     downloadPhoto: defaultDownloadPhoto
   }, deps);
   const slug = String(env.FINISH_SLUG || '').trim();
+  const reelOnly = env.REEL_ONLY === true || String(env.REEL_ONLY || '') === '1';
   if (!SLUG_RE.test(slug)) throw new Error('finish_slug is not a lowercase story slug');
   const posts = io.readJson(env.REPO, '_posts/posts-index.json', null);
   if (!Array.isArray(posts)) throw new Error('posts-index.json could not be read');
@@ -219,15 +220,16 @@ async function runFinish(cfg, env, deps = {}) {
     igMedia: listed.igMedia,
     fbPosts: listed.fbPosts,
     igStories: listed.igStories,
-    storiesKnown: listed.storiesKnown
+    storiesKnown: listed.storiesKnown,
+    reelOnly
   });
   if (plan.error) throw new Error(plan.error);
 
   let video = null;
   if (!plan.done && (plan.postReel || plan.postFb)) {
     video = await ensureReel(cfg, env, io, post, entry, slug);
-    await io.pollPublic(video.videoUrl, { firstWaitMs: 0, retryWaitMs: 20000, maxAttempts: 15 });
-    if (video.coverUrl) await io.pollPublic(video.coverUrl, { firstWaitMs: 0, retryWaitMs: 20000, maxAttempts: 15 });
+    await io.pollPublic(video.videoUrl, Object.assign({}, REEL_WAIT, { firstWaitMs: 0 }));
+    if (video.coverUrl) await io.pollPublic(video.coverUrl, Object.assign({}, REEL_WAIT, { firstWaitMs: 0 }));
   }
 
   let igReelId = plan.igReelId;
@@ -278,6 +280,18 @@ async function runFinish(cfg, env, deps = {}) {
     console.log('Facebook post already posted ' + fbPostId + ' — skipping');
   }
 
+  if (reelOnly) {
+    if (!igReelId) throw new Error('Reel-only finish did not get a Reel id for ' + slug);
+    console.log('Reel-only finish: Story and Facebook were not touched');
+    if (String(row.status || '').toLowerCase() === 'posted' && row.slug === slug && row.igReelId !== igReelId) {
+      const extra = {};
+      for (const k of ['slug', 'image', 'igStoryId', 'fbPostId']) if (row[k]) extra[k] = row[k];
+      extra.igReelId = igReelId;
+      await io.writeClaim(env, { date: entry.date, slot: Number(entry.slot) }, 'posted', { extra });
+    }
+    console.log('FINISH PUBLISHED ' + JSON.stringify({ slug, slot: key, igReelId, reelOnly: true }));
+    return 0;
+  }
   if (!igReelId || !igStoryId || !fbPostId) {
     throw new Error('Finish incomplete for ' + slug + ' reel=' + (igReelId || 'missing') + ' story=' + (igStoryId || 'missing') + ' fb=' + (fbPostId || 'missing'));
   }

@@ -64,8 +64,8 @@ test('planFinish posts only the channels that are not already live', () => {
   const ig = planFinish({
     sourceUrl,
     progress: {},
-    igMedia: [{ id: 'ig1', caption: 'Story\n\nSource: WIRED · ' + sourceUrl }],
-    fbPosts: [{ id: 'fb1', description: 'Source: WIRED · ' + sourceUrl.replace(/\/$/, '') }],
+    igMedia: [{ id: 'ig1', media_type: 'VIDEO', media_product_type: 'REELS', caption: 'Story\n\nSource: WIRED · ' + sourceUrl }],
+    fbPosts: [{ id: 'fb1', isVideo: true, description: 'Source: WIRED · ' + sourceUrl.replace(/\/$/, '') }],
     igStories: [],
     storiesKnown: true
   });
@@ -74,6 +74,34 @@ test('planFinish posts only the channels that are not already live', () => {
   assert.equal(ig.postFb, false);
   assert.equal(ig.fbPostId, 'fb1');
   assert.equal(ig.postStory, true);
+
+  const photoOnly = planFinish({
+    sourceUrl,
+    progress: {},
+    igMedia: [
+      { id: 'feed1', media_type: 'IMAGE', media_product_type: 'FEED', caption: 'Source: ' + sourceUrl },
+      { id: 'car1', media_type: 'CAROUSEL_ALBUM', caption: 'Source: ' + sourceUrl },
+      { id: 'vidfeed', media_type: 'VIDEO', media_product_type: 'FEED', caption: 'Source: ' + sourceUrl }
+    ],
+    fbPosts: [{ id: 'fbphoto', status_type: 'added_photos', message: 'Source: ' + sourceUrl }],
+    igStories: [],
+    storiesKnown: true
+  });
+  assert.equal(photoOnly.postReel, true);
+  assert.equal(photoOnly.igReelId, '');
+  assert.equal(photoOnly.postFb, true);
+  assert.equal(photoOnly.fbPostId, '');
+
+  const noProductType = planFinish({
+    sourceUrl,
+    progress: {},
+    igMedia: [{ id: 'v1', media_type: 'VIDEO', caption: 'Source: ' + sourceUrl }],
+    fbPosts: [{ id: 'fv1', status_type: 'added_video', message: 'Source: ' + sourceUrl }],
+    igStories: [],
+    storiesKnown: true
+  });
+  assert.equal(noProductType.igReelId, 'v1');
+  assert.equal(noProductType.fbPostId, 'fv1');
 
   const morning = planFinish({
     sourceUrl,
@@ -309,4 +337,50 @@ test('dry run writes captions and does not post or mark the slot', async () => {
   const cap = fs.readFileSync(path.join(env.OUT, 'instagram-caption.txt'), 'utf8');
   assert.match(cap, /Free weekly AI brief/);
   assert.doesNotMatch(cap, /\bdaily\b/i);
+});
+
+test('reel_only posts just the missing Reel when the Story and a Facebook photo post are already live', async () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'finish-reelonly-'));
+  const env = repoFor(dir);
+  env.REEL_ONLY = true;
+  writeJson(dir, CLAIM_PATH, {
+    claims: { '2026-10-22:2': { status: 'posted', slug: LIVE.slug, at: '2026-10-22T21:49:30.594Z', by: 'github-actions' } }
+  });
+  const calls = [];
+  const graphForm = async (url, fields) => {
+    calls.push({ url: String(url), fields });
+    if (String(url).includes('/media_publish')) return { id: fields.creation_id + '-pub' };
+    if (fields && fields.media_type === 'REELS') return { id: 'reel-container' };
+    throw new Error('unexpected graph call ' + url);
+  };
+  const io = fakeIo(graphForm);
+  const polls = [];
+  io.pollPublic = async (u, opts) => { polls.push(opts); };
+  const base = io.graphGet;
+  io.graphGet = async url => {
+    if (String(url).includes('/media?')) return { data: [{ id: 'car1', media_type: 'CAROUSEL_ALBUM', caption: 'x ' + URL }] };
+    if (String(url).includes('/published_posts')) return { data: [{ id: 'fbphoto', status_type: 'added_photos', message: 'x ' + URL }] };
+    return base(url);
+  };
+  const cfg = require('../config.json');
+  await runFinish(cfg, env, io);
+  assert.equal(calls.filter(c => c.fields && c.fields.media_type === 'REELS').length, 1);
+  assert.equal(calls.some(c => c.fields && c.fields.media_type === 'STORIES'), false);
+  assert.equal(calls.some(c => c.url.includes('/videos') || c.url.includes('/photos') || c.url.includes('/feed')), false);
+  assert.ok(polls.every(o => o.maxAttempts * o.retryWaitMs >= 25 * 60000));
+  const claim = readJson(dir, CLAIM_PATH, {}).claims['2026-10-22:2'];
+  assert.equal(claim.status, 'posted');
+  assert.equal(claim.igReelId, 'reel-container-pub');
+});
+
+test('planFinish reelOnly never plans Story or Facebook; Reel wait is ~30 min', () => {
+  const { planFinish: pf, REEL_WAIT } = require('../lib/finish');
+  const p = pf({ sourceUrl: URL, progress: {}, igMedia: [], fbPosts: [], igStories: [], reelOnly: true });
+  assert.equal(p.postReel, true);
+  assert.equal(p.postStory, false);
+  assert.equal(p.postFb, false);
+  assert.ok(REEL_WAIT.retryWaitMs * REEL_WAIT.maxAttempts >= 25 * 60000);
+  const pipe = fs.readFileSync(path.join(__dirname, '../pipeline.js'), 'utf8');
+  assert.match(pipe, /pollPublic\(videoUrl, REEL_WAIT\)/);
+  assert.match(pipe, /\^reel-only:/);
 });

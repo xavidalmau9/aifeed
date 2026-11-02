@@ -24,6 +24,7 @@ const { sendAlert } = require('./alert');
 const { buildFb, checkFb } = require('./lib/captions');
 const { renderReelSafe, renderSlides, withPhotoCredit, publishIgReel, publishFbVideo } = require('./lib/reels');
 const { reelBrief } = require('./lib/reelbrief');
+const { REEL_WAIT } = require('./lib/finish');
 const { isReelsOnly, carouselUpfront, carouselFallback, fbPhotoNeeded, reelTemplateOpts, reelFailureAlert } = require('./lib/reelsplan');
 
 function loadConfig() {
@@ -45,7 +46,9 @@ function runtimeEnv() {
     SLOT: process.env.SLOT || 'auto',
     EVENT_NAME: process.env.EVENT_NAME || 'schedule',
     TAKE_OVER: truthy(process.env.TAKE_OVER),
-    FINISH_SLUG: String(process.env.FINISH_SLUG || '').trim(),
+    // finish_slug "reel-only:<slug>" posts ONLY the missing Reel (no Story / Facebook / carousel).
+    FINISH_SLUG: String(process.env.FINISH_SLUG || '').trim().replace(/^reel-only:\s*/i, ''),
+    REEL_ONLY: String(process.env.REEL_ONLY || '') === '1' || /^reel-only:/i.test(String(process.env.FINISH_SLUG || '').trim()),
     REPO: process.env.REPO_ROOT || path.resolve(__dirname, '..', '..'),
     OUT: process.env.OUT_DIR || path.join(__dirname, 'out')
   };
@@ -553,8 +556,9 @@ async function main() {
         });
         const videoUrl = cfg.siteUrl + '/' + rel;
         const coverUrl = coverRel ? cfg.siteUrl + '/' + coverRel : '';
-        await pollPublic(videoUrl);
-        if (coverUrl) await pollPublic(coverUrl);
+        // GitHub Pages can take 20+ min to publish a new mp4 (Nov 2 AM: Reel skipped after the old 5 min wait).
+        await pollPublic(videoUrl, REEL_WAIT);
+        if (coverUrl) await pollPublic(coverUrl, REEL_WAIT);
         const reelCaption = withPhotoCredit(published.igCaption, rr.credit);
         published.post.videoUrl = videoUrl;
         if (cfg.reelsPublishEnabled) {
