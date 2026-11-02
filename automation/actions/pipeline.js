@@ -25,6 +25,7 @@ const { buildFb, checkFb } = require('./lib/captions');
 const { renderReelSafe, renderSlides, withPhotoCredit, publishIgReel, publishFbVideo } = require('./lib/reels');
 const { reelBrief } = require('./lib/reelbrief');
 const { REEL_WAIT } = require('./lib/finish');
+const { appendHookRow, claimFields } = require('./lib/hooktest');
 const { isReelsOnly, carouselUpfront, carouselFallback, fbPhotoNeeded, reelTemplateOpts, reelFailureAlert } = require('./lib/reelsplan');
 
 function loadConfig() {
@@ -374,7 +375,7 @@ async function main() {
     let brief = null, slides = null;
     // v3 Reel template (opt-in): ONE setting (cfg.reelTemplate = "v3", env AIFEED_REEL_TEMPLATE overrides) drives both the
     // brief and the renderer; cfg.reelHookStyle = "A" | "B" | "C". Unset = v2, unchanged.
-    const reelTpl = reelTemplateOpts(cfg, process.env);
+    const reelTpl = reelTemplateOpts(cfg, process.env, decision);
     const reelV3 = reelTpl.template === 'v3';
     console.log('Reel template: ' + reelTpl.template + (reelV3 && reelTpl.hookStyle ? ' (hook ' + reelTpl.hookStyle + ')' : ''));
     const feedTmp = path.join(require('os').tmpdir(), published.pngName);
@@ -503,8 +504,8 @@ async function main() {
     if (slides) for (const u of slideUrls().slice(1)) await pollPublic(u);
     // igCarouselEnabled false = Reels-only feed: the carousel only runs as a fallback when the Reel does not publish.
     const reelsOnly = isReelsOnly(cfg);
-    const markPosted = () => {
-      try { writeClaim(env, decision, 'posted', { extra: { slug: published.slug, image: published.pngName } }); }
+    const markPosted = (more) => {
+      try { writeClaim(env, decision, 'posted', { extra: Object.assign({ slug: published.slug, image: published.pngName }, more || {}) }); }
       catch (e) { console.log('Could not mark claim posted: ' + redact(e.message)); }
     };
     let reelPublished = false, fbVideoDone = false, reelAlerted = false;
@@ -568,7 +569,14 @@ async function main() {
             const r = await publishIgReel(cfg, env, { graphForm, pollContainer }, videoUrl, reelCaption, coverUrl);
             console.log('Instagram Reel published ' + (r.id || '') + (cfg.reelsShareToFeed === false ? ' (Reels tab only, not in feed)' : ''));
             reelPublished = true;
-            if (reelsOnly) markPosted();
+            const hookRec = { date: decision.date, slot: decision.slot, slug: published.slug, template: rr.template,
+              hookStyle: rr.template === 'v3' ? (rr.hookStyle || '') : '', hookStyleRequested: rr.template === 'v3' ? reelTpl.hookStyle : '', igReelId: String(r.id || ''), permalink: '' };
+            try { const pj = await graphGet(`https://graph.facebook.com/${cfg.graphVersion}/${r.id}?fields=permalink`, { token: env.META_PAGE_TOKEN, appSecret: env.META_APP_SECRET }); hookRec.permalink = (pj && pj.permalink) || ''; }
+            catch (e) { console.log('Reel permalink lookup failed: ' + redact(e.message)); }
+            console.log('Hook test record: ' + JSON.stringify(hookRec));
+            markPosted(claimFields(hookRec)); // Reels-only: this marks the slot posted; otherwise it adds the Reel fields
+            try { commitApply(env.REPO, 'Reel hook test log: ' + published.slug, () => { const w = appendHookRow(env.REPO, hookRec); return w ? [w] : []; }); }
+            catch (e) { console.log('Could not log hook test row: ' + redact(e.message)); }
           } catch (e) {
             const msg = reelFailureAlert('publish', reelsOnly, [], redact(e.message)); reelAlerted = true;
             console.log(msg);
