@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Hundreds of Mundane AI Apps Are Hiding Sexually Abusive Deepfake Features",
-    "link": "https://www.wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features/",
-    "score": 94,
-    "reason": "Major controversy; specific abuse pattern; concrete evidence of harm"
+    "headline": "OpenAI pitches data center power plants as a way to protect nearby areas",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+    "score": 92,
+    "reason": "Major infrastructure initiative by leading AI company; concrete business/technical development"
   },
   {
     "rank": 2,
-    "headline": "OpenAI deepens Abu Dhabi foothold as Sam Altman inks deals spanning energy, government and investment",
-    "link": "https://www.cnbc.com/2026/11/02/openai-abu-dhabi-ai-deals.html",
-    "score": 89,
-    "reason": "Major company expansion; confirmed multi-sector deals; significant geopolitical implications"
+    "headline": "The New York Times sues Brave web browser for AI scraping and bypassing paywalls",
+    "link": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
+    "score": 90,
+    "reason": "High-stakes legal controversy; major publisher vs. browser company over AI training data"
   },
   {
     "rank": 3,
-    "headline": "South Korea targets &apos;world&apos;s highest performance&apos; sovereign AI model in record new budget",
-    "link": "https://www.cnbc.com/2026/11/02/south-korea-ai-spending-budget.html",
-    "score": 87,
-    "reason": "Significant government commitment; competitive AI race; measurable investment numbers"
+    "headline": "Athenahealth patients can ask Claude about their medical records now",
+    "link": "https://www.zdnet.com/health/athenahealth-claude-ai-medical-partnership/",
+    "score": 85,
+    "reason": "Significant product launch; Claude deployed in regulated healthcare sector with real users"
   },
   {
     "rank": 4,
-    "headline": "Companies promised AI gains — here&apos;s how the payoff showed up in earnings",
-    "link": "https://www.cnbc.com/2026/11/01/ai-investments-company-earnings.html",
-    "score": 85,
-    "reason": "Concrete business results; measurable impact; multiple companies; resolves speculation"
+    "headline": "50 AI agents tried to build a thriving Minecraft civilization – it didn’t end well",
+    "link": "https://www.zdnet.com/innovation/y-combinator-ai-agents-minecraft-experiment-behavior/",
+    "score": 78,
+    "reason": "Large-scale AI agent experiment with quantifiable results; concrete failure demonstration"
   },
   {
     "rank": 5,
-    "headline": "S&P's negative outlook on Meta underscores the risks of the AI spending boom",
-    "link": "https://fortune.com/2026/11/02/s-p-global-negative-outlook-meta-underscores-risks-ai-boom-cfo/",
-    "score": 81,
-    "reason": "Major company; financial rating action; challenges AI investment narrative"
+    "headline": "Why some websites are blocking AI agents from accessing the web",
+    "link": "https://www.engadget.com/2300357/websites-blocking-ai-agents-from-web/",
+    "score": 75,
+    "reason": "Growing industry-wide controversy; measurable trend of AI web access restrictions"
   },
   {
     "rank": 6,
-    "headline": "The agentic web is here",
-    "link": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/",
-    "score": 79,
-    "reason": "Technology launch/milestone; significant capability shift; concrete implementation"
+    "headline": "OpenAI will merge ChatGPT’s chat and work tabs – here’s when, and what to expect",
+    "link": "https://www.zdnet.com/innovation/openai-merge-chatgpt-chat-work-tabs/",
+    "score": 72,
+    "reason": "Product update from market leader; specific timeline and feature consolidation"
   },
   {
     "rank": 7,
-    "headline": "Fake nuclear warnings in Ukraine as Moscow, Kyiv report separate cyberattacks on emergency apps",
-    "link": "https://www.cnbc.com/2026/11/02/russia-ukraine-cyberattack-zelenskyy-putin.html",
-    "score": 77,
-    "reason": "High-stakes crisis; AI-generated disinformation; concrete attack evidence"
+    "headline": "Gemini 4 Carbon lags just behind Claude in benchmark, but wins in value",
+    "link": "https://9to5google.com/2026/11/02/gemini-4-carbon-benchmark/",
+    "score": 68,
+    "reason": "Competitive model benchmark comparison; Google's new model release"
   },
   {
     "rank": 8,
-    "headline": "AI is coming to construction sites. But does it make workers safer?",
-    "link": "https://www.cnbc.com/2026/10/31/ai-construction-worker-safety.html",
-    "score": 73,
-    "reason": "New sector deployment; worker safety concerns; practical implementation question"
+    "headline": "Anthropic clamps down on Claude’s AI video game clones",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+    "score": 65,
+    "reason": "Policy enforcement by major AI company against unauthorized model use"
   },
   {
     "rank": 9,
-    "headline": "Sam Altman makes surprise South Korea visit as OpenAI builds on chip partnerships",
-    "link": "https://www.cnbc.com/2026/11/02/openai-sam-altman-samsung-sk-south-korea.html",
-    "score": 71,
-    "reason": "Major executive move; strategic chip partnerships; geopolitical significance"
+    "headline": "Gemini could be poking through your emails - here's how to stop it",
+    "link": "https://www.engadget.com/2300353/google-gemini-poking-through-email-how-to-stop/",
+    "score": 62,
+    "reason": "Privacy controversy; widespread user concern about Google's AI system access"
   },
   {
     "rank": 10,
-    "headline": "Guarding the Gates of Knowledge",
-    "link": "https://spectrum.ieee.org/ai-slop-trust-science",
-    "score": 68,
-    "reason": "Information control/access debate; knowledge governance implications"
+    "headline": "The AI boom is facing another supply crunch. This time it's the amount of capital available to feed Silicon Valley's endless need for cash",
+    "link": "https://fortune.com/2026/11/02/ai-boom-supply-crunch-capital-debt-bonds-capex-spending/",
+    "score": 60,
+    "reason": "Market-level constraint affecting entire AI industry; capital crunch reporting"
   }
 ]
