@@ -1,5 +1,25 @@
 [
   {
+    "id": "ai-is-coming-to-construction-sites-20261102",
+    "slug": "ai-is-coming-to-construction-sites",
+    "headline": "AI is coming to construction sites. But does it make workers safer?",
+    "summary": "AI tools are being deployed on construction sites to flag hazards and reduce paperwork, but researchers say evidence they actually prevent injuries remains limited.",
+    "body": "<p>AI flags construction hazards, but researchers say injury prevention evidence remains limited.</p>\n<p>FYLD, a London-based software company, uses AI to support construction, utilities and infrastructure workers. The system predicts permits, helps crews plan around weather, and analyzes worker videos to anticipate problems. Field workers spend 20-25% of time on administrative tasks; AI-generated reports now cut that work from 30 minutes to 2-3 minutes.</p>\n<p>Infrastructure provider Amey announced in March it would deploy FYLD to 2,500 workers. FYLD case studies report injury reductions of up to 48%. Other AI platforms spot infrastructure damage and flag unreported safety incidents by scanning work orders and shift logs.</p>\n<p>Academic researchers caution that most studies focus on what AI models can detect, not whether they prevent harm. Construction sites change constantly, making complete hazard capture difficult. False alarms risk causing workers to ignore warnings, while overreliance on AI can create false security.</p>\n<p>Northumbria University's Waleed Umer warned that human oversight may not be enough if AI generates more information than supervisors can realistically review. Experts recommend treating AI as an extra pair of eyes, not a replacement for supervision, and being clear about what it cannot see.</p>\n<p>The UK construction fatality figure fell to 25 in 2025/26 from 35 the previous year, but researchers note this may reflect economic slowdown rather than technology's impact. The key question for companies is whether AI makes difficult jobs more manageable rather than extracting more output from workers.</p>\n<p>AI tools are entering construction but academic researchers say evidence they prevent injuries remains limited and requires further investigation.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_ai-is-coming-to-construction-sites_20261102_pm.png",
+    "image": "images/aifeed_ai-is-coming-to-construction-sites_20261102_pm.png",
+    "sourceUrl": "https://www.cnbc.com/2026/10/31/ai-construction-worker-safety.html",
+    "publishedAt": "2026-11-02T22:22:23.395Z",
+    "hashtags": [
+      "ConstructionAI",
+      "WorkplaceSafety",
+      "ArtificialIntelligence",
+      "FutureOfWork",
+      "SafetyTech"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "fake-nuclear-warnings-in-ukraine-as-20261102",
     "slug": "fake-nuclear-warnings-in-ukraine-as",
     "headline": "Fake nuclear warnings in Ukraine as Moscow, Kyiv report separate cyberattacks on emergency apps",
