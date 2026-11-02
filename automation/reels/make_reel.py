@@ -88,6 +88,73 @@ def pill_colors(category):
     return _hex(bg), _hex(fg)
 
 
+# ---------- v3 template (opt-in: AIFEED_REEL_TEMPLATE=v3) ----------
+# v3 = retention cut: payoff headline on screen at frame 0, voice starts on the hook, 7-10s, save/share/follow end card.
+# AIFEED_HOOK_STYLE (v3 only): A = bold claim, B = question, C = 'what this means for you'; unset/off = the normal punch.
+V3_MIN_S, V3_MAX_S, V3_END_HOLD = 7.0, 10.0, 3.5  # end card holds ~3.5 s (takeaway / share / follow)
+FOLLOW_LINE = 'Follow @aifeed.run for the AI news that matters'
+# Targeted share prompt per category (same keys as PILL_COLORS); SHARE_DEFAULT for anything else.
+SHARE_PROMPTS = {
+    'business': 'Send this to the person who runs your budget',
+    'research': 'Send this to the friend who reads the papers',
+    'policy': 'Send this to someone who follows AI rules',
+    'products': 'Send this to the friend who tries every new app',
+    'product': 'Send this to the friend who tries every new app',
+    'launch': 'Send this to the friend who tries every new app',
+    'funding': 'Send this to your startup friend',
+    'safety': 'Send this to your IT person',
+    'tools': 'Send this to the teammate who automates everything',
+    'models': 'Send this to the friend who tests every model',
+    'hardware': 'Send this to your PC-building friend',
+    'infrastructure': 'Send this to your cloud or ops lead',
+    'health': 'Send this to someone in healthcare',
+    'security': 'Send this to your IT person',
+}
+SHARE_DEFAULT = 'Send this to someone who needs to know'
+
+
+def reel_template():
+    return 'v3' if os.environ.get('AIFEED_REEL_TEMPLATE', '').strip().lower() == 'v3' else 'v2'
+
+
+def hook_style():
+    s = os.environ.get('AIFEED_HOOK_STYLE', '').strip().upper()
+    return s if s in ('A', 'B', 'C') else ''
+
+
+def share_prompt(category):
+    return SHARE_PROMPTS.get((category or '').strip().lower(), SHARE_DEFAULT)
+
+
+def valid_hook(p, style):
+    """A hook variant in punch format: 2-4 lines split by '/', exactly one '*' accent line, <= 22 chars a line, no banned
+    words; B must be a question, A/C must not be. (YOU/YOUR openers are allowed here: C speaks to the viewer.)"""
+    if not isinstance(p, str):
+        return False
+    lines = [l.strip() for l in p.split('/') if l.strip()]
+    ok = 2 <= len(lines) <= 4 and sum(l.startswith('*') for l in lines) == 1 and all(len(l.lstrip('*')) <= 22 for l in lines)
+    q = p.rstrip().endswith('?')
+    return bool(ok and not BANNED.search(p) and (q if style == 'B' else not q))
+
+
+def pick_hook(post, style):
+    """-> (punch to use, style actually used). Hooks come from the Reel brief (post['hooks'] = {A, B, C}); a missing or
+    invalid variant falls back to the normal punch (style '' = fallback) so a Reel is never blocked."""
+    if not style:
+        return post.get('punch'), ''
+    h = (post.get('hooks') or {}).get(style)
+    if valid_hook(h, style):
+        return h.upper(), style
+    return post.get('punch'), ''
+
+
+def takeaway_text(post, n=95):
+    t = clean(post.get('takeaway') or '')
+    if not t or len(t) > n or BANNED.search(t):
+        t = next((x for x in key_points(post, n) if x != 'Full story at aifeed.run.'), clean(post.get('summary', ''))[:n])
+    return t
+
+
 BANNED = re.compile(r'\b(daily|hand[- ]?edited|human[- ]?edited|edited by (a )?human|our editors?)\b', re.I)
 
 BEAT = 0.5
@@ -399,10 +466,10 @@ def grade(img):
 
 # ---------- scenes ----------
 class Reel:
-    def __init__(self, post, feed, photo, src, credit='', vo=None, total=None):
+    def __init__(self, post, feed, photo, src, credit='', vo=None, total=None, v3=False):
         """vo: voice.synth() result (segments with word timings) -> voiceover-driven timeline with synced captions.
         Without it, the fixed 17.5s music-only timeline (SCENES) is used."""
-        self.post, self.src, self.vo = post, src, vo
+        self.post, self.src, self.vo, self.v3 = post, src, vo, v3
         if vo:
             seg = {x['name']: dict(x) for x in vo['segments']}
             names = [x['name'] for x in vo['segments']]
@@ -484,6 +551,48 @@ class Reel:
         self.web = text_sprite('Free newsletter at aifeed.run', FONT('Regular', 40), MUTED, shadow=False)
         self.src_small = text_sprite(('Source: ' + src) if src else '', FONT('SemiBold', 30), MUTED, shadow=True) if src else None
         self.end_bg = self._end_bg(big)
+        if v3:
+            self._v3_end_init()
+
+    def _v3_end_init(self):
+        """v3 end card sprites: save-worthy takeaway (Anton, white), targeted share prompt (accent), follow line (white)."""
+        self.takeaway = takeaway_text(self.post)
+        self.share = share_prompt(self.post.get('category'))
+        for t in (self.takeaway, self.share, FOLLOW_LINE):
+            if BANNED.search(t):
+                raise SystemExit('banned wording in v3 end card')
+        d = ImageDraw.Draw(Image.new('L', (1, 1)))
+        tf, tl, tlh = fit(self.takeaway.upper(), 'Anton', SAFE_X1 - SAFE_X0, 470, 104, 64, 1.12)
+        y = 430; self.e_take = []
+        for l in tl:
+            self.e_take.append((text_sprite(l, FONT('Anton', tf.size), WHITE), SAFE_X0, y)); y += tlh
+        self.e_bar_y = y + 26
+        sf, sl, slh = fit(self.share, 'Bold', SAFE_X1 - SAFE_X0, 140, 54, 40, 1.18)
+        y = self.e_bar_y + 60; self.e_share = []
+        for l in sl:
+            self.e_share.append((text_sprite(l, sf, self.accent), SAFE_X0, y)); y += slh
+        ff, fl, flh = fit(FOLLOW_LINE, 'SemiBold', SAFE_X1 - SAFE_X0, 130, 46, 36, 1.2)
+        y = max(y + 50, 1180); self.e_follow = []
+        for l in fl:
+            self.e_follow.append((text_sprite(l, ff, WHITE), SAFE_X0, y)); y += flh
+        self.e_bottom = y
+
+    def v3_end(self, t):
+        fr = self.end_bg.copy().convert('RGBA'); lt = max(0.0, t - self.cuts[-1])
+        paste_alpha(fr, self.pill, COVER_X0, SAFE_TOP + 40)  # same single pill, top-left
+        for i, ((spr, ox, oy), x, y) in enumerate(self.e_take):
+            p = ease_out((lt - .04 * i) / .22); paste_alpha(fr, spr, x - ox, y - oy + 24 * (1 - p), p)
+        ImageDraw.Draw(fr).rectangle((SAFE_X0, self.e_bar_y, SAFE_X0 + 200 * ease_out((lt - .1) / .3), self.e_bar_y + 10), fill=self.accent)
+        for (spr, ox, oy), x, y in self.e_share:
+            p = ease_out((lt - .35) / .25); paste_alpha(fr, spr, x - ox, y - oy + 20 * (1 - p), p)
+        for (spr, ox, oy), x, y in self.e_follow:
+            p = ease_out((lt - .6) / .25); paste_alpha(fr, spr, x - ox, y - oy + 20 * (1 - p), p)
+        self.logo(fr)  # one logo, bottom-right
+        self.progress(fr, t)
+        fade = ease_out(lt / END_FADE)
+        if fade < 1:
+            fr = Image.blend(self.scene_frame(t, 1.0), fr, fade)
+        return fr.convert('RGB')
 
     def _captions(self):
         """Phrase captions (3-4 words) with per-word timings; the spoken word is drawn in the category accent."""
@@ -630,6 +739,8 @@ class Reel:
     def frame_vo(self, t, si, lt, name):
         """Voiceover timeline: one continuous push-in on the scene; hook = the cover; then the headline docks smaller
         above the synced captions; end card last."""
+        if name == 'end' and self.v3:
+            return self.v3_end(t)
         if name == 'end':
             fr = self.end_bg.copy().convert('RGBA'); lt = max(0.0, t - self.outro_on) if self.outro_on is not None else lt
             p = ease_back(lt / .3)
@@ -808,6 +919,30 @@ def load_photo(photo, feed, category=''):
     raise SystemExit('no real photo for this story (feed graphic is a text/gradient card); refusing a text-only Reel')
 
 
+def voice_attempts(voice_mod):
+    """(voice, speed) tries for the voiceover: the chosen voice at its pace, the same voice at another pace, then the
+    fallback voice (AIFEED_KOKORO_FALLBACK_VOICE, default am_adam; 'off' disables it). Music-only only after all fail."""
+    v, sp = voice_mod.VOICE, voice_mod.SPEED
+    tries = [(v, sp), (v, 1.0 if abs(sp - 1.0) > .01 else .95)]
+    fb = os.environ.get('AIFEED_KOKORO_FALLBACK_VOICE', 'am_adam').strip()
+    if fb and fb.lower() not in ('off', '0', 'false', 'none') and fb != v:
+        tries.append((fb, sp))
+    return tries
+
+
+def voice_retry(voice_mod, fit):
+    """Run fit(voice=..., speed=..., budget=...) for each voice_attempts() entry until one works; every try has its own
+    capped budget (AIFEED_VOICE_MAX_SYNTH syntheses / AIFEED_VOICE_MAX_S seconds). Raises the joined errors if all fail."""
+    errs = []
+    for v, sp in voice_attempts(voice_mod):
+        try:
+            return fit(voice=v, speed=sp, budget=voice_mod.Budget())
+        except Exception as e:
+            errs.append(f'{v}@{sp:.2f}: {e}')
+            print(f'voiceover try failed ({v} @ {sp:.2f}): {e}', file=sys.stderr)
+    raise RuntimeError(' | '.join(errs))
+
+
 def build(post, feed_path, out, seed=0, photo=None, scene_path=None, scene_source='', scene_credit=''):
     feed = Image.open(feed_path)
     src = clean(post.get('source') or post.get('outlet') or '') or outlet_from_url(post.get('sourceUrl', ''))
@@ -823,7 +958,26 @@ def build(post, feed_path, out, seed=0, photo=None, scene_path=None, scene_sourc
     if scene_src == 'story' and not scene_path:
         credit = clean(post.get('photoCredit') or '')  # caller-supplied attribution for a licensed local photo
     vo, segs, total, voice_name, vo_err = None, None, None, '', ''
-    if os.environ.get('AIFEED_REEL_VOICE', 'on').lower() not in ('off', '0', 'false'):
+    v3, style_req = reel_template() == 'v3', hook_style()
+    style_used = ''
+    if v3:
+        hp, style_used = pick_hook(post, style_req)
+        if hp:
+            post = dict(post, punch=hp)
+    if v3 and os.environ.get('AIFEED_REEL_VOICE', 'on').lower() not in ('off', '0', 'false'):
+        try:
+            import voice
+            vp = voice.voice_path(timeout=90)
+            if not vp:
+                raise RuntimeError('Kokoro model not available')
+            cands = voice_points(post, n=130, story=True) or [x for x in key_points(post) if x != 'Full story at aifeed.run.'][:1]
+            vo, segs, total = voice_retry(voice, lambda **kw: voice.fit_v3(spoken_hook(post), cands, path=vp, lo=V3_MIN_S, hi=V3_MAX_S,
+                                                                         end_hold=V3_END_HOLD, **kw))
+            voice_name = f"kokoro:{vo['voice']}@{vo['speed']:.2f}"
+        except Exception as e:
+            vo_err = str(e)[:300]; vo = None
+            print('voiceover unavailable, rendering music-only:', vo_err, file=sys.stderr)
+    elif os.environ.get('AIFEED_REEL_VOICE', 'on').lower() not in ('off', '0', 'false'):
         try:
             import voice
             vp = voice.voice_path(timeout=90)  # the workflow normally pre-caches it; don't stall a live slot
@@ -835,13 +989,13 @@ def build(post, feed_path, out, seed=0, photo=None, scene_path=None, scene_sourc
             # AIFEED_VOICE_HOOK=headline: the voice first reads EXACTLY the on-screen punch headline; default 'story': the
             # voice skips the headline and tells the story from the first word (up to 4 points)
             hook = None if story else spoken_hook(post)
-            vo, segs, total = voice.fit_duration(hook, cands, path=vp, lo=MIN_S, hi=MAX_S, exact_hook=True,
-                                                 max_points=3 if hook else 4)
+            vo, segs, total = voice_retry(voice, lambda **kw: voice.fit_duration(hook, cands, path=vp, lo=MIN_S, hi=MAX_S, exact_hook=True,
+                                                                               max_points=3 if hook else 4, **kw))
             voice_name = f"kokoro:{vo['voice']}@{vo['speed']:.2f}"
         except Exception as e:  # never lose the slot over TTS: fall back to the music-only timeline
-            vo_err = str(e)[:200]; vo = None
+            vo_err = str(e)[:300]; vo = None
             print('voiceover unavailable, rendering music-only:', vo_err, file=sys.stderr)
-    r = Reel(post, feed, img, src, credit, vo, total)
+    r = Reel(post, feed, img, src, credit, vo, total, v3=v3 and vo is not None)
     cover_path = os.path.splitext(out)[0] + '_cover.jpg'
     r.cover().save(cover_path, quality=92)
     tmp = tempfile.mkdtemp(prefix='reel-'); wav = os.path.join(tmp, 'audio.wav')
@@ -865,6 +1019,10 @@ def build(post, feed_path, out, seed=0, photo=None, scene_path=None, scene_sourc
            'voiceover': [t for _, t in segs] if segs else None}
     if vo_err:
         res['voiceError'] = vo_err
+    res['template'] = 'v3' if r.v3 else 'v2'
+    if r.v3:
+        res.update(hookStyle=style_used or None, hookStyleRequested=style_req or None, takeaway=r.takeaway, sharePrompt=r.share,
+                   audioOnset=round(vo['segments'][0]['words'][0][1], 3) if vo['segments'][0]['words'] else None)
     if vo:
         res['captions'] = [[w, round(a, 3), round(b, 3)] for sg in vo['segments'] for w, a, b in sg['words']]
         res['timeline'] = {'cuts': [round(c, 3) for c in r.cuts], 'scenes': [n for n, _ in r.scenes], 'hookEnd': round(r.hook_end, 3),
