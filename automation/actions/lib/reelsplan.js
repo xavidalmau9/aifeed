@@ -10,10 +10,10 @@ function fbPhotoNeeded(cfg, fbVideoDone) { return Boolean(cfg.fbEnabled) && !fbV
 // THE one switch for the v3 Reel template: config reelTemplate "v3" (env AIFEED_REEL_TEMPLATE overrides it, for test
 // workflows). The result feeds both the brief (reelbrief.js { v3 }) and the renderer (passed explicitly to make_reel.py
 // as AIFEED_REEL_TEMPLATE), so the two can never disagree. Anything else = the current v2 Reel.
-function reelTemplateOpts(cfg = {}, env = {}) {
+function reelTemplateOpts(cfg = {}, env = {}, decision = {}) {
   const raw = env.AIFEED_REEL_TEMPLATE != null && String(env.AIFEED_REEL_TEMPLATE).trim() !== '' ? env.AIFEED_REEL_TEMPLATE : cfg.reelTemplate;
   const v3 = String(raw || '').trim().toLowerCase() === 'v3';
-  const hs = String(env.AIFEED_HOOK_STYLE || cfg.reelHookStyle || '').trim().toUpperCase();
+  const hs = require('./hooktest').resolveHookStyle(cfg, env, decision); // "rotate" = A/B/C test rotation
   return v3 ? { template: 'v3', hookStyle: hs } : { template: 'v2', hookStyle: '' };
 }
 // Alert text when the Reel didn't make it (stage 'render' = every Reel template failed, 'publish' = the IG Reel publish

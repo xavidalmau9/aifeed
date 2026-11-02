@@ -85,7 +85,8 @@ function parseRenderResult(stdout, out) {
   try { r = line ? JSON.parse(line) : {}; } catch (e) { r = {}; }
   const cover = r.cover || out.replace(/\.mp4$/, '_cover.jpg');
   return { mp4: r.out || out, cover: fs.existsSync(cover) ? cover : '', credit: r.photoCredit || '',
-    punch: r.punch || '', sceneSource: r.sceneSource || '', sceneLog: r.sceneLog || [], voice: r.voice || '', voiceError: r.voiceError || '' };
+    punch: r.punch || '', sceneSource: r.sceneSource || '', sceneLog: r.sceneLog || [], voice: r.voice || '', voiceError: r.voiceError || '',
+    hookStyle: r.hookStyle || '', hookStyleRequested: r.hookStyleRequested || '' };
 }
 
 // CC BY / BY-SA photos need attribution: append the Commons credit (without the long URL) once, before the hashtags.

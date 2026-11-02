@@ -9,6 +9,7 @@ const { CLAIM_PATH } = require('./lib/claim');
 const { buildFb, checkFb } = require('./lib/captions');
 const { readJson, writeJson, commitApply } = require('./lib/git');
 const { writeClaim } = require('./lib/slotcommit');
+const { appendHookRow, claimFields } = require('./lib/hooktest');
 const { assertReelsTools } = require('./lib/tools');
 const { graphGet, graphForm, pollContainer, pollPublic, redact } = require('./lib/net');
 const { renderReel, publishIgReel, publishFbVideo } = require('./lib/reels');
@@ -131,7 +132,7 @@ async function ensureReel(cfg, env, io, post, entry, slug) {
   const coverPath = path.join(env.REPO, coverRel);
   if (fs.existsSync(videoPath) && fs.existsSync(coverPath)) {
     console.log('Reusing committed reel ' + videoRel);
-    return { videoUrl: cfg.siteUrl + '/' + videoRel, coverUrl: cfg.siteUrl + '/' + coverRel };
+    return { videoUrl: cfg.siteUrl + '/' + videoRel, coverUrl: cfg.siteUrl + '/' + coverRel, template: 'reused' };
   }
   const html = await io.fetchText(post.sourceUrl);
   const photoUrl = photoUrlFromHtml(html);
@@ -158,7 +159,7 @@ async function ensureReel(cfg, env, io, post, entry, slug) {
     fs.copyFileSync(rr.cover, path.join(env.REPO, coverRel));
     return [videoRel, coverRel];
   });
-  return { videoUrl: cfg.siteUrl + '/' + videoRel, coverUrl: cfg.siteUrl + '/' + coverRel, credit: rr.credit || '' };
+  return { videoUrl: cfg.siteUrl + '/' + videoRel, coverUrl: cfg.siteUrl + '/' + coverRel, credit: rr.credit || '', template: rr.template || 'v2' };
 }
 
 async function runFinish(cfg, env, deps = {}) {
@@ -233,6 +234,7 @@ async function runFinish(cfg, env, deps = {}) {
   }
 
   let igReelId = plan.igReelId;
+  let hookRec = null;
   let igStoryId = plan.igStoryId;
   let fbPostId = plan.fbPostId;
   if (plan.postReel) {
@@ -243,6 +245,10 @@ async function runFinish(cfg, env, deps = {}) {
     const permalink = await lookupPermalink(io, cfg, env, igReelId, 'permalink');
     console.log('Instagram Reel published ' + igReelId + (permalink ? ' ' + permalink : '') + ' (Reels tab only, real photo cover)');
     progress = await saveProgress(io, env, slug, { igReelId, igPermalink: permalink });
+    // Hook test log: finish renders without a v3 brief, so it records the template it actually used (no hook style).
+    hookRec = { date: entry.date, slot: Number(entry.slot), slug, template: (video && video.template) || 'v2', hookStyle: '', igReelId, permalink };
+    try { await io.commitApply(env.REPO, 'Reel hook test log: ' + slug, () => { const w = appendHookRow(env.REPO, hookRec); return w ? [w] : []; }); }
+    catch (e) { console.log('Could not log hook test row: ' + redact(e.message)); }
   } else if (igReelId) {
     console.log('Instagram Reel already posted ' + igReelId + ' — skipping');
   }
@@ -287,6 +293,7 @@ async function runFinish(cfg, env, deps = {}) {
       const extra = {};
       for (const k of ['slug', 'image', 'igStoryId', 'fbPostId']) if (row[k]) extra[k] = row[k];
       extra.igReelId = igReelId;
+      if (hookRec) Object.assign(extra, claimFields(hookRec));
       await io.writeClaim(env, { date: entry.date, slot: Number(entry.slot) }, 'posted', { extra });
     }
     console.log('FINISH PUBLISHED ' + JSON.stringify({ slug, slot: key, igReelId, reelOnly: true }));
@@ -299,7 +306,7 @@ async function runFinish(cfg, env, deps = {}) {
     && row.igReelId === igReelId && row.igStoryId === igStoryId && row.fbPostId === fbPostId;
   if (!alreadyPosted) {
     await io.writeClaim(env, { date: entry.date, slot: Number(entry.slot) }, 'posted', {
-      extra: { slug, image: entry.image, igReelId, igStoryId, fbPostId }
+      extra: Object.assign({ slug, image: entry.image, igReelId, igStoryId, fbPostId }, hookRec ? claimFields(hookRec) : {})
     });
     console.log('Marked slot ' + key + ' posted');
   } else {

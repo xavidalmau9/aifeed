@@ -22,7 +22,8 @@ test('IG Reel container carries cover_url when given', async () => {
 });
 test('parseRenderResult reads make_reel JSON line', () => {
   const r = parseRenderResult('noise\n{"out":"/t/a.mp4","cover":"/nope.jpg","photoCredit":"P"}\n', '/t/a.mp4');
-  assert.deepStrictEqual(r, { mp4: '/t/a.mp4', cover: '', credit: 'P', punch: '', sceneSource: '', sceneLog: [], voice: '', voiceError: '' });
+  assert.deepStrictEqual(r, { mp4: '/t/a.mp4', cover: '', credit: 'P', punch: '', sceneSource: '', sceneLog: [], voice: '', voiceError: '', hookStyle: '', hookStyleRequested: '' });
+  assert.strictEqual(parseRenderResult('{"hookStyle":"B","hookStyleRequested":"B"}', '/t/b.mp4').hookStyle, 'B');
 });
 
 // ---- Cloudflare quota: only the live post may use Workers AI ----

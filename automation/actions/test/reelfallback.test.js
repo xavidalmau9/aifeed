@@ -52,7 +52,8 @@ test('one setting drives brief and renderer', () => {
   assert.strictEqual(reelTemplateOpts({}, { AIFEED_REEL_TEMPLATE: 'v3' }).template, 'v3');
   assert.strictEqual(reelTemplateOpts({ reelTemplate: 'v3' }, { AIFEED_REEL_TEMPLATE: 'v2' }).template, 'v2');
   assert.strictEqual(reelTemplateOpts({ reelTemplate: 'v3' }, { AIFEED_REEL_TEMPLATE: '' }).template, 'v3');
-  assert.strictEqual(reelTemplateOpts(require('../config.json'), {}).template, 'v2'); // config unchanged: v2 stays live
+  assert.strictEqual(reelTemplateOpts(require('../config.json'), {}).template, 'v3'); // hook test on (Nov 2 2026)
+  assert.strictEqual(require('../config.json').reelHookStyle, 'rotate');
 });
 
 test('renderer env is always explicit, never inherited from the job env', () => {
