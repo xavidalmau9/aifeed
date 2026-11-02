@@ -1,5 +1,25 @@
 [
   {
+    "id": "fake-nuclear-warnings-in-ukraine-as-20261102",
+    "slug": "fake-nuclear-warnings-in-ukraine-as",
+    "headline": "Fake nuclear warnings in Ukraine as Moscow, Kyiv report separate cyberattacks on emergency apps",
+    "summary": "Ukraine and Russia reported separate cyberattacks on emergency alert apps amid ongoing military conflict.",
+    "body": "<p>Ukraine and Russia both report cyberattacks on emergency alert systems amid ongoing conflict.</p>\n<p>Ukraine's Air Force reported that its Air Alert app was compromised and briefly sent false warnings of nuclear and chemical threats to residents in Kyiv and other areas. The Air Force stated that unauthorized persons had interfered with the app's operation and temporarily disabled push notifications, instructing users to disregard the alerts and follow official Telegram messages instead.</p>\n<p>Approximately two hours after Ukraine's incident, Russia's Ministry for Emergency Situations announced it had experienced a massive cyberattack on its mobile app that allowed attackers to send fake information to the public.</p>\n<p>The alleged cyberattacks on emergency systems occurred amid escalating military operations, as Russia and Ukraine continued to trade strikes on each other's territories and infrastructure. A temporary local ceasefire in the Russian-occupied city of Oleshky and surrounding Kherson region areas that had allowed humanitarian aid delivery and evacuation of hundreds of trapped residents expired at midnight Moscow time.</p>\n<p>Following the ceasefire, Ukrainian General Staff reported that Russian forces had reinforced military positions, rotated units, and expanded anti-drone measures during the pause. President Volodymyr Zelenskyy stated that October had been the deadliest month for Russia since the full-scale invasion began in 2022, with Russia losing 54,400 troops killed or badly wounded, describing it as a record for any month of the war.</p>\n<p>Ukraine's Defense Forces reported liberating 96.2 square kilometers of Ukrainian land in October, exceeding Russian territorial gains during the same period by 10.4 square kilometers.</p>\n<p>Ukraine and Russia separately reported cyberattacks on emergency alert apps amid continuing military conflict.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_fake-nuclear-warnings-in-ukraine-as_20261102_am.png",
+    "image": "images/aifeed_fake-nuclear-warnings-in-ukraine-as_20261102_am.png",
+    "sourceUrl": "https://www.cnbc.com/2026/11/02/russia-ukraine-cyberattack-zelenskyy-putin.html",
+    "publishedAt": "2026-11-02T13:17:56.531Z",
+    "hashtags": [
+      "Cyberattack",
+      "Ukraine",
+      "Russia",
+      "CyberSecurity",
+      "Infrastructure"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "judge-says-xai-must-face-naacp-20261101",
     "slug": "judge-says-xai-must-face-naacp",
     "headline": "Judge says xAI must face NAACP lawsuit on data center pollution",

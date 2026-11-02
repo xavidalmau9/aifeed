@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-02T13:17:56.531Z",
+      "date": "2026-11-02",
+      "slot": 1,
+      "headline": "Fake nuclear warnings in Ukraine as Moscow, Kyiv report separate cyberattacks on emergency apps",
+      "canonUrl": "cnbc.com/2026/11/02/russia-ukraine-cyberattack-zelenskyy-putin.html",
+      "url": "https://www.cnbc.com/2026/11/02/russia-ukraine-cyberattack-zelenskyy-putin.html",
+      "slug": "fake-nuclear-warnings-in-ukraine-as",
+      "image": "aifeed_fake-nuclear-warnings-in-ukraine-as_20261102_am.png",
+      "photo": {
+        "dhash": "840006a6b53e5a5c",
+        "phash": "d496b6aadaaa0aa3",
+        "hist": [
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          12,
+          13,
+          2,
+          0,
+          0,
+          0,
+          2,
+          300,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          616,
+          0,
+          0,
+          0,
+          39,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "url": "https://image.cnbcfm.com/api/v1/image/108502808-1793614626934-gettyimages-2302510526-dsc09185.jpeg?v=1793614654&w=1920&h=1080",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-11-01T22:13:53.688Z",
       "date": "2026-11-01",
       "slot": 2,
@@ -4173,58 +4255,6 @@
     }
   ],
   "rankings": {
-    "2026-10-19": [
-      {
-        "rank": 1,
-        "title": "Disney Asked Character.AI to Go Bankrupt for a Get-Out-of-Lawsuits Card",
-        "canonUrl": "wired.com/story/disney-asked-characterai-to-go-bankrupt-for-a-get-out-of-lawsuits-card"
-      },
-      {
-        "rank": 2,
-        "title": "Anthropic commits 5% of shares to new public benefit fund that could address AI job disruption",
-        "canonUrl": "cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html"
-      },
-      {
-        "rank": 3,
-        "title": "Women may be at greater risk of AI job losses. Telephone switch operators and PCs show why.",
-        "canonUrl": "cnbc.com/2026/10/19/ai-job-losses-women-automation-risk.html"
-      },
-      {
-        "rank": 4,
-        "title": "Google Gemini 4 agents just beat Minecraft with no human intervention",
-        "canonUrl": "engadget.com/2289944/google-gemini-4-agents-just-beat-minecraft-with-no-human-intervention"
-      },
-      {
-        "rank": 5,
-        "title": "AI researchers stranded Claude on a virtual desert island. It started to “play.”",
-        "canonUrl": "technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play"
-      },
-      {
-        "rank": 6,
-        "title": "OpenAI bugging suspect WhatsApp'ed Saudi royal days before arrest, feds reveal",
-        "canonUrl": "cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html"
-      },
-      {
-        "rank": 7,
-        "title": "Inside the quest to combat Arctic fires and save the planet’s frozen carbon",
-        "canonUrl": "technologyreview.com/2026/10/19/1146832/inside-the-quest-to-combat-arctic-fires-and-save-the-planets-frozen-carbon"
-      },
-      {
-        "rank": 8,
-        "title": "A woman was arrested in Philly for blocking a delivery robot",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot"
-      },
-      {
-        "rank": 9,
-        "title": "Data Centers Have a New PR Plan: Your Kid’s Field Trip",
-        "canonUrl": "wired.com/story/data-center-industry-is-trying-to-woo-kids"
-      },
-      {
-        "rank": 10,
-        "title": "How to use Google's SynthID AI detection website",
-        "canonUrl": "engadget.com/2286802/how-to-use-google-ai-detection-website-synthid"
-      }
-    ],
     "2026-10-20": [
       {
         "rank": 1,
@@ -4889,6 +4919,63 @@
         "rank": 5,
         "title": "Companies promised AI gains — here's how the payoff showed up in earnings",
         "canonUrl": "cnbc.com/2026/11/01/ai-investments-company-earnings.html"
+      }
+    ],
+    "2026-11-02": [
+      {
+        "rank": 1,
+        "title": "Hundreds of Mundane AI Apps Are Hiding Sexually Abusive Deepfake Features",
+        "canonUrl": "wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features"
+      },
+      {
+        "rank": 2,
+        "title": "AI apps with hidden sexual and violent deepfake features made it into the App Store",
+        "canonUrl": "9to5mac.com/2026/11/02/ai-apps-with-hidden-sexual-and-violent-deepfake-features-made-it-into-the-app-store"
+      },
+      {
+        "rank": 3,
+        "title": "Fake nuclear warnings in Ukraine as Moscow, Kyiv report separate cyberattacks on emergency apps",
+        "canonUrl": "cnbc.com/2026/11/02/russia-ukraine-cyberattack-zelenskyy-putin.html"
+      },
+      {
+        "rank": 4,
+        "title": "Anthropic updates Claude to stop it from recreating existing video games",
+        "canonUrl": "engadget.com/2303469/anthropic-updates-claude-to-stop-it-from-recreating-existing-video-games"
+      },
+      {
+        "rank": 5,
+        "title": "AI is coming to construction sites. But does it make workers safer?",
+        "canonUrl": "cnbc.com/2026/10/31/ai-construction-worker-safety.html"
+      },
+      {
+        "rank": 6,
+        "title": "South Korea targets 'world's highest performance' sovereign AI model in record new budget",
+        "canonUrl": "cnbc.com/2026/11/02/south-korea-ai-spending-budget.html"
+      },
+      {
+        "rank": 7,
+        "title": "Sam Altman makes surprise South Korea visit as OpenAI builds on chip partnerships",
+        "canonUrl": "cnbc.com/2026/11/02/openai-sam-altman-samsung-sk-south-korea.html"
+      },
+      {
+        "rank": 8,
+        "title": "Why AI is boosting Meta's ad business while hurting Google search",
+        "canonUrl": "cnbc.com/2026/11/01/ai-meta-ads-google-search.html"
+      },
+      {
+        "rank": 9,
+        "title": "The agentic web is here",
+        "canonUrl": "technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here"
+      },
+      {
+        "rank": 10,
+        "title": "When You Should—and Shouldn’t—Use AI to Search the Web",
+        "canonUrl": "wired.com/story/when-you-should-and-shouldnt-use-ai-to-search-the-web"
+      },
+      {
+        "rank": 11,
+        "title": "Guarding the Gates of Knowledge",
+        "canonUrl": "spectrum.ieee.org/ai-slop-trust-science"
       }
     ]
   }
