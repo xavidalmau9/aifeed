@@ -338,3 +338,49 @@ test('dry run writes captions and does not post or mark the slot', async () => {
   assert.match(cap, /Free weekly AI brief/);
   assert.doesNotMatch(cap, /\bdaily\b/i);
 });
+
+test('reel_only posts just the missing Reel when the Story and a Facebook photo post are already live', async () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'finish-reelonly-'));
+  const env = repoFor(dir);
+  env.REEL_ONLY = true;
+  writeJson(dir, CLAIM_PATH, {
+    claims: { '2026-10-22:2': { status: 'posted', slug: LIVE.slug, at: '2026-10-22T21:49:30.594Z', by: 'github-actions' } }
+  });
+  const calls = [];
+  const graphForm = async (url, fields) => {
+    calls.push({ url: String(url), fields });
+    if (String(url).includes('/media_publish')) return { id: fields.creation_id + '-pub' };
+    if (fields && fields.media_type === 'REELS') return { id: 'reel-container' };
+    throw new Error('unexpected graph call ' + url);
+  };
+  const io = fakeIo(graphForm);
+  const polls = [];
+  io.pollPublic = async (u, opts) => { polls.push(opts); };
+  const base = io.graphGet;
+  io.graphGet = async url => {
+    if (String(url).includes('/media?')) return { data: [{ id: 'car1', media_type: 'CAROUSEL_ALBUM', caption: 'x ' + URL }] };
+    if (String(url).includes('/published_posts')) return { data: [{ id: 'fbphoto', status_type: 'added_photos', message: 'x ' + URL }] };
+    return base(url);
+  };
+  const cfg = require('../config.json');
+  await runFinish(cfg, env, io);
+  assert.equal(calls.filter(c => c.fields && c.fields.media_type === 'REELS').length, 1);
+  assert.equal(calls.some(c => c.fields && c.fields.media_type === 'STORIES'), false);
+  assert.equal(calls.some(c => c.url.includes('/videos') || c.url.includes('/photos') || c.url.includes('/feed')), false);
+  assert.ok(polls.every(o => o.maxAttempts * o.retryWaitMs >= 25 * 60000));
+  const claim = readJson(dir, CLAIM_PATH, {}).claims['2026-10-22:2'];
+  assert.equal(claim.status, 'posted');
+  assert.equal(claim.igReelId, 'reel-container-pub');
+});
+
+test('planFinish reelOnly never plans Story or Facebook; Reel wait is ~30 min', () => {
+  const { planFinish: pf, REEL_WAIT } = require('../lib/finish');
+  const p = pf({ sourceUrl: URL, progress: {}, igMedia: [], fbPosts: [], igStories: [], reelOnly: true });
+  assert.equal(p.postReel, true);
+  assert.equal(p.postStory, false);
+  assert.equal(p.postFb, false);
+  assert.ok(REEL_WAIT.retryWaitMs * REEL_WAIT.maxAttempts >= 25 * 60000);
+  const pipe = fs.readFileSync(path.join(__dirname, '../pipeline.js'), 'utf8');
+  assert.match(pipe, /pollPublic\(videoUrl, REEL_WAIT\)/);
+  assert.match(pipe, /\^reel-only:/);
+});
