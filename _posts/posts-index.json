@@ -1,5 +1,25 @@
 [
   {
+    "id": "50-ai-agents-tried-to-build-20261103",
+    "slug": "50-ai-agents-tried-to-build",
+    "headline": "50 AI agents tried to build a thriving Minecraft civilization – it didn’t end well",
+    "summary": "50 AI agents in Minecraft devolved into bureaucratic gridlock, inventing roles and avoiding risk after early deaths.",
+    "body": "<p>50 AI agents tasked with building a Minecraft civilization collapsed into bureaucratic chaos.</p>\n<p>Y Combinator and Olam Labs researchers deployed 50 OpenAI GPT-6.1 Sol agents into Minecraft with a three-hour mission to construct a thriving civilization. The agents could communicate via direct messages and shared a sandbox environment, but the experiment revealed surprising behavioral patterns that mirrored human organizational dysfunction.</p>\n<p>Rather than efficiently building infrastructure, agents became mired in excessive role creation and procedural overhead. Four agents spent 11 minutes appointing a single fertilizer operator for one piece of bone meal on one wheat block. Other invented positions included fishing shift, rod holder, and hub steward, with agents frequently requesting permission before basic actions like removing grass.</p>\n<p>Behavioral changes emerged after in-game deaths. Twenty-two of 34 agent deaths occurred on the first night, after which agents became increasingly risk-averse and sheltered indoors despite respawning carrying no actual penalties. Researchers noted this cautious behavior paralleled patterns seen in coding agents reviewing multistep processes.</p>\n<p>Comparative experiments showed distinct model family differences. In Bed Wars, GPT-6.1 Sol agents defeated Claude Opus 5.5 agents through aggressive coordination and shorthand communication, while Claude agents signed their names and said we more often. In Mindustry factory-building, GPTs won six to one and developed invented compressed language; Claudes established functioning democracies.</p>\n<p>These experiments reveal how training data and model design shape agent behavior in novel environments without human intervention, with implications for AI safety and regulatory frameworks as autonomous systems become more prevalent.</p>\n<p>AI agent behavior mirrors human organizational traits — bureaucracy, risk-aversion, and role proliferation — raising questions about emergent behaviors in autonomous systems.</p>",
+    "category": "Research",
+    "imageUrl": "https://aifeed.run/images/aifeed_50-ai-agents-tried-to-build_20261103_pm.png",
+    "image": "images/aifeed_50-ai-agents-tried-to-build_20261103_pm.png",
+    "sourceUrl": "https://www.zdnet.com/innovation/y-combinator-ai-agents-minecraft-experiment-behavior/",
+    "publishedAt": "2026-11-03T22:20:40.175Z",
+    "hashtags": [
+      "AIagents",
+      "Minecraft",
+      "YCombinator",
+      "AIbehavior",
+      "AIsafety"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "supermarket-fridges-hit-with-cyberattacks-across-20261103",
     "slug": "supermarket-fridges-hit-with-cyberattacks-across",
     "headline": "Supermarket fridges hit with cyberattacks across Europe — here's what's happening",
