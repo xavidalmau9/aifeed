@@ -364,8 +364,12 @@
     "2026-11-03:1": {
       "slug": "supermarket-fridges-hit-with-cyberattacks-across",
       "image": "aifeed_supermarket-fridges-hit-with-cyberattacks-across_20261103_am.png",
+      "reelTemplate": "v3",
+      "hookStyle": "B",
+      "igReelId": "17885166099529188",
+      "igPermalink": "https://www.instagram.com/reel/DfSAtrFDqlv/",
       "status": "posted",
-      "at": "2026-11-03T13:35:28.550Z",
+      "at": "2026-11-03T13:40:50.023Z",
       "by": "github-actions"
     }
   }
