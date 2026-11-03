@@ -373,8 +373,16 @@
       "by": "github-actions"
     },
     "2026-11-03:2": {
-      "status": "claimed",
-      "at": "2026-11-03T22:17:01.678Z",
+      "slug": "50-ai-agents-tried-to-build",
+      "image": "aifeed_50-ai-agents-tried-to-build_20261103_pm.png",
+      "igReelId": "17967967599206958",
+      "igStoryId": "18149342584492219",
+      "fbPostId": "3583976235104193",
+      "reelTemplate": "v2",
+      "hookStyle": "",
+      "igPermalink": "https://www.instagram.com/reel/DfS__J1Cbzr/",
+      "status": "posted",
+      "at": "2026-11-03T22:54:36.725Z",
       "by": "github-actions"
     }
   }
