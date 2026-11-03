@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Brookfield plans for a $27 billion AI data center at UK power station",
-    "link": "https://www.cnbc.com/2026/11/03/brookfield-ai-data-center-yorkshire-drax.html",
+    "headline": "OpenAI says ChatGPT is catching up to Google in search",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
     "score": 94,
-    "reason": "Massive infrastructure investment with concrete big number and launch"
+    "reason": "Big numbers: 20% of Google Search volume; major competitive claim; concrete metric"
   },
   {
     "rank": 2,
-    "headline": "Hundreds of Mundane AI Apps Are Hiding Sexually Abusive Deepfake Features",
-    "link": "https://www.wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features/",
+    "headline": "Binance co-CEO Richard Teng says hackers used fake job interviews, AI tool to steal $6.3 billion in crypto",
+    "link": "https://www.cnbc.com/2026/11/03/binance-co-ceo-teng-says-hackers-used-fake-job-interviews-to-steal-6point3-billion-in-crypto.html",
     "score": 92,
-    "reason": "Major controversy with quantified scope affecting real users"
+    "reason": "Massive dollar amount; major security breach; AI weaponization controversy"
   },
   {
     "rank": 3,
-    "headline": "OpenAI deepens Abu Dhabi foothold as Sam Altman inks deals spanning energy, government and investment",
-    "link": "https://www.cnbc.com/2026/11/02/openai-abu-dhabi-ai-deals.html",
+    "headline": "Apple starts giving Siri AI access to third-party apps",
+    "link": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
     "score": 88,
-    "reason": "Significant business expansion with multiple deal domains"
+    "reason": "Major product launch; platform expansion; verified feature rollout"
   },
   {
     "rank": 4,
-    "headline": "South Korea targets &apos;world&apos;s highest performance&apos; sovereign AI model in record new budget",
-    "link": "https://www.cnbc.com/2026/11/02/south-korea-ai-spending-budget.html",
+    "headline": "Google is entirely disabling Search in schools that don't want AI",
+    "link": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
     "score": 86,
-    "reason": "Major government AI initiative with record funding commitment"
+    "reason": "Controversial policy; major platform decision; high-stakes standoff"
   },
   {
     "rank": 5,
-    "headline": "OpenAI hires former U.S. Army Secretary Dan Driscoll for national security role",
-    "link": "https://www.cnbc.com/2026/11/03/openai-hires-dan-driscoll-national-security.html",
-    "score": 85,
-    "reason": "High-profile hire signaling AI company's defense/security ambitions"
+    "headline": "CrowdStrike launches AI kill switch that it says can stop internal agents that go rogue",
+    "link": "https://www.cnbc.com/2026/11/03/crowdstrike-ai-kill-switch-rogue-agents.html",
+    "score": 84,
+    "reason": "Major safety feature launch; addresses real concern; tangible product"
   },
   {
     "rank": 6,
-    "headline": "Lumentum CEO touts &apos;enormous&apos; opportunity in massive AI connectivity deal with Marvell",
-    "link": "https://www.cnbc.com/2026/11/02/marvell-lumentum-ai-deal.html",
-    "score": 84,
-    "reason": "Major hardware deal for AI infrastructure"
+    "headline": "Meta seeks to raise up to $25 billion in debt sale as AI spending jumps",
+    "link": "https://www.cnbc.com/2026/11/03/meta-bond-sale-ai-funding.html",
+    "score": 82,
+    "reason": "Large funding announcement; signals major AI investment commitment"
   },
   {
     "rank": 7,
-    "headline": "The agentic web is here",
-    "link": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/",
-    "score": 82,
-    "reason": "Significant AI capability milestone/launch event"
+    "headline": "Nvidia RTX 50 GPUs hit with more price hikes – up to $500",
+    "link": "https://www.zdnet.com/tech/nvidia-rtx-50-cards-gpus-more-price-increases/",
+    "score": 80,
+    "reason": "Market impact; concrete price increases; hardware controversy"
   },
   {
     "rank": 8,
-    "headline": "Here’s who is falling in line for Trump’s “Super Intelligence” loyalty test",
-    "link": "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/",
-    "score": 79,
-    "reason": "AI-related political controversy with concrete developments"
+    "headline": "OpenAI’s hiring of former Army Secretary just 2 months after Pentagon resignation is part of a 'trend' of it pivoting resources to defense projects",
+    "link": "https://fortune.com/2026/11/03/openai-hires-former-army-secretary-dan-driscoll-trend-defense-investments/",
+    "score": 78,
+    "reason": "Defense industry controversy; major hire; strategic pivot"
   },
   {
     "rank": 9,
-    "headline": "‘Our Risk, Their Reward’: Zohran Mamdani on AI and Data Centers",
-    "link": "https://www.wired.com/story/the-big-interview-podcast-nyc-mayor-zohran-mamdani/",
+    "headline": "'You have to be willing to make those hard choices': Freshworks CEO on crossing $1 billion in ARR with 30% fewer employees in the AI software age",
+    "link": "https://fortune.com/2026/11/03/freshworks-1-billion-arr-dennis-woodside-ai-what-companies-stop-doing/",
     "score": 76,
-    "reason": "Policy controversy on AI infrastructure equity concerns"
+    "reason": "Major milestone ($1B ARR); concrete AI impact on employment"
   },
   {
     "rank": 10,
-    "headline": "Blackstone president calls for more equity to fund AI buildout as debt risks mount",
-    "link": "https://www.cnbc.com/2026/11/03/equity-ai-debt-blackstone-pimco-financing.html",
+    "headline": "Musk says Grok Bot's costs are 'unsustainably high,' while OpenAI admits Dots are ‘compute heavy.' Is the personal AI agent push dead on arrival?",
+    "link": "https://fortune.com/2026/11/03/musk-says-grok-bots-costs-are-unsustainably-high-while-openai-admits-dots-are-compute-heavy-is-the-personal-ai-agent-push-dead-on-arrival/",
     "score": 74,
-    "reason": "Industry concern about AI financing risks from major player"
+    "reason": "Major controversy; leadership admissions; challenges to agent viability"
+  },
+  {
+    "rank": 11,
+    "headline": "SUSE lays off 1 in 10 workers – citing AI and automation",
+    "link": "https://www.zdnet.com/business/suse-lay-offs-workforce-ai-cited/",
+    "score": 72,
+    "reason": "Large layoffs; explicit AI-driven RIF; major company impact"
+  },
+  {
+    "rank": 12,
+    "headline": "Athenahealth patients can ask Claude about their medical records now",
+    "link": "https://www.zdnet.com/health/athenahealth-claude-ai-medical-partnership/",
+    "score": 70,
+    "reason": "Major healthcare AI integration launch; Anthropic deployment"
+  },
+  {
+    "rank": 13,
+    "headline": "Netflix will show you themed recommendations through a new ‘AI Discover’ tab",
+    "link": "https://www.theverge.com/streaming/1025029/netflix-ai-discover-recommendations",
+    "score": 68,
+    "reason": "Major feature launch; product innovation; addresses user pain"
+  },
+  {
+    "rank": 14,
+    "headline": "Apple warns of risks related to AI agents behaving in &apos;unintended or unpredictable&apos; ways",
+    "link": "https://www.cnbc.com/2026/11/03/apple-warns-of-ai-agents-behave-in-unintended-or-unpredictable-ways.html",
+    "score": 66,
+    "reason": "Risk warning from major company; AI safety controversy"
+  },
+  {
+    "rank": 15,
+    "headline": "50 AI agents tried to build a thriving Minecraft civilization – it didn’t end well",
+    "link": "https://www.zdnet.com/innovation/y-combinator-ai-agents-minecraft-experiment-behavior/",
+    "score": 62,
+    "reason": "Large-scale experiment; notable failure; demonstrates AI limitations"
+  },
+  {
+    "rank": 16,
+    "headline": "Itch.io adds a filter for games with gen AI disclosures",
+    "link": "https://www.engadget.com/2305699/itchio-adds-a-filter-for-games-with-gen-ai-disclosures/",
+    "score": 60,
+    "reason": "Platform policy launch; addresses gen AI transparency"
+  },
+  {
+    "rank": 17,
+    "headline": "Anthropic's third-quarter results mean IPO math and history are not on its side, analysts say",
+    "link": "https://fortune.com/2026/11/03/anthropics-third-quarter-results-mean-ipo-math-and-history-are-not-on-its-side-analysts-say/",
+    "score": 58,
+    "reason": "Major company financial analysis; IPO prospects commentary"
+  },
+  {
+    "rank": 18,
+    "headline": "How a Kenyan Startup Is Rethinking AI for Small Businesses",
+    "link": "https://spectrum.ieee.org/ai-small-business-mobile-money-startup",
+    "score": 56,
+    "reason": "Global AI expansion; emerging market narrative"
+  },
+  {
+    "rank": 19,
+    "headline": "ChatGPT has hit roughly 20% of Google Search volume, OpenAI says",
+    "link": "https://9to5google.com/2026/11/03/chatgpt-has-hit-roughly-20-of-google-search-volume-openai-says/",
+    "score": 54,
+    "reason": "Concrete metric; market share claim; Google competition"
+  },
+  {
+    "rank": 20,
+    "headline": "Apple’s latest watchOS beta includes its new always-on Audio Intelligence features",
+    "link": "https://www.theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta",
+    "score": 52,
+    "reason": "Product feature launch; wearable AI integration"
   }
 ]
