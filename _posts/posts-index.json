@@ -1,5 +1,25 @@
 [
   {
+    "id": "supermarket-fridges-hit-with-cyberattacks-across-20261103",
+    "slug": "supermarket-fridges-hit-with-cyberattacks-across",
+    "headline": "Supermarket fridges hit with cyberattacks across Europe — here's what's happening",
+    "summary": "Hackers remotely heated supermarket fridges across Europe, spoiling food in cyberattack.",
+    "body": "<p>Dutch group Ahold Delhaize reported dozens of affected stores in Belgium and Luxembourg with temperatures rising to 50°C (122°F). Retailers discarded food and faced operational disruptions across multiple countries.</p>\n<p>Major retailers including Carrefour, Intermarché, Colruyt Group, IKEA, ICA, Kesko, Supervalu, and One Selver reported refrigeration system disruptions. Intermarché stated security measures contained most attacks quickly, though some stores suffered stock losses. The company noted this attack was less severe than an October attack on French supermarkets that reportedly caused damages of several million euros.</p>\n<p>Security researchers identified a critical vulnerability in the targeted systems: refrigerator control units sit directly on public internet with built-in support logins using default or easily obtainable passwords. A vendor issued a patch in August, but thousands of units remained unpatched. Oldest models lack update capability entirely, leaving systemic exposure.</p>\n<p>The attacks remain unclaimed with ongoing investigations. Security experts noted the lack of ransom demands rules out typical ransomware crews, suggesting either demonstration of capability or potential strategic motivation. One analyst speculated the attacks could represent efforts to create 'unease in Ukraine-supporting countries without leaving fingerprints.'</p>\n<p>The incidents raise concerns about critical infrastructure vulnerability and coordinated attack capabilities. French supermarkets suffered similar attacks in October, and U.S. military base commissaries experienced freezer malfunctions in August that the Pentagon treats as suspected hacks.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_supermarket-fridges-hit-with-cyberattacks-across_20261103_am.png",
+    "image": "images/aifeed_supermarket-fridges-hit-with-cyberattacks-across_20261103_am.png",
+    "sourceUrl": "https://www.cnbc.com/2026/11/03/supermarket-fridges-hack-cyberattack-europe.html",
+    "publishedAt": "2026-11-03T13:26:22.409Z",
+    "hashtags": [
+      "Cybersecurity",
+      "Infrastructure",
+      "FoodSafety",
+      "Cyberattack",
+      "CriticalInfrastructure"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "ai-is-coming-to-construction-sites-20261102",
     "slug": "ai-is-coming-to-construction-sites",
     "headline": "AI is coming to construction sites. But does it make workers safer?",
