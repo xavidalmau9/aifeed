@@ -1,128 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Google will disable Search for students unless schools accept AI features in 'Guided Learning' push",
-    "link": "https://9to5google.com/2026/11/03/google-search-ai-guided-learning-changes/",
-    "score": 96,
-    "reason": "Major controversy: Google leveraging monopoly power to force AI adoption in schools with concrete consequence (search disabled)"
+    "headline": "17 better ways Elon Musk could have wasted $446 million",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1026878/not-even-good-at-being-rich",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 2,
-    "headline": "Google hasn't figured out how to make AI pay like its search engine",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1024862/google-search-ai-overviews-alphabet-earnings-q3",
-    "score": 92,
-    "reason": "Significant business problem for major company; quantifies AI monetization gap vs established revenue"
+    "headline": "Gemini for Home now plugs into AT&T’s smart security system",
+    "link": "https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 3,
-    "headline": "Dario Amodei wants 'a country of geniuses in a data center.' Realizing that vision requires risky financial mechanics, Anthropic's IPO filing shows",
-    "link": "https://fortune.com/2026/11/04/dario-amodei-wants-a-country-of-geniuses-in-a-data-center-realizing-that-vision-requires-tricky-financial-mechanics-anthropics-ipo-filing-shows/",
-    "score": 89,
-    "reason": "Major launch: Anthropic IPO filing revealed; significant funding/valuation implications"
+    "headline": "Nothing teases a screen-free AI device ahead of launch next month",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 4,
-    "headline": "OpenAI will merge ChatGPT’s chat and work tabs – here’s when, and what to expect",
-    "link": "https://www.zdnet.com/innovation/openai-merge-chatgpt-chat-work-tabs/",
-    "score": 85,
-    "reason": "Confirmed product launch with timeline; impacts major AI platform user experience"
+    "headline": "My therapist thinks I should chuck the Amazon Bee Frontier out a window",
+    "link": "https://www.theverge.com/column/1026464/optimizer-amazon-bee-frontier-ambient-listening-wearables",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 5,
-    "headline": "Valve just changed its Steam release rules amid a flood of AI games",
-    "link": "https://www.engadget.com/2306215/valve-changed-its-steam-release-rules-amid-a-flood-of-ai-games/",
-    "score": 84,
-    "reason": "Major platform policy shift; addresses tangible problem (flood of AI games) with concrete action"
+    "headline": "ChatGPT will now make you animated GIFs",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 6,
-    "headline": "CrowdStrike&apos;s new kill switch can stop rogue AI agents in their tracks, CEO says",
-    "link": "https://www.cnbc.com/2026/11/03/crowdstrikes-new-kill-switch-can-stop-rogue-ai-agents-in-their-tracks-ceo-says.html",
-    "score": 82,
-    "reason": "Product launch with safety implications; addresses AI control/alignment concerns practically"
+    "headline": "Data centers lost the midterms",
+    "link": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 7,
-    "headline": "Netflix thinks AI might save you from scrolling aimlessly for something to watch",
-    "link": "https://www.engadget.com/2305778/netflix-thinks-ai-might-save-you-from-scrolling-aimlessly-for-something-to-watch/",
-    "score": 79,
-    "reason": "Major platform rolling out AI feature; addresses user pain point with specific use case"
+    "headline": "Uber only fulfilled 4 rides from AI agents last quarter",
+    "link": "https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 8,
-    "headline": "AI Data Centers Have a PR Problem. OpenAI Is Proposing a Rebrand",
-    "link": "https://www.cnet.com/tech/services-and-software/openai-data-centers-rebrand-midterms-pr-campaign/",
-    "score": 77,
-    "reason": "Industry-wide controversy with proposed solution; reflects reputational damage to AI sector"
+    "headline": "Sam Altman addresses RAM comments: People should 'put as much as they want in their computers'",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1026292/sam-altman-ram-shortage-pcs-comments",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 9,
-    "headline": "The biggest modding site in PC gaming is taking a stance on AI",
-    "link": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
-    "score": 75,
-    "reason": "Major platform policy on AI-generated content; creator community pushback"
+    "headline": "The Biggest Pro-AI Super PAC Network Didn’t Really Impact the Midterms",
+    "link": "https://www.wired.com/story/the-biggest-pro-ai-super-pac-network-didnt-really-impact-the-midterms/",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 10,
-    "headline": "Expedia, Hotels.com and Vrbo Bring More AI to the Travel Booking Experience",
-    "link": "https://www.cnet.com/tech/services-and-software/expedia-hotels-com-and-vrbo-bring-more-ai-to-the-travel-booking-experience/",
-    "score": 72,
-    "reason": "Multiple major companies deploying AI at scale in industry; practical business application"
+    "headline": "Google Is Forcing AI Overviews in Classrooms. Schools Are Searching for a Way Out",
+    "link": "https://www.wired.com/story/google-is-forcing-ai-overviews-in-classrooms-schools-are-searching-for-a-way-out/",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 11,
-    "headline": "NVIDIA's controversial DLSS 5 is coming to RTX Remix to 'enhance' older games",
-    "link": "https://www.engadget.com/2306095/nvidia-dlss-5-update-rtx-remix-enhance-older-games/",
-    "score": 71,
-    "reason": "Major tech launch with controversy; NVIDIA expanding AI graphics feature to legacy software"
+    "headline": "Hugging Face’s CEO Says His P(Doom) Is ‘Close to Zero’",
+    "link": "https://www.wired.com/story/wired-world-fair-2026-clement-delangue-hugging-face/",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 12,
-    "headline": "'Cyclon' uses an old Google Pixel to let AI do literally everything for you – who wants this?",
-    "link": "https://9to5google.com/2026/11/03/cyclon-uses-an-old-google-pixel-to-let-ai-do-literally-everything-for-you-who-wants-this/",
-    "score": 68,
-    "reason": "Google product launch; demonstrates aggressive AI agent capabilities; raises adoption questions"
+    "headline": "The Results Are In: Voters Hate Data Centers",
+    "link": "https://www.wired.com/story/the-results-are-in-voters-hate-data-centers/",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 13,
-    "headline": "Is Claude Code truly faster with message threads? I did the math on my logs",
-    "link": "https://www.zdnet.com/innovation/claude-code-message-threads-speed-test/",
-    "score": 65,
-    "reason": "Anthropic feature analysis with quantified performance data; practical product evaluation"
+    "headline": "UK Officials Said AI Would Add £400 Billion to the Economy. That Figure Mainly Came From Google",
+    "link": "https://www.wired.com/story/uk-officials-said-ai-would-add-400-billion-to-the-economy-that-figure-mainly-came-from-google/",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 14,
-    "headline": "CNBC&apos;s The China Connection newsletter: Nvidia&apos;s humanoid push relies on China-made robot hands",
-    "link": "https://www.cnbc.com/2026/11/02/cnbcs-the-china-connection-newsletter-nvidias-humanoid-push-relies-on-china-made-robot-hands.html",
-    "score": 63,
-    "reason": "NVIDIA major initiative; supply chain implications; geopolitical tension"
+    "headline": "Here’s Why You Shouldn’t Use AI to Vote",
+    "link": "https://www.wired.com/story/heres-why-you-shouldnt-use-ai-to-vote/",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 15,
-    "headline": "ADNOC to expand AI use across its operations to strengthen resilience",
-    "link": "https://fortune.com/2026/11/04/adnoc-to-expand-ai-use-across-its-operations-to-strengthen-resilience/",
-    "score": 60,
-    "reason": "Major energy company enterprise AI deployment; significant operational scale"
+    "headline": "‘Our Risk, Their Reward’: Zohran Mamdani on AI and Data Centers",
+    "link": "https://www.wired.com/story/the-big-interview-podcast-nyc-mayor-zohran-mamdani/",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 16,
-    "headline": "Reed Jobs’s Yosemite raises $350 million second fund to make cancer non-lethal",
-    "link": "https://fortune.com/2026/11/04/reed-jobs-yosemite-raises-350-million-second-fund-make-cancer-non-lethal/",
-    "score": 58,
-    "reason": "Large funding round ($350M) for AI in healthcare; high-impact application"
+    "headline": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
+    "link": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 17,
-    "headline": "How “reverse game theory” could keep AI agents in check",
-    "link": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
-    "score": 55,
-    "reason": "Novel AI control mechanism; addresses safety concerns with theoretical framework"
+    "headline": "Roundtables: Inside the Quest for Cognitive Immortality",
+    "link": "https://www.technologyreview.com/2026/11/04/1148049/roundtables-inside-the-quest-for-cognitive-immortality/",
+    "score": 50,
+    "reason": "recency"
   },
   {
     "rank": 18,
-    "headline": "\"What we just witnessed was an AI earthquake\": Voters revolt against tech at polls",
-    "link": "https://www.axios.com/2026/11/04/ai-data-center-election-slowdown",
-    "score": 52,
-    "reason": "Quantified voter pushback against tech/AI; political movement with measurable outcome"
+    "headline": "What’s next for US energy policy after the midterm elections?",
+    "link": "https://www.technologyreview.com/2026/11/04/1148022/us-energy-midterm/",
+    "score": 50,
+    "reason": "recency"
+  },
+  {
+    "rank": 19,
+    "headline": "The Download: blended meat, restored sight, and the agentic web",
+    "link": "https://www.technologyreview.com/2026/11/04/1148001/the-download-blended-meat-sight-restoring-implant-agentic-web/",
+    "score": 50,
+    "reason": "recency"
+  },
+  {
+    "rank": 20,
+    "headline": "Securing the agentic enterprise with data lineage",
+    "link": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/",
+    "score": 50,
+    "reason": "recency"
   }
 ]
