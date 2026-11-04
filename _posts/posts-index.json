@@ -1,5 +1,25 @@
 [
   {
+    "id": "binance-coceo-richard-teng-says-hackers-20261104",
+    "slug": "binance-coceo-richard-teng-says-hackers",
+    "headline": "Binance co-CEO Richard Teng says hackers used fake job interviews, AI tool to steal $6.3 billion in crypto",
+    "summary": "Hackers used fake job interviews and compromised AI tools to steal over $6 billion from Binance.",
+    "body": "<p>Binance hackers spent months using fake interviews and AI tools to infiltrate systems.</p>\n<p>Binance disclosed that hackers used fake job interviews, malicious software and compromised internal AI tools to infiltrate wallet infrastructure, resulting in a record-breaking $6 billion cyberattack on October 29. Co-CEO Richard Teng told CNBC the attackers spent months building their way in, rejecting claims of a single point of failure.</p>\n<p>The attack began in June when a Wallet DevOps engineer downloaded a tampered Homebrew installation containing a malicious AI coding tool. In September, attackers posed as recruiters running job interviews with another engineer, embedding hidden malware in a coding exercise designed to evade security systems.</p>\n<p>From the compromised engineer's credentials, attackers moved through Binance's internal AI tools to gain access to systems authorizing wallet transactions. The company detected suspicious activity early but the engineer's role and colleagues on the wallet team had already been exposed.</p>\n<p>Binance has replenished 98% of the $6.34 billion in affected assets and continues purchasing outstanding illiquid assets. Industry partners including Tether, Circle and Ripple have frozen about $3 billion in stolen assets, though some funds continue moving through laundered channels.</p>\n<p>The FBI linked the attack to North Korean hackers tied to the TraderTraitor group. Binance has rebuilt affected wallet systems, replaced compromised devices, decommissioned credentials and expanded security scans, while engaging independent experts to review all remediation efforts.</p>\n<p>Hackers exploited social engineering and AI tools to penetrate Binance's wallet infrastructure over months.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_binance-coceo-richard-teng-says-hackers_20261104_pm.png",
+    "image": "images/aifeed_binance-coceo-richard-teng-says-hackers_20261104_pm.png",
+    "sourceUrl": "https://www.cnbc.com/2026/11/03/binance-co-ceo-teng-says-hackers-used-fake-job-interviews-to-steal-6point3-billion-in-crypto.html",
+    "publishedAt": "2026-11-04T22:12:46.448Z",
+    "hashtags": [
+      "Binance",
+      "Cybersecurity",
+      "Crypto",
+      "Hacking",
+      "TraderTraitor"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "crowdstrikes-new-kill-switch-can-stop-20261104",
     "slug": "crowdstrikes-new-kill-switch-can-stop",
     "headline": "CrowdStrike's new kill switch can stop rogue AI agents in their tracks, CEO says",
