@@ -1,142 +1,128 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI says ChatGPT is catching up to Google in search",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
-    "score": 94,
-    "reason": "Big numbers: 20% of Google Search volume; major competitive claim; concrete metric"
+    "headline": "Google will disable Search for students unless schools accept AI features in 'Guided Learning' push",
+    "link": "https://9to5google.com/2026/11/03/google-search-ai-guided-learning-changes/",
+    "score": 96,
+    "reason": "Major controversy: Google leveraging monopoly power to force AI adoption in schools with concrete consequence (search disabled)"
   },
   {
     "rank": 2,
-    "headline": "Binance co-CEO Richard Teng says hackers used fake job interviews, AI tool to steal $6.3 billion in crypto",
-    "link": "https://www.cnbc.com/2026/11/03/binance-co-ceo-teng-says-hackers-used-fake-job-interviews-to-steal-6point3-billion-in-crypto.html",
+    "headline": "Google hasn't figured out how to make AI pay like its search engine",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1024862/google-search-ai-overviews-alphabet-earnings-q3",
     "score": 92,
-    "reason": "Massive dollar amount; major security breach; AI weaponization controversy"
+    "reason": "Significant business problem for major company; quantifies AI monetization gap vs established revenue"
   },
   {
     "rank": 3,
-    "headline": "Apple starts giving Siri AI access to third-party apps",
-    "link": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
-    "score": 88,
-    "reason": "Major product launch; platform expansion; verified feature rollout"
+    "headline": "Dario Amodei wants 'a country of geniuses in a data center.' Realizing that vision requires risky financial mechanics, Anthropic's IPO filing shows",
+    "link": "https://fortune.com/2026/11/04/dario-amodei-wants-a-country-of-geniuses-in-a-data-center-realizing-that-vision-requires-tricky-financial-mechanics-anthropics-ipo-filing-shows/",
+    "score": 89,
+    "reason": "Major launch: Anthropic IPO filing revealed; significant funding/valuation implications"
   },
   {
     "rank": 4,
-    "headline": "Google is entirely disabling Search in schools that don't want AI",
-    "link": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
-    "score": 86,
-    "reason": "Controversial policy; major platform decision; high-stakes standoff"
+    "headline": "OpenAI will merge ChatGPT’s chat and work tabs – here’s when, and what to expect",
+    "link": "https://www.zdnet.com/innovation/openai-merge-chatgpt-chat-work-tabs/",
+    "score": 85,
+    "reason": "Confirmed product launch with timeline; impacts major AI platform user experience"
   },
   {
     "rank": 5,
-    "headline": "CrowdStrike launches AI kill switch that it says can stop internal agents that go rogue",
-    "link": "https://www.cnbc.com/2026/11/03/crowdstrike-ai-kill-switch-rogue-agents.html",
+    "headline": "Valve just changed its Steam release rules amid a flood of AI games",
+    "link": "https://www.engadget.com/2306215/valve-changed-its-steam-release-rules-amid-a-flood-of-ai-games/",
     "score": 84,
-    "reason": "Major safety feature launch; addresses real concern; tangible product"
+    "reason": "Major platform policy shift; addresses tangible problem (flood of AI games) with concrete action"
   },
   {
     "rank": 6,
-    "headline": "Meta seeks to raise up to $25 billion in debt sale as AI spending jumps",
-    "link": "https://www.cnbc.com/2026/11/03/meta-bond-sale-ai-funding.html",
+    "headline": "CrowdStrike&apos;s new kill switch can stop rogue AI agents in their tracks, CEO says",
+    "link": "https://www.cnbc.com/2026/11/03/crowdstrikes-new-kill-switch-can-stop-rogue-ai-agents-in-their-tracks-ceo-says.html",
     "score": 82,
-    "reason": "Large funding announcement; signals major AI investment commitment"
+    "reason": "Product launch with safety implications; addresses AI control/alignment concerns practically"
   },
   {
     "rank": 7,
-    "headline": "Nvidia RTX 50 GPUs hit with more price hikes – up to $500",
-    "link": "https://www.zdnet.com/tech/nvidia-rtx-50-cards-gpus-more-price-increases/",
-    "score": 80,
-    "reason": "Market impact; concrete price increases; hardware controversy"
+    "headline": "Netflix thinks AI might save you from scrolling aimlessly for something to watch",
+    "link": "https://www.engadget.com/2305778/netflix-thinks-ai-might-save-you-from-scrolling-aimlessly-for-something-to-watch/",
+    "score": 79,
+    "reason": "Major platform rolling out AI feature; addresses user pain point with specific use case"
   },
   {
     "rank": 8,
-    "headline": "OpenAI’s hiring of former Army Secretary just 2 months after Pentagon resignation is part of a 'trend' of it pivoting resources to defense projects",
-    "link": "https://fortune.com/2026/11/03/openai-hires-former-army-secretary-dan-driscoll-trend-defense-investments/",
-    "score": 78,
-    "reason": "Defense industry controversy; major hire; strategic pivot"
+    "headline": "AI Data Centers Have a PR Problem. OpenAI Is Proposing a Rebrand",
+    "link": "https://www.cnet.com/tech/services-and-software/openai-data-centers-rebrand-midterms-pr-campaign/",
+    "score": 77,
+    "reason": "Industry-wide controversy with proposed solution; reflects reputational damage to AI sector"
   },
   {
     "rank": 9,
-    "headline": "'You have to be willing to make those hard choices': Freshworks CEO on crossing $1 billion in ARR with 30% fewer employees in the AI software age",
-    "link": "https://fortune.com/2026/11/03/freshworks-1-billion-arr-dennis-woodside-ai-what-companies-stop-doing/",
-    "score": 76,
-    "reason": "Major milestone ($1B ARR); concrete AI impact on employment"
+    "headline": "The biggest modding site in PC gaming is taking a stance on AI",
+    "link": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
+    "score": 75,
+    "reason": "Major platform policy on AI-generated content; creator community pushback"
   },
   {
     "rank": 10,
-    "headline": "Musk says Grok Bot's costs are 'unsustainably high,' while OpenAI admits Dots are ‘compute heavy.' Is the personal AI agent push dead on arrival?",
-    "link": "https://fortune.com/2026/11/03/musk-says-grok-bots-costs-are-unsustainably-high-while-openai-admits-dots-are-compute-heavy-is-the-personal-ai-agent-push-dead-on-arrival/",
-    "score": 74,
-    "reason": "Major controversy; leadership admissions; challenges to agent viability"
+    "headline": "Expedia, Hotels.com and Vrbo Bring More AI to the Travel Booking Experience",
+    "link": "https://www.cnet.com/tech/services-and-software/expedia-hotels-com-and-vrbo-bring-more-ai-to-the-travel-booking-experience/",
+    "score": 72,
+    "reason": "Multiple major companies deploying AI at scale in industry; practical business application"
   },
   {
     "rank": 11,
-    "headline": "SUSE lays off 1 in 10 workers – citing AI and automation",
-    "link": "https://www.zdnet.com/business/suse-lay-offs-workforce-ai-cited/",
-    "score": 72,
-    "reason": "Large layoffs; explicit AI-driven RIF; major company impact"
+    "headline": "NVIDIA's controversial DLSS 5 is coming to RTX Remix to 'enhance' older games",
+    "link": "https://www.engadget.com/2306095/nvidia-dlss-5-update-rtx-remix-enhance-older-games/",
+    "score": 71,
+    "reason": "Major tech launch with controversy; NVIDIA expanding AI graphics feature to legacy software"
   },
   {
     "rank": 12,
-    "headline": "Athenahealth patients can ask Claude about their medical records now",
-    "link": "https://www.zdnet.com/health/athenahealth-claude-ai-medical-partnership/",
-    "score": 70,
-    "reason": "Major healthcare AI integration launch; Anthropic deployment"
+    "headline": "'Cyclon' uses an old Google Pixel to let AI do literally everything for you – who wants this?",
+    "link": "https://9to5google.com/2026/11/03/cyclon-uses-an-old-google-pixel-to-let-ai-do-literally-everything-for-you-who-wants-this/",
+    "score": 68,
+    "reason": "Google product launch; demonstrates aggressive AI agent capabilities; raises adoption questions"
   },
   {
     "rank": 13,
-    "headline": "Netflix will show you themed recommendations through a new ‘AI Discover’ tab",
-    "link": "https://www.theverge.com/streaming/1025029/netflix-ai-discover-recommendations",
-    "score": 68,
-    "reason": "Major feature launch; product innovation; addresses user pain"
+    "headline": "Is Claude Code truly faster with message threads? I did the math on my logs",
+    "link": "https://www.zdnet.com/innovation/claude-code-message-threads-speed-test/",
+    "score": 65,
+    "reason": "Anthropic feature analysis with quantified performance data; practical product evaluation"
   },
   {
     "rank": 14,
-    "headline": "Apple warns of risks related to AI agents behaving in &apos;unintended or unpredictable&apos; ways",
-    "link": "https://www.cnbc.com/2026/11/03/apple-warns-of-ai-agents-behave-in-unintended-or-unpredictable-ways.html",
-    "score": 66,
-    "reason": "Risk warning from major company; AI safety controversy"
+    "headline": "CNBC&apos;s The China Connection newsletter: Nvidia&apos;s humanoid push relies on China-made robot hands",
+    "link": "https://www.cnbc.com/2026/11/02/cnbcs-the-china-connection-newsletter-nvidias-humanoid-push-relies-on-china-made-robot-hands.html",
+    "score": 63,
+    "reason": "NVIDIA major initiative; supply chain implications; geopolitical tension"
   },
   {
     "rank": 15,
-    "headline": "50 AI agents tried to build a thriving Minecraft civilization – it didn’t end well",
-    "link": "https://www.zdnet.com/innovation/y-combinator-ai-agents-minecraft-experiment-behavior/",
-    "score": 62,
-    "reason": "Large-scale experiment; notable failure; demonstrates AI limitations"
+    "headline": "ADNOC to expand AI use across its operations to strengthen resilience",
+    "link": "https://fortune.com/2026/11/04/adnoc-to-expand-ai-use-across-its-operations-to-strengthen-resilience/",
+    "score": 60,
+    "reason": "Major energy company enterprise AI deployment; significant operational scale"
   },
   {
     "rank": 16,
-    "headline": "Itch.io adds a filter for games with gen AI disclosures",
-    "link": "https://www.engadget.com/2305699/itchio-adds-a-filter-for-games-with-gen-ai-disclosures/",
-    "score": 60,
-    "reason": "Platform policy launch; addresses gen AI transparency"
+    "headline": "Reed Jobs’s Yosemite raises $350 million second fund to make cancer non-lethal",
+    "link": "https://fortune.com/2026/11/04/reed-jobs-yosemite-raises-350-million-second-fund-make-cancer-non-lethal/",
+    "score": 58,
+    "reason": "Large funding round ($350M) for AI in healthcare; high-impact application"
   },
   {
     "rank": 17,
-    "headline": "Anthropic's third-quarter results mean IPO math and history are not on its side, analysts say",
-    "link": "https://fortune.com/2026/11/03/anthropics-third-quarter-results-mean-ipo-math-and-history-are-not-on-its-side-analysts-say/",
-    "score": 58,
-    "reason": "Major company financial analysis; IPO prospects commentary"
+    "headline": "How “reverse game theory” could keep AI agents in check",
+    "link": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+    "score": 55,
+    "reason": "Novel AI control mechanism; addresses safety concerns with theoretical framework"
   },
   {
     "rank": 18,
-    "headline": "How a Kenyan Startup Is Rethinking AI for Small Businesses",
-    "link": "https://spectrum.ieee.org/ai-small-business-mobile-money-startup",
-    "score": 56,
-    "reason": "Global AI expansion; emerging market narrative"
-  },
-  {
-    "rank": 19,
-    "headline": "ChatGPT has hit roughly 20% of Google Search volume, OpenAI says",
-    "link": "https://9to5google.com/2026/11/03/chatgpt-has-hit-roughly-20-of-google-search-volume-openai-says/",
-    "score": 54,
-    "reason": "Concrete metric; market share claim; Google competition"
-  },
-  {
-    "rank": 20,
-    "headline": "Apple’s latest watchOS beta includes its new always-on Audio Intelligence features",
-    "link": "https://www.theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta",
+    "headline": "\"What we just witnessed was an AI earthquake\": Voters revolt against tech at polls",
+    "link": "https://www.axios.com/2026/11/04/ai-data-center-election-slowdown",
     "score": 52,
-    "reason": "Product feature launch; wearable AI integration"
+    "reason": "Quantified voter pushback against tech/AI; political movement with measurable outcome"
   }
 ]
