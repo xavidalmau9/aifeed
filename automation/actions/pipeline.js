@@ -631,7 +631,7 @@ async function main() {
           videoUrl: published.post.videoUrl || '',
           altText: published.post.headline
         });
-        console.log('LinkedIn (Buffer) post created ' + post.id + ' ' + post.status);
+        console.log('LinkedIn (Buffer) post created ' + post.id + ' ' + post.status + (post.fallback ? ' (image fallback after video failed)' : ''));
       } catch (e) {
         const msg = 'AIFeed: LinkedIn (Buffer) post failed (Instagram, Facebook + website unaffected)\n' + redact(e.message);
         console.log(msg);

@@ -10,3 +10,18 @@ test('buffer linkedin disabled without key', () => {
   assert.equal(bufferLinkedinEnabled({ bufferLinkedinEnabled: true, bufferLinkedinChannelId: '6ace69ec778b240e2ffa52a9' }, {}), false);
   assert.equal(bufferLinkedinEnabled({ bufferLinkedinEnabled: true, bufferLinkedinChannelId: '6ace69ec778b240e2ffa52a9' }, { BUFFER_API_KEY: 'k' }), true);
 });
+
+test('buffer linkedin video failure falls back to image post', async () => {
+  const { bufferLinkedinPost } = require('../lib/buffer');
+  const calls = [];
+  const gql = async (k, q, v) => {
+    calls.push(v.input.assets);
+    if (v.input.assets[0].video) return { createPost: { __typename: 'InvalidInputError', message: 'Video could not be read from its URL' } };
+    return { createPost: { __typename: 'PostActionSuccess', post: { id: 'p1', status: 'sent' } } };
+  };
+  const post = await bufferLinkedinPost({ cfg: { bufferLinkedinChannelId: '6ace69ec778b240e2ffa52a9' }, env: { BUFFER_API_KEY: 'k' },
+    text: 'T', imageUrls: ['https://a/img.png', null], videoUrl: 'https://a/v.mp4', gql, log: () => {} });
+  assert.equal(post.fallback, true);
+  assert.equal(calls.length, 2);
+  assert.equal(calls[1][0].image.url, 'https://a/img.png');
+});

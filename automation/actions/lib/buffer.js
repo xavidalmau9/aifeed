@@ -40,11 +40,25 @@ async function bufferGraphql(apiKey, query, variables) {
 }
 
 // imageUrls: public image URLs (feed graphic, end card). videoUrl: optional public mp4; when set it is posted as a LinkedIn video.
-async function bufferLinkedinPost({ cfg, env, text, imageUrls = [], videoUrl = '', altText = '' }) {
+// If the video post fails (e.g. 'Video could not be read from its URL'), retries once as an image post
+// with the same caption. Returned post has fallback: true when the image retry was used.
+async function bufferLinkedinPost({ cfg, env, text, imageUrls = [], videoUrl = '', altText = '', gql = bufferGraphql, log = console.log }) {
+  try {
+    return await bufferCreate({ cfg, env, text, imageUrls, videoUrl, altText, gql });
+  } catch (e) {
+    const images = imageUrls.filter(Boolean);
+    if (!videoUrl || !images.length) throw e;
+    log('LinkedIn (Buffer) video post failed, retrying as image post: ' + String(e.message).slice(0, 200));
+    const post = await bufferCreate({ cfg, env, text, imageUrls: images, videoUrl: '', altText, gql });
+    return Object.assign({}, post, { fallback: true });
+  }
+}
+
+async function bufferCreate({ cfg, env, text, imageUrls, videoUrl, altText, gql }) {
   const assets = videoUrl
     ? [{ video: { url: videoUrl } }]
     : imageUrls.map(url => ({ image: { url, metadata: { altText: altText || 'AIFeed.run story graphic' } } }));
-  const data = await bufferGraphql(env.BUFFER_API_KEY, CREATE_POST, {
+  const data = await gql(env.BUFFER_API_KEY, CREATE_POST, {
     input: {
       channelId: cfg.bufferLinkedinChannelId,
       schedulingType: 'automatic',
