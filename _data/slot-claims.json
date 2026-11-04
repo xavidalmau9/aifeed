@@ -399,8 +399,12 @@
     "2026-11-04:2": {
       "slug": "binance-coceo-richard-teng-says-hackers",
       "image": "aifeed_binance-coceo-richard-teng-says-hackers_20261104_pm.png",
+      "reelTemplate": "v3",
+      "hookStyle": "B",
+      "igReelId": "18184093519439210",
+      "igPermalink": "https://www.instagram.com/reel/DfVhxyTgK8Q/",
       "status": "posted",
-      "at": "2026-11-04T22:21:49.331Z",
+      "at": "2026-11-04T22:27:41.514Z",
       "by": "github-actions"
     }
   }
