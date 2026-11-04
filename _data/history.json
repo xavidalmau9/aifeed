@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-04T13:16:36.960Z",
+      "date": "2026-11-04",
+      "slot": 1,
+      "headline": "CrowdStrike's new kill switch can stop rogue AI agents in their tracks, CEO says",
+      "canonUrl": "cnbc.com/2026/11/03/crowdstrikes-new-kill-switch-can-stop-rogue-ai-agents-in-their-tracks-ceo-says.html",
+      "url": "https://www.cnbc.com/2026/11/03/crowdstrikes-new-kill-switch-can-stop-rogue-ai-agents-in-their-tracks-ceo-says.html",
+      "slug": "crowdstrikes-new-kill-switch-can-stop",
+      "image": "aifeed_crowdstrikes-new-kill-switch-can-stop_20261104_am.png",
+      "photo": {
+        "dhash": "6c607474707070b0",
+        "phash": "07f47e2fd0dc0525",
+        "hist": [
+          406,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          43,
+          0,
+          0,
+          0,
+          41,
+          37,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          182,
+          0,
+          0,
+          0,
+          96,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          30,
+          157,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "url": "https://image.cnbcfm.com/api/v1/image/108217884-1761665721330-gettyimages-2243356966-AFP_829T3E8.jpeg?v=1767895191&w=1920&h=1080",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-11-03T22:20:40.175Z",
       "date": "2026-11-03",
       "slot": 2,
@@ -4501,68 +4583,6 @@
     }
   ],
   "rankings": {
-    "2026-10-21": [
-      {
-        "rank": 1,
-        "title": "OpenAI's most powerful AI models disabled their own safety monitoring — and one lied about it",
-        "canonUrl": "cnbc.com/2026/10/21/openai-ai-models-safety-monitoring.html"
-      },
-      {
-        "rank": 2,
-        "title": "OpenAI Invests in Startup That Uses Brain Implants to Detect Cancer",
-        "canonUrl": "wired.com/story/openai-startup-brain-implants-detect-cancer"
-      },
-      {
-        "rank": 3,
-        "title": "Exclusive: ServiceNow and Nvidia launch Arc, a new AI agent for enterprise",
-        "canonUrl": "zdnet.com/innovation/exclusive-servicenow-and-nvidia-launch-arc-a-new-ai-agent-for-enterprise"
-      },
-      {
-        "rank": 4,
-        "title": "Spotify pulled 50 million AI slop and spam tracks from its recommendations",
-        "canonUrl": "theverge.com/entertainment/1014284/spotify-ai-slop-spam-songs-removed"
-      },
-      {
-        "rank": 5,
-        "title": "An AI Agent Joined a Listserv of Top Internet Researchers. The Reply-All Chaos Is Still Unfolding",
-        "canonUrl": "wired.com/story/an-ai-agent-joined-a-listserv-of-top-internet-researchers-the-reply-all-chaos-is-still-unfolding"
-      },
-      {
-        "rank": 6,
-        "title": "CoreWeave’s debt is becoming the whole AI industry’s problem",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai"
-      },
-      {
-        "rank": 7,
-        "title": "Anthropic in talks with neocloud Nscale over second multibillion-dollar deal, source tells CNBC",
-        "canonUrl": "cnbc.com/2026/10/20/anthropic-nscale-data-center-deal.html"
-      },
-      {
-        "rank": 8,
-        "title": "Google’s more personalized Gemini AI is heading to your car",
-        "canonUrl": "theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
-      },
-      {
-        "rank": 9,
-        "title": "As Midterms Approach, Top American Fears Include AI Interference in the Political Process",
-        "canonUrl": "cnet.com/tech/services-and-software/midterms-top-american-fears-ai-interference-political-process"
-      },
-      {
-        "rank": 10,
-        "title": "'MAKE DEALS': Trump says data centers should pay communities a 'dividend' to win support",
-        "canonUrl": "cnbc.com/2026/10/21/trump-data-centers-community-dividend.html"
-      },
-      {
-        "rank": 11,
-        "title": "AI's spending boom faces a 'gut check': Who can actually make money?",
-        "canonUrl": "cnbc.com/2026/10/21/ai-boom-spending-profit.html"
-      },
-      {
-        "rank": 12,
-        "title": "Meta drops the word \"train\" from its commercial TOS after AI backlash",
-        "canonUrl": "arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash"
-      }
-    ],
     "2026-10-22": [
       {
         "rank": 1,
@@ -5232,6 +5252,68 @@
         "rank": 12,
         "title": "Athenahealth patients can ask Claude about their medical records now",
         "canonUrl": "zdnet.com/health/athenahealth-claude-ai-medical-partnership"
+      }
+    ],
+    "2026-11-04": [
+      {
+        "rank": 1,
+        "title": "CrowdStrike's new kill switch can stop rogue AI agents in their tracks, CEO says",
+        "canonUrl": "cnbc.com/2026/11/03/crowdstrikes-new-kill-switch-can-stop-rogue-ai-agents-in-their-tracks-ceo-says.html"
+      },
+      {
+        "rank": 2,
+        "title": "Binance co-CEO Richard Teng says hackers used fake job interviews, AI tool to steal $6.3 billion in crypto",
+        "canonUrl": "cnbc.com/2026/11/03/binance-co-ceo-teng-says-hackers-used-fake-job-interviews-to-steal-6point3-billion-in-crypto.html"
+      },
+      {
+        "rank": 3,
+        "title": "Apple warns of risks related to AI agents behaving in 'unintended or unpredictable' ways",
+        "canonUrl": "cnbc.com/2026/11/03/apple-warns-of-ai-agents-behave-in-unintended-or-unpredictable-ways.html"
+      },
+      {
+        "rank": 4,
+        "title": "Google is entirely disabling Search in schools that don’t want AI",
+        "canonUrl": "theverge.com/tech/1025411/google-turn-off-search-ai-features"
+      },
+      {
+        "rank": 5,
+        "title": "Google responds to political backlash over removing search from schools that ban AI",
+        "canonUrl": "cnbc.com/2026/11/03/google-responds-to-outrage-over-removing-search-in-schools-that-ban-ai.html"
+      },
+      {
+        "rank": 6,
+        "title": "Here’s Why You Shouldn’t Use AI to Vote",
+        "canonUrl": "wired.com/story/heres-why-you-shouldnt-use-ai-to-vote"
+      },
+      {
+        "rank": 7,
+        "title": "Apple starts giving Siri AI access to third-party apps",
+        "canonUrl": "theverge.com/tech/1025694/apple-siri-ai-third-party-apps"
+      },
+      {
+        "rank": 8,
+        "title": "Your Apple Watch has 2 new controversial listening features – but you have to opt in",
+        "canonUrl": "zdnet.com/tech/apple-watch-siri-recap-live-rewind-available-beta-how-to-try"
+      },
+      {
+        "rank": 9,
+        "title": "How “reverse game theory” could keep AI agents in check",
+        "canonUrl": "technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment"
+      },
+      {
+        "rank": 10,
+        "title": "Netflix will show you themed recommendations through a new ‘AI Discover’ tab",
+        "canonUrl": "theverge.com/streaming/1025029/netflix-ai-discover-recommendations"
+      },
+      {
+        "rank": 11,
+        "title": "This clever banking scam keeps phishing by faking its own demise – how it works",
+        "canonUrl": "zdnet.com/tech/bank-phishing-scam-kela"
+      },
+      {
+        "rank": 12,
+        "title": "AI Data Centers Have a PR Problem. OpenAI Is Proposing a Rebrand",
+        "canonUrl": "cnet.com/tech/services-and-software/openai-data-centers-rebrand-midterms-pr-campaign"
       }
     ]
   }

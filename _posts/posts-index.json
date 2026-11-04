@@ -1,5 +1,25 @@
 [
   {
+    "id": "crowdstrikes-new-kill-switch-can-stop-20261104",
+    "slug": "crowdstrikes-new-kill-switch-can-stop",
+    "headline": "CrowdStrike's new kill switch can stop rogue AI agents in their tracks, CEO says",
+    "summary": "CrowdStrike announced an AI Kill Switch to terminate rogue agents, prevent restarts, and cut network access.",
+    "body": "<p>CrowdStrike CEO George Kurtz announced Tuesday at Fal.Con Europe that the company's new AI Kill Switch allows security teams to terminate misbehaving AI agents, prevent them from restarting, and cut off their network access. Kurtz told CNBC that the technology provides \"the off button\" AI agents never previously had.</p>\n<p>The AI Kill Switch is integrated into CrowdStrike's Falcon Guardian platform, which monitors AI agents operating within organizations. The technology addresses growing concerns about controlling autonomous systems as companies rapidly adopt AI agents across their operations.</p>\n<p>Kurtz framed the announcement as a significant shift in cybersecurity strategy. Traditionally focused on external threats, security providers must now ensure AI systems operate safely within their own organizations, he argued.</p>\n<p>The CEO compared safeguards to airbags in vehicles, noting that even correctly-designed systems require protection mechanisms. \"If they go outside of those guardrails at runtime, we can kill those agents,\" Kurtz said, highlighting runtime monitoring capabilities.</p>\n<p>Enterprise customers reportedly pushed CrowdStrike to integrate its security before deploying AI products like Anthropic's Claude.</p>",
+    "category": "Tools",
+    "imageUrl": "https://aifeed.run/images/aifeed_crowdstrikes-new-kill-switch-can-stop_20261104_am.png",
+    "image": "images/aifeed_crowdstrikes-new-kill-switch-can-stop_20261104_am.png",
+    "sourceUrl": "https://www.cnbc.com/2026/11/03/crowdstrikes-new-kill-switch-can-stop-rogue-ai-agents-in-their-tracks-ceo-says.html",
+    "publishedAt": "2026-11-04T13:16:36.960Z",
+    "hashtags": [
+      "CrowdStrike",
+      "AISafety",
+      "AIAgents",
+      "Cybersecurity",
+      "FalconGuardian"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "50-ai-agents-tried-to-build-20261103",
     "slug": "50-ai-agents-tried-to-build",
     "headline": "50 AI agents tried to build a thriving Minecraft civilization – it didn’t end well",
