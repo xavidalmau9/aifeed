@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "\"What we just witnessed was an AI earthquake\": Voters revolt against tech at polls",
-    "link": "https://www.axios.com/2026/11/04/ai-data-center-election-slowdown",
+    "headline": "Claude AI can plug directly into your bank account",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1027652/anthropic-claude-plaid-personal-finance",
     "score": 94,
-    "reason": "Massive controversy: 43-1 voter rejection of data centers; tangible policy impact"
+    "reason": "Major product launch with significant financial integration capability"
   },
   {
     "rank": 2,
-    "headline": "ChatGPT has hit roughly 20% of Google Search volume, OpenAI says",
-    "link": "https://9to5google.com/2026/11/03/chatgpt-has-hit-roughly-20-of-google-search-volume-openai-says/",
+    "headline": "OpenAI debuts new cybersecurity-focused AI model amid growing alarm about AI-driven cyber attacks",
+    "link": "https://fortune.com/2026/11/05/openai-debuts-new-cybersecurity-focused-ai-model-amid-growing-alarm-about-ai-driven-cyber-attacks/",
     "score": 92,
-    "reason": "Big number: 20% search displacement; major market shift announcement"
+    "reason": "Product launch addressing major security concern with controversy angle"
   },
   {
     "rank": 3,
-    "headline": "Want an AI job? Deployment engineers are earning executive-level pay – up to $1.45M a year",
-    "link": "https://www.zdnet.com/innovation/ai-deployment-engineers-salary-christian-timbers-report/",
+    "headline": "AI meltdown: Nvidia and Qualcomm drop more than 9%, pushing Nasdaq to worst day since April 2025",
+    "link": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
     "score": 88,
-    "reason": "Big number: $1.45M salaries; validates AI labor market boom"
+    "reason": "Major market event with big numbers ($3 trillion losses mentioned elsewhere)"
   },
   {
     "rank": 4,
-    "headline": "Big Tech’s big AI buildout will not end until someone stops it",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3",
-    "score": 86,
-    "reason": "Major trend piece; scale of infrastructure investment"
+    "headline": "You can post AI music straight to SoundCloud from ElevenLabs",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs",
+    "score": 84,
+    "reason": "Major platform integration launch (ElevenLabs to SoundCloud)"
   },
   {
     "rank": 5,
-    "headline": "OpenAI says it will protect local resources and report on the impact of its data centers",
-    "link": "https://www.engadget.com/2307590/openai-says-it-will-protect-local-resources-and-report-on-the-impact-of-its-data-centers/",
-    "score": 84,
-    "reason": "Launch: new data center impact reporting; response to voter backlash"
+    "headline": "Google Is Forcing AI Overviews in Classrooms. Schools Are Searching for a Way Out",
+    "link": "https://www.wired.com/story/google-is-forcing-ai-overviews-in-classrooms-schools-are-searching-for-a-way-out/",
+    "score": 82,
+    "reason": "Significant deployment with institutional backlash and controversy"
   },
   {
     "rank": 6,
-    "headline": "AI Data Centers Have a PR Problem. OpenAI Is Proposing a Rebrand",
-    "link": "https://www.cnet.com/tech/services-and-software/openai-data-centers-rebrand-midterms-pr-campaign/",
-    "score": 82,
-    "reason": "Controversy: industry rebrand strategy after political defeat"
+    "headline": "Chinese AI lab Moonshot turned to Europe for Nvidia Blackwell access amid U.S. China curbs, sources tell CNBC",
+    "link": "https://www.cnbc.com/2026/11/05/moonshot-ai-nvidia-chips-europe-china.html",
+    "score": 81,
+    "reason": "Geopolitical controversy with supply chain implications"
   },
   {
     "rank": 7,
-    "headline": "AI agents went shopping for TVs and laptops—and messed up nearly 50% of the time, study shows",
-    "link": "https://fortune.com/2026/11/05/ai-agents-shopping-ranking-best-agent/",
-    "score": 80,
-    "reason": "Big number: 50% failure rate; empirical agent performance data"
+    "headline": "Agility Robotics' Nasdaq debut invites scrutiny of humanoid robot market",
+    "link": "https://arstechnica.com/ai/2026/11/agility-robotics-nasdaq-debut-invites-scrutiny-of-humanoid-robot-market/",
+    "score": 79,
+    "reason": "Major IPO launch with market scrutiny"
   },
   {
     "rank": 8,
-    "headline": "Cult Phone-Maker Nothing’s Mystery Screenless AI Device Is Coming Next Month",
-    "link": "https://www.cnet.com/tech/services-and-software/nothings-first-standalone-ai-device-coming-next-month/",
+    "headline": "Top Democrats call to rein in AI buildout after midterms sweep: &apos;National data center moratorium now&apos;",
+    "link": "https://www.cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html",
     "score": 78,
-    "reason": "Product launch: new AI device form factor"
+    "reason": "Major regulatory controversy and political action"
   },
   {
     "rank": 9,
-    "headline": "Nvidia RTX 50 GPUs hit with more price hikes – up to $500",
-    "link": "https://www.zdnet.com/tech/nvidia-rtx-50-cards-gpus-more-price-increases/",
-    "score": 76,
-    "reason": "Big number: $500 price increase; hardware market impact"
+    "headline": "Finding New Drugs Is Laborious. This AI Startup Is Skipping The Lab Work",
+    "link": "https://www.wired.com/story/finding-new-drugs-is-laborious-this-ai-startup-is-skipping-the-lab-work/",
+    "score": 75,
+    "reason": "Significant breakthrough in drug discovery application"
   },
   {
     "rank": 10,
-    "headline": "Google Is Forcing Schools to Choose Between Its Search Engine and AI",
-    "link": "https://www.cnet.com/tech/services-and-software/google-forcing-schools-choose-between-search-engine-ai/",
-    "score": 74,
-    "reason": "Controversy: antitrust concern; coercive bundling practice"
+    "headline": "AI Text Watermarking May Not Be Able to Meet the E.U.’s New Rules",
+    "link": "https://spectrum.ieee.org/ai-watermark-openai-textgrain-europe",
+    "score": 73,
+    "reason": "Major regulatory compliance controversy"
   },
   {
     "rank": 11,
-    "headline": "Qualcomm is betting big on data centers as smartphone sales sink",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
-    "score": 72,
-    "reason": "Strategic pivot; big market shift"
+    "headline": "Muse has a voice mode now",
+    "link": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
+    "score": 71,
+    "reason": "Meta product feature launch"
   },
   {
     "rank": 12,
-    "headline": "SUSE lays off 1 in 10 workers – citing AI and automation",
-    "link": "https://www.zdnet.com/business/suse-lay-offs-workforce-ai-cited/",
+    "headline": "Tech giants turn to cash, concessions for AI rebrand after voters pummeled data centers 43-1",
+    "link": "https://www.axios.com/2026/11/05/ai-data-center-election-backlash-concessions",
     "score": 70,
-    "reason": "Concrete AI job displacement; 10% workforce reduction"
+    "reason": "Major political backlash with specific numbers (43-1 vote)"
   },
   {
     "rank": 13,
-    "headline": "Valve just changed its Steam release rules amid a flood of AI games",
-    "link": "https://www.engadget.com/2306215/valve-changed-its-steam-release-rules-amid-a-flood-of-ai-games/",
+    "headline": "Nvidia&apos;s Huang is asked to brief Congress on reported Chinese spy relationship",
+    "link": "https://www.cnbc.com/2026/11/05/nvidia-jensen-huang-china-spy-congress.html",
     "score": 68,
-    "reason": "Policy change: platform response to AI content surge"
+    "reason": "Major controversy and geopolitical concern"
   },
   {
     "rank": 14,
-    "headline": "He Trolls AI Labs for a Living. Now They All Want to Work With Him",
-    "link": "https://www.wired.com/story/wired-world-fair-2026-evan-ratliff-and-husk/",
+    "headline": "Ads in Chatbots Have Arrived. Here’s What’s Working—and What’s Not",
+    "link": "https://www.wired.com/story/ads-in-chatbots-have-arrived-heres-whats-working-and-whats-not/",
     "score": 66,
-    "reason": "Novel trend: red-teaming as lucrative career"
+    "reason": "Major monetization model launch across industry"
   },
   {
     "rank": 15,
-    "headline": "The Blue Wave Has Tech Bros Scrambling for Data Centers in Space",
-    "link": "https://www.wired.com/story/the-blue-wave-has-tech-bros-scrambling-for-data-centers-in-space/",
+    "headline": "The hidden supply chain costs of the AI boom",
+    "link": "https://www.theverge.com/podcast/1024438/willy-shih-supply-chain-ai-chips-ram-where-does-my-stuff-come-from-book",
     "score": 64,
-    "reason": "Launch strategy: space-based infrastructure response"
+    "reason": "Significant infrastructure cost analysis"
   },
   {
     "rank": 16,
-    "headline": "Snap has more than 30 million paid subscribers across Snapchat+ and other plans",
-    "link": "https://www.engadget.com/2307356/snap-has-more-than-30-million-paid-subscribers-across-snapchat-and-other-plans/",
+    "headline": "Claude’s new Personal Finance tool aims to help analyze your spending – read-only, of course",
+    "link": "https://www.zdnet.com/innovation/personal-finance-claude-anthropic/",
     "score": 62,
-    "reason": "Big number: 30M subscribers; monetization scale"
+    "reason": "Anthropic feature launch with privacy safeguard"
   },
   {
     "rank": 17,
-    "headline": "How a Kenyan Startup Is Rethinking AI for Small Businesses",
-    "link": "https://spectrum.ieee.org/ai-small-business-mobile-money-startup",
+    "headline": "Expedia, Hotels.com and Vrbo Bring More AI to the Travel Booking Experience",
+    "link": "https://www.cnet.com/tech/services-and-software/expedia-hotels-com-and-vrbo-bring-more-ai-to-the-travel-booking-experience/",
     "score": 60,
-    "reason": "Geographic expansion; emerging market AI adoption"
+    "reason": "Major enterprise integration across travel industry"
   },
   {
     "rank": 18,
-    "headline": "Is Claude Code truly faster with message threads? I did the math on my logs",
-    "link": "https://www.zdnet.com/innovation/claude-code-message-threads-speed-test/",
+    "headline": "Elon Musk spent at least $225 million in Texas. The governor-elect who sued for Abbott emails and vowed a data center freeze won anyway",
+    "link": "https://fortune.com/2026/11/05/elon-musk-texas-democrats-hinojosa-terafab/",
     "score": 58,
-    "reason": "Performance comparison: measurable product improvement"
+    "reason": "Major political defeat with big numbers ($225M) and policy implications"
   },
   {
     "rank": 19,
-    "headline": "Pangram expands its AI detection tools to video and images",
-    "link": "https://www.engadget.com/2307116/pangram-expands-its-ai-detection-tools-to-video-and-images/",
+    "headline": "Tech stocks are suffering their biggest selloff since Covid, as investors see premature end to AI datacenter boom",
+    "link": "https://fortune.com/2026/11/05/tech-stocks-are-suffering-the-biggest-selloff-since-covid-as-investors-see-premature-end-to-ai-datacenter-boom/",
     "score": 56,
-    "reason": "Launch: expanded detection capabilities across modalities"
+    "reason": "Significant market event and sentiment shift"
   },
   {
     "rank": 20,
-    "headline": "AI’s Next Trick? Speaking Dolphin",
-    "link": "https://www.wired.com/story/wired-world-fair-2026-denise-herzing-wild-dolphin/",
+    "headline": "Exclusive: Aina’s Smart Ring Wants to Be a Remote Control for Your AI Agent",
+    "link": "https://www.wired.com/story/aina-smart-ring/",
     "score": 54,
-    "reason": "Novel capability: cross-species communication model"
+    "reason": "Novel hardware form factor for AI interaction"
   }
 ]
