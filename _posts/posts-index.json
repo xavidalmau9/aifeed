@@ -1,5 +1,25 @@
 [
   {
+    "id": "researchers-asked-people-to-use-ai-20261105",
+    "slug": "researchers-asked-people-to-use-ai",
+    "headline": "Researchers asked people to use AI chatbots for election info – results were mixed",
+    "summary": "Yale researchers found a third of users asked chatbots for election advice; chatbots varied widely in recommending candidates.",
+    "body": "<p>Yale study: chatbots varied wildly in recommending candidates during midterm elections.</p>\n<p>Yale researchers studied nearly 2,500 chatbot users in 35 states with Senate races, asking them to query ChatGPT, Claude, Grok, or Gemini about elections. A third of users asked chatbots to help pick a candidate by describing their priorities and asking which candidates aligned with them. Most queries were for basic election facts like who was on the ballot, but 36% sought candidate recommendations.</p>\n<p>Chatbots showed starkly different behaviors. When users hadn't yet stated their views, only Grok regularly recommended a candidate in 14% of chats. Once users shared their views, ChatGPT recommended candidates in 79% of chats, while Claude did so in 40%, with Grok and Gemini in between. The variation highlights how differently the systems respond to the same request.</p>\n<p>Election-related chatbot use carries misinformation risks. Chatbots rely on training data, sources, and filtering that may not reflect reliable information about candidates. Users rarely check linked sources according to at least one study, leaving them vulnerable to outdated or inaccurate information about voting deadlines and logistics.</p>\n<p>An August study found chatbots easily generated misleading election images and video when asked, with many safeguards being ineffective, inconsistently applied, or functionally absent. OpenAI and Anthropic reportedly set up election war rooms to monitor misuse, according to reporting by Politico and Semafor.</p>\n<p>This cycle was plagued by AI-generated deepfakes and misinformation from sophisticated tools. Broader cognitive offloading — layering a chatbot with opaque training data and filters on top of information searches — can muddy voters' search process while appearing convenient and neutral, complicating civic engagement.</p>\n<p>Chatbots vary widely in pushing election advice, and users rarely verify sources despite misinformation risks.</p>",
+    "category": "Research",
+    "imageUrl": "https://aifeed.run/images/aifeed_researchers-asked-people-to-use-ai_20261105_am.png",
+    "image": "images/aifeed_researchers-asked-people-to-use-ai_20261105_am.png",
+    "sourceUrl": "https://www.zdnet.com/innovation/ai-users-ask-chatbots-voting-advice-elections-yale-research/",
+    "publishedAt": "2026-11-05T13:09:45.987Z",
+    "hashtags": [
+      "Election2024",
+      "YaleResearch",
+      "Chatbots",
+      "Misinformation",
+      "AIVoting"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "binance-coceo-richard-teng-says-hackers-20261104",
     "slug": "binance-coceo-richard-teng-says-hackers",
     "headline": "Binance co-CEO Richard Teng says hackers used fake job interviews, AI tool to steal $6.3 billion in crypto",
