@@ -1,5 +1,25 @@
 [
   {
+    "id": "finding-new-drugs-is-laborious-this-20261105",
+    "slug": "finding-new-drugs-is-laborious-this",
+    "headline": "Finding New Drugs Is Laborious. This AI Startup Is Skipping The Lab Work",
+    "summary": "Potential Sciences raises tens of millions to train AI models on simulated chemistry data for faster drug discovery.",
+    "body": "<p>Potential Sciences raises tens of millions to train AI on simulated chemistry data for drug discovery.</p>\n<p>Potential Sciences, a UK-backed startup, launched on November 5 with seed funding in the tens of millions from SovAI and Twin Path Ventures. The company plans to build large-scale chemical datasets using physics simulations of molecular interactions, then train AI models to identify targeted drugs and bypass costly lab experimentation.</p>\n<p>Current AI drug discovery efforts rely heavily on the Protein Data Bank, a single public database that researchers say is too small to train sufficiently advanced AI models. Potential Sciences aims to construct far larger datasets made up of synthetic data produced by simulating chemical compound interactions to address this bottleneck.</p>\n<p>If successful, the approach could accelerate new drug development and reduce experimentation costs, making it economical to pursue treatments for rare diseases. CEO Hatem Helal states the company wants molecules that won't work clinically to fail fast through better predictors of how they'll behave in human biology.</p>\n<p>The startup joins other AI drug discovery companies backed by SovAI, including Basecamp Research and Isomorphic Labs. The UK government established SovAI with roughly $800 million to invest in British startups, offering portfolio companies access to the UK's national AI supercomputer.</p>\n<p>Challenges remain: experts note that identifying promising drug candidates is only one step; testing safety and efficacy takes far longer and costs significantly more, meaning AI improvements alone won't dramatically shorten time-to-market. Additionally, the field faces concerns about misuse of such tools to develop dangerous chemicals.</p>\n<p>Potential Sciences plans to use AI trained on simulated chemistry data to accelerate drug discovery, though clinical testing timelines remain a major bottleneck.</p>",
+    "category": "Models",
+    "imageUrl": "https://aifeed.run/images/aifeed_finding-new-drugs-is-laborious-this_20261105_pm.png",
+    "image": "images/aifeed_finding-new-drugs-is-laborious-this_20261105_pm.png",
+    "sourceUrl": "https://www.wired.com/story/finding-new-drugs-is-laborious-this-ai-startup-is-skipping-the-lab-work/",
+    "publishedAt": "2026-11-05T22:14:03.192Z",
+    "hashtags": [
+      "PotentialSciences",
+      "DrugDiscovery",
+      "AIStartup",
+      "PharmaceuticalAI",
+      "SovAI"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "researchers-asked-people-to-use-ai-20261105",
     "slug": "researchers-asked-people-to-use-ai",
     "headline": "Researchers asked people to use AI chatbots for election info – results were mixed",
