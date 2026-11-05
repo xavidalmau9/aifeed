@@ -423,8 +423,12 @@
     "2026-11-05:2": {
       "slug": "finding-new-drugs-is-laborious-this",
       "image": "aifeed_finding-new-drugs-is-laborious-this_20261105_pm.png",
+      "reelTemplate": "v3",
+      "hookStyle": "A",
+      "igReelId": "18114153473131758",
+      "igPermalink": "https://www.instagram.com/reel/DfYGbyeDh7t/",
       "status": "posted",
-      "at": "2026-11-05T22:21:17.097Z",
+      "at": "2026-11-05T22:26:33.622Z",
       "by": "github-actions"
     }
   }
