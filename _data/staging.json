@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "17 better ways Elon Musk could have wasted $446 million",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1026878/not-even-good-at-being-rich",
-    "score": 50,
-    "reason": "recency"
+    "headline": "\"What we just witnessed was an AI earthquake\": Voters revolt against tech at polls",
+    "link": "https://www.axios.com/2026/11/04/ai-data-center-election-slowdown",
+    "score": 94,
+    "reason": "Massive controversy: 43-1 voter rejection of data centers; tangible policy impact"
   },
   {
     "rank": 2,
-    "headline": "Gemini for Home now plugs into AT&T’s smart security system",
-    "link": "https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system",
-    "score": 50,
-    "reason": "recency"
+    "headline": "ChatGPT has hit roughly 20% of Google Search volume, OpenAI says",
+    "link": "https://9to5google.com/2026/11/03/chatgpt-has-hit-roughly-20-of-google-search-volume-openai-says/",
+    "score": 92,
+    "reason": "Big number: 20% search displacement; major market shift announcement"
   },
   {
     "rank": 3,
-    "headline": "Nothing teases a screen-free AI device ahead of launch next month",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Want an AI job? Deployment engineers are earning executive-level pay – up to $1.45M a year",
+    "link": "https://www.zdnet.com/innovation/ai-deployment-engineers-salary-christian-timbers-report/",
+    "score": 88,
+    "reason": "Big number: $1.45M salaries; validates AI labor market boom"
   },
   {
     "rank": 4,
-    "headline": "My therapist thinks I should chuck the Amazon Bee Frontier out a window",
-    "link": "https://www.theverge.com/column/1026464/optimizer-amazon-bee-frontier-ambient-listening-wearables",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Big Tech’s big AI buildout will not end until someone stops it",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3",
+    "score": 86,
+    "reason": "Major trend piece; scale of infrastructure investment"
   },
   {
     "rank": 5,
-    "headline": "ChatGPT will now make you animated GIFs",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
-    "score": 50,
-    "reason": "recency"
+    "headline": "OpenAI says it will protect local resources and report on the impact of its data centers",
+    "link": "https://www.engadget.com/2307590/openai-says-it-will-protect-local-resources-and-report-on-the-impact-of-its-data-centers/",
+    "score": 84,
+    "reason": "Launch: new data center impact reporting; response to voter backlash"
   },
   {
     "rank": 6,
-    "headline": "Data centers lost the midterms",
-    "link": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
-    "score": 50,
-    "reason": "recency"
+    "headline": "AI Data Centers Have a PR Problem. OpenAI Is Proposing a Rebrand",
+    "link": "https://www.cnet.com/tech/services-and-software/openai-data-centers-rebrand-midterms-pr-campaign/",
+    "score": 82,
+    "reason": "Controversy: industry rebrand strategy after political defeat"
   },
   {
     "rank": 7,
-    "headline": "Uber only fulfilled 4 rides from AI agents last quarter",
-    "link": "https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation",
-    "score": 50,
-    "reason": "recency"
+    "headline": "AI agents went shopping for TVs and laptops—and messed up nearly 50% of the time, study shows",
+    "link": "https://fortune.com/2026/11/05/ai-agents-shopping-ranking-best-agent/",
+    "score": 80,
+    "reason": "Big number: 50% failure rate; empirical agent performance data"
   },
   {
     "rank": 8,
-    "headline": "Sam Altman addresses RAM comments: People should 'put as much as they want in their computers'",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1026292/sam-altman-ram-shortage-pcs-comments",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Cult Phone-Maker Nothing’s Mystery Screenless AI Device Is Coming Next Month",
+    "link": "https://www.cnet.com/tech/services-and-software/nothings-first-standalone-ai-device-coming-next-month/",
+    "score": 78,
+    "reason": "Product launch: new AI device form factor"
   },
   {
     "rank": 9,
-    "headline": "The Biggest Pro-AI Super PAC Network Didn’t Really Impact the Midterms",
-    "link": "https://www.wired.com/story/the-biggest-pro-ai-super-pac-network-didnt-really-impact-the-midterms/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Nvidia RTX 50 GPUs hit with more price hikes – up to $500",
+    "link": "https://www.zdnet.com/tech/nvidia-rtx-50-cards-gpus-more-price-increases/",
+    "score": 76,
+    "reason": "Big number: $500 price increase; hardware market impact"
   },
   {
     "rank": 10,
-    "headline": "Google Is Forcing AI Overviews in Classrooms. Schools Are Searching for a Way Out",
-    "link": "https://www.wired.com/story/google-is-forcing-ai-overviews-in-classrooms-schools-are-searching-for-a-way-out/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Google Is Forcing Schools to Choose Between Its Search Engine and AI",
+    "link": "https://www.cnet.com/tech/services-and-software/google-forcing-schools-choose-between-search-engine-ai/",
+    "score": 74,
+    "reason": "Controversy: antitrust concern; coercive bundling practice"
   },
   {
     "rank": 11,
-    "headline": "Hugging Face’s CEO Says His P(Doom) Is ‘Close to Zero’",
-    "link": "https://www.wired.com/story/wired-world-fair-2026-clement-delangue-hugging-face/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Qualcomm is betting big on data centers as smartphone sales sink",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
+    "score": 72,
+    "reason": "Strategic pivot; big market shift"
   },
   {
     "rank": 12,
-    "headline": "The Results Are In: Voters Hate Data Centers",
-    "link": "https://www.wired.com/story/the-results-are-in-voters-hate-data-centers/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "SUSE lays off 1 in 10 workers – citing AI and automation",
+    "link": "https://www.zdnet.com/business/suse-lay-offs-workforce-ai-cited/",
+    "score": 70,
+    "reason": "Concrete AI job displacement; 10% workforce reduction"
   },
   {
     "rank": 13,
-    "headline": "UK Officials Said AI Would Add £400 Billion to the Economy. That Figure Mainly Came From Google",
-    "link": "https://www.wired.com/story/uk-officials-said-ai-would-add-400-billion-to-the-economy-that-figure-mainly-came-from-google/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Valve just changed its Steam release rules amid a flood of AI games",
+    "link": "https://www.engadget.com/2306215/valve-changed-its-steam-release-rules-amid-a-flood-of-ai-games/",
+    "score": 68,
+    "reason": "Policy change: platform response to AI content surge"
   },
   {
     "rank": 14,
-    "headline": "Here’s Why You Shouldn’t Use AI to Vote",
-    "link": "https://www.wired.com/story/heres-why-you-shouldnt-use-ai-to-vote/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "He Trolls AI Labs for a Living. Now They All Want to Work With Him",
+    "link": "https://www.wired.com/story/wired-world-fair-2026-evan-ratliff-and-husk/",
+    "score": 66,
+    "reason": "Novel trend: red-teaming as lucrative career"
   },
   {
     "rank": 15,
-    "headline": "‘Our Risk, Their Reward’: Zohran Mamdani on AI and Data Centers",
-    "link": "https://www.wired.com/story/the-big-interview-podcast-nyc-mayor-zohran-mamdani/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "The Blue Wave Has Tech Bros Scrambling for Data Centers in Space",
+    "link": "https://www.wired.com/story/the-blue-wave-has-tech-bros-scrambling-for-data-centers-in-space/",
+    "score": 64,
+    "reason": "Launch strategy: space-based infrastructure response"
   },
   {
     "rank": 16,
-    "headline": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
-    "link": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Snap has more than 30 million paid subscribers across Snapchat+ and other plans",
+    "link": "https://www.engadget.com/2307356/snap-has-more-than-30-million-paid-subscribers-across-snapchat-and-other-plans/",
+    "score": 62,
+    "reason": "Big number: 30M subscribers; monetization scale"
   },
   {
     "rank": 17,
-    "headline": "Roundtables: Inside the Quest for Cognitive Immortality",
-    "link": "https://www.technologyreview.com/2026/11/04/1148049/roundtables-inside-the-quest-for-cognitive-immortality/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "How a Kenyan Startup Is Rethinking AI for Small Businesses",
+    "link": "https://spectrum.ieee.org/ai-small-business-mobile-money-startup",
+    "score": 60,
+    "reason": "Geographic expansion; emerging market AI adoption"
   },
   {
     "rank": 18,
-    "headline": "What’s next for US energy policy after the midterm elections?",
-    "link": "https://www.technologyreview.com/2026/11/04/1148022/us-energy-midterm/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Is Claude Code truly faster with message threads? I did the math on my logs",
+    "link": "https://www.zdnet.com/innovation/claude-code-message-threads-speed-test/",
+    "score": 58,
+    "reason": "Performance comparison: measurable product improvement"
   },
   {
     "rank": 19,
-    "headline": "The Download: blended meat, restored sight, and the agentic web",
-    "link": "https://www.technologyreview.com/2026/11/04/1148001/the-download-blended-meat-sight-restoring-implant-agentic-web/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "Pangram expands its AI detection tools to video and images",
+    "link": "https://www.engadget.com/2307116/pangram-expands-its-ai-detection-tools-to-video-and-images/",
+    "score": 56,
+    "reason": "Launch: expanded detection capabilities across modalities"
   },
   {
     "rank": 20,
-    "headline": "Securing the agentic enterprise with data lineage",
-    "link": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/",
-    "score": 50,
-    "reason": "recency"
+    "headline": "AI’s Next Trick? Speaking Dolphin",
+    "link": "https://www.wired.com/story/wired-world-fair-2026-denise-herzing-wild-dolphin/",
+    "score": 54,
+    "reason": "Novel capability: cross-species communication model"
   }
 ]
