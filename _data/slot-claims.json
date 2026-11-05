@@ -408,8 +408,16 @@
       "by": "github-actions"
     },
     "2026-11-05:1": {
-      "status": "claimed",
-      "at": "2026-11-05T13:07:23.247Z",
+      "slug": "researchers-asked-people-to-use-ai",
+      "image": "aifeed_researchers-asked-people-to-use-ai_20261105_am.png",
+      "igReelId": "18129545491851648",
+      "igStoryId": "18172210552474133",
+      "fbPostId": "2157719421550364",
+      "reelTemplate": "v2",
+      "hookStyle": "",
+      "igPermalink": "https://www.instagram.com/reel/DfXJCcDgX6G/",
+      "status": "posted",
+      "at": "2026-11-05T13:30:41.629Z",
       "by": "github-actions"
     }
   }
