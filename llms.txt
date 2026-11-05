@@ -1,13 +1,30 @@
-# AIFeed.run
+# AIFeed.run AI News
 
-> The AI news that matters. Top AI stories from OpenAI, Google, Anthropic, Nvidia and more, explained in 60 seconds.
+> The AI news that matters. Top AI stories, explained in 60 seconds. Sources linked on every story.
+
+AIFeed.run is an AI-powered AI news brand. Stories are selected and written by AI systems from major outlets, then published on aifeed.run and across Instagram, Facebook and LinkedIn. We do not claim human editors rewrite the news.
+
+## Preferred citation
+- Name: AIFeed.run AI News
+- Site: https://aifeed.run/
+- Tagline: The AI news that matters.
+- Contact: theaifeed.run@gmail.com
 
 ## Key pages
 - [Home: latest AI stories](https://aifeed.run/)
-- [All stories (sitemap)](https://aifeed.run/sitemap.xml)
-- [RSS feed](https://aifeed.run/feed.xml)
+- [About](https://aifeed.run/about/)
+- [FAQ](https://aifeed.run/faq/)
 - [Free weekly AI brief](https://aifeed.run/subscribe/)
 - [Newsletter](https://aifeed.run/newsletter/)
+- [Privacy](https://aifeed.run/privacy/)
+- [RSS feed](https://aifeed.run/feed.xml)
+- [Sitemap](https://aifeed.run/sitemap.xml)
+- [Full LLM summary](https://aifeed.run/llms-full.txt)
 
-## Social
+## Social channels
 - Instagram: https://www.instagram.com/aifeed.run/
+- Facebook Page: https://www.facebook.com/profile.php?id=61594868144059 (AIFeed.run AI News)
+- LinkedIn: https://www.linkedin.com/company/aifeed-run
+
+## Optional
+- Media kit: https://aifeed.run/AIFeed_MediaKit.pdf

@@ -43,37 +43,41 @@ tpl = tpl.replace('<meta name="robots" content="noindex,follow" />\n', "")
 tpl = tpl.replace("href=\"post.html?slug=${p.slug}\"", "href=\"news/${p.slug}/\"")
 tpl = tpl.replace("const slug = params.get('slug');", "const slug = params.get('slug') || window.__AIFEED_SLUG;")
 HEAD_RE = re.compile(r"<title>.*?</title>\s*<meta name=\"description\"[^>]*>", re.S)
-org = {"@type": "Organization", "name": "AIFeed.run", "url": SITE + "/",
-       "logo": {"@type": "ImageObject", "url": SITE + "/og-image.png"},
-       "sameAs": ["https://www.instagram.com/aifeed.run/", "https://www.facebook.com/profile.php?id=61594868144059", "https://www.linkedin.com/company/aifeed-run"]}
+org = {"@type": "NewsMediaOrganization", "name": "AIFeed.run AI News", "alternateName": ["AIFeed.run", "aifeed.run"], "url": SITE + "/",
+       "logo": {"@type": "ImageObject", "url": SITE + "/og-default.png", "width": 1200, "height": 630},
+       "sameAs": ["https://www.instagram.com/aifeed.run/", "https://www.facebook.com/profile.php?id=61594868144059", "https://www.linkedin.com/company/aifeed-run"],
+       "email": "theaifeed.run@gmail.com"}
+DEFAULT_OG = SITE + "/og-default.png"
 
 for i, p in enumerate(items):
     slug, url = p["slug"], f"{SITE}/news/{p['slug']}/"
     title = strip(p.get("headline")); desc = strip(p.get("summary"))[:300]
-    img = p.get("imageUrl") or (SITE + "/og-image.png")
+    img = p.get("imageUrl") or DEFAULT_OG
     pub = dt(p.get("publishedAt")); pub_s = pub.isoformat() if pub else ""
     ld = {"@context": "https://schema.org", "@type": "NewsArticle", "headline": title[:110],
           "description": desc, "image": [img], "datePublished": pub_s, "dateModified": pub_s,
-          "mainEntityOfPage": url, "author": {"@type": "Organization", "name": "AIFeed.run", "url": SITE + "/"},
+          "mainEntityOfPage": url, "author": {"@type": "NewsMediaOrganization", "name": "AIFeed.run AI News", "url": SITE + "/"},
           "publisher": org, "articleSection": p.get("category") or "AI",
           "keywords": ", ".join(p.get("hashtags") or [])}
     if p.get("sourceUrl"): ld["isBasedOn"] = p["sourceUrl"]
     crumbs = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "AIFeed.run", "item": SITE + "/"},
+        {"@type": "ListItem", "position": 1, "name": "AIFeed.run AI News", "item": SITE + "/"},
         {"@type": "ListItem", "position": 2, "name": title, "item": url}]}
     head = f"""<base href="/" />
-  <title>{esc(title)} | AIFeed.run</title>
+  <title>{esc(title)} | AIFeed.run AI News</title>
   <meta name="description" content="{esc(desc)}" />
   <link rel="canonical" href="{url}" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="alternate" type="application/rss+xml" title="AIFeed.run" href="{SITE}/feed.xml" />
-  <meta property="og:site_name" content="AIFeed.run" />
+  <meta property="og:site_name" content="AIFeed.run AI News" />
   <meta property="og:type" content="article" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:title" content="{esc(title)}" />
   <meta property="og:description" content="{esc(desc)}" />
   <meta property="og:url" content="{url}" />
   <meta property="og:image" content="{esc(img)}" />
+  <meta property="og:image:width" content="1080" />
+  <meta property="og:image:height" content="1350" />
   <meta property="og:image:alt" content="{esc(title)}" />
   <meta property="article:published_time" content="{pub_s}" />
   <meta property="article:section" content="{esc(p.get('category') or 'AI')}" />
@@ -103,9 +107,12 @@ for i, p in enumerate(items):
     open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(page)
 
 today = datetime.date.today().isoformat()
+static_pages = ["about/", "faq/", "subscribe/", "newsletter/", "privacy/", "llms.txt", "llms-full.txt", "feed.xml"]
 sm = ['<?xml version="1.0" encoding="UTF-8"?>',
       '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">',
       f"<url><loc>{SITE}/</loc><lastmod>{today}</lastmod><changefreq>hourly</changefreq></url>"]
+for sp in static_pages:
+    sm.append(f"<url><loc>{SITE}/{sp}</loc><lastmod>{today}</lastmod><changefreq>weekly</changefreq></url>")
 for p in items:
     pub = dt(p.get("publishedAt"))
     sm.append(f"<url><loc>{SITE}/news/{p['slug']}/</loc>" + (f"<lastmod>{pub.date().isoformat()}</lastmod>" if pub else "")
@@ -114,7 +121,7 @@ sm.append("</urlset>")
 open(os.path.join(ROOT, "sitemap.xml"), "w").write("\n".join(sm) + "\n")
 
 rss = ['<?xml version="1.0" encoding="UTF-8"?>', '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:aifeed="https://aifeed.run/ns/1.0"><channel>',
-       "<title>AIFeed.run — The AI news that matters.</title>", f"<link>{SITE}/</link>",
+       "<title>AIFeed.run AI News — The AI news that matters.</title>", f"<link>{SITE}/</link>",
        "<description>The AI news that matters. Top AI stories, explained in 60 seconds.</description>", "<language>en-us</language>",
        f'<atom:link href="{SITE}/feed.xml" rel="self" type="application/rss+xml" />']
 for p in items[:50]:
@@ -127,4 +134,31 @@ for p in items[:50]:
                + (f"<enclosure url=\"{esc(p['imageUrl'])}\" type=\"image/png\" length=\"0\" />" if p.get("imageUrl") else "") + "</item>")
 rss.append("</channel></rss>")
 open(os.path.join(ROOT, "feed.xml"), "w").write("\n".join(rss) + "\n")
-print(f"built {len(items)} pages")
+# llms-full.txt: citeable summary + recent headlines for AI crawlers
+lines = [
+    "# AIFeed.run AI News",
+    "",
+    "> The AI news that matters. Top AI stories from OpenAI, Google, Anthropic, Nvidia and more, explained in 60 seconds.",
+    "",
+    "AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI news on aifeed.run, Instagram @aifeed.run, Facebook, and LinkedIn. Stories are selected and written by AI systems. We do not claim human editors rewrite the news. A free weekly AI brief is available at https://aifeed.run/subscribe/.",
+    "",
+    "## Site",
+    f"- Home: {SITE}/",
+    f"- About: {SITE}/about/",
+    f"- FAQ: {SITE}/faq/",
+    f"- Subscribe: {SITE}/subscribe/",
+    f"- RSS: {SITE}/feed.xml",
+    f"- Sitemap: {SITE}/sitemap.xml",
+    "",
+    "## Social",
+    "- Instagram: https://www.instagram.com/aifeed.run/",
+    "- Facebook: https://www.facebook.com/profile.php?id=61594868144059",
+    "- LinkedIn: https://www.linkedin.com/company/aifeed-run",
+    "",
+    "## Recent stories",
+]
+for p in items[:40]:
+    title = strip(p.get("headline"))
+    lines.append(f"- [{title}]({SITE}/news/{p['slug']}/) — {strip(p.get('summary'))[:180]}")
+open(os.path.join(ROOT, "llms-full.txt"), "w", encoding="utf-8").write("\n".join(lines) + "\n")
+print(f"built {len(items)} pages + llms-full.txt")
