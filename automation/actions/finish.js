@@ -255,7 +255,7 @@ async function runFinish(cfg, env, deps = {}) {
 
   if (plan.postStory) {
     if (!progress.storyAttemptAt) progress = await saveProgress(io, env, slug, { storyAttemptAt: new Date().toISOString() });
-    await io.pollPublic(storyUrl, { firstWaitMs: 0, retryWaitMs: 15000, maxAttempts: 8 });
+    await io.pollPublic(storyUrl, { firstWaitMs: 0, retryWaitMs: 45000, maxAttempts: 34 });
     const published = await publishStory(cfg, env, io, storyUrl);
     igStoryId = String(published.id || '');
     if (!igStoryId) throw new Error('Instagram did not return a story id');
@@ -274,7 +274,7 @@ async function runFinish(cfg, env, deps = {}) {
       console.log('Facebook video published ' + fbPostId);
     } catch (e) {
       console.log('Facebook video failed, posting the feed photos instead: ' + redact(e.message));
-      await io.pollPublic(post.imageUrl, { firstWaitMs: 0, retryWaitMs: 15000, maxAttempts: 6 });
+      await io.pollPublic(post.imageUrl, { firstWaitMs: 0, retryWaitMs: 45000, maxAttempts: 34 });
       const photoPost = await publishFacebookPhotos(cfg, env, io, post.imageUrl, fbMessage);
       fbPostId = String(photoPost.id || '');
       if (!fbPostId) throw new Error('Facebook did not return a post id');

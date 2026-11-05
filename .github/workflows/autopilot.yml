@@ -89,10 +89,10 @@ jobs:
     needs: test
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
-    # 75 covers Reel render, public-URL waits and the end-of-run Story retry. Installs no longer
+    # 110 covers ~25 min image wait, up to ~30 min Reel mp4 wait, Reel render, public-URL waits and the end-of-run Story retry. Installs no longer
     # share that budget with apt: ffmpeg is a cached static build, and it finishes before the
     # pipeline is allowed to claim a slot.
-    timeout-minutes: 75
+    timeout-minutes: 110
     permissions:
       contents: write
     steps:

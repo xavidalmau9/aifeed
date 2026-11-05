@@ -154,7 +154,10 @@ async function pollContainer(cfg, env, creationId, { waitMs, maxAttempts, label 
   }
 }
 
-async function pollPublic(url, { firstWaitMs = 60000, retryWaitMs = 30000, maxAttempts = 9, sleepFn = sleep } = {}) {
+// Default public-URL wait: GitHub Pages can take well over 5 min to publish; poll every 45s for ~25 min.
+const PUBLIC_WAIT = { firstWaitMs: 30000, retryWaitMs: 45000, maxAttempts: 33 };
+
+async function pollPublic(url, { firstWaitMs = PUBLIC_WAIT.firstWaitMs, retryWaitMs = PUBLIC_WAIT.retryWaitMs, maxAttempts = PUBLIC_WAIT.maxAttempts, sleepFn = sleep } = {}) {
   const mins = Math.round((firstWaitMs + retryWaitMs * (maxAttempts - 1)) / 60000);
   if (firstWaitMs > 0) await sleepFn(firstWaitMs);
   let last = 0;
@@ -250,7 +253,7 @@ async function linkedInPost({ cfg, env, liCaption, headline, feedPng, endCard })
   }
 }
 
-module.exports = {
+module.exports = { PUBLIC_WAIT,
   sleep, redact, appSecretProof, withGraphAuth, withRetry, claudeMessage, claudeVision, graphForm, graphGet,
   fetchIgMedia, pollContainer, pollPublic, escapeLinkedIn, linkedinEnabled, linkedInPost
 };

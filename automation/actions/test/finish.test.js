@@ -156,7 +156,7 @@ test('ffmpeg must answer before a slot can be claimed, and the workflow installs
   const yml = fs.readFileSync(path.join(__dirname, '../../../.github/workflows/autopilot.yml'), 'utf8');
   const post = yml.split('\n  post:\n')[1];
   assert.ok(post);
-  assert.match(post, /timeout-minutes:\s*75/);
+  assert.match(post, /timeout-minutes:\s*110/);
   assert.doesNotMatch(post, /apt-get install -y ffmpeg/);
   assert.match(post, /aifeed-kokoro/);
   assert.match(post, /aifeed-ffmpeg/);
