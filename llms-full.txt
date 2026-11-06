@@ -18,6 +18,7 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - LinkedIn: https://www.linkedin.com/company/aifeed-run
 
 ## Recent stories
+- [Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'](https://aifeed.run/news/top-democrats-call-to-rein-in/) — Democrats are calling for a national data center moratorium after midterm victories, citing voter opposition.
 - [Finding New Drugs Is Laborious. This AI Startup Is Skipping The Lab Work](https://aifeed.run/news/finding-new-drugs-is-laborious-this/) — Potential Sciences raises tens of millions to train AI models on simulated chemistry data for faster drug discovery.
 - [Researchers asked people to use AI chatbots for election info – results were mixed](https://aifeed.run/news/researchers-asked-people-to-use-ai/) — Yale researchers found a third of users asked chatbots for election advice; chatbots varied widely in recommending candidates.
 - [Binance co-CEO Richard Teng says hackers used fake job interviews, AI tool to steal $6.3 billion in crypto](https://aifeed.run/news/binance-coceo-richard-teng-says-hackers/) — Hackers used fake job interviews and compromised AI tools to steal over $6 billion from Binance.
@@ -57,4 +58,3 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - [OnlyFans Creators Are Pissed That Meta Lets Muse Talk Dirty](https://aifeed.run/news/onlyfans-creators-are-pissed-that-meta/) — Meta permits its Muse AI to engage in explicit conversations while restricting adult creators on Instagram and other platforms.
 - [OpenAI is building a humanoid robot, but the body isn't the real challenge](https://aifeed.run/news/openai-is-building-humanoid-robot-but/) — OpenAI is building a humanoid robot, targeting a 2027 demo with focus on AI cognition over hardware design.
 - [Anthropic gives third-party auditors ’employee-like access’ in AI industry first](https://aifeed.run/news/anthropic-gives-thirdparty-auditors-employeelike-access/) — Anthropic grants third-party nonprofit evaluators employee-level access to AI systems and offices.
-- [Why AI Isn’t Ready to Tackle Our Convoluted Genomes](https://aifeed.run/news/why-ai-isnt-ready-to-tackle/) — AI models lack sufficient data to understand gene regulation complexity in the human genome.
