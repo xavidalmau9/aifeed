@@ -1,5 +1,25 @@
 [
   {
+    "id": "top-democrats-call-to-rein-in-20261106",
+    "slug": "top-democrats-call-to-rein-in",
+    "headline": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'",
+    "summary": "Democrats are calling for a national data center moratorium after midterm victories, citing voter opposition.",
+    "body": "<p>56% of voters cited AI and data centers as major ballot factors, with 65% backing Democrats.</p>\n<p>Following Democratic victories in the 2026 midterm elections, party leaders are pushing for aggressive restrictions on AI data center development. Sen. Bernie Sanders called for a national data center moratorium, arguing that Americans reject Big Tech's environmental destruction and job losses. Rep. Yassamin Ansari stated that pausing AI development should be a top House priority on Day 1.</p>\n<p>Voter sentiment shows strong support for restrictions. According to the CNBC Voter Poll, 56% of voters said AI and data centers were crucial or major factors in their ballot decisions, with 65% of those voters casting ballots for Democratic Congressional candidates. This voter priority influenced multiple Democratic victories.</p>\n<p>Data center development has become a central campaign issue for newly elected Democrats. South Carolina's Annie Andrews, who flipped a Senate seat, campaigned against her opponent as data center supporter and promised communities would make their own decisions. Ohio's Sherrod Brown stated in his victory speech, \"I do not work for data centers.\"</p>\n<p>Texas, which hosts 27% of planned data center capacity according to Wells Fargo, is particularly significant. Democrat Gina Hinojosa, who defeated Gov. Greg Abbott, pledged to issue a moratorium on all data center approvals until protective legislation passes. Pennsylvania Gov. Josh Shapiro, who signed an August executive order slowing data center development, echoed this sentiment.</p>\n<p>Stock markets reacted to Democratic election success.</p>\n<p>Democratic midterm winners are making data center restrictions a legislative priority, with voter backing and market impact.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_top-democrats-call-to-rein-in_20261106_am.png",
+    "image": "images/aifeed_top-democrats-call-to-rein-in_20261106_am.png",
+    "sourceUrl": "https://www.cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html",
+    "publishedAt": "2026-11-06T13:17:36.772Z",
+    "hashtags": [
+      "DataCenters",
+      "AI",
+      "Elections",
+      "Democrats",
+      "Policy"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "finding-new-drugs-is-laborious-this-20261105",
     "slug": "finding-new-drugs-is-laborious-this",
     "headline": "Finding New Drugs Is Laborious. This AI Startup Is Skipping The Lab Work",

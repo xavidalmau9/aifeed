@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-06T13:17:36.772Z",
+      "date": "2026-11-06",
+      "slot": 1,
+      "headline": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'",
+      "canonUrl": "cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html",
+      "url": "https://www.cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html",
+      "slug": "top-democrats-call-to-rein-in",
+      "image": "aifeed_top-democrats-call-to-rein-in_20261106_am.png",
+      "photo": {
+        "dhash": "3c3c7e7e7e3e367c",
+        "phash": "b6787672dae28303",
+        "hist": [
+          448,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13,
+          6,
+          0,
+          0,
+          1,
+          74,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          183,
+          12,
+          0,
+          0,
+          5,
+          78,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          2,
+          0,
+          0,
+          2,
+          160,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "url": "https://image.cnbcfm.com/api/v1/image/108363195-1789494139297-gettyimages-2294931488-AFP_C8EA8N2.jpeg?v=1789494213&w=1920&h=1080",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-11-05T22:14:03.192Z",
       "date": "2026-11-05",
       "slot": 2,
@@ -4829,58 +4911,6 @@
     }
   ],
   "rankings": {
-    "2026-10-23": [
-      {
-        "rank": 1,
-        "title": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence"
-      },
-      {
-        "rank": 2,
-        "title": "Etsy bans AI-generated recipes and patterns from its online marketplace",
-        "canonUrl": "cnbc.com/2026/10/22/etsy-bans-ai-generated-recipes-patterns-from-its-online-marketplace.html"
-      },
-      {
-        "rank": 3,
-        "title": "Hugging Face’s New AI Biology Model Lets You Chat With DNA",
-        "canonUrl": "wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna"
-      },
-      {
-        "rank": 4,
-        "title": "Canva’s first AI image model plans designs before generating them",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model"
-      },
-      {
-        "rank": 5,
-        "title": "Meta’s AI could still scrape news sites, legal experts say",
-        "canonUrl": "theverge.com/tech/1017082/meta-terms-update-ai-training-concerns"
-      },
-      {
-        "rank": 6,
-        "title": "Nvidia CEO Jensen Huang says neocloud demand is 'off the charts' but capital is scarce",
-        "canonUrl": "cnbc.com/2026/10/22/nvidia-jensen-huang-neocloud-demand-capital.html"
-      },
-      {
-        "rank": 7,
-        "title": "Retro gaming is being overrun with AI",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port"
-      },
-      {
-        "rank": 8,
-        "title": "1Password will let AI agents use your passwords without seeing them",
-        "canonUrl": "9to5google.com/2026/10/22/1password-will-let-ai-agents-use-your-passwords-without-seeing-them"
-      },
-      {
-        "rank": 9,
-        "title": "Southeast Asia is hungry for AI — and the money isn't just in subscriptions",
-        "canonUrl": "cnbc.com/2026/10/22/southeasaisa-singapore-bain-temasek-google-.html"
-      },
-      {
-        "rank": 10,
-        "title": "Meta stock sinks nearly 7% as AI spend pushes free cash flow negative",
-        "canonUrl": "cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html"
-      }
-    ],
     "2026-10-24": [
       {
         "rank": 1,
@@ -5560,6 +5590,68 @@
         "rank": 12,
         "title": "Uber only fulfilled 4 rides from AI agents last quarter",
         "canonUrl": "theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation"
+      }
+    ],
+    "2026-11-06": [
+      {
+        "rank": 1,
+        "title": "OpenAI says its new cybersecurity model is better at not hacking other companies",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch"
+      },
+      {
+        "rank": 2,
+        "title": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'",
+        "canonUrl": "cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html"
+      },
+      {
+        "rank": 3,
+        "title": "Claude AI can plug directly into your bank account",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1027652/anthropic-claude-plaid-personal-finance"
+      },
+      {
+        "rank": 4,
+        "title": "What to Know About Meta’s Muse AI Before It Learns Too Much About You",
+        "canonUrl": "cnet.com/tech/services-and-software/metas-muse-agentic-ai-privacy-violations-security-data"
+      },
+      {
+        "rank": 5,
+        "title": "AI Text Watermarking May Not Be Able to Meet the E.U.’s New Rules",
+        "canonUrl": "spectrum.ieee.org/ai-watermark-openai-textgrain-europe"
+      },
+      {
+        "rank": 6,
+        "title": "Protesters break into Microsoft data center site in Amsterdam",
+        "canonUrl": "theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam"
+      },
+      {
+        "rank": 7,
+        "title": "Equinix points to smaller facilities as scrutiny of U.S. data center construction grows",
+        "canonUrl": "cnbc.com/2026/11/06/equinix-us-data-center-growth-asia.html"
+      },
+      {
+        "rank": 8,
+        "title": "OpenAI is stepping back from NDAs for data center projects",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda"
+      },
+      {
+        "rank": 9,
+        "title": "Google’s AI search fumbles leave schools in the lurch",
+        "canonUrl": "9to5google.com/2026/11/05/googles-ai-search-fumbles-leave-schools-in-the-lurch"
+      },
+      {
+        "rank": 10,
+        "title": "I Used Muse to Plan My Wife’s Birthday Weekend. It Did Something Sneaky but Fixed It Fast",
+        "canonUrl": "cnet.com/tech/services-and-software/meta-muse-ai-plan-birthday-weekend-rounding-errors"
+      },
+      {
+        "rank": 11,
+        "title": "The hidden supply chain costs of the AI boom",
+        "canonUrl": "theverge.com/podcast/1024438/willy-shih-supply-chain-ai-chips-ram-where-does-my-stuff-come-from-book"
+      },
+      {
+        "rank": 12,
+        "title": "He Trolls AI Labs for a Living. Now They All Want to Work With Him",
+        "canonUrl": "wired.com/story/wired-world-fair-2026-evan-ratliff-and-husk"
       }
     ]
   }
