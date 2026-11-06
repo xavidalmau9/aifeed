@@ -1,5 +1,25 @@
 [
   {
+    "id": "protesters-break-into-microsoft-data-center-20261106",
+    "slug": "protesters-break-into-microsoft-data-center",
+    "headline": "Protesters break into Microsoft data center site in Amsterdam",
+    "summary": "Approximately 100 protesters breached a Microsoft data center construction site in Amsterdam, scaling cranes and unfurling banners.",
+    "body": "<p>Protesters breached a Microsoft data center construction site in Amsterdam with around 100 people scaling cranes and unfurling banners.</p>\n<p>Approximately 100 protesters broke into a Microsoft data center construction site in Amsterdam, with some scaling a crane to place banners opposing AI expansion and Microsoft's operations. Members of Geef Tegengas organized the action targeting three 85-meter data center towers being built on the city's outskirts, with protesters unfurling banners and chanting multiple slogans.</p>\n<p>Amsterdam instituted a ban on new data centers until 2030 following a temporary stop announced in late 2023. Microsoft's project is proceeding because it was planned as far back as 2016, before the ban took effect, and the British developer Pure Data Centres navigated regulatory loopholes to reach construction stage.</p>\n<p>Earlier this week, activists staged a mock Israeli military checkpoint outside a Microsoft data center in Dublin, and U.S. voters rejected unrestrained data center development.</p>\n<p>Microsoft has faced multiple data center setbacks in recent months, including abandoning the UK's largest data center project after local electricity officials said power wouldn't be available until the 2030s. The company has also experienced sustained protests from employees over the past year regarding its technologies and business practices.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_protesters-break-into-microsoft-data-center_20261106_pm.png",
+    "image": "images/aifeed_protesters-break-into-microsoft-data-center_20261106_pm.png",
+    "sourceUrl": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam",
+    "publishedAt": "2026-11-06T22:16:44.253Z",
+    "hashtags": [
+      "MicrosoftProtest",
+      "datacenters",
+      "Amsterdam",
+      "AIexpansion",
+      "activism"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "top-democrats-call-to-rein-in-20261106",
     "slug": "top-democrats-call-to-rein-in",
     "headline": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'",
