@@ -434,8 +434,12 @@
     "2026-11-06:1": {
       "slug": "top-democrats-call-to-rein-in",
       "image": "aifeed_top-democrats-call-to-rein-in_20261106_am.png",
+      "reelTemplate": "v3",
+      "hookStyle": "B",
+      "igReelId": "18095450975483628",
+      "igPermalink": "https://www.instagram.com/reel/DfZuLEOjagB/",
       "status": "posted",
-      "at": "2026-11-06T13:24:59.906Z",
+      "at": "2026-11-06T13:33:05.005Z",
       "by": "github-actions"
     }
   }
