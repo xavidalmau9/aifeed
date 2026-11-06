@@ -443,8 +443,16 @@
       "by": "github-actions"
     },
     "2026-11-06:2": {
-      "status": "claimed",
-      "at": "2026-11-06T22:14:37.693Z",
+      "slug": "protesters-break-into-microsoft-data-center",
+      "image": "aifeed_protesters-break-into-microsoft-data-center_20261106_pm.png",
+      "igReelId": "18098184644457005",
+      "igStoryId": "17905028682369117",
+      "fbPostId": "1523647052920027",
+      "reelTemplate": "v2",
+      "hookStyle": "",
+      "igPermalink": "https://www.instagram.com/reel/Dfaudk2FJAy/",
+      "status": "posted",
+      "at": "2026-11-06T22:55:19.714Z",
       "by": "github-actions"
     }
   }
