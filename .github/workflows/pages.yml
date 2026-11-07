@@ -1,9 +1,10 @@
 name: Publish GitHub Pages
 
-# Stages a publish directory and deploys that, instead of the whole branch.
-# The branch still holds every video and image. Pages only receives article pages,
-# the images those pages reference, and Reel/story media from the last 3 days
-# (the window Instagram, Facebook, and Buffer need to fetch the public URL).
+# Pages publishes this directory when the source is GitHub Actions. The repository
+# setting is still "deploy from main", which publishes the branch tip, so media
+# older than 3 days is also removed from the tip (it stays in git history and the
+# archived-media release). Recent Reels and page images stay at their public URLs
+# for the 8am autopilot (Instagram, Facebook, Buffer).
 on:
   push:
     branches: [main]
@@ -11,7 +12,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -20,53 +21,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Branch deploys upload the whole repo (~1.3GB) and time out. This switches the
-  # site to GitHub Actions so only the staged directory below is published.
-  # AIFEED_GH_TOKEN is the same PAT the 8am autopilot uses to push; it can change
-  # the Pages source when the workflow token cannot.
-  configure:
-    if: github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - name: Set Pages to deploy from this workflow
-        env:
-          PAT: ${{ secrets.AIFEED_GH_TOKEN }}
-          WORKFLOW_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python3 - << 'PY'
-          import json, os, urllib.error, urllib.request
-          repo = os.environ["GITHUB_REPOSITORY"]
-          url = f"https://api.github.com/repos/{repo}/pages"
-          body = json.dumps({"build_type": "workflow"}).encode()
-          last = "no token"
-          for name, key in (("AIFEED_GH_TOKEN", "PAT"), ("GITHUB_TOKEN", "WORKFLOW_TOKEN")):
-              token = os.environ.get(key) or ""
-              if not token:
-                  print(name, "unset")
-                  continue
-              req = urllib.request.Request(url, data=body, method="PUT", headers={
-                  "Authorization": "Bearer " + token,
-                  "Accept": "application/vnd.github+json",
-                  "Content-Type": "application/json",
-                  "User-Agent": "aifeed-pages",
-              })
-              try:
-                  with urllib.request.urlopen(req, timeout=30) as res:
-                      data = json.loads(res.read().decode() or "{}")
-                      print(name, res.status, "build_type", data.get("build_type"))
-                      if data.get("build_type") == "workflow":
-                          raise SystemExit(0)
-              except urllib.error.HTTPError as e:
-                  try:
-                      msg = json.loads(e.read().decode()).get("message")
-                  except Exception:
-                      msg = "http error"
-                  print(name, e.code, msg)
-                  last = f"{name} HTTP {e.code}"
-          raise SystemExit("could not set Pages build_type=workflow (" + last + ")")
-          PY
-
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -80,6 +34,16 @@ jobs:
           filter: blob:none
       - name: Test publish staging
         run: python3 scripts/test_stage_pages.py
+      - name: Archive media older than 3 days and drop it from this branch
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "aifeed-pages"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          before=$(git rev-parse HEAD)
+          python3 scripts/prune_pages_media.py --commit
+          if [ "$(git rev-parse HEAD)" != "$before" ]; then
+            git push origin HEAD:main
+          fi
       - name: Stage publish directory
         run: python3 scripts/stage_pages.py "$RUNNER_TEMP/aifeed-pages"
       - name: Upload Pages artifact
@@ -90,7 +54,7 @@ jobs:
 
   deploy:
     if: github.event_name != 'pull_request'
-    needs: [build, configure]
+    needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 20
     environment:
