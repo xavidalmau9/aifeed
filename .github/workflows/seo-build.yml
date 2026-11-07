@@ -1,7 +1,8 @@
 name: SEO pages, sitemap & RSS
 # Rebuilds /news/<slug>/ pages, sitemap.xml, feed.xml, llms-full.txt and WebP card thumbnails (thumbs/) whenever the automation updates posts-index.json.
-# No loop: this job only commits news/, sitemap.xml, feed.xml, llms-full.txt, thumbs/ (not in the trigger paths), and pushes made
-# with GITHUB_TOKEN never trigger workflows anyway.
+# No loop: this job only commits news/, sitemap.xml, feed.xml, llms-full.txt, thumbs/ (not in the trigger paths).
+# Push with AIFEED_GH_TOKEN, same as the autopilot, so the Pages workflow runs and the new article
+# page, sitemap, and llms-full.txt go live. A GITHUB_TOKEN push would not start that workflow.
 on:
   push:
     branches: [main]
@@ -19,6 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          token: ${{ secrets.AIFEED_GH_TOKEN || github.token }}
           fetch-depth: 1
           filter: blob:none
           sparse-checkout-cone-mode: false

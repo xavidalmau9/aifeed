@@ -20,6 +20,53 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Branch deploys upload the whole repo (~1.3GB) and time out. This switches the
+  # site to GitHub Actions so only the staged directory below is published.
+  # AIFEED_GH_TOKEN is the same PAT the 8am autopilot uses to push; it can change
+  # the Pages source when the workflow token cannot.
+  configure:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Set Pages to deploy from this workflow
+        env:
+          PAT: ${{ secrets.AIFEED_GH_TOKEN }}
+          WORKFLOW_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - << 'PY'
+          import json, os, urllib.error, urllib.request
+          repo = os.environ["GITHUB_REPOSITORY"]
+          url = f"https://api.github.com/repos/{repo}/pages"
+          body = json.dumps({"build_type": "workflow"}).encode()
+          last = "no token"
+          for name, key in (("AIFEED_GH_TOKEN", "PAT"), ("GITHUB_TOKEN", "WORKFLOW_TOKEN")):
+              token = os.environ.get(key) or ""
+              if not token:
+                  print(name, "unset")
+                  continue
+              req = urllib.request.Request(url, data=body, method="PUT", headers={
+                  "Authorization": "Bearer " + token,
+                  "Accept": "application/vnd.github+json",
+                  "Content-Type": "application/json",
+                  "User-Agent": "aifeed-pages",
+              })
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as res:
+                      data = json.loads(res.read().decode() or "{}")
+                      print(name, res.status, "build_type", data.get("build_type"))
+                      if data.get("build_type") == "workflow":
+                          raise SystemExit(0)
+              except urllib.error.HTTPError as e:
+                  try:
+                      msg = json.loads(e.read().decode()).get("message")
+                  except Exception:
+                      msg = "http error"
+                  print(name, e.code, msg)
+                  last = f"{name} HTTP {e.code}"
+          raise SystemExit("could not set Pages build_type=workflow (" + last + ")")
+          PY
+
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -43,7 +90,7 @@ jobs:
 
   deploy:
     if: github.event_name != 'pull_request'
-    needs: build
+    needs: [build, configure]
     runs-on: ubuntu-latest
     timeout-minutes: 20
     environment:
