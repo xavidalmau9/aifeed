@@ -7,3 +7,4 @@ node_modules/
 automation/actions/out/
 __pycache__/
 *.pyc
+_site/
