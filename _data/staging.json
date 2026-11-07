@@ -1,72 +1,128 @@
 [
   {
     "rank": 1,
-    "headline": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
-    "score": 98,
-    "reason": "Massive valuation milestone with concrete numbers; major company milestone"
+    "headline": "The US let Nvidia sell chips to an empty office in China",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+    "score": 94,
+    "reason": "Major regulatory controversy with geopolitical implications; specific violation details"
   },
   {
     "rank": 2,
-    "headline": "Why a new report on Anthropic automating AI development is alarming researchers",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+    "headline": "Free Chinese AI Models Are Getting Scary Good at Hacking",
+    "link": "https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking/",
     "score": 92,
-    "reason": "Controversy with substantive research; AI safety concerns backed by evidence"
+    "reason": "Security breakthrough with competitive implications; measurable capability advancement"
   },
   {
     "rank": 3,
-    "headline": "AI stocks hammered by midterm shock as data center buildout becomes a &apos;war of attrition&apos;",
-    "link": "https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html",
-    "score": 90,
-    "reason": "Major market impact with big numbers; systemic AI industry consequence"
+    "headline": "AI broke the cybersecurity world. What’s next?",
+    "link": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
+    "score": 88,
+    "reason": "Major security impact across industry; addresses systemic vulnerability"
   },
   {
     "rank": 4,
-    "headline": "Nvidia CEO called in by lawmakers over ties to alleged Chinese spy",
-    "link": "https://www.axios.com/2026/11/05/jensen-huang-nvidia-congress-china",
-    "score": 88,
-    "reason": "Major controversy; CEO involvement; geopolitical implications for AI leader"
+    "headline": "OpenAI and Anthropic Drop New AI Tools for Cybersecurity, Images and Finance",
+    "link": "https://www.cnet.com/tech/services-and-software/roundup-chatgpt-claude-gpt-6-cyber-images-2-6-personal-finance/",
+    "score": 85,
+    "reason": "Major product launches from two leading companies; multiple use case expansion"
   },
   {
     "rank": 5,
-    "headline": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
-    "link": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
+    "headline": "Meta's Muse AI can create custom 'spaces' for the version of the app you need right now",
+    "link": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
     "score": 82,
-    "reason": "Real product demonstration; tangible AI robotics advancement"
+    "reason": "Significant product launch; personalization breakthrough in social AI"
   },
   {
     "rank": 6,
-    "headline": "What to Know About Meta’s Muse AI Before It Learns Too Much About You",
-    "link": "https://www.cnet.com/tech/services-and-software/metas-muse-agentic-ai-privacy-violations-security-data/",
-    "score": 78,
-    "reason": "Major AI launch from Meta; privacy/controversy angle"
+    "headline": "AI Companies Really, Really Want to Buy Your Work Files and Emails",
+    "link": "https://www.wired.com/story/ai-companies-really-really-want-to-buy-your-work-files-and-emails/",
+    "score": 80,
+    "reason": "Major privacy controversy; systematic data acquisition attempt by multiple companies"
   },
   {
     "rank": 7,
-    "headline": "The Siri AI waitlist is gone in iOS 27: How to try the beta today",
-    "link": "https://www.zdnet.com/business/siri-ai-beta-waitlist-ends-ios-27/",
-    "score": 75,
-    "reason": "Apple's major AI feature launch; accessibility milestone"
+    "headline": "Nvidia hardware worth $11.4M vanished between Oakland and Texas",
+    "link": "https://arstechnica.com/gadgets/2026/11/nvidia-hardware-worth-11-4m-vanished-between-oakland-and-texas/",
+    "score": 78,
+    "reason": "Major theft with large dollar value; supply chain security crisis"
   },
   {
     "rank": 8,
-    "headline": "How AI is enabling faster, more dangerous cyber warfare",
-    "link": "https://www.axios.com/2026/11/06/ai-government-hackers-fridge-hacks",
+    "headline": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain",
+    "link": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html",
     "score": 76,
-    "reason": "Significant controversy; security implications of AI adoption"
+    "reason": "Infrastructure scaling challenges; reveals market reality vs. hype"
   },
   {
     "rank": 9,
-    "headline": "AI debt concerns grow as ING reportedly seeks buyers for $500 million of data center loans",
-    "link": "https://www.cnbc.com/2026/11/06/ing-ai-data-center-loans-debt.html",
+    "headline": "Alpine Linux and OpenSSH patch flaw that’s as bad as it can get",
+    "link": "https://www.zdnet.com/tech/alpine-linux-openssh-patch-flaw/",
     "score": 74,
-    "reason": "Specific dollar amount; financial stress in AI infrastructure sector"
+    "reason": "Critical security vulnerability affecting widespread infrastructure"
   },
   {
     "rank": 10,
-    "headline": "'Shock absorbers': Korn Ferry says managers are carrying AI change that executives aren’t ready to lead",
-    "link": "https://fortune.com/2026/11/07/korn-ferry-survey-ai-transformation-leaders-middle-managers/",
-    "score": 70,
-    "reason": "Substantial organizational research on AI adoption challenges"
+    "headline": "\"Congress will investigate\": Nvidia CEO Jensen Huang faces probe over alleged Chinese spy ties",
+    "link": "https://www.axios.com/2026/11/07/jensen-huang-nvidia-congress-china-spy",
+    "score": 72,
+    "reason": "Major controversy with congressional investigation; leadership credibility questioned"
+  },
+  {
+    "rank": 11,
+    "headline": "Thinking Machines’ new model takes the lead in western open-weight AI",
+    "link": "https://www.zdnet.com/innovation/thinking-machines-inkling-2-small-open-weight/",
+    "score": 68,
+    "reason": "New competitor emergence; measurable performance benchmark leadership"
+  },
+  {
+    "rank": 12,
+    "headline": "Big Tech lost big in the 2026 election",
+    "link": "https://www.theverge.com/podcast/1028731/2026-midterms-tech-ai-vergecast",
+    "score": 65,
+    "reason": "Major political setback for AI industry; regulatory implications"
+  },
+  {
+    "rank": 13,
+    "headline": "Anthropic IPO meets AI backlash after midterms show stinging rebuke of data centers",
+    "link": "https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html",
+    "score": 63,
+    "reason": "Major funding event complicated by public sentiment shift"
+  },
+  {
+    "rank": 14,
+    "headline": "92% of HR say staff can train for AI jobs – but half of companies still hire outside",
+    "link": "https://www.zdnet.com/innovation/ai-hiring-vs-reskilling-careerminds-research/",
+    "score": 60,
+    "reason": "Large survey revealing hiring contradiction; workforce market mismatch"
+  },
+  {
+    "rank": 15,
+    "headline": "The Download: a humanoid cleans house and Samsung builds for the AI boom",
+    "link": "https://www.technologyreview.com/2026/11/06/1148154/the-download-humanoid-robot-cleaner-samsung-ai-chip-boom/",
+    "score": 58,
+    "reason": "Hardware advancement in robotics; major manufacturer bet"
+  },
+  {
+    "rank": 16,
+    "headline": "Apple will monitor your public iCloud links now, starting with iOS 27.3",
+    "link": "https://www.zdnet.com/innovation/apple-monitor-public-icloud-links-27-3-harmful-content/",
+    "score": 56,
+    "reason": "Major privacy policy change; affects billions of users"
+  },
+  {
+    "rank": 17,
+    "headline": "Apps for Caregivers Get a Dose of AI, but That Might Not Be Enough",
+    "link": "https://www.wired.com/story/apps-for-caregivers-get-a-dose-of-ai-but-that-might-not-be-enough/",
+    "score": 52,
+    "reason": "Healthcare AI application with identified limitation; real-world assessment"
+  },
+  {
+    "rank": 18,
+    "headline": "NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake",
+    "link": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
+    "score": 48,
+    "reason": "Consumer product performance reporting; shows capability limits"
   }
 ]
