@@ -1897,12 +1897,20 @@
     });
 
     // allVideos is loaded dynamically from videos/videos-index.json
+    // Pages publishes only recent Reels (about 3 days). An empty index is a real
+    // answer: do not fall through to the git raw index, which lists archived mp4s
+    // that are no longer on the site.
     let allVideos = [];
+    let videosLoaded = false;
 
     function renderVideos() {
       const grid = document.getElementById('videos-grid');
       if (!allVideos.length) {
-        grid.innerHTML = '<p style="color:#8c8ca0;padding:32px 0;">Loading videos…</p>';
+        grid.innerHTML = videosLoaded
+          ? '<p style="color:#8c8ca0;padding:32px 0;">No videos right now.</p>'
+          : '<p style="color:#8c8ca0;padding:32px 0;">Loading videos…</p>';
+        const vPag = document.getElementById('video-pagination');
+        if (vPag) vPag.innerHTML = '';
         return;
       }
       const totalVideoPages = Math.max(1, Math.ceil(allVideos.length / VIDEOS_PER_PAGE));
@@ -1964,16 +1972,23 @@
         '/aifeed/videos/videos-index.json',
         'https://raw.githubusercontent.com/xavidalmau9/aifeed/main/videos/videos-index.json'
       ];
+      let sawSiteIndex = false;
       for (const url of urls) {
+        const sameOrigin = url.startsWith('/') || !/^https?:/i.test(url);
+        if (!sameOrigin && sawSiteIndex) break;
         try {
           const res = await fetch(url + '?t=' + Date.now());
           if (res.ok) {
             const data = await res.json();
-            if (Array.isArray(data) && data.length > 0) {
-              allVideos = data.sort((a, b) => new Date(b.date) - new Date(a.date));
-              console.log('Loaded ' + allVideos.length + ' videos from ' + url);
-              renderVideos();
-              return;
+            if (Array.isArray(data)) {
+              if (sameOrigin) sawSiteIndex = true;
+              if (data.length > 0 || sameOrigin) {
+                allVideos = data.sort((a, b) => new Date(b.date) - new Date(a.date));
+                videosLoaded = true;
+                console.log('Loaded ' + allVideos.length + ' videos from ' + url);
+                renderVideos();
+                return;
+              }
             }
           }
         } catch(e) {

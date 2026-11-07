@@ -1,0 +1,57 @@
+name: Publish GitHub Pages
+
+# Stages a publish directory and deploys that, instead of the whole branch.
+# The branch still holds every video and image. Pages only receives article pages,
+# the images those pages reference, and Reel/story media from the last 3 days
+# (the window Instagram, Facebook, and Buffer need to fetch the public URL).
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Full commit history so video age is the real commit time. blob:none
+          # skips historical file contents; HEAD blobs are still checked out.
+          fetch-depth: 0
+          filter: blob:none
+      - name: Test publish staging
+        run: python3 scripts/test_stage_pages.py
+      - name: Stage publish directory
+        run: python3 scripts/stage_pages.py "$RUNNER_TEMP/aifeed-pages"
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/aifeed-pages
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 900000
