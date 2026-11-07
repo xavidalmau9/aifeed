@@ -1,6 +1,16 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-07T09:42:33.704Z",
+      "date": "2026-11-07",
+      "slot": 1,
+      "headline": "China reportedly recruited AI exec to spy on Jensen Huang",
+      "canonUrl": "theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
+      "url": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
+      "slug": "china-reportedly-recruited-ai-exec-to",
+      "image": "aifeed_china-reportedly-recruited-ai-exec-to_20261107_am.png"
+    },
+    {
       "postedAt": "2026-11-06T22:16:44.253Z",
       "date": "2026-11-06",
       "slot": 2,
@@ -4993,53 +5003,6 @@
     }
   ],
   "rankings": {
-    "2026-10-24": [
-      {
-        "rank": 1,
-        "title": "OpenAI now trains its frontier AI models with no internet access",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
-      },
-      {
-        "rank": 2,
-        "title": "AI's 'Black October': Critical PHP flaws set off global security scramble",
-        "canonUrl": "cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html"
-      },
-      {
-        "rank": 3,
-        "title": "The PHP Meltdown Shows How AI Makes Bugs More Exploitable",
-        "canonUrl": "wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable"
-      },
-      {
-        "rank": 4,
-        "title": "Meta delays new business terms after publisher pushback on AI scraping",
-        "canonUrl": "theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping"
-      },
-      {
-        "rank": 5,
-        "title": "American Express is cutting 5% of its workforce to 'prepare for AI'",
-        "canonUrl": "cnbc.com/2026/10/23/american-express-job-cuts.html"
-      },
-      {
-        "rank": 6,
-        "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
-      },
-      {
-        "rank": 7,
-        "title": "What a day in customer service looks like — as AI changes everything",
-        "canonUrl": "cnbc.com/2026/10/24/ai-customer-service-jobs-work.html"
-      },
-      {
-        "rank": 8,
-        "title": "TikTok U.S. hunts for multiple gigawatts of computing capacity, sources tell CNBC",
-        "canonUrl": "cnbc.com/2026/10/23/tiktok-us-compute-capacity.html"
-      },
-      {
-        "rank": 9,
-        "title": "Nvidia's Huang heads to Kazakhstan for the first time — and he's not the only one with big plans",
-        "canonUrl": "cnbc.com/2026/10/23/nvidia-huang-investment-kazakhstan-.html"
-      }
-    ],
     "2026-10-25": [
       {
         "rank": 1,
@@ -5734,6 +5697,68 @@
         "rank": 12,
         "title": "He Trolls AI Labs for a Living. Now They All Want to Work With Him",
         "canonUrl": "wired.com/story/wired-world-fair-2026-evan-ratliff-and-husk"
+      }
+    ],
+    "2026-11-07": [
+      {
+        "rank": 1,
+        "title": "China reportedly recruited AI exec to spy on Jensen Huang",
+        "canonUrl": "theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy"
+      },
+      {
+        "rank": 2,
+        "title": "Nvidia's Huang is asked to brief Congress on reported Chinese spy relationship",
+        "canonUrl": "cnbc.com/2026/11/05/nvidia-jensen-huang-china-spy-congress.html"
+      },
+      {
+        "rank": 3,
+        "title": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation"
+      },
+      {
+        "rank": 4,
+        "title": "Free Chinese AI Models Are Getting Scary Good at Hacking",
+        "canonUrl": "wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking"
+      },
+      {
+        "rank": 5,
+        "title": "OpenAI is stepping back from NDAs for data center projects",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda"
+      },
+      {
+        "rank": 6,
+        "title": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain",
+        "canonUrl": "cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html"
+      },
+      {
+        "rank": 7,
+        "title": "AI debt concerns grow as ING reportedly seeks buyers for $500 million of data center loans",
+        "canonUrl": "cnbc.com/2026/11/06/ing-ai-data-center-loans-debt.html"
+      },
+      {
+        "rank": 8,
+        "title": "AI stocks hammered by midterm shock as data center buildout becomes a 'war of attrition'",
+        "canonUrl": "cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html"
+      },
+      {
+        "rank": 9,
+        "title": "Equinix points to smaller facilities as scrutiny of U.S. data center construction grows",
+        "canonUrl": "cnbc.com/2026/11/06/equinix-us-data-center-growth-asia.html"
+      },
+      {
+        "rank": 10,
+        "title": "AI Companies Really, Really Want to Buy Your Work Files and Emails",
+        "canonUrl": "wired.com/story/ai-companies-really-really-want-to-buy-your-work-files-and-emails"
+      },
+      {
+        "rank": 11,
+        "title": "Perplexity's 'teammates' are the company's AI agents for daily work tasks",
+        "canonUrl": "engadget.com/2308870/perplexity-teammates-ai-agents-for-ongoing-work"
+      },
+      {
+        "rank": 12,
+        "title": "Thinking Machines’ new model takes the lead in western open-weight AI",
+        "canonUrl": "zdnet.com/innovation/thinking-machines-inkling-2-small-open-weight"
       }
     ]
   }
