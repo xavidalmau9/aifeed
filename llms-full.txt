@@ -18,6 +18,7 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - LinkedIn: https://www.linkedin.com/company/aifeed-run
 
 ## Recent stories
+- [China reportedly recruited AI exec to spy on Jensen Huang](https://aifeed.run/news/china-reportedly-recruited-ai-exec-to/) — China's intelligence agency reportedly recruited a tech executive to spy on Nvidia CEO Jensen Huang for AI chip intelligence.
 - [Protesters break into Microsoft data center site in Amsterdam](https://aifeed.run/news/protesters-break-into-microsoft-data-center/) — Approximately 100 protesters breached a Microsoft data center construction site in Amsterdam, scaling cranes and unfurling banners.
 - [Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'](https://aifeed.run/news/top-democrats-call-to-rein-in/) — Democrats are calling for a national data center moratorium after midterm victories, citing voter opposition.
 - [Finding New Drugs Is Laborious. This AI Startup Is Skipping The Lab Work](https://aifeed.run/news/finding-new-drugs-is-laborious-this/) — Potential Sciences raises tens of millions to train AI models on simulated chemistry data for faster drug discovery.
@@ -57,4 +58,3 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - [Disney Asked Character.AI to Go Bankrupt for a Get-Out-of-Lawsuits Card](https://aifeed.run/news/disney-asked-characterai-to-go-bankrupt/) — Disney hopes to acquire Character.AI technology and hire staff through a bankruptcy deal structured so the startup retains legal liabilities.
 - [AI researchers stranded Claude on a virtual desert island. It started to “play.”](https://aifeed.run/news/ai-researchers-stranded-claude-on-virtual/) — Claude agents left alone on virtual island invented games and explored autonomously, with play experience improving task performance.
 - [OnlyFans Creators Are Pissed That Meta Lets Muse Talk Dirty](https://aifeed.run/news/onlyfans-creators-are-pissed-that-meta/) — Meta permits its Muse AI to engage in explicit conversations while restricting adult creators on Instagram and other platforms.
-- [OpenAI is building a humanoid robot, but the body isn't the real challenge](https://aifeed.run/news/openai-is-building-humanoid-robot-but/) — OpenAI is building a humanoid robot, targeting a 2027 demo with focus on AI cognition over hardware design.
