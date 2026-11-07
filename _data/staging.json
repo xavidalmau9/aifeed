@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Free Chinese AI Models Are Getting Scary Good at Hacking",
-    "link": "https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking/",
-    "score": 92,
-    "reason": "Controversy + capability escalation with concrete concern"
+    "headline": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
+    "score": 98,
+    "reason": "Massive valuation milestone with concrete numbers; major company milestone"
   },
   {
     "rank": 2,
-    "headline": "OpenAI and Anthropic Drop New AI Tools for Cybersecurity, Images and Finance",
-    "link": "https://www.cnet.com/tech/services-and-software/roundup-chatgpt-claude-gpt-6-cyber-images-2-6-personal-finance/",
-    "score": 88,
-    "reason": "Major launches from two top companies, multiple products"
+    "headline": "Why a new report on Anthropic automating AI development is alarming researchers",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+    "score": 92,
+    "reason": "Controversy with substantive research; AI safety concerns backed by evidence"
   },
   {
     "rank": 3,
-    "headline": "Nvidia hardware worth $11.4M vanished between Oakland and Texas",
-    "link": "https://arstechnica.com/gadgets/2026/11/nvidia-hardware-worth-11-4m-vanished-between-oakland-and-texas/",
-    "score": 85,
-    "reason": "Big number + security controversy"
+    "headline": "AI stocks hammered by midterm shock as data center buildout becomes a &apos;war of attrition&apos;",
+    "link": "https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html",
+    "score": 90,
+    "reason": "Major market impact with big numbers; systemic AI industry consequence"
   },
   {
     "rank": 4,
-    "headline": "Nvidia&apos;s Huang is asked to brief Congress on reported Chinese spy relationship",
-    "link": "https://www.cnbc.com/2026/11/05/nvidia-jensen-huang-china-spy-congress.html",
-    "score": 84,
-    "reason": "High-stakes controversy, regulatory scrutiny"
+    "headline": "Nvidia CEO called in by lawmakers over ties to alleged Chinese spy",
+    "link": "https://www.axios.com/2026/11/05/jensen-huang-nvidia-congress-china",
+    "score": 88,
+    "reason": "Major controversy; CEO involvement; geopolitical implications for AI leader"
   },
   {
     "rank": 5,
-    "headline": "Agility Robotics' Nasdaq debut invites scrutiny of humanoid robot market",
-    "link": "https://arstechnica.com/ai/2026/11/agility-robotics-nasdaq-debut-invites-scrutiny-of-humanoid-robot-market/",
-    "score": 81,
-    "reason": "Major business event + market validation"
+    "headline": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
+    "link": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
+    "score": 82,
+    "reason": "Real product demonstration; tangible AI robotics advancement"
   },
   {
     "rank": 6,
-    "headline": "Meta's Muse AI can create custom 'spaces' for the version of the app you need right now",
-    "link": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
-    "score": 79,
-    "reason": "Significant product launch from major company"
+    "headline": "What to Know About Meta’s Muse AI Before It Learns Too Much About You",
+    "link": "https://www.cnet.com/tech/services-and-software/metas-muse-agentic-ai-privacy-violations-security-data/",
+    "score": 78,
+    "reason": "Major AI launch from Meta; privacy/controversy angle"
   },
   {
     "rank": 7,
-    "headline": "Perplexity's 'teammates' are the company's AI agents for daily work tasks",
-    "link": "https://www.engadget.com/2308870/perplexity-teammates-ai-agents-for-ongoing-work/",
-    "score": 78,
-    "reason": "New product launch, agent capabilities"
+    "headline": "The Siri AI waitlist is gone in iOS 27: How to try the beta today",
+    "link": "https://www.zdnet.com/business/siri-ai-beta-waitlist-ends-ios-27/",
+    "score": 75,
+    "reason": "Apple's major AI feature launch; accessibility milestone"
   },
   {
     "rank": 8,
-    "headline": "Amazon will let you text Alexa your shopping list",
-    "link": "https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders",
+    "headline": "How AI is enabling faster, more dangerous cyber warfare",
+    "link": "https://www.axios.com/2026/11/06/ai-government-hackers-fridge-hacks",
     "score": 76,
-    "reason": "Product feature launch from major company"
+    "reason": "Significant controversy; security implications of AI adoption"
   },
   {
     "rank": 9,
-    "headline": "Ads in Chatbots Have Arrived. Here’s What’s Working—and What’s Not",
-    "link": "https://www.wired.com/story/ads-in-chatbots-have-arrived-heres-whats-working-and-whats-not/",
-    "score": 75,
-    "reason": "Industry trend with business implications"
+    "headline": "AI debt concerns grow as ING reportedly seeks buyers for $500 million of data center loans",
+    "link": "https://www.cnbc.com/2026/11/06/ing-ai-data-center-loans-debt.html",
+    "score": 74,
+    "reason": "Specific dollar amount; financial stress in AI infrastructure sector"
   },
   {
     "rank": 10,
-    "headline": "Thinking Machines’ new model takes the lead in western open-weight AI",
-    "link": "https://www.zdnet.com/innovation/thinking-machines-inkling-2-small-open-weight/",
-    "score": 73,
-    "reason": "Competitive milestone in AI development"
-  },
-  {
-    "rank": 11,
-    "headline": "AI Companies Really, Really Want to Buy Your Work Files and Emails",
-    "link": "https://www.wired.com/story/ai-companies-really-really-want-to-buy-your-work-files-and-emails/",
-    "score": 72,
-    "reason": "Controversy + major trend across industry"
-  },
-  {
-    "rank": 12,
-    "headline": "Airbnb is threatening to launch an AI travel agent next year",
-    "link": "https://www.engadget.com/2308832/airbnb-ai-travel-agent-2027-launch/",
+    "headline": "'Shock absorbers': Korn Ferry says managers are carrying AI change that executives aren’t ready to lead",
+    "link": "https://fortune.com/2026/11/07/korn-ferry-survey-ai-transformation-leaders-middle-managers/",
     "score": 70,
-    "reason": "Major company expansion announcement"
-  },
-  {
-    "rank": 13,
-    "headline": "Investors brace for lower Anthropic valuation, calling $1.5 trillion a &apos;stretch&apos;",
-    "link": "https://www.cnbc.com/2026/11/06/investors-brace-for-anthropic-valuation-1point5-trillion-a-stretch.html",
-    "score": 68,
-    "reason": "Big number controversy, market correction"
-  },
-  {
-    "rank": 14,
-    "headline": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain",
-    "link": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html",
-    "score": 67,
-    "reason": "Significant operational shift, infrastructure controversy"
-  },
-  {
-    "rank": 15,
-    "headline": "Democrats just won control of Georgia Power’s regulator for the first time in 30 years — and its OpenAI data center contract was entirely redacted",
-    "link": "https://fortune.com/2026/11/06/georgia-power-psc-democrats-openai-data-center/",
-    "score": 66,
-    "reason": "Controversy + regulatory intrigue"
-  },
-  {
-    "rank": 16,
-    "headline": "The Download: a humanoid cleans house and Samsung builds for the AI boom",
-    "link": "https://www.technologyreview.com/2026/11/06/1148154/the-download-humanoid-robot-cleaner-samsung-ai-chip-boom/",
-    "score": 64,
-    "reason": "Multiple launches, hardware trend"
-  },
-  {
-    "rank": 17,
-    "headline": "AI is the new dating dealbreaker",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1028609/ai-dating-feelings-doomers-singularity",
-    "score": 61,
-    "reason": "Social impact story with broad appeal"
-  },
-  {
-    "rank": 18,
-    "headline": "AI Text Watermarking May Not Be Able to Meet the E.U.’s New Rules",
-    "link": "https://spectrum.ieee.org/ai-watermark-openai-textgrain-europe",
-    "score": 59,
-    "reason": "Regulatory challenge for industry"
-  },
-  {
-    "rank": 19,
-    "headline": "Claude’s new Personal Finance tool aims to help analyze your spending – read-only, of course",
-    "link": "https://www.zdnet.com/innovation/personal-finance-claude-anthropic/",
-    "score": 57,
-    "reason": "Product launch with privacy angle"
-  },
-  {
-    "rank": 20,
-    "headline": "The Download: Texas’s fragile AI boom and energy policy shifts",
-    "link": "https://www.technologyreview.com/2026/11/05/1144908/the-download-texas-fragile-ai-boom-us-energy-policy/",
-    "score": 55,
-    "reason": "Infrastructure challenges affecting AI sector"
+    "reason": "Substantial organizational research on AI adoption challenges"
   }
 ]
