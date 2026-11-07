@@ -1,5 +1,25 @@
 [
   {
+    "id": "ai-debt-concerns-grow-as-ing-20261107",
+    "slug": "ai-debt-concerns-grow-as-ing",
+    "headline": "AI debt concerns grow as ING reportedly seeks buyers for $500 million of data center loans",
+    "summary": "ING reportedly seeks buyers for $500 million portfolio of AI data center loans amid debt concerns.",
+    "body": "<p>ING reportedly seeks $500 million in buyers for AI data center loan portfolio.</p>\n<p>ING is reportedly conducting an auction to sell approximately $500 million in data center loans across 12 assets, according to Bloomberg. The portfolio includes a $25 million piece tied to the Stargate project in New Mexico, which involves OpenAI, SoftBank, and Oracle. Bids are being sought through a competitive bidding process with a November 19 deadline.</p>\n<p>The ING auction reflects a broader shift among banks to distribute credit risk associated with the AI infrastructure buildout. Investment banks traditionally use a lend-to-distribute model for these types of loans, selling portions to private credit investors, asset managers, and insurers seeking higher expected returns on data center assets.</p>\n<p>Growing concerns about AI debt sustainability are driving the sales. Investors and analysts are questioning whether the scale of capital spending on AI infrastructure will generate promised returns. These concerns have intensified following the Democrats' midterm election success, which could result in data center construction moratoriums or tighter restrictions in certain states.</p>\n<p>Market reaction to construction risk concerns has been dramatic. The perceived threat of a slowdown sent AI-related stocks into sharp decline, with the Nasdaq Composite Index closing down 5.5% on Thursday in its worst day since April 2025, entering correction territory. Pruksa Iamthongthong, head of APAC equities at Aberdeen Investments, noted that Democrats' gains have increased scrutiny concerns at a time when investors were already questioning AI capital spending returns.</p>\n<p>These approaches included offloading debt through private sales to non-bank lenders and executing significant risk transfers that move portions of credit risk to investors, freeing up balance sheet capacity for the lending banks.</p>\n<p>Banks are reportedly offloading AI data center loan portfolios amid growing concerns over debt sustainability and potential construction slowdowns.</p>",
+    "category": "Business",
+    "imageUrl": "https://aifeed.run/images/aifeed_ai-debt-concerns-grow-as-ing_20261107_pm.png",
+    "image": "images/aifeed_ai-debt-concerns-grow-as-ing_20261107_pm.png",
+    "sourceUrl": "https://www.cnbc.com/2026/11/06/ing-ai-data-center-loans-debt.html",
+    "publishedAt": "2026-11-07T22:07:13.506Z",
+    "hashtags": [
+      "AIDebt",
+      "Banking",
+      "DataCenters",
+      "FinanceNews",
+      "RiskManagement"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "china-reportedly-recruited-ai-exec-to-20261107",
     "slug": "china-reportedly-recruited-ai-exec-to",
     "headline": "China reportedly recruited AI exec to spy on Jensen Huang",
