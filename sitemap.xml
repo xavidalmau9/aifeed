@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<url><loc>https://aifeed.run/</loc><lastmod>2026-11-07</lastmod><changefreq>hourly</changefreq></url>
-<url><loc>https://aifeed.run/about/</loc><lastmod>2026-11-07</lastmod><changefreq>weekly</changefreq></url>
-<url><loc>https://aifeed.run/faq/</loc><lastmod>2026-11-07</lastmod><changefreq>weekly</changefreq></url>
-<url><loc>https://aifeed.run/subscribe/</loc><lastmod>2026-11-07</lastmod><changefreq>weekly</changefreq></url>
-<url><loc>https://aifeed.run/newsletter/</loc><lastmod>2026-11-07</lastmod><changefreq>weekly</changefreq></url>
-<url><loc>https://aifeed.run/privacy/</loc><lastmod>2026-11-07</lastmod><changefreq>weekly</changefreq></url>
-<url><loc>https://aifeed.run/llms.txt</loc><lastmod>2026-11-07</lastmod><changefreq>weekly</changefreq></url>
-<url><loc>https://aifeed.run/llms-full.txt</loc><lastmod>2026-11-07</lastmod><changefreq>weekly</changefreq></url>
-<url><loc>https://aifeed.run/feed.xml</loc><lastmod>2026-11-07</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/</loc><lastmod>2026-11-08</lastmod><changefreq>hourly</changefreq></url>
+<url><loc>https://aifeed.run/about/</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/faq/</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/subscribe/</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/newsletter/</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/privacy/</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/llms.txt</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/llms-full.txt</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/feed.xml</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/news/the-us-let-nvidia-sell-chips/</loc><lastmod>2026-11-08</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_the-us-let-nvidia-sell-chips_20261108_am.png</image:loc></image:image></url>
 <url><loc>https://aifeed.run/news/ai-debt-concerns-grow-as-ing/</loc><lastmod>2026-11-07</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_ai-debt-concerns-grow-as-ing_20261107_pm.png</image:loc></image:image></url>
 <url><loc>https://aifeed.run/news/china-reportedly-recruited-ai-exec-to/</loc><lastmod>2026-11-07</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_china-reportedly-recruited-ai-exec-to_20261107_am.png</image:loc></image:image></url>
 <url><loc>https://aifeed.run/news/protesters-break-into-microsoft-data-center/</loc><lastmod>2026-11-06</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_protesters-break-into-microsoft-data-center_20261106_pm.png</image:loc></image:image></url>

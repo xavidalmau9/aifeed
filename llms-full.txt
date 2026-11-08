@@ -18,6 +18,7 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - LinkedIn: https://www.linkedin.com/company/aifeed-run
 
 ## Recent stories
+- [The US let Nvidia sell chips to an empty office in China](https://aifeed.run/news/the-us-let-nvidia-sell-chips/) — US approved Nvidia AI chip sales to Chinese firm with empty office and blacklisted ties.
 - [AI debt concerns grow as ING reportedly seeks buyers for $500 million of data center loans](https://aifeed.run/news/ai-debt-concerns-grow-as-ing/) — ING reportedly seeks buyers for $500 million portfolio of AI data center loans amid debt concerns.
 - [China reportedly recruited AI exec to spy on Jensen Huang](https://aifeed.run/news/china-reportedly-recruited-ai-exec-to/) — China's intelligence agency reportedly recruited a tech executive to spy on Nvidia CEO Jensen Huang for AI chip intelligence.
 - [Protesters break into Microsoft data center site in Amsterdam](https://aifeed.run/news/protesters-break-into-microsoft-data-center/) — Approximately 100 protesters breached a Microsoft data center construction site in Amsterdam, scaling cranes and unfurling banners.
@@ -57,4 +58,3 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - [“We were looking at it wrong”: The explosive claim that’s upended the AI world](https://aifeed.run/news/we-were-looking-at-it-wrong/) — Researcher claims LLMs may be easier to understand and control than AI science previously believed.
 - [A hacker broke into John Deere and SharkNinja with an army of AI agents](https://aifeed.run/news/hacker-broke-into-john-deere-and/) — According to Norforge findings, a hacker reportedly used AI agents to breach over 100 websites; Reuters reports victims included John Deere, SharkNinja, and Cummins.
 - [Disney Asked Character.AI to Go Bankrupt for a Get-Out-of-Lawsuits Card](https://aifeed.run/news/disney-asked-characterai-to-go-bankrupt/) — Disney hopes to acquire Character.AI technology and hire staff through a bankruptcy deal structured so the startup retains legal liabilities.
-- [AI researchers stranded Claude on a virtual desert island. It started to “play.”](https://aifeed.run/news/ai-researchers-stranded-claude-on-virtual/) — Claude agents left alone on virtual island invented games and explored autonomously, with play experience improving task performance.
