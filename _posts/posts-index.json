@@ -1,5 +1,25 @@
 [
   {
+    "id": "world-models-will-soon-be-inescapable-20261108",
+    "slug": "world-models-will-soon-be-inescapable",
+    "headline": "World Models Will Soon Be Inescapable. Here’s What You Need to Know",
+    "summary": "World models that simulate physics in 3D space are being adopted by robotics and autonomous vehicle companies.",
+    "body": "<p>World models represent a shift from text-based AI to visual, physics-aware systems. Unlike language models that predict the next word, world models take an image and predict the next visual state of the world, creating digital simulations that look and feel real.</p>\n<p>These systems offer practical applications across robotics and autonomous vehicles. Robots can practice in simulated environments before operating in the real world by running millions of training scenarios, while driverless cars use world models powered by dashcam footage to recreate hazardous roads and unsafe conditions too dangerous to test in reality.</p>\n<p>Investment in world models is accelerating across tech's biggest players. Meta's Yann LeCun raised over a billion dollars recently for Advanced Machines Intelligence, Stanford's Fei-Fei Li launched World Labs in 2024, and AMD acquired World Labs this year for over $8 billion.</p>\n<p>The technology is already reshaping labor markets behind the scenes. Companies building better world models need real people to record video data of physical environments, creating new gig work opportunities for video data collection.</p>\n<p>Deployment could expand significantly within three years. 2027 is identified as a major year for expansion of home robotics and driverless cars, both bolstered by advances in world models.</p>\n<p>World models are poised to transform robotics and autonomous vehicles by combining visual AI with physics simulation.</p>",
+    "category": "Models",
+    "imageUrl": "https://aifeed.run/images/aifeed_world-models-will-soon-be-inescapable_20261108_pm.png",
+    "image": "images/aifeed_world-models-will-soon-be-inescapable_20261108_pm.png",
+    "sourceUrl": "https://www.wired.com/story/world-models-will-soon-be-inescapable-what-you-need-to-know/",
+    "publishedAt": "2026-11-08T22:06:59.430Z",
+    "hashtags": [
+      "WorldModels",
+      "AI",
+      "Robotics",
+      "AutonomousVehicles",
+      "MachineLearning"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "the-us-let-nvidia-sell-chips-20261108",
     "slug": "the-us-let-nvidia-sell-chips",
     "headline": "The US let Nvidia sell chips to an empty office in China",
