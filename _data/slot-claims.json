@@ -480,8 +480,12 @@
     "2026-11-08:2": {
       "slug": "world-models-will-soon-be-inescapable",
       "image": "aifeed_world-models-will-soon-be-inescapable_20261108_pm.png",
+      "reelTemplate": "v3",
+      "hookStyle": "A",
+      "igReelId": "17877514164585374",
+      "igPermalink": "https://www.instagram.com/reel/DffzdNgjKxS/",
       "status": "posted",
-      "at": "2026-11-08T22:11:16.526Z",
+      "at": "2026-11-08T22:14:40.458Z",
       "by": "github-actions"
     }
   }
