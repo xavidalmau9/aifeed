@@ -1,5 +1,25 @@
 [
   {
+    "id": "the-us-let-nvidia-sell-chips-20261108",
+    "slug": "the-us-let-nvidia-sell-chips",
+    "headline": "The US let Nvidia sell chips to an empty office in China",
+    "summary": "US approved Nvidia AI chip sales to Chinese firm with empty office and blacklisted ties.",
+    "body": "<p>**The US approved Nvidia chip sales to a company with an empty office and ties to blacklisted firms.**</p>\n<p>The US government approved the sale of Nvidia's H200 AI chips to Chinese firms with connections to blacklisted entities, according to The New York Times. New Matrix, listed as an approved buyer, operates from an empty office described as a hollow gray shell with dangling wires. The company was created 17 months ago and shows little evidence of meaningful existence.</p>\n<p>Concerns have surfaced that neither the Commerce Department nor Nvidia are conducting adequate due diligence when vetting Chinese firms cleared to purchase these chips. Building directories do not include New Matrix, and property management agencies report no record of the company's operations.</p>\n<p>New Matrix's owners maintain ties to a Chinese private equity firm that has been blacklisted by the US government since 2024. The Times reports this oversight is not isolated but reflects a troubling pattern of companies connected to blacklisted entities being approved for chip purchases.</p>\n<p>Nvidia was restricted from selling to China during the Biden presidency. The Trump administration relaxed those limits after Nvidia agreed to give the government a 15-percent cut of all sales to China.</p>\n<p>US-approved Nvidia chip sales to firms with blacklisted ties and empty offices suggest inadequate vetting by both Commerce Department and Nvidia.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_the-us-let-nvidia-sell-chips_20261108_am.png",
+    "image": "images/aifeed_the-us-let-nvidia-sell-chips_20261108_am.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+    "publishedAt": "2026-11-08T13:07:49.025Z",
+    "hashtags": [
+      "Nvidia",
+      "China",
+      "AIchips",
+      "Commerce",
+      "NationalSecurity"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "ai-debt-concerns-grow-as-ing-20261107",
     "slug": "ai-debt-concerns-grow-as-ing",
     "headline": "AI debt concerns grow as ING reportedly seeks buyers for $500 million of data center loans",

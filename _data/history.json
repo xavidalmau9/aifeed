@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-08T13:07:49.025Z",
+      "date": "2026-11-08",
+      "slot": 1,
+      "headline": "The US let Nvidia sell chips to an empty office in China",
+      "canonUrl": "theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "slug": "the-us-let-nvidia-sell-chips",
+      "image": "aifeed_the-us-let-nvidia-sell-chips_20261108_am.png",
+      "photo": {
+        "dhash": "597464c464e4c1e1",
+        "phash": "2a659e34db34b853",
+        "hist": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          237,
+          14,
+          0,
+          0,
+          3,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          22,
+          466,
+          20,
+          0,
+          0,
+          6,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          5,
+          0,
+          0,
+          25,
+          189
+        ],
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/CeBIT_2005_Nvidia_Stand.jpg/1920px-CeBIT_2005_Nvidia_Stand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "via": "Wikimedia Commons photo"
+      }
+    },
+    {
       "postedAt": "2026-11-07T22:07:13.506Z",
       "date": "2026-11-07",
       "slot": 2,
@@ -5156,33 +5238,6 @@
     }
   ],
   "rankings": {
-    "2026-10-25": [
-      {
-        "rank": 1,
-        "title": "Pennsylvania will require labels on AI-generated ads",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act"
-      },
-      {
-        "rank": 2,
-        "title": "The UK is investing $134 million into an AI Biosecurity Lab",
-        "canonUrl": "engadget.com/2296211/the-uk-is-investing-134-million-into-an-ai-biosecurity-lab"
-      },
-      {
-        "rank": 3,
-        "title": "The PHP Meltdown Shows How AI Makes Bugs More Exploitable",
-        "canonUrl": "wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable"
-      },
-      {
-        "rank": 4,
-        "title": "What a day in customer service looks like — as AI changes everything",
-        "canonUrl": "cnbc.com/2026/10/24/ai-customer-service-jobs-work.html"
-      },
-      {
-        "rank": 5,
-        "title": "Apple @ Work: The browser is the biggest gap in your AI governance strategy",
-        "canonUrl": "9to5mac.com/2026/10/24/apple-work-the-browser-is-the-biggest-gap-in-your-ai-governance-strategy"
-      }
-    ],
     "2026-10-26": [
       {
         "rank": 1,
@@ -5912,6 +5967,43 @@
         "rank": 12,
         "title": "Thinking Machines’ new model takes the lead in western open-weight AI",
         "canonUrl": "zdnet.com/innovation/thinking-machines-inkling-2-small-open-weight"
+      }
+    ],
+    "2026-11-08": [
+      {
+        "rank": 1,
+        "title": "The US let Nvidia sell chips to an empty office in China",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government"
+      },
+      {
+        "rank": 2,
+        "title": "AI broke the cybersecurity world. What’s next?",
+        "canonUrl": "theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos"
+      },
+      {
+        "rank": 3,
+        "title": "World Models Will Soon Be Inescapable. Here’s What You Need to Know",
+        "canonUrl": "wired.com/story/world-models-will-soon-be-inescapable-what-you-need-to-know"
+      },
+      {
+        "rank": 4,
+        "title": "Apps for Caregivers Get a Dose of AI, but That Might Not Be Enough",
+        "canonUrl": "wired.com/story/apps-for-caregivers-get-a-dose-of-ai-but-that-might-not-be-enough"
+      },
+      {
+        "rank": 5,
+        "title": "Apple @ Work: Mac admins are shipping AI-written code with mistakes, but fixing the problems is taking days",
+        "canonUrl": "9to5mac.com/2026/11/07/mac-admins-are-shipping-ai-written-code-in-seconds-but-undoing-them-is-taking-days"
+      },
+      {
+        "rank": 6,
+        "title": "NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake",
+        "canonUrl": "theverge.com/tech/1029489/nyt-cooking-ai-assistant-review"
+      },
+      {
+        "rank": 7,
+        "title": "I Used NYT Cooking’s New AI-Powered Recipe Modifier, and It’s Actually Pretty Good",
+        "canonUrl": "wired.com/story/nyt-cooking-new-ai-powered-recipe-modifier-is-pretty-good"
       }
     ]
   }
