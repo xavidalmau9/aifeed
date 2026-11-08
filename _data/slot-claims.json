@@ -469,8 +469,12 @@
     "2026-11-08:1": {
       "slug": "the-us-let-nvidia-sell-chips",
       "image": "aifeed_the-us-let-nvidia-sell-chips_20261108_am.png",
+      "reelTemplate": "v3",
+      "hookStyle": "C",
+      "igReelId": "18123055729742029",
+      "igPermalink": "https://www.instagram.com/reel/Dfe10SPDbGD/",
       "status": "posted",
-      "at": "2026-11-08T13:12:08.074Z",
+      "at": "2026-11-08T13:15:53.212Z",
       "by": "github-actions"
     }
   }
