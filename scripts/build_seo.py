@@ -4,6 +4,7 @@ Outputs: news/<slug>/index.html, sitemap.xml, feed.xml. Safe to re-run; never ed
 Run automatically by .github/workflows/seo-build.yml on every posts-index.json change."""
 import json, html, re, os, datetime
 from email.utils import format_datetime
+from analytics_snippet import inject as inject_analytics
 SITE = "https://aifeed.run"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 esc = lambda s: html.escape(str(s or ""), quote=True)
@@ -38,7 +39,7 @@ for p in sorted(posts, key=lambda p: str(p.get("publishedAt") or p.get("date") o
     if not s or not re.fullmatch(r"[a-z0-9][a-z0-9-]{0,120}", s) or s in seen: continue
     seen.add(s); items.append(p)
 
-tpl = open(os.path.join(ROOT, "post.html"), encoding="utf-8").read()
+tpl = inject_analytics(open(os.path.join(ROOT, "post.html"), encoding="utf-8").read())
 tpl = tpl.replace('<meta name="robots" content="noindex,follow" />\n', "")
 tpl = tpl.replace("href=\"post.html?slug=${p.slug}\"", "href=\"news/${p.slug}/\"")
 tpl = tpl.replace("const slug = params.get('slug');", "const slug = params.get('slug') || window.__AIFEED_SLUG;")
@@ -153,7 +154,7 @@ for i, p in enumerate(items):
     </article>"""
     page = page.replace('<div class="page-loading">', static + '\n    <div class="page-loading" style="display:none">', 1)
     d = os.path.join(ROOT, "news", slug); os.makedirs(d, exist_ok=True)
-    open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(page)
+    open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(inject_analytics(page))
 
 # ── Hub pages: /news/ (all stories) and /news/topics/<topic>/ — crawlable, no JS needed ──
 hub_tpl = tpl.replace("    loadPost();\n", "", 1)
@@ -227,7 +228,7 @@ def hub_page(path, title, h1, intro, plist, active=None):
     page = HEAD_RE.sub(lambda m: head, hub_tpl, count=1)
     page = re.sub(r'<div class="page-loading">.*?</div>\s*</div>', lambda m: body + "\n  </div>", page, count=1, flags=re.S)
     d = os.path.join(ROOT, path); os.makedirs(d, exist_ok=True)
-    open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(page)
+    open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(inject_analytics(page))
 
 hub_page("news/", "All AI News Stories | AIFeed.run AI News", "All AI news stories",
          "Every AIFeed.run story, newest first: the AI news that matters from OpenAI, Google, Anthropic, Nvidia and more, explained in 60 seconds with the source linked.", items)

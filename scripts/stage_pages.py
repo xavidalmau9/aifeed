@@ -13,6 +13,8 @@ posts need:
   the LinkedIn image fallback and the end card).
 - videos/videos-index.json rewritten to the files actually published, plus any
   recent Reel that is not already in the archive index.
+- Every published HTML page includes _includes/analytics.html (Clarity + GA4)
+  exactly once. Pages that already have that block are not tagged again.
 
 Older videos stay in git. They are not deleted and they are not in the artifact.
 """
@@ -24,6 +26,8 @@ import shutil
 import subprocess
 import sys
 import time
+
+from analytics_snippet import inject as inject_analytics
 
 RETAIN_DAYS = 3
 RETAIN_SECONDS = RETAIN_DAYS * 24 * 3600
@@ -54,7 +58,7 @@ ROOT_FILES = {
     "cc1f3906cab112076693c81a63f1071c.txt",
 }
 SITE_DIRS = {"about", "faq", "subscribe", "newsletter", "privacy", "news", "thumbs", "_posts"}
-SKIP_DIRS = {".git", "graphics", "automation", "brand", "scripts", ".github", "_data", "_site", "node_modules", "__pycache__"}
+SKIP_DIRS = {".git", "graphics", "automation", "brand", "scripts", ".github", "_data", "_includes", "_site", "node_modules", "__pycache__"}
 ALWAYS_IMAGES = {"images/aifeed_endslide.png"}
 VIDEO_EXTS = {".mp4", ".jpg", ".jpeg", ".png", ".webp"}
 REF_RE = re.compile(
@@ -63,6 +67,18 @@ REF_RE = re.compile(
     re.I,
 )
 SCAN_EXT = {".html", ".xml", ".txt", ".json", ".css", ".js", ".svg"}
+
+
+def _stamp_analytics(path, size):
+    """Insert the shared Clarity + GA4 snippet once. Returns the file size in bytes."""
+    with open(path, encoding="utf-8") as fh:
+        original = fh.read()
+    updated = inject_analytics(original)
+    if updated == original:
+        return size
+    with open(path, "w", encoding="utf-8", newline="\n") as fh:
+        fh.write(updated)
+    return os.path.getsize(path)
 
 
 def norm_rel(rel):
@@ -275,6 +291,8 @@ def stage(root, dest, now=None):
             target = os.path.join(dest, rel)
             os.makedirs(os.path.dirname(target), exist_ok=True)
             shutil.copy2(src, target)
+            if rel.lower().endswith(".html"):
+                size = _stamp_analytics(target, size)
             kept.append((rel, size, reason))
 
     if undated_video_bytes > 20 * 1024 * 1024:
