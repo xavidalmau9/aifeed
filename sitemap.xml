@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url><loc>https://aifeed.run/</loc><lastmod>2026-11-09</lastmod><changefreq>hourly</changefreq></url>
+<url><loc>https://aifeed.run/news/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/news/topics/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/news/topics/industry/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/news/topics/business/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/news/topics/safety/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/news/topics/research/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/news/topics/policy/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/news/topics/models/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/news/topics/tools/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/news/topics/products/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/news/topics/hardware/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/news/topics/infrastructure/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/news/topics/health/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/news/topics/security/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>
 <url><loc>https://aifeed.run/about/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>
 <url><loc>https://aifeed.run/faq/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>
 <url><loc>https://aifeed.run/subscribe/</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq></url>

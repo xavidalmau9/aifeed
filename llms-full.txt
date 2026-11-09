@@ -11,6 +11,21 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - Subscribe: https://aifeed.run/subscribe/
 - RSS: https://aifeed.run/feed.xml
 - Sitemap: https://aifeed.run/sitemap.xml
+- All stories: https://aifeed.run/news/
+
+## Topics
+- [Industry](https://aifeed.run/news/topics/industry/): Big Tech moves, AI companies, deals, jobs and the business of artificial intelligence.
+- [Business](https://aifeed.run/news/topics/business/): How AI is changing companies, markets, money and work.
+- [Safety](https://aifeed.run/news/topics/safety/): AI safety, risks, misuse, deepfakes and what can go wrong with AI systems.
+- [Research](https://aifeed.run/news/topics/research/): New AI research, studies, benchmarks and scientific breakthroughs.
+- [Policy](https://aifeed.run/news/topics/policy/): AI laws, regulation, government action and court cases.
+- [Models](https://aifeed.run/news/topics/models/): New AI models from OpenAI, Google, Anthropic, Meta and others, and how they compare.
+- [Tools](https://aifeed.run/news/topics/tools/): AI tools and apps you can use, and what they do.
+- [Products](https://aifeed.run/news/topics/products/): AI product launches, devices and features from the biggest tech companies.
+- [Hardware](https://aifeed.run/news/topics/hardware/): AI chips, Nvidia, GPUs, devices and the hardware behind AI.
+- [Infrastructure](https://aifeed.run/news/topics/infrastructure/): Data centers, compute, energy and the infrastructure powering AI.
+- [Health](https://aifeed.run/news/topics/health/): AI in medicine, healthcare and biology.
+- [Security](https://aifeed.run/news/topics/security/): AI and cybersecurity: attacks, breaches, defenses and privacy.
 
 ## Social
 - Instagram: https://www.instagram.com/aifeed.run/
