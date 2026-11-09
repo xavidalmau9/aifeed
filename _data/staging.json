@@ -1,72 +1,58 @@
 [
   {
     "rank": 1,
-    "headline": "NVIDIA is investigating reports that CEO Jensen Huang was the target of Chinese spy efforts",
-    "link": "https://www.engadget.com/2310336/nvidia-is-investigating-reports-that-ceo-jensen-huang-was-the-target-of-chinese-spy-efforts/",
-    "score": 94,
-    "reason": "Major controversy involving Fortune 500 CEO, national security implications, confirmed investigation"
+    "headline": "Nvidia CEO Jensen Huang admits affair, board to launch investigation",
+    "link": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-admits-affair-board-to-launch-investigation",
+    "score": 98,
+    "reason": "Major CEO scandal with board investigation; concrete admission and action"
   },
   {
     "rank": 2,
-    "headline": "Elvis and Eminem rights holders are suing Suno",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
-    "score": 89,
-    "reason": "Major copyright litigation with A-list artists, significant legal precedent for AI music generation"
+    "headline": "Nvidia stock falls 5% as scrutiny turns to Jensen Huang’s relationship with alleged Chinese spy",
+    "link": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html",
+    "score": 96,
+    "reason": "Quantified market impact (5%) from major controversy"
   },
   {
     "rank": 3,
-    "headline": "Apple is racing to make Siri more agentic",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
-    "score": 82,
-    "reason": "Major product launch from tech giant, significant capability upgrade for 2B+ users"
+    "headline": "‘AI rebounding’: Nearly 20% of U.S. workers replaced by AI are being asked back—now they’re demanding higher pay, job security and AI transparency",
+    "link": "https://fortune.com/2026/11/09/ai-rebounding-20-us-workers-replaced-higher-pay-job-security/",
+    "score": 88,
+    "reason": "Big number (20%), concrete trend with worker demand data"
   },
   {
     "rank": 4,
-    "headline": "Alpine Linux and OpenSSH patch flaw that’s as bad as it can get",
-    "link": "https://www.zdnet.com/tech/alpine-linux-openssh-patch-flaw/",
-    "score": 78,
-    "reason": "Critical security vulnerability in widely-used infrastructure affecting millions of systems"
+    "headline": "Bikers and Bug-Lovers Join Forces to Fight a New Google Data Center",
+    "link": "https://www.wired.com/story/bug-activists-and-biker-gang-members-are-teaming-up-to-protest-data-centers/",
+    "score": 82,
+    "reason": "Significant public controversy and organized opposition to major tech infrastructure"
   },
   {
     "rank": 5,
-    "headline": "AI broke the cybersecurity world. What’s next?",
-    "link": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
-    "score": 75,
-    "reason": "Major industry disruption analysis with broad implications for enterprise security"
+    "headline": "SpaceXAI Grok Bot availability just keeps growing - here's which plans offer it",
+    "link": "https://www.engadget.com/2309308/spacexai-grok-bot-availability-plans/",
+    "score": 78,
+    "reason": "Product launch/expansion with concrete rollout details"
   },
   {
     "rank": 6,
-    "headline": "Amazon&apos;s Astro home robot has fans but looks destined for the &apos;trash heap.&apos; Why it&apos;s trying again",
-    "link": "https://www.cnbc.com/2026/11/08/amazon-home-robot-fauna-sprout.html",
+    "headline": "I Used NYT Cooking’s New AI-Powered Recipe Modifier, and It’s Actually Pretty Good",
+    "link": "https://www.wired.com/story/nyt-cooking-new-ai-powered-recipe-modifier-is-pretty-good/",
     "score": 72,
-    "reason": "Major tech company pivoting consumer robotics product, significant investment redirection"
+    "reason": "NYT major AI product launch with real-world testing results"
   },
   {
     "rank": 7,
-    "headline": "UK has no plans to slow down AI data center construction",
-    "link": "https://www.engadget.com/2310304/uk-has-no-plans-to-slow-down-ai-data-center-construction/",
+    "headline": "Google Messages homepage redesign: Pinned chat avatars, bottom search, corner Gemini",
+    "link": "https://9to5google.com/2026/11/07/google-messages-pinned-chats-redesign/",
     "score": 68,
-    "reason": "Government policy on major AI infrastructure, significant capital deployment announcement"
+    "reason": "Google AI product integration launch with specific features"
   },
   {
     "rank": 8,
-    "headline": "World Models Will Soon Be Inescapable. Here’s What You Need to Know",
-    "link": "https://www.wired.com/story/world-models-will-soon-be-inescapable-what-you-need-to-know/",
-    "score": 65,
-    "reason": "Major shift in AI capability development with broad industry implications"
-  },
-  {
-    "rank": 9,
-    "headline": "Don't like Google Health's AI Coach? Here's how to turn it off",
-    "link": "https://www.engadget.com/2309626/dont-like-google-health-ai-coach-how-turn-off/",
-    "score": 61,
-    "reason": "Google deploying AI health feature to millions, privacy controls indicate scale of rollout"
-  },
-  {
-    "rank": 10,
-    "headline": "Stocks will tumble much further as AI investment will slow next year then fall in 2028 and drag GDP down too, economist predicts",
-    "link": "https://fortune.com/2026/11/08/stock-market-outlook-sp500-ai-capex-gdp-growth-productivity/",
-    "score": 58,
-    "reason": "Major economic prediction on AI investment cycle with big number implications (GDP impact)"
+    "headline": "\"Congress will investigate\": Nvidia CEO Jensen Huang faces probe over alleged Chinese spy ties",
+    "link": "https://www.axios.com/2026/11/07/jensen-huang-nvidia-congress-china-spy",
+    "score": 85,
+    "reason": "Congressional investigation announced; high-stakes government involvement"
   }
 ]
