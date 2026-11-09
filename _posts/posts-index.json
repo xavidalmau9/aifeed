@@ -1,5 +1,25 @@
 [
   {
+    "id": "the-climate-case-for-ai-has-20261109",
+    "slug": "the-climate-case-for-ai-has",
+    "headline": "The climate case for AI has not been made",
+    "summary": "Most industries haven't deployed AI in ways matching emissions-reduction projections despite corporate climate tech pledges.",
+    "body": "<p>**AI's climate case remains largely unproven despite bold corporate and startup commitments.**</p>\n<p>At the UN climate conference in Antalya, Turkey this week, AI is expected to dominate discussions. OpenAI's CEO claimed AI would achieve climate breakthroughs, and Google's sustainability leadership projected 5 — 10% emissions cuts by 2030. However, evidence shows industries are not implementing these tools at scale.</p>\n<p>A peer-reviewed study from the London School of Economics' Grantham Institute and Systemiq estimated AI could reduce global emissions by 3.2 to 5.4 billion tons of CO2 annually by 2035 — roughly equal to US annual energy-related emissions. These gains would concentrate in power, meat/dairy, and transportation sectors.</p>\n<p>Reality lags projection: across power grids in China, the US, and Europe, only one deployed a meaningful AI forecasting system. The UK's National Grid ESO and Open Climate Fix halved solar-forecast error, avoiding hundreds of thousands of tons of CO2 yearly. Most other operators show little public progress on AI integration.</p>\n<p>The meat and dairy sector shows the starkest gap. To hit 2035 targets, AI must close taste and cost gaps for alternative proteins. NotCo's joint venture with Kraft Heinz uses AI-analyzed plant data, yet few alternative-protein firms employ deep AI integration. Venture capital into cultivated meat collapsed from $989 million in 2021 to $83 million last year.</p>\n<p>Transportation offers more promise: CATL cut battery material-screening time by two orders of magnitude using AI trained on 100,000+ design cases. Didi Chuxing reduced per-trip emissions 16% with AI-optimized routing. A critical blind spot remains: oil and gas companies also adopt these tools to increase fossil fuel production, and tech firms haven't transparently addressed dual-use risks.</p>\n<p>Despite bold AI-climate claims, few companies across power, food, and transportation sectors are deploying the specific emission-reducing strategies researchers identified.</p>",
+    "category": "Research",
+    "imageUrl": "https://aifeed.run/images/aifeed_the-climate-case-for-ai-has_20261109_pm.png",
+    "image": "images/aifeed_the-climate-case-for-ai-has_20261109_pm.png",
+    "sourceUrl": "https://www.technologyreview.com/2026/11/09/1148166/the-climate-case-for-ai-has-not-been-made/",
+    "publishedAt": "2026-11-09T22:07:30.343Z",
+    "hashtags": [
+      "ClimateAction",
+      "AISustainability",
+      "Emissions",
+      "GreenTech",
+      "ClimateGoals"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "bikers-and-buglovers-join-forces-to-20261109",
     "slug": "bikers-and-buglovers-join-forces-to",
     "headline": "Bikers and Bug-Lovers Join Forces to Fight a New Google Data Center",
