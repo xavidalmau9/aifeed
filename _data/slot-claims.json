@@ -515,8 +515,12 @@
     "2026-11-09:2": {
       "slug": "the-climate-case-for-ai-has",
       "image": "aifeed_the-climate-case-for-ai-has_20261109_pm.png",
+      "reelTemplate": "v3",
+      "hookStyle": "C",
+      "igReelId": "18119737654797523",
+      "igPermalink": "https://www.instagram.com/reel/DfiZkqKlKNk/",
       "status": "posted",
-      "at": "2026-11-09T22:12:28.125Z",
+      "at": "2026-11-09T22:26:11.057Z",
       "by": "github-actions"
     }
   }
