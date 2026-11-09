@@ -9,6 +9,7 @@ import tempfile
 import unittest
 
 import stage_pages as sp
+import analytics_snippet as az
 
 DAY = 24 * 3600
 
@@ -45,6 +46,7 @@ class DecideTests(unittest.TestCase):
         self.assertEqual(sp.decide("graphics/huge.html", 1 * DAY, False), (False, "dev"))
         self.assertEqual(sp.decide("automation/actions/pipeline.js", 1 * DAY, False), (False, "dev"))
         self.assertEqual(sp.decide("CLAUDE.md", 1 * DAY, False), (False, "dev"))
+        self.assertEqual(sp.decide("_includes/analytics.html", 1 * DAY, False), (False, "dev"))
 
     def test_boundary_is_three_days(self):
         self.assertEqual(sp.decide("videos/reels/edge.mp4", sp.RETAIN_SECONDS, False)[0], True)
@@ -160,6 +162,93 @@ class StageFixtureTests(unittest.TestCase):
         # Repo files were not deleted.
         self.assertTrue(os.path.isfile(os.path.join(self.repo, "videos/old.mp4")))
         self.assertTrue(os.path.isfile(os.path.join(self.repo, "images/old-unused.png")))
+
+    def test_published_about_faq_privacy_contain_each_tag_once(self):
+        home = "<!DOCTYPE html><html><head>\n" + az.snippet_body() + "\n<title>Home</title></head><body>home</body></html>"
+        self.write("index.html", home)
+        bare = "<!DOCTYPE html><html><head><title>{title}</title></head><body><h1>{title}</h1></body></html>"
+        self.write("about/index.html", bare.format(title="About"))
+        self.write("faq/index.html", bare.format(title="FAQ"))
+        self.write("privacy/index.html", bare.format(title="Privacy"))
+        self.write("404.html", "<!DOCTYPE html><html><head><title>Missing</title></head><body>missing</body></html>")
+        self.write("sitemap.xml", "<urlset></urlset>")
+        self.write("llms.txt", "llms")
+        self.write("llms-full.txt", "full")
+        self.write("CNAME", "aifeed.run\n")
+        self.write(".nojekyll", "")
+        self.write("images/aifeed_endslide.png", b"end")
+        self.commit("pages", "2026-11-07T12:00:00+00:00")
+        now = datetime.datetime(2026, 11, 7, 18, 0, tzinfo=datetime.timezone.utc).timestamp()
+        sp.stage(self.repo, self.dest, now=now)
+
+        def counts(rel):
+            with open(os.path.join(self.dest, rel), encoding="utf-8") as fh:
+                text = fh.read()
+            return (
+                text.count(az.CLARITY_ID),
+                text.count("https://www.clarity.ms/tag/"),
+                text.count("https://www.googletagmanager.com/gtag/js?id=" + az.GA_ID),
+                text.count("gtag('config', '%s')" % az.GA_ID),
+            )
+
+        once = (1, 1, 1, 1)
+        for rel in ("index.html", "about/index.html", "faq/index.html", "privacy/index.html", "404.html"):
+            self.assertEqual(counts(rel), once, rel)
+        self.assertFalse(os.path.exists(os.path.join(self.dest, "_includes", "analytics.html")))
+        with open(os.path.join(self.dest, "about/index.html"), encoding="utf-8") as fh:
+            about = fh.read()
+        self.assertIn("<h1>About</h1>", about)
+        self.assertIn("<title>About</title>", about)
+
+
+class AnalyticsSnippetTests(unittest.TestCase):
+    def test_inserts_each_tag_once_and_is_idempotent(self):
+        html = "<!DOCTYPE html><html><head><meta charset=\"utf-8\"></head><body><h1>About</h1></body></html>"
+        once = az.inject(html)
+        self.assertEqual(once.count(az.CLARITY_ID), 1)
+        self.assertEqual(once.count("https://www.clarity.ms/tag/"), 1)
+        self.assertEqual(once.count("https://www.googletagmanager.com/gtag/js?id=" + az.GA_ID), 1)
+        self.assertEqual(once.count("gtag('config', '%s')" % az.GA_ID), 1)
+        self.assertIn("<h1>About</h1>", once)
+        self.assertEqual(az.inject(once), once)
+
+    def test_homepage_and_story_template_are_not_tagged_twice(self):
+        root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        for rel in ("index.html", "post.html", "news/index.html"):
+            with open(os.path.join(root, rel), encoding="utf-8") as fh:
+                html = fh.read()
+            self.assertEqual(az.inject(html), html)
+            self.assertEqual(html.count(az.CLARITY_ID), 1)
+            self.assertEqual(html.count("https://www.googletagmanager.com/gtag/js?id=" + az.GA_ID), 1)
+
+    def test_marker_and_drifted_ids_collapse_to_the_shared_snippet(self):
+        marked = "<!DOCTYPE html><html><head>\n<!-- AIFEED_ANALYTICS -->\n<title>FAQ</title></head><body></body></html>"
+        out = az.inject(marked)
+        self.assertNotIn("AIFEED_ANALYTICS", out)
+        self.assertEqual(out.count(az.CLARITY_ID), 1)
+        self.assertEqual(out.count("https://www.googletagmanager.com/gtag/js?id=" + az.GA_ID), 1)
+        self.assertEqual(az.inject(out), out)
+
+        root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        with open(os.path.join(root, "index.html"), encoding="utf-8") as fh:
+            drifted = fh.read()
+        drifted = drifted.replace(az.CLARITY_ID, "driftedid1").replace(az.GA_ID, "G-DRIFTEDID")
+        fixed = az.inject(drifted)
+        self.assertNotIn("driftedid1", fixed)
+        self.assertNotIn("G-DRIFTEDID", fixed)
+        self.assertEqual(fixed.count(az.CLARITY_ID), 1)
+        self.assertEqual(fixed.count("https://www.googletagmanager.com/gtag/js?id=" + az.GA_ID), 1)
+        self.assertEqual(fixed.count("gtag('config', '%s')" % az.GA_ID), 1)
+        self.assertIn("<title>AIFeed.run AI News", fixed)
+        self.assertEqual(az.inject(fixed), fixed)
+
+    def test_header_element_is_not_a_head(self):
+        html = "<html><body><header>Hi</header></body></html>"
+        self.assertEqual(az.inject(html), html)
+
+    def test_graphic_card_without_head_is_left_alone(self):
+        html = "<!doctype html><html><body><div class=\"c\"></div></body></html>"
+        self.assertEqual(az.inject(html), html)
 
 
 if __name__ == "__main__":

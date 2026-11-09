@@ -26,6 +26,7 @@ jobs:
           sparse-checkout-cone-mode: false
           sparse-checkout: |
             _posts/
+            _includes/
             post.html
             scripts/
             news/
