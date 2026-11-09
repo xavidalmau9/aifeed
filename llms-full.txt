@@ -18,6 +18,7 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - LinkedIn: https://www.linkedin.com/company/aifeed-run
 
 ## Recent stories
+- [Bikers and Bug-Lovers Join Forces to Fight a New Google Data Center](https://aifeed.run/news/bikers-and-buglovers-join-forces-to/) — Wildlife groups, environmental nonprofits, and motorcycle enthusiasts unite to oppose Google's planned Thurrock data center.
 - [World Models Will Soon Be Inescapable. Here’s What You Need to Know](https://aifeed.run/news/world-models-will-soon-be-inescapable/) — World models that simulate physics in 3D space are being adopted by robotics and autonomous vehicle companies.
 - [The US let Nvidia sell chips to an empty office in China](https://aifeed.run/news/the-us-let-nvidia-sell-chips/) — US approved Nvidia AI chip sales to Chinese firm with empty office and blacklisted ties.
 - [AI debt concerns grow as ING reportedly seeks buyers for $500 million of data center loans](https://aifeed.run/news/ai-debt-concerns-grow-as-ing/) — ING reportedly seeks buyers for $500 million portfolio of AI data center loans amid debt concerns.
@@ -57,4 +58,3 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - [ServiceNow and Nvidia launch Arc, a new AI agent for enterprise](https://aifeed.run/news/servicenow-and-nvidia-launch-arc-new/) — ServiceNow and Nvidia released Arc, an AI agent with multi-layer security controls for enterprise tasks.
 - [OpenAI Invests in Startup That Uses Brain Implants to Detect Cancer](https://aifeed.run/news/openai-invests-in-startup-that-uses/) — OpenAI and Thiel's fund invest $45 million in Coherence Neuro, developing brain implants to detect and treat cancer.
 - [“We were looking at it wrong”: The explosive claim that’s upended the AI world](https://aifeed.run/news/we-were-looking-at-it-wrong/) — Researcher claims LLMs may be easier to understand and control than AI science previously believed.
-- [A hacker broke into John Deere and SharkNinja with an army of AI agents](https://aifeed.run/news/hacker-broke-into-john-deere-and/) — According to Norforge findings, a hacker reportedly used AI agents to breach over 100 websites; Reuters reports victims included John Deere, SharkNinja, and Cummins.
