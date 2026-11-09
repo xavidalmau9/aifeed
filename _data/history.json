@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-09T13:07:33.834Z",
+      "date": "2026-11-09",
+      "slot": 1,
+      "headline": "Bikers and Bug-Lovers Join Forces to Fight a New Google Data Center",
+      "canonUrl": "wired.com/story/bug-activists-and-biker-gang-members-are-teaming-up-to-protest-data-centers",
+      "url": "https://www.wired.com/story/bug-activists-and-biker-gang-members-are-teaming-up-to-protest-data-centers/",
+      "slug": "bikers-and-buglovers-join-forces-to",
+      "image": "aifeed_bikers-and-buglovers-join-forces-to_20261109_am.png",
+      "photo": {
+        "dhash": "c8d4d494d4b21353",
+        "phash": "9a74a68e679a908f",
+        "hist": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          5,
+          13,
+          550,
+          121,
+          0,
+          0,
+          1,
+          38,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          263
+        ],
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Racks_Amravati_Data_Center.jpg/1920px-Racks_Amravati_Data_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "via": "Wikimedia Commons photo"
+      }
+    },
+    {
       "postedAt": "2026-11-08T22:06:59.430Z",
       "date": "2026-11-08",
       "slot": 2,
@@ -5320,48 +5402,6 @@
     }
   ],
   "rankings": {
-    "2026-10-26": [
-      {
-        "rank": 1,
-        "title": "SpaceX closes $40 billion debt deal for AI chips, Elon Musk says",
-        "canonUrl": "cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html"
-      },
-      {
-        "rank": 2,
-        "title": "SoftBank reportedly plans $50 billion tech investment in aspiring 'AI nation' Malaysia",
-        "canonUrl": "cnbc.com/2026/10/26/softbank-masayoshi-son-malaysia-ai-billions.html"
-      },
-      {
-        "rank": 3,
-        "title": "Meet the AI Agents Trying to Be Real-Life Journalists",
-        "canonUrl": "wired.com/story/ai-agents-are-trying-to-be-journalists-now"
-      },
-      {
-        "rank": 4,
-        "title": "Claude Code AI finds a cryptominer on a Mac; says it didn’t put it there",
-        "canonUrl": "9to5mac.com/2026/10/26/claude-code-ai-finds-a-cryptominer-on-a-mac-says-it-didnt-put-it-there"
-      },
-      {
-        "rank": 5,
-        "title": "This AI Radio Host Speaks Spanish and Backs Immigrants. It’s Winning Over Listeners",
-        "canonUrl": "wired.com/story/this-ai-radio-hosts-speaks-spanish-and-backs-immigrants-its-winning-over-listeners"
-      },
-      {
-        "rank": 6,
-        "title": "Elvis Presley's estate is suing Anthropic over copyright infringement",
-        "canonUrl": "engadget.com/2296535/elvis-presley-estate-suing-ai-company-for-copyright-infringement"
-      },
-      {
-        "rank": 7,
-        "title": "r/opensource just banned AI, non-English speakers, and more",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban"
-      },
-      {
-        "rank": 8,
-        "title": "What the US Movement Against Data Centers Can Learn From Abroad",
-        "canonUrl": "wired.com/story/what-the-us-anti-data-center-movement-can-learn-from-everywhere-else"
-      }
-    ],
     "2026-10-27": [
       {
         "rank": 1,
@@ -6086,6 +6126,53 @@
         "rank": 7,
         "title": "I Used NYT Cooking’s New AI-Powered Recipe Modifier, and It’s Actually Pretty Good",
         "canonUrl": "wired.com/story/nyt-cooking-new-ai-powered-recipe-modifier-is-pretty-good"
+      }
+    ],
+    "2026-11-09": [
+      {
+        "rank": 1,
+        "title": "From supermarket fridges to passenger flights, a wave of threats is testing Europe's defenses",
+        "canonUrl": "cnbc.com/2026/11/09/europe-fridge-hacks-bomb-threats-cyberattack.html"
+      },
+      {
+        "rank": 2,
+        "title": "Bikers and Bug-Lovers Join Forces to Fight a New Google Data Center",
+        "canonUrl": "wired.com/story/bug-activists-and-biker-gang-members-are-teaming-up-to-protest-data-centers"
+      },
+      {
+        "rank": 3,
+        "title": "macOS 27.3 could change how you grant AI agents Full Disk Access, here’s how",
+        "canonUrl": "9to5mac.com/2026/11/08/macos-changes-for-full-disk-access-ai-agents-imessage"
+      },
+      {
+        "rank": 4,
+        "title": "Apple is racing to make Siri more agentic",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic"
+      },
+      {
+        "rank": 5,
+        "title": "The climate case for AI has not been made",
+        "canonUrl": "technologyreview.com/2026/11/09/1148166/the-climate-case-for-ai-has-not-been-made"
+      },
+      {
+        "rank": 6,
+        "title": "Teens and parents can expect Instagram notifications about AI age estimation",
+        "canonUrl": "9to5mac.com/2026/11/09/teens-and-parents-can-expect-instagram-notifications-about-ai-age-estimation"
+      },
+      {
+        "rank": 7,
+        "title": "Elvis and Eminem rights holders are suing Suno",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit"
+      },
+      {
+        "rank": 8,
+        "title": "Authors Can Defend Against AI Allegations With ‘Paper Trail’ Tools. Is It Enough?",
+        "canonUrl": "wired.com/story/authors-can-defend-against-ai-allegations-with-paper-trail-tools"
+      },
+      {
+        "rank": 9,
+        "title": "Don't like Google Health's AI Coach? Here's how to turn it off",
+        "canonUrl": "engadget.com/2309626/dont-like-google-health-ai-coach-how-turn-off"
       }
     ]
   }
