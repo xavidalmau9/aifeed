@@ -1,6 +1,6 @@
 # AIFeed.run AI News
 
-> The AI news that matters. Top AI stories, explained in 60 seconds. Sources linked on every story.
+> The AI news that matters. Top AI stories, explained in 60 seconds. Sources linked on every story. Every story page opens with a short summary and Key takeaways.
 
 AIFeed.run is an AI-powered AI news brand. Stories are selected and written by AI systems from major outlets, then published on aifeed.run and across Instagram, Facebook and LinkedIn. We do not claim human editors rewrite the news.
 
@@ -12,6 +12,8 @@ AIFeed.run is an AI-powered AI news brand. Stories are selected and written by A
 
 ## Key pages
 - [Home: latest AI stories](https://aifeed.run/)
+- [All AI news stories (archive)](https://aifeed.run/news/)
+- [AI news by topic](https://aifeed.run/news/topics/)
 - [About](https://aifeed.run/about/)
 - [FAQ](https://aifeed.run/faq/)
 - [Free weekly AI brief](https://aifeed.run/subscribe/)
@@ -20,6 +22,20 @@ AIFeed.run is an AI-powered AI news brand. Stories are selected and written by A
 - [RSS feed](https://aifeed.run/feed.xml)
 - [Sitemap](https://aifeed.run/sitemap.xml)
 - [Full LLM summary](https://aifeed.run/llms-full.txt)
+
+## Topics
+- [AI Industry news](https://aifeed.run/news/topics/industry/)
+- [AI Business news](https://aifeed.run/news/topics/business/)
+- [AI Safety news](https://aifeed.run/news/topics/safety/)
+- [AI Research news](https://aifeed.run/news/topics/research/)
+- [AI Policy news](https://aifeed.run/news/topics/policy/)
+- [AI Models news](https://aifeed.run/news/topics/models/)
+- [AI Tools news](https://aifeed.run/news/topics/tools/)
+- [AI Products news](https://aifeed.run/news/topics/products/)
+- [AI Hardware news](https://aifeed.run/news/topics/hardware/)
+- [AI Infrastructure news](https://aifeed.run/news/topics/infrastructure/)
+- [AI Health news](https://aifeed.run/news/topics/health/)
+- [AI Security news](https://aifeed.run/news/topics/security/)
 
 ## Social channels
 - Instagram: https://www.instagram.com/aifeed.run/
