@@ -531,8 +531,12 @@
     "2026-11-10:2": {
       "slug": "security-flaws-across-uk-government-sites",
       "image": "aifeed_security-flaws-across-uk-government-sites_20261110_pm.png",
+      "reelTemplate": "v3",
+      "hookStyle": "B",
+      "igReelId": "18128598263486162",
+      "igPermalink": "https://www.instagram.com/reel/Dfk9XVrnP8y/",
       "status": "posted",
-      "at": "2026-11-10T22:13:50.296Z",
+      "at": "2026-11-10T22:17:24.794Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
