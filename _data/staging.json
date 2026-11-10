@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Nvidia is investigating Jensen Huang’s relationship with an alleged Chinese spy",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy",
-    "score": 98,
-    "reason": "Major controversy with direct impact on $3T+ company leadership; espionage angle; concrete investigation"
+    "headline": "Anthropic sets IPO price range of $70 to $78, looks to start trading  Nov. 19, sources say",
+    "link": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
+    "score": 92,
+    "reason": "Major launch event with specific numbers and dates; significant industry milestone"
   },
   {
     "rank": 2,
-    "headline": "Anthropic launches new Claude Fable and Mythos 5.2 models",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
-    "score": 92,
-    "reason": "Major model launch; concrete pricing (20% below competitor); frontier model release"
+    "headline": "Anthropic releases first frontier models since Amodei&apos;s call for slowdown as IPO buzz builds",
+    "link": "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html",
+    "score": 88,
+    "reason": "Product launch with business significance; contradicts safety narrative"
   },
   {
     "rank": 3,
-    "headline": "Trump’s 60 Minutes interview touched on AI safety, threat to arrest an AI exec",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1029802/trump-60-minutes-ai",
-    "score": 88,
-    "reason": "Political controversy; regulatory threat; major figure involvement"
+    "headline": "AI-Driven Tech Layoffs Could Trigger a 1.6 Million Job Recession",
+    "link": "https://www.cnet.com/tech/services-and-software/ai-tech-layoffs-2026-trigger-recession/",
+    "score": 85,
+    "reason": "Concrete large-scale economic impact number; major societal implication"
   },
   {
     "rank": 4,
-    "headline": "Disney and Adobe are building generative AI tools together",
-    "link": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
-    "score": 85,
-    "reason": "Major partnership launch between two Fortune 500 companies; concrete collaboration"
+    "headline": "A New AI Tool From Google DeepMind Proved the Signal Protocol Is Secure",
+    "link": "https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/",
+    "score": 82,
+    "reason": "Google/DeepMind product launch with security validation; technical achievement"
   },
   {
     "rank": 5,
-    "headline": "Meta is expanding AI age detection for Instagram teen accounts",
-    "link": "https://www.engadget.com/2310848/meta-is-expanding-ai-age-detection-for-instagram-teen-accounts/",
-    "score": 83,
-    "reason": "Major platform feature expansion; regulatory/safety focus; concrete implementation"
+    "headline": "Everything we know so far about the Nvidia spy scandal targeting CEO Jensen Huang",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+    "score": 81,
+    "reason": "Major controversy with national security implications; significant for industry leadership"
   },
   {
     "rank": 6,
-    "headline": "NHTSA investigates if Waymo robotaxis are still running school bus stop signs",
-    "link": "https://www.engadget.com/2310872/nhtsa-investigates-if-waymo-robotaxis-are-still-running-school-bus-stop-signs/",
-    "score": 82,
-    "reason": "Regulatory investigation; safety controversy; major autonomous vehicle player"
+    "headline": "Apple starts offering $50 extended usage packs for AI features in Creator Studio",
+    "link": "https://www.engadget.com/2311500/apple-starts-offering-50-dollar-extended-usage-packs-for-ai-features-in-creator-studio/",
+    "score": 78,
+    "reason": "Apple's monetization launch for AI features; specific pricing announcement"
   },
   {
     "rank": 7,
-    "headline": "Instagram’s Effect Builder makes new filters from AI prompts",
-    "link": "https://www.theverge.com/tech/1030061/instagram-ai-effect-builder-filters",
-    "score": 80,
-    "reason": "Major feature launch; billions of users; concrete product release"
+    "headline": "Tear Down Those Guardrails! Meet the Renegades Freeing Chatbots From Corporate Enslavers",
+    "link": "https://www.wired.com/story/tear-down-those-guardrails-meet-the-renegades-freeing-chatbots-from-corporate-enslavers/",
+    "score": 76,
+    "reason": "Significant controversy around AI safety and control; movement not speculation"
   },
   {
     "rank": 8,
-    "headline": "Ready for a Siri AI agent? Apple under pressure to upgrade its assistant faster",
-    "link": "https://www.zdnet.com/home-and-office/apple-siri-ai-agentic-strategy/",
-    "score": 78,
-    "reason": "Major platform pressure; competitive urgency; $3T+ company product gap"
+    "headline": "Goldman CEO Solomon says AI financing remains strong despite market jitters",
+    "link": "https://www.cnbc.com/2026/11/09/goldman-ceo-ai-financing-market.html",
+    "score": 74,
+    "reason": "Major financial institution's assessment of AI funding; contradicts negative narrative"
   },
   {
     "rank": 9,
-    "headline": "Google’s AI Mode Will Soon Show Ads Even in Your Follow-Up Questions",
-    "link": "https://www.cnet.com/tech/services-and-software/google-expands-advertising-ai-mode-overviews/",
-    "score": 77,
-    "reason": "Controversial monetization shift; major platform impact; user privacy angle"
+    "headline": "Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information",
+    "link": "https://www.wired.com/story/security-flaws-across-uk-government-sites-exposed-god-tier-information/",
+    "score": 72,
+    "reason": "Major security breach affecting government infrastructure; concrete vulnerability"
   },
   {
     "rank": 10,
-    "headline": "Google Gemini rolling out ‘Memory summary’ with everything it remembers about you",
-    "link": "https://9to5google.com/2026/11/09/google-gemini-memory-summary/",
-    "score": 75,
-    "reason": "Major feature rollout; privacy implications; billions of users affected"
+    "headline": "How Ireland Is Becoming One of Europe’s AI Powerhouses",
+    "link": "https://www.cnet.com/tech/services-and-software/how-ireland-is-becoming-one-of-europes-ai-powerhouses-2/",
+    "score": 70,
+    "reason": "Geopolitical shift in AI development; significant regional development"
   },
   {
     "rank": 11,
-    "headline": "Samsung mulls Galaxy AI usage limits and subscription tiers – what we know",
-    "link": "https://www.zdnet.com/innovation/samsung-galaxy-ai-paid-subscription/",
-    "score": 74,
-    "reason": "Major platform monetization shift; concrete pricing discussion; major manufacturer"
+    "headline": "David Ellison says AI could be the ‘biggest creative unlock in modern history’",
+    "link": "https://www.theverge.com/entertainment/1030510/paramount-skydance-david-ellison-ai",
+    "score": 68,
+    "reason": "Skydance CEO bold claim about AI impact; significant industry perspective from major player"
   },
   {
     "rank": 12,
-    "headline": "Apple’s $50 Intelligence Usage Packs extend access to some AI features",
-    "link": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
-    "score": 72,
-    "reason": "Major monetization launch; specific pricing; concrete product"
+    "headline": "Venture Global plans to become the world’s largest gas exporter in a year—and now aims to build power for hyperscaler data centers",
+    "link": "https://fortune.com/2026/11/10/venture-global-worlds-largest-gas-exporter-power-data-centers-hyperscalers/",
+    "score": 66,
+    "reason": "Infrastructure launch for AI data centers; major energy commitment"
   },
   {
     "rank": 13,
-    "headline": "AI Agents Are Testing the Limits of Zero-Trust Security",
-    "link": "https://spectrum.ieee.org/zero-trust-agentic-ai-architecture",
-    "score": 70,
-    "reason": "Enterprise security concern; emerging risk category; concrete implications"
+    "headline": "Samsung's paid Galaxy AI plan has a giant Gemini problem",
+    "link": "https://9to5google.com/2026/11/10/samsungs-paid-ai-ambitions-have-a-giant-gemini-problem/",
+    "score": 64,
+    "reason": "Samsung product launch with technical integration controversy; specific implementation issue"
   },
   {
     "rank": 14,
-    "headline": "Authors Can Defend Against AI Allegations With ‘Paper Trail’ Tools. Is It Enough?",
-    "link": "https://www.wired.com/story/authors-can-defend-against-ai-allegations-with-paper-trail-tools/",
-    "score": 68,
-    "reason": "Copyright/IP controversy; concrete tool response; major impact on creators"
+    "headline": "AMD confirms GPU driver bug is wearing out your SSD – how to stop it",
+    "link": "https://www.zdnet.com/tech/amd-confirms-gpu-driver-bug-is-wearing-out-your-ssd-how-to-stop-it/",
+    "score": 62,
+    "reason": "AMD product flaw disclosure; concrete technical failure affecting users"
   },
   {
     "rank": 15,
-    "headline": "Nancy Pelosi’s replacement is ready to regulate AI",
-    "link": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
-    "score": 67,
-    "reason": "Regulatory shift; political impact; concrete policy direction"
+    "headline": "The AI Safety Debate Has Lost the Plot. We Asked 10 Experts What the Real Nightmares Are",
+    "link": "https://www.wired.com/story/the-ai-safety-debate-has-lost-the-plot-we-asked-10-experts-what-the-real-nightmares-are/",
+    "score": 60,
+    "reason": "Expert analysis challenging current safety discourse; substantive industry debate"
   },
   {
     "rank": 16,
-    "headline": "Amazon&apos;s Astro home robot has fans but looks destined for the &apos;trash heap.&apos; Why it&apos;s trying again",
-    "link": "https://www.cnbc.com/2026/11/08/amazon-home-robot-fauna-sprout.html",
-    "score": 65,
-    "reason": "Major product pivot; commercial viability controversy; Fortune 50 company"
+    "headline": "Ukraine’s fiber-optic drones get squeezed by AI data center demand",
+    "link": "https://arstechnica.com/gadgets/2026/11/ukraines-fiber-optic-drones-get-squeezed-by-ai-data-center-demand/",
+    "score": 58,
+    "reason": "Concrete geopolitical impact of AI infrastructure; resource competition"
   },
   {
     "rank": 17,
-    "headline": "What hardware does your PC need to run a local AI model?",
-    "link": "https://www.engadget.com/2307701/pc-hardware-needed-run-local-ai-model/",
-    "score": 62,
-    "reason": "Market enablement; concrete technical specifications; democratization angle"
+    "headline": "FBI is ‘looking into’ Jensen Huang, as critics pick over the weaknesses in Nvidia’s corporate governance structure",
+    "link": "https://fortune.com/2026/11/10/fbi-looking-into-jensen-huang-nvidia-corporate-governance/",
+    "score": 56,
+    "reason": "FBI investigation into Nvidia CEO; governance controversy beyond scandal"
   },
   {
     "rank": 18,
-    "headline": "The backlash about data centers might really just be about electricity",
-    "link": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
-    "score": 60,
-    "reason": "Infrastructure controversy; energy/climate impact; concrete root cause analysis"
+    "headline": "Boeing to cut 5% of commercial airplane workers as production increase takes longer than expected",
+    "link": "https://www.cnbc.com/2026/11/09/boeing-layoffs-commercial-airplane.html",
+    "score": 52,
+    "reason": "Major tech-enabled layoff with specific percentage; operational impact"
   },
   {
     "rank": 19,
-    "headline": "Jonathan Kanter is using AI to take on Big Tech",
-    "link": "https://www.theverge.com/policy/1029652/kanter-doj-biden-legal-tech",
-    "score": 58,
-    "reason": "Regulatory strategy shift; antitrust implications; major policy player"
+    "headline": "Adobe Max 2026 Live Updates: All the AI, Photo and Video News",
+    "link": "https://www.cnet.com/news-live/adobe-max-2026-live-updates-all-the-ai-photo-and-video-news/",
+    "score": 50,
+    "reason": "Adobe's AI feature announcements; major creative tools company product showcase"
   },
   {
     "rank": 20,
-    "headline": "The climate case for AI has not been made",
-    "link": "https://www.technologyreview.com/2026/11/09/1148166/the-climate-case-for-ai-has-not-been-made/",
-    "score": 56,
-    "reason": "Environmental controversy; challenges industry claims; emerging concern"
+    "headline": "How Nvidia crisis, politics could deliver the pause AI leaders want",
+    "link": "https://www.axios.com/2026/11/10/ai-race-politics-slowdown",
+    "score": 48,
+    "reason": "Potential regulatory consequence of Nvidia scandal; policy implication with big names"
   }
 ]
