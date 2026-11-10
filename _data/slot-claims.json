@@ -529,8 +529,10 @@
       "by": "github-actions"
     },
     "2026-11-10:2": {
-      "status": "claimed",
-      "at": "2026-11-10T22:04:58.091Z",
+      "slug": "security-flaws-across-uk-government-sites",
+      "image": "aifeed_security-flaws-across-uk-government-sites_20261110_pm.png",
+      "status": "posted",
+      "at": "2026-11-10T22:13:50.296Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
