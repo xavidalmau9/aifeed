@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic sets IPO price range of $70 to $78, looks to start trading  Nov. 19, sources say",
-    "link": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
-    "score": 92,
-    "reason": "Major launch event with specific numbers and dates; significant industry milestone"
+    "headline": "Anthropic inks $3.4 billion deal for gas-powered data centers—the largest of its kind—to secure AI autonomy ahead of planned IPO",
+    "link": "https://fortune.com/2026/11/10/anthropic-3-4-billion-deal-gas-data-centers-ai-ipo/",
+    "score": 98,
+    "reason": "Massive funding round, concrete infrastructure commitment, IPO signal"
   },
   {
     "rank": 2,
-    "headline": "Anthropic releases first frontier models since Amodei&apos;s call for slowdown as IPO buzz builds",
-    "link": "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html",
-    "score": 88,
-    "reason": "Product launch with business significance; contradicts safety narrative"
+    "headline": "ChatGPT is getting verified AI ‘Business Agents’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+    "score": 92,
+    "reason": "Major product launch expanding autonomous capabilities"
   },
   {
     "rank": 3,
-    "headline": "AI-Driven Tech Layoffs Could Trigger a 1.6 Million Job Recession",
-    "link": "https://www.cnet.com/tech/services-and-software/ai-tech-layoffs-2026-trigger-recession/",
-    "score": 85,
-    "reason": "Concrete large-scale economic impact number; major societal implication"
+    "headline": "Claude can now join video calls as an active, visible teammate in Anthropic's latest push to reinvent white collar jobs beyond coding",
+    "link": "https://fortune.com/2026/11/10/anthropic-launches-office-knowledge-worker-product-launch-ahead-of-ipo/",
+    "score": 90,
+    "reason": "Significant capability expansion in autonomous agents"
   },
   {
     "rank": 4,
-    "headline": "A New AI Tool From Google DeepMind Proved the Signal Protocol Is Secure",
-    "link": "https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/",
-    "score": 82,
-    "reason": "Google/DeepMind product launch with security validation; technical achievement"
+    "headline": "Adobe is going all in on agentic AI",
+    "link": "https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates",
+    "score": 88,
+    "reason": "Major company strategic pivot to agents"
   },
   {
     "rank": 5,
-    "headline": "Everything we know so far about the Nvidia spy scandal targeting CEO Jensen Huang",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
-    "score": 81,
-    "reason": "Major controversy with national security implications; significant for industry leadership"
+    "headline": "Anthropic takes on Google and Microsoft with Claude Sheets",
+    "link": "https://www.engadget.com/2312177/anthropic-takes-on-google-and-microsoft-with-claude-sheets/",
+    "score": 87,
+    "reason": "New product directly competing with tech giants"
   },
   {
     "rank": 6,
-    "headline": "Apple starts offering $50 extended usage packs for AI features in Creator Studio",
-    "link": "https://www.engadget.com/2311500/apple-starts-offering-50-dollar-extended-usage-packs-for-ai-features-in-creator-studio/",
-    "score": 78,
-    "reason": "Apple's monetization launch for AI features; specific pricing announcement"
+    "headline": "New York will independently test AI models",
+    "link": "https://www.engadget.com/2312487/new-york-will-independently-test-ai-models/",
+    "score": 86,
+    "reason": "Major regulatory action by significant jurisdiction"
   },
   {
     "rank": 7,
-    "headline": "Tear Down Those Guardrails! Meet the Renegades Freeing Chatbots From Corporate Enslavers",
-    "link": "https://www.wired.com/story/tear-down-those-guardrails-meet-the-renegades-freeing-chatbots-from-corporate-enslavers/",
-    "score": 76,
-    "reason": "Significant controversy around AI safety and control; movement not speculation"
+    "headline": "Nvidia sells off for second day in fallout from Jensen Huang’s affair with alleged spy",
+    "link": "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html",
+    "score": 85,
+    "reason": "Major scandal with market impact and security implications"
   },
   {
     "rank": 8,
-    "headline": "Goldman CEO Solomon says AI financing remains strong despite market jitters",
-    "link": "https://www.cnbc.com/2026/11/09/goldman-ceo-ai-financing-market.html",
-    "score": 74,
-    "reason": "Major financial institution's assessment of AI funding; contradicts negative narrative"
+    "headline": "CoreWeave beats on revenue and lifts guidance, easing AI slowdown concerns",
+    "link": "https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html",
+    "score": 83,
+    "reason": "Concrete financial metrics indicating AI infrastructure demand"
   },
   {
     "rank": 9,
-    "headline": "Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information",
-    "link": "https://www.wired.com/story/security-flaws-across-uk-government-sites-exposed-god-tier-information/",
-    "score": 72,
-    "reason": "Major security breach affecting government infrastructure; concrete vulnerability"
+    "headline": "Elon Musk wants to build AI satellite factories on the moon—and now SpaceX will compete for NASA’s $10 billion in contracts to build a lunar base",
+    "link": "https://fortune.com/2026/11/10/elon-musk-wants-to-build-ai-satellite-factories-on-the-moonand-now-spacex-will-compete-for-nasas-10-billion-in-contracts-to-build-a-lunar-base/",
+    "score": 81,
+    "reason": "Ambitious AI integration with massive government contracts"
   },
   {
     "rank": 10,
-    "headline": "How Ireland Is Becoming One of Europe’s AI Powerhouses",
-    "link": "https://www.cnet.com/tech/services-and-software/how-ireland-is-becoming-one-of-europes-ai-powerhouses-2/",
-    "score": 70,
-    "reason": "Geopolitical shift in AI development; significant regional development"
+    "headline": "The indie game community is in disarray over AI and Big Walk",
+    "link": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
+    "score": 79,
+    "reason": "Community backlash and controversy affecting creative industry"
   },
   {
     "rank": 11,
-    "headline": "David Ellison says AI could be the ‘biggest creative unlock in modern history’",
-    "link": "https://www.theverge.com/entertainment/1030510/paramount-skydance-david-ellison-ai",
-    "score": 68,
-    "reason": "Skydance CEO bold claim about AI impact; significant industry perspective from major player"
+    "headline": "Google turns Gemini towards medical paperwork",
+    "link": "https://www.engadget.com/2312279/google-turns-gemini-towards-medical-paperwork/",
+    "score": 77,
+    "reason": "Major industry application expansion into healthcare"
   },
   {
     "rank": 12,
-    "headline": "Venture Global plans to become the world’s largest gas exporter in a year—and now aims to build power for hyperscaler data centers",
-    "link": "https://fortune.com/2026/11/10/venture-global-worlds-largest-gas-exporter-power-data-centers-hyperscalers/",
-    "score": 66,
-    "reason": "Infrastructure launch for AI data centers; major energy commitment"
+    "headline": "eBay appears to have shut the door on third-party AI agents",
+    "link": "https://www.theverge.com/tech/1030838/ebay-ai-agents-meta-muse-agentic-shopping",
+    "score": 76,
+    "reason": "Major platform restricting AI capabilities"
   },
   {
     "rank": 13,
-    "headline": "Samsung's paid Galaxy AI plan has a giant Gemini problem",
-    "link": "https://9to5google.com/2026/11/10/samsungs-paid-ai-ambitions-have-a-giant-gemini-problem/",
-    "score": 64,
-    "reason": "Samsung product launch with technical integration controversy; specific implementation issue"
+    "headline": "AI Agents Are Testing the Limits of Zero-Trust Security",
+    "link": "https://spectrum.ieee.org/zero-trust-agentic-ai-architecture",
+    "score": 75,
+    "reason": "Significant security vulnerability concern with agents"
   },
   {
     "rank": 14,
-    "headline": "AMD confirms GPU driver bug is wearing out your SSD – how to stop it",
-    "link": "https://www.zdnet.com/tech/amd-confirms-gpu-driver-bug-is-wearing-out-your-ssd-how-to-stop-it/",
-    "score": 62,
-    "reason": "AMD product flaw disclosure; concrete technical failure affecting users"
+    "headline": "Nancy Pelosi’s replacement is ready to regulate AI",
+    "link": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
+    "score": 74,
+    "reason": "Political shift toward AI regulation in Congress"
   },
   {
     "rank": 15,
-    "headline": "The AI Safety Debate Has Lost the Plot. We Asked 10 Experts What the Real Nightmares Are",
-    "link": "https://www.wired.com/story/the-ai-safety-debate-has-lost-the-plot-we-asked-10-experts-what-the-real-nightmares-are/",
-    "score": 60,
-    "reason": "Expert analysis challenging current safety discourse; substantive industry debate"
+    "headline": "Google’s new AI tool just proved Signal encryption really works – here’s how",
+    "link": "https://www.zdnet.com/tech/google-deepmind-researchers-prove-signal-whatsapp-encryption-works/",
+    "score": 72,
+    "reason": "Concrete technical validation of security properties"
   },
   {
     "rank": 16,
-    "headline": "Ukraine’s fiber-optic drones get squeezed by AI data center demand",
-    "link": "https://arstechnica.com/gadgets/2026/11/ukraines-fiber-optic-drones-get-squeezed-by-ai-data-center-demand/",
-    "score": 58,
-    "reason": "Concrete geopolitical impact of AI infrastructure; resource competition"
+    "headline": "Google’s AI Mode Will Soon Show Ads Even in Your Follow-Up Questions",
+    "link": "https://www.cnet.com/tech/services-and-software/google-expands-advertising-ai-mode-overviews/",
+    "score": 71,
+    "reason": "Major monetization shift sparking privacy/UX controversy"
   },
   {
     "rank": 17,
-    "headline": "FBI is ‘looking into’ Jensen Huang, as critics pick over the weaknesses in Nvidia’s corporate governance structure",
-    "link": "https://fortune.com/2026/11/10/fbi-looking-into-jensen-huang-nvidia-corporate-governance/",
-    "score": 56,
-    "reason": "FBI investigation into Nvidia CEO; governance controversy beyond scandal"
+    "headline": "Google releases Gemini 4 Carbon with agent ‘swarm’ feature",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+    "score": 70,
+    "reason": "Major product launch with new autonomous capabilities"
   },
   {
     "rank": 18,
-    "headline": "Boeing to cut 5% of commercial airplane workers as production increase takes longer than expected",
-    "link": "https://www.cnbc.com/2026/11/09/boeing-layoffs-commercial-airplane.html",
-    "score": 52,
-    "reason": "Major tech-enabled layoff with specific percentage; operational impact"
+    "headline": "Hands-on with Ring’s new AI drone camera for your home",
+    "link": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot",
+    "score": 68,
+    "reason": "Consumer hardware launch integrating autonomous AI"
   },
   {
     "rank": 19,
-    "headline": "Adobe Max 2026 Live Updates: All the AI, Photo and Video News",
-    "link": "https://www.cnet.com/news-live/adobe-max-2026-live-updates-all-the-ai-photo-and-video-news/",
-    "score": 50,
-    "reason": "Adobe's AI feature announcements; major creative tools company product showcase"
+    "headline": "Nvidia has a Jensen Huang problem—and no obvious successor",
+    "link": "https://arstechnica.com/gadgets/2026/11/nvidia-has-a-jensen-huang-problem-and-no-obvious-successor/",
+    "score": 67,
+    "reason": "Leadership crisis at critical AI infrastructure company"
   },
   {
     "rank": 20,
-    "headline": "How Nvidia crisis, politics could deliver the pause AI leaders want",
-    "link": "https://www.axios.com/2026/11/10/ai-race-politics-slowdown",
-    "score": 48,
-    "reason": "Potential regulatory consequence of Nvidia scandal; policy implication with big names"
+    "headline": "How AI security failures are endangering your supply chain – and what you can do",
+    "link": "https://www.zdnet.com/tech/ai-security-failures-supply-chain-risks-black-kite-research/",
+    "score": 65,
+    "reason": "Systemic security risk across enterprise AI deployments"
   }
 ]
