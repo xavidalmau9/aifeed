@@ -2,7 +2,7 @@
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const { buildSameEventPrompt, classifySameEvent, finalizeSameEvent, sharedEntities, parseConfirm, seAmounts } = require('../lib/sameevent');
-const { applySameEvent } = require('../lib/pick');
+const { applySameEvent, prepareRetryPool } = require('../lib/pick');
 
 // Real posted history (aifeed.run, newest first), as buildPostedCompact formats it.
 const COMPACT = [
@@ -98,6 +98,28 @@ test('repeats are still caught when the model gets the P number wrong', () => {
   assert.equal(b[0].status, 'confirm');
   assert.ok([MATH, ADS, COMPACT[3].title].includes(b[0].matched));
   assert.equal(finalizeSameEvent([WIRED_MATH, GEMINI_AGENT], [b[0], { i: 1, status: 'new' }], { 0: CONFIRM_YES }).sameEventSkipped.length, 1);
+});
+
+test('the default candidate cap stays 5 and a retry can ask for more', () => {
+  const pool = Array.from({ length: 8 }, (_, i) => ({ title: 'Story ' + i, canonUrl: 'ex.com/' + i }));
+  const classified = pool.map((c, i) => ({ i, status: 'new', title: c.title }));
+  assert.equal(finalizeSameEvent(pool, classified, {}).candidates.length, 5);
+  assert.equal(finalizeSameEvent(pool, classified, {}, 10).candidates.length, 8);
+});
+
+test('a retry puts previously tried stories behind new ones', () => {
+  const pool = [
+    { title: 'Tried A', canonUrl: 'a.example/1' },
+    { title: 'Fresh B', canonUrl: 'b.example/2' },
+    { title: 'Tried C', canonUrl: 'c.example/3' }
+  ];
+  const fresh = pool.concat([{ title: 'Fresh D', canonUrl: 'd.example/4' }]);
+  const out = prepareRetryPool({ pool, fresh, tried: ['a.example/1', 'c.example/3'] });
+  assert.deepEqual(out.pool.map(p => p.canonUrl), ['b.example/2', 'd.example/4', 'a.example/1', 'c.example/3']);
+  assert.equal(out.deferred, 2);
+  assert.equal(out.backfilled, 1);
+  const same = prepareRetryPool({ pool, fresh, tried: [] });
+  assert.deepEqual(same.pool.map(p => p.canonUrl), pool.map(p => p.canonUrl));
 });
 
 test('a missing verdict is a repeat and an unreadable first answer stops the run', () => {

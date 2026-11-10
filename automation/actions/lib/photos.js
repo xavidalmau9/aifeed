@@ -206,7 +206,26 @@ Reply with ONLY JSON:
 kind is logo-card when the image is mainly a company logo, wordmark, app icon, or a reusable brand illustration (a logo or wordmark on a flat, gradient, or geometric background) that a news site would reuse for any story about that company. The OpenAI knot, the Anthropic wordmark, and Google, Microsoft, Meta, or Nvidia logos count even when the background is colorful.
 kind is story-photo when it shows a specific person, place, product, document, screenshot, or scene that illustrates THIS story.
 kind is unrelated when it is a real photograph about a different subject.
-matches is true only when a reader would recognize the image as belonging to this headline. A generic company logo does not match.`;
+matches is true when a reader would see the image as topically related to this headline (the right person, product, place, or kind of scene), even if it is not a picture of the exact moment. matches is false when the subject is a different topic. A generic company logo does not match.`;
+}
+
+// Last-resort covers when every story photo is a logo, unrelated, or missing.
+// Real JPEGs (not a flat color card). Rotated so back-to-back posts do not share one picture.
+// Verified Nov 2026: each URL returns a JPEG larger than 15 KB.
+const BRANDED_FALLBACKS = [
+  'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1080&h=1350&fit=crop&q=85&fm=jpg',
+  'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1080&h=1350&fit=crop&q=85&fm=jpg',
+  'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1080&h=1350&fit=crop&q=85&fm=jpg',
+  'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1080&h=1350&fit=crop&q=85&fm=jpg'
+];
+
+function rotateFallbacks(urls, salt) {
+  const list = (urls && urls.length) ? urls : BRANDED_FALLBACKS;
+  let n = 0;
+  const s = String(salt || '');
+  for (let i = 0; i < s.length; i++) n = (n + s.charCodeAt(i) * (i + 1)) % 997;
+  const start = list.length ? n % list.length : 0;
+  return list.slice(start).concat(list.slice(0, start));
 }
 
 function parsePhotoVerdict(text) {
@@ -356,6 +375,8 @@ async function refinePhotos(candidates, opts = {}) {
   const lines = [];
   let visionLeft = opts.visionBudget == null ? 20 : opts.visionBudget;
   const log = line => lines.push(line);
+  const useFallback = opts.brandedFallback !== false;
+  const fallbacks = useFallback ? rotateFallbacks(opts.fallbackPhotos, opts.fallbackSalt || '') : [];
 
   for (const c of candidates || []) {
     if (!c || c.linkOk === false) continue;
@@ -418,6 +439,11 @@ async function refinePhotos(candidates, opts = {}) {
           }
         }
       }
+      // Branded covers skip the match judge. They are only tried after every story photo failed,
+      // and a near-duplicate of a recent post is still rejected so the next cover is used.
+      if (item.fallback) {
+        return accept(item, loaded, 'branded fallback — no story photo matched');
+      }
       if (loaded.generic) return reject(item, item.via + ' rejected: generic brand/logo art — ' + loaded.genericReason);
       if (item.stock && !(opts.judge && visionLeft > 0)) return reject(item, item.via + ' rejected: stock photo needs a vision check');
       if (opts.judge && visionLeft > 0) {
@@ -436,14 +462,14 @@ async function refinePhotos(candidates, opts = {}) {
         if (verdict && verdict.kind === 'logo-card') {
           return reject(item, item.via + ' rejected: vision says generic logo/brand card — ' + (verdict.reason || 'logo'));
         }
-        if (item.stock && verdict && verdict.kind === 'story-photo') {
-          return accept(await upgrade(item), loaded, 'press/stock photo — ' + (verdict.reason || 'fits the story'));
-        }
-        if (verdict && (verdict.kind === 'unrelated' || verdict.matches === false)) {
+        // Unrelated subjects stay rejected. A story-photo is kept even when matches is false:
+        // topical is enough (Nov 10 dropped real tech photos that were not the exact scene).
+        if (verdict && verdict.kind === 'unrelated') {
           return reject(item, item.via + ' rejected: does not match the story — ' + (verdict.reason || 'unrelated'));
         }
-        if (verdict && verdict.kind === 'story-photo' && verdict.matches) {
-          return accept(await upgrade(item), loaded, 'story photo — ' + (verdict.reason || 'matches the story'));
+        if (verdict && verdict.kind === 'story-photo') {
+          const label = item.stock ? 'press/stock photo' : (verdict.matches ? 'story photo' : 'topical story photo');
+          return accept(await upgrade(item), loaded, label + ' — ' + (verdict.reason || 'fits the story'));
         }
       }
       return accept(await upgrade(item), loaded, 'distinct photo, not a near-duplicate of recent posts');
@@ -492,6 +518,11 @@ async function refinePhotos(candidates, opts = {}) {
       }
     }
     if (!accepted) {
+      for (const url of fallbacks) {
+        if (await tryOne({ url, via: 'branded fallback', fallback: true })) break;
+      }
+    }
+    if (!accepted) {
       c.photoOk = false;
       c.photoProblem = (failures[0] || 'no usable story photo').slice(0, 300);
       c.photoSource = '';
@@ -509,6 +540,8 @@ module.exports = {
   articleImageUrls,
   imageVariants,
   buildPhotoJudgePrompt,
+  BRANDED_FALLBACKS,
+  rotateFallbacks,
   parsePhotoVerdict,
   loadPhoto,
   loadRecentPrints,

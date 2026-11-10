@@ -219,7 +219,8 @@ function classifySameEvent(pool, postedCompact, modelText) {
 }
 
 // Step 2: apply confirm answers ({ [poolIndex]: text }). Unreadable confirm -> throws (nothing posted).
-function finalizeSameEvent(pool, classified, confirmTexts) {
+// limit defaults to 5 (the n8n fallback calls with three arguments). A retry can ask for more.
+function finalizeSameEvent(pool, classified, confirmTexts, limit) {
   const kept = [], skipped = [], overturned = [];
   classified.forEach(r => {
     const c = pool[r.i];
@@ -237,7 +238,8 @@ function finalizeSameEvent(pool, classified, confirmTexts) {
       overturned.push({ title: r.title, wrongMatch: r.matched, note: r.note, why: ans.why });
     }
   });
-  const candidates = kept.slice(0, 5);
+  const cap = Number(limit) > 0 ? Number(limit) : 5;
+  const candidates = kept.slice(0, cap);
   if (!candidates.length) {
     throw new Error('All ' + pool.length + ' candidate stories were already posted (same news event) - nothing posted this run. Skipped: ' + skipped.map(s => s.title + ' => ' + (s.matched || s.reason)).join(' | ').slice(0, 900));
   }

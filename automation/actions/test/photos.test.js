@@ -7,7 +7,7 @@ const { assemblePublish } = require('../lib/quality');
 const { comparePrints } = require('../lib/visual');
 const {
   articleImageUrls, imageVariants, parsePhotoVerdict, buildPhotoJudgePrompt,
-  refinePhotos, loadRecentPrints, applyPhotoBackfill
+  BRANDED_FALLBACKS, rotateFallbacks, refinePhotos, loadRecentPrints, applyPhotoBackfill
 } = require('../lib/photos');
 
 const IMAGES = path.join(__dirname, '../../../images');
@@ -75,6 +75,7 @@ test('photo verdict parser accepts the judge JSON and rejects anything else', ()
   assert.equal(v.kind, 'logo-card');
   assert.equal(v.matches, false);
   assert.match(buildPhotoJudgePrompt('Headline', 'Story text'), /logo-card/);
+  assert.match(buildPhotoJudgePrompt('Headline', 'Story text'), /topically related/);
   assert.equal(parsePhotoVerdict('not json'), null);
   assert.equal(parsePhotoVerdict('{"kind":"pretty","matches":true}'), null);
 });
@@ -151,7 +152,7 @@ test('vision can reject a logo the local check missed, and a story photo is kept
   assert.match(story.photoWhy, /Sam Altman/);
 });
 
-test('when every photo is a logo the story is skipped for the next candidate', async () => {
+test('when every photo is a logo the story uses a branded cover instead of being dropped', async () => {
   const bad = { linkOk: true, title: 'OpenAI logo story', ogImage: 'https://cdn.example.com/a.jpg', inlineImages: [], alts: [] };
   const good = { linkOk: true, title: 'Book publishers revolt over AI', ogImage: 'https://cdn.example.com/b.jpg', inlineImages: [], alts: [] };
   let n = 0;
@@ -160,12 +161,20 @@ test('when every photo is a logo the story is skipped for the next candidate', a
     if (url.endsWith('a.jpg')) return loaded('8888888888888888', { generic: true, genericReason: 'flat brand graphic' });
     return loaded('9999999999999999');
   };
-  const out = await refinePhotos([bad, good], { recent: [], loadImage: load });
-  assert.equal(bad.photoOk, false);
-  assert.match(bad.photoProblem, /generic brand/);
+  const out = await refinePhotos([bad, good], { recent: [], loadImage: load, stock: false });
+  assert.equal(bad.photoOk, true);
+  assert.equal(bad.photoSource, 'branded fallback');
+  assert.equal(BRANDED_FALLBACKS.includes(bad.ogImage), true);
+  assert.match(bad.photoWhy, /branded fallback/);
+  assert.match(out.lines.join('\n'), /generic brand/);
   assert.equal(good.photoOk, true);
-  assert.match(out.lines.join('\n'), /next story/);
+  assert.equal(good.ogImage, 'https://cdn.example.com/b.jpg');
   assert.ok(n >= 2);
+
+  const skipped = { linkOk: true, title: 'OpenAI logo story', ogImage: 'https://cdn.example.com/a.jpg', inlineImages: [], alts: [] };
+  await refinePhotos([skipped], { recent: [], loadImage: load, stock: false, brandedFallback: false });
+  assert.equal(skipped.photoOk, false);
+  assert.match(skipped.photoProblem, /generic brand/);
 });
 
 test('an uncropped variant of the same file counts as a recent graphic', async () => {
@@ -242,6 +251,78 @@ test('same-story outlets stay attached when a duplicate headline is collapsed', 
   assert.equal(fs.existsSync(IMAGES), true);
 });
 
+test('a topical story photo is kept when the judge is not sure it shows the exact event', async () => {
+  const story = {
+    linkOk: true,
+    title: 'AI agents are testing the limits of zero-trust security',
+    ogImage: 'https://cdn.example.com/drones.jpg',
+    inlineImages: [],
+    alts: []
+  };
+  let stockCalls = 0;
+  await refinePhotos([story], {
+    recent: [],
+    loadImage: async () => loaded('1234567812345678'),
+    stockSearch: async () => { stockCalls++; return []; },
+    judge: async () => ({ kind: 'story-photo', matches: false, reason: 'tech hardware, not the exact policy diagram' })
+  });
+  assert.equal(story.photoOk, true);
+  assert.equal(story.ogImage, 'https://cdn.example.com/drones.jpg');
+  assert.equal(story.photoSource, 'og:image');
+  assert.match(story.photoWhy, /topical story photo/);
+  assert.equal(stockCalls, 0);
+});
+
+test('an unrelated photo is still rejected and the branded cover is the last resort', async () => {
+  const story = {
+    linkOk: true,
+    title: 'UK government sites exposed security flaws',
+    ogImage: 'https://cdn.example.com/fountain.jpg',
+    inlineImages: [{ url: 'https://cdn.example.com/cattle.jpg', width: 1600 }],
+    alts: []
+  };
+  const order = rotateFallbacks(BRANDED_FALLBACKS, '2026-11-10:1');
+  const seen = [];
+  await refinePhotos([story], {
+    recent: [{ headline: 'Earlier AI chip story', dhash: 'aaaaaaaaaaaaaaaa', phash: 'aaaaaaaaaaaaaaaa', hist: null }],
+    loadImage: async url => {
+      seen.push(url);
+      if (url === order[0]) return loaded('aaaaaaaaaaaaaaaa');
+      return loaded('bbbbbbbbbbbbbbbb');
+    },
+    stock: false,
+    fallbackSalt: '2026-11-10:1',
+    judge: async () => ({ kind: 'unrelated', matches: false, reason: 'different subject' })
+  });
+  assert.equal(story.photoOk, true);
+  assert.equal(story.photoSource, 'branded fallback');
+  assert.equal(story.ogImage, order[1]);
+  assert.equal(story.ogImage.includes('fountain') || story.ogImage.includes('cattle'), false);
+  assert.match(story.photoLog.join('\n'), /does not match the story/);
+  assert.match(story.photoLog.join('\n'), /near-duplicate/);
+  assert.equal(seen.includes(order[0]), true);
+});
+
+test('a logo card is still rejected and is not used as the cover', async () => {
+  const story = {
+    linkOk: true,
+    title: 'OpenAI releases a stack of math papers',
+    ogImage: 'https://cdn.example.com/knot.jpg',
+    inlineImages: [],
+    alts: []
+  };
+  await refinePhotos([story], {
+    recent: [],
+    loadImage: async () => loaded('5555555555555555'),
+    stock: false,
+    judge: async () => ({ kind: 'logo-card', matches: false, reason: 'OpenAI knot' })
+  });
+  assert.equal(story.photoOk, true);
+  assert.equal(story.photoSource, 'branded fallback');
+  assert.equal(story.ogImage.includes('knot'), false);
+  assert.match(story.photoLog.join('\n'), /generic logo\/brand card/);
+});
+
 test('wider search: a press/stock photo is used only when vision calls it a story photo', async () => {
   const story = { linkOk: true, title: 'CoreWeave debt worries grow', ogImage: 'https://cdn.example.com/logo.jpg', inlineImages: [], alts: [] };
   const load = async url => url.endsWith('logo.jpg')
@@ -253,6 +334,9 @@ test('wider search: a press/stock photo is used only when vision calls it a stor
   assert.equal(story.photoOk, true);
   assert.match(story.ogImage, /dc\.jpg/);
   const none = { linkOk: true, title: 'Nothing fits', ogImage: 'https://cdn.example.com/logo.jpg', inlineImages: [], alts: [] };
-  await refinePhotos([none], { recent: [], loadImage: load, stockSearch: async () => [{ url: 'https://images.unsplash.com/dc.jpg', via: 'Unsplash photo' }] });
+  await refinePhotos([none], {
+    recent: [], loadImage: load, brandedFallback: false,
+    stockSearch: async () => [{ url: 'https://images.unsplash.com/dc.jpg', via: 'Unsplash photo' }]
+  });
   assert.equal(none.photoOk, false);
 });

@@ -4,12 +4,20 @@ name: AIFeed autopilot
 # Both offsets are scheduled; the job exits immediately unless the local ET hour is 8-9 (slot 1) or 17-18 (slot 2).
 # Minute :03, not :00: GitHub drops/delays many top-of-the-hour schedules. Gate windows are unchanged.
 # Hour 9 / 18 is a grace window for GitHub cron delays; the slot claim + history keep it to one post per slot.
+# Minute :48 is the retry when the first run released the slot without posting (~8:48 and ~17:48 ET).
+# A posted slot or a history entry still skips. Scheduled runs stop after two attempts (lib/claim.js).
 on:
   schedule:
     - cron: '3 12 * * *' # 08:03 EDT
     - cron: '3 13 * * *' # 08:03 EST
     - cron: '3 21 * * *' # 17:03 EDT
     - cron: '3 22 * * *' # 17:03 EST
+    - cron: '48 12 * * *' # 08:48 EDT retry (07:48 EST is outside the hour gate)
+    - cron: '48 13 * * *' # 08:48 EST retry (09:48 EDT is still the slot 1 grace hour)
+    - cron: '48 21 * * *' # 17:48 EDT retry (16:48 EST is outside the hour gate)
+    - cron: '48 22 * * *' # 17:48 EST retry (18:48 EDT is still the slot 2 grace hour)
+    - cron: '3 14 * * *' # 09:03 EST grace (10:03 EDT is outside the hour gate)
+    - cron: '3 23 * * *' # 18:03 EST grace (19:03 EDT is outside the hour gate)
   workflow_dispatch:
     inputs:
       slot:

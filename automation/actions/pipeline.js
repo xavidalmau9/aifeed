@@ -5,11 +5,11 @@ const fs = require('fs');
 const path = require('path');
 const { bufferLinkedinEnabled, bufferLinkedinText, bufferLinkedinPost } = require('./lib/buffer');
 const { decideRun } = require('./lib/schedule');
-const { CLAIM_PATH, evaluateClaim, SlotTaken } = require('./lib/claim');
+const { CLAIM_PATH, MAX_SLOT_ATTEMPTS, evaluateClaim, mergeTried, SlotTaken } = require('./lib/claim');
 const { writeClaim } = require('./lib/slotcommit');
 const { assertReelsTools } = require('./lib/tools');
 const { fetchFeeds, assembleCandidates } = require('./lib/rss');
-const { orderPool, buildSameEventPrompt, classifySameEvent, finalizeSameEvent } = require('./lib/pick');
+const { orderPool, prepareRetryPool, buildSameEventPrompt, classifySameEvent, finalizeSameEvent } = require('./lib/pick');
 const { fetchArticles } = require('./lib/articles');
 const { refinePhotos, loadRecentPrints, applyPhotoBackfill, buildPhotoJudgePrompt, parsePhotoVerdict } = require('./lib/photos');
 const { parseModelArray, runQuality, applyAccuracyFix, layoutErrors, mergeLiCaption, assemblePublish, mergeHistory } = require('./lib/quality');
@@ -178,7 +178,11 @@ async function main() {
     throw new Error('Dedupe safety stop: website post history could not be loaded (GitHub API, raw and site JSON all failed) - nothing posted');
   }
   const gate = evaluateClaim({
-    claimsDoc, history, date: decision.date, slot: decision.slot, takeOver: env.TAKE_OVER && !env.DRY_RUN
+    claimsDoc, history, date: decision.date, slot: decision.slot,
+    takeOver: env.TAKE_OVER && !env.DRY_RUN,
+    // A person running the workflow can try again after the scheduled retries are used up.
+    // Posted slots and history entries are still refused inside evaluateClaim.
+    manual: env.EVENT_NAME === 'workflow_dispatch'
   });
   console.log(gate.reason);
   if (!gate.ok) {
@@ -186,13 +190,20 @@ async function main() {
     // A dry run writes nothing, so preview the pick anyway (the artifact upload needs files).
     console.log('Dry run: a real run would SKIP here; continuing the preview without claiming');
   }
+  if (gate.retry) {
+    console.log('Retry ' + (gate.attempts + 1) + '/' + MAX_SLOT_ATTEMPTS + ' for ' + gate.key
+      + (gate.tried && gate.tried.length ? ' (' + gate.tried.length + ' stories already tried)' : ''));
+  }
 
   let claimed = false;
   let contentCommitted = false;
+  // Canon URLs this run actually sent through captions. Saved on release so the retry
+  // tries other stories first and does not post a second copy of a story that already went out.
+  let attemptedKeys = [];
   const release = async () => {
     if (!claimed || contentCommitted || env.DRY_RUN) return;
     try {
-      writeClaim(env, decision, 'released');
+      writeClaim(env, decision, 'released', { extra: { tried: mergeTried(gate.tried, attemptedKeys) } });
       claimed = false;
       console.log('Released slot claim because nothing was published');
     } catch (e) {
@@ -239,13 +250,23 @@ async function main() {
     const ordered = orderPool({
       slot: decision.slot, today: decision.date, fresh: assembled.fresh, history: assembled.history, rankText
     });
+    let pool = ordered.pool;
+    // A released slot retries with the stories that already failed quality moved behind new ones.
+    // No tried list (a release from before this was recorded) goes deeper into the same pool instead.
+    const retryLimit = gate.retry && !(gate.tried && gate.tried.length) ? 10 : 5;
+    if (gate.retry) {
+      const widened = prepareRetryPool({ pool, fresh: assembled.fresh, tried: gate.tried });
+      pool = widened.pool;
+      console.log('Retry pool: ' + pool.length + ' candidates, ' + widened.deferred + ' previously tried moved back, '
+        + widened.backfilled + ' backfilled, caption limit ' + retryLimit);
+    }
     const sameText = await claudeMessage(env.ANTHROPIC_API_KEY, {
       model: cfg.anthropicModel,
-      prompt: buildSameEventPrompt(ordered.pool, assembled.postedCompact),
+      prompt: buildSameEventPrompt(pool, assembled.postedCompact),
       maxTokens: 3000,
       temperature: 0
     });
-    const classified = classifySameEvent(ordered.pool, assembled.postedCompact, sameText);
+    const classified = classifySameEvent(pool, assembled.postedCompact, sameText);
     // A repeat verdict whose match shares no key entity (or is not in the history) gets one confirming call
     // with just that pair. Unsure counts as a repeat; an unreadable answer stops the run.
     const confirmTexts = {};
@@ -254,7 +275,8 @@ async function main() {
         model: cfg.anthropicModel, prompt: r.prompt, maxTokens: 300, temperature: 0
       });
     }
-    const dropped = finalizeSameEvent(ordered.pool, classified, confirmTexts);
+    const dropped = finalizeSameEvent(pool, classified, confirmTexts, retryLimit);
+    attemptedKeys = mergeTried(attemptedKeys, (dropped.candidates || []).map(c => c && (c.canonUrl || c.link)));
     console.log('Same-event kept ' + dropped.candidates.length + ', skipped ' + dropped.sameEventSkipped.length
       + ', repeat verdicts overturned after a pair check ' + dropped.sameEventOverturned.length);
     dropped.sameEventSkipped.forEach(s => console.log('  same-event skip: ' + s.title + ' => ' + (s.matched || '') + ' (' + s.reason + ')'));
@@ -271,6 +293,7 @@ async function main() {
       + ' (' + recentPhotos.backfill.length + ' read from images/)');
     const photoPick = await refinePhotos(articles.usable, {
       recent: recentPhotos.prints,
+      fallbackSalt: decision.date + ':' + decision.slot,
       stockKeys: { unsplash: process.env.UNSPLASH_ACCESS_KEY || '', pexels: process.env.PEXELS_API_KEY || '' },
       judge: async (jpeg, meta) => {
         const text = await claudeVision(env.ANTHROPIC_API_KEY, {
@@ -287,8 +310,9 @@ async function main() {
       }
     });
     photoPick.lines.forEach(l => console.log(l));
+    const captionMax = Math.min(16000, 6000 * Math.ceil((articles.usable.length || 1) / 5));
     const captionText = await claudeMessage(env.ANTHROPIC_API_KEY, {
-      model: cfg.anthropicModel, prompt: articles.captionPrompt, maxTokens: 6000
+      model: cfg.anthropicModel, prompt: articles.captionPrompt, maxTokens: captionMax
     });
     let gen0;
     try { gen0 = parseModelArray(captionText); } catch (e) {

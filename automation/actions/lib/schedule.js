@@ -3,12 +3,19 @@
 
 // GitHub delays scheduled runs at busy times (top of the hour), sometimes past the hour.
 // Hour 9 / 18 ET is a grace window so a late 8:00 / 17:00 run still posts. The slot claim and
-// history.json keep it to one post per slot, so in EDT the 13:00 / 22:00 UTC cron is a no-op
-// backup unless the first run failed before publishing.
+// history.json keep it to one post per slot. A released claim (the run gave up before publishing)
+// is claimed again by the :48 retry. Posted slots and history entries are not retried.
 const SLOT_HOURS = { 8: 1, 9: 1, 17: 2, 18: 2 };
 
 // UTC hours registered in autopilot.yml. Both DST offsets for 8:00 and 17:00 ET.
 const SCHEDULED_UTC_HOURS = [12, 13, 21, 22];
+// ~45 minutes after each primary. Same UTC hours, minute 48.
+// 12:48 is 8:48 EDT (7:48 EST, hour gate skips). 13:48 is 8:48 EST (9:48 EDT, still inside the grace hour).
+const RETRY_UTC_HOURS = [12, 13, 21, 22];
+const RETRY_MINUTE = 48;
+// 14:03 UTC is 9:03 EST (10:03 EDT, hour gate skips). 23:03 UTC is 18:03 EST (19:03 EDT, skipped).
+// This is the EST grace hour. EDT already gets hour 9/18 from the other offset's :03 cron.
+const GRACE_UTC_HOURS = [14, 23];
 
 function etParts(date) {
   const d = date instanceof Date ? date : new Date(date);
@@ -69,4 +76,7 @@ function decideRun({ now = new Date(), eventName = 'schedule', slotInput = 'auto
   };
 }
 
-module.exports = { SLOT_HOURS, SCHEDULED_UTC_HOURS, etParts, slotForEtHour, decideRun };
+module.exports = {
+  SLOT_HOURS, SCHEDULED_UTC_HOURS, RETRY_UTC_HOURS, RETRY_MINUTE, GRACE_UTC_HOURS,
+  etParts, slotForEtHour, decideRun
+};
