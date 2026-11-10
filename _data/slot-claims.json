@@ -527,6 +527,13 @@
       "status": "released",
       "at": "2026-11-10T13:07:57.426Z",
       "by": "github-actions"
+    },
+    "2026-11-10:2": {
+      "status": "claimed",
+      "at": "2026-11-10T22:04:58.091Z",
+      "by": "github-actions",
+      "attempts": 1,
+      "tried": []
     }
   }
 }
