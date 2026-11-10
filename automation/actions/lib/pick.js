@@ -41,6 +41,34 @@ function orderPool({ slot, today, fresh, history, rankText }) {
   return { pool, history: hist, rankings: hist.rankings };
 }
 
+// On a retry, stories that already failed quality go to the back and the pool is
+// refilled from the fresh list so the next run captions different stories first.
+function prepareRetryPool({ pool, fresh, tried, limit = 15 } = {}) {
+  const seen = new Set((tried || []).map(s => String(s || '').trim()).filter(Boolean));
+  const kept = [];
+  const deferred = [];
+  for (const p of pool || []) {
+    if (!p) continue;
+    if (p.canonUrl && seen.has(p.canonUrl)) deferred.push(p);
+    else kept.push(p);
+  }
+  let backfilled = 0;
+  if (seen.size) {
+    for (const f of fresh || []) {
+      if (kept.length >= limit) break;
+      if (!f || (f.canonUrl && seen.has(f.canonUrl))) continue;
+      if (kept.some(p => p.canonUrl === f.canonUrl) || deferred.some(p => p.canonUrl === f.canonUrl)) continue;
+      kept.push(f);
+      backfilled++;
+    }
+  }
+  return {
+    pool: [...kept, ...deferred].slice(0, limit),
+    deferred: deferred.length,
+    backfilled
+  };
+}
+
 // Same-event check lives in lib/sameevent.js (shared with the n8n fallback).
 const { buildSameEventPrompt, classifySameEvent, finalizeSameEvent } = require('./sameevent');
 
@@ -49,4 +77,6 @@ function applySameEvent(pool, postedCompact, modelText, confirmTexts) {
   return finalizeSameEvent(pool, classifySameEvent(pool, postedCompact, modelText), confirmTexts || {});
 }
 
-module.exports = { parseRank, orderPool, buildSameEventPrompt, classifySameEvent, finalizeSameEvent, applySameEvent };
+module.exports = {
+  parseRank, orderPool, prepareRetryPool, buildSameEventPrompt, classifySameEvent, finalizeSameEvent, applySameEvent
+};
