@@ -1,5 +1,25 @@
 [
   {
+    "id": "security-flaws-across-uk-government-sites-20261110",
+    "slug": "security-flaws-across-uk-government-sites",
+    "headline": "Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information",
+    "summary": "Researcher found over 100 serious vulnerabilities in UK government code, with one exposing 'god-tier' credentials.",
+    "body": "<p>Over 100 serious vulnerabilities found in UK government code, exposing sensitive data across multiple departments.</p>\n<p>A ControlPlane security researcher identified more than 100 serious vulnerabilities in publicly available UK government code using Claude's Opus and Sonnet AI models. The Planning Inspectorate's exposed Microsoft Entra ID credentials would have granted 'god-tier' read and write access to SharePoint sites, private employee OneDrive accounts including HR records, and sensitive legal evidence libraries.</p>\n<p>The UK government has published code publicly for roughly a decade to promote transparency and enable cost-efficient code reuse across departments including Health, Social Care, Home Office, and local authorities. Funding constraints have left departments neglecting maintenance and technology improvements, creating security gaps.</p>\n<p>The researcher used consumer-grade AI models and identified issues that routine IT health checks could have caught, demonstrating that the vulnerabilities reflected poor process compliance rather than sophisticated attack vectors. Issues were found across Department of Education procurement and teacher services, Scottish Government portals, and multiple other organizations.</p>\n<p>The Planning Inspectorate detected the researcher's activity and fixed the critical vulnerability within 20 minutes with no confirmed data breach. Several organizations have since remedied identified vulnerabilities, though recent arguments for stopping public code publication risk preventing researchers from finding existing exposures.</p>\n<p>Security experts argue that closing public code repositories without fixing underlying issues would be counterproductive, as adversaries likely already mirror these repositories and closing them may only draw more attention to unpatched vulnerabilities.</p>\n<p>UK government's decade-long open code policy exposed critical vulnerabilities stemming from maintenance neglect rather than inherent open-source risks.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_security-flaws-across-uk-government-sites_20261110_pm.png",
+    "image": "images/aifeed_security-flaws-across-uk-government-sites_20261110_pm.png",
+    "sourceUrl": "https://www.wired.com/story/security-flaws-across-uk-government-sites-exposed-god-tier-information/",
+    "publishedAt": "2026-11-10T22:08:01.650Z",
+    "hashtags": [
+      "CyberSecurity",
+      "UKGovernment",
+      "Vulnerability",
+      "CodeSecurity",
+      "DataProtection"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "the-climate-case-for-ai-has-20261109",
     "slug": "the-climate-case-for-ai-has",
     "headline": "The climate case for AI has not been made",
