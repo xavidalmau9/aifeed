@@ -83,6 +83,29 @@ function evaluateClaim({ claimsDoc, history, date, slot, takeOver = false, manua
   return { ok: true, key, reason, retry, attempts, tried };
 }
 
+function dropSlotHistory(history, date, slot) {
+  const h = history && typeof history === 'object' ? Object.assign({}, history) : {};
+  const posted = Array.isArray(h.posted) ? h.posted : [];
+  h.posted = posted.filter(p => !(p && p.date === date && Number(p.slot) === Number(slot)));
+  if (!h.rankings || typeof h.rankings !== 'object') h.rankings = {};
+  return h;
+}
+
+// Claim goes back to released and the date+slot history row is removed, so the
+// 8:48 / 17:48 retry can run. The website post stays in posts-index.json.
+function unpublishedSlotUpdate(claimsDoc, history, { date, slot, at, by = 'github-actions', tried, now = Date.now() } = {}) {
+  const next = updateClaimDoc(claimsDoc, {
+    date, slot, status: 'released', at, by, now, extra: { tried: tried || [] }
+  });
+  return {
+    ok: next.ok,
+    key: next.key,
+    reason: next.reason,
+    claims: next.doc,
+    history: dropSlotHistory(history, date, slot)
+  };
+}
+
 function pruneClaims(claims, now = Date.now()) {
   const out = {};
   for (const [key, row] of Object.entries(claims || {})) {
@@ -132,5 +155,5 @@ function updateClaimDoc(doc, { date, slot, status, at, by = 'github-actions', ex
 
 module.exports = {
   CLAIM_PATH, MAX_SLOT_ATTEMPTS, SlotTaken, claimKey, historyHasSlot, mergeTried,
-  evaluateClaim, pruneClaims, updateClaimDoc
+  evaluateClaim, pruneClaims, updateClaimDoc, dropSlotHistory, unpublishedSlotUpdate
 };

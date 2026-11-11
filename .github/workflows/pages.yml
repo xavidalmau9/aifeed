@@ -5,6 +5,13 @@ name: Publish GitHub Pages
 # older than 3 days is also removed from the tip (it stays in git history and the
 # archived-media release). Recent Reels and page images stay at their public URLs
 # for the 8am autopilot (Instagram, Facebook, Buffer).
+#
+# Overlapping pushes (the article commit, the SEO page rebuild, the Reel, the slot
+# claim) each start this workflow. cancel-in-progress stays false so a run that
+# carries the new article is not cancelled. A rejected media-prune push must not
+# fail the job: on 2026-11-11 that skip left the article commit undeployed. The
+# deploy step publishes this build only while it is still the tip of main, so an
+# older artifact cannot replace a newer site.
 on:
   push:
     branches: [main]
@@ -24,6 +31,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    outputs:
+      sha: ${{ steps.staged.outputs.sha }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,13 +48,42 @@ jobs:
         run: |
           git config user.name "aifeed-pages"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          before=$(git rev-parse HEAD)
-          python3 scripts/prune_pages_media.py --commit
-          if [ "$(git rev-parse HEAD)" != "$before" ]; then
-            git push origin HEAD:main
+          # The SEO rebuild pushes main while this step is running. A non-fast-forward
+          # used to fail the job and skip the deploy. Retry against the new tip, and
+          # if the prune still cannot push, deploy origin/main anyway.
+          pushed=0
+          for i in 1 2 3 4 5; do
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            before=$(git rev-parse HEAD)
+            if ! python3 scripts/prune_pages_media.py --commit; then
+              echo "Prune script failed. The site deploy will continue from origin/main."
+              git fetch -q origin main
+              git reset -q --hard origin/main
+              break
+            fi
+            if [ "$(git rev-parse HEAD)" = "$before" ]; then
+              echo "Nothing to prune"
+              pushed=1
+              break
+            fi
+            if git push origin HEAD:main; then
+              echo "Pruned media on main"
+              pushed=1
+              break
+            fi
+            echo "Prune push rejected (main moved), retry $i"
+          done
+          if [ "$pushed" != "1" ]; then
+            echo "Prune did not push. Deploying origin/main so the article page is not left unpublished."
+            git fetch -q origin main
+            git reset -q --hard origin/main
           fi
       - name: Stage publish directory
-        run: python3 scripts/stage_pages.py "$RUNNER_TEMP/aifeed-pages"
+        id: staged
+        run: |
+          python3 scripts/stage_pages.py "$RUNNER_TEMP/aifeed-pages"
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
@@ -61,8 +99,58 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Skip deploy when main has moved past this build
+        id: gate
+        run: |
+          git fetch -q origin main
+          tip=$(git rev-parse origin/main)
+          echo "origin/main ${tip:-unknown}"
+          echo "staged ${{ needs.build.outputs.sha }}"
+          if [ -n "$tip" ] && [ "$tip" = "${{ needs.build.outputs.sha }}" ]; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping Pages deploy. A newer commit publishes the latest site, including the article page."
+          fi
       - name: Deploy to GitHub Pages
         id: deployment
+        if: steps.gate.outputs.deploy == 'true'
+        continue-on-error: true
         uses: actions/deploy-pages@v4
         with:
           timeout: 900000
+      - name: See if this build should retry the deploy
+        id: retry_gate
+        if: steps.gate.outputs.deploy == 'true' && steps.deployment.outcome == 'failure'
+        run: |
+          git fetch -q origin main
+          tip=$(git rev-parse origin/main)
+          if [ "$tip" = "${{ needs.build.outputs.sha }}" ]; then
+            echo "retry=true" >> "$GITHUB_OUTPUT"
+            echo "Deploy failed and this commit is still the tip. Retrying once."
+          else
+            echo "retry=false" >> "$GITHUB_OUTPUT"
+            echo "Not retrying. origin/main moved to ${tip:-unknown}, which publishes the latest site."
+          fi
+      - name: Retry Pages deploy
+        id: deployment_retry
+        if: steps.retry_gate.outputs.retry == 'true'
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 900000
+      - name: Fail only when this commit is still unpublished
+        if: steps.gate.outputs.deploy == 'true' && steps.deployment.outcome == 'failure' && steps.retry_gate.outputs.retry == 'true' && steps.deployment_retry.outcome == 'failure'
+        run: |
+          git fetch -q origin main
+          tip=$(git rev-parse origin/main)
+          if [ "$tip" != "${{ needs.build.outputs.sha }}" ]; then
+            echo "A newer commit ($tip) is on main. This older deploy was not applied."
+            exit 0
+          fi
+          echo "Pages deploy failed and ${{ needs.build.outputs.sha }} is still the tip of main."
+          exit 1

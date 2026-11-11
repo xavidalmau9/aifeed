@@ -4,7 +4,7 @@
 // the old post(s), logs the result to _data/repost-log.json and removes the request file.
 const fs = require('fs');
 const path = require('path');
-const { graphGet, withGraphAuth, pollPublic, redact } = require('./lib/net');
+const { graphGet, withGraphAuth, pollPublic, pollArticle, articlePublicUrl, redact } = require('./lib/net');
 const { commitApply, readJson, writeJson } = require('./lib/git');
 const { checkIg, checkFb } = require('./lib/captions');
 
@@ -71,6 +71,13 @@ async function runRepost(cfg, env, P) {
     if (fbErr.length) throw new Error('message fails the Facebook layout check - stop');
   }
   if (req.old.igStoryId && !storyList.some(m => m.id === req.old.igStoryId)) console.log('old story ' + req.old.igStoryId + ' is not in the live stories list');
+
+  if (req.slug) {
+    const articleUrl = articlePublicUrl(cfg.siteUrl, req.slug);
+    console.log('Waiting for article ' + articleUrl);
+    await pollArticle(articleUrl, { slug: req.slug, headline: req.headline || '', firstWaitMs: 0 });
+    console.log('Article is live: ' + articleUrl);
+  }
 
   const feedUrl = cfg.siteUrl + '/images/' + req.feedImage;
   const storyUrl = req.storyImage ? cfg.siteUrl + '/images/' + req.storyImage : '';

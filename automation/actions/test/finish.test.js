@@ -233,6 +233,7 @@ function fakeIo(graphForm) {
     graphForm,
     pollContainer: async () => {},
     pollPublic: async () => {},
+    pollArticle: async () => ({ status: 200, attempt: 1 }),
     renderReel(repo, post, feed, photo, opts) {
       renders.push(opts);
       return { mp4: photo, cover: photo, credit: '', sceneSource: 'story', punch: 'GUARDRAILS / *FAIL', voice: 'kokoro:am_michael@1.05' };
@@ -321,6 +322,19 @@ test('a Story failure does not mark the slot posted and a retry does not repost 
   assert.equal(calls.filter(c => c.fields && c.fields.media_type === 'REELS').length, 1);
   assert.equal(readJson(dir, CLAIM_PATH, {}).claims['2026-10-22:2'].status, 'posted');
   assert.equal(readJson(dir, CLAIM_PATH, {}).claims['2026-10-22:2'].fbPostId, 'fb-video-9');
+});
+
+test('finish does not post when the article page is not live', async () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'finish-article-'));
+  const env = repoFor(dir);
+  let posts = 0;
+  const io = fakeIo(async () => { posts += 1; return { id: 'x' }; });
+  io.pollArticle = async () => {
+    throw new Error('Article URL not live after ~11 min (HTTP 404): https://aifeed.run/news/' + LIVE.slug + '/. Not posting a link to a page that is not on AIFeed.run.');
+  };
+  await assert.rejects(() => runFinish(require('../config.json'), env, io), /Not posting a link to a page that is not on AIFeed\.run/);
+  assert.equal(posts, 0);
+  assert.equal(readJson(dir, CLAIM_PATH, {}).claims['2026-10-22:2'].status, 'claimed');
 });
 
 test('dry run writes captions and does not post or mark the slot', async () => {
