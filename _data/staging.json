@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "NVIDIA shareholders are suing the company and CEO Jensen Huang",
-    "link": "https://www.engadget.com/2312947/nvidia-shareholders-are-suing-the-company-and-ceo-jensen-huang/",
-    "score": 94,
-    "reason": "Major lawsuit against AI industry leader; addresses governance and leadership crisis"
+    "headline": "Anthropic targets $1.4 trillion IPO",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1030703/anthropic-ipo-1-4-trillion",
+    "score": 96,
+    "reason": "Major funding milestone, concrete financial target, high impact for AI company"
   },
   {
     "rank": 2,
-    "headline": "Anthropic sets IPO price range of $70 to $78, looks to start trading  Nov. 19, sources say",
-    "link": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
-    "score": 92,
-    "reason": "Concrete IPO pricing (not $1.4T speculation); major AI company going public with real timeline"
+    "headline": "ChatGPT is getting verified AI ‘Business Agents’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+    "score": 94,
+    "reason": "Significant product launch expanding AI capabilities into enterprise automation"
   },
   {
     "rank": 3,
-    "headline": "A 13-Year-Old Asked AI About Suicide on Her School Laptop. It Didn’t Get Flagged for Weeks",
-    "link": "https://www.wired.com/story/teen-girl-asked-gemini-about-suicide-for-months-until-it-was-flagged/",
-    "score": 88,
-    "reason": "Significant AI safety failure with real-world impact; major controversy with documented evidence"
+    "headline": "Google releases Gemini 4 Carbon with agent ‘swarm’ feature",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+    "score": 93,
+    "reason": "Major AI model release with novel multi-agent architecture"
   },
   {
     "rank": 4,
-    "headline": "Scoop: Commerce Department received national security warning on Nvidia CEO affair",
-    "link": "https://www.axios.com/2026/11/10/lutnick-nvidia-jensen-huang-china-memo",
-    "score": 87,
-    "reason": "Breaking: government national security concerns; ties CEO controversy to policy implications"
+    "headline": "Claude can collaborate in your team meetings soon – like an intern",
+    "link": "https://www.zdnet.com/innovation/claude-meetings-workplace-features/",
+    "score": 92,
+    "reason": "Major product expansion into enterprise meetings, clear use case"
   },
   {
     "rank": 5,
-    "headline": "The New Adobe Firefly AI Is All About Video Editing",
-    "link": "https://www.cnet.com/tech/services-and-software/new-adobe-firefly-ai-video-editing/",
-    "score": 82,
-    "reason": "Major AI feature launch in professional software; expands generative AI to new domain"
+    "headline": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+    "score": 91,
+    "reason": "Breakthrough in biological AI application with healthcare implications"
   },
   {
     "rank": 6,
-    "headline": "Ring cameras go mobile as Amazon debuts AI-powered security drone and robot",
-    "link": "https://arstechnica.com/ai/2026/11/ring-cameras-go-mobile-as-amazon-debuts-ai-powered-security-drone-and-robot/",
-    "score": 81,
-    "reason": "Concrete product launch; physical AI hardware entering consumer market"
+    "headline": "CoreWeave beats on revenue and lifts guidance, easing AI slowdown concerns",
+    "link": "https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html",
+    "score": 89,
+    "reason": "Big numbers showing strong AI infrastructure demand, positive market signal"
   },
   {
     "rank": 7,
-    "headline": "Alibaba announces plans to list T-Head, its Nvidia chip rival",
-    "link": "https://www.cnbc.com/2026/11/11/alibaba-pr.html",
-    "score": 80,
-    "reason": "Major IPO announcement for AI chip competitor; geopolitical significance in AI race"
+    "headline": "eBay appears to have shut the door on third-party AI agents",
+    "link": "https://www.theverge.com/tech/1030838/ebay-ai-agents-meta-muse-agentic-shopping",
+    "score": 87,
+    "reason": "Major company restriction on AI agents, significant platform decision"
   },
   {
     "rank": 8,
-    "headline": "Anthropic has its own AI-powered office suite now",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
-    "score": 78,
-    "reason": "Product launch expansion into productivity software; diversification beyond chatbot"
+    "headline": "United is restricting AI agents from booking flights",
+    "link": "https://www.engadget.com/2314121/united-is-restricting-ai-agents-from-booking-flights/",
+    "score": 86,
+    "reason": "Major airline blocks AI agents, industry-wide controversy and precedent"
   },
   {
     "rank": 9,
-    "headline": "Photoshop, Lightroom, and Premiere are making it easier to remove things",
-    "link": "https://www.theverge.com/tech/1030653/adobe-max-2026-photoshop-premiere-removal-updates",
-    "score": 76,
-    "reason": "Major AI feature rollout across Adobe's flagship products; widespread adoption signal"
+    "headline": "Adobe’s AI experiments let you walk around in photos and interview your characters",
+    "link": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+    "score": 85,
+    "reason": "Innovative generative AI feature with interactive elements"
   },
   {
     "rank": 10,
-    "headline": "AI-Driven Tech Layoffs Could Trigger a 1.6 Million Job Recession",
-    "link": "https://www.cnet.com/tech/services-and-software/ai-tech-layoffs-2026-trigger-recession/",
-    "score": 75,
-    "reason": "Quantified economic impact; large-scale employment disruption from AI"
-  },
-  {
-    "rank": 11,
-    "headline": "Google's impressive Rambler dictation tech is now available on Pixel 10 devices too",
-    "link": "https://www.engadget.com/2312136/google-november-pixel-drop-rambler-hilight-updates/",
-    "score": 72,
-    "reason": "AI feature launch; expansion to new device line"
-  },
-  {
-    "rank": 12,
-    "headline": "Trump was warned about Jensen Huang's relationship with a suspected Chinese spy but allowed the Nvidia CEO aboard Air Force One anyway",
-    "link": "https://fortune.com/2026/11/11/trump-warned-jensen-huang-suspected-china-spy-nvidia-ceo-air-force-one/",
-    "score": 71,
-    "reason": "Major controversy; national security implications; documented decision by political leadership"
-  },
-  {
-    "rank": 13,
-    "headline": "CoreWeave provides silver lining for neoclouds as Nvidia storm swirls",
-    "link": "https://www.cnbc.com/2026/11/11/coreweave-provides-silver-lining-for-neoclouds-as-nvidia-storm-swirls.html",
-    "score": 68,
-    "reason": "Market shift in AI infrastructure; alternative vendor gaining amid industry crisis"
-  },
-  {
-    "rank": 14,
-    "headline": "A New AI Tool From Google DeepMind Proved the Signal Protocol Is Secure",
-    "link": "https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/",
-    "score": 65,
-    "reason": "AI application to cryptography; verification achievement"
-  },
-  {
-    "rank": 15,
-    "headline": "Reddit launches AI-powered Reviews feature – with 10,000 products to start",
-    "link": "https://www.zdnet.com/innovation/reddit-reviews-feature/",
-    "score": 63,
-    "reason": "Feature launch with scale; AI integration in major platform"
-  },
-  {
-    "rank": 16,
-    "headline": "Google and Adobe partner to add app integration in Google Drive, Gemini",
-    "link": "https://9to5google.com/2026/11/10/google-adobe-partnership-adding-google-drive-gemini-integration/",
-    "score": 61,
-    "reason": "Major partnership between tech giants; AI integration expansion"
-  },
-  {
-    "rank": 17,
-    "headline": "Meta warns some of its AI glasses may get 'too warm' if they get wet",
-    "link": "https://www.engadget.com/2312864/meta-warns-some-of-its-ai-glasses-may-get-too-warm-if-they-get-wet/",
-    "score": 58,
-    "reason": "Product safety issue; AI hardware malfunction disclosed"
-  },
-  {
-    "rank": 18,
-    "headline": "The US is winning the AI race. Jensen Huang could have blown it",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
-    "score": 55,
-    "reason": "Industry leadership analysis amid crisis; geopolitical implications"
-  },
-  {
-    "rank": 19,
-    "headline": "The AI industry's week from hell",
-    "link": "https://www.axios.com/2026/11/11/anthropic-ipo-ai-nvidia-midterms",
-    "score": 52,
-    "reason": "Summary of multiple crises; industry-wide turbulence documented"
-  },
-  {
-    "rank": 20,
-    "headline": "How Nvidia's crisis and politics could deliver the pause AI leaders want",
-    "link": "https://www.axios.com/2026/11/10/ai-race-politics-slowdown",
-    "score": 50,
-    "reason": "Policy implications; unexpected consequences of leadership crisis"
+    "headline": "A Startup Wants to Fight AI Bioweapons With AI",
+    "link": "https://www.wired.com/story/startup-fights-ai-bioweapons-with-ai/",
+    "score": 82,
+    "reason": "Novel AI safety application addressing emerging risks"
   }
 ]
