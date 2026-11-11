@@ -542,8 +542,10 @@
       "tried": []
     },
     "2026-11-11:1": {
-      "status": "claimed",
-      "at": "2026-11-11T13:04:36.883Z",
+      "slug": "how-ai-security-failures-are-endangering",
+      "image": "aifeed_how-ai-security-failures-are-endangering_20261111_am.png",
+      "status": "posted",
+      "at": "2026-11-11T13:12:46.559Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
