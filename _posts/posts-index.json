@@ -1,5 +1,25 @@
 [
   {
+    "id": "how-ai-security-failures-are-endangering-20261111",
+    "slug": "how-ai-security-failures-are-endangering",
+    "headline": "How AI security failures are endangering your supply chain – and what you can do",
+    "summary": "Black Kite research finds widespread cybersecurity weaknesses across AI suppliers, exposing enterprise networks to critical vulnerabilities.",
+    "body": "<p>**Black Kite report finds widespread cybersecurity weaknesses across 18,160 AI companies globally.**</p>\n<p>A new report from cybersecurity firm Black Kite examines the security posture of AI companies worldwide and identifies a widespread cybersecurity weakness across the rapidly expanding ecosystem of organizations developing, deploying, and supporting artificial intelligence. The study, titled 2026 AI Supply Chain Report: The Risks Behind Your AI Relationships, analyzed 18,160 AI companies ranging from 0-10 employees to more than 1,000 employees across six broad categories including everyday app development, AI development and implementation, specialized AI applications, industrial organizations, and AI foundations.</p>\n<p>The research found that many AI suppliers struggle with basic security practices, including failures to patch critical vulnerabilities, protect credentials, authenticate users and email, and address network security issues. In addition, unusual network activity was detected at 44.3% of organizations, and botnet-related activity was recorded at 41.8% of AI companies assessed. The findings reveal security gaps that could expose customers when AI suppliers have access to customer data, developer environments, business infrastructure, and enterprise platforms.</p>\n<p>One critical finding involves Model Context Protocol components used to link AI applications to business systems: 48.8% of 1,732 logged security findings were rated High or Critical, including code and command injection vulnerabilities. Additionally, 19.9% of AI companies offering enterprise AI deployment solutions had corporate login information found in infostealer records, with stolen corporate logins linked to 6.8% of AI suppliers overall.</p>\n<p>As enterprises invest billions in AI — with Menlo's 2026 research estimating enterprise AI spend reached $37 billion in 2025 — the security risks compound with each integration and component added to corporate ecosystems. About 33.2% of AI companies assessed have limited digital visibility, making it harder for businesses to monitor their supply chains and identify potential exposures.</p>\n<p>Black Kite recommends businesses conduct frequent monitoring and assessment of AI suppliers, prioritize fixing ransomware vulnerabilities and actively exploited weaknesses, audit integrations and data access, and limit AI tool permissions to only what is required for functionality. The approach mirrors traditional supply chain security but must account for the unique attack surface that AI integration introduces.</p>\n<p>AI suppliers exhibit widespread security failures, creating risks across enterprise digital supply chains that require continuous monitoring and vendor assessment.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_how-ai-security-failures-are-endangering_20261111_am.png",
+    "image": "images/aifeed_how-ai-security-failures-are-endangering_20261111_am.png",
+    "sourceUrl": "https://www.zdnet.com/tech/ai-security-failures-supply-chain-risks-black-kite-research/",
+    "publishedAt": "2026-11-11T13:07:39.727Z",
+    "hashtags": [
+      "AISupplyCchain",
+      "CyberSecurity",
+      "VulnerabilityManagement",
+      "EnterpriseSecurity",
+      "RiskAssessment"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "security-flaws-across-uk-government-sites-20261110",
     "slug": "security-flaws-across-uk-government-sites",
     "headline": "Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information",

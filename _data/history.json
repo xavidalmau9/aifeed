@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-11T13:07:39.727Z",
+      "date": "2026-11-11",
+      "slot": 1,
+      "headline": "How AI security failures are endangering your supply chain – and what you can do",
+      "canonUrl": "zdnet.com/tech/ai-security-failures-supply-chain-risks-black-kite-research",
+      "url": "https://www.zdnet.com/tech/ai-security-failures-supply-chain-risks-black-kite-research/",
+      "slug": "how-ai-security-failures-are-endangering",
+      "image": "aifeed_how-ai-security-failures-are-endangering_20261111_am.png",
+      "photo": {
+        "dhash": "7233b2b290163a18",
+        "phash": "a9161aad40c2be7f",
+        "hist": [
+          494,
+          188,
+          0,
+          0,
+          0,
+          15,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          78,
+          43,
+          0,
+          0,
+          3,
+          72,
+          9,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          0,
+          0,
+          0,
+          72,
+          2,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "url": "https://www.zdnet.com/wp-content/uploads/sites/3/cachyoshero.jpg",
+        "via": "in-article image"
+      }
+    },
+    {
       "postedAt": "2026-11-10T22:08:01.650Z",
       "date": "2026-11-10",
       "slot": 2,
@@ -5566,63 +5648,6 @@
     }
   ],
   "rankings": {
-    "2026-10-27": [
-      {
-        "rank": 1,
-        "title": "The focus on AI safety disasters ignores everyday harms",
-        "canonUrl": "technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms"
-      },
-      {
-        "rank": 2,
-        "title": "OpenAI Has a Surprising Defense Against Election Deepfakes",
-        "canonUrl": "cnet.com/tech/services-and-software/openai-chatgpt-political-deepfakes-defense-midterm-elections"
-      },
-      {
-        "rank": 3,
-        "title": "Why You Shouldn’t Use AI Chatbots to Decide Who to Vote For",
-        "canonUrl": "cnet.com/tech/services-and-software/ai-chatbots-election-voting-research-decisions"
-      },
-      {
-        "rank": 4,
-        "title": "AI Killed the Homework Era",
-        "canonUrl": "cnet.com/tech/services-and-software/ai-killed-the-homework-era"
-      },
-      {
-        "rank": 5,
-        "title": "Data center backlash is uniting America",
-        "canonUrl": "theverge.com/policy/1019152/data-centers-midterm-elections"
-      },
-      {
-        "rank": 6,
-        "title": "Anthropic is burning gas to feed the AI boom",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk"
-      },
-      {
-        "rank": 7,
-        "title": "Why Anthropic’s IPO Prospectus Is Missing So Many Key Figures",
-        "canonUrl": "wired.com/story/anthropic-prospectus-leaves-out-some-numbers"
-      },
-      {
-        "rank": 8,
-        "title": "Can AI help solve the COBOL code crisis?",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic"
-      },
-      {
-        "rank": 9,
-        "title": "The RealReal won’t let AI agents hog designer clothing",
-        "canonUrl": "theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal"
-      },
-      {
-        "rank": 10,
-        "title": "OpenAI announces three big science discoveries and a new way to work with academics",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
-      },
-      {
-        "rank": 11,
-        "title": "Meta announces $95 billion stock offering to fund AI expansion",
-        "canonUrl": "cnbc.com/2026/10/26/meta-stock-offering-ai.html"
-      }
-    ],
     "2026-10-28": [
       {
         "rank": 1,
@@ -6337,6 +6362,68 @@
         "rank": 9,
         "title": "Don't like Google Health's AI Coach? Here's how to turn it off",
         "canonUrl": "engadget.com/2309626/dont-like-google-health-ai-coach-how-turn-off"
+      }
+    ],
+    "2026-11-11": [
+      {
+        "rank": 1,
+        "title": "A 13-Year-Old Asked AI About Suicide on Her School Laptop. It Didn’t Get Flagged for Weeks",
+        "canonUrl": "wired.com/story/teen-girl-asked-gemini-about-suicide-for-months-until-it-was-flagged"
+      },
+      {
+        "rank": 2,
+        "title": "How AI security failures are endangering your supply chain – and what you can do",
+        "canonUrl": "zdnet.com/tech/ai-security-failures-supply-chain-risks-black-kite-research"
+      },
+      {
+        "rank": 3,
+        "title": "France blames Iran for supermarket refrigerator cyberattacks, weighs sanctions",
+        "canonUrl": "cnbc.com/2026/11/10/iran-fridge-cyberattacks-france.html"
+      },
+      {
+        "rank": 4,
+        "title": "A New AI Tool From Google DeepMind Proved the Signal Protocol Is Secure",
+        "canonUrl": "wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol"
+      },
+      {
+        "rank": 5,
+        "title": "Tear Down Those Guardrails! Meet the Renegades Freeing Chatbots From Corporate Enslavers",
+        "canonUrl": "wired.com/story/tear-down-those-guardrails-meet-the-renegades-freeing-chatbots-from-corporate-enslavers"
+      },
+      {
+        "rank": 6,
+        "title": "The AI Safety Debate Has Lost the Plot. We Asked 10 Experts What the Real Nightmares Are",
+        "canonUrl": "wired.com/story/the-ai-safety-debate-has-lost-the-plot-we-asked-10-experts-what-the-real-nightmares-are"
+      },
+      {
+        "rank": 7,
+        "title": "The US is winning the AI race. Jensen Huang could have blown it",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy"
+      },
+      {
+        "rank": 8,
+        "title": "The Download: Pelosi’s successor targets AI and data centers face power woes",
+        "canonUrl": "technologyreview.com/2026/11/10/1148150/the-download-pelosi-successor-ai-regulation-data-center-backlash"
+      },
+      {
+        "rank": 9,
+        "title": "eBay appears to have shut the door on third-party AI agents",
+        "canonUrl": "theverge.com/tech/1030838/ebay-ai-agents-meta-muse-agentic-shopping"
+      },
+      {
+        "rank": 10,
+        "title": "ChatGPT is getting verified AI ‘Business Agents’",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub"
+      },
+      {
+        "rank": 11,
+        "title": "The indie game community is in disarray over AI and Big Walk",
+        "canonUrl": "theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai"
+      },
+      {
+        "rank": 12,
+        "title": "Photoshop, Lightroom, and Premiere are making it easier to remove things",
+        "canonUrl": "theverge.com/tech/1030653/adobe-max-2026-photoshop-premiere-removal-updates"
       }
     ]
   }
