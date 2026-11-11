@@ -33,6 +33,7 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - LinkedIn: https://www.linkedin.com/company/aifeed-run
 
 ## Recent stories
+- [How AI security failures are endangering your supply chain – and what you can do](https://aifeed.run/news/how-ai-security-failures-are-endangering/) — Black Kite research finds widespread cybersecurity weaknesses across AI suppliers, exposing enterprise networks to critical vulnerabilities.
 - [Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information](https://aifeed.run/news/security-flaws-across-uk-government-sites/) — Researcher found over 100 serious vulnerabilities in UK government code, with one exposing 'god-tier' credentials.
 - [The climate case for AI has not been made](https://aifeed.run/news/the-climate-case-for-ai-has/) — Most industries haven't deployed AI in ways matching emissions-reduction projections despite corporate climate tech pledges.
 - [Bikers and Bug-Lovers Join Forces to Fight a New Google Data Center](https://aifeed.run/news/bikers-and-buglovers-join-forces-to/) — Wildlife groups, environmental nonprofits, and motorcycle enthusiasts unite to oppose Google's planned Thurrock data center.
@@ -72,4 +73,3 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - [Microsoft says its AI tool is better than doctors at diagnosing conditions](https://aifeed.run/news/microsoft-says-its-ai-tool-is/) — Microsoft's Diagnostic Orchestrator achieved 83% accuracy diagnosing rare cases versus 36% for human doctors, pending clinical validation.
 - [AI Guardrails Aren’t Stopping Criminal Hackers](https://aifeed.run/news/ai-guardrails-arent-stopping-criminal-hackers/) — Hackers worldwide use agentic AI to bypass model safeguards and compromise targets, according to CrowdStrike researchers.
 - [Anthropic takes on Muse with Claude Duet, its new AI agent](https://aifeed.run/news/anthropic-takes-on-muse-with-claude/) — Anthropic launched Claude Duet, an AI agent for professionals, as a research preview.
-- [ServiceNow and Nvidia launch Arc, a new AI agent for enterprise](https://aifeed.run/news/servicenow-and-nvidia-launch-arc-new/) — ServiceNow and Nvidia released Arc, an AI agent with multi-layer security controls for enterprise tasks.
