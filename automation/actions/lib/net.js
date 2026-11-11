@@ -1,4 +1,5 @@
 const crypto = require('crypto');
+const { articleIsLive, articlePublicUrl } = require('./articlelive');
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
@@ -157,6 +158,17 @@ async function pollContainer(cfg, env, creationId, { waitMs, maxAttempts, label 
 // Default public-URL wait: GitHub Pages can take well over 5 min to publish; poll every 45s for ~25 min.
 const PUBLIC_WAIT = { firstWaitMs: 30000, retryWaitMs: 45000, maxAttempts: 33 };
 
+// Article page wait. The story HTML is built after the posts-index push, and a Pages
+// deploy of that commit often finishes a few minutes after the image URL is already 200.
+// ~11 min: 20s, then every 30s. Social posts that link to the article wait on this.
+const ARTICLE_WAIT = { firstWaitMs: 20000, retryWaitMs: 30000, maxAttempts: 23 };
+
+function cacheBust(url, now = Date.now()) {
+  const u = new URL(url);
+  u.searchParams.set('aifeed_live', String(now));
+  return u.toString();
+}
+
 async function pollPublic(url, { firstWaitMs = PUBLIC_WAIT.firstWaitMs, retryWaitMs = PUBLIC_WAIT.retryWaitMs, maxAttempts = PUBLIC_WAIT.maxAttempts, sleepFn = sleep } = {}) {
   const mins = Math.round((firstWaitMs + retryWaitMs * (maxAttempts - 1)) / 60000);
   if (firstWaitMs > 0) await sleepFn(firstWaitMs);
@@ -181,6 +193,46 @@ async function pollPublic(url, { firstWaitMs = PUBLIC_WAIT.firstWaitMs, retryWai
     if (attempt >= maxAttempts) throw new Error('Image URL still not public after ~' + mins + ' min (HTTP ' + status + ')');
   }
   throw new Error('Image URL still not public after ~' + mins + ' min (HTTP ' + last + ')');
+}
+
+async function pollArticle(url, {
+  slug, headline,
+  firstWaitMs = ARTICLE_WAIT.firstWaitMs,
+  retryWaitMs = ARTICLE_WAIT.retryWaitMs,
+  maxAttempts = ARTICLE_WAIT.maxAttempts,
+  sleepFn = sleep,
+  fetchFn = fetch
+} = {}) {
+  const mins = Math.round((firstWaitMs + retryWaitMs * (maxAttempts - 1)) / 60000);
+  if (firstWaitMs > 0) await sleepFn(firstWaitMs);
+  let last = 0;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    if (attempt > 1) await sleepFn(retryWaitMs);
+    let status = 0;
+    let html = '';
+    try {
+      const res = await fetchFn(cacheBust(url), {
+        method: 'GET',
+        redirect: 'follow',
+        cache: 'no-store',
+        headers: { 'cache-control': 'no-cache', pragma: 'no-cache' },
+        signal: AbortSignal.timeout(20000)
+      });
+      status = res.status;
+      html = await res.text();
+    } catch (e) {
+      status = 0;
+      html = '';
+    }
+    last = status;
+    if (articleIsLive(status, html, { slug, headline })) return { status, attempt };
+    if (attempt >= maxAttempts) {
+      throw new Error('Article URL not live after ~' + mins + ' min (HTTP ' + status + '): ' + url
+        + '. Not posting a link to a page that is not on AIFeed.run.');
+    }
+  }
+  throw new Error('Article URL not live after ~' + mins + ' min (HTTP ' + last + '): ' + url
+    + '. Not posting a link to a page that is not on AIFeed.run.');
 }
 
 function escapeLinkedIn(text) {
@@ -253,7 +305,8 @@ async function linkedInPost({ cfg, env, liCaption, headline, feedPng, endCard })
   }
 }
 
-module.exports = { PUBLIC_WAIT,
+module.exports = { PUBLIC_WAIT, ARTICLE_WAIT,
   sleep, redact, appSecretProof, withGraphAuth, withRetry, claudeMessage, claudeVision, graphForm, graphGet,
-  fetchIgMedia, pollContainer, pollPublic, escapeLinkedIn, linkedinEnabled, linkedInPost
+  fetchIgMedia, pollContainer, pollPublic, pollArticle, cacheBust, articlePublicUrl, articleIsLive,
+  escapeLinkedIn, linkedinEnabled, linkedInPost
 };

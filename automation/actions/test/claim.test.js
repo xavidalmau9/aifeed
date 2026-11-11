@@ -1,6 +1,6 @@
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
-const { evaluateClaim, updateClaimDoc, claimKey, historyHasSlot, mergeTried, MAX_SLOT_ATTEMPTS } = require('../lib/claim');
+const { evaluateClaim, updateClaimDoc, claimKey, historyHasSlot, mergeTried, unpublishedSlotUpdate, MAX_SLOT_ATTEMPTS } = require('../lib/claim');
 
 const date = '2026-10-07';
 const at = '2026-10-07T12:00:00.000Z';
@@ -104,6 +104,33 @@ test('reclaiming a stuck claim does not spend the retry, and history still block
   const gate = evaluateClaim({ claimsDoc: released.doc, history, date, slot: 1, manual: true });
   assert.equal(gate.ok, false);
   assert.match(gate.reason, /history/);
+});
+
+test('an article that never goes live releases the claim and drops that slot from history', () => {
+  const claimed = updateClaimDoc({ claims: {} }, { date, slot: 1, status: 'claimed', at, by: 'github-actions' });
+  const history = {
+    posted: [
+      { date, slot: 1, headline: 'Not live yet', canonUrl: 'https://example.com/a' },
+      { date, slot: 2, headline: 'Other slot' }
+    ],
+    rankings: { '2026-10-07': [1] }
+  };
+  const released = unpublishedSlotUpdate(claimed.doc, history, {
+    date, slot: 1, at, tried: ['https://example.com/a']
+  });
+  assert.equal(released.ok, true);
+  assert.equal(released.claims.claims[claimKey(date, 1)].status, 'released');
+  assert.deepEqual(released.claims.claims[claimKey(date, 1)].tried, ['https://example.com/a']);
+  assert.equal(released.history.posted.length, 1);
+  assert.equal(released.history.posted[0].slot, 2);
+  assert.deepEqual(released.history.rankings, { '2026-10-07': [1] });
+  const gate = evaluateClaim({ claimsDoc: released.claims, history: released.history, date, slot: 1 });
+  assert.equal(gate.ok, true);
+  assert.equal(gate.retry, true);
+  assert.deepEqual(gate.tried, ['https://example.com/a']);
+  const posted = updateClaimDoc(claimed.doc, { date, slot: 1, status: 'posted', at });
+  const refused = unpublishedSlotUpdate(posted.doc, history, { date, slot: 1, at, tried: [] });
+  assert.equal(refused.ok, false);
 });
 
 test('take_over can reclaim a claimed slot but not a posted one', () => {

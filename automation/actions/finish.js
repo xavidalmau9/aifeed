@@ -11,7 +11,7 @@ const { readJson, writeJson, commitApply } = require('./lib/git');
 const { writeClaim } = require('./lib/slotcommit');
 const { appendHookRow, claimFields } = require('./lib/hooktest');
 const { assertReelsTools } = require('./lib/tools');
-const { graphGet, graphForm, pollContainer, pollPublic, redact } = require('./lib/net');
+const { graphGet, graphForm, pollContainer, pollPublic, pollArticle, articlePublicUrl, redact } = require('./lib/net');
 const { renderReel, publishIgReel, publishFbVideo } = require('./lib/reels');
 const {
   REEL_WAIT, PROGRESS_PATH, SLUG_RE, igCaptionFromPost, photoUrlFromHtml, planFinish, pickEntry,
@@ -173,6 +173,7 @@ async function runFinish(cfg, env, deps = {}) {
     graphForm,
     pollContainer,
     pollPublic,
+    pollArticle,
     renderReel,
     publishIgReel,
     publishFbVideo,
@@ -225,6 +226,13 @@ async function runFinish(cfg, env, deps = {}) {
     reelOnly
   });
   if (plan.error) throw new Error(plan.error);
+
+  if (plan.postReel || plan.postStory || plan.postFb) {
+    const articleUrl = articlePublicUrl(cfg.siteUrl, slug);
+    console.log('Waiting for article ' + articleUrl);
+    await io.pollArticle(articleUrl, { slug, headline: post.headline, firstWaitMs: 0 });
+    console.log('Article is live: ' + articleUrl);
+  }
 
   let video = null;
   if (!plan.done && (plan.postReel || plan.postFb)) {

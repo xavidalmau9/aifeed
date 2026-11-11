@@ -51,14 +51,14 @@ test('n8n fallback schedule is 8:50am and 5:50pm ET', () => {
 });
 
 // Minimal n8n runtime for Code nodes: $('Node').first()/.all(), $input, $runIndex.
-async function runNode(name, out, input) {
+async function runNode(name, out, input, runIndex = 0) {
   const $ = n => {
     if (!out[n]) throw new Error('no output for ' + n);
     return { first: () => ({ json: out[n][0] }), all: () => out[n].map(json => ({ json })) };
   };
   const $input = { first: () => ({ json: input[0] }), all: () => input.map(json => ({ json })) };
   const AsyncFunction = Object.getPrototypeOf(async function () {}).constructor;
-  const res = await new AsyncFunction('$', '$input', '$runIndex', code(name))($, $input, 0);
+  const res = await new AsyncFunction('$', '$input', '$runIndex', code(name))($, $input, runIndex);
   return res.map(r => r.json);
 }
 // HTTP node stand-in: one Anthropic response per input item.
@@ -191,4 +191,71 @@ test('n8n same-event nodes: SynthID false positive overturned by the pair confir
   const r2 = (await runNode('Drop Same-Event Repeats', out, confirm('[]')))[0];
   assert.deepEqual(r2.candidates.map(c => c.canonUrl), ['a', 'c']);
   await assert.rejects(runNode('Same-Event Verify', out, [{ content: [{ text: 'oops' }] }]), /no readable verdict/);
+});
+
+test('n8n social posts wait until the article page is live, and give up by releasing the history lock', async () => {
+  const src = fs.readFileSync(path.join(__dirname, '../lib/articlelive.js'), 'utf8');
+  const fn = src.slice(src.indexOf('function escapeHtmlText'), src.indexOf('// ---- end article live check ----')).trim();
+  assert.ok(code('Article Live?').includes(fn), 'Article Live? drifted from articlelive.js');
+  assert.match(NODES['Check Article Is Public'].parameters.url, /aifeed_live/);
+  assert.ok(NODES['Check Article Is Public'].parameters.headerParameters.parameters.some(h => h.name === 'Cache-Control' && h.value === 'no-cache'));
+  assert.equal(NODES['Check Article Is Public'].parameters.options.response.response.neverError, true);
+  assert.deepEqual(next('Image Ready?'), ['Check Article Is Public']);
+  assert.deepEqual(next('Check Article Is Public'), ['Article Live?']);
+  assert.deepEqual(next('Article Live?'), ['Article Ready?']);
+  assert.deepEqual(next('Article Ready?'), ['IG Child 1 (Story)']);
+  const branch = name => (WF.connections[name].main[1] || []).map(c => c.node);
+  assert.deepEqual(branch('Article Ready?'), ['Article Give Up?']);
+  assert.deepEqual(next('Article Give Up?'), ['GH Get History (article rollback)']);
+  assert.deepEqual(branch('Article Give Up?'), ['Wait 30s Article']);
+  assert.deepEqual(next('Wait 30s Article'), ['Check Article Is Public']);
+  assert.equal(NODES['Wait 30s Article'].parameters.amount, 30);
+  assert.deepEqual(next('GH Get History (article rollback)'), ['Prep Article Rollback']);
+  assert.deepEqual(next('History Row Removed?'), ['GH Rollback History']);
+  assert.deepEqual(branch('History Row Removed?'), ['Article Not Live']);
+  assert.deepEqual(next('GH Rollback History'), ['Article Not Live']);
+  assert.match(code('Article Not Live'), /Not posting a link to a page that is not on AIFeed\.run/);
+  assert.match(code('Article Not Live'), /Released slot/);
+  assert.doesNotMatch(code('Article Not Live'), /\bdaily\b/i);
+  assert.equal(NODES['GH Rollback History'].credentials.githubApi.id, 'aifeedGithub0001');
+
+  const slug = 'how-ai-security-failures-are-endangering';
+  const headline = "OpenAI's supply-chain warning";
+  const html = '<title>OpenAI&#x27;s supply-chain warning | AIFeed.run AI News</title>'
+    + '<link rel="canonical" href="https://aifeed.run/news/' + slug + '/" />'
+    + '<script>window.__AIFEED_SLUG = ' + JSON.stringify(slug) + ';</script><h1>OpenAI&#x27;s supply-chain warning</h1>';
+  const notFound = '<title>Page not found | AIFeed.run AI News</title><h1>Page not found</h1><p>That URL is not on AIFeed.run AI News.</p>';
+  const out = { 'Validate PNG + Prep Commits': [{ post: { slug, headline } }] };
+  const waiting = (await runNode('Article Live?', out, [{ statusCode: 200, body: notFound }]))[0];
+  assert.equal(waiting.ready, false);
+  assert.equal(waiting.giveUp, false);
+  const live = (await runNode('Article Live?', out, [{ statusCode: 200, body: html }]))[0];
+  assert.equal(live.ready, true);
+  const giveUp = (await runNode('Article Live?', out, [{ statusCode: 404, body: notFound }], 23))[0];
+  assert.equal(giveUp.giveUp, true);
+  assert.equal(giveUp.attempt, 24);
+
+  const hist = {
+    posted: [
+      { date: '2026-11-11', slot: 1, slug, headline },
+      { date: '2026-11-11', slot: 2, slug: 'other', headline: 'Other' }
+    ],
+    rankings: { keep: true }
+  };
+  const rolled = (await runNode('Prep Article Rollback', {
+    Config: [{ today: '2026-11-11', slot: 1, siteUrl: 'https://aifeed.run', branch: 'main' }],
+    'Validate PNG + Prep Commits': [{ post: { slug, headline } }]
+  }, [{ content: Buffer.from(JSON.stringify(hist)).toString('base64'), sha: 'abc' }]))[0];
+  assert.equal(rolled.removed, 1);
+  assert.equal(rolled.rollback, true);
+  assert.equal(rolled.sha, 'abc');
+  const doc = JSON.parse(Buffer.from(rolled.content, 'base64').toString('utf8'));
+  assert.equal(doc.posted.length, 1);
+  assert.equal(doc.posted[0].slot, 2);
+  assert.equal(doc.rankings.keep, true);
+  await assert.rejects(runNode('Article Not Live', {
+    'Prep Article Rollback': [rolled],
+    'Article Live?': [{ statusCode: 404, slug }],
+    Config: [{ siteUrl: 'https://aifeed.run' }]
+  }, [{}]), /Released slot 2026-11-11:1/);
 });

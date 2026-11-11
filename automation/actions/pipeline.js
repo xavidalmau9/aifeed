@@ -6,7 +6,7 @@ const path = require('path');
 const { bufferLinkedinEnabled, bufferLinkedinText, bufferLinkedinPost } = require('./lib/buffer');
 const { decideRun } = require('./lib/schedule');
 const { CLAIM_PATH, MAX_SLOT_ATTEMPTS, evaluateClaim, mergeTried, SlotTaken } = require('./lib/claim');
-const { writeClaim } = require('./lib/slotcommit');
+const { writeClaim, releaseUnpublishedSlot } = require('./lib/slotcommit');
 const { assertReelsTools } = require('./lib/tools');
 const { fetchFeeds, assembleCandidates } = require('./lib/rss');
 const { orderPool, prepareRetryPool, buildSameEventPrompt, classifySameEvent, finalizeSameEvent } = require('./lib/pick');
@@ -18,7 +18,7 @@ const { assertFeedPng, assertStoryPng } = require('./lib/png');
 const { renderHtml, closeBrowser } = require('./render');
 const { readJson, writeJson, commitApply, git } = require('./lib/git');
 const {
-  claudeMessage, claudeVision, fetchIgMedia, graphForm, graphGet, pollContainer, pollPublic, linkedinEnabled, linkedInPost, redact
+  claudeMessage, claudeVision, fetchIgMedia, graphForm, graphGet, pollContainer, pollPublic, pollArticle, articlePublicUrl, linkedinEnabled, linkedInPost, redact
 } = require('./lib/net');
 const { sendAlert } = require('./alert');
 const { buildFb, checkFb } = require('./lib/captions');
@@ -522,6 +522,34 @@ async function main() {
       return [imageRel, ...extra, ...storyRel, '_posts/posts-index.json', '_data/history.json'];
     });
     console.log('Committed feed image' + (storyPng ? ', story image' : '') + ', posts index, and history');
+
+    // The news HTML is built by the SEO workflow after this commit, then Pages deploys it.
+    // Image URLs can already be 200 while /news/<slug>/ is still the 404 page. Do not post
+    // Instagram, Facebook, or LinkedIn until the exact article URL is the real story.
+    const articleUrl = articlePublicUrl(cfg.siteUrl, published.slug);
+    console.log('Waiting for article ' + articleUrl);
+    try {
+      await pollArticle(articleUrl, { slug: published.slug, headline: published.post.headline });
+    } catch (e) {
+      const msg = 'Article page was not live, so Instagram, Facebook, and LinkedIn were not posted. ' + redact(e.message);
+      console.log(msg);
+      let released = false;
+      try {
+        releaseUnpublishedSlot(env, decision, {
+          tried: mergeTried(gate.tried, attemptedKeys.concat([qc.story && (qc.story.canonUrl || qc.story.link)]))
+        });
+        claimed = false;
+        released = true;
+        console.log('Released slot ' + decision.date + ':' + decision.slot + ' because the article page was not live on AIFeed.run');
+      } catch (relErr) {
+        console.log('Could not release slot after the article wait: ' + redact(relErr.message));
+      }
+      await sendAlert('AIFeed: ' + msg + '\n' + (released
+        ? 'Released the slot for the retry.'
+        : 'The slot could not be released. The retry will not post until the claim is cleared.'));
+      throw e;
+    }
+    console.log('Article is live: ' + articleUrl);
 
     console.log('Waiting for ' + published.post.imageUrl);
     await pollPublic(published.post.imageUrl);
