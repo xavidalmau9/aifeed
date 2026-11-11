@@ -544,8 +544,12 @@
     "2026-11-11:1": {
       "slug": "how-ai-security-failures-are-endangering",
       "image": "aifeed_how-ai-security-failures-are-endangering_20261111_am.png",
+      "reelTemplate": "v3",
+      "hookStyle": "",
+      "igReelId": "18112391780232328",
+      "igPermalink": "https://www.instagram.com/reel/DfmkYksCqC2/",
       "status": "posted",
-      "at": "2026-11-11T13:12:46.559Z",
+      "at": "2026-11-11T13:17:53.846Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
