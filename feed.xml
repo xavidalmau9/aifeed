@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:aifeed="https://aifeed.run/ns/1.0"><channel>
 <title>AIFeed.run AI News — The AI news that matters.</title>
 <link>https://aifeed.run/</link>
-<description>The AI news that matters. Top AI stories, explained in 60 seconds.</description>
+<description>The biggest AI stories in plain English, with the original source on every one.</description>
 <language>en-us</language>
 <atom:link href="https://aifeed.run/feed.xml" rel="self" type="application/rss+xml" />
 <item><title>Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility</title><link>https://aifeed.run/news/nvidia-privately-confirmed-it-could-track/</link><guid isPermaLink="true">https://aifeed.run/news/nvidia-privately-confirmed-it-could-track/</guid><pubDate>Thu, 12 Nov 2026 22:07:37 +0000</pubDate><description>Nvidia privately told lawmakers it could implement chip-tracking measures while the industry publicly called them infeasible.</description><category>Policy</category><aifeed:sourceName>MIT Technology Review</aifeed:sourceName><aifeed:sourceUrl>https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/</aifeed:sourceUrl><enclosure url="https://aifeed.run/images/aifeed_nvidia-privately-confirmed-it-could-track_20261112_pm.png" type="image/png" length="0" /></item>

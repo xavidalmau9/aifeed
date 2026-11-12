@@ -31,17 +31,21 @@ Every graphic MUST include ALL of these. Do not omit any when copying a previous
 .catpill{display:inline-block;border-radius:999px;padding:9px 20px;font-size:22px;
   font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px}
 ```
-HTML: `<div class="catpill" style="background:<bg>;color:<txt>;border:1px solid <border>">CATEGORY</div>` as the FIRST child of `.content` (above `.hl`). Colors per category (match `index.html`/`post.html` `.cat-*`):
+HTML: `<div class="catpill" style="background:<bg>;color:<txt>;border:1px solid <border>">CATEGORY</div>` as the FIRST child of `.content` (above `.hl`). Colors are Option A "Signal" (the punchier pair of the website's Option C hues). The website itself uses the softer Option C values in `assets/tokens.css`. Text is the hex, background is that RGB at .18, border is that RGB at .55.
 | Category | text | bg | border |
 |---|---|---|---|
-| Infrastructure | #818cf8 | rgba(99,102,241,.18) | rgba(99,102,241,.55) |
-| Hardware | #22d3ee | rgba(6,182,212,.18) | rgba(6,182,212,.55) |
-| Industry | #c084fc | rgba(168,85,247,.18) | rgba(168,85,247,.55) |
-| Models | #fb923c | rgba(255,140,0,.18) | rgba(255,140,0,.55) |
-| Tools | #4ade80 | rgba(50,215,110,.18) | rgba(50,215,110,.55) |
-| Research | #60a5fa | rgba(56,130,246,.18) | rgba(56,130,246,.55) |
-| Business | #fb7185 | rgba(244,63,94,.18) | rgba(244,63,94,.55) |
-| Safety | #f87171 | rgba(239,68,68,.18) | rgba(239,68,68,.55) |
+| Models | #a3e635 | rgba(163,230,53,.18) | rgba(163,230,53,.55) |
+| Tools | #22d3ee | rgba(34,211,238,.18) | rgba(34,211,238,.55) |
+| Research | #34d399 | rgba(52,211,153,.18) | rgba(52,211,153,.55) |
+| Business | #60a5fa | rgba(96,165,250,.18) | rgba(96,165,250,.55) |
+| Policy | #c084fc | rgba(192,132,252,.18) | rgba(192,132,252,.55) |
+| Safety | #f87171 | rgba(248,113,113,.18) | rgba(248,113,113,.55) |
+| Security | #f87171 | rgba(248,113,113,.18) | rgba(248,113,113,.55) |
+| Industry | #fbbf24 | rgba(251,191,36,.18) | rgba(251,191,36,.55) |
+| Products | #f472b6 | rgba(244,114,182,.18) | rgba(244,114,182,.55) |
+| Hardware | #fb923c | rgba(251,146,60,.18) | rgba(251,146,60,.55) |
+| Infrastructure | #818cf8 | rgba(129,140,248,.18) | rgba(129,140,248,.55) |
+| Health | #2dd4bf | rgba(45,212,191,.18) | rgba(45,212,191,.55) |
 
 ---
 
