@@ -557,8 +557,12 @@
     "2026-11-12:2": {
       "slug": "nvidia-privately-confirmed-it-could-track",
       "image": "aifeed_nvidia-privately-confirmed-it-could-track_20261112_pm.png",
+      "reelTemplate": "v3",
+      "hookStyle": "",
+      "igReelId": "18642002224029325",
+      "igPermalink": "https://www.instagram.com/reel/DfqGrCtjh23/",
       "status": "posted",
-      "at": "2026-11-12T22:11:23.412Z",
+      "at": "2026-11-12T22:14:55.350Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
