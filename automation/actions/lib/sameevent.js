@@ -126,10 +126,31 @@ Return ONLY a JSON array with one object per candidate, in order:
 [{"c": 1, "repeat": true|false, "match": "<P number, or null>", "matchTitle": "<title of that P item copied exactly, or null>", "entity": "<company/organization/person shared by the candidate and that P item, or null>", "event": "<the shared event in max 10 words, or null>", "why": "<max 12 words>"}]`;
 }
 
+// The model sometimes answers, then "reconsiders" and prints a second, corrected array. The greedy match
+// then spans both arrays and fails to parse. Fall back to each balanced top-level [...] block and keep the
+// LAST one that parses (the model's final answer). Still null when nothing parses.
+function seBalancedArrays(str) {
+  const out = []; let depth = 0, start = -1, inStr = false, esc = false;
+  for (let i = 0; i < str.length; i++) {
+    const ch = str[i];
+    if (inStr) { if (esc) esc = false; else if (ch === '\\') esc = true; else if (ch === '"') inStr = false; continue; }
+    if (ch === '"') { if (depth > 0) inStr = true; continue; }
+    if (ch === '[') { if (depth === 0) start = i; depth++; }
+    else if (ch === ']' && depth > 0) { depth--; if (depth === 0 && start >= 0) { out.push(str.slice(start, i + 1)); start = -1; } }
+  }
+  return out;
+}
 function seParseArray(text) {
+  const str = String(text || '');
   let v = null;
-  try { v = JSON.parse((String(text || '').match(/\[[\s\S]*\]/) || [''])[0]); } catch (e) { v = null; }
-  return Array.isArray(v) && v.length ? v : null;
+  try { v = JSON.parse((str.match(/\[[\s\S]*\]/) || [''])[0]); } catch (e) { v = null; }
+  if (Array.isArray(v) && v.length) return v;
+  const blocks = seBalancedArrays(str);
+  for (let i = blocks.length - 1; i >= 0; i--) {
+    try { v = JSON.parse(blocks[i]); } catch (e) { v = null; }
+    if (Array.isArray(v) && v.length && v.every(x => x && typeof x === 'object')) return v;
+  }
+  return null;
 }
 function seTrue(x) { return x === true || String(x).toLowerCase() === 'true'; }
 function seNorm(t) { return seTokens(t).join(' '); }
