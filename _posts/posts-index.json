@@ -1,5 +1,25 @@
 [
   {
+    "id": "nvidia-privately-confirmed-it-could-track-20261112",
+    "slug": "nvidia-privately-confirmed-it-could-track",
+    "headline": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+    "summary": "Nvidia privately told lawmakers it could implement chip-tracking measures while the industry publicly called them infeasible.",
+    "body": "<p>Representatives from Nvidia told Illinois Representative Bill Foster that it would be technically possible to implement anti-smuggling chip-tracking measures required under the Chip Security Act, according to Foster in an MIT Technology Review interview. This private acknowledgment stands in contrast to Nvidia's public position and that of industry allies.</p>\n<p>In March 2026, the Semiconductor Industry Association, of which Nvidia is a member, publicly opposed the bill and wrote that chip-tracking mandates were 'new, untested, and potentially infeasible.' However, Foster reported that in technical discussions, Nvidia representatives indicated the capability exists — though they provided nothing in writing.</p>\n<p>The Chip Security Act, introduced May 2025, would require geotracking mechanisms to verify chip location and prevent smuggling to China. Lawmakers claimed technology to implement it existed; Nvidia had not publicly confirmed this until Foster's disclosure. The bill is among three chip-security measures under consideration for inclusion in the Senate's National Defense Authorization Act.</p>\n<p>In December 2025, the company announced Fleet Intelligence, a tool allowing customers to monitor advanced chip performance across different data center locations — which could indicate which country chips are in, Nvidia confirmed to Reuters. The company declined to elaborate on whether this technology could prevent smuggling.</p>\n<p>Foster stated he intends to introduce stricter legislation requiring licenses to operate advanced GPUs and mandatory license verification before connection. He noted that the recent Nvidia controversy involving CEO Jensen Huang has fueled colleague support for tracking rules: 'There will be a lot of political pressure...on the companies to actually do a very good job of geographic validation.'</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_nvidia-privately-confirmed-it-could-track_20261112_pm.png",
+    "image": "images/aifeed_nvidia-privately-confirmed-it-could-track_20261112_pm.png",
+    "sourceUrl": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+    "publishedAt": "2026-11-12T22:07:37.862Z",
+    "hashtags": [
+      "Nvidia",
+      "ChipSecurity",
+      "Semiconductors",
+      "Smuggling",
+      "Policy"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "how-ai-security-failures-are-endangering-20261111",
     "slug": "how-ai-security-failures-are-endangering",
     "headline": "How AI security failures are endangering your supply chain – and what you can do",
