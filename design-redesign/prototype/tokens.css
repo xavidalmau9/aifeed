@@ -1,0 +1,31 @@
+/* AIFeed.run redesign tokens — phase 1. Brand values come from the live index.html :root and .cat-* rules. */
+@import url("fonts/fonts.css");
+:root{
+  /* Surfaces */
+  --bg:#09081a; --bg-2:#0f0d28; --bg-3:#14113a;
+  --surface:rgba(255,255,255,.04); --surface-hover:rgba(255,255,255,.07);
+  --border:rgba(255,255,255,.09); --border-strong:rgba(168,85,247,.35);
+  /* Brand */
+  --purple:#7c3aed; --purple-2:#a855f7; --orange:#f97316; --green:#22c55e;
+  --grad:linear-gradient(90deg,#f97316 0%,#a855f7 100%);
+  /* Text (contrast on --bg: text 17.3:1, text-2 12.0:1, muted 6.7:1, purple-2 5.0:1; all pass WCAG AA) */
+  --text:#f0eeff; --text-2:#c9c6e6; --muted:#9592c0;
+  /* Category colors (live site values; Policy and Security are new, the live CSS has no rule for them) */
+  --cat-models:#f97316; --cat-tools:#22c55e; --cat-industry:#a855f7; --cat-research:#38bdf8;
+  --cat-products:#fbbf24; --cat-health:#14b8a6; --cat-infrastructure:#818cf8; --cat-business:#f43f5e;
+  --cat-hardware:#06b6d4; --cat-safety:#ef4444; --cat-security:#ef4444; --cat-policy:#c4b5fd;
+  /* Type */
+  --font-display:'Syne',system-ui,sans-serif; --font-body:'Inter',system-ui,sans-serif;
+  --fs-xs:.75rem; --fs-sm:.875rem; --fs-base:1rem; --fs-md:1.125rem; --fs-lg:1.25rem;
+  --fs-xl:1.5rem; --fs-2xl:clamp(1.625rem,1.2rem + 2vw,2.5rem); --fs-3xl:clamp(1.875rem,1.3rem + 2.6vw,3.25rem);
+  --lh-tight:1.18; --lh-body:1.65;
+  /* Space (4px base) */
+  --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px; --s-5:20px; --s-6:24px; --s-8:32px; --s-10:40px; --s-12:48px; --s-16:64px;
+  --gutter:20px; --max:1200px; --measure:680px;
+  /* Shape */
+  --r-sm:8px; --r-md:12px; --r-lg:16px; --r-pill:999px;
+  --tap:44px; /* minimum touch target */
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+@media (min-width:768px){:root{--gutter:32px}}
+@media (min-width:1100px){:root{--gutter:40px}}

@@ -1,0 +1,290 @@
+{
+ "a": {
+  "name": "Signal (brief hues, vivid)",
+  "why": "Uses the hue mapping from the brief: Models lime, Tools cyan, Policy purple, Safety red, Business blue, Research green. The other categories go to hues those six leave open. Bright and high-energy, closest to the IG look.",
+  "pal": {
+   "Models": "#a3e635",
+   "Tools": "#22d3ee",
+   "Research": "#34d399",
+   "Business": "#60a5fa",
+   "Policy": "#c084fc",
+   "Safety": "#f87171",
+   "Industry": "#fbbf24",
+   "Products": "#f472b6",
+   "Hardware": "#fb923c",
+   "Infrastructure": "#818cf8",
+   "Health": "#2dd4bf"
+  },
+  "rows": [
+   [
+    "Models",
+    "#a3e635",
+    13.1,
+    9.1,
+    "#273026"
+   ],
+   [
+    "Tools",
+    "#22d3ee",
+    10.9,
+    7.9,
+    "#152d3f"
+   ],
+   [
+    "Research",
+    "#34d399",
+    10.3,
+    7.5,
+    "#182d34"
+   ],
+   [
+    "Business",
+    "#60a5fa",
+    7.8,
+    5.8,
+    "#1e2741"
+   ],
+   [
+    "Policy",
+    "#c084fc",
+    7.5,
+    5.6,
+    "#2b2241"
+   ],
+   [
+    "Safety",
+    "#f87171",
+    7.2,
+    5.5,
+    "#331f2e"
+   ],
+   [
+    "Industry",
+    "#fbbf24",
+    11.9,
+    8.4,
+    "#332a23"
+   ],
+   [
+    "Products",
+    "#f472b6",
+    7.5,
+    5.7,
+    "#321f38"
+   ],
+   [
+    "Hardware",
+    "#fb923c",
+    8.7,
+    6.5,
+    "#332426"
+   ],
+   [
+    "Infrastructure",
+    "#818cf8",
+    6.6,
+    5.1,
+    "#222341"
+   ],
+   [
+    "Health",
+    "#2dd4bf",
+    10.6,
+    7.7,
+    "#172d39"
+   ]
+  ]
+ },
+ "b": {
+  "name": "Spectrum (maximum separation)",
+  "why": "Spreads the 11 categories evenly around the hue wheel, so neighbouring chips never look alike. Research becomes blue and Business amber. Red stays only on Safety/Security, so it still reads as a warning.",
+  "pal": {
+   "Models": "#c084fc",
+   "Tools": "#2dd4bf",
+   "Research": "#60a5fa",
+   "Business": "#fbbf24",
+   "Policy": "#f472b6",
+   "Safety": "#f87171",
+   "Industry": "#a3e635",
+   "Products": "#fb923c",
+   "Hardware": "#22d3ee",
+   "Infrastructure": "#a5b4fc",
+   "Health": "#4ade80"
+  },
+  "rows": [
+   [
+    "Models",
+    "#c084fc",
+    7.5,
+    5.6,
+    "#2b2241"
+   ],
+   [
+    "Tools",
+    "#2dd4bf",
+    10.6,
+    7.7,
+    "#172d39"
+   ],
+   [
+    "Research",
+    "#60a5fa",
+    7.8,
+    5.8,
+    "#1e2741"
+   ],
+   [
+    "Business",
+    "#fbbf24",
+    11.9,
+    8.4,
+    "#332a23"
+   ],
+   [
+    "Policy",
+    "#f472b6",
+    7.5,
+    5.7,
+    "#321f38"
+   ],
+   [
+    "Safety",
+    "#f87171",
+    7.2,
+    5.5,
+    "#331f2e"
+   ],
+   [
+    "Industry",
+    "#a3e635",
+    13.1,
+    9.1,
+    "#273026"
+   ],
+   [
+    "Products",
+    "#fb923c",
+    8.7,
+    6.5,
+    "#332426"
+   ],
+   [
+    "Hardware",
+    "#22d3ee",
+    10.9,
+    7.9,
+    "#152d3f"
+   ],
+   [
+    "Infrastructure",
+    "#a5b4fc",
+    9.9,
+    7.1,
+    "#272941"
+   ],
+   [
+    "Health",
+    "#4ade80",
+    11.4,
+    8.1,
+    "#1b2f30"
+   ]
+  ]
+ },
+ "c": {
+  "name": "Soft (brief hues, pastel)",
+  "why": "Same hue mapping as Option A, one step lighter (Tailwind 300-level). It is calmer and more editorial, has the highest contrast, and the purple/orange brand gradient stays the loudest thing on the page.",
+  "pal": {
+   "Models": "#bef264",
+   "Tools": "#67e8f9",
+   "Research": "#6ee7b7",
+   "Business": "#93c5fd",
+   "Policy": "#d8b4fe",
+   "Safety": "#fca5a5",
+   "Industry": "#fde68a",
+   "Products": "#f9a8d4",
+   "Hardware": "#fdba74",
+   "Infrastructure": "#a5b4fc",
+   "Health": "#5eead4"
+  },
+  "rows": [
+   [
+    "Models",
+    "#bef264",
+    15.1,
+    10.2,
+    "#2b312c"
+   ],
+   [
+    "Tools",
+    "#67e8f9",
+    13.7,
+    9.3,
+    "#1f3041"
+   ],
+   [
+    "Research",
+    "#6ee7b7",
+    13.0,
+    8.9,
+    "#203038"
+   ],
+   [
+    "Business",
+    "#93c5fd",
+    11.0,
+    7.7,
+    "#252b42"
+   ],
+   [
+    "Policy",
+    "#d8b4fe",
+    11.2,
+    7.8,
+    "#2f2942"
+   ],
+   [
+    "Safety",
+    "#fca5a5",
+    10.4,
+    7.4,
+    "#342735"
+   ],
+   [
+    "Industry",
+    "#fde68a",
+    15.9,
+    10.5,
+    "#343031"
+   ],
+   [
+    "Products",
+    "#f9a8d4",
+    10.9,
+    7.7,
+    "#33273c"
+   ],
+   [
+    "Hardware",
+    "#fdba74",
+    11.7,
+    8.2,
+    "#342a2e"
+   ],
+   [
+    "Infrastructure",
+    "#a5b4fc",
+    9.9,
+    7.1,
+    "#272941"
+   ],
+   [
+    "Health",
+    "#5eead4",
+    13.4,
+    9.2,
+    "#1e303c"
+   ]
+  ]
+ }
+}

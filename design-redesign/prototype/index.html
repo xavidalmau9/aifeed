@@ -1,0 +1,257 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AIFeed.run AI News — The AI news that matters</title><meta name="description" content="The biggest AI stories in plain English, with the original source on every one."><link rel="canonical" href="https://aifeed.run/">
+<link rel="stylesheet" href="tokens.css"><style>*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:400 var(--fs-base)/var(--lh-body) var(--font-body);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto 0;height:520px;pointer-events:none;z-index:-1;background:radial-gradient(60% 100% at 50% 0%,rgba(124,58,237,.22),transparent 70%)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.muted{color:var(--muted)}
+.ico{width:20px;height:20px;flex:none}.ico-sm{width:16px;height:16px}
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(9,8,26,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.hdr{display:flex;align-items:center;justify-content:space-between;gap:var(--s-4);min-height:60px}
+.wordmark{font:800 1.375rem/1 var(--font-display);letter-spacing:-.02em;display:inline-flex;padding-block:var(--s-2)}
+.w-ai{color:var(--purple-2)}.w-feed{color:var(--orange)}.w-run{color:var(--text)}
+.nav{display:none;gap:var(--s-6);font-weight:500;font-size:var(--fs-sm);color:var(--text-2)}
+.nav a{padding:var(--s-3) 0}.nav a:hover{color:var(--text)}
+.hdr-right{display:flex;align-items:center;gap:var(--s-2)}
+.hdr-social{display:none;gap:var(--s-1)}
+.icon-btn{display:inline-grid;place-items:center;width:var(--tap);height:var(--tap);border-radius:var(--r-pill);color:var(--text-2);border:1px solid transparent}
+.icon-btn:hover{background:var(--surface-hover);color:var(--text)}
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s-2);min-height:var(--tap);padding:0 var(--s-5);border-radius:var(--r-pill);font:600 var(--fs-base)/1 var(--font-body);border:0;cursor:pointer;white-space:nowrap}
+.btn-sm{font-size:var(--fs-sm);padding:0 var(--s-4)}
+.btn-primary{background:var(--grad);color:#fff}
+.btn-ghost{border:1px solid var(--border-strong);color:var(--text);background:rgba(168,85,247,.08)}
+.btn-ghost:hover{background:rgba(168,85,247,.16)}
+/* Pills / meta */
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s-2) var(--s-3);font-size:var(--fs-sm);color:var(--muted)}
+.pill{display:inline-flex;align-items:center;min-height:26px;padding:0 10px;border-radius:var(--r-pill);font:700 .6875rem/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--c);background:color-mix(in srgb,var(--c) 14%,transparent);border:1px solid color-mix(in srgb,var(--c) 40%,transparent)}
+.eyebrow{margin:0;font:700 var(--fs-xs)/1.2 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--orange);display:inline-flex;align-items:center;gap:6px}
+.section-h{margin:0;font:700 var(--fs-xl)/var(--lh-tight) var(--font-display)}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:var(--s-4);margin-bottom:var(--s-5)}
+.link-more{display:inline-flex;align-items:center;gap:6px;color:var(--purple-2);font-weight:600;font-size:var(--fs-sm);min-height:var(--tap)}
+.h-sm{margin:0 0 var(--s-2);font:700 var(--fs-lg)/1.25 var(--font-display)}
+/* Intro */
+.intro{padding-top:var(--s-8);padding-bottom:var(--s-5)}
+.intro-h{margin:0;font:800 var(--fs-3xl)/1.08 var(--font-display);letter-spacing:-.02em;max-width:16ch}
+.intro-dek{margin:var(--s-3) 0 0;color:var(--text-2);font-size:var(--fs-md);max-width:52ch}
+/* Chips (wrap, never scroll off the edge) */
+.chips{display:flex;flex-wrap:wrap;gap:var(--s-2);padding-bottom:var(--s-6)}
+.chip{display:inline-flex;align-items:center;gap:var(--s-2);min-height:40px;padding:0 var(--s-4);border-radius:var(--r-pill);border:1px solid var(--border);background:var(--surface);font-size:var(--fs-sm);font-weight:600;color:var(--text-2)}
+.chip .dot{width:8px;height:8px;border-radius:50%;background:var(--c)}
+.chip.is-on{background:var(--text);color:var(--bg);border-color:var(--text)}
+.chip-more{color:var(--purple-2)}
+/* Home grid */
+.home-grid{display:grid;gap:var(--s-8)}
+.lead{display:grid;gap:var(--s-5);background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--s-4)}
+.lead-img .thumb,.card-img .thumb,.row-img .thumb,.art-fig .thumb,.next-img .thumb{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r-md);background:var(--bg-3)}
+.lead-head,.lead-tail{display:grid;gap:var(--s-3);align-content:start;padding:0 var(--s-1);min-width:0}
+.lead-head{padding-top:var(--s-1)}.lead-tail{padding-bottom:var(--s-1)}
+.eb-new{color:var(--green)}
+.lead-title{margin:0;font:800 1.5rem/1.2 var(--font-display);letter-spacing:-.01em;overflow-wrap:break-word}
+.lead-sum{margin:0;color:var(--text-2);font-size:var(--fs-md)}
+.lead .btn{justify-self:start;margin-top:var(--s-2)}
+.rows{display:grid;gap:var(--s-3)}
+.rail .section-h{margin-bottom:var(--s-4)}
+.row{display:grid;grid-template-columns:84px 1fr;gap:var(--s-4);align-items:start;padding:var(--s-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface)}
+.row-body{display:grid;gap:var(--s-2);min-width:0}
+.row-title{margin:0;font:600 var(--fs-base)/1.35 var(--font-body)}
+.row-title a:hover,.card-title a:hover,.lead-title a:hover{color:var(--purple-2)}
+.row-src{margin:0;font-size:var(--fs-xs)}
+/* Newsletter */
+.nl-band{margin-block:var(--s-10)}
+.nl-card{position:relative;padding:var(--s-6);border-radius:var(--r-lg);border:1px solid var(--border-strong);background:linear-gradient(160deg,#1a1446 0%,#100d2b 100%)}
+.nl-icon{width:var(--tap);height:var(--tap);display:grid;place-items:center;border-radius:var(--r-md);background:rgba(249,115,22,.14);color:var(--orange);margin-bottom:var(--s-4)}
+.nl-title{margin:var(--s-2) 0;font:800 var(--fs-xl)/1.2 var(--font-display)}
+.nl-copy{margin:0 0 var(--s-5);color:var(--text-2)}
+.nl-form{display:grid;gap:var(--s-3)}
+.nl-form input{min-height:48px;padding:0 var(--s-4);border-radius:var(--r-pill);border:1px solid var(--border);background:rgba(0,0,0,.3);color:var(--text);font:400 var(--fs-base) var(--font-body);width:100%}
+.nl-form input::placeholder{color:var(--muted)}
+.nl-form .btn{min-height:48px}
+.nl-fine{margin:var(--s-3) 0 0;font-size:var(--fs-sm);color:var(--muted);display:flex;align-items:center;gap:6px}
+.nl-fine .ico{color:var(--green)}
+/* Cards */
+.cards{display:grid;gap:var(--s-4)}
+.card{display:grid;grid-template-columns:96px 1fr;gap:var(--s-4);padding:var(--s-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface)}
+.card-body{display:grid;gap:var(--s-2);align-content:start;min-width:0}
+.card-title{margin:0;font:600 var(--fs-base)/1.35 var(--font-body)}
+.card-sum{display:none;margin:0;color:var(--text-2);font-size:var(--fs-sm)}
+/* Topics */
+.topics{margin-block:var(--s-12) var(--s-10)}
+.topics .section-h{margin-bottom:var(--s-5)}
+.topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s-3)}
+.topic{display:grid;grid-template-columns:auto 1fr;column-gap:var(--s-3);align-items:center;padding:var(--s-4);border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);border-left:3px solid var(--c)}
+.topic-dot{display:none}
+.topic-name{font:700 var(--fs-base)/1.2 var(--font-display);grid-column:1/-1}
+.topic-n{grid-column:1/-1;font-size:var(--fs-sm);color:var(--muted);margin-top:2px}
+/* Follow */
+.follow-card{padding:var(--s-6);border-radius:var(--r-lg);border:1px solid var(--border);background:var(--surface);margin-bottom:var(--s-12)}
+.follow-card .muted{margin:0 0 var(--s-4)}
+.follow-row{display:grid;gap:var(--s-2)}
+.follow-btn{display:flex;align-items:center;gap:var(--s-3);min-height:48px;padding:0 var(--s-4);border-radius:var(--r-md);border:1px solid var(--border);font-weight:600;background:rgba(255,255,255,.03)}
+.f-instagram .ico{color:#f472b6}.f-facebook .ico{color:#60a5fa}.f-linkedin .ico{color:#38bdf8}
+/* Footer */
+.site-footer{border-top:1px solid var(--border);padding-block:var(--s-10)}
+.ftr{display:grid;gap:var(--s-6)}
+.ftr-brand p{margin:var(--s-2) 0 0;font-size:var(--fs-sm)}
+.ftr-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 var(--s-4);font-size:var(--fs-sm);color:var(--text-2)}
+.ftr-links a{min-height:var(--tap);display:flex;align-items:center}
+.ftr-social{display:flex;gap:var(--s-1);margin-left:calc(-1 * var(--s-3))}
+.ftr-copy{margin:0;font-size:var(--fs-xs)}
+/* Article */
+.art-grid{display:grid;gap:var(--s-10);padding-top:var(--s-5)}
+.art{min-width:0;max-width:var(--measure)}
+.crumbs{display:flex;gap:var(--s-2);align-items:center;font-size:var(--fs-sm);color:var(--muted);margin-bottom:var(--s-3)}
+.crumbs a{min-height:var(--tap);display:inline-flex;align-items:center;color:var(--text-2)}
+.art-meta .rt{display:inline-flex;align-items:center;gap:6px}
+.art-h{margin:var(--s-4) 0 var(--s-3);overflow-wrap:break-word;font:800 clamp(1.625rem,1.1rem + 2.2vw,2.75rem)/1.15 var(--font-display);letter-spacing:-.015em}
+.art-dek{margin:0 0 var(--s-5);font-size:var(--fs-lg);line-height:1.5;color:var(--text-2)}
+.art-by{display:flex;align-items:center;gap:var(--s-3);padding-block:var(--s-4);border-block:1px solid var(--border)}
+.by-mark{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--grad);font:800 .875rem var(--font-display);color:#fff;flex:none}
+.by-name{margin:0;font-weight:600;font-size:var(--fs-sm)}
+.by-src{margin:2px 0 0;font-size:var(--fs-sm)}
+.by-src a{color:var(--purple-2);display:inline-flex;align-items:center;gap:4px;font-weight:600}
+.share{display:flex;align-items:center;gap:var(--s-1);margin:var(--s-3) 0 var(--s-6)}
+.share-l{font-size:var(--fs-sm);margin-right:var(--s-2)}
+.share .icon-btn{border-color:var(--border)}
+.art-fig{margin:0 0 var(--s-8)}
+.art-fig .thumb{max-width:440px;margin-inline:auto}
+.art-fig figcaption{text-align:center;font-size:var(--fs-xs);margin-top:var(--s-3)}
+.kt{padding:var(--s-6);border-radius:var(--r-lg);background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--purple-2);margin-bottom:var(--s-8)}
+.kt .eyebrow{color:var(--purple-2);margin-bottom:var(--s-3)}
+.kt ul{margin:0;padding-left:1.15em;display:grid;gap:var(--s-3);color:var(--text-2)}
+.kt li::marker{color:var(--purple-2)}
+.prose{font-size:var(--fs-md);line-height:1.7;color:#dedcf3}
+.prose p{margin:0 0 1.15em}
+.prose .lede-b{font-weight:600;color:var(--text)}
+.source-card{display:grid;grid-template-columns:1fr auto;gap:2px var(--s-4);align-items:center;padding:var(--s-5);border-radius:var(--r-lg);border:1px solid var(--border-strong);background:rgba(168,85,247,.07);margin:var(--s-8) 0 var(--s-5)}
+.sc-l{font-size:var(--fs-xs);letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+.sc-t{grid-column:1;font-weight:700;font-size:var(--fs-md)}
+.sc-go{grid-row:1/3;grid-column:2;color:var(--purple-2);width:var(--tap);height:var(--tap);display:grid;place-items:center;border-radius:50%;background:rgba(168,85,247,.14)}
+.tags{display:flex;flex-wrap:wrap;gap:var(--s-2);margin-bottom:var(--s-8)}
+.tag{display:inline-flex;align-items:center;min-height:36px;padding:0 var(--s-3);border-radius:var(--r-pill);background:var(--surface);border:1px solid var(--border);font-size:var(--fs-sm);color:var(--text-2)}
+.art .nl-card{margin-bottom:var(--s-8)}
+.next{display:grid;grid-template-columns:96px 1fr;gap:var(--s-4);padding:var(--s-4);border-radius:var(--r-lg);border:1px solid var(--border-strong);background:var(--surface);align-items:center}
+.next-body{display:grid;gap:var(--s-2)}
+.next-t{font:700 var(--fs-lg)/1.25 var(--font-display)}
+.art-side{display:none}
+.more-sec{margin-block:var(--s-12)}
+/* ---------- Tablet / desktop ---------- */
+@media (min-width:700px){
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .topic-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .nl-form{grid-template-columns:1fr auto}
+  .follow-row{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .ftr{grid-template-columns:1.4fr 1fr auto;align-items:start}
+  .ftr-copy{grid-column:1/-1}
+}
+@media (min-width:1100px){
+  .nav,.hdr-social{display:flex}
+  .intro{padding-top:var(--s-12)}
+  .home-grid{grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);align-items:start;gap:var(--s-10)}
+  .lead{grid-template-columns:minmax(0,300px) minmax(0,1fr);grid-template-areas:"img head" "img tail";grid-template-rows:auto 1fr;column-gap:var(--s-8);row-gap:var(--s-4);padding:var(--s-5)}
+  .lead-img{grid-area:img}.lead-head{grid-area:head;padding:var(--s-2) var(--s-2) 0 0}.lead-tail{grid-area:tail;padding:0 var(--s-2) var(--s-2) 0}
+  .lead-title{font-size:1.75rem}
+  .nl-band .nl-card{display:grid;grid-template-columns:auto 1fr minmax(0,440px);grid-template-areas:"i e f" "i t f" "i c fine";column-gap:var(--s-6);align-items:center;padding:var(--s-8)}
+  .nl-band .nl-icon{grid-area:i;margin:0;align-self:start}
+  .nl-band .eyebrow{grid-area:e}.nl-band .nl-title{grid-area:t;margin:var(--s-1) 0}
+  .nl-band .nl-copy{grid-area:c;margin:0}.nl-band .nl-form{grid-area:f;align-self:end}.nl-band .nl-fine{grid-area:fine}
+  .cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-6)}
+  .cards .card{grid-template-columns:1fr;padding:var(--s-4);gap:var(--s-4)}
+  .cards .card-sum{display:block}
+  .cards .card-title{font:700 var(--fs-lg)/1.3 var(--font-display)}
+  .topic-grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .art-grid{grid-template-columns:minmax(0,var(--measure)) 340px;justify-content:space-between;gap:var(--s-16);padding-top:var(--s-8)}
+  .art-side{display:block}
+  .side-sticky{position:sticky;top:84px;display:grid;gap:var(--s-5)}
+  .side-sticky .follow-card{margin:0}
+  .side-sticky .follow-row{grid-template-columns:1fr}
+  .side-sticky .nl-form{grid-template-columns:1fr}
+  .art .nl-card{display:none}
+}
+
+.nl-compact .nl-title{font-size:var(--fs-lg);line-height:1.3}
+.art .kt{margin-top:var(--s-2)}
+/* 404 */
+.nf-grid{display:grid;gap:var(--s-10);padding-block:var(--s-8) var(--s-12)}
+.nf-main{display:grid;gap:var(--s-10);min-width:0}
+.nf-hero{padding:var(--s-8) var(--s-6);border-radius:var(--r-lg);border:1px solid var(--border);background:var(--surface)}
+.nf-icon{width:56px;height:56px;border-radius:var(--r-md);display:grid;place-items:center;background:rgba(168,85,247,.14);color:var(--purple-2);margin-bottom:var(--s-5)}
+.nf-icon svg{width:28px;height:28px}
+.nf-h{margin:var(--s-2) 0 var(--s-3);font:800 var(--fs-3xl)/1.1 var(--font-display);letter-spacing:-.015em}
+.nf-copy{margin:0 0 var(--s-6);color:var(--text-2);font-size:var(--fs-md);max-width:46ch}
+.nf-actions{display:grid;gap:var(--s-3)}
+.nf-sub{margin-bottom:var(--s-4)}
+.nf-topics .chips{padding-bottom:0}
+.nf-side{display:grid;gap:var(--s-5);align-content:start}
+.nf-side .follow-card{margin:0}
+@media (min-width:700px){.nf-actions{display:flex;flex-wrap:wrap}}
+@media (min-width:1100px){
+  .nf-grid{grid-template-columns:minmax(0,1fr) 360px;gap:var(--s-16);padding-top:var(--s-12)}
+  .nf-hero{padding:var(--s-10)}
+  .nf-side{position:sticky;top:84px}
+  .nf-side .follow-row,.nf-side .nl-form{grid-template-columns:1fr}
+}
+</style></head><body><header class="site-header"><div class="wrap hdr"><a class="wordmark" href="/" aria-label="AIFeed.run home"><span class="w-ai">AI</span><span class="w-feed">Feed</span><span class="w-run">.run</span></a>
+<nav class="nav" aria-label="Main"><a href="/news/">Latest</a><a href="/news/topics/">Topics</a><a href="/subscribe/">Newsletter</a></nav>
+<div class="hdr-right"><div class="hdr-social"><a class="icon-btn" href="https://instagram.com/aifeed.run" aria-label="AIFeed.run on Instagram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a><a class="icon-btn" href="https://www.facebook.com/profile.php?id=61594868144059" aria-label="AIFeed.run on Facebook"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a><a class="icon-btn" href="https://www.linkedin.com/company/aifeed-run" aria-label="AIFeed.run on LinkedIn"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div>
+<a class="btn btn-primary btn-sm" href="#newsletter"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Subscribe</span></a></div></div></header><main id="main">
+<section class="intro wrap"><h1 class="intro-h">The AI news that matters.</h1>
+<p class="intro-dek">Big AI stories in plain English, with the source on every one.</p></section>
+<nav class="wrap chips" aria-label="Topics"><a class="chip is-on" href="/" aria-current="page">All</a><a class="chip" style="--c:var(--cat-models)" href="/news/topics/models/"><span class="dot"></span>Models</a><a class="chip" style="--c:var(--cat-tools)" href="/news/topics/tools/"><span class="dot"></span>Tools</a><a class="chip" style="--c:var(--cat-policy)" href="/news/topics/policy/"><span class="dot"></span>Policy</a><a class="chip" style="--c:var(--cat-safety)" href="/news/topics/safety/"><span class="dot"></span>Safety</a><a class="chip" style="--c:var(--cat-business)" href="/news/topics/business/"><span class="dot"></span>Business</a><a class="chip" style="--c:var(--cat-research)" href="/news/topics/research/"><span class="dot"></span>Research</a><a class="chip chip-more" href="/news/topics/">All topics</a></nav>
+<div class="wrap home-grid">
+<section class="lead" aria-labelledby="lead-t">
+<div class="lead-head"><p class="eyebrow eb-new">Latest story</p><div class="meta"><span class="pill" style="--c:var(--cat-safety)">Safety</span><time datetime="2026-11-11">Nov 11</time></div>
+<h2 id="lead-t" class="lead-title"><a href="/news/how-ai-security-failures-are-endangering/">How AI security failures are endangering your supply chain – and what you can do</a></h2></div>
+<a class="lead-img" href="/news/how-ai-security-failures-are-endangering/" tabindex="-1" aria-hidden="true"><img class="thumb" src="img/aifeed_how-ai-security-failures-are-endangering_20261111_am-720.webp" width="720" height="900" alt="How AI security failures are endangering your supply chain – and what you can do" fetchpriority=high decoding="async"></a>
+<div class="lead-tail"><p class="lead-sum">Black Kite research finds widespread cybersecurity weaknesses across AI suppliers, exposing enterprise networks to critical vulnerabilities.</p>
+<a class="btn btn-ghost" href="/news/how-ai-security-failures-are-endangering/">Read the story <svg class="ico ico-sm" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></section>
+<aside class="rail" aria-labelledby="rail-t"><h2 id="rail-t" class="section-h">More this week</h2>
+<div class="rows"><article class="row"><a class="row-img" href="/news/security-flaws-across-uk-government-sites/" tabindex="-1" aria-hidden="true"><img class="thumb" src="img/aifeed_security-flaws-across-uk-government-sites_20261110_pm-720.webp" width="720" height="900" alt="Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information" loading=lazy decoding="async"></a>
+<div class="row-body"><div class="meta"><span class="pill" style="--c:var(--cat-safety)">Safety</span><time datetime="2026-11-10">Nov 10</time></div>
+<h3 class="row-title"><a href="/news/security-flaws-across-uk-government-sites/">Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information</a></h3><p class="row-src muted">via WIRED</p></div></article><article class="row"><a class="row-img" href="/news/the-climate-case-for-ai-has/" tabindex="-1" aria-hidden="true"><img class="thumb" src="img/aifeed_the-climate-case-for-ai-has_20261109_pm-720.webp" width="720" height="900" alt="The climate case for AI has not been made" loading=lazy decoding="async"></a>
+<div class="row-body"><div class="meta"><span class="pill" style="--c:var(--cat-research)">Research</span><time datetime="2026-11-09">Nov 9</time></div>
+<h3 class="row-title"><a href="/news/the-climate-case-for-ai-has/">The climate case for AI has not been made</a></h3><p class="row-src muted">via MIT Technology Review</p></div></article><article class="row"><a class="row-img" href="/news/bikers-and-buglovers-join-forces-to/" tabindex="-1" aria-hidden="true"><img class="thumb" src="img/aifeed_bikers-and-buglovers-join-forces-to_20261109_am-720.webp" width="720" height="900" alt="Bikers and Bug-Lovers Join Forces to Fight a New Google Data Center" loading=lazy decoding="async"></a>
+<div class="row-body"><div class="meta"><span class="pill" style="--c:var(--cat-policy)">Policy</span><time datetime="2026-11-09">Nov 9</time></div>
+<h3 class="row-title"><a href="/news/bikers-and-buglovers-join-forces-to/">Bikers and Bug-Lovers Join Forces to Fight a New Google Data Center</a></h3><p class="row-src muted">via WIRED</p></div></article><article class="row"><a class="row-img" href="/news/world-models-will-soon-be-inescapable/" tabindex="-1" aria-hidden="true"><img class="thumb" src="img/aifeed_world-models-will-soon-be-inescapable_20261108_pm-720.webp" width="720" height="900" alt="World Models Will Soon Be Inescapable. Here’s What You Need to Know" loading=lazy decoding="async"></a>
+<div class="row-body"><div class="meta"><span class="pill" style="--c:var(--cat-models)">Models</span><time datetime="2026-11-08">Nov 8</time></div>
+<h3 class="row-title"><a href="/news/world-models-will-soon-be-inescapable/">World Models Will Soon Be Inescapable. Here’s What You Need to Know</a></h3><p class="row-src muted">via WIRED</p></div></article></div></aside>
+</div>
+<div class="wrap nl-band"><section class="nl-card" id="newsletter" aria-labelledby="newsletter-t">
+<div class="nl-icon"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+<p class="eyebrow">Free newsletter</p>
+<h2 id="newsletter-t" class="nl-title">The week's top AI stories, every Sunday.</h2>
+<p class="nl-copy">One email a week with the stories that mattered and a link to the source for each one.</p>
+<form class="nl-form" action="https://magic.beehiiv.com/v1/eb0b9508-1ffd-4fb1-a63c-e762fa86569c" method="get">
+<label class="sr-only" for="newsletter-e">Email address</label>
+<input id="newsletter-e" type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+<button class="btn btn-primary" type="submit">Subscribe free</button></form>
+<p class="nl-fine"><svg class="ico ico-sm" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg> Free. Unsubscribe anytime.</p></section></div>
+<section class="wrap" aria-labelledby="more-t"><div class="section-head"><h2 id="more-t" class="section-h">Latest stories</h2><a class="link-more" href="/news/">See all 271 <svg class="ico ico-sm" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+<div class="cards"><article class="card"><a class="card-img" href="/news/the-us-let-nvidia-sell-chips/" tabindex="-1" aria-hidden="true"><img class="thumb" src="img/aifeed_the-us-let-nvidia-sell-chips_20261108_am-720.webp" width="720" height="900" alt="The US let Nvidia sell chips to an empty office in China" loading=lazy decoding="async"></a>
+<div class="card-body"><div class="meta"><span class="pill" style="--c:var(--cat-policy)">Policy</span><time datetime="2026-11-08">Nov 8</time></div>
+<h3 class="card-title"><a href="/news/the-us-let-nvidia-sell-chips/">The US let Nvidia sell chips to an empty office in China</a></h3><p class="card-sum">US approved Nvidia AI chip sales to Chinese firm with empty office and blacklisted ties.</p></div></article><article class="card"><a class="card-img" href="/news/ai-debt-concerns-grow-as-ing/" tabindex="-1" aria-hidden="true"><img class="thumb" src="img/aifeed_ai-debt-concerns-grow-as-ing_20261107_pm-720.webp" width="720" height="900" alt="AI debt concerns grow as ING reportedly seeks buyers for $500 million of data center loans" loading=lazy decoding="async"></a>
+<div class="card-body"><div class="meta"><span class="pill" style="--c:var(--cat-business)">Business</span><time datetime="2026-11-07">Nov 7</time></div>
+<h3 class="card-title"><a href="/news/ai-debt-concerns-grow-as-ing/">AI debt concerns grow as ING reportedly seeks buyers for $500 million of data center loans</a></h3><p class="card-sum">ING reportedly seeks buyers for $500 million portfolio of AI data center loans amid debt concerns.</p></div></article><article class="card"><a class="card-img" href="/news/china-reportedly-recruited-ai-exec-to/" tabindex="-1" aria-hidden="true"><img class="thumb" src="img/aifeed_china-reportedly-recruited-ai-exec-to_20261107_am-720.webp" width="720" height="900" alt="China reportedly recruited AI exec to spy on Jensen Huang" loading=lazy decoding="async"></a>
+<div class="card-body"><div class="meta"><span class="pill" style="--c:var(--cat-policy)">Policy</span><time datetime="2026-11-07">Nov 7</time></div>
+<h3 class="card-title"><a href="/news/china-reportedly-recruited-ai-exec-to/">China reportedly recruited AI exec to spy on Jensen Huang</a></h3><p class="card-sum">China&#x27;s intelligence agency reportedly recruited a tech executive to spy on Nvidia CEO Jensen Huang for AI chip intelligence.</p></div></article><article class="card"><a class="card-img" href="/news/protesters-break-into-microsoft-data-center/" tabindex="-1" aria-hidden="true"><img class="thumb" src="img/aifeed_protesters-break-into-microsoft-data-center_20261106_pm-720.webp" width="720" height="900" alt="Protesters break into Microsoft data center site in Amsterdam" loading=lazy decoding="async"></a>
+<div class="card-body"><div class="meta"><span class="pill" style="--c:var(--cat-policy)">Policy</span><time datetime="2026-11-06">Nov 6</time></div>
+<h3 class="card-title"><a href="/news/protesters-break-into-microsoft-data-center/">Protesters break into Microsoft data center site in Amsterdam</a></h3><p class="card-sum">Approximately 100 protesters breached a Microsoft data center construction site in Amsterdam, scaling cranes and unfurling banners.</p></div></article><article class="card"><a class="card-img" href="/news/top-democrats-call-to-rein-in/" tabindex="-1" aria-hidden="true"><img class="thumb" src="img/aifeed_top-democrats-call-to-rein-in_20261106_am-720.webp" width="720" height="900" alt="Top Democrats call to rein in AI buildout after midterms sweep: &#x27;National data center moratorium now&#x27;" loading=lazy decoding="async"></a>
+<div class="card-body"><div class="meta"><span class="pill" style="--c:var(--cat-policy)">Policy</span><time datetime="2026-11-06">Nov 6</time></div>
+<h3 class="card-title"><a href="/news/top-democrats-call-to-rein-in/">Top Democrats call to rein in AI buildout after midterms sweep: &#x27;National data center moratorium now&#x27;</a></h3><p class="card-sum">Democrats are calling for a national data center moratorium after midterm victories, citing voter opposition.</p></div></article><article class="card"><a class="card-img" href="/news/finding-new-drugs-is-laborious-this/" tabindex="-1" aria-hidden="true"><img class="thumb" src="img/aifeed_finding-new-drugs-is-laborious-this_20261105_pm-720.webp" width="720" height="900" alt="Finding New Drugs Is Laborious. This AI Startup Is Skipping The Lab Work" loading=lazy decoding="async"></a>
+<div class="card-body"><div class="meta"><span class="pill" style="--c:var(--cat-models)">Models</span><time datetime="2026-11-05">Nov 5</time></div>
+<h3 class="card-title"><a href="/news/finding-new-drugs-is-laborious-this/">Finding New Drugs Is Laborious. This AI Startup Is Skipping The Lab Work</a></h3><p class="card-sum">Potential Sciences raises tens of millions to train AI models on simulated chemistry data for faster drug discovery.</p></div></article></div></section>
+<section class="wrap topics" aria-labelledby="tp-t"><h2 id="tp-t" class="section-h">Browse by topic</h2>
+<div class="topic-grid"><a class="topic" style="--c:var(--cat-models)" href="/news/topics/models/"><span class="topic-dot"></span><span class="topic-name">Models</span><span class="topic-n">17 stories</span></a><a class="topic" style="--c:var(--cat-tools)" href="/news/topics/tools/"><span class="topic-dot"></span><span class="topic-name">Tools</span><span class="topic-n">17 stories</span></a><a class="topic" style="--c:var(--cat-policy)" href="/news/topics/policy/"><span class="topic-dot"></span><span class="topic-name">Policy</span><span class="topic-n">18 stories</span></a><a class="topic" style="--c:var(--cat-safety)" href="/news/topics/safety/"><span class="topic-dot"></span><span class="topic-name">Safety</span><span class="topic-n">30 stories</span></a><a class="topic" style="--c:var(--cat-business)" href="/news/topics/business/"><span class="topic-dot"></span><span class="topic-name">Business</span><span class="topic-n">37 stories</span></a><a class="topic" style="--c:var(--cat-research)" href="/news/topics/research/"><span class="topic-dot"></span><span class="topic-name">Research</span><span class="topic-n">23 stories</span></a></div></section>
+<div class="wrap"><section class="follow-card" aria-labelledby="fw-t"><h2 id="fw-t" class="h-sm">Follow AIFeed.run</h2>
+<p class="muted">New stories land on Instagram, Facebook and LinkedIn first.</p>
+<div class="follow-row"><a class="follow-btn f-instagram" href="https://instagram.com/aifeed.run"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg><span>@aifeed.run</span></a><a class="follow-btn f-facebook" href="https://www.facebook.com/profile.php?id=61594868144059"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg><span>Facebook</span></a><a class="follow-btn f-linkedin" href="https://www.linkedin.com/company/aifeed-run"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg><span>LinkedIn</span></a></div></section></div>
+</main><footer class="site-footer"><div class="wrap ftr">
+<div class="ftr-brand"><a class="wordmark" href="/" aria-label="AIFeed.run home"><span class="w-ai">AI</span><span class="w-feed">Feed</span><span class="w-run">.run</span></a><p class="muted">The AI news that matters, with the source on every story.</p></div>
+<nav class="ftr-links" aria-label="Footer"><a href="/news/">All stories</a><a href="/news/topics/">Topics</a><a href="/subscribe/">Newsletter</a><a href="/about/">About</a><a href="/faq/">FAQ</a><a href="/privacy/">Privacy</a></nav>
+<div class="ftr-social"><a class="icon-btn" href="https://instagram.com/aifeed.run" aria-label="AIFeed.run on Instagram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a><a class="icon-btn" href="https://www.facebook.com/profile.php?id=61594868144059" aria-label="AIFeed.run on Facebook"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a><a class="icon-btn" href="https://www.linkedin.com/company/aifeed-run" aria-label="AIFeed.run on LinkedIn"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div>
+<p class="ftr-copy muted">© 2026 AIFeed.run</p></div></footer></body></html>
