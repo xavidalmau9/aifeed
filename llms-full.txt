@@ -1,8 +1,8 @@
 # AIFeed.run AI News
 
-> The AI news that matters. Top AI stories from OpenAI, Google, Anthropic, Nvidia and more, explained in 60 seconds.
+> The AI news that matters. Big AI stories in plain English, with the source on every one.
 
-AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI news on aifeed.run, Instagram @aifeed.run, Facebook, and LinkedIn. Stories are selected and written by AI systems. We do not claim human editors rewrite the news. A free weekly AI brief is available at https://aifeed.run/subscribe/.
+AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI news on aifeed.run, Instagram @aifeed.run, Facebook, and LinkedIn. Stories are selected and written by AI systems. We do not claim human editors rewrite the news. A free weekly newsletter is available at https://aifeed.run/subscribe/.
 
 ## Site
 - Home: https://aifeed.run/

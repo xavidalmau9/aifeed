@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:aifeed="https://aifeed.run/ns/1.0"><channel>
 <title>AIFeed.run AI News — The AI news that matters.</title>
 <link>https://aifeed.run/</link>
-<description>The AI news that matters. Top AI stories, explained in 60 seconds.</description>
+<description>The biggest AI stories in plain English, with the original source on every one.</description>
 <language>en-us</language>
 <atom:link href="https://aifeed.run/feed.xml" rel="self" type="application/rss+xml" />
 <item><title>How AI security failures are endangering your supply chain – and what you can do</title><link>https://aifeed.run/news/how-ai-security-failures-are-endangering/</link><guid isPermaLink="true">https://aifeed.run/news/how-ai-security-failures-are-endangering/</guid><pubDate>Wed, 11 Nov 2026 13:07:39 +0000</pubDate><description>Black Kite research finds widespread cybersecurity weaknesses across AI suppliers, exposing enterprise networks to critical vulnerabilities.</description><category>Safety</category><aifeed:sourceName>ZDNET</aifeed:sourceName><aifeed:sourceUrl>https://www.zdnet.com/tech/ai-security-failures-supply-chain-risks-black-kite-research/</aifeed:sourceUrl><enclosure url="https://aifeed.run/images/aifeed_how-ai-security-failures-are-endangering_20261111_am.png" type="image/png" length="0" /></item>
