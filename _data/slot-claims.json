@@ -581,8 +581,10 @@
       "tried": []
     },
     "2026-11-13:2": {
-      "status": "claimed",
-      "at": "2026-11-13T22:05:04.823Z",
+      "slug": "ai-chatbots-are-recommending-fake-retail",
+      "image": "aifeed_ai-chatbots-are-recommending-fake-retail_20261113_pm.png",
+      "status": "posted",
+      "at": "2026-11-13T22:12:55.806Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
