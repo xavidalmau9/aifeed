@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Jensen Huang Resigns as Nvidia CEO",
-    "link": "https://www.wired.com/story/nvidia-ceo-jensen-huang-steps-down/",
+    "headline": "Nvidia CEO Jensen Huang has resigned",
+    "link": "https://arstechnica.com/gadgets/2026/11/ceo-jensen-huangs-job-is-suddenly-on-the-line-at-nvidia/",
     "score": 98,
-    "reason": "Major leadership change at most valuable AI company; concrete fact with massive market implications"
+    "reason": "Major leadership change at world's most valuable chip company; massive market impact ($1.7T stock loss documented)"
   },
   {
     "rank": 2,
-    "headline": "Nvidia on track for longest weekly losing streak since 2012 as market value sinks by $1.6 trillion",
+    "headline": "Nvidia stock suffers longest weekly losing streak since 2012 as market value sinks by $1.7 trillion",
     "link": "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html",
-    "score": 96,
-    "reason": "Big numbers ($1.6T market loss); quantified impact of leadership crisis on AI sector"
+    "score": 97,
+    "reason": "Quantified financial impact; largest single-company market cap loss in recent history"
   },
   {
     "rank": 3,
-    "headline": "Google’s new Gemini model is better at understanding complicated questions",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
-    "score": 85,
-    "reason": "Product launch/upgrade from major AI company with measurable capability improvement"
+    "headline": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+    "score": 89,
+    "reason": "Major OpenAI product launch; AI agents with real financial transaction capability"
   },
   {
     "rank": 4,
-    "headline": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
-    "link": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html",
+    "headline": "Google announces Gemini 4 Hydrogen with ‘significant leaps’ in speed, intelligence",
+    "link": "https://9to5google.com/2026/11/12/gemini-4-hydrogen-launch/",
     "score": 87,
-    "reason": "Major controversy expanding to government level; concrete action (testimony)"
+    "reason": "Google major model release; new version launch with claimed capability improvements"
   },
   {
     "rank": 5,
-    "headline": "ByteDance is reportedly working on its own AI agent",
-    "link": "https://www.engadget.com/2314064/bytedance-is-reportedly-working-on-its-own-ai-agent/",
-    "score": 78,
-    "reason": "New product development from major tech company; competitive landscape shift"
+    "headline": "Claude’s Duet agent is a little neurotic and surprisingly helpful",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+    "score": 85,
+    "reason": "Anthropic agent launch; practical demonstration of multi-turn AI collaboration"
   },
   {
     "rank": 6,
-    "headline": "Google brings the Gemini app to Apple CarPlay",
-    "link": "https://www.engadget.com/2314093/google-brings-the-gemini-app-to-apple-carplay/",
-    "score": 76,
-    "reason": "Cross-platform product expansion; concrete launch"
+    "headline": "Google now lets people connect Gemini to their bank accounts",
+    "link": "https://www.engadget.com/2316384/google-now-lets-people-connect-gemini-to-their-bank-accounts/",
+    "score": 84,
+    "reason": "Major financial integration feature; Google expanding AI into personal finance"
   },
   {
     "rank": 7,
-    "headline": "Meta's Muse can now make calls on your behalf (if you have a paid subscription)",
-    "link": "https://www.engadget.com/2315525/metas-muse-can-now-make-calls-on-your-behalf-if-you-have-a-paid-subscription/",
-    "score": 74,
-    "reason": "New AI agent capability launch; revenue-generating feature"
+    "headline": "Exclusive: OpenAI disbands its stand-alone robotics team as its general models start running robots",
+    "link": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+    "score": 83,
+    "reason": "Strategic pivot; consolidation of robotics efforts into general models"
   },
   {
     "rank": 8,
-    "headline": "More game developers are starting to use generative AI",
-    "link": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
-    "score": 72,
-    "reason": "Industry trend with adoption numbers; AI application expansion"
+    "headline": "AI risks are the biggest threat to the financial system, Fed survey finds",
+    "link": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
+    "score": 81,
+    "reason": "Official regulatory concern; Federal Reserve identifies AI as top systemic risk"
   },
   {
     "rank": 9,
-    "headline": "Hasbro Is Using AI to Bring Characters to Life — With Limits",
-    "link": "https://www.cnet.com/tech/services-and-software/hasbro-sixth-wall-studio-ai-characters/",
-    "score": 70,
-    "reason": "Major brand AI implementation; concrete enterprise adoption"
+    "headline": "Bloomberg details web of Chinese AI companies with smuggled NVIDIA chips linked to Alice Huang",
+    "link": "https://www.engadget.com/2315710/bloomberg-details-web-of-chinese-ai-companies-with-smuggled-nvidia-chips-linked-to-alice-huang/",
+    "score": 80,
+    "reason": "Geopolitical/espionage story; documented supply chain breach with named individuals"
   },
   {
     "rank": 10,
-    "headline": "More autonomy, fewer NDAs: Volunteers have new requests for brain implant trials",
-    "link": "https://www.technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials/",
+    "headline": "AI chatbots are recommending fake retail websites, study finds",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+    "score": 78,
+    "reason": "Documented vulnerability; AI systems actively generating harmful misinformation"
+  },
+  {
+    "rank": 11,
+    "headline": "Microsoft 365 Crawls Back to Life After a 24-Hour Outage",
+    "link": "https://www.wired.com/story/microsoft-365-crawls-back-to-life-after-a-24-hour-outage/",
+    "score": 76,
+    "reason": "Major service disruption; significant business impact"
+  },
+  {
+    "rank": 12,
+    "headline": "Google DeepMind Staff Tap the UK Government to Escalate Their Unionization Fight",
+    "link": "https://www.wired.com/story/google-deepmind-staff-escalate-their-union-fight/",
+    "score": 75,
+    "reason": "Labor organizing in AI; unionization effort at leading research lab"
+  },
+  {
+    "rank": 13,
+    "headline": "AI Layoffs Risk Triggering 1.6 Million More US Job Losses",
+    "link": "https://www.cnet.com/tech/services-and-software/ai-tech-layoffs-2026-trigger-recession/",
+    "score": 74,
+    "reason": "Quantified economic impact; large-scale job displacement projection"
+  },
+  {
+    "rank": 14,
+    "headline": "Google Wallet just turned your Android phone into a digital house key – how it works",
+    "link": "https://www.zdnet.com/home-and-office/google-wallet-digital-home-keys-smart-locks/",
+    "score": 72,
+    "reason": "Google feature launch; expanding digital payment/identity infrastructure"
+  },
+  {
+    "rank": 15,
+    "headline": "Adobe Max 2026: AI Agents, Video Editing and More Creative News",
+    "link": "https://www.cnet.com/news-live/adobe-max-2026-live-updates-all-the-ai-photo-and-video-news/",
+    "score": 70,
+    "reason": "Adobe major feature announcements; AI agents in creative tools"
+  },
+  {
+    "rank": 16,
+    "headline": "Zelenskyy says Starshield has been slowed again, endangering Ukraine's defense",
+    "link": "https://www.engadget.com/2315072/zelenskyy-says-starshield-has-been-slowed-again-endangering-ukraine-defense/",
+    "score": 69,
+    "reason": "Geopolitical impact; Starlink/Starshield service degradation in active conflict"
+  },
+  {
+    "rank": 17,
+    "headline": "Analysis: Nvidia’s leadership crisis tests the chipmaker’s role as the ‘central bank of AI’",
+    "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
     "score": 68,
-    "reason": "Policy change in emerging AI/neurotechnology; documented progress"
+    "reason": "Systemic analysis; Nvidia's critical infrastructure role examined"
+  },
+  {
+    "rank": 18,
+    "headline": "Animaj Brings ‘Ozzy Fox’ Series to Disney Plus as It Charts a Path for AI in Animation",
+    "link": "https://www.cnet.com/tech/services-and-software/animaj-ozzy-fox-series-disney-plus-ai-agentic-animation/",
+    "score": 66,
+    "reason": "Major studio adoption; AI-generated animation in mainstream content"
+  },
+  {
+    "rank": 19,
+    "headline": "The AI boom will survive without Jensen Huang, but there's a $500 billion funding hole to fill",
+    "link": "https://www.axios.com/2026/11/13/ai-boom-without-jensen-huang-nvidia",
+    "score": 65,
+    "reason": "Quantified funding gap; macro-level AI industry impact assessment"
+  },
+  {
+    "rank": 20,
+    "headline": "Scott Bessent says Treasury wanted to blacklist Megaspeed 'for months,' blaming Howard Lutnick as Nvidia fallout widens: 'Commerce has the pen'",
+    "link": "https://fortune.com/2026/11/13/scott-bessent-treasury-blacklist-megaspeed-howard-lutnick-nvidia-jensen-huang/",
+    "score": 63,
+    "reason": "Government action; Treasury involvement in Nvidia scandal expansion"
   }
 ]
