@@ -33,6 +33,7 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - LinkedIn: https://www.linkedin.com/company/aifeed-run
 
 ## Recent stories
+- [AI chatbots are recommending fake retail websites, study finds](https://aifeed.run/news/ai-chatbots-are-recommending-fake-retail/) — Study finds ChatGPT, Gemini, and Perplexity displayed risky retail websites in up to 15% of shopping queries.
 - [I’m Begging You, Don’t Let AI Bots Manage Your Money](https://aifeed.run/news/im-begging-you-dont-let-ai/) — Banks including Charles Schwab, Wells Fargo, and Ally are blocking AI agents from accessing customer financial accounts.
 - [Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility](https://aifeed.run/news/nvidia-privately-confirmed-it-could-track/) — Nvidia privately told lawmakers it could implement chip-tracking measures while the industry publicly called them infeasible.
 - [How AI security failures are endangering your supply chain – and what you can do](https://aifeed.run/news/how-ai-security-failures-are-endangering/) — Black Kite research finds widespread cybersecurity weaknesses across AI suppliers, exposing enterprise networks to critical vulnerabilities.
@@ -72,4 +73,3 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - [American Express is cutting 5% of its workforce to 'prepare for AI'](https://aifeed.run/news/american-express-is-cutting-of-its/) — American Express is cutting 5% of its 77,000-person workforce and taking a $336 million charge to prepare for AI automation.
 - [AI's 'Black October': Critical PHP flaws set off global security scramble](https://aifeed.run/news/ais-black-october-critical-php-flaws/) — Cybersecurity teams rush to patch critical PHP vulnerabilities discovered by AI researchers affecting nearly 70% of websites.
 - [Hugging Face’s New AI Biology Model Lets You Chat With DNA](https://aifeed.run/news/hugging-faces-new-ai-biology-model/) — Hugging Face released Carbon-X, an open-source AI model enabling conversational queries about DNA effects on gene activity and health.
-- [Microsoft says its AI tool is better than doctors at diagnosing conditions](https://aifeed.run/news/microsoft-says-its-ai-tool-is/) — Microsoft's Diagnostic Orchestrator achieved 83% accuracy diagnosing rare cases versus 36% for human doctors, pending clinical validation.
