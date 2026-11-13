@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Nvidia CEO Jensen Huang has resigned. What happens next?",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+    "headline": "Jensen Huang Resigns as Nvidia CEO",
+    "link": "https://www.wired.com/story/nvidia-ceo-jensen-huang-steps-down/",
     "score": 98,
-    "reason": "Major leadership crisis at $3T+ company with immediate market impact"
+    "reason": "Major leadership change at most valuable AI company; concrete fact with massive market implications"
   },
   {
     "rank": 2,
-    "headline": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
-    "link": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
-    "score": 92,
-    "reason": "Significant controversy: company misrepresented capabilities publicly"
+    "headline": "Nvidia on track for longest weekly losing streak since 2012 as market value sinks by $1.6 trillion",
+    "link": "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html",
+    "score": 96,
+    "reason": "Big numbers ($1.6T market loss); quantified impact of leadership crisis on AI sector"
   },
   {
     "rank": 3,
-    "headline": "Google announces Gemini 4 Hydrogen with ‘significant leaps’ in speed, intelligence",
-    "link": "https://9to5google.com/2026/11/12/gemini-4-hydrogen-launch/",
-    "score": 88,
-    "reason": "Major product launch from top AI player with performance claims"
+    "headline": "Google’s new Gemini model is better at understanding complicated questions",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+    "score": 85,
+    "reason": "Product launch/upgrade from major AI company with measurable capability improvement"
   },
   {
     "rank": 4,
-    "headline": "AI Layoffs Risk Triggering 1.6 Million More US Job Losses",
-    "link": "https://www.cnet.com/tech/services-and-software/ai-tech-layoffs-2026-trigger-recession/",
+    "headline": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
+    "link": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html",
     "score": 87,
-    "reason": "Big number impact: 1.6M potential job losses from AI displacement"
+    "reason": "Major controversy expanding to government level; concrete action (testimony)"
   },
   {
     "rank": 5,
-    "headline": "AI chatbots are recommending fake retail websites, study finds",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
-    "score": 85,
-    "reason": "Concrete failure mode: chatbots generating harmful misinformation"
+    "headline": "ByteDance is reportedly working on its own AI agent",
+    "link": "https://www.engadget.com/2314064/bytedance-is-reportedly-working-on-its-own-ai-agent/",
+    "score": 78,
+    "reason": "New product development from major tech company; competitive landscape shift"
   },
   {
     "rank": 6,
-    "headline": "United is restricting AI agents from booking flights",
-    "link": "https://www.engadget.com/2314121/united-is-restricting-ai-agents-from-booking-flights/",
-    "score": 82,
-    "reason": "Major company rejecting AI solution due to reliability issues"
+    "headline": "Google brings the Gemini app to Apple CarPlay",
+    "link": "https://www.engadget.com/2314093/google-brings-the-gemini-app-to-apple-carplay/",
+    "score": 76,
+    "reason": "Cross-platform product expansion; concrete launch"
   },
   {
     "rank": 7,
-    "headline": "Claude can collaborate in your team meetings soon – like an intern",
-    "link": "https://www.zdnet.com/innovation/claude-meetings-workplace-features/",
-    "score": 80,
-    "reason": "Anthropic expanding into workplace automation category"
+    "headline": "Meta's Muse can now make calls on your behalf (if you have a paid subscription)",
+    "link": "https://www.engadget.com/2315525/metas-muse-can-now-make-calls-on-your-behalf-if-you-have-a-paid-subscription/",
+    "score": 74,
+    "reason": "New AI agent capability launch; revenue-generating feature"
   },
   {
     "rank": 8,
-    "headline": "Ukrainian defense tech startup hits $6 billion valuation as investors bet on battle-tested drones",
-    "link": "https://www.cnbc.com/2026/11/12/uforce-defense-tech-drones-warfare-ukraine.html",
-    "score": 79,
-    "reason": "Big valuation milestone for AI-powered defense applications"
+    "headline": "More game developers are starting to use generative AI",
+    "link": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
+    "score": 72,
+    "reason": "Industry trend with adoption numbers; AI application expansion"
   },
   {
     "rank": 9,
-    "headline": "No, AI agents did not discover a previously unknown Maya site",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
-    "score": 78,
-    "reason": "Debunking false AI capability claim (meets 'reject speculation' by validating false claims)"
+    "headline": "Hasbro Is Using AI to Bring Characters to Life — With Limits",
+    "link": "https://www.cnet.com/tech/services-and-software/hasbro-sixth-wall-studio-ai-characters/",
+    "score": 70,
+    "reason": "Major brand AI implementation; concrete enterprise adoption"
   },
   {
     "rank": 10,
-    "headline": "Google DeepMind Staff Tap the UK Government to Escalate Their Unionization Fight",
-    "link": "https://www.wired.com/story/google-deepmind-staff-escalate-their-union-fight/",
-    "score": 76,
-    "reason": "First major unionization effort in AI research"
-  },
-  {
-    "rank": 11,
-    "headline": "A Startup Wants to Fight AI Bioweapons With AI",
-    "link": "https://www.wired.com/story/startup-fights-ai-bioweapons-with-ai/",
-    "score": 74,
-    "reason": "Emerging controversy around dual-use AI applications"
-  },
-  {
-    "rank": 12,
-    "headline": "Jensen Huang&apos;s affair with alleged spy revives push to tighten China chip curbs ahead of Trump-Xi summit",
-    "link": "https://www.cnbc.com/2026/11/12/nvidia-trump-jensen-chip-export-controls-china-xi-.html",
-    "score": 73,
-    "reason": "Geopolitical controversy with concrete policy implications"
-  },
-  {
-    "rank": 13,
-    "headline": "Adobe Max 2026: AI Agents, Video Editing and More Creative News",
-    "link": "https://www.cnet.com/news-live/adobe-max-2026-live-updates-all-the-ai-photo-and-video-news/",
-    "score": 71,
-    "reason": "Major creative tools company expanding AI agent capabilities"
-  },
-  {
-    "rank": 14,
-    "headline": "Read Nvidia’s internal emails about the ‘extraordinarily difficult period’ amid CEO shakeup",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1032028/read-nvidias-internal-emails-jensen-huang",
-    "score": 70,
-    "reason": "Internal documents showing crisis scope at major AI infrastructure player"
-  },
-  {
-    "rank": 15,
-    "headline": "Google Wallet just turned your Android phone into a digital house key – how it works",
-    "link": "https://www.zdnet.com/home-and-office/google-wallet-digital-home-keys-smart-locks/",
+    "headline": "More autonomy, fewer NDAs: Volunteers have new requests for brain implant trials",
+    "link": "https://www.technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials/",
     "score": 68,
-    "reason": "Consumer AI/ML integration milestone from tech giant"
-  },
-  {
-    "rank": 16,
-    "headline": "Meet Colette Kress, Nvidia’s New Interim CEO",
-    "link": "https://www.wired.com/story/who-is-colette-kress-the-woman-who-could-succeed-jensen-huang/",
-    "score": 67,
-    "reason": "Leadership succession at critical moment for AI infrastructure"
-  },
-  {
-    "rank": 17,
-    "headline": "Google Expands Gemini 4 Carbon Availability",
-    "link": "https://www.cnet.com/tech/services-and-software/google-expands-gemini-4-carbon-availability/",
-    "score": 65,
-    "reason": "Expansion of major AI model to broader user base"
-  },
-  {
-    "rank": 18,
-    "headline": "I’m Begging You, Don’t Let AI Bots Manage Your Money",
-    "link": "https://www.cnet.com/tech/services-and-software/please-dont-let-an-ai-bot-log-into-your-bank-account/",
-    "score": 63,
-    "reason": "Concrete failure mode in financial services AI application"
-  },
-  {
-    "rank": 19,
-    "headline": "Before Megaspeed, there was Supermicro: The other Nvidia partner tied to China chip smuggling—and to Jensen Huang",
-    "link": "https://fortune.com/2026/11/12/jensen-huang-affair-megaspeed-supermicro-nvidia-smuggling-doj/",
-    "score": 61,
-    "reason": "Pattern of China smuggling concerns affecting AI chip supply"
-  },
-  {
-    "rank": 20,
-    "headline": "China&apos;s Ministry of State Security thrust into the spotlight by Nvidia CEO affair",
-    "link": "https://www.cnbc.com/2026/11/12/china-ministry-state-security-nvidia-ceo.html",
-    "score": 59,
-    "reason": "Geopolitical implications of Chinese intelligence involvement in AI industry"
+    "reason": "Policy change in emerging AI/neurotechnology; documented progress"
   }
 ]
