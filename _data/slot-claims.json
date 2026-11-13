@@ -570,8 +570,12 @@
     "2026-11-13:1": {
       "slug": "im-begging-you-dont-let-ai",
       "image": "aifeed_im-begging-you-dont-let-ai_20261113_am.png",
+      "reelTemplate": "v3",
+      "hookStyle": "",
+      "igReelId": "18128697541925245",
+      "igPermalink": "https://www.instagram.com/reel/Dfrt0WYgeRU/",
       "status": "posted",
-      "at": "2026-11-13T13:12:53.382Z",
+      "at": "2026-11-13T13:16:13.489Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
