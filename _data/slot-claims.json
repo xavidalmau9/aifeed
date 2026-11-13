@@ -583,8 +583,12 @@
     "2026-11-13:2": {
       "slug": "ai-chatbots-are-recommending-fake-retail",
       "image": "aifeed_ai-chatbots-are-recommending-fake-retail_20261113_pm.png",
+      "reelTemplate": "v3",
+      "hookStyle": "",
+      "igReelId": "18249829357313889",
+      "igPermalink": "https://www.instagram.com/reel/Dfsrr-zjqDU/",
       "status": "posted",
-      "at": "2026-11-13T22:12:55.806Z",
+      "at": "2026-11-13T22:16:50.847Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
