@@ -1,5 +1,25 @@
 [
   {
+    "id": "ai-chatbots-are-recommending-fake-retail-20261113",
+    "slug": "ai-chatbots-are-recommending-fake-retail",
+    "headline": "AI chatbots are recommending fake retail websites, study finds",
+    "summary": "Study finds ChatGPT, Gemini, and Perplexity displayed risky retail websites in up to 15% of shopping queries.",
+    "body": "<p>Study finds AI chatbots displayed risky retail websites in up to 15 percent of shopping conversations.</p>\n<p>IP protection firm Podqi conducted a study testing ChatGPT, Gemini, and Perplexity by prompting them with shopping questions about 151 brands. Across 6,795 answers, researchers found that all three engines cited and displayed risky sites to shoppers, defined as fake websites impersonating retailers, knockoffs, reregistered old domains, or dead sites.</p>\n<p>Performance varied among the three models. Perplexity displayed risky sites in 15% of answers, ChatGPT in 8%, and Google's Gemini in 4%. ChatGPT performed best at warning users about risky sites when surfacing them, doing so 24% of the time.</p>\n<p>Smaller brands appeared especially at risk. Queries related to larger companies had risky sites in answers about half as often as queries about smaller brands.</p>\n<p>Podqi CEO Trevor West stated that consumers should verify the source of information before entering personal or credit card details, even when fed results by chatbots.</p>\n<p>Google and OpenAI responded to the findings. Google said Gemini performed best among tested products and displays source links to help verification. OpenAI stated it aims to connect people with reliable shopping places and is improving safeguards to reduce deceptive sites in shopping results.</p>\n<p>Study finds AI chatbots displayed risky retail websites in up to 15% of answers, raising holiday shopping safety concerns.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_ai-chatbots-are-recommending-fake-retail_20261113_pm.png",
+    "image": "images/aifeed_ai-chatbots-are-recommending-fake-retail_20261113_pm.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+    "publishedAt": "2026-11-13T22:07:28.093Z",
+    "hashtags": [
+      "AIchatbots",
+      "ChatGPT",
+      "Gemini",
+      "Perplexity",
+      "OnlineSafety"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "im-begging-you-dont-let-ai-20261113",
     "slug": "im-begging-you-dont-let-ai",
     "headline": "I’m Begging You, Don’t Let AI Bots Manage Your Money",
