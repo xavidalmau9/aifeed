@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-13T13:08:02.234Z",
+      "date": "2026-11-13",
+      "slot": 1,
+      "headline": "I’m Begging You, Don’t Let AI Bots Manage Your Money",
+      "canonUrl": "cnet.com/tech/services-and-software/please-dont-let-an-ai-bot-log-into-your-bank-account",
+      "url": "https://www.cnet.com/tech/services-and-software/please-dont-let-an-ai-bot-log-into-your-bank-account/",
+      "slug": "im-begging-you-dont-let-ai",
+      "image": "aifeed_im-begging-you-dont-let-ai_20261113_am.png",
+      "photo": {
+        "dhash": "834e8ca727131307",
+        "phash": "597c44d791552cab",
+        "hist": [
+          14,
+          7,
+          5,
+          6,
+          0,
+          0,
+          1,
+          44,
+          0,
+          0,
+          0,
+          32,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          2,
+          7,
+          1,
+          1,
+          0,
+          0,
+          0,
+          24,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          2,
+          0,
+          0,
+          5,
+          9,
+          4,
+          0,
+          0,
+          0,
+          55,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          14,
+          0,
+          0,
+          0,
+          16,
+          729
+        ],
+        "url": "https://www.cnet.com/wp-content/uploads/sites/2/GettyImages-2299572954.jpg",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-11-12T22:07:37.862Z",
       "date": "2026-11-12",
       "slot": 2,
@@ -5730,68 +5812,6 @@
     }
   ],
   "rankings": {
-    "2026-10-28": [
-      {
-        "rank": 1,
-        "title": "AI Emergency Alerts Are Coming. Humans Might Not Be Ready",
-        "canonUrl": "wired.com/story/ai-emergency-alerts-coming-humans-not-ready"
-      },
-      {
-        "rank": 2,
-        "title": "VisionQuest is what happens when AI really goes rogue",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai"
-      },
-      {
-        "rank": 3,
-        "title": "UK Home Office May Face Investigation Over Use of OpenAI Tech",
-        "canonUrl": "wired.com/story/uk-home-office-may-face-investigation-over-use-of-openai-tools"
-      },
-      {
-        "rank": 4,
-        "title": "Should AI Decide Your Court Case? This Judge Says Yes",
-        "canonUrl": "wired.com/story/geoffrey-vos-uk-judge-ai-legal-profession-challenges"
-      },
-      {
-        "rank": 5,
-        "title": "Your Robot’s Safety Functions Already Work. What If the Input Lies?",
-        "canonUrl": "spectrum.ieee.org/ai-robot-safety-cybersecurity-vicone"
-      },
-      {
-        "rank": 6,
-        "title": "Look Out for Political Deepfakes and Scams This Midterm Election Season",
-        "canonUrl": "cnet.com/tech/services-and-software/spot-2026-midterm-election-deepfakes-scams"
-      },
-      {
-        "rank": 7,
-        "title": "I Used AI to Fake a Scientific Paper. Here’s What Happened",
-        "canonUrl": "spectrum.ieee.org/ai-generated-scientific-papers"
-      },
-      {
-        "rank": 8,
-        "title": "This tool can recover deleted AI chats from your phone – how it works",
-        "canonUrl": "zdnet.com/innovation/orisa-tool-recovers-deleted-local-ai-chats-android-phones"
-      },
-      {
-        "rank": 9,
-        "title": "Anthropic, Suno Sued for Unlawfully Using Songs by Madonna, Johnny Cash, Joni Mitchell",
-        "canonUrl": "cnet.com/tech/services-and-software/anthropic-suno-sued-using-songs-madonna-johnny-cash-joni-mitchell"
-      },
-      {
-        "rank": 10,
-        "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics"
-      },
-      {
-        "rank": 11,
-        "title": "Walmart says AI training is boosting confidence with the technology among its 2.1 million associates",
-        "canonUrl": "cnbc.com/2026/10/27/walmart-ai-training-workers.html"
-      },
-      {
-        "rank": 12,
-        "title": "Pairing industrial AI autonomy and human control",
-        "canonUrl": "technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control"
-      }
-    ],
     "2026-10-29": [
       {
         "rank": 1,
@@ -6506,6 +6526,58 @@
         "rank": 12,
         "title": "Photoshop, Lightroom, and Premiere are making it easier to remove things",
         "canonUrl": "theverge.com/tech/1030653/adobe-max-2026-photoshop-premiere-removal-updates"
+      }
+    ],
+    "2026-11-13": [
+      {
+        "rank": 1,
+        "title": "AI chatbots are recommending fake retail websites, study finds",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations"
+      },
+      {
+        "rank": 2,
+        "title": "I’m Begging You, Don’t Let AI Bots Manage Your Money",
+        "canonUrl": "cnet.com/tech/services-and-software/please-dont-let-an-ai-bot-log-into-your-bank-account"
+      },
+      {
+        "rank": 3,
+        "title": "What to Learn About Meta’s Muse AI Before It Learns Too Much About You",
+        "canonUrl": "cnet.com/tech/services-and-software/metas-muse-mascot-agentic-ai-privacy-violations-security-data"
+      },
+      {
+        "rank": 4,
+        "title": "AI Layoffs Risk Triggering 1.6 Million More US Job Losses",
+        "canonUrl": "cnet.com/tech/services-and-software/ai-tech-layoffs-2026-trigger-recession"
+      },
+      {
+        "rank": 5,
+        "title": "More autonomy, fewer NDAs: Volunteers have new requests for brain implant trials",
+        "canonUrl": "technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials"
+      },
+      {
+        "rank": 6,
+        "title": "You can force Gemini to forget about you now – how to edit its Memory",
+        "canonUrl": "zdnet.com/innovation/google-gemini-memory-summary-user-control"
+      },
+      {
+        "rank": 7,
+        "title": "How You Collaborate With AI on Creative Work Makes All the Difference",
+        "canonUrl": "cnet.com/tech/services-and-software/ai-collaboration-creative-work-research-findings"
+      },
+      {
+        "rank": 8,
+        "title": "Google DeepMind Staff Tap the UK Government to Escalate Their Unionization Fight",
+        "canonUrl": "wired.com/story/google-deepmind-staff-escalate-their-union-fight"
+      },
+      {
+        "rank": 9,
+        "title": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
+        "canonUrl": "cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html"
+      },
+      {
+        "rank": 10,
+        "title": "Hasbro Is Using AI to Bring Characters to Life — With Limits",
+        "canonUrl": "cnet.com/tech/services-and-software/hasbro-sixth-wall-studio-ai-characters"
       }
     ]
   }

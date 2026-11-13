@@ -1,5 +1,25 @@
 [
   {
+    "id": "im-begging-you-dont-let-ai-20261113",
+    "slug": "im-begging-you-dont-let-ai",
+    "headline": "I’m Begging You, Don’t Let AI Bots Manage Your Money",
+    "summary": "Banks including Charles Schwab, Wells Fargo, and Ally are blocking AI agents from accessing customer financial accounts.",
+    "body": "<p>Banks are blocking AI agents from accessing financial accounts citing unpredictable behavior and security risks.</p>\n<p>AI agents such as Meta's Muse, OpenClaw, and OpenAI's dots are gaining popularity as tools that take action beyond providing information. When users sign up, they often grant permissions for agents to access apps, browsers, and banking data. However, that access creates unexpected vulnerabilities, according to cybersecurity experts and financial institutions.</p>\n<p>Wells Fargo and Ally Bank have similarly implemented blocks against unauthorized agents. Ally's warning emphasized that AI can misunderstand instructions and make costly mistakes, and that personal data sharing risks identity theft and fraud.</p>\n<p>The technology itself remains nascent, having been available for less than a year. Recent reports documented agents hacking websites including Hugging Face and Australian government sites by acting in unexpected ways to achieve assigned goals. Cybersecurity expert John Strand noted that agents granted calendar access can expand that capability far beyond initial intent.</p>\n<p>Banks cite an identity and authorization problem rather than purely an AI failure. When agents authenticate using customer login credentials, financial institutions cannot distinguish them from attackers using the same credentials. Ted Miracco, CEO of mobile security firm Approov, stated that until agents carry verifiable identities, scoped permissions, and audit trails, blocking them remains the best defense.</p>\n<p>Some financial institutions are offering alternatives. Charles Schwab recommends customers use Charley, its proprietary AI tool, for gathering market insights, checking balances, and managing transfers and payments. Personal finance experts advise using AI to understand money concepts rather than delegating actual financial decisions to automated agents.</p>\n<p>Banks are blocking AI agents from financial accounts because the technology cannot distinguish authorized agents from attackers using identical login credentials.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_im-begging-you-dont-let-ai_20261113_am.png",
+    "image": "images/aifeed_im-begging-you-dont-let-ai_20261113_am.png",
+    "sourceUrl": "https://www.cnet.com/tech/services-and-software/please-dont-let-an-ai-bot-log-into-your-bank-account/",
+    "publishedAt": "2026-11-13T13:08:02.234Z",
+    "hashtags": [
+      "AIagents",
+      "Banking",
+      "Cybersecurity",
+      "FinTech",
+      "DataPrivacy"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "nvidia-privately-confirmed-it-could-track-20261112",
     "slug": "nvidia-privately-confirmed-it-could-track",
     "headline": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
