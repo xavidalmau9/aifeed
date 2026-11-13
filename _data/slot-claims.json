@@ -568,8 +568,10 @@
       "tried": []
     },
     "2026-11-13:1": {
-      "status": "claimed",
-      "at": "2026-11-13T13:04:55.963Z",
+      "slug": "im-begging-you-dont-let-ai",
+      "image": "aifeed_im-begging-you-dont-let-ai_20261113_am.png",
+      "status": "posted",
+      "at": "2026-11-13T13:12:53.382Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
