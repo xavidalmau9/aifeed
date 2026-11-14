@@ -609,8 +609,12 @@
     "2026-11-14:2": {
       "slug": "ai-risks-are-the-biggest-threat",
       "image": "aifeed_ai-risks-are-the-biggest-threat_20261114_pm.png",
+      "reelTemplate": "v3",
+      "hookStyle": "",
+      "igReelId": "18114320693238538",
+      "igPermalink": "https://www.instagram.com/reel/DfvQRQvgZaE/",
       "status": "posted",
-      "at": "2026-11-14T22:11:14.128Z",
+      "at": "2026-11-14T22:15:01.764Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
