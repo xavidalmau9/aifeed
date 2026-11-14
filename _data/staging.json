@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Nvidia CEO Jensen Huang Resigns, Creating a ‘Stress Test for the AI Boom’",
-    "link": "https://www.cnet.com/tech/services-and-software/nvidia-ceo-jensen-huang-resigns/",
-    "score": 98,
-    "reason": "Major leadership change at $4T+ company; massive market impact; concrete event not speculation"
+    "headline": "AI risks are the biggest threat to the financial system, Fed survey finds",
+    "link": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
+    "score": 92,
+    "reason": "Major institution (Federal Reserve) quantifies systemic risk; concrete data-driven finding"
   },
   {
     "rank": 2,
-    "headline": "Nvidia closes below $4T market cap for first time since July 2025 in Huang fallout",
-    "link": "https://www.cnbc.com/2026/11/13/nvidia-nvda-stock-jensen-huang-transition.html",
-    "score": 96,
-    "reason": "Quantified financial impact ($4T threshold); major controversy with measurable consequences"
+    "headline": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+    "score": 88,
+    "reason": "OpenAI product launch with concrete capability; autonomous purchasing agents"
   },
   {
     "rank": 3,
-    "headline": "OpenAI launches ChatGPT Wallet, allowing its &apos;dots&apos; AI agents to make purchases for users",
-    "link": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
-    "score": 92,
-    "reason": "Major product launch; significant capability expansion; concrete deliverable"
+    "headline": "Microsoft 365 Crawls Back to Life After a 24-Hour Outage",
+    "link": "https://www.wired.com/story/microsoft-365-crawls-back-to-life-after-a-24-hour-outage/",
+    "score": 85,
+    "reason": "Major infrastructure failure with measurable impact; enterprise-wide disruption"
   },
   {
     "rank": 4,
-    "headline": "Amazon has a plan to index the world’s online shopping data",
-    "link": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
-    "score": 89,
-    "reason": "Large-scale initiative from major company; ambitious scope; significant business move"
+    "headline": "Claude’s Duet agent is a little neurotic and surprisingly helpful",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+    "score": 81,
+    "reason": "Anthropic agent launch; demonstrates new AI capability"
   },
   {
     "rank": 5,
-    "headline": "Google’s new Gemini model is better at understanding complicated questions",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
-    "score": 87,
-    "reason": "Model capability improvement; concrete launch; measurable performance gains"
+    "headline": "The hottest job in AI right now may be counterintelligence as companies pay former spooks $500,000 to protect trade secrets",
+    "link": "https://fortune.com/2026/11/14/ai-industrial-espionage-counterintelligence-jobs-china-spying-nvidia-jensen-huang-pentagon-economic-warfare/",
+    "score": 79,
+    "reason": "Big number; demonstrates market response to AI security concerns"
   },
   {
     "rank": 6,
-    "headline": "Alice Huang tied to Nvidia’s biggest Chinese competitor",
-    "link": "https://www.cnbc.com/2026/11/12/alice-huang-jensen-huang-nvidia-huawei.html",
-    "score": 85,
-    "reason": "Geopolitical/espionage controversy; high-stakes conflict of interest; concrete scandal"
+    "headline": "I checked Gemini’s new Memory summary to see what it knew about me – how to see and edit yours",
+    "link": "https://www.zdnet.com/innovation/google-gemini-memory-summary-user-control/",
+    "score": 77,
+    "reason": "Google Gemini feature launch; privacy-relevant capability"
   },
   {
     "rank": 7,
-    "headline": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
-    "link": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html",
-    "score": 83,
-    "reason": "Government involvement escalation; congressional testimony; corruption angle"
+    "headline": "The AI boom will survive without Jensen Huang, but there's a $500 billion funding hole to fill",
+    "link": "https://www.axios.com/2026/11/13/ai-boom-without-jensen-huang-nvidia",
+    "score": 76,
+    "reason": "Massive financial figure; quantifies AI market impact"
   },
   {
     "rank": 8,
-    "headline": "Who is Colette Kress, NVIDIA's interim CEO?",
-    "link": "https://www.engadget.com/2315274/who-is-collette-kress-nvidia-ceo/",
-    "score": 81,
-    "reason": "Leadership transition; major company succession decision after Huang exit"
+    "headline": "Animaj Brings ‘Ozzy Fox’ Series to Disney Plus as It Charts a Path for AI in Animation",
+    "link": "https://www.cnet.com/tech/services-and-software/animaj-ozzy-fox-series-disney-plus-ai-agentic-animation/",
+    "score": 72,
+    "reason": "Major studio (Disney) deployment of AI in content production"
   },
   {
     "rank": 9,
-    "headline": "More autonomy, fewer NDAs: Volunteers have new requests for brain implant trials",
-    "link": "https://www.technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials/",
-    "score": 79,
-    "reason": "Neuralink/brain implant development; concrete policy shift; meaningful trials expansion"
+    "headline": "The Xiaomi 18 Pro's rear displays support Google apps, Spotify, and custom GenAI apps",
+    "link": "https://9to5google.com/2026/11/13/the-xiaomi-18-pros-rear-displays-support-google-apps-spotify-and-custom-genai-apps/",
+    "score": 68,
+    "reason": "Consumer device launch integrating generative AI"
   },
   {
     "rank": 10,
-    "headline": "No Pilots. Few Air Traffic Controllers. What Could Go Wrong?",
-    "link": "https://www.wired.com/story/no-pilots-few-air-traffic-controllers-what-could-go-wrong/",
-    "score": 77,
-    "reason": "AI automation controversy; safety concerns; high-stakes industry impact"
-  },
-  {
-    "rank": 11,
-    "headline": "Wealthy parents pay $75,000 for Alpha’s two-hour AI school day. Half of its K-8 students missed the math target",
-    "link": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/",
-    "score": 75,
-    "reason": "Quantified failure ($75K cost); concrete outcome metrics; education sector impact"
-  },
-  {
-    "rank": 12,
-    "headline": "Tech companies are betting big on AI shopping, but Americans may already have bot fatigue as 72% don't plan to use it for holiday gifts",
-    "link": "https://fortune.com/2026/11/14/ai-holiday-shopping-bank-of-america-survey-2026/",
-    "score": 73,
-    "reason": "Large consumer rejection (72%); market reality check; quantified adoption failure"
-  },
-  {
-    "rank": 13,
-    "headline": "The case of Nvidia and the growing risk of AI and corruption",
-    "link": "https://fortune.com/2026/11/14/ai-corruption-nvidia-export-controls-lutnick-susan-ariel-aaronson/",
-    "score": 71,
-    "reason": "Systemic corruption angle; high-stakes investigation; institutional risk"
-  },
-  {
-    "rank": 14,
-    "headline": "Nvidia’s turmoil is prompting a rotation across chip stocks. Here&apos;s what we know",
-    "link": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-affairs-amd-broadcom-tsmc.html",
-    "score": 69,
-    "reason": "Market-wide impact; quantifiable portfolio shifts; sector-level consequences"
-  },
-  {
-    "rank": 15,
-    "headline": "AI's four colliding crises",
-    "link": "https://www.axios.com/2026/11/14/ai-trust-nvidia-tech-stocks",
-    "score": 67,
-    "reason": "Multiple simultaneous systemic failures; industry-wide impact analysis"
-  },
-  {
-    "rank": 16,
-    "headline": "You can now set up Gemini's Google Wallet integration for ‘personal finance insights’",
-    "link": "https://9to5google.com/2026/11/13/gemini-google-wallet/",
+    "headline": "Delta CEO says air traffic control systems are so outdated that some commercial flight routes were faster in the 1950s than they are today",
+    "link": "https://fortune.com/article/delta-ceo-ed-bastian-air-traffic-control-systems-flight-routes-1950s-faa-modernization/",
     "score": 65,
-    "reason": "Google product launch; financial services integration; concrete feature"
-  },
-  {
-    "rank": 17,
-    "headline": "This Startup Is Betting on AI Microdramas to Get More Black Stories in Hollywood",
-    "link": "https://www.wired.com/story/black-roles-are-disappearing-in-hollywood-this-startup-is-using-ai-microdramas-to-fight-back/",
-    "score": 63,
-    "reason": "Novel AI application; creative industry disruption; specific use case"
-  },
-  {
-    "rank": 18,
-    "headline": "You can now tempt fate and give your banking information to ChatGPT",
-    "link": "https://www.engadget.com/2316137/you-can-now-tempt-fate-and-give-your-banking-information-to-chatgpt/",
-    "score": 61,
-    "reason": "OpenAI feature launch; financial services integration; security implications"
-  },
-  {
-    "rank": 19,
-    "headline": "Doctors want liability shield from AI mistakes",
-    "link": "https://www.axios.com/2026/11/13/doctors-ai-mistakes-liability-shield",
-    "score": 59,
-    "reason": "Broader ecosystem impact analysis; significant industry fallout"
-  },
-  {
-    "rank": 20,
-    "headline": "Why Singapore keeps turning up in the fight over Nvidia chips and China",
-    "link": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-alice-spy-megaspeed-.html",
-    "score": 57,
-    "reason": "Geopolitical supply chain conflict; regulatory/sanctions angle; international stakes"
+    "reason": "Infrastructure criticism with concrete comparison; relevant to AI modernization"
   }
 ]
