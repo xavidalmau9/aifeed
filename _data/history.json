@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-14T13:11:59.811Z",
+      "date": "2026-11-14",
+      "slot": 1,
+      "headline": "Beware the New AI-Fueled Ransomware Boom",
+      "canonUrl": "wired.com/story/beware-the-new-ai-fueled-ransomware-boom",
+      "url": "https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/",
+      "slug": "beware-the-new-aifueled-ransomware-boom",
+      "image": "aifeed_beware-the-new-aifueled-ransomware-boom_20261114_am.png",
+      "photo": {
+        "dhash": "792939b3d6d6ce8c",
+        "phash": "cccdc09933373167",
+        "hist": [
+          54,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          0,
+          0,
+          0,
+          20,
+          153,
+          32,
+          0,
+          0,
+          1,
+          28,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          2,
+          0,
+          0,
+          12,
+          4,
+          62,
+          1,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          259,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          336
+        ],
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Beware%5E_-_geograph.org.uk_-_3404015.jpg/1920px-Beware%5E_-_geograph.org.uk_-_3404015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "via": "Wikimedia Commons photo"
+      }
+    },
+    {
       "postedAt": "2026-11-13T22:07:28.093Z",
       "date": "2026-11-13",
       "slot": 2,
@@ -5894,68 +5976,6 @@
     }
   ],
   "rankings": {
-    "2026-10-29": [
-      {
-        "rank": 1,
-        "title": "Nvidia's $12.9 billion Hugging Face deal draws DOJ scrutiny",
-        "canonUrl": "cnbc.com/2026/10/28/doj-questions-nvidias-12point9-billion-hugging-face-deal.html"
-      },
-      {
-        "rank": 2,
-        "title": "Should AI Decide Your Court Case? This Judge Says Yes",
-        "canonUrl": "wired.com/story/geoffrey-vos-uk-judge-ai-legal-profession-challenges"
-      },
-      {
-        "rank": 3,
-        "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
-        "canonUrl": "theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
-      },
-      {
-        "rank": 4,
-        "title": "xAI is buying out homeowners who promise not to sue over data center noise",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit"
-      },
-      {
-        "rank": 5,
-        "title": "We urgently need to monitor AI agents’ actions in real time",
-        "canonUrl": "technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time"
-      },
-      {
-        "rank": 6,
-        "title": "Over 41,000 U.S. Homeland Security officials' details apparently exposed after massive data breach",
-        "canonUrl": "cnbc.com/2026/10/29/dhs-data-breach-ice-cdp-deportations.html"
-      },
-      {
-        "rank": 7,
-        "title": "Microsoft is ending Copilot support on smart TVs",
-        "canonUrl": "theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending"
-      },
-      {
-        "rank": 8,
-        "title": "Public Discord messages might start showing up in Google Search, unless users opt out",
-        "canonUrl": "9to5google.com/2026/10/28/discord-updates-server-web-pages-for-search"
-      },
-      {
-        "rank": 9,
-        "title": "Voters in Texas agree: They hate data centers",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1018676/data-center-midterm-election-energy-water-texas"
-      },
-      {
-        "rank": 10,
-        "title": "Macmillan Staff Say the Publisher Threw a Party for a Workplace AI Assistant That Was Later Killed",
-        "canonUrl": "wired.com/story/macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-assistant-that-was-later-killed"
-      },
-      {
-        "rank": 11,
-        "title": "Alphabet earnings miss reflects first real sign that AI is taking a bite out of search",
-        "canonUrl": "cnbc.com/2026/10/29/alphabet-google-search-ai-earnings.html"
-      },
-      {
-        "rank": 12,
-        "title": "Our climate models have a big, dangerous blind spot",
-        "canonUrl": "technologyreview.com/2026/10/29/1147735/climate-models-blind-spot"
-      }
-    ],
     "2026-10-30": [
       {
         "rank": 1,
@@ -6660,6 +6680,68 @@
         "rank": 10,
         "title": "Hasbro Is Using AI to Bring Characters to Life — With Limits",
         "canonUrl": "cnet.com/tech/services-and-software/hasbro-sixth-wall-studio-ai-characters"
+      }
+    ],
+    "2026-11-14": [
+      {
+        "rank": 1,
+        "title": "Beware the New AI-Fueled Ransomware Boom",
+        "canonUrl": "wired.com/story/beware-the-new-ai-fueled-ransomware-boom"
+      },
+      {
+        "rank": 2,
+        "title": "OpenAI board member worries an AI \"takeover\" of society could be months away",
+        "canonUrl": "arstechnica.com/ai/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns"
+      },
+      {
+        "rank": 3,
+        "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
+        "canonUrl": "cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html"
+      },
+      {
+        "rank": 4,
+        "title": "No Pilots. Few Air Traffic Controllers. What Could Go Wrong?",
+        "canonUrl": "wired.com/story/no-pilots-few-air-traffic-controllers-what-could-go-wrong"
+      },
+      {
+        "rank": 5,
+        "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet"
+      },
+      {
+        "rank": 6,
+        "title": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
+        "canonUrl": "arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace"
+      },
+      {
+        "rank": 7,
+        "title": "Amazon has a plan to index the world’s online shopping data",
+        "canonUrl": "theverge.com/tech/1033697/amazon-world-product-graph-ai-search"
+      },
+      {
+        "rank": 8,
+        "title": "Bloomberg details web of Chinese AI companies with smuggled NVIDIA chips linked to Alice Huang",
+        "canonUrl": "engadget.com/2315710/bloomberg-details-web-of-chinese-ai-companies-with-smuggled-nvidia-chips-linked-to-alice-huang"
+      },
+      {
+        "rank": 9,
+        "title": "You can now tempt fate and give your banking information to ChatGPT",
+        "canonUrl": "engadget.com/2316137/you-can-now-tempt-fate-and-give-your-banking-information-to-chatgpt"
+      },
+      {
+        "rank": 10,
+        "title": "Google now lets people connect Gemini to their bank accounts",
+        "canonUrl": "engadget.com/2316384/google-now-lets-people-connect-gemini-to-their-bank-accounts"
+      },
+      {
+        "rank": 11,
+        "title": "More autonomy, fewer NDAs: Volunteers have new requests for brain implant trials",
+        "canonUrl": "technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials"
+      },
+      {
+        "rank": 12,
+        "title": "Apple, Alphabet and Uber survived major founder transitions. Nvidia will be a harder test",
+        "canonUrl": "cnbc.com/2026/11/13/nvidia-jensen-huang-founder-ceo-transition.html"
       }
     ]
   }

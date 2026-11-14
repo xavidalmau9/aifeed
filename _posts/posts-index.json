@@ -1,5 +1,25 @@
 [
   {
+    "id": "beware-the-new-aifueled-ransomware-boom-20261114",
+    "slug": "beware-the-new-aifueled-ransomware-boom",
+    "headline": "Beware the New AI-Fueled Ransomware Boom",
+    "summary": "Ransomware incidents spiked 20-40% as cybercriminals use AI for phishing and negotiations.",
+    "body": "<p>Ransomware attacks spike 20-40% as cybercriminals deploy AI for phishing and negotiations.</p>\n<p>Researchers tracking ransomware leak sites identified nearly 3,000 claimed attacks over summer 2026, representing a 20 to 40 percent increase since spring. While exact numbers are difficult to verify — victims don't always disclose incidents and attackers inflate claims — the upward trend aligns with broader cybersecurity concerns. International attacks have particularly surged, marking what experts describe as a notable shift in the threat landscape.</p>\n<p>Cybercriminals are leveraging large language models for specific elements of the attack chain, particularly crafting more convincing phishing emails and handling ransom negotiations. However, fully autonomous ransomware operations have not yet materialized, partly because the existing criminal business model remains highly profitable. Successful ransomware groups continue to rely on human operators while experimenting with AI integration.</p>\n<p>The ransomware ecosystem is fragmenting, with established groups like Gentlemen, Qilin, and Akira coexisting alongside dozens of new entrants. Some newly formed groups have claimed attacks on dozens of victims within weeks — Global Secret Group reported 48 victims and Storm listed 71 in just 20 days, though not all claims may be legitimate.</p>\n<p>AI is enabling less experienced threat actors to operate independently rather than relying on traditional ransomware-as-a-service providers. Research identified one new group run by an inexperienced teenager that reportedly generated over $800,000 in under two weeks. These upstart operators are using AI to enhance their ability to trick targets, exploit vulnerabilities, and compromise access tools.</p>\n<p>While newer groups may experience initial surges, researchers question their long-term viability without institutional knowledge and resources of established operations. Some upstarts may focus solely on data extortion rather than encryption to simplify operations.</p>\n<p>AI is accelerating ransomware proliferation by enabling less experienced actors to launch independent operations with enhanced capabilities.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_beware-the-new-aifueled-ransomware-boom_20261114_am.png",
+    "image": "images/aifeed_beware-the-new-aifueled-ransomware-boom_20261114_am.png",
+    "sourceUrl": "https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/",
+    "publishedAt": "2026-11-14T13:11:59.811Z",
+    "hashtags": [
+      "ransomware",
+      "cybersecurity",
+      "AIthreats",
+      "phishing",
+      "threatintel"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "ai-chatbots-are-recommending-fake-retail-20261113",
     "slug": "ai-chatbots-are-recommending-fake-retail",
     "headline": "AI chatbots are recommending fake retail websites, study finds",
