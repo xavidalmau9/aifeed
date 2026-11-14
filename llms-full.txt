@@ -33,6 +33,7 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - LinkedIn: https://www.linkedin.com/company/aifeed-run
 
 ## Recent stories
+- [AI risks are the biggest threat to the financial system, Fed survey finds](https://aifeed.run/news/ai-risks-are-the-biggest-threat/) — Federal Reserve survey shows 87 percent of respondents cite AI as salient risk, up from 50 percent.
 - [Beware the New AI-Fueled Ransomware Boom](https://aifeed.run/news/beware-the-new-aifueled-ransomware-boom/) — Ransomware incidents spiked 20-40% as cybercriminals use AI for phishing and negotiations.
 - [AI chatbots are recommending fake retail websites, study finds](https://aifeed.run/news/ai-chatbots-are-recommending-fake-retail/) — Study finds ChatGPT, Gemini, and Perplexity displayed risky retail websites in up to 15% of shopping queries.
 - [I’m Begging You, Don’t Let AI Bots Manage Your Money](https://aifeed.run/news/im-begging-you-dont-let-ai/) — Banks including Charles Schwab, Wells Fargo, and Ally are blocking AI agents from accessing customer financial accounts.
@@ -72,4 +73,3 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - [Apple @ Work: The browser is the biggest gap in your AI governance strategy](https://aifeed.run/news/apple-work-the-browser-is-the/) — IT teams lack visibility into corporate data uploads to personal AI accounts in browsers, prompting new governance tools.
 - [The UK is investing $134 million into an AI Biosecurity Lab](https://aifeed.run/news/the-uk-is-investing-134-million/) — UK government funds AI Biosecurity Lab with £100 million backed by OpenAI and Anthropic.
 - [American Express is cutting 5% of its workforce to 'prepare for AI'](https://aifeed.run/news/american-express-is-cutting-of-its/) — American Express is cutting 5% of its 77,000-person workforce and taking a $336 million charge to prepare for AI automation.
-- [AI's 'Black October': Critical PHP flaws set off global security scramble](https://aifeed.run/news/ais-black-october-critical-php-flaws/) — Cybersecurity teams rush to patch critical PHP vulnerabilities discovered by AI researchers affecting nearly 70% of websites.
