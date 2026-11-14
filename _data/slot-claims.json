@@ -594,8 +594,10 @@
       "tried": []
     },
     "2026-11-14:1": {
-      "status": "claimed",
-      "at": "2026-11-14T13:09:58.915Z",
+      "slug": "beware-the-new-aifueled-ransomware-boom",
+      "image": "aifeed_beware-the-new-aifueled-ransomware-boom_20261114_am.png",
+      "status": "posted",
+      "at": "2026-11-14T13:16:51.400Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
