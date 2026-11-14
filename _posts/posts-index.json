@@ -1,5 +1,25 @@
 [
   {
+    "id": "ai-risks-are-the-biggest-threat-20261114",
+    "slug": "ai-risks-are-the-biggest-threat",
+    "headline": "AI risks are the biggest threat to the financial system, Fed survey finds",
+    "summary": "Federal Reserve survey shows 87 percent of respondents cite AI as salient risk, up from 50 percent.",
+    "body": "<p>Federal Reserve survey finds 87 percent of market participants view AI as major financial system threat.</p>\n<p>A Federal Reserve survey released Friday identified artificial intelligence threats as the greatest risks to the financial system, far exceeding other dangers cited by market participants. The respondents included economists, analysts, institutional sources, and various market participants surveyed through early October.</p>\n<p>Respondents identified three distinct areas of AI concern: elevated equity valuations with potential for market correction if earnings disappoint, cybersecurity risks from sophisticated state actors or damage caused by frontier AI models, and risks tied to complex AI-related financing structures.</p>\n<p>AI citations as a salient risk jumped dramatically to 87% in the fall survey from 50% during the spring survey, establishing it as the clear leading concern. Risk asset correction was mentioned by only 52% of respondents, making it the second most-cited danger but significantly behind AI concerns.</p>\n<p>Other notable financial risks identified included higher long-term rates at 48%, cyberattacks at 43%, and fiscal debt sustainability at 43%, with US debt exceeding $40 trillion and budget deficit near $2 trillion. Hedge fund leverage reached its highest level since 2013, concentrated in a relatively small group of funds.</p>\n<p>The report otherwise found the financial system fairly stable despite rising AI-related concerns. The survey timing captured sentiment through late October amid Wall Street's focus on high-flying AI hyperscalers and community concerns about rapid data center expansion.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_ai-risks-are-the-biggest-threat_20261114_pm.png",
+    "image": "images/aifeed_ai-risks-are-the-biggest-threat_20261114_pm.png",
+    "sourceUrl": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
+    "publishedAt": "2026-11-14T22:06:22.823Z",
+    "hashtags": [
+      "FederalReserve",
+      "FinancialRisks",
+      "AIRisks",
+      "FinTech",
+      "Markets"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "beware-the-new-aifueled-ransomware-boom-20261114",
     "slug": "beware-the-new-aifueled-ransomware-boom",
     "headline": "Beware the New AI-Fueled Ransomware Boom",
