@@ -620,8 +620,10 @@
       "tried": []
     },
     "2026-11-15:1": {
-      "status": "claimed",
-      "at": "2026-11-15T13:05:11.091Z",
+      "slug": "checked-geminis-new-memory-summary-to",
+      "image": "aifeed_checked-geminis-new-memory-summary-to_20261115_am.png",
+      "status": "posted",
+      "at": "2026-11-15T13:12:01.135Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
