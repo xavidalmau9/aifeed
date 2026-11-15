@@ -1,72 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "AI risks are the biggest threat to the financial system, Fed survey finds",
-    "link": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
-    "score": 92,
-    "reason": "Major institution (Federal Reserve) quantifies systemic risk; concrete data-driven finding"
+    "headline": "Nvidia is done with Jensen Huang. The fallout in Washington is just beginning",
+    "link": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html",
+    "score": 95,
+    "reason": "Major leadership crisis at mega-cap company with political/regulatory implications"
   },
   {
     "rank": 2,
-    "headline": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
-    "score": 88,
-    "reason": "OpenAI product launch with concrete capability; autonomous purchasing agents"
+    "headline": "Anthropic’s IPO lands as the embattled AI trade looks for a much-needed bright spot",
+    "link": "https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html",
+    "score": 92,
+    "reason": "Significant capital event; major AI company going public during sector turbulence"
   },
   {
     "rank": 3,
-    "headline": "Microsoft 365 Crawls Back to Life After a 24-Hour Outage",
-    "link": "https://www.wired.com/story/microsoft-365-crawls-back-to-life-after-a-24-hour-outage/",
-    "score": 85,
-    "reason": "Major infrastructure failure with measurable impact; enterprise-wide disruption"
+    "headline": "OpenAI launches ChatGPT Wallet, allowing its &apos;dots&apos; AI agents to make purchases for users",
+    "link": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
+    "score": 88,
+    "reason": "Major product launch expanding AI agent capabilities into commerce"
   },
   {
     "rank": 4,
-    "headline": "Claude’s Duet agent is a little neurotic and surprisingly helpful",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
-    "score": 81,
-    "reason": "Anthropic agent launch; demonstrates new AI capability"
+    "headline": "Nvidia closes below $4T market cap for first time since July 2025 in Huang fallout",
+    "link": "https://www.cnbc.com/2026/11/13/nvidia-nvda-stock-jensen-huang-transition.html",
+    "score": 85,
+    "reason": "Quantified market impact; significant valuation decline from leadership crisis"
   },
   {
     "rank": 5,
-    "headline": "The hottest job in AI right now may be counterintelligence as companies pay former spooks $500,000 to protect trade secrets",
-    "link": "https://fortune.com/2026/11/14/ai-industrial-espionage-counterintelligence-jobs-china-spying-nvidia-jensen-huang-pentagon-economic-warfare/",
-    "score": 79,
-    "reason": "Big number; demonstrates market response to AI security concerns"
+    "headline": "Amazon has a plan to index the world’s online shopping data",
+    "link": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+    "score": 82,
+    "reason": "Ambitious competitive move in AI-driven commerce indexing"
   },
   {
     "rank": 6,
-    "headline": "I checked Gemini’s new Memory summary to see what it knew about me – how to see and edit yours",
-    "link": "https://www.zdnet.com/innovation/google-gemini-memory-summary-user-control/",
-    "score": 77,
-    "reason": "Google Gemini feature launch; privacy-relevant capability"
+    "headline": "Nvidia had no succession plan when Jensen Huang quit. Former Fortune 500 CEOs call it 'preposterous'",
+    "link": "https://fortune.com/2026/11/15/fortune-500-ceos-say-nvidia-succession-failed-most-basic-test/",
+    "score": 80,
+    "reason": "Corporate governance failure at critical moment; expert criticism"
   },
   {
     "rank": 7,
-    "headline": "The AI boom will survive without Jensen Huang, but there's a $500 billion funding hole to fill",
-    "link": "https://www.axios.com/2026/11/13/ai-boom-without-jensen-huang-nvidia",
-    "score": 76,
-    "reason": "Massive financial figure; quantifies AI market impact"
+    "headline": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
+    "link": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html",
+    "score": 78,
+    "reason": "Government involvement; regulatory/legal escalation of company scandal"
   },
   {
     "rank": 8,
-    "headline": "Animaj Brings ‘Ozzy Fox’ Series to Disney Plus as It Charts a Path for AI in Animation",
-    "link": "https://www.cnet.com/tech/services-and-software/animaj-ozzy-fox-series-disney-plus-ai-agentic-animation/",
-    "score": 72,
-    "reason": "Major studio (Disney) deployment of AI in content production"
+    "headline": "How Nvidia's scandal knocked thousands off your 401(k)",
+    "link": "https://www.axios.com/2026/11/15/nvidia-stocks-401k-retirement-accounts",
+    "score": 75,
+    "reason": "Quantified consumer financial impact from leadership crisis"
   },
   {
     "rank": 9,
-    "headline": "The Xiaomi 18 Pro's rear displays support Google apps, Spotify, and custom GenAI apps",
-    "link": "https://9to5google.com/2026/11/13/the-xiaomi-18-pros-rear-displays-support-google-apps-spotify-and-custom-genai-apps/",
-    "score": 68,
-    "reason": "Consumer device launch integrating generative AI"
+    "headline": "Meet the short seller that flagged Nvidia's 'significant China problem' six months ago—including ‘uncomfortably close’ ties with Alice Huang",
+    "link": "https://fortune.com/2026/11/15/research-firm-shorted-nvidia-china-problem-six-months-alice-huang/",
+    "score": 72,
+    "reason": "Investigative reporting on governance/conflict of interest issues"
   },
   {
     "rank": 10,
-    "headline": "Delta CEO says air traffic control systems are so outdated that some commercial flight routes were faster in the 1950s than they are today",
-    "link": "https://fortune.com/article/delta-ceo-ed-bastian-air-traffic-control-systems-flight-routes-1950s-faa-modernization/",
-    "score": 65,
-    "reason": "Infrastructure criticism with concrete comparison; relevant to AI modernization"
+    "headline": "The OpenAI board member who fired Sam Altman says we still can't trust AI CEOs",
+    "link": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+    "score": 70,
+    "reason": "Insider commentary on AI leadership governance concerns"
   }
 ]
