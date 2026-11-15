@@ -33,6 +33,7 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - LinkedIn: https://www.linkedin.com/company/aifeed-run
 
 ## Recent stories
+- [Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home](https://aifeed.run/news/eric-trumpbacked-robot-soldier-startup-cant/) — Foundation Future Industries missed payroll after CEO borrowed $4.6M in company funds to buy luxury home.
 - [I checked Gemini’s new Memory summary to see what it knew about me – how to see and edit yours](https://aifeed.run/news/checked-geminis-new-memory-summary-to/) — Google's Gemini now lets users view, edit, and remove personal details the AI has learned about them.
 - [AI risks are the biggest threat to the financial system, Fed survey finds](https://aifeed.run/news/ai-risks-are-the-biggest-threat/) — Federal Reserve survey shows 87 percent of respondents cite AI as salient risk, up from 50 percent.
 - [Beware the New AI-Fueled Ransomware Boom](https://aifeed.run/news/beware-the-new-aifueled-ransomware-boom/) — Ransomware incidents spiked 20-40% as cybercriminals use AI for phishing and negotiations.
@@ -72,4 +73,3 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - [SoftBank reportedly plans $50 billion tech investment in aspiring 'AI nation' Malaysia](https://aifeed.run/news/softbank-reportedly-plans-50-billion-tech/) — SoftBank reportedly plans $50 billion investment in Malaysia's AI, data centers, and technology infrastructure.
 - [SpaceX closes $40 billion debt deal for AI chips, Elon Musk says](https://aifeed.run/news/spacex-closes-40-billion-debt-deal/) — SpaceX closes $40 billion debt deal to purchase GPUs; financing expected in Q1-Q2 2027.
 - [Apple @ Work: The browser is the biggest gap in your AI governance strategy](https://aifeed.run/news/apple-work-the-browser-is-the/) — IT teams lack visibility into corporate data uploads to personal AI accounts in browsers, prompting new governance tools.
-- [The UK is investing $134 million into an AI Biosecurity Lab](https://aifeed.run/news/the-uk-is-investing-134-million/) — UK government funds AI Biosecurity Lab with £100 million backed by OpenAI and Anthropic.
