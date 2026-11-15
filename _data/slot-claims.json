@@ -633,8 +633,10 @@
       "tried": []
     },
     "2026-11-15:2": {
-      "status": "claimed",
-      "at": "2026-11-15T22:04:31.776Z",
+      "slug": "eric-trumpbacked-robot-soldier-startup-cant",
+      "image": "aifeed_eric-trumpbacked-robot-soldier-startup-cant_20261115_pm.png",
+      "status": "posted",
+      "at": "2026-11-15T22:10:51.518Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
