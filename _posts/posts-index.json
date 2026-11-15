@@ -1,5 +1,25 @@
 [
   {
+    "id": "checked-geminis-new-memory-summary-to-20261115",
+    "slug": "checked-geminis-new-memory-summary-to",
+    "headline": "I checked Gemini’s new Memory summary to see what it knew about me – how to see and edit yours",
+    "summary": "Google's Gemini now lets users view, edit, and remove personal details the AI has learned about them.",
+    "body": "<p>Google Gemini's new Memory summary feature puts you in control of your data.</p>\n<p>The feature is now available across Gemini's web platform, iOS and Android mobile apps, and Windows and Mac desktop applications.</p>\n<p>Users can view memories organized by category — such as Essentials, Business & Career, Reading & Interests, and Culinary Preferences — and access a full memory history showing recent changes and updates. This transparency allows users to understand exactly what Gemini knows about them.</p>\n<p>The editing capabilities differ by platform. On web and desktop apps, users can click a pencil icon to directly edit, add, or remove specific memory details. Mobile app users can issue direct verbal or text requests to Gemini to make changes, and the AI will execute the modifications.</p>\n<p>Google has historically faced privacy concerns, but this feature gives users agency over their AI-stored data. Users can keep memory enabled while controlling what Gemini retains, balancing personalization benefits with privacy concerns.</p>\n<p>Gemini's Memory summary feature gives users transparent visibility and direct control over personal data the AI retains.</p>",
+    "category": "Tools",
+    "imageUrl": "https://aifeed.run/images/aifeed_checked-geminis-new-memory-summary-to_20261115_am.png",
+    "image": "images/aifeed_checked-geminis-new-memory-summary-to_20261115_am.png",
+    "sourceUrl": "https://www.zdnet.com/innovation/google-gemini-memory-summary-user-control/",
+    "publishedAt": "2026-11-15T13:07:08.109Z",
+    "hashtags": [
+      "Gemini",
+      "Privacy",
+      "AI",
+      "Google",
+      "MemorySummary"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "ai-risks-are-the-biggest-threat-20261114",
     "slug": "ai-risks-are-the-biggest-threat",
     "headline": "AI risks are the biggest threat to the financial system, Fed survey finds",

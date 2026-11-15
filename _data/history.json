@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-15T13:07:08.109Z",
+      "date": "2026-11-15",
+      "slot": 1,
+      "headline": "I checked Gemini’s new Memory summary to see what it knew about me – how to see and edit yours",
+      "canonUrl": "zdnet.com/innovation/google-gemini-memory-summary-user-control",
+      "url": "https://www.zdnet.com/innovation/google-gemini-memory-summary-user-control/",
+      "slug": "checked-geminis-new-memory-summary-to",
+      "image": "aifeed_checked-geminis-new-memory-summary-to_20261115_am.png",
+      "photo": {
+        "dhash": "37c5b5d5796d6d7d",
+        "phash": "29a7b875a0d55715",
+        "hist": [
+          549,
+          21,
+          0,
+          0,
+          22,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          8,
+          0,
+          0,
+          165,
+          161,
+          5,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          3,
+          0,
+          0,
+          5,
+          47,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "url": "https://www.zdnet.com/wp-content/uploads/sites/3/Gemini-memory-summary.jpg",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-11-14T22:06:22.823Z",
       "date": "2026-11-14",
       "slot": 2,
@@ -6058,58 +6140,6 @@
     }
   ],
   "rankings": {
-    "2026-10-30": [
-      {
-        "rank": 1,
-        "title": "A Defense Contractor Gave Their Personal AI Agent Access to a Secure Pentagon System",
-        "canonUrl": "wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system"
-      },
-      {
-        "rank": 2,
-        "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
-        "canonUrl": "theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
-      },
-      {
-        "rank": 3,
-        "title": "Mistral Says Its AI Model ‘Le Chonk’ Has Leapfrogged China in the Open-Weight Race",
-        "canonUrl": "wired.com/story/mistral-says-le-chonk-surpasses-chinese-models-cybersecurity"
-      },
-      {
-        "rank": 4,
-        "title": "Microsoft plans to raise $25 billion in debt as it pursues AI buildout",
-        "canonUrl": "cnbc.com/2026/10/29/microsoft-25-billion-debt-offering.html"
-      },
-      {
-        "rank": 5,
-        "title": "We urgently need to monitor AI agents’ actions in real time",
-        "canonUrl": "technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time"
-      },
-      {
-        "rank": 6,
-        "title": "These Claude Enterprise features let you track AI ROI – what’s new",
-        "canonUrl": "zdnet.com/innovation/claude-enterprise-efficiency-cost-tracking"
-      },
-      {
-        "rank": 7,
-        "title": "Stop sharing your passwords with AI agents, Bank of America warns customers",
-        "canonUrl": "zdnet.com/innovation/bank-of-america-customers-no-sharing-passwords-ai-agents"
-      },
-      {
-        "rank": 8,
-        "title": "Alphabet earnings miss reflects first real sign that AI is taking a bite out of search",
-        "canonUrl": "cnbc.com/2026/10/29/alphabet-google-search-ai-earnings.html"
-      },
-      {
-        "rank": 9,
-        "title": "You can generate and edit Google Docs files directly in Gemini chats now",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
-      },
-      {
-        "rank": 10,
-        "title": "Anthropic is asking Wall Street to believe in AGI",
-        "canonUrl": "theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview"
-      }
-    ],
     "2026-10-31": [
       {
         "rank": 1,
@@ -6824,6 +6854,53 @@
         "rank": 12,
         "title": "Apple, Alphabet and Uber survived major founder transitions. Nvidia will be a harder test",
         "canonUrl": "cnbc.com/2026/11/13/nvidia-jensen-huang-founder-ceo-transition.html"
+      }
+    ],
+    "2026-11-15": [
+      {
+        "rank": 1,
+        "title": "I checked Gemini’s new Memory summary to see what it knew about me – how to see and edit yours",
+        "canonUrl": "zdnet.com/innovation/google-gemini-memory-summary-user-control"
+      },
+      {
+        "rank": 2,
+        "title": "No Pilots. Few Air Traffic Controllers. What Could Go Wrong?",
+        "canonUrl": "wired.com/story/no-pilots-few-air-traffic-controllers-what-could-go-wrong"
+      },
+      {
+        "rank": 3,
+        "title": "Microsoft apologizes for massive outage that took down Outlook and other 365 services",
+        "canonUrl": "cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html"
+      },
+      {
+        "rank": 4,
+        "title": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
+        "canonUrl": "cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html"
+      },
+      {
+        "rank": 5,
+        "title": "‘We need more reviewers’: Finding Linux bugs is easy now – fixing them is another story",
+        "canonUrl": "zdnet.com/innovation/ai-bug-reports-linux-windows"
+      },
+      {
+        "rank": 6,
+        "title": "Megaspeed says Alice Huang left in 2025 as it launches internal probe into reports about its business",
+        "canonUrl": "cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html"
+      },
+      {
+        "rank": 7,
+        "title": "How Nvidia turmoil and a Democratic Congress could reshape the AI trade, according to ETF experts",
+        "canonUrl": "cnbc.com/2026/11/14/nvidia-ai-trade-data-centers-congress.html"
+      },
+      {
+        "rank": 8,
+        "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
+        "canonUrl": "cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html"
+      },
+      {
+        "rank": 9,
+        "title": "Anthropic’s IPO lands as the embattled AI trade looks for a much-needed bright spot",
+        "canonUrl": "cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html"
       }
     ]
   }
