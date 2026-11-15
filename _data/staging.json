@@ -1,72 +1,65 @@
 [
   {
     "rank": 1,
-    "headline": "Nvidia is done with Jensen Huang. The fallout in Washington is just beginning",
-    "link": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html",
-    "score": 95,
-    "reason": "Major leadership crisis at mega-cap company with political/regulatory implications"
+    "headline": "Italy orders Meta to pay $887M for not obtaining specific consent over user photos",
+    "link": "https://www.engadget.com/2317185/italy-orders-meta-to-pay-887m-for-not-obtaining-specific-consent-over-user-photos/",
+    "score": 94,
+    "reason": "Major regulatory fine with specific dollar amount; concrete enforcement action"
   },
   {
     "rank": 2,
-    "headline": "Anthropic’s IPO lands as the embattled AI trade looks for a much-needed bright spot",
-    "link": "https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html",
-    "score": 92,
-    "reason": "Significant capital event; major AI company going public during sector turbulence"
+    "headline": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+    "score": 88,
+    "reason": "Policy launch with significant implications; substantive government action on AI regulation"
   },
   {
     "rank": 3,
-    "headline": "OpenAI launches ChatGPT Wallet, allowing its &apos;dots&apos; AI agents to make purchases for users",
-    "link": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
-    "score": 88,
-    "reason": "Major product launch expanding AI agent capabilities into commerce"
+    "headline": "You can now generate and edit GIFs with ChatGPT - here's how",
+    "link": "https://www.engadget.com/2313818/how-to-generate-edit-gifs-with-chatgpt/",
+    "score": 82,
+    "reason": "Feature launch from major AI company; new capability expansion"
   },
   {
     "rank": 4,
-    "headline": "Nvidia closes below $4T market cap for first time since July 2025 in Huang fallout",
-    "link": "https://www.cnbc.com/2026/11/13/nvidia-nvda-stock-jensen-huang-transition.html",
-    "score": 85,
-    "reason": "Quantified market impact; significant valuation decline from leadership crisis"
+    "headline": "Eric Trump-backed robot soldier startup can&apos;t pay staff after founder borrowed $4.6 million from company to buy home",
+    "link": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
+    "score": 81,
+    "reason": "Specific controversy with concrete financial numbers; major governance failure"
   },
   {
     "rank": 5,
-    "headline": "Amazon has a plan to index the world’s online shopping data",
-    "link": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
-    "score": 82,
-    "reason": "Ambitious competitive move in AI-driven commerce indexing"
+    "headline": "How Rockstar&apos;s &apos;GTA VI&apos; release could reshape gaming, streaming and even paid time off",
+    "link": "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
+    "score": 76,
+    "reason": "Major industry launch with broad implications; significant event coverage"
   },
   {
     "rank": 6,
-    "headline": "Nvidia had no succession plan when Jensen Huang quit. Former Fortune 500 CEOs call it 'preposterous'",
-    "link": "https://fortune.com/2026/11/15/fortune-500-ceos-say-nvidia-succession-failed-most-basic-test/",
-    "score": 80,
-    "reason": "Corporate governance failure at critical moment; expert criticism"
+    "headline": "No Pilots. Few Air Traffic Controllers. What Could Go Wrong?",
+    "link": "https://www.wired.com/story/no-pilots-few-air-traffic-controllers-what-could-go-wrong/",
+    "score": 75,
+    "reason": "Substantive investigation into AI automation in critical infrastructure; high-stakes controversy"
   },
   {
     "rank": 7,
-    "headline": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
-    "link": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html",
-    "score": 78,
-    "reason": "Government involvement; regulatory/legal escalation of company scandal"
+    "headline": "‘We need more reviewers’: Finding Linux bugs is easy now – fixing them is another story",
+    "link": "https://www.zdnet.com/innovation/ai-bug-reports-linux-windows/",
+    "score": 72,
+    "reason": "Concrete problem identification in AI-assisted development; systematic issue documentation"
   },
   {
     "rank": 8,
-    "headline": "How Nvidia's scandal knocked thousands off your 401(k)",
-    "link": "https://www.axios.com/2026/11/15/nvidia-stocks-401k-retirement-accounts",
-    "score": 75,
-    "reason": "Quantified consumer financial impact from leadership crisis"
+    "headline": "AI's four colliding crises",
+    "link": "https://www.axios.com/2026/11/14/ai-trust-nvidia-tech-stocks",
+    "score": 70,
+    "reason": "Comprehensive analysis of multiple major AI industry challenges"
   },
   {
     "rank": 9,
-    "headline": "Meet the short seller that flagged Nvidia's 'significant China problem' six months ago—including ‘uncomfortably close’ ties with Alice Huang",
-    "link": "https://fortune.com/2026/11/15/research-firm-shorted-nvidia-china-problem-six-months-alice-huang/",
-    "score": 72,
-    "reason": "Investigative reporting on governance/conflict of interest issues"
-  },
-  {
-    "rank": 10,
-    "headline": "The OpenAI board member who fired Sam Altman says we still can't trust AI CEOs",
-    "link": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
-    "score": 70,
-    "reason": "Insider commentary on AI leadership governance concerns"
+    "headline": "This AI Tamagotchi Turns Everyday Objects Into Needy Virtual Pets",
+    "link": "https://www.wired.com/story/this-ai-tamagotchi-oats-turns-everyday-objects-into-needy-virtual-pets/",
+    "score": 65,
+    "reason": "Novel consumer product launch with unique AI application"
   }
 ]
