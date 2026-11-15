@@ -622,8 +622,12 @@
     "2026-11-15:1": {
       "slug": "checked-geminis-new-memory-summary-to",
       "image": "aifeed_checked-geminis-new-memory-summary-to_20261115_am.png",
+      "reelTemplate": "v3",
+      "hookStyle": "",
+      "igReelId": "18439147966181376",
+      "igPermalink": "https://www.instagram.com/reel/Dfw3RKwAEsQ/",
       "status": "posted",
-      "at": "2026-11-15T13:12:01.135Z",
+      "at": "2026-11-15T13:14:59.950Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
