@@ -659,8 +659,10 @@
       "tried": []
     },
     "2026-11-16:2": {
-      "status": "claimed",
-      "at": "2026-11-16T22:05:04.493Z",
+      "slug": "ai-is-reshaping-banking-jobs-but",
+      "image": "aifeed_ai-is-reshaping-banking-jobs-but_20261116_pm.png",
+      "status": "posted",
+      "at": "2026-11-16T22:11:57.799Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
