@@ -11,9 +11,30 @@ function normText(s) {
 function normTag(t) { return String(t || '').replace(/^#+/, '').replace(/[^A-Za-z0-9]/g, ''); }
 function tags5(arr) { const out = []; for (const t of (arr || []).map(normTag)) if (t && !out.some(o => o.toLowerCase() === t.toLowerCase())) out.push(t); return out.slice(0, 5); }
 function cleanUrl(u) { return String(u || '').trim().replace(/[?#].*$/, m => /utm_|fbclid|gclid/.test(m) ? '' : m); }
+// Closing question (Nov 2026): the caption ends with one short, easy-to-answer question tied to the story instead of
+// the newsletter CTA, because comments are what push a post to more people. The model writes igQuestion; a missing or
+// invalid one falls back to a safe question for the story's category. Old captions with the CTA still pass checkIg.
+const Q_PREFIX = '💬 ';
+const QUESTION_FALLBACK = {
+  SAFETY: 'Would you trust this?', POLICY: 'Ban it or regulate it?', BUSINESS: 'Smart move or hype?',
+  MODELS: 'Would you use this?', TOOLS: 'Would you use this?', RESEARCH: 'Useful or overhyped?',
+  HARDWARE: 'Who wins this race?'
+};
+const QUESTION_BANNED = /\b(daily|follow|subscribe|link|bio|dm|hand[- ]?edited|human[- ]?edited|our editors?)\b|https?:|[#@]/i;
+function validQuestion(q) {
+  const t = String(q || '');
+  const w = t.split(/\s+/).filter(Boolean).length;
+  return w >= 2 && w <= 10 && t.length <= 70 && /\?$/.test(t) && (t.match(/\?/g) || []).length === 1 && !/[\n.!]/.test(t) && !QUESTION_BANNED.test(t);
+}
+function closingQuestion(g) {
+  const q = normText(g && g.igQuestion).replace(/^[^A-Za-z0-9"']+/, '').trim();
+  if (validQuestion(q)) return q.charAt(0).toUpperCase() + q.slice(1);
+  return QUESTION_FALLBACK[String((g && g.category) || '').toUpperCase()] || 'Would you trust this?';
+}
+function isCloser(b) { return b === IG_CTA || (String(b || '').startsWith(Q_PREFIX) && validQuestion(String(b).slice(Q_PREFIX.length))); }
 function buildIg(g, url) {
   const hook = normText(g.igHook), paras = (g.igParagraphs || []).map(normText).filter(Boolean).slice(0, 4), tg = tags5(g.igHashtags);
-  const blocks = [hook, ...paras, `Source: ${normText(g.outlet)} · ${cleanUrl(url)}`, IG_CTA, tg.map(t => '#' + t).join(' ')];
+  const blocks = [hook, ...paras, `Source: ${normText(g.outlet)} · ${cleanUrl(url)}`, Q_PREFIX + closingQuestion(g), tg.map(t => '#' + t).join(' ')];
   return blocks.join(`\n${SPACER}\n`);
 }
 // Facebook Page post: the Instagram caption with the same blocks and spacers. Only the CTA changes,
@@ -26,7 +47,8 @@ function buildFb(igCaption) {
 function checkFb(c, url) {
   const s = String(c || '');
   const e = [];
-  if (!s.includes(`\n${SPACER}\n${FB_CTA}\n${SPACER}\n`)) e.push('FB CTA line missing');
+  const closer = s.split(`\n${SPACER}\n`).slice(-2, -1)[0] || '';
+  if (closer !== FB_CTA && !isCloser(closer)) e.push('FB closing line missing (question or CTA)');
   if (/link in bio/i.test(s)) e.push('FB caption still says "link in bio"');
   if ((s.match(/^Source: /gm) || []).length !== 1) e.push('Source line must appear exactly once');
   return e.concat(checkIg(s.split(`\n${SPACER}\n`).map(b => (b === FB_CTA ? IG_CTA : b)).join(`\n${SPACER}\n`), url));
@@ -44,13 +66,13 @@ function checkIg(c, url) {
   if (lines.some(l => l !== l.trim())) e.push('line with edge whitespace');
   const blocks = c.split(`\n${SPACER}\n`);
   if (blocks.some(b => b.includes(SPACER))) e.push('stray spacer');
-  const n = blocks.length; // hook + 3-4 paras + source + brief CTA + hashtags
-  if (n < 7 || n > 8) e.push(`block count ${n} (want hook + 3-4 paragraphs + source + brief CTA + hashtags)`);
+  const n = blocks.length; // hook + 3-4 paras + source + closing question (or the legacy brief CTA) + hashtags
+  if (n < 7 || n > 8) e.push(`block count ${n} (want hook + 3-4 paragraphs + source + closing question + hashtags)`);
   if (!/^\p{Extended_Pictographic}/u.test(blocks[0] || '')) e.push('hook must start with emoji');
   if (blocks.slice(0, -1).some(b => b.split('\n').length > 1)) e.push('paragraph contains line break');
   const src = blocks[n - 3] || '';
   if (!/^Source: [^·\n]+ · https?:\/\/\S+$/.test(src)) e.push('source line malformed');
-  if ((blocks[n - 2] || '') !== IG_CTA) e.push('brief CTA line malformed (must sit alone after a spacer below Source)');
+  if (!isCloser(blocks[n - 2] || '')) e.push('closing question line malformed (one short question, alone after a spacer below Source)');
   if ((c.match(/https?:\/\//g) || []).length !== 1) e.push('URL must appear exactly once');
   if (!/^(#[A-Za-z0-9]+ ){4}#[A-Za-z0-9]+$/.test(blocks[n - 1] || '')) e.push('hashtag line must be exactly 5 tags');
   if ((c.match(/#[A-Za-z0-9]+/g) || []).length !== 5) e.push('hashtags outside last line');
@@ -108,6 +130,6 @@ function checkAccuracy(g, c) {
 }
 
 module.exports = {
-  SPACER, IG_CTA, FB_CTA, normText, normTag, tags5, cleanUrl, buildIg, buildFb, buildLi, checkIg, checkFb, checkLi,
+  SPACER, IG_CTA, FB_CTA, Q_PREFIX, QUESTION_FALLBACK, validQuestion, closingQuestion, normText, normTag, tags5, cleanUrl, buildIg, buildFb, buildLi, checkIg, checkFb, checkLi,
   checkAccuracy, srcHasHedge, hedgeSource
 };
