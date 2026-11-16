@@ -26,14 +26,17 @@ const list = want.length ? want.map(s => posts.find(p => p.slug === s)).filter(B
     const photo = (h && h.photo && h.photo.url) || '';
     let brief = {};
     if (process.env.ANTHROPIC_API_KEY) {
-      brief = await reelBrief(p, prompt => claudeMessage(process.env.ANTHROPIC_API_KEY, { model: cfg.anthropicModel, prompt, maxTokens: 400, temperature: 0.4, tries: 2 }));
+      const v3 = process.env.SAMPLES_TEMPLATE === 'v3' || Boolean(process.env.SAMPLES_HOOK_STYLE);
+      brief = await reelBrief(p, prompt => claudeMessage(process.env.ANTHROPIC_API_KEY, { model: cfg.anthropicModel, prompt, maxTokens: v3 ? 700 : 400, temperature: 0.4, tries: 2 }), { v3 });
     }
     try {
       const rr = renderReel(R, Object.assign({}, p, brief), path.join(R, p.image), photo,
-        { cloudflare: process.env.SAMPLES_USE_CF === '1', sceneCache: process.env.SAMPLES_SCENE_CACHE || '' });
+        { cloudflare: process.env.SAMPLES_USE_CF === '1', sceneCache: process.env.SAMPLES_SCENE_CACHE || '',
+          template: process.env.SAMPLES_TEMPLATE || '', hookStyle: process.env.SAMPLES_HOOK_STYLE || '' });
       fs.copyFileSync(rr.mp4, path.join(OUT, p.slug + '.mp4'));
       if (rr.cover) fs.copyFileSync(rr.cover, path.join(OUT, p.slug + '_cover.jpg'));
-      log.push({ slug: p.slug, category: p.category, brief, punch: rr.punch, scene: rr.sceneSource, sceneLog: rr.sceneLog, credit: rr.credit });
+      log.push({ slug: p.slug, category: p.category, brief, punch: rr.punch, scene: rr.sceneSource, sceneLog: rr.sceneLog, credit: rr.credit,
+        template: rr.renderedTemplate, hookStyle: rr.hookStyle, hookStyleRequested: rr.hookStyleRequested, voice: rr.voice, voiceError: rr.voiceError });
     } catch (e) {
       log.push({ slug: p.slug, error: String(e.message).slice(0, 300) });
     }

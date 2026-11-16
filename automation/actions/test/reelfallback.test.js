@@ -41,6 +41,14 @@ test('v3 success renders once; v2 config renders v2 once', () => {
   assert.deepStrictEqual(calls, ['v3', 'v2']);
 });
 
+test('v3 that rendered the v2 cut (no voiceover) is logged as v2 with its hook style', () => {
+  const render = () => ({ mp4, renderedTemplate: 'v2', hookStyle: 'C', hookStyleRequested: 'C' });
+  const rr = renderReelSafe('/r', {}, 'p', '', { template: 'v3', hookStyle: 'C' }, { render, log: quiet });
+  assert.strictEqual(rr.template, 'v2'); assert.strictEqual(rr.hookStyle, 'C'); assert.strictEqual(rr.v3Error, '');
+  const ok = renderReelSafe('/r', {}, 'p', '', { template: 'v3', hookStyle: 'A' }, { render: () => ({ mp4, renderedTemplate: 'v3', hookStyle: 'A' }), log: quiet });
+  assert.strictEqual(ok.template, 'v3'); assert.strictEqual(ok.hookStyle, 'A');
+});
+
 test('a v2 failure still throws (handled by the existing Reel error path)', () => {
   const render = () => { throw new Error('boom'); };
   assert.throws(() => renderReelSafe('/r', {}, 'p', '', { template: 'v3' }, { render, log: quiet }), /boom/);
