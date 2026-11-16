@@ -259,3 +259,17 @@ test('n8n social posts wait until the article page is live, and give up by relea
     Config: [{ siteUrl: 'https://aifeed.run' }]
   }, [{}]), /Released slot 2026-11-11:1/);
 });
+
+test('n8n fallback has the Nov 16 topic mix, rank prompt and closing question (sync_topics_captions.py)', () => {
+  const wf = require('../../n8n/AIFeed_Autopilot.json');
+  const node = name => wf.nodes.find(n => n.name === name).parameters.jsCode;
+  const rss = require('fs').readFileSync(require('path').join(__dirname, '../lib/rss.js'), 'utf8');
+  const prompt = rss.match(/return `(You are the editor of AIFeed\.run[\s\S]*?)`;\n}/)[1];
+  assert.ok(node('Fetch RSS + Dedup').includes(prompt));
+  assert.ok(node('Pick Slot Story').includes('applyTopicMix(Array.isArray(ranked)'));
+  assert.ok(node('Fetch Articles').includes('- igQuestion:'));
+  for (const n of ['Quality Checks + Build HTML', 'Layout Check', 'Merge LI Caption']) {
+    const c = node(n);
+    assert.ok(c.includes('Q_PREFIX + closingQuestion(g)') && c.includes('isCloser(blocks[n - 2]'), n);
+  }
+});
