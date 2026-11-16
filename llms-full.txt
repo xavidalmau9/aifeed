@@ -33,6 +33,7 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - LinkedIn: https://www.linkedin.com/company/aifeed-run
 
 ## Recent stories
+- [AI is reshaping banking jobs – but its ability to drive profits remains unclear](https://aifeed.run/news/ai-is-reshaping-banking-jobs-but/) — European banks are deploying AI to automate routine work and cut jobs, but evidence of revenue growth remains unclear.
 - [28 Zero-Day Findings in Under Two Days. Is Robotics Security Keeping Pace?](https://aifeed.run/news/28-zeroday-findings-in-under-two/) — VicOne identified 28 zero-day vulnerabilities in Physical AI tools from Google, NVIDIA, Meta using AI-assisted research in under two days.
 - [Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home](https://aifeed.run/news/eric-trumpbacked-robot-soldier-startup-cant/) — Foundation Future Industries missed payroll after CEO borrowed $4.6M in company funds to buy luxury home.
 - [I checked Gemini’s new Memory summary to see what it knew about me – how to see and edit yours](https://aifeed.run/news/checked-geminis-new-memory-summary-to/) — Google's Gemini now lets users view, edit, and remove personal details the AI has learned about them.
@@ -72,4 +73,3 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - [AI Killed the Homework Era](https://aifeed.run/news/ai-killed-the-homework-era/) — Educators report AI use has made homework grading difficult and raised academic integrity concerns.
 - [Data center backlash is uniting America](https://aifeed.run/news/data-center-backlash-is-uniting-america/) — Data center development has emerged as a major uniting issue across parties in 2026 midterm elections.
 - [SoftBank reportedly plans $50 billion tech investment in aspiring 'AI nation' Malaysia](https://aifeed.run/news/softbank-reportedly-plans-50-billion-tech/) — SoftBank reportedly plans $50 billion investment in Malaysia's AI, data centers, and technology infrastructure.
-- [SpaceX closes $40 billion debt deal for AI chips, Elon Musk says](https://aifeed.run/news/spacex-closes-40-billion-debt-deal/) — SpaceX closes $40 billion debt deal to purchase GPUs; financing expected in Q1-Q2 2027.
