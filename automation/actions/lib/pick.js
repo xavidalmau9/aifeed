@@ -1,6 +1,8 @@
 // Slot ordering and the strict same-event check. Logic matches the live n8n nodes
 // "Pick Slot Story", "Same-Event Verify" and "Drop Same-Event Repeats".
 
+const { applyTopicMix } = require('./topics');
+
 function parseRank(txt) {
   let ranked = [];
   try { ranked = JSON.parse((String(txt || '').match(/\[[\s\S]*\]/) || ['[]'])[0]); } catch (e) { ranked = []; }
@@ -11,9 +13,10 @@ function orderPool({ slot, today, fresh, history, rankText }) {
   const hist = JSON.parse(JSON.stringify(history || { posted: [], rankings: {} }));
   hist.posted = hist.posted || [];
   hist.rankings = hist.rankings || {};
-  const ranked = parseRank(rankText);
+  // Topic mix nudge (lib/topics.js): boost chips/China/spy/security/protest/AI-gone-wrong, demote stat-only stories.
+  const ranked = applyTopicMix(parseRank(rankText), fresh);
   let ordered = ranked.map(r => fresh[parseInt(r.index, 10) - 1]).filter(Boolean);
-  if (!ordered.length) ordered = fresh.slice(0, 12);
+  if (!ordered.length) ordered = applyTopicMix(fresh.slice(0, 12).map((f, i) => ({ index: i + 1 })), fresh).map(r => fresh[r.index - 1]);
 
   if (Number(slot) === 2) {
     const morning = hist.rankings[today];
