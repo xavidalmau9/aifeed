@@ -1019,9 +1019,12 @@ def build(post, feed_path, out, seed=0, photo=None, scene_path=None, scene_sourc
            'voiceover': [t for _, t in segs] if segs else None}
     if vo_err:
         res['voiceError'] = vo_err
-    res['template'] = 'v3' if r.v3 else 'v2'
+    res['template'] = 'v3' if r.v3 else 'v2'  # the cut actually rendered: v3 without a voiceover falls back to the v2 cut
+    # The hook text is applied before the voiceover step, so report it even when the v3 cut fell back to v2 (Nov 11-16 2026
+    # every Reel lost its hook style in the log because voice failed and this was only reported for the v3 cut).
+    res.update(hookStyle=style_used or None, hookStyleRequested=style_req or None)
     if r.v3:
-        res.update(hookStyle=style_used or None, hookStyleRequested=style_req or None, takeaway=r.takeaway, sharePrompt=r.share,
+        res.update(takeaway=r.takeaway, sharePrompt=r.share,
                    audioOnset=round(vo['segments'][0]['words'][0][1], 3) if vo['segments'][0]['words'] else None)
     if vo:
         res['captions'] = [[w, round(a, 3), round(b, 3)] for sg in vo['segments'] for w, a, b in sg['words']]

@@ -40,7 +40,9 @@ function renderReelSafe(repo, post, feedPngPath, photo, opts = {}, deps = {}) {
   const ok = rr => { if (!rr || !rr.mp4 || !fs.existsSync(rr.mp4) || !fs.statSync(rr.mp4).size) throw new Error('v3 render produced no mp4'); return rr; };
   if (String(opts.template || '').toLowerCase() === 'v3') {
     try {
-      return Object.assign(ok(render(repo, post, feedPngPath, photo, opts)), { template: 'v3', v3Error: '' });
+      // template = the cut make_reel actually rendered (v3 falls back to the v2 cut when the voiceover is unavailable)
+      const rr = ok(render(repo, post, feedPngPath, photo, opts));
+      return Object.assign(rr, { template: rr.renderedTemplate === 'v2' ? 'v2' : 'v3', v3Error: '' });
     } catch (e) {
       const why = String((e && e.message) || e).slice(0, 300);
       log('Reel v3 render failed, retrying with the v2 Reel template: ' + why);
@@ -86,7 +88,7 @@ function parseRenderResult(stdout, out) {
   const cover = r.cover || out.replace(/\.mp4$/, '_cover.jpg');
   return { mp4: r.out || out, cover: fs.existsSync(cover) ? cover : '', credit: r.photoCredit || '',
     punch: r.punch || '', sceneSource: r.sceneSource || '', sceneLog: r.sceneLog || [], voice: r.voice || '', voiceError: r.voiceError || '',
-    hookStyle: r.hookStyle || '', hookStyleRequested: r.hookStyleRequested || '' };
+    hookStyle: r.hookStyle || '', hookStyleRequested: r.hookStyleRequested || '', renderedTemplate: r.template || '' };
 }
 
 // CC BY / BY-SA photos need attribution: append the Commons credit (without the long URL) once, before the hashtags.

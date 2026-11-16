@@ -96,7 +96,9 @@ jobs:
   post:
     needs: test
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-    runs-on: ubuntu-latest
+    # Pinned: ubuntu-latest moved to 26.04 (Python 3.14) on Nov 11 2026 and kokoro-onnx 0.6.1 needs Python < 3.14, so the
+    # Reel voiceover silently failed and every v3 Reel rendered as the v2 music-only cut.
+    runs-on: ubuntu-24.04
     # 110 covers the article-page wait (~12 min), ~25 min image wait, up to ~30 min Reel mp4 wait, Reel render, public-URL waits and the end-of-run Story retry. Installs no longer
     # share that budget with apt: ffmpeg is a cached static build, and it finishes before the
     # pipeline is allowed to claim a slot.
