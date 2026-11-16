@@ -646,8 +646,10 @@
       "tried": []
     },
     "2026-11-16:1": {
-      "status": "claimed",
-      "at": "2026-11-16T13:04:50.883Z",
+      "slug": "28-zeroday-findings-in-under-two",
+      "image": "aifeed_28-zeroday-findings-in-under-two_20261116_am.png",
+      "status": "posted",
+      "at": "2026-11-16T13:11:14.384Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
