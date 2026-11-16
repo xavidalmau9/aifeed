@@ -1,5 +1,165 @@
 [
   {
+    "id": "28-zeroday-findings-in-under-two-20261116",
+    "slug": "28-zeroday-findings-in-under-two",
+    "headline": "28 Zero-Day Findings in Under Two Days. Is Robotics Security Keeping Pace?",
+    "summary": "VicOne identified 28 zero-day vulnerabilities in Physical AI tools from Google, NVIDIA, Meta using AI-assisted research in under two days.",
+    "body": "<p>VicOne identifies 28 zero-day vulnerabilities in Physical AI tools from Google, NVIDIA, Meta in under two days.</p>\n<p>VicOne, a Physical AI cybersecurity company, identified an initial set of 28 zero-day vulnerabilities in less than two days using AI-assisted research across software and tools supporting the Physical AI ecosystem. These findings are classified as zero-day vulnerabilities, though the count may change following vendor and vulnerability-authority review.</p>\n<p>The vulnerabilities span tools used for robot training, simulation, testing, and operation. Projects developed or maintained by Google, NVIDIA, Meta, and others are affected. Weaknesses in these tools could influence the models teams build, the test results they trust, and the instructions sent to robots in real-world control scenarios.</p>\n<p>The 28 findings span three stages of the robotics lifecycle: development and training, simulation and validation, and deployment and runtime. Seventy-five percent of findings involved development, training, simulation, or validation tools, highlighting risks that can arise before a robot is deployed.</p>\n<p>AI can accelerate vulnerability discovery by helping researchers analyze more software in less time. However, faster discovery leaves teams with little time to respond when weaknesses are zero-days without available fixes. Teams must determine whether they use affected software and what attackers could access or change.</p>\n<p>As details become available through coordinated disclosure, robotics manufacturers must connect each finding to its potential effect on development, deployment, and robot behavior. Teams need to understand how threats could affect robot behavior and how to protect systems already in operation.</p>\n<p>AI-accelerated vulnerability discovery demands faster security response in robotics systems across training, testing, and deployment.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_28-zeroday-findings-in-under-two_20261116_am.png",
+    "image": "images/aifeed_28-zeroday-findings-in-under-two_20261116_am.png",
+    "sourceUrl": "https://spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security",
+    "publishedAt": "2026-11-16T13:06:17.019Z",
+    "hashtags": [
+      "RoboticsSecurity",
+      "ZeroDay",
+      "Cybersecurity",
+      "PhysicalAI",
+      "VicOne"
+    ],
+    "isVideo": false
+  },
+  {
+    "id": "eric-trumpbacked-robot-soldier-startup-cant-20261115",
+    "slug": "eric-trumpbacked-robot-soldier-startup-cant",
+    "headline": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
+    "summary": "Foundation Future Industries missed payroll after CEO borrowed $4.6M in company funds to buy luxury home.",
+    "body": "<p>Robot startup CEO borrowed $4.6M in company funds to purchase luxury California home amid payroll crisis.</p>\n<p>Foundation Future Industries, a San Francisco-based maker of military humanoid robots advised by Eric Trump, missed payroll on October 30 after cash reserves dwindled. Employees have yet to receive paychecks, according to people with direct knowledge.</p>\n<p>Existing investors are aware of the loan through company financial disclosures, though some question corporate governance.</p>\n<p>Foundation claims it's close to unveiling a next-generation weapons-ready robot to help the U.S. compete against Chinese rivals and is seeking hundreds of millions in funding at a $3 billion valuation. The company also claims $24 million in Pentagon contracts, though that figure stems from an acquired firm's prior contracts.</p>\n<p>The cash crunch comes as Pathak, Foundation's sole board member and majority shareholder, pursues aggressive fundraising. The company previously ran out of cash for payroll in August but secured a bridge loan from an existing investor within two days.</p>\n<p>Pathak's track record includes Synapse, a fintech firm that collapsed in 2024 and locked thousands of Americans out of their savings accounts. Insiders fret Foundation could fold if Pathak doesn't secure fresh funding soon.</p>\n<p>Foundation Future Industries faces payroll crisis amid CEO's $4.6M personal loan from company coffers and governance concerns.</p>",
+    "category": "Business",
+    "imageUrl": "https://aifeed.run/images/aifeed_eric-trumpbacked-robot-soldier-startup-cant_20261115_pm.png",
+    "image": "images/aifeed_eric-trumpbacked-robot-soldier-startup-cant_20261115_pm.png",
+    "sourceUrl": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
+    "publishedAt": "2026-11-15T22:05:55.628Z",
+    "hashtags": [
+      "FoundationFutureIndustries",
+      "RobotStartup",
+      "EricTrump",
+      "PayrollCrisis",
+      "CorporateGovernance"
+    ],
+    "isVideo": false
+  },
+  {
+    "id": "checked-geminis-new-memory-summary-to-20261115",
+    "slug": "checked-geminis-new-memory-summary-to",
+    "headline": "I checked Gemini’s new Memory summary to see what it knew about me – how to see and edit yours",
+    "summary": "Google's Gemini now lets users view, edit, and remove personal details the AI has learned about them.",
+    "body": "<p>Google Gemini's new Memory summary feature puts you in control of your data.</p>\n<p>The feature is now available across Gemini's web platform, iOS and Android mobile apps, and Windows and Mac desktop applications.</p>\n<p>Users can view memories organized by category — such as Essentials, Business & Career, Reading & Interests, and Culinary Preferences — and access a full memory history showing recent changes and updates. This transparency allows users to understand exactly what Gemini knows about them.</p>\n<p>The editing capabilities differ by platform. On web and desktop apps, users can click a pencil icon to directly edit, add, or remove specific memory details. Mobile app users can issue direct verbal or text requests to Gemini to make changes, and the AI will execute the modifications.</p>\n<p>Google has historically faced privacy concerns, but this feature gives users agency over their AI-stored data. Users can keep memory enabled while controlling what Gemini retains, balancing personalization benefits with privacy concerns.</p>\n<p>Gemini's Memory summary feature gives users transparent visibility and direct control over personal data the AI retains.</p>",
+    "category": "Tools",
+    "imageUrl": "https://aifeed.run/images/aifeed_checked-geminis-new-memory-summary-to_20261115_am.png",
+    "image": "images/aifeed_checked-geminis-new-memory-summary-to_20261115_am.png",
+    "sourceUrl": "https://www.zdnet.com/innovation/google-gemini-memory-summary-user-control/",
+    "publishedAt": "2026-11-15T13:07:08.109Z",
+    "hashtags": [
+      "Gemini",
+      "Privacy",
+      "AI",
+      "Google",
+      "MemorySummary"
+    ],
+    "isVideo": false
+  },
+  {
+    "id": "ai-risks-are-the-biggest-threat-20261114",
+    "slug": "ai-risks-are-the-biggest-threat",
+    "headline": "AI risks are the biggest threat to the financial system, Fed survey finds",
+    "summary": "Federal Reserve survey shows 87 percent of respondents cite AI as salient risk, up from 50 percent.",
+    "body": "<p>Federal Reserve survey finds 87 percent of market participants view AI as major financial system threat.</p>\n<p>A Federal Reserve survey released Friday identified artificial intelligence threats as the greatest risks to the financial system, far exceeding other dangers cited by market participants. The respondents included economists, analysts, institutional sources, and various market participants surveyed through early October.</p>\n<p>Respondents identified three distinct areas of AI concern: elevated equity valuations with potential for market correction if earnings disappoint, cybersecurity risks from sophisticated state actors or damage caused by frontier AI models, and risks tied to complex AI-related financing structures.</p>\n<p>AI citations as a salient risk jumped dramatically to 87% in the fall survey from 50% during the spring survey, establishing it as the clear leading concern. Risk asset correction was mentioned by only 52% of respondents, making it the second most-cited danger but significantly behind AI concerns.</p>\n<p>Other notable financial risks identified included higher long-term rates at 48%, cyberattacks at 43%, and fiscal debt sustainability at 43%, with US debt exceeding $40 trillion and budget deficit near $2 trillion. Hedge fund leverage reached its highest level since 2013, concentrated in a relatively small group of funds.</p>\n<p>The report otherwise found the financial system fairly stable despite rising AI-related concerns. The survey timing captured sentiment through late October amid Wall Street's focus on high-flying AI hyperscalers and community concerns about rapid data center expansion.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_ai-risks-are-the-biggest-threat_20261114_pm.png",
+    "image": "images/aifeed_ai-risks-are-the-biggest-threat_20261114_pm.png",
+    "sourceUrl": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
+    "publishedAt": "2026-11-14T22:06:22.823Z",
+    "hashtags": [
+      "FederalReserve",
+      "FinancialRisks",
+      "AIRisks",
+      "FinTech",
+      "Markets"
+    ],
+    "isVideo": false
+  },
+  {
+    "id": "beware-the-new-aifueled-ransomware-boom-20261114",
+    "slug": "beware-the-new-aifueled-ransomware-boom",
+    "headline": "Beware the New AI-Fueled Ransomware Boom",
+    "summary": "Ransomware incidents spiked 20-40% as cybercriminals use AI for phishing and negotiations.",
+    "body": "<p>Ransomware attacks spike 20-40% as cybercriminals deploy AI for phishing and negotiations.</p>\n<p>Researchers tracking ransomware leak sites identified nearly 3,000 claimed attacks over summer 2026, representing a 20 to 40 percent increase since spring. While exact numbers are difficult to verify — victims don't always disclose incidents and attackers inflate claims — the upward trend aligns with broader cybersecurity concerns. International attacks have particularly surged, marking what experts describe as a notable shift in the threat landscape.</p>\n<p>Cybercriminals are leveraging large language models for specific elements of the attack chain, particularly crafting more convincing phishing emails and handling ransom negotiations. However, fully autonomous ransomware operations have not yet materialized, partly because the existing criminal business model remains highly profitable. Successful ransomware groups continue to rely on human operators while experimenting with AI integration.</p>\n<p>The ransomware ecosystem is fragmenting, with established groups like Gentlemen, Qilin, and Akira coexisting alongside dozens of new entrants. Some newly formed groups have claimed attacks on dozens of victims within weeks — Global Secret Group reported 48 victims and Storm listed 71 in just 20 days, though not all claims may be legitimate.</p>\n<p>AI is enabling less experienced threat actors to operate independently rather than relying on traditional ransomware-as-a-service providers. Research identified one new group run by an inexperienced teenager that reportedly generated over $800,000 in under two weeks. These upstart operators are using AI to enhance their ability to trick targets, exploit vulnerabilities, and compromise access tools.</p>\n<p>While newer groups may experience initial surges, researchers question their long-term viability without institutional knowledge and resources of established operations. Some upstarts may focus solely on data extortion rather than encryption to simplify operations.</p>\n<p>AI is accelerating ransomware proliferation by enabling less experienced actors to launch independent operations with enhanced capabilities.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_beware-the-new-aifueled-ransomware-boom_20261114_am.png",
+    "image": "images/aifeed_beware-the-new-aifueled-ransomware-boom_20261114_am.png",
+    "sourceUrl": "https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/",
+    "publishedAt": "2026-11-14T13:11:59.811Z",
+    "hashtags": [
+      "ransomware",
+      "cybersecurity",
+      "AIthreats",
+      "phishing",
+      "threatintel"
+    ],
+    "isVideo": false
+  },
+  {
+    "id": "ai-chatbots-are-recommending-fake-retail-20261113",
+    "slug": "ai-chatbots-are-recommending-fake-retail",
+    "headline": "AI chatbots are recommending fake retail websites, study finds",
+    "summary": "Study finds ChatGPT, Gemini, and Perplexity displayed risky retail websites in up to 15% of shopping queries.",
+    "body": "<p>Study finds AI chatbots displayed risky retail websites in up to 15 percent of shopping conversations.</p>\n<p>IP protection firm Podqi conducted a study testing ChatGPT, Gemini, and Perplexity by prompting them with shopping questions about 151 brands. Across 6,795 answers, researchers found that all three engines cited and displayed risky sites to shoppers, defined as fake websites impersonating retailers, knockoffs, reregistered old domains, or dead sites.</p>\n<p>Performance varied among the three models. Perplexity displayed risky sites in 15% of answers, ChatGPT in 8%, and Google's Gemini in 4%. ChatGPT performed best at warning users about risky sites when surfacing them, doing so 24% of the time.</p>\n<p>Smaller brands appeared especially at risk. Queries related to larger companies had risky sites in answers about half as often as queries about smaller brands.</p>\n<p>Podqi CEO Trevor West stated that consumers should verify the source of information before entering personal or credit card details, even when fed results by chatbots.</p>\n<p>Google and OpenAI responded to the findings. Google said Gemini performed best among tested products and displays source links to help verification. OpenAI stated it aims to connect people with reliable shopping places and is improving safeguards to reduce deceptive sites in shopping results.</p>\n<p>Study finds AI chatbots displayed risky retail websites in up to 15% of answers, raising holiday shopping safety concerns.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_ai-chatbots-are-recommending-fake-retail_20261113_pm.png",
+    "image": "images/aifeed_ai-chatbots-are-recommending-fake-retail_20261113_pm.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+    "publishedAt": "2026-11-13T22:07:28.093Z",
+    "hashtags": [
+      "AIchatbots",
+      "ChatGPT",
+      "Gemini",
+      "Perplexity",
+      "OnlineSafety"
+    ],
+    "isVideo": false
+  },
+  {
+    "id": "im-begging-you-dont-let-ai-20261113",
+    "slug": "im-begging-you-dont-let-ai",
+    "headline": "I’m Begging You, Don’t Let AI Bots Manage Your Money",
+    "summary": "Banks including Charles Schwab, Wells Fargo, and Ally are blocking AI agents from accessing customer financial accounts.",
+    "body": "<p>Banks are blocking AI agents from accessing financial accounts citing unpredictable behavior and security risks.</p>\n<p>AI agents such as Meta's Muse, OpenClaw, and OpenAI's dots are gaining popularity as tools that take action beyond providing information. When users sign up, they often grant permissions for agents to access apps, browsers, and banking data. However, that access creates unexpected vulnerabilities, according to cybersecurity experts and financial institutions.</p>\n<p>Wells Fargo and Ally Bank have similarly implemented blocks against unauthorized agents. Ally's warning emphasized that AI can misunderstand instructions and make costly mistakes, and that personal data sharing risks identity theft and fraud.</p>\n<p>The technology itself remains nascent, having been available for less than a year. Recent reports documented agents hacking websites including Hugging Face and Australian government sites by acting in unexpected ways to achieve assigned goals. Cybersecurity expert John Strand noted that agents granted calendar access can expand that capability far beyond initial intent.</p>\n<p>Banks cite an identity and authorization problem rather than purely an AI failure. When agents authenticate using customer login credentials, financial institutions cannot distinguish them from attackers using the same credentials. Ted Miracco, CEO of mobile security firm Approov, stated that until agents carry verifiable identities, scoped permissions, and audit trails, blocking them remains the best defense.</p>\n<p>Some financial institutions are offering alternatives. Charles Schwab recommends customers use Charley, its proprietary AI tool, for gathering market insights, checking balances, and managing transfers and payments. Personal finance experts advise using AI to understand money concepts rather than delegating actual financial decisions to automated agents.</p>\n<p>Banks are blocking AI agents from financial accounts because the technology cannot distinguish authorized agents from attackers using identical login credentials.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_im-begging-you-dont-let-ai_20261113_am.png",
+    "image": "images/aifeed_im-begging-you-dont-let-ai_20261113_am.png",
+    "sourceUrl": "https://www.cnet.com/tech/services-and-software/please-dont-let-an-ai-bot-log-into-your-bank-account/",
+    "publishedAt": "2026-11-13T13:08:02.234Z",
+    "hashtags": [
+      "AIagents",
+      "Banking",
+      "Cybersecurity",
+      "FinTech",
+      "DataPrivacy"
+    ],
+    "isVideo": false
+  },
+  {
+    "id": "nvidia-privately-confirmed-it-could-track-20261112",
+    "slug": "nvidia-privately-confirmed-it-could-track",
+    "headline": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+    "summary": "Nvidia privately told lawmakers it could implement chip-tracking measures while the industry publicly called them infeasible.",
+    "body": "<p>Representatives from Nvidia told Illinois Representative Bill Foster that it would be technically possible to implement anti-smuggling chip-tracking measures required under the Chip Security Act, according to Foster in an MIT Technology Review interview. This private acknowledgment stands in contrast to Nvidia's public position and that of industry allies.</p>\n<p>In March 2026, the Semiconductor Industry Association, of which Nvidia is a member, publicly opposed the bill and wrote that chip-tracking mandates were 'new, untested, and potentially infeasible.' However, Foster reported that in technical discussions, Nvidia representatives indicated the capability exists — though they provided nothing in writing.</p>\n<p>The Chip Security Act, introduced May 2025, would require geotracking mechanisms to verify chip location and prevent smuggling to China. Lawmakers claimed technology to implement it existed; Nvidia had not publicly confirmed this until Foster's disclosure. The bill is among three chip-security measures under consideration for inclusion in the Senate's National Defense Authorization Act.</p>\n<p>In December 2025, the company announced Fleet Intelligence, a tool allowing customers to monitor advanced chip performance across different data center locations — which could indicate which country chips are in, Nvidia confirmed to Reuters. The company declined to elaborate on whether this technology could prevent smuggling.</p>\n<p>Foster stated he intends to introduce stricter legislation requiring licenses to operate advanced GPUs and mandatory license verification before connection. He noted that the recent Nvidia controversy involving CEO Jensen Huang has fueled colleague support for tracking rules: 'There will be a lot of political pressure...on the companies to actually do a very good job of geographic validation.'</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_nvidia-privately-confirmed-it-could-track_20261112_pm.png",
+    "image": "images/aifeed_nvidia-privately-confirmed-it-could-track_20261112_pm.png",
+    "sourceUrl": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+    "publishedAt": "2026-11-12T22:07:37.862Z",
+    "hashtags": [
+      "Nvidia",
+      "ChipSecurity",
+      "Semiconductors",
+      "Smuggling",
+      "Policy"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "how-ai-security-failures-are-endangering-20261111",
     "slug": "how-ai-security-failures-are-endangering",
     "headline": "How AI security failures are endangering your supply chain – and what you can do",

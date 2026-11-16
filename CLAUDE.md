@@ -161,24 +161,27 @@ Every entry in `posts-index.json` MUST have:
 **Rules:**
 - `body` = **exact LinkedIn caption text** — never summarize or shorten
 - Source URL = proper `<a>` hyperlink, never plain text
-- Hashtag spans = clickable `<a>` tags linking to `index.html?tag=...`
+- Hashtag spans = clickable `<a>` tags linking to the story's topic hub (`/news/topics/{category}/`)
 - `hashtags` array must be present for tag filtering to work
 
 ### Categories (must match exactly — each has a colored pill):
-| Category | Color |
-|---|---|
-| Models | Orange |
-| Tools | Green |
-| Industry | Purple |
-| Research | Blue |
-| Products | Yellow |
-| Business | Rose |
-| Hardware | Cyan |
-| Safety | Red |
-| Health | Teal |
-| Infrastructure | Indigo |
+Website pills use Option C "Soft" in `assets/tokens.css` (`--cat-*`). New Instagram graphics use the punchier Option A "Signal" hexes in `GRAPHIC_SPEC.md`. Security uses the Safety color. Do not hard-code category hexes in page CSS.
 
-**Adding a new category:** Add `.cat-X` and `.tag-x` CSS to BOTH `index.html` AND `post.html`, and add a tag bar entry to `index.html`.
+| Category | Website (Option C) | IG graphic (Option A) |
+|---|---|---|
+| Models | `#bef264` | `#a3e635` |
+| Tools | `#67e8f9` | `#22d3ee` |
+| Research | `#6ee7b7` | `#34d399` |
+| Business | `#93c5fd` | `#60a5fa` |
+| Policy | `#d8b4fe` | `#c084fc` |
+| Safety / Security | `#fca5a5` | `#f87171` |
+| Industry | `#fde68a` | `#fbbf24` |
+| Products | `#f9a8d4` | `#f472b6` |
+| Hardware | `#fdba74` | `#fb923c` |
+| Infrastructure | `#a5b4fc` | `#818cf8` |
+| Health | `#5eead4` | `#2dd4bf` |
+
+**Adding a new category:** Add a `--cat-*` variable in `assets/tokens.css` and a row in `GRAPHIC_SPEC.md`. Unknown categories fall back to `--purple-2`.
 
 ---
 

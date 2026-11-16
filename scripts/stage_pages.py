@@ -57,7 +57,7 @@ ROOT_FILES = {
     "AIFeed_MediaKit.pdf",
     "cc1f3906cab112076693c81a63f1071c.txt",
 }
-SITE_DIRS = {"about", "faq", "subscribe", "newsletter", "privacy", "news", "thumbs", "_posts"}
+SITE_DIRS = {"about", "faq", "subscribe", "newsletter", "privacy", "news", "thumbs", "_posts", "assets"}
 SKIP_DIRS = {".git", "graphics", "automation", "brand", "scripts", ".github", "_data", "_includes", "_site", "node_modules", "__pycache__"}
 ALWAYS_IMAGES = {"images/aifeed_endslide.png"}
 VIDEO_EXTS = {".mp4", ".jpg", ".jpeg", ".png", ".webp"}

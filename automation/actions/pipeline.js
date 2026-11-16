@@ -401,11 +401,13 @@ async function main() {
     // brief and the renderer; cfg.reelHookStyle = "A" | "B" | "C". Unset = v2, unchanged.
     const reelTpl = reelTemplateOpts(cfg, process.env, decision);
     const reelV3 = reelTpl.template === 'v3';
-    console.log('Reel template: ' + reelTpl.template + (reelV3 && reelTpl.hookStyle ? ' (hook ' + reelTpl.hookStyle + ')' : ''));
+    // The brief writes the A/B/C hooks whenever a hook style is set (the v2/v3 comparison runs the hook test on both).
+    const briefV3 = reelV3 || Boolean(reelTpl.hookStyle);
+    console.log('Reel template: ' + reelTpl.template + (reelTpl.hookStyle ? ' (hook ' + reelTpl.hookStyle + ')' : ''));
     const feedTmp = path.join(require('os').tmpdir(), published.pngName);
     fs.writeFileSync(feedTmp, feed.png);
     const getBrief = async () => {
-      if (!brief) brief = await reelBrief(published.post, prompt => claudeMessage(env.ANTHROPIC_API_KEY, { model: cfg.anthropicModel, prompt, maxTokens: reelV3 ? 700 : 400, temperature: 0.4, tries: 2 }), { v3: reelV3 });
+      if (!brief) brief = await reelBrief(published.post, prompt => claudeMessage(env.ANTHROPIC_API_KEY, { model: cfg.anthropicModel, prompt, maxTokens: briefV3 ? 700 : 400, temperature: 0.4, tries: 2 }), { v3: briefV3 });
       return brief;
     };
     try {
@@ -598,6 +600,7 @@ async function main() {
         // live post: reuses the carousel's scene (no second Cloudflare call); Cloudflare only if the slides failed
         const rr = renderReelSafe(env.REPO, Object.assign({}, published.post, brief), tmpPng, published.post.photoUrl || qc.story.ogImage || '', Object.assign({ cloudflare: !slides }, reelSceneOpts, reelTpl), { log: m => console.log(redact(m)) });
         if (rr.v3Error) await sendAlert('AIFeed: Reel v3 render failed, posted with the v2 Reel template instead\n' + redact(rr.v3Error));
+        else if (reelV3 && rr.template === 'v2') await sendAlert('AIFeed: Reel voiceover unavailable, so the v3 Reel was rendered as the v2 music-only cut\n' + redact(rr.voiceError || 'no voice error reported'));
         console.log('Reel template used: ' + rr.template + '. Reel scene: ' + rr.sceneSource + ' (' + (rr.sceneLog || []).join('; ') + ') punch: ' + rr.punch + ' voice: ' + (rr.voice || 'none (music-only' + (rr.voiceError ? ': ' + rr.voiceError : '') + ')'));
         const rel = 'videos/reels/' + published.slug + '.mp4';
         const coverRel = rr.cover ? 'videos/reels/' + published.slug + '_cover.jpg' : '';
@@ -622,7 +625,7 @@ async function main() {
             console.log('Instagram Reel published ' + (r.id || '') + (cfg.reelsShareToFeed === false ? ' (Reels tab only, not in feed)' : ''));
             reelPublished = true;
             const hookRec = { date: decision.date, slot: decision.slot, slug: published.slug, template: rr.template,
-              hookStyle: rr.template === 'v3' ? (rr.hookStyle || '') : '', hookStyleRequested: rr.template === 'v3' ? reelTpl.hookStyle : '', igReelId: String(r.id || ''), permalink: '' };
+              hookStyle: rr.hookStyle || '', hookStyleRequested: reelTpl.hookStyle || '', igReelId: String(r.id || ''), permalink: '' };
             try { const pj = await graphGet(`https://graph.facebook.com/${cfg.graphVersion}/${r.id}?fields=permalink`, { token: env.META_PAGE_TOKEN, appSecret: env.META_APP_SECRET }); hookRec.permalink = (pj && pj.permalink) || ''; }
             catch (e) { console.log('Reel permalink lookup failed: ' + redact(e.message)); }
             console.log('Hook test record: ' + JSON.stringify(hookRec));

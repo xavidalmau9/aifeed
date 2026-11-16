@@ -1,6 +1,6 @@
 # AIFeed.run AI News
 
-> The AI news that matters. Top AI stories, explained in 60 seconds. Sources linked on every story. Every story page opens with a short summary and Key takeaways.
+> The AI news that matters. Big AI stories in plain English, with the source on every one. Every story page opens with a short summary and Key takeaways.
 
 AIFeed.run is an AI-powered AI news brand. Stories are selected and written by AI systems from major outlets, then published on aifeed.run and across Instagram, Facebook and LinkedIn. We do not claim human editors rewrite the news.
 

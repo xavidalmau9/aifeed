@@ -21,6 +21,6 @@
   "reelsPublishEnabled": true,
   "igCarouselEnabled": true,
   "reelsShareToFeed": false,
-  "reelTemplate": "v3",
+  "reelTemplate": "rotate",
   "reelHookStyle": "rotate"
 }

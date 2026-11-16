@@ -1,47 +1,56 @@
 [
   {
-    "filename": "how-ai-security-failures-are-endangering.mp4",
-    "url": "https://aifeed.run/videos/reels/how-ai-security-failures-are-endangering.mp4",
-    "title": "How AI security failures are endangering your supply chain – and what you can do",
-    "caption": "Black Kite research finds widespread cybersecurity weaknesses across AI suppliers, exposing enterprise networks to critical vulnerabilities.",
+    "filename": "28-zeroday-findings-in-under-two.mp4",
+    "url": "https://aifeed.run/videos/reels/28-zeroday-findings-in-under-two.mp4",
+    "title": "28 Zero-Day Findings in Under Two Days. Is Robotics Security Keeping Pace?",
+    "caption": "VicOne identified 28 zero-day vulnerabilities in Physical AI tools from Google, NVIDIA, Meta using AI-assisted research in under two days.",
     "source": "",
-    "sourceUrl": "https://www.zdnet.com/tech/ai-security-failures-supply-chain-risks-black-kite-research/",
-    "date": "2026-11-11T13:07:39.727Z"
+    "sourceUrl": "https://spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security",
+    "date": "2026-11-16T13:06:17.019Z"
   },
   {
-    "filename": "security-flaws-across-uk-government-sites.mp4",
-    "url": "https://aifeed.run/videos/reels/security-flaws-across-uk-government-sites.mp4",
-    "title": "Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information",
-    "caption": "Researcher found over 100 serious vulnerabilities in UK government code, with one exposing 'god-tier' credentials.",
+    "filename": "eric-trumpbacked-robot-soldier-startup-cant.mp4",
+    "url": "https://aifeed.run/videos/reels/eric-trumpbacked-robot-soldier-startup-cant.mp4",
+    "title": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
+    "caption": "Foundation Future Industries missed payroll after CEO borrowed $4.6M in company funds to buy luxury home.",
     "source": "",
-    "sourceUrl": "https://www.wired.com/story/security-flaws-across-uk-government-sites-exposed-god-tier-information/",
-    "date": "2026-11-10T22:08:01.650Z"
+    "sourceUrl": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
+    "date": "2026-11-15T22:05:55.628Z"
   },
   {
-    "filename": "the-climate-case-for-ai-has.mp4",
-    "url": "https://aifeed.run/videos/reels/the-climate-case-for-ai-has.mp4",
-    "title": "The climate case for AI has not been made",
-    "caption": "Most industries haven't deployed AI in ways matching emissions-reduction projections despite corporate climate tech pledges.",
+    "filename": "checked-geminis-new-memory-summary-to.mp4",
+    "url": "https://aifeed.run/videos/reels/checked-geminis-new-memory-summary-to.mp4",
+    "title": "I checked Gemini’s new Memory summary to see what it knew about me – how to see and edit yours",
+    "caption": "Google's Gemini now lets users view, edit, and remove personal details the AI has learned about them.",
     "source": "",
-    "sourceUrl": "https://www.technologyreview.com/2026/11/09/1148166/the-climate-case-for-ai-has-not-been-made/",
-    "date": "2026-11-09T22:07:30.343Z"
+    "sourceUrl": "https://www.zdnet.com/innovation/google-gemini-memory-summary-user-control/",
+    "date": "2026-11-15T13:07:08.109Z"
   },
   {
-    "filename": "bikers-and-buglovers-join-forces-to.mp4",
-    "url": "https://aifeed.run/videos/reels/bikers-and-buglovers-join-forces-to.mp4",
-    "title": "Bikers and Bug-Lovers Join Forces to Fight a New Google Data Center",
-    "caption": "Wildlife groups, environmental nonprofits, and motorcycle enthusiasts unite to oppose Google's planned Thurrock data center.",
+    "filename": "ai-risks-are-the-biggest-threat.mp4",
+    "url": "https://aifeed.run/videos/reels/ai-risks-are-the-biggest-threat.mp4",
+    "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
+    "caption": "Federal Reserve survey shows 87 percent of respondents cite AI as salient risk, up from 50 percent.",
     "source": "",
-    "sourceUrl": "https://www.wired.com/story/bug-activists-and-biker-gang-members-are-teaming-up-to-protest-data-centers/",
-    "date": "2026-11-09T13:07:33.834Z"
+    "sourceUrl": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
+    "date": "2026-11-14T22:06:22.823Z"
   },
   {
-    "filename": "china-reportedly-recruited-ai-exec-to.mp4",
-    "url": "https://aifeed.run/videos/reels/china-reportedly-recruited-ai-exec-to.mp4",
-    "title": "China reportedly recruited AI exec to spy on Jensen Huang",
-    "caption": "China's intelligence agency reportedly recruited a tech executive to spy on Nvidia CEO Jensen Huang for AI chip intelligence.",
+    "filename": "beware-the-new-aifueled-ransomware-boom.mp4",
+    "url": "https://aifeed.run/videos/reels/beware-the-new-aifueled-ransomware-boom.mp4",
+    "title": "Beware the New AI-Fueled Ransomware Boom",
+    "caption": "Ransomware incidents spiked 20-40% as cybercriminals use AI for phishing and negotiations.",
     "source": "",
-    "sourceUrl": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
-    "date": "2026-11-07T09:42:33.704Z"
+    "sourceUrl": "https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/",
+    "date": "2026-11-14T13:11:59.811Z"
+  },
+  {
+    "filename": "ai-chatbots-are-recommending-fake-retail.mp4",
+    "url": "https://aifeed.run/videos/reels/ai-chatbots-are-recommending-fake-retail.mp4",
+    "title": "AI chatbots are recommending fake retail websites, study finds",
+    "caption": "Study finds ChatGPT, Gemini, and Perplexity displayed risky retail websites in up to 15% of shopping queries.",
+    "source": "",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+    "date": "2026-11-13T22:07:28.093Z"
   }
 ]

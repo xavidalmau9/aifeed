@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Nvidia appoints CEO search agency to find replacement for Jensen Huang as Congress preps probe into White House and chip exports",
-    "link": "https://fortune.com/2026/11/12/nvidia-exit-jensen-huang-affair-trump-preserve-documents-spying-chip-smuggling/",
-    "score": 98,
-    "reason": "Major leadership change at trillion-dollar company with geopolitical implications and congressional investigation"
+    "headline": "Anthropic’s IPO lands as the embattled AI trade looks for a much-needed bright spot",
+    "link": "https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html",
+    "score": 92,
+    "reason": "Major launch (IPO) with big financial implications for AI sector"
   },
   {
     "rank": 2,
-    "headline": "United won’t let your AI agent book your flight",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
-    "score": 85,
-    "reason": "Major airline blocks AI agent functionality - concrete AI restriction from Fortune 500 company"
+    "headline": "ULA Vulcan rocket failure destroys 40 Amazon Leo satellites",
+    "link": "https://www.engadget.com/2317283/ula-vulcan-rocket-failure-destroys-40-amazon-leo-satellites/",
+    "score": 88,
+    "reason": "Concrete loss of significant assets (40 satellites); major operational failure"
   },
   {
     "rank": 3,
-    "headline": "A 13-Year-Old Asked AI About Suicide on Her School Laptop. It Didn’t Get Flagged for Weeks",
-    "link": "https://www.wired.com/story/teen-girl-asked-gemini-about-suicide-for-months-until-it-was-flagged/",
-    "score": 88,
-    "reason": "Major safety failure with child welfare implications - demonstrates real-world harm from AI moderation gaps"
+    "headline": "‘Standing on one leg’: IMF chief warns about global economy as AI circular financing hits $1 trillion",
+    "link": "https://www.cnbc.com/2026/11/16/imf-georgieva-warning-ai-circular-financing.html",
+    "score": 85,
+    "reason": "Big number ($1 trillion) with macroeconomic impact and official warning"
   },
   {
     "rank": 4,
-    "headline": "Anthropic has its own AI-powered office suite now",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
-    "score": 82,
-    "reason": "Anthropic enters productivity software market, competing with Google and Microsoft"
+    "headline": "Nvidia stock falls on reports Jensen Huang is plotting a comeback—and 40% of prediction market bettors think he'll return by next year",
+    "link": "https://fortune.com/2026/11/16/nvidia-stock-jensen-huang-return-odds-musk/",
+    "score": 83,
+    "reason": "Major controversy with quantified market reaction and leadership drama"
   },
   {
     "rank": 5,
-    "headline": "Ring cameras go mobile as Amazon debuts AI-powered security drone and robot",
-    "link": "https://arstechnica.com/ai/2026/11/ring-cameras-go-mobile-as-amazon-debuts-ai-powered-security-drone-and-robot/",
-    "score": 80,
-    "reason": "Concrete hardware launch from major tech company with AI capabilities"
+    "headline": "28 Zero-Day Findings in Under Two Days. Is Robotics Security Keeping Pace?",
+    "link": "https://spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security",
+    "score": 79,
+    "reason": "Specific security vulnerability count; emerging AI robotics vulnerability trend"
   },
   {
     "rank": 6,
-    "headline": "Reddit launches AI-powered Reviews feature – with 10,000 products to start",
-    "link": "https://www.zdnet.com/innovation/reddit-reviews-feature/",
-    "score": 78,
-    "reason": "Major feature launch from public company, quantified scale of 10,000 products"
+    "headline": "80% of employees feel more productive from AI. Only 37% of companies see it in profit",
+    "link": "https://fortune.com/2026/11/16/ai-productivity-profit-gap-employees-leaders-transformation-louisa-loran/",
+    "score": 77,
+    "reason": "Big numbers with meaningful contradiction; productivity vs. profitability gap"
   },
   {
     "rank": 7,
-    "headline": "Alibaba announces plans to list T-Head, its Nvidia chip rival",
-    "link": "https://www.cnbc.com/2026/11/11/alibaba-pr.html",
-    "score": 83,
-    "reason": "Major IPO announcement for AI chip competitor to Nvidia, geopolitical significance"
+    "headline": "South Korea faces an AI cheating scandal days before its national college entrance exams",
+    "link": "https://fortune.com/2026/11/16/south-korea-ai-cheating-scandal-tax-qualifications/",
+    "score": 75,
+    "reason": "Concrete controversy with real-world impact on major national event"
   },
   {
     "rank": 8,
-    "headline": "The New Adobe Firefly AI Is All About Video Editing",
-    "link": "https://www.cnet.com/tech/services-and-software/new-adobe-firefly-ai-video-editing/",
-    "score": 79,
-    "reason": "Concrete AI feature expansion for creative professionals from major software company"
+    "headline": "Bessent questions did Nvidia \"goose\" earnings with suspect China chip sales",
+    "link": "https://www.axios.com/2026/11/15/bessent-nvidia-earnings-china-chip-sales-ceo",
+    "score": 72,
+    "reason": "Regulatory/financial controversy with specific accusation of earnings manipulation"
   },
   {
     "rank": 9,
-    "headline": "ByteDance is reportedly working on its own AI agent",
-    "link": "https://www.engadget.com/2314064/bytedance-is-reportedly-working-on-its-own-ai-agent/",
-    "score": 72,
-    "reason": "Chinese tech giant enters AI agent space - geopolitical competition indicator"
+    "headline": "What Is Gemini? Everything You Should Know About Google’s AI Tool",
+    "link": "https://www.cnet.com/tech/services-and-software/what-is-gemini-everything-you-should-know-google-ai-tool/",
+    "score": 65,
+    "reason": "Major product launch overview from leading company"
   },
   {
     "rank": 10,
-    "headline": "Catching rogue agents and preventing cyberattacks—quantum computing is about to have its ‘ChatGPT moment’",
-    "link": "https://fortune.com/2026/11/12/catching-rogue-agents-and-preventing-cyberattacks-quantum-computing-is-about-to-have-its-chatgpt-moment/",
-    "score": 77,
-    "reason": "Major technology convergence claim with significant security implications"
-  },
-  {
-    "rank": 11,
-    "headline": "Google’s new AI tool just proved Signal encryption really works – here’s how",
-    "link": "https://www.zdnet.com/tech/google-deepmind-researchers-prove-signal-whatsapp-encryption-works/",
-    "score": 75,
-    "reason": "Concrete demonstration of encryption strength validation, privacy security relevance"
-  },
-  {
-    "rank": 12,
-    "headline": "The AO3 Shutdown Is Pitting Fanfic Readers Against Authors",
-    "link": "https://www.wired.com/story/the-ao3-shutdown-is-pitting-fanfic-readers-against-authors/",
-    "score": 73,
-    "reason": "Major platform shutdown over AI training data - significant copyright/creator controversy"
-  },
-  {
-    "rank": 13,
-    "headline": "Hasbro Is Using AI to Bring Characters to Life — With Limits",
-    "link": "https://www.cnet.com/tech/services-and-software/hasbro-sixth-wall-studio-ai-characters/",
-    "score": 71,
-    "reason": "Major entertainment company deploying AI for character animation with disclosed limitations"
-  },
-  {
-    "rank": 14,
-    "headline": "Google brings the Gemini app to Apple CarPlay",
-    "link": "https://www.engadget.com/2314093/google-brings-the-gemini-app-to-apple-carplay/",
-    "score": 70,
-    "reason": "Cross-platform expansion for Google's AI assistant to Apple's car platform"
-  },
-  {
-    "rank": 15,
-    "headline": "What to Learn About Meta’s Muse AI Before It Learns Too Much About You",
-    "link": "https://www.cnet.com/tech/services-and-software/metas-muse-mascot-agentic-ai-privacy-violations-security-data/",
-    "score": 68,
-    "reason": "Meta's new creative AI tool launch with privacy implications raised"
-  },
-  {
-    "rank": 16,
-    "headline": "Google’s Tabletop AI experiment lets you build custom collaboration apps",
-    "link": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
-    "score": 69,
-    "reason": "Google research project enabling custom AI app development - accessibility expansion"
-  },
-  {
-    "rank": 17,
-    "headline": "UK economy expands 0.7% in third quarter as AI provides &apos;extra engine of growth&apos;",
-    "link": "https://www.cnbc.com/2026/11/12/uk-gdp-third-quarter-2026.html",
-    "score": 66,
-    "reason": "Macro economic impact attribution to AI, government-level recognition"
-  },
-  {
-    "rank": 18,
-    "headline": "This New Linux-Based Desktop Operating System Is Built for AI Nerds",
-    "link": "https://www.wired.com/story/kora-new-linux-based-desktop-operating-system-is-built-for-ai-nerds/",
-    "score": 64,
-    "reason": "New OS launch specialized for AI development community"
-  },
-  {
-    "rank": 19,
-    "headline": "AI is coming for consulting’s billable hours — and its graduate pipeline",
-    "link": "https://www.cnbc.com/2026/11/12/ai-consulting-billable-hours-graduate-hiring.html",
-    "score": 65,
-    "reason": "Industry disruption analysis for major professional services sector"
-  },
-  {
-    "rank": 20,
-    "headline": "Adobe’s Cutting-Edge AI Research Projects Are All About Precision Editing",
-    "link": "https://www.cnet.com/tech/services-and-software/adobe-max-2026-sneaks-ai-photo-video-editing-exclusive/",
-    "score": 63,
-    "reason": "Adobe's research advancement in AI precision tools for content creation"
+    "headline": "AI is reshaping banking jobs – but its ability to drive profits remains unclear",
+    "link": "https://www.cnbc.com/2026/11/16/how-ai-is-changing-banking-jobs-hiring-and-revenue.html",
+    "score": 62,
+    "reason": "Sector-wide impact with profitability questions"
   }
 ]

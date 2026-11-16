@@ -9,6 +9,14 @@ on:
         description: 'Comma-separated post slugs (empty = 4 most recent)'
         required: false
         default: ''
+      template:
+        description: 'Reel template to render (v2 or v3; empty = v2)'
+        required: false
+        default: ''
+      hook_style:
+        description: 'Hook style A, B or C (empty = the normal punch)'
+        required: false
+        default: ''
 
 permissions:
   contents: read
@@ -19,7 +27,7 @@ concurrency:
 
 jobs:
   render:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # same image as the autopilot post job (kokoro-onnx needs Python < 3.14)
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
@@ -54,6 +62,8 @@ jobs:
           # no Cloudflare secrets: samples must never spend the free Workers AI quota the live autopilot relies on
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SAMPLE_SLUGS: ${{ inputs.slugs }}
+          SAMPLES_TEMPLATE: ${{ inputs.template }}
+          SAMPLES_HOOK_STYLE: ${{ inputs.hook_style }}
           SAMPLES_OUT: ${{ runner.temp }}/reel-samples
         run: node automation/reels/render_samples.js
       - uses: actions/upload-artifact@v4

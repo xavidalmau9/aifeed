@@ -1,6 +1,662 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-16T13:06:17.019Z",
+      "date": "2026-11-16",
+      "slot": 1,
+      "headline": "28 Zero-Day Findings in Under Two Days. Is Robotics Security Keeping Pace?",
+      "canonUrl": "spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security",
+      "url": "https://spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security",
+      "slug": "28-zeroday-findings-in-under-two",
+      "image": "aifeed_28-zeroday-findings-in-under-two_20261116_am.png",
+      "photo": {
+        "dhash": "37c4cd5d3c4dcdac",
+        "phash": "afc3c2d46c55b151",
+        "hist": [
+          239,
+          139,
+          0,
+          0,
+          0,
+          87,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          397,
+          10,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          62,
+          0,
+          0,
+          0,
+          36,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "url": "https://spectrum.ieee.org/media-library/humanoid-and-dog-robots-watch-a-massive-swirling-storm-over-a-modern-city-walkway.jpg?id=68562173&width=1200&height=600&coordinates=0%2C224%2C0%2C225",
+        "via": "og:image"
+      }
+    },
+    {
+      "postedAt": "2026-11-15T22:05:55.628Z",
+      "date": "2026-11-15",
+      "slot": 2,
+      "headline": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
+      "canonUrl": "cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
+      "url": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
+      "slug": "eric-trumpbacked-robot-soldier-startup-cant",
+      "image": "aifeed_eric-trumpbacked-robot-soldier-startup-cant_20261115_pm.png",
+      "photo": {
+        "dhash": "3373d3cb9b3b1b05",
+        "phash": "967a43a5fd131469",
+        "hist": [
+          425,
+          14,
+          0,
+          0,
+          2,
+          10,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          27,
+          2,
+          0,
+          0,
+          10,
+          177,
+          13,
+          0,
+          0,
+          3,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          63,
+          1,
+          0,
+          0,
+          40,
+          75,
+          11,
+          0,
+          0,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          46,
+          12,
+          0,
+          0,
+          0,
+          3,
+          43
+        ],
+        "url": "https://image.cnbcfm.com/api/v1/image/108313716-17800536432026-03-12t071236z_1666355942_rc27fjaubt68_rtrmadp_0_tech-robots-conflict-zones.jpeg?v=1780053657&w=1920&h=1080",
+        "via": "og:image"
+      }
+    },
+    {
+      "postedAt": "2026-11-15T13:07:08.109Z",
+      "date": "2026-11-15",
+      "slot": 1,
+      "headline": "I checked Gemini’s new Memory summary to see what it knew about me – how to see and edit yours",
+      "canonUrl": "zdnet.com/innovation/google-gemini-memory-summary-user-control",
+      "url": "https://www.zdnet.com/innovation/google-gemini-memory-summary-user-control/",
+      "slug": "checked-geminis-new-memory-summary-to",
+      "image": "aifeed_checked-geminis-new-memory-summary-to_20261115_am.png",
+      "photo": {
+        "dhash": "37c5b5d5796d6d7d",
+        "phash": "29a7b875a0d55715",
+        "hist": [
+          549,
+          21,
+          0,
+          0,
+          22,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          8,
+          0,
+          0,
+          165,
+          161,
+          5,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          3,
+          0,
+          0,
+          5,
+          47,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "url": "https://www.zdnet.com/wp-content/uploads/sites/3/Gemini-memory-summary.jpg",
+        "via": "og:image"
+      }
+    },
+    {
+      "postedAt": "2026-11-14T22:06:22.823Z",
+      "date": "2026-11-14",
+      "slot": 2,
+      "headline": "AI risks are the biggest threat to the financial system, Fed survey finds",
+      "canonUrl": "cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
+      "url": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
+      "slug": "ai-risks-are-the-biggest-threat",
+      "image": "aifeed_ai-risks-are-the-biggest-threat_20261114_pm.png",
+      "photo": {
+        "dhash": "475bd9d9dad8d8d8",
+        "phash": "9aa84bcc95946d6b",
+        "hist": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          146,
+          1,
+          0,
+          0,
+          1,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          17,
+          122,
+          25,
+          0,
+          0,
+          0,
+          35,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          646
+        ],
+        "url": "https://image.cnbcfm.com/api/v1/image/108550641-1794522605632-gettyimages-2299887954-NSCALE_DATA_CENTER.jpeg?v=1794522669&w=1920&h=1080",
+        "via": "og:image"
+      }
+    },
+    {
+      "postedAt": "2026-11-14T13:11:59.811Z",
+      "date": "2026-11-14",
+      "slot": 1,
+      "headline": "Beware the New AI-Fueled Ransomware Boom",
+      "canonUrl": "wired.com/story/beware-the-new-ai-fueled-ransomware-boom",
+      "url": "https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/",
+      "slug": "beware-the-new-aifueled-ransomware-boom",
+      "image": "aifeed_beware-the-new-aifueled-ransomware-boom_20261114_am.png",
+      "photo": {
+        "dhash": "792939b3d6d6ce8c",
+        "phash": "cccdc09933373167",
+        "hist": [
+          54,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          0,
+          0,
+          0,
+          20,
+          153,
+          32,
+          0,
+          0,
+          1,
+          28,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          2,
+          0,
+          0,
+          12,
+          4,
+          62,
+          1,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          259,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          336
+        ],
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Beware%5E_-_geograph.org.uk_-_3404015.jpg/1920px-Beware%5E_-_geograph.org.uk_-_3404015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "via": "Wikimedia Commons photo"
+      }
+    },
+    {
+      "postedAt": "2026-11-13T22:07:28.093Z",
+      "date": "2026-11-13",
+      "slot": 2,
+      "headline": "AI chatbots are recommending fake retail websites, study finds",
+      "canonUrl": "theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+      "slug": "ai-chatbots-are-recommending-fake-retail",
+      "image": "aifeed_ai-chatbots-are-recommending-fake-retail_20261113_pm.png",
+      "photo": {
+        "dhash": "a0a7949c9c9c989b",
+        "phash": "ad4293bcac435aab",
+        "hist": [
+          0,
+          49,
+          94,
+          10,
+          0,
+          9,
+          20,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          5,
+          19,
+          9,
+          8,
+          3,
+          1,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          6,
+          31,
+          239,
+          5,
+          7,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          446,
+          7,
+          0,
+          0
+        ],
+        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKS539_AI_AGENTS_SHOPPING_E.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+        "via": "og:image"
+      }
+    },
+    {
+      "postedAt": "2026-11-13T13:08:02.234Z",
+      "date": "2026-11-13",
+      "slot": 1,
+      "headline": "I’m Begging You, Don’t Let AI Bots Manage Your Money",
+      "canonUrl": "cnet.com/tech/services-and-software/please-dont-let-an-ai-bot-log-into-your-bank-account",
+      "url": "https://www.cnet.com/tech/services-and-software/please-dont-let-an-ai-bot-log-into-your-bank-account/",
+      "slug": "im-begging-you-dont-let-ai",
+      "image": "aifeed_im-begging-you-dont-let-ai_20261113_am.png",
+      "photo": {
+        "dhash": "834e8ca727131307",
+        "phash": "597c44d791552cab",
+        "hist": [
+          14,
+          7,
+          5,
+          6,
+          0,
+          0,
+          1,
+          44,
+          0,
+          0,
+          0,
+          32,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          2,
+          7,
+          1,
+          1,
+          0,
+          0,
+          0,
+          24,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          2,
+          0,
+          0,
+          5,
+          9,
+          4,
+          0,
+          0,
+          0,
+          55,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          14,
+          0,
+          0,
+          0,
+          16,
+          729
+        ],
+        "url": "https://www.cnet.com/wp-content/uploads/sites/2/GettyImages-2299572954.jpg",
+        "via": "og:image"
+      }
+    },
+    {
+      "postedAt": "2026-11-12T22:07:37.862Z",
+      "date": "2026-11-12",
+      "slot": 2,
+      "headline": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+      "canonUrl": "technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking",
+      "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+      "slug": "nvidia-privately-confirmed-it-could-track",
+      "image": "aifeed_nvidia-privately-confirmed-it-could-track_20261112_pm.png",
+      "photo": {
+        "dhash": "ced75a8a34b97333",
+        "phash": "3602cf6a25a58fcd",
+        "hist": [
+          122,
+          173,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          174,
+          109,
+          0,
+          0,
+          99,
+          28,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          77,
+          0,
+          0,
+          8,
+          79,
+          0,
+          0,
+          0,
+          57,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          21,
+          0,
+          0,
+          0,
+          16,
+          36
+        ],
+        "url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/foster-huang.jpg?resize=1200,600",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-11-11T13:07:39.727Z",
       "date": "2026-11-11",
       "slot": 1,
@@ -5648,244 +6304,6 @@
     }
   ],
   "rankings": {
-    "2026-10-28": [
-      {
-        "rank": 1,
-        "title": "AI Emergency Alerts Are Coming. Humans Might Not Be Ready",
-        "canonUrl": "wired.com/story/ai-emergency-alerts-coming-humans-not-ready"
-      },
-      {
-        "rank": 2,
-        "title": "VisionQuest is what happens when AI really goes rogue",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai"
-      },
-      {
-        "rank": 3,
-        "title": "UK Home Office May Face Investigation Over Use of OpenAI Tech",
-        "canonUrl": "wired.com/story/uk-home-office-may-face-investigation-over-use-of-openai-tools"
-      },
-      {
-        "rank": 4,
-        "title": "Should AI Decide Your Court Case? This Judge Says Yes",
-        "canonUrl": "wired.com/story/geoffrey-vos-uk-judge-ai-legal-profession-challenges"
-      },
-      {
-        "rank": 5,
-        "title": "Your Robot’s Safety Functions Already Work. What If the Input Lies?",
-        "canonUrl": "spectrum.ieee.org/ai-robot-safety-cybersecurity-vicone"
-      },
-      {
-        "rank": 6,
-        "title": "Look Out for Political Deepfakes and Scams This Midterm Election Season",
-        "canonUrl": "cnet.com/tech/services-and-software/spot-2026-midterm-election-deepfakes-scams"
-      },
-      {
-        "rank": 7,
-        "title": "I Used AI to Fake a Scientific Paper. Here’s What Happened",
-        "canonUrl": "spectrum.ieee.org/ai-generated-scientific-papers"
-      },
-      {
-        "rank": 8,
-        "title": "This tool can recover deleted AI chats from your phone – how it works",
-        "canonUrl": "zdnet.com/innovation/orisa-tool-recovers-deleted-local-ai-chats-android-phones"
-      },
-      {
-        "rank": 9,
-        "title": "Anthropic, Suno Sued for Unlawfully Using Songs by Madonna, Johnny Cash, Joni Mitchell",
-        "canonUrl": "cnet.com/tech/services-and-software/anthropic-suno-sued-using-songs-madonna-johnny-cash-joni-mitchell"
-      },
-      {
-        "rank": 10,
-        "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics"
-      },
-      {
-        "rank": 11,
-        "title": "Walmart says AI training is boosting confidence with the technology among its 2.1 million associates",
-        "canonUrl": "cnbc.com/2026/10/27/walmart-ai-training-workers.html"
-      },
-      {
-        "rank": 12,
-        "title": "Pairing industrial AI autonomy and human control",
-        "canonUrl": "technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control"
-      }
-    ],
-    "2026-10-29": [
-      {
-        "rank": 1,
-        "title": "Nvidia's $12.9 billion Hugging Face deal draws DOJ scrutiny",
-        "canonUrl": "cnbc.com/2026/10/28/doj-questions-nvidias-12point9-billion-hugging-face-deal.html"
-      },
-      {
-        "rank": 2,
-        "title": "Should AI Decide Your Court Case? This Judge Says Yes",
-        "canonUrl": "wired.com/story/geoffrey-vos-uk-judge-ai-legal-profession-challenges"
-      },
-      {
-        "rank": 3,
-        "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
-        "canonUrl": "theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
-      },
-      {
-        "rank": 4,
-        "title": "xAI is buying out homeowners who promise not to sue over data center noise",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit"
-      },
-      {
-        "rank": 5,
-        "title": "We urgently need to monitor AI agents’ actions in real time",
-        "canonUrl": "technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time"
-      },
-      {
-        "rank": 6,
-        "title": "Over 41,000 U.S. Homeland Security officials' details apparently exposed after massive data breach",
-        "canonUrl": "cnbc.com/2026/10/29/dhs-data-breach-ice-cdp-deportations.html"
-      },
-      {
-        "rank": 7,
-        "title": "Microsoft is ending Copilot support on smart TVs",
-        "canonUrl": "theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending"
-      },
-      {
-        "rank": 8,
-        "title": "Public Discord messages might start showing up in Google Search, unless users opt out",
-        "canonUrl": "9to5google.com/2026/10/28/discord-updates-server-web-pages-for-search"
-      },
-      {
-        "rank": 9,
-        "title": "Voters in Texas agree: They hate data centers",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1018676/data-center-midterm-election-energy-water-texas"
-      },
-      {
-        "rank": 10,
-        "title": "Macmillan Staff Say the Publisher Threw a Party for a Workplace AI Assistant That Was Later Killed",
-        "canonUrl": "wired.com/story/macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-assistant-that-was-later-killed"
-      },
-      {
-        "rank": 11,
-        "title": "Alphabet earnings miss reflects first real sign that AI is taking a bite out of search",
-        "canonUrl": "cnbc.com/2026/10/29/alphabet-google-search-ai-earnings.html"
-      },
-      {
-        "rank": 12,
-        "title": "Our climate models have a big, dangerous blind spot",
-        "canonUrl": "technologyreview.com/2026/10/29/1147735/climate-models-blind-spot"
-      }
-    ],
-    "2026-10-30": [
-      {
-        "rank": 1,
-        "title": "A Defense Contractor Gave Their Personal AI Agent Access to a Secure Pentagon System",
-        "canonUrl": "wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system"
-      },
-      {
-        "rank": 2,
-        "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
-        "canonUrl": "theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
-      },
-      {
-        "rank": 3,
-        "title": "Mistral Says Its AI Model ‘Le Chonk’ Has Leapfrogged China in the Open-Weight Race",
-        "canonUrl": "wired.com/story/mistral-says-le-chonk-surpasses-chinese-models-cybersecurity"
-      },
-      {
-        "rank": 4,
-        "title": "Microsoft plans to raise $25 billion in debt as it pursues AI buildout",
-        "canonUrl": "cnbc.com/2026/10/29/microsoft-25-billion-debt-offering.html"
-      },
-      {
-        "rank": 5,
-        "title": "We urgently need to monitor AI agents’ actions in real time",
-        "canonUrl": "technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time"
-      },
-      {
-        "rank": 6,
-        "title": "These Claude Enterprise features let you track AI ROI – what’s new",
-        "canonUrl": "zdnet.com/innovation/claude-enterprise-efficiency-cost-tracking"
-      },
-      {
-        "rank": 7,
-        "title": "Stop sharing your passwords with AI agents, Bank of America warns customers",
-        "canonUrl": "zdnet.com/innovation/bank-of-america-customers-no-sharing-passwords-ai-agents"
-      },
-      {
-        "rank": 8,
-        "title": "Alphabet earnings miss reflects first real sign that AI is taking a bite out of search",
-        "canonUrl": "cnbc.com/2026/10/29/alphabet-google-search-ai-earnings.html"
-      },
-      {
-        "rank": 9,
-        "title": "You can generate and edit Google Docs files directly in Gemini chats now",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
-      },
-      {
-        "rank": 10,
-        "title": "Anthropic is asking Wall Street to believe in AGI",
-        "canonUrl": "theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview"
-      }
-    ],
-    "2026-10-31": [
-      {
-        "rank": 1,
-        "title": "Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims",
-        "canonUrl": "wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware"
-      },
-      {
-        "rank": 2,
-        "title": "Thousands of “ghost students” use AI to steal millions in student loans, DOJ says",
-        "canonUrl": "arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans"
-      },
-      {
-        "rank": 3,
-        "title": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
-        "canonUrl": "arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours"
-      },
-      {
-        "rank": 4,
-        "title": "An AI Agent Injected Drugs Into a Live Mouse’s Brain",
-        "canonUrl": "wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse"
-      },
-      {
-        "rank": 5,
-        "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
-        "canonUrl": "arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job"
-      },
-      {
-        "rank": 6,
-        "title": "AI is coming to construction sites. But does it make workers safer?",
-        "canonUrl": "cnbc.com/2026/10/31/ai-construction-worker-safety.html"
-      },
-      {
-        "rank": 7,
-        "title": "Wikipedia’s operator says a bad AI copyright ruling could threaten the open web",
-        "canonUrl": "theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright"
-      },
-      {
-        "rank": 8,
-        "title": "Take These Precautions Before Using AI for Your Election Research",
-        "canonUrl": "cnet.com/tech/services-and-software/ai-chatbots-election-voting-research-decisions"
-      },
-      {
-        "rank": 9,
-        "title": "The biggest names in AI are backing a new way to opt out of scraping",
-        "canonUrl": "theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
-      },
-      {
-        "rank": 10,
-        "title": "Maine’s data center revolt will decide who controls the Senate",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers"
-      },
-      {
-        "rank": 11,
-        "title": "Apple Intelligence is finally coming to China with iOS 27.3",
-        "canonUrl": "theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
-      },
-      {
-        "rank": 12,
-        "title": "Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai"
-      }
-    ],
     "2026-11-01": [
       {
         "rank": 1,
@@ -6424,6 +6842,199 @@
         "rank": 12,
         "title": "Photoshop, Lightroom, and Premiere are making it easier to remove things",
         "canonUrl": "theverge.com/tech/1030653/adobe-max-2026-photoshop-premiere-removal-updates"
+      }
+    ],
+    "2026-11-13": [
+      {
+        "rank": 1,
+        "title": "AI chatbots are recommending fake retail websites, study finds",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations"
+      },
+      {
+        "rank": 2,
+        "title": "I’m Begging You, Don’t Let AI Bots Manage Your Money",
+        "canonUrl": "cnet.com/tech/services-and-software/please-dont-let-an-ai-bot-log-into-your-bank-account"
+      },
+      {
+        "rank": 3,
+        "title": "What to Learn About Meta’s Muse AI Before It Learns Too Much About You",
+        "canonUrl": "cnet.com/tech/services-and-software/metas-muse-mascot-agentic-ai-privacy-violations-security-data"
+      },
+      {
+        "rank": 4,
+        "title": "AI Layoffs Risk Triggering 1.6 Million More US Job Losses",
+        "canonUrl": "cnet.com/tech/services-and-software/ai-tech-layoffs-2026-trigger-recession"
+      },
+      {
+        "rank": 5,
+        "title": "More autonomy, fewer NDAs: Volunteers have new requests for brain implant trials",
+        "canonUrl": "technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials"
+      },
+      {
+        "rank": 6,
+        "title": "You can force Gemini to forget about you now – how to edit its Memory",
+        "canonUrl": "zdnet.com/innovation/google-gemini-memory-summary-user-control"
+      },
+      {
+        "rank": 7,
+        "title": "How You Collaborate With AI on Creative Work Makes All the Difference",
+        "canonUrl": "cnet.com/tech/services-and-software/ai-collaboration-creative-work-research-findings"
+      },
+      {
+        "rank": 8,
+        "title": "Google DeepMind Staff Tap the UK Government to Escalate Their Unionization Fight",
+        "canonUrl": "wired.com/story/google-deepmind-staff-escalate-their-union-fight"
+      },
+      {
+        "rank": 9,
+        "title": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
+        "canonUrl": "cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html"
+      },
+      {
+        "rank": 10,
+        "title": "Hasbro Is Using AI to Bring Characters to Life — With Limits",
+        "canonUrl": "cnet.com/tech/services-and-software/hasbro-sixth-wall-studio-ai-characters"
+      }
+    ],
+    "2026-11-14": [
+      {
+        "rank": 1,
+        "title": "Beware the New AI-Fueled Ransomware Boom",
+        "canonUrl": "wired.com/story/beware-the-new-ai-fueled-ransomware-boom"
+      },
+      {
+        "rank": 2,
+        "title": "OpenAI board member worries an AI \"takeover\" of society could be months away",
+        "canonUrl": "arstechnica.com/ai/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns"
+      },
+      {
+        "rank": 3,
+        "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
+        "canonUrl": "cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html"
+      },
+      {
+        "rank": 4,
+        "title": "No Pilots. Few Air Traffic Controllers. What Could Go Wrong?",
+        "canonUrl": "wired.com/story/no-pilots-few-air-traffic-controllers-what-could-go-wrong"
+      },
+      {
+        "rank": 5,
+        "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet"
+      },
+      {
+        "rank": 6,
+        "title": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
+        "canonUrl": "arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace"
+      },
+      {
+        "rank": 7,
+        "title": "Amazon has a plan to index the world’s online shopping data",
+        "canonUrl": "theverge.com/tech/1033697/amazon-world-product-graph-ai-search"
+      },
+      {
+        "rank": 8,
+        "title": "Bloomberg details web of Chinese AI companies with smuggled NVIDIA chips linked to Alice Huang",
+        "canonUrl": "engadget.com/2315710/bloomberg-details-web-of-chinese-ai-companies-with-smuggled-nvidia-chips-linked-to-alice-huang"
+      },
+      {
+        "rank": 9,
+        "title": "You can now tempt fate and give your banking information to ChatGPT",
+        "canonUrl": "engadget.com/2316137/you-can-now-tempt-fate-and-give-your-banking-information-to-chatgpt"
+      },
+      {
+        "rank": 10,
+        "title": "Google now lets people connect Gemini to their bank accounts",
+        "canonUrl": "engadget.com/2316384/google-now-lets-people-connect-gemini-to-their-bank-accounts"
+      },
+      {
+        "rank": 11,
+        "title": "More autonomy, fewer NDAs: Volunteers have new requests for brain implant trials",
+        "canonUrl": "technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials"
+      },
+      {
+        "rank": 12,
+        "title": "Apple, Alphabet and Uber survived major founder transitions. Nvidia will be a harder test",
+        "canonUrl": "cnbc.com/2026/11/13/nvidia-jensen-huang-founder-ceo-transition.html"
+      }
+    ],
+    "2026-11-15": [
+      {
+        "rank": 1,
+        "title": "I checked Gemini’s new Memory summary to see what it knew about me – how to see and edit yours",
+        "canonUrl": "zdnet.com/innovation/google-gemini-memory-summary-user-control"
+      },
+      {
+        "rank": 2,
+        "title": "No Pilots. Few Air Traffic Controllers. What Could Go Wrong?",
+        "canonUrl": "wired.com/story/no-pilots-few-air-traffic-controllers-what-could-go-wrong"
+      },
+      {
+        "rank": 3,
+        "title": "Microsoft apologizes for massive outage that took down Outlook and other 365 services",
+        "canonUrl": "cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html"
+      },
+      {
+        "rank": 4,
+        "title": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
+        "canonUrl": "cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html"
+      },
+      {
+        "rank": 5,
+        "title": "‘We need more reviewers’: Finding Linux bugs is easy now – fixing them is another story",
+        "canonUrl": "zdnet.com/innovation/ai-bug-reports-linux-windows"
+      },
+      {
+        "rank": 6,
+        "title": "Megaspeed says Alice Huang left in 2025 as it launches internal probe into reports about its business",
+        "canonUrl": "cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html"
+      },
+      {
+        "rank": 7,
+        "title": "How Nvidia turmoil and a Democratic Congress could reshape the AI trade, according to ETF experts",
+        "canonUrl": "cnbc.com/2026/11/14/nvidia-ai-trade-data-centers-congress.html"
+      },
+      {
+        "rank": 8,
+        "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
+        "canonUrl": "cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html"
+      },
+      {
+        "rank": 9,
+        "title": "Anthropic’s IPO lands as the embattled AI trade looks for a much-needed bright spot",
+        "canonUrl": "cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html"
+      }
+    ],
+    "2026-11-16": [
+      {
+        "rank": 1,
+        "title": "28 Zero-Day Findings in Under Two Days. Is Robotics Security Keeping Pace?",
+        "canonUrl": "spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security"
+      },
+      {
+        "rank": 2,
+        "title": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china"
+      },
+      {
+        "rank": 3,
+        "title": "The Nvidia scandal isn’t slowing down",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1031740/jensen-huang-nvidia-scandal-isnt-slowing-down"
+      },
+      {
+        "rank": 4,
+        "title": "AI is reshaping banking jobs – but its ability to drive profits remains unclear",
+        "canonUrl": "cnbc.com/2026/11/16/how-ai-is-changing-banking-jobs-hiring-and-revenue.html"
+      },
+      {
+        "rank": 5,
+        "title": "‘Standing on one leg’: IMF chief warns about global economy as AI circular financing hits $1 trillion",
+        "canonUrl": "cnbc.com/2026/11/16/imf-georgieva-warning-ai-circular-financing.html"
+      },
+      {
+        "rank": 6,
+        "title": "Anthropic’s IPO lands as the embattled AI trade looks for a much-needed bright spot",
+        "canonUrl": "cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html"
       }
     ]
   }

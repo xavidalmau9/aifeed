@@ -41,6 +41,14 @@ test('v3 success renders once; v2 config renders v2 once', () => {
   assert.deepStrictEqual(calls, ['v3', 'v2']);
 });
 
+test('v3 that rendered the v2 cut (no voiceover) is logged as v2 with its hook style', () => {
+  const render = () => ({ mp4, renderedTemplate: 'v2', hookStyle: 'C', hookStyleRequested: 'C' });
+  const rr = renderReelSafe('/r', {}, 'p', '', { template: 'v3', hookStyle: 'C' }, { render, log: quiet });
+  assert.strictEqual(rr.template, 'v2'); assert.strictEqual(rr.hookStyle, 'C'); assert.strictEqual(rr.v3Error, '');
+  const ok = renderReelSafe('/r', {}, 'p', '', { template: 'v3', hookStyle: 'A' }, { render: () => ({ mp4, renderedTemplate: 'v3', hookStyle: 'A' }), log: quiet });
+  assert.strictEqual(ok.template, 'v3'); assert.strictEqual(ok.hookStyle, 'A');
+});
+
 test('a v2 failure still throws (handled by the existing Reel error path)', () => {
   const render = () => { throw new Error('boom'); };
   assert.throws(() => renderReelSafe('/r', {}, 'p', '', { template: 'v3' }, { render, log: quiet }), /boom/);
@@ -64,6 +72,15 @@ test('renderer env is always explicit, never inherited from the job env', () => 
   const v3 = sceneEnv({ template: 'v3', hookStyle: 'A' }, {});
   assert.strictEqual(v3.AIFEED_REEL_TEMPLATE, 'v3'); assert.strictEqual(v3.AIFEED_HOOK_STYLE, 'A');
   assert.strictEqual(v3.AIFEED_SCENE_CF, 'off');
+  const v2h = sceneEnv({ template: 'v2', hookStyle: 'C' }, {});
+  assert.strictEqual(v2h.AIFEED_REEL_TEMPLATE, 'v2'); assert.strictEqual(v2h.AIFEED_HOOK_STYLE, 'C');
+});
+
+test('the v2 retry after a v3 failure keeps the hook style', () => {
+  const seen = [];
+  const render = (r, p, f, ph, opts) => { seen.push(opts.hookStyle); if (opts.template === 'v3') throw new Error('x'); return { mp4, hookStyle: opts.hookStyle }; };
+  assert.strictEqual(renderReelSafe('/r', {}, 'p', '', { template: 'v3', hookStyle: 'C' }, { render, log: quiet }).hookStyle, 'C');
+  assert.deepStrictEqual(seen, ['C', 'C']);
 });
 
 test('v3 and v2 both failing: error names both templates and reasons, and the alert says carousel last resort', () => {

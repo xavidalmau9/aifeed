@@ -90,7 +90,7 @@ def pill_colors(category):
 
 # ---------- v3 template (opt-in: AIFEED_REEL_TEMPLATE=v3) ----------
 # v3 = retention cut: payoff headline on screen at frame 0, voice starts on the hook, 7-10s, save/share/follow end card.
-# AIFEED_HOOK_STYLE (v3 only): A = bold claim, B = question, C = 'what this means for you'; unset/off = the normal punch.
+# AIFEED_HOOK_STYLE (v2 and v3): A = bold claim, B = question, C = 'what this means for you'; unset/off = the normal punch.
 V3_MIN_S, V3_MAX_S, V3_END_HOLD = 7.0, 10.0, 3.5  # end card holds ~3.5 s (takeaway / share / follow)
 FOLLOW_LINE = 'Follow @aifeed.run for the AI news that matters'
 # Targeted share prompt per category (same keys as PILL_COLORS); SHARE_DEFAULT for anything else.
@@ -960,7 +960,7 @@ def build(post, feed_path, out, seed=0, photo=None, scene_path=None, scene_sourc
     vo, segs, total, voice_name, vo_err = None, None, None, '', ''
     v3, style_req = reel_template() == 'v3', hook_style()
     style_used = ''
-    if v3:
+    if style_req:  # the hook test runs on both templates (v2 vs v3 comparison, Nov 16 2026)
         hp, style_used = pick_hook(post, style_req)
         if hp:
             post = dict(post, punch=hp)
@@ -1019,9 +1019,12 @@ def build(post, feed_path, out, seed=0, photo=None, scene_path=None, scene_sourc
            'voiceover': [t for _, t in segs] if segs else None}
     if vo_err:
         res['voiceError'] = vo_err
-    res['template'] = 'v3' if r.v3 else 'v2'
+    res['template'] = 'v3' if r.v3 else 'v2'  # the cut actually rendered: v3 without a voiceover falls back to the v2 cut
+    # The hook text is applied before the voiceover step, so report it even when the v3 cut fell back to v2 (Nov 11-16 2026
+    # every Reel lost its hook style in the log because voice failed and this was only reported for the v3 cut).
+    res.update(hookStyle=style_used or None, hookStyleRequested=style_req or None)
     if r.v3:
-        res.update(hookStyle=style_used or None, hookStyleRequested=style_req or None, takeaway=r.takeaway, sharePrompt=r.share,
+        res.update(takeaway=r.takeaway, sharePrompt=r.share,
                    audioOnset=round(vo['segments'][0]['words'][0][1], 3) if vo['segments'][0]['words'] else None)
     if vo:
         res['captions'] = [[w, round(a, 3), round(b, 3)] for sg in vo['segments'] for w, a, b in sg['words']]

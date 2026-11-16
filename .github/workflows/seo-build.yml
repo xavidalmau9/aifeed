@@ -1,6 +1,7 @@
 name: SEO pages, sitemap & RSS
 # Rebuilds /news/<slug>/ pages, sitemap.xml, feed.xml, llms-full.txt and WebP card thumbnails (thumbs/) whenever the automation updates posts-index.json.
-# No loop: this job only commits news/, sitemap.xml, feed.xml, llms-full.txt, thumbs/ (not in the trigger paths).
+# No loop: this job commits news/, sitemap.xml, feed.xml, llms-full.txt, thumbs/, index.html and 404.html.
+# index.html and 404.html are not in the trigger paths, so writing the latest stories into them cannot start another run.
 # Push with AIFEED_GH_TOKEN, same as the autopilot, so the Pages workflow runs and the new article
 # page, sitemap, and llms-full.txt go live. A GITHUB_TOKEN push would not start that workflow.
 on:
@@ -28,6 +29,13 @@ jobs:
             _posts/
             _includes/
             post.html
+            index.html
+            404.html
+            about/
+            faq/
+            subscribe/
+            newsletter/
+            privacy/
             scripts/
             news/
             sitemap.xml
@@ -44,7 +52,7 @@ jobs:
             git reset -q --hard origin/main
             python3 scripts/build_seo.py
             python3 scripts/build_thumbs.py
-            git add -A news sitemap.xml feed.xml thumbs llms-full.txt
+            git add -A news sitemap.xml feed.xml thumbs llms-full.txt index.html 404.html post.html about faq subscribe newsletter privacy
             if git diff --cached --quiet; then echo "No SEO changes"; exit 0; fi
             git commit -q -m "SEO: rebuild story pages, sitemap, RSS, llms-full, thumbnails"
             if git push -q origin HEAD:main; then echo "Pushed"; exit 0; fi

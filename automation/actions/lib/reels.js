@@ -14,7 +14,7 @@ function sceneEnv(opts = {}, base = process.env) {
   // v3 Reel template + hook A/B test (opt-in config keys reelTemplate / reelHookStyle; unset = current v2 Reel)
   // always explicit (never inherited from the job env), so the renderer uses exactly the template the brief was written for
   env.AIFEED_REEL_TEMPLATE = String(opts.template || '').toLowerCase() === 'v3' ? 'v3' : 'v2';
-  if (env.AIFEED_REEL_TEMPLATE === 'v3' && opts.hookStyle) env.AIFEED_HOOK_STYLE = String(opts.hookStyle);
+  if (opts.hookStyle) env.AIFEED_HOOK_STYLE = String(opts.hookStyle); // the hook test runs on both templates (Nov 16 2026)
   else delete env.AIFEED_HOOK_STYLE;
   return env;
 }
@@ -40,12 +40,14 @@ function renderReelSafe(repo, post, feedPngPath, photo, opts = {}, deps = {}) {
   const ok = rr => { if (!rr || !rr.mp4 || !fs.existsSync(rr.mp4) || !fs.statSync(rr.mp4).size) throw new Error('v3 render produced no mp4'); return rr; };
   if (String(opts.template || '').toLowerCase() === 'v3') {
     try {
-      return Object.assign(ok(render(repo, post, feedPngPath, photo, opts)), { template: 'v3', v3Error: '' });
+      // template = the cut make_reel actually rendered (v3 falls back to the v2 cut when the voiceover is unavailable)
+      const rr = ok(render(repo, post, feedPngPath, photo, opts));
+      return Object.assign(rr, { template: rr.renderedTemplate === 'v2' ? 'v2' : 'v3', v3Error: '' });
     } catch (e) {
       const why = String((e && e.message) || e).slice(0, 300);
       log('Reel v3 render failed, retrying with the v2 Reel template: ' + why);
       try {
-        return Object.assign(render(repo, post, feedPngPath, photo, Object.assign({}, opts, { template: 'v2', hookStyle: '' })), { template: 'v2', v3Error: why });
+        return Object.assign(render(repo, post, feedPngPath, photo, Object.assign({}, opts, { template: 'v2' })), { template: 'v2', v3Error: why });
       } catch (e2) {
         const err = new Error('v3: ' + why + ' | v2: ' + String((e2 && e2.message) || e2).slice(0, 300));
         err.templatesFailed = ['v3', 'v2'];
@@ -54,7 +56,7 @@ function renderReelSafe(repo, post, feedPngPath, photo, opts = {}, deps = {}) {
     }
   }
   try {
-    return Object.assign(render(repo, post, feedPngPath, photo, Object.assign({}, opts, { template: 'v2', hookStyle: '' })), { template: 'v2', v3Error: '' });
+    return Object.assign(render(repo, post, feedPngPath, photo, Object.assign({}, opts, { template: 'v2' })), { template: 'v2', v3Error: '' });
   } catch (e) {
     if (e && typeof e === 'object') e.templatesFailed = ['v2'];
     throw e;
@@ -86,7 +88,7 @@ function parseRenderResult(stdout, out) {
   const cover = r.cover || out.replace(/\.mp4$/, '_cover.jpg');
   return { mp4: r.out || out, cover: fs.existsSync(cover) ? cover : '', credit: r.photoCredit || '',
     punch: r.punch || '', sceneSource: r.sceneSource || '', sceneLog: r.sceneLog || [], voice: r.voice || '', voiceError: r.voiceError || '',
-    hookStyle: r.hookStyle || '', hookStyleRequested: r.hookStyleRequested || '' };
+    hookStyle: r.hookStyle || '', hookStyleRequested: r.hookStyleRequested || '', renderedTemplate: r.template || '' };
 }
 
 // CC BY / BY-SA photos need attribution: append the Commons credit (without the long URL) once, before the hashtags.
