@@ -52,7 +52,8 @@ Short retention cut: **7–10s**, no intro. The full headline is on screen at fr
 - "Follow @aifeed.run for the AI news that matters"
 
 - Enable: `AIFEED_REEL_TEMPLATE=v3` (env for `make_reel.py`), or in the pipeline add `"reelTemplate": "v3"` to `config.json`. If the key is missing you get v2, which is unchanged.
-- Hook A/B test (only for v3 Reels; the carousel and Story keep the normal punch): `AIFEED_HOOK_STYLE=A|B|C`, or `"reelHookStyle": "A"` in config.
+- Hook A/B test (v2 and v3 Reels since Nov 16 2026; the carousel and Story keep the normal punch): `AIFEED_HOOK_STYLE=A|B|C`, or `"reelHookStyle": "A"` in config.
+- v2 vs v3 comparison (Nov 16 - Dec 14 2026): `"reelTemplate": "rotate"` + `"reelHookStyle": "rotate"` follow the 8-slot cycle in `automation/actions/lib/hooktest.js` (`HOOK_TEST2`): hook C on ~50% of slots, A and B ~25% each, v2 and v3 alternating and balanced across am/pm. `_data/reel-hook-test.csv` records the cut that actually rendered (`template`) next to `hookStyle`. After the window, `rotate` means v3 with the normal punch.
   - **A**: bold claim
   - **B**: question (must end with `?`)
   - **C**: what this means for you

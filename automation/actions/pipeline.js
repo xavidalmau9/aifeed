@@ -401,11 +401,13 @@ async function main() {
     // brief and the renderer; cfg.reelHookStyle = "A" | "B" | "C". Unset = v2, unchanged.
     const reelTpl = reelTemplateOpts(cfg, process.env, decision);
     const reelV3 = reelTpl.template === 'v3';
-    console.log('Reel template: ' + reelTpl.template + (reelV3 && reelTpl.hookStyle ? ' (hook ' + reelTpl.hookStyle + ')' : ''));
+    // The brief writes the A/B/C hooks whenever a hook style is set (the v2/v3 comparison runs the hook test on both).
+    const briefV3 = reelV3 || Boolean(reelTpl.hookStyle);
+    console.log('Reel template: ' + reelTpl.template + (reelTpl.hookStyle ? ' (hook ' + reelTpl.hookStyle + ')' : ''));
     const feedTmp = path.join(require('os').tmpdir(), published.pngName);
     fs.writeFileSync(feedTmp, feed.png);
     const getBrief = async () => {
-      if (!brief) brief = await reelBrief(published.post, prompt => claudeMessage(env.ANTHROPIC_API_KEY, { model: cfg.anthropicModel, prompt, maxTokens: reelV3 ? 700 : 400, temperature: 0.4, tries: 2 }), { v3: reelV3 });
+      if (!brief) brief = await reelBrief(published.post, prompt => claudeMessage(env.ANTHROPIC_API_KEY, { model: cfg.anthropicModel, prompt, maxTokens: briefV3 ? 700 : 400, temperature: 0.4, tries: 2 }), { v3: briefV3 });
       return brief;
     };
     try {
