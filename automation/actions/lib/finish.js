@@ -97,6 +97,8 @@ function igCaptionFromPost(post) {
         igHook: hook,
         igParagraphs: chosen,
         igHashtags: tags,
+        igQuestion: post.igQuestion || '',
+        category: post.category || '',
         outlet
       }, post.sourceUrl);
       if (CAPTION_BANNED.test(cap)) throw new Error('refusing a caption that says daily or claims human editing');

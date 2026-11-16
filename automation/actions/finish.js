@@ -204,7 +204,7 @@ async function runFinish(cfg, env, deps = {}) {
   const caption = igCaptionFromPost(post);
   const fbMessage = facebookMessage(caption, post.sourceUrl);
   console.log('Finish ' + slug + ' slot ' + key + ' (already on the site; Reels tab only; real photo cover)');
-  console.log('IG caption layout ok (' + caption.length + ' chars, weekly brief, no human-editing claim)');
+  console.log('IG caption layout ok (' + caption.length + ' chars, closing question, no human-editing claim)');
   if (env.DRY_RUN) {
     fs.mkdirSync(env.OUT, { recursive: true });
     fs.writeFileSync(path.join(env.OUT, 'instagram-caption.txt'), caption + '\n');

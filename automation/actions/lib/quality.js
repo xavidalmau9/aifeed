@@ -169,6 +169,7 @@ function assemblePublish({ story, gen, category, liCaption, liWarning, today, sl
     sourceUrl: story.link,
     publishedAt: nowIso,
     hashtags: (gen.igCaption.match(/#(\w+)/g) || []).map(t => t.slice(1)),
+    igQuestion: require('./captions').closingQuestion(gen),
     isVideo: false
   };
   const historyEntry = {

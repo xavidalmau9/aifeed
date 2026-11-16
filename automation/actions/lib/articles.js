@@ -35,6 +35,7 @@ Fields per candidate:
 - liHook: bold opening statement or surprising stat, no emoji, max 25 words.
 - liParagraphs: array of 5 paragraphs (what happened; business/tech context; strategic implications; industry impact; outlook), each 2-4 sentences, 40-80 words.
 - liTakeaway: one crisp takeaway sentence.
+- igQuestion: one short, easy-to-answer question for the comments, tied to THIS story, 2-8 words, ends with "?", answerable with one word or a quick pick (e.g. "Would you trust this?", "Ban it or regulate it?", "Would you let an AI do this?"). No emoji, no "follow", no links, no facts that are not in the article.
 - igHashtags: exactly 5 hashtags without the # sign, letters/digits only (e.g. "OpenAI").
 - liHashtags: exactly 5 professional hashtags, same format.
 - outlet: publication name as it brands itself (e.g. "CNBC", "The Verge", "9to5Google").
@@ -48,7 +49,7 @@ Fields per candidate:
 ${blocks}
 
 Return ONLY a JSON array, one object per candidate in the same order:
-[{"candidate":0,"igHook":"...","igParagraphs":["..."],"liHook":"...","liParagraphs":["..."],"liTakeaway":"...","igHashtags":["..."],"liHashtags":["..."],"outlet":"...","graphicHeadline":"...","highlightWords":2,"summary":"...","category":"...","supported":true,"safe":true,"issues":""}]`;
+[{"candidate":0,"igHook":"...","igParagraphs":["..."],"igQuestion":"...?","liHook":"...","liParagraphs":["..."],"liTakeaway":"...","igHashtags":["..."],"liHashtags":["..."],"outlet":"...","graphicHeadline":"...","highlightWords":2,"summary":"...","category":"...","supported":true,"safe":true,"issues":""}]`;
 }
 
 // og:image values are raw attribute text: decode entities (&amp; in query strings) and resolve relative URLs.

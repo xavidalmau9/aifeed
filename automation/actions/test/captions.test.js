@@ -1,6 +1,6 @@
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
-const { SPACER, buildIg, checkIg, checkLi, checkAccuracy, buildLi, buildFb, checkFb, FB_CTA } = require('../lib/captions');
+const { SPACER, buildIg, checkIg, checkLi, checkAccuracy, buildLi, buildFb, checkFb, FB_CTA, IG_CTA, closingQuestion, validQuestion } = require('../lib/captions');
 
 function words(n, salt) {
   const out = [];
@@ -26,14 +26,14 @@ function sample(over) {
 
 const URL = 'https://www.theverge.com/ai/openai-math?utm_source=tw&utm_medium=social';
 
-test('Instagram caption has one Source line, the URL once, and a spacer before the brief', () => {
+test('Instagram caption has one Source line, the URL once, and closes with one question after a spacer', () => {
   const cap = buildIg(sample(), URL);
   const blocks = cap.split('\n' + SPACER + '\n');
   const sourceLines = cap.split('\n').filter(l => l.startsWith('Source:'));
   assert.equal(sourceLines.length, 1);
   assert.equal(sourceLines[0], 'Source: The Verge · https://www.theverge.com/ai/openai-math');
   assert.equal(blocks[blocks.length - 3], sourceLines[0]);
-  assert.equal(blocks[blocks.length - 2], '📩 Free weekly AI brief at aifeed.run → link in bio');
+  assert.equal(blocks[blocks.length - 2], '💬 Useful or overhyped?'); // RESEARCH fallback (no igQuestion in the sample)
   assert.equal((cap.match(/https?:\/\//g) || []).length, 1);
   assert.equal(cap.includes('\n\n'), false);
   assert.deepEqual(checkIg(cap, URL), []);
@@ -57,13 +57,24 @@ test('LinkedIn caption: source URL once, then the free weekly brief line (newsle
   assert.ok(checkLi(cap.replace('Get the free weekly AI brief at aifeed.run', 'Get the daily AI brief: https://aifeed.run')).length > 0);
 });
 
-test('Instagram and Facebook CTAs say weekly, never daily', () => {
-  const ig = buildIg(sample(), URL);
-  assert.ok(ig.includes('\n' + SPACER + '\n📩 Free weekly AI brief at aifeed.run → link in bio\n' + SPACER + '\n'));
+test('closing question: the model question when valid, else a category fallback; never daily, follow or links', () => {
+  const ig = buildIg(sample({ igQuestion: 'would you let an AI grade your proofs?' }), URL);
+  assert.ok(ig.includes('\n' + SPACER + '\n💬 Would you let an AI grade your proofs?\n' + SPACER + '\n'));
+  assert.deepEqual(checkIg(ig, URL), []);
+  assert.equal(closingQuestion({ igQuestion: 'Follow us for more?', category: 'POLICY' }), 'Ban it or regulate it?');
+  assert.equal(closingQuestion({ igQuestion: 'Is this the daily news?', category: 'SAFETY' }), 'Would you trust this?');
+  assert.equal(closingQuestion({ igQuestion: 'Agree? Disagree?', category: 'HARDWARE' }), 'Who wins this race?');
+  assert.equal(closingQuestion({ igQuestion: 'No question mark here', category: 'nope' }), 'Would you trust this?');
+  assert.equal(closingQuestion({ igQuestion: '🤔 Ban it or regulate it?' }), 'Ban it or regulate it?');
+  assert.equal(validQuestion('See https://x.com?'), false);
+  assert.equal(validQuestion('This is a very long question that goes on and on for far too many words?'), false);
+  assert.equal(/daily|follow/i.test(ig + buildFb(ig)), false);
+  assert.ok(checkIg(ig.replace('💬 Would you let an AI grade your proofs?', '💬 Follow us daily'), URL).some(e => /closing question/.test(e)));
+  // captions posted before the change (newsletter CTA) still pass, so reposts keep working
+  const legacy = ig.replace('💬 Would you let an AI grade your proofs?', IG_CTA);
+  assert.deepEqual(checkIg(legacy, URL), []);
+  assert.deepEqual(checkFb(buildFb(legacy), URL), []);
   assert.equal(FB_CTA, '📩 Free weekly AI brief at aifeed.run/subscribe');
-  assert.ok(buildFb(ig).includes('\n' + SPACER + '\n📩 Free weekly AI brief at aifeed.run/subscribe\n' + SPACER + '\n'));
-  assert.equal(/daily/i.test(ig + buildFb(ig)), false);
-  assert.ok(checkIg(ig.replace('weekly', 'daily'), URL).some(e => /brief CTA/.test(e)));
 });
 
 test('accuracy gate keeps hedges and dollar signs from the source', () => {
@@ -90,18 +101,18 @@ test('accuracy gate keeps hedges and dollar signs from the source', () => {
 });
 
 test('Facebook caption = Instagram caption with the same spacers, Source line once, URL once, no "link in bio"', () => {
-  const ig = buildIg(sample(), URL);
+  const ig = buildIg(sample({ igQuestion: 'Would you trust this?' }), URL);
   const fb = buildFb(ig);
   const blocks = fb.split('\n' + SPACER + '\n');
   assert.equal(blocks.length, ig.split('\n' + SPACER + '\n').length);
-  assert.equal(blocks[blocks.length - 2], FB_CTA);
+  assert.equal(blocks[blocks.length - 2], '💬 Would you trust this?');
   assert.equal(blocks[blocks.length - 3], 'Source: The Verge · https://www.theverge.com/ai/openai-math');
   assert.equal(fb.split('\n').filter(l => l.startsWith('Source:')).length, 1);
   assert.equal((fb.match(/https?:\/\//g) || []).length, 1);
   assert.equal(/link in bio/i.test(fb), false);
-  assert.equal(fb.replace(FB_CTA, '📩 Free weekly AI brief at aifeed.run → link in bio'), ig);
+  assert.equal(fb, ig);
   assert.deepEqual(checkFb(fb, URL), []);
-  assert.ok(checkFb(ig, URL).length > 0, 'an unconverted IG caption must fail the FB check');
-  const doubled = fb.replace('\n' + SPACER + '\n' + FB_CTA, '\n' + SPACER + '\nSource: X · https://x.com/a\n' + SPACER + '\n' + FB_CTA);
+  assert.ok(checkFb(buildIg(sample(), URL).replace('💬 Useful or overhyped?', IG_CTA), URL).length > 0, 'an unconverted legacy IG caption must fail the FB check');
+  const doubled = fb.replace('\n' + SPACER + '\n💬', '\n' + SPACER + '\nSource: X · https://x.com/a\n' + SPACER + '\n💬');
   assert.ok(checkFb(doubled, URL).some(e => /exactly once/.test(e)));
 });

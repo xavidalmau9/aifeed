@@ -20,7 +20,7 @@ test('the published guardrails story builds a legal IG caption', () => {
   const cap = igCaptionFromPost(LIVE);
   assert.deepEqual(checkIg(cap, URL), []);
   assert.match(cap, /^\p{Extended_Pictographic}/u);
-  assert.match(cap, /Free weekly AI brief at aifeed\.run/);
+  assert.match(cap, /\n💬 [^\n]+\?\n/);
   assert.match(cap, /Source: WIRED · https:\/\/www\.wired\.com\/story\/ai-guardrails-arent-stopping-criminal-hackers\//);
   assert.doesNotMatch(cap, /\bdaily\b/i);
   assert.doesNotMatch(cap, /hand[- ]?edited|human[- ]?edited|edited by|our editors|curated by/i);
@@ -274,7 +274,7 @@ test('finish posts Reel, Story and Facebook once, then a rerun does not post aga
   assert.equal(reels.length, 1);
   assert.equal(reels[0].fields.share_to_feed, 'false');
   assert.match(reels[0].fields.cover_url, /_cover\.jpg$/);
-  assert.match(reels[0].fields.caption, /Free weekly AI brief/);
+  assert.match(reels[0].fields.caption, /\n💬 [^\n]+\?\n/);
   assert.doesNotMatch(reels[0].fields.caption, /\bdaily\b/i);
   assert.equal(stories.length, 1);
   assert.equal(videos.length, 1);
@@ -349,7 +349,7 @@ test('dry run writes captions and does not post or mark the slot', async () => {
   assert.equal(posts, 0);
   assert.equal(readJson(dir, CLAIM_PATH, {}).claims['2026-10-22:2'].status, 'claimed');
   const cap = fs.readFileSync(path.join(env.OUT, 'instagram-caption.txt'), 'utf8');
-  assert.match(cap, /Free weekly AI brief/);
+  assert.match(cap, /\n💬 [^\n]+\?\n/);
   assert.doesNotMatch(cap, /\bdaily\b/i);
 });
 
