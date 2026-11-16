@@ -14,7 +14,7 @@ function sceneEnv(opts = {}, base = process.env) {
   // v3 Reel template + hook A/B test (opt-in config keys reelTemplate / reelHookStyle; unset = current v2 Reel)
   // always explicit (never inherited from the job env), so the renderer uses exactly the template the brief was written for
   env.AIFEED_REEL_TEMPLATE = String(opts.template || '').toLowerCase() === 'v3' ? 'v3' : 'v2';
-  if (env.AIFEED_REEL_TEMPLATE === 'v3' && opts.hookStyle) env.AIFEED_HOOK_STYLE = String(opts.hookStyle);
+  if (opts.hookStyle) env.AIFEED_HOOK_STYLE = String(opts.hookStyle); // the hook test runs on both templates (Nov 16 2026)
   else delete env.AIFEED_HOOK_STYLE;
   return env;
 }
@@ -47,7 +47,7 @@ function renderReelSafe(repo, post, feedPngPath, photo, opts = {}, deps = {}) {
       const why = String((e && e.message) || e).slice(0, 300);
       log('Reel v3 render failed, retrying with the v2 Reel template: ' + why);
       try {
-        return Object.assign(render(repo, post, feedPngPath, photo, Object.assign({}, opts, { template: 'v2', hookStyle: '' })), { template: 'v2', v3Error: why });
+        return Object.assign(render(repo, post, feedPngPath, photo, Object.assign({}, opts, { template: 'v2' })), { template: 'v2', v3Error: why });
       } catch (e2) {
         const err = new Error('v3: ' + why + ' | v2: ' + String((e2 && e2.message) || e2).slice(0, 300));
         err.templatesFailed = ['v3', 'v2'];
@@ -56,7 +56,7 @@ function renderReelSafe(repo, post, feedPngPath, photo, opts = {}, deps = {}) {
     }
   }
   try {
-    return Object.assign(render(repo, post, feedPngPath, photo, Object.assign({}, opts, { template: 'v2', hookStyle: '' })), { template: 'v2', v3Error: '' });
+    return Object.assign(render(repo, post, feedPngPath, photo, Object.assign({}, opts, { template: 'v2' })), { template: 'v2', v3Error: '' });
   } catch (e) {
     if (e && typeof e === 'object') e.templatesFailed = ['v2'];
     throw e;

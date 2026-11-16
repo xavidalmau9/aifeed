@@ -90,7 +90,7 @@ def pill_colors(category):
 
 # ---------- v3 template (opt-in: AIFEED_REEL_TEMPLATE=v3) ----------
 # v3 = retention cut: payoff headline on screen at frame 0, voice starts on the hook, 7-10s, save/share/follow end card.
-# AIFEED_HOOK_STYLE (v3 only): A = bold claim, B = question, C = 'what this means for you'; unset/off = the normal punch.
+# AIFEED_HOOK_STYLE (v2 and v3): A = bold claim, B = question, C = 'what this means for you'; unset/off = the normal punch.
 V3_MIN_S, V3_MAX_S, V3_END_HOLD = 7.0, 10.0, 3.5  # end card holds ~3.5 s (takeaway / share / follow)
 FOLLOW_LINE = 'Follow @aifeed.run for the AI news that matters'
 # Targeted share prompt per category (same keys as PILL_COLORS); SHARE_DEFAULT for anything else.
@@ -960,7 +960,7 @@ def build(post, feed_path, out, seed=0, photo=None, scene_path=None, scene_sourc
     vo, segs, total, voice_name, vo_err = None, None, None, '', ''
     v3, style_req = reel_template() == 'v3', hook_style()
     style_used = ''
-    if v3:
+    if style_req:  # the hook test runs on both templates (v2 vs v3 comparison, Nov 16 2026)
         hp, style_used = pick_hook(post, style_req)
         if hp:
             post = dict(post, punch=hp)

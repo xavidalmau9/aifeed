@@ -17,9 +17,30 @@ function rotationIndex(date, slot, t = HOOK_TEST) {
   return idx < 0 ? null : idx;
 }
 
+// Phase 2 (Javier approved Nov 16 2026, after the weekly growth analysis): hook C ("what it means for you") gets ~50%
+// of slots, A and B ~25% each, and the Reel template alternates v2 / v3 on comparable slots. The 8-slot cycle is
+// balanced: C lands on am and pm and on both templates, A and B each get one v2 and one v3, and each template gets
+// 2 am + 2 pm slots per cycle. Used when config reelHookStyle / reelTemplate are "rotate".
+const HOOK_TEST2 = {
+  startDate: '2026-11-16', startSlot: 2, endDate: '2026-12-14',
+  cycle: [['C', 'v3'], ['A', 'v2'], ['C', 'v2'], ['B', 'v3'], ['A', 'v3'], ['C', 'v3'], ['B', 'v2'], ['C', 'v2']]
+};
+
+function phase2Entry(date, slot) {
+  const i = rotationIndex(date, slot, HOOK_TEST2);
+  return i == null ? null : HOOK_TEST2.cycle[i % HOOK_TEST2.cycle.length];
+}
+
 function rotatedStyle(date, slot, t = HOOK_TEST) {
+  if (t === HOOK_TEST) { const e = phase2Entry(date, slot); if (e) return e[0]; }
   const i = rotationIndex(date, slot, t);
   return i == null ? '' : t.styles[i % t.styles.length];
+}
+
+// Template for "rotate": the phase 2 v2/v3 comparison, else '' (the caller falls back to v3).
+function rotatedTemplate(date, slot) {
+  const e = phase2Entry(date, slot);
+  return e ? e[1] : '';
 }
 
 // Resolve the hook style: explicit env A/B/C > explicit config A/B/C > "rotate" (env or config) in window > ''.
@@ -58,4 +79,4 @@ function claimFields(r) {
   return o;
 }
 
-module.exports = { HOOK_TEST, CSV_PATH, CSV_HEADER, rotationIndex, rotatedStyle, resolveHookStyle, csvRow, appendHookRow, claimFields };
+module.exports = { HOOK_TEST, HOOK_TEST2, rotatedTemplate, CSV_PATH, CSV_HEADER, rotationIndex, rotatedStyle, resolveHookStyle, csvRow, appendHookRow, claimFields };
