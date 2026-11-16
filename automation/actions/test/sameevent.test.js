@@ -161,3 +161,12 @@ test('sharing only a big company is not enough: SynthID vs "Gemini Can Now Make 
   // company + an event word is still accepted without a confirm (ChatGPT ads rewrite)
   assert.equal(classifySameEvent([ADS_REWRITE], compact, JSON.stringify([v(1, true, 'P4', { matchTitle: ADS, entity: 'OpenAI', event: 'ads for free ChatGPT users' })]))[0].status, 'repeat');
 });
+
+test('a self-corrected answer with two arrays uses the last array instead of stopping the run', () => {
+  const pool = [{ title: 'Nvidia CEO Jensen Huang resigns', source: 'a.com' }, { title: 'Jensen Huang steps down as Nvidia CEO, emails show', source: 'b.com' }];
+  const text = '```json\n[\n  {"c": 1, "repeat": false, "match": null},\n  {"c": 2, "repeat": true, "match": "C1", "repeat": false, "match": null, "why": "oops"}\n]\n```\n\n'
+    + 'Let me reconsider C1 and C2 - they are "the same" story, but not in posted history.\n\n```json\n[\n  {"c": 1, "repeat": false, "match": null, "why": "new"},\n  {"c": 2, "repeat": false, "match": null, "why": "new [angle]"}\n]\n```';
+  const out = classifySameEvent(pool, COMPACT, text);
+  assert.deepEqual(out.map(r => r.status), ['new', 'new']);
+  assert.throws(() => classifySameEvent(pool, COMPACT, 'no json here [not, valid'), /no readable verdict/);
+});
