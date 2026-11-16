@@ -1,5 +1,25 @@
 [
   {
+    "id": "28-zeroday-findings-in-under-two-20261116",
+    "slug": "28-zeroday-findings-in-under-two",
+    "headline": "28 Zero-Day Findings in Under Two Days. Is Robotics Security Keeping Pace?",
+    "summary": "VicOne identified 28 zero-day vulnerabilities in Physical AI tools from Google, NVIDIA, Meta using AI-assisted research in under two days.",
+    "body": "<p>VicOne identifies 28 zero-day vulnerabilities in Physical AI tools from Google, NVIDIA, Meta in under two days.</p>\n<p>VicOne, a Physical AI cybersecurity company, identified an initial set of 28 zero-day vulnerabilities in less than two days using AI-assisted research across software and tools supporting the Physical AI ecosystem. These findings are classified as zero-day vulnerabilities, though the count may change following vendor and vulnerability-authority review.</p>\n<p>The vulnerabilities span tools used for robot training, simulation, testing, and operation. Projects developed or maintained by Google, NVIDIA, Meta, and others are affected. Weaknesses in these tools could influence the models teams build, the test results they trust, and the instructions sent to robots in real-world control scenarios.</p>\n<p>The 28 findings span three stages of the robotics lifecycle: development and training, simulation and validation, and deployment and runtime. Seventy-five percent of findings involved development, training, simulation, or validation tools, highlighting risks that can arise before a robot is deployed.</p>\n<p>AI can accelerate vulnerability discovery by helping researchers analyze more software in less time. However, faster discovery leaves teams with little time to respond when weaknesses are zero-days without available fixes. Teams must determine whether they use affected software and what attackers could access or change.</p>\n<p>As details become available through coordinated disclosure, robotics manufacturers must connect each finding to its potential effect on development, deployment, and robot behavior. Teams need to understand how threats could affect robot behavior and how to protect systems already in operation.</p>\n<p>AI-accelerated vulnerability discovery demands faster security response in robotics systems across training, testing, and deployment.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_28-zeroday-findings-in-under-two_20261116_am.png",
+    "image": "images/aifeed_28-zeroday-findings-in-under-two_20261116_am.png",
+    "sourceUrl": "https://spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security",
+    "publishedAt": "2026-11-16T13:06:17.019Z",
+    "hashtags": [
+      "RoboticsSecurity",
+      "ZeroDay",
+      "Cybersecurity",
+      "PhysicalAI",
+      "VicOne"
+    ],
+    "isVideo": false
+  },
+  {
     "id": "eric-trumpbacked-robot-soldier-startup-cant-20261115",
     "slug": "eric-trumpbacked-robot-soldier-startup-cant",
     "headline": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",

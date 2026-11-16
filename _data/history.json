@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-16T13:06:17.019Z",
+      "date": "2026-11-16",
+      "slot": 1,
+      "headline": "28 Zero-Day Findings in Under Two Days. Is Robotics Security Keeping Pace?",
+      "canonUrl": "spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security",
+      "url": "https://spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security",
+      "slug": "28-zeroday-findings-in-under-two",
+      "image": "aifeed_28-zeroday-findings-in-under-two_20261116_am.png",
+      "photo": {
+        "dhash": "37c4cd5d3c4dcdac",
+        "phash": "afc3c2d46c55b151",
+        "hist": [
+          239,
+          139,
+          0,
+          0,
+          0,
+          87,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          397,
+          10,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          62,
+          0,
+          0,
+          0,
+          36,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "url": "https://spectrum.ieee.org/media-library/humanoid-and-dog-robots-watch-a-massive-swirling-storm-over-a-modern-city-walkway.jpg?id=68562173&width=1200&height=600&coordinates=0%2C224%2C0%2C225",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-11-15T22:05:55.628Z",
       "date": "2026-11-15",
       "slot": 2,
@@ -6222,68 +6304,6 @@
     }
   ],
   "rankings": {
-    "2026-10-31": [
-      {
-        "rank": 1,
-        "title": "Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims",
-        "canonUrl": "wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware"
-      },
-      {
-        "rank": 2,
-        "title": "Thousands of “ghost students” use AI to steal millions in student loans, DOJ says",
-        "canonUrl": "arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans"
-      },
-      {
-        "rank": 3,
-        "title": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
-        "canonUrl": "arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours"
-      },
-      {
-        "rank": 4,
-        "title": "An AI Agent Injected Drugs Into a Live Mouse’s Brain",
-        "canonUrl": "wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse"
-      },
-      {
-        "rank": 5,
-        "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
-        "canonUrl": "arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job"
-      },
-      {
-        "rank": 6,
-        "title": "AI is coming to construction sites. But does it make workers safer?",
-        "canonUrl": "cnbc.com/2026/10/31/ai-construction-worker-safety.html"
-      },
-      {
-        "rank": 7,
-        "title": "Wikipedia’s operator says a bad AI copyright ruling could threaten the open web",
-        "canonUrl": "theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright"
-      },
-      {
-        "rank": 8,
-        "title": "Take These Precautions Before Using AI for Your Election Research",
-        "canonUrl": "cnet.com/tech/services-and-software/ai-chatbots-election-voting-research-decisions"
-      },
-      {
-        "rank": 9,
-        "title": "The biggest names in AI are backing a new way to opt out of scraping",
-        "canonUrl": "theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
-      },
-      {
-        "rank": 10,
-        "title": "Maine’s data center revolt will decide who controls the Senate",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers"
-      },
-      {
-        "rank": 11,
-        "title": "Apple Intelligence is finally coming to China with iOS 27.3",
-        "canonUrl": "theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
-      },
-      {
-        "rank": 12,
-        "title": "Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai"
-      }
-    ],
     "2026-11-01": [
       {
         "rank": 1,
@@ -6981,6 +7001,38 @@
       },
       {
         "rank": 9,
+        "title": "Anthropic’s IPO lands as the embattled AI trade looks for a much-needed bright spot",
+        "canonUrl": "cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html"
+      }
+    ],
+    "2026-11-16": [
+      {
+        "rank": 1,
+        "title": "28 Zero-Day Findings in Under Two Days. Is Robotics Security Keeping Pace?",
+        "canonUrl": "spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security"
+      },
+      {
+        "rank": 2,
+        "title": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china"
+      },
+      {
+        "rank": 3,
+        "title": "The Nvidia scandal isn’t slowing down",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1031740/jensen-huang-nvidia-scandal-isnt-slowing-down"
+      },
+      {
+        "rank": 4,
+        "title": "AI is reshaping banking jobs – but its ability to drive profits remains unclear",
+        "canonUrl": "cnbc.com/2026/11/16/how-ai-is-changing-banking-jobs-hiring-and-revenue.html"
+      },
+      {
+        "rank": 5,
+        "title": "‘Standing on one leg’: IMF chief warns about global economy as AI circular financing hits $1 trillion",
+        "canonUrl": "cnbc.com/2026/11/16/imf-georgieva-warning-ai-circular-financing.html"
+      },
+      {
+        "rank": 6,
         "title": "Anthropic’s IPO lands as the embattled AI trade looks for a much-needed bright spot",
         "canonUrl": "cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html"
       }
