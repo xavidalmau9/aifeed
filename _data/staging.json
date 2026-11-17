@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Trump’s accounts traded up to $97.5 million in Nvidia as Huang gained White House access",
-    "link": "https://www.cnbc.com/2026/11/16/trump-nvidia-stock-trades-jensen-huang.html",
-    "score": 98,
-    "reason": "Major financial numbers, potential controversy/conflict of interest, concrete data"
+    "headline": "US data centers now burn more electricity than a midsized country",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1034668/data-centers-electricity-climate-pollution-study-harvard",
+    "score": 94,
+    "reason": "Major quantified impact story with concrete comparison; addresses infrastructure crisis"
   },
   {
     "rank": 2,
-    "headline": "‘Standing on one leg’: IMF chief warns about global economy as AI circular financing hits $1 trillion",
-    "link": "https://www.cnbc.com/2026/11/16/imf-georgieva-warning-ai-circular-financing.html",
-    "score": 96,
-    "reason": "Big number ($1T), major institution warning, significant economic impact"
+    "headline": "Anthropic likely to price IPO above the current range of $70 to $78, sources tell CNBC",
+    "link": "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html",
+    "score": 92,
+    "reason": "Significant funding/valuation milestone; actual numbers provided"
   },
   {
     "rank": 3,
-    "headline": "California sues OpenAI over Hugging Face, other AI model loss of control",
-    "link": "https://www.cnbc.com/2026/11/16/openai-california-bonta-ai-lawsuit.html",
-    "score": 94,
-    "reason": "Major lawsuit/controversy, government action, real incident (Hugging Face hack)"
+    "headline": "Demis Hassabis’ AI company raises $5 billion, months after he left as Google DeepMind CEO",
+    "link": "https://www.cnbc.com/2026/11/17/isomorphic-labs-series-c-ai-drug-discovery-.html",
+    "score": 90,
+    "reason": "Major funding launch ($5B); executive transition; DeepMind significance"
   },
   {
     "rank": 4,
-    "headline": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
-    "link": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
-    "score": 92,
-    "reason": "Regulatory/legal controversy, concrete business impact"
+    "headline": "California sues OpenAI over rogue AI hacking incidents",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
+    "score": 88,
+    "reason": "Major regulatory/legal controversy; concrete incident of AI misuse"
   },
   {
     "rank": 5,
-    "headline": "AI Told These Ex-Google Guys How to Build a Billion-Dollar Weapons Business",
-    "link": "https://www.wired.com/story/ai-told-these-ex-google-guys-how-to-build-a-billion-dollar-weapons-business/",
-    "score": 90,
-    "reason": "Big number ($1B), controversial application of AI, substantive story"
+    "headline": "Google’s Spark AI agent becomes ‘Tasks’ — and now it’s free",
+    "link": "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free",
+    "score": 85,
+    "reason": "Major product launch/rebranding; free tier expansion"
   },
   {
     "rank": 6,
-    "headline": "U.S. agencies say they initiated investigation into Nvidia partner Megaspeed in 2024",
-    "link": "https://www.cnbc.com/2026/11/17/megaspeed-investigation-nvidia-jensen-huang.html",
-    "score": 88,
-    "reason": "Federal investigation, concrete action against company"
+    "headline": "Not even Sam Altman is safe from AI deepfakes on Instagram",
+    "link": "https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake",
+    "score": 83,
+    "reason": "High-profile controversy; demonstrates real-world AI safety failure"
   },
   {
     "rank": 7,
-    "headline": "The Apple Watch’s Live Rewind Can Record and Rewind Spoken Conversations. It’s Pretty Awkward",
-    "link": "https://www.wired.com/story/apple-watch-audio-intelligence-live-rewind-siri-recap/",
-    "score": 86,
-    "reason": "Major product feature launch, privacy controversy"
+    "headline": "OpenAI pushes forward with AMD partnership amid ongoing efforts to diversify from Nvidia",
+    "link": "https://fortune.com/2026/11/17/openai-reveals-first-amd-neocloud-provider-amid-nvidia-collapsejensen-huang-launching-his-comeback-campaign/",
+    "score": 81,
+    "reason": "Major strategic partnership; supply chain shift from industry leader"
   },
   {
     "rank": 8,
-    "headline": "Apple is testing daily usage limits for more complex Siri AI interactions",
-    "link": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
-    "score": 84,
-    "reason": "Concrete product development, limitation/controversy angle"
+    "headline": "AI finds zero-day flaws for just $4 now – even mediocre hackers can cash in",
+    "link": "https://www.zdnet.com/innovation/ai-finds-zero-day-security-flaws-for-cheap-hackers/",
+    "score": 79,
+    "reason": "Security vulnerability with specific cost metric; democratized threat"
   },
   {
     "rank": 9,
-    "headline": "Apple adds new disk controls to prevent AI agents from running amok",
-    "link": "https://www.engadget.com/2318790/apple-adds-new-disk-controls-to-prevent-ai-agents-from-running-amok/",
-    "score": 82,
-    "reason": "Specific security feature launch, addresses real AI safety concern"
+    "headline": "Jensen Huang scandal fuels bipartisan push to block AI chip sales to China",
+    "link": "https://www.cnbc.com/2026/11/17/congress-ai-china-jensen-huang-chips.html",
+    "score": 77,
+    "reason": "Major geopolitical/policy development; bipartisan controversy"
   },
   {
     "rank": 10,
-    "headline": "Microsoft blames major outage on a July update defect – and two other factors",
-    "link": "https://www.zdnet.com/business/microsoft-outage-outlook-teams-copilot/",
-    "score": 80,
-    "reason": "Major operational failure, concrete root cause explanation"
+    "headline": "Nvidia’s Q3 earnings hit the mark, without mentioning the whole Jensen Huang thing",
+    "link": "https://www.theverge.com/tech/1036032/nvidia-q3-2027-jensen-huang",
+    "score": 75,
+    "reason": "Major earnings announcement; concrete financial results"
   },
   {
     "rank": 11,
-    "headline": "Gemini skills add file support and sharing ahead of Gems deprecation",
-    "link": "https://9to5google.com/2026/11/16/gemini-skills-files-sharing/",
-    "score": 78,
-    "reason": "Concrete product feature launch by Google"
+    "headline": "Google is making it easier to opt out of Gemini AI model training – here’s how",
+    "link": "https://www.zdnet.com/innovation/google-gemini-ai-model-training-opt-out-how/",
+    "score": 73,
+    "reason": "Major privacy policy change; direct user impact"
   },
   {
     "rank": 12,
-    "headline": "Gemini rolling out 66 new regional voices on Android and iOS, including 10+ UK dialects",
-    "link": "https://9to5google.com/2026/11/16/gemini-rolling-out-66-new-regional-voices-on-android-and-ios-including-10-uk-dialects/",
-    "score": 76,
-    "reason": "Specific feature expansion with big number"
+    "headline": "Rogue Agents Hacked His Company. Why Is Clément Delangue So Optimistic About AI?",
+    "link": "https://www.wired.com/story/wired-yearbook-2026-clement-delangue/",
+    "score": 71,
+    "reason": "Specific security incident with founder reaction; Hugging Face prominence"
   },
   {
     "rank": 13,
-    "headline": "Google Maps can now create trip itineraries for you",
-    "link": "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning",
-    "score": 74,
-    "reason": "Major feature launch by Google"
+    "headline": "Apple reveals daily limits on your Siri AI use – here’s how much you’ll have to pay",
+    "link": "https://www.zdnet.com/innovation/apple-siri-ai-daily-limits-cost-icloud-plus-plan/",
+    "score": 69,
+    "reason": "Major monetization announcement; usage restrictions"
   },
   {
     "rank": 14,
-    "headline": "New Gemini setting lets you keep chat history, but turn off AI training",
-    "link": "https://9to5google.com/2026/11/16/gemini-history-ai-training/",
-    "score": 72,
-    "reason": "Concrete privacy feature launch"
+    "headline": "Your Samsung phone could soon get a personal AI agent – what we know about Galaxy Claw",
+    "link": "https://www.zdnet.com/innovation/samsung-galaxy-claw-ai-cross-app-upgrade/",
+    "score": 67,
+    "reason": "Major device-level AI launch; consumer-facing feature"
   },
   {
     "rank": 15,
-    "headline": "Samsung Galaxy S27 Lineup Could Have a Personal AI Assistant Built-In",
-    "link": "https://www.cnet.com/tech/services-and-software/samsung-galaxy-claw-ai-assistant/",
-    "score": 70,
-    "reason": "Major product launch preview by Samsung"
+    "headline": "Your enterprise AI access can be sold for pennies – beware ‘LLM Mixers’",
+    "link": "https://www.zdnet.com/innovation/google-threat-intelligence-report-llmjacking-ai/",
+    "score": 65,
+    "reason": "Security/fraud concern; demonstrates credential devaluation"
   },
   {
     "rank": 16,
-    "headline": "Nvidia fallout: Commerce targets loophole for China&apos;s data center use",
-    "link": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
-    "score": 68,
-    "reason": "Regulatory action/policy change with business impact"
+    "headline": "AI Is Giving Optical Computing Another Shot",
+    "link": "https://spectrum.ieee.org/optical-computing-ai",
+    "score": 63,
+    "reason": "Major hardware innovation; infrastructure shift"
   },
   {
     "rank": 17,
-    "headline": "Audible is trying to make it easier to find audiobooks you’ll actually like",
-    "link": "https://www.theverge.com/tech/1034083/audible-audio-discovery-ai-feature-availability",
-    "score": 66,
-    "reason": "Amazon product feature launch"
+    "headline": "Jensen Huang agrees to face Congress over Nvidia scandal",
+    "link": "https://www.axios.com/2026/11/17/nvidia-jensen-huang-congress-testify-dates",
+    "score": 61,
+    "reason": "Major regulatory/political development; testimony commitment"
   },
   {
     "rank": 18,
-    "headline": "Neurable One review: The brain-scanning headphones that helped me stay focused",
-    "link": "https://www.engadget.com/2317916/neurable-one-review-brain-scanning-headphones-eeg/",
-    "score": 64,
-    "reason": "Novel AI hardware product launch"
+    "headline": "Tech leaders tell Fed chairman Warsh how AI could transform the economy",
+    "link": "https://www.axios.com/2026/11/17/ai-fed-economic-growth-andreessen",
+    "score": 59,
+    "reason": "High-level policy dialogue; macroeconomic focus"
   },
   {
     "rank": 19,
-    "headline": "Lost or stolen Windows laptop? IT can lock it down without wiping it now",
-    "link": "https://www.zdnet.com/tech/microsoft-preview-remote-lock-intune-windows-devices/",
-    "score": 62,
-    "reason": "Microsoft security feature launch"
+    "headline": "AI Companies Develop Decision Models to Avoid Hallucinations",
+    "link": "https://spectrum.ieee.org/typesafe-ai-hallucination-decision-models",
+    "score": 57,
+    "reason": "Technical breakthrough addressing major AI reliability issue"
   },
   {
     "rank": 20,
-    "headline": "Adobe Is Betting You Hate Slop, Not AI. Some Designers Feel Differently",
-    "link": "https://www.cnet.com/tech/services-and-software/adobe-max-2026-slop-agents-ai-feature/",
-    "score": 60,
-    "reason": "AI-generated content controversy with industry pushback"
+    "headline": "The DOJ says it’s investigating Megaspeed",
+    "link": "https://www.theverge.com/policy/1035410/doj-megaspeed-nvidia-investigation-update",
+    "score": 53,
+    "reason": "Federal investigation launch; antitrust/regulatory action"
   }
 ]
