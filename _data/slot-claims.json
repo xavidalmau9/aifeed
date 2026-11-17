@@ -674,8 +674,12 @@
     "2026-11-17:1": {
       "slug": "nvidia-warns-chip-buyers-of-legal",
       "image": "aifeed_nvidia-warns-chip-buyers-of-legal_20261117_am.png",
+      "reelTemplate": "v2",
+      "hookStyle": "A",
+      "igReelId": "18061012814801124",
+      "igPermalink": "https://www.instagram.com/reel/Df2BFiZFNPO/",
       "status": "posted",
-      "at": "2026-11-17T13:12:50.006Z",
+      "at": "2026-11-17T13:17:04.369Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
