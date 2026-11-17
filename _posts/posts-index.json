@@ -1,5 +1,26 @@
 [
   {
+    "id": "nvidia-fallout-commerce-targets-loophole-for-20261117",
+    "slug": "nvidia-fallout-commerce-targets-loophole-for",
+    "headline": "Nvidia fallout: Commerce targets loophole for China's data center use",
+    "summary": "Commerce Department closed export loophole allowing Chinese companies to lease Nvidia chips through third-country data centers.",
+    "body": "<p>The Commerce Department's Bureau of Industry and Security announced an interim final rule closing a loophole that allowed Chinese companies to lease Nvidia's advanced computing power through third-country data centers. The rule was written by and at the direction of the Treasury Department and White House National Security Council, an unprecedented move for a BIS regulation.</p>\n<p>The policy response followed growing criticism of Commerce Secretary Howard Lutnick for not adequately preventing diversion of advanced chips to China. Treasury Secretary Scott Bessent blamed Commerce for failing to place Singapore-based Megaspeed on its entity list, which restricts exports.</p>\n<p>The rule requires licenses for exporting, reexporting, or transferring advanced semiconductors to Indonesia, Malaysia, Singapore, Thailand, and Brazil, designating these countries as presenting higher-than-normal diversion risk. It aims to prevent foreign actors from using U.S. technology-based advanced computing to train AI models.</p>\n<p>The announcement came after reports that Nvidia CEO Jensen Huang resigned following an affair with Alice Huang, an executive at Megaspeed who was allegedly a Chinese spy. American authorities began investigating Megaspeed in 2024 after the company started importing billions in advanced Nvidia equipment into Malaysia.</p>\n<p>The rule prompted share prices of Nvidia and other AI-linked companies including Micron, Intel, and AMD to fall. Critics and supporters framed it as essential for national security and protecting America's AI leadership against Chinese technology advancement.</p>\n<p>The U.S. tightened export controls on advanced chips through third-country data centers, targeting a loophole exploited by Chinese companies and Megaspeed.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_nvidia-fallout-commerce-targets-loophole-for_20261117_pm.png",
+    "image": "images/aifeed_nvidia-fallout-commerce-targets-loophole-for_20261117_pm.png",
+    "sourceUrl": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
+    "publishedAt": "2026-11-17T22:06:42.519Z",
+    "hashtags": [
+      "Commerce",
+      "ExportControls",
+      "Nvidia",
+      "China",
+      "AI"
+    ],
+    "igQuestion": "Should the US restrict more countries from accessing advanced chips?",
+    "isVideo": false
+  },
+  {
     "id": "nvidia-warns-chip-buyers-of-legal-20261117",
     "slug": "nvidia-warns-chip-buyers-of-legal",
     "headline": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
