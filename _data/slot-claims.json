@@ -687,8 +687,12 @@
     "2026-11-17:2": {
       "slug": "nvidia-fallout-commerce-targets-loophole-for",
       "image": "aifeed_nvidia-fallout-commerce-targets-loophole-for_20261117_pm.png",
+      "reelTemplate": "v2",
+      "hookStyle": "C",
+      "igReelId": "18123318346957651",
+      "igPermalink": "https://www.instagram.com/reel/Df2-zD0E6kC/",
       "status": "posted",
-      "at": "2026-11-17T22:12:02.568Z",
+      "at": "2026-11-17T22:16:16.161Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
