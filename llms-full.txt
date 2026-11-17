@@ -33,6 +33,7 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - LinkedIn: https://www.linkedin.com/company/aifeed-run
 
 ## Recent stories
+- [Nvidia fallout: Commerce targets loophole for China's data center use](https://aifeed.run/news/nvidia-fallout-commerce-targets-loophole-for/) — Commerce Department closed export loophole allowing Chinese companies to lease Nvidia chips through third-country data centers.
 - [Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC](https://aifeed.run/news/nvidia-warns-chip-buyers-of-legal/) — Nvidia warned customers that proposed RASA legislation could expose both companies to legal action over Chinese AI chip access through cloud services.
 - [AI is reshaping banking jobs – but its ability to drive profits remains unclear](https://aifeed.run/news/ai-is-reshaping-banking-jobs-but/) — European banks are deploying AI to automate routine work and cut jobs, but evidence of revenue growth remains unclear.
 - [28 Zero-Day Findings in Under Two Days. Is Robotics Security Keeping Pace?](https://aifeed.run/news/28-zeroday-findings-in-under-two/) — VicOne identified 28 zero-day vulnerabilities in Physical AI tools from Google, NVIDIA, Meta using AI-assisted research in under two days.
@@ -72,4 +73,3 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - [AI Emergency Alerts Are Coming. Humans Might Not Be Ready](https://aifeed.run/news/ai-emergency-alerts-are-coming-humans/) — Emergency managers may be using AI to draft disaster alerts despite official agency bans.
 - [UK Home Office May Face Investigation Over Use of OpenAI Tech](https://aifeed.run/news/uk-home-office-may-face-investigation/) — UK government watchdog may investigate Home Office's use of OpenAI tools in asylum applications over accuracy and transparency concerns.
 - [AI Killed the Homework Era](https://aifeed.run/news/ai-killed-the-homework-era/) — Educators report AI use has made homework grading difficult and raised academic integrity concerns.
-- [Data center backlash is uniting America](https://aifeed.run/news/data-center-backlash-is-uniting-america/) — Data center development has emerged as a major uniting issue across parties in 2026 midterm elections.
