@@ -1,5 +1,26 @@
 [
   {
+    "id": "nvidia-warns-chip-buyers-of-legal-20261117",
+    "slug": "nvidia-warns-chip-buyers-of-legal",
+    "headline": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
+    "summary": "Nvidia warned customers that proposed RASA legislation could expose both companies to legal action over Chinese AI chip access through cloud services.",
+    "body": "<p>Nvidia warns buyers of legal risks tied to proposed China chip access legislation.</p>\n<p>Nvidia warned its customers that proposed legislation called the Remote Access Security Act could expose both the chip maker and buyers to U.S. legal action over Chinese access to AI chips through cloud services, according to sources. The company messaged chip buyers in recent months cautioning that RASA would give the U.S. government broader authority to control access to cloud services in the same way as physical hardware restrictions.</p>\n<p>The warnings reflect increasing scrutiny from U.S. lawmakers over Chinese companies' access to Nvidia's advanced chips, which U.S. export controls restrict from going directly to China. Nvidia also told customers it won't sell chips to those renting more than 50% of their GPUs to Chinese companies. The Financial Times separately reported Nvidia directed data-center clients to allocate at least 51% of services to non-Chinese customers under future contracts.</p>\n<p>RASA passed the House of Representatives in January but has not yet passed the Senate.</p>\n<p>Meanwhile, the Commerce Department's Bureau of Industry and Security announced an interim final rule on Monday designed to prevent Chinese companies' remote access to AI chips.</p>\n<p>U.S. Treasury Secretary Scott Bessent called for scrutiny of Nvidia's export control compliance, questioning whether the company pressed sales to boost revenues. Huang has been asked to testify before the Senate Banking Committee on Dec. 3.</p>\n<p>Nvidia warns customers that proposed China chip legislation could expose them to legal action as the U.S. tightens export controls.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_nvidia-warns-chip-buyers-of-legal_20261117_am.png",
+    "image": "images/aifeed_nvidia-warns-chip-buyers-of-legal_20261117_am.png",
+    "sourceUrl": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+    "publishedAt": "2026-11-17T13:07:19.526Z",
+    "hashtags": [
+      "Nvidia",
+      "ExportControls",
+      "ChinaPolicy",
+      "AI",
+      "Semiconductors"
+    ],
+    "igQuestion": "Ban it or regulate it?",
+    "isVideo": false
+  },
+  {
     "id": "ai-is-reshaping-banking-jobs-but-20261116",
     "slug": "ai-is-reshaping-banking-jobs-but",
     "headline": "AI is reshaping banking jobs – but its ability to drive profits remains unclear",
