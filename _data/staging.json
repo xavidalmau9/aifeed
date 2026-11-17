@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "US data centers now burn more electricity than a midsized country",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1034668/data-centers-electricity-climate-pollution-study-harvard",
-    "score": 94,
-    "reason": "Big numbers, concrete impact, no speculation"
+    "headline": "Trump’s accounts traded up to $97.5 million in Nvidia as Huang gained White House access",
+    "link": "https://www.cnbc.com/2026/11/16/trump-nvidia-stock-trades-jensen-huang.html",
+    "score": 98,
+    "reason": "Major financial numbers, potential controversy/conflict of interest, concrete data"
   },
   {
     "rank": 2,
-    "headline": "California sues OpenAI over rogue AI hacking incidents",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
-    "score": 92,
-    "reason": "Major controversy/lawsuit, concrete legal action"
+    "headline": "‘Standing on one leg’: IMF chief warns about global economy as AI circular financing hits $1 trillion",
+    "link": "https://www.cnbc.com/2026/11/16/imf-georgieva-warning-ai-circular-financing.html",
+    "score": 96,
+    "reason": "Big number ($1T), major institution warning, significant economic impact"
   },
   {
     "rank": 3,
-    "headline": "AI finds zero-day flaws for just $4 now – even mediocre hackers can cash in",
-    "link": "https://www.zdnet.com/innovation/ai-finds-zero-day-security-flaws-for-cheap-hackers/",
-    "score": 88,
-    "reason": "Significant security/pricing development with real implications"
+    "headline": "California sues OpenAI over Hugging Face, other AI model loss of control",
+    "link": "https://www.cnbc.com/2026/11/16/openai-california-bonta-ai-lawsuit.html",
+    "score": 94,
+    "reason": "Major lawsuit/controversy, government action, real incident (Hugging Face hack)"
   },
   {
     "rank": 4,
-    "headline": "Jensen Huang Is Gone. Now What?",
-    "link": "https://www.wired.com/story/the-big-interview-podcast-lauren-goode-jensen-huang/",
-    "score": 87,
-    "reason": "Major leadership change at Nvidia, significant market impact"
+    "headline": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
+    "link": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+    "score": 92,
+    "reason": "Regulatory/legal controversy, concrete business impact"
   },
   {
     "rank": 5,
-    "headline": "Google adds 66 regional dialects to Gemini",
-    "link": "https://www.engadget.com/2317417/google-adds-66-regional-dialects-to-gemini/",
-    "score": 82,
-    "reason": "Major product launch with concrete numbers"
+    "headline": "AI Told These Ex-Google Guys How to Build a Billion-Dollar Weapons Business",
+    "link": "https://www.wired.com/story/ai-told-these-ex-google-guys-how-to-build-a-billion-dollar-weapons-business/",
+    "score": 90,
+    "reason": "Big number ($1B), controversial application of AI, substantive story"
   },
   {
     "rank": 6,
-    "headline": "OpenAI inks agreements with four independent evaluators to boost company&apos;s safety work",
-    "link": "https://www.cnbc.com/2026/11/16/openai-independent-ai-safety-evaluators.html",
-    "score": 79,
-    "reason": "Concrete safety initiative launch"
+    "headline": "U.S. agencies say they initiated investigation into Nvidia partner Megaspeed in 2024",
+    "link": "https://www.cnbc.com/2026/11/17/megaspeed-investigation-nvidia-jensen-huang.html",
+    "score": 88,
+    "reason": "Federal investigation, concrete action against company"
   },
   {
     "rank": 7,
-    "headline": "Your enterprise AI access can be sold for pennies – beware ‘LLM Mixers’",
-    "link": "https://www.zdnet.com/innovation/google-threat-intelligence-report-llmjacking-ai/",
-    "score": 77,
-    "reason": "Security vulnerability with business impact"
+    "headline": "The Apple Watch’s Live Rewind Can Record and Rewind Spoken Conversations. It’s Pretty Awkward",
+    "link": "https://www.wired.com/story/apple-watch-audio-intelligence-live-rewind-siri-recap/",
+    "score": 86,
+    "reason": "Major product feature launch, privacy controversy"
   },
   {
     "rank": 8,
-    "headline": "Altimeter&apos;s Brad Gerstner aims to invest $5 billion in Anthropic IPO",
-    "link": "https://www.cnbc.com/2026/11/16/altimeters-brad-gerstner-investing-5-billion-in-anthropic-ipo.html",
-    "score": 76,
-    "reason": "Major funding/IPO development with big numbers"
+    "headline": "Apple is testing daily usage limits for more complex Siri AI interactions",
+    "link": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
+    "score": 84,
+    "reason": "Concrete product development, limitation/controversy angle"
   },
   {
     "rank": 9,
-    "headline": "OpenAI wants to stop deepfakes from overwhelming child abuse tiplines",
-    "link": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
-    "score": 74,
-    "reason": "Concrete initiative addressing real problem"
+    "headline": "Apple adds new disk controls to prevent AI agents from running amok",
+    "link": "https://www.engadget.com/2318790/apple-adds-new-disk-controls-to-prevent-ai-agents-from-running-amok/",
+    "score": 82,
+    "reason": "Specific security feature launch, addresses real AI safety concern"
   },
   {
     "rank": 10,
-    "headline": "Your Samsung phone could soon get a personal AI agent – what we know about Galaxy Claw",
-    "link": "https://www.zdnet.com/innovation/samsung-galaxy-claw-ai-cross-app-upgrade/",
-    "score": 71,
-    "reason": "Major product launch announcement"
+    "headline": "Microsoft blames major outage on a July update defect – and two other factors",
+    "link": "https://www.zdnet.com/business/microsoft-outage-outlook-teams-copilot/",
+    "score": 80,
+    "reason": "Major operational failure, concrete root cause explanation"
+  },
+  {
+    "rank": 11,
+    "headline": "Gemini skills add file support and sharing ahead of Gems deprecation",
+    "link": "https://9to5google.com/2026/11/16/gemini-skills-files-sharing/",
+    "score": 78,
+    "reason": "Concrete product feature launch by Google"
+  },
+  {
+    "rank": 12,
+    "headline": "Gemini rolling out 66 new regional voices on Android and iOS, including 10+ UK dialects",
+    "link": "https://9to5google.com/2026/11/16/gemini-rolling-out-66-new-regional-voices-on-android-and-ios-including-10-uk-dialects/",
+    "score": 76,
+    "reason": "Specific feature expansion with big number"
+  },
+  {
+    "rank": 13,
+    "headline": "Google Maps can now create trip itineraries for you",
+    "link": "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning",
+    "score": 74,
+    "reason": "Major feature launch by Google"
+  },
+  {
+    "rank": 14,
+    "headline": "New Gemini setting lets you keep chat history, but turn off AI training",
+    "link": "https://9to5google.com/2026/11/16/gemini-history-ai-training/",
+    "score": 72,
+    "reason": "Concrete privacy feature launch"
+  },
+  {
+    "rank": 15,
+    "headline": "Samsung Galaxy S27 Lineup Could Have a Personal AI Assistant Built-In",
+    "link": "https://www.cnet.com/tech/services-and-software/samsung-galaxy-claw-ai-assistant/",
+    "score": 70,
+    "reason": "Major product launch preview by Samsung"
+  },
+  {
+    "rank": 16,
+    "headline": "Nvidia fallout: Commerce targets loophole for China&apos;s data center use",
+    "link": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
+    "score": 68,
+    "reason": "Regulatory action/policy change with business impact"
+  },
+  {
+    "rank": 17,
+    "headline": "Audible is trying to make it easier to find audiobooks you’ll actually like",
+    "link": "https://www.theverge.com/tech/1034083/audible-audio-discovery-ai-feature-availability",
+    "score": 66,
+    "reason": "Amazon product feature launch"
+  },
+  {
+    "rank": 18,
+    "headline": "Neurable One review: The brain-scanning headphones that helped me stay focused",
+    "link": "https://www.engadget.com/2317916/neurable-one-review-brain-scanning-headphones-eeg/",
+    "score": 64,
+    "reason": "Novel AI hardware product launch"
+  },
+  {
+    "rank": 19,
+    "headline": "Lost or stolen Windows laptop? IT can lock it down without wiping it now",
+    "link": "https://www.zdnet.com/tech/microsoft-preview-remote-lock-intune-windows-devices/",
+    "score": 62,
+    "reason": "Microsoft security feature launch"
+  },
+  {
+    "rank": 20,
+    "headline": "Adobe Is Betting You Hate Slop, Not AI. Some Designers Feel Differently",
+    "link": "https://www.cnet.com/tech/services-and-software/adobe-max-2026-slop-agents-ai-feature/",
+    "score": 60,
+    "reason": "AI-generated content controversy with industry pushback"
   }
 ]
