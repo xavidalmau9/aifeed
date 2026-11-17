@@ -672,8 +672,10 @@
       "tried": []
     },
     "2026-11-17:1": {
-      "status": "claimed",
-      "at": "2026-11-17T13:05:01.877Z",
+      "slug": "nvidia-warns-chip-buyers-of-legal",
+      "image": "aifeed_nvidia-warns-chip-buyers-of-legal_20261117_am.png",
+      "status": "posted",
+      "at": "2026-11-17T13:12:50.006Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
