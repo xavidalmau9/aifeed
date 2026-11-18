@@ -1,5 +1,26 @@
 [
   {
+    "id": "not-even-sam-altman-is-safe-20261118",
+    "slug": "not-even-sam-altman-is-safe",
+    "headline": "Not even Sam Altman is safe from AI deepfakes on Instagram",
+    "summary": "Meta's AI chief posted an AI video of Sam Altman on Instagram promoting Muse.",
+    "body": "<p>Meta's chief AI officer posts deepfaked video of OpenAI CEO Sam Altman on Instagram to promote Muse.</p>\n<p>Alexandr Wang, Meta's chief AI officer, shared an AI-generated video to Instagram in November promoting Muse, Meta's consumer AI agent. The clip depicts Sam Altman, Mark Zuckerberg, Wang, and Muse's mascot Jolly on a four-way video call, with Altman shown dressed as the character in a furry hooded suit.</p>\n<p>Meta's AI policy allows AI-generated videos depicting real people if they are labeled as AI content. Wang's post carries such a label. Meta spokesperson Tracy Clayton noted that Altman has previously made his likeness available for AI content generation, including when OpenAI launched its Sora app.</p>\n<p>Just years ago, AI content portraying real people drew strong public backlash and legal threats. Political groups have since run millions of dollars' worth of AI-generated ads, and celebrities routinely become subjects of AI imagery.</p>\n<p>Meta's policies differ between video and static images. While videos must be labeled as AI, static images have no such requirement. After an AI image of actress Mia Goth spread widely in October, her representative called it 'incomprehensible' that Instagram allowed it without disclosure and protection of her likeness.</p>\n<p>Meta's AI chief posted a deepfaked video of a rival CEO on Instagram, illustrating how normalized AI-generated content has become on social platforms.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_not-even-sam-altman-is-safe_20261118_am.png",
+    "image": "images/aifeed_not-even-sam-altman-is-safe_20261118_am.png",
+    "sourceUrl": "https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake",
+    "publishedAt": "2026-11-18T13:07:10.111Z",
+    "hashtags": [
+      "Meta",
+      "DeepFakes",
+      "AI",
+      "Instagram",
+      "SamAltman"
+    ],
+    "igQuestion": "Should Meta require labels on AI-generated images too?",
+    "isVideo": false
+  },
+  {
     "id": "nvidia-fallout-commerce-targets-loophole-for-20261117",
     "slug": "nvidia-fallout-commerce-targets-loophole-for",
     "headline": "Nvidia fallout: Commerce targets loophole for China's data center use",

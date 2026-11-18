@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-18T13:07:10.111Z",
+      "date": "2026-11-18",
+      "slot": 1,
+      "headline": "Not even Sam Altman is safe from AI deepfakes on Instagram",
+      "canonUrl": "theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake",
+      "url": "https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake",
+      "slug": "not-even-sam-altman-is-safe",
+      "image": "aifeed_not-even-sam-altman-is-safe_20261118_am.png",
+      "photo": {
+        "dhash": "3039797978707474",
+        "phash": "8d397881c6763ec9",
+        "hist": [
+          325,
+          9,
+          0,
+          0,
+          0,
+          6,
+          3,
+          0,
+          0,
+          0,
+          12,
+          0,
+          0,
+          0,
+          0,
+          0,
+          104,
+          7,
+          0,
+          0,
+          19,
+          126,
+          2,
+          0,
+          0,
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          24,
+          81,
+          0,
+          0,
+          0,
+          25,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          35,
+          14,
+          0,
+          0,
+          0,
+          23,
+          105,
+          0,
+          0,
+          0,
+          46,
+          11
+        ],
+        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2297785644.jpg?quality=90&strip=all&crop=0%2C10.755339554057%2C100%2C78.489320891885&w=1200",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-11-17T22:06:42.519Z",
       "date": "2026-11-17",
       "slot": 2,
@@ -6550,63 +6632,6 @@
     }
   ],
   "rankings": {
-    "2026-11-02": [
-      {
-        "rank": 1,
-        "title": "Hundreds of Mundane AI Apps Are Hiding Sexually Abusive Deepfake Features",
-        "canonUrl": "wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features"
-      },
-      {
-        "rank": 2,
-        "title": "AI apps with hidden sexual and violent deepfake features made it into the App Store",
-        "canonUrl": "9to5mac.com/2026/11/02/ai-apps-with-hidden-sexual-and-violent-deepfake-features-made-it-into-the-app-store"
-      },
-      {
-        "rank": 3,
-        "title": "Fake nuclear warnings in Ukraine as Moscow, Kyiv report separate cyberattacks on emergency apps",
-        "canonUrl": "cnbc.com/2026/11/02/russia-ukraine-cyberattack-zelenskyy-putin.html"
-      },
-      {
-        "rank": 4,
-        "title": "Anthropic updates Claude to stop it from recreating existing video games",
-        "canonUrl": "engadget.com/2303469/anthropic-updates-claude-to-stop-it-from-recreating-existing-video-games"
-      },
-      {
-        "rank": 5,
-        "title": "AI is coming to construction sites. But does it make workers safer?",
-        "canonUrl": "cnbc.com/2026/10/31/ai-construction-worker-safety.html"
-      },
-      {
-        "rank": 6,
-        "title": "South Korea targets 'world's highest performance' sovereign AI model in record new budget",
-        "canonUrl": "cnbc.com/2026/11/02/south-korea-ai-spending-budget.html"
-      },
-      {
-        "rank": 7,
-        "title": "Sam Altman makes surprise South Korea visit as OpenAI builds on chip partnerships",
-        "canonUrl": "cnbc.com/2026/11/02/openai-sam-altman-samsung-sk-south-korea.html"
-      },
-      {
-        "rank": 8,
-        "title": "Why AI is boosting Meta's ad business while hurting Google search",
-        "canonUrl": "cnbc.com/2026/11/01/ai-meta-ads-google-search.html"
-      },
-      {
-        "rank": 9,
-        "title": "The agentic web is here",
-        "canonUrl": "technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here"
-      },
-      {
-        "rank": 10,
-        "title": "When You Should—and Shouldn’t—Use AI to Search the Web",
-        "canonUrl": "wired.com/story/when-you-should-and-shouldnt-use-ai-to-search-the-web"
-      },
-      {
-        "rank": 11,
-        "title": "Guarding the Gates of Knowledge",
-        "canonUrl": "spectrum.ieee.org/ai-slop-trust-science"
-      }
-    ],
     "2026-11-03": [
       {
         "rank": 1,
@@ -7316,6 +7341,68 @@
         "rank": 12,
         "title": "A New Study Finds Hyperscale Data Centers Emit as Much Carbon as Denmark",
         "canonUrl": "cnet.com/tech/services-and-software/a-new-study-finds-hyperscale-data-centers-emit-as-much-carbon-as-denmark"
+      }
+    ],
+    "2026-11-18": [
+      {
+        "rank": 1,
+        "title": "Jensen Huang scandal fuels bipartisan push to block AI chip sales to China",
+        "canonUrl": "cnbc.com/2026/11/17/congress-ai-china-jensen-huang-chips.html"
+      },
+      {
+        "rank": 2,
+        "title": "Not even Sam Altman is safe from AI deepfakes on Instagram",
+        "canonUrl": "theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake"
+      },
+      {
+        "rank": 3,
+        "title": "Rogue Agents Hacked His Company. Why Is Clément Delangue So Optimistic About AI?",
+        "canonUrl": "wired.com/story/wired-yearbook-2026-clement-delangue"
+      },
+      {
+        "rank": 4,
+        "title": "LeBron James sues startup over viral AI ad allegedly exploiting his likeness",
+        "canonUrl": "cnbc.com/2026/11/18/lebron-james-startup-ai-lawsuit.html"
+      },
+      {
+        "rank": 5,
+        "title": "Southeast Asia’s data center boom leaned on Chinese demand. New U.S. rules put that pipeline at risk",
+        "canonUrl": "cnbc.com/2026/11/18/nvidia-us-ai-chip-export-controls-data-centers-.html"
+      },
+      {
+        "rank": 6,
+        "title": "JPMorgan is working on AI agent transactions that don’t involve humans",
+        "canonUrl": "cnbc.com/2026/11/18/jpmorgan-hyundai-card-ai-agents-payments.html"
+      },
+      {
+        "rank": 7,
+        "title": "AI Told These Ex-Google Guys How to Build a Billion-Dollar Weapons Business",
+        "canonUrl": "wired.com/story/ai-told-these-ex-google-guys-how-to-build-a-billion-dollar-weapons-business"
+      },
+      {
+        "rank": 8,
+        "title": "Emergency alerts and $75,000 rewards: South Korea fights high-tech exam cheating",
+        "canonUrl": "cnbc.com/2026/11/18/south-korea-exam-cheating-.html"
+      },
+      {
+        "rank": 9,
+        "title": "The Apple Watch’s Live Rewind Can Record and Rewind Spoken Conversations. It’s Pretty Awkward",
+        "canonUrl": "wired.com/story/apple-watch-audio-intelligence-live-rewind-siri-recap"
+      },
+      {
+        "rank": 10,
+        "title": "Apple reveals daily limits on your Siri AI use – here’s how much you’ll have to pay",
+        "canonUrl": "zdnet.com/innovation/apple-siri-ai-daily-limits-cost-icloud-plus-plan"
+      },
+      {
+        "rank": 11,
+        "title": "Google is making it easier to opt out of Gemini AI model training – here’s how",
+        "canonUrl": "zdnet.com/innovation/google-gemini-ai-model-training-opt-out-how"
+      },
+      {
+        "rank": 12,
+        "title": "Over a Third of Gen Z-ers Rely on AI for Friendship",
+        "canonUrl": "wired.com/story/over-a-third-of-gen-z-rely-on-ai-for-friendship"
       }
     ]
   }
