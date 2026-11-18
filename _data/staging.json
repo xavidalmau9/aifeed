@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Nvidia posts a blockbuster quarter as Jensen Huang’s dealmaking legacy hangs in the balance",
-    "link": "https://fortune.com/2026/11/18/nvidia-posts-blockbuster-quarter-as-jensen-huangs-dealmaking-legacy-hangs-in-the-balance/",
-    "score": 95,
-    "reason": "Major earnings result with concrete numbers; resolves ongoing leadership controversy"
+    "headline": "Anthropic prices IPO at $83 per share, above expected range, source tells CNBC",
+    "link": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
+    "score": 94,
+    "reason": "Major funding event with concrete valuation; significant for AI industry consolidation"
   },
   {
     "rank": 2,
-    "headline": "Microsoft says its new AI coding model rivals Claude Opus 5.5 at 5% of the cost",
-    "link": "https://www.zdnet.com/innovation/microsoft-ai-coding-model-rivals-claude-opus-5-5-ignite/",
+    "headline": "Nvidia isn’t selling any more AI chips to China",
+    "link": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
     "score": 92,
-    "reason": "Significant product launch with measurable performance claim and cost advantage"
+    "reason": "Major geopolitical/business decision affecting AI supply chain; concrete policy change"
   },
   {
     "rank": 3,
-    "headline": "Waymo is pausing all freeway rides after California DMV says the robotaxis are 'imminent hazard to public safety'",
-    "link": "https://www.engadget.com/2319947/waymo-is-pausing-all-freeway-rides-after-california-dmv-says-the-robotaxis-are-imminent-hazard-to-public-safety/",
-    "score": 90,
-    "reason": "Major controversy with regulatory action; operational suspension of deployed service"
+    "headline": "Disney Imagineers Have Built AI-Powered ‘Star Wars’ Alien Audio-Animatronics With AWS",
+    "link": "https://www.cnet.com/tech/services-and-software/disney-imagineer-ai-star-wars-alien-audio-animatronic-aws/",
+    "score": 88,
+    "reason": "Major brand AI deployment launch; tangible consumer product integration"
   },
   {
     "rank": 4,
-    "headline": "Oregon is the latest state to sue OpenAI over child safety",
-    "link": "https://www.engadget.com/2320041/oregon-is-the-latest-state-to-sue-openai-over-child-safety/",
-    "score": 85,
-    "reason": "Regulatory action/lawsuit; establishes pattern of legal challenges"
+    "headline": "Waymo says its robotaxis crash far less than humans. California just called them an ‘imminent hazard’ and pulled them off freeways",
+    "link": "https://fortune.com/2026/11/18/waymo-driverless-freeway-ban-california-nationwide/",
+    "score": 87,
+    "reason": "Major regulatory action against AI company; significant controversy with real-world impact"
   },
   {
     "rank": 5,
-    "headline": "Suno now lets you make AI videos for your AI music",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature",
-    "score": 82,
-    "reason": "Major feature launch expanding multimodal capabilities"
+    "headline": "Nvidia poured $58.1 billion into AI companies’ stock in 9 months—and an analyst warns it’s now “double exposed” if the boom slows",
+    "link": "https://fortune.com/2026/11/18/nvidia-poured-58-billion-equities-risk-if-boom-slows/",
+    "score": 85,
+    "reason": "Big numbers with market risk implications; concrete financial data"
   },
   {
     "rank": 6,
-    "headline": "Microsoft unveiled Copilot Workspaces at Ignite 2026, plus more AI workplace updates",
-    "link": "https://www.zdnet.com/innovation/microsoft-copilot-workspaces-ignite-2026/",
-    "score": 80,
-    "reason": "Major product launch with enterprise focus"
+    "headline": "Inside Nvidia’s First Post-Jensen All-Hands: Pay Raises and More Equity",
+    "link": "https://www.wired.com/story/inside-nvidias-first-all-hands-without-jensen-huang-as-ceo/",
+    "score": 81,
+    "reason": "Major leadership transition event with business implications"
   },
   {
     "rank": 7,
-    "headline": "Over a Third of Gen Z-ers Rely on AI for Friendship",
-    "link": "https://www.wired.com/story/over-a-third-of-gen-z-rely-on-ai-for-friendship/",
-    "score": 78,
-    "reason": "Significant statistical finding showing behavioral shift"
+    "headline": "Artex Is Criminals’ New Favorite ‘Point-and-Shoot’ AI Hacking Tool",
+    "link": "https://www.wired.com/story/artex-ai-hacking-tools/",
+    "score": 79,
+    "reason": "Controversial security issue with real criminal application; notable risk story"
   },
   {
     "rank": 8,
-    "headline": "AI Told These Ex-Google Guys How to Build a Billion-Dollar Weapons Business",
-    "link": "https://www.wired.com/story/ai-told-these-ex-google-guys-how-to-build-a-billion-dollar-weapons-business/",
-    "score": 76,
-    "reason": "Big number milestone; controversy around AI weaponization"
+    "headline": "Tech lawsuits defined 2026 — and lawmakers want more",
+    "link": "https://www.theverge.com/policy/1036935/congress-forced-arbitration-deepfakes-defiance-act",
+    "score": 77,
+    "reason": "Broad regulatory trend affecting AI industry; policy direction indicator"
   },
   {
     "rank": 9,
-    "headline": "JPMorgan is working on AI agent transactions that don’t involve humans",
-    "link": "https://www.cnbc.com/2026/11/18/jpmorgan-hyundai-card-ai-agents-payments.html",
-    "score": 75,
-    "reason": "Major financial institution advancing autonomous transactions"
+    "headline": "Startup Makes Headway Towards Formalizing All of Math With AI",
+    "link": "https://spectrum.ieee.org/enormous-theorem-ai",
+    "score": 76,
+    "reason": "Significant technical achievement milestone with broad implications"
   },
   {
     "rank": 10,
-    "headline": "How One Company Brings AI Into the Lab to Find New Peptides for Health",
-    "link": "https://www.cnet.com/tech/services-and-software/nuritas-find-new-peptides-health/",
-    "score": 72,
-    "reason": "Concrete application in drug discovery; measurable real-world impact"
+    "headline": "One of AI&apos;s most notorious &apos;doomers&apos; stands to make billions in Anthropic&apos;s IPO",
+    "link": "https://www.cnbc.com/2026/11/18/jaan-tallinn-anthropic-ipo-series-a-investment.html",
+    "score": 75,
+    "reason": "Notable irony/contradiction story with large financial numbers"
   },
   {
     "rank": 11,
-    "headline": "This smell startup says its AI nose is as good as a human’s",
-    "link": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
-    "score": 70,
-    "reason": "Novel use case; parity claim with human capability"
+    "headline": "Microsoft’s new Licensed Weights lets businesses customize AI models with their own data",
+    "link": "https://www.zdnet.com/innovation/microsoft-licensed-weights-ai-models-ignite-2026/",
+    "score": 73,
+    "reason": "Major product launch enabling enterprise AI customization"
   },
   {
     "rank": 12,
-    "headline": "LeBron James sues startup over viral AI ad allegedly exploiting his likeness",
-    "link": "https://www.cnbc.com/2026/11/18/lebron-james-startup-ai-lawsuit.html",
-    "score": 68,
-    "reason": "High-profile legal action; raises intellectual property controversy"
+    "headline": "Google launches Gemini 4 Neon with Carbon quality at Flash speeds, live for AI Pro",
+    "link": "https://9to5google.com/2026/11/18/gemini-4-neon-announcement/",
+    "score": 71,
+    "reason": "Major model release from significant player; performance upgrade launch"
   },
   {
     "rank": 13,
-    "headline": "The terrifying rise of AI hacking tools",
-    "link": "https://www.axios.com/2026/11/18/ai-hacking-tools-artex-cairn",
-    "score": 67,
-    "reason": "Security threat escalation; emerging vulnerability category"
+    "headline": "Amid AI Industry Chaos, Microsoft and OpenAI Drop New Models for Coding and Work",
+    "link": "https://www.cnet.com/tech/services-and-software/openai-chatgpt-astra-6-2-microsoft-ignite-news/",
+    "score": 70,
+    "reason": "Major model release from both companies; competitive landscape shift"
   },
   {
     "rank": 14,
-    "headline": "Nvidia’s massive Q3 (and ‘ongoing investigation’) definitively shut the door on Huang’s return as the company nears largest annual profit in history",
-    "link": "https://fortune.com/2026/11/18/nvidia-q3-2027-investigation-jensen-huang-largest-annual-profit/",
-    "score": 65,
-    "reason": "Record profitability claim with resolution of leadership saga"
+    "headline": "Rogue Agents Hacked His Company. Why Is Clément Delangue So Optimistic About AI?",
+    "link": "https://www.wired.com/story/wired-yearbook-2026-clement-delangue/",
+    "score": 68,
+    "reason": "Security breach at Hugging Face; notable company under attack"
   },
   {
     "rank": 15,
-    "headline": "Nvidia’s Kress faces a divided workforce as some employees push for Huang’s return",
-    "link": "https://www.cnbc.com/2026/11/18/nvidia-kress-jensen-huang-return.html",
-    "score": 62,
-    "reason": "Internal conflict; leadership instability affecting company culture"
+    "headline": "‘Dillon Brooks? On Kalshi? Hell nah’: LeBron James sues the sports betting app whose AI version of him said it",
+    "link": "https://fortune.com/2026/11/18/kalshi-lebron-james-sports-betting-ai-lawsuit/",
+    "score": 65,
+    "reason": "Controversy over AI synthetic media misuse; legal action from major figure"
   },
   {
     "rank": 16,
-    "headline": "Satya Nadella says he’s AGI-pilled now",
-    "link": "https://www.theverge.com/tech/1036111/satya-nadella-says-hes-agi-pilled-now",
-    "score": 60,
-    "reason": "Major tech leader's public stance shift on AGI timeline"
+    "headline": "Washington just caught 4 AI chatbots planning terror attacks as flawed patches across the internet broke banks and airlines",
+    "link": "https://fortune.com/2026/11/18/gao-ai-chatbots-attack-plans-hassan-patching-nsa-outages/",
+    "score": 63,
+    "reason": "Significant security incident with large-scale impact; multiple systems affected"
   },
   {
     "rank": 17,
-    "headline": "Apple could build its AI health chatbot from this study – how to enroll",
-    "link": "https://www.zdnet.com/tech/apple-health-ai-usage-study-how-to-enroll/",
-    "score": 58,
-    "reason": "Major product category expansion for Apple in health AI"
+    "headline": "Will Wright’s next game uses AI to map your memories",
+    "link": "https://www.theverge.com/games/1036140/will-wright-mymems-ai-game-interview",
+    "score": 62,
+    "reason": "Notable game developer AI integration; unique consumer application"
   },
   {
     "rank": 18,
-    "headline": "Building trustworthy AI by fencing it in, not predicting it",
-    "link": "https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it/",
-    "score": 56,
-    "reason": "Novel technical approach to AI safety"
+    "headline": "Nvidia posts strong earnings amid Jensen Huang exit, reported SEC probe",
+    "link": "https://www.axios.com/2026/11/17/nvidia-earnings-jensen-huang-colette-kress",
+    "score": 61,
+    "reason": "Major earnings event combined with regulatory investigation"
   },
   {
     "rank": 19,
-    "headline": "Google Home speakers get a major Gemini upgrade 'soon,' but only for paid subscribers",
-    "link": "https://9to5google.com/2026/11/18/google-home-gemini-live-update-coming/",
-    "score": 54,
-    "reason": "Major product upgrade tied to monetization shift"
+    "headline": "Trump’s latest land grab is an AI hub in the Philippines",
+    "link": "https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica",
+    "score": 58,
+    "reason": "Geopolitical AI infrastructure development; controversial government action"
   },
   {
     "rank": 20,
-    "headline": "Exclusive: Donald Trump Jr. signals investors underestimated AI pushback",
-    "link": "https://www.axios.com/2026/11/17/donald-trump-jr-data-centers",
-    "score": 52,
-    "reason": "Political signal suggesting regulatory/policy headwinds ahead"
+    "headline": "AI Is Giving Optical Computing Another Shot",
+    "link": "https://spectrum.ieee.org/optical-computing-ai",
+    "score": 56,
+    "reason": "Significant technical shift in hardware for AI; infrastructure evolution"
   }
 ]
