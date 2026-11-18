@@ -700,8 +700,12 @@
     "2026-11-18:1": {
       "slug": "not-even-sam-altman-is-safe",
       "image": "aifeed_not-even-sam-altman-is-safe_20261118_am.png",
+      "reelTemplate": "v3",
+      "hookStyle": "B",
+      "igReelId": "18441194431183959",
+      "igPermalink": "https://www.instagram.com/reel/Df4lzbFgFyJ/",
       "status": "posted",
-      "at": "2026-11-18T13:12:33.898Z",
+      "at": "2026-11-18T13:16:31.282Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
