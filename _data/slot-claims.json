@@ -711,8 +711,10 @@
       "tried": []
     },
     "2026-11-18:2": {
-      "status": "claimed",
-      "at": "2026-11-18T22:11:01.141Z",
+      "slug": "rogue-agents-hacked-his-company-why",
+      "image": "aifeed_rogue-agents-hacked-his-company-why_20261118_pm.png",
+      "status": "posted",
+      "at": "2026-11-18T22:17:54.101Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
