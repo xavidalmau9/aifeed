@@ -713,8 +713,12 @@
     "2026-11-18:2": {
       "slug": "rogue-agents-hacked-his-company-why",
       "image": "aifeed_rogue-agents-hacked-his-company-why_20261118_pm.png",
+      "reelTemplate": "v3",
+      "hookStyle": "A",
+      "igReelId": "18095715596688879",
+      "igPermalink": "https://www.instagram.com/reel/Df5kSTmkYrA/",
       "status": "posted",
-      "at": "2026-11-18T22:17:54.101Z",
+      "at": "2026-11-18T22:22:21.407Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
