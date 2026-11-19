@@ -1,5 +1,26 @@
 [
   {
+    "id": "canva-adds-an-ai-off-button-20261119",
+    "slug": "canva-adds-an-ai-off-button",
+    "headline": "Canva adds an AI ‘off’ button",
+    "summary": "Canva adds toggles letting users disable generative AI tools after years of user complaints.",
+    "body": "<p>**Canva adds toggle to disable generative AI features after user pushback since 2023 expansion.**</p>\n<p>Canva announced a new AI toggle allowing users to disable its generative features, responding to user frustration that emerged after the platform's major AI push in 2023. The company has continued expanding its AI-powered suite with new models and tools, including its in-house Canva Craft model launched last month.</p>\n<p>The toggle turns off Magic Expand, Magic Write, Magic Design, Magic Layers, Magic Edit, Dream Lab, Canva Code, AI Shapes, and more. However, the background remover and Magic Grab tool remain on because Canva says they accelerate everyday tasks without creating new content.</p>\n<p>Users can also filter their experience to see less AI-generated content in Canva's design library, with the option to view human-created content first. Any design using AI-generated elements carries an AI label in its metadata.</p>\n<p>These controls address ongoing concerns from users who felt overwhelmed by the AI feature influx. Canva notes only a small portion of its library consists of AI-generated content.</p>\n<p>Canva responds to user backlash by offering toggles to disable generative AI features while keeping non-generative tools active.</p>",
+    "category": "Tools",
+    "imageUrl": "https://aifeed.run/images/aifeed_canva-adds-an-ai-off-button_20261119_pm.png",
+    "image": "images/aifeed_canva-adds-an-ai-off-button_20261119_pm.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
+    "publishedAt": "2026-11-19T22:02:43.953Z",
+    "hashtags": [
+      "Canva",
+      "AI",
+      "Design",
+      "UserControl",
+      "AIToggle"
+    ],
+    "igQuestion": "Would you turn off Canva's AI features?",
+    "isVideo": false
+  },
+  {
     "id": "artex-is-criminals-new-favorite-pointandshoot-20261119",
     "slug": "artex-is-criminals-new-favorite-pointandshoot",
     "headline": "Artex Is Criminals’ New Favorite ‘Point-and-Shoot’ AI Hacking Tool",
