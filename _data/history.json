@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-19T13:07:30.192Z",
+      "date": "2026-11-19",
+      "slot": 1,
+      "headline": "Artex Is Criminals’ New Favorite ‘Point-and-Shoot’ AI Hacking Tool",
+      "canonUrl": "wired.com/story/artex-ai-hacking-tools",
+      "url": "https://www.wired.com/story/artex-ai-hacking-tools/",
+      "slug": "artex-is-criminals-new-favorite-pointandshoot",
+      "image": "aifeed_artex-is-criminals-new-favorite-pointandshoot_20261119_am.png",
+      "photo": {
+        "dhash": "96b2b3b3b3bbbb9b",
+        "phash": "ab7e4b2b4d54016b",
+        "hist": [
+          337,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          72,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          81,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          510
+        ],
+        "url": "https://media.wired.com/photos/6afdd3316a27dda013bf584c/1:1/w_1600,c_limit/Security_Criminals%20Have%20a%20New%20Favorite%20AI%20Hacking%20Tool_v2.jpg",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-11-18T22:12:28.453Z",
       "date": "2026-11-18",
       "slot": 2,
@@ -6714,68 +6796,6 @@
     }
   ],
   "rankings": {
-    "2026-11-03": [
-      {
-        "rank": 1,
-        "title": "Hundreds of Mundane AI Apps Are Hiding Sexually Abusive Deepfake Features",
-        "canonUrl": "wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features"
-      },
-      {
-        "rank": 2,
-        "title": "The New York Times sues Brave web browser for AI scraping and bypassing paywalls",
-        "canonUrl": "theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times"
-      },
-      {
-        "rank": 3,
-        "title": "AI apps with hidden sexual and violent deepfake features made it into the App Store",
-        "canonUrl": "9to5mac.com/2026/11/02/ai-apps-with-hidden-sexual-and-violent-deepfake-features-made-it-into-the-app-store"
-      },
-      {
-        "rank": 4,
-        "title": "Supermarket fridges hit with cyberattacks across Europe — here's what's happening",
-        "canonUrl": "cnbc.com/2026/11/03/supermarket-fridges-hack-cyberattack-europe.html"
-      },
-      {
-        "rank": 5,
-        "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
-      },
-      {
-        "rank": 6,
-        "title": "Apple to require 18+ age ratings for dating apps and AI romantic companions",
-        "canonUrl": "9to5mac.com/2026/11/02/apple-to-require-18-age-ratings-for-dating-apps-and-ai-romantic-companions"
-      },
-      {
-        "rank": 7,
-        "title": "50 AI agents tried to build a thriving Minecraft civilization – it didn’t end well",
-        "canonUrl": "zdnet.com/innovation/y-combinator-ai-agents-minecraft-experiment-behavior"
-      },
-      {
-        "rank": 8,
-        "title": "Gemini could be poking through your emails - here's how to stop it",
-        "canonUrl": "engadget.com/2300353/google-gemini-poking-through-email-how-to-stop"
-      },
-      {
-        "rank": 9,
-        "title": "How “reverse game theory” could keep AI agents in check",
-        "canonUrl": "technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment"
-      },
-      {
-        "rank": 10,
-        "title": "South Korea targets 'world's highest performance' sovereign AI model in record new budget",
-        "canonUrl": "cnbc.com/2026/11/02/south-korea-ai-spending-budget.html"
-      },
-      {
-        "rank": 11,
-        "title": "Anthropic clamps down on Claude’s AI video game clones",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones"
-      },
-      {
-        "rank": 12,
-        "title": "Athenahealth patients can ask Claude about their medical records now",
-        "canonUrl": "zdnet.com/health/athenahealth-claude-ai-medical-partnership"
-      }
-    ],
     "2026-11-04": [
       {
         "rank": 1,
@@ -7485,6 +7505,68 @@
         "rank": 12,
         "title": "Over a Third of Gen Z-ers Rely on AI for Friendship",
         "canonUrl": "wired.com/story/over-a-third-of-gen-z-rely-on-ai-for-friendship"
+      }
+    ],
+    "2026-11-19": [
+      {
+        "rank": 1,
+        "title": "America’s AI Chip War Is Heating Up in the Dumbest Possible Ways",
+        "canonUrl": "wired.com/story/the-ai-chip-war-meets-the-jensen-huang-affair"
+      },
+      {
+        "rank": 2,
+        "title": "Artex Is Criminals’ New Favorite ‘Point-and-Shoot’ AI Hacking Tool",
+        "canonUrl": "wired.com/story/artex-ai-hacking-tools"
+      },
+      {
+        "rank": 3,
+        "title": "Remember the frontier AI pause? Chip companies don’t either",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1036549/nvidia-amd-earnings-fall-2026-chips-pause-frontier-models"
+      },
+      {
+        "rank": 4,
+        "title": "I let Apple’s always-listening AI summarize my life for two weeks",
+        "canonUrl": "theverge.com/tech/1037100/apple-siri-recap-audio-intelligence-hands-on"
+      },
+      {
+        "rank": 5,
+        "title": "Even His Own Officials Don’t Think Trump’s China Trip Will Lead to Progress on AI",
+        "canonUrl": "wired.com/story/administration-officials-dont-think-much-ai-progress-will-come-of-trumps-china-visit"
+      },
+      {
+        "rank": 6,
+        "title": "One of AI's most notorious 'doomers' stands to make billions in Anthropic's IPO",
+        "canonUrl": "cnbc.com/2026/11/18/jaan-tallinn-anthropic-ipo-series-a-investment.html"
+      },
+      {
+        "rank": 7,
+        "title": "Canva adds an AI ‘off’ button",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button"
+      },
+      {
+        "rank": 8,
+        "title": "90% of employers reject resumes that look like AI – yet half use AI to interview",
+        "canonUrl": "zdnet.com/innovation/ai-applications-skipped-interview"
+      },
+      {
+        "rank": 9,
+        "title": "Emergency alerts and $75,000 rewards: South Korea fights high-tech exam cheating",
+        "canonUrl": "cnbc.com/2026/11/18/south-korea-exam-cheating-.html"
+      },
+      {
+        "rank": 10,
+        "title": "74% of shoppers trust AI agents for buying advice – but checkout is another story",
+        "canonUrl": "zdnet.com/innovation/retailer-shoppers-ai-agents-buying-advice"
+      },
+      {
+        "rank": 11,
+        "title": "Over a Third of Gen Z-ers Rely on AI for Friendship",
+        "canonUrl": "wired.com/story/over-a-third-of-gen-z-rely-on-ai-for-friendship"
+      },
+      {
+        "rank": 12,
+        "title": "The nation’s largest school districts consider ditching Google Search",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google"
       }
     ]
   }

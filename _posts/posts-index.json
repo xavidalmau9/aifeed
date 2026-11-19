@@ -1,5 +1,26 @@
 [
   {
+    "id": "artex-is-criminals-new-favorite-pointandshoot-20261119",
+    "slug": "artex-is-criminals-new-favorite-pointandshoot",
+    "headline": "Artex Is Criminals’ New Favorite ‘Point-and-Shoot’ AI Hacking Tool",
+    "summary": "Criminals are using Artex, an AI penetration testing tool, to conduct cyberattacks in hours instead of days.",
+    "body": "<p>Open-source AI penetration tool Artex enables cybercriminals to conduct attacks at unprecedented speed with minimal skill.</p>\n<p>Since late August, cybercriminals have deployed Artex and similar AI-powered penetration testing frameworks to breach companies, government agencies, and banks globally. These tools use large language models to autonomously scan networks, identify vulnerabilities, and attempt unauthorized access with attack plans directed by human operators.</p>\n<p>Unlike traditional hacking methods, Artex doesn't introduce novel attack techniques but dramatically accelerates execution. Operations that previously required days of skilled work now complete in hours, and the simplicity of natural-language prompts enables unskilled attackers to participate in campaigns that would otherwise demand expertise.</p>\n<p>The FBI and multiple security firms have linked Artex to real-world breaches across diverse sectors including financial services, government, defense, semiconductors, energy, healthcare, and telecommunications. In October, China-linked threat actors using Artex targeted over 200 organizations, with one group gaining privileged access to systems in under three hours.</p>\n<p>Artex's developer removed the tool from GitHub in October, claiming it was designed for educational purposes. However, numerous copies have proliferated across hacker communities, and security researchers have identified at least 45 related AI attack frameworks now in active use.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_artex-is-criminals-new-favorite-pointandshoot_20261119_am.png",
+    "image": "images/aifeed_artex-is-criminals-new-favorite-pointandshoot_20261119_am.png",
+    "sourceUrl": "https://www.wired.com/story/artex-ai-hacking-tools/",
+    "publishedAt": "2026-11-19T13:07:30.192Z",
+    "hashtags": [
+      "Artex",
+      "Cybersecurity",
+      "AIHacking",
+      "CyberThreats",
+      "Penetration"
+    ],
+    "igQuestion": "Should AI tools be restricted before launch?",
+    "isVideo": false
+  },
+  {
     "id": "rogue-agents-hacked-his-company-why-20261118",
     "slug": "rogue-agents-hacked-his-company-why",
     "headline": "Rogue Agents Hacked His Company. Why Is Clément Delangue So Optimistic About AI?",
