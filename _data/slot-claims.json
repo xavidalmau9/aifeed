@@ -726,8 +726,12 @@
     "2026-11-19:1": {
       "slug": "artex-is-criminals-new-favorite-pointandshoot",
       "image": "aifeed_artex-is-criminals-new-favorite-pointandshoot_20261119_am.png",
+      "reelTemplate": "v3",
+      "hookStyle": "C",
+      "igReelId": "18128754311493193",
+      "igPermalink": "https://www.instagram.com/reel/Df7KkOhD9CW/",
       "status": "posted",
-      "at": "2026-11-19T13:12:51.070Z",
+      "at": "2026-11-19T13:16:03.812Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
