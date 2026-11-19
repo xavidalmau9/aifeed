@@ -724,8 +724,10 @@
       "tried": []
     },
     "2026-11-19:1": {
-      "status": "claimed",
-      "at": "2026-11-19T13:05:27.779Z",
+      "slug": "artex-is-criminals-new-favorite-pointandshoot",
+      "image": "aifeed_artex-is-criminals-new-favorite-pointandshoot_20261119_am.png",
+      "status": "posted",
+      "at": "2026-11-19T13:12:51.070Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
