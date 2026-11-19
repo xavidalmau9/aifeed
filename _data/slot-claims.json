@@ -737,8 +737,10 @@
       "tried": []
     },
     "2026-11-19:2": {
-      "status": "claimed",
-      "at": "2026-11-19T22:00:51.515Z",
+      "slug": "canva-adds-an-ai-off-button",
+      "image": "aifeed_canva-adds-an-ai-off-button_20261119_pm.png",
+      "status": "posted",
+      "at": "2026-11-19T22:07:53.972Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
