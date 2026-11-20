@@ -1,5 +1,14 @@
 [
   {
+    "filename": "california-attorney-general-issues-nvidia-subpoena.mp4",
+    "url": "https://aifeed.run/videos/reels/california-attorney-general-issues-nvidia-subpoena.mp4",
+    "title": "California attorney general issues Nvidia subpoena in probe of China chip diversion",
+    "caption": "California's attorney general subpoenas Nvidia investigating whether advanced chips ended up in China, violating export restrictions.",
+    "source": "",
+    "sourceUrl": "https://www.cnbc.com/2026/11/19/nvidia-california-bonta-subpoena-china-chips.html",
+    "date": "2026-11-20T13:08:26.128Z"
+  },
+  {
     "filename": "canva-adds-an-ai-off-button.mp4",
     "url": "https://aifeed.run/videos/reels/canva-adds-an-ai-off-button.mp4",
     "title": "Canva adds an AI ‘off’ button",
@@ -43,14 +52,5 @@
     "source": "",
     "sourceUrl": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
     "date": "2026-11-17T22:06:42.519Z"
-  },
-  {
-    "filename": "nvidia-warns-chip-buyers-of-legal.mp4",
-    "url": "https://aifeed.run/videos/reels/nvidia-warns-chip-buyers-of-legal.mp4",
-    "title": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
-    "caption": "Nvidia warned customers that proposed RASA legislation could expose both companies to legal action over Chinese AI chip access through cloud services.",
-    "source": "",
-    "sourceUrl": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
-    "date": "2026-11-17T13:07:19.526Z"
   }
 ]
