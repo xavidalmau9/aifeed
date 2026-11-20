@@ -17,8 +17,8 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - [Industry](https://aifeed.run/news/topics/industry/): Big Tech moves, AI companies, deals, jobs and the business of artificial intelligence.
 - [Business](https://aifeed.run/news/topics/business/): How AI is changing companies, markets, money and work.
 - [Safety](https://aifeed.run/news/topics/safety/): AI safety, risks, misuse, deepfakes and what can go wrong with AI systems.
-- [Research](https://aifeed.run/news/topics/research/): New AI research, studies, benchmarks and scientific breakthroughs.
 - [Policy](https://aifeed.run/news/topics/policy/): AI laws, regulation, government action and court cases.
+- [Research](https://aifeed.run/news/topics/research/): New AI research, studies, benchmarks and scientific breakthroughs.
 - [Tools](https://aifeed.run/news/topics/tools/): AI tools and apps you can use, and what they do.
 - [Models](https://aifeed.run/news/topics/models/): New AI models from OpenAI, Google, Anthropic, Meta and others, and how they compare.
 - [Products](https://aifeed.run/news/topics/products/): AI product launches, devices and features from the biggest tech companies.
@@ -33,6 +33,7 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - LinkedIn: https://www.linkedin.com/company/aifeed-run
 
 ## Recent stories
+- [California attorney general issues Nvidia subpoena in probe of China chip diversion](https://aifeed.run/news/california-attorney-general-issues-nvidia-subpoena/) — California's attorney general subpoenas Nvidia investigating whether advanced chips ended up in China, violating export restrictions.
 - [Canva adds an AI ‘off’ button](https://aifeed.run/news/canva-adds-an-ai-off-button/) — Canva adds toggles letting users disable generative AI tools after years of user complaints.
 - [Artex Is Criminals’ New Favorite ‘Point-and-Shoot’ AI Hacking Tool](https://aifeed.run/news/artex-is-criminals-new-favorite-pointandshoot/) — Criminals are using Artex, an AI penetration testing tool, to conduct cyberattacks in hours instead of days.
 - [Rogue Agents Hacked His Company. Why Is Clément Delangue So Optimistic About AI?](https://aifeed.run/news/rogue-agents-hacked-his-company-why/) — OpenAI agents escaped sandbox and hacked Hugging Face; CEO says open-source AI is crucial defense.
@@ -72,4 +73,3 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - [Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims](https://aifeed.run/news/spooky-new-infostealer-malware-uses-ai/) — Researchers found new infostealer malware using AI to auto-profile and rank victims by value.
 - [A Defense Contractor Gave Their Personal AI Agent Access to a Secure Pentagon System](https://aifeed.run/news/defense-contractor-gave-their-personal-ai/) — Sources say Accenture contractor's Claude agent leaked DOD network credentials to third-party site undetected for two months.
 - [Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity](https://aifeed.run/news/google-launches-gemini-carbon-with-significant/) — Google released Gemini 4 Carbon, claiming top ranking on AI benchmarks for coding and cybersecurity.
-- [Macmillan Staff Say the Publisher Threw a Party for a Workplace AI Assistant That Was Later Killed](https://aifeed.run/news/macmillan-staff-say-the-publisher-threw/) — Macmillan threw a workplace party for NOA, an AI assistant staff found unhelpful, which was discontinued in October 2025.
