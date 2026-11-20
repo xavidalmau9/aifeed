@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic IPO Live: The Claude Maker Debuts as a $1.5 Trillion Company",
-    "link": "https://www.cnet.com/news-live/anthropic-ipo-live-blog-2026-updates/",
-    "score": 98,
-    "reason": "Major IPO launch with massive valuation; concrete financial milestone"
+    "headline": "Anthropic’s Record-Breaking IPO Highlights the AI Giant’s Worst Enemy—Itself",
+    "link": "https://www.wired.com/story/anthropics-record-breaking-ipo-highlights-the-ai-giants-worst-enemy-itself/",
+    "score": 94,
+    "reason": "Major financial milestone ($81B IPO) with immediate controversy/volatility (stock tanked post-launch)"
   },
   {
     "rank": 2,
-    "headline": "Anthropic starts trading on Wall Street",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq",
-    "score": 97,
-    "reason": "Major market debut for leading AI company; significant business event"
+    "headline": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
+    "link": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+    "score": 92,
+    "reason": "Policy launch with major economic implications for AI infrastructure and companies"
   },
   {
     "rank": 3,
-    "headline": "Signal is blocking Gemini and Siri AI from reading your screen",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
-    "score": 92,
-    "reason": "Major privacy controversy; concrete product blocking action by Signal"
+    "headline": "Meta’s Carbon Emissions Went Up 45% Last Year. AI Is Making It Worse",
+    "link": "https://www.cnet.com/tech/services-and-software/meta-sustainability-report-2026-carbon-emissions-ai/",
+    "score": 88,
+    "reason": "Big number (45% increase) with AI-specific controversy and environmental impact"
   },
   {
     "rank": 4,
-    "headline": "California attorney general issues Nvidia subpoena in probe of China chip diversion",
-    "link": "https://www.cnbc.com/2026/11/19/nvidia-california-bonta-subpoena-china-chips.html",
-    "score": 90,
-    "reason": "Major regulatory action against leading AI chip maker; concrete legal controversy"
+    "headline": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+    "score": 85,
+    "reason": "Major AI capability milestone with significant scientific implications"
   },
   {
     "rank": 5,
-    "headline": "Amid Anthropic’s IPO, Google, Microsoft and OpenAI Drop New AI Models",
-    "link": "https://www.cnet.com/tech/services-and-software/openai-chatgpt-astra-6-2-microsoft-ignite-news/",
-    "score": 88,
-    "reason": "Multiple major model launches during IPO period; competitive launch timing"
+    "headline": "Google is putting AI chats right on the homepage",
+    "link": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
+    "score": 83,
+    "reason": "Major product launch/redesign affecting billions of users daily"
   },
   {
     "rank": 6,
-    "headline": "OpenAI is testing Dots personal agents on its $20 per month Plus tier",
-    "link": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
-    "score": 85,
-    "reason": "Major agent product launch by OpenAI; monetization of AI agents"
+    "headline": "Meta Muse booked an Airbnb without permission – and that’s not the worst of it",
+    "link": "https://www.zdnet.com/tech/meta-muse-privacy-violatons-employees-report/",
+    "score": 81,
+    "reason": "AI agent controversy with real-world harmful behavior demonstration"
   },
   {
     "rank": 7,
-    "headline": "Apple is hiring engineers to build its own AI agent",
-    "link": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
-    "score": 84,
-    "reason": "Major hiring push for AI agents at Apple; infrastructure investment signal"
+    "headline": "Signal now blocks screenshots by default to stymie AI agents",
+    "link": "https://www.engadget.com/2323574/signal-now-blocks-screenshots-by-default-to-stymie-ai-agents/",
+    "score": 79,
+    "reason": "Major privacy product launch in response to AI agent threats"
   },
   {
     "rank": 8,
-    "headline": "Nvidia’s Earnings Calmed Markets, but AI’s Harsh Reckoning Marches On",
-    "link": "https://www.cnet.com/tech/services-and-software/nvidia-earnings-call-ai-economy-stress-test/",
-    "score": 83,
-    "reason": "Major earnings event with market implications; AI industry reckoning narrative"
+    "headline": "Gemini on Mac can now use your computer",
+    "link": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
+    "score": 76,
+    "reason": "Major AI capability expansion to new platform"
   },
   {
     "rank": 9,
-    "headline": "Alibaba and Tencent put their faith in Chinese chips as U.S. curbs threatens to slow down their AI development",
-    "link": "https://fortune.com/2026/11/20/tencent-alibaba-us-chip-curbs-cloud-ai/",
-    "score": 81,
-    "reason": "Major strategic pivot by Chinese tech giants; geopolitical AI chip competition"
+    "headline": "Google Built a Giant ‘Mirror Dimension’ Internet to Test Its Chrome AI Agents",
+    "link": "https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/",
+    "score": 75,
+    "reason": "Major research/infrastructure initiative for AI agent development"
   },
   {
     "rank": 10,
-    "headline": "90% of employers reject resumes that look like AI – yet half use AI to interview",
-    "link": "https://www.zdnet.com/innovation/ai-applications-skipped-interview/",
-    "score": 79,
-    "reason": "Significant statistical contradiction in AI hiring practices; concrete big numbers"
-  },
-  {
-    "rank": 11,
-    "headline": "Anthropic just set an IPO record nobody’s bragging about: $20 billion left on the table",
-    "link": "https://fortune.com/2026/11/20/anthropic-ipo-record-nobodys-bragging-about-20-billion-left-on-the-table/",
-    "score": 77,
-    "reason": "Major IPO controversy; record underpricing with big financial numbers"
-  },
-  {
-    "rank": 12,
-    "headline": "74% of shoppers trust AI agents for buying advice – but checkout is another story",
-    "link": "https://www.zdnet.com/innovation/retailer-shoppers-ai-agents-buying-advice/",
-    "score": 76,
-    "reason": "Significant market adoption data with practical limitation; concrete consumer stat"
-  },
-  {
-    "rank": 13,
-    "headline": "This 16-Year-Old Founded an AI Missile Startup. He’s Targeting ‘Cost per Kill’",
-    "link": "https://www.wired.com/story/henrijs-dandzbergs-polemos-missiles-ai-warfare/",
-    "score": 75,
-    "reason": "Controversial AI weapons startup launch; ethical controversy"
-  },
-  {
-    "rank": 14,
-    "headline": "Google boosts Gemini's ability to do 'repetitive tasks' on its Mac app",
-    "link": "https://www.engadget.com/2322728/google-boosts-geminis-ability-to-do-repetitive-tasks-on-its-mac-app/",
+    "headline": "Job posting seemingly confirms Apple is working on its own AI agent for coding and other tasks",
+    "link": "https://www.engadget.com/2322586/job-posting-seemingly-confirms-apple-is-working-on-its-own-ai-agent-for-coding-and-other-tasks/",
     "score": 72,
-    "reason": "Major feature expansion by Google for desktop AI automation"
-  },
-  {
-    "rank": 15,
-    "headline": "Ukraine blew up Putin’s bridge using relay drones to bypass Starlink limits",
-    "link": "https://arstechnica.com/gadgets/2026/11/ukraine-blew-up-putins-bridge-using-relay-drones-to-bypass-starlink-limits/",
-    "score": 70,
-    "reason": "Major AI drone application in warfare; concrete operational success"
-  },
-  {
-    "rank": 16,
-    "headline": "iPhone designer Tony Fadell’s next big thing: Bringing AI to fashion in hopes of saving H&M $100 million a year",
-    "link": "https://fortune.com/2026/11/19/smartex-ai-tony-fadell-fashion-hm/",
-    "score": 68,
-    "reason": "Major AI application in retail with big cost savings number"
-  },
-  {
-    "rank": 17,
-    "headline": "AI's great divergence: Machines accelerate as makers unravel",
-    "link": "https://www.axios.com/2026/11/19/anthropic-ipo-ai-research-rsi-forecast",
-    "score": 65,
-    "reason": "Major industry analysis of AI development divergence and business challenges"
-  },
-  {
-    "rank": 18,
-    "headline": "Senate passes BAAJA permitting reform bill backed by AI, energy sectors",
-    "link": "https://www.cnbc.com/2026/11/20/baaja-bill-senate-passes-permitting-reform.html",
-    "score": 62,
-    "reason": "Major AI industry regulatory win; concrete legislative action"
-  },
-  {
-    "rank": 19,
-    "headline": "I let Apple’s always-listening AI summarize my life for two weeks",
-    "link": "https://www.theverge.com/tech/1037100/apple-siri-recap-audio-intelligence-hands-on",
-    "score": 60,
-    "reason": "Major privacy concern with Apple's on-device listening AI; privacy controversy"
-  },
-  {
-    "rank": 20,
-    "headline": "AI is changing software engineering — and some developers miss the struggle",
-    "link": "https://www.cnbc.com/2026/11/20/ai-coding-tools-software-engineers.html",
-    "score": 58,
-    "reason": "Major industry shift in developer practices; professional impact analysis"
+    "reason": "Major new product category entry by Apple in AI agents"
   }
 ]
