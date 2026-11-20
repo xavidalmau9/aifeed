@@ -1,5 +1,26 @@
 [
   {
+    "id": "california-attorney-general-issues-nvidia-subpoena-20261120",
+    "slug": "california-attorney-general-issues-nvidia-subpoena",
+    "headline": "California attorney general issues Nvidia subpoena in probe of China chip diversion",
+    "summary": "California's attorney general subpoenas Nvidia investigating whether advanced chips ended up in China, violating export restrictions.",
+    "body": "<p>California attorney general subpoenas Nvidia over alleged China chip diversion and investor deception.</p>\n<p>California Attorney General Rob Bonta issued an investigative subpoena to Nvidia on Thursday as part of a probe into whether the company's advanced semiconductor chips ended up in China in violation of U.S. export restrictions.</p>\n<p>The subpoena follows former Nvidia CEO Jensen Huang's resignation after he admitted to multiple affairs, including one with an executive at Megaspeed, a Singapore-based company under investigation for potentially diverting restricted Nvidia chips to China. Bonta stated the situation raises questions about potential investor deception regarding geopolitical and compliance risks.</p>\n<p>Bonta's office is investigating whether Nvidia or Huang's actions resulted in China obtaining advanced chips or confidential information, and whether the company misled investors and the public about these risks in violation of securities law. The attorney general emphasized that companies cannot mislead investors regardless of transnational complexity.</p>\n<p>Nvidia's stock has declined significantly since Huang's admission, dropping 22% in nine trading days and shedding 38% over the subsequent seven-week stretch.</p>\n<p>California's AG subpoenas Nvidia over alleged China chip diversion and investor deception tied to former CEO's resignation.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_california-attorney-general-issues-nvidia-subpoena_20261120_am.png",
+    "image": "images/aifeed_california-attorney-general-issues-nvidia-subpoena_20261120_am.png",
+    "sourceUrl": "https://www.cnbc.com/2026/11/19/nvidia-california-bonta-subpoena-china-chips.html",
+    "publishedAt": "2026-11-20T13:08:26.128Z",
+    "hashtags": [
+      "Nvidia",
+      "ExportControl",
+      "Semiconductors",
+      "Investigation",
+      "Security"
+    ],
+    "igQuestion": "Should chip exports face stricter oversight?",
+    "isVideo": false
+  },
+  {
     "id": "canva-adds-an-ai-off-button-20261119",
     "slug": "canva-adds-an-ai-off-button",
     "headline": "Canva adds an AI ‘off’ button",

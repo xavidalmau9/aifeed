@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-20T13:08:26.128Z",
+      "date": "2026-11-20",
+      "slot": 1,
+      "headline": "California attorney general issues Nvidia subpoena in probe of China chip diversion",
+      "canonUrl": "cnbc.com/2026/11/19/nvidia-california-bonta-subpoena-china-chips.html",
+      "url": "https://www.cnbc.com/2026/11/19/nvidia-california-bonta-subpoena-china-chips.html",
+      "slug": "california-attorney-general-issues-nvidia-subpoena",
+      "image": "aifeed_california-attorney-general-issues-nvidia-subpoena_20261120_am.png",
+      "photo": {
+        "dhash": "dad2dccdcded6d4c",
+        "phash": "d2d3d1bab1904747",
+        "hist": [
+          13,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          0,
+          0,
+          0,
+          21,
+          226,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          55,
+          140,
+          0,
+          0,
+          2,
+          72,
+          31,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          22,
+          171,
+          136,
+          0,
+          30,
+          14,
+          21,
+          28
+        ],
+        "url": "https://image.cnbcfm.com/api/v1/image/108352165-1787237664975-108352165-1787236932205-gettyimages-2290512238-META_TRIAL.jpeg?v=1787237713&w=1920&h=1080",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-11-19T22:02:43.953Z",
       "date": "2026-11-19",
       "slot": 2,
@@ -6878,68 +6960,6 @@
     }
   ],
   "rankings": {
-    "2026-11-04": [
-      {
-        "rank": 1,
-        "title": "CrowdStrike's new kill switch can stop rogue AI agents in their tracks, CEO says",
-        "canonUrl": "cnbc.com/2026/11/03/crowdstrikes-new-kill-switch-can-stop-rogue-ai-agents-in-their-tracks-ceo-says.html"
-      },
-      {
-        "rank": 2,
-        "title": "Binance co-CEO Richard Teng says hackers used fake job interviews, AI tool to steal $6.3 billion in crypto",
-        "canonUrl": "cnbc.com/2026/11/03/binance-co-ceo-teng-says-hackers-used-fake-job-interviews-to-steal-6point3-billion-in-crypto.html"
-      },
-      {
-        "rank": 3,
-        "title": "Apple warns of risks related to AI agents behaving in 'unintended or unpredictable' ways",
-        "canonUrl": "cnbc.com/2026/11/03/apple-warns-of-ai-agents-behave-in-unintended-or-unpredictable-ways.html"
-      },
-      {
-        "rank": 4,
-        "title": "Google is entirely disabling Search in schools that don’t want AI",
-        "canonUrl": "theverge.com/tech/1025411/google-turn-off-search-ai-features"
-      },
-      {
-        "rank": 5,
-        "title": "Google responds to political backlash over removing search from schools that ban AI",
-        "canonUrl": "cnbc.com/2026/11/03/google-responds-to-outrage-over-removing-search-in-schools-that-ban-ai.html"
-      },
-      {
-        "rank": 6,
-        "title": "Here’s Why You Shouldn’t Use AI to Vote",
-        "canonUrl": "wired.com/story/heres-why-you-shouldnt-use-ai-to-vote"
-      },
-      {
-        "rank": 7,
-        "title": "Apple starts giving Siri AI access to third-party apps",
-        "canonUrl": "theverge.com/tech/1025694/apple-siri-ai-third-party-apps"
-      },
-      {
-        "rank": 8,
-        "title": "Your Apple Watch has 2 new controversial listening features – but you have to opt in",
-        "canonUrl": "zdnet.com/tech/apple-watch-siri-recap-live-rewind-available-beta-how-to-try"
-      },
-      {
-        "rank": 9,
-        "title": "How “reverse game theory” could keep AI agents in check",
-        "canonUrl": "technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment"
-      },
-      {
-        "rank": 10,
-        "title": "Netflix will show you themed recommendations through a new ‘AI Discover’ tab",
-        "canonUrl": "theverge.com/streaming/1025029/netflix-ai-discover-recommendations"
-      },
-      {
-        "rank": 11,
-        "title": "This clever banking scam keeps phishing by faking its own demise – how it works",
-        "canonUrl": "zdnet.com/tech/bank-phishing-scam-kela"
-      },
-      {
-        "rank": 12,
-        "title": "AI Data Centers Have a PR Problem. OpenAI Is Proposing a Rebrand",
-        "canonUrl": "cnet.com/tech/services-and-software/openai-data-centers-rebrand-midterms-pr-campaign"
-      }
-    ],
     "2026-11-05": [
       {
         "rank": 1,
@@ -7649,6 +7669,68 @@
         "rank": 12,
         "title": "The nation’s largest school districts consider ditching Google Search",
         "canonUrl": "theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google"
+      }
+    ],
+    "2026-11-20": [
+      {
+        "rank": 1,
+        "title": "California attorney general issues Nvidia subpoena in probe of China chip diversion",
+        "canonUrl": "cnbc.com/2026/11/19/nvidia-california-bonta-subpoena-china-chips.html"
+      },
+      {
+        "rank": 2,
+        "title": "Commerce approved sales of more than 879,000 AI chips to Chinese companies, Rep. Mast says",
+        "canonUrl": "cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html"
+      },
+      {
+        "rank": 3,
+        "title": "Meet Shepherd, the Meta-Agent Keeping Rogue AI In Check",
+        "canonUrl": "spectrum.ieee.org/ai-agent-manager"
+      },
+      {
+        "rank": 4,
+        "title": "This 16-Year-Old Founded an AI Missile Startup. He’s Targeting ‘Cost per Kill’",
+        "canonUrl": "wired.com/story/henrijs-dandzbergs-polemos-missiles-ai-warfare"
+      },
+      {
+        "rank": 5,
+        "title": "AMD dives on short seller report of alleged China exposure",
+        "canonUrl": "cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html"
+      },
+      {
+        "rank": 6,
+        "title": "Signal is blocking Gemini and Siri AI from reading your screen",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app"
+      },
+      {
+        "rank": 7,
+        "title": "Meta Muse booked an Airbnb without permission – and that’s not the worst of it",
+        "canonUrl": "zdnet.com/tech/meta-muse-privacy-violatons-employees-report"
+      },
+      {
+        "rank": 8,
+        "title": "Google Built a Giant ‘Mirror Dimension’ Internet to Test Its Chrome AI Agents",
+        "canonUrl": "wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents"
+      },
+      {
+        "rank": 9,
+        "title": "White House replaces cyber director Sean Cairncross amid widespread tech outages",
+        "canonUrl": "cnbc.com/2026/11/20/sean-cairncross-white-house-cyber-director.html"
+      },
+      {
+        "rank": 10,
+        "title": "Regular Tech Bros Are Worried About Honeypots",
+        "canonUrl": "wired.com/story/regular-tech-bros-are-worried-about-honeypots"
+      },
+      {
+        "rank": 11,
+        "title": "AI is changing software engineering — and some developers miss the struggle",
+        "canonUrl": "cnbc.com/2026/11/20/ai-coding-tools-software-engineers.html"
+      },
+      {
+        "rank": 12,
+        "title": "90% of employers reject resumes that look like AI – yet half use AI to interview",
+        "canonUrl": "zdnet.com/innovation/ai-applications-skipped-interview"
       }
     ]
   }
