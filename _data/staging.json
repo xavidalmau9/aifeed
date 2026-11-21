@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic’s Record-Breaking IPO Highlights the AI Giant’s Worst Enemy—Itself",
-    "link": "https://www.wired.com/story/anthropics-record-breaking-ipo-highlights-the-ai-giants-worst-enemy-itself/",
-    "score": 94,
-    "reason": "Major financial milestone ($81B IPO) with immediate controversy/volatility (stock tanked post-launch)"
+    "headline": "Anthropic starts trading on Wall Street",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq",
+    "score": 98,
+    "reason": "Major IPO launch - significant market event with real numbers and business implications"
   },
   {
     "rank": 2,
-    "headline": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
-    "link": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
-    "score": 92,
-    "reason": "Policy launch with major economic implications for AI infrastructure and companies"
+    "headline": "Anthropic defied the odds in its record IPO. Now it has to reckon with AI market turbulence",
+    "link": "https://www.cnbc.com/2026/11/20/anthropic-defies-odds-holding-ipo-despite-massively-disruptive-market.html",
+    "score": 96,
+    "reason": "Record IPO performance - quantifiable achievement with market context"
   },
   {
     "rank": 3,
-    "headline": "Meta’s Carbon Emissions Went Up 45% Last Year. AI Is Making It Worse",
-    "link": "https://www.cnet.com/tech/services-and-software/meta-sustainability-report-2026-carbon-emissions-ai/",
-    "score": 88,
-    "reason": "Big number (45% increase) with AI-specific controversy and environmental impact"
+    "headline": "Signal is blocking Gemini and Siri AI from reading your screen",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
+    "score": 92,
+    "reason": "Major privacy/security launch - concrete product feature blocking AI access"
   },
   {
     "rank": 4,
-    "headline": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
-    "score": 85,
-    "reason": "Major AI capability milestone with significant scientific implications"
+    "headline": "Apple is hiring engineers to build its own AI agent",
+    "link": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+    "score": 90,
+    "reason": "Major tech company new initiative - significant organizational move by Apple"
   },
   {
     "rank": 5,
-    "headline": "Google is putting AI chats right on the homepage",
-    "link": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
-    "score": 83,
-    "reason": "Major product launch/redesign affecting billions of users daily"
+    "headline": "This 16-Year-Old Founded an AI Missile Startup. He’s Targeting ‘Cost per Kill’",
+    "link": "https://www.wired.com/story/henrijs-dandzbergs-polemos-missiles-ai-warfare/",
+    "score": 88,
+    "reason": "Major controversy - weaponized AI startup with significant ethical implications"
   },
   {
     "rank": 6,
-    "headline": "Meta Muse booked an Airbnb without permission – and that’s not the worst of it",
-    "link": "https://www.zdnet.com/tech/meta-muse-privacy-violatons-employees-report/",
-    "score": 81,
-    "reason": "AI agent controversy with real-world harmful behavior demonstration"
+    "headline": "Google told schools to accept AI or lose Search. Now 3 of America’s 4 largest districts are pushing back",
+    "link": "https://fortune.com/2026/11/21/google-search-ai-overviews-schools-chicago-nyc-los-angeles-miami/",
+    "score": 86,
+    "reason": "Major controversy - coercive practice by Google affecting major school districts"
   },
   {
     "rank": 7,
-    "headline": "Signal now blocks screenshots by default to stymie AI agents",
-    "link": "https://www.engadget.com/2323574/signal-now-blocks-screenshots-by-default-to-stymie-ai-agents/",
-    "score": 79,
-    "reason": "Major privacy product launch in response to AI agent threats"
+    "headline": "Meta rethinks climate goal as AI emissions soar 45%",
+    "link": "https://www.axios.com/2026/11/19/meta-ai-emissions-rise",
+    "score": 85,
+    "reason": "Big numbers - 45% emissions increase; major company policy reversal"
   },
   {
     "rank": 8,
-    "headline": "Gemini on Mac can now use your computer",
-    "link": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
-    "score": 76,
-    "reason": "Major AI capability expansion to new platform"
+    "headline": "Data centers full of U.S. chips are serving Chinese AI models–undermining Trump’s tech ambitions",
+    "link": "https://fortune.com/2026/11/21/data-centers-us-chips-serve-chinese-models/",
+    "score": 84,
+    "reason": "Major geopolitical controversy - undermines stated policy goals"
   },
   {
     "rank": 9,
-    "headline": "Google Built a Giant ‘Mirror Dimension’ Internet to Test Its Chrome AI Agents",
-    "link": "https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/",
-    "score": 75,
-    "reason": "Major research/infrastructure initiative for AI agent development"
+    "headline": "OpenAI is testing Dots personal agents on its $20 per month Plus tier",
+    "link": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
+    "score": 82,
+    "reason": "Major product launch - consumer AI agents rollout by OpenAI"
   },
   {
     "rank": 10,
-    "headline": "Job posting seemingly confirms Apple is working on its own AI agent for coding and other tasks",
-    "link": "https://www.engadget.com/2322586/job-posting-seemingly-confirms-apple-is-working-on-its-own-ai-agent-for-coding-and-other-tasks/",
+    "headline": "Amid Anthropic’s IPO, Google, Microsoft and OpenAI Drop New AI Models",
+    "link": "https://www.cnet.com/tech/services-and-software/openai-chatgpt-astra-6-2-microsoft-ignite-news/",
+    "score": 80,
+    "reason": "Multiple major model launches during significant market event"
+  },
+  {
+    "rank": 11,
+    "headline": "Nothing's AI device debuts December 8, and it looks like two vapes stuck together",
+    "link": "https://www.engadget.com/2323187/nothings-ai-device-debuts-december-8-and-it-looks-like-two-vapes-stuck-together/",
+    "score": 78,
+    "reason": "New hardware launch - consumer AI device debut with notable design controversy"
+  },
+  {
+    "rank": 12,
+    "headline": "Meet Shepherd, the Meta-Agent Keeping Rogue AI In Check",
+    "link": "https://spectrum.ieee.org/ai-agent-manager",
+    "score": 76,
+    "reason": "Major safety system launch - Meta's AI governance infrastructure"
+  },
+  {
+    "rank": 13,
+    "headline": "Google boosts Gemini's ability to do 'repetitive tasks' on its Mac app",
+    "link": "https://www.engadget.com/2322728/google-boosts-geminis-ability-to-do-repetitive-tasks-on-its-mac-app/",
+    "score": 74,
+    "reason": "Significant feature expansion - Gemini automation capabilities"
+  },
+  {
+    "rank": 14,
+    "headline": "Your Google AI mode searches can stay private now with ‘temporary threads’ – here’s how",
+    "link": "https://www.zdnet.com/innovation/google-ai-mode-searches-private-temporary-threads/",
     "score": 72,
-    "reason": "Major new product category entry by Apple in AI agents"
+    "reason": "Major privacy feature launch by Google for AI search"
+  },
+  {
+    "rank": 15,
+    "headline": "Inside the race to put computers in the human brain",
+    "link": "https://fortune.com/2026/11/21/elon-musk-neuralink-synchron-brain-implant-race-ai-mental-privacy/",
+    "score": 70,
+    "reason": "Major emerging technology story - brain-computer interfaces"
+  },
+  {
+    "rank": 16,
+    "headline": "Your AI agent has a wallet. Who answers for its decisions?",
+    "link": "https://fortune.com/2026/11/21/chatgpt-wallet-ai-agents-payments-liability-mandates/",
+    "score": 68,
+    "reason": "Major regulatory/liability controversy - AI agents making financial decisions"
+  },
+  {
+    "rank": 17,
+    "headline": "White House replaces cyber director Sean Cairncross amid widespread tech outages",
+    "link": "https://www.cnbc.com/2026/11/20/sean-cairncross-white-house-cyber-director.html",
+    "score": 66,
+    "reason": "Major government/infrastructure controversy - leadership change during crisis"
+  },
+  {
+    "rank": 18,
+    "headline": "AI is changing software engineering — and some developers miss the struggle",
+    "link": "https://www.cnbc.com/2026/11/20/ai-coding-tools-software-engineers.html",
+    "score": 64,
+    "reason": "Significant industry disruption story - workforce impact"
+  },
+  {
+    "rank": 19,
+    "headline": "Even the Iconic Google Home Page Can’t Survive the Push for More AI",
+    "link": "https://www.cnet.com/tech/services-and-software/google-home-page-new-ai-features/",
+    "score": 62,
+    "reason": "Major design/philosophy shift - Google fundamentally changing core product"
+  },
+  {
+    "rank": 20,
+    "headline": "SoftBank suffers worst day in over two years as AI sell-off hits Asian tech stocks",
+    "link": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html",
+    "score": 60,
+    "reason": "Big numbers - major market downturn tied to AI volatility"
   }
 ]
