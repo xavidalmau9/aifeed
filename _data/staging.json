@@ -1,72 +1,51 @@
 [
   {
     "rank": 1,
-    "headline": "Anthropic’s $1.5 Trillion IPO Hasn’t Eased Anxiety About AI",
-    "link": "https://www.cnet.com/news-live/anthropic-ipo-live-blog-2026-updates/",
-    "score": 94,
-    "reason": "Major financial event with big numbers, concrete IPO data, addresses market concerns"
+    "headline": "Anthropic’s record IPO collides with tech’s worst week on Wall Street since 2020",
+    "link": "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
+    "score": 92,
+    "reason": "Major financial milestone with concrete numbers and market impact during significant downturn"
   },
   {
     "rank": 2,
-    "headline": "Signal is blocking Gemini and Siri AI from reading your screen",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
-    "score": 91,
-    "reason": "Concrete product launch/feature, privacy controversy, multiple companies affected"
+    "headline": "She was a go-to Manhattan babysitter as a teen. Now she's running a $100 million-a-year AI startup whose clients include the billionaire Koch family",
+    "link": "https://fortune.com/2026/11/22/tribe-ai-cofounder-ceo-jaclyn-rice-nelson-scaling-startup-100-million-revenue-career-success-koch-industries/",
+    "score": 85,
+    "reason": "Specific revenue figure ($100M), notable clients, concrete business scale"
   },
   {
     "rank": 3,
-    "headline": "Apple is hiring engineers to build its own AI agent",
-    "link": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
-    "score": 88,
-    "reason": "Confirmed hiring/product development, strategic AI initiative by major tech company"
+    "headline": "The UN fails to agree on rules regulating ‘killer robots’",
+    "link": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+    "score": 82,
+    "reason": "Major regulatory failure on AI weapons with international significance"
   },
   {
     "rank": 4,
-    "headline": "Banks Have Had It Up to Here With Your AI Agent",
-    "link": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/",
-    "score": 85,
-    "reason": "Industry-wide controversy/pushback against AI agents with real business impact"
+    "headline": "Employees at Eric Trump-backed robot startup lose health benefits as company&apos;s cash crunch deepens",
+    "link": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
+    "score": 80,
+    "reason": "Controversy and concrete negative impact; demonstrates AI startup financial distress"
   },
   {
     "rank": 5,
-    "headline": "Jensen Huang’s ‘Lying’ Alarmed Nvidia Board Ahead of His Resignation",
-    "link": "https://www.wired.com/story/jensen-huangs-lying-alarmed-nvidia-board-ahead-of-his-resignation/",
-    "score": 92,
-    "reason": "Major executive controversy, significant corporate governance issue at top AI company"
+    "headline": "Binding of Isaac developer removes AI music from Repentance Plus",
+    "link": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+    "score": 78,
+    "reason": "Developer pushback against AI; concrete action taken"
   },
   {
     "rank": 6,
-    "headline": "Even the Iconic Google Home Page Can’t Survive the Push for More AI",
-    "link": "https://www.cnet.com/tech/services-and-software/google-home-page-new-ai-features/",
-    "score": 83,
-    "reason": "Major product change at Google, industry-wide trend toward AI integration"
+    "headline": "Being mean to ChatGPT can boost its accuracy, but your tone could have an even bigger impact on computing costs",
+    "link": "https://fortune.com/article/being-mean-to-chatgpt-can-boost-its-accuracy-but-your-tone-could-have-an-even-bigger-impact-on-computing-costs/",
+    "score": 72,
+    "reason": "Surprising finding about LLM behavior and cost implications"
   },
   {
     "rank": 7,
-    "headline": "Anthropic defied the odds in its record IPO. Now it has to reckon with AI market turbulence",
-    "link": "https://www.cnbc.com/2026/11/20/anthropic-defies-odds-holding-ipo-despite-massively-disruptive-market.html",
-    "score": 87,
-    "reason": "Major IPO event with market implications, specific financial performance data"
-  },
-  {
-    "rank": 8,
-    "headline": "Elon Musk's SpaceX is betting $74 billion on AI data centers. Texas and Arizona want to know who pays for the power",
-    "link": "https://fortune.com/2026/11/22/spacex-74-billion-ai-data-centers-texas-arizona-who-pays/",
-    "score": 89,
-    "reason": "Massive capital commitment ($74B), infrastructure controversy, multiple stakeholders"
-  },
-  {
-    "rank": 9,
-    "headline": "$3 billion Remote CEO told every employee to take a five-hour AI course or miss expectations in their performance review: 'Get with the times'",
-    "link": "https://fortune.com/2026/11/22/3-billion-remote-ceo-told-every-employee-to-take-a-five-hour-ai-course-or-miss-expectations-in-performance-review/",
-    "score": 82,
-    "reason": "Company-wide AI mandate with real business consequences, concrete implementation"
-  },
-  {
-    "rank": 10,
-    "headline": "Why You Shouldn’t Use Meta’s Muse AI Agent for Shopping Next Weekend",
-    "link": "https://www.cnet.com/tech/services-and-software/metas-muse-mascot-agentic-ai-privacy-violations-security-data/",
-    "score": 79,
-    "reason": "AI agent performance issue, practical consumer warning from major platform"
+    "headline": "Gemini app rolls out very slick camera redesign on Android",
+    "link": "https://9to5google.com/2026/11/21/gemini-camera-redesign/",
+    "score": 65,
+    "reason": "Major AI product launch/redesign by Google"
   }
 ]
