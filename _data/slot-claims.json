@@ -765,8 +765,12 @@
     "2026-11-23:2": {
       "slug": "crowdstrike-to-buy-zscaler-in-44",
       "image": "aifeed_crowdstrike-to-buy-zscaler-in-44_20261123_pm.png",
+      "reelTemplate": "v2",
+      "hookStyle": "B",
+      "igReelId": "18165685381435465",
+      "igPermalink": "https://www.instagram.com/reel/DgGcDmIme6f/",
       "status": "posted",
-      "at": "2026-11-23T22:16:39.243Z",
+      "at": "2026-11-23T22:20:32.052Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
