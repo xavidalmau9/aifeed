@@ -1,5 +1,26 @@
 [
   {
+    "id": "crowdstrike-to-buy-zscaler-in-44-20261123",
+    "slug": "crowdstrike-to-buy-zscaler-in-44",
+    "headline": "CrowdStrike to buy Zscaler in $44 billion deal as AI supercharges cyberattacks",
+    "summary": "CrowdStrike plans to acquire Zscaler for $43.9 billion as AI supercharges cyberattacks and enterprises consolidate defenses.",
+    "body": "<p>**CrowdStrike plans $43.9 billion acquisition of Zscaler to advance AI security amid rising cyberattacks**</p>\n<p>CrowdStrike announced plans Monday to acquire Zscaler for $43.9 billion in an all-stock transaction. Under the agreement, Zscaler shareholders will receive 1.135 CrowdStrike shares for each share held. The deal is expected to close in the second half of CrowdStrike's fiscal year 2028.</p>\n<p>The deal pushes CrowdStrike, based in Austin, Texas, into the network security market and marks its largest acquisition. It comes during a year of significant cybersecurity deal-making following high-profile hacks including at Hugging Face.</p>\n<p>CEO George Kurtz stated the acquisition aims to build a single control plane for deploying AI, controlling AI, and enabling agentic applications to run safely. CrowdStrike has benefited substantially from soaring demand for AI security, with shares rising approximately 80% year-to-date as of Monday's market open.</p>\n<p>The combined entity's market value exceeded $265 billion Friday, positioning it second to Palo Alto Networks at $282 billion. JPMorgan analysts view the deal as a major opportunity allowing CrowdStrike to capture more customer security spending and close a significant gap with its leading competitor.</p>\n<p>CrowdStrike plans its largest acquisition to combine endpoint and network security amid AI-driven cyberattack surge.</p>",
+    "category": "Business",
+    "imageUrl": "https://aifeed.run/images/aifeed_crowdstrike-to-buy-zscaler-in-44_20261123_pm.png",
+    "image": "images/aifeed_crowdstrike-to-buy-zscaler-in-44_20261123_pm.png",
+    "sourceUrl": "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html",
+    "publishedAt": "2026-11-23T22:12:21.274Z",
+    "hashtags": [
+      "CrowdStrike",
+      "Zscaler",
+      "Cybersecurity",
+      "AI",
+      "MA"
+    ],
+    "igQuestion": "Will this mega-deal improve AI security?",
+    "isVideo": false
+  },
+  {
     "id": "california-attorney-general-issues-nvidia-subpoena-20261120",
     "slug": "california-attorney-general-issues-nvidia-subpoena",
     "headline": "California attorney general issues Nvidia subpoena in probe of China chip diversion",
