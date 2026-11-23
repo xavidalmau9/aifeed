@@ -1,72 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "SpaceX sued by Oregon and Virginia over AI deepfake porn, Grok safety claims",
-    "link": "https://www.cnbc.com/2026/11/23/oregon-virginia-spacex-grok-deepfake-lawsuits.html",
-    "score": 92,
-    "reason": "Major lawsuit with concrete allegations; involves product safety controversy and regulatory action"
+    "headline": "CrowdStrike to buy Zscaler in $44 billion deal as AI supercharges cyberattacks",
+    "link": "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html",
+    "score": 96,
+    "reason": "Largest acquisition, concrete financial impact, AI-driven security threat"
   },
   {
     "rank": 2,
-    "headline": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
-    "score": 88,
-    "reason": "Major capability claim with significant stakes; concrete achievement (Millennium Prize); demonstrates AI capability milestone"
+    "headline": "Jensen Huang reinstated as Nvidia CEO. Stock skyrockets 31%",
+    "link": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+    "score": 94,
+    "reason": "Major market movement, 31% stock jump, significant corporate governance event"
   },
   {
     "rank": 3,
-    "headline": "Meta Muse can do your Black Friday shopping at Walmart",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
-    "score": 82,
-    "reason": "Major product launch; real-world commercial application; concrete integration with major retailer"
+    "headline": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+    "score": 92,
+    "reason": "Concrete legal action, regulatory controversy, AI abuse evidence"
   },
   {
     "rank": 4,
-    "headline": "Can Anthropic afford to put safety first?",
-    "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
-    "score": 78,
-    "reason": "Significant controversy about company strategy; raises real financial/operational tensions in AI safety"
+    "headline": "Claude AI can review pull requests and ship fixes on its own now",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+    "score": 88,
+    "reason": "Major capability launch, autonomous code deployment"
   },
   {
     "rank": 5,
-    "headline": "U.S. probes Megaspeed, Alice Huang as new figure emerges in Nvidia chip case",
-    "link": "https://www.cnbc.com/2026/11/23/nvidia-megaspeed-chipmaker-us.html",
-    "score": 75,
-    "reason": "Major regulatory investigation with new developments; involves criminal/espionage concerns at key company"
+    "headline": "Can AI plan terrorist attacks? The US tested ChatGPT, Claude, Gemini, and Grok",
+    "link": "https://www.zdnet.com/innovation/ai-chatbots-terrorist-attack-plans-us-government-test/",
+    "score": 87,
+    "reason": "Government testing results, security implications, multiple models tested"
   },
   {
     "rank": 6,
-    "headline": "President Trump wants Jensen Huang back at Nvidia despite widening China spy probe",
-    "link": "https://fortune.com/2026/11/23/trump-wants-jensen-huang-back-at-nvidia-despite-widening-china-spy-probe/",
-    "score": 73,
-    "reason": "Major political-business controversy; concrete pressure from highest levels despite active investigation"
+    "headline": "Doctors who disagree with AI could face legal jeopardy",
+    "link": "https://www.axios.com/2026/11/23/doctors-malpractice-ai-liability-danger",
+    "score": 84,
+    "reason": "Controversial regulatory shift, medical AI liability"
   },
   {
     "rank": 7,
-    "headline": "After the Palisades fire, a founder built AI to help survivors with paperwork. Now he needs a state to buy it",
-    "link": "https://fortune.com/2026/11/23/aidfinder-ai-disaster-recovery-palisades-fire-nostrant/",
-    "score": 68,
-    "reason": "Real-world AI application launch; concrete disaster response use case with market adoption attempt"
+    "headline": "Banks Have Had It Up to Here With Your AI Agent",
+    "link": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/",
+    "score": 82,
+    "reason": "Industry-wide pushback against AI agents, concrete resistance"
   },
   {
     "rank": 8,
-    "headline": "Morgan Freeman says AI should do ‘what we actually are dreaming of doing’—but deepfakes have also made him say things he never said",
-    "link": "https://fortune.com/2026/11/23/morgan-freeman-lori-mccreary-revelations-entertainment-ai-voice-hollywood/",
-    "score": 65,
-    "reason": "Deepfake controversy with concrete example; illustrates gap between AI potential and misuse risks"
+    "headline": "Nvidia Is Powering Brain-Computer Interfaces Now",
+    "link": "https://www.wired.com/story/nvidia-is-powering-brain-computer-interfaces-now/",
+    "score": 80,
+    "reason": "New AI application area, neurotechnology integration"
   },
   {
     "rank": 9,
-    "headline": "We haven’t seen the last of the major tech outages",
-    "link": "https://www.theverge.com/tech/1039851/major-tech-outages",
-    "score": 62,
-    "reason": "Infrastructure risk analysis; relevant to AI systems and enterprise dependency"
+    "headline": "Incompetent or pragmatic? Nvidia board's rehiring of Jensen Huang splits corporate governance experts",
+    "link": "https://fortune.com/2026/11/23/corporate-governance-experts-divided-nvidia-decision-rehire-jensen-huang/",
+    "score": 78,
+    "reason": "Governance controversy, expert disagreement documented"
   },
   {
     "rank": 10,
-    "headline": "How Asian countries are looking to prop up markets as AI downturn sinks stocks",
-    "link": "https://www.cnbc.com/2026/11/23/asia-markets-kospi-taiwan-china-csi300.html",
+    "headline": "Nothing’s upcoming Ear Note is a pair of earbuds with AI transcription",
+    "link": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
+    "score": 72,
+    "reason": "Consumer product launch, AI-integrated hardware"
+  },
+  {
+    "rank": 11,
+    "headline": "AI data centers throw another wrench into chaotic UN climate talks",
+    "link": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
+    "score": 71,
+    "reason": "Infrastructure impact on global negotiations"
+  },
+  {
+    "rank": 12,
+    "headline": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
+    "link": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
+    "score": 68,
+    "reason": "Philosophical controversy, Anthropic criticism"
+  },
+  {
+    "rank": 13,
+    "headline": "Anthropic softens its data retention policy for Mythos and Fable model use",
+    "link": "https://www.engadget.com/2325684/anthropic-softens-its-data-retention-policy-for-mythos-and-fable-model-use/",
+    "score": 65,
+    "reason": "Policy reversal, privacy shift"
+  },
+  {
+    "rank": 14,
+    "headline": "Jensen Huang's return to Nvidia sparks bipartisan backlash on Capitol Hill",
+    "link": "https://www.axios.com/2026/11/23/jensen-huang-nvidia-congress-dc-reaction",
+    "score": 63,
+    "reason": "Political controversy, bipartisan opposition"
+  },
+  {
+    "rank": 15,
+    "headline": "Everything Is Falling Apart, and AI’s Fingerprints Are Everywhere",
+    "link": "https://www.cnet.com/tech/services-and-software/outages-and-cyberattacks-everything-is-breaking-is-it-ai/",
+    "score": 60,
+    "reason": "Broad systemic criticism of AI impact"
+  },
+  {
+    "rank": 16,
+    "headline": "\"Troubling and problematic\": Gov. Moore rips Trump's Nvidia actions on \"The Axios Show\"",
+    "link": "https://www.axios.com/2026/11/23/axios-show-moore-trump-nvidia",
     "score": 58,
-    "reason": "Major market impact; quantifiable economic effects of AI sector volatility across regions"
+    "reason": "Governor-level political controversy"
+  },
+  {
+    "rank": 17,
+    "headline": "You can block AI slop and spam on these social media platforms",
+    "link": "https://www.engadget.com/2320284/how-block-ai-slop-spam-social-media-platforms/",
+    "score": 55,
+    "reason": "Platform response to AI-generated content problem"
+  },
+  {
+    "rank": 18,
+    "headline": "NVIDIA's Jensen Huang will testify publicly before senators on December 3",
+    "link": "https://www.engadget.com/2325655/nvidia-jensen-huang-will-testify-publlicly-before-senators-on-december-3/",
+    "score": 53,
+    "reason": "Congressional accountability hearing scheduled"
+  },
+  {
+    "rank": 19,
+    "headline": "Employees at Eric Trump-backed robot startup lose health benefits as company&apos;s cash crunch deepens",
+    "link": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
+    "score": 50,
+    "reason": "Robotics startup failure amid AI hype"
+  },
+  {
+    "rank": 20,
+    "headline": "Schumer puts Nvidia, Trump on notice after Huang reinstatement",
+    "link": "https://www.axios.com/2026/11/23/schumer-trump-nvidia-huang-reinstated",
+    "score": 48,
+    "reason": "Senate leadership warning on corporate governance"
   }
 ]
