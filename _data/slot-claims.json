@@ -791,8 +791,12 @@
     "2026-11-24:2": {
       "slug": "signal-joins-united-airlines-banks-in",
       "image": "aifeed_signal-joins-united-airlines-banks-in_20261124_pm.png",
+      "reelTemplate": "v3",
+      "hookStyle": "C",
+      "igReelId": "18135230368796618",
+      "igPermalink": "https://www.instagram.com/reel/DgJACv5mWDw/",
       "status": "posted",
-      "at": "2026-11-24T22:10:44.164Z",
+      "at": "2026-11-24T22:13:12.762Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
