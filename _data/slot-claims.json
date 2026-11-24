@@ -787,6 +787,13 @@
       "by": "github-actions",
       "attempts": 1,
       "tried": []
+    },
+    "2026-11-24:2": {
+      "status": "claimed",
+      "at": "2026-11-24T22:04:53.589Z",
+      "by": "github-actions",
+      "attempts": 1,
+      "tried": []
     }
   }
 }
