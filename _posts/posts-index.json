@@ -1,5 +1,26 @@
 [
   {
+    "id": "signal-joins-united-airlines-banks-in-20261124",
+    "slug": "signal-joins-united-airlines-banks-in",
+    "headline": "Signal joins United Airlines, banks in limiting AI agents over customer risks",
+    "summary": "Signal joins airlines and banks in restricting AI agents over privacy and customer security risks.",
+    "body": "<p>Signal and major companies are restricting AI agents over privacy and security risks.</p>\n<p>Signal announced Friday that it will block screenshots on iOS and enable screen security on Android to prevent AI agents from scanning and capturing user data. The privacy-focused messaging app cited concerns that onscreen-aware AI assistants built into operating systems can access and store Signal data outside the company's control.</p>\n<p>The move reflects a broader industry push to limit AI agent access.</p>\n<p>Signal Foundation president Meredith Whittaker emphasized that application-level protections have gaps and called on Apple, Google, and Microsoft to provide developers with technical tools and documentation to prevent agent access to sensitive data. She noted the company introduced similar restrictions against Microsoft's Recall AI on Windows 11 last year.</p>\n<p>A 2026 AvePoint survey of 750 IT leaders found that 88.4% of organizations experienced at least one AI-agent-related security breach in the previous year, underscoring industry concern. Banks and airlines have blocked third-party agents to protect both customer accounts and company systems.</p>\n<p>Signal's restrictions highlight a central tension: AI agents require access to perform tasks, but that access creates account hijacking and data exposure risks. The company and others are advocating for tiered safeguards matched to task risk rather than blanket bans on all agent activity.</p>\n<p>Signal and major financial and travel companies are restricting AI agent access to protect customer data and account security.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_signal-joins-united-airlines-banks-in_20261124_pm.png",
+    "image": "images/aifeed_signal-joins-united-airlines-banks-in_20261124_pm.png",
+    "sourceUrl": "https://www.cnbc.com/2026/11/24/signal-airlines-banks-ai-limit.html",
+    "publishedAt": "2026-11-24T22:07:07.465Z",
+    "hashtags": [
+      "Signal",
+      "AIagents",
+      "privacy",
+      "security",
+      "tech"
+    ],
+    "igQuestion": "Should apps block AI agents from your screen?",
+    "isVideo": false
+  },
+  {
     "id": "oregon-and-virginia-sue-spacex-over-20261124",
     "slug": "oregon-and-virginia-sue-spacex-over",
     "headline": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
