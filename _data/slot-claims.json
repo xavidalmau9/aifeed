@@ -778,8 +778,12 @@
     "2026-11-24:1": {
       "slug": "oregon-and-virginia-sue-spacex-over",
       "image": "aifeed_oregon-and-virginia-sue-spacex-over_20261124_am.png",
+      "reelTemplate": "v2",
+      "hookStyle": "",
+      "igReelId": "17899643784415802",
+      "igPermalink": "https://www.instagram.com/reel/DgICcvACG8J/",
       "status": "posted",
-      "at": "2026-11-24T13:11:53.351Z",
+      "at": "2026-11-24T13:15:14.616Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
