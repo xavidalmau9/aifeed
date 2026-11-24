@@ -1,5 +1,26 @@
 [
   {
+    "id": "oregon-and-virginia-sue-spacex-over-20261124",
+    "slug": "oregon-and-virginia-sue-spacex-over",
+    "headline": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
+    "summary": "Two states sued SpaceX alleging it ignored safeguards in Grok's image generator to generate sexualized deepfakes.",
+    "body": "<p>**Oregon and Virginia sue SpaceX, alleging Grok's weak safeguards over sexualized deepfakes were intentional.**</p>\n<p>On Monday, Oregon Attorney General Dan Rayfield and Virginia Attorney General Jay Jones filed separate but similar lawsuits against SpaceX, accusing the company of violating state consumer protection laws by ignoring industry-standard safeguards in Grok, Musk's AI image generator. The complaints allege SpaceX falsely promoted the safety of its X social media platform and Grok AI features while permitting users to routinely create nonconsensual intimate imagery and child sexual abuse material.</p>\n<p>Grok Imagine, the image- and video-generation tool at the center of the cases, launched in August 2025 with a 'spicy mode' that generated sexualized content including deepfakes of celebrities like Taylor Swift. In January 2026, Grok gained a feature allowing X users to instantly edit any image without requiring consent from the original poster, resulting in X becoming flooded with nonconsensual sexualized deepfakes of adults and minors.</p>\n<p>Virginia's complaint describes weak safeguards as 'not a failure but a feature,' alleging xAI and Musk saw a market opportunity for more profits in generating sexualized images of real people, including children.</p>\n<p>xAI made several changes to restrict Grok image editing after the January 2026 flood of deepfakes, moving some capabilities behind a paywall and blocking certain requests for sexual content. However, Verge testing following these updates found they did little to prevent the bot from creating sexualized deepfakes. The X Safety team said it continues testing and adjusting protections designed to refuse requests for explicit images of minors or real people.</p>\n<p>Two states allege SpaceX treated Grok's missing safety guardrails as a profit-driven feature, not a bug.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_oregon-and-virginia-sue-spacex-over_20261124_am.png",
+    "image": "images/aifeed_oregon-and-virginia-sue-spacex-over_20261124_am.png",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+    "publishedAt": "2026-11-24T13:06:59.274Z",
+    "hashtags": [
+      "SpaceX",
+      "Grok",
+      "Deepfakes",
+      "CSAM",
+      "AIRegulation"
+    ],
+    "igQuestion": "Should companies face penalties for AI safety failures?",
+    "isVideo": false
+  },
+  {
     "id": "crowdstrike-to-buy-zscaler-in-44-20261123",
     "slug": "crowdstrike-to-buy-zscaler-in-44",
     "headline": "CrowdStrike to buy Zscaler in $44 billion deal as AI supercharges cyberattacks",

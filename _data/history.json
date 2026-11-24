@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-24T13:06:59.274Z",
+      "date": "2026-11-24",
+      "slot": 1,
+      "headline": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
+      "canonUrl": "theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+      "slug": "oregon-and-virginia-sue-spacex-over",
+      "image": "aifeed_oregon-and-virginia-sue-spacex-over_20261124_am.png",
+      "photo": {
+        "dhash": "6891028c8763212c",
+        "phash": "afc6b10721793659",
+        "hist": [
+          446,
+          101,
+          0,
+          0,
+          0,
+          131,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          261,
+          6,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          3,
+          0,
+          0,
+          0,
+          26,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1080&h=1350&fit=crop&q=85&fm=jpg",
+        "via": "branded fallback"
+      }
+    },
+    {
       "postedAt": "2026-11-23T22:12:21.274Z",
       "date": "2026-11-23",
       "slot": 2,
@@ -7042,68 +7124,6 @@
     }
   ],
   "rankings": {
-    "2026-11-05": [
-      {
-        "rank": 1,
-        "title": "Google Is Forcing AI Overviews in Classrooms. Schools Are Searching for a Way Out",
-        "canonUrl": "wired.com/story/google-is-forcing-ai-overviews-in-classrooms-schools-are-searching-for-a-way-out"
-      },
-      {
-        "rank": 2,
-        "title": "Blood banks targeted in latest European fridge cyberattacks",
-        "canonUrl": "cnbc.com/2026/11/04/blood-bank-fridges-cyberattacks.html"
-      },
-      {
-        "rank": 3,
-        "title": "Researchers asked people to use AI chatbots for election info – results were mixed",
-        "canonUrl": "zdnet.com/innovation/ai-users-ask-chatbots-voting-advice-elections-yale-research"
-      },
-      {
-        "rank": 4,
-        "title": "UK Officials Said AI Would Add £400 Billion to the Economy. That Figure Mainly Came From Google",
-        "canonUrl": "wired.com/story/uk-officials-said-ai-would-add-400-billion-to-the-economy-that-figure-mainly-came-from-google"
-      },
-      {
-        "rank": 5,
-        "title": "The Results Are In: Voters Hate Data Centers",
-        "canonUrl": "wired.com/story/the-results-are-in-voters-hate-data-centers"
-      },
-      {
-        "rank": 6,
-        "title": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
-        "canonUrl": "technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput"
-      },
-      {
-        "rank": 7,
-        "title": "Finding New Drugs Is Laborious. This AI Startup Is Skipping The Lab Work",
-        "canonUrl": "wired.com/story/finding-new-drugs-is-laborious-this-ai-startup-is-skipping-the-lab-work"
-      },
-      {
-        "rank": 8,
-        "title": "Big Tech’s big AI buildout will not end until someone stops it",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3"
-      },
-      {
-        "rank": 9,
-        "title": "Securing the agentic enterprise with data lineage",
-        "canonUrl": "technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage"
-      },
-      {
-        "rank": 10,
-        "title": "He Trolls AI Labs for a Living. Now They All Want to Work With Him",
-        "canonUrl": "wired.com/story/wired-world-fair-2026-evan-ratliff-and-husk"
-      },
-      {
-        "rank": 11,
-        "title": "Can Netflix’s new AI tool stop your TV-streaming doomscrolling? How to try it",
-        "canonUrl": "zdnet.com/home-and-office/netflix-ai-tool-discover-feature"
-      },
-      {
-        "rank": 12,
-        "title": "Uber only fulfilled 4 rides from AI agents last quarter",
-        "canonUrl": "theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation"
-      }
-    ],
     "2026-11-06": [
       {
         "rank": 1,
@@ -7813,6 +7833,68 @@
         "rank": 12,
         "title": "90% of employers reject resumes that look like AI – yet half use AI to interview",
         "canonUrl": "zdnet.com/innovation/ai-applications-skipped-interview"
+      }
+    ],
+    "2026-11-24": [
+      {
+        "rank": 1,
+        "title": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
+        "canonUrl": "theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit"
+      },
+      {
+        "rank": 2,
+        "title": "States Sue SpaceX Over Grok Deepfakes",
+        "canonUrl": "wired.com/story/states-sue-spacex-over-grok-deepfakes"
+      },
+      {
+        "rank": 3,
+        "title": "SpaceX Sued by 2 States Over Grok’s Sexualized Images of Women and Children",
+        "canonUrl": "cnet.com/tech/services-and-software/oregon-virginia-sue-spacex-grok-ai-images"
+      },
+      {
+        "rank": 4,
+        "title": "U.S. adds Megaspeed to trade blacklist over export control concerns amid Nvidia controversy",
+        "canonUrl": "cnbc.com/2026/11/24/us-adds-megaspeed-to-trade-blacklist-over-export-control-concerns-.html"
+      },
+      {
+        "rank": 5,
+        "title": "U.S. probes Megaspeed, Alice Huang as new figure emerges in Nvidia chip case",
+        "canonUrl": "cnbc.com/2026/11/23/nvidia-megaspeed-chipmaker-us.html"
+      },
+      {
+        "rank": 6,
+        "title": "Can AI plan terrorist attacks? The US tested ChatGPT, Claude, Gemini, and Grok",
+        "canonUrl": "zdnet.com/innovation/ai-chatbots-terrorist-attack-plans-us-government-test"
+      },
+      {
+        "rank": 7,
+        "title": "Congress shreds Nvidia's 'outrageous' decision to bring back Huang: 'Failure of character'",
+        "canonUrl": "cnbc.com/2026/11/23/nvidia-jensen-huang-congress-trump.html"
+      },
+      {
+        "rank": 8,
+        "title": "Signal joins United Airlines, banks in limiting AI agents over customer risks",
+        "canonUrl": "cnbc.com/2026/11/24/signal-airlines-banks-ai-limit.html"
+      },
+      {
+        "rank": 9,
+        "title": "CNBC's The China Connection newsletter: AI race spreads from robots to smartphones",
+        "canonUrl": "cnbc.com/2026/11/23/cnbcs-the-china-connection-newsletter-ai-race-spreads-to-smartphones.html"
+      },
+      {
+        "rank": 10,
+        "title": "Data centers are getting their own natural gas power plants",
+        "canonUrl": "technologyreview.com/2026/11/24/1149622/data-centers-natural-gas"
+      },
+      {
+        "rank": 11,
+        "title": "Why Does Voice AI Still Struggle With Kenyans’ Speech?",
+        "canonUrl": "spectrum.ieee.org/swahili-speech-recognition"
+      },
+      {
+        "rank": 12,
+        "title": "AI Solved Math’s Most Famous Problem. Now Humans Are Struggling to Understand It",
+        "canonUrl": "wired.com/story/ai-solved-maths-most-famous-problem"
       }
     ]
   }
