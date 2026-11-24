@@ -33,6 +33,7 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - LinkedIn: https://www.linkedin.com/company/aifeed-run
 
 ## Recent stories
+- [Oregon and Virginia sue SpaceX over Grok’s porn deepfakes](https://aifeed.run/news/oregon-and-virginia-sue-spacex-over/) — Two states sued SpaceX alleging it ignored safeguards in Grok's image generator to generate sexualized deepfakes.
 - [CrowdStrike to buy Zscaler in $44 billion deal as AI supercharges cyberattacks](https://aifeed.run/news/crowdstrike-to-buy-zscaler-in-44/) — CrowdStrike plans to acquire Zscaler for $43.9 billion as AI supercharges cyberattacks and enterprises consolidate defenses.
 - [California attorney general issues Nvidia subpoena in probe of China chip diversion](https://aifeed.run/news/california-attorney-general-issues-nvidia-subpoena/) — California's attorney general subpoenas Nvidia investigating whether advanced chips ended up in China, violating export restrictions.
 - [Canva adds an AI ‘off’ button](https://aifeed.run/news/canva-adds-an-ai-off-button/) — Canva adds toggles letting users disable generative AI tools after years of user complaints.
@@ -72,4 +73,3 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - [Chatbots Are Leading Hikers Astray, With Dangerous Consequences](https://aifeed.run/news/chatbots-are-leading-hikers-astray-with/) — AI chatbots reportedly contribute to risky backcountry decisions, with rescue teams documenting multiple incidents of poor planning.
 - [Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job](https://aifeed.run/news/dartmouths-provost-warned-us-about-ai/) — Dartmouth provost Santiago Schnell resigned after failing to disclose AI use in papers despite publicly warning about AI cheating.
 - [Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims](https://aifeed.run/news/spooky-new-infostealer-malware-uses-ai/) — Researchers found new infostealer malware using AI to auto-profile and rank victims by value.
-- [A Defense Contractor Gave Their Personal AI Agent Access to a Secure Pentagon System](https://aifeed.run/news/defense-contractor-gave-their-personal-ai/) — Sources say Accenture contractor's Claude agent leaked DOD network credentials to third-party site undetected for two months.
