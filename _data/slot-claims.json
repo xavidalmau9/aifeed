@@ -804,8 +804,12 @@
     "2026-11-25:1": {
       "slug": "jensen-huangs-nvidia-return-shows-the",
       "image": "aifeed_jensen-huangs-nvidia-return-shows-the_20261125_am.png",
+      "reelTemplate": "v2",
+      "hookStyle": "A",
+      "igReelId": "18081179471484292",
+      "igPermalink": "https://www.instagram.com/reel/DgKnvGxOBnU/",
       "status": "posted",
-      "at": "2026-11-25T13:14:39.901Z",
+      "at": "2026-11-25T13:19:30.786Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
