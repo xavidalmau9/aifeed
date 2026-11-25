@@ -1,5 +1,26 @@
 [
   {
+    "id": "jensen-huangs-nvidia-return-shows-the-20261125",
+    "slug": "jensen-huangs-nvidia-return-shows-the",
+    "headline": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
+    "summary": "Huang's return as Nvidia CEO underscores U.S.-China AI competition extends beyond chips to engineering talent recruitment.",
+    "body": "<p>**Jensen Huang's reinstatement signals U.S.-China AI race hinges on retaining engineering talent, not just chips.**</p>\n<p>Jensen Huang returned as Nvidia CEO on Nov. 23, 11 days after resigning amid reports of an affair with a woman U.S. intelligence reportedly believes has links to Chinese intelligence. Trump told CNBC he intervened directly with the board, citing concerns Huang could have taken a job in China.</p>\n<p>The U.S.-China AI competition has broadened beyond semiconductors and models to engineering and research talent. Carnegie Endowment research shows China has surpassed the U.S. by share of global AI talent in just three years, narrowing the gap in capabilities.</p>\n<p>Chinese AI companies are aggressively recruiting U.S. engineers with competitive salaries and incentives. A Meta engineer in Canada reportedly accepted an offer from a Chinese AI startup for 1.4 million yuan ($210,000) plus stock options. Switching companies can result in 25% to 30% pay bumps.</p>\n<p>The incident has increased scrutiny on AI engineer mobility and may prompt policy discussions. Experts expect limited formal restrictions but note Singapore and South Korea could benefit from inflows of talent as competition intensifies between U.S. and China.</p>\n<p>As chip restrictions tighten, the battle for AI talent emerges as a critical differentiator.</p>\n<p>The U.S.-China AI race increasingly hinges on retaining and recruiting top engineering talent, not just semiconductors.</p>",
+    "category": "Business",
+    "imageUrl": "https://aifeed.run/images/aifeed_jensen-huangs-nvidia-return-shows-the_20261125_am.png",
+    "image": "images/aifeed_jensen-huangs-nvidia-return-shows-the_20261125_am.png",
+    "sourceUrl": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
+    "publishedAt": "2026-11-25T13:09:45.530Z",
+    "hashtags": [
+      "JensenHuang",
+      "Nvidia",
+      "AITalent",
+      "USChinaTech",
+      "AIRace"
+    ],
+    "igQuestion": "Smart move or hype?",
+    "isVideo": false
+  },
+  {
     "id": "signal-joins-united-airlines-banks-in-20261124",
     "slug": "signal-joins-united-airlines-banks-in",
     "headline": "Signal joins United Airlines, banks in limiting AI agents over customer risks",
