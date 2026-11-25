@@ -1,142 +1,142 @@
 [
   {
     "rank": 1,
-    "headline": "Jensen Huang Is Back as Nvidia CEO With the US Government’s Blessing",
-    "link": "https://www.cnet.com/tech/services-and-software/jensen-huang-reinstated-nvidia-ceo-news/",
+    "headline": "A Human and an AI Model (Apparently) Solved the Riemann Hypothesis: What it Means for Future of Math",
+    "link": "https://www.cnet.com/tech/services-and-software/human-and-ai-solved-riemann-hypothesis/",
     "score": 94,
-    "reason": "Major CEO return with government intervention, significant governance controversy"
+    "reason": "Major breakthrough claim with broad impact; math's most famous unsolved problem"
   },
   {
     "rank": 2,
-    "headline": "Dell earnings beat on AI strength, company authorizes $25 billion buyback",
-    "link": "https://www.cnbc.com/2026/11/24/dell-earnings-report-q3-2027.html",
-    "score": 88,
-    "reason": "Big number ($25B), concrete earnings data, AI impact on major company"
+    "headline": "AI Solved Math’s Most Famous Problem. Now Humans Are Struggling to Understand It",
+    "link": "https://www.wired.com/story/ai-solved-maths-most-famous-problem/",
+    "score": 92,
+    "reason": "Same Riemann Hypothesis story with verification angle; demonstrates AI comprehension gap"
   },
   {
     "rank": 3,
-    "headline": "Claude AI can review pull requests and ship fixes on its own now",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
-    "score": 86,
-    "reason": "Major capability launch - autonomous code deployment, significant product milestone"
+    "headline": "Congress briefed on links between Jensen Huang's affair partner and Chinese intelligence agency",
+    "link": "https://fortune.com/2026/11/25/congress-briefed-links-jensen-huang-nvidia-affair-china-intelligence/",
+    "score": 89,
+    "reason": "Major controversy combining personal scandal with national security implications"
   },
   {
     "rank": 4,
-    "headline": "Can AI plan terrorist attacks? The US tested ChatGPT, Claude, Gemini, and Grok",
-    "link": "https://www.zdnet.com/innovation/ai-chatbots-terrorist-attack-plans-us-government-test/",
-    "score": 85,
-    "reason": "Major government safety testing controversy, multiple AI models tested"
+    "headline": "Data centers are getting their own natural gas power plants",
+    "link": "https://www.technologyreview.com/2026/11/24/1149622/data-centers-natural-gas/",
+    "score": 87,
+    "reason": "Big infrastructure trend; quantifiable energy/spending impact for AI scaling"
   },
   {
     "rank": 5,
-    "headline": "Tidal will start banning AI-generated music next month",
-    "link": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
-    "score": 84,
-    "reason": "Major platform policy launch against AI-generated content"
+    "headline": "Scoop: Anthropic and OpenAI employees fear unreleased AI models are too unsafe to release",
+    "link": "https://www.axios.com/2026/11/24/anthropic-openai-unreleased-ai-safety-risks",
+    "score": 86,
+    "reason": "Major controversy; multiple companies; safety/capability concerns from insiders"
   },
   {
     "rank": 6,
-    "headline": "Anthropic Created a Honeypot to Lure AI Agents Into Misbehaving",
-    "link": "https://www.wired.com/story/ai-agents-can-get-honeypotted-too-aw/",
-    "score": 82,
-    "reason": "Major AI safety research launch, significant methodology announcement"
+    "headline": "Tidal is banning AI-generated music entirely",
+    "link": "https://www.engadget.com/2326812/tidal-is-banning-ai-generated-music-entirely/",
+    "score": 84,
+    "reason": "Major platform policy launch; industry controversy over AI music"
   },
   {
     "rank": 7,
-    "headline": "Nvidia Is Powering Brain-Computer Interfaces Now",
-    "link": "https://www.wired.com/story/nvidia-is-powering-brain-computer-interfaces-now/",
-    "score": 80,
-    "reason": "Major new application category, significant capability expansion"
+    "headline": "Claude can ship code for you now – how to try it (if you dare)",
+    "link": "https://www.zdnet.com/innovation/claude-ship-code-how-to-try/",
+    "score": 82,
+    "reason": "Anthropic feature launch; autonomous code generation capability"
   },
   {
     "rank": 8,
-    "headline": "Saudi national charged in OpenAI bugging to be released on $1 million bond",
-    "link": "https://www.cnbc.com/2026/11/24/openai-bugging-aflozan-release-saudi.html",
-    "score": 78,
-    "reason": "Major espionage controversy involving OpenAI leadership"
+    "headline": "AI is straining America’s open records systems",
+    "link": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
+    "score": 80,
+    "reason": "Systemic impact; policy/infrastructure challenge at scale"
   },
   {
     "rank": 9,
-    "headline": "New OpenAI and Anthropic models sound alarms on safety and control, report",
-    "link": "https://9to5google.com/2026/11/24/openai-anthropic-new-models-safety-concerns-report/",
-    "score": 76,
-    "reason": "Major safety concern from leading AI labs, control issues flagged"
+    "headline": "Every raises $17.5 million at $110 million valuation, betting venture-backed media can work",
+    "link": "https://fortune.com/2026/11/25/every-raises-17-5-million-110-million-valuation-betting-venture-backed-media-can-work/",
+    "score": 78,
+    "reason": "Market traction story; concrete commercial success without hype"
   },
   {
     "rank": 10,
-    "headline": "Anthropic shares fall below IPO price. Traders see even more pain",
-    "link": "https://www.cnbc.com/2026/11/24/anthropic-options-trading-ipo-price.html",
-    "score": 74,
-    "reason": "Major stock performance concern, investor confidence issue"
+    "headline": "A misread MRI led to my spine surgeries. The AI that might have caught it exists and nobody’s paid to use it",
+    "link": "https://fortune.com/2026/11/25/garner-health-ceo-ai-healthcare-incentives-misread-mri/",
+    "score": 76,
+    "reason": "Healthcare AI gap; concrete failure case with systemic implications"
   },
   {
     "rank": 11,
-    "headline": "David Fincher is being dragged for suspected use of AI in his latest film",
-    "link": "https://www.theverge.com/entertainment/1041417/david-fincher-netflix-cliff-booth-ai-interpositive",
-    "score": 72,
-    "reason": "Major filmmaker controversy, public backlash over AI usage"
+    "headline": "Why Does Voice AI Still Struggle With Kenyans’ Speech?",
+    "link": "https://spectrum.ieee.org/swahili-speech-recognition",
+    "score": 75,
+    "reason": "AI bias/limitation issue; global accessibility problem"
   },
   {
     "rank": 12,
-    "headline": "I gave Gemini access to my Wallet, and it immediately started saving me money",
-    "link": "https://www.zdnet.com/innovation/gemini-wallet-personal-intelligence/",
-    "score": 70,
-    "reason": "Major new Gemini capability launch with concrete user benefit"
+    "headline": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
+    "link": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
+    "score": 73,
+    "reason": "Major company claim disputed; consciousness debate with authority"
   },
   {
     "rank": 13,
-    "headline": "Jensen Huang's return to Nvidia sparks bipartisan backlash on Capitol Hill",
-    "link": "https://www.axios.com/2026/11/23/jensen-huang-nvidia-congress-dc-reaction",
-    "score": 68,
-    "reason": "Rare bipartisan controversy over CEO reinstatement and governance"
+    "headline": "AI debt worries grow as Nvidia rebound masks Big Tech spending squeeze",
+    "link": "https://www.cnbc.com/2026/11/25/ai-debt-big-tech-spending-nvidia.html",
+    "score": 71,
+    "reason": "Major financial/economic trend; capex sustainability questions"
   },
   {
     "rank": 14,
-    "headline": "How Meta is using Instagram to get an ad boost from its Muse personal AI agent",
-    "link": "https://www.cnbc.com/2026/11/24/meta-instagram-muse-ad-revenue.html",
-    "score": 66,
-    "reason": "Major AI product launch, revenue monetization strategy"
+    "headline": "Airplane Turbulence Is Extremely Hard to Predict, but Maybe Not for Long",
+    "link": "https://www.wired.com/story/airplane-turbulence-is-extremely-hard-to-predict-and-avoid/",
+    "score": 69,
+    "reason": "AI application breakthrough; concrete improvement to major problem"
   },
   {
     "rank": 15,
-    "headline": "New Gemini setting lets you keep chat history, but turn off AI training [U]",
-    "link": "https://9to5google.com/2026/11/24/gemini-history-ai-training/",
-    "score": 64,
-    "reason": "Major privacy feature launch addressing user concerns"
+    "headline": "'These guys have a lane': The AI startup quietly winning over big retail",
+    "link": "https://fortune.com/2026/11/25/verneek-ai-startup-nordstrom-retail-agentic-shopping/",
+    "score": 67,
+    "reason": "Specific funding; AI-media startup launch with quantified metrics"
   },
   {
     "rank": 16,
-    "headline": "AI data centers throw another wrench into chaotic UN climate talks",
-    "link": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
-    "score": 62,
-    "reason": "Major environmental controversy, global impact on climate negotiations"
+    "headline": "Rival AI leaders push back against Anthropic vision of surrendering human agency to AI",
+    "link": "https://www.axios.com/2026/11/25/anthropic-ai-human-control-debate-free-will",
+    "score": 65,
+    "reason": "Inter-company controversy; philosophical/strategic disagreement at leadership level"
   },
   {
     "rank": 17,
-    "headline": "'Voluntary, revocable': The fine print behind Anthropic founders' $112 billion giving pledge",
-    "link": "https://fortune.com/2026/11/23/anthropic-ipo-charity-pledges-stock-price/",
-    "score": 60,
-    "reason": "Major controversy over massive $112B pledge terms"
+    "headline": "Jensen Huang deepfakes are the hot new AI slop",
+    "link": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes",
+    "score": 63,
+    "reason": "AI-generated content problem emerging; uses public figure as case study"
   },
   {
     "rank": 18,
-    "headline": "The New York Times warns photographers not to update Photoshop over AI features",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-    "score": 58,
-    "reason": "Major publication warns users, significant industry friction"
+    "headline": "Everything Is Falling Apart, and AI’s Fingerprints Are Everywhere",
+    "link": "https://www.cnet.com/tech/services-and-software/outages-and-cyberattacks-everything-is-breaking-is-it-ai/",
+    "score": 61,
+    "reason": "Broad systemic impact narrative; multiple failure modes documented"
   },
   {
     "rank": 19,
-    "headline": "Nvidia degrades U.S. national security as Chinese military snags its chips",
-    "link": "https://fortune.com/2026/11/24/nvidia-jensen-huang-national-security-chinese-military-chips/",
-    "score": 56,
-    "reason": "Major national security controversy over chip access"
+    "headline": "Kagi, the paid Google Search alternative, now has a Gmail rival too",
+    "link": "https://9to5google.com/2026/11/24/kagi-the-paid-google-search-alternative-now-has-a-gmail-rival-too/",
+    "score": 59,
+    "reason": "Search startup launch; product expansion in AI-driven search space"
   },
   {
     "rank": 20,
-    "headline": "Jensen Huang Apologizes to Nvidia Employees in First All-Hands Since His Return",
-    "link": "https://www.wired.com/story/jensen-huang-apologizes-to-nvidia-employees-in-first-all-hands-since-his-return/",
-    "score": 54,
-    "reason": "CEO apology after major reinstatement controversy"
+    "headline": "The biggest limitations of ChatGPT",
+    "link": "https://www.engadget.com/2321242/chatgpt-biggest-limitations/",
+    "score": 57,
+    "reason": "Major model capability assessment; documented constraints at scale"
   }
 ]
