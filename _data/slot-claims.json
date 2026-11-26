@@ -843,8 +843,12 @@
     "2026-11-26:2": {
       "slug": "apple-pulls-popular-chinese-ai-chatbot",
       "image": "aifeed_apple-pulls-popular-chinese-ai-chatbot_20261126_pm.png",
+      "reelTemplate": "v3",
+      "hookStyle": "",
+      "igReelId": "17977487286187363",
+      "igPermalink": "https://www.instagram.com/reel/DgOKwBFh28M/",
       "status": "posted",
-      "at": "2026-11-26T22:20:19.174Z",
+      "at": "2026-11-26T22:23:14.500Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
