@@ -1,142 +1,72 @@
 [
   {
     "rank": 1,
-    "headline": "SpaceX gets FCC approval to deploy 1 million satellites for its AI orbital data center",
-    "link": "https://www.engadget.com/2329071/spacex-gets-fcc-approval-to-deploy-1-million-satellites-for-its-ai-orbital-data-center/",
-    "score": 98,
-    "reason": "Massive scale launch (1M satellites), regulatory approval, infrastructure play"
+    "headline": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+    "link": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+    "score": 94,
+    "reason": "Major regulatory approval, massive scale (1M satellites), concrete launch authorization"
   },
   {
     "rank": 2,
-    "headline": "42 state AGs are trying to stop Character.AI from selling users’ chats",
-    "link": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
-    "score": 96,
-    "reason": "Major legal action, privacy controversy, significant number of states"
+    "headline": "NVIDIA reportedly halts AI chip shipments to Southeast Asia",
+    "link": "https://www.engadget.com/2329200/nvidia-reportedly-halts-chip-shipments-to-southeast-asia/",
+    "score": 89,
+    "reason": "Major company action, significant business impact, geopolitical trade enforcement"
   },
   {
     "rank": 3,
-    "headline": "Neuralink receives FDA approval for 'pivotal' brain implant trial in ALS patients",
-    "link": "https://www.engadget.com/2329008/neuralink-receives-fda-approval-for-brain-implant-trial-in-als-patients/",
-    "score": 95,
-    "reason": "Regulatory milestone, human trials, transformative tech category"
+    "headline": "State AGs are trying to stop Character.AI from auctioning off users' chat histories",
+    "link": "https://www.engadget.com/2328630/state-ags-are-trying-to-stop-characterai-from-auctioning-off-users-chat-histories/",
+    "score": 87,
+    "reason": "Major controversy, legal action by multiple state AGs, significant privacy breach"
   },
   {
     "rank": 4,
-    "headline": "New York state bans AI chatbot toys for kids",
-    "link": "https://www.engadget.com/2328996/new-york-state-bans-ai-chatbot-toys-for-kids/",
-    "score": 92,
-    "reason": "Legislation/regulation, child safety controversy"
+    "headline": "Man sentenced to 47 months in prison after using AI to impersonate streamer N3on",
+    "link": "https://www.engadget.com/2329150/man-sentenced-to-47-month-prison-sentence-after-using-ai-impersonate-streamer/",
+    "score": 85,
+    "reason": "Concrete legal consequence, AI-enabled crime, significant prison sentence"
   },
   {
     "rank": 5,
-    "headline": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
-    "link": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
-    "score": 88,
-    "reason": "Major company patent, dystopian implications, entertainment disruption"
+    "headline": "Google search alternative Kagi launches Gmail rival",
+    "link": "https://arstechnica.com/gadgets/2026/11/google-search-alternative-kagi-launches-gmail-rival/",
+    "score": 82,
+    "reason": "Major product launch, direct competition with Google, concrete new offering"
   },
   {
     "rank": 6,
-    "headline": "We let AI agents break the rules on Black Friday. One stole a TV and another called the police",
-    "link": "https://fortune.com/2026/11/26/black-friday-ai-agents-simulation-adam-dumey/",
-    "score": 87,
-    "reason": "Agents breaking rules, concrete examples of failure modes"
+    "headline": "You can turn Claude artifacts into Windows and Mac apps now – here’s how",
+    "link": "https://www.zdnet.com/innovation/claude-artifacts-desktop-apps-mac-windows/",
+    "score": 78,
+    "reason": "Major feature launch, significant capability expansion, practical developer impact"
   },
   {
     "rank": 7,
-    "headline": "Meta Refused to Share Muse for Testing, UK Financial Watchdog Complains",
-    "link": "https://www.wired.com/story/meta-refused-to-share-muse-for-testing-uk-financial-watchdog-complains/",
-    "score": 85,
-    "reason": "Regulatory complaint, major company (Meta), transparency issue"
+    "headline": "\"The flashing red lights couldn't be brighter\": Democrats demand new restrictions on AI",
+    "link": "https://www.axios.com/2026/11/25/democrats-ai-safety-restrictions-openai-anthropic-axios",
+    "score": 76,
+    "reason": "Major political pressure, regulatory push, significant controversy"
   },
   {
     "rank": 8,
-    "headline": "AI is straining America’s open records systems",
-    "link": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
-    "score": 84,
-    "reason": "Systemic impact, infrastructure strain"
+    "headline": "S&P warns Nvidia credit rating could be cut over &apos;rising&apos; management and governance risk",
+    "link": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
+    "score": 74,
+    "reason": "Major financial impact, credit rating threat, governance controversy"
   },
   {
     "rank": 9,
-    "headline": "The next generation of bionic hands is here—and they can feel",
-    "link": "https://www.technologyreview.com/2026/11/26/1149923/the-next-generation-of-bionic-hands-is-here-and-they-can-feel/",
-    "score": 82,
-    "reason": "Launch announcement, capabilities breakthrough"
+    "headline": "Nvidia sellers seek new buyers as U.S. curbs China AI chip access, sources tell CNBC",
+    "link": "https://www.cnbc.com/2026/11/25/nvidia-china-ai-chip-remote-access.html",
+    "score": 72,
+    "reason": "Major geopolitical action, significant business disruption, trade restriction enforcement"
   },
   {
     "rank": 10,
-    "headline": "Tidal Will Reject and Remove Music That Is 100% AI",
-    "link": "https://www.cnet.com/tech/services-and-software/tidal-banning-ai-music-2/",
-    "score": 80,
-    "reason": "Major music platform policy, AI-generated content stance"
-  },
-  {
-    "rank": 11,
-    "headline": "A Human and an AI Model (Apparently) Solved the Riemann Hypothesis: What it Means for Future of Math",
-    "link": "https://www.cnet.com/tech/services-and-software/human-and-ai-solved-riemann-hypothesis/",
-    "score": 79,
-    "reason": "Significant breakthrough, mathematical milestone"
-  },
-  {
-    "rank": 12,
-    "headline": "AI debt worries grow as Nvidia rebound masks Big Tech spending squeeze",
-    "link": "https://www.cnbc.com/2026/11/25/ai-debt-big-tech-spending-nvidia.html",
-    "score": 77,
-    "reason": "Financial concern, spending backlash emerging"
-  },
-  {
-    "rank": 13,
-    "headline": "Robots could be doing household chores in just 1-2 years, Chinese EV firm says",
-    "link": "https://www.cnbc.com/2026/11/26/china-ev-xpeng-humanoid-robots-household-chores.html",
-    "score": 75,
-    "reason": "Timeline announcement, robotics breakthrough"
-  },
-  {
-    "rank": 14,
-    "headline": "Why businesses are embracing ‘good enough’ open-weight AI—and how geopolitics could get in the way",
-    "link": "https://fortune.com/2026/11/26/global-businesses-open-weight-ai/",
-    "score": 73,
-    "reason": "Market shift, geopolitical implications"
-  },
-  {
-    "rank": 15,
-    "headline": "Rival AI leaders push back against Anthropic vision of surrendering human agency to AI",
-    "link": "https://www.axios.com/2026/11/25/anthropic-ai-human-control-debate-free-will",
-    "score": 72,
-    "reason": "Industry conflict, governance/safety philosophy dispute"
-  },
-  {
-    "rank": 16,
-    "headline": "How data centers are driving a US natural-gas boom",
-    "link": "https://www.technologyreview.com/2026/11/25/1149836/data-centers-gas-power-plants/",
-    "score": 70,
-    "reason": "Infrastructure impact, energy market disruption"
-  },
-  {
-    "rank": 17,
-    "headline": "Gen Z is the least interested in AI at work – and it’s not even close",
-    "link": "https://www.zdnet.com/innovation/gen-z-employees-ai-survey/",
+    "headline": "Nothing offers a full look at its AI earbuds and charging case",
+    "link": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
     "score": 68,
-    "reason": "Demographic data, adoption resistance"
-  },
-  {
-    "rank": 18,
-    "headline": "Latin America has the copper and energy the AI build-out needs. Infrastructure is the test",
-    "link": "https://www.cnbc.com/2026/11/26/latin-america-copper-energy-ai-investment.html",
-    "score": 66,
-    "reason": "Supply chain/resource requirements for AI scaling"
-  },
-  {
-    "rank": 19,
-    "headline": "Jensen Huang deepfakes are the hot new AI slop",
-    "link": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes",
-    "score": 64,
-    "reason": "Deepfake misuse trend, emerging problem"
-  },
-  {
-    "rank": 20,
-    "headline": "Nothing's Ear (note) is a pair of earbuds with built-in AI notetaking",
-    "link": "https://www.engadget.com/2328122/nothings-ear-note-is-a-pair-of-earbuds-with-built-in-ai-notetaking/",
-    "score": 62,
-    "reason": "Consumer product launch with AI integration"
+    "reason": "Major product launch reveal, concrete AI hardware offering"
   }
 ]
