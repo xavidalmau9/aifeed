@@ -841,8 +841,10 @@
       "tried": []
     },
     "2026-11-26:2": {
-      "status": "claimed",
-      "at": "2026-11-26T22:11:53.904Z",
+      "slug": "apple-pulls-popular-chinese-ai-chatbot",
+      "image": "aifeed_apple-pulls-popular-chinese-ai-chatbot_20261126_pm.png",
+      "status": "posted",
+      "at": "2026-11-26T22:20:19.174Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
