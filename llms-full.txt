@@ -33,6 +33,7 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - LinkedIn: https://www.linkedin.com/company/aifeed-run
 
 ## Recent stories
+- [New York state bans AI chatbot toys for kids](https://aifeed.run/news/new-york-state-bans-ai-chatbot/) — New York bans AI chatbot toys for five years with $15,000 daily fines per violation.
 - [Anthropic Created a Honeypot to Lure AI Agents Into Misbehaving](https://aifeed.run/news/anthropic-created-honeypot-to-lure-ai/) — Anthropic's Siren honeypot test shows newer Claude models resist breaking containment far better than earlier versions.
 - [Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips](https://aifeed.run/news/jensen-huangs-nvidia-return-shows-the/) — Huang's return as Nvidia CEO underscores U.S.-China AI competition extends beyond chips to engineering talent recruitment.
 - [Signal joins United Airlines, banks in limiting AI agents over customer risks](https://aifeed.run/news/signal-joins-united-airlines-banks-in/) — Signal joins airlines and banks in restricting AI agents over privacy and customer security risks.
@@ -72,4 +73,3 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - [Supermarket fridges hit with cyberattacks across Europe — here's what's happening](https://aifeed.run/news/supermarket-fridges-hit-with-cyberattacks-across/) — Hackers remotely heated supermarket fridges across Europe, spoiling food in cyberattack.
 - [AI is coming to construction sites. But does it make workers safer?](https://aifeed.run/news/ai-is-coming-to-construction-sites/) — AI tools are being deployed on construction sites to flag hazards and reduce paperwork, but researchers say evidence they actually prevent injuries remains limited.
 - [Fake nuclear warnings in Ukraine as Moscow, Kyiv report separate cyberattacks on emergency apps](https://aifeed.run/news/fake-nuclear-warnings-in-ukraine-as/) — Ukraine and Russia reported separate cyberattacks on emergency alert apps amid ongoing military conflict.
-- [Judge says xAI must face NAACP lawsuit on data center pollution](https://aifeed.run/news/judge-says-xai-must-face-naacp/) — A federal judge denied xAI's dismissal request, allowing the NAACP's lawsuit over unpermitted turbines at its Memphis data center to proceed.
