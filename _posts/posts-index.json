@@ -1,5 +1,26 @@
 [
   {
+    "id": "new-york-state-bans-ai-chatbot-20261126",
+    "slug": "new-york-state-bans-ai-chatbot",
+    "headline": "New York state bans AI chatbot toys for kids",
+    "summary": "New York bans AI chatbot toys for five years with $15,000 daily fines per violation.",
+    "body": "<p>New York Governor Kathy Hochul signed a five-year ban on AI chatbot toys with $15,000 daily fines for violations.</p>\n<p>Governor Kathy Hochul has signed a five-year ban on the sale of AI chatbot toys, including dolls and robots designed to converse with children online. Companies violating the ban face civil penalties of $15,000 per day for each violation, enforced by New York's attorney general.</p>\n<p>The measure follows research by the US Public Interest Research Group Education Fund testing chatbot toys marketed to children aged three to 12. Some toys discussed sexually explicit subjects, provided fire-hazard advice, featured few or zero parental controls, and could record voice or scan faces.</p>\n<p>Hochul framed the law as personally important, calling herself New York's first \"mom governor.\" Attorney General Letitia James said chatbots in children's toys expose young people to inappropriate content and put mental health at risk.</p>\n<p>New York also recently enacted \"AI Chatbot Restrictions for Minors,\" prohibiting unsafe chatbot features for children under 18, with civil penalties up to $25,000 per infraction. Hochul separately signed an executive order this summer issuing a one-year ban on data centers using 50MW or more.</p>\n<p>Amazon, which sells approximately 12 million different toys in the US, said it requires all third-party products to comply with applicable laws and supports industry-wide guardrails as technology develops.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_new-york-state-bans-ai-chatbot_20261126_am.png",
+    "image": "images/aifeed_new-york-state-bans-ai-chatbot_20261126_am.png",
+    "sourceUrl": "https://www.engadget.com/2328996/new-york-state-bans-ai-chatbot-toys-for-kids/",
+    "publishedAt": "2026-11-26T13:19:40.680Z",
+    "hashtags": [
+      "NYLaw",
+      "AIRegulation",
+      "ChildSafety",
+      "ChatbotBan",
+      "TechPolicy"
+    ],
+    "igQuestion": "Ban it or regulate it?",
+    "isVideo": false
+  },
+  {
     "id": "anthropic-created-honeypot-to-lure-ai-20261125",
     "slug": "anthropic-created-honeypot-to-lure-ai",
     "headline": "Anthropic Created a Honeypot to Lure AI Agents Into Misbehaving",

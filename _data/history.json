@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-26T13:19:40.680Z",
+      "date": "2026-11-26",
+      "slot": 1,
+      "headline": "New York state bans AI chatbot toys for kids",
+      "canonUrl": "engadget.com/2328996/new-york-state-bans-ai-chatbot-toys-for-kids",
+      "url": "https://www.engadget.com/2328996/new-york-state-bans-ai-chatbot-toys-for-kids/",
+      "slug": "new-york-state-bans-ai-chatbot",
+      "image": "aifeed_new-york-state-bans-ai-chatbot_20261126_am.png",
+      "photo": {
+        "dhash": "77353eb2b2b2b25a",
+        "phash": "6cf4ca91b66c6549",
+        "hist": [
+          298,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          333,
+          0,
+          0,
+          0,
+          39,
+          89,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          91,
+          0,
+          0,
+          0,
+          27,
+          42,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          53,
+          0,
+          0,
+          0,
+          16,
+          0
+        ],
+        "url": "https://www.engadget.com/img/gallery/new-york-state-bans-ai-chatbot-toys-for-kids/l-intro-1795672791.jpg",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-11-25T22:03:44.164Z",
       "date": "2026-11-25",
       "slot": 2,
@@ -7370,68 +7452,6 @@
     }
   ],
   "rankings": {
-    "2026-11-07": [
-      {
-        "rank": 1,
-        "title": "China reportedly recruited AI exec to spy on Jensen Huang",
-        "canonUrl": "theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy"
-      },
-      {
-        "rank": 2,
-        "title": "Nvidia's Huang is asked to brief Congress on reported Chinese spy relationship",
-        "canonUrl": "cnbc.com/2026/11/05/nvidia-jensen-huang-china-spy-congress.html"
-      },
-      {
-        "rank": 3,
-        "title": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation"
-      },
-      {
-        "rank": 4,
-        "title": "Free Chinese AI Models Are Getting Scary Good at Hacking",
-        "canonUrl": "wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking"
-      },
-      {
-        "rank": 5,
-        "title": "OpenAI is stepping back from NDAs for data center projects",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda"
-      },
-      {
-        "rank": 6,
-        "title": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain",
-        "canonUrl": "cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html"
-      },
-      {
-        "rank": 7,
-        "title": "AI debt concerns grow as ING reportedly seeks buyers for $500 million of data center loans",
-        "canonUrl": "cnbc.com/2026/11/06/ing-ai-data-center-loans-debt.html"
-      },
-      {
-        "rank": 8,
-        "title": "AI stocks hammered by midterm shock as data center buildout becomes a 'war of attrition'",
-        "canonUrl": "cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html"
-      },
-      {
-        "rank": 9,
-        "title": "Equinix points to smaller facilities as scrutiny of U.S. data center construction grows",
-        "canonUrl": "cnbc.com/2026/11/06/equinix-us-data-center-growth-asia.html"
-      },
-      {
-        "rank": 10,
-        "title": "AI Companies Really, Really Want to Buy Your Work Files and Emails",
-        "canonUrl": "wired.com/story/ai-companies-really-really-want-to-buy-your-work-files-and-emails"
-      },
-      {
-        "rank": 11,
-        "title": "Perplexity's 'teammates' are the company's AI agents for daily work tasks",
-        "canonUrl": "engadget.com/2308870/perplexity-teammates-ai-agents-for-ongoing-work"
-      },
-      {
-        "rank": 12,
-        "title": "Thinking Machines’ new model takes the lead in western open-weight AI",
-        "canonUrl": "zdnet.com/innovation/thinking-machines-inkling-2-small-open-weight"
-      }
-    ],
     "2026-11-08": [
       {
         "rank": 1,
@@ -8141,6 +8161,68 @@
         "rank": 12,
         "title": "The New York Times warns photographers not to update Photoshop over AI features",
         "canonUrl": "theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features"
+      }
+    ],
+    "2026-11-26": [
+      {
+        "rank": 1,
+        "title": "New York state bans AI chatbot toys for kids",
+        "canonUrl": "engadget.com/2328996/new-york-state-bans-ai-chatbot-toys-for-kids"
+      },
+      {
+        "rank": 2,
+        "title": "Apple pulls popular Chinese AI chatbot from the App Store amid child safety concerns",
+        "canonUrl": "9to5mac.com/2026/11/25/apple-pulls-popular-chinese-ai-chatbot-from-the-app-store-amid-child-safety-concerns"
+      },
+      {
+        "rank": 3,
+        "title": "42 state AGs are trying to stop Character.AI from selling users’ chats",
+        "canonUrl": "theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats"
+      },
+      {
+        "rank": 4,
+        "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
+        "canonUrl": "cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html"
+      },
+      {
+        "rank": 5,
+        "title": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
+        "canonUrl": "cnbc.com/2026/11/26/nvidia-market-governance-risk.html"
+      },
+      {
+        "rank": 6,
+        "title": "AI debt worries grow as Nvidia rebound masks Big Tech spending squeeze",
+        "canonUrl": "cnbc.com/2026/11/25/ai-debt-big-tech-spending-nvidia.html"
+      },
+      {
+        "rank": 7,
+        "title": "Meta Refused to Share Muse for Testing, UK Financial Watchdog Complains",
+        "canonUrl": "wired.com/story/meta-refused-to-share-muse-for-testing-uk-financial-watchdog-complains"
+      },
+      {
+        "rank": 8,
+        "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+        "canonUrl": "theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
+      },
+      {
+        "rank": 9,
+        "title": "AI is straining America’s open records systems",
+        "canonUrl": "technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems"
+      },
+      {
+        "rank": 10,
+        "title": "Gen Z is the least interested in AI at work – and it’s not even close",
+        "canonUrl": "zdnet.com/innovation/gen-z-employees-ai-survey"
+      },
+      {
+        "rank": 11,
+        "title": "The Character․AI mess underlines the importance of Apple’s approach to AI privacy",
+        "canonUrl": "9to5mac.com/2026/11/26/the-character%e2%80%a4ai-mess-underlines-the-importance-of-apples-approach-to-ai-privacy"
+      },
+      {
+        "rank": 12,
+        "title": "Tidal Will Reject and Remove Music That Is 100% AI",
+        "canonUrl": "cnet.com/tech/services-and-software/tidal-banning-ai-music-2"
       }
     ]
   }
