@@ -830,8 +830,12 @@
     "2026-11-26:1": {
       "slug": "new-york-state-bans-ai-chatbot",
       "image": "aifeed_new-york-state-bans-ai-chatbot_20261126_am.png",
+      "reelTemplate": "v3",
+      "hookStyle": "B",
+      "igReelId": "18020856920745725",
+      "igPermalink": "https://www.instagram.com/reel/DgNNlnfA-5V/",
       "status": "posted",
-      "at": "2026-11-26T13:23:56.796Z",
+      "at": "2026-11-26T13:28:50.677Z",
       "by": "github-actions",
       "attempts": 1,
       "tried": []
