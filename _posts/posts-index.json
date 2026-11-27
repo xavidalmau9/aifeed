@@ -1,5 +1,26 @@
 [
   {
+    "id": "man-sentenced-to-47-months-in-20261127",
+    "slug": "man-sentenced-to-47-months-in",
+    "headline": "Man sentenced to 47 months in prison after using AI to impersonate streamer N3on",
+    "summary": "Florida man sentenced to 47 months for using AI to clone streamer's voice and steal $260,000 in cryptocurrency.",
+    "body": "<p>Florida man sentenced to 47 months for using AI voice clone to orchestrate $260,000 cryptocurrency fraud.</p>\n<p>David Anthony Sanchez, known as 'Dave the Jeweler,' was sentenced to 47 months in prison after running a cryptocurrency scam involving AI voice cloning. He used AI to impersonate streamer Mikyle 'N3on' Rafiq and convinced memecoin project organizers that the streamer had agreed to endorse and participate in their scheme.</p>\n<p>Sanchez communicated with project organizers under false pretenses, posing as both N3on and his representative. He persuaded them to transfer approximately $260,000 worth of cryptocurrency to accounts under his control, then converted portions into US dollars for personal benefit.</p>\n<p>The defendant pleaded guilty to money laundering and aggravated identity theft charges. He was ordered to pay restitution to victims, acknowledging the real financial harm caused by the fraud scheme.</p>\n<p>Acting US Attorney Yara Lorenzo Klukas stated that behind every fraud scheme are real people who suffer real financial harm.</p>\n<p>This prosecution underscores the government's commitment to holding accountable those who exploit emerging technologies for fraud and protecting the integrity of financial markets.</p>\n<p>AI voice cloning enabled a $260,000 cryptocurrency fraud, resulting in 47-month prison sentence and restitution order.</p>",
+    "category": "Safety",
+    "imageUrl": "https://aifeed.run/images/aifeed_man-sentenced-to-47-months-in_20261127_pm.png",
+    "image": "images/aifeed_man-sentenced-to-47-months-in_20261127_pm.png",
+    "sourceUrl": "https://www.engadget.com/2329150/man-sentenced-to-47-month-prison-sentence-after-using-ai-impersonate-streamer/",
+    "publishedAt": "2026-11-27T22:06:42.479Z",
+    "hashtags": [
+      "AICrime",
+      "Deepfake",
+      "CryptoscamAlert",
+      "VoiceCloning",
+      "Fraud"
+    ],
+    "igQuestion": "Should AI voice cloning have stricter safeguards?",
+    "isVideo": false
+  },
+  {
     "id": "nvidia-reportedly-halts-ai-chip-shipments-20261127",
     "slug": "nvidia-reportedly-halts-ai-chip-shipments",
     "headline": "NVIDIA reportedly halts AI chip shipments to Southeast Asia",
