@@ -1,5 +1,14 @@
 [
   {
+    "filename": "man-sentenced-to-47-months-in.mp4",
+    "url": "https://aifeed.run/videos/reels/man-sentenced-to-47-months-in.mp4",
+    "title": "Man sentenced to 47 months in prison after using AI to impersonate streamer N3on",
+    "caption": "Florida man sentenced to 47 months for using AI to clone streamer's voice and steal $260,000 in cryptocurrency.",
+    "source": "",
+    "sourceUrl": "https://www.engadget.com/2329150/man-sentenced-to-47-month-prison-sentence-after-using-ai-impersonate-streamer/",
+    "date": "2026-11-27T22:06:42.479Z"
+  },
+  {
     "filename": "nvidia-reportedly-halts-ai-chip-shipments.mp4",
     "url": "https://aifeed.run/videos/reels/nvidia-reportedly-halts-ai-chip-shipments.mp4",
     "title": "NVIDIA reportedly halts AI chip shipments to Southeast Asia",
@@ -43,14 +52,5 @@
     "source": "",
     "sourceUrl": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
     "date": "2026-11-25T13:09:45.530Z"
-  },
-  {
-    "filename": "signal-joins-united-airlines-banks-in.mp4",
-    "url": "https://aifeed.run/videos/reels/signal-joins-united-airlines-banks-in.mp4",
-    "title": "Signal joins United Airlines, banks in limiting AI agents over customer risks",
-    "caption": "Signal joins airlines and banks in restricting AI agents over privacy and customer security risks.",
-    "source": "",
-    "sourceUrl": "https://www.cnbc.com/2026/11/24/signal-airlines-banks-ai-limit.html",
-    "date": "2026-11-24T22:07:07.465Z"
   }
 ]
