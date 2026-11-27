@@ -1,5 +1,26 @@
 [
   {
+    "id": "nvidia-reportedly-halts-ai-chip-shipments-20261127",
+    "slug": "nvidia-reportedly-halts-ai-chip-shipments",
+    "headline": "NVIDIA reportedly halts AI chip shipments to Southeast Asia",
+    "summary": "NVIDIA reportedly stopped shipping AI server hardware to four Southeast Asian countries amid US export control enforcement.",
+    "body": "<p>NVIDIA reportedly halts AI server hardware shipments to four Southeast Asian countries amid US export control crackdown.</p>\n<p>The Financial Times reports that NVIDIA has stopped shipping AI server hardware to Malaysia, Singapore, Thailand and Indonesia. Manufacturing partners including Dell and Supermicro informed clients that the chipmaker is not allowing their server orders to reach these destinations. The outlet reports it remains unclear whether the halt is temporary.</p>\n<p>Chinese AI labs had exploited a gap in US export controls by renting access to NVIDIA's most powerful chips through cloud compute providers in Southeast Asia that purchased servers with NVIDIA GPUs. This practice fueled significant data center construction across the region, with NVIDIA booking $104 billion in revenue through its Singapore subsidiary in 2025, a 72 percent increase year-over-year.</p>\n<p>The US Commerce Department moved to close this loophole by introducing new export control rules targeting the exact rental practice and by adding Megaspeed to its Entity List. Companies including NVIDIA now require a US license to ship goods covered by export rules to Megaspeed. Data centers providing large computing resources to China-based companies have 90 days from November 19 to obtain a license.</p>\n<p>The shipment halt comes days after Jensen Huang's reinstatement as NVIDIA CEO. Cloud executives told The Financial Times the new rules lack execution guidance, with one stating: \"There's this new rule but no guidance on execution. No one knows how to apply for this license while the 90-day clock is ticking. It's causing sheer chaos in the region.\"</p>\n<p>NVIDIA reportedly halts Southeast Asia chip shipments as US export controls tighten on Chinese AI access.</p>",
+    "category": "Policy",
+    "imageUrl": "https://aifeed.run/images/aifeed_nvidia-reportedly-halts-ai-chip-shipments_20261127_am.png",
+    "image": "images/aifeed_nvidia-reportedly-halts-ai-chip-shipments_20261127_am.png",
+    "sourceUrl": "https://www.engadget.com/2329200/nvidia-reportedly-halts-chip-shipments-to-southeast-asia/",
+    "publishedAt": "2026-11-27T13:13:44.782Z",
+    "hashtags": [
+      "NVIDIA",
+      "ExportControls",
+      "AIChips",
+      "SoutheastAsia",
+      "USPolicy"
+    ],
+    "igQuestion": "Will this stop China's AI chip access?",
+    "isVideo": false
+  },
+  {
     "id": "apple-pulls-popular-chinese-ai-chatbot-20261126",
     "slug": "apple-pulls-popular-chinese-ai-chatbot",
     "headline": "Apple pulls popular Chinese AI chatbot from the App Store amid child safety concerns",

@@ -1,6 +1,88 @@
 {
   "posted": [
     {
+      "postedAt": "2026-11-27T13:13:44.782Z",
+      "date": "2026-11-27",
+      "slot": 1,
+      "headline": "NVIDIA reportedly halts AI chip shipments to Southeast Asia",
+      "canonUrl": "engadget.com/2329200/nvidia-reportedly-halts-chip-shipments-to-southeast-asia",
+      "url": "https://www.engadget.com/2329200/nvidia-reportedly-halts-chip-shipments-to-southeast-asia/",
+      "slug": "nvidia-reportedly-halts-ai-chip-shipments",
+      "image": "aifeed_nvidia-reportedly-halts-ai-chip-shipments_20261127_am.png",
+      "photo": {
+        "dhash": "030e9d3337fcf8a0",
+        "phash": "79ec4491a6fca14b",
+        "hist": [
+          312,
+          0,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          8,
+          54,
+          0,
+          0,
+          0,
+          30,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          25,
+          34,
+          0,
+          0,
+          283,
+          62,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          49,
+          129
+        ],
+        "url": "https://www.engadget.com/img/gallery/nvidia-reportedly-halts-ai-chip-shipments-to-southeast-asia/l-intro-1795716287.jpg",
+        "via": "og:image"
+      }
+    },
+    {
       "postedAt": "2026-11-26T22:14:10.272Z",
       "date": "2026-11-26",
       "slot": 2,
@@ -7534,43 +7616,6 @@
     }
   ],
   "rankings": {
-    "2026-11-08": [
-      {
-        "rank": 1,
-        "title": "The US let Nvidia sell chips to an empty office in China",
-        "canonUrl": "theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government"
-      },
-      {
-        "rank": 2,
-        "title": "AI broke the cybersecurity world. What’s next?",
-        "canonUrl": "theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos"
-      },
-      {
-        "rank": 3,
-        "title": "World Models Will Soon Be Inescapable. Here’s What You Need to Know",
-        "canonUrl": "wired.com/story/world-models-will-soon-be-inescapable-what-you-need-to-know"
-      },
-      {
-        "rank": 4,
-        "title": "Apps for Caregivers Get a Dose of AI, but That Might Not Be Enough",
-        "canonUrl": "wired.com/story/apps-for-caregivers-get-a-dose-of-ai-but-that-might-not-be-enough"
-      },
-      {
-        "rank": 5,
-        "title": "Apple @ Work: Mac admins are shipping AI-written code with mistakes, but fixing the problems is taking days",
-        "canonUrl": "9to5mac.com/2026/11/07/mac-admins-are-shipping-ai-written-code-in-seconds-but-undoing-them-is-taking-days"
-      },
-      {
-        "rank": 6,
-        "title": "NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake",
-        "canonUrl": "theverge.com/tech/1029489/nyt-cooking-ai-assistant-review"
-      },
-      {
-        "rank": 7,
-        "title": "I Used NYT Cooking’s New AI-Powered Recipe Modifier, and It’s Actually Pretty Good",
-        "canonUrl": "wired.com/story/nyt-cooking-new-ai-powered-recipe-modifier-is-pretty-good"
-      }
-    ],
     "2026-11-09": [
       {
         "rank": 1,
@@ -8305,6 +8350,58 @@
         "rank": 12,
         "title": "Tidal Will Reject and Remove Music That Is 100% AI",
         "canonUrl": "cnet.com/tech/services-and-software/tidal-banning-ai-music-2"
+      }
+    ],
+    "2026-11-27": [
+      {
+        "rank": 1,
+        "title": "Nvidia chip buyers told to rule out Chinese renters to purchase GPUs, sources say",
+        "canonUrl": "cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html"
+      },
+      {
+        "rank": 2,
+        "title": "NVIDIA reportedly halts AI chip shipments to Southeast Asia",
+        "canonUrl": "engadget.com/2329200/nvidia-reportedly-halts-chip-shipments-to-southeast-asia"
+      },
+      {
+        "rank": 3,
+        "title": "42 state AGs are trying to stop Character.AI from selling users’ chats",
+        "canonUrl": "theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats"
+      },
+      {
+        "rank": 4,
+        "title": "Man sentenced to 47 months in prison after using AI to impersonate streamer N3on",
+        "canonUrl": "engadget.com/2329150/man-sentenced-to-47-month-prison-sentence-after-using-ai-impersonate-streamer"
+      },
+      {
+        "rank": 5,
+        "title": "China’s factories are growing profits again, but the AI boom is picking the winners",
+        "canonUrl": "cnbc.com/2026/11/27/china-industrial-profits-october.html"
+      },
+      {
+        "rank": 6,
+        "title": "Tech German software major SAP is reportedly weighing cutting at least 10,000 jobs in AI push",
+        "canonUrl": "cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html"
+      },
+      {
+        "rank": 7,
+        "title": "SpaceX gets FCC approval to deploy 1 million satellites for its AI orbital data center",
+        "canonUrl": "engadget.com/2329071/spacex-gets-fcc-approval-to-deploy-1-million-satellites-for-its-ai-orbital-data-center"
+      },
+      {
+        "rank": 8,
+        "title": "Meta Refused to Share Muse for Testing, UK Financial Watchdog Complains",
+        "canonUrl": "wired.com/story/meta-refused-to-share-muse-for-testing-uk-financial-watchdog-complains"
+      },
+      {
+        "rank": 9,
+        "title": "A New Breed of Chip Runs AI Models Using Waves of Light",
+        "canonUrl": "wired.com/story/a-new-breed-of-chip-runs-ai-models-using-waves-of-light"
+      },
+      {
+        "rank": 10,
+        "title": "Latin America has the copper and energy the AI build-out needs. Infrastructure is the test",
+        "canonUrl": "cnbc.com/2026/11/26/latin-america-copper-energy-ai-investment.html"
       }
     ]
   }
