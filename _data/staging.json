@@ -1,72 +1,107 @@
 [
   {
     "rank": 1,
-    "headline": "42 state AGs are trying to stop Character.AI from selling users’ chats",
-    "link": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+    "headline": "OpenAI countersues Apple and accuses it of stealing trade secrets",
+    "link": "https://www.engadget.com/2329747/openai-countersues-apple-and-accuses-it-of-stealing-trade-secrets/",
     "score": 94,
-    "reason": "Major regulatory action, big number (42 states), concrete controversy with legal stakes"
+    "reason": "Major lawsuit between two tech giants, concrete legal action, significant IP controversy"
   },
   {
     "rank": 2,
-    "headline": "SpaceX gets FCC approval to deploy 1 million satellites for its AI orbital data center",
-    "link": "https://www.engadget.com/2329071/spacex-gets-fcc-approval-to-deploy-1-million-satellites-for-its-ai-orbital-data-center/",
+    "headline": "Restricted NVIDIA chips were installed at a Chinese data center linked to Alice Huang",
+    "link": "https://www.engadget.com/2329748/restricted-nvidia-chips-were-installed-at-a-chinese-data-center-linked-to-alice-huang/",
     "score": 92,
-    "reason": "Major launch approval, huge scale (1M satellites), concrete milestone with big numbers"
+    "reason": "Export control violation, geopolitical implications, breach of restrictions"
   },
   {
     "rank": 3,
-    "headline": "Neuralink receives FDA approval for 'pivotal' brain implant trial in ALS patients",
-    "link": "https://www.engadget.com/2329008/neuralink-receives-fda-approval-for-brain-implant-trial-in-als-patients/",
-    "score": 90,
-    "reason": "FDA approval milestone, significant medical application, concrete regulatory win"
+    "headline": "German software firm SAP is reportedly cutting at least 10,000 jobs in AI push",
+    "link": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
+    "score": 88,
+    "reason": "Major layoffs (10k+ employees), concrete business impact from AI strategy"
   },
   {
     "rank": 4,
-    "headline": "Tech German software major SAP is reportedly weighing cutting at least 10,000 jobs in AI push",
-    "link": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
-    "score": 88,
-    "reason": "Major layoff announcement, big number (10K jobs), significant corporate restructuring"
+    "headline": "Man sentenced to 47 months in prison after using AI to impersonate streamer N3on",
+    "link": "https://www.engadget.com/2329150/man-sentenced-to-47-month-prison-sentence-after-using-ai-impersonate-streamer/",
+    "score": 85,
+    "reason": "Concrete criminal case, AI-enabled fraud, significant prison sentence"
   },
   {
     "rank": 5,
-    "headline": "Meta Refused to Share Muse for Testing, UK Financial Watchdog Complains",
-    "link": "https://www.wired.com/story/meta-refused-to-share-muse-for-testing-uk-financial-watchdog-complains/",
-    "score": 85,
-    "reason": "Regulatory friction with major company, concrete controversy with watchdog complaint"
+    "headline": "S&P warns Nvidia credit rating could be cut over &apos;rising&apos; management and governance risk",
+    "link": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
+    "score": 83,
+    "reason": "Rating agency warning, governance controversy, financial impact potential"
   },
   {
     "rank": 6,
-    "headline": "A New Breed of Chip Runs AI Models Using Waves of Light",
-    "link": "https://www.wired.com/story/a-new-breed-of-chip-runs-ai-models-using-waves-of-light/",
-    "score": 84,
-    "reason": "Novel technology launch, significant hardware innovation with concrete specifications"
+    "headline": "Jensen Huang was gone for 11 days. That was Nvidia’s succession test, and the board failed it",
+    "link": "https://fortune.com/2026/11/27/nvidia-jensen-huang-succession-test-board-failed-andrea-petrone/",
+    "score": 82,
+    "reason": "Corporate governance failure, CEO succession crisis, major AI company leadership issue"
   },
   {
     "rank": 7,
-    "headline": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
-    "link": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
-    "score": 82,
-    "reason": "Major patent filing from big company, concrete technology controversy"
+    "headline": "Hackers reportedly infiltrated the Air Force's cloud systems",
+    "link": "https://www.engadget.com/2329586/hackers-reportedly-infiltrated-the-air-force-cloud-systems/",
+    "score": 81,
+    "reason": "Major security breach, government systems compromised, national security implication"
   },
   {
     "rank": 8,
-    "headline": "Tidal Will Reject and Remove Music That Is 100% AI",
-    "link": "https://www.cnet.com/tech/services-and-software/tidal-banning-ai-music-2/",
-    "score": 80,
-    "reason": "Major music platform policy launch, concrete AI content moderation action"
+    "headline": "This ER Doctor Became a Hospital’s First Clinical AI Engineer",
+    "link": "https://spectrum.ieee.org/clinical-ai-engineer-dinesh-rai",
+    "score": 72,
+    "reason": "AI deployment in healthcare, tangible role creation, clinical application"
   },
   {
     "rank": 9,
-    "headline": "Nvidia chip buyers told to rule out Chinese renters to purchase GPUs, sources say",
-    "link": "https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html",
-    "score": 78,
-    "reason": "Significant market restriction, geopolitical AI chip controversy"
+    "headline": "I have a front-row seat to Norway’s cutting-edge AI newsroom experiment. Even with AI on more than 200 stories a day, a human still checks every one",
+    "link": "https://fortune.com/2026/11/27/checking-ai-work-human-in-the-loop-newsrooms/",
+    "score": 70,
+    "reason": "Real-world AI implementation at scale (200+ stories), AI in journalism, verification practices"
   },
   {
     "rank": 10,
-    "headline": "The next generation of bionic hands is here—and they can feel",
-    "link": "https://www.technologyreview.com/2026/11/26/1149923/the-next-generation-of-bionic-hands-is-here-and-they-can-feel/",
-    "score": 76,
-    "reason": "Major prosthetics technology launch, concrete milestone with product availability"
+    "headline": "Robots could be doing household chores in just 1-2 years, Chinese EV firm says",
+    "link": "https://www.cnbc.com/2026/11/26/china-ev-xpeng-humanoid-robots-household-chores.html",
+    "score": 68,
+    "reason": "Major AI robotics milestone claim, specific timeline, household automation"
+  },
+  {
+    "rank": 11,
+    "headline": "Workers at GTA 6 studio Rockstar Games vote overwhelmingly against union recognition",
+    "link": "https://www.engadget.com/2329177/workers-gta-6-studio-rockstar-games-vote-against-union-recognition/",
+    "score": 66,
+    "reason": "Major gaming studio labor dispute, union vote result, gaming industry impact"
+  },
+  {
+    "rank": 12,
+    "headline": "Google says it has fixed Gemini’s RAM usage error in Chrome",
+    "link": "https://9to5google.com/2026/11/27/google-gemini-chrome-ram-usage-error/",
+    "score": 61,
+    "reason": "Major AI product bug fix, performance issue in Gemini, concrete technical issue"
+  },
+  {
+    "rank": 13,
+    "headline": "How cutting-edge prosthetics can help probe the human mind",
+    "link": "https://www.technologyreview.com/2026/11/27/1149946/cutting-edge-prosthetics-allow-researchers-to-probe-the-human-mind/",
+    "score": 59,
+    "reason": "AI-enabled prosthetics research, neuroscience application, tangible innovation"
+  },
+  {
+    "rank": 14,
+    "headline": "China’s factories are growing profits again, but the AI boom is picking the winners",
+    "link": "https://www.cnbc.com/2026/11/27/china-industrial-profits-october.html",
+    "score": 57,
+    "reason": "AI market consolidation, economic impact in manufacturing, competitive dynamics"
+  },
+  {
+    "rank": 15,
+    "headline": "Latin America has the copper and energy the AI build-out needs. Infrastructure is the test",
+    "link": "https://www.cnbc.com/2026/11/26/latin-america-copper-energy-ai-investment.html",
+    "score": 55,
+    "reason": "AI infrastructure buildout, resource requirements, geopolitical implications"
   }
 ]
