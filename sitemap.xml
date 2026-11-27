@@ -4,8 +4,8 @@
 <url><loc>https://aifeed.run/news/</loc><lastmod>2026-11-27</lastmod><changefreq>weekly</changefreq></url>
 <url><loc>https://aifeed.run/news/topics/</loc><lastmod>2026-11-27</lastmod><changefreq>weekly</changefreq></url>
 <url><loc>https://aifeed.run/news/topics/industry/</loc><lastmod>2026-11-27</lastmod><changefreq>weekly</changefreq></url>
-<url><loc>https://aifeed.run/news/topics/business/</loc><lastmod>2026-11-27</lastmod><changefreq>weekly</changefreq></url>
 <url><loc>https://aifeed.run/news/topics/safety/</loc><lastmod>2026-11-27</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/news/topics/business/</loc><lastmod>2026-11-27</lastmod><changefreq>weekly</changefreq></url>
 <url><loc>https://aifeed.run/news/topics/policy/</loc><lastmod>2026-11-27</lastmod><changefreq>weekly</changefreq></url>
 <url><loc>https://aifeed.run/news/topics/research/</loc><lastmod>2026-11-27</lastmod><changefreq>weekly</changefreq></url>
 <url><loc>https://aifeed.run/news/topics/tools/</loc><lastmod>2026-11-27</lastmod><changefreq>weekly</changefreq></url>
@@ -23,6 +23,7 @@
 <url><loc>https://aifeed.run/llms.txt</loc><lastmod>2026-11-27</lastmod><changefreq>weekly</changefreq></url>
 <url><loc>https://aifeed.run/llms-full.txt</loc><lastmod>2026-11-27</lastmod><changefreq>weekly</changefreq></url>
 <url><loc>https://aifeed.run/feed.xml</loc><lastmod>2026-11-27</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://aifeed.run/news/man-sentenced-to-47-months-in/</loc><lastmod>2026-11-27</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_man-sentenced-to-47-months-in_20261127_pm.png</image:loc></image:image></url>
 <url><loc>https://aifeed.run/news/nvidia-reportedly-halts-ai-chip-shipments/</loc><lastmod>2026-11-27</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_nvidia-reportedly-halts-ai-chip-shipments_20261127_am.png</image:loc></image:image></url>
 <url><loc>https://aifeed.run/news/apple-pulls-popular-chinese-ai-chatbot/</loc><lastmod>2026-11-26</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_apple-pulls-popular-chinese-ai-chatbot_20261126_pm.png</image:loc></image:image></url>
 <url><loc>https://aifeed.run/news/new-york-state-bans-ai-chatbot/</loc><lastmod>2026-11-26</lastmod><image:image><image:loc>https://aifeed.run/images/aifeed_new-york-state-bans-ai-chatbot_20261126_am.png</image:loc></image:image></url>

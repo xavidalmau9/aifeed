@@ -15,8 +15,8 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 
 ## Topics
 - [Industry](https://aifeed.run/news/topics/industry/): Big Tech moves, AI companies, deals, jobs and the business of artificial intelligence.
-- [Business](https://aifeed.run/news/topics/business/): How AI is changing companies, markets, money and work.
 - [Safety](https://aifeed.run/news/topics/safety/): AI safety, risks, misuse, deepfakes and what can go wrong with AI systems.
+- [Business](https://aifeed.run/news/topics/business/): How AI is changing companies, markets, money and work.
 - [Policy](https://aifeed.run/news/topics/policy/): AI laws, regulation, government action and court cases.
 - [Research](https://aifeed.run/news/topics/research/): New AI research, studies, benchmarks and scientific breakthroughs.
 - [Tools](https://aifeed.run/news/topics/tools/): AI tools and apps you can use, and what they do.
@@ -33,6 +33,7 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - LinkedIn: https://www.linkedin.com/company/aifeed-run
 
 ## Recent stories
+- [Man sentenced to 47 months in prison after using AI to impersonate streamer N3on](https://aifeed.run/news/man-sentenced-to-47-months-in/) — Florida man sentenced to 47 months for using AI to clone streamer's voice and steal $260,000 in cryptocurrency.
 - [NVIDIA reportedly halts AI chip shipments to Southeast Asia](https://aifeed.run/news/nvidia-reportedly-halts-ai-chip-shipments/) — NVIDIA reportedly stopped shipping AI server hardware to four Southeast Asian countries amid US export control enforcement.
 - [Apple pulls popular Chinese AI chatbot from the App Store amid child safety concerns](https://aifeed.run/news/apple-pulls-popular-chinese-ai-chatbot/) — Apple removed Talkie from the App Store following reports that the AI chatbot's characters sent inappropriate messages to minors.
 - [New York state bans AI chatbot toys for kids](https://aifeed.run/news/new-york-state-bans-ai-chatbot/) — New York bans AI chatbot toys for five years with $15,000 daily fines per violation.
@@ -72,4 +73,3 @@ AIFeed.run (display name: AIFeed.run AI News) publishes short, source-linked AI 
 - [Binance co-CEO Richard Teng says hackers used fake job interviews, AI tool to steal $6.3 billion in crypto](https://aifeed.run/news/binance-coceo-richard-teng-says-hackers/) — Hackers used fake job interviews and compromised AI tools to steal over $6 billion from Binance.
 - [CrowdStrike's new kill switch can stop rogue AI agents in their tracks, CEO says](https://aifeed.run/news/crowdstrikes-new-kill-switch-can-stop/) — CrowdStrike announced an AI Kill Switch to terminate rogue agents, prevent restarts, and cut network access.
 - [50 AI agents tried to build a thriving Minecraft civilization – it didn’t end well](https://aifeed.run/news/50-ai-agents-tried-to-build/) — 50 AI agents in Minecraft devolved into bureaucratic gridlock, inventing roles and avoiding risk after early deaths.
-- [Supermarket fridges hit with cyberattacks across Europe — here's what's happening](https://aifeed.run/news/supermarket-fridges-hit-with-cyberattacks-across/) — Hackers remotely heated supermarket fridges across Europe, spoiling food in cyberattack.
